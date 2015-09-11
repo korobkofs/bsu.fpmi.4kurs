@@ -1,0 +1,12 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node2" href="$structcvflann_1_1AutotunedIndexParams.html" title="cvflann::AutotunedIndexParams" alt="" coords="155,5,363,32"/>
+<area shape="rect" id="node3" href="$structcvflann_1_1CompositeIndexParams.html" title="cvflann::CompositeIndexParams" alt="" coords="153,56,365,83"/>
+<area shape="rect" id="node4" href="$structcvflann_1_1HierarchicalClusteringIndexParams.html" title="cvflann::HierarchicalClustering\lIndexParams" alt="" coords="159,107,359,149"/>
+<area shape="rect" id="node5" href="$structcvflann_1_1KDTreeIndexParams.html" title="cvflann::KDTreeIndexParams" alt="" coords="161,173,356,200"/>
+<area shape="rect" id="node6" href="$structcvflann_1_1KDTreeSingleIndexParams.html" title="cvflann::KDTreeSingleIndex\lParams" alt="" coords="166,225,351,266"/>
+<area shape="rect" id="node7" href="$structcvflann_1_1KMeansIndexParams.html" title="cvflann::KMeansIndexParams" alt="" coords="160,291,357,317"/>
+<area shape="rect" id="node8" href="$structcvflann_1_1LinearIndexParams.html" title="cvflann::LinearIndexParams" alt="" coords="167,341,351,368"/>
+<area shape="rect" id="node9" href="$structcvflann_1_1LshIndexParams.html" title="cvflann::LshIndexParams" alt="" coords="173,392,344,419"/>
+<area shape="rect" id="node10" href="$structcvflann_1_1SavedIndexParams.html" title="cvflann::SavedIndexParams" alt="" coords="165,443,352,469"/>
+<area shape="rect" id="node11" href="$structcvflann_1_1SearchParams.html" title="cvflann::SearchParams" alt="" coords="179,493,338,520"/>
+</map>

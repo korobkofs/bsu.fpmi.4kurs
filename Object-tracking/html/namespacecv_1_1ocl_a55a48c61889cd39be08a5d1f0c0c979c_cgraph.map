@@ -1,0 +1,4 @@
+<map id="cv::ocl::getClCommandQueuePtr" name="cv::ocl::getClCommandQueuePtr">
+<area shape="rect" id="node2" href="$classcv_1_1ocl_1_1Context.html#a8d5b2af02b94e41137d958f448492eb9" title="cv::ocl::Context::getContext" alt="" coords="269,5,456,32"/>
+<area shape="rect" id="node3" href="$classcv_1_1ocl_1_1Context.html#a7f5b3c7493ea126f5a8c66cfe4b4200a" title="cv::ocl::Context::getOpen\lCLCommandQueuePtr" alt="" coords="277,57,449,98"/>
+</map>

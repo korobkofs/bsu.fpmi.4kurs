@@ -1,0 +1,1951 @@
+\hypertarget{libconfig_8c}{\section{src/3rdparty/libconfig/libconfig.c File Reference}
+\label{libconfig_8c}\index{src/3rdparty/libconfig/libconfig.\-c@{src/3rdparty/libconfig/libconfig.\-c}}
+}
+{\ttfamily \#include \char`\"{}libconfig.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}grammar.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}scanner.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}scanctx.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}parsectx.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}wincompat.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$locale.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$ctype.\-h$>$}\\*
+Include dependency graph for libconfig.\-c\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{libconfig_8c_a2d98299a94699423fab739bd3cdb9c3b}{P\-A\-T\-H\-\_\-\-T\-O\-K\-E\-N\-S}~\char`\"{}\-:./\char`\"{}
+\item 
+\#define \hyperlink{libconfig_8c_aea3cfda4f3a9f978ec759f206cf186fe}{C\-H\-U\-N\-K\-\_\-\-S\-I\-Z\-E}~16
+\item 
+\#define \hyperlink{libconfig_8c_ac4d09f4bc1ab5e0292782974b8c5b4b5}{F\-L\-O\-A\-T\-\_\-\-P\-R\-E\-C\-I\-S\-I\-O\-N}~10
+\item 
+\#define \hyperlink{libconfig_8c_a3465bef2bf7fb5a1015b8a70cee71f27}{\-\_\-new}(T)~(T $\ast$)calloc(sizeof(T), 1) /$\ast$ zeroed $\ast$/
+\item 
+\#define \hyperlink{libconfig_8c_ae75d2f04c29571a14dc66528697efe32}{\-\_\-delete}(P)~free((void $\ast$)(P))
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{libconfig_8c_a1753aaaa9c2fd22b0dfae1e599833145}{\-\_\-\-\_\-config\-\_\-list\-\_\-destroy} (\hyperlink{structconfig__list__t}{config\-\_\-list\-\_\-t} $\ast$list)
+\item 
+static void \hyperlink{libconfig_8c_a4be5b41b4df5899ff3c1f24904075df3}{\-\_\-\-\_\-config\-\_\-write\-\_\-setting} (const \hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$setting, F\-I\-L\-E $\ast$stream, int depth, unsigned short tab\-\_\-width)
+\item 
+int \hyperlink{libconfig_8c_a8ea043923cee044f92acb84d6c94a92a}{libconfig\-\_\-yyparse} (void $\ast$scanner, struct \hyperlink{structparse__context}{parse\-\_\-context} $\ast$ctx, struct \hyperlink{structscan__context}{scan\-\_\-context} $\ast$scan\-\_\-ctx)
+\item 
+int \hyperlink{libconfig_8c_ad47b2b15a356db34f1d630ce2fb6ac5a}{libconfig\-\_\-yylex\-\_\-init\-\_\-extra} (struct \hyperlink{structscan__context}{scan\-\_\-context} $\ast$scan\-\_\-ctx, \hyperlink{scanner_8c_a157535ed0322a026cc197c8985c08d35}{yyscan\-\_\-t} $\ast$scanner)
+\item 
+static void \hyperlink{libconfig_8c_a5aba693c888c839834ca81ae19f73e20}{\-\_\-\-\_\-config\-\_\-locale\-\_\-override} (void)
+\item 
+static void \hyperlink{libconfig_8c_a6ef50c2b5f9e2ef2bf3cf9dc8794c07e}{\-\_\-\-\_\-config\-\_\-locale\-\_\-restore} (void)
+\item 
+static int \hyperlink{libconfig_8c_ac06b1f76965033ccc88ff4f81e1c1cc9}{\-\_\-\-\_\-config\-\_\-name\-\_\-compare} (const char $\ast$a, const char $\ast$b)
+\item 
+static void \hyperlink{libconfig_8c_afe646a1aa8cba2774dd4515fc5a8d4bf}{\-\_\-\-\_\-config\-\_\-indent} (F\-I\-L\-E $\ast$stream, int depth, unsigned short w)
+\item 
+static void \hyperlink{libconfig_8c_a139cade1498e266f403ea0c29ab57f2e}{\-\_\-\-\_\-config\-\_\-write\-\_\-value} (const \hyperlink{unionconfig__value__t}{config\-\_\-value\-\_\-t} $\ast$value, int type, int format, int depth, unsigned short tab\-\_\-width, F\-I\-L\-E $\ast$stream)
+\item 
+static void \hyperlink{libconfig_8c_a4ab61735cc71a53d22ce061ab91a2478}{\-\_\-\-\_\-config\-\_\-list\-\_\-add} (\hyperlink{structconfig__list__t}{config\-\_\-list\-\_\-t} $\ast$list, \hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$setting)
+\item 
+static \hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$ \hyperlink{libconfig_8c_a8b3b3fe8f3eb75216abe2a755d082c31}{\-\_\-\-\_\-config\-\_\-list\-\_\-search} (\hyperlink{structconfig__list__t}{config\-\_\-list\-\_\-t} $\ast$list, const char $\ast$name, unsigned int $\ast$idx)
+\item 
+static \hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$ \hyperlink{libconfig_8c_a75d07db5b7d56b206c8ad45a04cb3f7c}{\-\_\-\-\_\-config\-\_\-list\-\_\-remove} (\hyperlink{structconfig__list__t}{config\-\_\-list\-\_\-t} $\ast$list, int idx)
+\item 
+static void \hyperlink{libconfig_8c_aa90e3234bee7b4faf28f6a9a2f5ab759}{\-\_\-\-\_\-config\-\_\-setting\-\_\-destroy} (\hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$setting)
+\item 
+static int \hyperlink{libconfig_8c_a3bc943da0c8c54423308bfff2937116f}{\-\_\-\-\_\-config\-\_\-vector\-\_\-checktype} (const \hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$vector, int type)
+\item 
+static int \hyperlink{libconfig_8c_a870489e55f5b29528004f6f3f8edf780}{\-\_\-\-\_\-config\-\_\-validate\-\_\-name} (const char $\ast$name)
+\item 
+static int \hyperlink{libconfig_8c_a304fc54660c19cf654d0fdc4e44ec724}{\-\_\-\-\_\-config\-\_\-read} (\hyperlink{structconfig__t}{config\-\_\-t} $\ast$config, F\-I\-L\-E $\ast$stream, const char $\ast$filename, const char $\ast$str)
+\item 
+int \hyperlink{libconfig_8c_ae4ab68a2e05878af9065bc3f325feac0}{config\-\_\-read} (\hyperlink{structconfig__t}{config\-\_\-t} $\ast$config, F\-I\-L\-E $\ast$stream)
+\item 
+int \hyperlink{libconfig_8c_ac6224b9d31bc34745a8a57a99b954b1f}{config\-\_\-read\-\_\-string} (\hyperlink{structconfig__t}{config\-\_\-t} $\ast$config, const char $\ast$str)
+\item 
+void \hyperlink{libconfig_8c_ade4a6d8cd3b6df32c30ddf8ee4feb04a}{config\-\_\-write} (const \hyperlink{structconfig__t}{config\-\_\-t} $\ast$config, F\-I\-L\-E $\ast$stream)
+\item 
+int \hyperlink{libconfig_8c_ab917f502ada6094c4e37e0255b073970}{config\-\_\-read\-\_\-file} (\hyperlink{structconfig__t}{config\-\_\-t} $\ast$config, const char $\ast$filename)
+\item 
+int \hyperlink{libconfig_8c_adfbb6c3f9658d6c1acef8f10c3cc275c}{config\-\_\-write\-\_\-file} (\hyperlink{structconfig__t}{config\-\_\-t} $\ast$config, const char $\ast$filename)
+\item 
+void \hyperlink{libconfig_8c_af1e5aef47dd0b16193fec0d67e2be87e}{config\-\_\-destroy} (\hyperlink{structconfig__t}{config\-\_\-t} $\ast$config)
+\item 
+void \hyperlink{libconfig_8c_af8f0d0a9416fadc92a39cb3703c3c642}{config\-\_\-init} (\hyperlink{structconfig__t}{config\-\_\-t} $\ast$config)
+\item 
+void \hyperlink{libconfig_8c_a1d7268ab90fd96df14c7235bd6193c69}{config\-\_\-set\-\_\-auto\-\_\-convert} (\hyperlink{structconfig__t}{config\-\_\-t} $\ast$config, int flag)
+\item 
+int \hyperlink{libconfig_8c_a1bddad7478d8e5a86d264de580c051c9}{config\-\_\-get\-\_\-auto\-\_\-convert} (const \hyperlink{structconfig__t}{config\-\_\-t} $\ast$config)
+\item 
+static \hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$ \hyperlink{libconfig_8c_a8d1e88d9f713cc67d2a8e84b549313f5}{config\-\_\-setting\-\_\-create} (\hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$parent, const char $\ast$name, int type)
+\item 
+static int \hyperlink{libconfig_8c_a5d570eaa563580c753e83d356bfcfc22}{\-\_\-\-\_\-config\-\_\-setting\-\_\-get\-\_\-int} (const \hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$setting, int $\ast$value)
+\item 
+int \hyperlink{libconfig_8c_a5b01f3c596436c849e27d5ce1b98c023}{config\-\_\-setting\-\_\-get\-\_\-int} (const \hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$setting)
+\item 
+static int \hyperlink{libconfig_8c_aa82615bd7250ce6cec34d45083bcb9e3}{\-\_\-\-\_\-config\-\_\-setting\-\_\-get\-\_\-int64} (const \hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$setting, long long $\ast$value)
+\item 
+long long \hyperlink{libconfig_8c_a7844f2e4563e56bcd4fd6da10d6f2f9b}{config\-\_\-setting\-\_\-get\-\_\-int64} (const \hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$setting)
+\item 
+int \hyperlink{libconfig_8c_afe90910186f1382a50d3e5a6df7e05cd}{config\-\_\-setting\-\_\-lookup\-\_\-int} (const \hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$setting, const char $\ast$name, int $\ast$value)
+\item 
+int \hyperlink{libconfig_8c_af042506234efc58f11af7e810677882a}{config\-\_\-setting\-\_\-lookup\-\_\-int64} (const \hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$setting, const char $\ast$name, long long $\ast$value)
+\item 
+static int \hyperlink{libconfig_8c_a3ccb479becb6bf2516225a38a74b7a41}{\-\_\-\-\_\-config\-\_\-setting\-\_\-get\-\_\-float} (const \hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$setting, double $\ast$value)
+\item 
+double \hyperlink{libconfig_8c_adcb0009a496728a8bd729241e98109ea}{config\-\_\-setting\-\_\-get\-\_\-float} (const \hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$setting)
+\item 
+int \hyperlink{libconfig_8c_a4f8a15a356d8ad6c62c8936f04c64cee}{config\-\_\-setting\-\_\-lookup\-\_\-float} (const \hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$setting, const char $\ast$name, double $\ast$value)
+\item 
+int \hyperlink{libconfig_8c_a33fd9825276237c577b16768891d1de9}{config\-\_\-setting\-\_\-lookup\-\_\-string} (const \hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$setting, const char $\ast$name, const char $\ast$$\ast$value)
+\item 
+int \hyperlink{libconfig_8c_ab23d3c2a0b14deae8f91fbbd15f37558}{config\-\_\-setting\-\_\-lookup\-\_\-bool} (const \hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$setting, const char $\ast$name, int $\ast$value)
+\item 
+int \hyperlink{libconfig_8c_a8a0e383a8f058ead09fa60bb1ae021e3}{config\-\_\-setting\-\_\-set\-\_\-int} (\hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$setting, int value)
+\item 
+int \hyperlink{libconfig_8c_abaa4ff3934618a3d7075cf9c449aa963}{config\-\_\-setting\-\_\-set\-\_\-int64} (\hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$setting, long long value)
+\item 
+int \hyperlink{libconfig_8c_ae8dc9f7bb4e46c9bafebf51984885cba}{config\-\_\-setting\-\_\-set\-\_\-float} (\hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$setting, double value)
+\item 
+int \hyperlink{libconfig_8c_aba91fe7f51bde31df0f037dfdf243fe8}{config\-\_\-setting\-\_\-get\-\_\-bool} (const \hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$setting)
+\item 
+int \hyperlink{libconfig_8c_a154c93131ed0ed7f7ad95febb5f70083}{config\-\_\-setting\-\_\-set\-\_\-bool} (\hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$setting, int value)
+\item 
+const char $\ast$ \hyperlink{libconfig_8c_af689931f9bca3784ab8741e66105a194}{config\-\_\-setting\-\_\-get\-\_\-string} (const \hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$setting)
+\item 
+int \hyperlink{libconfig_8c_a6a5a5b13254c02de72eaa464ad2d4fd3}{config\-\_\-setting\-\_\-set\-\_\-string} (\hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$setting, const char $\ast$value)
+\item 
+int \hyperlink{libconfig_8c_a8d98395218294aa546f4befba4341f9c}{config\-\_\-setting\-\_\-set\-\_\-format} (\hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$setting, short format)
+\item 
+short \hyperlink{libconfig_8c_aca888b8fdb696c88bce979a93636ea4b}{config\-\_\-setting\-\_\-get\-\_\-format} (const \hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$setting)
+\item 
+\hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$ \hyperlink{libconfig_8c_a93947f6310072ab40ac857a613124dcc}{config\-\_\-lookup\-\_\-from} (\hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$setting, const char $\ast$path)
+\item 
+\hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$ \hyperlink{libconfig_8c_ad5a5c51a4df796b9875fcab458aded96}{config\-\_\-lookup} (const \hyperlink{structconfig__t}{config\-\_\-t} $\ast$config, const char $\ast$path)
+\item 
+int \hyperlink{libconfig_8c_a3671d20dd15b6387f191d9bb3d6e4344}{config\-\_\-lookup\-\_\-string} (const \hyperlink{structconfig__t}{config\-\_\-t} $\ast$config, const char $\ast$path, const char $\ast$$\ast$value)
+\item 
+int \hyperlink{libconfig_8c_af2d1beff5901b38ca5d6833e51a5e9fb}{config\-\_\-lookup\-\_\-int} (const \hyperlink{structconfig__t}{config\-\_\-t} $\ast$config, const char $\ast$path, int $\ast$value)
+\item 
+int \hyperlink{libconfig_8c_a9e0be0aa490c94037256afdb32a5d3aa}{config\-\_\-lookup\-\_\-int64} (const \hyperlink{structconfig__t}{config\-\_\-t} $\ast$config, const char $\ast$path, long long $\ast$value)
+\item 
+int \hyperlink{libconfig_8c_a8ac9e7f6f0a11209aff4ce595adfb0a8}{config\-\_\-lookup\-\_\-float} (const \hyperlink{structconfig__t}{config\-\_\-t} $\ast$config, const char $\ast$path, double $\ast$value)
+\item 
+int \hyperlink{libconfig_8c_a6c112e82b26db88b08433ffa059b7a66}{config\-\_\-lookup\-\_\-bool} (const \hyperlink{structconfig__t}{config\-\_\-t} $\ast$config, const char $\ast$path, int $\ast$value)
+\item 
+int \hyperlink{libconfig_8c_a02c2b29f620131f91d5099a686c7f944}{config\-\_\-setting\-\_\-get\-\_\-int\-\_\-elem} (const \hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$vector, int idx)
+\item 
+\hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$ \hyperlink{libconfig_8c_a3ccb7b78cf6bb5e1affee4bf28f7e2f7}{config\-\_\-setting\-\_\-set\-\_\-int\-\_\-elem} (\hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$vector, int idx, int value)
+\item 
+long long \hyperlink{libconfig_8c_aac80609777c92271518bff11e126c83a}{config\-\_\-setting\-\_\-get\-\_\-int64\-\_\-elem} (const \hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$vector, int idx)
+\item 
+\hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$ \hyperlink{libconfig_8c_abcf7fe9dbf25a31391346a2536fc1c71}{config\-\_\-setting\-\_\-set\-\_\-int64\-\_\-elem} (\hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$vector, int idx, long long value)
+\item 
+double \hyperlink{libconfig_8c_a37a604856afcedc3002ed40fded8249f}{config\-\_\-setting\-\_\-get\-\_\-float\-\_\-elem} (const \hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$vector, int idx)
+\item 
+\hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$ \hyperlink{libconfig_8c_ae977a329b0dceb81f0c1f08556fd17bc}{config\-\_\-setting\-\_\-set\-\_\-float\-\_\-elem} (\hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$vector, int idx, double value)
+\item 
+int \hyperlink{libconfig_8c_a00d2797b23d8a70f5c9695ad798b5afc}{config\-\_\-setting\-\_\-get\-\_\-bool\-\_\-elem} (const \hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$vector, int idx)
+\item 
+\hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$ \hyperlink{libconfig_8c_a276962afd13ec87f6c59a9644b73f1eb}{config\-\_\-setting\-\_\-set\-\_\-bool\-\_\-elem} (\hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$vector, int idx, int value)
+\item 
+const char $\ast$ \hyperlink{libconfig_8c_a9383b482738faa79f7c2060815e09af7}{config\-\_\-setting\-\_\-get\-\_\-string\-\_\-elem} (const \hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$vector, int idx)
+\item 
+\hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$ \hyperlink{libconfig_8c_a02a5bb4c2536bfe733da9e5722e3a922}{config\-\_\-setting\-\_\-set\-\_\-string\-\_\-elem} (\hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$vector, int idx, const char $\ast$value)
+\item 
+\hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$ \hyperlink{libconfig_8c_a17345add7433c058e3d5580d4ae4905b}{config\-\_\-setting\-\_\-get\-\_\-elem} (const \hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$vector, unsigned int idx)
+\item 
+\hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$ \hyperlink{libconfig_8c_ac49409f325b9cd30915be9583636e2b9}{config\-\_\-setting\-\_\-get\-\_\-member} (const \hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$setting, const char $\ast$name)
+\item 
+void \hyperlink{libconfig_8c_a280861e940c38916d08df6ef5f3020a2}{config\-\_\-set\-\_\-destructor} (\hyperlink{structconfig__t}{config\-\_\-t} $\ast$config, void($\ast$destructor)(void $\ast$))
+\item 
+void \hyperlink{libconfig_8c_a293fc1b5c3a533d51c4cacecf69d9849}{config\-\_\-set\-\_\-include\-\_\-dir} (\hyperlink{structconfig__t}{config\-\_\-t} $\ast$config, const char $\ast$include\-\_\-dir)
+\item 
+int \hyperlink{libconfig_8c_a09bb6054f27159b3841e305cefd9abec}{config\-\_\-setting\-\_\-length} (const \hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$setting)
+\item 
+void \hyperlink{libconfig_8c_ac37d5bf35294b74285a7386e2a213930}{config\-\_\-setting\-\_\-set\-\_\-hook} (\hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$setting, void $\ast$hook)
+\item 
+\hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$ \hyperlink{libconfig_8c_af6b5f1049d3c527210b34c0274ffe360}{config\-\_\-setting\-\_\-add} (\hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$parent, const char $\ast$name, int type)
+\item 
+int \hyperlink{libconfig_8c_a325cf5713305d042849f55e65cc955d3}{config\-\_\-setting\-\_\-remove} (\hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$parent, const char $\ast$name)
+\item 
+int \hyperlink{libconfig_8c_a570ff5c5e53d8dbe8b848ffc4bef83b3}{config\-\_\-setting\-\_\-remove\-\_\-elem} (\hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$parent, unsigned int idx)
+\item 
+int \hyperlink{libconfig_8c_a485aaa3d59f8db576897510b3224637e}{config\-\_\-setting\-\_\-index} (const \hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$setting)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static const char $\ast$ \hyperlink{libconfig_8c_a63729b9857c272952a84d2b6e8421bcf}{\-\_\-\-\_\-io\-\_\-error} = \char`\"{}file I/O error\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{libconfig_8c_ae75d2f04c29571a14dc66528697efe32}{\index{libconfig.\-c@{libconfig.\-c}!\-\_\-delete@{\-\_\-delete}}
+\index{\-\_\-delete@{\-\_\-delete}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{\-\_\-delete}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-\_\-delete(
+\begin{DoxyParamCaption}
+\item[{}]{P}
+\end{DoxyParamCaption}
+)~free((void $\ast$)(P))}}\label{libconfig_8c_ae75d2f04c29571a14dc66528697efe32}
+\hypertarget{libconfig_8c_a3465bef2bf7fb5a1015b8a70cee71f27}{\index{libconfig.\-c@{libconfig.\-c}!\-\_\-new@{\-\_\-new}}
+\index{\-\_\-new@{\-\_\-new}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{\-\_\-new}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-\_\-new(
+\begin{DoxyParamCaption}
+\item[{}]{T}
+\end{DoxyParamCaption}
+)~(T $\ast$)calloc(sizeof(T), 1) /$\ast$ zeroed $\ast$/}}\label{libconfig_8c_a3465bef2bf7fb5a1015b8a70cee71f27}
+\hypertarget{libconfig_8c_aea3cfda4f3a9f978ec759f206cf186fe}{\index{libconfig.\-c@{libconfig.\-c}!C\-H\-U\-N\-K\-\_\-\-S\-I\-Z\-E@{C\-H\-U\-N\-K\-\_\-\-S\-I\-Z\-E}}
+\index{C\-H\-U\-N\-K\-\_\-\-S\-I\-Z\-E@{C\-H\-U\-N\-K\-\_\-\-S\-I\-Z\-E}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{C\-H\-U\-N\-K\-\_\-\-S\-I\-Z\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-H\-U\-N\-K\-\_\-\-S\-I\-Z\-E~16}}\label{libconfig_8c_aea3cfda4f3a9f978ec759f206cf186fe}
+\hypertarget{libconfig_8c_ac4d09f4bc1ab5e0292782974b8c5b4b5}{\index{libconfig.\-c@{libconfig.\-c}!F\-L\-O\-A\-T\-\_\-\-P\-R\-E\-C\-I\-S\-I\-O\-N@{F\-L\-O\-A\-T\-\_\-\-P\-R\-E\-C\-I\-S\-I\-O\-N}}
+\index{F\-L\-O\-A\-T\-\_\-\-P\-R\-E\-C\-I\-S\-I\-O\-N@{F\-L\-O\-A\-T\-\_\-\-P\-R\-E\-C\-I\-S\-I\-O\-N}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{F\-L\-O\-A\-T\-\_\-\-P\-R\-E\-C\-I\-S\-I\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-L\-O\-A\-T\-\_\-\-P\-R\-E\-C\-I\-S\-I\-O\-N~10}}\label{libconfig_8c_ac4d09f4bc1ab5e0292782974b8c5b4b5}
+\hypertarget{libconfig_8c_a2d98299a94699423fab739bd3cdb9c3b}{\index{libconfig.\-c@{libconfig.\-c}!P\-A\-T\-H\-\_\-\-T\-O\-K\-E\-N\-S@{P\-A\-T\-H\-\_\-\-T\-O\-K\-E\-N\-S}}
+\index{P\-A\-T\-H\-\_\-\-T\-O\-K\-E\-N\-S@{P\-A\-T\-H\-\_\-\-T\-O\-K\-E\-N\-S}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{P\-A\-T\-H\-\_\-\-T\-O\-K\-E\-N\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-A\-T\-H\-\_\-\-T\-O\-K\-E\-N\-S~\char`\"{}\-:./\char`\"{}}}\label{libconfig_8c_a2d98299a94699423fab739bd3cdb9c3b}
+
+
+\subsection{Function Documentation}
+\hypertarget{libconfig_8c_afe646a1aa8cba2774dd4515fc5a8d4bf}{\index{libconfig.\-c@{libconfig.\-c}!\-\_\-\-\_\-config\-\_\-indent@{\-\_\-\-\_\-config\-\_\-indent}}
+\index{\-\_\-\-\_\-config\-\_\-indent@{\-\_\-\-\_\-config\-\_\-indent}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{\-\_\-\-\_\-config\-\_\-indent}]{\setlength{\rightskip}{0pt plus 5cm}static void \-\_\-\-\_\-config\-\_\-indent (
+\begin{DoxyParamCaption}
+\item[{F\-I\-L\-E $\ast$}]{stream, }
+\item[{int}]{depth, }
+\item[{unsigned short}]{w}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{libconfig_8c_afe646a1aa8cba2774dd4515fc5a8d4bf}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_afe646a1aa8cba2774dd4515fc5a8d4bf_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_a4ab61735cc71a53d22ce061ab91a2478}{\index{libconfig.\-c@{libconfig.\-c}!\-\_\-\-\_\-config\-\_\-list\-\_\-add@{\-\_\-\-\_\-config\-\_\-list\-\_\-add}}
+\index{\-\_\-\-\_\-config\-\_\-list\-\_\-add@{\-\_\-\-\_\-config\-\_\-list\-\_\-add}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{\-\_\-\-\_\-config\-\_\-list\-\_\-add}]{\setlength{\rightskip}{0pt plus 5cm}static void \-\_\-\-\_\-config\-\_\-list\-\_\-add (
+\begin{DoxyParamCaption}
+\item[{{\bf config\-\_\-list\-\_\-t} $\ast$}]{list, }
+\item[{{\bf config\-\_\-setting\-\_\-t} $\ast$}]{setting}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{libconfig_8c_a4ab61735cc71a53d22ce061ab91a2478}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_a4ab61735cc71a53d22ce061ab91a2478_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_a1753aaaa9c2fd22b0dfae1e599833145}{\index{libconfig.\-c@{libconfig.\-c}!\-\_\-\-\_\-config\-\_\-list\-\_\-destroy@{\-\_\-\-\_\-config\-\_\-list\-\_\-destroy}}
+\index{\-\_\-\-\_\-config\-\_\-list\-\_\-destroy@{\-\_\-\-\_\-config\-\_\-list\-\_\-destroy}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{\-\_\-\-\_\-config\-\_\-list\-\_\-destroy}]{\setlength{\rightskip}{0pt plus 5cm}static void \-\_\-\-\_\-config\-\_\-list\-\_\-destroy (
+\begin{DoxyParamCaption}
+\item[{{\bf config\-\_\-list\-\_\-t} $\ast$}]{list}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{libconfig_8c_a1753aaaa9c2fd22b0dfae1e599833145}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_a1753aaaa9c2fd22b0dfae1e599833145_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_a1753aaaa9c2fd22b0dfae1e599833145_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_a75d07db5b7d56b206c8ad45a04cb3f7c}{\index{libconfig.\-c@{libconfig.\-c}!\-\_\-\-\_\-config\-\_\-list\-\_\-remove@{\-\_\-\-\_\-config\-\_\-list\-\_\-remove}}
+\index{\-\_\-\-\_\-config\-\_\-list\-\_\-remove@{\-\_\-\-\_\-config\-\_\-list\-\_\-remove}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{\-\_\-\-\_\-config\-\_\-list\-\_\-remove}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf config\-\_\-setting\-\_\-t}$\ast$ \-\_\-\-\_\-config\-\_\-list\-\_\-remove (
+\begin{DoxyParamCaption}
+\item[{{\bf config\-\_\-list\-\_\-t} $\ast$}]{list, }
+\item[{int}]{idx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{libconfig_8c_a75d07db5b7d56b206c8ad45a04cb3f7c}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_a75d07db5b7d56b206c8ad45a04cb3f7c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_a8b3b3fe8f3eb75216abe2a755d082c31}{\index{libconfig.\-c@{libconfig.\-c}!\-\_\-\-\_\-config\-\_\-list\-\_\-search@{\-\_\-\-\_\-config\-\_\-list\-\_\-search}}
+\index{\-\_\-\-\_\-config\-\_\-list\-\_\-search@{\-\_\-\-\_\-config\-\_\-list\-\_\-search}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{\-\_\-\-\_\-config\-\_\-list\-\_\-search}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf config\-\_\-setting\-\_\-t}$\ast$ \-\_\-\-\_\-config\-\_\-list\-\_\-search (
+\begin{DoxyParamCaption}
+\item[{{\bf config\-\_\-list\-\_\-t} $\ast$}]{list, }
+\item[{const char $\ast$}]{name, }
+\item[{unsigned int $\ast$}]{idx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{libconfig_8c_a8b3b3fe8f3eb75216abe2a755d082c31}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{libconfig_8c_a8b3b3fe8f3eb75216abe2a755d082c31_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_a8b3b3fe8f3eb75216abe2a755d082c31_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_a5aba693c888c839834ca81ae19f73e20}{\index{libconfig.\-c@{libconfig.\-c}!\-\_\-\-\_\-config\-\_\-locale\-\_\-override@{\-\_\-\-\_\-config\-\_\-locale\-\_\-override}}
+\index{\-\_\-\-\_\-config\-\_\-locale\-\_\-override@{\-\_\-\-\_\-config\-\_\-locale\-\_\-override}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{\-\_\-\-\_\-config\-\_\-locale\-\_\-override}]{\setlength{\rightskip}{0pt plus 5cm}static void \-\_\-\-\_\-config\-\_\-locale\-\_\-override (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{libconfig_8c_a5aba693c888c839834ca81ae19f73e20}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_a5aba693c888c839834ca81ae19f73e20_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_a6ef50c2b5f9e2ef2bf3cf9dc8794c07e}{\index{libconfig.\-c@{libconfig.\-c}!\-\_\-\-\_\-config\-\_\-locale\-\_\-restore@{\-\_\-\-\_\-config\-\_\-locale\-\_\-restore}}
+\index{\-\_\-\-\_\-config\-\_\-locale\-\_\-restore@{\-\_\-\-\_\-config\-\_\-locale\-\_\-restore}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{\-\_\-\-\_\-config\-\_\-locale\-\_\-restore}]{\setlength{\rightskip}{0pt plus 5cm}static void \-\_\-\-\_\-config\-\_\-locale\-\_\-restore (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{libconfig_8c_a6ef50c2b5f9e2ef2bf3cf9dc8794c07e}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_a6ef50c2b5f9e2ef2bf3cf9dc8794c07e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_ac06b1f76965033ccc88ff4f81e1c1cc9}{\index{libconfig.\-c@{libconfig.\-c}!\-\_\-\-\_\-config\-\_\-name\-\_\-compare@{\-\_\-\-\_\-config\-\_\-name\-\_\-compare}}
+\index{\-\_\-\-\_\-config\-\_\-name\-\_\-compare@{\-\_\-\-\_\-config\-\_\-name\-\_\-compare}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{\-\_\-\-\_\-config\-\_\-name\-\_\-compare}]{\setlength{\rightskip}{0pt plus 5cm}static int \-\_\-\-\_\-config\-\_\-name\-\_\-compare (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{a, }
+\item[{const char $\ast$}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{libconfig_8c_ac06b1f76965033ccc88ff4f81e1c1cc9}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_ac06b1f76965033ccc88ff4f81e1c1cc9_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_a304fc54660c19cf654d0fdc4e44ec724}{\index{libconfig.\-c@{libconfig.\-c}!\-\_\-\-\_\-config\-\_\-read@{\-\_\-\-\_\-config\-\_\-read}}
+\index{\-\_\-\-\_\-config\-\_\-read@{\-\_\-\-\_\-config\-\_\-read}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{\-\_\-\-\_\-config\-\_\-read}]{\setlength{\rightskip}{0pt plus 5cm}static int \-\_\-\-\_\-config\-\_\-read (
+\begin{DoxyParamCaption}
+\item[{{\bf config\-\_\-t} $\ast$}]{config, }
+\item[{F\-I\-L\-E $\ast$}]{stream, }
+\item[{const char $\ast$}]{filename, }
+\item[{const char $\ast$}]{str}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{libconfig_8c_a304fc54660c19cf654d0fdc4e44ec724}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_a304fc54660c19cf654d0fdc4e44ec724_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_a304fc54660c19cf654d0fdc4e44ec724_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_aa90e3234bee7b4faf28f6a9a2f5ab759}{\index{libconfig.\-c@{libconfig.\-c}!\-\_\-\-\_\-config\-\_\-setting\-\_\-destroy@{\-\_\-\-\_\-config\-\_\-setting\-\_\-destroy}}
+\index{\-\_\-\-\_\-config\-\_\-setting\-\_\-destroy@{\-\_\-\-\_\-config\-\_\-setting\-\_\-destroy}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{\-\_\-\-\_\-config\-\_\-setting\-\_\-destroy}]{\setlength{\rightskip}{0pt plus 5cm}static void \-\_\-\-\_\-config\-\_\-setting\-\_\-destroy (
+\begin{DoxyParamCaption}
+\item[{{\bf config\-\_\-setting\-\_\-t} $\ast$}]{setting}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{libconfig_8c_aa90e3234bee7b4faf28f6a9a2f5ab759}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_aa90e3234bee7b4faf28f6a9a2f5ab759_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_aa90e3234bee7b4faf28f6a9a2f5ab759_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_a3ccb479becb6bf2516225a38a74b7a41}{\index{libconfig.\-c@{libconfig.\-c}!\-\_\-\-\_\-config\-\_\-setting\-\_\-get\-\_\-float@{\-\_\-\-\_\-config\-\_\-setting\-\_\-get\-\_\-float}}
+\index{\-\_\-\-\_\-config\-\_\-setting\-\_\-get\-\_\-float@{\-\_\-\-\_\-config\-\_\-setting\-\_\-get\-\_\-float}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{\-\_\-\-\_\-config\-\_\-setting\-\_\-get\-\_\-float}]{\setlength{\rightskip}{0pt plus 5cm}static int \-\_\-\-\_\-config\-\_\-setting\-\_\-get\-\_\-float (
+\begin{DoxyParamCaption}
+\item[{const {\bf config\-\_\-setting\-\_\-t} $\ast$}]{setting, }
+\item[{double $\ast$}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{libconfig_8c_a3ccb479becb6bf2516225a38a74b7a41}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{libconfig_8c_a3ccb479becb6bf2516225a38a74b7a41_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_a3ccb479becb6bf2516225a38a74b7a41_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_a5d570eaa563580c753e83d356bfcfc22}{\index{libconfig.\-c@{libconfig.\-c}!\-\_\-\-\_\-config\-\_\-setting\-\_\-get\-\_\-int@{\-\_\-\-\_\-config\-\_\-setting\-\_\-get\-\_\-int}}
+\index{\-\_\-\-\_\-config\-\_\-setting\-\_\-get\-\_\-int@{\-\_\-\-\_\-config\-\_\-setting\-\_\-get\-\_\-int}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{\-\_\-\-\_\-config\-\_\-setting\-\_\-get\-\_\-int}]{\setlength{\rightskip}{0pt plus 5cm}static int \-\_\-\-\_\-config\-\_\-setting\-\_\-get\-\_\-int (
+\begin{DoxyParamCaption}
+\item[{const {\bf config\-\_\-setting\-\_\-t} $\ast$}]{setting, }
+\item[{int $\ast$}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{libconfig_8c_a5d570eaa563580c753e83d356bfcfc22}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_a5d570eaa563580c753e83d356bfcfc22_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_aa82615bd7250ce6cec34d45083bcb9e3}{\index{libconfig.\-c@{libconfig.\-c}!\-\_\-\-\_\-config\-\_\-setting\-\_\-get\-\_\-int64@{\-\_\-\-\_\-config\-\_\-setting\-\_\-get\-\_\-int64}}
+\index{\-\_\-\-\_\-config\-\_\-setting\-\_\-get\-\_\-int64@{\-\_\-\-\_\-config\-\_\-setting\-\_\-get\-\_\-int64}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{\-\_\-\-\_\-config\-\_\-setting\-\_\-get\-\_\-int64}]{\setlength{\rightskip}{0pt plus 5cm}static int \-\_\-\-\_\-config\-\_\-setting\-\_\-get\-\_\-int64 (
+\begin{DoxyParamCaption}
+\item[{const {\bf config\-\_\-setting\-\_\-t} $\ast$}]{setting, }
+\item[{long long $\ast$}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{libconfig_8c_aa82615bd7250ce6cec34d45083bcb9e3}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_aa82615bd7250ce6cec34d45083bcb9e3_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_a870489e55f5b29528004f6f3f8edf780}{\index{libconfig.\-c@{libconfig.\-c}!\-\_\-\-\_\-config\-\_\-validate\-\_\-name@{\-\_\-\-\_\-config\-\_\-validate\-\_\-name}}
+\index{\-\_\-\-\_\-config\-\_\-validate\-\_\-name@{\-\_\-\-\_\-config\-\_\-validate\-\_\-name}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{\-\_\-\-\_\-config\-\_\-validate\-\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}static int \-\_\-\-\_\-config\-\_\-validate\-\_\-name (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{libconfig_8c_a870489e55f5b29528004f6f3f8edf780}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_a870489e55f5b29528004f6f3f8edf780_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_a3bc943da0c8c54423308bfff2937116f}{\index{libconfig.\-c@{libconfig.\-c}!\-\_\-\-\_\-config\-\_\-vector\-\_\-checktype@{\-\_\-\-\_\-config\-\_\-vector\-\_\-checktype}}
+\index{\-\_\-\-\_\-config\-\_\-vector\-\_\-checktype@{\-\_\-\-\_\-config\-\_\-vector\-\_\-checktype}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{\-\_\-\-\_\-config\-\_\-vector\-\_\-checktype}]{\setlength{\rightskip}{0pt plus 5cm}static int \-\_\-\-\_\-config\-\_\-vector\-\_\-checktype (
+\begin{DoxyParamCaption}
+\item[{const {\bf config\-\_\-setting\-\_\-t} $\ast$}]{vector, }
+\item[{int}]{type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{libconfig_8c_a3bc943da0c8c54423308bfff2937116f}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_a3bc943da0c8c54423308bfff2937116f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_a4be5b41b4df5899ff3c1f24904075df3}{\index{libconfig.\-c@{libconfig.\-c}!\-\_\-\-\_\-config\-\_\-write\-\_\-setting@{\-\_\-\-\_\-config\-\_\-write\-\_\-setting}}
+\index{\-\_\-\-\_\-config\-\_\-write\-\_\-setting@{\-\_\-\-\_\-config\-\_\-write\-\_\-setting}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{\-\_\-\-\_\-config\-\_\-write\-\_\-setting}]{\setlength{\rightskip}{0pt plus 5cm}static void \-\_\-\-\_\-config\-\_\-write\-\_\-setting (
+\begin{DoxyParamCaption}
+\item[{const {\bf config\-\_\-setting\-\_\-t} $\ast$}]{setting, }
+\item[{F\-I\-L\-E $\ast$}]{stream, }
+\item[{int}]{depth, }
+\item[{unsigned short}]{tab\-\_\-width}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{libconfig_8c_a4be5b41b4df5899ff3c1f24904075df3}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_a4be5b41b4df5899ff3c1f24904075df3_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_a4be5b41b4df5899ff3c1f24904075df3_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_a139cade1498e266f403ea0c29ab57f2e}{\index{libconfig.\-c@{libconfig.\-c}!\-\_\-\-\_\-config\-\_\-write\-\_\-value@{\-\_\-\-\_\-config\-\_\-write\-\_\-value}}
+\index{\-\_\-\-\_\-config\-\_\-write\-\_\-value@{\-\_\-\-\_\-config\-\_\-write\-\_\-value}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{\-\_\-\-\_\-config\-\_\-write\-\_\-value}]{\setlength{\rightskip}{0pt plus 5cm}static void \-\_\-\-\_\-config\-\_\-write\-\_\-value (
+\begin{DoxyParamCaption}
+\item[{const {\bf config\-\_\-value\-\_\-t} $\ast$}]{value, }
+\item[{int}]{type, }
+\item[{int}]{format, }
+\item[{int}]{depth, }
+\item[{unsigned short}]{tab\-\_\-width, }
+\item[{F\-I\-L\-E $\ast$}]{stream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{libconfig_8c_a139cade1498e266f403ea0c29ab57f2e}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_a139cade1498e266f403ea0c29ab57f2e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_a139cade1498e266f403ea0c29ab57f2e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_af1e5aef47dd0b16193fec0d67e2be87e}{\index{libconfig.\-c@{libconfig.\-c}!config\-\_\-destroy@{config\-\_\-destroy}}
+\index{config\-\_\-destroy@{config\-\_\-destroy}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{config\-\_\-destroy}]{\setlength{\rightskip}{0pt plus 5cm}void config\-\_\-destroy (
+\begin{DoxyParamCaption}
+\item[{{\bf config\-\_\-t} $\ast$}]{config}
+\end{DoxyParamCaption}
+)}}\label{libconfig_8c_af1e5aef47dd0b16193fec0d67e2be87e}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_af1e5aef47dd0b16193fec0d67e2be87e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_af1e5aef47dd0b16193fec0d67e2be87e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_a1bddad7478d8e5a86d264de580c051c9}{\index{libconfig.\-c@{libconfig.\-c}!config\-\_\-get\-\_\-auto\-\_\-convert@{config\-\_\-get\-\_\-auto\-\_\-convert}}
+\index{config\-\_\-get\-\_\-auto\-\_\-convert@{config\-\_\-get\-\_\-auto\-\_\-convert}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{config\-\_\-get\-\_\-auto\-\_\-convert}]{\setlength{\rightskip}{0pt plus 5cm}int config\-\_\-get\-\_\-auto\-\_\-convert (
+\begin{DoxyParamCaption}
+\item[{const {\bf config\-\_\-t} $\ast$}]{config}
+\end{DoxyParamCaption}
+)}}\label{libconfig_8c_a1bddad7478d8e5a86d264de580c051c9}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_a1bddad7478d8e5a86d264de580c051c9_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_af8f0d0a9416fadc92a39cb3703c3c642}{\index{libconfig.\-c@{libconfig.\-c}!config\-\_\-init@{config\-\_\-init}}
+\index{config\-\_\-init@{config\-\_\-init}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{config\-\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}void config\-\_\-init (
+\begin{DoxyParamCaption}
+\item[{{\bf config\-\_\-t} $\ast$}]{config}
+\end{DoxyParamCaption}
+)}}\label{libconfig_8c_af8f0d0a9416fadc92a39cb3703c3c642}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_af8f0d0a9416fadc92a39cb3703c3c642_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_ad5a5c51a4df796b9875fcab458aded96}{\index{libconfig.\-c@{libconfig.\-c}!config\-\_\-lookup@{config\-\_\-lookup}}
+\index{config\-\_\-lookup@{config\-\_\-lookup}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{config\-\_\-lookup}]{\setlength{\rightskip}{0pt plus 5cm}{\bf config\-\_\-setting\-\_\-t}$\ast$ config\-\_\-lookup (
+\begin{DoxyParamCaption}
+\item[{const {\bf config\-\_\-t} $\ast$}]{config, }
+\item[{const char $\ast$}]{path}
+\end{DoxyParamCaption}
+)}}\label{libconfig_8c_ad5a5c51a4df796b9875fcab458aded96}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_ad5a5c51a4df796b9875fcab458aded96_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{libconfig_8c_ad5a5c51a4df796b9875fcab458aded96_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_a6c112e82b26db88b08433ffa059b7a66}{\index{libconfig.\-c@{libconfig.\-c}!config\-\_\-lookup\-\_\-bool@{config\-\_\-lookup\-\_\-bool}}
+\index{config\-\_\-lookup\-\_\-bool@{config\-\_\-lookup\-\_\-bool}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{config\-\_\-lookup\-\_\-bool}]{\setlength{\rightskip}{0pt plus 5cm}int config\-\_\-lookup\-\_\-bool (
+\begin{DoxyParamCaption}
+\item[{const {\bf config\-\_\-t} $\ast$}]{config, }
+\item[{const char $\ast$}]{path, }
+\item[{int $\ast$}]{value}
+\end{DoxyParamCaption}
+)}}\label{libconfig_8c_a6c112e82b26db88b08433ffa059b7a66}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_a6c112e82b26db88b08433ffa059b7a66_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_a8ac9e7f6f0a11209aff4ce595adfb0a8}{\index{libconfig.\-c@{libconfig.\-c}!config\-\_\-lookup\-\_\-float@{config\-\_\-lookup\-\_\-float}}
+\index{config\-\_\-lookup\-\_\-float@{config\-\_\-lookup\-\_\-float}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{config\-\_\-lookup\-\_\-float}]{\setlength{\rightskip}{0pt plus 5cm}int config\-\_\-lookup\-\_\-float (
+\begin{DoxyParamCaption}
+\item[{const {\bf config\-\_\-t} $\ast$}]{config, }
+\item[{const char $\ast$}]{path, }
+\item[{double $\ast$}]{value}
+\end{DoxyParamCaption}
+)}}\label{libconfig_8c_a8ac9e7f6f0a11209aff4ce595adfb0a8}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_a8ac9e7f6f0a11209aff4ce595adfb0a8_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_a93947f6310072ab40ac857a613124dcc}{\index{libconfig.\-c@{libconfig.\-c}!config\-\_\-lookup\-\_\-from@{config\-\_\-lookup\-\_\-from}}
+\index{config\-\_\-lookup\-\_\-from@{config\-\_\-lookup\-\_\-from}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{config\-\_\-lookup\-\_\-from}]{\setlength{\rightskip}{0pt plus 5cm}{\bf config\-\_\-setting\-\_\-t}$\ast$ config\-\_\-lookup\-\_\-from (
+\begin{DoxyParamCaption}
+\item[{{\bf config\-\_\-setting\-\_\-t} $\ast$}]{setting, }
+\item[{const char $\ast$}]{path}
+\end{DoxyParamCaption}
+)}}\label{libconfig_8c_a93947f6310072ab40ac857a613124dcc}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_a93947f6310072ab40ac857a613124dcc_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_a93947f6310072ab40ac857a613124dcc_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_af2d1beff5901b38ca5d6833e51a5e9fb}{\index{libconfig.\-c@{libconfig.\-c}!config\-\_\-lookup\-\_\-int@{config\-\_\-lookup\-\_\-int}}
+\index{config\-\_\-lookup\-\_\-int@{config\-\_\-lookup\-\_\-int}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{config\-\_\-lookup\-\_\-int}]{\setlength{\rightskip}{0pt plus 5cm}int config\-\_\-lookup\-\_\-int (
+\begin{DoxyParamCaption}
+\item[{const {\bf config\-\_\-t} $\ast$}]{config, }
+\item[{const char $\ast$}]{path, }
+\item[{int $\ast$}]{value}
+\end{DoxyParamCaption}
+)}}\label{libconfig_8c_af2d1beff5901b38ca5d6833e51a5e9fb}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_af2d1beff5901b38ca5d6833e51a5e9fb_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_a9e0be0aa490c94037256afdb32a5d3aa}{\index{libconfig.\-c@{libconfig.\-c}!config\-\_\-lookup\-\_\-int64@{config\-\_\-lookup\-\_\-int64}}
+\index{config\-\_\-lookup\-\_\-int64@{config\-\_\-lookup\-\_\-int64}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{config\-\_\-lookup\-\_\-int64}]{\setlength{\rightskip}{0pt plus 5cm}int config\-\_\-lookup\-\_\-int64 (
+\begin{DoxyParamCaption}
+\item[{const {\bf config\-\_\-t} $\ast$}]{config, }
+\item[{const char $\ast$}]{path, }
+\item[{long long $\ast$}]{value}
+\end{DoxyParamCaption}
+)}}\label{libconfig_8c_a9e0be0aa490c94037256afdb32a5d3aa}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_a9e0be0aa490c94037256afdb32a5d3aa_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_a3671d20dd15b6387f191d9bb3d6e4344}{\index{libconfig.\-c@{libconfig.\-c}!config\-\_\-lookup\-\_\-string@{config\-\_\-lookup\-\_\-string}}
+\index{config\-\_\-lookup\-\_\-string@{config\-\_\-lookup\-\_\-string}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{config\-\_\-lookup\-\_\-string}]{\setlength{\rightskip}{0pt plus 5cm}int config\-\_\-lookup\-\_\-string (
+\begin{DoxyParamCaption}
+\item[{const {\bf config\-\_\-t} $\ast$}]{config, }
+\item[{const char $\ast$}]{path, }
+\item[{const char $\ast$$\ast$}]{value}
+\end{DoxyParamCaption}
+)}}\label{libconfig_8c_a3671d20dd15b6387f191d9bb3d6e4344}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_a3671d20dd15b6387f191d9bb3d6e4344_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_ae4ab68a2e05878af9065bc3f325feac0}{\index{libconfig.\-c@{libconfig.\-c}!config\-\_\-read@{config\-\_\-read}}
+\index{config\-\_\-read@{config\-\_\-read}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{config\-\_\-read}]{\setlength{\rightskip}{0pt plus 5cm}int config\-\_\-read (
+\begin{DoxyParamCaption}
+\item[{{\bf config\-\_\-t} $\ast$}]{config, }
+\item[{F\-I\-L\-E $\ast$}]{stream}
+\end{DoxyParamCaption}
+)}}\label{libconfig_8c_ae4ab68a2e05878af9065bc3f325feac0}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_ae4ab68a2e05878af9065bc3f325feac0_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{libconfig_8c_ae4ab68a2e05878af9065bc3f325feac0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_ab917f502ada6094c4e37e0255b073970}{\index{libconfig.\-c@{libconfig.\-c}!config\-\_\-read\-\_\-file@{config\-\_\-read\-\_\-file}}
+\index{config\-\_\-read\-\_\-file@{config\-\_\-read\-\_\-file}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{config\-\_\-read\-\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}int config\-\_\-read\-\_\-file (
+\begin{DoxyParamCaption}
+\item[{{\bf config\-\_\-t} $\ast$}]{config, }
+\item[{const char $\ast$}]{filename}
+\end{DoxyParamCaption}
+)}}\label{libconfig_8c_ab917f502ada6094c4e37e0255b073970}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_ab917f502ada6094c4e37e0255b073970_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_ab917f502ada6094c4e37e0255b073970_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_ac6224b9d31bc34745a8a57a99b954b1f}{\index{libconfig.\-c@{libconfig.\-c}!config\-\_\-read\-\_\-string@{config\-\_\-read\-\_\-string}}
+\index{config\-\_\-read\-\_\-string@{config\-\_\-read\-\_\-string}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{config\-\_\-read\-\_\-string}]{\setlength{\rightskip}{0pt plus 5cm}int config\-\_\-read\-\_\-string (
+\begin{DoxyParamCaption}
+\item[{{\bf config\-\_\-t} $\ast$}]{config, }
+\item[{const char $\ast$}]{str}
+\end{DoxyParamCaption}
+)}}\label{libconfig_8c_ac6224b9d31bc34745a8a57a99b954b1f}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_ac6224b9d31bc34745a8a57a99b954b1f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{libconfig_8c_ac6224b9d31bc34745a8a57a99b954b1f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_a1d7268ab90fd96df14c7235bd6193c69}{\index{libconfig.\-c@{libconfig.\-c}!config\-\_\-set\-\_\-auto\-\_\-convert@{config\-\_\-set\-\_\-auto\-\_\-convert}}
+\index{config\-\_\-set\-\_\-auto\-\_\-convert@{config\-\_\-set\-\_\-auto\-\_\-convert}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{config\-\_\-set\-\_\-auto\-\_\-convert}]{\setlength{\rightskip}{0pt plus 5cm}void config\-\_\-set\-\_\-auto\-\_\-convert (
+\begin{DoxyParamCaption}
+\item[{{\bf config\-\_\-t} $\ast$}]{config, }
+\item[{int}]{flag}
+\end{DoxyParamCaption}
+)}}\label{libconfig_8c_a1d7268ab90fd96df14c7235bd6193c69}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{libconfig_8c_a1d7268ab90fd96df14c7235bd6193c69_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_a280861e940c38916d08df6ef5f3020a2}{\index{libconfig.\-c@{libconfig.\-c}!config\-\_\-set\-\_\-destructor@{config\-\_\-set\-\_\-destructor}}
+\index{config\-\_\-set\-\_\-destructor@{config\-\_\-set\-\_\-destructor}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{config\-\_\-set\-\_\-destructor}]{\setlength{\rightskip}{0pt plus 5cm}void config\-\_\-set\-\_\-destructor (
+\begin{DoxyParamCaption}
+\item[{{\bf config\-\_\-t} $\ast$}]{config, }
+\item[{void($\ast$)(void $\ast$)}]{destructor}
+\end{DoxyParamCaption}
+)}}\label{libconfig_8c_a280861e940c38916d08df6ef5f3020a2}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{libconfig_8c_a280861e940c38916d08df6ef5f3020a2_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_a293fc1b5c3a533d51c4cacecf69d9849}{\index{libconfig.\-c@{libconfig.\-c}!config\-\_\-set\-\_\-include\-\_\-dir@{config\-\_\-set\-\_\-include\-\_\-dir}}
+\index{config\-\_\-set\-\_\-include\-\_\-dir@{config\-\_\-set\-\_\-include\-\_\-dir}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{config\-\_\-set\-\_\-include\-\_\-dir}]{\setlength{\rightskip}{0pt plus 5cm}void config\-\_\-set\-\_\-include\-\_\-dir (
+\begin{DoxyParamCaption}
+\item[{{\bf config\-\_\-t} $\ast$}]{config, }
+\item[{const char $\ast$}]{include\-\_\-dir}
+\end{DoxyParamCaption}
+)}}\label{libconfig_8c_a293fc1b5c3a533d51c4cacecf69d9849}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{libconfig_8c_a293fc1b5c3a533d51c4cacecf69d9849_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_af6b5f1049d3c527210b34c0274ffe360}{\index{libconfig.\-c@{libconfig.\-c}!config\-\_\-setting\-\_\-add@{config\-\_\-setting\-\_\-add}}
+\index{config\-\_\-setting\-\_\-add@{config\-\_\-setting\-\_\-add}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{config\-\_\-setting\-\_\-add}]{\setlength{\rightskip}{0pt plus 5cm}{\bf config\-\_\-setting\-\_\-t}$\ast$ config\-\_\-setting\-\_\-add (
+\begin{DoxyParamCaption}
+\item[{{\bf config\-\_\-setting\-\_\-t} $\ast$}]{parent, }
+\item[{const char $\ast$}]{name, }
+\item[{int}]{type}
+\end{DoxyParamCaption}
+)}}\label{libconfig_8c_af6b5f1049d3c527210b34c0274ffe360}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_af6b5f1049d3c527210b34c0274ffe360_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{libconfig_8c_af6b5f1049d3c527210b34c0274ffe360_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_a8d1e88d9f713cc67d2a8e84b549313f5}{\index{libconfig.\-c@{libconfig.\-c}!config\-\_\-setting\-\_\-create@{config\-\_\-setting\-\_\-create}}
+\index{config\-\_\-setting\-\_\-create@{config\-\_\-setting\-\_\-create}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{config\-\_\-setting\-\_\-create}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf config\-\_\-setting\-\_\-t}$\ast$ config\-\_\-setting\-\_\-create (
+\begin{DoxyParamCaption}
+\item[{{\bf config\-\_\-setting\-\_\-t} $\ast$}]{parent, }
+\item[{const char $\ast$}]{name, }
+\item[{int}]{type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{libconfig_8c_a8d1e88d9f713cc67d2a8e84b549313f5}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{libconfig_8c_a8d1e88d9f713cc67d2a8e84b549313f5_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_a8d1e88d9f713cc67d2a8e84b549313f5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_aba91fe7f51bde31df0f037dfdf243fe8}{\index{libconfig.\-c@{libconfig.\-c}!config\-\_\-setting\-\_\-get\-\_\-bool@{config\-\_\-setting\-\_\-get\-\_\-bool}}
+\index{config\-\_\-setting\-\_\-get\-\_\-bool@{config\-\_\-setting\-\_\-get\-\_\-bool}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{config\-\_\-setting\-\_\-get\-\_\-bool}]{\setlength{\rightskip}{0pt plus 5cm}int config\-\_\-setting\-\_\-get\-\_\-bool (
+\begin{DoxyParamCaption}
+\item[{const {\bf config\-\_\-setting\-\_\-t} $\ast$}]{setting}
+\end{DoxyParamCaption}
+)}}\label{libconfig_8c_aba91fe7f51bde31df0f037dfdf243fe8}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_aba91fe7f51bde31df0f037dfdf243fe8_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_a00d2797b23d8a70f5c9695ad798b5afc}{\index{libconfig.\-c@{libconfig.\-c}!config\-\_\-setting\-\_\-get\-\_\-bool\-\_\-elem@{config\-\_\-setting\-\_\-get\-\_\-bool\-\_\-elem}}
+\index{config\-\_\-setting\-\_\-get\-\_\-bool\-\_\-elem@{config\-\_\-setting\-\_\-get\-\_\-bool\-\_\-elem}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{config\-\_\-setting\-\_\-get\-\_\-bool\-\_\-elem}]{\setlength{\rightskip}{0pt plus 5cm}int config\-\_\-setting\-\_\-get\-\_\-bool\-\_\-elem (
+\begin{DoxyParamCaption}
+\item[{const {\bf config\-\_\-setting\-\_\-t} $\ast$}]{vector, }
+\item[{int}]{idx}
+\end{DoxyParamCaption}
+)}}\label{libconfig_8c_a00d2797b23d8a70f5c9695ad798b5afc}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{libconfig_8c_a00d2797b23d8a70f5c9695ad798b5afc_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_a17345add7433c058e3d5580d4ae4905b}{\index{libconfig.\-c@{libconfig.\-c}!config\-\_\-setting\-\_\-get\-\_\-elem@{config\-\_\-setting\-\_\-get\-\_\-elem}}
+\index{config\-\_\-setting\-\_\-get\-\_\-elem@{config\-\_\-setting\-\_\-get\-\_\-elem}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{config\-\_\-setting\-\_\-get\-\_\-elem}]{\setlength{\rightskip}{0pt plus 5cm}{\bf config\-\_\-setting\-\_\-t}$\ast$ config\-\_\-setting\-\_\-get\-\_\-elem (
+\begin{DoxyParamCaption}
+\item[{const {\bf config\-\_\-setting\-\_\-t} $\ast$}]{vector, }
+\item[{unsigned int}]{idx}
+\end{DoxyParamCaption}
+)}}\label{libconfig_8c_a17345add7433c058e3d5580d4ae4905b}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_a17345add7433c058e3d5580d4ae4905b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_adcb0009a496728a8bd729241e98109ea}{\index{libconfig.\-c@{libconfig.\-c}!config\-\_\-setting\-\_\-get\-\_\-float@{config\-\_\-setting\-\_\-get\-\_\-float}}
+\index{config\-\_\-setting\-\_\-get\-\_\-float@{config\-\_\-setting\-\_\-get\-\_\-float}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{config\-\_\-setting\-\_\-get\-\_\-float}]{\setlength{\rightskip}{0pt plus 5cm}double config\-\_\-setting\-\_\-get\-\_\-float (
+\begin{DoxyParamCaption}
+\item[{const {\bf config\-\_\-setting\-\_\-t} $\ast$}]{setting}
+\end{DoxyParamCaption}
+)}}\label{libconfig_8c_adcb0009a496728a8bd729241e98109ea}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_adcb0009a496728a8bd729241e98109ea_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{libconfig_8c_adcb0009a496728a8bd729241e98109ea_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_a37a604856afcedc3002ed40fded8249f}{\index{libconfig.\-c@{libconfig.\-c}!config\-\_\-setting\-\_\-get\-\_\-float\-\_\-elem@{config\-\_\-setting\-\_\-get\-\_\-float\-\_\-elem}}
+\index{config\-\_\-setting\-\_\-get\-\_\-float\-\_\-elem@{config\-\_\-setting\-\_\-get\-\_\-float\-\_\-elem}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{config\-\_\-setting\-\_\-get\-\_\-float\-\_\-elem}]{\setlength{\rightskip}{0pt plus 5cm}double config\-\_\-setting\-\_\-get\-\_\-float\-\_\-elem (
+\begin{DoxyParamCaption}
+\item[{const {\bf config\-\_\-setting\-\_\-t} $\ast$}]{vector, }
+\item[{int}]{idx}
+\end{DoxyParamCaption}
+)}}\label{libconfig_8c_a37a604856afcedc3002ed40fded8249f}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_a37a604856afcedc3002ed40fded8249f_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_aca888b8fdb696c88bce979a93636ea4b}{\index{libconfig.\-c@{libconfig.\-c}!config\-\_\-setting\-\_\-get\-\_\-format@{config\-\_\-setting\-\_\-get\-\_\-format}}
+\index{config\-\_\-setting\-\_\-get\-\_\-format@{config\-\_\-setting\-\_\-get\-\_\-format}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{config\-\_\-setting\-\_\-get\-\_\-format}]{\setlength{\rightskip}{0pt plus 5cm}short config\-\_\-setting\-\_\-get\-\_\-format (
+\begin{DoxyParamCaption}
+\item[{const {\bf config\-\_\-setting\-\_\-t} $\ast$}]{setting}
+\end{DoxyParamCaption}
+)}}\label{libconfig_8c_aca888b8fdb696c88bce979a93636ea4b}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_aca888b8fdb696c88bce979a93636ea4b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_a5b01f3c596436c849e27d5ce1b98c023}{\index{libconfig.\-c@{libconfig.\-c}!config\-\_\-setting\-\_\-get\-\_\-int@{config\-\_\-setting\-\_\-get\-\_\-int}}
+\index{config\-\_\-setting\-\_\-get\-\_\-int@{config\-\_\-setting\-\_\-get\-\_\-int}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{config\-\_\-setting\-\_\-get\-\_\-int}]{\setlength{\rightskip}{0pt plus 5cm}int config\-\_\-setting\-\_\-get\-\_\-int (
+\begin{DoxyParamCaption}
+\item[{const {\bf config\-\_\-setting\-\_\-t} $\ast$}]{setting}
+\end{DoxyParamCaption}
+)}}\label{libconfig_8c_a5b01f3c596436c849e27d5ce1b98c023}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_a5b01f3c596436c849e27d5ce1b98c023_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{libconfig_8c_a5b01f3c596436c849e27d5ce1b98c023_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_a7844f2e4563e56bcd4fd6da10d6f2f9b}{\index{libconfig.\-c@{libconfig.\-c}!config\-\_\-setting\-\_\-get\-\_\-int64@{config\-\_\-setting\-\_\-get\-\_\-int64}}
+\index{config\-\_\-setting\-\_\-get\-\_\-int64@{config\-\_\-setting\-\_\-get\-\_\-int64}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{config\-\_\-setting\-\_\-get\-\_\-int64}]{\setlength{\rightskip}{0pt plus 5cm}long long config\-\_\-setting\-\_\-get\-\_\-int64 (
+\begin{DoxyParamCaption}
+\item[{const {\bf config\-\_\-setting\-\_\-t} $\ast$}]{setting}
+\end{DoxyParamCaption}
+)}}\label{libconfig_8c_a7844f2e4563e56bcd4fd6da10d6f2f9b}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{libconfig_8c_a7844f2e4563e56bcd4fd6da10d6f2f9b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{libconfig_8c_a7844f2e4563e56bcd4fd6da10d6f2f9b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_aac80609777c92271518bff11e126c83a}{\index{libconfig.\-c@{libconfig.\-c}!config\-\_\-setting\-\_\-get\-\_\-int64\-\_\-elem@{config\-\_\-setting\-\_\-get\-\_\-int64\-\_\-elem}}
+\index{config\-\_\-setting\-\_\-get\-\_\-int64\-\_\-elem@{config\-\_\-setting\-\_\-get\-\_\-int64\-\_\-elem}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{config\-\_\-setting\-\_\-get\-\_\-int64\-\_\-elem}]{\setlength{\rightskip}{0pt plus 5cm}long long config\-\_\-setting\-\_\-get\-\_\-int64\-\_\-elem (
+\begin{DoxyParamCaption}
+\item[{const {\bf config\-\_\-setting\-\_\-t} $\ast$}]{vector, }
+\item[{int}]{idx}
+\end{DoxyParamCaption}
+)}}\label{libconfig_8c_aac80609777c92271518bff11e126c83a}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_aac80609777c92271518bff11e126c83a_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_a02c2b29f620131f91d5099a686c7f944}{\index{libconfig.\-c@{libconfig.\-c}!config\-\_\-setting\-\_\-get\-\_\-int\-\_\-elem@{config\-\_\-setting\-\_\-get\-\_\-int\-\_\-elem}}
+\index{config\-\_\-setting\-\_\-get\-\_\-int\-\_\-elem@{config\-\_\-setting\-\_\-get\-\_\-int\-\_\-elem}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{config\-\_\-setting\-\_\-get\-\_\-int\-\_\-elem}]{\setlength{\rightskip}{0pt plus 5cm}int config\-\_\-setting\-\_\-get\-\_\-int\-\_\-elem (
+\begin{DoxyParamCaption}
+\item[{const {\bf config\-\_\-setting\-\_\-t} $\ast$}]{vector, }
+\item[{int}]{idx}
+\end{DoxyParamCaption}
+)}}\label{libconfig_8c_a02c2b29f620131f91d5099a686c7f944}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_a02c2b29f620131f91d5099a686c7f944_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_ac49409f325b9cd30915be9583636e2b9}{\index{libconfig.\-c@{libconfig.\-c}!config\-\_\-setting\-\_\-get\-\_\-member@{config\-\_\-setting\-\_\-get\-\_\-member}}
+\index{config\-\_\-setting\-\_\-get\-\_\-member@{config\-\_\-setting\-\_\-get\-\_\-member}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{config\-\_\-setting\-\_\-get\-\_\-member}]{\setlength{\rightskip}{0pt plus 5cm}{\bf config\-\_\-setting\-\_\-t}$\ast$ config\-\_\-setting\-\_\-get\-\_\-member (
+\begin{DoxyParamCaption}
+\item[{const {\bf config\-\_\-setting\-\_\-t} $\ast$}]{setting, }
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+)}}\label{libconfig_8c_ac49409f325b9cd30915be9583636e2b9}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_ac49409f325b9cd30915be9583636e2b9_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_ac49409f325b9cd30915be9583636e2b9_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_af689931f9bca3784ab8741e66105a194}{\index{libconfig.\-c@{libconfig.\-c}!config\-\_\-setting\-\_\-get\-\_\-string@{config\-\_\-setting\-\_\-get\-\_\-string}}
+\index{config\-\_\-setting\-\_\-get\-\_\-string@{config\-\_\-setting\-\_\-get\-\_\-string}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{config\-\_\-setting\-\_\-get\-\_\-string}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ config\-\_\-setting\-\_\-get\-\_\-string (
+\begin{DoxyParamCaption}
+\item[{const {\bf config\-\_\-setting\-\_\-t} $\ast$}]{setting}
+\end{DoxyParamCaption}
+)}}\label{libconfig_8c_af689931f9bca3784ab8741e66105a194}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{libconfig_8c_af689931f9bca3784ab8741e66105a194_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_a9383b482738faa79f7c2060815e09af7}{\index{libconfig.\-c@{libconfig.\-c}!config\-\_\-setting\-\_\-get\-\_\-string\-\_\-elem@{config\-\_\-setting\-\_\-get\-\_\-string\-\_\-elem}}
+\index{config\-\_\-setting\-\_\-get\-\_\-string\-\_\-elem@{config\-\_\-setting\-\_\-get\-\_\-string\-\_\-elem}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{config\-\_\-setting\-\_\-get\-\_\-string\-\_\-elem}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ config\-\_\-setting\-\_\-get\-\_\-string\-\_\-elem (
+\begin{DoxyParamCaption}
+\item[{const {\bf config\-\_\-setting\-\_\-t} $\ast$}]{vector, }
+\item[{int}]{idx}
+\end{DoxyParamCaption}
+)}}\label{libconfig_8c_a9383b482738faa79f7c2060815e09af7}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{libconfig_8c_a9383b482738faa79f7c2060815e09af7_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_a485aaa3d59f8db576897510b3224637e}{\index{libconfig.\-c@{libconfig.\-c}!config\-\_\-setting\-\_\-index@{config\-\_\-setting\-\_\-index}}
+\index{config\-\_\-setting\-\_\-index@{config\-\_\-setting\-\_\-index}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{config\-\_\-setting\-\_\-index}]{\setlength{\rightskip}{0pt plus 5cm}int config\-\_\-setting\-\_\-index (
+\begin{DoxyParamCaption}
+\item[{const {\bf config\-\_\-setting\-\_\-t} $\ast$}]{setting}
+\end{DoxyParamCaption}
+)}}\label{libconfig_8c_a485aaa3d59f8db576897510b3224637e}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_a485aaa3d59f8db576897510b3224637e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_a09bb6054f27159b3841e305cefd9abec}{\index{libconfig.\-c@{libconfig.\-c}!config\-\_\-setting\-\_\-length@{config\-\_\-setting\-\_\-length}}
+\index{config\-\_\-setting\-\_\-length@{config\-\_\-setting\-\_\-length}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{config\-\_\-setting\-\_\-length}]{\setlength{\rightskip}{0pt plus 5cm}int config\-\_\-setting\-\_\-length (
+\begin{DoxyParamCaption}
+\item[{const {\bf config\-\_\-setting\-\_\-t} $\ast$}]{setting}
+\end{DoxyParamCaption}
+)}}\label{libconfig_8c_a09bb6054f27159b3841e305cefd9abec}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{libconfig_8c_a09bb6054f27159b3841e305cefd9abec_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_ab23d3c2a0b14deae8f91fbbd15f37558}{\index{libconfig.\-c@{libconfig.\-c}!config\-\_\-setting\-\_\-lookup\-\_\-bool@{config\-\_\-setting\-\_\-lookup\-\_\-bool}}
+\index{config\-\_\-setting\-\_\-lookup\-\_\-bool@{config\-\_\-setting\-\_\-lookup\-\_\-bool}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{config\-\_\-setting\-\_\-lookup\-\_\-bool}]{\setlength{\rightskip}{0pt plus 5cm}int config\-\_\-setting\-\_\-lookup\-\_\-bool (
+\begin{DoxyParamCaption}
+\item[{const {\bf config\-\_\-setting\-\_\-t} $\ast$}]{setting, }
+\item[{const char $\ast$}]{name, }
+\item[{int $\ast$}]{value}
+\end{DoxyParamCaption}
+)}}\label{libconfig_8c_ab23d3c2a0b14deae8f91fbbd15f37558}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_ab23d3c2a0b14deae8f91fbbd15f37558_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_a4f8a15a356d8ad6c62c8936f04c64cee}{\index{libconfig.\-c@{libconfig.\-c}!config\-\_\-setting\-\_\-lookup\-\_\-float@{config\-\_\-setting\-\_\-lookup\-\_\-float}}
+\index{config\-\_\-setting\-\_\-lookup\-\_\-float@{config\-\_\-setting\-\_\-lookup\-\_\-float}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{config\-\_\-setting\-\_\-lookup\-\_\-float}]{\setlength{\rightskip}{0pt plus 5cm}int config\-\_\-setting\-\_\-lookup\-\_\-float (
+\begin{DoxyParamCaption}
+\item[{const {\bf config\-\_\-setting\-\_\-t} $\ast$}]{setting, }
+\item[{const char $\ast$}]{name, }
+\item[{double $\ast$}]{value}
+\end{DoxyParamCaption}
+)}}\label{libconfig_8c_a4f8a15a356d8ad6c62c8936f04c64cee}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_a4f8a15a356d8ad6c62c8936f04c64cee_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_afe90910186f1382a50d3e5a6df7e05cd}{\index{libconfig.\-c@{libconfig.\-c}!config\-\_\-setting\-\_\-lookup\-\_\-int@{config\-\_\-setting\-\_\-lookup\-\_\-int}}
+\index{config\-\_\-setting\-\_\-lookup\-\_\-int@{config\-\_\-setting\-\_\-lookup\-\_\-int}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{config\-\_\-setting\-\_\-lookup\-\_\-int}]{\setlength{\rightskip}{0pt plus 5cm}int config\-\_\-setting\-\_\-lookup\-\_\-int (
+\begin{DoxyParamCaption}
+\item[{const {\bf config\-\_\-setting\-\_\-t} $\ast$}]{setting, }
+\item[{const char $\ast$}]{name, }
+\item[{int $\ast$}]{value}
+\end{DoxyParamCaption}
+)}}\label{libconfig_8c_afe90910186f1382a50d3e5a6df7e05cd}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_afe90910186f1382a50d3e5a6df7e05cd_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_af042506234efc58f11af7e810677882a}{\index{libconfig.\-c@{libconfig.\-c}!config\-\_\-setting\-\_\-lookup\-\_\-int64@{config\-\_\-setting\-\_\-lookup\-\_\-int64}}
+\index{config\-\_\-setting\-\_\-lookup\-\_\-int64@{config\-\_\-setting\-\_\-lookup\-\_\-int64}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{config\-\_\-setting\-\_\-lookup\-\_\-int64}]{\setlength{\rightskip}{0pt plus 5cm}int config\-\_\-setting\-\_\-lookup\-\_\-int64 (
+\begin{DoxyParamCaption}
+\item[{const {\bf config\-\_\-setting\-\_\-t} $\ast$}]{setting, }
+\item[{const char $\ast$}]{name, }
+\item[{long long $\ast$}]{value}
+\end{DoxyParamCaption}
+)}}\label{libconfig_8c_af042506234efc58f11af7e810677882a}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_af042506234efc58f11af7e810677882a_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_a33fd9825276237c577b16768891d1de9}{\index{libconfig.\-c@{libconfig.\-c}!config\-\_\-setting\-\_\-lookup\-\_\-string@{config\-\_\-setting\-\_\-lookup\-\_\-string}}
+\index{config\-\_\-setting\-\_\-lookup\-\_\-string@{config\-\_\-setting\-\_\-lookup\-\_\-string}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{config\-\_\-setting\-\_\-lookup\-\_\-string}]{\setlength{\rightskip}{0pt plus 5cm}int config\-\_\-setting\-\_\-lookup\-\_\-string (
+\begin{DoxyParamCaption}
+\item[{const {\bf config\-\_\-setting\-\_\-t} $\ast$}]{setting, }
+\item[{const char $\ast$}]{name, }
+\item[{const char $\ast$$\ast$}]{value}
+\end{DoxyParamCaption}
+)}}\label{libconfig_8c_a33fd9825276237c577b16768891d1de9}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_a33fd9825276237c577b16768891d1de9_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_a325cf5713305d042849f55e65cc955d3}{\index{libconfig.\-c@{libconfig.\-c}!config\-\_\-setting\-\_\-remove@{config\-\_\-setting\-\_\-remove}}
+\index{config\-\_\-setting\-\_\-remove@{config\-\_\-setting\-\_\-remove}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{config\-\_\-setting\-\_\-remove}]{\setlength{\rightskip}{0pt plus 5cm}int config\-\_\-setting\-\_\-remove (
+\begin{DoxyParamCaption}
+\item[{{\bf config\-\_\-setting\-\_\-t} $\ast$}]{parent, }
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+)}}\label{libconfig_8c_a325cf5713305d042849f55e65cc955d3}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_a325cf5713305d042849f55e65cc955d3_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{libconfig_8c_a325cf5713305d042849f55e65cc955d3_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_a570ff5c5e53d8dbe8b848ffc4bef83b3}{\index{libconfig.\-c@{libconfig.\-c}!config\-\_\-setting\-\_\-remove\-\_\-elem@{config\-\_\-setting\-\_\-remove\-\_\-elem}}
+\index{config\-\_\-setting\-\_\-remove\-\_\-elem@{config\-\_\-setting\-\_\-remove\-\_\-elem}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{config\-\_\-setting\-\_\-remove\-\_\-elem}]{\setlength{\rightskip}{0pt plus 5cm}int config\-\_\-setting\-\_\-remove\-\_\-elem (
+\begin{DoxyParamCaption}
+\item[{{\bf config\-\_\-setting\-\_\-t} $\ast$}]{parent, }
+\item[{unsigned int}]{idx}
+\end{DoxyParamCaption}
+)}}\label{libconfig_8c_a570ff5c5e53d8dbe8b848ffc4bef83b3}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_a570ff5c5e53d8dbe8b848ffc4bef83b3_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{libconfig_8c_a570ff5c5e53d8dbe8b848ffc4bef83b3_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_a154c93131ed0ed7f7ad95febb5f70083}{\index{libconfig.\-c@{libconfig.\-c}!config\-\_\-setting\-\_\-set\-\_\-bool@{config\-\_\-setting\-\_\-set\-\_\-bool}}
+\index{config\-\_\-setting\-\_\-set\-\_\-bool@{config\-\_\-setting\-\_\-set\-\_\-bool}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{config\-\_\-setting\-\_\-set\-\_\-bool}]{\setlength{\rightskip}{0pt plus 5cm}int config\-\_\-setting\-\_\-set\-\_\-bool (
+\begin{DoxyParamCaption}
+\item[{{\bf config\-\_\-setting\-\_\-t} $\ast$}]{setting, }
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)}}\label{libconfig_8c_a154c93131ed0ed7f7ad95febb5f70083}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_a154c93131ed0ed7f7ad95febb5f70083_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_a276962afd13ec87f6c59a9644b73f1eb}{\index{libconfig.\-c@{libconfig.\-c}!config\-\_\-setting\-\_\-set\-\_\-bool\-\_\-elem@{config\-\_\-setting\-\_\-set\-\_\-bool\-\_\-elem}}
+\index{config\-\_\-setting\-\_\-set\-\_\-bool\-\_\-elem@{config\-\_\-setting\-\_\-set\-\_\-bool\-\_\-elem}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{config\-\_\-setting\-\_\-set\-\_\-bool\-\_\-elem}]{\setlength{\rightskip}{0pt plus 5cm}{\bf config\-\_\-setting\-\_\-t}$\ast$ config\-\_\-setting\-\_\-set\-\_\-bool\-\_\-elem (
+\begin{DoxyParamCaption}
+\item[{{\bf config\-\_\-setting\-\_\-t} $\ast$}]{vector, }
+\item[{int}]{idx, }
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)}}\label{libconfig_8c_a276962afd13ec87f6c59a9644b73f1eb}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_a276962afd13ec87f6c59a9644b73f1eb_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{libconfig_8c_a276962afd13ec87f6c59a9644b73f1eb_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_ae8dc9f7bb4e46c9bafebf51984885cba}{\index{libconfig.\-c@{libconfig.\-c}!config\-\_\-setting\-\_\-set\-\_\-float@{config\-\_\-setting\-\_\-set\-\_\-float}}
+\index{config\-\_\-setting\-\_\-set\-\_\-float@{config\-\_\-setting\-\_\-set\-\_\-float}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{config\-\_\-setting\-\_\-set\-\_\-float}]{\setlength{\rightskip}{0pt plus 5cm}int config\-\_\-setting\-\_\-set\-\_\-float (
+\begin{DoxyParamCaption}
+\item[{{\bf config\-\_\-setting\-\_\-t} $\ast$}]{setting, }
+\item[{double}]{value}
+\end{DoxyParamCaption}
+)}}\label{libconfig_8c_ae8dc9f7bb4e46c9bafebf51984885cba}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_ae8dc9f7bb4e46c9bafebf51984885cba_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_ae977a329b0dceb81f0c1f08556fd17bc}{\index{libconfig.\-c@{libconfig.\-c}!config\-\_\-setting\-\_\-set\-\_\-float\-\_\-elem@{config\-\_\-setting\-\_\-set\-\_\-float\-\_\-elem}}
+\index{config\-\_\-setting\-\_\-set\-\_\-float\-\_\-elem@{config\-\_\-setting\-\_\-set\-\_\-float\-\_\-elem}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{config\-\_\-setting\-\_\-set\-\_\-float\-\_\-elem}]{\setlength{\rightskip}{0pt plus 5cm}{\bf config\-\_\-setting\-\_\-t}$\ast$ config\-\_\-setting\-\_\-set\-\_\-float\-\_\-elem (
+\begin{DoxyParamCaption}
+\item[{{\bf config\-\_\-setting\-\_\-t} $\ast$}]{vector, }
+\item[{int}]{idx, }
+\item[{double}]{value}
+\end{DoxyParamCaption}
+)}}\label{libconfig_8c_ae977a329b0dceb81f0c1f08556fd17bc}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_ae977a329b0dceb81f0c1f08556fd17bc_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{libconfig_8c_ae977a329b0dceb81f0c1f08556fd17bc_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_a8d98395218294aa546f4befba4341f9c}{\index{libconfig.\-c@{libconfig.\-c}!config\-\_\-setting\-\_\-set\-\_\-format@{config\-\_\-setting\-\_\-set\-\_\-format}}
+\index{config\-\_\-setting\-\_\-set\-\_\-format@{config\-\_\-setting\-\_\-set\-\_\-format}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{config\-\_\-setting\-\_\-set\-\_\-format}]{\setlength{\rightskip}{0pt plus 5cm}int config\-\_\-setting\-\_\-set\-\_\-format (
+\begin{DoxyParamCaption}
+\item[{{\bf config\-\_\-setting\-\_\-t} $\ast$}]{setting, }
+\item[{short}]{format}
+\end{DoxyParamCaption}
+)}}\label{libconfig_8c_a8d98395218294aa546f4befba4341f9c}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{libconfig_8c_a8d98395218294aa546f4befba4341f9c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_ac37d5bf35294b74285a7386e2a213930}{\index{libconfig.\-c@{libconfig.\-c}!config\-\_\-setting\-\_\-set\-\_\-hook@{config\-\_\-setting\-\_\-set\-\_\-hook}}
+\index{config\-\_\-setting\-\_\-set\-\_\-hook@{config\-\_\-setting\-\_\-set\-\_\-hook}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{config\-\_\-setting\-\_\-set\-\_\-hook}]{\setlength{\rightskip}{0pt plus 5cm}void config\-\_\-setting\-\_\-set\-\_\-hook (
+\begin{DoxyParamCaption}
+\item[{{\bf config\-\_\-setting\-\_\-t} $\ast$}]{setting, }
+\item[{void $\ast$}]{hook}
+\end{DoxyParamCaption}
+)}}\label{libconfig_8c_ac37d5bf35294b74285a7386e2a213930}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_ac37d5bf35294b74285a7386e2a213930_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_a8a0e383a8f058ead09fa60bb1ae021e3}{\index{libconfig.\-c@{libconfig.\-c}!config\-\_\-setting\-\_\-set\-\_\-int@{config\-\_\-setting\-\_\-set\-\_\-int}}
+\index{config\-\_\-setting\-\_\-set\-\_\-int@{config\-\_\-setting\-\_\-set\-\_\-int}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{config\-\_\-setting\-\_\-set\-\_\-int}]{\setlength{\rightskip}{0pt plus 5cm}int config\-\_\-setting\-\_\-set\-\_\-int (
+\begin{DoxyParamCaption}
+\item[{{\bf config\-\_\-setting\-\_\-t} $\ast$}]{setting, }
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)}}\label{libconfig_8c_a8a0e383a8f058ead09fa60bb1ae021e3}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_a8a0e383a8f058ead09fa60bb1ae021e3_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_a8a0e383a8f058ead09fa60bb1ae021e3_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_abaa4ff3934618a3d7075cf9c449aa963}{\index{libconfig.\-c@{libconfig.\-c}!config\-\_\-setting\-\_\-set\-\_\-int64@{config\-\_\-setting\-\_\-set\-\_\-int64}}
+\index{config\-\_\-setting\-\_\-set\-\_\-int64@{config\-\_\-setting\-\_\-set\-\_\-int64}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{config\-\_\-setting\-\_\-set\-\_\-int64}]{\setlength{\rightskip}{0pt plus 5cm}int config\-\_\-setting\-\_\-set\-\_\-int64 (
+\begin{DoxyParamCaption}
+\item[{{\bf config\-\_\-setting\-\_\-t} $\ast$}]{setting, }
+\item[{long long}]{value}
+\end{DoxyParamCaption}
+)}}\label{libconfig_8c_abaa4ff3934618a3d7075cf9c449aa963}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{libconfig_8c_abaa4ff3934618a3d7075cf9c449aa963_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_abaa4ff3934618a3d7075cf9c449aa963_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_abcf7fe9dbf25a31391346a2536fc1c71}{\index{libconfig.\-c@{libconfig.\-c}!config\-\_\-setting\-\_\-set\-\_\-int64\-\_\-elem@{config\-\_\-setting\-\_\-set\-\_\-int64\-\_\-elem}}
+\index{config\-\_\-setting\-\_\-set\-\_\-int64\-\_\-elem@{config\-\_\-setting\-\_\-set\-\_\-int64\-\_\-elem}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{config\-\_\-setting\-\_\-set\-\_\-int64\-\_\-elem}]{\setlength{\rightskip}{0pt plus 5cm}{\bf config\-\_\-setting\-\_\-t}$\ast$ config\-\_\-setting\-\_\-set\-\_\-int64\-\_\-elem (
+\begin{DoxyParamCaption}
+\item[{{\bf config\-\_\-setting\-\_\-t} $\ast$}]{vector, }
+\item[{int}]{idx, }
+\item[{long long}]{value}
+\end{DoxyParamCaption}
+)}}\label{libconfig_8c_abcf7fe9dbf25a31391346a2536fc1c71}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_abcf7fe9dbf25a31391346a2536fc1c71_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{libconfig_8c_abcf7fe9dbf25a31391346a2536fc1c71_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_a3ccb7b78cf6bb5e1affee4bf28f7e2f7}{\index{libconfig.\-c@{libconfig.\-c}!config\-\_\-setting\-\_\-set\-\_\-int\-\_\-elem@{config\-\_\-setting\-\_\-set\-\_\-int\-\_\-elem}}
+\index{config\-\_\-setting\-\_\-set\-\_\-int\-\_\-elem@{config\-\_\-setting\-\_\-set\-\_\-int\-\_\-elem}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{config\-\_\-setting\-\_\-set\-\_\-int\-\_\-elem}]{\setlength{\rightskip}{0pt plus 5cm}{\bf config\-\_\-setting\-\_\-t}$\ast$ config\-\_\-setting\-\_\-set\-\_\-int\-\_\-elem (
+\begin{DoxyParamCaption}
+\item[{{\bf config\-\_\-setting\-\_\-t} $\ast$}]{vector, }
+\item[{int}]{idx, }
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)}}\label{libconfig_8c_a3ccb7b78cf6bb5e1affee4bf28f7e2f7}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_a3ccb7b78cf6bb5e1affee4bf28f7e2f7_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{libconfig_8c_a3ccb7b78cf6bb5e1affee4bf28f7e2f7_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_a6a5a5b13254c02de72eaa464ad2d4fd3}{\index{libconfig.\-c@{libconfig.\-c}!config\-\_\-setting\-\_\-set\-\_\-string@{config\-\_\-setting\-\_\-set\-\_\-string}}
+\index{config\-\_\-setting\-\_\-set\-\_\-string@{config\-\_\-setting\-\_\-set\-\_\-string}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{config\-\_\-setting\-\_\-set\-\_\-string}]{\setlength{\rightskip}{0pt plus 5cm}int config\-\_\-setting\-\_\-set\-\_\-string (
+\begin{DoxyParamCaption}
+\item[{{\bf config\-\_\-setting\-\_\-t} $\ast$}]{setting, }
+\item[{const char $\ast$}]{value}
+\end{DoxyParamCaption}
+)}}\label{libconfig_8c_a6a5a5b13254c02de72eaa464ad2d4fd3}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_a6a5a5b13254c02de72eaa464ad2d4fd3_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_a02a5bb4c2536bfe733da9e5722e3a922}{\index{libconfig.\-c@{libconfig.\-c}!config\-\_\-setting\-\_\-set\-\_\-string\-\_\-elem@{config\-\_\-setting\-\_\-set\-\_\-string\-\_\-elem}}
+\index{config\-\_\-setting\-\_\-set\-\_\-string\-\_\-elem@{config\-\_\-setting\-\_\-set\-\_\-string\-\_\-elem}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{config\-\_\-setting\-\_\-set\-\_\-string\-\_\-elem}]{\setlength{\rightskip}{0pt plus 5cm}{\bf config\-\_\-setting\-\_\-t}$\ast$ config\-\_\-setting\-\_\-set\-\_\-string\-\_\-elem (
+\begin{DoxyParamCaption}
+\item[{{\bf config\-\_\-setting\-\_\-t} $\ast$}]{vector, }
+\item[{int}]{idx, }
+\item[{const char $\ast$}]{value}
+\end{DoxyParamCaption}
+)}}\label{libconfig_8c_a02a5bb4c2536bfe733da9e5722e3a922}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_a02a5bb4c2536bfe733da9e5722e3a922_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{libconfig_8c_a02a5bb4c2536bfe733da9e5722e3a922_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_ade4a6d8cd3b6df32c30ddf8ee4feb04a}{\index{libconfig.\-c@{libconfig.\-c}!config\-\_\-write@{config\-\_\-write}}
+\index{config\-\_\-write@{config\-\_\-write}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{config\-\_\-write}]{\setlength{\rightskip}{0pt plus 5cm}void config\-\_\-write (
+\begin{DoxyParamCaption}
+\item[{const {\bf config\-\_\-t} $\ast$}]{config, }
+\item[{F\-I\-L\-E $\ast$}]{stream}
+\end{DoxyParamCaption}
+)}}\label{libconfig_8c_ade4a6d8cd3b6df32c30ddf8ee4feb04a}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_ade4a6d8cd3b6df32c30ddf8ee4feb04a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_ade4a6d8cd3b6df32c30ddf8ee4feb04a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_adfbb6c3f9658d6c1acef8f10c3cc275c}{\index{libconfig.\-c@{libconfig.\-c}!config\-\_\-write\-\_\-file@{config\-\_\-write\-\_\-file}}
+\index{config\-\_\-write\-\_\-file@{config\-\_\-write\-\_\-file}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{config\-\_\-write\-\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}int config\-\_\-write\-\_\-file (
+\begin{DoxyParamCaption}
+\item[{{\bf config\-\_\-t} $\ast$}]{config, }
+\item[{const char $\ast$}]{filename}
+\end{DoxyParamCaption}
+)}}\label{libconfig_8c_adfbb6c3f9658d6c1acef8f10c3cc275c}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_adfbb6c3f9658d6c1acef8f10c3cc275c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{libconfig_8c_adfbb6c3f9658d6c1acef8f10c3cc275c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_ad47b2b15a356db34f1d630ce2fb6ac5a}{\index{libconfig.\-c@{libconfig.\-c}!libconfig\-\_\-yylex\-\_\-init\-\_\-extra@{libconfig\-\_\-yylex\-\_\-init\-\_\-extra}}
+\index{libconfig\-\_\-yylex\-\_\-init\-\_\-extra@{libconfig\-\_\-yylex\-\_\-init\-\_\-extra}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{libconfig\-\_\-yylex\-\_\-init\-\_\-extra}]{\setlength{\rightskip}{0pt plus 5cm}int libconfig\-\_\-yylex\-\_\-init\-\_\-extra (
+\begin{DoxyParamCaption}
+\item[{struct {\bf scan\-\_\-context} $\ast$}]{scan\-\_\-ctx, }
+\item[{{\bf yyscan\-\_\-t} $\ast$}]{scanner}
+\end{DoxyParamCaption}
+)}}\label{libconfig_8c_ad47b2b15a356db34f1d630ce2fb6ac5a}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_ad47b2b15a356db34f1d630ce2fb6ac5a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{libconfig_8c_a8ea043923cee044f92acb84d6c94a92a}{\index{libconfig.\-c@{libconfig.\-c}!libconfig\-\_\-yyparse@{libconfig\-\_\-yyparse}}
+\index{libconfig\-\_\-yyparse@{libconfig\-\_\-yyparse}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{libconfig\-\_\-yyparse}]{\setlength{\rightskip}{0pt plus 5cm}int libconfig\-\_\-yyparse (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{scanner, }
+\item[{struct {\bf parse\-\_\-context} $\ast$}]{ctx, }
+\item[{struct {\bf scan\-\_\-context} $\ast$}]{scan\-\_\-ctx}
+\end{DoxyParamCaption}
+)}}\label{libconfig_8c_a8ea043923cee044f92acb84d6c94a92a}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfig_8c_a8ea043923cee044f92acb84d6c94a92a_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{libconfig_8c_a63729b9857c272952a84d2b6e8421bcf}{\index{libconfig.\-c@{libconfig.\-c}!\-\_\-\-\_\-io\-\_\-error@{\-\_\-\-\_\-io\-\_\-error}}
+\index{\-\_\-\-\_\-io\-\_\-error@{\-\_\-\-\_\-io\-\_\-error}!libconfig.c@{libconfig.\-c}}
+\subsubsection[{\-\_\-\-\_\-io\-\_\-error}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ \-\_\-\-\_\-io\-\_\-error = \char`\"{}file I/O error\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}}\label{libconfig_8c_a63729b9857c272952a84d2b6e8421bcf}

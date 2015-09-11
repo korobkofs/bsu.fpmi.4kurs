@@ -1,0 +1,237 @@
+\hypertarget{classcvflann_1_1lsh_1_1LshTable}{\section{cvflann\-:\-:lsh\-:\-:Lsh\-Table$<$ Element\-Type $>$ Class Template Reference}
+\label{classcvflann_1_1lsh_1_1LshTable}\index{cvflann\-::lsh\-::\-Lsh\-Table$<$ Element\-Type $>$@{cvflann\-::lsh\-::\-Lsh\-Table$<$ Element\-Type $>$}}
+}
+
+
+{\ttfamily \#include $<$lsh\-\_\-table.\-h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{core__c_8h_a035af1d430a8c9a1d115cbfb6c8e25dc}{std\-::map}$<$ \hyperlink{namespacecvflann_1_1lsh_a798313f0f282f24b311c4cc90e2a6619}{Bucket\-Key}, \\*
+\hyperlink{namespacecvflann_1_1lsh_aef9e4f70918d6013ff72020141fa03d0}{Bucket} $>$ \hyperlink{classcvflann_1_1lsh_1_1LshTable_aaec536a20e7ed000f05966d33fba1c3a}{Buckets\-Space}
+\item 
+typedef std\-::vector$<$ \hyperlink{namespacecvflann_1_1lsh_aef9e4f70918d6013ff72020141fa03d0}{Bucket} $>$ \hyperlink{classcvflann_1_1lsh_1_1LshTable_a5158c2837006305fa506668d12050d67}{Buckets\-Speed}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcvflann_1_1lsh_1_1LshTable_ae93b248f42dd10484b3a79977b9a22d1}{Lsh\-Table} ()
+\item 
+\hyperlink{classcvflann_1_1lsh_1_1LshTable_a291b3e5109005a16e71d9cbee3c272e4}{Lsh\-Table} (unsigned int, unsigned int)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcvflann_1_1lsh_1_1LshTable_abcad1b9dca00f0d7b4f6751b8e2efcaf}{add} (unsigned int \hyperlink{highgui__c_8h_ad4670c92695d4327c21292905a803901}{value}, const Element\-Type $\ast$feature)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcvflann_1_1lsh_1_1LshTable_a0364641a65b106381f2abd2f3f7aa9dd}{add} (\hyperlink{classcvflann_1_1Matrix}{Matrix}$<$ Element\-Type $>$ dataset)
+\item 
+const \hyperlink{namespacecvflann_1_1lsh_aef9e4f70918d6013ff72020141fa03d0}{Bucket} $\ast$ \hyperlink{classcvflann_1_1lsh_1_1LshTable_a7a4e2a63825c956c8db1774bf4551028}{get\-Bucket\-From\-Key} (\hyperlink{namespacecvflann_1_1lsh_a798313f0f282f24b311c4cc90e2a6619}{Bucket\-Key} \hyperlink{core__c_8h_a68cf695b604d08c0b6f6f6bb282a6586}{key}) const 
+\item 
+size\-\_\-t \hyperlink{classcvflann_1_1lsh_1_1LshTable_a14b2c3fa4250d86f2ea6dce52fb04259}{get\-Key} (const Element\-Type $\ast$) const 
+\item 
+\hyperlink{structcvflann_1_1lsh_1_1LshStats}{Lsh\-Stats} \hyperlink{classcvflann_1_1lsh_1_1LshTable_ac7dbc34e5b5c5893150bb5bb81938a4a}{get\-Stats} () const 
+\item 
+{\footnotesize template$<$$>$ }\\\hyperlink{classcvflann_1_1lsh_1_1LshTable_a3e63596e7c91583059b7c2257ac0edd6}{Lsh\-Table} (unsigned int feature\-\_\-size, unsigned int subsignature\-\_\-size)
+\item 
+{\footnotesize template$<$$>$ }\\size\-\_\-t \hyperlink{classcvflann_1_1lsh_1_1LshTable_a29baafdaf992f86bf062c5b18f5e2be2}{get\-Key} (const unsigned char $\ast$feature) const
+\item 
+{\footnotesize template$<$$>$ }\\\hyperlink{structcvflann_1_1lsh_1_1LshStats}{Lsh\-Stats} \hyperlink{classcvflann_1_1lsh_1_1LshTable_a891b6401cfe3f0d565185f983bcaed8c}{get\-Stats} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Element\-Type$>$class cvflann\-::lsh\-::\-Lsh\-Table$<$ Element\-Type $>$}
+
+Lsh hash table. As its key is a sub-\/feature, and as usually the size of it is pretty small, we keep it as a continuous memory array. The value is an index in the corpus of features (we keep it as an unsigned int for pure memory reasons, it could be a size\-\_\-t) 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classcvflann_1_1lsh_1_1LshTable_aaec536a20e7ed000f05966d33fba1c3a}{\index{cvflann\-::lsh\-::\-Lsh\-Table@{cvflann\-::lsh\-::\-Lsh\-Table}!Buckets\-Space@{Buckets\-Space}}
+\index{Buckets\-Space@{Buckets\-Space}!cvflann::lsh::LshTable@{cvflann\-::lsh\-::\-Lsh\-Table}}
+\subsubsection[{Buckets\-Space}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Element\-Type$>$ typedef {\bf std\-::map}$<${\bf Bucket\-Key}, {\bf Bucket}$>$ {\bf cvflann\-::lsh\-::\-Lsh\-Table}$<$ Element\-Type $>$\-::{\bf Buckets\-Space}}}\label{classcvflann_1_1lsh_1_1LshTable_aaec536a20e7ed000f05966d33fba1c3a}
+A container of all the feature indices. Optimized for space \hypertarget{classcvflann_1_1lsh_1_1LshTable_a5158c2837006305fa506668d12050d67}{\index{cvflann\-::lsh\-::\-Lsh\-Table@{cvflann\-::lsh\-::\-Lsh\-Table}!Buckets\-Speed@{Buckets\-Speed}}
+\index{Buckets\-Speed@{Buckets\-Speed}!cvflann::lsh::LshTable@{cvflann\-::lsh\-::\-Lsh\-Table}}
+\subsubsection[{Buckets\-Speed}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Element\-Type$>$ typedef std\-::vector$<${\bf Bucket}$>$ {\bf cvflann\-::lsh\-::\-Lsh\-Table}$<$ Element\-Type $>$\-::{\bf Buckets\-Speed}}}\label{classcvflann_1_1lsh_1_1LshTable_a5158c2837006305fa506668d12050d67}
+A container of all the feature indices. Optimized for speed 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcvflann_1_1lsh_1_1LshTable_ae93b248f42dd10484b3a79977b9a22d1}{\index{cvflann\-::lsh\-::\-Lsh\-Table@{cvflann\-::lsh\-::\-Lsh\-Table}!Lsh\-Table@{Lsh\-Table}}
+\index{Lsh\-Table@{Lsh\-Table}!cvflann::lsh::LshTable@{cvflann\-::lsh\-::\-Lsh\-Table}}
+\subsubsection[{Lsh\-Table}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Element\-Type$>$ {\bf cvflann\-::lsh\-::\-Lsh\-Table}$<$ Element\-Type $>$\-::{\bf Lsh\-Table} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcvflann_1_1lsh_1_1LshTable_ae93b248f42dd10484b3a79977b9a22d1}
+Default constructor \hypertarget{classcvflann_1_1lsh_1_1LshTable_a291b3e5109005a16e71d9cbee3c272e4}{\index{cvflann\-::lsh\-::\-Lsh\-Table@{cvflann\-::lsh\-::\-Lsh\-Table}!Lsh\-Table@{Lsh\-Table}}
+\index{Lsh\-Table@{Lsh\-Table}!cvflann::lsh::LshTable@{cvflann\-::lsh\-::\-Lsh\-Table}}
+\subsubsection[{Lsh\-Table}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Element\-Type$>$ {\bf cvflann\-::lsh\-::\-Lsh\-Table}$<$ Element\-Type $>$\-::{\bf Lsh\-Table} (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{int, }
+\item[{unsigned}]{int}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcvflann_1_1lsh_1_1LshTable_a291b3e5109005a16e71d9cbee3c272e4}
+Default constructor Create the mask and allocate the memory 
+\begin{DoxyParams}{Parameters}
+{\em feature\-\_\-size} & is the size of the feature (considered as a Element\-Type\mbox{[}\mbox{]}) \\
+\hline
+{\em key\-\_\-size} & is the number of bits that are turned on in the feature \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcvflann_1_1lsh_1_1LshTable_a3e63596e7c91583059b7c2257ac0edd6}{\index{cvflann\-::lsh\-::\-Lsh\-Table@{cvflann\-::lsh\-::\-Lsh\-Table}!Lsh\-Table@{Lsh\-Table}}
+\index{Lsh\-Table@{Lsh\-Table}!cvflann::lsh::LshTable@{cvflann\-::lsh\-::\-Lsh\-Table}}
+\subsubsection[{Lsh\-Table}]{\setlength{\rightskip}{0pt plus 5cm}template$<$$>$ {\bf cvflann\-::lsh\-::\-Lsh\-Table}$<$ unsigned char $>$\-::{\bf Lsh\-Table} (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{feature\-\_\-size, }
+\item[{unsigned int}]{subsignature\-\_\-size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcvflann_1_1lsh_1_1LshTable_a3e63596e7c91583059b7c2257ac0edd6}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcvflann_1_1lsh_1_1LshTable_abcad1b9dca00f0d7b4f6751b8e2efcaf}{\index{cvflann\-::lsh\-::\-Lsh\-Table@{cvflann\-::lsh\-::\-Lsh\-Table}!add@{add}}
+\index{add@{add}!cvflann::lsh::LshTable@{cvflann\-::lsh\-::\-Lsh\-Table}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Element\-Type$>$ {\bf void} {\bf cvflann\-::lsh\-::\-Lsh\-Table}$<$ Element\-Type $>$\-::add (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{value, }
+\item[{const Element\-Type $\ast$}]{feature}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcvflann_1_1lsh_1_1LshTable_abcad1b9dca00f0d7b4f6751b8e2efcaf}
+Add a feature to the table 
+\begin{DoxyParams}{Parameters}
+{\em value} & the value to store for that feature \\
+\hline
+{\em feature} & the feature itself \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcvflann_1_1lsh_1_1LshTable_abcad1b9dca00f0d7b4f6751b8e2efcaf_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcvflann_1_1lsh_1_1LshTable_abcad1b9dca00f0d7b4f6751b8e2efcaf_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcvflann_1_1lsh_1_1LshTable_a0364641a65b106381f2abd2f3f7aa9dd}{\index{cvflann\-::lsh\-::\-Lsh\-Table@{cvflann\-::lsh\-::\-Lsh\-Table}!add@{add}}
+\index{add@{add}!cvflann::lsh::LshTable@{cvflann\-::lsh\-::\-Lsh\-Table}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Element\-Type$>$ {\bf void} {\bf cvflann\-::lsh\-::\-Lsh\-Table}$<$ Element\-Type $>$\-::add (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix}$<$ Element\-Type $>$}]{dataset}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcvflann_1_1lsh_1_1LshTable_a0364641a65b106381f2abd2f3f7aa9dd}
+Add a set of features to the table 
+\begin{DoxyParams}{Parameters}
+{\em dataset} & the values to store \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcvflann_1_1lsh_1_1LshTable_a0364641a65b106381f2abd2f3f7aa9dd_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcvflann_1_1lsh_1_1LshTable_a7a4e2a63825c956c8db1774bf4551028}{\index{cvflann\-::lsh\-::\-Lsh\-Table@{cvflann\-::lsh\-::\-Lsh\-Table}!get\-Bucket\-From\-Key@{get\-Bucket\-From\-Key}}
+\index{get\-Bucket\-From\-Key@{get\-Bucket\-From\-Key}!cvflann::lsh::LshTable@{cvflann\-::lsh\-::\-Lsh\-Table}}
+\subsubsection[{get\-Bucket\-From\-Key}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Element\-Type$>$ const {\bf Bucket}$\ast$ {\bf cvflann\-::lsh\-::\-Lsh\-Table}$<$ Element\-Type $>$\-::get\-Bucket\-From\-Key (
+\begin{DoxyParamCaption}
+\item[{{\bf Bucket\-Key}}]{key}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcvflann_1_1lsh_1_1LshTable_a7a4e2a63825c956c8db1774bf4551028}
+Get a bucket given the key 
+\begin{DoxyParams}{Parameters}
+{\em key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcvflann_1_1lsh_1_1LshTable_a7a4e2a63825c956c8db1774bf4551028_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcvflann_1_1lsh_1_1LshTable_a14b2c3fa4250d86f2ea6dce52fb04259}{\index{cvflann\-::lsh\-::\-Lsh\-Table@{cvflann\-::lsh\-::\-Lsh\-Table}!get\-Key@{get\-Key}}
+\index{get\-Key@{get\-Key}!cvflann::lsh::LshTable@{cvflann\-::lsh\-::\-Lsh\-Table}}
+\subsubsection[{get\-Key}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Element\-Type$>$ size\-\_\-t {\bf cvflann\-::lsh\-::\-Lsh\-Table}$<$ Element\-Type $>$\-::get\-Key (
+\begin{DoxyParamCaption}
+\item[{const Element\-Type $\ast$}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcvflann_1_1lsh_1_1LshTable_a14b2c3fa4250d86f2ea6dce52fb04259}
+Compute the sub-\/signature of a feature 
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcvflann_1_1lsh_1_1LshTable_a14b2c3fa4250d86f2ea6dce52fb04259_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcvflann_1_1lsh_1_1LshTable_a29baafdaf992f86bf062c5b18f5e2be2}{\index{cvflann\-::lsh\-::\-Lsh\-Table@{cvflann\-::lsh\-::\-Lsh\-Table}!get\-Key@{get\-Key}}
+\index{get\-Key@{get\-Key}!cvflann::lsh::LshTable@{cvflann\-::lsh\-::\-Lsh\-Table}}
+\subsubsection[{get\-Key}]{\setlength{\rightskip}{0pt plus 5cm}template$<$$>$ size\-\_\-t {\bf cvflann\-::lsh\-::\-Lsh\-Table}$<$ unsigned char $>$\-::get\-Key (
+\begin{DoxyParamCaption}
+\item[{const unsigned char $\ast$}]{feature}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcvflann_1_1lsh_1_1LshTable_a29baafdaf992f86bf062c5b18f5e2be2}
+Return the Subsignature of a feature 
+\begin{DoxyParams}{Parameters}
+{\em feature} & the feature to analyze \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcvflann_1_1lsh_1_1LshTable_ac7dbc34e5b5c5893150bb5bb81938a4a}{\index{cvflann\-::lsh\-::\-Lsh\-Table@{cvflann\-::lsh\-::\-Lsh\-Table}!get\-Stats@{get\-Stats}}
+\index{get\-Stats@{get\-Stats}!cvflann::lsh::LshTable@{cvflann\-::lsh\-::\-Lsh\-Table}}
+\subsubsection[{get\-Stats}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Element\-Type$>$ {\bf Lsh\-Stats} {\bf cvflann\-::lsh\-::\-Lsh\-Table}$<$ Element\-Type $>$\-::get\-Stats (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcvflann_1_1lsh_1_1LshTable_ac7dbc34e5b5c5893150bb5bb81938a4a}
+Get statistics about the table \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classcvflann_1_1lsh_1_1LshTable_a891b6401cfe3f0d565185f983bcaed8c}{\index{cvflann\-::lsh\-::\-Lsh\-Table@{cvflann\-::lsh\-::\-Lsh\-Table}!get\-Stats@{get\-Stats}}
+\index{get\-Stats@{get\-Stats}!cvflann::lsh::LshTable@{cvflann\-::lsh\-::\-Lsh\-Table}}
+\subsubsection[{get\-Stats}]{\setlength{\rightskip}{0pt plus 5cm}template$<$$>$ {\bf Lsh\-Stats} {\bf cvflann\-::lsh\-::\-Lsh\-Table}$<$ unsigned char $>$\-::get\-Stats (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcvflann_1_1lsh_1_1LshTable_a891b6401cfe3f0d565185f983bcaed8c}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{classcvflann_1_1lsh_1_1LshTable_a891b6401cfe3f0d565185f983bcaed8c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/flann/\hyperlink{lsh__table_8h}{lsh\-\_\-table.\-h}\end{DoxyCompactItemize}

@@ -1,0 +1,4 @@
+<map id="cv::videostab::DeblurerBase" name="cv::videostab::DeblurerBase">
+<area shape="rect" id="node2" href="$classcv_1_1videostab_1_1NullDeblurer.html" title="cv::videostab::NullDeblurer" alt="" coords="5,88,184,115"/>
+<area shape="rect" id="node3" href="$classcv_1_1videostab_1_1WeightingDeblurer.html" title="cv::videostab::Weighting\lDeblurer" alt="" coords="209,81,375,122"/>
+</map>

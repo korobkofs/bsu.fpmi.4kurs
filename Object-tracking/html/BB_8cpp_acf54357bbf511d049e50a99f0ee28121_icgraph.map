@@ -1,0 +1,5 @@
+<map id="calculateBBCenter" name="calculateBBCenter">
+<area shape="rect" id="node2" href="$BB_8h.html#a2ef4a63d6f593c4477ece315fe7d1ae4" title="Creates numM x numN points grid on BBox. Points ordered in 1 dimensional array (x1, y1, x2, y2). " alt="" coords="185,12,311,39"/>
+<area shape="rect" id="node3" href="$FBTrack_8h.html#a2c818794e6fe6aa3f6efdc9c46ffd164" title="Calculate the bounding box of an Object in a following Image. Imgs aren&#39;t changed. " alt="" coords="361,12,423,39"/>
+<area shape="rect" id="node4" href="$classtld_1_1MedianFlowTracker.html#addcc103122a93f098583b8f9cf72e8ff" title="Calculate the bounding box of an Object in a following Image (with analyse of success and correctness..." alt="" coords="473,5,631,46"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="cv::gpu::resize" name="cv::gpu::resize">
+<area shape="rect" id="node2" href="$namespacetld.html#a7facbe495da1f0e058c78b9b7dea412a" title="Returns mean&#45;normalized patch, the image must be greyscale. " alt="" coords="163,45,301,72"/>
+<area shape="rect" id="node3" href="$namespacetld.html#ac965be65b1eae7ec666c3bfbe9da065e" title="Extracts normalized patch from the image by rectangle. " alt="" coords="350,38,517,79"/>
+<area shape="rect" id="node4" href="$namespacetld.html#a44b5f4d4d087d3369129bdc92e2a555a" title="Extracts normalized patch from the image by boundary (array). " alt="" coords="566,5,733,46"/>
+<area shape="rect" id="node6" href="$namespacetld.html#aa6c803037b38609e1fceadbb2ad8a75c" title="Extracts normalized patch from the image by reactangle. " alt="" coords="566,70,733,111"/>
+<area shape="rect" id="node5" href="$classtld_1_1NNClassifier.html#a88fe1649014e887a12a5a57a552819f2" title="Compares patch (obtain from the image and the index of window) to positive and negative patches..." alt="" coords="782,5,909,46"/>
+<area shape="rect" id="node7" href="$classtld_1_1NNClassifier.html#a4b926da10ab0ce0d05fdb19b7e90bf8b" title="Compares patch (obtain from the image and the bounding box) to positive and negative patches..." alt="" coords="782,70,909,111"/>
+</map>

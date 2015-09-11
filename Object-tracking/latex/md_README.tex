@@ -1,0 +1,136 @@
+This is a C++ implementation of Open\-T\-L\-D that was originally published in M\-A\-T\-L\-A\-B by Zdenek Kalal. Open\-T\-L\-D is used for tracking objects in video streams. What makes this algorithm outstanding is that it does not make use of any training data. This implementation is based solely on open source libraries, meaning that you do not need any commercial products to compile or run it.
+
+The easiest way to get started is to download the precompiled \href{https://github.com/gnebehay/OpenTLD/releases}{\tt binaries} that are available for Windows and Ubuntu 12.\-04. There is also a \href{https://launchpad.net/~opentld/+archive/ppa}{\tt P\-P\-A} available for Ubuntu 12.\-04. You just have to execute these commands\-: ``` sudo add-\/apt-\/repository ppa\-:opentld/ppa sudo apt-\/get update sudo apt-\/get install opentld ```
+
+If you have a webcam attached to your P\-C, you can simply execute opentld (on Linux) or opentld.\-exe (on Windows) in order to try it out. You can use the graphical configuration dialog as well, you just have to execite qopentld (on Linux) or qopentld.\-exe (on Windows). For other configuration options, please see below.
+
+A documentation of the internals as well as other possibly helpful information is contained in this \href{https://github.com/downloads/gnebehay/OpenTLD/gnebehay_thesis_msc.pdf}{\tt master thesis}.
+
+\section*{Usage}
+
+\subsection*{Keyboard shortcuts}
+
+
+\begin{DoxyItemize}
+\item {\ttfamily q} quit
+\item {\ttfamily b} remember current frame as background model / clear background
+\item {\ttfamily c} clear model and stop tracking git
+\item {\ttfamily l} toggle learning
+\item {\ttfamily a} toggle alternating mode (if true, detector is switched off when tracker is available)
+\item {\ttfamily e} export model to file specified in configuration parameter \char`\"{}model\-Export\-File\char`\"{}
+\item {\ttfamily i} import model from file specified in configuration parameter \char`\"{}model\-Path\char`\"{}
+\item {\ttfamily r} clear model, let user reinit tracking
+\end{DoxyItemize}
+
+\subsection*{Command line options}
+
+\subsubsection*{Synopsis}
+
+{\ttfamily opentld \mbox{[}option arguments\mbox{]} \mbox{[}arguments\mbox{]}}
+
+\subsubsection*{option arguments}
+
+
+\begin{DoxyItemize}
+\item {\ttfamily \mbox{[}-\/a $<$start\-Frame\-Number$>$\mbox{]}} video starts at the frame\-Number {\itshape start\-Frame\-Number}
+\item {\ttfamily \mbox{[}-\/b $<$x,y,w,h$>$\mbox{]}} Initial bounding box
+\item {\ttfamily \mbox{[}-\/d $<$device$>$\mbox{]}} select input device\-: {\itshape device}=(I\-M\-G\-S$\vert$\-C\-A\-M$\vert$\-V\-I\-D$\vert$\-S\-T\-R\-E\-A\-M) {\itshape I\-M\-G\-S}\-: capture from images {\itshape C\-A\-M}\-: capture from connected camera {\itshape V\-I\-D}\-: capture from a video {\itshape S\-T\-R\-E\-A\-M}\-: capture from R\-T\-S\-P stream
+\item {\ttfamily \mbox{[}-\/e $<$path$>$\mbox{]}} export model after run to {\itshape path}
+\item {\ttfamily \mbox{[}-\/f\mbox{]}} shows foreground
+\item {\ttfamily \mbox{[}-\/i $<$path$>$\mbox{]}} {\itshape path} to the images or to the video.
+\item {\ttfamily \mbox{[}-\/j $<$number$>$\mbox{]}} show trajectory for the last {\itshape number} frames
+\item {\ttfamily \mbox{[}-\/h\mbox{]}} shows help
+\item {\ttfamily \mbox{[}-\/m $<$path$>$\mbox{]}} if specified load a model from {\itshape path}. An initial\-Bounding\-Box must be specified or select\-Manually must be true.
+\item {\ttfamily \mbox{[}-\/n $<$number$>$\mbox{]}} Specifies the video device to use (defaults to 0). Useful to select a different camera when multiple cameras are connected.
+\item {\ttfamily \mbox{[}-\/p path\mbox{]}} prints results into the file {\itshape path}
+\item {\ttfamily \mbox{[}-\/s\mbox{]}} if set, user can select initial bounding box
+\item {\ttfamily \mbox{[}-\/t $<$theta$>$\mbox{]}} threshold for determining positive results
+\item {\ttfamily \mbox{[}-\/z $<$last\-Frame\-Number$>$\mbox{]}} video ends at the frame\-Number {\itshape last\-Frame\-Number}. If {\itshape last\-Frame\-Number} is 0 or the option argument isn't specified means all frames are taken.
+\end{DoxyItemize}
+
+\subsubsection*{Arguments}
+
+{\ttfamily \mbox{[}C\-O\-N\-F\-I\-G\-\_\-\-F\-I\-L\-E\mbox{]}} path to config file
+
+\subsection*{Config file}
+
+Look into the \href{https://github.com/gnebehay/OpenTLD/blob/master/res/conf/config-sample.cfg}{\tt sample-\/config-\/file} for more information.
+
+\section*{Building}
+
+\subsection*{Dependencies}
+
+
+\begin{DoxyItemize}
+\item Open\-C\-V
+\item C\-Make
+\item libconfig++ (optional)
+\item Qt4 (optional)
+\end{DoxyItemize}
+
+\subsection*{Compiling}
+
+\subsubsection*{C\-Make}
+
+Open\-T\-L\-D uses C\-Make to create native build environments such as make, Eclipse, Microsoft Visual Studio. If you need help look at \href{http://www.cmake.org/cmake/help/runningcmake.html}{\tt Running C\-Make}.
+
+You can use {\ttfamily cmake-\/gui}, if you need a graphical user interface.
+
+Use C\-Make to build the project. You can use \char`\"{}cmake-\/gui\char`\"{}, if you need a graphical user interface.
+
+{\bfseries Gui}
+\begin{DoxyItemize}
+\item Specify the source path (root path of the dictionary) and the binary path (where to build the program, out of source build recommended)
+\item Configure
+\item Select compiler
+\item Adjust the options (if needed)
+\item Configure
+\item Generate
+\end{DoxyItemize}
+
+{\bfseries Command line} If you have uncompressed the source in \$\-O\-P\-E\-N\-T\-L\-D, type in a console\-: ```bash cd \$\-O\-P\-E\-N\-T\-L\-D mkdir ../build cd ../build cmake ../\$\-O\-P\-E\-N\-T\-L\-D -\/\-D\-B\-U\-I\-L\-D\-\_\-\-Q\-O\-P\-E\-N\-T\-L\-D=O\-N -\/\-D\-U\-S\-E\-\_\-\-S\-Y\-S\-T\-E\-M\-\_\-\-L\-I\-B\-S=O\-F\-F ```
+
+{\bfseries C\-Make options}
+\begin{DoxyItemize}
+\item {\ttfamily B\-U\-I\-L\-D\-\_\-\-Q\-O\-P\-E\-N\-T\-L\-D} build the graphical configuration dialog (requieres Qt)
+\item {\ttfamily U\-S\-E\-\_\-\-S\-Y\-S\-T\-E\-M\-\_\-\-L\-I\-B\-S} don't use the included cvblob version but the installed version (requieres cvblob)
+\end{DoxyItemize}
+
+\subsubsection*{Windows (Microsoft Visual Studio)}
+
+Navigate to the binary directory and build the solutions you want (You have to compile in R\-E\-L\-E\-A\-S\-E mode)\-:
+\begin{DoxyItemize}
+\item {\ttfamily opentld} build the project
+\item {\ttfamily I\-N\-S\-T\-A\-L\-L} install the project
+\end{DoxyItemize}
+
+{\itshape Note}\-: {\ttfamily vcomp.\-lib} is necessary when you try to compile it with Open\-M\-P support and the Express versions of M\-S\-V\-C. This file is included in the Windows Server S\-D\-K.
+
+\subsubsection*{Linux (make)}
+
+Navigate with the terminal to the build directory
+\begin{DoxyItemize}
+\item {\ttfamily make} build the project
+\item {\ttfamily make install} build and install the project
+\end{DoxyItemize}
+
+\subsubsection*{Mac}
+
+
+\begin{DoxyItemize}
+\item {\ttfamily brew install python}
+\item {\ttfamily brew install gfortran}
+\item {\ttfamily easy\-\_\-install numpy}
+\item {\ttfamily brew install cmake}
+\item {\ttfamily brew install opencv}
+\item {\ttfamily cmake} build the project
+\end{DoxyItemize}
+
+\section*{Debian package}
+
+
+\begin{DoxyItemize}
+\item Navigate with the terminal into the root dictionary of Open\-T\-L\-D (Open\-T\-L\-D/)
+\item Type {\ttfamily debuild -\/us -\/uc}
+\item Delete the temporary files in the source tree with {\ttfamily debuild clean} 
+\end{DoxyItemize}

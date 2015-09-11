@@ -1,0 +1,8 @@
+<map id="CvFGDStatModel" name="CvFGDStatModel">
+<area shape="rect" id="node2" href="$structCvBGPixelStat.html" title="CvBGPixelStat" alt="" coords="123,96,233,123"/>
+<area shape="rect" id="node3" href="$structCvBGPixelCCStatTable.html" title="CvBGPixelCCStatTable" alt="" coords="5,5,168,32"/>
+<area shape="rect" id="node4" href="$structCvBGPixelCStatTable.html" title="CvBGPixelCStatTable" alt="" coords="193,5,345,32"/>
+<area shape="rect" id="node5" href="$structCvFGDStatModelParams.html" title="CvFGDStatModelParams" alt="" coords="259,96,429,123"/>
+<area shape="rect" id="node6" href="$struct__IplImage.html" title="_IplImage" alt="" coords="454,96,532,123"/>
+<area shape="rect" id="node7" href="$struct__IplROI.html" title="_IplROI" alt="" coords="460,5,527,32"/>
+</map>

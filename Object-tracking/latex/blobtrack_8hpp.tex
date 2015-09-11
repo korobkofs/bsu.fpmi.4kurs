@@ -1,0 +1,1010 @@
+\hypertarget{blobtrack_8hpp}{\section{/usr/include/opencv2/legacy/blobtrack.hpp File Reference}
+\label{blobtrack_8hpp}\index{/usr/include/opencv2/legacy/blobtrack.\-hpp@{/usr/include/opencv2/legacy/blobtrack.\-hpp}}
+}
+{\ttfamily \#include \char`\"{}opencv2/core/core\-\_\-c.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+Include dependency graph for blobtrack.\-hpp\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{blobtrack_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{blobtrack_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structCvDefParam}{Cv\-Def\-Param}
+\item 
+class \hyperlink{classCvVSModule}{Cv\-V\-S\-Module}
+\item 
+class \hyperlink{classCvFGDetector}{Cv\-F\-G\-Detector}
+\item 
+struct \hyperlink{structCvBlob}{Cv\-Blob}
+\item 
+class \hyperlink{classCvBlobSeq}{Cv\-Blob\-Seq}
+\item 
+struct \hyperlink{structCvBlobTrack}{Cv\-Blob\-Track}
+\item 
+class \hyperlink{classCvBlobTrackSeq}{Cv\-Blob\-Track\-Seq}
+\item 
+class \hyperlink{classCvBlobDetector}{Cv\-Blob\-Detector}
+\item 
+struct \hyperlink{structCvDetectedBlob}{Cv\-Detected\-Blob}
+\item 
+class \hyperlink{classCvObjectDetector}{Cv\-Object\-Detector}
+\item 
+struct \hyperlink{structCvDrawShape}{Cv\-Draw\-Shape}
+\item 
+class \hyperlink{classCvImageDrawer}{Cv\-Image\-Drawer}
+\item 
+class \hyperlink{classCvBlobTrackGen}{Cv\-Blob\-Track\-Gen}
+\item 
+class \hyperlink{classCvBlobTracker}{Cv\-Blob\-Tracker}
+\item 
+class \hyperlink{classCvBlobTrackerOne}{Cv\-Blob\-Tracker\-One}
+\item 
+struct \hyperlink{structCvBlobTrackerParamMS}{Cv\-Blob\-Tracker\-Param\-M\-S}
+\item 
+struct \hyperlink{structCvBlobTrackerParamLH}{Cv\-Blob\-Tracker\-Param\-L\-H}
+\item 
+class \hyperlink{classCvBlobTrackPostProc}{Cv\-Blob\-Track\-Post\-Proc}
+\item 
+class \hyperlink{classCvBlobTrackPostProcOne}{Cv\-Blob\-Track\-Post\-Proc\-One}
+\item 
+class \hyperlink{classCvBlobTrackPredictor}{Cv\-Blob\-Track\-Predictor}
+\item 
+class \hyperlink{classCvBlobTrackAnalysis}{Cv\-Blob\-Track\-Analysis}
+\item 
+class \hyperlink{classCvBlobTrackFVGen}{Cv\-Blob\-Track\-F\-V\-Gen}
+\item 
+class \hyperlink{classCvBlobTrackAnalysisOne}{Cv\-Blob\-Track\-Analysis\-One}
+\item 
+class \hyperlink{classCvBlobTrackAnalysisHeight}{Cv\-Blob\-Track\-Analysis\-Height}
+\item 
+class \hyperlink{classCvBlobTrackerAuto}{Cv\-Blob\-Tracker\-Auto}
+\item 
+struct \hyperlink{structCvBlobTrackerAutoParam1}{Cv\-Blob\-Tracker\-Auto\-Param1}
+\item 
+struct \hyperlink{structCvTracksTimePos}{Cv\-Tracks\-Time\-Pos}
+\item 
+class \hyperlink{classCvProb}{Cv\-Prob}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{blobtrack_8hpp_a65e965051232b79d7f8aab206c3fb9b3}{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-M\-I\-N\-W}~5
+\item 
+\#define \hyperlink{blobtrack_8hpp_a4ddcf9a02dabae40ed14800eac30fd9c}{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-M\-I\-N\-H}~5
+\item 
+\#define \hyperlink{blobtrack_8hpp_a167ad465eb56d12c17c8705f87078c65}{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-I\-D}(p\-B)~(((\hyperlink{structCvBlob}{Cv\-Blob}$\ast$)(p\-B))-\/$>$I\-D)
+\item 
+\#define \hyperlink{blobtrack_8hpp_a6a7e811a265aedf485ca2f63308a782d}{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-C\-E\-N\-T\-E\-R}(p\-B)~\hyperlink{core_2types__c_8h_a89277c23963f8ce7d590d280b1c3e9e5}{cv\-Point2\-D32f}(((\hyperlink{structCvBlob}{Cv\-Blob}$\ast$)(p\-B))-\/$>$\hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x},((\hyperlink{structCvBlob}{Cv\-Blob}$\ast$)(p\-B))-\/$>$\hyperlink{highgui__c_8h_af1202c02b14870c18fb3a1da73e9e7c7}{y})
+\item 
+\#define \hyperlink{blobtrack_8hpp_acf2cff4a15ecf155f65ae0e0c12d0760}{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-X}(p\-B)~(((\hyperlink{structCvBlob}{Cv\-Blob}$\ast$)(p\-B))-\/$>$\hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x})
+\item 
+\#define \hyperlink{blobtrack_8hpp_aaff6607ac30c5a5b3ea1283487ec6053}{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-Y}(p\-B)~(((\hyperlink{structCvBlob}{Cv\-Blob}$\ast$)(p\-B))-\/$>$\hyperlink{highgui__c_8h_af1202c02b14870c18fb3a1da73e9e7c7}{y})
+\item 
+\#define \hyperlink{blobtrack_8hpp_a14753ebc83da282773742a723a911849}{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-W\-X}(p\-B)~(((\hyperlink{structCvBlob}{Cv\-Blob}$\ast$)(p\-B))-\/$>$w)
+\item 
+\#define \hyperlink{blobtrack_8hpp_a10c7a54e13e664c2cfc13366768a9f59}{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-W\-Y}(p\-B)~(((\hyperlink{structCvBlob}{Cv\-Blob}$\ast$)(p\-B))-\/$>$h)
+\item 
+\#define \hyperlink{blobtrack_8hpp_a035d566dd7b2bebe460ab398a713ec67}{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-R\-X}(p\-B)~(0.\-5f$\ast$\-C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-W\-X(p\-B))
+\item 
+\#define \hyperlink{blobtrack_8hpp_aec3f6b3ce38b18a5adce06d126801c6b}{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-R\-Y}(p\-B)~(0.\-5f$\ast$\-C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-W\-Y(p\-B))
+\item 
+\#define \hyperlink{blobtrack_8hpp_aff129c01b8e934334405af37cd1a3649}{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-R\-E\-C\-T}(p\-B)~\hyperlink{core_2types__c_8h_afaffdb9052823163862a88209f379921}{cv\-Rect}(\hyperlink{core_2types__c_8h_a5a36098db9e955cd6eb93e4c68a8bdab}{cv\-Round}(((\hyperlink{structCvBlob}{Cv\-Blob}$\ast$)(p\-B))-\/$>$\hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x}-\/\hyperlink{blobtrack_8hpp_a035d566dd7b2bebe460ab398a713ec67}{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-R\-X}(p\-B)),\hyperlink{core_2types__c_8h_a5a36098db9e955cd6eb93e4c68a8bdab}{cv\-Round}(((\hyperlink{structCvBlob}{Cv\-Blob}$\ast$)(p\-B))-\/$>$\hyperlink{highgui__c_8h_af1202c02b14870c18fb3a1da73e9e7c7}{y}-\/\hyperlink{blobtrack_8hpp_aec3f6b3ce38b18a5adce06d126801c6b}{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-R\-Y}(p\-B)),\hyperlink{core_2types__c_8h_a5a36098db9e955cd6eb93e4c68a8bdab}{cv\-Round}(\hyperlink{blobtrack_8hpp_a14753ebc83da282773742a723a911849}{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-W\-X}(p\-B)),\hyperlink{core_2types__c_8h_a5a36098db9e955cd6eb93e4c68a8bdab}{cv\-Round}(\hyperlink{blobtrack_8hpp_a10c7a54e13e664c2cfc13366768a9f59}{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-W\-Y}(p\-B)))
+\item 
+\#define \hyperlink{blobtrack_8hpp_a531a1c98babfd7cf6ecfb2f2930f1d71}{P\-R\-O\-F\-I\-L\-E\-\_\-\-E\-P\-A\-N\-E\-C\-H\-N\-I\-K\-O\-V}~0
+\item 
+\#define \hyperlink{blobtrack_8hpp_aabe5bc48dd697a421b1fe394093d8551}{P\-R\-O\-F\-I\-L\-E\-\_\-\-D\-O\-G}~1
+\item 
+\#define \hyperlink{blobtrack_8hpp_a789cd19630945e8308c2c6e5bdd68fde}{C\-V\-\_\-\-B\-T\-\_\-\-H\-I\-S\-T\-\_\-\-T\-Y\-P\-E\-\_\-\-S}~0
+\item 
+\#define \hyperlink{blobtrack_8hpp_aa905d4ab057404d57e1ef28f8b449463}{C\-V\-\_\-\-B\-T\-\_\-\-H\-I\-S\-T\-\_\-\-T\-Y\-P\-E\-\_\-\-M\-G}~1
+\item 
+\#define \hyperlink{blobtrack_8hpp_afdf40c923e70c9ef88a94c0028ad5b17}{C\-V\-\_\-\-B\-T\-\_\-\-H\-I\-S\-T\-\_\-\-T\-Y\-P\-E\-\_\-\-M\-G2}~2
+\item 
+\#define \hyperlink{blobtrack_8hpp_a0d66c9058f09cd8119a926224958c321}{C\-V\-\_\-\-B\-T\-\_\-\-H\-I\-S\-T\-\_\-\-T\-Y\-P\-E\-\_\-\-H}~3
+\item 
+\#define \hyperlink{blobtrack_8hpp_aae1ec3e185917ab766a18af20b74753f}{C\-V\-\_\-\-N\-O\-I\-S\-E\-\_\-\-N\-O\-N\-E}~0
+\item 
+\#define \hyperlink{blobtrack_8hpp_a12e44e22c25ec37c62c5e7353e0221a6}{C\-V\-\_\-\-N\-O\-I\-S\-E\-\_\-\-G\-A\-U\-S\-S\-I\-A\-N}~1
+\item 
+\#define \hyperlink{blobtrack_8hpp_a8f77daa22850677a269b41050143bf42}{C\-V\-\_\-\-N\-O\-I\-S\-E\-\_\-\-U\-N\-I\-F\-O\-R\-M}~2
+\item 
+\#define \hyperlink{blobtrack_8hpp_ae722e140885a7184770a56e92b99035b}{C\-V\-\_\-\-N\-O\-I\-S\-E\-\_\-\-S\-P\-E\-C\-K\-L\-E}~3
+\item 
+\#define \hyperlink{blobtrack_8hpp_a585150e90d46cedd852d2ac71bf2e3cf}{C\-V\-\_\-\-N\-O\-I\-S\-E\-\_\-\-S\-A\-L\-T\-\_\-\-A\-N\-D\-\_\-\-P\-E\-P\-P\-E\-R}~4
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{blobtrack_8hpp_a239ce29014875b620706e95f8192801c}{Cv\-Test\-Seq}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{blobtrack_8hpp_acaadbb617bb38064cfbf5d10f429ee2f}{cv\-Write\-Struct} (\hyperlink{core_2types__c_8h_a84556d1bb6f1b8b02c04c60246747a7e}{Cv\-File\-Storage} $\ast$fs, const char $\ast$\hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name}, \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} $\ast$addr, const char $\ast$desc, int num=1)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{blobtrack_8hpp_a2c2fb60ec239408607b36ed7b28c34c1}{cv\-Read\-Struct\-By\-Name} (\hyperlink{core_2types__c_8h_a84556d1bb6f1b8b02c04c60246747a7e}{Cv\-File\-Storage} $\ast$fs, \hyperlink{structCvFileNode}{Cv\-File\-Node} $\ast$\hyperlink{core__c_8h_a4e145da43d8cadc65b69ce0c2a2cc76a}{node}, const char $\ast$\hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name}, \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} $\ast$addr, const char $\ast$desc)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{blobtrack_8hpp_ad566503a0be5105815e1710db13f18ed}{cv\-Release\-F\-G\-Detector} (\hyperlink{classCvFGDetector}{Cv\-F\-G\-Detector} $\ast$$\ast$pp\-T)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{classCvFGDetector}{Cv\-F\-G\-Detector} $\ast$ \hyperlink{blobtrack_8hpp_af10af89104853c7fa57f62ea119e3246}{cv\-Create\-F\-G\-Detector\-Base} (int \hyperlink{imgproc__c_8h_a84612d8738bf935200cf32a103d8efe1}{type}, \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} $\ast$\hyperlink{highgui__c_8h_a2fad04a6d56e23dd58d9ebbcffae688f}{param})
+\item 
+\hyperlink{structCvBlob}{Cv\-Blob} \hyperlink{blobtrack_8hpp_a16881c9c29a354b132080c5d1af7158a}{cv\-Blob} (float \hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x}, float \hyperlink{highgui__c_8h_af1202c02b14870c18fb3a1da73e9e7c7}{y}, float w, float h)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{blobtrack_8hpp_a6f65d8f881f8c2bde646c16a70c9991a}{cv\-Release\-Blob\-Detector} (\hyperlink{classCvBlobDetector}{Cv\-Blob\-Detector} $\ast$$\ast$pp\-B\-D)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{classCvBlobDetector}{Cv\-Blob\-Detector} $\ast$ \hyperlink{blobtrack_8hpp_a98524e71e926bad21a9374dd316ba1d0}{cv\-Create\-Blob\-Detector\-Simple} ()
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{classCvBlobDetector}{Cv\-Blob\-Detector} $\ast$ \hyperlink{blobtrack_8hpp_ac5e5a885bb9f608e4a9174cedb65472c}{cv\-Create\-Blob\-Detector\-C\-C} ()
+\item 
+\hyperlink{core_2types__c_8h_afa9cd5d65f77596b7dfb38dd8afe2325}{C\-V\-\_\-\-I\-N\-L\-I\-N\-E} \hyperlink{structCvDetectedBlob}{Cv\-Detected\-Blob} \hyperlink{blobtrack_8hpp_a3e546fe5de570df81c085e9a5b63bc68}{cv\-Detected\-Blob} (float \hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x}, float \hyperlink{highgui__c_8h_af1202c02b14870c18fb3a1da73e9e7c7}{y}, float w, float h, int I\-D=0, float response=0.\-0\-F)
+\item 
+\hyperlink{core_2types__c_8h_afa9cd5d65f77596b7dfb38dd8afe2325}{C\-V\-\_\-\-I\-N\-L\-I\-N\-E} \hyperlink{structCvRect}{Cv\-Rect} \hyperlink{blobtrack_8hpp_a351b44750cad0ed372e8fdec90e89afe}{cv\-Rect\-Intersection} (const \hyperlink{structCvRect}{Cv\-Rect} r1, const \hyperlink{structCvRect}{Cv\-Rect} r2)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{blobtrack_8hpp_a56a5d10c9ba3a10a699a2a4ce00a9c32}{cv\-Release\-Blob\-Track\-Gen} (\hyperlink{classCvBlobTrackGen}{Cv\-Blob\-Track\-Gen} $\ast$$\ast$p\-B\-T\-Gen)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{classCvBlobTrackGen}{Cv\-Blob\-Track\-Gen} $\ast$ \hyperlink{blobtrack_8hpp_ad2e20ec5b31a8eec9b1c88614bd1e6fc}{cv\-Create\-Module\-Blob\-Track\-Gen1} ()
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{classCvBlobTrackGen}{Cv\-Blob\-Track\-Gen} $\ast$ \hyperlink{blobtrack_8hpp_a5df9f20c90c359b9d4f3403e19341401}{cv\-Create\-Module\-Blob\-Track\-Gen\-Y\-M\-L} ()
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{blobtrack_8hpp_aff691b73cfe69b7be14e405428bccf74}{cv\-Release\-Blob\-Tracker} (\hyperlink{classCvBlobTracker}{Cv\-Blob\-Tracker} $\ast$$\ast$pp\-T)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{blobtrack_8hpp_ad5c9d0e342a6fc76de75b262dcdffef6}{cv\-Release\-Blob\-Tracker\-One} (\hyperlink{classCvBlobTrackerOne}{Cv\-Blob\-Tracker\-One} $\ast$$\ast$pp\-T)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{classCvBlobTracker}{Cv\-Blob\-Tracker} $\ast$ \hyperlink{blobtrack_8hpp_a4b1c7f23936c939d97982c68547a9202}{cv\-Create\-Blob\-Tracker\-List} (\hyperlink{classCvBlobTrackerOne}{Cv\-Blob\-Tracker\-One} $\ast$($\ast$create)())
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{classCvBlobTracker}{Cv\-Blob\-Tracker} $\ast$ \hyperlink{blobtrack_8hpp_a8f0820a3f437313a816fd3ffd04acb73}{cv\-Create\-Blob\-Tracker\-M\-S1} (\hyperlink{structCvBlobTrackerParamMS}{Cv\-Blob\-Tracker\-Param\-M\-S} $\ast$\hyperlink{highgui__c_8h_a2fad04a6d56e23dd58d9ebbcffae688f}{param})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{classCvBlobTracker}{Cv\-Blob\-Tracker} $\ast$ \hyperlink{blobtrack_8hpp_a0b25cfe6ed397ae4a36040d160fd00fd}{cv\-Create\-Blob\-Tracker\-M\-S2} (\hyperlink{structCvBlobTrackerParamMS}{Cv\-Blob\-Tracker\-Param\-M\-S} $\ast$\hyperlink{highgui__c_8h_a2fad04a6d56e23dd58d9ebbcffae688f}{param})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{classCvBlobTracker}{Cv\-Blob\-Tracker} $\ast$ \hyperlink{blobtrack_8hpp_abcae7fe929b06c1525d885b6e0126d39}{cv\-Create\-Blob\-Tracker\-M\-S1\-By\-List} ()
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{classCvBlobTracker}{Cv\-Blob\-Tracker} $\ast$ \hyperlink{blobtrack_8hpp_a0c13a29c7f34949c467d936f25e67011}{cv\-Create\-Blob\-Tracker\-L\-H\-R} (\hyperlink{structCvBlobTrackerParamLH}{Cv\-Blob\-Tracker\-Param\-L\-H} $\ast$=\hyperlink{Config_8cpp_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\-U\-L\-L})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{classCvBlobTracker}{Cv\-Blob\-Tracker} $\ast$ \hyperlink{blobtrack_8hpp_a1f53f45e28bcedee45bd276cc71388dc}{cv\-Create\-Blob\-Tracker\-L\-H\-R\-S} (\hyperlink{structCvBlobTrackerParamLH}{Cv\-Blob\-Tracker\-Param\-L\-H} $\ast$=\hyperlink{Config_8cpp_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\-U\-L\-L})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{classCvBlobTracker}{Cv\-Blob\-Tracker} $\ast$ \hyperlink{blobtrack_8hpp_aae1635f165448e22611d8db214b4cf3c}{cv\-Create\-Blob\-Tracker\-C\-C} ()
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{classCvBlobTracker}{Cv\-Blob\-Tracker} $\ast$ \hyperlink{blobtrack_8hpp_a2cb7c5f3e2ba5009b6489c2882cfc5ee}{cv\-Create\-Blob\-Tracker\-C\-C\-M\-S\-P\-F} ()
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{classCvBlobTracker}{Cv\-Blob\-Tracker} $\ast$ \hyperlink{blobtrack_8hpp_a204b61bdb413086be96f86a0131003fe}{cv\-Create\-Blob\-Tracker\-M\-S\-F\-G} ()
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{classCvBlobTracker}{Cv\-Blob\-Tracker} $\ast$ \hyperlink{blobtrack_8hpp_a7b5e04a92afb1d1a90716a7203cd3815}{cv\-Create\-Blob\-Tracker\-M\-S\-F\-G\-S} ()
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{classCvBlobTracker}{Cv\-Blob\-Tracker} $\ast$ \hyperlink{blobtrack_8hpp_ae8561c7125315df36fff8afe2ba90552}{cv\-Create\-Blob\-Tracker\-M\-S} ()
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{classCvBlobTracker}{Cv\-Blob\-Tracker} $\ast$ \hyperlink{blobtrack_8hpp_aae783e5a773dd84b3a6398ab4898afc6}{cv\-Create\-Blob\-Tracker\-M\-S\-P\-F} ()
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{blobtrack_8hpp_aec4218c287a8dd848c752559bacc1329}{cv\-Release\-Blob\-Track\-Post\-Proc} (\hyperlink{classCvBlobTrackPostProc}{Cv\-Blob\-Track\-Post\-Proc} $\ast$$\ast$p\-B\-T\-P\-P)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{classCvBlobTrackPostProc}{Cv\-Blob\-Track\-Post\-Proc} $\ast$ \hyperlink{blobtrack_8hpp_a7e81e52c4cee95b991c221d1b1ea0aec}{cv\-Create\-Blob\-Track\-Post\-Proc\-List} (\hyperlink{classCvBlobTrackPostProcOne}{Cv\-Blob\-Track\-Post\-Proc\-One} $\ast$($\ast$create)())
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{classCvBlobTrackPostProc}{Cv\-Blob\-Track\-Post\-Proc} $\ast$ \hyperlink{blobtrack_8hpp_af650c4193194cc58a24bad1f7678b30a}{cv\-Create\-Module\-Blob\-Track\-Post\-Proc\-Kalman} ()
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{classCvBlobTrackPostProc}{Cv\-Blob\-Track\-Post\-Proc} $\ast$ \hyperlink{blobtrack_8hpp_aaa65502b086b33fde50388788f03a98b}{cv\-Create\-Module\-Blob\-Track\-Post\-Proc\-Time\-Aver\-Rect} ()
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{classCvBlobTrackPostProc}{Cv\-Blob\-Track\-Post\-Proc} $\ast$ \hyperlink{blobtrack_8hpp_ab4794f0255c7ce24749c87eb47f66fce}{cv\-Create\-Module\-Blob\-Track\-Post\-Proc\-Time\-Aver\-Exp} ()
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{classCvBlobTrackPredictor}{Cv\-Blob\-Track\-Predictor} $\ast$ \hyperlink{blobtrack_8hpp_a4497d0c06d1eff710399f54aa9b8f7e0}{cv\-Create\-Module\-Blob\-Track\-Predict\-Kalman} ()
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{blobtrack_8hpp_ac5b7522328d5fa0877b1ce5c3c6c130f}{cv\-Release\-Blob\-Track\-Analysis} (\hyperlink{classCvBlobTrackAnalysis}{Cv\-Blob\-Track\-Analysis} $\ast$$\ast$p\-B\-T\-P\-P)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{classCvBlobTrackAnalysis}{Cv\-Blob\-Track\-Analysis} $\ast$ \hyperlink{blobtrack_8hpp_ae045c6708496b552f5198ee24a5afc4a}{cv\-Create\-Blob\-Track\-Analysis\-List} (\hyperlink{classCvBlobTrackAnalysisOne}{Cv\-Blob\-Track\-Analysis\-One} $\ast$($\ast$create)())
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{classCvBlobTrackAnalysis}{Cv\-Blob\-Track\-Analysis} $\ast$ \hyperlink{blobtrack_8hpp_a77b53cd307651892eb0a3f36433ea215}{cv\-Create\-Module\-Blob\-Track\-Analysis\-Hist\-P} ()
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{classCvBlobTrackAnalysis}{Cv\-Blob\-Track\-Analysis} $\ast$ \hyperlink{blobtrack_8hpp_a169f3d9f815ca1ec5a70382a5749019e}{cv\-Create\-Module\-Blob\-Track\-Analysis\-Hist\-P\-V} ()
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{classCvBlobTrackAnalysis}{Cv\-Blob\-Track\-Analysis} $\ast$ \hyperlink{blobtrack_8hpp_a1400a0785328065291e2e7280190a313}{cv\-Create\-Module\-Blob\-Track\-Analysis\-Hist\-P\-V\-S} ()
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{classCvBlobTrackAnalysis}{Cv\-Blob\-Track\-Analysis} $\ast$ \hyperlink{blobtrack_8hpp_a48a0eac872f381cbcb3a72df3d5c6389}{cv\-Create\-Module\-Blob\-Track\-Analysis\-Hist\-S\-S} ()
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{classCvBlobTrackAnalysis}{Cv\-Blob\-Track\-Analysis} $\ast$ \hyperlink{blobtrack_8hpp_a107665bd7dac7b2d0c1b1591b8f1e6f4}{cv\-Create\-Module\-Blob\-Track\-Analysis\-Track\-Dist} ()
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{classCvBlobTrackAnalysis}{Cv\-Blob\-Track\-Analysis} $\ast$ \hyperlink{blobtrack_8hpp_abd3706b2e11155a47651df72ec8fff33}{cv\-Create\-Module\-Blob\-Track\-Analysis\-I\-O\-R} ()
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{blobtrack_8hpp_a0d19a0aa318e3ec8a72ca2d2f692706a}{cv\-Release\-Blob\-Tracker\-Auto} (\hyperlink{classCvBlobTrackerAuto}{Cv\-Blob\-Tracker\-Auto} $\ast$$\ast$pp\-T)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{classCvBlobTrackerAuto}{Cv\-Blob\-Tracker\-Auto} $\ast$ \hyperlink{blobtrack_8hpp_ac0a827796b073fd1c95dee774367da79}{cv\-Create\-Blob\-Tracker\-Auto1} (\hyperlink{structCvBlobTrackerAutoParam1}{Cv\-Blob\-Tracker\-Auto\-Param1} $\ast$\hyperlink{highgui__c_8h_a2fad04a6d56e23dd58d9ebbcffae688f}{param}=\hyperlink{Config_8cpp_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\-U\-L\-L})
+\item 
+\hyperlink{classCvBlobTrackerAuto}{Cv\-Blob\-Tracker\-Auto} $\ast$ \hyperlink{blobtrack_8hpp_aa1816829b10f2e46dd85aaf6bd9732e3}{cv\-Create\-Blob\-Tracker\-Auto} (int \hyperlink{imgproc__c_8h_a84612d8738bf935200cf32a103d8efe1}{type}, \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} $\ast$\hyperlink{highgui__c_8h_a2fad04a6d56e23dd58d9ebbcffae688f}{param})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{blobtrack_8hpp_a6dee0370f4015f4ab1fdc48b17729ff3}{cv\-Create\-Tracks\-\_\-\-One} (\hyperlink{classCvBlobTrackSeq}{Cv\-Blob\-Track\-Seq} $\ast$T\-S)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{blobtrack_8hpp_aa706338a8fe4a88a0efcb5500ac84597}{cv\-Create\-Tracks\-\_\-\-Same} (\hyperlink{classCvBlobTrackSeq}{Cv\-Blob\-Track\-Seq} $\ast$T\-S1, \hyperlink{classCvBlobTrackSeq}{Cv\-Blob\-Track\-Seq} $\ast$T\-S2)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{blobtrack_8hpp_ab5c625a066fa33d197f7d1d77ef1ed7d}{cv\-Create\-Tracks\-\_\-\-Area\-Err} (\hyperlink{classCvBlobTrackSeq}{Cv\-Blob\-Track\-Seq} $\ast$T\-S1, \hyperlink{classCvBlobTrackSeq}{Cv\-Blob\-Track\-Seq} $\ast$T\-S2, int add\-W, int add\-H)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{blobtrack_8hpp_a14efe1af6e0b9b0e6e47c52c61d93176}{cv\-Release\-Prob} (\hyperlink{classCvProb}{Cv\-Prob} $\ast$$\ast$pp\-Prob)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{classCvProb}{Cv\-Prob} $\ast$ \hyperlink{blobtrack_8hpp_a3c5c3cb4c167ce3ac6c5ef4a07ea7cd0}{cv\-Create\-Prob\-S} (int dim, \hyperlink{structCvSize}{Cv\-Size} \hyperlink{legacy_8hpp_ae97003f8d5c64cdfb99f6f2606d121b6}{size}, int sample\-\_\-num)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{classCvProb}{Cv\-Prob} $\ast$ \hyperlink{blobtrack_8hpp_aa5636d49f628d714a577d6f33a9881bc}{cv\-Create\-Prob\-M\-G} (int dim, \hyperlink{structCvSize}{Cv\-Size} \hyperlink{legacy_8hpp_ae97003f8d5c64cdfb99f6f2606d121b6}{size}, int sample\-\_\-num)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{classCvProb}{Cv\-Prob} $\ast$ \hyperlink{blobtrack_8hpp_a9a9bcfc6e865f7d6564e166a649e3a7e}{cv\-Create\-Prob\-M\-G2} (int dim, \hyperlink{structCvSize}{Cv\-Size} \hyperlink{legacy_8hpp_ae97003f8d5c64cdfb99f6f2606d121b6}{size}, int sample\-\_\-num)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{classCvProb}{Cv\-Prob} $\ast$ \hyperlink{blobtrack_8hpp_ae75907fc92116fc0a378d3d2e1f9a294}{cv\-Create\-Prob\-Hist} (int dim, \hyperlink{structCvSize}{Cv\-Size} \hyperlink{legacy_8hpp_ae97003f8d5c64cdfb99f6f2606d121b6}{size})
+\item 
+\hyperlink{classCvProb}{Cv\-Prob} $\ast$ \hyperlink{blobtrack_8hpp_a26d6fedcbf143fc5bfecd3bc5ae8c8c5}{cv\-Create\-Prob} (int \hyperlink{imgproc__c_8h_a84612d8738bf935200cf32a103d8efe1}{type}, int dim, \hyperlink{structCvSize}{Cv\-Size} \hyperlink{legacy_8hpp_ae97003f8d5c64cdfb99f6f2606d121b6}{size}=\hyperlink{core_2types__c_8h_ad25ce7ac18665d5c9b062283ff0204ed}{cv\-Size}(1, 1), \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} $\ast$=\hyperlink{Config_8cpp_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\-U\-L\-L})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{blobtrack_8hpp_a239ce29014875b620706e95f8192801c}{Cv\-Test\-Seq} $\ast$ \hyperlink{blobtrack_8hpp_a110abf2a5737377d0625b7b91e2ee779}{cv\-Create\-Test\-Seq} (char $\ast$p\-Configfile, char $\ast$$\ast$videos, int numvideo, float Scale=1, int noise\-\_\-type=\hyperlink{blobtrack_8hpp_aae1ec3e185917ab766a18af20b74753f}{C\-V\-\_\-\-N\-O\-I\-S\-E\-\_\-\-N\-O\-N\-E}, double noise\-\_\-ampl=0)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{blobtrack_8hpp_ae58a3422002298925b6ae41625c8dd27}{cv\-Release\-Test\-Seq} (\hyperlink{blobtrack_8hpp_a239ce29014875b620706e95f8192801c}{Cv\-Test\-Seq} $\ast$$\ast$pp\-Test\-Seq)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{core_2types__c_8h_a249298f383f3b430b476542076320c57}{Ipl\-Image} $\ast$ \hyperlink{blobtrack_8hpp_a18032955a26aa7672f3094d5b5e9165d}{cv\-Test\-Seq\-Query\-Frame} (\hyperlink{blobtrack_8hpp_a239ce29014875b620706e95f8192801c}{Cv\-Test\-Seq} $\ast$p\-Test\-Seq)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{core_2types__c_8h_a249298f383f3b430b476542076320c57}{Ipl\-Image} $\ast$ \hyperlink{blobtrack_8hpp_ae9317cd86818bf5aa5c758ea0fab5bf6}{cv\-Test\-Seq\-Get\-F\-G\-Mask} (\hyperlink{blobtrack_8hpp_a239ce29014875b620706e95f8192801c}{Cv\-Test\-Seq} $\ast$p\-Test\-Seq)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{core_2types__c_8h_a249298f383f3b430b476542076320c57}{Ipl\-Image} $\ast$ \hyperlink{blobtrack_8hpp_a6529cd71a85ff4c9d7737ea81a059985}{cv\-Test\-Seq\-Get\-Image} (\hyperlink{blobtrack_8hpp_a239ce29014875b620706e95f8192801c}{Cv\-Test\-Seq} $\ast$p\-Test\-Seq)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{structCvSize}{Cv\-Size} \hyperlink{blobtrack_8hpp_ad76821cb5afd90dcbf978c927d72a0d7}{cv\-Test\-Seq\-Get\-Image\-Size} (\hyperlink{blobtrack_8hpp_a239ce29014875b620706e95f8192801c}{Cv\-Test\-Seq} $\ast$p\-Test\-Seq)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} int \hyperlink{blobtrack_8hpp_a5dc77e234f9ecbc82915bc04a2200a5a}{cv\-Test\-Seq\-Frame\-Num} (\hyperlink{blobtrack_8hpp_a239ce29014875b620706e95f8192801c}{Cv\-Test\-Seq} $\ast$p\-Test\-Seq)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} int \hyperlink{blobtrack_8hpp_a43c4f099f331d2b17a29eaeaa692c7f6}{cv\-Test\-Seq\-Get\-Object\-Num} (\hyperlink{blobtrack_8hpp_a239ce29014875b620706e95f8192801c}{Cv\-Test\-Seq} $\ast$p\-Test\-Seq)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} int \hyperlink{blobtrack_8hpp_addbe43d4d1c092a6c171f2eb15a1c6ac}{cv\-Test\-Seq\-Get\-Object\-Pos} (\hyperlink{blobtrack_8hpp_a239ce29014875b620706e95f8192801c}{Cv\-Test\-Seq} $\ast$p\-Test\-Seq, int Obj\-Index, \hyperlink{structCvPoint2D32f}{Cv\-Point2\-D32f} $\ast$p\-Pos)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} int \hyperlink{blobtrack_8hpp_aedb3f493aee7d8121880de7faf224ae9}{cv\-Test\-Seq\-Get\-Object\-Size} (\hyperlink{blobtrack_8hpp_a239ce29014875b620706e95f8192801c}{Cv\-Test\-Seq} $\ast$p\-Test\-Seq, int Obj\-Index, \hyperlink{structCvPoint2D32f}{Cv\-Point2\-D32f} $\ast$p\-Size)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{blobtrack_8hpp_a1d2860db0c618c0076c2722c232d5be6}{cv\-Test\-Seq\-Add\-Noise} (\hyperlink{blobtrack_8hpp_a239ce29014875b620706e95f8192801c}{Cv\-Test\-Seq} $\ast$p\-Test\-Seq, int noise\-\_\-type=\hyperlink{blobtrack_8hpp_aae1ec3e185917ab766a18af20b74753f}{C\-V\-\_\-\-N\-O\-I\-S\-E\-\_\-\-N\-O\-N\-E}, double noise\-\_\-ampl=0)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{blobtrack_8hpp_a773717e1b22106ac5f6630b611c08773}{cv\-Test\-Seq\-Add\-Intensity\-Variation} (\hyperlink{blobtrack_8hpp_a239ce29014875b620706e95f8192801c}{Cv\-Test\-Seq} $\ast$p\-Test\-Seq, float D\-I\-\_\-per\-\_\-frame, float Min\-I, float Max\-I)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{blobtrack_8hpp_ab27d82edc44abc9f0f3dccd3453c98a1}{cv\-Test\-Seq\-Set\-Frame} (\hyperlink{blobtrack_8hpp_a239ce29014875b620706e95f8192801c}{Cv\-Test\-Seq} $\ast$p\-Test\-Seq, int \hyperlink{legacy_8hpp_a76f11d9a0a47b94f72c2d0e77fb32240}{n})
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{blobtrack_8hpp_a6a7e811a265aedf485ca2f63308a782d}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-C\-E\-N\-T\-E\-R@{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-C\-E\-N\-T\-E\-R}}
+\index{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-C\-E\-N\-T\-E\-R@{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-C\-E\-N\-T\-E\-R}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-C\-E\-N\-T\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-C\-E\-N\-T\-E\-R(
+\begin{DoxyParamCaption}
+\item[{}]{p\-B}
+\end{DoxyParamCaption}
+)~{\bf cv\-Point2\-D32f}((({\bf Cv\-Blob}$\ast$)(p\-B))-\/$>${\bf x},(({\bf Cv\-Blob}$\ast$)(p\-B))-\/$>${\bf y})}}\label{blobtrack_8hpp_a6a7e811a265aedf485ca2f63308a782d}
+\hypertarget{blobtrack_8hpp_a167ad465eb56d12c17c8705f87078c65}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-I\-D@{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-I\-D}}
+\index{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-I\-D@{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-I\-D}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-I\-D(
+\begin{DoxyParamCaption}
+\item[{}]{p\-B}
+\end{DoxyParamCaption}
+)~((({\bf Cv\-Blob}$\ast$)(p\-B))-\/$>$I\-D)}}\label{blobtrack_8hpp_a167ad465eb56d12c17c8705f87078c65}
+\hypertarget{blobtrack_8hpp_a4ddcf9a02dabae40ed14800eac30fd9c}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-M\-I\-N\-H@{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-M\-I\-N\-H}}
+\index{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-M\-I\-N\-H@{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-M\-I\-N\-H}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-M\-I\-N\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-M\-I\-N\-H~5}}\label{blobtrack_8hpp_a4ddcf9a02dabae40ed14800eac30fd9c}
+\hypertarget{blobtrack_8hpp_a65e965051232b79d7f8aab206c3fb9b3}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-M\-I\-N\-W@{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-M\-I\-N\-W}}
+\index{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-M\-I\-N\-W@{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-M\-I\-N\-W}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-M\-I\-N\-W}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-M\-I\-N\-W~5}}\label{blobtrack_8hpp_a65e965051232b79d7f8aab206c3fb9b3}
+\hypertarget{blobtrack_8hpp_aff129c01b8e934334405af37cd1a3649}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-R\-E\-C\-T@{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-R\-E\-C\-T}}
+\index{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-R\-E\-C\-T@{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-R\-E\-C\-T}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-R\-E\-C\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-R\-E\-C\-T(
+\begin{DoxyParamCaption}
+\item[{}]{p\-B}
+\end{DoxyParamCaption}
+)~{\bf cv\-Rect}({\bf cv\-Round}((({\bf Cv\-Blob}$\ast$)(p\-B))-\/$>${\bf x}-\/{\bf C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-R\-X}(p\-B)),{\bf cv\-Round}((({\bf Cv\-Blob}$\ast$)(p\-B))-\/$>${\bf y}-\/{\bf C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-R\-Y}(p\-B)),{\bf cv\-Round}({\bf C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-W\-X}(p\-B)),{\bf cv\-Round}({\bf C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-W\-Y}(p\-B)))}}\label{blobtrack_8hpp_aff129c01b8e934334405af37cd1a3649}
+\hypertarget{blobtrack_8hpp_a035d566dd7b2bebe460ab398a713ec67}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-R\-X@{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-R\-X}}
+\index{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-R\-X@{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-R\-X}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-R\-X}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-R\-X(
+\begin{DoxyParamCaption}
+\item[{}]{p\-B}
+\end{DoxyParamCaption}
+)~(0.\-5f$\ast$\-C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-W\-X(p\-B))}}\label{blobtrack_8hpp_a035d566dd7b2bebe460ab398a713ec67}
+\hypertarget{blobtrack_8hpp_aec3f6b3ce38b18a5adce06d126801c6b}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-R\-Y@{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-R\-Y}}
+\index{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-R\-Y@{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-R\-Y}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-R\-Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-R\-Y(
+\begin{DoxyParamCaption}
+\item[{}]{p\-B}
+\end{DoxyParamCaption}
+)~(0.\-5f$\ast$\-C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-W\-Y(p\-B))}}\label{blobtrack_8hpp_aec3f6b3ce38b18a5adce06d126801c6b}
+\hypertarget{blobtrack_8hpp_a14753ebc83da282773742a723a911849}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-W\-X@{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-W\-X}}
+\index{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-W\-X@{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-W\-X}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-W\-X}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-W\-X(
+\begin{DoxyParamCaption}
+\item[{}]{p\-B}
+\end{DoxyParamCaption}
+)~((({\bf Cv\-Blob}$\ast$)(p\-B))-\/$>$w)}}\label{blobtrack_8hpp_a14753ebc83da282773742a723a911849}
+\hypertarget{blobtrack_8hpp_a10c7a54e13e664c2cfc13366768a9f59}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-W\-Y@{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-W\-Y}}
+\index{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-W\-Y@{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-W\-Y}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-W\-Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-W\-Y(
+\begin{DoxyParamCaption}
+\item[{}]{p\-B}
+\end{DoxyParamCaption}
+)~((({\bf Cv\-Blob}$\ast$)(p\-B))-\/$>$h)}}\label{blobtrack_8hpp_a10c7a54e13e664c2cfc13366768a9f59}
+\hypertarget{blobtrack_8hpp_acf2cff4a15ecf155f65ae0e0c12d0760}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-X@{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-X}}
+\index{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-X@{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-X}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-X}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-X(
+\begin{DoxyParamCaption}
+\item[{}]{p\-B}
+\end{DoxyParamCaption}
+)~((({\bf Cv\-Blob}$\ast$)(p\-B))-\/$>${\bf x})}}\label{blobtrack_8hpp_acf2cff4a15ecf155f65ae0e0c12d0760}
+\hypertarget{blobtrack_8hpp_aaff6607ac30c5a5b3ea1283487ec6053}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-Y@{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-Y}}
+\index{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-Y@{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-Y}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-B\-L\-O\-B\-\_\-\-Y(
+\begin{DoxyParamCaption}
+\item[{}]{p\-B}
+\end{DoxyParamCaption}
+)~((({\bf Cv\-Blob}$\ast$)(p\-B))-\/$>${\bf y})}}\label{blobtrack_8hpp_aaff6607ac30c5a5b3ea1283487ec6053}
+\hypertarget{blobtrack_8hpp_a0d66c9058f09cd8119a926224958c321}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!C\-V\-\_\-\-B\-T\-\_\-\-H\-I\-S\-T\-\_\-\-T\-Y\-P\-E\-\_\-\-H@{C\-V\-\_\-\-B\-T\-\_\-\-H\-I\-S\-T\-\_\-\-T\-Y\-P\-E\-\_\-\-H}}
+\index{C\-V\-\_\-\-B\-T\-\_\-\-H\-I\-S\-T\-\_\-\-T\-Y\-P\-E\-\_\-\-H@{C\-V\-\_\-\-B\-T\-\_\-\-H\-I\-S\-T\-\_\-\-T\-Y\-P\-E\-\_\-\-H}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-B\-T\-\_\-\-H\-I\-S\-T\-\_\-\-T\-Y\-P\-E\-\_\-\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-B\-T\-\_\-\-H\-I\-S\-T\-\_\-\-T\-Y\-P\-E\-\_\-\-H~3}}\label{blobtrack_8hpp_a0d66c9058f09cd8119a926224958c321}
+\hypertarget{blobtrack_8hpp_aa905d4ab057404d57e1ef28f8b449463}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!C\-V\-\_\-\-B\-T\-\_\-\-H\-I\-S\-T\-\_\-\-T\-Y\-P\-E\-\_\-\-M\-G@{C\-V\-\_\-\-B\-T\-\_\-\-H\-I\-S\-T\-\_\-\-T\-Y\-P\-E\-\_\-\-M\-G}}
+\index{C\-V\-\_\-\-B\-T\-\_\-\-H\-I\-S\-T\-\_\-\-T\-Y\-P\-E\-\_\-\-M\-G@{C\-V\-\_\-\-B\-T\-\_\-\-H\-I\-S\-T\-\_\-\-T\-Y\-P\-E\-\_\-\-M\-G}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-B\-T\-\_\-\-H\-I\-S\-T\-\_\-\-T\-Y\-P\-E\-\_\-\-M\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-B\-T\-\_\-\-H\-I\-S\-T\-\_\-\-T\-Y\-P\-E\-\_\-\-M\-G~1}}\label{blobtrack_8hpp_aa905d4ab057404d57e1ef28f8b449463}
+\hypertarget{blobtrack_8hpp_afdf40c923e70c9ef88a94c0028ad5b17}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!C\-V\-\_\-\-B\-T\-\_\-\-H\-I\-S\-T\-\_\-\-T\-Y\-P\-E\-\_\-\-M\-G2@{C\-V\-\_\-\-B\-T\-\_\-\-H\-I\-S\-T\-\_\-\-T\-Y\-P\-E\-\_\-\-M\-G2}}
+\index{C\-V\-\_\-\-B\-T\-\_\-\-H\-I\-S\-T\-\_\-\-T\-Y\-P\-E\-\_\-\-M\-G2@{C\-V\-\_\-\-B\-T\-\_\-\-H\-I\-S\-T\-\_\-\-T\-Y\-P\-E\-\_\-\-M\-G2}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-B\-T\-\_\-\-H\-I\-S\-T\-\_\-\-T\-Y\-P\-E\-\_\-\-M\-G2}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-B\-T\-\_\-\-H\-I\-S\-T\-\_\-\-T\-Y\-P\-E\-\_\-\-M\-G2~2}}\label{blobtrack_8hpp_afdf40c923e70c9ef88a94c0028ad5b17}
+\hypertarget{blobtrack_8hpp_a789cd19630945e8308c2c6e5bdd68fde}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!C\-V\-\_\-\-B\-T\-\_\-\-H\-I\-S\-T\-\_\-\-T\-Y\-P\-E\-\_\-\-S@{C\-V\-\_\-\-B\-T\-\_\-\-H\-I\-S\-T\-\_\-\-T\-Y\-P\-E\-\_\-\-S}}
+\index{C\-V\-\_\-\-B\-T\-\_\-\-H\-I\-S\-T\-\_\-\-T\-Y\-P\-E\-\_\-\-S@{C\-V\-\_\-\-B\-T\-\_\-\-H\-I\-S\-T\-\_\-\-T\-Y\-P\-E\-\_\-\-S}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-B\-T\-\_\-\-H\-I\-S\-T\-\_\-\-T\-Y\-P\-E\-\_\-\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-B\-T\-\_\-\-H\-I\-S\-T\-\_\-\-T\-Y\-P\-E\-\_\-\-S~0}}\label{blobtrack_8hpp_a789cd19630945e8308c2c6e5bdd68fde}
+\hypertarget{blobtrack_8hpp_a12e44e22c25ec37c62c5e7353e0221a6}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!C\-V\-\_\-\-N\-O\-I\-S\-E\-\_\-\-G\-A\-U\-S\-S\-I\-A\-N@{C\-V\-\_\-\-N\-O\-I\-S\-E\-\_\-\-G\-A\-U\-S\-S\-I\-A\-N}}
+\index{C\-V\-\_\-\-N\-O\-I\-S\-E\-\_\-\-G\-A\-U\-S\-S\-I\-A\-N@{C\-V\-\_\-\-N\-O\-I\-S\-E\-\_\-\-G\-A\-U\-S\-S\-I\-A\-N}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-N\-O\-I\-S\-E\-\_\-\-G\-A\-U\-S\-S\-I\-A\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-N\-O\-I\-S\-E\-\_\-\-G\-A\-U\-S\-S\-I\-A\-N~1}}\label{blobtrack_8hpp_a12e44e22c25ec37c62c5e7353e0221a6}
+\hypertarget{blobtrack_8hpp_aae1ec3e185917ab766a18af20b74753f}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!C\-V\-\_\-\-N\-O\-I\-S\-E\-\_\-\-N\-O\-N\-E@{C\-V\-\_\-\-N\-O\-I\-S\-E\-\_\-\-N\-O\-N\-E}}
+\index{C\-V\-\_\-\-N\-O\-I\-S\-E\-\_\-\-N\-O\-N\-E@{C\-V\-\_\-\-N\-O\-I\-S\-E\-\_\-\-N\-O\-N\-E}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-N\-O\-I\-S\-E\-\_\-\-N\-O\-N\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-N\-O\-I\-S\-E\-\_\-\-N\-O\-N\-E~0}}\label{blobtrack_8hpp_aae1ec3e185917ab766a18af20b74753f}
+\hypertarget{blobtrack_8hpp_a585150e90d46cedd852d2ac71bf2e3cf}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!C\-V\-\_\-\-N\-O\-I\-S\-E\-\_\-\-S\-A\-L\-T\-\_\-\-A\-N\-D\-\_\-\-P\-E\-P\-P\-E\-R@{C\-V\-\_\-\-N\-O\-I\-S\-E\-\_\-\-S\-A\-L\-T\-\_\-\-A\-N\-D\-\_\-\-P\-E\-P\-P\-E\-R}}
+\index{C\-V\-\_\-\-N\-O\-I\-S\-E\-\_\-\-S\-A\-L\-T\-\_\-\-A\-N\-D\-\_\-\-P\-E\-P\-P\-E\-R@{C\-V\-\_\-\-N\-O\-I\-S\-E\-\_\-\-S\-A\-L\-T\-\_\-\-A\-N\-D\-\_\-\-P\-E\-P\-P\-E\-R}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-N\-O\-I\-S\-E\-\_\-\-S\-A\-L\-T\-\_\-\-A\-N\-D\-\_\-\-P\-E\-P\-P\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-N\-O\-I\-S\-E\-\_\-\-S\-A\-L\-T\-\_\-\-A\-N\-D\-\_\-\-P\-E\-P\-P\-E\-R~4}}\label{blobtrack_8hpp_a585150e90d46cedd852d2ac71bf2e3cf}
+\hypertarget{blobtrack_8hpp_ae722e140885a7184770a56e92b99035b}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!C\-V\-\_\-\-N\-O\-I\-S\-E\-\_\-\-S\-P\-E\-C\-K\-L\-E@{C\-V\-\_\-\-N\-O\-I\-S\-E\-\_\-\-S\-P\-E\-C\-K\-L\-E}}
+\index{C\-V\-\_\-\-N\-O\-I\-S\-E\-\_\-\-S\-P\-E\-C\-K\-L\-E@{C\-V\-\_\-\-N\-O\-I\-S\-E\-\_\-\-S\-P\-E\-C\-K\-L\-E}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-N\-O\-I\-S\-E\-\_\-\-S\-P\-E\-C\-K\-L\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-N\-O\-I\-S\-E\-\_\-\-S\-P\-E\-C\-K\-L\-E~3}}\label{blobtrack_8hpp_ae722e140885a7184770a56e92b99035b}
+\hypertarget{blobtrack_8hpp_a8f77daa22850677a269b41050143bf42}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!C\-V\-\_\-\-N\-O\-I\-S\-E\-\_\-\-U\-N\-I\-F\-O\-R\-M@{C\-V\-\_\-\-N\-O\-I\-S\-E\-\_\-\-U\-N\-I\-F\-O\-R\-M}}
+\index{C\-V\-\_\-\-N\-O\-I\-S\-E\-\_\-\-U\-N\-I\-F\-O\-R\-M@{C\-V\-\_\-\-N\-O\-I\-S\-E\-\_\-\-U\-N\-I\-F\-O\-R\-M}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-N\-O\-I\-S\-E\-\_\-\-U\-N\-I\-F\-O\-R\-M}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-N\-O\-I\-S\-E\-\_\-\-U\-N\-I\-F\-O\-R\-M~2}}\label{blobtrack_8hpp_a8f77daa22850677a269b41050143bf42}
+\hypertarget{blobtrack_8hpp_aabe5bc48dd697a421b1fe394093d8551}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!P\-R\-O\-F\-I\-L\-E\-\_\-\-D\-O\-G@{P\-R\-O\-F\-I\-L\-E\-\_\-\-D\-O\-G}}
+\index{P\-R\-O\-F\-I\-L\-E\-\_\-\-D\-O\-G@{P\-R\-O\-F\-I\-L\-E\-\_\-\-D\-O\-G}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{P\-R\-O\-F\-I\-L\-E\-\_\-\-D\-O\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-R\-O\-F\-I\-L\-E\-\_\-\-D\-O\-G~1}}\label{blobtrack_8hpp_aabe5bc48dd697a421b1fe394093d8551}
+\hypertarget{blobtrack_8hpp_a531a1c98babfd7cf6ecfb2f2930f1d71}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!P\-R\-O\-F\-I\-L\-E\-\_\-\-E\-P\-A\-N\-E\-C\-H\-N\-I\-K\-O\-V@{P\-R\-O\-F\-I\-L\-E\-\_\-\-E\-P\-A\-N\-E\-C\-H\-N\-I\-K\-O\-V}}
+\index{P\-R\-O\-F\-I\-L\-E\-\_\-\-E\-P\-A\-N\-E\-C\-H\-N\-I\-K\-O\-V@{P\-R\-O\-F\-I\-L\-E\-\_\-\-E\-P\-A\-N\-E\-C\-H\-N\-I\-K\-O\-V}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{P\-R\-O\-F\-I\-L\-E\-\_\-\-E\-P\-A\-N\-E\-C\-H\-N\-I\-K\-O\-V}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-R\-O\-F\-I\-L\-E\-\_\-\-E\-P\-A\-N\-E\-C\-H\-N\-I\-K\-O\-V~0}}\label{blobtrack_8hpp_a531a1c98babfd7cf6ecfb2f2930f1d71}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{blobtrack_8hpp_a239ce29014875b620706e95f8192801c}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!Cv\-Test\-Seq@{Cv\-Test\-Seq}}
+\index{Cv\-Test\-Seq@{Cv\-Test\-Seq}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{Cv\-Test\-Seq}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void} {\bf Cv\-Test\-Seq}}}\label{blobtrack_8hpp_a239ce29014875b620706e95f8192801c}
+
+
+\subsection{Function Documentation}
+\hypertarget{blobtrack_8hpp_a16881c9c29a354b132080c5d1af7158a}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Blob@{cv\-Blob}}
+\index{cv\-Blob@{cv\-Blob}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Blob}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Blob} cv\-Blob (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{float}]{w, }
+\item[{float}]{h}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{blobtrack_8hpp_a16881c9c29a354b132080c5d1af7158a}
+\hypertarget{blobtrack_8hpp_ac5e5a885bb9f608e4a9174cedb65472c}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Create\-Blob\-Detector\-C\-C@{cv\-Create\-Blob\-Detector\-C\-C}}
+\index{cv\-Create\-Blob\-Detector\-C\-C@{cv\-Create\-Blob\-Detector\-C\-C}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Create\-Blob\-Detector\-C\-C}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf Cv\-Blob\-Detector}$\ast$ cv\-Create\-Blob\-Detector\-C\-C (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_ac5e5a885bb9f608e4a9174cedb65472c}
+\hypertarget{blobtrack_8hpp_a98524e71e926bad21a9374dd316ba1d0}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Create\-Blob\-Detector\-Simple@{cv\-Create\-Blob\-Detector\-Simple}}
+\index{cv\-Create\-Blob\-Detector\-Simple@{cv\-Create\-Blob\-Detector\-Simple}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Create\-Blob\-Detector\-Simple}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf Cv\-Blob\-Detector}$\ast$ cv\-Create\-Blob\-Detector\-Simple (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_a98524e71e926bad21a9374dd316ba1d0}
+\hypertarget{blobtrack_8hpp_ae045c6708496b552f5198ee24a5afc4a}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Create\-Blob\-Track\-Analysis\-List@{cv\-Create\-Blob\-Track\-Analysis\-List}}
+\index{cv\-Create\-Blob\-Track\-Analysis\-List@{cv\-Create\-Blob\-Track\-Analysis\-List}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Create\-Blob\-Track\-Analysis\-List}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf Cv\-Blob\-Track\-Analysis}$\ast$ cv\-Create\-Blob\-Track\-Analysis\-List (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Blob\-Track\-Analysis\-One} $\ast$($\ast$)()}]{create}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_ae045c6708496b552f5198ee24a5afc4a}
+\hypertarget{blobtrack_8hpp_aa1816829b10f2e46dd85aaf6bd9732e3}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Create\-Blob\-Tracker\-Auto@{cv\-Create\-Blob\-Tracker\-Auto}}
+\index{cv\-Create\-Blob\-Tracker\-Auto@{cv\-Create\-Blob\-Tracker\-Auto}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Create\-Blob\-Tracker\-Auto}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Blob\-Tracker\-Auto}$\ast$ cv\-Create\-Blob\-Tracker\-Auto (
+\begin{DoxyParamCaption}
+\item[{int}]{type, }
+\item[{{\bf void} $\ast$}]{param}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{blobtrack_8hpp_aa1816829b10f2e46dd85aaf6bd9732e3}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{blobtrack_8hpp_aa1816829b10f2e46dd85aaf6bd9732e3_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{blobtrack_8hpp_ac0a827796b073fd1c95dee774367da79}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Create\-Blob\-Tracker\-Auto1@{cv\-Create\-Blob\-Tracker\-Auto1}}
+\index{cv\-Create\-Blob\-Tracker\-Auto1@{cv\-Create\-Blob\-Tracker\-Auto1}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Create\-Blob\-Tracker\-Auto1}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf Cv\-Blob\-Tracker\-Auto}$\ast$ cv\-Create\-Blob\-Tracker\-Auto1 (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Blob\-Tracker\-Auto\-Param1} $\ast$}]{param = {\ttfamily {\bf N\-U\-L\-L}}}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_ac0a827796b073fd1c95dee774367da79}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{blobtrack_8hpp_ac0a827796b073fd1c95dee774367da79_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{blobtrack_8hpp_aae1635f165448e22611d8db214b4cf3c}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Create\-Blob\-Tracker\-C\-C@{cv\-Create\-Blob\-Tracker\-C\-C}}
+\index{cv\-Create\-Blob\-Tracker\-C\-C@{cv\-Create\-Blob\-Tracker\-C\-C}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Create\-Blob\-Tracker\-C\-C}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf Cv\-Blob\-Tracker}$\ast$ cv\-Create\-Blob\-Tracker\-C\-C (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_aae1635f165448e22611d8db214b4cf3c}
+\hypertarget{blobtrack_8hpp_a2cb7c5f3e2ba5009b6489c2882cfc5ee}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Create\-Blob\-Tracker\-C\-C\-M\-S\-P\-F@{cv\-Create\-Blob\-Tracker\-C\-C\-M\-S\-P\-F}}
+\index{cv\-Create\-Blob\-Tracker\-C\-C\-M\-S\-P\-F@{cv\-Create\-Blob\-Tracker\-C\-C\-M\-S\-P\-F}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Create\-Blob\-Tracker\-C\-C\-M\-S\-P\-F}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf Cv\-Blob\-Tracker}$\ast$ cv\-Create\-Blob\-Tracker\-C\-C\-M\-S\-P\-F (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_a2cb7c5f3e2ba5009b6489c2882cfc5ee}
+\hypertarget{blobtrack_8hpp_a0c13a29c7f34949c467d936f25e67011}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Create\-Blob\-Tracker\-L\-H\-R@{cv\-Create\-Blob\-Tracker\-L\-H\-R}}
+\index{cv\-Create\-Blob\-Tracker\-L\-H\-R@{cv\-Create\-Blob\-Tracker\-L\-H\-R}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Create\-Blob\-Tracker\-L\-H\-R}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf Cv\-Blob\-Tracker}$\ast$ cv\-Create\-Blob\-Tracker\-L\-H\-R (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Blob\-Tracker\-Param\-L\-H} $\ast$}]{ = {\ttfamily {\bf N\-U\-L\-L}}}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_a0c13a29c7f34949c467d936f25e67011}
+\hypertarget{blobtrack_8hpp_a1f53f45e28bcedee45bd276cc71388dc}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Create\-Blob\-Tracker\-L\-H\-R\-S@{cv\-Create\-Blob\-Tracker\-L\-H\-R\-S}}
+\index{cv\-Create\-Blob\-Tracker\-L\-H\-R\-S@{cv\-Create\-Blob\-Tracker\-L\-H\-R\-S}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Create\-Blob\-Tracker\-L\-H\-R\-S}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf Cv\-Blob\-Tracker}$\ast$ cv\-Create\-Blob\-Tracker\-L\-H\-R\-S (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Blob\-Tracker\-Param\-L\-H} $\ast$}]{ = {\ttfamily {\bf N\-U\-L\-L}}}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_a1f53f45e28bcedee45bd276cc71388dc}
+\hypertarget{blobtrack_8hpp_a4b1c7f23936c939d97982c68547a9202}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Create\-Blob\-Tracker\-List@{cv\-Create\-Blob\-Tracker\-List}}
+\index{cv\-Create\-Blob\-Tracker\-List@{cv\-Create\-Blob\-Tracker\-List}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Create\-Blob\-Tracker\-List}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf Cv\-Blob\-Tracker}$\ast$ cv\-Create\-Blob\-Tracker\-List (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Blob\-Tracker\-One} $\ast$($\ast$)()}]{create}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_a4b1c7f23936c939d97982c68547a9202}
+\hypertarget{blobtrack_8hpp_ae8561c7125315df36fff8afe2ba90552}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Create\-Blob\-Tracker\-M\-S@{cv\-Create\-Blob\-Tracker\-M\-S}}
+\index{cv\-Create\-Blob\-Tracker\-M\-S@{cv\-Create\-Blob\-Tracker\-M\-S}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Create\-Blob\-Tracker\-M\-S}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf Cv\-Blob\-Tracker}$\ast$ cv\-Create\-Blob\-Tracker\-M\-S (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_ae8561c7125315df36fff8afe2ba90552}
+\hypertarget{blobtrack_8hpp_a8f0820a3f437313a816fd3ffd04acb73}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Create\-Blob\-Tracker\-M\-S1@{cv\-Create\-Blob\-Tracker\-M\-S1}}
+\index{cv\-Create\-Blob\-Tracker\-M\-S1@{cv\-Create\-Blob\-Tracker\-M\-S1}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Create\-Blob\-Tracker\-M\-S1}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf Cv\-Blob\-Tracker}$\ast$ cv\-Create\-Blob\-Tracker\-M\-S1 (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Blob\-Tracker\-Param\-M\-S} $\ast$}]{param}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_a8f0820a3f437313a816fd3ffd04acb73}
+\hypertarget{blobtrack_8hpp_abcae7fe929b06c1525d885b6e0126d39}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Create\-Blob\-Tracker\-M\-S1\-By\-List@{cv\-Create\-Blob\-Tracker\-M\-S1\-By\-List}}
+\index{cv\-Create\-Blob\-Tracker\-M\-S1\-By\-List@{cv\-Create\-Blob\-Tracker\-M\-S1\-By\-List}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Create\-Blob\-Tracker\-M\-S1\-By\-List}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf Cv\-Blob\-Tracker}$\ast$ cv\-Create\-Blob\-Tracker\-M\-S1\-By\-List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_abcae7fe929b06c1525d885b6e0126d39}
+\hypertarget{blobtrack_8hpp_a0b25cfe6ed397ae4a36040d160fd00fd}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Create\-Blob\-Tracker\-M\-S2@{cv\-Create\-Blob\-Tracker\-M\-S2}}
+\index{cv\-Create\-Blob\-Tracker\-M\-S2@{cv\-Create\-Blob\-Tracker\-M\-S2}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Create\-Blob\-Tracker\-M\-S2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf Cv\-Blob\-Tracker}$\ast$ cv\-Create\-Blob\-Tracker\-M\-S2 (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Blob\-Tracker\-Param\-M\-S} $\ast$}]{param}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_a0b25cfe6ed397ae4a36040d160fd00fd}
+\hypertarget{blobtrack_8hpp_a204b61bdb413086be96f86a0131003fe}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Create\-Blob\-Tracker\-M\-S\-F\-G@{cv\-Create\-Blob\-Tracker\-M\-S\-F\-G}}
+\index{cv\-Create\-Blob\-Tracker\-M\-S\-F\-G@{cv\-Create\-Blob\-Tracker\-M\-S\-F\-G}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Create\-Blob\-Tracker\-M\-S\-F\-G}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf Cv\-Blob\-Tracker}$\ast$ cv\-Create\-Blob\-Tracker\-M\-S\-F\-G (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_a204b61bdb413086be96f86a0131003fe}
+\hypertarget{blobtrack_8hpp_a7b5e04a92afb1d1a90716a7203cd3815}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Create\-Blob\-Tracker\-M\-S\-F\-G\-S@{cv\-Create\-Blob\-Tracker\-M\-S\-F\-G\-S}}
+\index{cv\-Create\-Blob\-Tracker\-M\-S\-F\-G\-S@{cv\-Create\-Blob\-Tracker\-M\-S\-F\-G\-S}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Create\-Blob\-Tracker\-M\-S\-F\-G\-S}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf Cv\-Blob\-Tracker}$\ast$ cv\-Create\-Blob\-Tracker\-M\-S\-F\-G\-S (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_a7b5e04a92afb1d1a90716a7203cd3815}
+\hypertarget{blobtrack_8hpp_aae783e5a773dd84b3a6398ab4898afc6}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Create\-Blob\-Tracker\-M\-S\-P\-F@{cv\-Create\-Blob\-Tracker\-M\-S\-P\-F}}
+\index{cv\-Create\-Blob\-Tracker\-M\-S\-P\-F@{cv\-Create\-Blob\-Tracker\-M\-S\-P\-F}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Create\-Blob\-Tracker\-M\-S\-P\-F}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf Cv\-Blob\-Tracker}$\ast$ cv\-Create\-Blob\-Tracker\-M\-S\-P\-F (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_aae783e5a773dd84b3a6398ab4898afc6}
+\hypertarget{blobtrack_8hpp_a7e81e52c4cee95b991c221d1b1ea0aec}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Create\-Blob\-Track\-Post\-Proc\-List@{cv\-Create\-Blob\-Track\-Post\-Proc\-List}}
+\index{cv\-Create\-Blob\-Track\-Post\-Proc\-List@{cv\-Create\-Blob\-Track\-Post\-Proc\-List}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Create\-Blob\-Track\-Post\-Proc\-List}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf Cv\-Blob\-Track\-Post\-Proc}$\ast$ cv\-Create\-Blob\-Track\-Post\-Proc\-List (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Blob\-Track\-Post\-Proc\-One} $\ast$($\ast$)()}]{create}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_a7e81e52c4cee95b991c221d1b1ea0aec}
+\hypertarget{blobtrack_8hpp_af10af89104853c7fa57f62ea119e3246}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Create\-F\-G\-Detector\-Base@{cv\-Create\-F\-G\-Detector\-Base}}
+\index{cv\-Create\-F\-G\-Detector\-Base@{cv\-Create\-F\-G\-Detector\-Base}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Create\-F\-G\-Detector\-Base}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf Cv\-F\-G\-Detector}$\ast$ cv\-Create\-F\-G\-Detector\-Base (
+\begin{DoxyParamCaption}
+\item[{int}]{type, }
+\item[{{\bf void} $\ast$}]{param}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_af10af89104853c7fa57f62ea119e3246}
+\hypertarget{blobtrack_8hpp_a77b53cd307651892eb0a3f36433ea215}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Create\-Module\-Blob\-Track\-Analysis\-Hist\-P@{cv\-Create\-Module\-Blob\-Track\-Analysis\-Hist\-P}}
+\index{cv\-Create\-Module\-Blob\-Track\-Analysis\-Hist\-P@{cv\-Create\-Module\-Blob\-Track\-Analysis\-Hist\-P}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Create\-Module\-Blob\-Track\-Analysis\-Hist\-P}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf Cv\-Blob\-Track\-Analysis}$\ast$ cv\-Create\-Module\-Blob\-Track\-Analysis\-Hist\-P (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_a77b53cd307651892eb0a3f36433ea215}
+\hypertarget{blobtrack_8hpp_a169f3d9f815ca1ec5a70382a5749019e}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Create\-Module\-Blob\-Track\-Analysis\-Hist\-P\-V@{cv\-Create\-Module\-Blob\-Track\-Analysis\-Hist\-P\-V}}
+\index{cv\-Create\-Module\-Blob\-Track\-Analysis\-Hist\-P\-V@{cv\-Create\-Module\-Blob\-Track\-Analysis\-Hist\-P\-V}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Create\-Module\-Blob\-Track\-Analysis\-Hist\-P\-V}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf Cv\-Blob\-Track\-Analysis}$\ast$ cv\-Create\-Module\-Blob\-Track\-Analysis\-Hist\-P\-V (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_a169f3d9f815ca1ec5a70382a5749019e}
+\hypertarget{blobtrack_8hpp_a1400a0785328065291e2e7280190a313}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Create\-Module\-Blob\-Track\-Analysis\-Hist\-P\-V\-S@{cv\-Create\-Module\-Blob\-Track\-Analysis\-Hist\-P\-V\-S}}
+\index{cv\-Create\-Module\-Blob\-Track\-Analysis\-Hist\-P\-V\-S@{cv\-Create\-Module\-Blob\-Track\-Analysis\-Hist\-P\-V\-S}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Create\-Module\-Blob\-Track\-Analysis\-Hist\-P\-V\-S}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf Cv\-Blob\-Track\-Analysis}$\ast$ cv\-Create\-Module\-Blob\-Track\-Analysis\-Hist\-P\-V\-S (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_a1400a0785328065291e2e7280190a313}
+\hypertarget{blobtrack_8hpp_a48a0eac872f381cbcb3a72df3d5c6389}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Create\-Module\-Blob\-Track\-Analysis\-Hist\-S\-S@{cv\-Create\-Module\-Blob\-Track\-Analysis\-Hist\-S\-S}}
+\index{cv\-Create\-Module\-Blob\-Track\-Analysis\-Hist\-S\-S@{cv\-Create\-Module\-Blob\-Track\-Analysis\-Hist\-S\-S}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Create\-Module\-Blob\-Track\-Analysis\-Hist\-S\-S}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf Cv\-Blob\-Track\-Analysis}$\ast$ cv\-Create\-Module\-Blob\-Track\-Analysis\-Hist\-S\-S (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_a48a0eac872f381cbcb3a72df3d5c6389}
+\hypertarget{blobtrack_8hpp_abd3706b2e11155a47651df72ec8fff33}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Create\-Module\-Blob\-Track\-Analysis\-I\-O\-R@{cv\-Create\-Module\-Blob\-Track\-Analysis\-I\-O\-R}}
+\index{cv\-Create\-Module\-Blob\-Track\-Analysis\-I\-O\-R@{cv\-Create\-Module\-Blob\-Track\-Analysis\-I\-O\-R}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Create\-Module\-Blob\-Track\-Analysis\-I\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf Cv\-Blob\-Track\-Analysis}$\ast$ cv\-Create\-Module\-Blob\-Track\-Analysis\-I\-O\-R (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_abd3706b2e11155a47651df72ec8fff33}
+\hypertarget{blobtrack_8hpp_a107665bd7dac7b2d0c1b1591b8f1e6f4}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Create\-Module\-Blob\-Track\-Analysis\-Track\-Dist@{cv\-Create\-Module\-Blob\-Track\-Analysis\-Track\-Dist}}
+\index{cv\-Create\-Module\-Blob\-Track\-Analysis\-Track\-Dist@{cv\-Create\-Module\-Blob\-Track\-Analysis\-Track\-Dist}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Create\-Module\-Blob\-Track\-Analysis\-Track\-Dist}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf Cv\-Blob\-Track\-Analysis}$\ast$ cv\-Create\-Module\-Blob\-Track\-Analysis\-Track\-Dist (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_a107665bd7dac7b2d0c1b1591b8f1e6f4}
+\hypertarget{blobtrack_8hpp_ad2e20ec5b31a8eec9b1c88614bd1e6fc}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Create\-Module\-Blob\-Track\-Gen1@{cv\-Create\-Module\-Blob\-Track\-Gen1}}
+\index{cv\-Create\-Module\-Blob\-Track\-Gen1@{cv\-Create\-Module\-Blob\-Track\-Gen1}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Create\-Module\-Blob\-Track\-Gen1}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf Cv\-Blob\-Track\-Gen}$\ast$ cv\-Create\-Module\-Blob\-Track\-Gen1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_ad2e20ec5b31a8eec9b1c88614bd1e6fc}
+\hypertarget{blobtrack_8hpp_a5df9f20c90c359b9d4f3403e19341401}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Create\-Module\-Blob\-Track\-Gen\-Y\-M\-L@{cv\-Create\-Module\-Blob\-Track\-Gen\-Y\-M\-L}}
+\index{cv\-Create\-Module\-Blob\-Track\-Gen\-Y\-M\-L@{cv\-Create\-Module\-Blob\-Track\-Gen\-Y\-M\-L}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Create\-Module\-Blob\-Track\-Gen\-Y\-M\-L}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf Cv\-Blob\-Track\-Gen}$\ast$ cv\-Create\-Module\-Blob\-Track\-Gen\-Y\-M\-L (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_a5df9f20c90c359b9d4f3403e19341401}
+\hypertarget{blobtrack_8hpp_af650c4193194cc58a24bad1f7678b30a}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Create\-Module\-Blob\-Track\-Post\-Proc\-Kalman@{cv\-Create\-Module\-Blob\-Track\-Post\-Proc\-Kalman}}
+\index{cv\-Create\-Module\-Blob\-Track\-Post\-Proc\-Kalman@{cv\-Create\-Module\-Blob\-Track\-Post\-Proc\-Kalman}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Create\-Module\-Blob\-Track\-Post\-Proc\-Kalman}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf Cv\-Blob\-Track\-Post\-Proc}$\ast$ cv\-Create\-Module\-Blob\-Track\-Post\-Proc\-Kalman (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_af650c4193194cc58a24bad1f7678b30a}
+\hypertarget{blobtrack_8hpp_ab4794f0255c7ce24749c87eb47f66fce}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Create\-Module\-Blob\-Track\-Post\-Proc\-Time\-Aver\-Exp@{cv\-Create\-Module\-Blob\-Track\-Post\-Proc\-Time\-Aver\-Exp}}
+\index{cv\-Create\-Module\-Blob\-Track\-Post\-Proc\-Time\-Aver\-Exp@{cv\-Create\-Module\-Blob\-Track\-Post\-Proc\-Time\-Aver\-Exp}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Create\-Module\-Blob\-Track\-Post\-Proc\-Time\-Aver\-Exp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf Cv\-Blob\-Track\-Post\-Proc}$\ast$ cv\-Create\-Module\-Blob\-Track\-Post\-Proc\-Time\-Aver\-Exp (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_ab4794f0255c7ce24749c87eb47f66fce}
+\hypertarget{blobtrack_8hpp_aaa65502b086b33fde50388788f03a98b}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Create\-Module\-Blob\-Track\-Post\-Proc\-Time\-Aver\-Rect@{cv\-Create\-Module\-Blob\-Track\-Post\-Proc\-Time\-Aver\-Rect}}
+\index{cv\-Create\-Module\-Blob\-Track\-Post\-Proc\-Time\-Aver\-Rect@{cv\-Create\-Module\-Blob\-Track\-Post\-Proc\-Time\-Aver\-Rect}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Create\-Module\-Blob\-Track\-Post\-Proc\-Time\-Aver\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf Cv\-Blob\-Track\-Post\-Proc}$\ast$ cv\-Create\-Module\-Blob\-Track\-Post\-Proc\-Time\-Aver\-Rect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_aaa65502b086b33fde50388788f03a98b}
+\hypertarget{blobtrack_8hpp_a4497d0c06d1eff710399f54aa9b8f7e0}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Create\-Module\-Blob\-Track\-Predict\-Kalman@{cv\-Create\-Module\-Blob\-Track\-Predict\-Kalman}}
+\index{cv\-Create\-Module\-Blob\-Track\-Predict\-Kalman@{cv\-Create\-Module\-Blob\-Track\-Predict\-Kalman}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Create\-Module\-Blob\-Track\-Predict\-Kalman}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf Cv\-Blob\-Track\-Predictor}$\ast$ cv\-Create\-Module\-Blob\-Track\-Predict\-Kalman (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_a4497d0c06d1eff710399f54aa9b8f7e0}
+\hypertarget{blobtrack_8hpp_a26d6fedcbf143fc5bfecd3bc5ae8c8c5}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Create\-Prob@{cv\-Create\-Prob}}
+\index{cv\-Create\-Prob@{cv\-Create\-Prob}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Create\-Prob}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Prob}$\ast$ cv\-Create\-Prob (
+\begin{DoxyParamCaption}
+\item[{int}]{type, }
+\item[{int}]{dim, }
+\item[{{\bf Cv\-Size}}]{size = {\ttfamily {\bf cv\-Size}(1,1)}, }
+\item[{{\bf void} $\ast$}]{ = {\ttfamily {\bf N\-U\-L\-L}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{blobtrack_8hpp_a26d6fedcbf143fc5bfecd3bc5ae8c8c5}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{blobtrack_8hpp_a26d6fedcbf143fc5bfecd3bc5ae8c8c5_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{blobtrack_8hpp_ae75907fc92116fc0a378d3d2e1f9a294}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Create\-Prob\-Hist@{cv\-Create\-Prob\-Hist}}
+\index{cv\-Create\-Prob\-Hist@{cv\-Create\-Prob\-Hist}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Create\-Prob\-Hist}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf Cv\-Prob}$\ast$ cv\-Create\-Prob\-Hist (
+\begin{DoxyParamCaption}
+\item[{int}]{dim, }
+\item[{{\bf Cv\-Size}}]{size}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_ae75907fc92116fc0a378d3d2e1f9a294}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{blobtrack_8hpp_ae75907fc92116fc0a378d3d2e1f9a294_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{blobtrack_8hpp_aa5636d49f628d714a577d6f33a9881bc}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Create\-Prob\-M\-G@{cv\-Create\-Prob\-M\-G}}
+\index{cv\-Create\-Prob\-M\-G@{cv\-Create\-Prob\-M\-G}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Create\-Prob\-M\-G}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf Cv\-Prob}$\ast$ cv\-Create\-Prob\-M\-G (
+\begin{DoxyParamCaption}
+\item[{int}]{dim, }
+\item[{{\bf Cv\-Size}}]{size, }
+\item[{int}]{sample\-\_\-num}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_aa5636d49f628d714a577d6f33a9881bc}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{blobtrack_8hpp_aa5636d49f628d714a577d6f33a9881bc_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{blobtrack_8hpp_a9a9bcfc6e865f7d6564e166a649e3a7e}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Create\-Prob\-M\-G2@{cv\-Create\-Prob\-M\-G2}}
+\index{cv\-Create\-Prob\-M\-G2@{cv\-Create\-Prob\-M\-G2}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Create\-Prob\-M\-G2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf Cv\-Prob}$\ast$ cv\-Create\-Prob\-M\-G2 (
+\begin{DoxyParamCaption}
+\item[{int}]{dim, }
+\item[{{\bf Cv\-Size}}]{size, }
+\item[{int}]{sample\-\_\-num}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_a9a9bcfc6e865f7d6564e166a649e3a7e}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{blobtrack_8hpp_a9a9bcfc6e865f7d6564e166a649e3a7e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{blobtrack_8hpp_a3c5c3cb4c167ce3ac6c5ef4a07ea7cd0}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Create\-Prob\-S@{cv\-Create\-Prob\-S}}
+\index{cv\-Create\-Prob\-S@{cv\-Create\-Prob\-S}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Create\-Prob\-S}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf Cv\-Prob}$\ast$ cv\-Create\-Prob\-S (
+\begin{DoxyParamCaption}
+\item[{int}]{dim, }
+\item[{{\bf Cv\-Size}}]{size, }
+\item[{int}]{sample\-\_\-num}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_a3c5c3cb4c167ce3ac6c5ef4a07ea7cd0}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{blobtrack_8hpp_a3c5c3cb4c167ce3ac6c5ef4a07ea7cd0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{blobtrack_8hpp_a110abf2a5737377d0625b7b91e2ee779}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Create\-Test\-Seq@{cv\-Create\-Test\-Seq}}
+\index{cv\-Create\-Test\-Seq@{cv\-Create\-Test\-Seq}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Create\-Test\-Seq}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf Cv\-Test\-Seq}$\ast$ cv\-Create\-Test\-Seq (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{p\-Configfile, }
+\item[{char $\ast$$\ast$}]{videos, }
+\item[{int}]{numvideo, }
+\item[{float}]{Scale = {\ttfamily 1}, }
+\item[{int}]{noise\-\_\-type = {\ttfamily {\bf C\-V\-\_\-\-N\-O\-I\-S\-E\-\_\-\-N\-O\-N\-E}}, }
+\item[{double}]{noise\-\_\-ampl = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_a110abf2a5737377d0625b7b91e2ee779}
+\hypertarget{blobtrack_8hpp_ab5c625a066fa33d197f7d1d77ef1ed7d}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Create\-Tracks\-\_\-\-Area\-Err@{cv\-Create\-Tracks\-\_\-\-Area\-Err}}
+\index{cv\-Create\-Tracks\-\_\-\-Area\-Err@{cv\-Create\-Tracks\-\_\-\-Area\-Err}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Create\-Tracks\-\_\-\-Area\-Err}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cv\-Create\-Tracks\-\_\-\-Area\-Err (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Blob\-Track\-Seq} $\ast$}]{T\-S1, }
+\item[{{\bf Cv\-Blob\-Track\-Seq} $\ast$}]{T\-S2, }
+\item[{int}]{add\-W, }
+\item[{int}]{add\-H}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_ab5c625a066fa33d197f7d1d77ef1ed7d}
+\hypertarget{blobtrack_8hpp_a6dee0370f4015f4ab1fdc48b17729ff3}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Create\-Tracks\-\_\-\-One@{cv\-Create\-Tracks\-\_\-\-One}}
+\index{cv\-Create\-Tracks\-\_\-\-One@{cv\-Create\-Tracks\-\_\-\-One}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Create\-Tracks\-\_\-\-One}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cv\-Create\-Tracks\-\_\-\-One (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Blob\-Track\-Seq} $\ast$}]{T\-S}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_a6dee0370f4015f4ab1fdc48b17729ff3}
+\hypertarget{blobtrack_8hpp_aa706338a8fe4a88a0efcb5500ac84597}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Create\-Tracks\-\_\-\-Same@{cv\-Create\-Tracks\-\_\-\-Same}}
+\index{cv\-Create\-Tracks\-\_\-\-Same@{cv\-Create\-Tracks\-\_\-\-Same}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Create\-Tracks\-\_\-\-Same}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cv\-Create\-Tracks\-\_\-\-Same (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Blob\-Track\-Seq} $\ast$}]{T\-S1, }
+\item[{{\bf Cv\-Blob\-Track\-Seq} $\ast$}]{T\-S2}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_aa706338a8fe4a88a0efcb5500ac84597}
+\hypertarget{blobtrack_8hpp_a3e546fe5de570df81c085e9a5b63bc68}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Detected\-Blob@{cv\-Detected\-Blob}}
+\index{cv\-Detected\-Blob@{cv\-Detected\-Blob}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Detected\-Blob}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-I\-N\-L\-I\-N\-E} {\bf Cv\-Detected\-Blob} cv\-Detected\-Blob (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{float}]{w, }
+\item[{float}]{h, }
+\item[{int}]{I\-D = {\ttfamily 0}, }
+\item[{float}]{response = {\ttfamily 0.0F}}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_a3e546fe5de570df81c085e9a5b63bc68}
+\hypertarget{blobtrack_8hpp_a2c2fb60ec239408607b36ed7b28c34c1}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Read\-Struct\-By\-Name@{cv\-Read\-Struct\-By\-Name}}
+\index{cv\-Read\-Struct\-By\-Name@{cv\-Read\-Struct\-By\-Name}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Read\-Struct\-By\-Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cv\-Read\-Struct\-By\-Name (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-File\-Storage} $\ast$}]{fs, }
+\item[{{\bf Cv\-File\-Node} $\ast$}]{node, }
+\item[{const char $\ast$}]{name, }
+\item[{{\bf void} $\ast$}]{addr, }
+\item[{const char $\ast$}]{desc}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_a2c2fb60ec239408607b36ed7b28c34c1}
+\hypertarget{blobtrack_8hpp_a351b44750cad0ed372e8fdec90e89afe}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Rect\-Intersection@{cv\-Rect\-Intersection}}
+\index{cv\-Rect\-Intersection@{cv\-Rect\-Intersection}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Rect\-Intersection}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-I\-N\-L\-I\-N\-E} {\bf Cv\-Rect} cv\-Rect\-Intersection (
+\begin{DoxyParamCaption}
+\item[{const {\bf Cv\-Rect}}]{r1, }
+\item[{const {\bf Cv\-Rect}}]{r2}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_a351b44750cad0ed372e8fdec90e89afe}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{blobtrack_8hpp_a351b44750cad0ed372e8fdec90e89afe_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{blobtrack_8hpp_a6f65d8f881f8c2bde646c16a70c9991a}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Release\-Blob\-Detector@{cv\-Release\-Blob\-Detector}}
+\index{cv\-Release\-Blob\-Detector@{cv\-Release\-Blob\-Detector}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Release\-Blob\-Detector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cv\-Release\-Blob\-Detector (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Blob\-Detector} $\ast$$\ast$}]{pp\-B\-D}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_a6f65d8f881f8c2bde646c16a70c9991a}
+\hypertarget{blobtrack_8hpp_ac5b7522328d5fa0877b1ce5c3c6c130f}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Release\-Blob\-Track\-Analysis@{cv\-Release\-Blob\-Track\-Analysis}}
+\index{cv\-Release\-Blob\-Track\-Analysis@{cv\-Release\-Blob\-Track\-Analysis}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Release\-Blob\-Track\-Analysis}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-Release\-Blob\-Track\-Analysis (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Blob\-Track\-Analysis} $\ast$$\ast$}]{p\-B\-T\-P\-P}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{blobtrack_8hpp_ac5b7522328d5fa0877b1ce5c3c6c130f}
+\hypertarget{blobtrack_8hpp_aff691b73cfe69b7be14e405428bccf74}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Release\-Blob\-Tracker@{cv\-Release\-Blob\-Tracker}}
+\index{cv\-Release\-Blob\-Tracker@{cv\-Release\-Blob\-Tracker}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Release\-Blob\-Tracker}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cv\-Release\-Blob\-Tracker (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Blob\-Tracker} $\ast$$\ast$}]{pp\-T}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_aff691b73cfe69b7be14e405428bccf74}
+\hypertarget{blobtrack_8hpp_a0d19a0aa318e3ec8a72ca2d2f692706a}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Release\-Blob\-Tracker\-Auto@{cv\-Release\-Blob\-Tracker\-Auto}}
+\index{cv\-Release\-Blob\-Tracker\-Auto@{cv\-Release\-Blob\-Tracker\-Auto}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Release\-Blob\-Tracker\-Auto}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-Release\-Blob\-Tracker\-Auto (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Blob\-Tracker\-Auto} $\ast$$\ast$}]{pp\-T}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{blobtrack_8hpp_a0d19a0aa318e3ec8a72ca2d2f692706a}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{blobtrack_8hpp_a0d19a0aa318e3ec8a72ca2d2f692706a_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{blobtrack_8hpp_ad5c9d0e342a6fc76de75b262dcdffef6}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Release\-Blob\-Tracker\-One@{cv\-Release\-Blob\-Tracker\-One}}
+\index{cv\-Release\-Blob\-Tracker\-One@{cv\-Release\-Blob\-Tracker\-One}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Release\-Blob\-Tracker\-One}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-Release\-Blob\-Tracker\-One (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Blob\-Tracker\-One} $\ast$$\ast$}]{pp\-T}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{blobtrack_8hpp_ad5c9d0e342a6fc76de75b262dcdffef6}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{blobtrack_8hpp_ad5c9d0e342a6fc76de75b262dcdffef6_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{blobtrack_8hpp_a56a5d10c9ba3a10a699a2a4ce00a9c32}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Release\-Blob\-Track\-Gen@{cv\-Release\-Blob\-Track\-Gen}}
+\index{cv\-Release\-Blob\-Track\-Gen@{cv\-Release\-Blob\-Track\-Gen}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Release\-Blob\-Track\-Gen}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-Release\-Blob\-Track\-Gen (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Blob\-Track\-Gen} $\ast$$\ast$}]{p\-B\-T\-Gen}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{blobtrack_8hpp_a56a5d10c9ba3a10a699a2a4ce00a9c32}
+\hypertarget{blobtrack_8hpp_aec4218c287a8dd848c752559bacc1329}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Release\-Blob\-Track\-Post\-Proc@{cv\-Release\-Blob\-Track\-Post\-Proc}}
+\index{cv\-Release\-Blob\-Track\-Post\-Proc@{cv\-Release\-Blob\-Track\-Post\-Proc}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Release\-Blob\-Track\-Post\-Proc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-Release\-Blob\-Track\-Post\-Proc (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Blob\-Track\-Post\-Proc} $\ast$$\ast$}]{p\-B\-T\-P\-P}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{blobtrack_8hpp_aec4218c287a8dd848c752559bacc1329}
+\hypertarget{blobtrack_8hpp_ad566503a0be5105815e1710db13f18ed}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Release\-F\-G\-Detector@{cv\-Release\-F\-G\-Detector}}
+\index{cv\-Release\-F\-G\-Detector@{cv\-Release\-F\-G\-Detector}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Release\-F\-G\-Detector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cv\-Release\-F\-G\-Detector (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-F\-G\-Detector} $\ast$$\ast$}]{pp\-T}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_ad566503a0be5105815e1710db13f18ed}
+\hypertarget{blobtrack_8hpp_a14efe1af6e0b9b0e6e47c52c61d93176}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Release\-Prob@{cv\-Release\-Prob}}
+\index{cv\-Release\-Prob@{cv\-Release\-Prob}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Release\-Prob}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-Release\-Prob (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Prob} $\ast$$\ast$}]{pp\-Prob}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{blobtrack_8hpp_a14efe1af6e0b9b0e6e47c52c61d93176}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{blobtrack_8hpp_a14efe1af6e0b9b0e6e47c52c61d93176_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{blobtrack_8hpp_ae58a3422002298925b6ae41625c8dd27}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Release\-Test\-Seq@{cv\-Release\-Test\-Seq}}
+\index{cv\-Release\-Test\-Seq@{cv\-Release\-Test\-Seq}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Release\-Test\-Seq}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cv\-Release\-Test\-Seq (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Test\-Seq} $\ast$$\ast$}]{pp\-Test\-Seq}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_ae58a3422002298925b6ae41625c8dd27}
+\hypertarget{blobtrack_8hpp_a773717e1b22106ac5f6630b611c08773}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Test\-Seq\-Add\-Intensity\-Variation@{cv\-Test\-Seq\-Add\-Intensity\-Variation}}
+\index{cv\-Test\-Seq\-Add\-Intensity\-Variation@{cv\-Test\-Seq\-Add\-Intensity\-Variation}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Test\-Seq\-Add\-Intensity\-Variation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cv\-Test\-Seq\-Add\-Intensity\-Variation (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Test\-Seq} $\ast$}]{p\-Test\-Seq, }
+\item[{float}]{D\-I\-\_\-per\-\_\-frame, }
+\item[{float}]{Min\-I, }
+\item[{float}]{Max\-I}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_a773717e1b22106ac5f6630b611c08773}
+\hypertarget{blobtrack_8hpp_a1d2860db0c618c0076c2722c232d5be6}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Test\-Seq\-Add\-Noise@{cv\-Test\-Seq\-Add\-Noise}}
+\index{cv\-Test\-Seq\-Add\-Noise@{cv\-Test\-Seq\-Add\-Noise}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Test\-Seq\-Add\-Noise}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cv\-Test\-Seq\-Add\-Noise (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Test\-Seq} $\ast$}]{p\-Test\-Seq, }
+\item[{int}]{noise\-\_\-type = {\ttfamily {\bf C\-V\-\_\-\-N\-O\-I\-S\-E\-\_\-\-N\-O\-N\-E}}, }
+\item[{double}]{noise\-\_\-ampl = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_a1d2860db0c618c0076c2722c232d5be6}
+\hypertarget{blobtrack_8hpp_a5dc77e234f9ecbc82915bc04a2200a5a}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Test\-Seq\-Frame\-Num@{cv\-Test\-Seq\-Frame\-Num}}
+\index{cv\-Test\-Seq\-Frame\-Num@{cv\-Test\-Seq\-Frame\-Num}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Test\-Seq\-Frame\-Num}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} int cv\-Test\-Seq\-Frame\-Num (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Test\-Seq} $\ast$}]{p\-Test\-Seq}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_a5dc77e234f9ecbc82915bc04a2200a5a}
+\hypertarget{blobtrack_8hpp_ae9317cd86818bf5aa5c758ea0fab5bf6}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Test\-Seq\-Get\-F\-G\-Mask@{cv\-Test\-Seq\-Get\-F\-G\-Mask}}
+\index{cv\-Test\-Seq\-Get\-F\-G\-Mask@{cv\-Test\-Seq\-Get\-F\-G\-Mask}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Test\-Seq\-Get\-F\-G\-Mask}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf Ipl\-Image}$\ast$ cv\-Test\-Seq\-Get\-F\-G\-Mask (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Test\-Seq} $\ast$}]{p\-Test\-Seq}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_ae9317cd86818bf5aa5c758ea0fab5bf6}
+\hypertarget{blobtrack_8hpp_a6529cd71a85ff4c9d7737ea81a059985}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Test\-Seq\-Get\-Image@{cv\-Test\-Seq\-Get\-Image}}
+\index{cv\-Test\-Seq\-Get\-Image@{cv\-Test\-Seq\-Get\-Image}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Test\-Seq\-Get\-Image}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf Ipl\-Image}$\ast$ cv\-Test\-Seq\-Get\-Image (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Test\-Seq} $\ast$}]{p\-Test\-Seq}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_a6529cd71a85ff4c9d7737ea81a059985}
+\hypertarget{blobtrack_8hpp_ad76821cb5afd90dcbf978c927d72a0d7}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Test\-Seq\-Get\-Image\-Size@{cv\-Test\-Seq\-Get\-Image\-Size}}
+\index{cv\-Test\-Seq\-Get\-Image\-Size@{cv\-Test\-Seq\-Get\-Image\-Size}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Test\-Seq\-Get\-Image\-Size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf Cv\-Size} cv\-Test\-Seq\-Get\-Image\-Size (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Test\-Seq} $\ast$}]{p\-Test\-Seq}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_ad76821cb5afd90dcbf978c927d72a0d7}
+\hypertarget{blobtrack_8hpp_a43c4f099f331d2b17a29eaeaa692c7f6}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Test\-Seq\-Get\-Object\-Num@{cv\-Test\-Seq\-Get\-Object\-Num}}
+\index{cv\-Test\-Seq\-Get\-Object\-Num@{cv\-Test\-Seq\-Get\-Object\-Num}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Test\-Seq\-Get\-Object\-Num}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} int cv\-Test\-Seq\-Get\-Object\-Num (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Test\-Seq} $\ast$}]{p\-Test\-Seq}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_a43c4f099f331d2b17a29eaeaa692c7f6}
+\hypertarget{blobtrack_8hpp_addbe43d4d1c092a6c171f2eb15a1c6ac}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Test\-Seq\-Get\-Object\-Pos@{cv\-Test\-Seq\-Get\-Object\-Pos}}
+\index{cv\-Test\-Seq\-Get\-Object\-Pos@{cv\-Test\-Seq\-Get\-Object\-Pos}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Test\-Seq\-Get\-Object\-Pos}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} int cv\-Test\-Seq\-Get\-Object\-Pos (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Test\-Seq} $\ast$}]{p\-Test\-Seq, }
+\item[{int}]{Obj\-Index, }
+\item[{{\bf Cv\-Point2\-D32f} $\ast$}]{p\-Pos}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_addbe43d4d1c092a6c171f2eb15a1c6ac}
+\hypertarget{blobtrack_8hpp_aedb3f493aee7d8121880de7faf224ae9}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Test\-Seq\-Get\-Object\-Size@{cv\-Test\-Seq\-Get\-Object\-Size}}
+\index{cv\-Test\-Seq\-Get\-Object\-Size@{cv\-Test\-Seq\-Get\-Object\-Size}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Test\-Seq\-Get\-Object\-Size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} int cv\-Test\-Seq\-Get\-Object\-Size (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Test\-Seq} $\ast$}]{p\-Test\-Seq, }
+\item[{int}]{Obj\-Index, }
+\item[{{\bf Cv\-Point2\-D32f} $\ast$}]{p\-Size}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_aedb3f493aee7d8121880de7faf224ae9}
+\hypertarget{blobtrack_8hpp_a18032955a26aa7672f3094d5b5e9165d}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Test\-Seq\-Query\-Frame@{cv\-Test\-Seq\-Query\-Frame}}
+\index{cv\-Test\-Seq\-Query\-Frame@{cv\-Test\-Seq\-Query\-Frame}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Test\-Seq\-Query\-Frame}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf Ipl\-Image}$\ast$ cv\-Test\-Seq\-Query\-Frame (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Test\-Seq} $\ast$}]{p\-Test\-Seq}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_a18032955a26aa7672f3094d5b5e9165d}
+\hypertarget{blobtrack_8hpp_ab27d82edc44abc9f0f3dccd3453c98a1}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Test\-Seq\-Set\-Frame@{cv\-Test\-Seq\-Set\-Frame}}
+\index{cv\-Test\-Seq\-Set\-Frame@{cv\-Test\-Seq\-Set\-Frame}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Test\-Seq\-Set\-Frame}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cv\-Test\-Seq\-Set\-Frame (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Test\-Seq} $\ast$}]{p\-Test\-Seq, }
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_ab27d82edc44abc9f0f3dccd3453c98a1}
+\hypertarget{blobtrack_8hpp_acaadbb617bb38064cfbf5d10f429ee2f}{\index{blobtrack.\-hpp@{blobtrack.\-hpp}!cv\-Write\-Struct@{cv\-Write\-Struct}}
+\index{cv\-Write\-Struct@{cv\-Write\-Struct}!blobtrack.hpp@{blobtrack.\-hpp}}
+\subsubsection[{cv\-Write\-Struct}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cv\-Write\-Struct (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-File\-Storage} $\ast$}]{fs, }
+\item[{const char $\ast$}]{name, }
+\item[{{\bf void} $\ast$}]{addr, }
+\item[{const char $\ast$}]{desc, }
+\item[{int}]{num = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}}\label{blobtrack_8hpp_acaadbb617bb38064cfbf5d10f429ee2f}

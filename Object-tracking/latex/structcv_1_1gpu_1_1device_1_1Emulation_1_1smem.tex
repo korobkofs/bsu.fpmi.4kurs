@@ -1,0 +1,76 @@
+\hypertarget{structcv_1_1gpu_1_1device_1_1Emulation_1_1smem}{\section{cv\-:\-:gpu\-:\-:device\-:\-:Emulation\-:\-:smem Struct Reference}
+\label{structcv_1_1gpu_1_1device_1_1Emulation_1_1smem}\index{cv\-::gpu\-::device\-::\-Emulation\-::smem@{cv\-::gpu\-::device\-::\-Emulation\-::smem}}
+}
+
+
+{\ttfamily \#include $<$emulation.\-hpp$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{structcv_1_1gpu_1_1device_1_1Emulation_1_1smem_a8eba482dd7c327f2a8b1b163265a475da9341d37935a5eda90ed8190edc062f9f}{T\-A\-G\-\_\-\-M\-A\-S\-K} = (1\-U $<$$<$ ( (sizeof(unsigned int) $<$$<$ 3) -\/ 5\-U)) -\/ 1\-U
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\static \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \hyperlink{structcv_1_1gpu_1_1device_1_1Emulation_1_1smem_a69ba2389a4a1751e3b66ce97752a43f3}{atomic\-Inc} (\hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} $\ast$address, \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} val)
+\item 
+{\footnotesize template$<$typename T $>$ }\\static \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \hyperlink{structcv_1_1gpu_1_1device_1_1Emulation_1_1smem_a7e9874b99f53c69cfa780cc99259969f}{atomic\-Add} (\hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} $\ast$address, \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} val)
+\item 
+{\footnotesize template$<$typename T $>$ }\\static \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \hyperlink{structcv_1_1gpu_1_1device_1_1Emulation_1_1smem_ae72c3596905e3ca880b82471ef1d0a4e}{atomic\-Min} (\hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} $\ast$address, \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} val)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{structcv_1_1gpu_1_1device_1_1Emulation_1_1smem_a8eba482dd7c327f2a8b1b163265a475d}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{structcv_1_1gpu_1_1device_1_1Emulation_1_1smem_a8eba482dd7c327f2a8b1b163265a475d}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{T\-A\-G\-\_\-\-M\-A\-S\-K@{T\-A\-G\-\_\-\-M\-A\-S\-K}!cv\-::gpu\-::device\-::\-Emulation\-::smem@{cv\-::gpu\-::device\-::\-Emulation\-::smem}}\index{cv\-::gpu\-::device\-::\-Emulation\-::smem@{cv\-::gpu\-::device\-::\-Emulation\-::smem}!T\-A\-G\-\_\-\-M\-A\-S\-K@{T\-A\-G\-\_\-\-M\-A\-S\-K}}\item[{\em 
+\hypertarget{structcv_1_1gpu_1_1device_1_1Emulation_1_1smem_a8eba482dd7c327f2a8b1b163265a475da9341d37935a5eda90ed8190edc062f9f}{T\-A\-G\-\_\-\-M\-A\-S\-K}\label{structcv_1_1gpu_1_1device_1_1Emulation_1_1smem_a8eba482dd7c327f2a8b1b163265a475da9341d37935a5eda90ed8190edc062f9f}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structcv_1_1gpu_1_1device_1_1Emulation_1_1smem_a7e9874b99f53c69cfa780cc99259969f}{\index{cv\-::gpu\-::device\-::\-Emulation\-::smem@{cv\-::gpu\-::device\-::\-Emulation\-::smem}!atomic\-Add@{atomic\-Add}}
+\index{atomic\-Add@{atomic\-Add}!cv::gpu::device::Emulation::smem@{cv\-::gpu\-::device\-::\-Emulation\-::smem}}
+\subsubsection[{atomic\-Add}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ static \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- {\bf T} cv\-::gpu\-::device\-::\-Emulation\-::smem\-::atomic\-Add (
+\begin{DoxyParamCaption}
+\item[{{\bf T} $\ast$}]{address, }
+\item[{{\bf T}}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{structcv_1_1gpu_1_1device_1_1Emulation_1_1smem_a7e9874b99f53c69cfa780cc99259969f}
+\hypertarget{structcv_1_1gpu_1_1device_1_1Emulation_1_1smem_a69ba2389a4a1751e3b66ce97752a43f3}{\index{cv\-::gpu\-::device\-::\-Emulation\-::smem@{cv\-::gpu\-::device\-::\-Emulation\-::smem}!atomic\-Inc@{atomic\-Inc}}
+\index{atomic\-Inc@{atomic\-Inc}!cv::gpu::device::Emulation::smem@{cv\-::gpu\-::device\-::\-Emulation\-::smem}}
+\subsubsection[{atomic\-Inc}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ static \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- {\bf T} cv\-::gpu\-::device\-::\-Emulation\-::smem\-::atomic\-Inc (
+\begin{DoxyParamCaption}
+\item[{{\bf T} $\ast$}]{address, }
+\item[{{\bf T}}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{structcv_1_1gpu_1_1device_1_1Emulation_1_1smem_a69ba2389a4a1751e3b66ce97752a43f3}
+\hypertarget{structcv_1_1gpu_1_1device_1_1Emulation_1_1smem_ae72c3596905e3ca880b82471ef1d0a4e}{\index{cv\-::gpu\-::device\-::\-Emulation\-::smem@{cv\-::gpu\-::device\-::\-Emulation\-::smem}!atomic\-Min@{atomic\-Min}}
+\index{atomic\-Min@{atomic\-Min}!cv::gpu::device::Emulation::smem@{cv\-::gpu\-::device\-::\-Emulation\-::smem}}
+\subsubsection[{atomic\-Min}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ static \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- {\bf T} cv\-::gpu\-::device\-::\-Emulation\-::smem\-::atomic\-Min (
+\begin{DoxyParamCaption}
+\item[{{\bf T} $\ast$}]{address, }
+\item[{{\bf T}}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{structcv_1_1gpu_1_1device_1_1Emulation_1_1smem_ae72c3596905e3ca880b82471ef1d0a4e}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{structcv_1_1gpu_1_1device_1_1Emulation_1_1smem_ae72c3596905e3ca880b82471ef1d0a4e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/gpu/device/\hyperlink{emulation_8hpp}{emulation.\-hpp}\end{DoxyCompactItemize}

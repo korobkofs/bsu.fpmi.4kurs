@@ -1,0 +1,8 @@
+<map id="cvflann::save_value" name="cvflann::save_value">
+<area shape="rect" id="node2" href="$classcvflann_1_1AutotunedIndex.html#ab9552f173c22040794429231c6a13407" title="cvflann::AutotunedIndex\l::saveIndex" alt="" coords="211,5,373,46"/>
+<area shape="rect" id="node3" href="$classcvflann_1_1HierarchicalClusteringIndex.html#a8159af14901976754a61fd6a41ef3345" title="Saves the index to a stream. " alt="" coords="192,70,392,111"/>
+<area shape="rect" id="node4" href="$classcvflann_1_1KDTreeIndex.html#a623752bde2c481c8c7bc2c88a702c481" title="Saves the index to a stream. " alt="" coords="217,135,367,177"/>
+<area shape="rect" id="node5" href="$classcvflann_1_1KDTreeSingleIndex.html#adacba07ebbd7ed471f2645b64bb883e5" title="Saves the index to a stream. " alt="" coords="199,201,385,242"/>
+<area shape="rect" id="node6" href="$classcvflann_1_1KMeansIndex.html#a4c388bc8fab9af7ec567e00366ea14f6" title="Saves the index to a stream. " alt="" coords="216,266,368,307"/>
+<area shape="rect" id="node7" href="$classcvflann_1_1LshIndex.html#a2c4f2730a643239a5a633acd2534b95d" title="Saves the index to a stream. " alt="" coords="225,331,359,373"/>
+</map>

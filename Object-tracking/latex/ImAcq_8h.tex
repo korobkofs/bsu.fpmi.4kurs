@@ -1,0 +1,586 @@
+\hypertarget{ImAcq_8h}{\section{src/libopentld/imacq/\-Im\-Acq.h File Reference}
+\label{ImAcq_8h}\index{src/libopentld/imacq/\-Im\-Acq.\-h@{src/libopentld/imacq/\-Im\-Acq.\-h}}
+}
+{\ttfamily \#include $<$opencv/highgui.\-h$>$}\\*
+Include dependency graph for Im\-Acq.\-h\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{ImAcq_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ImAcq_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structImAcq}{Im\-Acq}
+\begin{DoxyCompactList}\small\item\em The structure for the capture frames. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{ImAcq_8h_a0c8f8f6fcd28d6dc10eefa0c051ac959}{Imacq\-Method} \{ \\*
+\hyperlink{ImAcq_8h_a0c8f8f6fcd28d6dc10eefa0c051ac959aa4ee82d42669445b20f5a7ae43e8707d}{I\-M\-A\-C\-Q\-\_\-\-I\-M\-G\-S}, 
+\hyperlink{ImAcq_8h_a0c8f8f6fcd28d6dc10eefa0c051ac959a745a2a615a5c4db28edf11ae52cf64fa}{I\-M\-A\-C\-Q\-\_\-\-C\-A\-M}, 
+\hyperlink{ImAcq_8h_a0c8f8f6fcd28d6dc10eefa0c051ac959ad1eefb7dbceaeefceacd799645c0693d}{I\-M\-A\-C\-Q\-\_\-\-V\-I\-D}, 
+\hyperlink{ImAcq_8h_a0c8f8f6fcd28d6dc10eefa0c051ac959a398473240a6805610efe8a8e7ff80640}{I\-M\-A\-C\-Q\-\_\-\-L\-I\-V\-E\-S\-I\-M}, 
+\\*
+\hyperlink{ImAcq_8h_a0c8f8f6fcd28d6dc10eefa0c051ac959a3751056006d266c090ed230dbfd082f5}{I\-M\-A\-C\-Q\-\_\-\-S\-T\-R\-E\-A\-M}
+ \}
+\begin{DoxyCompactList}\small\item\em Capturing method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structImAcq}{Im\-Acq} $\ast$ \hyperlink{ImAcq_8h_a92fb66a856dbc776d02d3f39e2373679}{im\-Acq\-Alloc} ()
+\begin{DoxyCompactList}\small\item\em Allocates of memory and initializes date (except the capture) of stucture \hyperlink{structImAcq}{Im\-Acq}. \end{DoxyCompactList}\item 
+void \hyperlink{ImAcq_8h_a9d45e2a76bf8d7db08e938dd16383f10}{im\-Acq\-Init} (\hyperlink{structImAcq}{Im\-Acq} $\ast$im\-Acq)
+\begin{DoxyCompactList}\small\item\em Initializes the capture. \end{DoxyCompactList}\item 
+void \hyperlink{ImAcq_8h_a6092ef2b2b5f8a414d67f192a7dfbccc}{im\-Acq\-Release} (\hyperlink{structImAcq}{Im\-Acq} $\ast$im\-Acq)
+\begin{DoxyCompactList}\small\item\em It isn't realized. \end{DoxyCompactList}\item 
+void \hyperlink{ImAcq_8h_ab5093d8219e7a2c0e0149d2644be7c64}{im\-Acq\-Vid\-Set\-Next\-Frame\-Number} (\hyperlink{structImAcq}{Im\-Acq} $\ast$im\-Acq, int n\-Frame)
+\begin{DoxyCompactList}\small\item\em Sets the next frame number (I\-M\-A\-C\-Q\-\_\-\-V\-I\-D) \end{DoxyCompactList}\item 
+int \hyperlink{ImAcq_8h_a688f564a29e7b087115aa8ae607bf565}{im\-Acq\-Vid\-Get\-Next\-Frame\-Number} (\hyperlink{structImAcq}{Im\-Acq} $\ast$im\-Acq)
+\begin{DoxyCompactList}\small\item\em Gets the next frame number (I\-M\-A\-C\-Q\-\_\-\-V\-I\-D) \end{DoxyCompactList}\item 
+int \hyperlink{ImAcq_8h_a443b3a926d4435ab46a37f483138681b}{im\-Acq\-Vid\-Get\-Number\-Of\-Frames} (\hyperlink{structImAcq}{Im\-Acq} $\ast$im\-Acq)
+\begin{DoxyCompactList}\small\item\em Gets the number of frames (I\-M\-A\-C\-Q\-\_\-\-V\-I\-D) \end{DoxyCompactList}\item 
+int \hyperlink{ImAcq_8h_a864124578948857087e2ba9021351e80}{im\-Acq\-Has\-More\-Frames} (\hyperlink{structImAcq}{Im\-Acq} $\ast$im\-Acq)
+\begin{DoxyCompactList}\small\item\em Determines if there are more frame. \end{DoxyCompactList}\item 
+Ipl\-Image $\ast$ \hyperlink{ImAcq_8h_a68cde69f4260cd2493e3fecf2ec3ebfb}{im\-Acq\-Get\-Img\-And\-Advance} (\hyperlink{structImAcq}{Im\-Acq} $\ast$im\-Acq)
+\begin{DoxyCompactList}\small\item\em Gets the next image with twice increase the count of frames. \end{DoxyCompactList}\item 
+Ipl\-Image $\ast$ \hyperlink{ImAcq_8h_aa2d578629cc485cf191adede101d032f}{im\-Acq\-Get\-Img} (\hyperlink{structImAcq}{Im\-Acq} $\ast$im\-Acq)
+\begin{DoxyCompactList}\small\item\em Gets the next image with increase the count of frames. \end{DoxyCompactList}\item 
+Ipl\-Image $\ast$ \hyperlink{ImAcq_8h_a27af836aebabd5889947aef0e21bcaee}{im\-Acq\-Get\-Img\-By\-Frame} (\hyperlink{structImAcq}{Im\-Acq} $\ast$im\-Acq, int f\-No)
+\begin{DoxyCompactList}\small\item\em Gets image by the frame number. \end{DoxyCompactList}\item 
+Ipl\-Image $\ast$ \hyperlink{ImAcq_8h_adad11684c86a1fcdbb6f736878bba8cc}{im\-Acq\-Get\-Img\-By\-Current\-Time} (\hyperlink{structImAcq}{Im\-Acq} $\ast$im\-Acq)
+\begin{DoxyCompactList}\small\item\em Gets image by current time. \end{DoxyCompactList}\item 
+Ipl\-Image $\ast$ \hyperlink{ImAcq_8h_aeb5c153470459209a74ddf14a2acea53}{im\-Acq\-Load\-Img} (\hyperlink{structImAcq}{Im\-Acq} $\ast$im\-Acq, char $\ast$path)
+\begin{DoxyCompactList}\small\item\em Loads the image. \end{DoxyCompactList}\item 
+Ipl\-Image $\ast$ \hyperlink{ImAcq_8h_a302e2a11dfe69f3925807ae0ff9cb2ec}{im\-Acq\-Load\-Current\-Frame} (\hyperlink{structImAcq}{Im\-Acq} $\ast$im\-Acq)
+\begin{DoxyCompactList}\small\item\em Loads the current frame. \end{DoxyCompactList}\item 
+Ipl\-Image $\ast$ \hyperlink{ImAcq_8h_a5c97842aa89ab53c3a600b6710d7a793}{im\-Acq\-Load\-Vid\-Frame} (Cv\-Capture $\ast$capture)
+\begin{DoxyCompactList}\small\item\em It isn't realized. \end{DoxyCompactList}\item 
+Ipl\-Image $\ast$ \hyperlink{ImAcq_8h_affd4242000946f8dcf68beed336cb540}{im\-Acq\-Grab} (Cv\-Capture $\ast$capture)
+\begin{DoxyCompactList}\small\item\em Grabs the image (for I\-M\-A\-C\-Q\-\_\-\-C\-A\-M, I\-M\-A\-C\-Q\-\_\-\-V\-I\-D, I\-M\-A\-C\-Q\-\_\-\-S\-T\-R\-E\-A\-M). \end{DoxyCompactList}\item 
+void \hyperlink{ImAcq_8h_a8f0d4ea2207021c8b2f9884edcb50fee}{im\-Acq\-Advance} (\hyperlink{structImAcq}{Im\-Acq} $\ast$im\-Acq)
+\begin{DoxyCompactList}\small\item\em Increases the count of frames. \end{DoxyCompactList}\item 
+void \hyperlink{ImAcq_8h_a03fcfd168e7e1542fdf4274118443c18}{im\-Acq\-Free} (\hyperlink{structImAcq}{Im\-Acq} $\ast$)
+\begin{DoxyCompactList}\small\item\em Releases memory stucture \hyperlink{structImAcq}{Im\-Acq}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{ImAcq_8h_a0c8f8f6fcd28d6dc10eefa0c051ac959}{\index{Im\-Acq.\-h@{Im\-Acq.\-h}!Imacq\-Method@{Imacq\-Method}}
+\index{Imacq\-Method@{Imacq\-Method}!ImAcq.h@{Im\-Acq.\-h}}
+\subsubsection[{Imacq\-Method}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Imacq\-Method}}}\label{ImAcq_8h_a0c8f8f6fcd28d6dc10eefa0c051ac959}
+
+
+Capturing method. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{I\-M\-A\-C\-Q\-\_\-\-I\-M\-G\-S@{I\-M\-A\-C\-Q\-\_\-\-I\-M\-G\-S}!Im\-Acq.\-h@{Im\-Acq.\-h}}\index{Im\-Acq.\-h@{Im\-Acq.\-h}!I\-M\-A\-C\-Q\-\_\-\-I\-M\-G\-S@{I\-M\-A\-C\-Q\-\_\-\-I\-M\-G\-S}}\item[{\em 
+\hypertarget{ImAcq_8h_a0c8f8f6fcd28d6dc10eefa0c051ac959aa4ee82d42669445b20f5a7ae43e8707d}{I\-M\-A\-C\-Q\-\_\-\-I\-M\-G\-S}\label{ImAcq_8h_a0c8f8f6fcd28d6dc10eefa0c051ac959aa4ee82d42669445b20f5a7ae43e8707d}
+}]Images. \index{I\-M\-A\-C\-Q\-\_\-\-C\-A\-M@{I\-M\-A\-C\-Q\-\_\-\-C\-A\-M}!Im\-Acq.\-h@{Im\-Acq.\-h}}\index{Im\-Acq.\-h@{Im\-Acq.\-h}!I\-M\-A\-C\-Q\-\_\-\-C\-A\-M@{I\-M\-A\-C\-Q\-\_\-\-C\-A\-M}}\item[{\em 
+\hypertarget{ImAcq_8h_a0c8f8f6fcd28d6dc10eefa0c051ac959a745a2a615a5c4db28edf11ae52cf64fa}{I\-M\-A\-C\-Q\-\_\-\-C\-A\-M}\label{ImAcq_8h_a0c8f8f6fcd28d6dc10eefa0c051ac959a745a2a615a5c4db28edf11ae52cf64fa}
+}]Camera. \index{I\-M\-A\-C\-Q\-\_\-\-V\-I\-D@{I\-M\-A\-C\-Q\-\_\-\-V\-I\-D}!Im\-Acq.\-h@{Im\-Acq.\-h}}\index{Im\-Acq.\-h@{Im\-Acq.\-h}!I\-M\-A\-C\-Q\-\_\-\-V\-I\-D@{I\-M\-A\-C\-Q\-\_\-\-V\-I\-D}}\item[{\em 
+\hypertarget{ImAcq_8h_a0c8f8f6fcd28d6dc10eefa0c051ac959ad1eefb7dbceaeefceacd799645c0693d}{I\-M\-A\-C\-Q\-\_\-\-V\-I\-D}\label{ImAcq_8h_a0c8f8f6fcd28d6dc10eefa0c051ac959ad1eefb7dbceaeefceacd799645c0693d}
+}]Video. \index{I\-M\-A\-C\-Q\-\_\-\-L\-I\-V\-E\-S\-I\-M@{I\-M\-A\-C\-Q\-\_\-\-L\-I\-V\-E\-S\-I\-M}!Im\-Acq.\-h@{Im\-Acq.\-h}}\index{Im\-Acq.\-h@{Im\-Acq.\-h}!I\-M\-A\-C\-Q\-\_\-\-L\-I\-V\-E\-S\-I\-M@{I\-M\-A\-C\-Q\-\_\-\-L\-I\-V\-E\-S\-I\-M}}\item[{\em 
+\hypertarget{ImAcq_8h_a0c8f8f6fcd28d6dc10eefa0c051ac959a398473240a6805610efe8a8e7ff80640}{I\-M\-A\-C\-Q\-\_\-\-L\-I\-V\-E\-S\-I\-M}\label{ImAcq_8h_a0c8f8f6fcd28d6dc10eefa0c051ac959a398473240a6805610efe8a8e7ff80640}
+}]Livesim. \index{I\-M\-A\-C\-Q\-\_\-\-S\-T\-R\-E\-A\-M@{I\-M\-A\-C\-Q\-\_\-\-S\-T\-R\-E\-A\-M}!Im\-Acq.\-h@{Im\-Acq.\-h}}\index{Im\-Acq.\-h@{Im\-Acq.\-h}!I\-M\-A\-C\-Q\-\_\-\-S\-T\-R\-E\-A\-M@{I\-M\-A\-C\-Q\-\_\-\-S\-T\-R\-E\-A\-M}}\item[{\em 
+\hypertarget{ImAcq_8h_a0c8f8f6fcd28d6dc10eefa0c051ac959a3751056006d266c090ed230dbfd082f5}{I\-M\-A\-C\-Q\-\_\-\-S\-T\-R\-E\-A\-M}\label{ImAcq_8h_a0c8f8f6fcd28d6dc10eefa0c051ac959a3751056006d266c090ed230dbfd082f5}
+}]Stream. \end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\hypertarget{ImAcq_8h_a8f0d4ea2207021c8b2f9884edcb50fee}{\index{Im\-Acq.\-h@{Im\-Acq.\-h}!im\-Acq\-Advance@{im\-Acq\-Advance}}
+\index{im\-Acq\-Advance@{im\-Acq\-Advance}!ImAcq.h@{Im\-Acq.\-h}}
+\subsubsection[{im\-Acq\-Advance}]{\setlength{\rightskip}{0pt plus 5cm}void im\-Acq\-Advance (
+\begin{DoxyParamCaption}
+\item[{{\bf Im\-Acq} $\ast$}]{im\-Acq}
+\end{DoxyParamCaption}
+)}}\label{ImAcq_8h_a8f0d4ea2207021c8b2f9884edcb50fee}
+
+
+Increases the count of frames. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em im\-Acq} & the using stucture \hyperlink{structImAcq}{Im\-Acq} \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ImAcq_8h_a8f0d4ea2207021c8b2f9884edcb50fee_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{ImAcq_8h_a92fb66a856dbc776d02d3f39e2373679}{\index{Im\-Acq.\-h@{Im\-Acq.\-h}!im\-Acq\-Alloc@{im\-Acq\-Alloc}}
+\index{im\-Acq\-Alloc@{im\-Acq\-Alloc}!ImAcq.h@{Im\-Acq.\-h}}
+\subsubsection[{im\-Acq\-Alloc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Im\-Acq}$\ast$ im\-Acq\-Alloc (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{ImAcq_8h_a92fb66a856dbc776d02d3f39e2373679}
+
+
+Allocates of memory and initializes date (except the capture) of stucture \hyperlink{structImAcq}{Im\-Acq}. 
+
+\begin{DoxyReturn}{Returns}
+the allocated stucture \hyperlink{structImAcq}{Im\-Acq} 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{ImAcq_8h_a92fb66a856dbc776d02d3f39e2373679_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{ImAcq_8h_a03fcfd168e7e1542fdf4274118443c18}{\index{Im\-Acq.\-h@{Im\-Acq.\-h}!im\-Acq\-Free@{im\-Acq\-Free}}
+\index{im\-Acq\-Free@{im\-Acq\-Free}!ImAcq.h@{Im\-Acq.\-h}}
+\subsubsection[{im\-Acq\-Free}]{\setlength{\rightskip}{0pt plus 5cm}void im\-Acq\-Free (
+\begin{DoxyParamCaption}
+\item[{{\bf Im\-Acq} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{ImAcq_8h_a03fcfd168e7e1542fdf4274118443c18}
+
+
+Releases memory stucture \hyperlink{structImAcq}{Im\-Acq}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em im\-Acq} & the releasing stucture \hyperlink{structImAcq}{Im\-Acq} \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{ImAcq_8h_a03fcfd168e7e1542fdf4274118443c18_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{ImAcq_8h_aa2d578629cc485cf191adede101d032f}{\index{Im\-Acq.\-h@{Im\-Acq.\-h}!im\-Acq\-Get\-Img@{im\-Acq\-Get\-Img}}
+\index{im\-Acq\-Get\-Img@{im\-Acq\-Get\-Img}!ImAcq.h@{Im\-Acq.\-h}}
+\subsubsection[{im\-Acq\-Get\-Img}]{\setlength{\rightskip}{0pt plus 5cm}Ipl\-Image$\ast$ im\-Acq\-Get\-Img (
+\begin{DoxyParamCaption}
+\item[{{\bf Im\-Acq} $\ast$}]{im\-Acq}
+\end{DoxyParamCaption}
+)}}\label{ImAcq_8h_aa2d578629cc485cf191adede101d032f}
+
+
+Gets the next image with increase the count of frames. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em im\-Acq} & the using stucture \hyperlink{structImAcq}{Im\-Acq} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the image 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ImAcq_8h_aa2d578629cc485cf191adede101d032f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ImAcq_8h_aa2d578629cc485cf191adede101d032f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{ImAcq_8h_a68cde69f4260cd2493e3fecf2ec3ebfb}{\index{Im\-Acq.\-h@{Im\-Acq.\-h}!im\-Acq\-Get\-Img\-And\-Advance@{im\-Acq\-Get\-Img\-And\-Advance}}
+\index{im\-Acq\-Get\-Img\-And\-Advance@{im\-Acq\-Get\-Img\-And\-Advance}!ImAcq.h@{Im\-Acq.\-h}}
+\subsubsection[{im\-Acq\-Get\-Img\-And\-Advance}]{\setlength{\rightskip}{0pt plus 5cm}Ipl\-Image$\ast$ im\-Acq\-Get\-Img\-And\-Advance (
+\begin{DoxyParamCaption}
+\item[{{\bf Im\-Acq} $\ast$}]{im\-Acq}
+\end{DoxyParamCaption}
+)}}\label{ImAcq_8h_a68cde69f4260cd2493e3fecf2ec3ebfb}
+
+
+Gets the next image with twice increase the count of frames. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em im\-Acq} & the using stucture \hyperlink{structImAcq}{Im\-Acq} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the image 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ImAcq_8h_a68cde69f4260cd2493e3fecf2ec3ebfb_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{ImAcq_8h_adad11684c86a1fcdbb6f736878bba8cc}{\index{Im\-Acq.\-h@{Im\-Acq.\-h}!im\-Acq\-Get\-Img\-By\-Current\-Time@{im\-Acq\-Get\-Img\-By\-Current\-Time}}
+\index{im\-Acq\-Get\-Img\-By\-Current\-Time@{im\-Acq\-Get\-Img\-By\-Current\-Time}!ImAcq.h@{Im\-Acq.\-h}}
+\subsubsection[{im\-Acq\-Get\-Img\-By\-Current\-Time}]{\setlength{\rightskip}{0pt plus 5cm}Ipl\-Image$\ast$ im\-Acq\-Get\-Img\-By\-Current\-Time (
+\begin{DoxyParamCaption}
+\item[{{\bf Im\-Acq} $\ast$}]{im\-Acq}
+\end{DoxyParamCaption}
+)}}\label{ImAcq_8h_adad11684c86a1fcdbb6f736878bba8cc}
+
+
+Gets image by current time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em im\-Acq} & the using stucture \hyperlink{structImAcq}{Im\-Acq} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the image 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ImAcq_8h_adad11684c86a1fcdbb6f736878bba8cc_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ImAcq_8h_adad11684c86a1fcdbb6f736878bba8cc_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{ImAcq_8h_a27af836aebabd5889947aef0e21bcaee}{\index{Im\-Acq.\-h@{Im\-Acq.\-h}!im\-Acq\-Get\-Img\-By\-Frame@{im\-Acq\-Get\-Img\-By\-Frame}}
+\index{im\-Acq\-Get\-Img\-By\-Frame@{im\-Acq\-Get\-Img\-By\-Frame}!ImAcq.h@{Im\-Acq.\-h}}
+\subsubsection[{im\-Acq\-Get\-Img\-By\-Frame}]{\setlength{\rightskip}{0pt plus 5cm}Ipl\-Image$\ast$ im\-Acq\-Get\-Img\-By\-Frame (
+\begin{DoxyParamCaption}
+\item[{{\bf Im\-Acq} $\ast$}]{im\-Acq, }
+\item[{int}]{f\-No}
+\end{DoxyParamCaption}
+)}}\label{ImAcq_8h_a27af836aebabd5889947aef0e21bcaee}
+
+
+Gets image by the frame number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em im\-Acq} & the using stucture \hyperlink{structImAcq}{Im\-Acq} \\
+\hline
+{\em f\-No} & the frame number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the image 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ImAcq_8h_a27af836aebabd5889947aef0e21bcaee_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{ImAcq_8h_affd4242000946f8dcf68beed336cb540}{\index{Im\-Acq.\-h@{Im\-Acq.\-h}!im\-Acq\-Grab@{im\-Acq\-Grab}}
+\index{im\-Acq\-Grab@{im\-Acq\-Grab}!ImAcq.h@{Im\-Acq.\-h}}
+\subsubsection[{im\-Acq\-Grab}]{\setlength{\rightskip}{0pt plus 5cm}Ipl\-Image$\ast$ im\-Acq\-Grab (
+\begin{DoxyParamCaption}
+\item[{Cv\-Capture $\ast$}]{capture}
+\end{DoxyParamCaption}
+)}}\label{ImAcq_8h_affd4242000946f8dcf68beed336cb540}
+
+
+Grabs the image (for I\-M\-A\-C\-Q\-\_\-\-C\-A\-M, I\-M\-A\-C\-Q\-\_\-\-V\-I\-D, I\-M\-A\-C\-Q\-\_\-\-S\-T\-R\-E\-A\-M). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em capture} & the source of frames \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the grabed image 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{ImAcq_8h_affd4242000946f8dcf68beed336cb540_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ImAcq_8h_affd4242000946f8dcf68beed336cb540_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{ImAcq_8h_a864124578948857087e2ba9021351e80}{\index{Im\-Acq.\-h@{Im\-Acq.\-h}!im\-Acq\-Has\-More\-Frames@{im\-Acq\-Has\-More\-Frames}}
+\index{im\-Acq\-Has\-More\-Frames@{im\-Acq\-Has\-More\-Frames}!ImAcq.h@{Im\-Acq.\-h}}
+\subsubsection[{im\-Acq\-Has\-More\-Frames}]{\setlength{\rightskip}{0pt plus 5cm}int im\-Acq\-Has\-More\-Frames (
+\begin{DoxyParamCaption}
+\item[{{\bf Im\-Acq} $\ast$}]{im\-Acq}
+\end{DoxyParamCaption}
+)}}\label{ImAcq_8h_a864124578948857087e2ba9021351e80}
+
+
+Determines if there are more frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em im\-Acq} & the using stucture \hyperlink{structImAcq}{Im\-Acq} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0, if there are more frame; 1, otherwise 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ImAcq_8h_a864124578948857087e2ba9021351e80_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{ImAcq_8h_a9d45e2a76bf8d7db08e938dd16383f10}{\index{Im\-Acq.\-h@{Im\-Acq.\-h}!im\-Acq\-Init@{im\-Acq\-Init}}
+\index{im\-Acq\-Init@{im\-Acq\-Init}!ImAcq.h@{Im\-Acq.\-h}}
+\subsubsection[{im\-Acq\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void im\-Acq\-Init (
+\begin{DoxyParamCaption}
+\item[{{\bf Im\-Acq} $\ast$}]{im\-Acq}
+\end{DoxyParamCaption}
+)}}\label{ImAcq_8h_a9d45e2a76bf8d7db08e938dd16383f10}
+
+
+Initializes the capture. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em im\-Acq} & the initializing stucture \hyperlink{structImAcq}{Im\-Acq} \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{ImAcq_8h_a9d45e2a76bf8d7db08e938dd16383f10_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{ImAcq_8h_a9d45e2a76bf8d7db08e938dd16383f10_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{ImAcq_8h_a302e2a11dfe69f3925807ae0ff9cb2ec}{\index{Im\-Acq.\-h@{Im\-Acq.\-h}!im\-Acq\-Load\-Current\-Frame@{im\-Acq\-Load\-Current\-Frame}}
+\index{im\-Acq\-Load\-Current\-Frame@{im\-Acq\-Load\-Current\-Frame}!ImAcq.h@{Im\-Acq.\-h}}
+\subsubsection[{im\-Acq\-Load\-Current\-Frame}]{\setlength{\rightskip}{0pt plus 5cm}Ipl\-Image$\ast$ im\-Acq\-Load\-Current\-Frame (
+\begin{DoxyParamCaption}
+\item[{{\bf Im\-Acq} $\ast$}]{im\-Acq}
+\end{DoxyParamCaption}
+)}}\label{ImAcq_8h_a302e2a11dfe69f3925807ae0ff9cb2ec}
+
+
+Loads the current frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em im\-Acq} & the using stucture \hyperlink{structImAcq}{Im\-Acq} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the image. 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{ImAcq_8h_a302e2a11dfe69f3925807ae0ff9cb2ec_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ImAcq_8h_a302e2a11dfe69f3925807ae0ff9cb2ec_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{ImAcq_8h_aeb5c153470459209a74ddf14a2acea53}{\index{Im\-Acq.\-h@{Im\-Acq.\-h}!im\-Acq\-Load\-Img@{im\-Acq\-Load\-Img}}
+\index{im\-Acq\-Load\-Img@{im\-Acq\-Load\-Img}!ImAcq.h@{Im\-Acq.\-h}}
+\subsubsection[{im\-Acq\-Load\-Img}]{\setlength{\rightskip}{0pt plus 5cm}Ipl\-Image$\ast$ im\-Acq\-Load\-Img (
+\begin{DoxyParamCaption}
+\item[{{\bf Im\-Acq} $\ast$}]{im\-Acq, }
+\item[{char $\ast$}]{path}
+\end{DoxyParamCaption}
+)}}\label{ImAcq_8h_aeb5c153470459209a74ddf14a2acea53}
+
+
+Loads the image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em im\-Acq} & the using stucture \hyperlink{structImAcq}{Im\-Acq} \\
+\hline
+{\em path} & the path to the image \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the images 
+\end{DoxyReturn}
+\hypertarget{ImAcq_8h_a5c97842aa89ab53c3a600b6710d7a793}{\index{Im\-Acq.\-h@{Im\-Acq.\-h}!im\-Acq\-Load\-Vid\-Frame@{im\-Acq\-Load\-Vid\-Frame}}
+\index{im\-Acq\-Load\-Vid\-Frame@{im\-Acq\-Load\-Vid\-Frame}!ImAcq.h@{Im\-Acq.\-h}}
+\subsubsection[{im\-Acq\-Load\-Vid\-Frame}]{\setlength{\rightskip}{0pt plus 5cm}Ipl\-Image$\ast$ im\-Acq\-Load\-Vid\-Frame (
+\begin{DoxyParamCaption}
+\item[{Cv\-Capture $\ast$}]{capture}
+\end{DoxyParamCaption}
+)}}\label{ImAcq_8h_a5c97842aa89ab53c3a600b6710d7a793}
+
+
+It isn't realized. 
+
+\hypertarget{ImAcq_8h_a6092ef2b2b5f8a414d67f192a7dfbccc}{\index{Im\-Acq.\-h@{Im\-Acq.\-h}!im\-Acq\-Release@{im\-Acq\-Release}}
+\index{im\-Acq\-Release@{im\-Acq\-Release}!ImAcq.h@{Im\-Acq.\-h}}
+\subsubsection[{im\-Acq\-Release}]{\setlength{\rightskip}{0pt plus 5cm}void im\-Acq\-Release (
+\begin{DoxyParamCaption}
+\item[{{\bf Im\-Acq} $\ast$}]{im\-Acq}
+\end{DoxyParamCaption}
+)}}\label{ImAcq_8h_a6092ef2b2b5f8a414d67f192a7dfbccc}
+
+
+It isn't realized. 
+
+\hypertarget{ImAcq_8h_a688f564a29e7b087115aa8ae607bf565}{\index{Im\-Acq.\-h@{Im\-Acq.\-h}!im\-Acq\-Vid\-Get\-Next\-Frame\-Number@{im\-Acq\-Vid\-Get\-Next\-Frame\-Number}}
+\index{im\-Acq\-Vid\-Get\-Next\-Frame\-Number@{im\-Acq\-Vid\-Get\-Next\-Frame\-Number}!ImAcq.h@{Im\-Acq.\-h}}
+\subsubsection[{im\-Acq\-Vid\-Get\-Next\-Frame\-Number}]{\setlength{\rightskip}{0pt plus 5cm}int im\-Acq\-Vid\-Get\-Next\-Frame\-Number (
+\begin{DoxyParamCaption}
+\item[{{\bf Im\-Acq} $\ast$}]{im\-Acq}
+\end{DoxyParamCaption}
+)}}\label{ImAcq_8h_a688f564a29e7b087115aa8ae607bf565}
+
+
+Gets the next frame number (I\-M\-A\-C\-Q\-\_\-\-V\-I\-D) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em im\-Acq} & the using stucture \hyperlink{structImAcq}{Im\-Acq} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the next frame number 
+\end{DoxyReturn}
+\hypertarget{ImAcq_8h_a443b3a926d4435ab46a37f483138681b}{\index{Im\-Acq.\-h@{Im\-Acq.\-h}!im\-Acq\-Vid\-Get\-Number\-Of\-Frames@{im\-Acq\-Vid\-Get\-Number\-Of\-Frames}}
+\index{im\-Acq\-Vid\-Get\-Number\-Of\-Frames@{im\-Acq\-Vid\-Get\-Number\-Of\-Frames}!ImAcq.h@{Im\-Acq.\-h}}
+\subsubsection[{im\-Acq\-Vid\-Get\-Number\-Of\-Frames}]{\setlength{\rightskip}{0pt plus 5cm}int im\-Acq\-Vid\-Get\-Number\-Of\-Frames (
+\begin{DoxyParamCaption}
+\item[{{\bf Im\-Acq} $\ast$}]{im\-Acq}
+\end{DoxyParamCaption}
+)}}\label{ImAcq_8h_a443b3a926d4435ab46a37f483138681b}
+
+
+Gets the number of frames (I\-M\-A\-C\-Q\-\_\-\-V\-I\-D) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em im\-Acq} & the using stucture \hyperlink{structImAcq}{Im\-Acq} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the number of frames 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ImAcq_8h_a443b3a926d4435ab46a37f483138681b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{ImAcq_8h_ab5093d8219e7a2c0e0149d2644be7c64}{\index{Im\-Acq.\-h@{Im\-Acq.\-h}!im\-Acq\-Vid\-Set\-Next\-Frame\-Number@{im\-Acq\-Vid\-Set\-Next\-Frame\-Number}}
+\index{im\-Acq\-Vid\-Set\-Next\-Frame\-Number@{im\-Acq\-Vid\-Set\-Next\-Frame\-Number}!ImAcq.h@{Im\-Acq.\-h}}
+\subsubsection[{im\-Acq\-Vid\-Set\-Next\-Frame\-Number}]{\setlength{\rightskip}{0pt plus 5cm}void im\-Acq\-Vid\-Set\-Next\-Frame\-Number (
+\begin{DoxyParamCaption}
+\item[{{\bf Im\-Acq} $\ast$}]{im\-Acq, }
+\item[{int}]{n\-Frame}
+\end{DoxyParamCaption}
+)}}\label{ImAcq_8h_ab5093d8219e7a2c0e0149d2644be7c64}
+
+
+Sets the next frame number (I\-M\-A\-C\-Q\-\_\-\-V\-I\-D) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em im\-Acq} & the using stucture \hyperlink{structImAcq}{Im\-Acq} \\
+\hline
+{\em n\-Frame} & the set next frame number \\
+\hline
+\end{DoxyParams}

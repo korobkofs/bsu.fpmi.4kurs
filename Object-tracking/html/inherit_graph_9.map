@@ -1,0 +1,40 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classCOperadorBlob.html" title="COperadorBlob" alt="" coords="6,933,117,960"/>
+<area shape="rect" id="node2" href="$classCBlobGetArea.html" title="CBlobGetArea" alt="" coords="215,5,321,32"/>
+<area shape="rect" id="node3" href="$classCBlobGetAreaElipseRatio.html" title="CBlobGetAreaElipseRatio" alt="" coords="181,56,355,83"/>
+<area shape="rect" id="node4" href="$classCBlobGetAxisRatio.html" title="CBlobGetAxisRatio" alt="" coords="200,107,336,133"/>
+<area shape="rect" id="node5" href="$classCBlobGetBreadth.html" title="CBlobGetBreadth" alt="" coords="206,157,330,184"/>
+<area shape="rect" id="node6" href="$classCBlobGetCompactness.html" title="CBlobGetCompactness" alt="" coords="188,208,348,235"/>
+<area shape="rect" id="node7" href="$classCBlobGetDiffX.html" title="Classe per calcular la diferència en X del blob. " alt="" coords="213,259,323,285"/>
+<area shape="rect" id="node8" href="$classCBlobGetDiffY.html" title="Classe per calcular la diferència en X del blob. " alt="" coords="213,309,323,336"/>
+<area shape="rect" id="node9" href="$classCBlobGetDistanceFromPoint.html" title="CBlobGetDistanceFromPoint" alt="" coords="173,360,363,387"/>
+<area shape="rect" id="node10" href="$classCBlobGetElongation.html" title="CBlobGetElongation" alt="" coords="198,411,338,437"/>
+<area shape="rect" id="node11" href="$classCBlobGetExterior.html" title="CBlobGetExterior" alt="" coords="206,461,330,488"/>
+<area shape="rect" id="node12" href="$classCBlobGetExternHullPerimeterRatio.html" title="CBlobGetExternHullPerimeter\lRatio" alt="" coords="170,513,366,554"/>
+<area shape="rect" id="node13" href="$classCBlobGetExternPerimeter.html" title="CBlobGetExternPerimeter" alt="" coords="181,579,355,605"/>
+<area shape="rect" id="node14" href="$classCBlobGetExternPerimeterRatio.html" title="CBlobGetExternPerimeterRatio" alt="" coords="166,629,370,656"/>
+<area shape="rect" id="node15" href="$classCBlobGetHullArea.html" title="CBlobGetHullArea" alt="" coords="203,680,333,707"/>
+<area shape="rect" id="node16" href="$classCBlobGetHullPerimeter.html" title="CBlobGetHullPerimeter" alt="" coords="189,731,347,757"/>
+<area shape="rect" id="node17" href="$classCBlobGetID.html" title="CBlobGetID" alt="" coords="221,781,315,808"/>
+<area shape="rect" id="node18" href="$classCBlobGetLength.html" title="CBlobGetLength" alt="" coords="209,832,327,859"/>
+<area shape="rect" id="node19" href="$classCBlobGetMajorAxisLength.html" title="CBlobGetMajorAxisLength" alt="" coords="180,883,356,909"/>
+<area shape="rect" id="node20" href="$classCBlobGetMaxX.html" title="CBlobGetMaxX" alt="" coords="211,933,325,960"/>
+<area shape="rect" id="node21" href="$classCBlobGetMaxXatMaxY.html" title="CBlobGetMaxXatMaxY" alt="" coords="189,984,347,1011"/>
+<area shape="rect" id="node22" href="$classCBlobGetMaxY.html" title="CBlobGetMaxY" alt="" coords="211,1035,325,1061"/>
+<area shape="rect" id="node23" href="$classCBlobGetMaxYatMinX.html" title="CBlobGetMaxYatMinX" alt="" coords="191,1085,345,1112"/>
+<area shape="rect" id="node24" href="$classCBlobGetMean.html" title="CBlobGetMean" alt="" coords="213,1136,323,1163"/>
+<area shape="rect" id="node25" href="$classCBlobGetMinorAxisLength.html" title="CBlobGetMinorAxisLength" alt="" coords="180,1187,356,1213"/>
+<area shape="rect" id="node26" href="$classCBlobGetMinX.html" title="CBlobGetMinX" alt="" coords="213,1237,323,1264"/>
+<area shape="rect" id="node27" href="$classCBlobGetMinXatMinY.html" title="CBlobGetMinXatMinY" alt="" coords="193,1288,343,1315"/>
+<area shape="rect" id="node28" href="$classCBlobGetMinY.html" title="CBlobGetMinY" alt="" coords="213,1339,323,1365"/>
+<area shape="rect" id="node29" href="$classCBlobGetMinYatMaxX.html" title="CBlobGetMinYatMaxX" alt="" coords="191,1389,345,1416"/>
+<area shape="rect" id="node30" href="$classCBlobGetMoment.html" title="CBlobGetMoment" alt="" coords="205,1440,331,1467"/>
+<area shape="rect" id="node31" href="$classCBlobGetOrientation.html" title="CBlobGetOrientation" alt="" coords="197,1491,339,1517"/>
+<area shape="rect" id="node32" href="$classCBlobGetOrientationCos.html" title="CBlobGetOrientationCos" alt="" coords="185,1541,351,1568"/>
+<area shape="rect" id="node33" href="$classCBlobGetPerimeter.html" title="CBlobGetPerimeter" alt="" coords="201,1592,335,1619"/>
+<area shape="rect" id="node34" href="$classCBlobGetRoughness.html" title="CBlobGetRoughness" alt="" coords="195,1643,341,1669"/>
+<area shape="rect" id="node35" href="$classCBlobGetStdDev.html" title="CBlobGetStdDev" alt="" coords="207,1693,329,1720"/>
+<area shape="rect" id="node36" href="$classCBlobGetXCenter.html" title="CBlobGetXCenter" alt="" coords="205,1744,331,1771"/>
+<area shape="rect" id="node37" href="$classCBlobGetXYInside.html" title="CBlobGetXYInside" alt="" coords="202,1795,334,1821"/>
+<area shape="rect" id="node38" href="$classCBlobGetYCenter.html" title="CBlobGetYCenter" alt="" coords="205,1845,331,1872"/>
+</map>

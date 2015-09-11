@@ -1,0 +1,6 @@
+<map id="cv::gpu::device::reduce_key_val_detail::loadToSmem" name="cv::gpu::device::reduce_key_val_detail::loadToSmem">
+<area shape="rect" id="node2" href="$namespacecv_1_1gpu_1_1device_1_1reduce__key__val__detail.html#a7572f5e4022dee579a1288b2e1749a9f" title="cv::gpu::device::reduce\l_key_val_detail::loadToSmem" alt="" coords="272,5,469,46"/>
+<area shape="rect" id="node3" href="$structcv_1_1gpu_1_1device_1_1reduce__key__val__detail_1_1Generic.html#a42b61a9383769500d3570134a788f281" title="cv::gpu::device::reduce\l_key_val_detail::Generic\l::reduce" alt="" coords="288,69,453,125"/>
+<area shape="rect" id="node4" href="$structcv_1_1gpu_1_1device_1_1reduce__key__val__detail_1_1WarpOptimized.html#ad98772f4a08c909ead2e5aa8f95e8a4b" title="cv::gpu::device::reduce\l_key_val_detail::WarpOptimized\l::reduce" alt="" coords="265,149,476,205"/>
+<area shape="rect" id="node5" href="$structcv_1_1gpu_1_1device_1_1reduce__key__val__detail_1_1GenericOptimized32.html#ac61f56ddcc428c76eb2c4f59c0007320" title="cv::gpu::device::reduce\l_key_val_detail::GenericOptimized32\l::reduce" alt="" coords="251,229,490,285"/>
+</map>

@@ -1,0 +1,173 @@
+\hypertarget{classcv_1_1gpu_1_1GeneralizedHough__GPU}{\section{cv\-:\-:gpu\-:\-:Generalized\-Hough\-\_\-\-G\-P\-U Class Reference}
+\label{classcv_1_1gpu_1_1GeneralizedHough__GPU}\index{cv\-::gpu\-::\-Generalized\-Hough\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Generalized\-Hough\-\_\-\-G\-P\-U}}
+}
+
+
+{\ttfamily \#include $<$gpu.\-hpp$>$}
+
+
+
+Inheritance diagram for cv\-:\-:gpu\-:\-:Generalized\-Hough\-\_\-\-G\-P\-U\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{classcv_1_1gpu_1_1GeneralizedHough__GPU__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for cv\-:\-:gpu\-:\-:Generalized\-Hough\-\_\-\-G\-P\-U\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{classcv_1_1gpu_1_1GeneralizedHough__GPU__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classcv_1_1gpu_1_1GeneralizedHough__GPU_a0709918b7424a09d82460cc385dceedf}{$\sim$\-Generalized\-Hough\-\_\-\-G\-P\-U} ()
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1GeneralizedHough__GPU_aa7671dfd98724609e511ca3c7c5f4b59}{set\-Template} (const Gpu\-Mat \&\hyperlink{imgproc__c_8h_a3dda0ce9b269462404396ce3e9eedf00}{templ}, int canny\-Threshold=100, Point templ\-Center=Point(-\/1,-\/1))
+\begin{DoxyCompactList}\small\item\em set template to search \end{DoxyCompactList}\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1GeneralizedHough__GPU_a4fe51ec07dc6f5abc1757c9f1d327902}{set\-Template} (const Gpu\-Mat \&\hyperlink{imgproc__c_8h_a0934986249e7ba69309a154af3260f89}{edges}, const Gpu\-Mat \&dx, const Gpu\-Mat \&dy, Point templ\-Center=Point(-\/1,-\/1))
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1GeneralizedHough__GPU_aa36e59610b15d32242c5dc13ba79edfb}{detect} (const Gpu\-Mat \&\hyperlink{legacy_8hpp_ad62b16ab219ae2483e8a3d921c44cc97}{image}, Gpu\-Mat \&positions, int canny\-Threshold=100)
+\begin{DoxyCompactList}\small\item\em find template on image \end{DoxyCompactList}\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1GeneralizedHough__GPU_a24d3fa308ef3835cfbfcc99f5be4f579}{detect} (const Gpu\-Mat \&\hyperlink{imgproc__c_8h_a0934986249e7ba69309a154af3260f89}{edges}, const Gpu\-Mat \&dx, const Gpu\-Mat \&dy, Gpu\-Mat \&positions)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1GeneralizedHough__GPU_a3c2d5f4e06d4745b1eeb99c308bd79e5}{download} (const Gpu\-Mat \&d\-\_\-positions, Output\-Array h\-\_\-positions, Output\-Array h\-\_\-votes=no\-Array())
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1GeneralizedHough__GPU_af82bc322b97018b937b813589dd24fb5}{release} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Ptr$<$ \hyperlink{classcv_1_1gpu_1_1GeneralizedHough__GPU}{Generalized\-Hough\-\_\-\-G\-P\-U} $>$ \hyperlink{classcv_1_1gpu_1_1GeneralizedHough__GPU_a83bd35fb695725af558920556e38ea02}{create} (int \hyperlink{legacy_8hpp_adc6d8f8df4f2d0df2ece83c432e2681f}{method})
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1GeneralizedHough__GPU_adb8d3c0195b6987debac862d99c2b8e6}{set\-Template\-Impl} (const Gpu\-Mat \&\hyperlink{imgproc__c_8h_a0934986249e7ba69309a154af3260f89}{edges}, const Gpu\-Mat \&dx, const Gpu\-Mat \&dy, Point templ\-Center)=0
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1GeneralizedHough__GPU_aa0a457ed96ff8ca8f79dbb675987bc5e}{detect\-Impl} (const Gpu\-Mat \&\hyperlink{imgproc__c_8h_a0934986249e7ba69309a154af3260f89}{edges}, const Gpu\-Mat \&dx, const Gpu\-Mat \&dy, Gpu\-Mat \&positions)=0
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1GeneralizedHough__GPU_a2de38df041a2da5493e042946505262b}{release\-Impl} ()=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+finds arbitrary template in the grayscale image using Generalized Hough Transform Ballard, D.\-H. (1981). Generalizing the Hough transform to detect arbitrary shapes. Pattern Recognition 13 (2)\-: 111-\/122. Guil, N., González-\/\-Linares, J.\-M. and Zapata, E.\-L. (1999). Bidimensional shape detection using an invariant approach. Pattern Recognition 32 (6)\-: 1025-\/1038. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcv_1_1gpu_1_1GeneralizedHough__GPU_a0709918b7424a09d82460cc385dceedf}{\index{cv\-::gpu\-::\-Generalized\-Hough\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Generalized\-Hough\-\_\-\-G\-P\-U}!$\sim$\-Generalized\-Hough\-\_\-\-G\-P\-U@{$\sim$\-Generalized\-Hough\-\_\-\-G\-P\-U}}
+\index{$\sim$\-Generalized\-Hough\-\_\-\-G\-P\-U@{$\sim$\-Generalized\-Hough\-\_\-\-G\-P\-U}!cv::gpu::GeneralizedHough_GPU@{cv\-::gpu\-::\-Generalized\-Hough\-\_\-\-G\-P\-U}}
+\subsubsection[{$\sim$\-Generalized\-Hough\-\_\-\-G\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}virtual cv\-::gpu\-::\-Generalized\-Hough\-\_\-\-G\-P\-U\-::$\sim$\-Generalized\-Hough\-\_\-\-G\-P\-U (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcv_1_1gpu_1_1GeneralizedHough__GPU_a0709918b7424a09d82460cc385dceedf}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcv_1_1gpu_1_1GeneralizedHough__GPU_a83bd35fb695725af558920556e38ea02}{\index{cv\-::gpu\-::\-Generalized\-Hough\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Generalized\-Hough\-\_\-\-G\-P\-U}!create@{create}}
+\index{create@{create}!cv::gpu::GeneralizedHough_GPU@{cv\-::gpu\-::\-Generalized\-Hough\-\_\-\-G\-P\-U}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}static Ptr$<${\bf Generalized\-Hough\-\_\-\-G\-P\-U}$>$ cv\-::gpu\-::\-Generalized\-Hough\-\_\-\-G\-P\-U\-::create (
+\begin{DoxyParamCaption}
+\item[{int}]{method}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcv_1_1gpu_1_1GeneralizedHough__GPU_a83bd35fb695725af558920556e38ea02}
+\hypertarget{classcv_1_1gpu_1_1GeneralizedHough__GPU_aa36e59610b15d32242c5dc13ba79edfb}{\index{cv\-::gpu\-::\-Generalized\-Hough\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Generalized\-Hough\-\_\-\-G\-P\-U}!detect@{detect}}
+\index{detect@{detect}!cv::gpu::GeneralizedHough_GPU@{cv\-::gpu\-::\-Generalized\-Hough\-\_\-\-G\-P\-U}}
+\subsubsection[{detect}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-Generalized\-Hough\-\_\-\-G\-P\-U\-::detect (
+\begin{DoxyParamCaption}
+\item[{const Gpu\-Mat \&}]{image, }
+\item[{Gpu\-Mat \&}]{positions, }
+\item[{int}]{canny\-Threshold = {\ttfamily 100}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1GeneralizedHough__GPU_aa36e59610b15d32242c5dc13ba79edfb}
+
+
+find template on image 
+
+\hypertarget{classcv_1_1gpu_1_1GeneralizedHough__GPU_a24d3fa308ef3835cfbfcc99f5be4f579}{\index{cv\-::gpu\-::\-Generalized\-Hough\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Generalized\-Hough\-\_\-\-G\-P\-U}!detect@{detect}}
+\index{detect@{detect}!cv::gpu::GeneralizedHough_GPU@{cv\-::gpu\-::\-Generalized\-Hough\-\_\-\-G\-P\-U}}
+\subsubsection[{detect}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-Generalized\-Hough\-\_\-\-G\-P\-U\-::detect (
+\begin{DoxyParamCaption}
+\item[{const Gpu\-Mat \&}]{edges, }
+\item[{const Gpu\-Mat \&}]{dx, }
+\item[{const Gpu\-Mat \&}]{dy, }
+\item[{Gpu\-Mat \&}]{positions}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1GeneralizedHough__GPU_a24d3fa308ef3835cfbfcc99f5be4f579}
+\hypertarget{classcv_1_1gpu_1_1GeneralizedHough__GPU_aa0a457ed96ff8ca8f79dbb675987bc5e}{\index{cv\-::gpu\-::\-Generalized\-Hough\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Generalized\-Hough\-\_\-\-G\-P\-U}!detect\-Impl@{detect\-Impl}}
+\index{detect\-Impl@{detect\-Impl}!cv::gpu::GeneralizedHough_GPU@{cv\-::gpu\-::\-Generalized\-Hough\-\_\-\-G\-P\-U}}
+\subsubsection[{detect\-Impl}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cv\-::gpu\-::\-Generalized\-Hough\-\_\-\-G\-P\-U\-::detect\-Impl (
+\begin{DoxyParamCaption}
+\item[{const Gpu\-Mat \&}]{edges, }
+\item[{const Gpu\-Mat \&}]{dx, }
+\item[{const Gpu\-Mat \&}]{dy, }
+\item[{Gpu\-Mat \&}]{positions}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{classcv_1_1gpu_1_1GeneralizedHough__GPU_aa0a457ed96ff8ca8f79dbb675987bc5e}
+\hypertarget{classcv_1_1gpu_1_1GeneralizedHough__GPU_a3c2d5f4e06d4745b1eeb99c308bd79e5}{\index{cv\-::gpu\-::\-Generalized\-Hough\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Generalized\-Hough\-\_\-\-G\-P\-U}!download@{download}}
+\index{download@{download}!cv::gpu::GeneralizedHough_GPU@{cv\-::gpu\-::\-Generalized\-Hough\-\_\-\-G\-P\-U}}
+\subsubsection[{download}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-Generalized\-Hough\-\_\-\-G\-P\-U\-::download (
+\begin{DoxyParamCaption}
+\item[{const Gpu\-Mat \&}]{d\-\_\-positions, }
+\item[{Output\-Array}]{h\-\_\-positions, }
+\item[{Output\-Array}]{h\-\_\-votes = {\ttfamily noArray()}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1GeneralizedHough__GPU_a3c2d5f4e06d4745b1eeb99c308bd79e5}
+\hypertarget{classcv_1_1gpu_1_1GeneralizedHough__GPU_af82bc322b97018b937b813589dd24fb5}{\index{cv\-::gpu\-::\-Generalized\-Hough\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Generalized\-Hough\-\_\-\-G\-P\-U}!release@{release}}
+\index{release@{release}!cv::gpu::GeneralizedHough_GPU@{cv\-::gpu\-::\-Generalized\-Hough\-\_\-\-G\-P\-U}}
+\subsubsection[{release}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-Generalized\-Hough\-\_\-\-G\-P\-U\-::release (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1GeneralizedHough__GPU_af82bc322b97018b937b813589dd24fb5}
+\hypertarget{classcv_1_1gpu_1_1GeneralizedHough__GPU_a2de38df041a2da5493e042946505262b}{\index{cv\-::gpu\-::\-Generalized\-Hough\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Generalized\-Hough\-\_\-\-G\-P\-U}!release\-Impl@{release\-Impl}}
+\index{release\-Impl@{release\-Impl}!cv::gpu::GeneralizedHough_GPU@{cv\-::gpu\-::\-Generalized\-Hough\-\_\-\-G\-P\-U}}
+\subsubsection[{release\-Impl}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cv\-::gpu\-::\-Generalized\-Hough\-\_\-\-G\-P\-U\-::release\-Impl (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{classcv_1_1gpu_1_1GeneralizedHough__GPU_a2de38df041a2da5493e042946505262b}
+\hypertarget{classcv_1_1gpu_1_1GeneralizedHough__GPU_aa7671dfd98724609e511ca3c7c5f4b59}{\index{cv\-::gpu\-::\-Generalized\-Hough\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Generalized\-Hough\-\_\-\-G\-P\-U}!set\-Template@{set\-Template}}
+\index{set\-Template@{set\-Template}!cv::gpu::GeneralizedHough_GPU@{cv\-::gpu\-::\-Generalized\-Hough\-\_\-\-G\-P\-U}}
+\subsubsection[{set\-Template}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-Generalized\-Hough\-\_\-\-G\-P\-U\-::set\-Template (
+\begin{DoxyParamCaption}
+\item[{const Gpu\-Mat \&}]{templ, }
+\item[{int}]{canny\-Threshold = {\ttfamily 100}, }
+\item[{Point}]{templ\-Center = {\ttfamily Point(-\/1,-\/1)}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1GeneralizedHough__GPU_aa7671dfd98724609e511ca3c7c5f4b59}
+
+
+set template to search 
+
+\hypertarget{classcv_1_1gpu_1_1GeneralizedHough__GPU_a4fe51ec07dc6f5abc1757c9f1d327902}{\index{cv\-::gpu\-::\-Generalized\-Hough\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Generalized\-Hough\-\_\-\-G\-P\-U}!set\-Template@{set\-Template}}
+\index{set\-Template@{set\-Template}!cv::gpu::GeneralizedHough_GPU@{cv\-::gpu\-::\-Generalized\-Hough\-\_\-\-G\-P\-U}}
+\subsubsection[{set\-Template}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-Generalized\-Hough\-\_\-\-G\-P\-U\-::set\-Template (
+\begin{DoxyParamCaption}
+\item[{const Gpu\-Mat \&}]{edges, }
+\item[{const Gpu\-Mat \&}]{dx, }
+\item[{const Gpu\-Mat \&}]{dy, }
+\item[{Point}]{templ\-Center = {\ttfamily Point(-\/1,-\/1)}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1GeneralizedHough__GPU_a4fe51ec07dc6f5abc1757c9f1d327902}
+\hypertarget{classcv_1_1gpu_1_1GeneralizedHough__GPU_adb8d3c0195b6987debac862d99c2b8e6}{\index{cv\-::gpu\-::\-Generalized\-Hough\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Generalized\-Hough\-\_\-\-G\-P\-U}!set\-Template\-Impl@{set\-Template\-Impl}}
+\index{set\-Template\-Impl@{set\-Template\-Impl}!cv::gpu::GeneralizedHough_GPU@{cv\-::gpu\-::\-Generalized\-Hough\-\_\-\-G\-P\-U}}
+\subsubsection[{set\-Template\-Impl}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cv\-::gpu\-::\-Generalized\-Hough\-\_\-\-G\-P\-U\-::set\-Template\-Impl (
+\begin{DoxyParamCaption}
+\item[{const Gpu\-Mat \&}]{edges, }
+\item[{const Gpu\-Mat \&}]{dx, }
+\item[{const Gpu\-Mat \&}]{dy, }
+\item[{Point}]{templ\-Center}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{classcv_1_1gpu_1_1GeneralizedHough__GPU_adb8d3c0195b6987debac862d99c2b8e6}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/gpu/\hyperlink{gpu_2gpu_8hpp}{gpu.\-hpp}\end{DoxyCompactItemize}

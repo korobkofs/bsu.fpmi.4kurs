@@ -1,0 +1,4 @@
+<map id="cv::gpu::device::reduce_key_val_detail::WarpOptimized::reduce" name="cv::gpu::device::reduce_key_val_detail::WarpOptimized::reduce">
+<area shape="rect" id="node2" href="$highgui__c_8h.html#ad1f9461adaad33556b3a01c7f2c6ceab" title="void" alt="" coords="339,5,386,32"/>
+<area shape="rect" id="node3" href="$namespacecv_1_1gpu_1_1device_1_1reduce__key__val__detail.html#a93640799801039059c028a536a7262c2" title="cv::gpu::device::reduce\l_key_val_detail::loadToSmem" alt="" coords="264,57,461,98"/>
+</map>

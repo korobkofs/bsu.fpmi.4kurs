@@ -1,0 +1,159 @@
+\hypertarget{classcv_1_1of2_1_1FabMapFBO}{\section{cv\-:\-:of2\-:\-:Fab\-Map\-F\-B\-O Class Reference}
+\label{classcv_1_1of2_1_1FabMapFBO}\index{cv\-::of2\-::\-Fab\-Map\-F\-B\-O@{cv\-::of2\-::\-Fab\-Map\-F\-B\-O}}
+}
+
+
+{\ttfamily \#include $<$openfabmap.\-hpp$>$}
+
+
+
+Inheritance diagram for cv\-:\-:of2\-:\-:Fab\-Map\-F\-B\-O\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{classcv_1_1of2_1_1FabMapFBO__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for cv\-:\-:of2\-:\-:Fab\-Map\-F\-B\-O\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcv_1_1of2_1_1FabMapFBO__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structcv_1_1of2_1_1FabMapFBO_1_1WordStats}{Word\-Stats}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcv_1_1of2_1_1FabMapFBO_a4983c5e91e107212184c6206c7441764}{Fab\-Map\-F\-B\-O} (const Mat \&\hyperlink{classcv_1_1of2_1_1FabMap_a54e4331990e8069be69fec53b545c2bd}{cl\-Tree}, double \hyperlink{classcv_1_1of2_1_1FabMap_a0c79d4180f0ffe49bfbfe541b9981e7b}{Pz\-Ge}, double \hyperlink{classcv_1_1of2_1_1FabMap_a0bf851f305f6a00d5a837a7c70e40f3d}{Pz\-G\-Ne}, int \hyperlink{highgui__c_8h_ae51e3a2d4365e85db9630dd3ce9508db}{flags}, int \hyperlink{classcv_1_1of2_1_1FabMap_a023e2c53333bb5505baceb182011980f}{num\-Samples}=0, double \hyperlink{classcv_1_1of2_1_1FabMapFBO_a32ad6da8dc902456924684f3892d1332}{rejection\-Threshold}=1e-\/8, double Ps\-Gd=1e-\/8, int bisection\-Start=512, int bisection\-Its=9)
+\item 
+virtual \hyperlink{classcv_1_1of2_1_1FabMapFBO_a5da4d27d9ca1181070e16cfeaf58fe71}{$\sim$\-Fab\-Map\-F\-B\-O} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1of2_1_1FabMapFBO_a679103cc67b237f836114d06ccfc461d}{get\-Likelihoods} (const Mat \&query\-Img\-Descriptor, const vector$<$ Mat $>$ \&\hyperlink{classcv_1_1of2_1_1FabMap_a46f350e86965ec1e00ae4bd629dd4c8d}{test\-Img\-Descriptors}, vector$<$ \hyperlink{structcv_1_1of2_1_1IMatch}{I\-Match} $>$ \&matches)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1of2_1_1FabMapFBO_ab67c75cc01cca4b5d9ca494138efecc2}{set\-Word\-Statistics} (const Mat \&query\-Img\-Descriptor, multiset$<$ \hyperlink{structcv_1_1of2_1_1FabMapFBO_1_1WordStats}{Word\-Stats} $>$ \&word\-Data)
+\item 
+double \hyperlink{classcv_1_1of2_1_1FabMapFBO_a87a53e3f52588689c85a62d08c37a655}{limitbisection} (double v, double m)
+\item 
+double \hyperlink{classcv_1_1of2_1_1FabMapFBO_a42df7b13b8d86906a4c7ee3f0d6a63e3}{bennett\-Inequality} (double v, double m, double \hyperlink{legacy_8hpp_ac867054f00f4be8b1f3ebce6fba31982}{delta})
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{classcv_1_1of2_1_1FabMapFBO_ad1258c109fdefba48fe74bd3004c18f8}{comp\-Info} (const \hyperlink{structcv_1_1of2_1_1FabMapFBO_1_1WordStats}{Word\-Stats} \&\hyperlink{legacy_8hpp_abb508deecf21698b089fdaf6cf99209d}{first}, const \hyperlink{structcv_1_1of2_1_1FabMapFBO_1_1WordStats}{Word\-Stats} \&\hyperlink{legacy_8hpp_a580692a0f0a0ceba270e5d0ff61df21e}{second})
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classcv_1_1of2_1_1FabMapFBO_a6d86ee7a5e3e7cc053154d0754b45053}{Ps\-Gd}
+\item 
+double \hyperlink{classcv_1_1of2_1_1FabMapFBO_a32ad6da8dc902456924684f3892d1332}{rejection\-Threshold}
+\item 
+int \hyperlink{classcv_1_1of2_1_1FabMapFBO_ad08624a1ba605321178bc0a2bc1a4f22}{bisection\-Start}
+\item 
+int \hyperlink{classcv_1_1of2_1_1FabMapFBO_a6ef71a3e6b08b508bca8e9922a20fd14}{bisection\-Its}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcv_1_1of2_1_1FabMapFBO_a4983c5e91e107212184c6206c7441764}{\index{cv\-::of2\-::\-Fab\-Map\-F\-B\-O@{cv\-::of2\-::\-Fab\-Map\-F\-B\-O}!Fab\-Map\-F\-B\-O@{Fab\-Map\-F\-B\-O}}
+\index{Fab\-Map\-F\-B\-O@{Fab\-Map\-F\-B\-O}!cv::of2::FabMapFBO@{cv\-::of2\-::\-Fab\-Map\-F\-B\-O}}
+\subsubsection[{Fab\-Map\-F\-B\-O}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::of2\-::\-Fab\-Map\-F\-B\-O\-::\-Fab\-Map\-F\-B\-O (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{cl\-Tree, }
+\item[{double}]{Pz\-Ge, }
+\item[{double}]{Pz\-G\-Ne, }
+\item[{int}]{flags, }
+\item[{int}]{num\-Samples = {\ttfamily 0}, }
+\item[{double}]{rejection\-Threshold = {\ttfamily 1e-\/8}, }
+\item[{double}]{Ps\-Gd = {\ttfamily 1e-\/8}, }
+\item[{int}]{bisection\-Start = {\ttfamily 512}, }
+\item[{int}]{bisection\-Its = {\ttfamily 9}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1of2_1_1FabMapFBO_a4983c5e91e107212184c6206c7441764}
+\hypertarget{classcv_1_1of2_1_1FabMapFBO_a5da4d27d9ca1181070e16cfeaf58fe71}{\index{cv\-::of2\-::\-Fab\-Map\-F\-B\-O@{cv\-::of2\-::\-Fab\-Map\-F\-B\-O}!$\sim$\-Fab\-Map\-F\-B\-O@{$\sim$\-Fab\-Map\-F\-B\-O}}
+\index{$\sim$\-Fab\-Map\-F\-B\-O@{$\sim$\-Fab\-Map\-F\-B\-O}!cv::of2::FabMapFBO@{cv\-::of2\-::\-Fab\-Map\-F\-B\-O}}
+\subsubsection[{$\sim$\-Fab\-Map\-F\-B\-O}]{\setlength{\rightskip}{0pt plus 5cm}virtual cv\-::of2\-::\-Fab\-Map\-F\-B\-O\-::$\sim$\-Fab\-Map\-F\-B\-O (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcv_1_1of2_1_1FabMapFBO_a5da4d27d9ca1181070e16cfeaf58fe71}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcv_1_1of2_1_1FabMapFBO_a42df7b13b8d86906a4c7ee3f0d6a63e3}{\index{cv\-::of2\-::\-Fab\-Map\-F\-B\-O@{cv\-::of2\-::\-Fab\-Map\-F\-B\-O}!bennett\-Inequality@{bennett\-Inequality}}
+\index{bennett\-Inequality@{bennett\-Inequality}!cv::of2::FabMapFBO@{cv\-::of2\-::\-Fab\-Map\-F\-B\-O}}
+\subsubsection[{bennett\-Inequality}]{\setlength{\rightskip}{0pt plus 5cm}double cv\-::of2\-::\-Fab\-Map\-F\-B\-O\-::bennett\-Inequality (
+\begin{DoxyParamCaption}
+\item[{double}]{v, }
+\item[{double}]{m, }
+\item[{double}]{delta}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1of2_1_1FabMapFBO_a42df7b13b8d86906a4c7ee3f0d6a63e3}
+\hypertarget{classcv_1_1of2_1_1FabMapFBO_ad1258c109fdefba48fe74bd3004c18f8}{\index{cv\-::of2\-::\-Fab\-Map\-F\-B\-O@{cv\-::of2\-::\-Fab\-Map\-F\-B\-O}!comp\-Info@{comp\-Info}}
+\index{comp\-Info@{comp\-Info}!cv::of2::FabMapFBO@{cv\-::of2\-::\-Fab\-Map\-F\-B\-O}}
+\subsubsection[{comp\-Info}]{\setlength{\rightskip}{0pt plus 5cm}static bool cv\-::of2\-::\-Fab\-Map\-F\-B\-O\-::comp\-Info (
+\begin{DoxyParamCaption}
+\item[{const {\bf Word\-Stats} \&}]{first, }
+\item[{const {\bf Word\-Stats} \&}]{second}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{classcv_1_1of2_1_1FabMapFBO_ad1258c109fdefba48fe74bd3004c18f8}
+\hypertarget{classcv_1_1of2_1_1FabMapFBO_a679103cc67b237f836114d06ccfc461d}{\index{cv\-::of2\-::\-Fab\-Map\-F\-B\-O@{cv\-::of2\-::\-Fab\-Map\-F\-B\-O}!get\-Likelihoods@{get\-Likelihoods}}
+\index{get\-Likelihoods@{get\-Likelihoods}!cv::of2::FabMapFBO@{cv\-::of2\-::\-Fab\-Map\-F\-B\-O}}
+\subsubsection[{get\-Likelihoods}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::of2\-::\-Fab\-Map\-F\-B\-O\-::get\-Likelihoods (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{query\-Img\-Descriptor, }
+\item[{const vector$<$ Mat $>$ \&}]{test\-Img\-Descriptors, }
+\item[{vector$<$ {\bf I\-Match} $>$ \&}]{matches}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classcv_1_1of2_1_1FabMapFBO_a679103cc67b237f836114d06ccfc461d}
+
+
+Reimplemented from \hyperlink{classcv_1_1of2_1_1FabMap_a6f1b98734a139b0a076d89d55d83175e}{cv\-::of2\-::\-Fab\-Map}.
+
+\hypertarget{classcv_1_1of2_1_1FabMapFBO_a87a53e3f52588689c85a62d08c37a655}{\index{cv\-::of2\-::\-Fab\-Map\-F\-B\-O@{cv\-::of2\-::\-Fab\-Map\-F\-B\-O}!limitbisection@{limitbisection}}
+\index{limitbisection@{limitbisection}!cv::of2::FabMapFBO@{cv\-::of2\-::\-Fab\-Map\-F\-B\-O}}
+\subsubsection[{limitbisection}]{\setlength{\rightskip}{0pt plus 5cm}double cv\-::of2\-::\-Fab\-Map\-F\-B\-O\-::limitbisection (
+\begin{DoxyParamCaption}
+\item[{double}]{v, }
+\item[{double}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1of2_1_1FabMapFBO_a87a53e3f52588689c85a62d08c37a655}
+\hypertarget{classcv_1_1of2_1_1FabMapFBO_ab67c75cc01cca4b5d9ca494138efecc2}{\index{cv\-::of2\-::\-Fab\-Map\-F\-B\-O@{cv\-::of2\-::\-Fab\-Map\-F\-B\-O}!set\-Word\-Statistics@{set\-Word\-Statistics}}
+\index{set\-Word\-Statistics@{set\-Word\-Statistics}!cv::of2::FabMapFBO@{cv\-::of2\-::\-Fab\-Map\-F\-B\-O}}
+\subsubsection[{set\-Word\-Statistics}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::of2\-::\-Fab\-Map\-F\-B\-O\-::set\-Word\-Statistics (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{query\-Img\-Descriptor, }
+\item[{multiset$<$ {\bf Word\-Stats} $>$ \&}]{word\-Data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1of2_1_1FabMapFBO_ab67c75cc01cca4b5d9ca494138efecc2}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcv_1_1of2_1_1FabMapFBO_a6ef71a3e6b08b508bca8e9922a20fd14}{\index{cv\-::of2\-::\-Fab\-Map\-F\-B\-O@{cv\-::of2\-::\-Fab\-Map\-F\-B\-O}!bisection\-Its@{bisection\-Its}}
+\index{bisection\-Its@{bisection\-Its}!cv::of2::FabMapFBO@{cv\-::of2\-::\-Fab\-Map\-F\-B\-O}}
+\subsubsection[{bisection\-Its}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::of2\-::\-Fab\-Map\-F\-B\-O\-::bisection\-Its\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1of2_1_1FabMapFBO_a6ef71a3e6b08b508bca8e9922a20fd14}
+\hypertarget{classcv_1_1of2_1_1FabMapFBO_ad08624a1ba605321178bc0a2bc1a4f22}{\index{cv\-::of2\-::\-Fab\-Map\-F\-B\-O@{cv\-::of2\-::\-Fab\-Map\-F\-B\-O}!bisection\-Start@{bisection\-Start}}
+\index{bisection\-Start@{bisection\-Start}!cv::of2::FabMapFBO@{cv\-::of2\-::\-Fab\-Map\-F\-B\-O}}
+\subsubsection[{bisection\-Start}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::of2\-::\-Fab\-Map\-F\-B\-O\-::bisection\-Start\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1of2_1_1FabMapFBO_ad08624a1ba605321178bc0a2bc1a4f22}
+\hypertarget{classcv_1_1of2_1_1FabMapFBO_a6d86ee7a5e3e7cc053154d0754b45053}{\index{cv\-::of2\-::\-Fab\-Map\-F\-B\-O@{cv\-::of2\-::\-Fab\-Map\-F\-B\-O}!Ps\-Gd@{Ps\-Gd}}
+\index{Ps\-Gd@{Ps\-Gd}!cv::of2::FabMapFBO@{cv\-::of2\-::\-Fab\-Map\-F\-B\-O}}
+\subsubsection[{Ps\-Gd}]{\setlength{\rightskip}{0pt plus 5cm}double cv\-::of2\-::\-Fab\-Map\-F\-B\-O\-::\-Ps\-Gd\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1of2_1_1FabMapFBO_a6d86ee7a5e3e7cc053154d0754b45053}
+\hypertarget{classcv_1_1of2_1_1FabMapFBO_a32ad6da8dc902456924684f3892d1332}{\index{cv\-::of2\-::\-Fab\-Map\-F\-B\-O@{cv\-::of2\-::\-Fab\-Map\-F\-B\-O}!rejection\-Threshold@{rejection\-Threshold}}
+\index{rejection\-Threshold@{rejection\-Threshold}!cv::of2::FabMapFBO@{cv\-::of2\-::\-Fab\-Map\-F\-B\-O}}
+\subsubsection[{rejection\-Threshold}]{\setlength{\rightskip}{0pt plus 5cm}double cv\-::of2\-::\-Fab\-Map\-F\-B\-O\-::rejection\-Threshold\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1of2_1_1FabMapFBO_a32ad6da8dc902456924684f3892d1332}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/contrib/\hyperlink{openfabmap_8hpp}{openfabmap.\-hpp}\end{DoxyCompactItemize}

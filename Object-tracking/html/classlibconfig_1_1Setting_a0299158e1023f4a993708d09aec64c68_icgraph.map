@@ -1,0 +1,8 @@
+<map id="libconfig::Setting::wrapSetting" name="libconfig::Setting::wrapSetting">
+<area shape="rect" id="node2" href="$classlibconfig_1_1Config.html#adcfc1c6a6c7e43e5ac79d1e534fa0744" title="libconfig::Config::\llookup" alt="" coords="174,5,298,46"/>
+<area shape="rect" id="node3" href="$classlibconfig_1_1Config.html#a10e517e0d174ce21141b9d24b1b2c5db" title="libconfig::Config::\lgetRoot" alt="" coords="174,70,298,111"/>
+<area shape="rect" id="node4" href="$classlibconfig_1_1Setting.html#a5dbfe99711fd915483fd318695a6b42c" title="libconfig::Setting\l::getParent" alt="" coords="177,135,295,177"/>
+<area shape="rect" id="node5" href="$namespacelibconfig.html#ac6ddf54284dd0e8344d0e64a61cf9f17" title="libconfig::__constructPath" alt="" coords="347,143,520,169"/>
+<area shape="rect" id="node6" href="$classlibconfig_1_1SettingException.html#a8e64e378f22317a3daa5824071c38e89" title="libconfig::SettingException\l::SettingException" alt="" coords="569,102,746,143"/>
+<area shape="rect" id="node7" href="$classlibconfig_1_1Setting.html#a7646f4ee12327170117a35fc248beff8" title="libconfig::Setting\l::getPath" alt="" coords="598,167,717,209"/>
+</map>

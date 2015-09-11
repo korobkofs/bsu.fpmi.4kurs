@@ -1,0 +1,5 @@
+<map id="euclideanDistance" name="euclideanDistance">
+<area shape="rect" id="node2" href="$Lk_8h.html#aeb798560b2c1eda165af271062b840ab" title="Tracks Points from 1.Image to 2.Image. Need initImgs before start and at the end of the program for c..." alt="" coords="184,12,251,39"/>
+<area shape="rect" id="node3" href="$FBTrack_8h.html#a2c818794e6fe6aa3f6efdc9c46ffd164" title="Calculate the bounding box of an Object in a following Image. Imgs aren&#39;t changed. " alt="" coords="299,12,362,39"/>
+<area shape="rect" id="node4" href="$classtld_1_1MedianFlowTracker.html#addcc103122a93f098583b8f9cf72e8ff" title="Calculate the bounding box of an Object in a following Image (with analyse of success and correctness..." alt="" coords="411,5,570,46"/>
+</map>

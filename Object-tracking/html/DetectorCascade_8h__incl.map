@@ -1,0 +1,9 @@
+<map id="src/libopentld/tld/DetectorCascade.h" name="src/libopentld/tld/DetectorCascade.h">
+<area shape="rect" id="node2" href="$DetectionResult_8h.html" title="DetectionResult.h" alt="" coords="257,171,383,197"/>
+<area shape="rect" id="node5" href="$ForegroundDetector_8h.html" title="ForegroundDetector.h" alt="" coords="5,96,152,123"/>
+<area shape="rect" id="node7" href="$VarianceFilter_8h.html" title="VarianceFilter.h" alt="" coords="355,96,468,123"/>
+<area shape="rect" id="node8" href="$EnsembleClassifier_8h.html" title="EnsembleClassifier.h" alt="" coords="717,171,864,197"/>
+<area shape="rect" id="node9" href="$Clustering_8h.html" title="Clustering.h" alt="" coords="183,96,275,123"/>
+<area shape="rect" id="node10" href="$NNClassifier_8h.html" title="NNClassifier.h" alt="" coords="493,96,600,123"/>
+<area shape="rect" id="node11" href="$NormalizedPatch_8h.html" title="NormalizedPatch.h" alt="" coords="509,171,643,197"/>
+</map>

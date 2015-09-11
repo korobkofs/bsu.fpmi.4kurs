@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['nativearray',['NativeArray',['../classtesting_1_1internal_1_1NativeArray.html',1,'testing::internal']]],
+  ['negate',['negate',['../structcv_1_1gpu_1_1device_1_1negate.html',1,'cv::gpu::device']]],
+  ['nnclassifier',['NNClassifier',['../classtld_1_1NNClassifier.html',1,'tld']]],
+  ['nnindex',['NNIndex',['../classcvflann_1_1NNIndex.html',1,'cvflann']]],
+  ['no',['No',['../structcv_1_1gpu_1_1device_1_1IsUnaryFunction_1_1No.html',1,'cv::gpu::device::IsUnaryFunction']]],
+  ['no',['No',['../structcv_1_1gpu_1_1device_1_1IsBinaryFunction_1_1No.html',1,'cv::gpu::device::IsBinaryFunction']]],
+  ['noexposurecompensator',['NoExposureCompensator',['../classcv_1_1detail_1_1NoExposureCompensator.html',1,'cv::detail']]],
+  ['normalizedpatch',['NormalizedPatch',['../classtld_1_1NormalizedPatch.html',1,'tld']]],
+  ['noseamfinder',['NoSeamFinder',['../classcv_1_1detail_1_1NoSeamFinder.html',1,'cv::detail']]],
+  ['not_5fequal_5fto',['not_equal_to',['../structcv_1_1gpu_1_1device_1_1not__equal__to.html',1,'cv::gpu::device']]],
+  ['nulldeblurer',['NullDeblurer',['../classcv_1_1videostab_1_1NullDeblurer.html',1,'cv::videostab']]],
+  ['nullframesource',['NullFrameSource',['../classcv_1_1videostab_1_1NullFrameSource.html',1,'cv::videostab']]],
+  ['nullinpainter',['NullInpainter',['../classcv_1_1videostab_1_1NullInpainter.html',1,'cv::videostab']]],
+  ['nulllog',['NullLog',['../classcv_1_1videostab_1_1NullLog.html',1,'cv::videostab']]],
+  ['numeric_5flimits',['numeric_limits',['../structcv_1_1gpu_1_1device_1_1numeric__limits.html',1,'cv::gpu::device']]],
+  ['numeric_5flimits_3c_20bool_20_3e',['numeric_limits&lt; bool &gt;',['../structcv_1_1gpu_1_1device_1_1numeric__limits_3_01bool_01_4.html',1,'cv::gpu::device']]],
+  ['numeric_5flimits_3c_20double_20_3e',['numeric_limits&lt; double &gt;',['../structcv_1_1gpu_1_1device_1_1numeric__limits_3_01double_01_4.html',1,'cv::gpu::device']]],
+  ['numeric_5flimits_3c_20float_20_3e',['numeric_limits&lt; float &gt;',['../structcv_1_1gpu_1_1device_1_1numeric__limits_3_01float_01_4.html',1,'cv::gpu::device']]],
+  ['numeric_5flimits_3c_20int_20_3e',['numeric_limits&lt; int &gt;',['../structcv_1_1gpu_1_1device_1_1numeric__limits_3_01int_01_4.html',1,'cv::gpu::device']]],
+  ['numeric_5flimits_3c_20short_20_3e',['numeric_limits&lt; short &gt;',['../structcv_1_1gpu_1_1device_1_1numeric__limits_3_01short_01_4.html',1,'cv::gpu::device']]],
+  ['numeric_5flimits_3c_20signed_20char_20_3e',['numeric_limits&lt; signed char &gt;',['../structcv_1_1gpu_1_1device_1_1numeric__limits_3_01signed_01char_01_4.html',1,'cv::gpu::device']]],
+  ['numeric_5flimits_3c_20unsigned_20char_20_3e',['numeric_limits&lt; unsigned char &gt;',['../structcv_1_1gpu_1_1device_1_1numeric__limits_3_01unsigned_01char_01_4.html',1,'cv::gpu::device']]],
+  ['numeric_5flimits_3c_20unsigned_20int_20_3e',['numeric_limits&lt; unsigned int &gt;',['../structcv_1_1gpu_1_1device_1_1numeric__limits_3_01unsigned_01int_01_4.html',1,'cv::gpu::device']]],
+  ['numeric_5flimits_3c_20unsigned_20short_20_3e',['numeric_limits&lt; unsigned short &gt;',['../structcv_1_1gpu_1_1device_1_1numeric__limits_3_01unsigned_01short_01_4.html',1,'cv::gpu::device']]]
+];

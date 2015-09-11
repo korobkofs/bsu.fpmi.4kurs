@@ -1,0 +1,8 @@
+<map id="contourTracing" name="contourTracing">
+<area shape="rect" id="node2" href="$ComponentLabeling_8cpp.html#ae0881dec50a29351bda94e482ce3cb28" title="tracer" alt="" coords="235,56,290,83"/>
+<area shape="rect" id="node6" href="$ComponentLabeling_8cpp.html#a509d4ac5415f87f32ac7a8b088bf3d68" title="ASSIGN_LABEL" alt="" coords="202,107,323,133"/>
+<area shape="rect" id="node7" href="$classCBlobContour.html#a5a10813d71e48c52e099001e6581366c" title="Add chain code to contour. " alt="" coords="163,157,363,184"/>
+<area shape="rect" id="node3" href="$ComponentLabeling_8cpp.html#a2bcdcae4cc36c0060f85f904cc6c826e" title="GET_IMAGE_PIXEL" alt="" coords="431,5,575,32"/>
+<area shape="rect" id="node4" href="$ComponentLabeling_8cpp.html#ae2b92da1ce3ca327bddd6b4a5c39cfc5" title="GET_IMAGEMASK_PIXEL" alt="" coords="411,56,594,83"/>
+<area shape="rect" id="node5" href="$ComponentLabeling_8cpp.html#a60f487d43bfd39b64f320c5487926a23" title="ASSIGN_VISITED" alt="" coords="436,107,569,133"/>
+</map>

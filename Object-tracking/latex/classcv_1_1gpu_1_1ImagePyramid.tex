@@ -1,0 +1,72 @@
+\hypertarget{classcv_1_1gpu_1_1ImagePyramid}{\section{cv\-:\-:gpu\-:\-:Image\-Pyramid Class Reference}
+\label{classcv_1_1gpu_1_1ImagePyramid}\index{cv\-::gpu\-::\-Image\-Pyramid@{cv\-::gpu\-::\-Image\-Pyramid}}
+}
+
+
+{\ttfamily \#include $<$gpu.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcv_1_1gpu_1_1ImagePyramid_a3d5bb59a2aac09dfd542b9a4e805f0ad}{Image\-Pyramid} ()
+\item 
+\hyperlink{classcv_1_1gpu_1_1ImagePyramid_a68fb8a2ad9fb79b4290c4475c1bc04db}{Image\-Pyramid} (const Gpu\-Mat \&\hyperlink{legacy_8hpp_a5349238b3772bed6eae0fda3117ccfef}{img}, int n\-Layers, \hyperlink{classcv_1_1gpu_1_1Stream}{Stream} \&stream=\hyperlink{classcv_1_1gpu_1_1Stream_af96c23564834f88333dcb8997df553f1}{Stream\-::\-Null}())
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1ImagePyramid_a4fe3f5291035fec7f62ea4fe10c431c8}{build} (const Gpu\-Mat \&\hyperlink{legacy_8hpp_a5349238b3772bed6eae0fda3117ccfef}{img}, int n\-Layers, \hyperlink{classcv_1_1gpu_1_1Stream}{Stream} \&stream=\hyperlink{classcv_1_1gpu_1_1Stream_af96c23564834f88333dcb8997df553f1}{Stream\-::\-Null}())
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1ImagePyramid_a93cefa5ee329319690c6c1af2be9f992}{get\-Layer} (Gpu\-Mat \&out\-Img, Size out\-Roi, \hyperlink{classcv_1_1gpu_1_1Stream}{Stream} \&stream=\hyperlink{classcv_1_1gpu_1_1Stream_af96c23564834f88333dcb8997df553f1}{Stream\-::\-Null}()) const 
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1ImagePyramid_a7c6de7ab90826b9cd597a34b7f93dfb7}{release} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcv_1_1gpu_1_1ImagePyramid_a3d5bb59a2aac09dfd542b9a4e805f0ad}{\index{cv\-::gpu\-::\-Image\-Pyramid@{cv\-::gpu\-::\-Image\-Pyramid}!Image\-Pyramid@{Image\-Pyramid}}
+\index{Image\-Pyramid@{Image\-Pyramid}!cv::gpu::ImagePyramid@{cv\-::gpu\-::\-Image\-Pyramid}}
+\subsubsection[{Image\-Pyramid}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::gpu\-::\-Image\-Pyramid\-::\-Image\-Pyramid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1gpu_1_1ImagePyramid_a3d5bb59a2aac09dfd542b9a4e805f0ad}
+\hypertarget{classcv_1_1gpu_1_1ImagePyramid_a68fb8a2ad9fb79b4290c4475c1bc04db}{\index{cv\-::gpu\-::\-Image\-Pyramid@{cv\-::gpu\-::\-Image\-Pyramid}!Image\-Pyramid@{Image\-Pyramid}}
+\index{Image\-Pyramid@{Image\-Pyramid}!cv::gpu::ImagePyramid@{cv\-::gpu\-::\-Image\-Pyramid}}
+\subsubsection[{Image\-Pyramid}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::gpu\-::\-Image\-Pyramid\-::\-Image\-Pyramid (
+\begin{DoxyParamCaption}
+\item[{const Gpu\-Mat \&}]{img, }
+\item[{int}]{n\-Layers, }
+\item[{{\bf Stream} \&}]{stream = {\ttfamily {\bf Stream\-::\-Null}()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1gpu_1_1ImagePyramid_a68fb8a2ad9fb79b4290c4475c1bc04db}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcv_1_1gpu_1_1ImagePyramid_a4fe3f5291035fec7f62ea4fe10c431c8}{\index{cv\-::gpu\-::\-Image\-Pyramid@{cv\-::gpu\-::\-Image\-Pyramid}!build@{build}}
+\index{build@{build}!cv::gpu::ImagePyramid@{cv\-::gpu\-::\-Image\-Pyramid}}
+\subsubsection[{build}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-Image\-Pyramid\-::build (
+\begin{DoxyParamCaption}
+\item[{const Gpu\-Mat \&}]{img, }
+\item[{int}]{n\-Layers, }
+\item[{{\bf Stream} \&}]{stream = {\ttfamily {\bf Stream\-::\-Null}()}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1ImagePyramid_a4fe3f5291035fec7f62ea4fe10c431c8}
+\hypertarget{classcv_1_1gpu_1_1ImagePyramid_a93cefa5ee329319690c6c1af2be9f992}{\index{cv\-::gpu\-::\-Image\-Pyramid@{cv\-::gpu\-::\-Image\-Pyramid}!get\-Layer@{get\-Layer}}
+\index{get\-Layer@{get\-Layer}!cv::gpu::ImagePyramid@{cv\-::gpu\-::\-Image\-Pyramid}}
+\subsubsection[{get\-Layer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-Image\-Pyramid\-::get\-Layer (
+\begin{DoxyParamCaption}
+\item[{Gpu\-Mat \&}]{out\-Img, }
+\item[{Size}]{out\-Roi, }
+\item[{{\bf Stream} \&}]{stream = {\ttfamily {\bf Stream\-::\-Null}()}}
+\end{DoxyParamCaption}
+) const}}\label{classcv_1_1gpu_1_1ImagePyramid_a93cefa5ee329319690c6c1af2be9f992}
+\hypertarget{classcv_1_1gpu_1_1ImagePyramid_a7c6de7ab90826b9cd597a34b7f93dfb7}{\index{cv\-::gpu\-::\-Image\-Pyramid@{cv\-::gpu\-::\-Image\-Pyramid}!release@{release}}
+\index{release@{release}!cv::gpu::ImagePyramid@{cv\-::gpu\-::\-Image\-Pyramid}}
+\subsubsection[{release}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-Image\-Pyramid\-::release (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1gpu_1_1ImagePyramid_a7c6de7ab90826b9cd597a34b7f93dfb7}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/gpu/\hyperlink{gpu_2gpu_8hpp}{gpu.\-hpp}\end{DoxyCompactItemize}

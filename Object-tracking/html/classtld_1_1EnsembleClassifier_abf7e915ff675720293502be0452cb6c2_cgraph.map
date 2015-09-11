@@ -1,0 +1,5 @@
+<map id="tld::EnsembleClassifier::classifyWindow" name="tld::EnsembleClassifier::classifyWindow">
+<area shape="rect" id="node2" href="$classtld_1_1EnsembleClassifier.html#abb535a84ebd8b15aa401a11d94e0a641" title="Calculates the vector of features (the indeces of branches for all trees). " alt="" coords="211,5,368,46"/>
+<area shape="rect" id="node4" href="$classtld_1_1EnsembleClassifier.html#a61bfb5ac45a8ab7f3c36c9c30dc7f927" title="Calculates the verdict of trees (0 to 1). " alt="" coords="211,70,368,111"/>
+<area shape="rect" id="node3" href="$classtld_1_1EnsembleClassifier.html#aae503fd99be0b876d9a5ca75460c2f27" title="Calculates branch (response tree to patch). " alt="" coords="416,5,573,46"/>
+</map>

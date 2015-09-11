@@ -1,0 +1,16 @@
+<map id="cv::detail::ProjectorBase" name="cv::detail::ProjectorBase">
+<area shape="rect" id="node2" href="$structcv_1_1detail_1_1CompressedRectilinearPortraitProjector.html" title="cv::detail::CompressedRectilinear\lPortraitProjector" alt="" coords="219,5,437,46"/>
+<area shape="rect" id="node3" href="$structcv_1_1detail_1_1CompressedRectilinearProjector.html" title="cv::detail::CompressedRectilinear\lProjector" alt="" coords="219,70,437,111"/>
+<area shape="rect" id="node4" href="$structcv_1_1detail_1_1CylindricalPortraitProjector.html" title="cv::detail::CylindricalPortrait\lProjector" alt="" coords="235,135,421,177"/>
+<area shape="rect" id="node5" href="$structcv_1_1detail_1_1CylindricalProjector.html" title="cv::detail::CylindricalProjector" alt="" coords="230,201,426,228"/>
+<area shape="rect" id="node6" href="$structcv_1_1detail_1_1FisheyeProjector.html" title="cv::detail::FisheyeProjector" alt="" coords="237,252,419,279"/>
+<area shape="rect" id="node7" href="$structcv_1_1detail_1_1MercatorProjector.html" title="cv::detail::MercatorProjector" alt="" coords="235,303,421,329"/>
+<area shape="rect" id="node8" href="$structcv_1_1detail_1_1PaniniPortraitProjector.html" title="cv::detail::PaniniPortrait\lProjector" alt="" coords="247,354,409,395"/>
+<area shape="rect" id="node9" href="$structcv_1_1detail_1_1PaniniProjector.html" title="cv::detail::PaniniProjector" alt="" coords="243,420,413,447"/>
+<area shape="rect" id="node10" href="$structcv_1_1detail_1_1PlanePortraitProjector.html" title="cv::detail::PlanePortrait\lProjector" alt="" coords="249,471,407,513"/>
+<area shape="rect" id="node11" href="$structcv_1_1detail_1_1PlaneProjector.html" title="cv::detail::PlaneProjector" alt="" coords="244,537,412,564"/>
+<area shape="rect" id="node12" href="$structcv_1_1detail_1_1SphericalPortraitProjector.html" title="cv::detail::SphericalPortrait\lProjector" alt="" coords="239,589,417,630"/>
+<area shape="rect" id="node13" href="$structcv_1_1detail_1_1SphericalProjector.html" title="cv::detail::SphericalProjector" alt="" coords="233,655,423,681"/>
+<area shape="rect" id="node14" href="$structcv_1_1detail_1_1StereographicProjector.html" title="cv::detail::Stereographic\lProjector" alt="" coords="247,706,409,747"/>
+<area shape="rect" id="node15" href="$structcv_1_1detail_1_1TransverseMercatorProjector.html" title="cv::detail::TransverseMercator\lProjector" alt="" coords="229,771,427,813"/>
+</map>

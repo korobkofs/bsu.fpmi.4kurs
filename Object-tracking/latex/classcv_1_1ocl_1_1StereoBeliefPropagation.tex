@@ -1,0 +1,171 @@
+\hypertarget{classcv_1_1ocl_1_1StereoBeliefPropagation}{\section{cv\-:\-:ocl\-:\-:Stereo\-Belief\-Propagation Class Reference}
+\label{classcv_1_1ocl_1_1StereoBeliefPropagation}\index{cv\-::ocl\-::\-Stereo\-Belief\-Propagation@{cv\-::ocl\-::\-Stereo\-Belief\-Propagation}}
+}
+
+
+{\ttfamily \#include $<$ocl.\-hpp$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{classcv_1_1ocl_1_1StereoBeliefPropagation_aa02d6a84051a37f99a7d1744a068004aa38ac82195c986b074c77453f3e4e598f}{D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-D\-I\-S\-P} = 64
+ \}
+\item 
+enum \{ \hyperlink{classcv_1_1ocl_1_1StereoBeliefPropagation_aead7be4ae9ed5fab90b2747a6564640da79d429b6461d0e080bca147f84f0a6d9}{D\-E\-F\-A\-U\-L\-T\-\_\-\-I\-T\-E\-R\-S} = 5
+ \}
+\item 
+enum \{ \hyperlink{classcv_1_1ocl_1_1StereoBeliefPropagation_a2137607ff7d4fb03bbc242bf53e19d7daf111fd69ffacdca367637d0654717711}{D\-E\-F\-A\-U\-L\-T\-\_\-\-L\-E\-V\-E\-L\-S} = 5
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcv_1_1ocl_1_1StereoBeliefPropagation_a215bb1e63e103eb0e98e415ec00c9f52}{Stereo\-Belief\-Propagation} (int \hyperlink{classcv_1_1ocl_1_1StereoBeliefPropagation_a541672ffe8afa99068b742829570028b}{ndisp}=\hyperlink{classcv_1_1ocl_1_1StereoBeliefPropagation_aa02d6a84051a37f99a7d1744a068004aa38ac82195c986b074c77453f3e4e598f}{D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-D\-I\-S\-P}, int \hyperlink{classcv_1_1ocl_1_1StereoBeliefPropagation_aa2702237c1b0037e8cf170e42835a52a}{iters}=\hyperlink{classcv_1_1ocl_1_1StereoBeliefPropagation_aead7be4ae9ed5fab90b2747a6564640da79d429b6461d0e080bca147f84f0a6d9}{D\-E\-F\-A\-U\-L\-T\-\_\-\-I\-T\-E\-R\-S}, int \hyperlink{classcv_1_1ocl_1_1StereoBeliefPropagation_a94a623b9d2944487763d85320b4376ac}{levels}=\hyperlink{classcv_1_1ocl_1_1StereoBeliefPropagation_a2137607ff7d4fb03bbc242bf53e19d7daf111fd69ffacdca367637d0654717711}{D\-E\-F\-A\-U\-L\-T\-\_\-\-L\-E\-V\-E\-L\-S}, int \hyperlink{classcv_1_1ocl_1_1StereoBeliefPropagation_a9401a246fa1feaef37e777d4c17f6979}{msg\-\_\-type}=\hyperlink{core_2types__c_8h_a9d2ee1a8334733dea7482a47a88e0f87}{C\-V\-\_\-16\-S})
+\item 
+\hyperlink{classcv_1_1ocl_1_1StereoBeliefPropagation_a4fe0112249fc53df25bac0ae10761c7e}{Stereo\-Belief\-Propagation} (int \hyperlink{classcv_1_1ocl_1_1StereoBeliefPropagation_a541672ffe8afa99068b742829570028b}{ndisp}, int \hyperlink{classcv_1_1ocl_1_1StereoBeliefPropagation_aa2702237c1b0037e8cf170e42835a52a}{iters}, int \hyperlink{classcv_1_1ocl_1_1StereoBeliefPropagation_a94a623b9d2944487763d85320b4376ac}{levels}, float \hyperlink{classcv_1_1ocl_1_1StereoBeliefPropagation_abe56ab40d8aec981e8688cb42680d2ad}{max\-\_\-data\-\_\-term}, float \hyperlink{classcv_1_1ocl_1_1StereoBeliefPropagation_ada0c2b097db4bc66503e807ae3372e5d}{data\-\_\-weight}, float \hyperlink{classcv_1_1ocl_1_1StereoBeliefPropagation_a995935dbbab48a2c5364ff0fc92436e4}{max\-\_\-disc\-\_\-term}, float \hyperlink{classcv_1_1ocl_1_1StereoBeliefPropagation_a00488d4fd6bdfa6424a692eea43354ed}{disc\-\_\-single\-\_\-jump}, int \hyperlink{classcv_1_1ocl_1_1StereoBeliefPropagation_a9401a246fa1feaef37e777d4c17f6979}{msg\-\_\-type}=\hyperlink{core_2types__c_8h_a4a3def5d72b74bed31f5f8ab7676099c}{C\-V\-\_\-32\-F})
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1StereoBeliefPropagation_a26ee567837f6133c90f480a300bede1e}{operator()} (const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&left, const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&\hyperlink{legacy_8hpp_a6b04b878081bf724144b73c75dfd1894}{right}, \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&\hyperlink{calib3d_8hpp_acd2ef073a3a4984e0a0ebac5c7e179fd}{disparity})
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1StereoBeliefPropagation_aedfe1a9f155a64b96a96ebd7955d3cbc}{operator()} (const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&\hyperlink{legacy_8hpp_ab9fe6c09e6d02865a953fffc12fe6ca0}{data}, \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&\hyperlink{calib3d_8hpp_acd2ef073a3a4984e0a0ebac5c7e179fd}{disparity})
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1StereoBeliefPropagation_a63a7afa42ced317bfd70312778abc7f1}{estimate\-Recommended\-Params} (int \hyperlink{highgui__c_8h_a2474a5474cbff19523a51eb1de01cda4}{width}, int \hyperlink{highgui__c_8h_adc7b4b8a6ef510e136071efbc9cd9a58}{height}, int \&\hyperlink{classcv_1_1ocl_1_1StereoBeliefPropagation_a541672ffe8afa99068b742829570028b}{ndisp}, int \&\hyperlink{classcv_1_1ocl_1_1StereoBeliefPropagation_aa2702237c1b0037e8cf170e42835a52a}{iters}, int \&\hyperlink{classcv_1_1ocl_1_1StereoBeliefPropagation_a94a623b9d2944487763d85320b4376ac}{levels})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classcv_1_1ocl_1_1StereoBeliefPropagation_a541672ffe8afa99068b742829570028b}{ndisp}
+\item 
+int \hyperlink{classcv_1_1ocl_1_1StereoBeliefPropagation_aa2702237c1b0037e8cf170e42835a52a}{iters}
+\item 
+int \hyperlink{classcv_1_1ocl_1_1StereoBeliefPropagation_a94a623b9d2944487763d85320b4376ac}{levels}
+\item 
+float \hyperlink{classcv_1_1ocl_1_1StereoBeliefPropagation_abe56ab40d8aec981e8688cb42680d2ad}{max\-\_\-data\-\_\-term}
+\item 
+float \hyperlink{classcv_1_1ocl_1_1StereoBeliefPropagation_ada0c2b097db4bc66503e807ae3372e5d}{data\-\_\-weight}
+\item 
+float \hyperlink{classcv_1_1ocl_1_1StereoBeliefPropagation_a995935dbbab48a2c5364ff0fc92436e4}{max\-\_\-disc\-\_\-term}
+\item 
+float \hyperlink{classcv_1_1ocl_1_1StereoBeliefPropagation_a00488d4fd6bdfa6424a692eea43354ed}{disc\-\_\-single\-\_\-jump}
+\item 
+int \hyperlink{classcv_1_1ocl_1_1StereoBeliefPropagation_a9401a246fa1feaef37e777d4c17f6979}{msg\-\_\-type}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classcv_1_1ocl_1_1StereoBeliefPropagation_aa02d6a84051a37f99a7d1744a068004a}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{classcv_1_1ocl_1_1StereoBeliefPropagation_aa02d6a84051a37f99a7d1744a068004a}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-D\-I\-S\-P@{D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-D\-I\-S\-P}!cv\-::ocl\-::\-Stereo\-Belief\-Propagation@{cv\-::ocl\-::\-Stereo\-Belief\-Propagation}}\index{cv\-::ocl\-::\-Stereo\-Belief\-Propagation@{cv\-::ocl\-::\-Stereo\-Belief\-Propagation}!D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-D\-I\-S\-P@{D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-D\-I\-S\-P}}\item[{\em 
+\hypertarget{classcv_1_1ocl_1_1StereoBeliefPropagation_aa02d6a84051a37f99a7d1744a068004aa38ac82195c986b074c77453f3e4e598f}{D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-D\-I\-S\-P}\label{classcv_1_1ocl_1_1StereoBeliefPropagation_aa02d6a84051a37f99a7d1744a068004aa38ac82195c986b074c77453f3e4e598f}
+}]\end{description}
+\end{Desc}
+\hypertarget{classcv_1_1ocl_1_1StereoBeliefPropagation_aead7be4ae9ed5fab90b2747a6564640d}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{classcv_1_1ocl_1_1StereoBeliefPropagation_aead7be4ae9ed5fab90b2747a6564640d}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{D\-E\-F\-A\-U\-L\-T\-\_\-\-I\-T\-E\-R\-S@{D\-E\-F\-A\-U\-L\-T\-\_\-\-I\-T\-E\-R\-S}!cv\-::ocl\-::\-Stereo\-Belief\-Propagation@{cv\-::ocl\-::\-Stereo\-Belief\-Propagation}}\index{cv\-::ocl\-::\-Stereo\-Belief\-Propagation@{cv\-::ocl\-::\-Stereo\-Belief\-Propagation}!D\-E\-F\-A\-U\-L\-T\-\_\-\-I\-T\-E\-R\-S@{D\-E\-F\-A\-U\-L\-T\-\_\-\-I\-T\-E\-R\-S}}\item[{\em 
+\hypertarget{classcv_1_1ocl_1_1StereoBeliefPropagation_aead7be4ae9ed5fab90b2747a6564640da79d429b6461d0e080bca147f84f0a6d9}{D\-E\-F\-A\-U\-L\-T\-\_\-\-I\-T\-E\-R\-S}\label{classcv_1_1ocl_1_1StereoBeliefPropagation_aead7be4ae9ed5fab90b2747a6564640da79d429b6461d0e080bca147f84f0a6d9}
+}]\end{description}
+\end{Desc}
+\hypertarget{classcv_1_1ocl_1_1StereoBeliefPropagation_a2137607ff7d4fb03bbc242bf53e19d7d}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{classcv_1_1ocl_1_1StereoBeliefPropagation_a2137607ff7d4fb03bbc242bf53e19d7d}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{D\-E\-F\-A\-U\-L\-T\-\_\-\-L\-E\-V\-E\-L\-S@{D\-E\-F\-A\-U\-L\-T\-\_\-\-L\-E\-V\-E\-L\-S}!cv\-::ocl\-::\-Stereo\-Belief\-Propagation@{cv\-::ocl\-::\-Stereo\-Belief\-Propagation}}\index{cv\-::ocl\-::\-Stereo\-Belief\-Propagation@{cv\-::ocl\-::\-Stereo\-Belief\-Propagation}!D\-E\-F\-A\-U\-L\-T\-\_\-\-L\-E\-V\-E\-L\-S@{D\-E\-F\-A\-U\-L\-T\-\_\-\-L\-E\-V\-E\-L\-S}}\item[{\em 
+\hypertarget{classcv_1_1ocl_1_1StereoBeliefPropagation_a2137607ff7d4fb03bbc242bf53e19d7daf111fd69ffacdca367637d0654717711}{D\-E\-F\-A\-U\-L\-T\-\_\-\-L\-E\-V\-E\-L\-S}\label{classcv_1_1ocl_1_1StereoBeliefPropagation_a2137607ff7d4fb03bbc242bf53e19d7daf111fd69ffacdca367637d0654717711}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcv_1_1ocl_1_1StereoBeliefPropagation_a215bb1e63e103eb0e98e415ec00c9f52}{\index{cv\-::ocl\-::\-Stereo\-Belief\-Propagation@{cv\-::ocl\-::\-Stereo\-Belief\-Propagation}!Stereo\-Belief\-Propagation@{Stereo\-Belief\-Propagation}}
+\index{Stereo\-Belief\-Propagation@{Stereo\-Belief\-Propagation}!cv::ocl::StereoBeliefPropagation@{cv\-::ocl\-::\-Stereo\-Belief\-Propagation}}
+\subsubsection[{Stereo\-Belief\-Propagation}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::ocl\-::\-Stereo\-Belief\-Propagation\-::\-Stereo\-Belief\-Propagation (
+\begin{DoxyParamCaption}
+\item[{int}]{ndisp = {\ttfamily {\bf D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-D\-I\-S\-P}}, }
+\item[{int}]{iters = {\ttfamily {\bf D\-E\-F\-A\-U\-L\-T\-\_\-\-I\-T\-E\-R\-S}}, }
+\item[{int}]{levels = {\ttfamily {\bf D\-E\-F\-A\-U\-L\-T\-\_\-\-L\-E\-V\-E\-L\-S}}, }
+\item[{int}]{msg\-\_\-type = {\ttfamily {\bf C\-V\-\_\-16\-S}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{classcv_1_1ocl_1_1StereoBeliefPropagation_a215bb1e63e103eb0e98e415ec00c9f52}
+\hypertarget{classcv_1_1ocl_1_1StereoBeliefPropagation_a4fe0112249fc53df25bac0ae10761c7e}{\index{cv\-::ocl\-::\-Stereo\-Belief\-Propagation@{cv\-::ocl\-::\-Stereo\-Belief\-Propagation}!Stereo\-Belief\-Propagation@{Stereo\-Belief\-Propagation}}
+\index{Stereo\-Belief\-Propagation@{Stereo\-Belief\-Propagation}!cv::ocl::StereoBeliefPropagation@{cv\-::ocl\-::\-Stereo\-Belief\-Propagation}}
+\subsubsection[{Stereo\-Belief\-Propagation}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::ocl\-::\-Stereo\-Belief\-Propagation\-::\-Stereo\-Belief\-Propagation (
+\begin{DoxyParamCaption}
+\item[{int}]{ndisp, }
+\item[{int}]{iters, }
+\item[{int}]{levels, }
+\item[{float}]{max\-\_\-data\-\_\-term, }
+\item[{float}]{data\-\_\-weight, }
+\item[{float}]{max\-\_\-disc\-\_\-term, }
+\item[{float}]{disc\-\_\-single\-\_\-jump, }
+\item[{int}]{msg\-\_\-type = {\ttfamily {\bf C\-V\-\_\-32\-F}}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1StereoBeliefPropagation_a4fe0112249fc53df25bac0ae10761c7e}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcv_1_1ocl_1_1StereoBeliefPropagation_a63a7afa42ced317bfd70312778abc7f1}{\index{cv\-::ocl\-::\-Stereo\-Belief\-Propagation@{cv\-::ocl\-::\-Stereo\-Belief\-Propagation}!estimate\-Recommended\-Params@{estimate\-Recommended\-Params}}
+\index{estimate\-Recommended\-Params@{estimate\-Recommended\-Params}!cv::ocl::StereoBeliefPropagation@{cv\-::ocl\-::\-Stereo\-Belief\-Propagation}}
+\subsubsection[{estimate\-Recommended\-Params}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf void} cv\-::ocl\-::\-Stereo\-Belief\-Propagation\-::estimate\-Recommended\-Params (
+\begin{DoxyParamCaption}
+\item[{int}]{width, }
+\item[{int}]{height, }
+\item[{int \&}]{ndisp, }
+\item[{int \&}]{iters, }
+\item[{int \&}]{levels}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcv_1_1ocl_1_1StereoBeliefPropagation_a63a7afa42ced317bfd70312778abc7f1}
+\hypertarget{classcv_1_1ocl_1_1StereoBeliefPropagation_a26ee567837f6133c90f480a300bede1e}{\index{cv\-::ocl\-::\-Stereo\-Belief\-Propagation@{cv\-::ocl\-::\-Stereo\-Belief\-Propagation}!operator()@{operator()}}
+\index{operator()@{operator()}!cv::ocl::StereoBeliefPropagation@{cv\-::ocl\-::\-Stereo\-Belief\-Propagation}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::\-Stereo\-Belief\-Propagation\-::operator() (
+\begin{DoxyParamCaption}
+\item[{const {\bf ocl\-Mat} \&}]{left, }
+\item[{const {\bf ocl\-Mat} \&}]{right, }
+\item[{{\bf ocl\-Mat} \&}]{disparity}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1StereoBeliefPropagation_a26ee567837f6133c90f480a300bede1e}
+\hypertarget{classcv_1_1ocl_1_1StereoBeliefPropagation_aedfe1a9f155a64b96a96ebd7955d3cbc}{\index{cv\-::ocl\-::\-Stereo\-Belief\-Propagation@{cv\-::ocl\-::\-Stereo\-Belief\-Propagation}!operator()@{operator()}}
+\index{operator()@{operator()}!cv::ocl::StereoBeliefPropagation@{cv\-::ocl\-::\-Stereo\-Belief\-Propagation}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::\-Stereo\-Belief\-Propagation\-::operator() (
+\begin{DoxyParamCaption}
+\item[{const {\bf ocl\-Mat} \&}]{data, }
+\item[{{\bf ocl\-Mat} \&}]{disparity}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1StereoBeliefPropagation_aedfe1a9f155a64b96a96ebd7955d3cbc}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcv_1_1ocl_1_1StereoBeliefPropagation_ada0c2b097db4bc66503e807ae3372e5d}{\index{cv\-::ocl\-::\-Stereo\-Belief\-Propagation@{cv\-::ocl\-::\-Stereo\-Belief\-Propagation}!data\-\_\-weight@{data\-\_\-weight}}
+\index{data\-\_\-weight@{data\-\_\-weight}!cv::ocl::StereoBeliefPropagation@{cv\-::ocl\-::\-Stereo\-Belief\-Propagation}}
+\subsubsection[{data\-\_\-weight}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::ocl\-::\-Stereo\-Belief\-Propagation\-::data\-\_\-weight}}\label{classcv_1_1ocl_1_1StereoBeliefPropagation_ada0c2b097db4bc66503e807ae3372e5d}
+\hypertarget{classcv_1_1ocl_1_1StereoBeliefPropagation_a00488d4fd6bdfa6424a692eea43354ed}{\index{cv\-::ocl\-::\-Stereo\-Belief\-Propagation@{cv\-::ocl\-::\-Stereo\-Belief\-Propagation}!disc\-\_\-single\-\_\-jump@{disc\-\_\-single\-\_\-jump}}
+\index{disc\-\_\-single\-\_\-jump@{disc\-\_\-single\-\_\-jump}!cv::ocl::StereoBeliefPropagation@{cv\-::ocl\-::\-Stereo\-Belief\-Propagation}}
+\subsubsection[{disc\-\_\-single\-\_\-jump}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::ocl\-::\-Stereo\-Belief\-Propagation\-::disc\-\_\-single\-\_\-jump}}\label{classcv_1_1ocl_1_1StereoBeliefPropagation_a00488d4fd6bdfa6424a692eea43354ed}
+\hypertarget{classcv_1_1ocl_1_1StereoBeliefPropagation_aa2702237c1b0037e8cf170e42835a52a}{\index{cv\-::ocl\-::\-Stereo\-Belief\-Propagation@{cv\-::ocl\-::\-Stereo\-Belief\-Propagation}!iters@{iters}}
+\index{iters@{iters}!cv::ocl::StereoBeliefPropagation@{cv\-::ocl\-::\-Stereo\-Belief\-Propagation}}
+\subsubsection[{iters}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::ocl\-::\-Stereo\-Belief\-Propagation\-::iters}}\label{classcv_1_1ocl_1_1StereoBeliefPropagation_aa2702237c1b0037e8cf170e42835a52a}
+\hypertarget{classcv_1_1ocl_1_1StereoBeliefPropagation_a94a623b9d2944487763d85320b4376ac}{\index{cv\-::ocl\-::\-Stereo\-Belief\-Propagation@{cv\-::ocl\-::\-Stereo\-Belief\-Propagation}!levels@{levels}}
+\index{levels@{levels}!cv::ocl::StereoBeliefPropagation@{cv\-::ocl\-::\-Stereo\-Belief\-Propagation}}
+\subsubsection[{levels}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::ocl\-::\-Stereo\-Belief\-Propagation\-::levels}}\label{classcv_1_1ocl_1_1StereoBeliefPropagation_a94a623b9d2944487763d85320b4376ac}
+\hypertarget{classcv_1_1ocl_1_1StereoBeliefPropagation_abe56ab40d8aec981e8688cb42680d2ad}{\index{cv\-::ocl\-::\-Stereo\-Belief\-Propagation@{cv\-::ocl\-::\-Stereo\-Belief\-Propagation}!max\-\_\-data\-\_\-term@{max\-\_\-data\-\_\-term}}
+\index{max\-\_\-data\-\_\-term@{max\-\_\-data\-\_\-term}!cv::ocl::StereoBeliefPropagation@{cv\-::ocl\-::\-Stereo\-Belief\-Propagation}}
+\subsubsection[{max\-\_\-data\-\_\-term}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::ocl\-::\-Stereo\-Belief\-Propagation\-::max\-\_\-data\-\_\-term}}\label{classcv_1_1ocl_1_1StereoBeliefPropagation_abe56ab40d8aec981e8688cb42680d2ad}
+\hypertarget{classcv_1_1ocl_1_1StereoBeliefPropagation_a995935dbbab48a2c5364ff0fc92436e4}{\index{cv\-::ocl\-::\-Stereo\-Belief\-Propagation@{cv\-::ocl\-::\-Stereo\-Belief\-Propagation}!max\-\_\-disc\-\_\-term@{max\-\_\-disc\-\_\-term}}
+\index{max\-\_\-disc\-\_\-term@{max\-\_\-disc\-\_\-term}!cv::ocl::StereoBeliefPropagation@{cv\-::ocl\-::\-Stereo\-Belief\-Propagation}}
+\subsubsection[{max\-\_\-disc\-\_\-term}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::ocl\-::\-Stereo\-Belief\-Propagation\-::max\-\_\-disc\-\_\-term}}\label{classcv_1_1ocl_1_1StereoBeliefPropagation_a995935dbbab48a2c5364ff0fc92436e4}
+\hypertarget{classcv_1_1ocl_1_1StereoBeliefPropagation_a9401a246fa1feaef37e777d4c17f6979}{\index{cv\-::ocl\-::\-Stereo\-Belief\-Propagation@{cv\-::ocl\-::\-Stereo\-Belief\-Propagation}!msg\-\_\-type@{msg\-\_\-type}}
+\index{msg\-\_\-type@{msg\-\_\-type}!cv::ocl::StereoBeliefPropagation@{cv\-::ocl\-::\-Stereo\-Belief\-Propagation}}
+\subsubsection[{msg\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::ocl\-::\-Stereo\-Belief\-Propagation\-::msg\-\_\-type}}\label{classcv_1_1ocl_1_1StereoBeliefPropagation_a9401a246fa1feaef37e777d4c17f6979}
+\hypertarget{classcv_1_1ocl_1_1StereoBeliefPropagation_a541672ffe8afa99068b742829570028b}{\index{cv\-::ocl\-::\-Stereo\-Belief\-Propagation@{cv\-::ocl\-::\-Stereo\-Belief\-Propagation}!ndisp@{ndisp}}
+\index{ndisp@{ndisp}!cv::ocl::StereoBeliefPropagation@{cv\-::ocl\-::\-Stereo\-Belief\-Propagation}}
+\subsubsection[{ndisp}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::ocl\-::\-Stereo\-Belief\-Propagation\-::ndisp}}\label{classcv_1_1ocl_1_1StereoBeliefPropagation_a541672ffe8afa99068b742829570028b}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/ocl/\hyperlink{ocl_2ocl_8hpp}{ocl.\-hpp}\end{DoxyCompactItemize}

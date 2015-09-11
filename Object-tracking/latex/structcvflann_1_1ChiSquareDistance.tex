@@ -1,0 +1,67 @@
+\hypertarget{structcvflann_1_1ChiSquareDistance}{\section{cvflann\-:\-:Chi\-Square\-Distance$<$ T $>$ Struct Template Reference}
+\label{structcvflann_1_1ChiSquareDistance}\index{cvflann\-::\-Chi\-Square\-Distance$<$ T $>$@{cvflann\-::\-Chi\-Square\-Distance$<$ T $>$}}
+}
+
+
+{\ttfamily \#include $<$dist.\-h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classcvflann_1_1True}{True} \hyperlink{structcvflann_1_1ChiSquareDistance_a79abba675ec902d1e75f3e57d5af55ea}{is\-\_\-kdtree\-\_\-distance}
+\item 
+typedef \hyperlink{classcvflann_1_1True}{True} \hyperlink{structcvflann_1_1ChiSquareDistance_a408f961082255f1f8946efdc0de650ef}{is\-\_\-vector\-\_\-space\-\_\-distance}
+\item 
+typedef \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \hyperlink{structcvflann_1_1ChiSquareDistance_a20f0256af228f8a7d290ff508a87e95a}{Element\-Type}
+\item 
+typedef \hyperlink{structcvflann_1_1Accumulator}{Accumulator}$<$ \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} $>$\-::Type \hyperlink{structcvflann_1_1ChiSquareDistance_a5a4ba72245b30ed720d856bbd3530478}{Result\-Type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Iterator1 , typename Iterator2 $>$ }\\\hyperlink{structcvflann_1_1ChiSquareDistance_a5a4ba72245b30ed720d856bbd3530478}{Result\-Type} \hyperlink{structcvflann_1_1ChiSquareDistance_af189d0f9119f9416cc1089a872d9c2dd}{operator()} (Iterator1 \hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}, Iterator2 \hyperlink{legacy_8hpp_ac04272e8ca865b8fba18d36edae9fd2a}{b}, size\-\_\-t \hyperlink{legacy_8hpp_ae97003f8d5c64cdfb99f6f2606d121b6}{size}, \hyperlink{structcvflann_1_1ChiSquareDistance_a5a4ba72245b30ed720d856bbd3530478}{Result\-Type} worst\-\_\-dist=-\/1) const 
+\item 
+{\footnotesize template$<$typename U , typename V $>$ }\\\hyperlink{structcvflann_1_1ChiSquareDistance_a5a4ba72245b30ed720d856bbd3530478}{Result\-Type} \hyperlink{structcvflann_1_1ChiSquareDistance_abc1b7ed780a8dad2b7d6a6984b466ce0}{accum\-\_\-dist} (const \hyperlink{core__c_8h_aa9c521f41af9a5191e5e4b6ffbae211a}{U} \&\hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}, const \hyperlink{core__c_8h_ad8dd4fff0e3910932187b6de0543cae1}{V} \&\hyperlink{legacy_8hpp_ac04272e8ca865b8fba18d36edae9fd2a}{b}, int) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{structcvflann_1_1ChiSquareDistance_a20f0256af228f8a7d290ff508a87e95a}{\index{cvflann\-::\-Chi\-Square\-Distance@{cvflann\-::\-Chi\-Square\-Distance}!Element\-Type@{Element\-Type}}
+\index{Element\-Type@{Element\-Type}!cvflann::ChiSquareDistance@{cvflann\-::\-Chi\-Square\-Distance}}
+\subsubsection[{Element\-Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ typedef {\bf T} {\bf cvflann\-::\-Chi\-Square\-Distance}$<$ {\bf T} $>$\-::{\bf Element\-Type}}}\label{structcvflann_1_1ChiSquareDistance_a20f0256af228f8a7d290ff508a87e95a}
+\hypertarget{structcvflann_1_1ChiSquareDistance_a79abba675ec902d1e75f3e57d5af55ea}{\index{cvflann\-::\-Chi\-Square\-Distance@{cvflann\-::\-Chi\-Square\-Distance}!is\-\_\-kdtree\-\_\-distance@{is\-\_\-kdtree\-\_\-distance}}
+\index{is\-\_\-kdtree\-\_\-distance@{is\-\_\-kdtree\-\_\-distance}!cvflann::ChiSquareDistance@{cvflann\-::\-Chi\-Square\-Distance}}
+\subsubsection[{is\-\_\-kdtree\-\_\-distance}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ typedef {\bf True} {\bf cvflann\-::\-Chi\-Square\-Distance}$<$ {\bf T} $>$\-::{\bf is\-\_\-kdtree\-\_\-distance}}}\label{structcvflann_1_1ChiSquareDistance_a79abba675ec902d1e75f3e57d5af55ea}
+\hypertarget{structcvflann_1_1ChiSquareDistance_a408f961082255f1f8946efdc0de650ef}{\index{cvflann\-::\-Chi\-Square\-Distance@{cvflann\-::\-Chi\-Square\-Distance}!is\-\_\-vector\-\_\-space\-\_\-distance@{is\-\_\-vector\-\_\-space\-\_\-distance}}
+\index{is\-\_\-vector\-\_\-space\-\_\-distance@{is\-\_\-vector\-\_\-space\-\_\-distance}!cvflann::ChiSquareDistance@{cvflann\-::\-Chi\-Square\-Distance}}
+\subsubsection[{is\-\_\-vector\-\_\-space\-\_\-distance}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ typedef {\bf True} {\bf cvflann\-::\-Chi\-Square\-Distance}$<$ {\bf T} $>$\-::{\bf is\-\_\-vector\-\_\-space\-\_\-distance}}}\label{structcvflann_1_1ChiSquareDistance_a408f961082255f1f8946efdc0de650ef}
+\hypertarget{structcvflann_1_1ChiSquareDistance_a5a4ba72245b30ed720d856bbd3530478}{\index{cvflann\-::\-Chi\-Square\-Distance@{cvflann\-::\-Chi\-Square\-Distance}!Result\-Type@{Result\-Type}}
+\index{Result\-Type@{Result\-Type}!cvflann::ChiSquareDistance@{cvflann\-::\-Chi\-Square\-Distance}}
+\subsubsection[{Result\-Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ typedef {\bf Accumulator}$<${\bf T}$>$\-::Type {\bf cvflann\-::\-Chi\-Square\-Distance}$<$ {\bf T} $>$\-::{\bf Result\-Type}}}\label{structcvflann_1_1ChiSquareDistance_a5a4ba72245b30ed720d856bbd3530478}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structcvflann_1_1ChiSquareDistance_abc1b7ed780a8dad2b7d6a6984b466ce0}{\index{cvflann\-::\-Chi\-Square\-Distance@{cvflann\-::\-Chi\-Square\-Distance}!accum\-\_\-dist@{accum\-\_\-dist}}
+\index{accum\-\_\-dist@{accum\-\_\-dist}!cvflann::ChiSquareDistance@{cvflann\-::\-Chi\-Square\-Distance}}
+\subsubsection[{accum\-\_\-dist}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ template$<$typename U , typename V $>$ {\bf Result\-Type} {\bf cvflann\-::\-Chi\-Square\-Distance}$<$ {\bf T} $>$\-::accum\-\_\-dist (
+\begin{DoxyParamCaption}
+\item[{const {\bf U} \&}]{a, }
+\item[{const {\bf V} \&}]{b, }
+\item[{int}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{structcvflann_1_1ChiSquareDistance_abc1b7ed780a8dad2b7d6a6984b466ce0}
+Partial distance, used by the kd-\/tree. \hypertarget{structcvflann_1_1ChiSquareDistance_af189d0f9119f9416cc1089a872d9c2dd}{\index{cvflann\-::\-Chi\-Square\-Distance@{cvflann\-::\-Chi\-Square\-Distance}!operator()@{operator()}}
+\index{operator()@{operator()}!cvflann::ChiSquareDistance@{cvflann\-::\-Chi\-Square\-Distance}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ template$<$typename Iterator1 , typename Iterator2 $>$ {\bf Result\-Type} {\bf cvflann\-::\-Chi\-Square\-Distance}$<$ {\bf T} $>$\-::operator() (
+\begin{DoxyParamCaption}
+\item[{Iterator1}]{a, }
+\item[{Iterator2}]{b, }
+\item[{size\-\_\-t}]{size, }
+\item[{{\bf Result\-Type}}]{worst\-\_\-dist = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{structcvflann_1_1ChiSquareDistance_af189d0f9119f9416cc1089a872d9c2dd}
+Compute the chi-\/square distance 
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/flann/\hyperlink{dist_8h}{dist.\-h}\end{DoxyCompactItemize}

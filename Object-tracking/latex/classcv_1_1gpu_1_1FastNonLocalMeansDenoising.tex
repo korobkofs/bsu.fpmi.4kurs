@@ -1,0 +1,63 @@
+\hypertarget{classcv_1_1gpu_1_1FastNonLocalMeansDenoising}{\section{cv\-:\-:gpu\-:\-:Fast\-Non\-Local\-Means\-Denoising Class Reference}
+\label{classcv_1_1gpu_1_1FastNonLocalMeansDenoising}\index{cv\-::gpu\-::\-Fast\-Non\-Local\-Means\-Denoising@{cv\-::gpu\-::\-Fast\-Non\-Local\-Means\-Denoising}}
+}
+
+
+Fast (but approximate)version of non-\/local means algorith similar to C\-P\-U function (running sums technique)  
+
+
+
+
+{\ttfamily \#include $<$gpu.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1FastNonLocalMeansDenoising_ad4e2324b8ba12fa05c0ad62bbfc15c24}{simple\-Method} (const Gpu\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, Gpu\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, float h, int search\-\_\-window=21, int \hyperlink{legacy_8hpp_a4a214ca6e8ee1d4806c28a2fe5b4c8e1}{block\-\_\-size}=7, \hyperlink{classcv_1_1gpu_1_1Stream}{Stream} \&s=\hyperlink{classcv_1_1gpu_1_1Stream_af96c23564834f88333dcb8997df553f1}{Stream\-::\-Null}())
+\begin{DoxyCompactList}\small\item\em Simple method, recommended for grayscale images (though it supports multichannel images) \end{DoxyCompactList}\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1FastNonLocalMeansDenoising_a97e34682d51034287319e826df8e22ab}{lab\-Method} (const Gpu\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, Gpu\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, float h\-\_\-luminance, float h\-\_\-color, int search\-\_\-window=21, int \hyperlink{legacy_8hpp_a4a214ca6e8ee1d4806c28a2fe5b4c8e1}{block\-\_\-size}=7, \hyperlink{classcv_1_1gpu_1_1Stream}{Stream} \&s=\hyperlink{classcv_1_1gpu_1_1Stream_af96c23564834f88333dcb8997df553f1}{Stream\-::\-Null}())
+\begin{DoxyCompactList}\small\item\em Processes luminance and color components separatelly. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Fast (but approximate)version of non-\/local means algorith similar to C\-P\-U function (running sums technique) 
+
+\subsection{Member Function Documentation}
+\hypertarget{classcv_1_1gpu_1_1FastNonLocalMeansDenoising_a97e34682d51034287319e826df8e22ab}{\index{cv\-::gpu\-::\-Fast\-Non\-Local\-Means\-Denoising@{cv\-::gpu\-::\-Fast\-Non\-Local\-Means\-Denoising}!lab\-Method@{lab\-Method}}
+\index{lab\-Method@{lab\-Method}!cv::gpu::FastNonLocalMeansDenoising@{cv\-::gpu\-::\-Fast\-Non\-Local\-Means\-Denoising}}
+\subsubsection[{lab\-Method}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-Fast\-Non\-Local\-Means\-Denoising\-::lab\-Method (
+\begin{DoxyParamCaption}
+\item[{const Gpu\-Mat \&}]{src, }
+\item[{Gpu\-Mat \&}]{dst, }
+\item[{float}]{h\-\_\-luminance, }
+\item[{float}]{h\-\_\-color, }
+\item[{int}]{search\-\_\-window = {\ttfamily 21}, }
+\item[{int}]{block\-\_\-size = {\ttfamily 7}, }
+\item[{{\bf Stream} \&}]{s = {\ttfamily {\bf Stream\-::\-Null}()}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1FastNonLocalMeansDenoising_a97e34682d51034287319e826df8e22ab}
+
+
+Processes luminance and color components separatelly. 
+
+\hypertarget{classcv_1_1gpu_1_1FastNonLocalMeansDenoising_ad4e2324b8ba12fa05c0ad62bbfc15c24}{\index{cv\-::gpu\-::\-Fast\-Non\-Local\-Means\-Denoising@{cv\-::gpu\-::\-Fast\-Non\-Local\-Means\-Denoising}!simple\-Method@{simple\-Method}}
+\index{simple\-Method@{simple\-Method}!cv::gpu::FastNonLocalMeansDenoising@{cv\-::gpu\-::\-Fast\-Non\-Local\-Means\-Denoising}}
+\subsubsection[{simple\-Method}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-Fast\-Non\-Local\-Means\-Denoising\-::simple\-Method (
+\begin{DoxyParamCaption}
+\item[{const Gpu\-Mat \&}]{src, }
+\item[{Gpu\-Mat \&}]{dst, }
+\item[{float}]{h, }
+\item[{int}]{search\-\_\-window = {\ttfamily 21}, }
+\item[{int}]{block\-\_\-size = {\ttfamily 7}, }
+\item[{{\bf Stream} \&}]{s = {\ttfamily {\bf Stream\-::\-Null}()}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1FastNonLocalMeansDenoising_ad4e2324b8ba12fa05c0ad62bbfc15c24}
+
+
+Simple method, recommended for grayscale images (though it supports multichannel images) 
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/gpu/\hyperlink{gpu_2gpu_8hpp}{gpu.\-hpp}\end{DoxyCompactItemize}

@@ -1,0 +1,103 @@
+\hypertarget{classcv_1_1detail_1_1BestOf2NearestMatcher}{\section{cv\-:\-:detail\-:\-:Best\-Of2\-Nearest\-Matcher Class Reference}
+\label{classcv_1_1detail_1_1BestOf2NearestMatcher}\index{cv\-::detail\-::\-Best\-Of2\-Nearest\-Matcher@{cv\-::detail\-::\-Best\-Of2\-Nearest\-Matcher}}
+}
+
+
+{\ttfamily \#include $<$matchers.\-hpp$>$}
+
+
+
+Inheritance diagram for cv\-:\-:detail\-:\-:Best\-Of2\-Nearest\-Matcher\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{classcv_1_1detail_1_1BestOf2NearestMatcher__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for cv\-:\-:detail\-:\-:Best\-Of2\-Nearest\-Matcher\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{classcv_1_1detail_1_1BestOf2NearestMatcher__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcv_1_1detail_1_1BestOf2NearestMatcher_a442057203008c200e381b7baf2697c80}{Best\-Of2\-Nearest\-Matcher} (bool try\-\_\-use\-\_\-gpu=false, float match\-\_\-conf=0.\-3f, int num\-\_\-matches\-\_\-thresh1=6, int num\-\_\-matches\-\_\-thresh2=6)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1detail_1_1BestOf2NearestMatcher_a333bdd073ad0ea67b67230408813f365}{collect\-Garbage} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1detail_1_1BestOf2NearestMatcher_a427ee6f0c9a75766b535e721d3e395df}{match} (const \hyperlink{structcv_1_1detail_1_1ImageFeatures}{Image\-Features} \&features1, const \hyperlink{structcv_1_1detail_1_1ImageFeatures}{Image\-Features} \&features2, \hyperlink{structcv_1_1detail_1_1MatchesInfo}{Matches\-Info} \&matches\-\_\-info)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classcv_1_1detail_1_1BestOf2NearestMatcher_a9feea2b5ac622dcacf9eba2f5a27dafd}{num\-\_\-matches\-\_\-thresh1\-\_\-}
+\item 
+int \hyperlink{classcv_1_1detail_1_1BestOf2NearestMatcher_ad1395b7d534b402b215519b6e9ac8bd9}{num\-\_\-matches\-\_\-thresh2\-\_\-}
+\item 
+Ptr$<$ \hyperlink{classcv_1_1detail_1_1FeaturesMatcher}{Features\-Matcher} $>$ \hyperlink{classcv_1_1detail_1_1BestOf2NearestMatcher_a9e6b74e94d69e18705e961fe753c45c4}{impl\-\_\-}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcv_1_1detail_1_1BestOf2NearestMatcher_a442057203008c200e381b7baf2697c80}{\index{cv\-::detail\-::\-Best\-Of2\-Nearest\-Matcher@{cv\-::detail\-::\-Best\-Of2\-Nearest\-Matcher}!Best\-Of2\-Nearest\-Matcher@{Best\-Of2\-Nearest\-Matcher}}
+\index{Best\-Of2\-Nearest\-Matcher@{Best\-Of2\-Nearest\-Matcher}!cv::detail::BestOf2NearestMatcher@{cv\-::detail\-::\-Best\-Of2\-Nearest\-Matcher}}
+\subsubsection[{Best\-Of2\-Nearest\-Matcher}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::detail\-::\-Best\-Of2\-Nearest\-Matcher\-::\-Best\-Of2\-Nearest\-Matcher (
+\begin{DoxyParamCaption}
+\item[{bool}]{try\-\_\-use\-\_\-gpu = {\ttfamily false}, }
+\item[{float}]{match\-\_\-conf = {\ttfamily 0.3f}, }
+\item[{int}]{num\-\_\-matches\-\_\-thresh1 = {\ttfamily 6}, }
+\item[{int}]{num\-\_\-matches\-\_\-thresh2 = {\ttfamily 6}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1detail_1_1BestOf2NearestMatcher_a442057203008c200e381b7baf2697c80}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcv_1_1detail_1_1BestOf2NearestMatcher_a333bdd073ad0ea67b67230408813f365}{\index{cv\-::detail\-::\-Best\-Of2\-Nearest\-Matcher@{cv\-::detail\-::\-Best\-Of2\-Nearest\-Matcher}!collect\-Garbage@{collect\-Garbage}}
+\index{collect\-Garbage@{collect\-Garbage}!cv::detail::BestOf2NearestMatcher@{cv\-::detail\-::\-Best\-Of2\-Nearest\-Matcher}}
+\subsubsection[{collect\-Garbage}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::detail\-::\-Best\-Of2\-Nearest\-Matcher\-::collect\-Garbage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcv_1_1detail_1_1BestOf2NearestMatcher_a333bdd073ad0ea67b67230408813f365}
+
+
+Reimplemented from \hyperlink{classcv_1_1detail_1_1FeaturesMatcher_a8520ff70e51e0bb138891ce410abf6e4}{cv\-::detail\-::\-Features\-Matcher}.
+
+\hypertarget{classcv_1_1detail_1_1BestOf2NearestMatcher_a427ee6f0c9a75766b535e721d3e395df}{\index{cv\-::detail\-::\-Best\-Of2\-Nearest\-Matcher@{cv\-::detail\-::\-Best\-Of2\-Nearest\-Matcher}!match@{match}}
+\index{match@{match}!cv::detail::BestOf2NearestMatcher@{cv\-::detail\-::\-Best\-Of2\-Nearest\-Matcher}}
+\subsubsection[{match}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::detail\-::\-Best\-Of2\-Nearest\-Matcher\-::match (
+\begin{DoxyParamCaption}
+\item[{const {\bf Image\-Features} \&}]{features1, }
+\item[{const {\bf Image\-Features} \&}]{features2, }
+\item[{{\bf Matches\-Info} \&}]{matches\-\_\-info}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classcv_1_1detail_1_1BestOf2NearestMatcher_a427ee6f0c9a75766b535e721d3e395df}
+
+
+Implements \hyperlink{classcv_1_1detail_1_1FeaturesMatcher_a22005bcc8bf637398b2a325121b44bb1}{cv\-::detail\-::\-Features\-Matcher}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcv_1_1detail_1_1BestOf2NearestMatcher_a9e6b74e94d69e18705e961fe753c45c4}{\index{cv\-::detail\-::\-Best\-Of2\-Nearest\-Matcher@{cv\-::detail\-::\-Best\-Of2\-Nearest\-Matcher}!impl\-\_\-@{impl\-\_\-}}
+\index{impl\-\_\-@{impl\-\_\-}!cv::detail::BestOf2NearestMatcher@{cv\-::detail\-::\-Best\-Of2\-Nearest\-Matcher}}
+\subsubsection[{impl\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}Ptr$<${\bf Features\-Matcher}$>$ cv\-::detail\-::\-Best\-Of2\-Nearest\-Matcher\-::impl\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1detail_1_1BestOf2NearestMatcher_a9e6b74e94d69e18705e961fe753c45c4}
+\hypertarget{classcv_1_1detail_1_1BestOf2NearestMatcher_a9feea2b5ac622dcacf9eba2f5a27dafd}{\index{cv\-::detail\-::\-Best\-Of2\-Nearest\-Matcher@{cv\-::detail\-::\-Best\-Of2\-Nearest\-Matcher}!num\-\_\-matches\-\_\-thresh1\-\_\-@{num\-\_\-matches\-\_\-thresh1\-\_\-}}
+\index{num\-\_\-matches\-\_\-thresh1\-\_\-@{num\-\_\-matches\-\_\-thresh1\-\_\-}!cv::detail::BestOf2NearestMatcher@{cv\-::detail\-::\-Best\-Of2\-Nearest\-Matcher}}
+\subsubsection[{num\-\_\-matches\-\_\-thresh1\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::detail\-::\-Best\-Of2\-Nearest\-Matcher\-::num\-\_\-matches\-\_\-thresh1\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1detail_1_1BestOf2NearestMatcher_a9feea2b5ac622dcacf9eba2f5a27dafd}
+\hypertarget{classcv_1_1detail_1_1BestOf2NearestMatcher_ad1395b7d534b402b215519b6e9ac8bd9}{\index{cv\-::detail\-::\-Best\-Of2\-Nearest\-Matcher@{cv\-::detail\-::\-Best\-Of2\-Nearest\-Matcher}!num\-\_\-matches\-\_\-thresh2\-\_\-@{num\-\_\-matches\-\_\-thresh2\-\_\-}}
+\index{num\-\_\-matches\-\_\-thresh2\-\_\-@{num\-\_\-matches\-\_\-thresh2\-\_\-}!cv::detail::BestOf2NearestMatcher@{cv\-::detail\-::\-Best\-Of2\-Nearest\-Matcher}}
+\subsubsection[{num\-\_\-matches\-\_\-thresh2\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::detail\-::\-Best\-Of2\-Nearest\-Matcher\-::num\-\_\-matches\-\_\-thresh2\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1detail_1_1BestOf2NearestMatcher_ad1395b7d534b402b215519b6e9ac8bd9}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/stitching/detail/\hyperlink{matchers_8hpp}{matchers.\-hpp}\end{DoxyCompactItemize}

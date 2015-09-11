@@ -1,0 +1,5 @@
+<map id="tld::EnsembleClassifier::updatePosterior" name="tld::EnsembleClassifier::updatePosterior">
+<area shape="rect" id="node2" href="$classtld_1_1EnsembleClassifier.html#a0d7853e4cee2e0220c218f43ae78b5a9" title="Updates positive or negative branches and posteriors for all tree. " alt="" coords="211,5,368,46"/>
+<area shape="rect" id="node4" href="$classtld_1_1TLD.html#a8474094a32dc39751bac54f8998860c5" title="Reads the tld model from file. " alt="" coords="213,71,366,97"/>
+<area shape="rect" id="node3" href="$classtld_1_1EnsembleClassifier.html#ad088404fdea039b774c2eb088e4cfc04" title="Update positive or negative patches. " alt="" coords="416,5,573,46"/>
+</map>

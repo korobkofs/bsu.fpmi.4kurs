@@ -1,0 +1,8 @@
+<map id="cv::gpu::device::BrdRowReplicate::at" name="cv::gpu::device::BrdRowReplicate::at">
+<area shape="rect" id="node2" href="$namespacecv_1_1gpu_1_1device.html#aad5e6b794784ec0e90cdcca7d8d8a7de" title="cv::gpu::device::saturate_cast" alt="" coords="305,5,503,32"/>
+<area shape="rect" id="node3" href="$structcv_1_1gpu_1_1device_1_1BrdRowReplicate.html#a5afd0faf29477d122a3fcdbf8db6f033" title="cv::gpu::device::BrdRowReplicate\l::idx_col" alt="" coords="293,57,515,98"/>
+<area shape="rect" id="node4" href="$structcv_1_1gpu_1_1device_1_1BrdRowReplicate.html#a6be808f3a6e448abfdb5c2ce74dd5ae0" title="cv::gpu::device::BrdRowReplicate\l::idx_col_low" alt="" coords="563,23,784,65"/>
+<area shape="rect" id="node6" href="$structcv_1_1gpu_1_1device_1_1BrdRowReplicate.html#a0374ab5b7ce00b82b6a726f06834e2c2" title="cv::gpu::device::BrdRowReplicate\l::idx_col_high" alt="" coords="563,89,784,130"/>
+<area shape="rect" id="node5" href="$namespacecv_1_1gpu.html#a706c9def6816de566be2671b75ec5309" title="computes per&#45;element maximum of two arrays (dst = max(src1, src2)) " alt="" coords="832,31,931,57"/>
+<area shape="rect" id="node7" href="$namespacecv_1_1gpu.html#a8d100341ab11a730a3c90b75d5890a8c" title="computes per&#45;element minimum of two arrays (dst = min(src1, src2)) " alt="" coords="834,96,929,123"/>
+</map>

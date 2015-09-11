@@ -1,0 +1,51 @@
+<map id="cvflann::abs" name="cvflann::abs">
+<area shape="rect" id="node2" href="$classCBlob.html#ab1501b07a2c5ee23843bac66d20974e2" title="Compute extern perimeter. " alt="" coords="181,129,341,156"/>
+<area shape="rect" id="node8" href="$BBPredict_8cpp.html#a4b3e30827072c6282b201b96074c2bc8" title="Calculates width of the bounding box. " alt="" coords="216,203,307,229"/>
+<area shape="rect" id="node11" href="$BBPredict_8cpp.html#afa8fbca51344161ecb831f11b5b2c70f" title="Calculates height of the bounding box. " alt="" coords="214,253,309,280"/>
+<area shape="rect" id="node12" href="$namespacetld.html#a75cd208f8053ece69d5d7de9c2ed33fd" title="Gets a bounding box from the user. " alt="" coords="192,304,331,331"/>
+<area shape="rect" id="node15" href="$namespacecvflann.html#aa807e7dfee3eee783f8b34dd1aadc6ae" title="cvflann::abs\&lt; int \&gt;" alt="" coords="196,355,327,381"/>
+<area shape="rect" id="node16" href="$structcvflann_1_1L1.html#ad243d0a072c18dbbb63956cc429ffea2" title="cvflann::L1::operator()" alt="" coords="187,405,336,432"/>
+<area shape="rect" id="node17" href="$structcvflann_1_1L1.html#a09418975ebb5949306d3298c71241c6c" title="cvflann::L1::accum_dist" alt="" coords="181,456,342,483"/>
+<area shape="rect" id="node18" href="$structcvflann_1_1MinkowskiDistance.html#ac9ebfdd3f6bbf978ef88d68510828b75" title="cvflann::MinkowskiDistance\l::operator()" alt="" coords="168,507,355,549"/>
+<area shape="rect" id="node19" href="$structcvflann_1_1MinkowskiDistance.html#a548c7c4e8edf95dd3484463fc675a8a9" title="cvflann::MinkowskiDistance\l::accum_dist" alt="" coords="168,573,355,614"/>
+<area shape="rect" id="node20" href="$structcvflann_1_1MaxDistance.html#a92102e7ec3b5d3848e9577bdf6009f8a" title="cvflann::MaxDistance\l::operator()" alt="" coords="187,638,336,679"/>
+<area shape="rect" id="node21" href="$structcv_1_1gpu_1_1device_1_1BrdRowReflect101.html#a86481c93bede3629d1ccb9e154d942ed" title="cv::gpu::device::BrdRowReflect101\l::idx_col_low" alt="" coords="147,703,376,745"/>
+<area shape="rect" id="node25" href="$structcv_1_1gpu_1_1device_1_1BrdRowReflect101.html#a2a08e4c3270ceb05ee1028b3dca581b1" title="cv::gpu::device::BrdRowReflect101\l::idx_col_high" alt="" coords="147,769,376,810"/>
+<area shape="rect" id="node27" href="$structcv_1_1gpu_1_1device_1_1BrdColReflect101.html#ad88211682b56ad96312a9cea8eb9201d" title="cv::gpu::device::BrdColReflect101\l::idx_row_low" alt="" coords="150,834,373,875"/>
+<area shape="rect" id="node31" href="$structcv_1_1gpu_1_1device_1_1BrdColReflect101.html#a4a1a54ee230a6066301e8a7f9b0f03c6" title="cv::gpu::device::BrdColReflect101\l::idx_row_high" alt="" coords="150,899,373,941"/>
+<area shape="rect" id="node33" href="$structcv_1_1gpu_1_1device_1_1BrdReflect101.html#ae1bd65c3c88e3fef0299e1a7bd6291a2" title="cv::gpu::device::BrdReflect101\l::idx_row_low" alt="" coords="160,965,363,1006"/>
+<area shape="rect" id="node36" href="$structcv_1_1gpu_1_1device_1_1BrdReflect101.html#a1bf5db9830a47f6ecf5c4078c53ee528" title="cv::gpu::device::BrdReflect101\l::idx_row_high" alt="" coords="160,1030,363,1071"/>
+<area shape="rect" id="node37" href="$structcv_1_1gpu_1_1device_1_1BrdReflect101.html#a91cc3b6c8509fcd1bca14da218293c5e" title="cv::gpu::device::BrdReflect101\l::idx_col_low" alt="" coords="160,1095,363,1137"/>
+<area shape="rect" id="node39" href="$structcv_1_1gpu_1_1device_1_1BrdReflect101.html#ace0d2c1ac4bf76633a04a204ef6d0814" title="cv::gpu::device::BrdReflect101\l::idx_col_high" alt="" coords="160,1161,363,1202"/>
+<area shape="rect" id="node40" href="$structcv_1_1gpu_1_1device_1_1BrdRowReflect.html#a9977dcff5eb024ea6902f60366d5912a" title="cv::gpu::device::BrdRowReflect\l::idx_col_high" alt="" coords="157,1226,365,1267"/>
+<area shape="rect" id="node44" href="$structcv_1_1gpu_1_1device_1_1BrdColReflect.html#ac03d7e388bf647e9d69f690da8669335" title="cv::gpu::device::BrdColReflect\l::idx_row_high" alt="" coords="161,1291,362,1333"/>
+<area shape="rect" id="node47" href="$structcv_1_1gpu_1_1device_1_1abs__func_3_01signed_01char_01_4.html#ad06552fcbfeccb405c49d524e7c48d17" title="cv::gpu::device::abs\l_func\&lt; signed char \&gt;\l::operator()" alt="" coords="189,1356,334,1412"/>
+<area shape="rect" id="node48" href="$structcv_1_1gpu_1_1device_1_1abs__func_3_01char_01_4.html#a5b3e4075f4c6da65ca1967edf82b7ab1" title="cv::gpu::device::abs\l_func\&lt; char \&gt;::operator()" alt="" coords="178,1435,345,1477"/>
+<area shape="rect" id="node49" href="$structcv_1_1gpu_1_1device_1_1abs__func_3_01short_01_4.html#a3423df7320437f4fd534c51ac0e29586" title="cv::gpu::device::abs\l_func\&lt; short \&gt;::operator()" alt="" coords="176,1501,347,1542"/>
+<area shape="rect" id="node50" href="$structcv_1_1gpu_1_1device_1_1abs__func_3_01int_01_4.html#a67420d9136df08c46c3cf74fbc4170b0" title="cv::gpu::device::abs\l_func\&lt; int \&gt;::operator()" alt="" coords="184,1566,339,1607"/>
+<area shape="rect" id="node3" href="$classCBlob.html#a2d56a7dee1cbeb3178ff083630ee31b0" title="0 for extern blobs, 0 if not " alt="" coords="483,5,594,32"/>
+<area shape="rect" id="node5" href="$classCBlobGetExternPerimeter.html#a3c506f7355bab0299f1992dcda2e0a0a" title="Aply operator to blob. " alt="" coords="452,57,625,98"/>
+<area shape="rect" id="node6" href="$classCBlobGetExternPerimeterRatio.html#a28c984e9b6de7d6303704b34b76c1c5b" title="Aply operator to blob. " alt="" coords="437,122,641,163"/>
+<area shape="rect" id="node7" href="$classCBlobGetExternHullPerimeterRatio.html#a9b841221281e5efd45d4e3d8117369c4" title="Aply operator to blob. " alt="" coords="441,187,637,229"/>
+<area shape="rect" id="node4" href="$classCBlobGetExterior.html#ad272326f713272424a2b4763b27edeaa" title="Aply operator to blob. " alt="" coords="732,5,919,32"/>
+<area shape="rect" id="node9" href="$BBPredict_8h.html#a0181c4b3c3e424d149a8d89a05c98de7" title="Calculates the new (moved and resized) Bounding box. Calculation based on all relative distance chang..." alt="" coords="501,253,576,280"/>
+<area shape="rect" id="node10" href="$FBTrack_8h.html#a2c818794e6fe6aa3f6efdc9c46ffd164" title="Calculate the bounding box of an Object in a following Image. Imgs aren&#39;t changed. " alt="" coords="794,253,857,280"/>
+<area shape="rect" id="node13" href="$classMain.html#a5effa58c6ae671f8ce4ff31cb6e07aa5" title="Begins the work. " alt="" coords="487,304,590,331"/>
+<area shape="rect" id="node14" href="$OpenTLD_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="800,304,851,331"/>
+<area shape="rect" id="node22" href="$structcv_1_1gpu_1_1device_1_1BrdRowReflect101.html#a072a689e32bd9b43ded37ac3de282808" title="cv::gpu::device::BrdRowReflect101\l::idx_col" alt="" coords="424,703,653,745"/>
+<area shape="rect" id="node24" href="$structcv_1_1gpu_1_1device_1_1BrdRowReflect101.html#a8c7472a00c779e8038de277da646e8f5" title="cv::gpu::device::BrdRowReflect101\l::at_low" alt="" coords="424,638,653,679"/>
+<area shape="rect" id="node23" href="$structcv_1_1gpu_1_1device_1_1BrdRowReflect101.html#a31bdb2051333f64c83bfa6b37e67d715" title="cv::gpu::device::BrdRowReflect101::at" alt="" coords="701,711,949,737"/>
+<area shape="rect" id="node26" href="$structcv_1_1gpu_1_1device_1_1BrdRowReflect101.html#a65d1f09c86d50077a93e1602d2c7faa6" title="cv::gpu::device::BrdRowReflect101\l::at_high" alt="" coords="424,769,653,810"/>
+<area shape="rect" id="node28" href="$structcv_1_1gpu_1_1device_1_1BrdColReflect101.html#ac24f041d475d9361a8c478e0241d5b2a" title="cv::gpu::device::BrdColReflect101\l::idx_row" alt="" coords="427,899,650,941"/>
+<area shape="rect" id="node30" href="$structcv_1_1gpu_1_1device_1_1BrdColReflect101.html#aee8760c932a02b99c74d5c8a461d7178" title="cv::gpu::device::BrdColReflect101\l::at_low" alt="" coords="427,834,650,875"/>
+<area shape="rect" id="node29" href="$structcv_1_1gpu_1_1device_1_1BrdColReflect101.html#a4bbf97f04dec010494b734b925bad996" title="cv::gpu::device::BrdColReflect101::at" alt="" coords="705,907,946,933"/>
+<area shape="rect" id="node32" href="$structcv_1_1gpu_1_1device_1_1BrdColReflect101.html#a27925dce94b3b79ea80da08e72c97a10" title="cv::gpu::device::BrdColReflect101\l::at_high" alt="" coords="427,965,650,1006"/>
+<area shape="rect" id="node34" href="$structcv_1_1gpu_1_1device_1_1BrdReflect101.html#a6e3bdd562ada6683b52eec47fb62cda2" title="cv::gpu::device::BrdReflect101\l::idx_row" alt="" coords="437,1030,640,1071"/>
+<area shape="rect" id="node35" href="$structcv_1_1gpu_1_1device_1_1BrdReflect101.html#a83ae51106002c2b7f8aa2cc2c905764a" title="cv::gpu::device::BrdReflect101::at" alt="" coords="715,1071,936,1097"/>
+<area shape="rect" id="node38" href="$structcv_1_1gpu_1_1device_1_1BrdReflect101.html#ac005888ec6d3744a5f8b7d7d6566389c" title="cv::gpu::device::BrdReflect101\l::idx_col" alt="" coords="437,1095,640,1137"/>
+<area shape="rect" id="node41" href="$structcv_1_1gpu_1_1device_1_1BrdRowReflect.html#a920e4d9266d0aa88e04b3484b4f0ce74" title="cv::gpu::device::BrdRowReflect\l::idx_col" alt="" coords="435,1161,643,1202"/>
+<area shape="rect" id="node43" href="$structcv_1_1gpu_1_1device_1_1BrdRowReflect.html#ad638768fe795181a8dd8648d71912638" title="cv::gpu::device::BrdRowReflect\l::at_high" alt="" coords="435,1226,643,1267"/>
+<area shape="rect" id="node42" href="$structcv_1_1gpu_1_1device_1_1BrdRowReflect.html#a59593cabed460b1bad4cf7d031aba607" title="cv::gpu::device::BrdRowReflect::at" alt="" coords="712,1168,939,1195"/>
+<area shape="rect" id="node45" href="$structcv_1_1gpu_1_1device_1_1BrdColReflect.html#a6c842b479b953a99e8a014ef920b4e21" title="cv::gpu::device::BrdColReflect\l::idx_row" alt="" coords="438,1291,639,1333"/>
+<area shape="rect" id="node46" href="$structcv_1_1gpu_1_1device_1_1BrdColReflect.html#ab33ff47ec98f7e60dcde188fe440e880" title="cv::gpu::device::BrdColReflect\l::at_high" alt="" coords="438,1357,639,1398"/>
+</map>

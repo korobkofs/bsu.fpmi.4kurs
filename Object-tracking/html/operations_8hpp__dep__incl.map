@@ -1,0 +1,51 @@
+<map id="/usr/include/opencv2/core/operations.hpp" name="/usr/include/opencv2/core/operations.hpp">
+<area shape="rect" id="node2" href="$hybridtracker_8hpp.html" title="/usr/include/opencv2\l/contrib/hybridtracker.hpp" alt="" coords="475,389,644,430"/>
+<area shape="rect" id="node3" href="$core_8hpp.html" title="The Core Functionality. " alt="" coords="3107,97,3249,138"/>
+<area shape="rect" id="node4" href="$cv_8h.html" title="/usr/include/opencv/cv.h" alt="" coords="1107,396,1270,423"/>
+<area shape="rect" id="node5" href="$cvaux_8h.html" title="/usr/include/opencv\l/cvaux.h" alt="" coords="846,389,980,430"/>
+<area shape="rect" id="node6" href="$cxcore_8h.html" title="/usr/include/opencv\l/cxcore.h" alt="" coords="3810,187,3944,229"/>
+<area shape="rect" id="node7" href="$highgui_8h.html" title="/usr/include/opencv\l/highgui.h" alt="" coords="3426,285,3560,326"/>
+<area shape="rect" id="node8" href="$ml_8h.html" title="/usr/include/opencv/ml.h" alt="" coords="130,292,293,319"/>
+<area shape="rect" id="node9" href="$calib3d_8hpp.html" title="/usr/include/opencv2\l/calib3d/calib3d.hpp" alt="" coords="1431,285,1573,326"/>
+<area shape="rect" id="node10" href="$opencv_8hpp.html" title="/usr/include/opencv2\l/opencv.hpp" alt="" coords="1540,389,1682,430"/>
+<area shape="rect" id="node11" href="$contrib_8hpp.html" title="/usr/include/opencv2\l/contrib/contrib.hpp" alt="" coords="1010,285,1152,326"/>
+<area shape="rect" id="node12" href="$openfabmap_8hpp.html" title="/usr/include/opencv2\l/contrib/openfabmap.hpp" alt="" coords="2448,285,2612,326"/>
+<area shape="rect" id="node13" href="$retina_8hpp.html" title="/usr/include/opencv2\l/contrib/retina.hpp" alt="" coords="3968,187,4110,229"/>
+<area shape="rect" id="node14" href="$internal_8hpp.html" title="/usr/include/opencv2\l/core/internal.hpp" alt="" coords="4135,187,4277,229"/>
+<area shape="rect" id="node15" href="$features2d_2features2d_8hpp.html" title="/usr/include/opencv2\l/features2d/features2d.hpp" alt="" coords="1599,187,1776,229"/>
+<area shape="rect" id="node16" href="$ocl_2ocl_8hpp.html" title="/usr/include/opencv2\l/ocl/ocl.hpp" alt="" coords="572,285,714,326"/>
+<area shape="rect" id="node17" href="$matchers_8hpp.html" title="/usr/include/opencv2\l/stitching/detail/matchers.hpp" alt="" coords="3208,285,3401,326"/>
+<area shape="rect" id="node18" href="$autocalib_8hpp.html" title="/usr/include/opencv2\l/stitching/detail/autocalib.hpp" alt="" coords="3562,389,3752,430"/>
+<area shape="rect" id="node19" href="$motion__estimators_8hpp.html" title="/usr/include/opencv2\l/stitching/detail/motion\l_estimators.hpp" alt="" coords="3902,381,4054,437"/>
+<area shape="rect" id="node20" href="$stitcher_8hpp.html" title="/usr/include/opencv2\l/stitching/stitcher.hpp" alt="" coords="3962,486,4109,527"/>
+<area shape="rect" id="node21" href="$ts__perf_8hpp.html" title="/usr/include/opencv2\l/ts/ts_perf.hpp" alt="" coords="1852,285,1994,326"/>
+<area shape="rect" id="node22" href="$gpu__perf_8hpp.html" title="/usr/include/opencv2\l/ts/gpu_perf.hpp" alt="" coords="2071,389,2213,430"/>
+<area shape="rect" id="node23" href="$gpu__test_8hpp.html" title="/usr/include/opencv2\l/ts/gpu_test.hpp" alt="" coords="1852,486,1994,527"/>
+<area shape="rect" id="node24" href="$ts_8hpp.html" title="/usr/include/opencv2\l/ts/ts.hpp" alt="" coords="1852,389,1994,430"/>
+<area shape="rect" id="node25" href="$global__motion_8hpp.html" title="/usr/include/opencv2\l/videostab/global_motion.hpp" alt="" coords="2638,285,2828,326"/>
+<area shape="rect" id="node26" href="$cap__ios_8h.html" title="/usr/include/opencv2\l/highgui/cap_ios.h" alt="" coords="5379,187,5521,229"/>
+<area shape="rect" id="node27" href="$ios_8h.html" title="/usr/include/opencv2\l/highgui/ios.h" alt="" coords="4647,285,4789,326"/>
+<area shape="rect" id="node28" href="$highgui_8hpp.html" title="/usr/include/opencv2\l/highgui/highgui.hpp" alt="" coords="3107,187,3249,229"/>
+<area shape="rect" id="node29" href="$frame__source_8hpp.html" title="/usr/include/opencv2\l/videostab/frame_source.hpp" alt="" coords="3584,285,3774,326"/>
+<area shape="rect" id="node30" href="$imgproc_8hpp.html" title="The Image Processing. " alt="" coords="1320,187,1466,229"/>
+<area shape="rect" id="node31" href="$photo_8hpp.html" title="/usr/include/opencv2\l/photo/photo.hpp" alt="" coords="2280,285,2422,326"/>
+<area shape="rect" id="node32" href="$inpainting_8hpp.html" title="/usr/include/opencv2\l/videostab/inpainting.hpp" alt="" coords="5095,389,5261,430"/>
+<area shape="rect" id="node33" href="$detail_2warpers_8hpp.html" title="/usr/include/opencv2\l/stitching/detail/warpers.hpp" alt="" coords="2071,285,2256,326"/>
+<area shape="rect" id="node34" href="$warpers__inl_8hpp.html" title="/usr/include/opencv2\l/stitching/detail/warpers\l_inl.hpp" alt="" coords="2238,381,2397,437"/>
+<area shape="rect" id="node35" href="$tracking_8hpp.html" title="The Object and Feature Tracking. " alt="" coords="791,285,933,326"/>
+<area shape="rect" id="node36" href="$ml_8hpp.html" title="/usr/include/opencv2\l/ml/ml.hpp" alt="" coords="396,187,538,229"/>
+<area shape="rect" id="node37" href="$objdetect_8hpp.html" title="/usr/include/opencv2\l/objdetect/objdetect.hpp" alt="" coords="563,187,724,229"/>
+<area shape="rect" id="node38" href="$blenders_8hpp.html" title="/usr/include/opencv2\l/stitching/detail/blenders.hpp" alt="" coords="5286,389,5473,430"/>
+<area shape="rect" id="node39" href="$camera_8hpp.html" title="/usr/include/opencv2\l/stitching/detail/camera.hpp" alt="" coords="4003,285,4185,326"/>
+<area shape="rect" id="node40" href="$exposure__compensate_8hpp.html" title="/usr/include/opencv2\l/stitching/detail/exposure\l_compensate.hpp" alt="" coords="5498,381,5664,437"/>
+<area shape="rect" id="node41" href="$util_8hpp.html" title="/usr/include/opencv2\l/stitching/detail/util.hpp" alt="" coords="3630,187,3785,229"/>
+<area shape="rect" id="node42" href="$util__inl_8hpp.html" title="/usr/include/opencv2\l/stitching/detail/util\l_inl.hpp" alt="" coords="4210,277,4352,333"/>
+<area shape="rect" id="node43" href="$seam__finders_8hpp.html" title="/usr/include/opencv2\l/stitching/detail/seam\l_finders.hpp" alt="" coords="5689,381,5836,437"/>
+<area shape="rect" id="node44" href="$superres_2optical__flow_8hpp.html" title="/usr/include/opencv2\l/superres/optical_flow.hpp" alt="" coords="4404,187,4578,229"/>
+<area shape="rect" id="node45" href="$superres_8hpp.html" title="/usr/include/opencv2\l/superres/superres.hpp" alt="" coords="4604,187,4757,229"/>
+<area shape="rect" id="node46" href="$background__segm_8hpp.html" title="/usr/include/opencv2\l/video/background_segm.hpp" alt="" coords="92,187,284,229"/>
+<area shape="rect" id="node47" href="$deblurring_8hpp.html" title="/usr/include/opencv2\l/videostab/deblurring.hpp" alt="" coords="4783,187,4949,229"/>
+<area shape="rect" id="node48" href="$fast__marching_8hpp.html" title="/usr/include/opencv2\l/videostab/fast_marching.hpp" alt="" coords="5231,285,5424,326"/>
+<area shape="rect" id="node49" href="$log_8hpp.html" title="/usr/include/opencv2\l/videostab/log.hpp" alt="" coords="4974,187,5116,229"/>
+<area shape="rect" id="node50" href="$motion__stabilizing_8hpp.html" title="/usr/include/opencv2\l/videostab/motion_stabilizing.hpp" alt="" coords="5140,187,5354,229"/>
+</map>

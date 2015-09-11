@@ -1,0 +1,5 @@
+<map id="config_setting_remove_elem" name="config_setting_remove_elem">
+<area shape="rect" id="node2" href="$libconfig_8c.html#a75d07db5b7d56b206c8ad45a04cb3f7c" title="__config_list_remove" alt="" coords="254,5,399,32"/>
+<area shape="rect" id="node3" href="$libconfig_8c.html#aa90e3234bee7b4faf28f6a9a2f5ab759" title="__config_setting_destroy" alt="" coords="243,56,410,83"/>
+<area shape="rect" id="node4" href="$libconfig_8c.html#a1753aaaa9c2fd22b0dfae1e599833145" title="__config_list_destroy" alt="" coords="459,56,605,83"/>
+</map>

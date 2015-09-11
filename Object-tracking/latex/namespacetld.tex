@@ -1,0 +1,1235 @@
+\hypertarget{namespacetld}{\section{tld Namespace Reference}
+\label{namespacetld}\index{tld@{tld}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classtld_1_1Clustering}{Clustering}
+\begin{DoxyCompactList}\small\item\em The clustering of detector cascade results. \end{DoxyCompactList}\item 
+class \hyperlink{classtld_1_1DetectionResult}{Detection\-Result}
+\begin{DoxyCompactList}\small\item\em The detection result. \end{DoxyCompactList}\item 
+class \hyperlink{classtld_1_1DetectorCascade}{Detector\-Cascade}
+\begin{DoxyCompactList}\small\item\em The detector cascade. \end{DoxyCompactList}\item 
+class \hyperlink{classtld_1_1EnsembleClassifier}{Ensemble\-Classifier}
+\begin{DoxyCompactList}\small\item\em The ensemble classifier. \end{DoxyCompactList}\item 
+class \hyperlink{classtld_1_1ForegroundDetector}{Foreground\-Detector}
+\begin{DoxyCompactList}\small\item\em The foreground detector. \end{DoxyCompactList}\item 
+class \hyperlink{classtld_1_1MedianFlowTracker}{Median\-Flow\-Tracker}
+\begin{DoxyCompactList}\small\item\em The median flow tracker (based on the forward-\/backward error). \end{DoxyCompactList}\item 
+class \hyperlink{classtld_1_1NNClassifier}{N\-N\-Classifier}
+\begin{DoxyCompactList}\small\item\em The nearest neighbor classifier. \end{DoxyCompactList}\item 
+class \hyperlink{classtld_1_1NormalizedPatch}{Normalized\-Patch}
+\begin{DoxyCompactList}\small\item\em The normalized patch (image). \end{DoxyCompactList}\item 
+struct \hyperlink{structtld_1_1TldExportEntry}{Tld\-Export\-Entry}
+\item 
+class \hyperlink{classtld_1_1TLD}{T\-L\-D}
+\begin{DoxyCompactList}\small\item\em The tracking lerning detector. \end{DoxyCompactList}\item 
+class \hyperlink{classtld_1_1VarianceFilter}{Variance\-Filter}
+\begin{DoxyCompactList}\small\item\em The variance filter. \end{DoxyCompactList}\item 
+class \hyperlink{classtld_1_1Config}{Config}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtld_1_1Config}{Config} is used to configure the program by cli and/or by a config file. \end{DoxyCompactList}\item 
+class \hyperlink{classtld_1_1Gui}{Gui}
+\begin{DoxyCompactList}\small\item\em Graphical user interface. \end{DoxyCompactList}\item 
+class \hyperlink{classtld_1_1Settings}{Settings}
+\begin{DoxyCompactList}\small\item\em In this class all settings are stored. \end{DoxyCompactList}\item 
+class \hyperlink{classtld_1_1Trajectory}{Trajectory}
+\begin{DoxyCompactList}\small\item\em Detection trajectory; a line which associates the last detections. The data is stored in 2 \char`\"{}shift registers\char`\"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{namespacetld_ac0c16951370c978dee562ac3d3bd1554}{tld\-Rect\-To\-Points} (Cv\-Rect rect, Cv\-Point $\ast$p1, Cv\-Point $\ast$p2)
+\begin{DoxyCompactList}\small\item\em Converts the rectangle to two points. \end{DoxyCompactList}\item 
+void \hyperlink{namespacetld_a0c77964d9fc8756d176352372745a0ff}{tld\-Bounding\-Box\-To\-Points} (int $\ast$\hyperlink{namespacetld_aa5e13bbb9a53d3e9103d430b6113b08b}{bb}, Cv\-Point $\ast$p1, Cv\-Point $\ast$p2)
+\begin{DoxyCompactList}\small\item\em Converts the array (size 4) to two points. \end{DoxyCompactList}\item 
+void \hyperlink{namespacetld_a7facbe495da1f0e058c78b9b7dea412a}{tld\-Normalize\-Img} (const cv\-::\-Mat \&img, float $\ast$output)
+\begin{DoxyCompactList}\small\item\em Returns mean-\/normalized patch, the image must be greyscale. \end{DoxyCompactList}\item 
+Cv\-Rect \hyperlink{namespacetld_afd43d8a27c419d1f5da8718be917d4b5}{tld\-Boundary\-To\-Rect} (int $\ast$boundary)
+\begin{DoxyCompactList}\small\item\em Creates new rectangle from boundary. \end{DoxyCompactList}\item 
+void \hyperlink{namespacetld_a200bdf631ed45b6d0875996d2e4709f2}{tld\-Extract\-Sub\-Image} (const Mat \&img, Mat \&sub\-Image, Cv\-Rect rect)
+\begin{DoxyCompactList}\small\item\em Extracts the subimage by the reactangle. \end{DoxyCompactList}\item 
+void \hyperlink{namespacetld_a16fe2b016494fa66be611f723ed7bebc}{tld\-Extract\-Sub\-Image} (const cv\-::\-Mat \&img, cv\-::\-Mat \&sub\-Image, int $\ast$boundary)
+\begin{DoxyCompactList}\small\item\em Extracts the subimage by the reactangle. \end{DoxyCompactList}\item 
+void \hyperlink{namespacetld_ac965be65b1eae7ec666c3bfbe9da065e}{tld\-Extract\-Normalized\-Patch} (const cv\-::\-Mat \&img, int x, int y, int w, int h, float $\ast$output)
+\begin{DoxyCompactList}\small\item\em Extracts normalized patch from the image by rectangle. \end{DoxyCompactList}\item 
+void \hyperlink{namespacetld_a44b5f4d4d087d3369129bdc92e2a555a}{tld\-Extract\-Normalized\-Patch\-B\-B} (const cv\-::\-Mat \&img, int $\ast$boundary, float $\ast$output)
+\begin{DoxyCompactList}\small\item\em Extracts normalized patch from the image by boundary (array). \end{DoxyCompactList}\item 
+void \hyperlink{namespacetld_aa6c803037b38609e1fceadbb2ad8a75c}{tld\-Extract\-Normalized\-Patch\-Rect} (const cv\-::\-Mat \&img, cv\-::\-Rect $\ast$rect, float $\ast$output)
+\begin{DoxyCompactList}\small\item\em Extracts normalized patch from the image by reactangle. \end{DoxyCompactList}\item 
+float \hyperlink{namespacetld_a34eeb46b85efa569359847443ee96eba}{Calculate\-Mean} (float $\ast$value, int n)
+\begin{DoxyCompactList}\small\item\em Calculates the mean value of array. \end{DoxyCompactList}\item 
+float \hyperlink{namespacetld_a53d4a014fd3df2b3e8a3026a1c1768a7}{tld\-Calc\-Variance} (float $\ast$value, int n)
+\begin{DoxyCompactList}\small\item\em Calculates the variance. \end{DoxyCompactList}\item 
+float \hyperlink{namespacetld_a19776566a098d3b1fb15030e945a8c14}{tld\-B\-B\-Overlap} (int $\ast$bb1, int $\ast$bb2)
+\begin{DoxyCompactList}\small\item\em Calculates the share overlap of two bounding boxes (the share the intersection area in the occupy area). \end{DoxyCompactList}\item 
+void \hyperlink{namespacetld_a018caa7bf4a554814fe61a679a219489}{tld\-Overlap\-One} (int $\ast$windows, int num\-Windows, int index, std\-::vector$<$ int $>$ $\ast$indices, float $\ast$overlap)
+\begin{DoxyCompactList}\small\item\em Calculates the share overlap of one window and the indexed windows (according). \end{DoxyCompactList}\item 
+float \hyperlink{namespacetld_afdab54607fed863cdc408f72fd0f774b}{tld\-Overlap\-Rect\-Rect} (cv\-::\-Rect r1, cv\-::\-Rect r2)
+\begin{DoxyCompactList}\small\item\em Calculates the share overlap of two rectangle (the share the intersection area in the occupy area). \end{DoxyCompactList}\item 
+cv\-::\-Rect $\ast$ \hyperlink{namespacetld_aa09746d2aa3c9d71e4e0ba54d70d0e66}{tld\-Copy\-Rect} (cv\-::\-Rect $\ast$r)
+\begin{DoxyCompactList}\small\item\em Creates the copy of rectangle. \end{DoxyCompactList}\item 
+void \hyperlink{namespacetld_ae87c7dbe6b4da1e1923c42bec18caaf6}{tld\-Overlap\-Rect} (int $\ast$windows, int num\-Windows, cv\-::\-Rect $\ast$boundary, float $\ast$overlap)
+\begin{DoxyCompactList}\small\item\em Calculates the share overlap of windows and the rectangle. \end{DoxyCompactList}\item 
+void \hyperlink{namespacetld_aa9470de30170cb8b3f877dcae45df1b1}{tld\-Overlap} (int $\ast$windows, int num\-Windows, int $\ast$boundary, float $\ast$overlap)
+\begin{DoxyCompactList}\small\item\em Calculates the share overlap of windows and the boundary. \end{DoxyCompactList}\item 
+bool \hyperlink{namespacetld_acaf374df081816ecaf9079e200a8f5af}{tld\-Sort\-By\-Overlap\-Desc} (std\-::pair$<$ int, float $>$ bb1, std\-::pair$<$ int, float $>$ bb2)
+\begin{DoxyCompactList}\small\item\em Checks whether the second parameter of one pair is more then the second parameter of other pair. \end{DoxyCompactList}\item 
+int \hyperlink{namespacetld_a8b28e6d4868ad30e826a6248dd2ae7a0}{tld\-Is\-Inside} (int $\ast$bb1, int $\ast$bb2)
+\begin{DoxyCompactList}\small\item\em Checks whether the one bouning box is completely inside the other. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class T1 , class T2 $>$ }\\void \hyperlink{namespacetld_a76d4a1c9344fcb821fda1f8c6ad587bc}{tld\-Convert\-B\-B} (T1 $\ast$src, T2 $\ast$dest)
+\begin{DoxyCompactList}\small\item\em Converts the bouning box to other type. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{namespacetld_ac08655e901fb2ced507566217d4b5aca}{tld\-Copy\-B\-B} (T $\ast$src, T $\ast$dest)
+\begin{DoxyCompactList}\small\item\em Copies the bouning box to the other. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{namespacetld_aefacde9f718a4102ac40901afa1b35f7}{tld\-Copy\-Boundary\-To\-Array} (T x, T y, T width, T height, T $\ast$array)
+\begin{DoxyCompactList}\small\item\em Copies the boundary to the array (size 4). \end{DoxyCompactList}\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{namespacetld_aff4c05bc28ae29c360be58460a56b579}{tld\-Extract\-Dims\-From\-Array} (T $\ast$boundary, T $\ast$x, T $\ast$y, T $\ast$width, T $\ast$height)
+\begin{DoxyCompactList}\small\item\em Extracts the date from array (size 4). \end{DoxyCompactList}\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{namespacetld_a18975268ebbf3daf5eaf46d30fd782e9}{tld\-Rect\-To\-Array} (cv\-::\-Rect rect, T $\ast$boundary)
+\begin{DoxyCompactList}\small\item\em Converts the rectangle to array (size 4). \end{DoxyCompactList}\item 
+{\footnotesize template$<$class T $>$ }\\cv\-::\-Rect \hyperlink{namespacetld_ad23d08bb67b847f43e2781a53f4af957}{tld\-Array\-To\-Rect} (T $\ast$boundary)
+\begin{DoxyCompactList}\small\item\em Converts the array (size 4) to rectangle. \end{DoxyCompactList}\item 
+void \hyperlink{namespacetld_a7699b7dc20502fc6d7c5c6c6cbd4be7b}{tld\-Extract\-Sub\-Image} (const cv\-::\-Mat \&img, cv\-::\-Mat \&sub\-Image, int x, int y, int w, int h)
+\begin{DoxyCompactList}\small\item\em Extracts the subimage by the reactangle. \end{DoxyCompactList}\item 
+float \hyperlink{namespacetld_ac0065f4088098aca6e1edd49b2b0f9d3}{tld\-Calc\-Mean} (float $\ast$value, int n)
+\begin{DoxyCompactList}\small\item\em It isn't realized. \end{DoxyCompactList}\item 
+int \hyperlink{namespacetld_a5b279570cd95fb0067a41b5a222e2642}{getopt} (int argc, char $\ast$$\ast$argv, char $\ast$opts)
+\item 
+static void \hyperlink{namespacetld_aed141e469725fa20f8828efbe29e57f1}{mouse\-Handler} (int event, int x, int y, int flags, void $\ast$param)
+\item 
+int \hyperlink{namespacetld_a75cd208f8053ece69d5d7de9c2ed33fd}{get\-B\-B\-From\-User} (Ipl\-Image $\ast$img, Cv\-Rect \&rect, \hyperlink{classtld_1_1Gui}{Gui} $\ast$gui)
+\begin{DoxyCompactList}\small\item\em Gets a bounding box from the user. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static const int \hyperlink{namespacetld_ad0458a97a7973a088840e7917515c6ae}{T\-L\-D\-\_\-\-W\-I\-N\-D\-O\-W\-\_\-\-S\-I\-Z\-E} = 5
+\begin{DoxyCompactList}\small\item\em the size of array, defining the window \end{DoxyCompactList}\item 
+static const int \hyperlink{namespacetld_a7a647c1eaeda30086f4519b611db4e71}{T\-L\-D\-\_\-\-W\-I\-N\-D\-O\-W\-\_\-\-O\-F\-F\-S\-E\-T\-\_\-\-S\-I\-Z\-E} = 6
+\begin{DoxyCompactList}\small\item\em the size of array, defining the window offset \end{DoxyCompactList}\item 
+static char \hyperlink{namespacetld_a17f0b1eb181c0395a541e031b203040a}{help\-\_\-text} \mbox{[}$\,$\mbox{]}
+\item 
+int \hyperlink{namespacetld_a6e180d5067af278cc277ae9c6f7507c1}{opterr} = 1
+\item 
+int \hyperlink{namespacetld_ab8c5a378ef03678c537edc84a15abc22}{optind} = 1
+\item 
+int \hyperlink{namespacetld_a6d6bd80732b9f396bc03e5f2c5cf30f8}{optopt}
+\item 
+char $\ast$ \hyperlink{namespacetld_a1bbc7d3201a2ef41da5495e0e48cfd2e}{optarg}
+\item 
+static string \hyperlink{namespacetld_ad1bfc03770cc333da8a972ab7d35c246}{window\-\_\-name}
+\item 
+static Cv\-Font \hyperlink{namespacetld_a16a44df30fb791b45dd103ba1541fb67}{font}
+\item 
+static Ipl\-Image $\ast$ \hyperlink{namespacetld_a32bc4295eda098201cd336e2d2f1e217}{img0}
+\item 
+static Ipl\-Image $\ast$ \hyperlink{namespacetld_ac832a3e8122e594c1c5321935cbc2639}{img1}
+\item 
+static Cv\-Point \hyperlink{namespacetld_a680868c3e5a47352c5353897519636d4}{point}
+\item 
+static Cv\-Rect $\ast$ \hyperlink{namespacetld_aa5e13bbb9a53d3e9103d430b6113b08b}{bb}
+\item 
+static int \hyperlink{namespacetld_a7cfa165f34457693b8898cfa78e51945}{drag} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Clemens Korner 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespacetld_a34eeb46b85efa569359847443ee96eba}{\index{tld@{tld}!Calculate\-Mean@{Calculate\-Mean}}
+\index{Calculate\-Mean@{Calculate\-Mean}!tld@{tld}}
+\subsubsection[{Calculate\-Mean}]{\setlength{\rightskip}{0pt plus 5cm}float tld\-::\-Calculate\-Mean (
+\begin{DoxyParamCaption}
+\item[{float $\ast$}]{value, }
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}}\label{namespacetld_a34eeb46b85efa569359847443ee96eba}
+
+
+Calculates the mean value of array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & the array \\
+\hline
+{\em n} & the size of array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float the mean value 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacetld_a34eeb46b85efa569359847443ee96eba_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespacetld_a75cd208f8053ece69d5d7de9c2ed33fd}{\index{tld@{tld}!get\-B\-B\-From\-User@{get\-B\-B\-From\-User}}
+\index{get\-B\-B\-From\-User@{get\-B\-B\-From\-User}!tld@{tld}}
+\subsubsection[{get\-B\-B\-From\-User}]{\setlength{\rightskip}{0pt plus 5cm}int tld\-::get\-B\-B\-From\-User (
+\begin{DoxyParamCaption}
+\item[{Ipl\-Image $\ast$}]{img, }
+\item[{Cv\-Rect \&}]{rect, }
+\item[{Gui $\ast$}]{gui}
+\end{DoxyParamCaption}
+)}}\label{namespacetld_a75cd208f8053ece69d5d7de9c2ed33fd}
+
+
+Gets a bounding box from the user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em img} & image to display \\
+\hline
+{\em rect} & Cv\-Rect containing the coordinates of the bounding box \\
+\hline
+{\em gui} & initialized gui \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+P\-R\-O\-G\-R\-A\-M\-\_\-\-E\-X\-I\-T if 'q' or 'Q' pressed, S\-U\-C\-C\-E\-S\-S if everything went right 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{namespacetld_a75cd208f8053ece69d5d7de9c2ed33fd_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacetld_a75cd208f8053ece69d5d7de9c2ed33fd_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespacetld_a5b279570cd95fb0067a41b5a222e2642}{\index{tld@{tld}!getopt@{getopt}}
+\index{getopt@{getopt}!tld@{tld}}
+\subsubsection[{getopt}]{\setlength{\rightskip}{0pt plus 5cm}int tld\-::getopt (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$$\ast$}]{argv, }
+\item[{char $\ast$}]{opts}
+\end{DoxyParamCaption}
+)}}\label{namespacetld_a5b279570cd95fb0067a41b5a222e2642}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{namespacetld_a5b279570cd95fb0067a41b5a222e2642_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespacetld_aed141e469725fa20f8828efbe29e57f1}{\index{tld@{tld}!mouse\-Handler@{mouse\-Handler}}
+\index{mouse\-Handler@{mouse\-Handler}!tld@{tld}}
+\subsubsection[{mouse\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}static void tld\-::mouse\-Handler (
+\begin{DoxyParamCaption}
+\item[{int}]{event, }
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{int}]{flags, }
+\item[{void $\ast$}]{param}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{namespacetld_aed141e469725fa20f8828efbe29e57f1}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacetld_aed141e469725fa20f8828efbe29e57f1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespacetld_ad23d08bb67b847f43e2781a53f4af957}{\index{tld@{tld}!tld\-Array\-To\-Rect@{tld\-Array\-To\-Rect}}
+\index{tld\-Array\-To\-Rect@{tld\-Array\-To\-Rect}!tld@{tld}}
+\subsubsection[{tld\-Array\-To\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ cv\-::\-Rect tld\-::tld\-Array\-To\-Rect (
+\begin{DoxyParamCaption}
+\item[{T $\ast$}]{boundary}
+\end{DoxyParamCaption}
+)}}\label{namespacetld_ad23d08bb67b847f43e2781a53f4af957}
+
+
+Converts the array (size 4) to rectangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em boundary} & the array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the rectangle 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacetld_ad23d08bb67b847f43e2781a53f4af957_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespacetld_a19776566a098d3b1fb15030e945a8c14}{\index{tld@{tld}!tld\-B\-B\-Overlap@{tld\-B\-B\-Overlap}}
+\index{tld\-B\-B\-Overlap@{tld\-B\-B\-Overlap}!tld@{tld}}
+\subsubsection[{tld\-B\-B\-Overlap}]{\setlength{\rightskip}{0pt plus 5cm}float tld\-::tld\-B\-B\-Overlap (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{bb1, }
+\item[{int $\ast$}]{bb2}
+\end{DoxyParamCaption}
+)}}\label{namespacetld_a19776566a098d3b1fb15030e945a8c14}
+
+
+Calculates the share overlap of two bounding boxes (the share the intersection area in the occupy area). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bb1} & the one bounding box \\
+\hline
+{\em bb2} & the two bounding box \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the share overlap(0 to 1) 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacetld_a19776566a098d3b1fb15030e945a8c14_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespacetld_afd43d8a27c419d1f5da8718be917d4b5}{\index{tld@{tld}!tld\-Boundary\-To\-Rect@{tld\-Boundary\-To\-Rect}}
+\index{tld\-Boundary\-To\-Rect@{tld\-Boundary\-To\-Rect}!tld@{tld}}
+\subsubsection[{tld\-Boundary\-To\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}Cv\-Rect tld\-::tld\-Boundary\-To\-Rect (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{boundary}
+\end{DoxyParamCaption}
+)}}\label{namespacetld_afd43d8a27c419d1f5da8718be917d4b5}
+
+
+Creates new rectangle from boundary. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em boundary} & the array (size 4) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the rectangle 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacetld_afd43d8a27c419d1f5da8718be917d4b5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespacetld_a0c77964d9fc8756d176352372745a0ff}{\index{tld@{tld}!tld\-Bounding\-Box\-To\-Points@{tld\-Bounding\-Box\-To\-Points}}
+\index{tld\-Bounding\-Box\-To\-Points@{tld\-Bounding\-Box\-To\-Points}!tld@{tld}}
+\subsubsection[{tld\-Bounding\-Box\-To\-Points}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::tld\-Bounding\-Box\-To\-Points (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{bb, }
+\item[{Cv\-Point $\ast$}]{p1, }
+\item[{Cv\-Point $\ast$}]{p2}
+\end{DoxyParamCaption}
+)}}\label{namespacetld_a0c77964d9fc8756d176352372745a0ff}
+
+
+Converts the array (size 4) to two points. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bb} & the array (bouning box) \\
+\hline
+{\em p1} & the left top point \\
+\hline
+{\em p2} & the right bottom point \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespacetld_ac0065f4088098aca6e1edd49b2b0f9d3}{\index{tld@{tld}!tld\-Calc\-Mean@{tld\-Calc\-Mean}}
+\index{tld\-Calc\-Mean@{tld\-Calc\-Mean}!tld@{tld}}
+\subsubsection[{tld\-Calc\-Mean}]{\setlength{\rightskip}{0pt plus 5cm}float tld\-::tld\-Calc\-Mean (
+\begin{DoxyParamCaption}
+\item[{float $\ast$}]{value, }
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}}\label{namespacetld_ac0065f4088098aca6e1edd49b2b0f9d3}
+
+
+It isn't realized. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & \\
+\hline
+{\em n} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+\hypertarget{namespacetld_a53d4a014fd3df2b3e8a3026a1c1768a7}{\index{tld@{tld}!tld\-Calc\-Variance@{tld\-Calc\-Variance}}
+\index{tld\-Calc\-Variance@{tld\-Calc\-Variance}!tld@{tld}}
+\subsubsection[{tld\-Calc\-Variance}]{\setlength{\rightskip}{0pt plus 5cm}float tld\-::tld\-Calc\-Variance (
+\begin{DoxyParamCaption}
+\item[{float $\ast$}]{value, }
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}}\label{namespacetld_a53d4a014fd3df2b3e8a3026a1c1768a7}
+
+
+Calculates the variance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & the array \\
+\hline
+{\em n} & the size of array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value of variance 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{namespacetld_a53d4a014fd3df2b3e8a3026a1c1768a7_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{namespacetld_a53d4a014fd3df2b3e8a3026a1c1768a7_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespacetld_a76d4a1c9344fcb821fda1f8c6ad587bc}{\index{tld@{tld}!tld\-Convert\-B\-B@{tld\-Convert\-B\-B}}
+\index{tld\-Convert\-B\-B@{tld\-Convert\-B\-B}!tld@{tld}}
+\subsubsection[{tld\-Convert\-B\-B}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T1 , class T2 $>$ void tld\-::tld\-Convert\-B\-B (
+\begin{DoxyParamCaption}
+\item[{T1 $\ast$}]{src, }
+\item[{T2 $\ast$}]{dest}
+\end{DoxyParamCaption}
+)}}\label{namespacetld_a76d4a1c9344fcb821fda1f8c6ad587bc}
+
+
+Converts the bouning box to other type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em src} & the source bouning box \\
+\hline
+{\em dest} & the destination bouning box \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespacetld_ac08655e901fb2ced507566217d4b5aca}{\index{tld@{tld}!tld\-Copy\-B\-B@{tld\-Copy\-B\-B}}
+\index{tld\-Copy\-B\-B@{tld\-Copy\-B\-B}!tld@{tld}}
+\subsubsection[{tld\-Copy\-B\-B}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void tld\-::tld\-Copy\-B\-B (
+\begin{DoxyParamCaption}
+\item[{T $\ast$}]{src, }
+\item[{T $\ast$}]{dest}
+\end{DoxyParamCaption}
+)}}\label{namespacetld_ac08655e901fb2ced507566217d4b5aca}
+
+
+Copies the bouning box to the other. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em src} & the source bouning box \\
+\hline
+{\em dest} & the destination bouning box \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespacetld_aefacde9f718a4102ac40901afa1b35f7}{\index{tld@{tld}!tld\-Copy\-Boundary\-To\-Array@{tld\-Copy\-Boundary\-To\-Array}}
+\index{tld\-Copy\-Boundary\-To\-Array@{tld\-Copy\-Boundary\-To\-Array}!tld@{tld}}
+\subsubsection[{tld\-Copy\-Boundary\-To\-Array}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void tld\-::tld\-Copy\-Boundary\-To\-Array (
+\begin{DoxyParamCaption}
+\item[{T}]{x, }
+\item[{T}]{y, }
+\item[{T}]{width, }
+\item[{T}]{height, }
+\item[{T $\ast$}]{array}
+\end{DoxyParamCaption}
+)}}\label{namespacetld_aefacde9f718a4102ac40901afa1b35f7}
+
+
+Copies the boundary to the array (size 4). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the x coordinate of the left top point of boundary \\
+\hline
+{\em y} & the y coordinate of the left top point of boundary \\
+\hline
+{\em width} & the width boundary \\
+\hline
+{\em height} & the height boundary \\
+\hline
+{\em array} & the destination array \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespacetld_aa09746d2aa3c9d71e4e0ba54d70d0e66}{\index{tld@{tld}!tld\-Copy\-Rect@{tld\-Copy\-Rect}}
+\index{tld\-Copy\-Rect@{tld\-Copy\-Rect}!tld@{tld}}
+\subsubsection[{tld\-Copy\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::\-Rect $\ast$ tld\-::tld\-Copy\-Rect (
+\begin{DoxyParamCaption}
+\item[{cv\-::\-Rect $\ast$}]{r}
+\end{DoxyParamCaption}
+)}}\label{namespacetld_aa09746d2aa3c9d71e4e0ba54d70d0e66}
+
+
+Creates the copy of rectangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & the source rectangle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the new rectangle 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{namespacetld_aa09746d2aa3c9d71e4e0ba54d70d0e66_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespacetld_aff4c05bc28ae29c360be58460a56b579}{\index{tld@{tld}!tld\-Extract\-Dims\-From\-Array@{tld\-Extract\-Dims\-From\-Array}}
+\index{tld\-Extract\-Dims\-From\-Array@{tld\-Extract\-Dims\-From\-Array}!tld@{tld}}
+\subsubsection[{tld\-Extract\-Dims\-From\-Array}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void tld\-::tld\-Extract\-Dims\-From\-Array (
+\begin{DoxyParamCaption}
+\item[{T $\ast$}]{boundary, }
+\item[{T $\ast$}]{x, }
+\item[{T $\ast$}]{y, }
+\item[{T $\ast$}]{width, }
+\item[{T $\ast$}]{height}
+\end{DoxyParamCaption}
+)}}\label{namespacetld_aff4c05bc28ae29c360be58460a56b579}
+
+
+Extracts the date from array (size 4). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em boundary} & the source array.\-comparing \\
+\hline
+{\em x} & the 0 element of array \\
+\hline
+{\em y} & the 1 element of array \\
+\hline
+{\em width} & the 2 element of array \\
+\hline
+{\em height} & the 3 element of array \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacetld_aff4c05bc28ae29c360be58460a56b579_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespacetld_ac965be65b1eae7ec666c3bfbe9da065e}{\index{tld@{tld}!tld\-Extract\-Normalized\-Patch@{tld\-Extract\-Normalized\-Patch}}
+\index{tld\-Extract\-Normalized\-Patch@{tld\-Extract\-Normalized\-Patch}!tld@{tld}}
+\subsubsection[{tld\-Extract\-Normalized\-Patch}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::tld\-Extract\-Normalized\-Patch (
+\begin{DoxyParamCaption}
+\item[{const cv\-::\-Mat \&}]{img, }
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{int}]{w, }
+\item[{int}]{h, }
+\item[{float $\ast$}]{output}
+\end{DoxyParamCaption}
+)}}\label{namespacetld_ac965be65b1eae7ec666c3bfbe9da065e}
+
+
+Extracts normalized patch from the image by rectangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em img} & the source image \\
+\hline
+{\em x} & the x coordinate of the left top point of reactangle \\
+\hline
+{\em y} & the y coordinate of the left top point of reactangle \\
+\hline
+{\em w} & the width reactangle \\
+\hline
+{\em h} & the height reactangle \\
+\hline
+{\em output} & the destination array (patch) \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacetld_ac965be65b1eae7ec666c3bfbe9da065e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacetld_ac965be65b1eae7ec666c3bfbe9da065e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespacetld_a44b5f4d4d087d3369129bdc92e2a555a}{\index{tld@{tld}!tld\-Extract\-Normalized\-Patch\-B\-B@{tld\-Extract\-Normalized\-Patch\-B\-B}}
+\index{tld\-Extract\-Normalized\-Patch\-B\-B@{tld\-Extract\-Normalized\-Patch\-B\-B}!tld@{tld}}
+\subsubsection[{tld\-Extract\-Normalized\-Patch\-B\-B}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::tld\-Extract\-Normalized\-Patch\-B\-B (
+\begin{DoxyParamCaption}
+\item[{const cv\-::\-Mat \&}]{img, }
+\item[{int $\ast$}]{boundary, }
+\item[{float $\ast$}]{output}
+\end{DoxyParamCaption}
+)}}\label{namespacetld_a44b5f4d4d087d3369129bdc92e2a555a}
+
+
+Extracts normalized patch from the image by boundary (array). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em img} & the source image \\
+\hline
+{\em boundary} & the array \\
+\hline
+{\em output} & the destination array (patch) \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacetld_a44b5f4d4d087d3369129bdc92e2a555a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacetld_a44b5f4d4d087d3369129bdc92e2a555a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespacetld_aa6c803037b38609e1fceadbb2ad8a75c}{\index{tld@{tld}!tld\-Extract\-Normalized\-Patch\-Rect@{tld\-Extract\-Normalized\-Patch\-Rect}}
+\index{tld\-Extract\-Normalized\-Patch\-Rect@{tld\-Extract\-Normalized\-Patch\-Rect}!tld@{tld}}
+\subsubsection[{tld\-Extract\-Normalized\-Patch\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::tld\-Extract\-Normalized\-Patch\-Rect (
+\begin{DoxyParamCaption}
+\item[{const cv\-::\-Mat \&}]{img, }
+\item[{cv\-::\-Rect $\ast$}]{rect, }
+\item[{float $\ast$}]{output}
+\end{DoxyParamCaption}
+)}}\label{namespacetld_aa6c803037b38609e1fceadbb2ad8a75c}
+
+
+Extracts normalized patch from the image by reactangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em img} & the source image \\
+\hline
+{\em rect} & the rectangle \\
+\hline
+{\em output} & the destination array (patch) \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacetld_aa6c803037b38609e1fceadbb2ad8a75c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacetld_aa6c803037b38609e1fceadbb2ad8a75c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespacetld_a200bdf631ed45b6d0875996d2e4709f2}{\index{tld@{tld}!tld\-Extract\-Sub\-Image@{tld\-Extract\-Sub\-Image}}
+\index{tld\-Extract\-Sub\-Image@{tld\-Extract\-Sub\-Image}!tld@{tld}}
+\subsubsection[{tld\-Extract\-Sub\-Image}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::tld\-Extract\-Sub\-Image (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{img, }
+\item[{Mat \&}]{sub\-Image, }
+\item[{Cv\-Rect}]{rect}
+\end{DoxyParamCaption}
+)}}\label{namespacetld_a200bdf631ed45b6d0875996d2e4709f2}
+
+
+Extracts the subimage by the reactangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em img} & the source image \\
+\hline
+{\em sub\-Image} & the destination subimage \\
+\hline
+{\em rect} & the reactangle \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespacetld_a16fe2b016494fa66be611f723ed7bebc}{\index{tld@{tld}!tld\-Extract\-Sub\-Image@{tld\-Extract\-Sub\-Image}}
+\index{tld\-Extract\-Sub\-Image@{tld\-Extract\-Sub\-Image}!tld@{tld}}
+\subsubsection[{tld\-Extract\-Sub\-Image}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::tld\-Extract\-Sub\-Image (
+\begin{DoxyParamCaption}
+\item[{const cv\-::\-Mat \&}]{img, }
+\item[{cv\-::\-Mat \&}]{sub\-Image, }
+\item[{int $\ast$}]{boundary}
+\end{DoxyParamCaption}
+)}}\label{namespacetld_a16fe2b016494fa66be611f723ed7bebc}
+
+
+Extracts the subimage by the reactangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em img} & the source image \\
+\hline
+{\em sub\-Image} & the destination subimage \\
+\hline
+{\em boundary} & the array (size 4) \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacetld_a16fe2b016494fa66be611f723ed7bebc_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacetld_a16fe2b016494fa66be611f723ed7bebc_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespacetld_a7699b7dc20502fc6d7c5c6c6cbd4be7b}{\index{tld@{tld}!tld\-Extract\-Sub\-Image@{tld\-Extract\-Sub\-Image}}
+\index{tld\-Extract\-Sub\-Image@{tld\-Extract\-Sub\-Image}!tld@{tld}}
+\subsubsection[{tld\-Extract\-Sub\-Image}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::tld\-Extract\-Sub\-Image (
+\begin{DoxyParamCaption}
+\item[{const cv\-::\-Mat \&}]{img, }
+\item[{cv\-::\-Mat \&}]{sub\-Image, }
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{int}]{w, }
+\item[{int}]{h}
+\end{DoxyParamCaption}
+)}}\label{namespacetld_a7699b7dc20502fc6d7c5c6c6cbd4be7b}
+
+
+Extracts the subimage by the reactangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em img} & the source image \\
+\hline
+{\em sub\-Image} & the destination subimage \\
+\hline
+{\em x} & the x coordinate of the left top point of reactangle \\
+\hline
+{\em y} & the y coordinate of the left top point of reactangle \\
+\hline
+{\em w} & the width reactangle \\
+\hline
+{\em h} & the height reactangle \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespacetld_a8b28e6d4868ad30e826a6248dd2ae7a0}{\index{tld@{tld}!tld\-Is\-Inside@{tld\-Is\-Inside}}
+\index{tld\-Is\-Inside@{tld\-Is\-Inside}!tld@{tld}}
+\subsubsection[{tld\-Is\-Inside}]{\setlength{\rightskip}{0pt plus 5cm}int tld\-::tld\-Is\-Inside (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{bb1, }
+\item[{int $\ast$}]{bb2}
+\end{DoxyParamCaption}
+)}}\label{namespacetld_a8b28e6d4868ad30e826a6248dd2ae7a0}
+
+
+Checks whether the one bouning box is completely inside the other. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bb1} & the one bouning box \\
+\hline
+{\em bb2} & the other bouning box \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1, if the one bouning box is completely inside the other; 0, otherwise 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{namespacetld_a8b28e6d4868ad30e826a6248dd2ae7a0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespacetld_a7facbe495da1f0e058c78b9b7dea412a}{\index{tld@{tld}!tld\-Normalize\-Img@{tld\-Normalize\-Img}}
+\index{tld\-Normalize\-Img@{tld\-Normalize\-Img}!tld@{tld}}
+\subsubsection[{tld\-Normalize\-Img}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::tld\-Normalize\-Img (
+\begin{DoxyParamCaption}
+\item[{const cv\-::\-Mat \&}]{img, }
+\item[{float $\ast$}]{output}
+\end{DoxyParamCaption}
+)}}\label{namespacetld_a7facbe495da1f0e058c78b9b7dea412a}
+
+
+Returns mean-\/normalized patch, the image must be greyscale. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em img} & the source image \\
+\hline
+{\em output} & the destination array (patch) \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacetld_a7facbe495da1f0e058c78b9b7dea412a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespacetld_aa9470de30170cb8b3f877dcae45df1b1}{\index{tld@{tld}!tld\-Overlap@{tld\-Overlap}}
+\index{tld\-Overlap@{tld\-Overlap}!tld@{tld}}
+\subsubsection[{tld\-Overlap}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::tld\-Overlap (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{windows, }
+\item[{int}]{num\-Windows, }
+\item[{int $\ast$}]{boundary, }
+\item[{float $\ast$}]{overlap}
+\end{DoxyParamCaption}
+)}}\label{namespacetld_aa9470de30170cb8b3f877dcae45df1b1}
+
+
+Calculates the share overlap of windows and the boundary. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em windows} & the array of windows \\
+\hline
+{\em num\-Windows} & the number of windows \\
+\hline
+{\em boundary} & the array (size 4) \\
+\hline
+{\em overlap} & the destination array \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{namespacetld_aa9470de30170cb8b3f877dcae45df1b1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacetld_aa9470de30170cb8b3f877dcae45df1b1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespacetld_a018caa7bf4a554814fe61a679a219489}{\index{tld@{tld}!tld\-Overlap\-One@{tld\-Overlap\-One}}
+\index{tld\-Overlap\-One@{tld\-Overlap\-One}!tld@{tld}}
+\subsubsection[{tld\-Overlap\-One}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::tld\-Overlap\-One (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{windows, }
+\item[{int}]{num\-Windows, }
+\item[{int}]{index, }
+\item[{std\-::vector$<$ int $>$ $\ast$}]{indices, }
+\item[{float $\ast$}]{overlap}
+\end{DoxyParamCaption}
+)}}\label{namespacetld_a018caa7bf4a554814fe61a679a219489}
+
+
+Calculates the share overlap of one window and the indexed windows (according). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em windows} & the array of windows \\
+\hline
+{\em num\-Windows} & the number of windows \\
+\hline
+{\em index} & the index of one window \\
+\hline
+{\em indices} & the array of the indices of windows \\
+\hline
+{\em overlap} & the destination array \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{namespacetld_a018caa7bf4a554814fe61a679a219489_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacetld_a018caa7bf4a554814fe61a679a219489_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespacetld_ae87c7dbe6b4da1e1923c42bec18caaf6}{\index{tld@{tld}!tld\-Overlap\-Rect@{tld\-Overlap\-Rect}}
+\index{tld\-Overlap\-Rect@{tld\-Overlap\-Rect}!tld@{tld}}
+\subsubsection[{tld\-Overlap\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::tld\-Overlap\-Rect (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{windows, }
+\item[{int}]{num\-Windows, }
+\item[{cv\-::\-Rect $\ast$}]{boundary, }
+\item[{float $\ast$}]{overlap}
+\end{DoxyParamCaption}
+)}}\label{namespacetld_ae87c7dbe6b4da1e1923c42bec18caaf6}
+
+
+Calculates the share overlap of windows and the rectangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em windows} & the array of windows \\
+\hline
+{\em num\-Windows} & the number of windows \\
+\hline
+{\em boundary} & the rectangle \\
+\hline
+{\em overlap} & the destination array \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacetld_ae87c7dbe6b4da1e1923c42bec18caaf6_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{namespacetld_ae87c7dbe6b4da1e1923c42bec18caaf6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespacetld_afdab54607fed863cdc408f72fd0f774b}{\index{tld@{tld}!tld\-Overlap\-Rect\-Rect@{tld\-Overlap\-Rect\-Rect}}
+\index{tld\-Overlap\-Rect\-Rect@{tld\-Overlap\-Rect\-Rect}!tld@{tld}}
+\subsubsection[{tld\-Overlap\-Rect\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}float tld\-::tld\-Overlap\-Rect\-Rect (
+\begin{DoxyParamCaption}
+\item[{cv\-::\-Rect}]{r1, }
+\item[{cv\-::\-Rect}]{r2}
+\end{DoxyParamCaption}
+)}}\label{namespacetld_afdab54607fed863cdc408f72fd0f774b}
+
+
+Calculates the share overlap of two rectangle (the share the intersection area in the occupy area). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r1} & the one rectangle \\
+\hline
+{\em r2} & the two rectangle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the share overlap(0 to 1) 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{namespacetld_afdab54607fed863cdc408f72fd0f774b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacetld_afdab54607fed863cdc408f72fd0f774b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespacetld_a18975268ebbf3daf5eaf46d30fd782e9}{\index{tld@{tld}!tld\-Rect\-To\-Array@{tld\-Rect\-To\-Array}}
+\index{tld\-Rect\-To\-Array@{tld\-Rect\-To\-Array}!tld@{tld}}
+\subsubsection[{tld\-Rect\-To\-Array}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void tld\-::tld\-Rect\-To\-Array (
+\begin{DoxyParamCaption}
+\item[{cv\-::\-Rect}]{rect, }
+\item[{T $\ast$}]{boundary}
+\end{DoxyParamCaption}
+)}}\label{namespacetld_a18975268ebbf3daf5eaf46d30fd782e9}
+
+
+Converts the rectangle to array (size 4). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rect} & the source rectangle \\
+\hline
+{\em boundary} & the destination array \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{namespacetld_a18975268ebbf3daf5eaf46d30fd782e9_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespacetld_ac0c16951370c978dee562ac3d3bd1554}{\index{tld@{tld}!tld\-Rect\-To\-Points@{tld\-Rect\-To\-Points}}
+\index{tld\-Rect\-To\-Points@{tld\-Rect\-To\-Points}!tld@{tld}}
+\subsubsection[{tld\-Rect\-To\-Points}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::tld\-Rect\-To\-Points (
+\begin{DoxyParamCaption}
+\item[{Cv\-Rect}]{rect, }
+\item[{Cv\-Point $\ast$}]{p1, }
+\item[{Cv\-Point $\ast$}]{p2}
+\end{DoxyParamCaption}
+)}}\label{namespacetld_ac0c16951370c978dee562ac3d3bd1554}
+
+
+Converts the rectangle to two points. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rect} & the rectangle \\
+\hline
+{\em p1} & the left top point \\
+\hline
+{\em p2} & the right bottom point \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespacetld_acaf374df081816ecaf9079e200a8f5af}{\index{tld@{tld}!tld\-Sort\-By\-Overlap\-Desc@{tld\-Sort\-By\-Overlap\-Desc}}
+\index{tld\-Sort\-By\-Overlap\-Desc@{tld\-Sort\-By\-Overlap\-Desc}!tld@{tld}}
+\subsubsection[{tld\-Sort\-By\-Overlap\-Desc}]{\setlength{\rightskip}{0pt plus 5cm}bool tld\-::tld\-Sort\-By\-Overlap\-Desc (
+\begin{DoxyParamCaption}
+\item[{std\-::pair$<$ int, float $>$}]{bb1, }
+\item[{std\-::pair$<$ int, float $>$}]{bb2}
+\end{DoxyParamCaption}
+)}}\label{namespacetld_acaf374df081816ecaf9079e200a8f5af}
+
+
+Checks whether the second parameter of one pair is more then the second parameter of other pair. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bb1} & the one pair \\
+\hline
+{\em bb2} & the other pair \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the result of comparing 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacetld_acaf374df081816ecaf9079e200a8f5af_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{namespacetld_aa5e13bbb9a53d3e9103d430b6113b08b}{\index{tld@{tld}!bb@{bb}}
+\index{bb@{bb}!tld@{tld}}
+\subsubsection[{bb}]{\setlength{\rightskip}{0pt plus 5cm}Cv\-Rect$\ast$ tld\-::bb\hspace{0.3cm}{\ttfamily [static]}}}\label{namespacetld_aa5e13bbb9a53d3e9103d430b6113b08b}
+\hypertarget{namespacetld_a7cfa165f34457693b8898cfa78e51945}{\index{tld@{tld}!drag@{drag}}
+\index{drag@{drag}!tld@{tld}}
+\subsubsection[{drag}]{\setlength{\rightskip}{0pt plus 5cm}int tld\-::drag = 0\hspace{0.3cm}{\ttfamily [static]}}}\label{namespacetld_a7cfa165f34457693b8898cfa78e51945}
+\hypertarget{namespacetld_a16a44df30fb791b45dd103ba1541fb67}{\index{tld@{tld}!font@{font}}
+\index{font@{font}!tld@{tld}}
+\subsubsection[{font}]{\setlength{\rightskip}{0pt plus 5cm}Cv\-Font tld\-::font\hspace{0.3cm}{\ttfamily [static]}}}\label{namespacetld_a16a44df30fb791b45dd103ba1541fb67}
+\hypertarget{namespacetld_a17f0b1eb181c0395a541e031b203040a}{\index{tld@{tld}!help\-\_\-text@{help\-\_\-text}}
+\index{help\-\_\-text@{help\-\_\-text}!tld@{tld}}
+\subsubsection[{help\-\_\-text}]{\setlength{\rightskip}{0pt plus 5cm}char tld\-::help\-\_\-text\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}}\label{namespacetld_a17f0b1eb181c0395a541e031b203040a}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+=
+    \textcolor{stringliteral}{"usage: tld [option arguments] [arguments]\(\backslash\)n"}
+    \textcolor{stringliteral}{"option arguments:\(\backslash\)n"}
+    \textcolor{stringliteral}{"[-a <startFrameNumber>] video starts at the frameNumber <startFrameNumber>\(\backslash\)n"}
+    \textcolor{stringliteral}{"[-b <x,y,w,h>] Initial bounding box\(\backslash\)n"}
+    \textcolor{stringliteral}{"[-c] shows color images instead of greyscale\(\backslash\)n"}
+    \textcolor{stringliteral}{"[-d <device>] select input device: <device>=(IMGS|CAM|VID)\(\backslash\)n"}
+    \textcolor{stringliteral}{"    IMGS: capture from images\(\backslash\)n"}
+    \textcolor{stringliteral}{"    CAM: capture from connected camera\(\backslash\)n"}
+    \textcolor{stringliteral}{"    VID: capture from a video\(\backslash\)n"}
+    \textcolor{stringliteral}{"    STREAM: capture from a stream\(\backslash\)n"}
+    \textcolor{stringliteral}{"[-e <path>] export model after run to <path>\(\backslash\)n"}
+    \textcolor{stringliteral}{"[-f] shows foreground\(\backslash\)n"}
+    \textcolor{stringliteral}{"[-i <path>] <path> to the images or to the video\(\backslash\)n"}
+    \textcolor{stringliteral}{"[-h] shows help\(\backslash\)n"}
+    \textcolor{stringliteral}{"[-j <number>] specifies the <number> of the last frames which are considered by the trajectory; 0
+       disables the trajectory\(\backslash\)n"}
+    \textcolor{stringliteral}{"[-m <path>] if specified load a model from <path>. An initialBoundingBox must be specified or
+       selectManually must be true.\(\backslash\)n"}
+    \textcolor{stringliteral}{"[-n <number>] specifies which camera device to use.\(\backslash\)n"}
+    \textcolor{stringliteral}{"[-p <path>] prints results into the file <path>\(\backslash\)n"}
+    \textcolor{stringliteral}{"[-s] if set, user can select initial bounding box\(\backslash\)n"}
+    \textcolor{stringliteral}{"[-t <theta>] threshold for determining positive results\(\backslash\)n"}
+    \textcolor{stringliteral}{"[-z <lastFrameNumber>] video ends at the frameNumber <lastFrameNumber>.\(\backslash\)n"}
+    \textcolor{stringliteral}{"    If <lastFrameNumber> is 0 or the option argument isn't specified means\(\backslash\)n"}
+    \textcolor{stringliteral}{"    take all frames.\(\backslash\)n"}
+    \textcolor{stringliteral}{"arguments:\(\backslash\)n"}
+    \textcolor{stringliteral}{"[<path>] <path> to the config file\(\backslash\)n"}
+\end{DoxyCode}
+\hypertarget{namespacetld_a32bc4295eda098201cd336e2d2f1e217}{\index{tld@{tld}!img0@{img0}}
+\index{img0@{img0}!tld@{tld}}
+\subsubsection[{img0}]{\setlength{\rightskip}{0pt plus 5cm}Ipl\-Image$\ast$ tld\-::img0\hspace{0.3cm}{\ttfamily [static]}}}\label{namespacetld_a32bc4295eda098201cd336e2d2f1e217}
+\hypertarget{namespacetld_ac832a3e8122e594c1c5321935cbc2639}{\index{tld@{tld}!img1@{img1}}
+\index{img1@{img1}!tld@{tld}}
+\subsubsection[{img1}]{\setlength{\rightskip}{0pt plus 5cm}Ipl\-Image$\ast$ tld\-::img1\hspace{0.3cm}{\ttfamily [static]}}}\label{namespacetld_ac832a3e8122e594c1c5321935cbc2639}
+\hypertarget{namespacetld_a1bbc7d3201a2ef41da5495e0e48cfd2e}{\index{tld@{tld}!optarg@{optarg}}
+\index{optarg@{optarg}!tld@{tld}}
+\subsubsection[{optarg}]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$ tld\-::optarg}}\label{namespacetld_a1bbc7d3201a2ef41da5495e0e48cfd2e}
+\hypertarget{namespacetld_a6e180d5067af278cc277ae9c6f7507c1}{\index{tld@{tld}!opterr@{opterr}}
+\index{opterr@{opterr}!tld@{tld}}
+\subsubsection[{opterr}]{\setlength{\rightskip}{0pt plus 5cm}int tld\-::opterr = 1}}\label{namespacetld_a6e180d5067af278cc277ae9c6f7507c1}
+\hypertarget{namespacetld_ab8c5a378ef03678c537edc84a15abc22}{\index{tld@{tld}!optind@{optind}}
+\index{optind@{optind}!tld@{tld}}
+\subsubsection[{optind}]{\setlength{\rightskip}{0pt plus 5cm}int tld\-::optind = 1}}\label{namespacetld_ab8c5a378ef03678c537edc84a15abc22}
+\hypertarget{namespacetld_a6d6bd80732b9f396bc03e5f2c5cf30f8}{\index{tld@{tld}!optopt@{optopt}}
+\index{optopt@{optopt}!tld@{tld}}
+\subsubsection[{optopt}]{\setlength{\rightskip}{0pt plus 5cm}int tld\-::optopt}}\label{namespacetld_a6d6bd80732b9f396bc03e5f2c5cf30f8}
+\hypertarget{namespacetld_a680868c3e5a47352c5353897519636d4}{\index{tld@{tld}!point@{point}}
+\index{point@{point}!tld@{tld}}
+\subsubsection[{point}]{\setlength{\rightskip}{0pt plus 5cm}Cv\-Point tld\-::point\hspace{0.3cm}{\ttfamily [static]}}}\label{namespacetld_a680868c3e5a47352c5353897519636d4}
+\hypertarget{namespacetld_a7a647c1eaeda30086f4519b611db4e71}{\index{tld@{tld}!T\-L\-D\-\_\-\-W\-I\-N\-D\-O\-W\-\_\-\-O\-F\-F\-S\-E\-T\-\_\-\-S\-I\-Z\-E@{T\-L\-D\-\_\-\-W\-I\-N\-D\-O\-W\-\_\-\-O\-F\-F\-S\-E\-T\-\_\-\-S\-I\-Z\-E}}
+\index{T\-L\-D\-\_\-\-W\-I\-N\-D\-O\-W\-\_\-\-O\-F\-F\-S\-E\-T\-\_\-\-S\-I\-Z\-E@{T\-L\-D\-\_\-\-W\-I\-N\-D\-O\-W\-\_\-\-O\-F\-F\-S\-E\-T\-\_\-\-S\-I\-Z\-E}!tld@{tld}}
+\subsubsection[{T\-L\-D\-\_\-\-W\-I\-N\-D\-O\-W\-\_\-\-O\-F\-F\-S\-E\-T\-\_\-\-S\-I\-Z\-E}]{\setlength{\rightskip}{0pt plus 5cm}const int tld\-::\-T\-L\-D\-\_\-\-W\-I\-N\-D\-O\-W\-\_\-\-O\-F\-F\-S\-E\-T\-\_\-\-S\-I\-Z\-E = 6\hspace{0.3cm}{\ttfamily [static]}}}\label{namespacetld_a7a647c1eaeda30086f4519b611db4e71}
+
+
+the size of array, defining the window offset 
+
+\hypertarget{namespacetld_ad0458a97a7973a088840e7917515c6ae}{\index{tld@{tld}!T\-L\-D\-\_\-\-W\-I\-N\-D\-O\-W\-\_\-\-S\-I\-Z\-E@{T\-L\-D\-\_\-\-W\-I\-N\-D\-O\-W\-\_\-\-S\-I\-Z\-E}}
+\index{T\-L\-D\-\_\-\-W\-I\-N\-D\-O\-W\-\_\-\-S\-I\-Z\-E@{T\-L\-D\-\_\-\-W\-I\-N\-D\-O\-W\-\_\-\-S\-I\-Z\-E}!tld@{tld}}
+\subsubsection[{T\-L\-D\-\_\-\-W\-I\-N\-D\-O\-W\-\_\-\-S\-I\-Z\-E}]{\setlength{\rightskip}{0pt plus 5cm}const int tld\-::\-T\-L\-D\-\_\-\-W\-I\-N\-D\-O\-W\-\_\-\-S\-I\-Z\-E = 5\hspace{0.3cm}{\ttfamily [static]}}}\label{namespacetld_ad0458a97a7973a088840e7917515c6ae}
+
+
+the size of array, defining the window 
+
+\hypertarget{namespacetld_ad1bfc03770cc333da8a972ab7d35c246}{\index{tld@{tld}!window\-\_\-name@{window\-\_\-name}}
+\index{window\-\_\-name@{window\-\_\-name}!tld@{tld}}
+\subsubsection[{window\-\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}string tld\-::window\-\_\-name\hspace{0.3cm}{\ttfamily [static]}}}\label{namespacetld_ad1bfc03770cc333da8a972ab7d35c246}

@@ -1,0 +1,91 @@
+\hypertarget{common_8hpp}{\section{/usr/include/opencv2/gpu/device/common.hpp File Reference}
+\label{common_8hpp}\index{/usr/include/opencv2/gpu/device/common.\-hpp@{/usr/include/opencv2/gpu/device/common.\-hpp}}
+}
+{\ttfamily \#include $<$cuda\-\_\-runtime.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}opencv2/core/cuda\-\_\-devptrs.\-hpp\char`\"{}}\\*
+Include dependency graph for common.\-hpp\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{common_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{common_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacecv}{cv}
+\item 
+\hyperlink{namespacecv_1_1gpu}{cv\-::gpu}
+\item 
+\hyperlink{namespacecv_1_1gpu_1_1device}{cv\-::gpu\-::device}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{common_8hpp_a677b89fae9308b340ddaebf0dba8455f}{C\-V\-\_\-\-P\-I}~3.\-1415926535897932384626433832795
+\item 
+\#define \hyperlink{common_8hpp_ac1a849d3e9c56bc845c8097d9208516d}{C\-V\-\_\-\-P\-I\-\_\-\-F}~((float)\hyperlink{common_8hpp_a677b89fae9308b340ddaebf0dba8455f}{C\-V\-\_\-\-P\-I})
+\item 
+\#define \hyperlink{common_8hpp_ab0e482bfa11c54c94f84397cddf55fb9}{cuda\-Safe\-Call}(expr)~\hyperlink{common_8hpp_a586e270cae1355db6af2cffc435aaac8}{\-\_\-\-\_\-\-\_\-cuda\-Safe\-Call}(expr, \-\_\-\-\_\-\-F\-I\-L\-E\-\_\-\-\_\-, \-\_\-\-\_\-\-L\-I\-N\-E\-\_\-\-\_\-)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1gpu_a6fe205f2a3e57d7f6f2c4d7c07002405}{cv\-::gpu\-::error} (const char $\ast$error\-\_\-string, const char $\ast$file, const int \hyperlink{legacy_8hpp_a5a869825573cfaf8861a6ec0fe0f262f}{line}, const char $\ast$\hyperlink{core__c_8h_a120677ac732b3c9bfecab149fc978afa}{func})
+\item 
+{\footnotesize template$<$typename T $>$ }\\static bool \hyperlink{namespacecv_1_1gpu_aa554e59e09e2e3a8f891b5b0a521b5ba}{cv\-::gpu\-::is\-Aligned} (const \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} $\ast$\hyperlink{core__c_8h_a166529da793cc1ef241cff347f3db5a5}{ptr}, size\-\_\-t \hyperlink{legacy_8hpp_ae97003f8d5c64cdfb99f6f2606d121b6}{size})
+\item 
+static bool \hyperlink{namespacecv_1_1gpu_a6748cc1886c9b97dc92ff5059fa202e7}{cv\-::gpu\-::is\-Aligned} (size\-\_\-t \hyperlink{legacy_8hpp_abc16e65f240ed0c8f3e876e8732c0a33}{step}, size\-\_\-t \hyperlink{legacy_8hpp_ae97003f8d5c64cdfb99f6f2606d121b6}{size})
+\item 
+static \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{common_8hpp_a586e270cae1355db6af2cffc435aaac8}{\-\_\-\-\_\-\-\_\-cuda\-Safe\-Call} (cuda\-Error\-\_\-t err, const char $\ast$file, const int \hyperlink{legacy_8hpp_a5a869825573cfaf8861a6ec0fe0f262f}{line}, const char $\ast$\hyperlink{core__c_8h_a120677ac732b3c9bfecab149fc978afa}{func}=\char`\"{}\char`\"{})
+\item 
+\-\_\-\-\_\-host\-\_\-\-\_\- \-\_\-\-\_\-device\-\_\-\-\_\- \\*
+\-\_\-\-\_\-forceinline\-\_\-\-\_\- int \hyperlink{namespacecv_1_1gpu_a7b80d0ece4df0b1f517b22422a3d272f}{cv\-::gpu\-::div\-Up} (int \hyperlink{core__c_8h_a1d3d6f26038d24a66062d29e890a4301}{total}, int grain)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{common_8hpp_ab0e482bfa11c54c94f84397cddf55fb9}{\index{common.\-hpp@{common.\-hpp}!cuda\-Safe\-Call@{cuda\-Safe\-Call}}
+\index{cuda\-Safe\-Call@{cuda\-Safe\-Call}!common.hpp@{common.\-hpp}}
+\subsubsection[{cuda\-Safe\-Call}]{\setlength{\rightskip}{0pt plus 5cm}\#define cuda\-Safe\-Call(
+\begin{DoxyParamCaption}
+\item[{}]{expr}
+\end{DoxyParamCaption}
+)~{\bf \-\_\-\-\_\-\-\_\-cuda\-Safe\-Call}(expr, \-\_\-\-\_\-\-F\-I\-L\-E\-\_\-\-\_\-, \-\_\-\-\_\-\-L\-I\-N\-E\-\_\-\-\_\-)}}\label{common_8hpp_ab0e482bfa11c54c94f84397cddf55fb9}
+\hypertarget{common_8hpp_a677b89fae9308b340ddaebf0dba8455f}{\index{common.\-hpp@{common.\-hpp}!C\-V\-\_\-\-P\-I@{C\-V\-\_\-\-P\-I}}
+\index{C\-V\-\_\-\-P\-I@{C\-V\-\_\-\-P\-I}!common.hpp@{common.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-P\-I}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-P\-I~3.\-1415926535897932384626433832795}}\label{common_8hpp_a677b89fae9308b340ddaebf0dba8455f}
+\hypertarget{common_8hpp_ac1a849d3e9c56bc845c8097d9208516d}{\index{common.\-hpp@{common.\-hpp}!C\-V\-\_\-\-P\-I\-\_\-\-F@{C\-V\-\_\-\-P\-I\-\_\-\-F}}
+\index{C\-V\-\_\-\-P\-I\-\_\-\-F@{C\-V\-\_\-\-P\-I\-\_\-\-F}!common.hpp@{common.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-P\-I\-\_\-\-F}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-P\-I\-\_\-\-F~((float){\bf C\-V\-\_\-\-P\-I})}}\label{common_8hpp_ac1a849d3e9c56bc845c8097d9208516d}
+
+
+\subsection{Function Documentation}
+\hypertarget{common_8hpp_a586e270cae1355db6af2cffc435aaac8}{\index{common.\-hpp@{common.\-hpp}!\-\_\-\-\_\-\-\_\-cuda\-Safe\-Call@{\-\_\-\-\_\-\-\_\-cuda\-Safe\-Call}}
+\index{\-\_\-\-\_\-\-\_\-cuda\-Safe\-Call@{\-\_\-\-\_\-\-\_\-cuda\-Safe\-Call}!common.hpp@{common.\-hpp}}
+\subsubsection[{\-\_\-\-\_\-\-\_\-cuda\-Safe\-Call}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf void} \-\_\-\-\_\-\-\_\-cuda\-Safe\-Call (
+\begin{DoxyParamCaption}
+\item[{cuda\-Error\-\_\-t}]{err, }
+\item[{const char $\ast$}]{file, }
+\item[{const int}]{line, }
+\item[{const char $\ast$}]{func = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{common_8hpp_a586e270cae1355db6af2cffc435aaac8}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{common_8hpp_a586e270cae1355db6af2cffc435aaac8_cgraph}
+\end{center}
+\end{figure}
+
+

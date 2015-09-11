@@ -1,0 +1,64 @@
+\hypertarget{structCvEHMM}{\section{Cv\-E\-H\-M\-M Struct Reference}
+\label{structCvEHMM}\index{Cv\-E\-H\-M\-M@{Cv\-E\-H\-M\-M}}
+}
+
+
+{\ttfamily \#include $<$legacy.\-hpp$>$}
+
+
+
+Collaboration diagram for Cv\-E\-H\-M\-M\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{structCvEHMM__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{structCvEHMM_aaa849276eb472066624aac17d07d363d}{level}
+\item 
+int \hyperlink{structCvEHMM_a76f8d6af057a30e38c7978ec3ca84f60}{num\-\_\-states}
+\item 
+float $\ast$ \hyperlink{structCvEHMM_a380235219abbd662f98358d9ae7095db}{trans\-P}
+\item 
+float $\ast$$\ast$ \hyperlink{structCvEHMM_a68625cb2d24219abe21121d038aa1cfb}{obs\-Prob}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\hyperlink{structCvEHMMState}{CvEHMMState} $\ast$ \hyperlink{structCvEHMM_a00849148e222b5fd626b39113651bc16}{state}\\
+\>struct \hyperlink{structCvEHMM}{CvEHMM} $\ast$ \hyperlink{structCvEHMM_ab1429de105e03466a3f91e0a4fcfaf0e}{ehmm}\\
+\} \hyperlink{structCvEHMM_a5a617a42b4d79f02f8b0d55ac0ba5106}{u}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structCvEHMM_ab1429de105e03466a3f91e0a4fcfaf0e}{\index{Cv\-E\-H\-M\-M@{Cv\-E\-H\-M\-M}!ehmm@{ehmm}}
+\index{ehmm@{ehmm}!CvEHMM@{Cv\-E\-H\-M\-M}}
+\subsubsection[{ehmm}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf Cv\-E\-H\-M\-M}$\ast$ Cv\-E\-H\-M\-M\-::ehmm}}\label{structCvEHMM_ab1429de105e03466a3f91e0a4fcfaf0e}
+\hypertarget{structCvEHMM_aaa849276eb472066624aac17d07d363d}{\index{Cv\-E\-H\-M\-M@{Cv\-E\-H\-M\-M}!level@{level}}
+\index{level@{level}!CvEHMM@{Cv\-E\-H\-M\-M}}
+\subsubsection[{level}]{\setlength{\rightskip}{0pt plus 5cm}int Cv\-E\-H\-M\-M\-::level}}\label{structCvEHMM_aaa849276eb472066624aac17d07d363d}
+\hypertarget{structCvEHMM_a76f8d6af057a30e38c7978ec3ca84f60}{\index{Cv\-E\-H\-M\-M@{Cv\-E\-H\-M\-M}!num\-\_\-states@{num\-\_\-states}}
+\index{num\-\_\-states@{num\-\_\-states}!CvEHMM@{Cv\-E\-H\-M\-M}}
+\subsubsection[{num\-\_\-states}]{\setlength{\rightskip}{0pt plus 5cm}int Cv\-E\-H\-M\-M\-::num\-\_\-states}}\label{structCvEHMM_a76f8d6af057a30e38c7978ec3ca84f60}
+\hypertarget{structCvEHMM_a68625cb2d24219abe21121d038aa1cfb}{\index{Cv\-E\-H\-M\-M@{Cv\-E\-H\-M\-M}!obs\-Prob@{obs\-Prob}}
+\index{obs\-Prob@{obs\-Prob}!CvEHMM@{Cv\-E\-H\-M\-M}}
+\subsubsection[{obs\-Prob}]{\setlength{\rightskip}{0pt plus 5cm}float$\ast$$\ast$ Cv\-E\-H\-M\-M\-::obs\-Prob}}\label{structCvEHMM_a68625cb2d24219abe21121d038aa1cfb}
+\hypertarget{structCvEHMM_a00849148e222b5fd626b39113651bc16}{\index{Cv\-E\-H\-M\-M@{Cv\-E\-H\-M\-M}!state@{state}}
+\index{state@{state}!CvEHMM@{Cv\-E\-H\-M\-M}}
+\subsubsection[{state}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-E\-H\-M\-M\-State}$\ast$ Cv\-E\-H\-M\-M\-::state}}\label{structCvEHMM_a00849148e222b5fd626b39113651bc16}
+\hypertarget{structCvEHMM_a380235219abbd662f98358d9ae7095db}{\index{Cv\-E\-H\-M\-M@{Cv\-E\-H\-M\-M}!trans\-P@{trans\-P}}
+\index{trans\-P@{trans\-P}!CvEHMM@{Cv\-E\-H\-M\-M}}
+\subsubsection[{trans\-P}]{\setlength{\rightskip}{0pt plus 5cm}float$\ast$ Cv\-E\-H\-M\-M\-::trans\-P}}\label{structCvEHMM_a380235219abbd662f98358d9ae7095db}
+\hypertarget{structCvEHMM_a5a617a42b4d79f02f8b0d55ac0ba5106}{\index{Cv\-E\-H\-M\-M@{Cv\-E\-H\-M\-M}!u@{u}}
+\index{u@{u}!CvEHMM@{Cv\-E\-H\-M\-M}}
+\subsubsection[{u}]{\setlength{\rightskip}{0pt plus 5cm}union \{ ... \}   Cv\-E\-H\-M\-M\-::u}}\label{structCvEHMM_a5a617a42b4d79f02f8b0d55ac0ba5106}
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/legacy/\hyperlink{legacy_8hpp}{legacy.\-hpp}\end{DoxyCompactItemize}

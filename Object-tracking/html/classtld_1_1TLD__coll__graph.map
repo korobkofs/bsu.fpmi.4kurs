@@ -1,0 +1,10 @@
+<map id="tld::TLD" name="tld::TLD">
+<area shape="rect" id="node2" href="$classtld_1_1DetectorCascade.html" title="The detector cascade. " alt="" coords="620,139,767,165"/>
+<area shape="rect" id="node3" href="$classtld_1_1DetectionResult.html" title="The detection result. " alt="" coords="5,120,144,147"/>
+<area shape="rect" id="node4" href="$classtld_1_1ForegroundDetector.html" title="The foreground detector. " alt="" coords="289,43,447,69"/>
+<area shape="rect" id="node5" href="$classtld_1_1Clustering.html" title="The clustering of detector cascade results. " alt="" coords="317,93,419,120"/>
+<area shape="rect" id="node6" href="$classtld_1_1EnsembleClassifier.html" title="The ensemble classifier. " alt="" coords="289,144,447,171"/>
+<area shape="rect" id="node7" href="$classtld_1_1VarianceFilter.html" title="The variance filter. " alt="" coords="306,195,430,221"/>
+<area shape="rect" id="node8" href="$classtld_1_1NNClassifier.html" title="The nearest neighbor classifier. " alt="" coords="309,245,427,272"/>
+<area shape="rect" id="node9" href="$classtld_1_1MedianFlowTracker.html" title="The median flow tracker (based on the forward&#45;backward error). " alt="" coords="614,335,773,361"/>
+</map>

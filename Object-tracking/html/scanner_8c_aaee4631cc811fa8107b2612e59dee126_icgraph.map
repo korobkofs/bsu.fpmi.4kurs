@@ -1,0 +1,25 @@
+<map id="libconfig_yy_load_buffer_state" name="libconfig_yy_load_buffer_state">
+<area shape="rect" id="node2" href="$scanner_8c.html#a33e91cd0cef6786e9e3a27ac67707207" title="if" alt="" coords="917,20,955,46"/>
+<area shape="rect" id="node3" href="$scanner_8h.html#a08c14cb755b463f6582a93ad1e431412" title="libconfig_yyrestart" alt="" coords="872,154,1000,181"/>
+<area shape="rect" id="node15" href="$scanner_8h.html#a0ec9e62001fe99385561b722bff5a29d" title="libconfig_yy_switch\l_to_buffer" alt="" coords="228,210,364,251"/>
+<area shape="rect" id="node19" href="$scanner_8h.html#a2262ac14fc607ff8e363b6f2c3c7e7e0" title="libconfig_yy_flush\l_buffer" alt="" coords="233,92,359,134"/>
+<area shape="rect" id="node22" href="$scanner_8h.html#a06ec388e41e209ae9a758c000bec51ae" title="libconfig_yypush_buffer\l_state" alt="" coords="217,275,375,316"/>
+<area shape="rect" id="node23" href="$scanner_8h.html#ad0ccb05f8859b9971c677dd35f522fb7" title="libconfig_yypop_buffer\l_state" alt="" coords="432,322,584,363"/>
+<area shape="rect" id="node4" href="$libconfig_8c.html#a304fc54660c19cf654d0fdc4e44ec724" title="__config_read" alt="" coords="1082,260,1185,286"/>
+<area shape="rect" id="node13" href="$scanner_8c.html#a29d30a2c7f7ce166f1198f5a1c1d7757" title="yy_get_next_buffer" alt="" coords="1067,154,1200,181"/>
+<area shape="rect" id="node5" href="$libconfig_8h.html#ade3e90a918cb62daf3f71ebdc785a9d5" title="config_read" alt="" coords="1267,314,1357,341"/>
+<area shape="rect" id="node7" href="$libconfig_8h.html#af949fcd25cd9adca27c78a49f62c2ebd" title="config_read_string" alt="" coords="1248,208,1376,234"/>
+<area shape="rect" id="node9" href="$libconfig_8h.html#a07dc4858f102ee91fafc17ed5932215e" title="config_read_file" alt="" coords="1255,260,1369,286"/>
+<area shape="rect" id="node6" href="$classlibconfig_1_1Config.html#a468e6ef4c2e36bdd57fc23708dee69a1" title="libconfig::Config::read" alt="" coords="1424,318,1573,345"/>
+<area shape="rect" id="node8" href="$classlibconfig_1_1Config.html#af3076c6839fa256bef1ad3fc33e17f98" title="libconfig::Config::\lreadString" alt="" coords="1437,187,1561,228"/>
+<area shape="rect" id="node10" href="$classlibconfig_1_1Config.html#a31bc78ca36d4081560de025cbb08c022" title="libconfig::Config::\lreadFile" alt="" coords="1437,252,1561,294"/>
+<area shape="rect" id="node11" href="$classtld_1_1Config.html#ab2f2fb863b08832e2b877e6f09073333" title="Initializes the Config. " alt="" coords="1621,260,1728,286"/>
+<area shape="rect" id="node12" href="$OpenTLD_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="1776,260,1827,286"/>
+<area shape="rect" id="node14" href="$scanner_8c.html#a8fdafe3be7e00ce3d4f0cb50a9a5eb39" title="while" alt="" coords="1286,154,1338,181"/>
+<area shape="rect" id="node16" href="$scanner_8h.html#a9e4fc60c40f4d1c4d9bd167073b99bde" title="libconfig_yy_scan_buffer" alt="" coords="425,260,591,286"/>
+<area shape="rect" id="node17" href="$scanner_8h.html#a1b98fc545d3576ed6daae52008a52368" title="libconfig_yy_scan_bytes" alt="" coords="640,260,805,286"/>
+<area shape="rect" id="node18" href="$scanner_8h.html#a6d85748250a6920c6bf48d8c2ba290b4" title="libconfig_yy_scan_string" alt="" coords="853,260,1019,286"/>
+<area shape="rect" id="node20" href="$scanner_8c.html#a935c4c363076b2c9b19d5e38f2336bbe" title="libconfig_yy_init_buffer" alt="" coords="431,100,585,126"/>
+<area shape="rect" id="node21" href="$scanner_8h.html#afb80695feb88cc40493a776f051bffec" title="libconfig_yy_create\l_buffer" alt="" coords="655,42,790,83"/>
+<area shape="rect" id="node24" href="$scanner_8h.html#ab3f0aaeea94956aff54a12839c53034b" title="libconfig_yylex_destroy" alt="" coords="643,320,802,346"/>
+</map>

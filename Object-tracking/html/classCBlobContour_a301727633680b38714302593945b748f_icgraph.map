@@ -1,0 +1,8 @@
+<map id="CBlobContour::GetMoment" name="CBlobContour::GetMoment">
+<area shape="rect" id="node2" href="$classCBlob.html#a4f5dfca1ee933e07a39965375f9f07c5" title="Compute blob&#39;s moment (p,q up to MAX_CALCULATED_MOMENTS) " alt="" coords="235,111,349,137"/>
+<area shape="rect" id="node3" href="$classCBlob.html#ad0bb95f395084ee89ca35cf11f203342" title="Get bounding ellipse. " alt="" coords="398,111,525,137"/>
+<area shape="rect" id="node4" href="$classCBlobGetMajorAxisLength.html#a535c9a23d16bf020ed0c6aa9f36b884f" title="Aply operator to blob. " alt="" coords="573,5,749,46"/>
+<area shape="rect" id="node5" href="$classCBlobGetAreaElipseRatio.html#a24f9703155af6e963a1ae226cdb71125" title="Aply operator to blob. " alt="" coords="575,70,748,111"/>
+<area shape="rect" id="node6" href="$classCBlobGetMinorAxisLength.html#a2269bfa1651667f020e27d9f1e8f8d98" title="Aply operator to blob. " alt="" coords="573,135,749,177"/>
+<area shape="rect" id="node7" href="$classCBlobGetOrientation.html#a083233587fed855654e580a355265be3" title="Aply operator to blob. " alt="" coords="590,201,733,242"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="cv::gpu::device::BrdReplicate::idx_col" name="cv::gpu::device::BrdReplicate::idx_col">
+<area shape="rect" id="node2" href="$structcv_1_1gpu_1_1device_1_1BrdReplicate.html#abf0b0b6b11a82acb8634911080bb43ad" title="cv::gpu::device::BrdReplicate\l::idx_col_low" alt="" coords="248,5,443,46"/>
+<area shape="rect" id="node4" href="$structcv_1_1gpu_1_1device_1_1BrdReplicate.html#afe4de9667df19d1721877d0b73c5af3e" title="cv::gpu::device::BrdReplicate\l::idx_col_high" alt="" coords="248,70,443,111"/>
+<area shape="rect" id="node3" href="$namespacecv_1_1gpu.html#a706c9def6816de566be2671b75ec5309" title="computes per&#45;element maximum of two arrays (dst = max(src1, src2)) " alt="" coords="491,12,589,39"/>
+<area shape="rect" id="node5" href="$namespacecv_1_1gpu.html#a8d100341ab11a730a3c90b75d5890a8c" title="computes per&#45;element minimum of two arrays (dst = min(src1, src2)) " alt="" coords="493,77,587,104"/>
+</map>

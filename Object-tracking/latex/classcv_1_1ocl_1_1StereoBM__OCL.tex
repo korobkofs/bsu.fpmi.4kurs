@@ -1,0 +1,136 @@
+\hypertarget{classcv_1_1ocl_1_1StereoBM__OCL}{\section{cv\-:\-:ocl\-:\-:Stereo\-B\-M\-\_\-\-O\-C\-L Class Reference}
+\label{classcv_1_1ocl_1_1StereoBM__OCL}\index{cv\-::ocl\-::\-Stereo\-B\-M\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-Stereo\-B\-M\-\_\-\-O\-C\-L}}
+}
+
+
+{\ttfamily \#include $<$ocl.\-hpp$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{classcv_1_1ocl_1_1StereoBM__OCL_aa2519d0667d1e18f5bd5a0b30d038143a0b60ed583f168ea171cb60a41bc5b9d1}{B\-A\-S\-I\-C\-\_\-\-P\-R\-E\-S\-E\-T} = 0, 
+\hyperlink{classcv_1_1ocl_1_1StereoBM__OCL_aa2519d0667d1e18f5bd5a0b30d038143ab33cc35b63f78df3abe88010628c53aa}{P\-R\-E\-F\-I\-L\-T\-E\-R\-\_\-\-X\-S\-O\-B\-E\-L} = 1
+ \}
+\item 
+enum \{ \hyperlink{classcv_1_1ocl_1_1StereoBM__OCL_abe855c11c6bac7c5e3fa664261c415aba2dab5b11e06fea1dfb21c9f0fe20d775}{D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-D\-I\-S\-P} = 64, 
+\hyperlink{classcv_1_1ocl_1_1StereoBM__OCL_abe855c11c6bac7c5e3fa664261c415aba83dcbfb5f4b5682a59050ee1bf2d144a}{D\-E\-F\-A\-U\-L\-T\-\_\-\-W\-I\-N\-S\-Z} = 19
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcv_1_1ocl_1_1StereoBM__OCL_a774b163cf0456639934f0ceec2977b0b}{Stereo\-B\-M\-\_\-\-O\-C\-L} ()
+\begin{DoxyCompactList}\small\item\em the default constructor \end{DoxyCompactList}\item 
+\hyperlink{classcv_1_1ocl_1_1StereoBM__OCL_a12df3c99ff5b35d8fc67c0b70837835a}{Stereo\-B\-M\-\_\-\-O\-C\-L} (int \hyperlink{classcv_1_1ocl_1_1StereoBM__OCL_acef365d858035ce0a04717c7d2702a53}{preset}, int ndisparities=\hyperlink{classcv_1_1ocl_1_1StereoBM__OCL_abe855c11c6bac7c5e3fa664261c415aba2dab5b11e06fea1dfb21c9f0fe20d775}{D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-D\-I\-S\-P}, int \hyperlink{classcv_1_1ocl_1_1StereoBM__OCL_a3041e91028d459e913db11557cff9800}{win\-Size}=\hyperlink{classcv_1_1ocl_1_1StereoBM__OCL_abe855c11c6bac7c5e3fa664261c415aba83dcbfb5f4b5682a59050ee1bf2d144a}{D\-E\-F\-A\-U\-L\-T\-\_\-\-W\-I\-N\-S\-Z})
+\begin{DoxyCompactList}\small\item\em the full constructor taking the camera-\/specific preset, number of disparities and the S\-A\-D window size. ndisparities must be multiple of 8. \end{DoxyCompactList}\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1StereoBM__OCL_a45305597efda55e0c0acdb822f835192}{operator()} (const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&left, const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&\hyperlink{legacy_8hpp_a6b04b878081bf724144b73c75dfd1894}{right}, \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&\hyperlink{calib3d_8hpp_acd2ef073a3a4984e0a0ebac5c7e179fd}{disparity})
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{classcv_1_1ocl_1_1StereoBM__OCL_aa523805f7cdb99c599767b8550eb99d9}{check\-If\-Gpu\-Call\-Reasonable} ()
+\begin{DoxyCompactList}\small\item\em Some heuristics that tries to estmate. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classcv_1_1ocl_1_1StereoBM__OCL_acef365d858035ce0a04717c7d2702a53}{preset}
+\item 
+int \hyperlink{classcv_1_1ocl_1_1StereoBM__OCL_a29da1385aca0fdac39969f7dee0d66b1}{ndisp}
+\item 
+int \hyperlink{classcv_1_1ocl_1_1StereoBM__OCL_a3041e91028d459e913db11557cff9800}{win\-Size}
+\item 
+float \hyperlink{classcv_1_1ocl_1_1StereoBM__OCL_ae20e72d4f59d6be0519ccd4ce3930fd9}{averge\-Tex\-Threshold}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classcv_1_1ocl_1_1StereoBM__OCL_aa2519d0667d1e18f5bd5a0b30d038143}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{classcv_1_1ocl_1_1StereoBM__OCL_aa2519d0667d1e18f5bd5a0b30d038143}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{B\-A\-S\-I\-C\-\_\-\-P\-R\-E\-S\-E\-T@{B\-A\-S\-I\-C\-\_\-\-P\-R\-E\-S\-E\-T}!cv\-::ocl\-::\-Stereo\-B\-M\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-Stereo\-B\-M\-\_\-\-O\-C\-L}}\index{cv\-::ocl\-::\-Stereo\-B\-M\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-Stereo\-B\-M\-\_\-\-O\-C\-L}!B\-A\-S\-I\-C\-\_\-\-P\-R\-E\-S\-E\-T@{B\-A\-S\-I\-C\-\_\-\-P\-R\-E\-S\-E\-T}}\item[{\em 
+\hypertarget{classcv_1_1ocl_1_1StereoBM__OCL_aa2519d0667d1e18f5bd5a0b30d038143a0b60ed583f168ea171cb60a41bc5b9d1}{B\-A\-S\-I\-C\-\_\-\-P\-R\-E\-S\-E\-T}\label{classcv_1_1ocl_1_1StereoBM__OCL_aa2519d0667d1e18f5bd5a0b30d038143a0b60ed583f168ea171cb60a41bc5b9d1}
+}]\index{P\-R\-E\-F\-I\-L\-T\-E\-R\-\_\-\-X\-S\-O\-B\-E\-L@{P\-R\-E\-F\-I\-L\-T\-E\-R\-\_\-\-X\-S\-O\-B\-E\-L}!cv\-::ocl\-::\-Stereo\-B\-M\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-Stereo\-B\-M\-\_\-\-O\-C\-L}}\index{cv\-::ocl\-::\-Stereo\-B\-M\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-Stereo\-B\-M\-\_\-\-O\-C\-L}!P\-R\-E\-F\-I\-L\-T\-E\-R\-\_\-\-X\-S\-O\-B\-E\-L@{P\-R\-E\-F\-I\-L\-T\-E\-R\-\_\-\-X\-S\-O\-B\-E\-L}}\item[{\em 
+\hypertarget{classcv_1_1ocl_1_1StereoBM__OCL_aa2519d0667d1e18f5bd5a0b30d038143ab33cc35b63f78df3abe88010628c53aa}{P\-R\-E\-F\-I\-L\-T\-E\-R\-\_\-\-X\-S\-O\-B\-E\-L}\label{classcv_1_1ocl_1_1StereoBM__OCL_aa2519d0667d1e18f5bd5a0b30d038143ab33cc35b63f78df3abe88010628c53aa}
+}]\end{description}
+\end{Desc}
+\hypertarget{classcv_1_1ocl_1_1StereoBM__OCL_abe855c11c6bac7c5e3fa664261c415ab}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{classcv_1_1ocl_1_1StereoBM__OCL_abe855c11c6bac7c5e3fa664261c415ab}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-D\-I\-S\-P@{D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-D\-I\-S\-P}!cv\-::ocl\-::\-Stereo\-B\-M\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-Stereo\-B\-M\-\_\-\-O\-C\-L}}\index{cv\-::ocl\-::\-Stereo\-B\-M\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-Stereo\-B\-M\-\_\-\-O\-C\-L}!D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-D\-I\-S\-P@{D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-D\-I\-S\-P}}\item[{\em 
+\hypertarget{classcv_1_1ocl_1_1StereoBM__OCL_abe855c11c6bac7c5e3fa664261c415aba2dab5b11e06fea1dfb21c9f0fe20d775}{D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-D\-I\-S\-P}\label{classcv_1_1ocl_1_1StereoBM__OCL_abe855c11c6bac7c5e3fa664261c415aba2dab5b11e06fea1dfb21c9f0fe20d775}
+}]\index{D\-E\-F\-A\-U\-L\-T\-\_\-\-W\-I\-N\-S\-Z@{D\-E\-F\-A\-U\-L\-T\-\_\-\-W\-I\-N\-S\-Z}!cv\-::ocl\-::\-Stereo\-B\-M\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-Stereo\-B\-M\-\_\-\-O\-C\-L}}\index{cv\-::ocl\-::\-Stereo\-B\-M\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-Stereo\-B\-M\-\_\-\-O\-C\-L}!D\-E\-F\-A\-U\-L\-T\-\_\-\-W\-I\-N\-S\-Z@{D\-E\-F\-A\-U\-L\-T\-\_\-\-W\-I\-N\-S\-Z}}\item[{\em 
+\hypertarget{classcv_1_1ocl_1_1StereoBM__OCL_abe855c11c6bac7c5e3fa664261c415aba83dcbfb5f4b5682a59050ee1bf2d144a}{D\-E\-F\-A\-U\-L\-T\-\_\-\-W\-I\-N\-S\-Z}\label{classcv_1_1ocl_1_1StereoBM__OCL_abe855c11c6bac7c5e3fa664261c415aba83dcbfb5f4b5682a59050ee1bf2d144a}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcv_1_1ocl_1_1StereoBM__OCL_a774b163cf0456639934f0ceec2977b0b}{\index{cv\-::ocl\-::\-Stereo\-B\-M\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-Stereo\-B\-M\-\_\-\-O\-C\-L}!Stereo\-B\-M\-\_\-\-O\-C\-L@{Stereo\-B\-M\-\_\-\-O\-C\-L}}
+\index{Stereo\-B\-M\-\_\-\-O\-C\-L@{Stereo\-B\-M\-\_\-\-O\-C\-L}!cv::ocl::StereoBM_OCL@{cv\-::ocl\-::\-Stereo\-B\-M\-\_\-\-O\-C\-L}}
+\subsubsection[{Stereo\-B\-M\-\_\-\-O\-C\-L}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::ocl\-::\-Stereo\-B\-M\-\_\-\-O\-C\-L\-::\-Stereo\-B\-M\-\_\-\-O\-C\-L (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1StereoBM__OCL_a774b163cf0456639934f0ceec2977b0b}
+
+
+the default constructor 
+
+\hypertarget{classcv_1_1ocl_1_1StereoBM__OCL_a12df3c99ff5b35d8fc67c0b70837835a}{\index{cv\-::ocl\-::\-Stereo\-B\-M\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-Stereo\-B\-M\-\_\-\-O\-C\-L}!Stereo\-B\-M\-\_\-\-O\-C\-L@{Stereo\-B\-M\-\_\-\-O\-C\-L}}
+\index{Stereo\-B\-M\-\_\-\-O\-C\-L@{Stereo\-B\-M\-\_\-\-O\-C\-L}!cv::ocl::StereoBM_OCL@{cv\-::ocl\-::\-Stereo\-B\-M\-\_\-\-O\-C\-L}}
+\subsubsection[{Stereo\-B\-M\-\_\-\-O\-C\-L}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::ocl\-::\-Stereo\-B\-M\-\_\-\-O\-C\-L\-::\-Stereo\-B\-M\-\_\-\-O\-C\-L (
+\begin{DoxyParamCaption}
+\item[{int}]{preset, }
+\item[{int}]{ndisparities = {\ttfamily {\bf D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-D\-I\-S\-P}}, }
+\item[{int}]{win\-Size = {\ttfamily {\bf D\-E\-F\-A\-U\-L\-T\-\_\-\-W\-I\-N\-S\-Z}}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1StereoBM__OCL_a12df3c99ff5b35d8fc67c0b70837835a}
+
+
+the full constructor taking the camera-\/specific preset, number of disparities and the S\-A\-D window size. ndisparities must be multiple of 8. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcv_1_1ocl_1_1StereoBM__OCL_aa523805f7cdb99c599767b8550eb99d9}{\index{cv\-::ocl\-::\-Stereo\-B\-M\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-Stereo\-B\-M\-\_\-\-O\-C\-L}!check\-If\-Gpu\-Call\-Reasonable@{check\-If\-Gpu\-Call\-Reasonable}}
+\index{check\-If\-Gpu\-Call\-Reasonable@{check\-If\-Gpu\-Call\-Reasonable}!cv::ocl::StereoBM_OCL@{cv\-::ocl\-::\-Stereo\-B\-M\-\_\-\-O\-C\-L}}
+\subsubsection[{check\-If\-Gpu\-Call\-Reasonable}]{\setlength{\rightskip}{0pt plus 5cm}static bool cv\-::ocl\-::\-Stereo\-B\-M\-\_\-\-O\-C\-L\-::check\-If\-Gpu\-Call\-Reasonable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcv_1_1ocl_1_1StereoBM__OCL_aa523805f7cdb99c599767b8550eb99d9}
+
+
+Some heuristics that tries to estmate. 
+
+\hypertarget{classcv_1_1ocl_1_1StereoBM__OCL_a45305597efda55e0c0acdb822f835192}{\index{cv\-::ocl\-::\-Stereo\-B\-M\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-Stereo\-B\-M\-\_\-\-O\-C\-L}!operator()@{operator()}}
+\index{operator()@{operator()}!cv::ocl::StereoBM_OCL@{cv\-::ocl\-::\-Stereo\-B\-M\-\_\-\-O\-C\-L}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::\-Stereo\-B\-M\-\_\-\-O\-C\-L\-::operator() (
+\begin{DoxyParamCaption}
+\item[{const {\bf ocl\-Mat} \&}]{left, }
+\item[{const {\bf ocl\-Mat} \&}]{right, }
+\item[{{\bf ocl\-Mat} \&}]{disparity}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1StereoBM__OCL_a45305597efda55e0c0acdb822f835192}
+the stereo correspondence operator. Finds the disparity for the specified rectified stereo pair Output disparity has C\-V\-\_\-8\-U type. 
+
+\subsection{Member Data Documentation}
+\hypertarget{classcv_1_1ocl_1_1StereoBM__OCL_ae20e72d4f59d6be0519ccd4ce3930fd9}{\index{cv\-::ocl\-::\-Stereo\-B\-M\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-Stereo\-B\-M\-\_\-\-O\-C\-L}!averge\-Tex\-Threshold@{averge\-Tex\-Threshold}}
+\index{averge\-Tex\-Threshold@{averge\-Tex\-Threshold}!cv::ocl::StereoBM_OCL@{cv\-::ocl\-::\-Stereo\-B\-M\-\_\-\-O\-C\-L}}
+\subsubsection[{averge\-Tex\-Threshold}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::ocl\-::\-Stereo\-B\-M\-\_\-\-O\-C\-L\-::averge\-Tex\-Threshold}}\label{classcv_1_1ocl_1_1StereoBM__OCL_ae20e72d4f59d6be0519ccd4ce3930fd9}
+\hypertarget{classcv_1_1ocl_1_1StereoBM__OCL_a29da1385aca0fdac39969f7dee0d66b1}{\index{cv\-::ocl\-::\-Stereo\-B\-M\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-Stereo\-B\-M\-\_\-\-O\-C\-L}!ndisp@{ndisp}}
+\index{ndisp@{ndisp}!cv::ocl::StereoBM_OCL@{cv\-::ocl\-::\-Stereo\-B\-M\-\_\-\-O\-C\-L}}
+\subsubsection[{ndisp}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::ocl\-::\-Stereo\-B\-M\-\_\-\-O\-C\-L\-::ndisp}}\label{classcv_1_1ocl_1_1StereoBM__OCL_a29da1385aca0fdac39969f7dee0d66b1}
+\hypertarget{classcv_1_1ocl_1_1StereoBM__OCL_acef365d858035ce0a04717c7d2702a53}{\index{cv\-::ocl\-::\-Stereo\-B\-M\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-Stereo\-B\-M\-\_\-\-O\-C\-L}!preset@{preset}}
+\index{preset@{preset}!cv::ocl::StereoBM_OCL@{cv\-::ocl\-::\-Stereo\-B\-M\-\_\-\-O\-C\-L}}
+\subsubsection[{preset}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::ocl\-::\-Stereo\-B\-M\-\_\-\-O\-C\-L\-::preset}}\label{classcv_1_1ocl_1_1StereoBM__OCL_acef365d858035ce0a04717c7d2702a53}
+\hypertarget{classcv_1_1ocl_1_1StereoBM__OCL_a3041e91028d459e913db11557cff9800}{\index{cv\-::ocl\-::\-Stereo\-B\-M\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-Stereo\-B\-M\-\_\-\-O\-C\-L}!win\-Size@{win\-Size}}
+\index{win\-Size@{win\-Size}!cv::ocl::StereoBM_OCL@{cv\-::ocl\-::\-Stereo\-B\-M\-\_\-\-O\-C\-L}}
+\subsubsection[{win\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::ocl\-::\-Stereo\-B\-M\-\_\-\-O\-C\-L\-::win\-Size}}\label{classcv_1_1ocl_1_1StereoBM__OCL_a3041e91028d459e913db11557cff9800}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/ocl/\hyperlink{ocl_2ocl_8hpp}{ocl.\-hpp}\end{DoxyCompactItemize}

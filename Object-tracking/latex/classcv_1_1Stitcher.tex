@@ -1,0 +1,467 @@
+\hypertarget{classcv_1_1Stitcher}{\section{cv\-:\-:Stitcher Class Reference}
+\label{classcv_1_1Stitcher}\index{cv\-::\-Stitcher@{cv\-::\-Stitcher}}
+}
+
+
+{\ttfamily \#include $<$stitcher.\-hpp$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{classcv_1_1Stitcher_a0cc01cd199e4ca1b96c6ba0d2c7137ffac77eedc34a400551e89e12818f8bec63}{O\-R\-I\-G\-\_\-\-R\-E\-S\-O\-L} = -\/1
+ \}
+\item 
+enum \hyperlink{classcv_1_1Stitcher_a507409ce9435dd89857469d12ec06b45}{Status} \{ \hyperlink{classcv_1_1Stitcher_a507409ce9435dd89857469d12ec06b45afc04343b65c6780b62b684ed14e26586}{O\-K}, 
+\hyperlink{classcv_1_1Stitcher_a507409ce9435dd89857469d12ec06b45a2d8d41bde739520bdc0a75af8c869bbe}{E\-R\-R\-\_\-\-N\-E\-E\-D\-\_\-\-M\-O\-R\-E\-\_\-\-I\-M\-G\-S}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classcv_1_1Stitcher_a8aaec9b43e082f501a6792f7d398e79b}{registration\-Resol} () const 
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1Stitcher_a9912fe8c095b8385267908e5ef707439}{set\-Registration\-Resol} (double resol\-\_\-mpx)
+\item 
+double \hyperlink{classcv_1_1Stitcher_a970adf4ead7a77584c01425b26361d80}{seam\-Estimation\-Resol} () const 
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1Stitcher_ad0fcef52b2fedda1dbb90ea780cd7979}{set\-Seam\-Estimation\-Resol} (double resol\-\_\-mpx)
+\item 
+double \hyperlink{classcv_1_1Stitcher_a0fd87083a8a6f3774b745c64a8f2f23c}{compositing\-Resol} () const 
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1Stitcher_afe927e80fcb2ca2061630ddd98eebba8}{set\-Compositing\-Resol} (double resol\-\_\-mpx)
+\item 
+double \hyperlink{classcv_1_1Stitcher_ab6ec8350126054a7538b262729abf53c}{pano\-Confidence\-Thresh} () const 
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1Stitcher_a6f5e62bc1dd5d7bdb5f9313a2c21c558}{set\-Pano\-Confidence\-Thresh} (double conf\-\_\-thresh)
+\item 
+bool \hyperlink{classcv_1_1Stitcher_ae07a9623cbeb9910f7e02191c8d0142c}{wave\-Correction} () const 
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1Stitcher_a968a2f4a1faddfdacbcfce54b44bab70}{set\-Wave\-Correction} (bool \hyperlink{legacy_8hpp_a0b4706eb64be40850fe9d384ecc82267}{flag})
+\item 
+\hyperlink{namespacecv_1_1detail_a83b24d4c3e93584986a56d9e43b9cf7f}{detail\-::\-Wave\-Correct\-Kind} \hyperlink{classcv_1_1Stitcher_acedf2cda0ea84ddca2342ad82129499c}{wave\-Correct\-Kind} () const 
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1Stitcher_a17413f5c06e4e569bfd45e01d4e8ff4a}{set\-Wave\-Correct\-Kind} (\hyperlink{namespacecv_1_1detail_a83b24d4c3e93584986a56d9e43b9cf7f}{detail\-::\-Wave\-Correct\-Kind} kind)
+\item 
+Ptr$<$ \hyperlink{classcv_1_1detail_1_1FeaturesFinder}{detail\-::\-Features\-Finder} $>$ \hyperlink{classcv_1_1Stitcher_aa724ae80a2962ead6b1c3e5a8eaa0c07}{features\-Finder} ()
+\item 
+const Ptr$<$ \hyperlink{classcv_1_1detail_1_1FeaturesFinder}{detail\-::\-Features\-Finder} $>$ \hyperlink{classcv_1_1Stitcher_a2daf0589703d125d3e2836f532c5b5bb}{features\-Finder} () const 
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1Stitcher_ae7cd5967c7a89cb743b07e9eac8a7ae5}{set\-Features\-Finder} (Ptr$<$ \hyperlink{classcv_1_1detail_1_1FeaturesFinder}{detail\-::\-Features\-Finder} $>$ features\-\_\-finder)
+\item 
+Ptr$<$ \hyperlink{classcv_1_1detail_1_1FeaturesMatcher}{detail\-::\-Features\-Matcher} $>$ \hyperlink{classcv_1_1Stitcher_a426a576f1e2c12d9d5437a86625564c0}{features\-Matcher} ()
+\item 
+const Ptr\\*
+$<$ \hyperlink{classcv_1_1detail_1_1FeaturesMatcher}{detail\-::\-Features\-Matcher} $>$ \hyperlink{classcv_1_1Stitcher_a376ec137ac871e80a3de108736c80f70}{features\-Matcher} () const 
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1Stitcher_ada7fb8b0e696bfe3104f73d07ab0b5c4}{set\-Features\-Matcher} (Ptr$<$ \hyperlink{classcv_1_1detail_1_1FeaturesMatcher}{detail\-::\-Features\-Matcher} $>$ features\-\_\-matcher)
+\item 
+const cv\-::\-Mat \& \hyperlink{classcv_1_1Stitcher_a21953347e8a9844d8e44f68c6d0d7ac0}{matching\-Mask} () const 
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1Stitcher_a5a7d92f2dd21710134fbe09a4e9cf8ff}{set\-Matching\-Mask} (const cv\-::\-Mat \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask})
+\item 
+Ptr$<$ \hyperlink{classcv_1_1detail_1_1BundleAdjusterBase}{detail\-::\-Bundle\-Adjuster\-Base} $>$ \hyperlink{classcv_1_1Stitcher_a3afc54727bdd855bad04613f7e337a89}{bundle\-Adjuster} ()
+\item 
+const Ptr\\*
+$<$ \hyperlink{classcv_1_1detail_1_1BundleAdjusterBase}{detail\-::\-Bundle\-Adjuster\-Base} $>$ \hyperlink{classcv_1_1Stitcher_adf4506ab7d936d743e3f71c45767ac5d}{bundle\-Adjuster} () const 
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1Stitcher_aa3060cbd7d492a53052754439e830d40}{set\-Bundle\-Adjuster} (Ptr$<$ \hyperlink{classcv_1_1detail_1_1BundleAdjusterBase}{detail\-::\-Bundle\-Adjuster\-Base} $>$ bundle\-\_\-adjuster)
+\item 
+Ptr$<$ \hyperlink{classcv_1_1WarperCreator}{Warper\-Creator} $>$ \hyperlink{classcv_1_1Stitcher_ab99a767d1d40f8ae1e739c8793278e57}{warper} ()
+\item 
+const Ptr$<$ \hyperlink{classcv_1_1WarperCreator}{Warper\-Creator} $>$ \hyperlink{classcv_1_1Stitcher_ae0f2ade800a54e00a27624c782b05e6d}{warper} () const 
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1Stitcher_adb1219c1caae710736a5a5e6b13ad21b}{set\-Warper} (Ptr$<$ \hyperlink{classcv_1_1WarperCreator}{Warper\-Creator} $>$ creator)
+\item 
+Ptr$<$ \hyperlink{classcv_1_1detail_1_1ExposureCompensator}{detail\-::\-Exposure\-Compensator} $>$ \hyperlink{classcv_1_1Stitcher_afc646488ee47f87c743d3ab1e3832b48}{exposure\-Compensator} ()
+\item 
+const Ptr\\*
+$<$ \hyperlink{classcv_1_1detail_1_1ExposureCompensator}{detail\-::\-Exposure\-Compensator} $>$ \hyperlink{classcv_1_1Stitcher_ae1d8bda643525b188790489ccee8eccd}{exposure\-Compensator} () const 
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1Stitcher_a487373f15a54192e6a85ce6b04151d91}{set\-Exposure\-Compensator} (Ptr$<$ \hyperlink{classcv_1_1detail_1_1ExposureCompensator}{detail\-::\-Exposure\-Compensator} $>$ exposure\-\_\-comp)
+\item 
+Ptr$<$ \hyperlink{classcv_1_1detail_1_1SeamFinder}{detail\-::\-Seam\-Finder} $>$ \hyperlink{classcv_1_1Stitcher_a380c7c920f59047f2b25de7dc86f563d}{seam\-Finder} ()
+\item 
+const Ptr$<$ \hyperlink{classcv_1_1detail_1_1SeamFinder}{detail\-::\-Seam\-Finder} $>$ \hyperlink{classcv_1_1Stitcher_ad28bbd4227cec95b428fa795ef71c670}{seam\-Finder} () const 
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1Stitcher_ad813cf8a3493fa6fe53343f3f5a1da81}{set\-Seam\-Finder} (Ptr$<$ \hyperlink{classcv_1_1detail_1_1SeamFinder}{detail\-::\-Seam\-Finder} $>$ seam\-\_\-finder)
+\item 
+Ptr$<$ \hyperlink{classcv_1_1detail_1_1Blender}{detail\-::\-Blender} $>$ \hyperlink{classcv_1_1Stitcher_aaf325d20b42ed5336956c966b6a416fe}{blender} ()
+\item 
+const Ptr$<$ \hyperlink{classcv_1_1detail_1_1Blender}{detail\-::\-Blender} $>$ \hyperlink{classcv_1_1Stitcher_a66b6312615f2d5580a784a0332f656ca}{blender} () const 
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1Stitcher_a79651cf9e4b87cb6af26caa0535b9baa}{set\-Blender} (Ptr$<$ \hyperlink{classcv_1_1detail_1_1Blender}{detail\-::\-Blender} $>$ \hyperlink{legacy_8hpp_ac04272e8ca865b8fba18d36edae9fd2a}{b})
+\item 
+\hyperlink{classcv_1_1Stitcher_a507409ce9435dd89857469d12ec06b45}{Status} \hyperlink{classcv_1_1Stitcher_a0d516fbd44e52fd03a297c6eacdfe252}{estimate\-Transform} (Input\-Array images)
+\item 
+\hyperlink{classcv_1_1Stitcher_a507409ce9435dd89857469d12ec06b45}{Status} \hyperlink{classcv_1_1Stitcher_a423f7e1163a3da67ce75aeb65d61fb80}{estimate\-Transform} (Input\-Array images, const std\-::vector$<$ std\-::vector$<$ Rect $>$ $>$ \&rois)
+\item 
+\hyperlink{classcv_1_1Stitcher_a507409ce9435dd89857469d12ec06b45}{Status} \hyperlink{classcv_1_1Stitcher_a3217156f7deba256ecd7790ef34008ed}{compose\-Panorama} (Output\-Array pano)
+\item 
+\hyperlink{classcv_1_1Stitcher_a507409ce9435dd89857469d12ec06b45}{Status} \hyperlink{classcv_1_1Stitcher_a90667e9e2ccaf0c3063eb2ca2285a4d1}{compose\-Panorama} (Input\-Array images, Output\-Array pano)
+\item 
+\hyperlink{classcv_1_1Stitcher_a507409ce9435dd89857469d12ec06b45}{Status} \hyperlink{classcv_1_1Stitcher_af83fb6a8a322b00e8a0e449cbf20c825}{stitch} (Input\-Array images, Output\-Array pano)
+\item 
+\hyperlink{classcv_1_1Stitcher_a507409ce9435dd89857469d12ec06b45}{Status} \hyperlink{classcv_1_1Stitcher_ac5185e4a70c44944ef4f806de0d1abb1}{stitch} (Input\-Array images, const std\-::vector$<$ std\-::vector$<$ Rect $>$ $>$ \&rois, Output\-Array pano)
+\item 
+std\-::vector$<$ int $>$ \hyperlink{classcv_1_1Stitcher_a34080e12d8c1128edf61212d346768d7}{component} () const 
+\item 
+std\-::vector$<$ \hyperlink{structcv_1_1detail_1_1CameraParams}{detail\-::\-Camera\-Params} $>$ \hyperlink{classcv_1_1Stitcher_ab61f53146e30dd18c35f043c3b5f374c}{cameras} () const 
+\item 
+double \hyperlink{classcv_1_1Stitcher_a09ef85d558424aecec670e2977e17c0b}{work\-Scale} () const 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classcv_1_1Stitcher}{Stitcher} \hyperlink{classcv_1_1Stitcher_a6c2bc426c1f6ae0bcb45d8f8aa501b6b}{create\-Default} (bool try\-\_\-use\-\_\-gpu=false)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classcv_1_1Stitcher_a0cc01cd199e4ca1b96c6ba0d2c7137ff}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{classcv_1_1Stitcher_a0cc01cd199e4ca1b96c6ba0d2c7137ff}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{O\-R\-I\-G\-\_\-\-R\-E\-S\-O\-L@{O\-R\-I\-G\-\_\-\-R\-E\-S\-O\-L}!cv\-::\-Stitcher@{cv\-::\-Stitcher}}\index{cv\-::\-Stitcher@{cv\-::\-Stitcher}!O\-R\-I\-G\-\_\-\-R\-E\-S\-O\-L@{O\-R\-I\-G\-\_\-\-R\-E\-S\-O\-L}}\item[{\em 
+\hypertarget{classcv_1_1Stitcher_a0cc01cd199e4ca1b96c6ba0d2c7137ffac77eedc34a400551e89e12818f8bec63}{O\-R\-I\-G\-\_\-\-R\-E\-S\-O\-L}\label{classcv_1_1Stitcher_a0cc01cd199e4ca1b96c6ba0d2c7137ffac77eedc34a400551e89e12818f8bec63}
+}]\end{description}
+\end{Desc}
+\hypertarget{classcv_1_1Stitcher_a507409ce9435dd89857469d12ec06b45}{\index{cv\-::\-Stitcher@{cv\-::\-Stitcher}!Status@{Status}}
+\index{Status@{Status}!cv::Stitcher@{cv\-::\-Stitcher}}
+\subsubsection[{Status}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf cv\-::\-Stitcher\-::\-Status}}}\label{classcv_1_1Stitcher_a507409ce9435dd89857469d12ec06b45}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{O\-K@{O\-K}!cv\-::\-Stitcher@{cv\-::\-Stitcher}}\index{cv\-::\-Stitcher@{cv\-::\-Stitcher}!O\-K@{O\-K}}\item[{\em 
+\hypertarget{classcv_1_1Stitcher_a507409ce9435dd89857469d12ec06b45afc04343b65c6780b62b684ed14e26586}{O\-K}\label{classcv_1_1Stitcher_a507409ce9435dd89857469d12ec06b45afc04343b65c6780b62b684ed14e26586}
+}]\index{E\-R\-R\-\_\-\-N\-E\-E\-D\-\_\-\-M\-O\-R\-E\-\_\-\-I\-M\-G\-S@{E\-R\-R\-\_\-\-N\-E\-E\-D\-\_\-\-M\-O\-R\-E\-\_\-\-I\-M\-G\-S}!cv\-::\-Stitcher@{cv\-::\-Stitcher}}\index{cv\-::\-Stitcher@{cv\-::\-Stitcher}!E\-R\-R\-\_\-\-N\-E\-E\-D\-\_\-\-M\-O\-R\-E\-\_\-\-I\-M\-G\-S@{E\-R\-R\-\_\-\-N\-E\-E\-D\-\_\-\-M\-O\-R\-E\-\_\-\-I\-M\-G\-S}}\item[{\em 
+\hypertarget{classcv_1_1Stitcher_a507409ce9435dd89857469d12ec06b45a2d8d41bde739520bdc0a75af8c869bbe}{E\-R\-R\-\_\-\-N\-E\-E\-D\-\_\-\-M\-O\-R\-E\-\_\-\-I\-M\-G\-S}\label{classcv_1_1Stitcher_a507409ce9435dd89857469d12ec06b45a2d8d41bde739520bdc0a75af8c869bbe}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcv_1_1Stitcher_aaf325d20b42ed5336956c966b6a416fe}{\index{cv\-::\-Stitcher@{cv\-::\-Stitcher}!blender@{blender}}
+\index{blender@{blender}!cv::Stitcher@{cv\-::\-Stitcher}}
+\subsubsection[{blender}]{\setlength{\rightskip}{0pt plus 5cm}Ptr$<${\bf detail\-::\-Blender}$>$ cv\-::\-Stitcher\-::blender (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1Stitcher_aaf325d20b42ed5336956c966b6a416fe}
+\hypertarget{classcv_1_1Stitcher_a66b6312615f2d5580a784a0332f656ca}{\index{cv\-::\-Stitcher@{cv\-::\-Stitcher}!blender@{blender}}
+\index{blender@{blender}!cv::Stitcher@{cv\-::\-Stitcher}}
+\subsubsection[{blender}]{\setlength{\rightskip}{0pt plus 5cm}const Ptr$<${\bf detail\-::\-Blender}$>$ cv\-::\-Stitcher\-::blender (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1Stitcher_a66b6312615f2d5580a784a0332f656ca}
+\hypertarget{classcv_1_1Stitcher_a3afc54727bdd855bad04613f7e337a89}{\index{cv\-::\-Stitcher@{cv\-::\-Stitcher}!bundle\-Adjuster@{bundle\-Adjuster}}
+\index{bundle\-Adjuster@{bundle\-Adjuster}!cv::Stitcher@{cv\-::\-Stitcher}}
+\subsubsection[{bundle\-Adjuster}]{\setlength{\rightskip}{0pt plus 5cm}Ptr$<${\bf detail\-::\-Bundle\-Adjuster\-Base}$>$ cv\-::\-Stitcher\-::bundle\-Adjuster (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1Stitcher_a3afc54727bdd855bad04613f7e337a89}
+\hypertarget{classcv_1_1Stitcher_adf4506ab7d936d743e3f71c45767ac5d}{\index{cv\-::\-Stitcher@{cv\-::\-Stitcher}!bundle\-Adjuster@{bundle\-Adjuster}}
+\index{bundle\-Adjuster@{bundle\-Adjuster}!cv::Stitcher@{cv\-::\-Stitcher}}
+\subsubsection[{bundle\-Adjuster}]{\setlength{\rightskip}{0pt plus 5cm}const Ptr$<${\bf detail\-::\-Bundle\-Adjuster\-Base}$>$ cv\-::\-Stitcher\-::bundle\-Adjuster (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1Stitcher_adf4506ab7d936d743e3f71c45767ac5d}
+\hypertarget{classcv_1_1Stitcher_ab61f53146e30dd18c35f043c3b5f374c}{\index{cv\-::\-Stitcher@{cv\-::\-Stitcher}!cameras@{cameras}}
+\index{cameras@{cameras}!cv::Stitcher@{cv\-::\-Stitcher}}
+\subsubsection[{cameras}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf detail\-::\-Camera\-Params}$>$ cv\-::\-Stitcher\-::cameras (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1Stitcher_ab61f53146e30dd18c35f043c3b5f374c}
+\hypertarget{classcv_1_1Stitcher_a34080e12d8c1128edf61212d346768d7}{\index{cv\-::\-Stitcher@{cv\-::\-Stitcher}!component@{component}}
+\index{component@{component}!cv::Stitcher@{cv\-::\-Stitcher}}
+\subsubsection[{component}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$int$>$ cv\-::\-Stitcher\-::component (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1Stitcher_a34080e12d8c1128edf61212d346768d7}
+\hypertarget{classcv_1_1Stitcher_a3217156f7deba256ecd7790ef34008ed}{\index{cv\-::\-Stitcher@{cv\-::\-Stitcher}!compose\-Panorama@{compose\-Panorama}}
+\index{compose\-Panorama@{compose\-Panorama}!cv::Stitcher@{cv\-::\-Stitcher}}
+\subsubsection[{compose\-Panorama}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Status} cv\-::\-Stitcher\-::compose\-Panorama (
+\begin{DoxyParamCaption}
+\item[{Output\-Array}]{pano}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1Stitcher_a3217156f7deba256ecd7790ef34008ed}
+\hypertarget{classcv_1_1Stitcher_a90667e9e2ccaf0c3063eb2ca2285a4d1}{\index{cv\-::\-Stitcher@{cv\-::\-Stitcher}!compose\-Panorama@{compose\-Panorama}}
+\index{compose\-Panorama@{compose\-Panorama}!cv::Stitcher@{cv\-::\-Stitcher}}
+\subsubsection[{compose\-Panorama}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Status} cv\-::\-Stitcher\-::compose\-Panorama (
+\begin{DoxyParamCaption}
+\item[{Input\-Array}]{images, }
+\item[{Output\-Array}]{pano}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1Stitcher_a90667e9e2ccaf0c3063eb2ca2285a4d1}
+\hypertarget{classcv_1_1Stitcher_a0fd87083a8a6f3774b745c64a8f2f23c}{\index{cv\-::\-Stitcher@{cv\-::\-Stitcher}!compositing\-Resol@{compositing\-Resol}}
+\index{compositing\-Resol@{compositing\-Resol}!cv::Stitcher@{cv\-::\-Stitcher}}
+\subsubsection[{compositing\-Resol}]{\setlength{\rightskip}{0pt plus 5cm}double cv\-::\-Stitcher\-::compositing\-Resol (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1Stitcher_a0fd87083a8a6f3774b745c64a8f2f23c}
+\hypertarget{classcv_1_1Stitcher_a6c2bc426c1f6ae0bcb45d8f8aa501b6b}{\index{cv\-::\-Stitcher@{cv\-::\-Stitcher}!create\-Default@{create\-Default}}
+\index{create\-Default@{create\-Default}!cv::Stitcher@{cv\-::\-Stitcher}}
+\subsubsection[{create\-Default}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Stitcher} cv\-::\-Stitcher\-::create\-Default (
+\begin{DoxyParamCaption}
+\item[{bool}]{try\-\_\-use\-\_\-gpu = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcv_1_1Stitcher_a6c2bc426c1f6ae0bcb45d8f8aa501b6b}
+\hypertarget{classcv_1_1Stitcher_a0d516fbd44e52fd03a297c6eacdfe252}{\index{cv\-::\-Stitcher@{cv\-::\-Stitcher}!estimate\-Transform@{estimate\-Transform}}
+\index{estimate\-Transform@{estimate\-Transform}!cv::Stitcher@{cv\-::\-Stitcher}}
+\subsubsection[{estimate\-Transform}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Status} cv\-::\-Stitcher\-::estimate\-Transform (
+\begin{DoxyParamCaption}
+\item[{Input\-Array}]{images}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1Stitcher_a0d516fbd44e52fd03a297c6eacdfe252}
+\hypertarget{classcv_1_1Stitcher_a423f7e1163a3da67ce75aeb65d61fb80}{\index{cv\-::\-Stitcher@{cv\-::\-Stitcher}!estimate\-Transform@{estimate\-Transform}}
+\index{estimate\-Transform@{estimate\-Transform}!cv::Stitcher@{cv\-::\-Stitcher}}
+\subsubsection[{estimate\-Transform}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Status} cv\-::\-Stitcher\-::estimate\-Transform (
+\begin{DoxyParamCaption}
+\item[{Input\-Array}]{images, }
+\item[{const std\-::vector$<$ std\-::vector$<$ Rect $>$ $>$ \&}]{rois}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1Stitcher_a423f7e1163a3da67ce75aeb65d61fb80}
+\hypertarget{classcv_1_1Stitcher_afc646488ee47f87c743d3ab1e3832b48}{\index{cv\-::\-Stitcher@{cv\-::\-Stitcher}!exposure\-Compensator@{exposure\-Compensator}}
+\index{exposure\-Compensator@{exposure\-Compensator}!cv::Stitcher@{cv\-::\-Stitcher}}
+\subsubsection[{exposure\-Compensator}]{\setlength{\rightskip}{0pt plus 5cm}Ptr$<${\bf detail\-::\-Exposure\-Compensator}$>$ cv\-::\-Stitcher\-::exposure\-Compensator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1Stitcher_afc646488ee47f87c743d3ab1e3832b48}
+\hypertarget{classcv_1_1Stitcher_ae1d8bda643525b188790489ccee8eccd}{\index{cv\-::\-Stitcher@{cv\-::\-Stitcher}!exposure\-Compensator@{exposure\-Compensator}}
+\index{exposure\-Compensator@{exposure\-Compensator}!cv::Stitcher@{cv\-::\-Stitcher}}
+\subsubsection[{exposure\-Compensator}]{\setlength{\rightskip}{0pt plus 5cm}const Ptr$<${\bf detail\-::\-Exposure\-Compensator}$>$ cv\-::\-Stitcher\-::exposure\-Compensator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1Stitcher_ae1d8bda643525b188790489ccee8eccd}
+\hypertarget{classcv_1_1Stitcher_aa724ae80a2962ead6b1c3e5a8eaa0c07}{\index{cv\-::\-Stitcher@{cv\-::\-Stitcher}!features\-Finder@{features\-Finder}}
+\index{features\-Finder@{features\-Finder}!cv::Stitcher@{cv\-::\-Stitcher}}
+\subsubsection[{features\-Finder}]{\setlength{\rightskip}{0pt plus 5cm}Ptr$<${\bf detail\-::\-Features\-Finder}$>$ cv\-::\-Stitcher\-::features\-Finder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1Stitcher_aa724ae80a2962ead6b1c3e5a8eaa0c07}
+\hypertarget{classcv_1_1Stitcher_a2daf0589703d125d3e2836f532c5b5bb}{\index{cv\-::\-Stitcher@{cv\-::\-Stitcher}!features\-Finder@{features\-Finder}}
+\index{features\-Finder@{features\-Finder}!cv::Stitcher@{cv\-::\-Stitcher}}
+\subsubsection[{features\-Finder}]{\setlength{\rightskip}{0pt plus 5cm}const Ptr$<${\bf detail\-::\-Features\-Finder}$>$ cv\-::\-Stitcher\-::features\-Finder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1Stitcher_a2daf0589703d125d3e2836f532c5b5bb}
+\hypertarget{classcv_1_1Stitcher_a426a576f1e2c12d9d5437a86625564c0}{\index{cv\-::\-Stitcher@{cv\-::\-Stitcher}!features\-Matcher@{features\-Matcher}}
+\index{features\-Matcher@{features\-Matcher}!cv::Stitcher@{cv\-::\-Stitcher}}
+\subsubsection[{features\-Matcher}]{\setlength{\rightskip}{0pt plus 5cm}Ptr$<${\bf detail\-::\-Features\-Matcher}$>$ cv\-::\-Stitcher\-::features\-Matcher (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1Stitcher_a426a576f1e2c12d9d5437a86625564c0}
+\hypertarget{classcv_1_1Stitcher_a376ec137ac871e80a3de108736c80f70}{\index{cv\-::\-Stitcher@{cv\-::\-Stitcher}!features\-Matcher@{features\-Matcher}}
+\index{features\-Matcher@{features\-Matcher}!cv::Stitcher@{cv\-::\-Stitcher}}
+\subsubsection[{features\-Matcher}]{\setlength{\rightskip}{0pt plus 5cm}const Ptr$<${\bf detail\-::\-Features\-Matcher}$>$ cv\-::\-Stitcher\-::features\-Matcher (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1Stitcher_a376ec137ac871e80a3de108736c80f70}
+\hypertarget{classcv_1_1Stitcher_a21953347e8a9844d8e44f68c6d0d7ac0}{\index{cv\-::\-Stitcher@{cv\-::\-Stitcher}!matching\-Mask@{matching\-Mask}}
+\index{matching\-Mask@{matching\-Mask}!cv::Stitcher@{cv\-::\-Stitcher}}
+\subsubsection[{matching\-Mask}]{\setlength{\rightskip}{0pt plus 5cm}const cv\-::\-Mat\& cv\-::\-Stitcher\-::matching\-Mask (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1Stitcher_a21953347e8a9844d8e44f68c6d0d7ac0}
+\hypertarget{classcv_1_1Stitcher_ab6ec8350126054a7538b262729abf53c}{\index{cv\-::\-Stitcher@{cv\-::\-Stitcher}!pano\-Confidence\-Thresh@{pano\-Confidence\-Thresh}}
+\index{pano\-Confidence\-Thresh@{pano\-Confidence\-Thresh}!cv::Stitcher@{cv\-::\-Stitcher}}
+\subsubsection[{pano\-Confidence\-Thresh}]{\setlength{\rightskip}{0pt plus 5cm}double cv\-::\-Stitcher\-::pano\-Confidence\-Thresh (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1Stitcher_ab6ec8350126054a7538b262729abf53c}
+\hypertarget{classcv_1_1Stitcher_a8aaec9b43e082f501a6792f7d398e79b}{\index{cv\-::\-Stitcher@{cv\-::\-Stitcher}!registration\-Resol@{registration\-Resol}}
+\index{registration\-Resol@{registration\-Resol}!cv::Stitcher@{cv\-::\-Stitcher}}
+\subsubsection[{registration\-Resol}]{\setlength{\rightskip}{0pt plus 5cm}double cv\-::\-Stitcher\-::registration\-Resol (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1Stitcher_a8aaec9b43e082f501a6792f7d398e79b}
+\hypertarget{classcv_1_1Stitcher_a970adf4ead7a77584c01425b26361d80}{\index{cv\-::\-Stitcher@{cv\-::\-Stitcher}!seam\-Estimation\-Resol@{seam\-Estimation\-Resol}}
+\index{seam\-Estimation\-Resol@{seam\-Estimation\-Resol}!cv::Stitcher@{cv\-::\-Stitcher}}
+\subsubsection[{seam\-Estimation\-Resol}]{\setlength{\rightskip}{0pt plus 5cm}double cv\-::\-Stitcher\-::seam\-Estimation\-Resol (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1Stitcher_a970adf4ead7a77584c01425b26361d80}
+\hypertarget{classcv_1_1Stitcher_a380c7c920f59047f2b25de7dc86f563d}{\index{cv\-::\-Stitcher@{cv\-::\-Stitcher}!seam\-Finder@{seam\-Finder}}
+\index{seam\-Finder@{seam\-Finder}!cv::Stitcher@{cv\-::\-Stitcher}}
+\subsubsection[{seam\-Finder}]{\setlength{\rightskip}{0pt plus 5cm}Ptr$<${\bf detail\-::\-Seam\-Finder}$>$ cv\-::\-Stitcher\-::seam\-Finder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1Stitcher_a380c7c920f59047f2b25de7dc86f563d}
+\hypertarget{classcv_1_1Stitcher_ad28bbd4227cec95b428fa795ef71c670}{\index{cv\-::\-Stitcher@{cv\-::\-Stitcher}!seam\-Finder@{seam\-Finder}}
+\index{seam\-Finder@{seam\-Finder}!cv::Stitcher@{cv\-::\-Stitcher}}
+\subsubsection[{seam\-Finder}]{\setlength{\rightskip}{0pt plus 5cm}const Ptr$<${\bf detail\-::\-Seam\-Finder}$>$ cv\-::\-Stitcher\-::seam\-Finder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1Stitcher_ad28bbd4227cec95b428fa795ef71c670}
+\hypertarget{classcv_1_1Stitcher_a79651cf9e4b87cb6af26caa0535b9baa}{\index{cv\-::\-Stitcher@{cv\-::\-Stitcher}!set\-Blender@{set\-Blender}}
+\index{set\-Blender@{set\-Blender}!cv::Stitcher@{cv\-::\-Stitcher}}
+\subsubsection[{set\-Blender}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::\-Stitcher\-::set\-Blender (
+\begin{DoxyParamCaption}
+\item[{Ptr$<$ {\bf detail\-::\-Blender} $>$}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1Stitcher_a79651cf9e4b87cb6af26caa0535b9baa}
+\hypertarget{classcv_1_1Stitcher_aa3060cbd7d492a53052754439e830d40}{\index{cv\-::\-Stitcher@{cv\-::\-Stitcher}!set\-Bundle\-Adjuster@{set\-Bundle\-Adjuster}}
+\index{set\-Bundle\-Adjuster@{set\-Bundle\-Adjuster}!cv::Stitcher@{cv\-::\-Stitcher}}
+\subsubsection[{set\-Bundle\-Adjuster}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::\-Stitcher\-::set\-Bundle\-Adjuster (
+\begin{DoxyParamCaption}
+\item[{Ptr$<$ {\bf detail\-::\-Bundle\-Adjuster\-Base} $>$}]{bundle\-\_\-adjuster}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1Stitcher_aa3060cbd7d492a53052754439e830d40}
+\hypertarget{classcv_1_1Stitcher_afe927e80fcb2ca2061630ddd98eebba8}{\index{cv\-::\-Stitcher@{cv\-::\-Stitcher}!set\-Compositing\-Resol@{set\-Compositing\-Resol}}
+\index{set\-Compositing\-Resol@{set\-Compositing\-Resol}!cv::Stitcher@{cv\-::\-Stitcher}}
+\subsubsection[{set\-Compositing\-Resol}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::\-Stitcher\-::set\-Compositing\-Resol (
+\begin{DoxyParamCaption}
+\item[{double}]{resol\-\_\-mpx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1Stitcher_afe927e80fcb2ca2061630ddd98eebba8}
+\hypertarget{classcv_1_1Stitcher_a487373f15a54192e6a85ce6b04151d91}{\index{cv\-::\-Stitcher@{cv\-::\-Stitcher}!set\-Exposure\-Compensator@{set\-Exposure\-Compensator}}
+\index{set\-Exposure\-Compensator@{set\-Exposure\-Compensator}!cv::Stitcher@{cv\-::\-Stitcher}}
+\subsubsection[{set\-Exposure\-Compensator}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::\-Stitcher\-::set\-Exposure\-Compensator (
+\begin{DoxyParamCaption}
+\item[{Ptr$<$ {\bf detail\-::\-Exposure\-Compensator} $>$}]{exposure\-\_\-comp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1Stitcher_a487373f15a54192e6a85ce6b04151d91}
+\hypertarget{classcv_1_1Stitcher_ae7cd5967c7a89cb743b07e9eac8a7ae5}{\index{cv\-::\-Stitcher@{cv\-::\-Stitcher}!set\-Features\-Finder@{set\-Features\-Finder}}
+\index{set\-Features\-Finder@{set\-Features\-Finder}!cv::Stitcher@{cv\-::\-Stitcher}}
+\subsubsection[{set\-Features\-Finder}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::\-Stitcher\-::set\-Features\-Finder (
+\begin{DoxyParamCaption}
+\item[{Ptr$<$ {\bf detail\-::\-Features\-Finder} $>$}]{features\-\_\-finder}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1Stitcher_ae7cd5967c7a89cb743b07e9eac8a7ae5}
+\hypertarget{classcv_1_1Stitcher_ada7fb8b0e696bfe3104f73d07ab0b5c4}{\index{cv\-::\-Stitcher@{cv\-::\-Stitcher}!set\-Features\-Matcher@{set\-Features\-Matcher}}
+\index{set\-Features\-Matcher@{set\-Features\-Matcher}!cv::Stitcher@{cv\-::\-Stitcher}}
+\subsubsection[{set\-Features\-Matcher}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::\-Stitcher\-::set\-Features\-Matcher (
+\begin{DoxyParamCaption}
+\item[{Ptr$<$ {\bf detail\-::\-Features\-Matcher} $>$}]{features\-\_\-matcher}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1Stitcher_ada7fb8b0e696bfe3104f73d07ab0b5c4}
+\hypertarget{classcv_1_1Stitcher_a5a7d92f2dd21710134fbe09a4e9cf8ff}{\index{cv\-::\-Stitcher@{cv\-::\-Stitcher}!set\-Matching\-Mask@{set\-Matching\-Mask}}
+\index{set\-Matching\-Mask@{set\-Matching\-Mask}!cv::Stitcher@{cv\-::\-Stitcher}}
+\subsubsection[{set\-Matching\-Mask}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::\-Stitcher\-::set\-Matching\-Mask (
+\begin{DoxyParamCaption}
+\item[{const cv\-::\-Mat \&}]{mask}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1Stitcher_a5a7d92f2dd21710134fbe09a4e9cf8ff}
+\hypertarget{classcv_1_1Stitcher_a6f5e62bc1dd5d7bdb5f9313a2c21c558}{\index{cv\-::\-Stitcher@{cv\-::\-Stitcher}!set\-Pano\-Confidence\-Thresh@{set\-Pano\-Confidence\-Thresh}}
+\index{set\-Pano\-Confidence\-Thresh@{set\-Pano\-Confidence\-Thresh}!cv::Stitcher@{cv\-::\-Stitcher}}
+\subsubsection[{set\-Pano\-Confidence\-Thresh}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::\-Stitcher\-::set\-Pano\-Confidence\-Thresh (
+\begin{DoxyParamCaption}
+\item[{double}]{conf\-\_\-thresh}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1Stitcher_a6f5e62bc1dd5d7bdb5f9313a2c21c558}
+\hypertarget{classcv_1_1Stitcher_a9912fe8c095b8385267908e5ef707439}{\index{cv\-::\-Stitcher@{cv\-::\-Stitcher}!set\-Registration\-Resol@{set\-Registration\-Resol}}
+\index{set\-Registration\-Resol@{set\-Registration\-Resol}!cv::Stitcher@{cv\-::\-Stitcher}}
+\subsubsection[{set\-Registration\-Resol}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::\-Stitcher\-::set\-Registration\-Resol (
+\begin{DoxyParamCaption}
+\item[{double}]{resol\-\_\-mpx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1Stitcher_a9912fe8c095b8385267908e5ef707439}
+\hypertarget{classcv_1_1Stitcher_ad0fcef52b2fedda1dbb90ea780cd7979}{\index{cv\-::\-Stitcher@{cv\-::\-Stitcher}!set\-Seam\-Estimation\-Resol@{set\-Seam\-Estimation\-Resol}}
+\index{set\-Seam\-Estimation\-Resol@{set\-Seam\-Estimation\-Resol}!cv::Stitcher@{cv\-::\-Stitcher}}
+\subsubsection[{set\-Seam\-Estimation\-Resol}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::\-Stitcher\-::set\-Seam\-Estimation\-Resol (
+\begin{DoxyParamCaption}
+\item[{double}]{resol\-\_\-mpx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1Stitcher_ad0fcef52b2fedda1dbb90ea780cd7979}
+\hypertarget{classcv_1_1Stitcher_ad813cf8a3493fa6fe53343f3f5a1da81}{\index{cv\-::\-Stitcher@{cv\-::\-Stitcher}!set\-Seam\-Finder@{set\-Seam\-Finder}}
+\index{set\-Seam\-Finder@{set\-Seam\-Finder}!cv::Stitcher@{cv\-::\-Stitcher}}
+\subsubsection[{set\-Seam\-Finder}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::\-Stitcher\-::set\-Seam\-Finder (
+\begin{DoxyParamCaption}
+\item[{Ptr$<$ {\bf detail\-::\-Seam\-Finder} $>$}]{seam\-\_\-finder}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1Stitcher_ad813cf8a3493fa6fe53343f3f5a1da81}
+\hypertarget{classcv_1_1Stitcher_adb1219c1caae710736a5a5e6b13ad21b}{\index{cv\-::\-Stitcher@{cv\-::\-Stitcher}!set\-Warper@{set\-Warper}}
+\index{set\-Warper@{set\-Warper}!cv::Stitcher@{cv\-::\-Stitcher}}
+\subsubsection[{set\-Warper}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::\-Stitcher\-::set\-Warper (
+\begin{DoxyParamCaption}
+\item[{Ptr$<$ {\bf Warper\-Creator} $>$}]{creator}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1Stitcher_adb1219c1caae710736a5a5e6b13ad21b}
+\hypertarget{classcv_1_1Stitcher_a968a2f4a1faddfdacbcfce54b44bab70}{\index{cv\-::\-Stitcher@{cv\-::\-Stitcher}!set\-Wave\-Correction@{set\-Wave\-Correction}}
+\index{set\-Wave\-Correction@{set\-Wave\-Correction}!cv::Stitcher@{cv\-::\-Stitcher}}
+\subsubsection[{set\-Wave\-Correction}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::\-Stitcher\-::set\-Wave\-Correction (
+\begin{DoxyParamCaption}
+\item[{bool}]{flag}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1Stitcher_a968a2f4a1faddfdacbcfce54b44bab70}
+\hypertarget{classcv_1_1Stitcher_a17413f5c06e4e569bfd45e01d4e8ff4a}{\index{cv\-::\-Stitcher@{cv\-::\-Stitcher}!set\-Wave\-Correct\-Kind@{set\-Wave\-Correct\-Kind}}
+\index{set\-Wave\-Correct\-Kind@{set\-Wave\-Correct\-Kind}!cv::Stitcher@{cv\-::\-Stitcher}}
+\subsubsection[{set\-Wave\-Correct\-Kind}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::\-Stitcher\-::set\-Wave\-Correct\-Kind (
+\begin{DoxyParamCaption}
+\item[{{\bf detail\-::\-Wave\-Correct\-Kind}}]{kind}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1Stitcher_a17413f5c06e4e569bfd45e01d4e8ff4a}
+\hypertarget{classcv_1_1Stitcher_af83fb6a8a322b00e8a0e449cbf20c825}{\index{cv\-::\-Stitcher@{cv\-::\-Stitcher}!stitch@{stitch}}
+\index{stitch@{stitch}!cv::Stitcher@{cv\-::\-Stitcher}}
+\subsubsection[{stitch}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Status} cv\-::\-Stitcher\-::stitch (
+\begin{DoxyParamCaption}
+\item[{Input\-Array}]{images, }
+\item[{Output\-Array}]{pano}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1Stitcher_af83fb6a8a322b00e8a0e449cbf20c825}
+\hypertarget{classcv_1_1Stitcher_ac5185e4a70c44944ef4f806de0d1abb1}{\index{cv\-::\-Stitcher@{cv\-::\-Stitcher}!stitch@{stitch}}
+\index{stitch@{stitch}!cv::Stitcher@{cv\-::\-Stitcher}}
+\subsubsection[{stitch}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Status} cv\-::\-Stitcher\-::stitch (
+\begin{DoxyParamCaption}
+\item[{Input\-Array}]{images, }
+\item[{const std\-::vector$<$ std\-::vector$<$ Rect $>$ $>$ \&}]{rois, }
+\item[{Output\-Array}]{pano}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1Stitcher_ac5185e4a70c44944ef4f806de0d1abb1}
+\hypertarget{classcv_1_1Stitcher_ab99a767d1d40f8ae1e739c8793278e57}{\index{cv\-::\-Stitcher@{cv\-::\-Stitcher}!warper@{warper}}
+\index{warper@{warper}!cv::Stitcher@{cv\-::\-Stitcher}}
+\subsubsection[{warper}]{\setlength{\rightskip}{0pt plus 5cm}Ptr$<${\bf Warper\-Creator}$>$ cv\-::\-Stitcher\-::warper (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1Stitcher_ab99a767d1d40f8ae1e739c8793278e57}
+\hypertarget{classcv_1_1Stitcher_ae0f2ade800a54e00a27624c782b05e6d}{\index{cv\-::\-Stitcher@{cv\-::\-Stitcher}!warper@{warper}}
+\index{warper@{warper}!cv::Stitcher@{cv\-::\-Stitcher}}
+\subsubsection[{warper}]{\setlength{\rightskip}{0pt plus 5cm}const Ptr$<${\bf Warper\-Creator}$>$ cv\-::\-Stitcher\-::warper (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1Stitcher_ae0f2ade800a54e00a27624c782b05e6d}
+\hypertarget{classcv_1_1Stitcher_ae07a9623cbeb9910f7e02191c8d0142c}{\index{cv\-::\-Stitcher@{cv\-::\-Stitcher}!wave\-Correction@{wave\-Correction}}
+\index{wave\-Correction@{wave\-Correction}!cv::Stitcher@{cv\-::\-Stitcher}}
+\subsubsection[{wave\-Correction}]{\setlength{\rightskip}{0pt plus 5cm}bool cv\-::\-Stitcher\-::wave\-Correction (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1Stitcher_ae07a9623cbeb9910f7e02191c8d0142c}
+\hypertarget{classcv_1_1Stitcher_acedf2cda0ea84ddca2342ad82129499c}{\index{cv\-::\-Stitcher@{cv\-::\-Stitcher}!wave\-Correct\-Kind@{wave\-Correct\-Kind}}
+\index{wave\-Correct\-Kind@{wave\-Correct\-Kind}!cv::Stitcher@{cv\-::\-Stitcher}}
+\subsubsection[{wave\-Correct\-Kind}]{\setlength{\rightskip}{0pt plus 5cm}{\bf detail\-::\-Wave\-Correct\-Kind} cv\-::\-Stitcher\-::wave\-Correct\-Kind (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1Stitcher_acedf2cda0ea84ddca2342ad82129499c}
+\hypertarget{classcv_1_1Stitcher_a09ef85d558424aecec670e2977e17c0b}{\index{cv\-::\-Stitcher@{cv\-::\-Stitcher}!work\-Scale@{work\-Scale}}
+\index{work\-Scale@{work\-Scale}!cv::Stitcher@{cv\-::\-Stitcher}}
+\subsubsection[{work\-Scale}]{\setlength{\rightskip}{0pt plus 5cm}double cv\-::\-Stitcher\-::work\-Scale (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1Stitcher_a09ef85d558424aecec670e2977e17c0b}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/stitching/\hyperlink{stitcher_8hpp}{stitcher.\-hpp}\end{DoxyCompactItemize}

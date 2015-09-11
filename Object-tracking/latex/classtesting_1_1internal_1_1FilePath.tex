@@ -1,0 +1,237 @@
+\hypertarget{classtesting_1_1internal_1_1FilePath}{\section{testing\-:\-:internal\-:\-:File\-Path Class Reference}
+\label{classtesting_1_1internal_1_1FilePath}\index{testing\-::internal\-::\-File\-Path@{testing\-::internal\-::\-File\-Path}}
+}
+
+
+{\ttfamily \#include $<$ts\-\_\-gtest.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtesting_1_1internal_1_1FilePath_a3504a51accbca78a52fe586133ea5499}{File\-Path} ()
+\item 
+\hyperlink{classtesting_1_1internal_1_1FilePath_ae9efd0fee56c6e3e2d659b464250b112}{File\-Path} (const \hyperlink{classtesting_1_1internal_1_1FilePath}{File\-Path} \&rhs)
+\item 
+\hyperlink{classtesting_1_1internal_1_1FilePath_a9fc072b140aa0652a7022fb809fe3abe}{File\-Path} (const std\-::string \&pathname)
+\item 
+\hyperlink{classtesting_1_1internal_1_1FilePath}{File\-Path} \& \hyperlink{classtesting_1_1internal_1_1FilePath_a8d9c1bafb90f10bcd5611a54d8f326ef}{operator=} (const \hyperlink{classtesting_1_1internal_1_1FilePath}{File\-Path} \&rhs)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classtesting_1_1internal_1_1FilePath_a15a42de7518e89254e0640dd9317d5f7}{Set} (const \hyperlink{classtesting_1_1internal_1_1FilePath}{File\-Path} \&rhs)
+\item 
+const std\-::string \& \hyperlink{classtesting_1_1internal_1_1FilePath_a7c544a30af67e2da5ce7e625f8402818}{string} () const 
+\item 
+const char $\ast$ \hyperlink{classtesting_1_1internal_1_1FilePath_a85297234dac0acd936632dff8634c2b9}{c\-\_\-str} () const 
+\item 
+bool \hyperlink{classtesting_1_1internal_1_1FilePath_a44543ff34ae757038ab20925659b447a}{Is\-Empty} () const 
+\item 
+\hyperlink{classtesting_1_1internal_1_1FilePath}{File\-Path} \hyperlink{classtesting_1_1internal_1_1FilePath_a952e1b2a9909cdeaf25de5fcdf069b3a}{Remove\-Trailing\-Path\-Separator} () const 
+\item 
+\hyperlink{classtesting_1_1internal_1_1FilePath}{File\-Path} \hyperlink{classtesting_1_1internal_1_1FilePath_a2852e5a759ff2e2620c7317b8121d757}{Remove\-Directory\-Name} () const 
+\item 
+\hyperlink{classtesting_1_1internal_1_1FilePath}{File\-Path} \hyperlink{classtesting_1_1internal_1_1FilePath_aed3abcd0b8a7f6ed1ff0e7743ef8bf1e}{Remove\-File\-Name} () const 
+\item 
+\hyperlink{classtesting_1_1internal_1_1FilePath}{File\-Path} \hyperlink{classtesting_1_1internal_1_1FilePath_ab2a25cc916c111597b94d006aa973c3d}{Remove\-Extension} (const char $\ast$extension) const 
+\item 
+bool \hyperlink{classtesting_1_1internal_1_1FilePath_afccf35a45e209c22e68c6f8e86036c12}{Create\-Directories\-Recursively} () const 
+\item 
+bool \hyperlink{classtesting_1_1internal_1_1FilePath_a303cdda61bee6e8a0b0303e8fc857e36}{Create\-Folder} () const 
+\item 
+bool \hyperlink{classtesting_1_1internal_1_1FilePath_a3548d3ead0e94701669afc64d765ece7}{File\-Or\-Directory\-Exists} () const 
+\item 
+bool \hyperlink{classtesting_1_1internal_1_1FilePath_a3546b3f926935fefddb9a808e7e2be47}{Directory\-Exists} () const 
+\item 
+bool \hyperlink{classtesting_1_1internal_1_1FilePath_a918336f16efa8e07d4b94192d6a89f44}{Is\-Directory} () const 
+\item 
+bool \hyperlink{classtesting_1_1internal_1_1FilePath_a7d31c82f3f979c54e5a985382b52feb1}{Is\-Root\-Directory} () const 
+\item 
+bool \hyperlink{classtesting_1_1internal_1_1FilePath_a720a5f0fd00f3e98d6f3518f4dadfff5}{Is\-Absolute\-Path} () const 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classtesting_1_1internal_1_1FilePath}{File\-Path} \hyperlink{classtesting_1_1internal_1_1FilePath_a0f7b48e493656679cb82a2b679620c4e}{Get\-Current\-Dir} ()
+\item 
+static \hyperlink{classtesting_1_1internal_1_1FilePath}{File\-Path} \hyperlink{classtesting_1_1internal_1_1FilePath_a1e7793eaae21c6629afe8be11064b111}{Make\-File\-Name} (const \hyperlink{classtesting_1_1internal_1_1FilePath}{File\-Path} \&directory, const \hyperlink{classtesting_1_1internal_1_1FilePath}{File\-Path} \&base\-\_\-name, int \hyperlink{imgproc__c_8h_a7106e2abc437ad981830d14176d15f09}{number}, const char $\ast$extension)
+\item 
+static \hyperlink{classtesting_1_1internal_1_1FilePath}{File\-Path} \hyperlink{classtesting_1_1internal_1_1FilePath_ad58aa6d8b160d0ba0b661f56f0980e26}{Concat\-Paths} (const \hyperlink{classtesting_1_1internal_1_1FilePath}{File\-Path} \&directory, const \hyperlink{classtesting_1_1internal_1_1FilePath}{File\-Path} \&relative\-\_\-path)
+\item 
+static \hyperlink{classtesting_1_1internal_1_1FilePath}{File\-Path} \hyperlink{classtesting_1_1internal_1_1FilePath_ab22637ea53e3918ec814dc6a5fecd1f9}{Generate\-Unique\-File\-Name} (const \hyperlink{classtesting_1_1internal_1_1FilePath}{File\-Path} \&directory, const \hyperlink{classtesting_1_1internal_1_1FilePath}{File\-Path} \&base\-\_\-name, const char $\ast$extension)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classtesting_1_1internal_1_1FilePath_a3504a51accbca78a52fe586133ea5499}{\index{testing\-::internal\-::\-File\-Path@{testing\-::internal\-::\-File\-Path}!File\-Path@{File\-Path}}
+\index{File\-Path@{File\-Path}!testing::internal::FilePath@{testing\-::internal\-::\-File\-Path}}
+\subsubsection[{File\-Path}]{\setlength{\rightskip}{0pt plus 5cm}testing\-::internal\-::\-File\-Path\-::\-File\-Path (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classtesting_1_1internal_1_1FilePath_a3504a51accbca78a52fe586133ea5499}
+\hypertarget{classtesting_1_1internal_1_1FilePath_ae9efd0fee56c6e3e2d659b464250b112}{\index{testing\-::internal\-::\-File\-Path@{testing\-::internal\-::\-File\-Path}!File\-Path@{File\-Path}}
+\index{File\-Path@{File\-Path}!testing::internal::FilePath@{testing\-::internal\-::\-File\-Path}}
+\subsubsection[{File\-Path}]{\setlength{\rightskip}{0pt plus 5cm}testing\-::internal\-::\-File\-Path\-::\-File\-Path (
+\begin{DoxyParamCaption}
+\item[{const {\bf File\-Path} \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classtesting_1_1internal_1_1FilePath_ae9efd0fee56c6e3e2d659b464250b112}
+\hypertarget{classtesting_1_1internal_1_1FilePath_a9fc072b140aa0652a7022fb809fe3abe}{\index{testing\-::internal\-::\-File\-Path@{testing\-::internal\-::\-File\-Path}!File\-Path@{File\-Path}}
+\index{File\-Path@{File\-Path}!testing::internal::FilePath@{testing\-::internal\-::\-File\-Path}}
+\subsubsection[{File\-Path}]{\setlength{\rightskip}{0pt plus 5cm}testing\-::internal\-::\-File\-Path\-::\-File\-Path (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{pathname}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classtesting_1_1internal_1_1FilePath_a9fc072b140aa0652a7022fb809fe3abe}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classtesting_1_1internal_1_1FilePath_a85297234dac0acd936632dff8634c2b9}{\index{testing\-::internal\-::\-File\-Path@{testing\-::internal\-::\-File\-Path}!c\-\_\-str@{c\-\_\-str}}
+\index{c\-\_\-str@{c\-\_\-str}!testing::internal::FilePath@{testing\-::internal\-::\-File\-Path}}
+\subsubsection[{c\-\_\-str}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ testing\-::internal\-::\-File\-Path\-::c\-\_\-str (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classtesting_1_1internal_1_1FilePath_a85297234dac0acd936632dff8634c2b9}
+\hypertarget{classtesting_1_1internal_1_1FilePath_ad58aa6d8b160d0ba0b661f56f0980e26}{\index{testing\-::internal\-::\-File\-Path@{testing\-::internal\-::\-File\-Path}!Concat\-Paths@{Concat\-Paths}}
+\index{Concat\-Paths@{Concat\-Paths}!testing::internal::FilePath@{testing\-::internal\-::\-File\-Path}}
+\subsubsection[{Concat\-Paths}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf File\-Path} testing\-::internal\-::\-File\-Path\-::\-Concat\-Paths (
+\begin{DoxyParamCaption}
+\item[{const {\bf File\-Path} \&}]{directory, }
+\item[{const {\bf File\-Path} \&}]{relative\-\_\-path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classtesting_1_1internal_1_1FilePath_ad58aa6d8b160d0ba0b661f56f0980e26}
+\hypertarget{classtesting_1_1internal_1_1FilePath_afccf35a45e209c22e68c6f8e86036c12}{\index{testing\-::internal\-::\-File\-Path@{testing\-::internal\-::\-File\-Path}!Create\-Directories\-Recursively@{Create\-Directories\-Recursively}}
+\index{Create\-Directories\-Recursively@{Create\-Directories\-Recursively}!testing::internal::FilePath@{testing\-::internal\-::\-File\-Path}}
+\subsubsection[{Create\-Directories\-Recursively}]{\setlength{\rightskip}{0pt plus 5cm}bool testing\-::internal\-::\-File\-Path\-::\-Create\-Directories\-Recursively (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classtesting_1_1internal_1_1FilePath_afccf35a45e209c22e68c6f8e86036c12}
+\hypertarget{classtesting_1_1internal_1_1FilePath_a303cdda61bee6e8a0b0303e8fc857e36}{\index{testing\-::internal\-::\-File\-Path@{testing\-::internal\-::\-File\-Path}!Create\-Folder@{Create\-Folder}}
+\index{Create\-Folder@{Create\-Folder}!testing::internal::FilePath@{testing\-::internal\-::\-File\-Path}}
+\subsubsection[{Create\-Folder}]{\setlength{\rightskip}{0pt plus 5cm}bool testing\-::internal\-::\-File\-Path\-::\-Create\-Folder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classtesting_1_1internal_1_1FilePath_a303cdda61bee6e8a0b0303e8fc857e36}
+\hypertarget{classtesting_1_1internal_1_1FilePath_a3546b3f926935fefddb9a808e7e2be47}{\index{testing\-::internal\-::\-File\-Path@{testing\-::internal\-::\-File\-Path}!Directory\-Exists@{Directory\-Exists}}
+\index{Directory\-Exists@{Directory\-Exists}!testing::internal::FilePath@{testing\-::internal\-::\-File\-Path}}
+\subsubsection[{Directory\-Exists}]{\setlength{\rightskip}{0pt plus 5cm}bool testing\-::internal\-::\-File\-Path\-::\-Directory\-Exists (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classtesting_1_1internal_1_1FilePath_a3546b3f926935fefddb9a808e7e2be47}
+\hypertarget{classtesting_1_1internal_1_1FilePath_a3548d3ead0e94701669afc64d765ece7}{\index{testing\-::internal\-::\-File\-Path@{testing\-::internal\-::\-File\-Path}!File\-Or\-Directory\-Exists@{File\-Or\-Directory\-Exists}}
+\index{File\-Or\-Directory\-Exists@{File\-Or\-Directory\-Exists}!testing::internal::FilePath@{testing\-::internal\-::\-File\-Path}}
+\subsubsection[{File\-Or\-Directory\-Exists}]{\setlength{\rightskip}{0pt plus 5cm}bool testing\-::internal\-::\-File\-Path\-::\-File\-Or\-Directory\-Exists (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classtesting_1_1internal_1_1FilePath_a3548d3ead0e94701669afc64d765ece7}
+\hypertarget{classtesting_1_1internal_1_1FilePath_ab22637ea53e3918ec814dc6a5fecd1f9}{\index{testing\-::internal\-::\-File\-Path@{testing\-::internal\-::\-File\-Path}!Generate\-Unique\-File\-Name@{Generate\-Unique\-File\-Name}}
+\index{Generate\-Unique\-File\-Name@{Generate\-Unique\-File\-Name}!testing::internal::FilePath@{testing\-::internal\-::\-File\-Path}}
+\subsubsection[{Generate\-Unique\-File\-Name}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf File\-Path} testing\-::internal\-::\-File\-Path\-::\-Generate\-Unique\-File\-Name (
+\begin{DoxyParamCaption}
+\item[{const {\bf File\-Path} \&}]{directory, }
+\item[{const {\bf File\-Path} \&}]{base\-\_\-name, }
+\item[{const char $\ast$}]{extension}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classtesting_1_1internal_1_1FilePath_ab22637ea53e3918ec814dc6a5fecd1f9}
+\hypertarget{classtesting_1_1internal_1_1FilePath_a0f7b48e493656679cb82a2b679620c4e}{\index{testing\-::internal\-::\-File\-Path@{testing\-::internal\-::\-File\-Path}!Get\-Current\-Dir@{Get\-Current\-Dir}}
+\index{Get\-Current\-Dir@{Get\-Current\-Dir}!testing::internal::FilePath@{testing\-::internal\-::\-File\-Path}}
+\subsubsection[{Get\-Current\-Dir}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf File\-Path} testing\-::internal\-::\-File\-Path\-::\-Get\-Current\-Dir (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classtesting_1_1internal_1_1FilePath_a0f7b48e493656679cb82a2b679620c4e}
+\hypertarget{classtesting_1_1internal_1_1FilePath_a720a5f0fd00f3e98d6f3518f4dadfff5}{\index{testing\-::internal\-::\-File\-Path@{testing\-::internal\-::\-File\-Path}!Is\-Absolute\-Path@{Is\-Absolute\-Path}}
+\index{Is\-Absolute\-Path@{Is\-Absolute\-Path}!testing::internal::FilePath@{testing\-::internal\-::\-File\-Path}}
+\subsubsection[{Is\-Absolute\-Path}]{\setlength{\rightskip}{0pt plus 5cm}bool testing\-::internal\-::\-File\-Path\-::\-Is\-Absolute\-Path (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classtesting_1_1internal_1_1FilePath_a720a5f0fd00f3e98d6f3518f4dadfff5}
+\hypertarget{classtesting_1_1internal_1_1FilePath_a918336f16efa8e07d4b94192d6a89f44}{\index{testing\-::internal\-::\-File\-Path@{testing\-::internal\-::\-File\-Path}!Is\-Directory@{Is\-Directory}}
+\index{Is\-Directory@{Is\-Directory}!testing::internal::FilePath@{testing\-::internal\-::\-File\-Path}}
+\subsubsection[{Is\-Directory}]{\setlength{\rightskip}{0pt plus 5cm}bool testing\-::internal\-::\-File\-Path\-::\-Is\-Directory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classtesting_1_1internal_1_1FilePath_a918336f16efa8e07d4b94192d6a89f44}
+\hypertarget{classtesting_1_1internal_1_1FilePath_a44543ff34ae757038ab20925659b447a}{\index{testing\-::internal\-::\-File\-Path@{testing\-::internal\-::\-File\-Path}!Is\-Empty@{Is\-Empty}}
+\index{Is\-Empty@{Is\-Empty}!testing::internal::FilePath@{testing\-::internal\-::\-File\-Path}}
+\subsubsection[{Is\-Empty}]{\setlength{\rightskip}{0pt plus 5cm}bool testing\-::internal\-::\-File\-Path\-::\-Is\-Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classtesting_1_1internal_1_1FilePath_a44543ff34ae757038ab20925659b447a}
+\hypertarget{classtesting_1_1internal_1_1FilePath_a7d31c82f3f979c54e5a985382b52feb1}{\index{testing\-::internal\-::\-File\-Path@{testing\-::internal\-::\-File\-Path}!Is\-Root\-Directory@{Is\-Root\-Directory}}
+\index{Is\-Root\-Directory@{Is\-Root\-Directory}!testing::internal::FilePath@{testing\-::internal\-::\-File\-Path}}
+\subsubsection[{Is\-Root\-Directory}]{\setlength{\rightskip}{0pt plus 5cm}bool testing\-::internal\-::\-File\-Path\-::\-Is\-Root\-Directory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classtesting_1_1internal_1_1FilePath_a7d31c82f3f979c54e5a985382b52feb1}
+\hypertarget{classtesting_1_1internal_1_1FilePath_a1e7793eaae21c6629afe8be11064b111}{\index{testing\-::internal\-::\-File\-Path@{testing\-::internal\-::\-File\-Path}!Make\-File\-Name@{Make\-File\-Name}}
+\index{Make\-File\-Name@{Make\-File\-Name}!testing::internal::FilePath@{testing\-::internal\-::\-File\-Path}}
+\subsubsection[{Make\-File\-Name}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf File\-Path} testing\-::internal\-::\-File\-Path\-::\-Make\-File\-Name (
+\begin{DoxyParamCaption}
+\item[{const {\bf File\-Path} \&}]{directory, }
+\item[{const {\bf File\-Path} \&}]{base\-\_\-name, }
+\item[{int}]{number, }
+\item[{const char $\ast$}]{extension}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classtesting_1_1internal_1_1FilePath_a1e7793eaae21c6629afe8be11064b111}
+\hypertarget{classtesting_1_1internal_1_1FilePath_a8d9c1bafb90f10bcd5611a54d8f326ef}{\index{testing\-::internal\-::\-File\-Path@{testing\-::internal\-::\-File\-Path}!operator=@{operator=}}
+\index{operator=@{operator=}!testing::internal::FilePath@{testing\-::internal\-::\-File\-Path}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf File\-Path}\& testing\-::internal\-::\-File\-Path\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf File\-Path} \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classtesting_1_1internal_1_1FilePath_a8d9c1bafb90f10bcd5611a54d8f326ef}
+\hypertarget{classtesting_1_1internal_1_1FilePath_a2852e5a759ff2e2620c7317b8121d757}{\index{testing\-::internal\-::\-File\-Path@{testing\-::internal\-::\-File\-Path}!Remove\-Directory\-Name@{Remove\-Directory\-Name}}
+\index{Remove\-Directory\-Name@{Remove\-Directory\-Name}!testing::internal::FilePath@{testing\-::internal\-::\-File\-Path}}
+\subsubsection[{Remove\-Directory\-Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf File\-Path} testing\-::internal\-::\-File\-Path\-::\-Remove\-Directory\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classtesting_1_1internal_1_1FilePath_a2852e5a759ff2e2620c7317b8121d757}
+\hypertarget{classtesting_1_1internal_1_1FilePath_ab2a25cc916c111597b94d006aa973c3d}{\index{testing\-::internal\-::\-File\-Path@{testing\-::internal\-::\-File\-Path}!Remove\-Extension@{Remove\-Extension}}
+\index{Remove\-Extension@{Remove\-Extension}!testing::internal::FilePath@{testing\-::internal\-::\-File\-Path}}
+\subsubsection[{Remove\-Extension}]{\setlength{\rightskip}{0pt plus 5cm}{\bf File\-Path} testing\-::internal\-::\-File\-Path\-::\-Remove\-Extension (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{extension}
+\end{DoxyParamCaption}
+) const}}\label{classtesting_1_1internal_1_1FilePath_ab2a25cc916c111597b94d006aa973c3d}
+\hypertarget{classtesting_1_1internal_1_1FilePath_aed3abcd0b8a7f6ed1ff0e7743ef8bf1e}{\index{testing\-::internal\-::\-File\-Path@{testing\-::internal\-::\-File\-Path}!Remove\-File\-Name@{Remove\-File\-Name}}
+\index{Remove\-File\-Name@{Remove\-File\-Name}!testing::internal::FilePath@{testing\-::internal\-::\-File\-Path}}
+\subsubsection[{Remove\-File\-Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf File\-Path} testing\-::internal\-::\-File\-Path\-::\-Remove\-File\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classtesting_1_1internal_1_1FilePath_aed3abcd0b8a7f6ed1ff0e7743ef8bf1e}
+\hypertarget{classtesting_1_1internal_1_1FilePath_a952e1b2a9909cdeaf25de5fcdf069b3a}{\index{testing\-::internal\-::\-File\-Path@{testing\-::internal\-::\-File\-Path}!Remove\-Trailing\-Path\-Separator@{Remove\-Trailing\-Path\-Separator}}
+\index{Remove\-Trailing\-Path\-Separator@{Remove\-Trailing\-Path\-Separator}!testing::internal::FilePath@{testing\-::internal\-::\-File\-Path}}
+\subsubsection[{Remove\-Trailing\-Path\-Separator}]{\setlength{\rightskip}{0pt plus 5cm}{\bf File\-Path} testing\-::internal\-::\-File\-Path\-::\-Remove\-Trailing\-Path\-Separator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classtesting_1_1internal_1_1FilePath_a952e1b2a9909cdeaf25de5fcdf069b3a}
+\hypertarget{classtesting_1_1internal_1_1FilePath_a15a42de7518e89254e0640dd9317d5f7}{\index{testing\-::internal\-::\-File\-Path@{testing\-::internal\-::\-File\-Path}!Set@{Set}}
+\index{Set@{Set}!testing::internal::FilePath@{testing\-::internal\-::\-File\-Path}}
+\subsubsection[{Set}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} testing\-::internal\-::\-File\-Path\-::\-Set (
+\begin{DoxyParamCaption}
+\item[{const {\bf File\-Path} \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classtesting_1_1internal_1_1FilePath_a15a42de7518e89254e0640dd9317d5f7}
+\hypertarget{classtesting_1_1internal_1_1FilePath_a7c544a30af67e2da5ce7e625f8402818}{\index{testing\-::internal\-::\-File\-Path@{testing\-::internal\-::\-File\-Path}!string@{string}}
+\index{string@{string}!testing::internal::FilePath@{testing\-::internal\-::\-File\-Path}}
+\subsubsection[{string}]{\setlength{\rightskip}{0pt plus 5cm}const std\-::string\& testing\-::internal\-::\-File\-Path\-::string (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classtesting_1_1internal_1_1FilePath_a7c544a30af67e2da5ce7e625f8402818}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/ts/\hyperlink{ts__gtest_8h}{ts\-\_\-gtest.\-h}\end{DoxyCompactItemize}

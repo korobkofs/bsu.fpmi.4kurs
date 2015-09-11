@@ -1,0 +1,93 @@
+\hypertarget{any_8h}{\section{/usr/include/opencv2/flann/any.h File Reference}
+\label{any_8h}\index{/usr/include/opencv2/flann/any.\-h@{/usr/include/opencv2/flann/any.\-h}}
+}
+{\ttfamily \#include \char`\"{}defines.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$stdexcept$>$}\\*
+{\ttfamily \#include $<$ostream$>$}\\*
+{\ttfamily \#include $<$typeinfo$>$}\\*
+Include dependency graph for any.\-h\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{any_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{any_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structcvflann_1_1anyimpl_1_1bad__any__cast}{cvflann\-::anyimpl\-::bad\-\_\-any\-\_\-cast}
+\item 
+struct \hyperlink{structcvflann_1_1anyimpl_1_1empty__any}{cvflann\-::anyimpl\-::empty\-\_\-any}
+\item 
+struct \hyperlink{structcvflann_1_1anyimpl_1_1base__any__policy}{cvflann\-::anyimpl\-::base\-\_\-any\-\_\-policy}
+\item 
+struct \hyperlink{structcvflann_1_1anyimpl_1_1typed__base__any__policy}{cvflann\-::anyimpl\-::typed\-\_\-base\-\_\-any\-\_\-policy$<$ T $>$}
+\item 
+struct \hyperlink{structcvflann_1_1anyimpl_1_1small__any__policy}{cvflann\-::anyimpl\-::small\-\_\-any\-\_\-policy$<$ T $>$}
+\item 
+struct \hyperlink{structcvflann_1_1anyimpl_1_1big__any__policy}{cvflann\-::anyimpl\-::big\-\_\-any\-\_\-policy$<$ T $>$}
+\item 
+struct \hyperlink{structcvflann_1_1anyimpl_1_1choose__policy}{cvflann\-::anyimpl\-::choose\-\_\-policy$<$ T $>$}
+\item 
+struct \hyperlink{structcvflann_1_1anyimpl_1_1choose__policy_3_01T_01_5_01_4}{cvflann\-::anyimpl\-::choose\-\_\-policy$<$ T $\ast$ $>$}
+\item 
+struct \hyperlink{structcvflann_1_1anyimpl_1_1choose__policy_3_01any_01_4}{cvflann\-::anyimpl\-::choose\-\_\-policy$<$ any $>$}
+\item 
+struct \hyperlink{structcvflann_1_1any}{cvflann\-::any}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacecvflann}{cvflann}
+\item 
+\hyperlink{namespacecvflann_1_1anyimpl}{cvflann\-::anyimpl}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{any_8h_a15619cd5252aacebdeb7d225efcf47eb}{S\-M\-A\-L\-L\-\_\-\-P\-O\-L\-I\-C\-Y}(T\-Y\-P\-E)
+\begin{DoxyCompactList}\small\item\em Specializations for small types. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\-::ostream \& \hyperlink{namespacecvflann_1_1anyimpl_a88bf4c774b82eb5e409745255261a081}{cvflann\-::anyimpl\-::operator$<$$<$} (std\-::ostream \&out, const empty\-\_\-any \&)
+\item 
+\hyperlink{namespacecvflann_1_1anyimpl_a083bd8d08ac10c70ece159dc4ed0c4d9}{cvflann\-::anyimpl\-::\-S\-M\-A\-L\-L\-\_\-\-P\-O\-L\-I\-C\-Y} (signed char)
+\item 
+\hyperlink{namespacecvflann_1_1anyimpl_a63060dfa60e90b0217b861112a97b8e8}{cvflann\-::anyimpl\-::\-S\-M\-A\-L\-L\-\_\-\-P\-O\-L\-I\-C\-Y} (unsigned char)
+\item 
+\hyperlink{namespacecvflann_1_1anyimpl_a132af5e449763a59ae3d67f464aa1d68}{cvflann\-::anyimpl\-::\-S\-M\-A\-L\-L\-\_\-\-P\-O\-L\-I\-C\-Y} (float)
+\item 
+\hyperlink{namespacecvflann_1_1anyimpl_afd8da8a8dcb50e96105d669dbf5e156e}{cvflann\-::anyimpl\-::\-S\-M\-A\-L\-L\-\_\-\-P\-O\-L\-I\-C\-Y} (bool)
+\item 
+{\footnotesize template$<$typename T $>$ }\\base\-\_\-any\-\_\-policy $\ast$ \hyperlink{namespacecvflann_1_1anyimpl_ac42b04ff58b786b31a66559120926d18}{cvflann\-::anyimpl\-::get\-\_\-policy} ()
+\begin{DoxyCompactList}\small\item\em This function will return a different policy for each type. \end{DoxyCompactList}\item 
+std\-::ostream \& \hyperlink{namespacecvflann_a76b9cb6a1aa4ae54d00b17eccd32268e}{cvflann\-::operator$<$$<$} (std\-::ostream \&out, const any \&any\-\_\-val)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{any_8h_a15619cd5252aacebdeb7d225efcf47eb}{\index{any.\-h@{any.\-h}!S\-M\-A\-L\-L\-\_\-\-P\-O\-L\-I\-C\-Y@{S\-M\-A\-L\-L\-\_\-\-P\-O\-L\-I\-C\-Y}}
+\index{S\-M\-A\-L\-L\-\_\-\-P\-O\-L\-I\-C\-Y@{S\-M\-A\-L\-L\-\_\-\-P\-O\-L\-I\-C\-Y}!any.h@{any.\-h}}
+\subsubsection[{S\-M\-A\-L\-L\-\_\-\-P\-O\-L\-I\-C\-Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-M\-A\-L\-L\-\_\-\-P\-O\-L\-I\-C\-Y(
+\begin{DoxyParamCaption}
+\item[{}]{T\-Y\-P\-E}
+\end{DoxyParamCaption}
+)}}\label{any_8h_a15619cd5252aacebdeb7d225efcf47eb}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{keyword}{template}<> \(\backslash\)
+    struct choose\_policy<TYPE> \{ \textcolor{keyword}{typedef} small\_any\_policy<TYPE> \hyperlink{core__c_8h_a8bc957583d2a5247e490ea9ce960cf21}{type}; \(\backslash\)
+    \}
+\end{DoxyCode}
+
+
+Specializations for small types. 
+

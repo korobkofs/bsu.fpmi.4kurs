@@ -1,0 +1,325 @@
+\hypertarget{classcvtest_1_1TS}{\section{cvtest\-:\-:T\-S Class Reference}
+\label{classcvtest_1_1TS}\index{cvtest\-::\-T\-S@{cvtest\-::\-T\-S}}
+}
+
+
+{\ttfamily \#include $<$ts.\-hpp$>$}
+
+
+
+Collaboration diagram for cvtest\-:\-:T\-S\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{classcvtest_1_1TS__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \\*
+\hyperlink{classcvtest_1_1TS_a4d6d5cf94c1f5e8cdaddf2a2efe1be0aa1c062280e7a59a931c4f03ee4c1b158f}{N\-U\-L} =0, 
+\hyperlink{classcvtest_1_1TS_a4d6d5cf94c1f5e8cdaddf2a2efe1be0aaaa92a9f3443f1671cb5b73269c9f073e}{S\-U\-M\-M\-A\-R\-Y\-\_\-\-I\-D\-X} =0, 
+\hyperlink{classcvtest_1_1TS_a4d6d5cf94c1f5e8cdaddf2a2efe1be0aa7176d64f3ee15d224cec1243f5c55bc0}{S\-U\-M\-M\-A\-R\-Y} =1 $<$$<$ S\-U\-M\-M\-A\-R\-Y\-\_\-\-I\-D\-X, 
+\hyperlink{classcvtest_1_1TS_a4d6d5cf94c1f5e8cdaddf2a2efe1be0aa6e04785c7ce5cfb15740a85dac48def6}{L\-O\-G\-\_\-\-I\-D\-X} =1, 
+\\*
+\hyperlink{classcvtest_1_1TS_a4d6d5cf94c1f5e8cdaddf2a2efe1be0aa870fd938e356ac596488309d1b183f18}{L\-O\-G} =1 $<$$<$ L\-O\-G\-\_\-\-I\-D\-X, 
+\hyperlink{classcvtest_1_1TS_a4d6d5cf94c1f5e8cdaddf2a2efe1be0aa683cdac73d2a3b6ccc690b34013ac58b}{C\-S\-V\-\_\-\-I\-D\-X} =2, 
+\hyperlink{classcvtest_1_1TS_a4d6d5cf94c1f5e8cdaddf2a2efe1be0aac3dca960e6d1103c9ed6339a3b1283b9}{C\-S\-V} =1 $<$$<$ C\-S\-V\-\_\-\-I\-D\-X, 
+\hyperlink{classcvtest_1_1TS_a4d6d5cf94c1f5e8cdaddf2a2efe1be0aa0fc2fe2a35006b4f6b9a3632d572b3ad}{C\-O\-N\-S\-O\-L\-E\-\_\-\-I\-D\-X} =3, 
+\\*
+\hyperlink{classcvtest_1_1TS_a4d6d5cf94c1f5e8cdaddf2a2efe1be0aa06ed0a34b57140b3610722f6bd80d0e4}{C\-O\-N\-S\-O\-L\-E} =1 $<$$<$ C\-O\-N\-S\-O\-L\-E\-\_\-\-I\-D\-X, 
+\hyperlink{classcvtest_1_1TS_a4d6d5cf94c1f5e8cdaddf2a2efe1be0aa223feca68f6657aca9967e4f4e405612}{M\-A\-X\-\_\-\-I\-D\-X} =4
+ \}
+\item 
+enum \{ \\*
+\hyperlink{classcvtest_1_1TS_aac32441593fd01cf004b7353792857dba6416c4e350f88fdee91ad82672eb3eab}{O\-K} =0, 
+\hyperlink{classcvtest_1_1TS_aac32441593fd01cf004b7353792857dba8f3b9fb25fd83e7a6aa421de3f4e8619}{F\-A\-I\-L\-\_\-\-G\-E\-N\-E\-R\-I\-C} =-\/1, 
+\hyperlink{classcvtest_1_1TS_aac32441593fd01cf004b7353792857dba6188ceee7ee9cb915e9f087e9a70ffcd}{F\-A\-I\-L\-\_\-\-M\-I\-S\-S\-I\-N\-G\-\_\-\-T\-E\-S\-T\-\_\-\-D\-A\-T\-A} =-\/2, 
+\hyperlink{classcvtest_1_1TS_aac32441593fd01cf004b7353792857dba5d0fec153196ccfbe71327c9f1874ce1}{F\-A\-I\-L\-\_\-\-E\-R\-R\-O\-R\-\_\-\-I\-N\-\_\-\-C\-A\-L\-L\-E\-D\-\_\-\-F\-U\-N\-C} =-\/3, 
+\\*
+\hyperlink{classcvtest_1_1TS_aac32441593fd01cf004b7353792857dba8848f83c82d2ed70bbf38fe3b05bc061}{F\-A\-I\-L\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N} =-\/4, 
+\hyperlink{classcvtest_1_1TS_aac32441593fd01cf004b7353792857dba642c98da1055b042b4f53e39c1080cea}{F\-A\-I\-L\-\_\-\-M\-E\-M\-O\-R\-Y\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N} =-\/5, 
+\hyperlink{classcvtest_1_1TS_aac32441593fd01cf004b7353792857dba61438707695d9e9ae79becb4046a9382}{F\-A\-I\-L\-\_\-\-A\-R\-I\-T\-H\-M\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N} =-\/6, 
+\hyperlink{classcvtest_1_1TS_aac32441593fd01cf004b7353792857dbab3bfe982b2b06bb22b52e0ebe79858ab}{F\-A\-I\-L\-\_\-\-M\-E\-M\-O\-R\-Y\-\_\-\-C\-O\-R\-R\-U\-P\-T\-I\-O\-N\-\_\-\-B\-E\-G\-I\-N} =-\/7, 
+\\*
+\hyperlink{classcvtest_1_1TS_aac32441593fd01cf004b7353792857dba79fc12ae040d38ced1f173892df3c993}{F\-A\-I\-L\-\_\-\-M\-E\-M\-O\-R\-Y\-\_\-\-C\-O\-R\-R\-U\-P\-T\-I\-O\-N\-\_\-\-E\-N\-D} =-\/8, 
+\hyperlink{classcvtest_1_1TS_aac32441593fd01cf004b7353792857dba5ecfbe8efe34dd17c6b368ad1e2de021}{F\-A\-I\-L\-\_\-\-M\-E\-M\-O\-R\-Y\-\_\-\-L\-E\-A\-K} =-\/9, 
+\hyperlink{classcvtest_1_1TS_aac32441593fd01cf004b7353792857dba93b68ef3e42b53a3576bb6c4ef4b87c0}{F\-A\-I\-L\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-O\-U\-T\-P\-U\-T} =-\/10, 
+\hyperlink{classcvtest_1_1TS_aac32441593fd01cf004b7353792857dbaab174d53559712972c1f1b39d058c179}{F\-A\-I\-L\-\_\-\-M\-I\-S\-M\-A\-T\-C\-H} =-\/11, 
+\\*
+\hyperlink{classcvtest_1_1TS_aac32441593fd01cf004b7353792857dba9ac7807767cee1e46fd957c0d0750627}{F\-A\-I\-L\-\_\-\-B\-A\-D\-\_\-\-A\-C\-C\-U\-R\-A\-C\-Y} =-\/12, 
+\hyperlink{classcvtest_1_1TS_aac32441593fd01cf004b7353792857dba86cd807e3fbcbfbec7b8ce6a2cf7f378}{F\-A\-I\-L\-\_\-\-H\-A\-N\-G} =-\/13, 
+\hyperlink{classcvtest_1_1TS_aac32441593fd01cf004b7353792857dba0f8965667588eaad8d2ce32ac172ddf8}{F\-A\-I\-L\-\_\-\-B\-A\-D\-\_\-\-A\-R\-G\-\_\-\-C\-H\-E\-C\-K} =-\/14, 
+\hyperlink{classcvtest_1_1TS_aac32441593fd01cf004b7353792857dbaeda945b1d8a1f87f43b8c4802f988e3e}{F\-A\-I\-L\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-T\-E\-S\-T\-\_\-\-D\-A\-T\-A} =-\/15, 
+\\*
+\hyperlink{classcvtest_1_1TS_aac32441593fd01cf004b7353792857dba7cc2fbe05cfffe5f9c170320439ea53d}{S\-K\-I\-P\-P\-E\-D} =1
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcvtest_1_1TS_ace108fdfb623aabd644dcb72242c1ab9}{T\-S} ()
+\item 
+virtual \hyperlink{classcvtest_1_1TS_aacfb2afc95e6810ffa8b6e79ecc94180}{$\sim$\-T\-S} ()
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcvtest_1_1TS_afd42fc157b2f38b0b8445697dda8a7ef}{init} (const string \&modulename)
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcvtest_1_1TS_a1a815088b16a33adcd3b46463c8559da}{printf} (int streams, const char $\ast$fmt,...)
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcvtest_1_1TS_a74cbed26e6ea857c1d61a9b725c21eb3}{vprintf} (int streams, const char $\ast$fmt, va\-\_\-list arglist)
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcvtest_1_1TS_a6e1ad1334be2799f7834dc947e913499}{update\-\_\-context} (\hyperlink{classcvtest_1_1BaseTest}{Base\-Test} $\ast$test, int test\-\_\-case\-\_\-idx, bool update\-\_\-ts\-\_\-context)
+\item 
+const \hyperlink{structcvtest_1_1TestInfo}{Test\-Info} $\ast$ \hyperlink{classcvtest_1_1TS_afef7a0ca6e8258335ab821190339d23e}{get\-\_\-current\-\_\-test\-\_\-info} ()
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcvtest_1_1TS_abf37146cc357e834e346b66ed43a6e55}{set\-\_\-failed\-\_\-test\-\_\-info} (int fail\-\_\-code)
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcvtest_1_1TS_a0b8c1e30e09b0643924c8e48f083d712}{set\-\_\-gtest\-\_\-status} ()
+\item 
+\hyperlink{core_2types__c_8h_a84556d1bb6f1b8b02c04c60246747a7e}{Cv\-File\-Storage} $\ast$ \hyperlink{classcvtest_1_1TS_aec859a524917c7a5bb2b8d6d0f3a6d9c}{get\-\_\-file\-\_\-storage} ()
+\item 
+R\-N\-G \& \hyperlink{classcvtest_1_1TS_abb74b63a6338a3af920a6d12b62a2405}{get\-\_\-rng} ()
+\item 
+int \hyperlink{classcvtest_1_1TS_a8bbc58789cb0f15f35ae2dca80edecb7}{get\-\_\-err\-\_\-code} ()
+\item 
+double \hyperlink{classcvtest_1_1TS_aacb5f5783fc120d733e494479fc6f7cb}{get\-\_\-test\-\_\-case\-\_\-count\-\_\-scale} ()
+\item 
+const string \& \hyperlink{classcvtest_1_1TS_a5117f2ac3591a199f89a570596b3d27d}{get\-\_\-data\-\_\-path} () const 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classcvtest_1_1TS}{T\-S} $\ast$ \hyperlink{classcvtest_1_1TS_a627cd5c81db94ccae75c6f04af396497}{ptr} ()
+\item 
+static string \hyperlink{classcvtest_1_1TS_a1ea40eed543ff4a079a8ae9275362ad8}{str\-\_\-from\-\_\-code} (int \hyperlink{imgproc__c_8h_a9a9fd13fa1f888f8baeda154bb1a3691}{code})
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+R\-N\-G \hyperlink{classcvtest_1_1TS_aeef5453eb56944916a092c0dd225ab5e}{rng}
+\item 
+\hyperlink{structcvtest_1_1TestInfo}{Test\-Info} \hyperlink{classcvtest_1_1TS_a5a64dcb103bce8b6efdece7901900e11}{current\-\_\-test\-\_\-info}
+\item 
+string \hyperlink{classcvtest_1_1TS_a819fea5ad66ed952dab11fbba9bfb49d}{data\-\_\-path}
+\item 
+\hyperlink{structcvtest_1_1TSParams}{T\-S\-Params} \hyperlink{classcvtest_1_1TS_a4629947fcef74e97555f2ca01480b9ef}{params}
+\item 
+std\-::string \hyperlink{classcvtest_1_1TS_a1f1690ef50b8b5f6cf1c661805e6f377}{output\-\_\-buf} \mbox{[}\hyperlink{classcvtest_1_1TS_a4d6d5cf94c1f5e8cdaddf2a2efe1be0aa223feca68f6657aca9967e4f4e405612}{M\-A\-X\-\_\-\-I\-D\-X}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classcvtest_1_1TS_a4d6d5cf94c1f5e8cdaddf2a2efe1be0a}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{classcvtest_1_1TS_a4d6d5cf94c1f5e8cdaddf2a2efe1be0a}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{N\-U\-L@{N\-U\-L}!cvtest\-::\-T\-S@{cvtest\-::\-T\-S}}\index{cvtest\-::\-T\-S@{cvtest\-::\-T\-S}!N\-U\-L@{N\-U\-L}}\item[{\em 
+\hypertarget{classcvtest_1_1TS_a4d6d5cf94c1f5e8cdaddf2a2efe1be0aa1c062280e7a59a931c4f03ee4c1b158f}{N\-U\-L}\label{classcvtest_1_1TS_a4d6d5cf94c1f5e8cdaddf2a2efe1be0aa1c062280e7a59a931c4f03ee4c1b158f}
+}]\index{S\-U\-M\-M\-A\-R\-Y\-\_\-\-I\-D\-X@{S\-U\-M\-M\-A\-R\-Y\-\_\-\-I\-D\-X}!cvtest\-::\-T\-S@{cvtest\-::\-T\-S}}\index{cvtest\-::\-T\-S@{cvtest\-::\-T\-S}!S\-U\-M\-M\-A\-R\-Y\-\_\-\-I\-D\-X@{S\-U\-M\-M\-A\-R\-Y\-\_\-\-I\-D\-X}}\item[{\em 
+\hypertarget{classcvtest_1_1TS_a4d6d5cf94c1f5e8cdaddf2a2efe1be0aaaa92a9f3443f1671cb5b73269c9f073e}{S\-U\-M\-M\-A\-R\-Y\-\_\-\-I\-D\-X}\label{classcvtest_1_1TS_a4d6d5cf94c1f5e8cdaddf2a2efe1be0aaaa92a9f3443f1671cb5b73269c9f073e}
+}]\index{S\-U\-M\-M\-A\-R\-Y@{S\-U\-M\-M\-A\-R\-Y}!cvtest\-::\-T\-S@{cvtest\-::\-T\-S}}\index{cvtest\-::\-T\-S@{cvtest\-::\-T\-S}!S\-U\-M\-M\-A\-R\-Y@{S\-U\-M\-M\-A\-R\-Y}}\item[{\em 
+\hypertarget{classcvtest_1_1TS_a4d6d5cf94c1f5e8cdaddf2a2efe1be0aa7176d64f3ee15d224cec1243f5c55bc0}{S\-U\-M\-M\-A\-R\-Y}\label{classcvtest_1_1TS_a4d6d5cf94c1f5e8cdaddf2a2efe1be0aa7176d64f3ee15d224cec1243f5c55bc0}
+}]\index{L\-O\-G\-\_\-\-I\-D\-X@{L\-O\-G\-\_\-\-I\-D\-X}!cvtest\-::\-T\-S@{cvtest\-::\-T\-S}}\index{cvtest\-::\-T\-S@{cvtest\-::\-T\-S}!L\-O\-G\-\_\-\-I\-D\-X@{L\-O\-G\-\_\-\-I\-D\-X}}\item[{\em 
+\hypertarget{classcvtest_1_1TS_a4d6d5cf94c1f5e8cdaddf2a2efe1be0aa6e04785c7ce5cfb15740a85dac48def6}{L\-O\-G\-\_\-\-I\-D\-X}\label{classcvtest_1_1TS_a4d6d5cf94c1f5e8cdaddf2a2efe1be0aa6e04785c7ce5cfb15740a85dac48def6}
+}]\index{L\-O\-G@{L\-O\-G}!cvtest\-::\-T\-S@{cvtest\-::\-T\-S}}\index{cvtest\-::\-T\-S@{cvtest\-::\-T\-S}!L\-O\-G@{L\-O\-G}}\item[{\em 
+\hypertarget{classcvtest_1_1TS_a4d6d5cf94c1f5e8cdaddf2a2efe1be0aa870fd938e356ac596488309d1b183f18}{L\-O\-G}\label{classcvtest_1_1TS_a4d6d5cf94c1f5e8cdaddf2a2efe1be0aa870fd938e356ac596488309d1b183f18}
+}]\index{C\-S\-V\-\_\-\-I\-D\-X@{C\-S\-V\-\_\-\-I\-D\-X}!cvtest\-::\-T\-S@{cvtest\-::\-T\-S}}\index{cvtest\-::\-T\-S@{cvtest\-::\-T\-S}!C\-S\-V\-\_\-\-I\-D\-X@{C\-S\-V\-\_\-\-I\-D\-X}}\item[{\em 
+\hypertarget{classcvtest_1_1TS_a4d6d5cf94c1f5e8cdaddf2a2efe1be0aa683cdac73d2a3b6ccc690b34013ac58b}{C\-S\-V\-\_\-\-I\-D\-X}\label{classcvtest_1_1TS_a4d6d5cf94c1f5e8cdaddf2a2efe1be0aa683cdac73d2a3b6ccc690b34013ac58b}
+}]\index{C\-S\-V@{C\-S\-V}!cvtest\-::\-T\-S@{cvtest\-::\-T\-S}}\index{cvtest\-::\-T\-S@{cvtest\-::\-T\-S}!C\-S\-V@{C\-S\-V}}\item[{\em 
+\hypertarget{classcvtest_1_1TS_a4d6d5cf94c1f5e8cdaddf2a2efe1be0aac3dca960e6d1103c9ed6339a3b1283b9}{C\-S\-V}\label{classcvtest_1_1TS_a4d6d5cf94c1f5e8cdaddf2a2efe1be0aac3dca960e6d1103c9ed6339a3b1283b9}
+}]\index{C\-O\-N\-S\-O\-L\-E\-\_\-\-I\-D\-X@{C\-O\-N\-S\-O\-L\-E\-\_\-\-I\-D\-X}!cvtest\-::\-T\-S@{cvtest\-::\-T\-S}}\index{cvtest\-::\-T\-S@{cvtest\-::\-T\-S}!C\-O\-N\-S\-O\-L\-E\-\_\-\-I\-D\-X@{C\-O\-N\-S\-O\-L\-E\-\_\-\-I\-D\-X}}\item[{\em 
+\hypertarget{classcvtest_1_1TS_a4d6d5cf94c1f5e8cdaddf2a2efe1be0aa0fc2fe2a35006b4f6b9a3632d572b3ad}{C\-O\-N\-S\-O\-L\-E\-\_\-\-I\-D\-X}\label{classcvtest_1_1TS_a4d6d5cf94c1f5e8cdaddf2a2efe1be0aa0fc2fe2a35006b4f6b9a3632d572b3ad}
+}]\index{C\-O\-N\-S\-O\-L\-E@{C\-O\-N\-S\-O\-L\-E}!cvtest\-::\-T\-S@{cvtest\-::\-T\-S}}\index{cvtest\-::\-T\-S@{cvtest\-::\-T\-S}!C\-O\-N\-S\-O\-L\-E@{C\-O\-N\-S\-O\-L\-E}}\item[{\em 
+\hypertarget{classcvtest_1_1TS_a4d6d5cf94c1f5e8cdaddf2a2efe1be0aa06ed0a34b57140b3610722f6bd80d0e4}{C\-O\-N\-S\-O\-L\-E}\label{classcvtest_1_1TS_a4d6d5cf94c1f5e8cdaddf2a2efe1be0aa06ed0a34b57140b3610722f6bd80d0e4}
+}]\index{M\-A\-X\-\_\-\-I\-D\-X@{M\-A\-X\-\_\-\-I\-D\-X}!cvtest\-::\-T\-S@{cvtest\-::\-T\-S}}\index{cvtest\-::\-T\-S@{cvtest\-::\-T\-S}!M\-A\-X\-\_\-\-I\-D\-X@{M\-A\-X\-\_\-\-I\-D\-X}}\item[{\em 
+\hypertarget{classcvtest_1_1TS_a4d6d5cf94c1f5e8cdaddf2a2efe1be0aa223feca68f6657aca9967e4f4e405612}{M\-A\-X\-\_\-\-I\-D\-X}\label{classcvtest_1_1TS_a4d6d5cf94c1f5e8cdaddf2a2efe1be0aa223feca68f6657aca9967e4f4e405612}
+}]\end{description}
+\end{Desc}
+\hypertarget{classcvtest_1_1TS_aac32441593fd01cf004b7353792857db}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{classcvtest_1_1TS_aac32441593fd01cf004b7353792857db}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{O\-K@{O\-K}!cvtest\-::\-T\-S@{cvtest\-::\-T\-S}}\index{cvtest\-::\-T\-S@{cvtest\-::\-T\-S}!O\-K@{O\-K}}\item[{\em 
+\hypertarget{classcvtest_1_1TS_aac32441593fd01cf004b7353792857dba6416c4e350f88fdee91ad82672eb3eab}{O\-K}\label{classcvtest_1_1TS_aac32441593fd01cf004b7353792857dba6416c4e350f88fdee91ad82672eb3eab}
+}]\index{F\-A\-I\-L\-\_\-\-G\-E\-N\-E\-R\-I\-C@{F\-A\-I\-L\-\_\-\-G\-E\-N\-E\-R\-I\-C}!cvtest\-::\-T\-S@{cvtest\-::\-T\-S}}\index{cvtest\-::\-T\-S@{cvtest\-::\-T\-S}!F\-A\-I\-L\-\_\-\-G\-E\-N\-E\-R\-I\-C@{F\-A\-I\-L\-\_\-\-G\-E\-N\-E\-R\-I\-C}}\item[{\em 
+\hypertarget{classcvtest_1_1TS_aac32441593fd01cf004b7353792857dba8f3b9fb25fd83e7a6aa421de3f4e8619}{F\-A\-I\-L\-\_\-\-G\-E\-N\-E\-R\-I\-C}\label{classcvtest_1_1TS_aac32441593fd01cf004b7353792857dba8f3b9fb25fd83e7a6aa421de3f4e8619}
+}]\index{F\-A\-I\-L\-\_\-\-M\-I\-S\-S\-I\-N\-G\-\_\-\-T\-E\-S\-T\-\_\-\-D\-A\-T\-A@{F\-A\-I\-L\-\_\-\-M\-I\-S\-S\-I\-N\-G\-\_\-\-T\-E\-S\-T\-\_\-\-D\-A\-T\-A}!cvtest\-::\-T\-S@{cvtest\-::\-T\-S}}\index{cvtest\-::\-T\-S@{cvtest\-::\-T\-S}!F\-A\-I\-L\-\_\-\-M\-I\-S\-S\-I\-N\-G\-\_\-\-T\-E\-S\-T\-\_\-\-D\-A\-T\-A@{F\-A\-I\-L\-\_\-\-M\-I\-S\-S\-I\-N\-G\-\_\-\-T\-E\-S\-T\-\_\-\-D\-A\-T\-A}}\item[{\em 
+\hypertarget{classcvtest_1_1TS_aac32441593fd01cf004b7353792857dba6188ceee7ee9cb915e9f087e9a70ffcd}{F\-A\-I\-L\-\_\-\-M\-I\-S\-S\-I\-N\-G\-\_\-\-T\-E\-S\-T\-\_\-\-D\-A\-T\-A}\label{classcvtest_1_1TS_aac32441593fd01cf004b7353792857dba6188ceee7ee9cb915e9f087e9a70ffcd}
+}]\index{F\-A\-I\-L\-\_\-\-E\-R\-R\-O\-R\-\_\-\-I\-N\-\_\-\-C\-A\-L\-L\-E\-D\-\_\-\-F\-U\-N\-C@{F\-A\-I\-L\-\_\-\-E\-R\-R\-O\-R\-\_\-\-I\-N\-\_\-\-C\-A\-L\-L\-E\-D\-\_\-\-F\-U\-N\-C}!cvtest\-::\-T\-S@{cvtest\-::\-T\-S}}\index{cvtest\-::\-T\-S@{cvtest\-::\-T\-S}!F\-A\-I\-L\-\_\-\-E\-R\-R\-O\-R\-\_\-\-I\-N\-\_\-\-C\-A\-L\-L\-E\-D\-\_\-\-F\-U\-N\-C@{F\-A\-I\-L\-\_\-\-E\-R\-R\-O\-R\-\_\-\-I\-N\-\_\-\-C\-A\-L\-L\-E\-D\-\_\-\-F\-U\-N\-C}}\item[{\em 
+\hypertarget{classcvtest_1_1TS_aac32441593fd01cf004b7353792857dba5d0fec153196ccfbe71327c9f1874ce1}{F\-A\-I\-L\-\_\-\-E\-R\-R\-O\-R\-\_\-\-I\-N\-\_\-\-C\-A\-L\-L\-E\-D\-\_\-\-F\-U\-N\-C}\label{classcvtest_1_1TS_aac32441593fd01cf004b7353792857dba5d0fec153196ccfbe71327c9f1874ce1}
+}]\index{F\-A\-I\-L\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N@{F\-A\-I\-L\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N}!cvtest\-::\-T\-S@{cvtest\-::\-T\-S}}\index{cvtest\-::\-T\-S@{cvtest\-::\-T\-S}!F\-A\-I\-L\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N@{F\-A\-I\-L\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N}}\item[{\em 
+\hypertarget{classcvtest_1_1TS_aac32441593fd01cf004b7353792857dba8848f83c82d2ed70bbf38fe3b05bc061}{F\-A\-I\-L\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N}\label{classcvtest_1_1TS_aac32441593fd01cf004b7353792857dba8848f83c82d2ed70bbf38fe3b05bc061}
+}]\index{F\-A\-I\-L\-\_\-\-M\-E\-M\-O\-R\-Y\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N@{F\-A\-I\-L\-\_\-\-M\-E\-M\-O\-R\-Y\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N}!cvtest\-::\-T\-S@{cvtest\-::\-T\-S}}\index{cvtest\-::\-T\-S@{cvtest\-::\-T\-S}!F\-A\-I\-L\-\_\-\-M\-E\-M\-O\-R\-Y\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N@{F\-A\-I\-L\-\_\-\-M\-E\-M\-O\-R\-Y\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N}}\item[{\em 
+\hypertarget{classcvtest_1_1TS_aac32441593fd01cf004b7353792857dba642c98da1055b042b4f53e39c1080cea}{F\-A\-I\-L\-\_\-\-M\-E\-M\-O\-R\-Y\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N}\label{classcvtest_1_1TS_aac32441593fd01cf004b7353792857dba642c98da1055b042b4f53e39c1080cea}
+}]\index{F\-A\-I\-L\-\_\-\-A\-R\-I\-T\-H\-M\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N@{F\-A\-I\-L\-\_\-\-A\-R\-I\-T\-H\-M\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N}!cvtest\-::\-T\-S@{cvtest\-::\-T\-S}}\index{cvtest\-::\-T\-S@{cvtest\-::\-T\-S}!F\-A\-I\-L\-\_\-\-A\-R\-I\-T\-H\-M\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N@{F\-A\-I\-L\-\_\-\-A\-R\-I\-T\-H\-M\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N}}\item[{\em 
+\hypertarget{classcvtest_1_1TS_aac32441593fd01cf004b7353792857dba61438707695d9e9ae79becb4046a9382}{F\-A\-I\-L\-\_\-\-A\-R\-I\-T\-H\-M\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N}\label{classcvtest_1_1TS_aac32441593fd01cf004b7353792857dba61438707695d9e9ae79becb4046a9382}
+}]\index{F\-A\-I\-L\-\_\-\-M\-E\-M\-O\-R\-Y\-\_\-\-C\-O\-R\-R\-U\-P\-T\-I\-O\-N\-\_\-\-B\-E\-G\-I\-N@{F\-A\-I\-L\-\_\-\-M\-E\-M\-O\-R\-Y\-\_\-\-C\-O\-R\-R\-U\-P\-T\-I\-O\-N\-\_\-\-B\-E\-G\-I\-N}!cvtest\-::\-T\-S@{cvtest\-::\-T\-S}}\index{cvtest\-::\-T\-S@{cvtest\-::\-T\-S}!F\-A\-I\-L\-\_\-\-M\-E\-M\-O\-R\-Y\-\_\-\-C\-O\-R\-R\-U\-P\-T\-I\-O\-N\-\_\-\-B\-E\-G\-I\-N@{F\-A\-I\-L\-\_\-\-M\-E\-M\-O\-R\-Y\-\_\-\-C\-O\-R\-R\-U\-P\-T\-I\-O\-N\-\_\-\-B\-E\-G\-I\-N}}\item[{\em 
+\hypertarget{classcvtest_1_1TS_aac32441593fd01cf004b7353792857dbab3bfe982b2b06bb22b52e0ebe79858ab}{F\-A\-I\-L\-\_\-\-M\-E\-M\-O\-R\-Y\-\_\-\-C\-O\-R\-R\-U\-P\-T\-I\-O\-N\-\_\-\-B\-E\-G\-I\-N}\label{classcvtest_1_1TS_aac32441593fd01cf004b7353792857dbab3bfe982b2b06bb22b52e0ebe79858ab}
+}]\index{F\-A\-I\-L\-\_\-\-M\-E\-M\-O\-R\-Y\-\_\-\-C\-O\-R\-R\-U\-P\-T\-I\-O\-N\-\_\-\-E\-N\-D@{F\-A\-I\-L\-\_\-\-M\-E\-M\-O\-R\-Y\-\_\-\-C\-O\-R\-R\-U\-P\-T\-I\-O\-N\-\_\-\-E\-N\-D}!cvtest\-::\-T\-S@{cvtest\-::\-T\-S}}\index{cvtest\-::\-T\-S@{cvtest\-::\-T\-S}!F\-A\-I\-L\-\_\-\-M\-E\-M\-O\-R\-Y\-\_\-\-C\-O\-R\-R\-U\-P\-T\-I\-O\-N\-\_\-\-E\-N\-D@{F\-A\-I\-L\-\_\-\-M\-E\-M\-O\-R\-Y\-\_\-\-C\-O\-R\-R\-U\-P\-T\-I\-O\-N\-\_\-\-E\-N\-D}}\item[{\em 
+\hypertarget{classcvtest_1_1TS_aac32441593fd01cf004b7353792857dba79fc12ae040d38ced1f173892df3c993}{F\-A\-I\-L\-\_\-\-M\-E\-M\-O\-R\-Y\-\_\-\-C\-O\-R\-R\-U\-P\-T\-I\-O\-N\-\_\-\-E\-N\-D}\label{classcvtest_1_1TS_aac32441593fd01cf004b7353792857dba79fc12ae040d38ced1f173892df3c993}
+}]\index{F\-A\-I\-L\-\_\-\-M\-E\-M\-O\-R\-Y\-\_\-\-L\-E\-A\-K@{F\-A\-I\-L\-\_\-\-M\-E\-M\-O\-R\-Y\-\_\-\-L\-E\-A\-K}!cvtest\-::\-T\-S@{cvtest\-::\-T\-S}}\index{cvtest\-::\-T\-S@{cvtest\-::\-T\-S}!F\-A\-I\-L\-\_\-\-M\-E\-M\-O\-R\-Y\-\_\-\-L\-E\-A\-K@{F\-A\-I\-L\-\_\-\-M\-E\-M\-O\-R\-Y\-\_\-\-L\-E\-A\-K}}\item[{\em 
+\hypertarget{classcvtest_1_1TS_aac32441593fd01cf004b7353792857dba5ecfbe8efe34dd17c6b368ad1e2de021}{F\-A\-I\-L\-\_\-\-M\-E\-M\-O\-R\-Y\-\_\-\-L\-E\-A\-K}\label{classcvtest_1_1TS_aac32441593fd01cf004b7353792857dba5ecfbe8efe34dd17c6b368ad1e2de021}
+}]\index{F\-A\-I\-L\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-O\-U\-T\-P\-U\-T@{F\-A\-I\-L\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-O\-U\-T\-P\-U\-T}!cvtest\-::\-T\-S@{cvtest\-::\-T\-S}}\index{cvtest\-::\-T\-S@{cvtest\-::\-T\-S}!F\-A\-I\-L\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-O\-U\-T\-P\-U\-T@{F\-A\-I\-L\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-O\-U\-T\-P\-U\-T}}\item[{\em 
+\hypertarget{classcvtest_1_1TS_aac32441593fd01cf004b7353792857dba93b68ef3e42b53a3576bb6c4ef4b87c0}{F\-A\-I\-L\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-O\-U\-T\-P\-U\-T}\label{classcvtest_1_1TS_aac32441593fd01cf004b7353792857dba93b68ef3e42b53a3576bb6c4ef4b87c0}
+}]\index{F\-A\-I\-L\-\_\-\-M\-I\-S\-M\-A\-T\-C\-H@{F\-A\-I\-L\-\_\-\-M\-I\-S\-M\-A\-T\-C\-H}!cvtest\-::\-T\-S@{cvtest\-::\-T\-S}}\index{cvtest\-::\-T\-S@{cvtest\-::\-T\-S}!F\-A\-I\-L\-\_\-\-M\-I\-S\-M\-A\-T\-C\-H@{F\-A\-I\-L\-\_\-\-M\-I\-S\-M\-A\-T\-C\-H}}\item[{\em 
+\hypertarget{classcvtest_1_1TS_aac32441593fd01cf004b7353792857dbaab174d53559712972c1f1b39d058c179}{F\-A\-I\-L\-\_\-\-M\-I\-S\-M\-A\-T\-C\-H}\label{classcvtest_1_1TS_aac32441593fd01cf004b7353792857dbaab174d53559712972c1f1b39d058c179}
+}]\index{F\-A\-I\-L\-\_\-\-B\-A\-D\-\_\-\-A\-C\-C\-U\-R\-A\-C\-Y@{F\-A\-I\-L\-\_\-\-B\-A\-D\-\_\-\-A\-C\-C\-U\-R\-A\-C\-Y}!cvtest\-::\-T\-S@{cvtest\-::\-T\-S}}\index{cvtest\-::\-T\-S@{cvtest\-::\-T\-S}!F\-A\-I\-L\-\_\-\-B\-A\-D\-\_\-\-A\-C\-C\-U\-R\-A\-C\-Y@{F\-A\-I\-L\-\_\-\-B\-A\-D\-\_\-\-A\-C\-C\-U\-R\-A\-C\-Y}}\item[{\em 
+\hypertarget{classcvtest_1_1TS_aac32441593fd01cf004b7353792857dba9ac7807767cee1e46fd957c0d0750627}{F\-A\-I\-L\-\_\-\-B\-A\-D\-\_\-\-A\-C\-C\-U\-R\-A\-C\-Y}\label{classcvtest_1_1TS_aac32441593fd01cf004b7353792857dba9ac7807767cee1e46fd957c0d0750627}
+}]\index{F\-A\-I\-L\-\_\-\-H\-A\-N\-G@{F\-A\-I\-L\-\_\-\-H\-A\-N\-G}!cvtest\-::\-T\-S@{cvtest\-::\-T\-S}}\index{cvtest\-::\-T\-S@{cvtest\-::\-T\-S}!F\-A\-I\-L\-\_\-\-H\-A\-N\-G@{F\-A\-I\-L\-\_\-\-H\-A\-N\-G}}\item[{\em 
+\hypertarget{classcvtest_1_1TS_aac32441593fd01cf004b7353792857dba86cd807e3fbcbfbec7b8ce6a2cf7f378}{F\-A\-I\-L\-\_\-\-H\-A\-N\-G}\label{classcvtest_1_1TS_aac32441593fd01cf004b7353792857dba86cd807e3fbcbfbec7b8ce6a2cf7f378}
+}]\index{F\-A\-I\-L\-\_\-\-B\-A\-D\-\_\-\-A\-R\-G\-\_\-\-C\-H\-E\-C\-K@{F\-A\-I\-L\-\_\-\-B\-A\-D\-\_\-\-A\-R\-G\-\_\-\-C\-H\-E\-C\-K}!cvtest\-::\-T\-S@{cvtest\-::\-T\-S}}\index{cvtest\-::\-T\-S@{cvtest\-::\-T\-S}!F\-A\-I\-L\-\_\-\-B\-A\-D\-\_\-\-A\-R\-G\-\_\-\-C\-H\-E\-C\-K@{F\-A\-I\-L\-\_\-\-B\-A\-D\-\_\-\-A\-R\-G\-\_\-\-C\-H\-E\-C\-K}}\item[{\em 
+\hypertarget{classcvtest_1_1TS_aac32441593fd01cf004b7353792857dba0f8965667588eaad8d2ce32ac172ddf8}{F\-A\-I\-L\-\_\-\-B\-A\-D\-\_\-\-A\-R\-G\-\_\-\-C\-H\-E\-C\-K}\label{classcvtest_1_1TS_aac32441593fd01cf004b7353792857dba0f8965667588eaad8d2ce32ac172ddf8}
+}]\index{F\-A\-I\-L\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-T\-E\-S\-T\-\_\-\-D\-A\-T\-A@{F\-A\-I\-L\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-T\-E\-S\-T\-\_\-\-D\-A\-T\-A}!cvtest\-::\-T\-S@{cvtest\-::\-T\-S}}\index{cvtest\-::\-T\-S@{cvtest\-::\-T\-S}!F\-A\-I\-L\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-T\-E\-S\-T\-\_\-\-D\-A\-T\-A@{F\-A\-I\-L\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-T\-E\-S\-T\-\_\-\-D\-A\-T\-A}}\item[{\em 
+\hypertarget{classcvtest_1_1TS_aac32441593fd01cf004b7353792857dbaeda945b1d8a1f87f43b8c4802f988e3e}{F\-A\-I\-L\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-T\-E\-S\-T\-\_\-\-D\-A\-T\-A}\label{classcvtest_1_1TS_aac32441593fd01cf004b7353792857dbaeda945b1d8a1f87f43b8c4802f988e3e}
+}]\index{S\-K\-I\-P\-P\-E\-D@{S\-K\-I\-P\-P\-E\-D}!cvtest\-::\-T\-S@{cvtest\-::\-T\-S}}\index{cvtest\-::\-T\-S@{cvtest\-::\-T\-S}!S\-K\-I\-P\-P\-E\-D@{S\-K\-I\-P\-P\-E\-D}}\item[{\em 
+\hypertarget{classcvtest_1_1TS_aac32441593fd01cf004b7353792857dba7cc2fbe05cfffe5f9c170320439ea53d}{S\-K\-I\-P\-P\-E\-D}\label{classcvtest_1_1TS_aac32441593fd01cf004b7353792857dba7cc2fbe05cfffe5f9c170320439ea53d}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcvtest_1_1TS_ace108fdfb623aabd644dcb72242c1ab9}{\index{cvtest\-::\-T\-S@{cvtest\-::\-T\-S}!T\-S@{T\-S}}
+\index{T\-S@{T\-S}!cvtest::TS@{cvtest\-::\-T\-S}}
+\subsubsection[{T\-S}]{\setlength{\rightskip}{0pt plus 5cm}cvtest\-::\-T\-S\-::\-T\-S (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcvtest_1_1TS_ace108fdfb623aabd644dcb72242c1ab9}
+\hypertarget{classcvtest_1_1TS_aacfb2afc95e6810ffa8b6e79ecc94180}{\index{cvtest\-::\-T\-S@{cvtest\-::\-T\-S}!$\sim$\-T\-S@{$\sim$\-T\-S}}
+\index{$\sim$\-T\-S@{$\sim$\-T\-S}!cvtest::TS@{cvtest\-::\-T\-S}}
+\subsubsection[{$\sim$\-T\-S}]{\setlength{\rightskip}{0pt plus 5cm}virtual cvtest\-::\-T\-S\-::$\sim$\-T\-S (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcvtest_1_1TS_aacfb2afc95e6810ffa8b6e79ecc94180}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcvtest_1_1TS_afef7a0ca6e8258335ab821190339d23e}{\index{cvtest\-::\-T\-S@{cvtest\-::\-T\-S}!get\-\_\-current\-\_\-test\-\_\-info@{get\-\_\-current\-\_\-test\-\_\-info}}
+\index{get\-\_\-current\-\_\-test\-\_\-info@{get\-\_\-current\-\_\-test\-\_\-info}!cvtest::TS@{cvtest\-::\-T\-S}}
+\subsubsection[{get\-\_\-current\-\_\-test\-\_\-info}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Test\-Info}$\ast$ cvtest\-::\-T\-S\-::get\-\_\-current\-\_\-test\-\_\-info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcvtest_1_1TS_afef7a0ca6e8258335ab821190339d23e}
+\hypertarget{classcvtest_1_1TS_a5117f2ac3591a199f89a570596b3d27d}{\index{cvtest\-::\-T\-S@{cvtest\-::\-T\-S}!get\-\_\-data\-\_\-path@{get\-\_\-data\-\_\-path}}
+\index{get\-\_\-data\-\_\-path@{get\-\_\-data\-\_\-path}!cvtest::TS@{cvtest\-::\-T\-S}}
+\subsubsection[{get\-\_\-data\-\_\-path}]{\setlength{\rightskip}{0pt plus 5cm}const string\& cvtest\-::\-T\-S\-::get\-\_\-data\-\_\-path (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcvtest_1_1TS_a5117f2ac3591a199f89a570596b3d27d}
+\hypertarget{classcvtest_1_1TS_a8bbc58789cb0f15f35ae2dca80edecb7}{\index{cvtest\-::\-T\-S@{cvtest\-::\-T\-S}!get\-\_\-err\-\_\-code@{get\-\_\-err\-\_\-code}}
+\index{get\-\_\-err\-\_\-code@{get\-\_\-err\-\_\-code}!cvtest::TS@{cvtest\-::\-T\-S}}
+\subsubsection[{get\-\_\-err\-\_\-code}]{\setlength{\rightskip}{0pt plus 5cm}int cvtest\-::\-T\-S\-::get\-\_\-err\-\_\-code (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcvtest_1_1TS_a8bbc58789cb0f15f35ae2dca80edecb7}
+\hypertarget{classcvtest_1_1TS_aec859a524917c7a5bb2b8d6d0f3a6d9c}{\index{cvtest\-::\-T\-S@{cvtest\-::\-T\-S}!get\-\_\-file\-\_\-storage@{get\-\_\-file\-\_\-storage}}
+\index{get\-\_\-file\-\_\-storage@{get\-\_\-file\-\_\-storage}!cvtest::TS@{cvtest\-::\-T\-S}}
+\subsubsection[{get\-\_\-file\-\_\-storage}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-File\-Storage}$\ast$ cvtest\-::\-T\-S\-::get\-\_\-file\-\_\-storage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcvtest_1_1TS_aec859a524917c7a5bb2b8d6d0f3a6d9c}
+\hypertarget{classcvtest_1_1TS_abb74b63a6338a3af920a6d12b62a2405}{\index{cvtest\-::\-T\-S@{cvtest\-::\-T\-S}!get\-\_\-rng@{get\-\_\-rng}}
+\index{get\-\_\-rng@{get\-\_\-rng}!cvtest::TS@{cvtest\-::\-T\-S}}
+\subsubsection[{get\-\_\-rng}]{\setlength{\rightskip}{0pt plus 5cm}R\-N\-G\& cvtest\-::\-T\-S\-::get\-\_\-rng (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcvtest_1_1TS_abb74b63a6338a3af920a6d12b62a2405}
+\hypertarget{classcvtest_1_1TS_aacb5f5783fc120d733e494479fc6f7cb}{\index{cvtest\-::\-T\-S@{cvtest\-::\-T\-S}!get\-\_\-test\-\_\-case\-\_\-count\-\_\-scale@{get\-\_\-test\-\_\-case\-\_\-count\-\_\-scale}}
+\index{get\-\_\-test\-\_\-case\-\_\-count\-\_\-scale@{get\-\_\-test\-\_\-case\-\_\-count\-\_\-scale}!cvtest::TS@{cvtest\-::\-T\-S}}
+\subsubsection[{get\-\_\-test\-\_\-case\-\_\-count\-\_\-scale}]{\setlength{\rightskip}{0pt plus 5cm}double cvtest\-::\-T\-S\-::get\-\_\-test\-\_\-case\-\_\-count\-\_\-scale (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcvtest_1_1TS_aacb5f5783fc120d733e494479fc6f7cb}
+\hypertarget{classcvtest_1_1TS_afd42fc157b2f38b0b8445697dda8a7ef}{\index{cvtest\-::\-T\-S@{cvtest\-::\-T\-S}!init@{init}}
+\index{init@{init}!cvtest::TS@{cvtest\-::\-T\-S}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cvtest\-::\-T\-S\-::init (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{modulename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcvtest_1_1TS_afd42fc157b2f38b0b8445697dda8a7ef}
+\hypertarget{classcvtest_1_1TS_a1a815088b16a33adcd3b46463c8559da}{\index{cvtest\-::\-T\-S@{cvtest\-::\-T\-S}!printf@{printf}}
+\index{printf@{printf}!cvtest::TS@{cvtest\-::\-T\-S}}
+\subsubsection[{printf}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cvtest\-::\-T\-S\-::printf (
+\begin{DoxyParamCaption}
+\item[{int}]{streams, }
+\item[{const char $\ast$}]{fmt, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcvtest_1_1TS_a1a815088b16a33adcd3b46463c8559da}
+\hypertarget{classcvtest_1_1TS_a627cd5c81db94ccae75c6f04af396497}{\index{cvtest\-::\-T\-S@{cvtest\-::\-T\-S}!ptr@{ptr}}
+\index{ptr@{ptr}!cvtest::TS@{cvtest\-::\-T\-S}}
+\subsubsection[{ptr}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf T\-S}$\ast$ cvtest\-::\-T\-S\-::ptr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcvtest_1_1TS_a627cd5c81db94ccae75c6f04af396497}
+\hypertarget{classcvtest_1_1TS_abf37146cc357e834e346b66ed43a6e55}{\index{cvtest\-::\-T\-S@{cvtest\-::\-T\-S}!set\-\_\-failed\-\_\-test\-\_\-info@{set\-\_\-failed\-\_\-test\-\_\-info}}
+\index{set\-\_\-failed\-\_\-test\-\_\-info@{set\-\_\-failed\-\_\-test\-\_\-info}!cvtest::TS@{cvtest\-::\-T\-S}}
+\subsubsection[{set\-\_\-failed\-\_\-test\-\_\-info}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cvtest\-::\-T\-S\-::set\-\_\-failed\-\_\-test\-\_\-info (
+\begin{DoxyParamCaption}
+\item[{int}]{fail\-\_\-code}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcvtest_1_1TS_abf37146cc357e834e346b66ed43a6e55}
+\hypertarget{classcvtest_1_1TS_a0b8c1e30e09b0643924c8e48f083d712}{\index{cvtest\-::\-T\-S@{cvtest\-::\-T\-S}!set\-\_\-gtest\-\_\-status@{set\-\_\-gtest\-\_\-status}}
+\index{set\-\_\-gtest\-\_\-status@{set\-\_\-gtest\-\_\-status}!cvtest::TS@{cvtest\-::\-T\-S}}
+\subsubsection[{set\-\_\-gtest\-\_\-status}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cvtest\-::\-T\-S\-::set\-\_\-gtest\-\_\-status (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcvtest_1_1TS_a0b8c1e30e09b0643924c8e48f083d712}
+\hypertarget{classcvtest_1_1TS_a1ea40eed543ff4a079a8ae9275362ad8}{\index{cvtest\-::\-T\-S@{cvtest\-::\-T\-S}!str\-\_\-from\-\_\-code@{str\-\_\-from\-\_\-code}}
+\index{str\-\_\-from\-\_\-code@{str\-\_\-from\-\_\-code}!cvtest::TS@{cvtest\-::\-T\-S}}
+\subsubsection[{str\-\_\-from\-\_\-code}]{\setlength{\rightskip}{0pt plus 5cm}static string cvtest\-::\-T\-S\-::str\-\_\-from\-\_\-code (
+\begin{DoxyParamCaption}
+\item[{int}]{code}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcvtest_1_1TS_a1ea40eed543ff4a079a8ae9275362ad8}
+\hypertarget{classcvtest_1_1TS_a6e1ad1334be2799f7834dc947e913499}{\index{cvtest\-::\-T\-S@{cvtest\-::\-T\-S}!update\-\_\-context@{update\-\_\-context}}
+\index{update\-\_\-context@{update\-\_\-context}!cvtest::TS@{cvtest\-::\-T\-S}}
+\subsubsection[{update\-\_\-context}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cvtest\-::\-T\-S\-::update\-\_\-context (
+\begin{DoxyParamCaption}
+\item[{{\bf Base\-Test} $\ast$}]{test, }
+\item[{int}]{test\-\_\-case\-\_\-idx, }
+\item[{bool}]{update\-\_\-ts\-\_\-context}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcvtest_1_1TS_a6e1ad1334be2799f7834dc947e913499}
+\hypertarget{classcvtest_1_1TS_a74cbed26e6ea857c1d61a9b725c21eb3}{\index{cvtest\-::\-T\-S@{cvtest\-::\-T\-S}!vprintf@{vprintf}}
+\index{vprintf@{vprintf}!cvtest::TS@{cvtest\-::\-T\-S}}
+\subsubsection[{vprintf}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cvtest\-::\-T\-S\-::vprintf (
+\begin{DoxyParamCaption}
+\item[{int}]{streams, }
+\item[{const char $\ast$}]{fmt, }
+\item[{va\-\_\-list}]{arglist}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcvtest_1_1TS_a74cbed26e6ea857c1d61a9b725c21eb3}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcvtest_1_1TS_a5a64dcb103bce8b6efdece7901900e11}{\index{cvtest\-::\-T\-S@{cvtest\-::\-T\-S}!current\-\_\-test\-\_\-info@{current\-\_\-test\-\_\-info}}
+\index{current\-\_\-test\-\_\-info@{current\-\_\-test\-\_\-info}!cvtest::TS@{cvtest\-::\-T\-S}}
+\subsubsection[{current\-\_\-test\-\_\-info}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Test\-Info} cvtest\-::\-T\-S\-::current\-\_\-test\-\_\-info\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcvtest_1_1TS_a5a64dcb103bce8b6efdece7901900e11}
+\hypertarget{classcvtest_1_1TS_a819fea5ad66ed952dab11fbba9bfb49d}{\index{cvtest\-::\-T\-S@{cvtest\-::\-T\-S}!data\-\_\-path@{data\-\_\-path}}
+\index{data\-\_\-path@{data\-\_\-path}!cvtest::TS@{cvtest\-::\-T\-S}}
+\subsubsection[{data\-\_\-path}]{\setlength{\rightskip}{0pt plus 5cm}string cvtest\-::\-T\-S\-::data\-\_\-path\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcvtest_1_1TS_a819fea5ad66ed952dab11fbba9bfb49d}
+\hypertarget{classcvtest_1_1TS_a1f1690ef50b8b5f6cf1c661805e6f377}{\index{cvtest\-::\-T\-S@{cvtest\-::\-T\-S}!output\-\_\-buf@{output\-\_\-buf}}
+\index{output\-\_\-buf@{output\-\_\-buf}!cvtest::TS@{cvtest\-::\-T\-S}}
+\subsubsection[{output\-\_\-buf}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string cvtest\-::\-T\-S\-::output\-\_\-buf\mbox{[}{\bf M\-A\-X\-\_\-\-I\-D\-X}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcvtest_1_1TS_a1f1690ef50b8b5f6cf1c661805e6f377}
+\hypertarget{classcvtest_1_1TS_a4629947fcef74e97555f2ca01480b9ef}{\index{cvtest\-::\-T\-S@{cvtest\-::\-T\-S}!params@{params}}
+\index{params@{params}!cvtest::TS@{cvtest\-::\-T\-S}}
+\subsubsection[{params}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\-S\-Params} cvtest\-::\-T\-S\-::params\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcvtest_1_1TS_a4629947fcef74e97555f2ca01480b9ef}
+\hypertarget{classcvtest_1_1TS_aeef5453eb56944916a092c0dd225ab5e}{\index{cvtest\-::\-T\-S@{cvtest\-::\-T\-S}!rng@{rng}}
+\index{rng@{rng}!cvtest::TS@{cvtest\-::\-T\-S}}
+\subsubsection[{rng}]{\setlength{\rightskip}{0pt plus 5cm}R\-N\-G cvtest\-::\-T\-S\-::rng\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcvtest_1_1TS_aeef5453eb56944916a092c0dd225ab5e}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/ts/\hyperlink{ts_8hpp}{ts.\-hpp}\end{DoxyCompactItemize}

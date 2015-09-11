@@ -1,0 +1,5 @@
+<map id="cvflann::any::assign" name="cvflann::any::assign">
+<area shape="rect" id="node2" href="$structcvflann_1_1any.html#a56cb2ce55b54eaa62cdc88cbd441ef86" title="Frees any allocated memory, and sets the value to NULL. " alt="" coords="227,12,357,39"/>
+<area shape="rect" id="node4" href="$structcvflann_1_1anyimpl_1_1base__any__policy.html#aaeba40bae438ef010fb7f97cd6e208f0" title="cvflann::anyimpl::base\l_any_policy::copy_from_value" alt="" coords="193,63,391,105"/>
+<area shape="rect" id="node3" href="$structcvflann_1_1anyimpl_1_1base__any__policy.html#a8bf62799c4f5ba2b934ebd327f6ced40" title="cvflann::anyimpl::base\l_any_policy::static_delete" alt="" coords="440,5,613,46"/>
+</map>

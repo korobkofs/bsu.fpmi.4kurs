@@ -1,0 +1,8 @@
+<map id="config_write" name="config_write">
+<area shape="rect" id="node2" href="$libconfig_8c.html#a5aba693c888c839834ca81ae19f73e20" title="__config_locale_override" alt="" coords="147,5,312,32"/>
+<area shape="rect" id="node3" href="$libconfig_8c.html#a4be5b41b4df5899ff3c1f24904075df3" title="__config_write_setting" alt="" coords="153,56,305,83"/>
+<area shape="rect" id="node7" href="$libconfig_8c.html#a6ef50c2b5f9e2ef2bf3cf9dc8794c07e" title="__config_locale_restore" alt="" coords="150,107,309,133"/>
+<area shape="rect" id="node4" href="$libconfig_8c.html#afe646a1aa8cba2774dd4515fc5a8d4bf" title="__config_indent" alt="" coords="559,16,673,43"/>
+<area shape="rect" id="node5" href="$libconfig_8c.html#a139cade1498e266f403ea0c29ab57f2e" title="__config_write_value" alt="" coords="360,56,504,83"/>
+<area shape="rect" id="node6" href="$libconfig_8c.html#aca888b8fdb696c88bce979a93636ea4b" title="config_setting_get\l_format" alt="" coords="552,78,680,119"/>
+</map>

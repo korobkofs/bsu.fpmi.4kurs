@@ -1,0 +1,10 @@
+<map id="cvflann::NNIndex::knnSearch" name="cvflann::NNIndex::knnSearch">
+<area shape="rect" id="node2" href="$classcvflann_1_1NNIndex.html#acdcc255d1b67d5636a0f76b68809e6be" title="cvflann::NNIndex::veclen" alt="" coords="269,5,440,32"/>
+<area shape="rect" id="node3" href="$classcvflann_1_1KNNResultSet.html#ae9eab3480d859a6bc93d3c8ca963b41b" title="cvflann::KNNResultSet\l::init" alt="" coords="275,57,434,98"/>
+<area shape="rect" id="node5" href="$classcvflann_1_1NNIndex.html#ac038c51dc941c7c1a55b08c17e213e41" title="Method that searches for nearest&#45;neighbours. " alt="" coords="249,123,461,149"/>
+<area shape="rect" id="node6" href="$classcvflann_1_1KNNUniqueResultSet.html#afcf19c6a201b4580983b6baaae0a8383" title="cvflann::KNNUniqueResult\lSet::clear" alt="" coords="265,174,445,215"/>
+<area shape="rect" id="node7" href="$namespacecvflann.html#a6ea20e8aad20212544cb42368c1e5b5f" title="cvflann::get_param" alt="" coords="288,240,421,267"/>
+<area shape="rect" id="node8" href="$classcvflann_1_1UniqueResultSet.html#afe9a25c34986cfa96a8e0032eab8c817" title="cvflann::UniqueResultSet\l::sortAndCopy" alt="" coords="269,291,440,333"/>
+<area shape="rect" id="node9" href="$classcvflann_1_1UniqueResultSet.html#a0d41e712bb5dff2dcf139f028df7d0f5" title="cvflann::UniqueResultSet\l::copy" alt="" coords="509,321,680,362"/>
+<area shape="rect" id="node4" href="$namespacecv_1_1gpu.html#a706c9def6816de566be2671b75ec5309" title="computes per&#45;element maximum of two arrays (dst = max(src1, src2)) " alt="" coords="545,123,644,149"/>
+</map>

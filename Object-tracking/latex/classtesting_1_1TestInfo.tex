@@ -1,0 +1,135 @@
+\hypertarget{classtesting_1_1TestInfo}{\section{testing\-:\-:Test\-Info Class Reference}
+\label{classtesting_1_1TestInfo}\index{testing\-::\-Test\-Info@{testing\-::\-Test\-Info}}
+}
+
+
+{\ttfamily \#include $<$ts\-\_\-gtest.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtesting_1_1TestInfo_a8d382c1b1b511f0d9112c14684809852}{$\sim$\-Test\-Info} ()
+\item 
+const char $\ast$ \hyperlink{classtesting_1_1TestInfo_a26d22556d04b94c9cd15e28d74fef91c}{test\-\_\-case\-\_\-name} () const 
+\item 
+const char $\ast$ \hyperlink{classtesting_1_1TestInfo_ab3d24cad310f0cde29a80b9a83949ff5}{name} () const 
+\item 
+const char $\ast$ \hyperlink{classtesting_1_1TestInfo_af15d5c533a7237ffc183bc4c924dfcf4}{type\-\_\-param} () const 
+\item 
+const char $\ast$ \hyperlink{classtesting_1_1TestInfo_a9671fbc0effcb32e98803888dc166a66}{value\-\_\-param} () const 
+\item 
+bool \hyperlink{classtesting_1_1TestInfo_a240c9fb051d7b0586ed380c6b4e729e4}{should\-\_\-run} () const 
+\item 
+bool \hyperlink{classtesting_1_1TestInfo_a7ad90aeebb1d6fe3a43c6e3e3427e382}{is\-\_\-reportable} () const 
+\item 
+const \hyperlink{classtesting_1_1TestResult}{Test\-Result} $\ast$ \hyperlink{classtesting_1_1TestInfo_addea8766df3b8abe4cc4103218a49a65}{result} () const 
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classtesting_1_1TestInfo_a5b78b1c2e1fa07ffed92da365593eaa4}{Test}
+\item 
+class \hyperlink{classtesting_1_1TestInfo_aff779e55b06adfa7c0088bd10253f0f0}{Test\-Case}
+\item 
+class \hyperlink{classtesting_1_1TestInfo_acc0a5e7573fd6ae7ad1878613bb86853}{internal\-::\-Unit\-Test\-Impl}
+\item 
+class \hyperlink{classtesting_1_1TestInfo_adc037d188dab349a94868991955c9cd4}{internal\-::\-Streaming\-Listener\-Test}
+\item 
+\hyperlink{classtesting_1_1TestInfo}{Test\-Info} $\ast$ \hyperlink{classtesting_1_1TestInfo_a3e27fa5e97044d379b1e3b2a753f56f8}{internal\-::\-Make\-And\-Register\-Test\-Info} (const char $\ast$\hyperlink{classtesting_1_1TestInfo_a26d22556d04b94c9cd15e28d74fef91c}{test\-\_\-case\-\_\-name}, const char $\ast$\hyperlink{classtesting_1_1TestInfo_ab3d24cad310f0cde29a80b9a83949ff5}{name}, const char $\ast$\hyperlink{classtesting_1_1TestInfo_af15d5c533a7237ffc183bc4c924dfcf4}{type\-\_\-param}, const char $\ast$\hyperlink{classtesting_1_1TestInfo_a9671fbc0effcb32e98803888dc166a66}{value\-\_\-param}, \hyperlink{namespacetesting_1_1internal_ab1114197d3c657d8b7f8e0c5caa12d00}{internal\-::\-Type\-Id} fixture\-\_\-class\-\_\-id, \hyperlink{classtesting_1_1Test_a5f2a051d1d99c9b784c666c586186cf9}{Test\-::\-Set\-Up\-Test\-Case\-Func} set\-\_\-up\-\_\-tc, \hyperlink{classtesting_1_1Test_aa0f532e93b9f3500144c53f31466976c}{Test\-::\-Tear\-Down\-Test\-Case\-Func} tear\-\_\-down\-\_\-tc, \hyperlink{classtesting_1_1internal_1_1TestFactoryBase}{internal\-::\-Test\-Factory\-Base} $\ast$factory)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classtesting_1_1TestInfo_a8d382c1b1b511f0d9112c14684809852}{\index{testing\-::\-Test\-Info@{testing\-::\-Test\-Info}!$\sim$\-Test\-Info@{$\sim$\-Test\-Info}}
+\index{$\sim$\-Test\-Info@{$\sim$\-Test\-Info}!testing::TestInfo@{testing\-::\-Test\-Info}}
+\subsubsection[{$\sim$\-Test\-Info}]{\setlength{\rightskip}{0pt plus 5cm}testing\-::\-Test\-Info\-::$\sim$\-Test\-Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtesting_1_1TestInfo_a8d382c1b1b511f0d9112c14684809852}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classtesting_1_1TestInfo_a7ad90aeebb1d6fe3a43c6e3e3427e382}{\index{testing\-::\-Test\-Info@{testing\-::\-Test\-Info}!is\-\_\-reportable@{is\-\_\-reportable}}
+\index{is\-\_\-reportable@{is\-\_\-reportable}!testing::TestInfo@{testing\-::\-Test\-Info}}
+\subsubsection[{is\-\_\-reportable}]{\setlength{\rightskip}{0pt plus 5cm}bool testing\-::\-Test\-Info\-::is\-\_\-reportable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classtesting_1_1TestInfo_a7ad90aeebb1d6fe3a43c6e3e3427e382}
+\hypertarget{classtesting_1_1TestInfo_ab3d24cad310f0cde29a80b9a83949ff5}{\index{testing\-::\-Test\-Info@{testing\-::\-Test\-Info}!name@{name}}
+\index{name@{name}!testing::TestInfo@{testing\-::\-Test\-Info}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ testing\-::\-Test\-Info\-::name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classtesting_1_1TestInfo_ab3d24cad310f0cde29a80b9a83949ff5}
+\hypertarget{classtesting_1_1TestInfo_addea8766df3b8abe4cc4103218a49a65}{\index{testing\-::\-Test\-Info@{testing\-::\-Test\-Info}!result@{result}}
+\index{result@{result}!testing::TestInfo@{testing\-::\-Test\-Info}}
+\subsubsection[{result}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Test\-Result}$\ast$ testing\-::\-Test\-Info\-::result (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classtesting_1_1TestInfo_addea8766df3b8abe4cc4103218a49a65}
+\hypertarget{classtesting_1_1TestInfo_a240c9fb051d7b0586ed380c6b4e729e4}{\index{testing\-::\-Test\-Info@{testing\-::\-Test\-Info}!should\-\_\-run@{should\-\_\-run}}
+\index{should\-\_\-run@{should\-\_\-run}!testing::TestInfo@{testing\-::\-Test\-Info}}
+\subsubsection[{should\-\_\-run}]{\setlength{\rightskip}{0pt plus 5cm}bool testing\-::\-Test\-Info\-::should\-\_\-run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classtesting_1_1TestInfo_a240c9fb051d7b0586ed380c6b4e729e4}
+\hypertarget{classtesting_1_1TestInfo_a26d22556d04b94c9cd15e28d74fef91c}{\index{testing\-::\-Test\-Info@{testing\-::\-Test\-Info}!test\-\_\-case\-\_\-name@{test\-\_\-case\-\_\-name}}
+\index{test\-\_\-case\-\_\-name@{test\-\_\-case\-\_\-name}!testing::TestInfo@{testing\-::\-Test\-Info}}
+\subsubsection[{test\-\_\-case\-\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ testing\-::\-Test\-Info\-::test\-\_\-case\-\_\-name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classtesting_1_1TestInfo_a26d22556d04b94c9cd15e28d74fef91c}
+\hypertarget{classtesting_1_1TestInfo_af15d5c533a7237ffc183bc4c924dfcf4}{\index{testing\-::\-Test\-Info@{testing\-::\-Test\-Info}!type\-\_\-param@{type\-\_\-param}}
+\index{type\-\_\-param@{type\-\_\-param}!testing::TestInfo@{testing\-::\-Test\-Info}}
+\subsubsection[{type\-\_\-param}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ testing\-::\-Test\-Info\-::type\-\_\-param (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classtesting_1_1TestInfo_af15d5c533a7237ffc183bc4c924dfcf4}
+\hypertarget{classtesting_1_1TestInfo_a9671fbc0effcb32e98803888dc166a66}{\index{testing\-::\-Test\-Info@{testing\-::\-Test\-Info}!value\-\_\-param@{value\-\_\-param}}
+\index{value\-\_\-param@{value\-\_\-param}!testing::TestInfo@{testing\-::\-Test\-Info}}
+\subsubsection[{value\-\_\-param}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ testing\-::\-Test\-Info\-::value\-\_\-param (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classtesting_1_1TestInfo_a9671fbc0effcb32e98803888dc166a66}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classtesting_1_1TestInfo_a3e27fa5e97044d379b1e3b2a753f56f8}{\index{testing\-::\-Test\-Info@{testing\-::\-Test\-Info}!internal\-::\-Make\-And\-Register\-Test\-Info@{internal\-::\-Make\-And\-Register\-Test\-Info}}
+\index{internal\-::\-Make\-And\-Register\-Test\-Info@{internal\-::\-Make\-And\-Register\-Test\-Info}!testing::TestInfo@{testing\-::\-Test\-Info}}
+\subsubsection[{internal\-::\-Make\-And\-Register\-Test\-Info}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Test\-Info}$\ast$ {\bf internal\-::\-Make\-And\-Register\-Test\-Info} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{test\-\_\-case\-\_\-name, }
+\item[{const char $\ast$}]{name, }
+\item[{const char $\ast$}]{type\-\_\-param, }
+\item[{const char $\ast$}]{value\-\_\-param, }
+\item[{{\bf internal\-::\-Type\-Id}}]{fixture\-\_\-class\-\_\-id, }
+\item[{{\bf Test\-::\-Set\-Up\-Test\-Case\-Func}}]{set\-\_\-up\-\_\-tc, }
+\item[{{\bf Test\-::\-Tear\-Down\-Test\-Case\-Func}}]{tear\-\_\-down\-\_\-tc, }
+\item[{{\bf internal\-::\-Test\-Factory\-Base} $\ast$}]{factory}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classtesting_1_1TestInfo_a3e27fa5e97044d379b1e3b2a753f56f8}
+\hypertarget{classtesting_1_1TestInfo_adc037d188dab349a94868991955c9cd4}{\index{testing\-::\-Test\-Info@{testing\-::\-Test\-Info}!internal\-::\-Streaming\-Listener\-Test@{internal\-::\-Streaming\-Listener\-Test}}
+\index{internal\-::\-Streaming\-Listener\-Test@{internal\-::\-Streaming\-Listener\-Test}!testing::TestInfo@{testing\-::\-Test\-Info}}
+\subsubsection[{internal\-::\-Streaming\-Listener\-Test}]{\setlength{\rightskip}{0pt plus 5cm}friend class internal\-::\-Streaming\-Listener\-Test\hspace{0.3cm}{\ttfamily [friend]}}}\label{classtesting_1_1TestInfo_adc037d188dab349a94868991955c9cd4}
+\hypertarget{classtesting_1_1TestInfo_acc0a5e7573fd6ae7ad1878613bb86853}{\index{testing\-::\-Test\-Info@{testing\-::\-Test\-Info}!internal\-::\-Unit\-Test\-Impl@{internal\-::\-Unit\-Test\-Impl}}
+\index{internal\-::\-Unit\-Test\-Impl@{internal\-::\-Unit\-Test\-Impl}!testing::TestInfo@{testing\-::\-Test\-Info}}
+\subsubsection[{internal\-::\-Unit\-Test\-Impl}]{\setlength{\rightskip}{0pt plus 5cm}friend class internal\-::\-Unit\-Test\-Impl\hspace{0.3cm}{\ttfamily [friend]}}}\label{classtesting_1_1TestInfo_acc0a5e7573fd6ae7ad1878613bb86853}
+\hypertarget{classtesting_1_1TestInfo_a5b78b1c2e1fa07ffed92da365593eaa4}{\index{testing\-::\-Test\-Info@{testing\-::\-Test\-Info}!Test@{Test}}
+\index{Test@{Test}!testing::TestInfo@{testing\-::\-Test\-Info}}
+\subsubsection[{Test}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Test}\hspace{0.3cm}{\ttfamily [friend]}}}\label{classtesting_1_1TestInfo_a5b78b1c2e1fa07ffed92da365593eaa4}
+\hypertarget{classtesting_1_1TestInfo_aff779e55b06adfa7c0088bd10253f0f0}{\index{testing\-::\-Test\-Info@{testing\-::\-Test\-Info}!Test\-Case@{Test\-Case}}
+\index{Test\-Case@{Test\-Case}!testing::TestInfo@{testing\-::\-Test\-Info}}
+\subsubsection[{Test\-Case}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Test\-Case}\hspace{0.3cm}{\ttfamily [friend]}}}\label{classtesting_1_1TestInfo_aff779e55b06adfa7c0088bd10253f0f0}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/ts/\hyperlink{ts__gtest_8h}{ts\-\_\-gtest.\-h}\end{DoxyCompactItemize}

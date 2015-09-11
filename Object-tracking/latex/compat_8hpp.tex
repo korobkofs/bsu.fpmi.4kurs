@@ -1,0 +1,1942 @@
+\hypertarget{compat_8hpp}{\section{/usr/include/opencv2/legacy/compat.hpp File Reference}
+\label{compat_8hpp}\index{/usr/include/opencv2/legacy/compat.\-hpp@{/usr/include/opencv2/legacy/compat.\-hpp}}
+}
+{\ttfamily \#include \char`\"{}opencv2/core/core\-\_\-c.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}opencv2/imgproc/types\-\_\-c.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$math.\-h$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+Include dependency graph for compat.\-hpp\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{compat_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{compat_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structCvRandState}{Cv\-Rand\-State}
+\item 
+struct \hyperlink{struct__CvPixelPosition8u}{\-\_\-\-Cv\-Pixel\-Position8u}
+\item 
+struct \hyperlink{struct__CvPixelPosition8s}{\-\_\-\-Cv\-Pixel\-Position8s}
+\item 
+struct \hyperlink{struct__CvPixelPosition32f}{\-\_\-\-Cv\-Pixel\-Position32f}
+\item 
+struct \hyperlink{structCvSURFPoint}{Cv\-S\-U\-R\-F\-Point}
+\item 
+struct \hyperlink{structCvSURFParams}{Cv\-S\-U\-R\-F\-Params}
+\item 
+struct \hyperlink{structCvMSERParams}{Cv\-M\-S\-E\-R\-Params}
+\item 
+struct \hyperlink{structCvStarKeypoint}{Cv\-Star\-Keypoint}
+\item 
+struct \hyperlink{structCvStarDetectorParams}{Cv\-Star\-Detector\-Params}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{compat_8hpp_a68fe4a368d8889886adfb875a74f2c17}{cv\-Create\-Image\-Data}~cv\-Create\-Data
+\item 
+\#define \hyperlink{compat_8hpp_a94d78d6ca4cf0f4eae5925ada9803c40}{cv\-Release\-Image\-Data}~cv\-Release\-Data
+\item 
+\#define \hyperlink{compat_8hpp_a684102cb7c7a8bb34468cb006a7ee1aa}{cv\-Set\-Image\-Data}~cv\-Set\-Data
+\item 
+\#define \hyperlink{compat_8hpp_ad81c1e1ee8287f4c87f87f42ad309d4b}{cv\-Get\-Image\-Raw\-Data}~cv\-Get\-Raw\-Data
+\item 
+\#define \hyperlink{compat_8hpp_ad4507956205b64b37ae74700fbfa2426}{cvm\-Alloc}~cv\-Create\-Data
+\item 
+\#define \hyperlink{compat_8hpp_afaa5a13236de7219f02b81e7d29b71d3}{cvm\-Free}~cv\-Release\-Data
+\item 
+\#define \hyperlink{compat_8hpp_ae4c9490932968d73edd0cdaf3ba14a5c}{cvm\-Alloc\-Array}~cv\-Create\-Data
+\item 
+\#define \hyperlink{compat_8hpp_a47c1b2b1edb3d9f78bb2ec0909e6c177}{cvm\-Free\-Array}~cv\-Release\-Data
+\item 
+\#define \hyperlink{compat_8hpp_a79b5f6b34b5cf512c134fa8d213ff36b}{cv\-Integral\-Image}~cv\-Integral
+\item 
+\#define \hyperlink{compat_8hpp_a182f74ac5f20ac905a4847ae1b3b0742}{cv\-Match\-Contours}~cv\-Match\-Shapes
+\item 
+\#define \hyperlink{compat_8hpp_ae42e7dee00a3371f0f6cd4f43bfc3a73}{cv\-Update\-M\-H\-I\-By\-Time}~cv\-Update\-Motion\-History
+\item 
+\#define \hyperlink{compat_8hpp_a8b7317b6b7829fc47570a645e18e8b42}{cv\-Acc\-Mask}~cv\-Acc
+\item 
+\#define \hyperlink{compat_8hpp_ac63acf22a0a5427d0553b1f044ab0c0e}{cv\-Square\-Acc\-Mask}~cv\-Square\-Acc
+\item 
+\#define \hyperlink{compat_8hpp_a61940512dd6f35f9affa6243fada7874}{cv\-Multiply\-Acc\-Mask}~cv\-Multiply\-Acc
+\item 
+\#define \hyperlink{compat_8hpp_a42b7796ad06ae2c8fa076eb57556a7a6}{cv\-Running\-Avg\-Mask}(img\-Y, img\-U, \hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}, \hyperlink{legacy_8hpp_a95fc8341ca418bc06b36160632af6d47}{alpha})~cv\-Running\-Avg(img\-Y, img\-U, \hyperlink{legacy_8hpp_a95fc8341ca418bc06b36160632af6d47}{alpha}, \hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask})
+\item 
+\#define \hyperlink{compat_8hpp_abbf39c2525de7bbc5ed64d8ceb57f803}{cv\-Set\-Hist\-Thresh}~cv\-Set\-Hist\-Bin\-Ranges
+\item 
+\#define \hyperlink{compat_8hpp_a360a9bfcf1b28a1ec4c61a9e7f838b51}{cv\-Calc\-Hist\-Mask}(\hyperlink{legacy_8hpp_a5349238b3772bed6eae0fda3117ccfef}{img}, \hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}, \hyperlink{legacy_8hpp_a680f11e53e63640f03dcbb160eb06c53}{hist}, do\-Not\-Clear)~\hyperlink{imgproc__c_8h_a6074ca64cb8410c90cf045a13a6f5d96}{cv\-Calc\-Hist}(\hyperlink{legacy_8hpp_a5349238b3772bed6eae0fda3117ccfef}{img}, \hyperlink{legacy_8hpp_a680f11e53e63640f03dcbb160eb06c53}{hist}, do\-Not\-Clear, \hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask})
+\item 
+\#define \hyperlink{compat_8hpp_a56c9c3da0758a35aedad58879be07b20}{cv\-Cvt\-Pix\-To\-Plane}~cv\-Split
+\item 
+\#define \hyperlink{compat_8hpp_a728bc049615463ab54c889dad7cf709b}{cv\-Cvt\-Plane\-To\-Pix}~cv\-Merge
+\item 
+\#define \hyperlink{compat_8hpp_a63d1d3eb35eda29ffd29ff6b1e2b12e5}{cv\-Rand\-Next}(\-\_\-state)~\hyperlink{core_2types__c_8h_aa3ee1d0d96d92d22f724a59897c97bd6}{cv\-Rand\-Int}( \&(\-\_\-state)-\/$>$\hyperlink{legacy_8hpp_adf6b96319f18247b0ac3b2900987e75b}{state} )
+\item 
+\#define \hyperlink{compat_8hpp_aa94a373b41c4c2d987f9eca4e88b6e05}{cv\-Pseudo\-Inv}~\hyperlink{compat_8hpp_af4d234e11d99795acd6124311539af14}{cv\-Pseudo\-Inverse}
+\item 
+\#define \hyperlink{compat_8hpp_a7eb2b8e92490af0e8b4657e51c9488a4}{cv\-Contour\-Moments}(\hyperlink{core__c_8h_adbc53f0a2ae231f4fb30fb213be65a50}{contour}, \hyperlink{imgproc__c_8h_a155fbcf844810c2eb333c91505eb9169}{moments})~cv\-Moments( \hyperlink{core__c_8h_adbc53f0a2ae231f4fb30fb213be65a50}{contour}, \hyperlink{imgproc__c_8h_a155fbcf844810c2eb333c91505eb9169}{moments}, 0 )
+\item 
+\#define \hyperlink{compat_8hpp_a6aa86347d2164c2dbe056f2523158643}{cv\-Get\-Ptr\-At}~cv\-Ptr2\-D
+\item 
+\#define \hyperlink{compat_8hpp_a5d11dcc826543250d7668a3c360bc3fd}{cv\-Get\-At}~cv\-Get2\-D
+\item 
+\#define \hyperlink{compat_8hpp_afcc767137a87bdc879c999567a1078b9}{cv\-Set\-At}(\hyperlink{core__c_8h_ab8e13ef59ba6f71bb02934957ba61c65}{arr}, val, \hyperlink{highgui__c_8h_af1202c02b14870c18fb3a1da73e9e7c7}{y}, \hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x})~cv\-Set2\-D((\hyperlink{core__c_8h_ab8e13ef59ba6f71bb02934957ba61c65}{arr}),(\hyperlink{highgui__c_8h_af1202c02b14870c18fb3a1da73e9e7c7}{y}),(\hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x}),(val))
+\item 
+\#define \hyperlink{compat_8hpp_a7f61740e03eacee2c7168c0b3a3d3323}{cv\-Mean\-Mask}~\hyperlink{compat_8hpp_a0217b8875989204a850fba0f153b3f9e}{cv\-Mean}
+\item 
+\#define \hyperlink{compat_8hpp_aea0617ae6725eddab0833c1712a57695}{cv\-Mean\-\_\-\-Std\-Dev\-Mask}(\hyperlink{legacy_8hpp_a5349238b3772bed6eae0fda3117ccfef}{img}, \hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}, \hyperlink{core__c_8h_ad090d0faa53f44e0377c8d63dab3fa20}{mean}, sdv)~\hyperlink{compat_8hpp_a96607aa051ca1163457a1b628f605e39}{cv\-Mean\-\_\-\-Std\-Dev}(\hyperlink{legacy_8hpp_a5349238b3772bed6eae0fda3117ccfef}{img},\hyperlink{core__c_8h_ad090d0faa53f44e0377c8d63dab3fa20}{mean},sdv,\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask})
+\item 
+\#define \hyperlink{compat_8hpp_aa150972293c98a99a9c8204244e70b72}{cv\-Norm\-Mask}(img\-A, img\-B, \hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}, norm\-Type)~cv\-Norm(img\-A,img\-B,norm\-Type,\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask})
+\item 
+\#define \hyperlink{compat_8hpp_acd3f59837fbd6bee0591babc38e05cb4}{cv\-Min\-Max\-Loc\-Mask}(\hyperlink{legacy_8hpp_a5349238b3772bed6eae0fda3117ccfef}{img}, \hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}, \hyperlink{core__c_8h_a2c60d4e453921f07a407a647c96e8316}{min\-\_\-val}, \hyperlink{core__c_8h_a928495205a5ca34548c11042d48d733b}{max\-\_\-val}, min\-\_\-loc, max\-\_\-loc)~cv\-Min\-Max\-Loc(\hyperlink{legacy_8hpp_a5349238b3772bed6eae0fda3117ccfef}{img}, \hyperlink{core__c_8h_a2c60d4e453921f07a407a647c96e8316}{min\-\_\-val}, \hyperlink{core__c_8h_a928495205a5ca34548c11042d48d733b}{max\-\_\-val}, min\-\_\-loc, max\-\_\-loc, \hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask})
+\item 
+\#define \hyperlink{compat_8hpp_ae4687446af1dbbcf8bf054dbbce3f5e4}{cv\-Remove\-Memory\-Manager}~cv\-Set\-Memory\-Manager
+\item 
+\#define \hyperlink{compat_8hpp_ab6337d22561cba6d2fbafc3106826b3e}{cvm\-Set\-Zero}(\hyperlink{imgproc__c_8h_ad9325e85114e7b9ab738a23b62ea10a0}{mat})~cv\-Set\-Zero( \hyperlink{imgproc__c_8h_ad9325e85114e7b9ab738a23b62ea10a0}{mat} )
+\item 
+\#define \hyperlink{compat_8hpp_a377b9a4aa33eabe104f69c73664a2a22}{cvm\-Set\-Identity}(\hyperlink{imgproc__c_8h_ad9325e85114e7b9ab738a23b62ea10a0}{mat})~cv\-Set\-Identity( \hyperlink{imgproc__c_8h_ad9325e85114e7b9ab738a23b62ea10a0}{mat} )
+\item 
+\#define \hyperlink{compat_8hpp_a7f0f80c58d7bbfc7cc4a90000245ea62}{cvm\-Add}(\hyperlink{core__c_8h_a897de4702c922f4cccda0d57ccdcafb3}{src1}, \hyperlink{core__c_8h_a7561a36d48069d54a6c8ac4e4750edfd}{src2}, \hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst})~cv\-Add( \hyperlink{core__c_8h_a897de4702c922f4cccda0d57ccdcafb3}{src1}, \hyperlink{core__c_8h_a7561a36d48069d54a6c8ac4e4750edfd}{src2}, \hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, 0 )
+\item 
+\#define \hyperlink{compat_8hpp_acd113497d3273cf96b55209df040633c}{cvm\-Sub}(\hyperlink{core__c_8h_a897de4702c922f4cccda0d57ccdcafb3}{src1}, \hyperlink{core__c_8h_a7561a36d48069d54a6c8ac4e4750edfd}{src2}, \hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst})~cv\-Sub( \hyperlink{core__c_8h_a897de4702c922f4cccda0d57ccdcafb3}{src1}, \hyperlink{core__c_8h_a7561a36d48069d54a6c8ac4e4750edfd}{src2}, \hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, 0 )
+\item 
+\#define \hyperlink{compat_8hpp_a5c777d6185d51dd26b8c094d95b3f8e2}{cvm\-Copy}(\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, \hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst})~cv\-Copy( \hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, \hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, 0 )
+\item 
+\#define \hyperlink{compat_8hpp_ab5838a7bb39b2e5bf783de22c824f3fd}{cvm\-Mul}(\hyperlink{core__c_8h_a897de4702c922f4cccda0d57ccdcafb3}{src1}, \hyperlink{core__c_8h_a7561a36d48069d54a6c8ac4e4750edfd}{src2}, \hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst})~\hyperlink{core__c_8h_a508ba5d1f7cb9477033e337fa3126536}{cv\-Mat\-Mul\-Add}( \hyperlink{core__c_8h_a897de4702c922f4cccda0d57ccdcafb3}{src1}, \hyperlink{core__c_8h_a7561a36d48069d54a6c8ac4e4750edfd}{src2}, 0, \hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst} )
+\item 
+\#define \hyperlink{compat_8hpp_a26aec81b3efdb92eba84b8efef5a59c0}{cvm\-Transpose}(\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, \hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst})~\hyperlink{core__c_8h_ad4f6df658d48bde3dbcc2deb2303417c}{cv\-T}( \hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, \hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst} )
+\item 
+\#define \hyperlink{compat_8hpp_ad00552059bf839dec04f1fbaac724543}{cvm\-Invert}(\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, \hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst})~\hyperlink{core__c_8h_a3c8316f0881faa24e9c9816a9a721284}{cv\-Inv}( \hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, \hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst} )
+\item 
+\#define \hyperlink{compat_8hpp_a11bcf14954bb32ee632052357cc6f384}{cvm\-Mahalanobis}(vec1, \hyperlink{core__c_8h_aa709adb546262d915d3c98aacf3bb71a}{vec2}, \hyperlink{imgproc__c_8h_ad9325e85114e7b9ab738a23b62ea10a0}{mat})~cv\-Mahalanobis( vec1, \hyperlink{core__c_8h_aa709adb546262d915d3c98aacf3bb71a}{vec2}, \hyperlink{imgproc__c_8h_ad9325e85114e7b9ab738a23b62ea10a0}{mat} )
+\item 
+\#define \hyperlink{compat_8hpp_af51a2cfba439cec11e96bc4f7799fbf8}{cvm\-Dot\-Product}(vec1, \hyperlink{core__c_8h_aa709adb546262d915d3c98aacf3bb71a}{vec2})~cv\-Dot\-Product( vec1, \hyperlink{core__c_8h_aa709adb546262d915d3c98aacf3bb71a}{vec2} )
+\item 
+\#define \hyperlink{compat_8hpp_a872eaebfb9f06b128d7663962844a907}{cvm\-Cross\-Product}(vec1, \hyperlink{core__c_8h_aa709adb546262d915d3c98aacf3bb71a}{vec2}, \hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst})~cv\-Cross\-Product( vec1, \hyperlink{core__c_8h_aa709adb546262d915d3c98aacf3bb71a}{vec2}, \hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst} )
+\item 
+\#define \hyperlink{compat_8hpp_a85c5f47e54657638b3f88328fc36a87a}{cvm\-Trace}(\hyperlink{imgproc__c_8h_ad9325e85114e7b9ab738a23b62ea10a0}{mat})~(cv\-Trace( \hyperlink{imgproc__c_8h_ad9325e85114e7b9ab738a23b62ea10a0}{mat} )).val\mbox{[}0\mbox{]}
+\item 
+\#define \hyperlink{compat_8hpp_a3d6aeed3aac15e9d256db8df3e57299b}{cvm\-Mul\-Transposed}(\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, \hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, \hyperlink{core__c_8h_a123bc68cb24a9ff21f983d79a680d3b5}{order})~cv\-Mul\-Transposed( \hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, \hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, \hyperlink{core__c_8h_a123bc68cb24a9ff21f983d79a680d3b5}{order} )
+\item 
+\#define \hyperlink{compat_8hpp_af2c110436ac288753ee9716084f9e336}{cvm\-Eigen\-V\-V}(\hyperlink{imgproc__c_8h_ad9325e85114e7b9ab738a23b62ea10a0}{mat}, evec, eval, \hyperlink{imgproc__c_8h_aabece9d4af1ab09d2f85ade473757e32}{eps})~cv\-Eigen\-V\-V( \hyperlink{imgproc__c_8h_ad9325e85114e7b9ab738a23b62ea10a0}{mat}, evec, eval, \hyperlink{imgproc__c_8h_aabece9d4af1ab09d2f85ade473757e32}{eps} )
+\item 
+\#define \hyperlink{compat_8hpp_aca499a8358979dd5e122015c9a642e67}{cvm\-Det}(\hyperlink{imgproc__c_8h_ad9325e85114e7b9ab738a23b62ea10a0}{mat})~cv\-Det( \hyperlink{imgproc__c_8h_ad9325e85114e7b9ab738a23b62ea10a0}{mat} )
+\item 
+\#define \hyperlink{compat_8hpp_a59740dfd1f64f9750708285ddd0365c6}{cvm\-Scale}(\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, \hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, \hyperlink{objdetect_8hpp_a1f622eb9b9e06b30862ca90cdf2c078b}{scale})~\hyperlink{core__c_8h_a4c122895ca16104b499e7ed0e46047e4}{cv\-Scale}( \hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, \hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, \hyperlink{objdetect_8hpp_a1f622eb9b9e06b30862ca90cdf2c078b}{scale} )
+\item 
+\#define \hyperlink{compat_8hpp_ac9adb410fdc30d604cb0db3aae663109}{cv\-Copy\-Image}(\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, \hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst})~cv\-Copy( \hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, \hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, 0 )
+\item 
+\#define \hyperlink{compat_8hpp_a1ad07c2eea83f576d82de95816d1fb1a}{cv\-Release\-Mat\-Header}~cv\-Release\-Mat
+\item 
+\#define \hyperlink{compat_8hpp_a860023682c0b2f8e115163960095b654}{cv\-Query\-Hist\-Value\-\_\-1\-D}(\hyperlink{legacy_8hpp_a680f11e53e63640f03dcbb160eb06c53}{hist}, \hyperlink{core__c_8h_af12c54b430e1bab7e60cb51f41077401}{idx0})~((float)cv\-Get\-Real1\-D( (\hyperlink{legacy_8hpp_a680f11e53e63640f03dcbb160eb06c53}{hist})-\/$>$bins, (\hyperlink{core__c_8h_af12c54b430e1bab7e60cb51f41077401}{idx0})))
+\item 
+\#define \hyperlink{compat_8hpp_ac9de67a37065b83080e351525d98c62d}{cv\-Query\-Hist\-Value\-\_\-2\-D}(\hyperlink{legacy_8hpp_a680f11e53e63640f03dcbb160eb06c53}{hist}, \hyperlink{core__c_8h_af12c54b430e1bab7e60cb51f41077401}{idx0}, \hyperlink{core__c_8h_a1c4b80fe183b34b467e80873f8a0bd6c}{idx1})~((float)cv\-Get\-Real2\-D( (\hyperlink{legacy_8hpp_a680f11e53e63640f03dcbb160eb06c53}{hist})-\/$>$bins, (\hyperlink{core__c_8h_af12c54b430e1bab7e60cb51f41077401}{idx0}), (\hyperlink{core__c_8h_a1c4b80fe183b34b467e80873f8a0bd6c}{idx1})))
+\item 
+\#define \hyperlink{compat_8hpp_a7f3de226d2cf79801449bbed00ed04c3}{cv\-Query\-Hist\-Value\-\_\-3\-D}(\hyperlink{legacy_8hpp_a680f11e53e63640f03dcbb160eb06c53}{hist}, \hyperlink{core__c_8h_af12c54b430e1bab7e60cb51f41077401}{idx0}, \hyperlink{core__c_8h_a1c4b80fe183b34b467e80873f8a0bd6c}{idx1}, \hyperlink{core__c_8h_a487b733cfbebd0e4337852caa5cbddf5}{idx2})~((float)cv\-Get\-Real3\-D( (\hyperlink{legacy_8hpp_a680f11e53e63640f03dcbb160eb06c53}{hist})-\/$>$bins, (\hyperlink{core__c_8h_af12c54b430e1bab7e60cb51f41077401}{idx0}), (\hyperlink{core__c_8h_a1c4b80fe183b34b467e80873f8a0bd6c}{idx1}), (\hyperlink{core__c_8h_a487b733cfbebd0e4337852caa5cbddf5}{idx2})))
+\item 
+\#define \hyperlink{compat_8hpp_a95de963141abb2ba7e20df569e14cdd7}{cv\-Query\-Hist\-Value\-\_\-n\-D}(\hyperlink{legacy_8hpp_a680f11e53e63640f03dcbb160eb06c53}{hist}, \hyperlink{core__c_8h_a5c7c842f447336aa2f10826df65a28b3}{idx})~((float)cv\-Get\-Real\-N\-D( (\hyperlink{legacy_8hpp_a680f11e53e63640f03dcbb160eb06c53}{hist})-\/$>$bins, (\hyperlink{core__c_8h_a5c7c842f447336aa2f10826df65a28b3}{idx})))
+\item 
+\#define \hyperlink{compat_8hpp_afac56bb56c3ff51e2aead62d04c62bd2}{cv\-Get\-Hist\-Value\-\_\-1\-D}(\hyperlink{legacy_8hpp_a680f11e53e63640f03dcbb160eb06c53}{hist}, \hyperlink{core__c_8h_af12c54b430e1bab7e60cb51f41077401}{idx0})~((float$\ast$)cv\-Ptr1\-D( (\hyperlink{legacy_8hpp_a680f11e53e63640f03dcbb160eb06c53}{hist})-\/$>$bins, (\hyperlink{core__c_8h_af12c54b430e1bab7e60cb51f41077401}{idx0}), 0))
+\item 
+\#define \hyperlink{compat_8hpp_adf8c3175e77fb7b4a7a3294ac7940c6c}{cv\-Get\-Hist\-Value\-\_\-2\-D}(\hyperlink{legacy_8hpp_a680f11e53e63640f03dcbb160eb06c53}{hist}, \hyperlink{core__c_8h_af12c54b430e1bab7e60cb51f41077401}{idx0}, \hyperlink{core__c_8h_a1c4b80fe183b34b467e80873f8a0bd6c}{idx1})~((float$\ast$)cv\-Ptr2\-D( (\hyperlink{legacy_8hpp_a680f11e53e63640f03dcbb160eb06c53}{hist})-\/$>$bins, (\hyperlink{core__c_8h_af12c54b430e1bab7e60cb51f41077401}{idx0}), (\hyperlink{core__c_8h_a1c4b80fe183b34b467e80873f8a0bd6c}{idx1}), 0))
+\item 
+\#define \hyperlink{compat_8hpp_af426a5240b734816c21bbcf7b23fe717}{cv\-Get\-Hist\-Value\-\_\-3\-D}(\hyperlink{legacy_8hpp_a680f11e53e63640f03dcbb160eb06c53}{hist}, \hyperlink{core__c_8h_af12c54b430e1bab7e60cb51f41077401}{idx0}, \hyperlink{core__c_8h_a1c4b80fe183b34b467e80873f8a0bd6c}{idx1}, \hyperlink{core__c_8h_a487b733cfbebd0e4337852caa5cbddf5}{idx2})~((float$\ast$)cv\-Ptr3\-D( (\hyperlink{legacy_8hpp_a680f11e53e63640f03dcbb160eb06c53}{hist})-\/$>$bins, (\hyperlink{core__c_8h_af12c54b430e1bab7e60cb51f41077401}{idx0}), (\hyperlink{core__c_8h_a1c4b80fe183b34b467e80873f8a0bd6c}{idx1}), (\hyperlink{core__c_8h_a487b733cfbebd0e4337852caa5cbddf5}{idx2}), 0))
+\item 
+\#define \hyperlink{compat_8hpp_a03ff7043dd1bb740321b47cd3ca1610e}{cv\-Get\-Hist\-Value\-\_\-n\-D}(\hyperlink{legacy_8hpp_a680f11e53e63640f03dcbb160eb06c53}{hist}, \hyperlink{core__c_8h_a5c7c842f447336aa2f10826df65a28b3}{idx})~((float$\ast$)cv\-Ptr\-N\-D( (\hyperlink{legacy_8hpp_a680f11e53e63640f03dcbb160eb06c53}{hist})-\/$>$bins, (\hyperlink{core__c_8h_a5c7c842f447336aa2f10826df65a28b3}{idx}), 0))
+\item 
+\#define \hyperlink{compat_8hpp_a8b0b28b85c89516e5f4366c98c4edbd7}{C\-V\-\_\-\-I\-S\-\_\-\-S\-E\-T\-\_\-\-E\-L\-E\-M\-\_\-\-E\-X\-I\-S\-T\-S}~\hyperlink{core_2types__c_8h_af5ef56c5a64a711c129c87c84efd75f7}{C\-V\-\_\-\-I\-S\-\_\-\-S\-E\-T\-\_\-\-E\-L\-E\-M}
+\item 
+\#define \hyperlink{compat_8hpp_ae14c64028ed6ffa2dc5ac1fa44a976c9}{C\-V\-\_\-\-I\-N\-I\-T\-\_\-\-P\-I\-X\-E\-L\-\_\-\-P\-O\-S}(\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}, origin, \-\_\-step, \hyperlink{legacy_8hpp_a22e52b2b51d064865d3ac2f27b308c33}{roi}, \-\_\-x, \-\_\-y, \hyperlink{tracking_8hpp_a8a0898c06d9f70093b4eb8c24ae1097f}{orientation})
+\item 
+\#define \hyperlink{compat_8hpp_a2e6228d55c56da4eed2e3bbafebcd1e0}{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-T\-O}(\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}, \-\_\-x, \-\_\-y, cs)
+\item 
+\#define \hyperlink{compat_8hpp_a159b5f4d610d1f18609d93d937d8ee0c}{C\-V\-\_\-\-G\-E\-T\-\_\-\-C\-U\-R\-R\-E\-N\-T}(\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}, cs)~((\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}).currline + (\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}).\hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x} $\ast$ (cs))
+\item 
+\#define \hyperlink{compat_8hpp_aedd6288f6084ac70ccd71d720a57f990}{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-L\-E\-F\-T}(\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}, cs)~( -\/-\/(\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}).\hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x} $>$= 0 ? (\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}).currline + (\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}).\hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x}$\ast$(cs) \-: 0 )
+\item 
+\#define \hyperlink{compat_8hpp_a54cd07a861e435d16a7e5dc81e4b72c7}{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-R\-I\-G\-H\-T}(\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}, cs)~( ++(\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}).\hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x} $<$ (\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}).\hyperlink{highgui__c_8h_a2474a5474cbff19523a51eb1de01cda4}{width} ? (\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}).currline + (\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}).\hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x}$\ast$(cs) \-: 0 )
+\item 
+\#define \hyperlink{compat_8hpp_a3a8fac6a80a463f580e46e15d54a1291}{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-U\-P}(\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}, cs)~(((\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}).currline -\/= (\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}).\hyperlink{legacy_8hpp_abc16e65f240ed0c8f3e876e8732c0a33}{step}) != (\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}).topline ? (\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}).currline + (\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}).\hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x}$\ast$(cs) \-: 0 )
+\item 
+\#define \hyperlink{compat_8hpp_a2d55433069bfb12de58e6a3d460503a4}{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-D\-O\-W\-N}(\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}, cs)~(((\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}).currline += (\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}).\hyperlink{legacy_8hpp_abc16e65f240ed0c8f3e876e8732c0a33}{step}) != (\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}).bottomline ? (\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}).currline + (\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}).\hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x}$\ast$(cs) \-: 0 )
+\item 
+\#define \hyperlink{compat_8hpp_aed1472ead202ead3f0f5c49a5ece890b}{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-L\-U}(\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}, cs)~( \hyperlink{compat_8hpp_aedd6288f6084ac70ccd71d720a57f990}{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-L\-E\-F\-T}(\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}, cs), \hyperlink{compat_8hpp_a3a8fac6a80a463f580e46e15d54a1291}{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-U\-P}(\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}, cs))
+\item 
+\#define \hyperlink{compat_8hpp_a38876379ccd6aee94970d1065c2e0b00}{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-R\-U}(\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}, cs)~( \hyperlink{compat_8hpp_a54cd07a861e435d16a7e5dc81e4b72c7}{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-R\-I\-G\-H\-T}(\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}, cs), \hyperlink{compat_8hpp_a3a8fac6a80a463f580e46e15d54a1291}{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-U\-P}(\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}, cs))
+\item 
+\#define \hyperlink{compat_8hpp_a15c9dd6240dec117254bd0fc47ed95b3}{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-L\-D}(\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}, cs)~( \hyperlink{compat_8hpp_aedd6288f6084ac70ccd71d720a57f990}{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-L\-E\-F\-T}(\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}, cs), \hyperlink{compat_8hpp_a2d55433069bfb12de58e6a3d460503a4}{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-D\-O\-W\-N}(\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}, cs))
+\item 
+\#define \hyperlink{compat_8hpp_abbc069cf35710b59777ecc04bb254c44}{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-R\-D}(\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}, cs)~( \hyperlink{compat_8hpp_a54cd07a861e435d16a7e5dc81e4b72c7}{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-R\-I\-G\-H\-T}(\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}, cs), \hyperlink{compat_8hpp_a2d55433069bfb12de58e6a3d460503a4}{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-D\-O\-W\-N}(\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}, cs))
+\item 
+\#define \hyperlink{compat_8hpp_ab267606870877dc1b61c4bb1f3babd02}{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-L\-E\-F\-T\-\_\-\-W\-R\-A\-P}(\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}, cs)~((\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}).currline + ( -\/-\/(\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}).\hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x} $>$= 0 ? (\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}).\hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x} \-: ((\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}).\hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x} = (\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}).\hyperlink{highgui__c_8h_a2474a5474cbff19523a51eb1de01cda4}{width}-\/1))$\ast$(cs))
+\item 
+\#define \hyperlink{compat_8hpp_a5fa6455acfded26a4a03216ddfc37b9a}{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-R\-I\-G\-H\-T\-\_\-\-W\-R\-A\-P}(\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}, cs)~((\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}).currline + ( ++(\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}).\hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x} $<$ (\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}).\hyperlink{highgui__c_8h_a2474a5474cbff19523a51eb1de01cda4}{width} ? (\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}).\hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x} \-: ((\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}).\hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x} = 0))$\ast$(cs) )
+\item 
+\#define \hyperlink{compat_8hpp_a63cf7b6891aea3abb0c1d0c356f8216e}{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-U\-P\-\_\-\-W\-R\-A\-P}(\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}, cs)
+\item 
+\#define \hyperlink{compat_8hpp_a3f8df11709e2e56f01a2d854d0852a6f}{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-D\-O\-W\-N\-\_\-\-W\-R\-A\-P}(\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}, cs)
+\item 
+\#define \hyperlink{compat_8hpp_ab53b453e6df5b1806b4a1e32c4add028}{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-L\-U\-\_\-\-W\-R\-A\-P}(\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}, cs)~( \hyperlink{compat_8hpp_ab267606870877dc1b61c4bb1f3babd02}{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-L\-E\-F\-T\-\_\-\-W\-R\-A\-P}(\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}, cs), \hyperlink{compat_8hpp_a63cf7b6891aea3abb0c1d0c356f8216e}{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-U\-P\-\_\-\-W\-R\-A\-P}(\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}, cs))
+\item 
+\#define \hyperlink{compat_8hpp_a414f3c390e237e6173ace3c7fb063c9a}{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-R\-U\-\_\-\-W\-R\-A\-P}(\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}, cs)~( \hyperlink{compat_8hpp_a5fa6455acfded26a4a03216ddfc37b9a}{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-R\-I\-G\-H\-T\-\_\-\-W\-R\-A\-P}(\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}, cs), \hyperlink{compat_8hpp_a63cf7b6891aea3abb0c1d0c356f8216e}{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-U\-P\-\_\-\-W\-R\-A\-P}(\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}, cs))
+\item 
+\#define \hyperlink{compat_8hpp_a637d40ba5a6e954c8feab5a4125acbaf}{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-L\-D\-\_\-\-W\-R\-A\-P}(\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}, cs)~( \hyperlink{compat_8hpp_ab267606870877dc1b61c4bb1f3babd02}{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-L\-E\-F\-T\-\_\-\-W\-R\-A\-P}(\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}, cs), \hyperlink{compat_8hpp_a3f8df11709e2e56f01a2d854d0852a6f}{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-D\-O\-W\-N\-\_\-\-W\-R\-A\-P}(\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}, cs))
+\item 
+\#define \hyperlink{compat_8hpp_a7d73b65e9bbc8fe94afe82754c15e63e}{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-R\-D\-\_\-\-W\-R\-A\-P}(\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}, cs)~( \hyperlink{compat_8hpp_a5fa6455acfded26a4a03216ddfc37b9a}{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-R\-I\-G\-H\-T\-\_\-\-W\-R\-A\-P}(\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}, cs), \hyperlink{compat_8hpp_a3f8df11709e2e56f01a2d854d0852a6f}{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-D\-O\-W\-N\-\_\-\-W\-R\-A\-P}(\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}, cs))
+\item 
+\#define \hyperlink{compat_8hpp_aa0c2b1441d43dcb372ef4d639765d8e1}{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-P\-A\-R\-A\-M}(\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}, shift, cs)
+\item 
+\#define \hyperlink{compat_8hpp_a2c62d4b8b765df10f25fe2a1ede82b74}{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-P\-A\-R\-A\-M\-\_\-\-W\-R\-A\-P}(\hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}, shift, cs)
+\item 
+\#define \hyperlink{compat_8hpp_a7e6451c6eea26a0a79edeb2c98bcb4cb}{cv\-Make2\-D\-Points}~cv\-Convert\-Points\-Homogeneous
+\item 
+\#define \hyperlink{compat_8hpp_ab54e91738080c5c9cec55950dd68b06a}{cv\-Make3\-D\-Points}~cv\-Convert\-Points\-Homogeneous
+\item 
+\#define \hyperlink{compat_8hpp_a124a51dee4ea8dd86aa7915ba1284241}{cv\-Warp\-Perspective\-Q\-Matrix}~cv\-Get\-Perspective\-Transform
+\item 
+\#define \hyperlink{compat_8hpp_a1c2c8fe60cc51cf2ecd84bdfc96d0ee4}{cv\-Convert\-Points\-Homogenious}~cv\-Convert\-Points\-Homogeneous
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef int \hyperlink{compat_8hpp_adc5ecd4f0f29d1348c6d88ab5dbc1d11}{Cv\-Mat\-Type}
+\item 
+typedef int \hyperlink{compat_8hpp_a257a8c2e7ed67749da3ecee69b994216}{Cv\-Dis\-Mask\-Type}
+\item 
+typedef \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{compat_8hpp_ab0cc6d8047af9630f9759238c8ab81c5}{Cv\-Mat\-Array}
+\item 
+typedef int \hyperlink{compat_8hpp_a0ba85f6e077df81b31ea00d6be765056}{Cv\-Thresh\-Type}
+\item 
+typedef int \hyperlink{compat_8hpp_a8fc724e4b0adc88b0ecccc7b9258e2ef}{Cv\-Adaptive\-Thresh\-Method}
+\item 
+typedef int \hyperlink{compat_8hpp_ac5b2e1d9fed78693b170a6b03e879c18}{Cv\-Compare\-Method}
+\item 
+typedef int \hyperlink{compat_8hpp_a922cc0697485c8294f2626815445bfcb}{Cv\-Font\-Face}
+\item 
+typedef int \hyperlink{compat_8hpp_aaf7a8722ec7b2f84f00a4a8de241905d}{Cv\-Poly\-Approx\-Method}
+\item 
+typedef int \hyperlink{compat_8hpp_aa94e341e268a7d93ebfdb978e7a7a873}{Cv\-Contours\-Match\-Method}
+\item 
+typedef int \hyperlink{compat_8hpp_a7c949004dd2edecb83c3360509ffeabd}{Cv\-Contour\-Trees\-Match\-Method}
+\item 
+typedef int \hyperlink{compat_8hpp_a9293fe8c629c7cfd06f734c8009562f6}{Cv\-Coeff\-Type}
+\item 
+typedef int \hyperlink{compat_8hpp_a43cf631b65d625cf5bf04c3ac8c3ca76}{Cv\-Rodrigues\-Type}
+\item 
+typedef int \hyperlink{compat_8hpp_ad93b1533b692c32e56ae7d07c0f7c701}{Cv\-Element\-Shape}
+\item 
+typedef int \hyperlink{compat_8hpp_a43f4cb681ec9011f5b7d6b7d417365aa}{Cv\-Morph\-Op}
+\item 
+typedef int \hyperlink{compat_8hpp_af9d5cde7c006100af74a728d6b078e73}{Cv\-Templ\-Match\-Method}
+\item 
+typedef \hyperlink{structCvPoint2D64f}{Cv\-Point2\-D64f} \hyperlink{compat_8hpp_a429bb30dcf3abc259690ac6b4f4ebb42}{Cv\-Point2\-D64d}
+\item 
+typedef \hyperlink{structCvPoint3D64f}{Cv\-Point3\-D64f} \hyperlink{compat_8hpp_a2f3488466c36e756862bad17edbd24b1}{Cv\-Point3\-D64d}
+\item 
+typedef \hyperlink{structCvBox2D}{Cv\-Box2\-D} \hyperlink{compat_8hpp_ac6fcd5ca53a13d6dc29631ae2f732052}{Cv\-Box2\-D32f}
+\item 
+typedef struct \hyperlink{structCvRandState}{Cv\-Rand\-State} \hyperlink{compat_8hpp_ab0285298b29fd0fd38dfec4adff32001}{Cv\-Rand\-State}
+\item 
+typedef int \hyperlink{compat_8hpp_a923775335babba30e7c0bb2c44c033bc}{Cv\-Dis\-Type}
+\item 
+typedef int \hyperlink{compat_8hpp_a8d72f53d16db94273be67394e46a6c01}{Cv\-Chain\-Approx\-Method}
+\item 
+typedef int \hyperlink{compat_8hpp_ac0657ea858f29c91a913bcef7c8e82b7}{Cv\-Contour\-Retrieval\-Mode}
+\item 
+typedef struct \hyperlink{struct__CvPixelPosition8u}{\-\_\-\-Cv\-Pixel\-Position8u} \hyperlink{compat_8hpp_a4e3117154f8bd35ef042fe0e87024e88}{Cv\-Pixel\-Position8u}
+\item 
+typedef struct \hyperlink{struct__CvPixelPosition8s}{\-\_\-\-Cv\-Pixel\-Position8s} \hyperlink{compat_8hpp_ab22659d1a604f72dadbc547e7036d77d}{Cv\-Pixel\-Position8s}
+\item 
+typedef struct \hyperlink{struct__CvPixelPosition32f}{\-\_\-\-Cv\-Pixel\-Position32f} \hyperlink{compat_8hpp_a84d4407e5b175d4cbed07aed8d4db29c}{Cv\-Pixel\-Position32f}
+\item 
+typedef float $\ast$ \hyperlink{compat_8hpp_a0695a164361a2a8d2f62620465481af3}{Cv\-Vect32f}
+\item 
+typedef float $\ast$ \hyperlink{compat_8hpp_ac28a78bb52f796748c0a95fffef1ce8c}{Cv\-Matr32f}
+\item 
+typedef double $\ast$ \hyperlink{compat_8hpp_ae3c6bc6d955076b9b8afcda108d4c374}{Cv\-Vect64d}
+\item 
+typedef double $\ast$ \hyperlink{compat_8hpp_a4535cb1ff63584db410f38b9cf59c80c}{Cv\-Matr64d}
+\item 
+typedef struct \hyperlink{structCvSURFPoint}{Cv\-S\-U\-R\-F\-Point} \hyperlink{compat_8hpp_a34a8e145a6b9530daf392c79f263dfb3}{Cv\-S\-U\-R\-F\-Point}
+\item 
+typedef struct \hyperlink{structCvSURFParams}{Cv\-S\-U\-R\-F\-Params} \hyperlink{compat_8hpp_a314165e79b8b61f6aa4f9293f95a01c3}{Cv\-S\-U\-R\-F\-Params}
+\item 
+typedef struct \hyperlink{structCvMSERParams}{Cv\-M\-S\-E\-R\-Params} \hyperlink{compat_8hpp_af87750117989c8128fd6eb6a54c7d706}{Cv\-M\-S\-E\-R\-Params}
+\item 
+typedef struct \hyperlink{structCvStarKeypoint}{Cv\-Star\-Keypoint} \hyperlink{compat_8hpp_a3a861c677fca07583e7c2cefb9923c4c}{Cv\-Star\-Keypoint}
+\item 
+typedef struct \hyperlink{structCvStarDetectorParams}{Cv\-Star\-Detector\-Params} \hyperlink{compat_8hpp_a8ec546e3ea4eb7a000b3eb77c0649fed}{Cv\-Star\-Detector\-Params}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \\*
+\hyperlink{compat_8hpp_a0e96acf73ec595679ffcca6fecc4d705a57526da4f44b3c2ba846625d9886d141}{C\-V\-\_\-\-M\-A\-T32\-F} = C\-V\-\_\-32\-F\-C1, 
+\hyperlink{compat_8hpp_a0e96acf73ec595679ffcca6fecc4d705ac53a0e0777573fe79de6098f46e05b4e}{C\-V\-\_\-\-M\-A\-T3x1\-\_\-32\-F} = C\-V\-\_\-32\-F\-C1, 
+\hyperlink{compat_8hpp_a0e96acf73ec595679ffcca6fecc4d705af34612f67fc4c4b423f5bd0123bdb03d}{C\-V\-\_\-\-M\-A\-T4x1\-\_\-32\-F} = C\-V\-\_\-32\-F\-C1, 
+\hyperlink{compat_8hpp_a0e96acf73ec595679ffcca6fecc4d705a4979f2821edfe04cfde9072445d3584f}{C\-V\-\_\-\-M\-A\-T3x3\-\_\-32\-F} = C\-V\-\_\-32\-F\-C1, 
+\\*
+\hyperlink{compat_8hpp_a0e96acf73ec595679ffcca6fecc4d705a4906a5af39bbeb57f584b79b87560520}{C\-V\-\_\-\-M\-A\-T4x4\-\_\-32\-F} = C\-V\-\_\-32\-F\-C1, 
+\hyperlink{compat_8hpp_a0e96acf73ec595679ffcca6fecc4d705a0d5082cda9efdb4dd924165e99c8b705}{C\-V\-\_\-\-M\-A\-T64\-D} = C\-V\-\_\-64\-F\-C1, 
+\hyperlink{compat_8hpp_a0e96acf73ec595679ffcca6fecc4d705a166ce6bbf87593d6f54768a15d8f9ea9}{C\-V\-\_\-\-M\-A\-T3x1\-\_\-64\-D} = C\-V\-\_\-64\-F\-C1, 
+\hyperlink{compat_8hpp_a0e96acf73ec595679ffcca6fecc4d705a654a26fb531d7874d6b9e26043a64bae}{C\-V\-\_\-\-M\-A\-T4x1\-\_\-64\-D} = C\-V\-\_\-64\-F\-C1, 
+\\*
+\hyperlink{compat_8hpp_a0e96acf73ec595679ffcca6fecc4d705a5502fa4fa192e78b446d16c18a495e84}{C\-V\-\_\-\-M\-A\-T3x3\-\_\-64\-D} = C\-V\-\_\-64\-F\-C1, 
+\hyperlink{compat_8hpp_a0e96acf73ec595679ffcca6fecc4d705acb585a34f77d05d8f976ae9fda7c36ad}{C\-V\-\_\-\-M\-A\-T4x4\-\_\-64\-D} = C\-V\-\_\-64\-F\-C1
+ \}
+\item 
+enum \{ \hyperlink{compat_8hpp_a223be06596dd9ff740bf0a09c8632294afed91723f312729759dbcca72c55929f}{I\-P\-L\-\_\-\-G\-A\-U\-S\-S\-I\-A\-N\-\_\-5x5} = 7
+ \}
+\item 
+enum \{ \\*
+\hyperlink{compat_8hpp_ac1351f3e26da80ee24b2888ecc68fca6a4ff0ecf352403466e858f12f86732d40}{C\-V\-\_\-\-S\-H\-I\-F\-T\-\_\-\-N\-O\-N\-E} = 2, 
+\hyperlink{compat_8hpp_ac1351f3e26da80ee24b2888ecc68fca6af16f731d6e9d400a021859b6c81cc782}{C\-V\-\_\-\-S\-H\-I\-F\-T\-\_\-\-L\-E\-F\-T} = 1, 
+\hyperlink{compat_8hpp_ac1351f3e26da80ee24b2888ecc68fca6a83831ebba62b9be5a5dc51299b9e3193}{C\-V\-\_\-\-S\-H\-I\-F\-T\-\_\-\-R\-I\-G\-H\-T} = 3, 
+\hyperlink{compat_8hpp_ac1351f3e26da80ee24b2888ecc68fca6adb873f742a9967f7cfde12819879b082}{C\-V\-\_\-\-S\-H\-I\-F\-T\-\_\-\-U\-P} = 6, 
+\\*
+\hyperlink{compat_8hpp_ac1351f3e26da80ee24b2888ecc68fca6aa2543a594c34138862fc93eefcebbb3e}{C\-V\-\_\-\-S\-H\-I\-F\-T\-\_\-\-D\-O\-W\-N} = 10, 
+\hyperlink{compat_8hpp_ac1351f3e26da80ee24b2888ecc68fca6a6496a45e2ed37aa2819a6c30b69f8aef}{C\-V\-\_\-\-S\-H\-I\-F\-T\-\_\-\-L\-U} = 5, 
+\hyperlink{compat_8hpp_ac1351f3e26da80ee24b2888ecc68fca6a19f695c163d496b196675b85cfa9ddca}{C\-V\-\_\-\-S\-H\-I\-F\-T\-\_\-\-R\-U} = 7, 
+\hyperlink{compat_8hpp_ac1351f3e26da80ee24b2888ecc68fca6ac29ef2130e571534f3fd233bf6c464f5}{C\-V\-\_\-\-S\-H\-I\-F\-T\-\_\-\-L\-D} = 9, 
+\\*
+\hyperlink{compat_8hpp_ac1351f3e26da80ee24b2888ecc68fca6aa09dd26fa1aad4c190ff25c2d36b7fae}{C\-V\-\_\-\-S\-H\-I\-F\-T\-\_\-\-R\-D} = 11
+ \}
+\item 
+enum \{ \hyperlink{compat_8hpp_a16db4876b192da08f3ad0cb41afe516faad12fe47dbef23c7f23672fc005d6d3d}{C\-V\-\_\-\-R\-O\-D\-R\-I\-G\-U\-E\-S\-\_\-\-M2\-V} = 0, 
+\hyperlink{compat_8hpp_a16db4876b192da08f3ad0cb41afe516fa845620d44a10e5c15b3d0935af8f24b5}{C\-V\-\_\-\-R\-O\-D\-R\-I\-G\-U\-E\-S\-\_\-\-V2\-M} = 1
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{compat_8hpp_a12536a6f8cf4222db1cc2cc81dbb225b}{cv\-Mat\-Array} (int \hyperlink{imgproc__c_8h_a061459acc9e078fa4699e0e349887215}{rows}, int \hyperlink{core__c_8h_a4407a60bc4387adae24cee658711f2d9}{cols}, int \hyperlink{imgproc__c_8h_a84612d8738bf935200cf32a103d8efe1}{type}, int \hyperlink{tracking_8hpp_a88d78b1935cd8bdee70a44eaaf326b1e}{count}, \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} $\ast$\hyperlink{legacy_8hpp_ab9fe6c09e6d02865a953fffc12fe6ca0}{data} \hyperlink{tracking_8hpp_a99fa8d92489df6aa329d7166d52cbfb4}{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}(0))
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} double \hyperlink{compat_8hpp_a0217b8875989204a850fba0f153b3f9e}{cv\-Mean} (const \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} $\ast$\hyperlink{legacy_8hpp_ad62b16ab219ae2483e8a3d921c44cc97}{image}, const \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} $\ast$\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask} \hyperlink{tracking_8hpp_a99fa8d92489df6aa329d7166d52cbfb4}{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}(0))
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} double \hyperlink{compat_8hpp_ad9184a00c63a9abed781cf2d876308bd}{cv\-Sum\-Pixels} (const \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} $\ast$\hyperlink{legacy_8hpp_ad62b16ab219ae2483e8a3d921c44cc97}{image})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{compat_8hpp_a96607aa051ca1163457a1b628f605e39}{cv\-Mean\-\_\-\-Std\-Dev} (const \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} $\ast$\hyperlink{legacy_8hpp_ad62b16ab219ae2483e8a3d921c44cc97}{image}, double $\ast$\hyperlink{core__c_8h_ad090d0faa53f44e0377c8d63dab3fa20}{mean}, double $\ast$sdv, const \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} $\ast$\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask} \hyperlink{tracking_8hpp_a99fa8d92489df6aa329d7166d52cbfb4}{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}(0))
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{compat_8hpp_aa7e2bfc10a8aacda3fa2e508e1ec189f}{cvm\-Perspective\-Project} (const \hyperlink{structCvMat}{Cv\-Mat} $\ast$\hyperlink{imgproc__c_8h_ad9325e85114e7b9ab738a23b62ea10a0}{mat}, const \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} $\ast$\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} $\ast$\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{compat_8hpp_a30a61c503f9d04456e695b1ade41146b}{cv\-Fill\-Image} (\hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} $\ast$\hyperlink{imgproc__c_8h_ad9325e85114e7b9ab738a23b62ea10a0}{mat}, double \hyperlink{core__c_8h_a4ea898fa4dd23d613d19923509d8e249}{color})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{compat_8hpp_a9320146e873eacb695732fb988927dfb}{cv\-Rand\-Set\-Range} (\hyperlink{structCvRandState}{Cv\-Rand\-State} $\ast$\hyperlink{legacy_8hpp_adf6b96319f18247b0ac3b2900987e75b}{state}, double \hyperlink{core__c_8h_a4a138cebb3d1124bb552aa80cc860eea}{param1}, double \hyperlink{core__c_8h_a31355e809c125347b49af078e58da79e}{param2}, int \hyperlink{core__c_8h_a750b5d744c39a06bfb13e6eb010e35d0}{index} \hyperlink{tracking_8hpp_a99fa8d92489df6aa329d7166d52cbfb4}{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}(-\/1))
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{compat_8hpp_ac187cb015de43f33a6cef8eb73785271}{cv\-Rand\-Init} (\hyperlink{structCvRandState}{Cv\-Rand\-State} $\ast$\hyperlink{legacy_8hpp_adf6b96319f18247b0ac3b2900987e75b}{state}, double \hyperlink{core__c_8h_a4a138cebb3d1124bb552aa80cc860eea}{param1}, double \hyperlink{core__c_8h_a31355e809c125347b49af078e58da79e}{param2}, int seed, int disttype \hyperlink{tracking_8hpp_a99fa8d92489df6aa329d7166d52cbfb4}{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}(\hyperlink{core__c_8h_a72bae9d3d709b559686f0595055f7d40}{C\-V\-\_\-\-R\-A\-N\-D\-\_\-\-U\-N\-I}))
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{compat_8hpp_a0a8adeae9937032894117b8567e0f74f}{cv\-Rand} (\hyperlink{structCvRandState}{Cv\-Rand\-State} $\ast$\hyperlink{legacy_8hpp_adf6b96319f18247b0ac3b2900987e75b}{state}, \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} $\ast$\hyperlink{core__c_8h_ab8e13ef59ba6f71bb02934957ba61c65}{arr})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{compat_8hpp_af457a62fc418c2e0dde04b4ea19da33c}{cvb\-Rand} (\hyperlink{structCvRandState}{Cv\-Rand\-State} $\ast$\hyperlink{legacy_8hpp_adf6b96319f18247b0ac3b2900987e75b}{state}, float $\ast$\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, int \hyperlink{core__c_8h_accb79be93f4fbcaa15b5a7670569c9f8}{len})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{compat_8hpp_a958bebc4d15da252640388035be57be2}{cvb\-Cart\-To\-Polar} (const float $\ast$\hyperlink{highgui__c_8h_af1202c02b14870c18fb3a1da73e9e7c7}{y}, const float $\ast$\hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x}, float $\ast$\hyperlink{core__c_8h_ae0d0185d64d9ebdd6549c80dd9268f2c}{magnitude}, float $\ast$\hyperlink{imgproc__c_8h_a79dea7ed146af26ff4a0ba4bf5c83eee}{angle}, int \hyperlink{core__c_8h_accb79be93f4fbcaa15b5a7670569c9f8}{len})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{compat_8hpp_a69cf4b65dfd4806a675861d725aef3f6}{cvb\-Fast\-Arctan} (const float $\ast$\hyperlink{highgui__c_8h_af1202c02b14870c18fb3a1da73e9e7c7}{y}, const float $\ast$\hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x}, float $\ast$\hyperlink{imgproc__c_8h_a79dea7ed146af26ff4a0ba4bf5c83eee}{angle}, int \hyperlink{core__c_8h_accb79be93f4fbcaa15b5a7670569c9f8}{len})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{compat_8hpp_a5247a2fc7fd03484dd8953095a4abada}{cvb\-Sqrt} (const float $\ast$\hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x}, float $\ast$\hyperlink{highgui__c_8h_af1202c02b14870c18fb3a1da73e9e7c7}{y}, int \hyperlink{core__c_8h_accb79be93f4fbcaa15b5a7670569c9f8}{len})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{compat_8hpp_ad99cdb9842955a334067154211390503}{cvb\-Inv\-Sqrt} (const float $\ast$\hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x}, float $\ast$\hyperlink{highgui__c_8h_af1202c02b14870c18fb3a1da73e9e7c7}{y}, int \hyperlink{core__c_8h_accb79be93f4fbcaa15b5a7670569c9f8}{len})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{compat_8hpp_affa447f6eb3f68e28378cdf0d3be6709}{cvb\-Reciprocal} (const float $\ast$\hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x}, float $\ast$\hyperlink{highgui__c_8h_af1202c02b14870c18fb3a1da73e9e7c7}{y}, int \hyperlink{core__c_8h_accb79be93f4fbcaa15b5a7670569c9f8}{len})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{compat_8hpp_add8b000d52ef80a21aab26ec1f3b38e6}{cvb\-Fast\-Exp} (const float $\ast$\hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x}, double $\ast$\hyperlink{highgui__c_8h_af1202c02b14870c18fb3a1da73e9e7c7}{y}, int \hyperlink{core__c_8h_accb79be93f4fbcaa15b5a7670569c9f8}{len})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{compat_8hpp_a276333ac6a4666ed064b9265e2eed747}{cvb\-Fast\-Log} (const double $\ast$\hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x}, float $\ast$\hyperlink{highgui__c_8h_af1202c02b14870c18fb3a1da73e9e7c7}{y}, int \hyperlink{core__c_8h_accb79be93f4fbcaa15b5a7670569c9f8}{len})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{structCvRect}{Cv\-Rect} \hyperlink{compat_8hpp_ac26a44905aadf6eb87235c2bd69c5730}{cv\-Contour\-Bounding\-Rect} (\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} $\ast$point\-\_\-set, int update \hyperlink{tracking_8hpp_a99fa8d92489df6aa329d7166d52cbfb4}{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}(0))
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} double \hyperlink{compat_8hpp_af4d234e11d99795acd6124311539af14}{cv\-Pseudo\-Inverse} (const \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} $\ast$\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} $\ast$\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{compat_8hpp_ad62d4ad0e034ce831a4c72b0e188e4aa}{cv\-Convex\-Hull} (\hyperlink{structCvPoint}{Cv\-Point} $\ast$\hyperlink{legacy_8hpp_a8c4b676395bf614cc92b782d12f18847}{points}, int num\-\_\-points, \hyperlink{structCvRect}{Cv\-Rect} $\ast$bound\-\_\-rect, int \hyperlink{tracking_8hpp_a8a0898c06d9f70093b4eb8c24ae1097f}{orientation}, int $\ast$hull, int $\ast$hullsize)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{compat_8hpp_abb2c082c8f38454011d52120cfcf4931}{cv\-Min\-Area\-Rect} (\hyperlink{structCvPoint}{Cv\-Point} $\ast$\hyperlink{legacy_8hpp_a8c4b676395bf614cc92b782d12f18847}{points}, int \hyperlink{legacy_8hpp_a76f11d9a0a47b94f72c2d0e77fb32240}{n}, int left, int bottom, int \hyperlink{legacy_8hpp_a6b04b878081bf724144b73c75dfd1894}{right}, int top, \hyperlink{structCvPoint2D32f}{Cv\-Point2\-D32f} $\ast$anchor, \hyperlink{structCvPoint2D32f}{Cv\-Point2\-D32f} $\ast$vect1, \hyperlink{structCvPoint2D32f}{Cv\-Point2\-D32f} $\ast$vect2)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{compat_8hpp_a7146c9e6537cdfd71ffa09b3042b2425}{cv\-Fit\-Line3\-D} (\hyperlink{structCvPoint3D32f}{Cv\-Point3\-D32f} $\ast$\hyperlink{legacy_8hpp_a8c4b676395bf614cc92b782d12f18847}{points}, int \hyperlink{tracking_8hpp_a88d78b1935cd8bdee70a44eaaf326b1e}{count}, int \hyperlink{legacy_8hpp_ae895c2003a87eda49126845b7ac3688e}{dist}, \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} $\ast$\hyperlink{highgui__c_8h_a2fad04a6d56e23dd58d9ebbcffae688f}{param}, float \hyperlink{imgproc__c_8h_a48d019f60ad3622468bbdd106d76618e}{reps}, float \hyperlink{imgproc__c_8h_a54c99d614f6f66c437e8cb01d1e2fe1a}{aeps}, float $\ast$\hyperlink{legacy_8hpp_a5a869825573cfaf8861a6ec0fe0f262f}{line})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{compat_8hpp_aa5797b8d071956308f6c47490fcb3dc0}{cv\-Fit\-Line2\-D} (\hyperlink{structCvPoint2D32f}{Cv\-Point2\-D32f} $\ast$\hyperlink{legacy_8hpp_a8c4b676395bf614cc92b782d12f18847}{points}, int \hyperlink{tracking_8hpp_a88d78b1935cd8bdee70a44eaaf326b1e}{count}, int \hyperlink{legacy_8hpp_ae895c2003a87eda49126845b7ac3688e}{dist}, \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} $\ast$\hyperlink{highgui__c_8h_a2fad04a6d56e23dd58d9ebbcffae688f}{param}, float \hyperlink{imgproc__c_8h_a48d019f60ad3622468bbdd106d76618e}{reps}, float \hyperlink{imgproc__c_8h_a54c99d614f6f66c437e8cb01d1e2fe1a}{aeps}, float $\ast$\hyperlink{legacy_8hpp_a5a869825573cfaf8861a6ec0fe0f262f}{line})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{compat_8hpp_aafd55efa458f9d6704a0466c4768f0fc}{cv\-Fit\-Ellipse} (const \hyperlink{structCvPoint2D32f}{Cv\-Point2\-D32f} $\ast$\hyperlink{legacy_8hpp_a8c4b676395bf614cc92b782d12f18847}{points}, int \hyperlink{tracking_8hpp_a88d78b1935cd8bdee70a44eaaf326b1e}{count}, \hyperlink{structCvBox2D}{Cv\-Box2\-D} $\ast$box)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{compat_8hpp_a8bc808b236831064ee44f4080c913648}{cv\-Project3\-D} (\hyperlink{structCvPoint3D32f}{Cv\-Point3\-D32f} $\ast$points3\-D, int \hyperlink{tracking_8hpp_a88d78b1935cd8bdee70a44eaaf326b1e}{count}, \hyperlink{structCvPoint2D32f}{Cv\-Point2\-D32f} $\ast$points2\-D, int x\-Indx \hyperlink{tracking_8hpp_a99fa8d92489df6aa329d7166d52cbfb4}{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}(0), int y\-Indx \hyperlink{tracking_8hpp_a99fa8d92489df6aa329d7166d52cbfb4}{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}(1))
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} int \hyperlink{compat_8hpp_af47110b07672b5a107eecb7d21a87c28}{cv\-Hough\-Lines} (\hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} $\ast$\hyperlink{legacy_8hpp_ad62b16ab219ae2483e8a3d921c44cc97}{image}, double \hyperlink{imgproc__c_8h_a7d8783b6b909806d38134f1f342005bf}{rho}, double \hyperlink{imgproc__c_8h_a90ba48f41646a904a861746079d43f17}{theta}, int \hyperlink{legacy_8hpp_ad486c230317acbbf60577b15e027dc73}{threshold}, float $\ast$lines, int lines\-Number)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} int \hyperlink{compat_8hpp_a68cded5db10d15c0779ef30a32f8d7a2}{cv\-Hough\-Lines\-P} (\hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} $\ast$\hyperlink{legacy_8hpp_ad62b16ab219ae2483e8a3d921c44cc97}{image}, double \hyperlink{imgproc__c_8h_a7d8783b6b909806d38134f1f342005bf}{rho}, double \hyperlink{imgproc__c_8h_a90ba48f41646a904a861746079d43f17}{theta}, int \hyperlink{legacy_8hpp_ad486c230317acbbf60577b15e027dc73}{threshold}, int line\-Length, int line\-Gap, int $\ast$lines, int lines\-Number)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} int \hyperlink{compat_8hpp_a39ec82e0270dbcea6c44c25ea052a3e8}{cv\-Hough\-Lines\-S\-Div} (\hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} $\ast$\hyperlink{legacy_8hpp_ad62b16ab219ae2483e8a3d921c44cc97}{image}, double \hyperlink{imgproc__c_8h_a7d8783b6b909806d38134f1f342005bf}{rho}, int srn, double \hyperlink{imgproc__c_8h_a90ba48f41646a904a861746079d43f17}{theta}, int stn, int \hyperlink{legacy_8hpp_ad486c230317acbbf60577b15e027dc73}{threshold}, float $\ast$lines, int lines\-Number)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} float \hyperlink{compat_8hpp_abefd8d87c0bf7172d4c6ee29ee9542ed}{cv\-Calc\-E\-M\-D} (const float $\ast$signature1, int size1, const float $\ast$\hyperlink{imgproc__c_8h_a930c0d1061f9be0d2ff2cecaed2dbf71}{signature2}, int size2, int \hyperlink{core__c_8h_aedadeec3ef499c79fc32c00079f7982d}{dims}, int \hyperlink{imgproc__c_8h_ac4c138ad421cb7c04c0e7712cc888c3b}{dist\-\_\-type} \hyperlink{tracking_8hpp_a99fa8d92489df6aa329d7166d52cbfb4}{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}(\hyperlink{imgproc_2types__c_8h_a0ba582387b4cb6c2c6d1dd3003689d07ae60a48ac6e8738abf6746c4beb4a9962}{C\-V\-\_\-\-D\-I\-S\-T\-\_\-\-L2}), \hyperlink{imgproc_2types__c_8h_afbcc20461f70dd89ba40f764a1ef4123}{Cv\-Distance\-Function} dist\-\_\-func \hyperlink{tracking_8hpp_a99fa8d92489df6aa329d7166d52cbfb4}{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}(0), float $\ast$\hyperlink{legacy_8hpp_abf4b186de4974519e850b37e7b7ea7c9}{lower\-\_\-bound} \hyperlink{tracking_8hpp_a99fa8d92489df6aa329d7166d52cbfb4}{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}(0), \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} $\ast$user\-\_\-param \hyperlink{tracking_8hpp_a99fa8d92489df6aa329d7166d52cbfb4}{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}(0))
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{compat_8hpp_a661d5246c96ec2a1b83b8490d54bf32a}{cv\-K\-Means} (int num\-\_\-clusters, float $\ast$$\ast$\hyperlink{legacy_8hpp_a4fd80ec44eadba9c1fc910f5132046b6}{samples}, int num\-\_\-samples, int vec\-\_\-size, \hyperlink{structCvTermCriteria}{Cv\-Term\-Criteria} \hyperlink{core__c_8h_ad5df871b1d714e419d2fbdc28e341c7f}{termcrit}, int $\ast$cluster\-\_\-idx)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{compat_8hpp_aa0ab2dd832429694af5852682a64af99}{cv\-Start\-Scan\-Graph} (\hyperlink{structCvGraph}{Cv\-Graph} $\ast$graph, \hyperlink{structCvGraphScanner}{Cv\-Graph\-Scanner} $\ast$scanner, \hyperlink{structCvGraphVtx}{Cv\-Graph\-Vtx} $\ast$\hyperlink{core__c_8h_a17b79d218d8b9be4ba97a5fd7ddbf424}{vtx} \hyperlink{tracking_8hpp_a99fa8d92489df6aa329d7166d52cbfb4}{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}(\hyperlink{Config_8cpp_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\-U\-L\-L}), int \hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask} \hyperlink{tracking_8hpp_a99fa8d92489df6aa329d7166d52cbfb4}{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}(\hyperlink{core__c_8h_a05aac02c9a292824ef314b008e583cab}{C\-V\-\_\-\-G\-R\-A\-P\-H\-\_\-\-A\-L\-L\-\_\-\-I\-T\-E\-M\-S}))
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{compat_8hpp_a8dadcd6999126518f9469e38a88b7fbd}{cv\-End\-Scan\-Graph} (\hyperlink{structCvGraphScanner}{Cv\-Graph\-Scanner} $\ast$scanner)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{compat_8hpp_a1fd828427507dbd2686b5dfba43c3c46}{cv\-Line\-A\-A} (\hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} $\ast$\hyperlink{legacy_8hpp_a5349238b3772bed6eae0fda3117ccfef}{img}, \hyperlink{structCvPoint}{Cv\-Point} \hyperlink{imgproc__c_8h_a3d93852899c445e76457745010aa0a5a}{pt1}, \hyperlink{structCvPoint}{Cv\-Point} \hyperlink{imgproc__c_8h_a902850a9e0c91c1564bccebb6d1759dd}{pt2}, double \hyperlink{core__c_8h_a4ea898fa4dd23d613d19923509d8e249}{color}, int \hyperlink{objdetect_8hpp_a1f622eb9b9e06b30862ca90cdf2c078b}{scale} \hyperlink{tracking_8hpp_a99fa8d92489df6aa329d7166d52cbfb4}{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}(0))
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{compat_8hpp_a3f669469e41bc52d047532441887df06}{cv\-Circle\-A\-A} (\hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} $\ast$\hyperlink{legacy_8hpp_a5349238b3772bed6eae0fda3117ccfef}{img}, \hyperlink{structCvPoint}{Cv\-Point} \hyperlink{legacy_8hpp_af61646b1289e1a199ec0239fefb6ec00}{center}, int \hyperlink{imgproc__c_8h_a32526d67e420fc7060ade2efeaeda976}{radius}, double \hyperlink{core__c_8h_a4ea898fa4dd23d613d19923509d8e249}{color}, int \hyperlink{objdetect_8hpp_a1f622eb9b9e06b30862ca90cdf2c078b}{scale} \hyperlink{tracking_8hpp_a99fa8d92489df6aa329d7166d52cbfb4}{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}(0))
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{compat_8hpp_ac55b0c429be29fb7975eee4514829883}{cv\-Ellipse\-A\-A} (\hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} $\ast$\hyperlink{legacy_8hpp_a5349238b3772bed6eae0fda3117ccfef}{img}, \hyperlink{structCvPoint}{Cv\-Point} \hyperlink{legacy_8hpp_af61646b1289e1a199ec0239fefb6ec00}{center}, \hyperlink{structCvSize}{Cv\-Size} \hyperlink{core__c_8h_a9447463cf154fcf48fd979790bf647d6}{axes}, double \hyperlink{imgproc__c_8h_a79dea7ed146af26ff4a0ba4bf5c83eee}{angle}, double \hyperlink{core__c_8h_aae46c356ae5eae88e86de0945ecce535}{start\-\_\-angle}, double \hyperlink{core__c_8h_ab22642cd5bba446dbb60f72130849f91}{end\-\_\-angle}, double \hyperlink{core__c_8h_a4ea898fa4dd23d613d19923509d8e249}{color}, int \hyperlink{objdetect_8hpp_a1f622eb9b9e06b30862ca90cdf2c078b}{scale} \hyperlink{tracking_8hpp_a99fa8d92489df6aa329d7166d52cbfb4}{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}(0))
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{compat_8hpp_a50c5068099f5294299df42040bff2233}{cv\-Poly\-Line\-A\-A} (\hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} $\ast$\hyperlink{legacy_8hpp_a5349238b3772bed6eae0fda3117ccfef}{img}, \hyperlink{structCvPoint}{Cv\-Point} $\ast$$\ast$\hyperlink{core__c_8h_ab62b1919fa12a68dd1196a0d42f7937e}{pts}, int $\ast$\hyperlink{core__c_8h_a1d4641f27a1a1d935354d25750637b31}{npts}, int \hyperlink{compat_8hpp_a04f5d307711b17326d069621f0288f40}{contours}, int \hyperlink{core__c_8h_a5b4c20ad4606da0483131d8334887035}{is\-\_\-closed}, double \hyperlink{core__c_8h_a4ea898fa4dd23d613d19923509d8e249}{color}, int \hyperlink{objdetect_8hpp_a1f622eb9b9e06b30862ca90cdf2c078b}{scale} \hyperlink{tracking_8hpp_a99fa8d92489df6aa329d7166d52cbfb4}{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}(0))
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{compat_8hpp_aa04349eb6dc4250f06e657028c2c7e9d}{cv\-Un\-Distort\-Once} (const \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} $\ast$\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} $\ast$\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, const float $\ast$intrinsic\-\_\-matrix, const float $\ast$\hyperlink{imgproc__c_8h_a1f778a76ec97614752f79f89dc5bb131}{distortion\-\_\-coeffs}, int interpolate)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{compat_8hpp_aa5d538bcf12a78b21f394f7323c13f86}{cv\-Un\-Distort\-Init} (const \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} $\ast$\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} $\ast$undistortion\-\_\-map, const float $\ast$A, const float $\ast$\hyperlink{legacy_8hpp_a7be9b6436e5ea72ff5d5a66779b4bd38}{k}, int interpolate)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{compat_8hpp_a408b956f5780825cb285d3f17c324d01}{cv\-Un\-Distort} (const \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} $\ast$\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} $\ast$\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, const \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} $\ast$undistortion\-\_\-map, int interpolate)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{compat_8hpp_a4b7897f100e50fdb2007234162eb16a1}{cv\-Find\-Fundamental\-Matrix} (int $\ast$\hyperlink{calib3d_8hpp_a3b72d48e58a35993385885cbc187c91d}{points1}, int $\ast$\hyperlink{calib3d_8hpp_acc2fdbee95dbdd176a73ce514367bba4}{points2}, int numpoints, int \hyperlink{legacy_8hpp_adc6d8f8df4f2d0df2ece83c432e2681f}{method}, float $\ast$\hyperlink{legacy_8hpp_ad30c519fbf488895edcd2c285bfe2fae}{matrix})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} int \hyperlink{compat_8hpp_a6bccf4ca6d86dc6d5a5233cc79fd836e}{cv\-Find\-Chess\-Board\-Corner\-Guesses} (const \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} $\ast$\hyperlink{core__c_8h_ab8e13ef59ba6f71bb02934957ba61c65}{arr}, \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} $\ast$thresharr, \hyperlink{structCvMemStorage}{Cv\-Mem\-Storage} $\ast$\hyperlink{tracking_8hpp_af280dda601d192e49a9ae094198a7e16}{storage}, \hyperlink{structCvSize}{Cv\-Size} \hyperlink{calib3d_8hpp_ada2f272bd1d466c84b2b3cbe3c7679a6}{pattern\-\_\-size}, \hyperlink{structCvPoint2D32f}{Cv\-Point2\-D32f} $\ast$\hyperlink{imgproc__c_8h_a223e965e192c7025d6c6be77305f515b}{corners}, int $\ast$\hyperlink{imgproc__c_8h_af4c82033b6451ac1c5ca8c80855f783b}{corner\-\_\-count})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{compat_8hpp_a12fad54831c3f72c4fdfdb04f60ddbce}{cv\-Calibrate\-Camera} (int image\-\_\-count, int $\ast$\-\_\-point\-\_\-counts, \hyperlink{structCvSize}{Cv\-Size} \hyperlink{calib3d_8hpp_a3c5695da25794e723582c8b5ccff544c}{image\-\_\-size}, \hyperlink{structCvPoint2D32f}{Cv\-Point2\-D32f} $\ast$\-\_\-image\-\_\-points, \hyperlink{structCvPoint3D32f}{Cv\-Point3\-D32f} $\ast$\-\_\-object\-\_\-points, float $\ast$\-\_\-distortion\-\_\-coeffs, float $\ast$\-\_\-camera\-\_\-matrix, float $\ast$\-\_\-translation\-\_\-vectors, float $\ast$\-\_\-rotation\-\_\-matrices, int \hyperlink{highgui__c_8h_ae51e3a2d4365e85db9630dd3ce9508db}{flags})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{compat_8hpp_ad6ddb31600e2f9c538aab24b3eeb1d14}{cv\-Calibrate\-Camera\-\_\-64d} (int image\-\_\-count, int $\ast$\-\_\-point\-\_\-counts, \hyperlink{structCvSize}{Cv\-Size} \hyperlink{calib3d_8hpp_a3c5695da25794e723582c8b5ccff544c}{image\-\_\-size}, \hyperlink{structCvPoint2D64f}{Cv\-Point2\-D64f} $\ast$\-\_\-image\-\_\-points, \hyperlink{structCvPoint3D64f}{Cv\-Point3\-D64f} $\ast$\-\_\-object\-\_\-points, double $\ast$\-\_\-distortion\-\_\-coeffs, double $\ast$\-\_\-camera\-\_\-matrix, double $\ast$\-\_\-translation\-\_\-vectors, double $\ast$\-\_\-rotation\-\_\-matrices, int \hyperlink{highgui__c_8h_ae51e3a2d4365e85db9630dd3ce9508db}{flags})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{compat_8hpp_a3b8ea7382b9e4b824021ec3926903923}{cv\-Find\-Extrinsic\-Camera\-Params} (int \hyperlink{calib3d_8hpp_aee23d4be8a352471e2c7d05d83420d72}{point\-\_\-count}, \hyperlink{structCvSize}{Cv\-Size} \hyperlink{calib3d_8hpp_a3c5695da25794e723582c8b5ccff544c}{image\-\_\-size}, \hyperlink{structCvPoint2D32f}{Cv\-Point2\-D32f} $\ast$\-\_\-image\-\_\-points, \hyperlink{structCvPoint3D32f}{Cv\-Point3\-D32f} $\ast$\-\_\-object\-\_\-points, float $\ast$\hyperlink{calib3d_8hpp_ac0b783fc5dcc5cfa52b26b3fe0f0c94d}{focal\-\_\-length}, \hyperlink{structCvPoint2D32f}{Cv\-Point2\-D32f} principal\-\_\-point, float $\ast$\-\_\-distortion\-\_\-coeffs, float $\ast$\-\_\-rotation\-\_\-vector, float $\ast$\-\_\-translation\-\_\-vector)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{compat_8hpp_abd59cbfb1d1a10462120528d55a8e9d6}{cv\-Find\-Extrinsic\-Camera\-Params\-\_\-64d} (int \hyperlink{calib3d_8hpp_aee23d4be8a352471e2c7d05d83420d72}{point\-\_\-count}, \hyperlink{structCvSize}{Cv\-Size} \hyperlink{calib3d_8hpp_a3c5695da25794e723582c8b5ccff544c}{image\-\_\-size}, \hyperlink{structCvPoint2D64f}{Cv\-Point2\-D64f} $\ast$\-\_\-image\-\_\-points, \hyperlink{structCvPoint3D64f}{Cv\-Point3\-D64f} $\ast$\-\_\-object\-\_\-points, double $\ast$\hyperlink{calib3d_8hpp_ac0b783fc5dcc5cfa52b26b3fe0f0c94d}{focal\-\_\-length}, \hyperlink{structCvPoint2D64f}{Cv\-Point2\-D64f} principal\-\_\-point, double $\ast$\-\_\-distortion\-\_\-coeffs, double $\ast$\-\_\-rotation\-\_\-vector, double $\ast$\-\_\-translation\-\_\-vector)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{compat_8hpp_a8447ce7024e30227e14e033100ad4999}{cv\-Rodrigues} (\hyperlink{structCvMat}{Cv\-Mat} $\ast$\hyperlink{calib3d_8hpp_a9d6ed68fa91ca104fd89a6690ca1bd18}{rotation\-\_\-matrix}, \hyperlink{structCvMat}{Cv\-Mat} $\ast$\hyperlink{calib3d_8hpp_a7537ad9f335658c6a6f2641bc913b6d8}{rotation\-\_\-vector}, \hyperlink{structCvMat}{Cv\-Mat} $\ast$jacobian, int conv\-\_\-type)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{compat_8hpp_af90bda8dcc6100f33c992799fdeac8db}{cv\-Project\-Points} (int \hyperlink{calib3d_8hpp_aee23d4be8a352471e2c7d05d83420d72}{point\-\_\-count}, \hyperlink{structCvPoint3D64f}{Cv\-Point3\-D64f} $\ast$\-\_\-object\-\_\-points, double $\ast$\-\_\-rotation\-\_\-vector, double $\ast$\-\_\-translation\-\_\-vector, double $\ast$\hyperlink{calib3d_8hpp_ac0b783fc5dcc5cfa52b26b3fe0f0c94d}{focal\-\_\-length}, \hyperlink{structCvPoint2D64f}{Cv\-Point2\-D64f} principal\-\_\-point, double $\ast$\-\_\-distortion, \hyperlink{structCvPoint2D64f}{Cv\-Point2\-D64f} $\ast$\-\_\-image\-\_\-points, double $\ast$\-\_\-deriv\-\_\-points\-\_\-rotation\-\_\-matrix, double $\ast$\-\_\-deriv\-\_\-points\-\_\-translation\-\_\-vect, double $\ast$\-\_\-deriv\-\_\-points\-\_\-focal, double $\ast$\-\_\-deriv\-\_\-points\-\_\-principal\-\_\-point, double $\ast$\-\_\-deriv\-\_\-points\-\_\-distortion\-\_\-coeffs)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{compat_8hpp_aaa231e136fb1826a9fd797e2286c3fb0}{cv\-Project\-Points\-Simple} (int \hyperlink{calib3d_8hpp_aee23d4be8a352471e2c7d05d83420d72}{point\-\_\-count}, \hyperlink{structCvPoint3D64f}{Cv\-Point3\-D64f} $\ast$\-\_\-object\-\_\-points, double $\ast$\-\_\-rotation\-\_\-matrix, double $\ast$\-\_\-translation\-\_\-vector, double $\ast$\-\_\-camera\-\_\-matrix, double $\ast$\-\_\-distortion, \hyperlink{structCvPoint2D64f}{Cv\-Point2\-D64f} $\ast$\-\_\-image\-\_\-points)
+\item 
+\hyperlink{core_2types__c_8h_afa9cd5d65f77596b7dfb38dd8afe2325}{C\-V\-\_\-\-I\-N\-L\-I\-N\-E} \hyperlink{structCvSURFPoint}{Cv\-S\-U\-R\-F\-Point} \hyperlink{compat_8hpp_a43ee74763557157d5deb0259585bb006}{cv\-S\-U\-R\-F\-Point} (\hyperlink{structCvPoint2D32f}{Cv\-Point2\-D32f} \hyperlink{objdetect_8hpp_a69c6090aa56793ec8ef2457bc6d45b45}{pt}, int laplacian, int \hyperlink{legacy_8hpp_ae97003f8d5c64cdfb99f6f2606d121b6}{size}, float dir \hyperlink{tracking_8hpp_a99fa8d92489df6aa329d7166d52cbfb4}{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}(0), float hessian \hyperlink{tracking_8hpp_a99fa8d92489df6aa329d7166d52cbfb4}{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}(0))
+\item 
+\hyperlink{compat_8hpp_a1cd7906024d458aa18aa554a261c5e8c}{C\-V\-A\-P\-I} (\hyperlink{structCvSURFParams}{Cv\-S\-U\-R\-F\-Params}) cv\-S\-U\-R\-F\-Params(double hessian\-Threshold
+\item 
+int extended \hyperlink{compat_8hpp_a9cb7479a31e9618420a739d753ad54ad}{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T} (0))
+\item 
+\hyperlink{compat_8hpp_a08634d519eaacd57fa1efc3849634c9e}{C\-V\-A\-P\-I} (\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void}) cv\-Extract\-S\-U\-R\-F(const \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} $\ast$\hyperlink{legacy_8hpp_a5349238b3772bed6eae0fda3117ccfef}{img}
+\item 
+\hyperlink{compat_8hpp_ad3cb2b2be29a0967c53e3dc6d80e31c4}{C\-V\-A\-P\-I} (\hyperlink{structCvMSERParams}{Cv\-M\-S\-E\-R\-Params}) cv\-M\-S\-E\-R\-Params(int \hyperlink{legacy_8hpp_ac867054f00f4be8b1f3ebce6fba31982}{delta} \hyperlink{tracking_8hpp_a99fa8d92489df6aa329d7166d52cbfb4}{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}(5)
+\item 
+int min\-\_\-area \hyperlink{compat_8hpp_a1c1d6c9fee4bca624c547c04f14c0c87}{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T} (60)
+\item 
+int min\-\_\-area int max\-\_\-area \hyperlink{compat_8hpp_ae13765c26c096b6aca20f74344e79956}{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T} (14400)
+\item 
+int min\-\_\-area int max\-\_\-area \\*
+float max\-\_\-variation \hyperlink{compat_8hpp_a4033506ecc57a88a1ea5d737eb35a69d}{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T} (.\-25f)
+\item 
+int min\-\_\-area int max\-\_\-area \\*
+float max\-\_\-variation float \\*
+min\-\_\-diversity int \\*
+max\-\_\-evolution \hyperlink{compat_8hpp_a0c6fdb37c753bf21219eef1759988009}{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T} (200)
+\item 
+int min\-\_\-area int max\-\_\-area \\*
+float max\-\_\-variation float \\*
+min\-\_\-diversity int \\*
+max\-\_\-evolution double \\*
+area\-\_\-threshold \hyperlink{compat_8hpp_abb9539985fe6a756a28029732f7bd0ef}{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T} (1.\-01)
+\item 
+int min\-\_\-area int max\-\_\-area \\*
+float max\-\_\-variation float \\*
+min\-\_\-diversity int \\*
+max\-\_\-evolution double \\*
+area\-\_\-threshold double \\*
+min\-\_\-margin int edge\-\_\-blur\-\_\-size \hyperlink{compat_8hpp_a07e35bdf2ab81d47449aadd3700d28ce}{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T} (5))
+\item 
+\hyperlink{core_2types__c_8h_afa9cd5d65f77596b7dfb38dd8afe2325}{C\-V\-\_\-\-I\-N\-L\-I\-N\-E} \hyperlink{structCvStarKeypoint}{Cv\-Star\-Keypoint} \hyperlink{compat_8hpp_a2f99191cda0700de3f89b88fd939fdaf}{cv\-Star\-Keypoint} (\hyperlink{structCvPoint}{Cv\-Point} \hyperlink{objdetect_8hpp_a69c6090aa56793ec8ef2457bc6d45b45}{pt}, int \hyperlink{legacy_8hpp_ae97003f8d5c64cdfb99f6f2606d121b6}{size}, float response)
+\item 
+\hyperlink{core_2types__c_8h_afa9cd5d65f77596b7dfb38dd8afe2325}{C\-V\-\_\-\-I\-N\-L\-I\-N\-E} \hyperlink{structCvStarDetectorParams}{Cv\-Star\-Detector\-Params} \hyperlink{compat_8hpp_a06c87c7caa7c4baf9c36a9909f735de3}{cv\-Star\-Detector\-Params} (int max\-Size \hyperlink{tracking_8hpp_a99fa8d92489df6aa329d7166d52cbfb4}{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}(45), int response\-Threshold \hyperlink{tracking_8hpp_a99fa8d92489df6aa329d7166d52cbfb4}{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}(30), int line\-Threshold\-Projected \hyperlink{tracking_8hpp_a99fa8d92489df6aa329d7166d52cbfb4}{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}(10), int line\-Threshold\-Binarized \hyperlink{tracking_8hpp_a99fa8d92489df6aa329d7166d52cbfb4}{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}(8), int suppress\-Nonmax\-Size \hyperlink{tracking_8hpp_a99fa8d92489df6aa329d7166d52cbfb4}{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}(5))
+\item 
+\hyperlink{compat_8hpp_a06f81de7201aea7d4051be084f412ce4}{C\-V\-A\-P\-I} (\hyperlink{structCvSeq}{Cv\-Seq} $\ast$) cv\-Get\-Star\-Keypoints(const \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} $\ast$\hyperlink{legacy_8hpp_a5349238b3772bed6eae0fda3117ccfef}{img}
+\item 
+\hyperlink{structCvMemStorage}{Cv\-Mem\-Storage} \\*
+\hyperlink{structCvStarDetectorParams}{Cv\-Star\-Detector\-Params} \hyperlink{compat_8hpp_a0480a03ecc41b20cde376602531d9270}{params} \hyperlink{compat_8hpp_adf95b337c259e34bb339d9eb5830ef8b}{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T} (\hyperlink{compat_8hpp_a06c87c7caa7c4baf9c36a9909f735de3}{cv\-Star\-Detector\-Params}()))
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} $\ast$ \hyperlink{compat_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}
+\item 
+const \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} \hyperlink{structCvSeq}{Cv\-Seq} $\ast$$\ast$ \hyperlink{compat_8hpp_af95b6678bbbdd664ed15fe6d4190d355}{keypoints}
+\item 
+const \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} \hyperlink{structCvSeq}{Cv\-Seq} \hyperlink{structCvSeq}{Cv\-Seq} $\ast$$\ast$ \hyperlink{compat_8hpp_a1e3702ddbca6258f57508c22eff26bf2}{descriptors}
+\item 
+const \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} \hyperlink{structCvSeq}{Cv\-Seq} \hyperlink{structCvSeq}{Cv\-Seq} \\*
+\hyperlink{structCvMemStorage}{Cv\-Mem\-Storage} $\ast$ \hyperlink{compat_8hpp_ab35a5bdcc2a473820b807911b2c26b8b}{storage}
+\item 
+const \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} \hyperlink{structCvSeq}{Cv\-Seq} \hyperlink{structCvSeq}{Cv\-Seq} \\*
+\hyperlink{structCvMemStorage}{Cv\-Mem\-Storage} \hyperlink{structCvSURFParams}{Cv\-S\-U\-R\-F\-Params} \hyperlink{compat_8hpp_a0480a03ecc41b20cde376602531d9270}{params}
+\item 
+\hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} $\ast$ \hyperlink{compat_8hpp_a2189d8eeeb1db1f788f140ef73979f60}{\-\_\-mask}
+\item 
+\hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} \hyperlink{structCvSeq}{Cv\-Seq} $\ast$$\ast$ \hyperlink{compat_8hpp_a04f5d307711b17326d069621f0288f40}{contours}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{compat_8hpp_a159b5f4d610d1f18609d93d937d8ee0c}{\index{compat.\-hpp@{compat.\-hpp}!C\-V\-\_\-\-G\-E\-T\-\_\-\-C\-U\-R\-R\-E\-N\-T@{C\-V\-\_\-\-G\-E\-T\-\_\-\-C\-U\-R\-R\-E\-N\-T}}
+\index{C\-V\-\_\-\-G\-E\-T\-\_\-\-C\-U\-R\-R\-E\-N\-T@{C\-V\-\_\-\-G\-E\-T\-\_\-\-C\-U\-R\-R\-E\-N\-T}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-G\-E\-T\-\_\-\-C\-U\-R\-R\-E\-N\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-G\-E\-T\-\_\-\-C\-U\-R\-R\-E\-N\-T(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf pos}, }
+\item[{}]{cs}
+\end{DoxyParamCaption}
+)~(({\bf pos}).currline + ({\bf pos}).{\bf x} $\ast$ (cs))}}\label{compat_8hpp_a159b5f4d610d1f18609d93d937d8ee0c}
+\hypertarget{compat_8hpp_ae14c64028ed6ffa2dc5ac1fa44a976c9}{\index{compat.\-hpp@{compat.\-hpp}!C\-V\-\_\-\-I\-N\-I\-T\-\_\-\-P\-I\-X\-E\-L\-\_\-\-P\-O\-S@{C\-V\-\_\-\-I\-N\-I\-T\-\_\-\-P\-I\-X\-E\-L\-\_\-\-P\-O\-S}}
+\index{C\-V\-\_\-\-I\-N\-I\-T\-\_\-\-P\-I\-X\-E\-L\-\_\-\-P\-O\-S@{C\-V\-\_\-\-I\-N\-I\-T\-\_\-\-P\-I\-X\-E\-L\-\_\-\-P\-O\-S}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-I\-N\-I\-T\-\_\-\-P\-I\-X\-E\-L\-\_\-\-P\-O\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-I\-N\-I\-T\-\_\-\-P\-I\-X\-E\-L\-\_\-\-P\-O\-S(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf pos}, }
+\item[{}]{origin, }
+\item[{}]{\-\_\-step, }
+\item[{}]{{\bf roi}, }
+\item[{}]{\-\_\-x, }
+\item[{}]{\-\_\-y, }
+\item[{}]{{\bf orientation}}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_ae14c64028ed6ffa2dc5ac1fa44a976c9}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+(                                                                        \(\backslash\)
+    (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).\hyperlink{core__c_8h_abc16e65f240ed0c8f3e876e8732c0a33}{step} = (\_step)/\textcolor{keyword}{sizeof}((\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).currline[0]) * (\hyperlink{tracking_8hpp_a8a0898c06d9f70093b4eb8c24ae1097f}{orientation} ? -1 : 1), \(\backslash\)
+    (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).width = (\hyperlink{legacy_8hpp_a22e52b2b51d064865d3ac2f27b308c33}{roi}).\hyperlink{highgui__c_8h_a2474a5474cbff19523a51eb1de01cda4}{width},                                               \(\backslash\)
+    (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).height = (\hyperlink{legacy_8hpp_a22e52b2b51d064865d3ac2f27b308c33}{roi}).\hyperlink{highgui__c_8h_adc7b4b8a6ef510e136071efbc9cd9a58}{height},                                             \(\backslash\)
+    (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).bottomline = (origin) + (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).step*(\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).\hyperlink{highgui__c_8h_adc7b4b8a6ef510e136071efbc9cd9a58}{height},                   \(\backslash\)
+    (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).topline = (origin) - (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).step,                                   \(\backslash\)
+    (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).step\_arr[0] = 0,                                                   \(\backslash\)
+    (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).step\_arr[1] = -(\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).\hyperlink{core__c_8h_abc16e65f240ed0c8f3e876e8732c0a33}{step},                                         \(\backslash\)
+    (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).step\_arr[2] = (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).\hyperlink{core__c_8h_abc16e65f240ed0c8f3e876e8732c0a33}{step},                                          \(\backslash\)
+    (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).x = (\_x),                                                          \(\backslash\)
+    (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).currline = (origin) + (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).step*(\_y) )
+\end{DoxyCode}
+\hypertarget{compat_8hpp_a8b0b28b85c89516e5f4366c98c4edbd7}{\index{compat.\-hpp@{compat.\-hpp}!C\-V\-\_\-\-I\-S\-\_\-\-S\-E\-T\-\_\-\-E\-L\-E\-M\-\_\-\-E\-X\-I\-S\-T\-S@{C\-V\-\_\-\-I\-S\-\_\-\-S\-E\-T\-\_\-\-E\-L\-E\-M\-\_\-\-E\-X\-I\-S\-T\-S}}
+\index{C\-V\-\_\-\-I\-S\-\_\-\-S\-E\-T\-\_\-\-E\-L\-E\-M\-\_\-\-E\-X\-I\-S\-T\-S@{C\-V\-\_\-\-I\-S\-\_\-\-S\-E\-T\-\_\-\-E\-L\-E\-M\-\_\-\-E\-X\-I\-S\-T\-S}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-I\-S\-\_\-\-S\-E\-T\-\_\-\-E\-L\-E\-M\-\_\-\-E\-X\-I\-S\-T\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-I\-S\-\_\-\-S\-E\-T\-\_\-\-E\-L\-E\-M\-\_\-\-E\-X\-I\-S\-T\-S~{\bf C\-V\-\_\-\-I\-S\-\_\-\-S\-E\-T\-\_\-\-E\-L\-E\-M}}}\label{compat_8hpp_a8b0b28b85c89516e5f4366c98c4edbd7}
+\hypertarget{compat_8hpp_a2d55433069bfb12de58e6a3d460503a4}{\index{compat.\-hpp@{compat.\-hpp}!C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-D\-O\-W\-N@{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-D\-O\-W\-N}}
+\index{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-D\-O\-W\-N@{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-D\-O\-W\-N}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-D\-O\-W\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-D\-O\-W\-N(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf pos}, }
+\item[{}]{cs}
+\end{DoxyParamCaption}
+)~((({\bf pos}).currline += ({\bf pos}).{\bf step}) != ({\bf pos}).bottomline ? ({\bf pos}).currline + ({\bf pos}).{\bf x}$\ast$(cs) \-: 0 )}}\label{compat_8hpp_a2d55433069bfb12de58e6a3d460503a4}
+\hypertarget{compat_8hpp_a3f8df11709e2e56f01a2d854d0852a6f}{\index{compat.\-hpp@{compat.\-hpp}!C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-D\-O\-W\-N\-\_\-\-W\-R\-A\-P@{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-D\-O\-W\-N\-\_\-\-W\-R\-A\-P}}
+\index{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-D\-O\-W\-N\-\_\-\-W\-R\-A\-P@{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-D\-O\-W\-N\-\_\-\-W\-R\-A\-P}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-D\-O\-W\-N\-\_\-\-W\-R\-A\-P}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-D\-O\-W\-N\-\_\-\-W\-R\-A\-P(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf pos}, }
+\item[{}]{cs}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_a3f8df11709e2e56f01a2d854d0852a6f}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+((((\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).currline += (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).step) != (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).bottomline ? \(\backslash\)
+    (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).currline : ((\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).currline = (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).topline + (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).step)) + (
+      \hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).\hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x}*(cs) )
+\end{DoxyCode}
+\hypertarget{compat_8hpp_a15c9dd6240dec117254bd0fc47ed95b3}{\index{compat.\-hpp@{compat.\-hpp}!C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-L\-D@{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-L\-D}}
+\index{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-L\-D@{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-L\-D}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-L\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-L\-D(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf pos}, }
+\item[{}]{cs}
+\end{DoxyParamCaption}
+)~( {\bf C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-L\-E\-F\-T}({\bf pos}, cs), {\bf C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-D\-O\-W\-N}({\bf pos}, cs))}}\label{compat_8hpp_a15c9dd6240dec117254bd0fc47ed95b3}
+\hypertarget{compat_8hpp_a637d40ba5a6e954c8feab5a4125acbaf}{\index{compat.\-hpp@{compat.\-hpp}!C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-L\-D\-\_\-\-W\-R\-A\-P@{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-L\-D\-\_\-\-W\-R\-A\-P}}
+\index{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-L\-D\-\_\-\-W\-R\-A\-P@{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-L\-D\-\_\-\-W\-R\-A\-P}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-L\-D\-\_\-\-W\-R\-A\-P}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-L\-D\-\_\-\-W\-R\-A\-P(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf pos}, }
+\item[{}]{cs}
+\end{DoxyParamCaption}
+)~( {\bf C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-L\-E\-F\-T\-\_\-\-W\-R\-A\-P}({\bf pos}, cs), {\bf C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-D\-O\-W\-N\-\_\-\-W\-R\-A\-P}({\bf pos}, cs))}}\label{compat_8hpp_a637d40ba5a6e954c8feab5a4125acbaf}
+\hypertarget{compat_8hpp_aedd6288f6084ac70ccd71d720a57f990}{\index{compat.\-hpp@{compat.\-hpp}!C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-L\-E\-F\-T@{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-L\-E\-F\-T}}
+\index{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-L\-E\-F\-T@{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-L\-E\-F\-T}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-L\-E\-F\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-L\-E\-F\-T(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf pos}, }
+\item[{}]{cs}
+\end{DoxyParamCaption}
+)~( -\/-\/({\bf pos}).{\bf x} $>$= 0 ? ({\bf pos}).currline + ({\bf pos}).{\bf x}$\ast$(cs) \-: 0 )}}\label{compat_8hpp_aedd6288f6084ac70ccd71d720a57f990}
+\hypertarget{compat_8hpp_ab267606870877dc1b61c4bb1f3babd02}{\index{compat.\-hpp@{compat.\-hpp}!C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-L\-E\-F\-T\-\_\-\-W\-R\-A\-P@{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-L\-E\-F\-T\-\_\-\-W\-R\-A\-P}}
+\index{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-L\-E\-F\-T\-\_\-\-W\-R\-A\-P@{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-L\-E\-F\-T\-\_\-\-W\-R\-A\-P}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-L\-E\-F\-T\-\_\-\-W\-R\-A\-P}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-L\-E\-F\-T\-\_\-\-W\-R\-A\-P(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf pos}, }
+\item[{}]{cs}
+\end{DoxyParamCaption}
+)~(({\bf pos}).currline + ( -\/-\/({\bf pos}).{\bf x} $>$= 0 ? ({\bf pos}).{\bf x} \-: (({\bf pos}).{\bf x} = ({\bf pos}).{\bf width}-\/1))$\ast$(cs))}}\label{compat_8hpp_ab267606870877dc1b61c4bb1f3babd02}
+\hypertarget{compat_8hpp_aed1472ead202ead3f0f5c49a5ece890b}{\index{compat.\-hpp@{compat.\-hpp}!C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-L\-U@{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-L\-U}}
+\index{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-L\-U@{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-L\-U}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-L\-U}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-L\-U(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf pos}, }
+\item[{}]{cs}
+\end{DoxyParamCaption}
+)~( {\bf C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-L\-E\-F\-T}({\bf pos}, cs), {\bf C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-U\-P}({\bf pos}, cs))}}\label{compat_8hpp_aed1472ead202ead3f0f5c49a5ece890b}
+\hypertarget{compat_8hpp_ab53b453e6df5b1806b4a1e32c4add028}{\index{compat.\-hpp@{compat.\-hpp}!C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-L\-U\-\_\-\-W\-R\-A\-P@{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-L\-U\-\_\-\-W\-R\-A\-P}}
+\index{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-L\-U\-\_\-\-W\-R\-A\-P@{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-L\-U\-\_\-\-W\-R\-A\-P}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-L\-U\-\_\-\-W\-R\-A\-P}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-L\-U\-\_\-\-W\-R\-A\-P(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf pos}, }
+\item[{}]{cs}
+\end{DoxyParamCaption}
+)~( {\bf C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-L\-E\-F\-T\-\_\-\-W\-R\-A\-P}({\bf pos}, cs), {\bf C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-U\-P\-\_\-\-W\-R\-A\-P}({\bf pos}, cs))}}\label{compat_8hpp_ab53b453e6df5b1806b4a1e32c4add028}
+\hypertarget{compat_8hpp_aa0c2b1441d43dcb372ef4d639765d8e1}{\index{compat.\-hpp@{compat.\-hpp}!C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-P\-A\-R\-A\-M@{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-P\-A\-R\-A\-M}}
+\index{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-P\-A\-R\-A\-M@{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-P\-A\-R\-A\-M}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-P\-A\-R\-A\-M}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-P\-A\-R\-A\-M(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf pos}, }
+\item[{}]{shift, }
+\item[{}]{cs}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_aa0c2b1441d43dcb372ef4d639765d8e1}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+( (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).currline += (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).step\_arr[(shift)>>2], (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).x += ((shift)&3)-2,       \(\backslash\)
+    ((\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).currline != (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).topline && (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).currline != (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).bottomline &&       \(\backslash\)
+    (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).\hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x} >= 0 && (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).x < (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).\hyperlink{highgui__c_8h_a2474a5474cbff19523a51eb1de01cda4}{width}) ? (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).currline + (
+      \hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).x*(cs) : 0 )
+\end{DoxyCode}
+\hypertarget{compat_8hpp_a2c62d4b8b765df10f25fe2a1ede82b74}{\index{compat.\-hpp@{compat.\-hpp}!C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-P\-A\-R\-A\-M\-\_\-\-W\-R\-A\-P@{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-P\-A\-R\-A\-M\-\_\-\-W\-R\-A\-P}}
+\index{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-P\-A\-R\-A\-M\-\_\-\-W\-R\-A\-P@{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-P\-A\-R\-A\-M\-\_\-\-W\-R\-A\-P}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-P\-A\-R\-A\-M\-\_\-\-W\-R\-A\-P}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-P\-A\-R\-A\-M\-\_\-\-W\-R\-A\-P(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf pos}, }
+\item[{}]{shift, }
+\item[{}]{cs}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_a2c62d4b8b765df10f25fe2a1ede82b74}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+( (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).currline += (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).step\_arr[(shift)>>2],                                 \(\backslash\)
+    (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).currline = ((\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).currline == (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).topline ?                             \(\backslash\)
+    (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).bottomline - (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).step :                                                 \(\backslash\)
+    (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).currline == (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).bottomline ?                                            \(\backslash\)
+    (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).topline + (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).step : (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).currline),                                   \(\backslash\)
+                                                                                    \(\backslash\)
+    (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).\hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x} += ((shift)&3)-2,                                                       \(\backslash\)
+    (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).x = ((\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).\hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x} < 0 ? (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).width-1 : (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).\hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x} >= (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).width ? 0 : (
+      \hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).\hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x}), \(\backslash\)
+                                                                                    \(\backslash\)
+    (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).currline + (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).x*(cs) )
+\end{DoxyCode}
+\hypertarget{compat_8hpp_abbc069cf35710b59777ecc04bb254c44}{\index{compat.\-hpp@{compat.\-hpp}!C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-R\-D@{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-R\-D}}
+\index{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-R\-D@{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-R\-D}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-R\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-R\-D(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf pos}, }
+\item[{}]{cs}
+\end{DoxyParamCaption}
+)~( {\bf C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-R\-I\-G\-H\-T}({\bf pos}, cs), {\bf C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-D\-O\-W\-N}({\bf pos}, cs))}}\label{compat_8hpp_abbc069cf35710b59777ecc04bb254c44}
+\hypertarget{compat_8hpp_a7d73b65e9bbc8fe94afe82754c15e63e}{\index{compat.\-hpp@{compat.\-hpp}!C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-R\-D\-\_\-\-W\-R\-A\-P@{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-R\-D\-\_\-\-W\-R\-A\-P}}
+\index{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-R\-D\-\_\-\-W\-R\-A\-P@{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-R\-D\-\_\-\-W\-R\-A\-P}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-R\-D\-\_\-\-W\-R\-A\-P}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-R\-D\-\_\-\-W\-R\-A\-P(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf pos}, }
+\item[{}]{cs}
+\end{DoxyParamCaption}
+)~( {\bf C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-R\-I\-G\-H\-T\-\_\-\-W\-R\-A\-P}({\bf pos}, cs), {\bf C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-D\-O\-W\-N\-\_\-\-W\-R\-A\-P}({\bf pos}, cs))}}\label{compat_8hpp_a7d73b65e9bbc8fe94afe82754c15e63e}
+\hypertarget{compat_8hpp_a54cd07a861e435d16a7e5dc81e4b72c7}{\index{compat.\-hpp@{compat.\-hpp}!C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-R\-I\-G\-H\-T@{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-R\-I\-G\-H\-T}}
+\index{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-R\-I\-G\-H\-T@{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-R\-I\-G\-H\-T}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-R\-I\-G\-H\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-R\-I\-G\-H\-T(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf pos}, }
+\item[{}]{cs}
+\end{DoxyParamCaption}
+)~( ++({\bf pos}).{\bf x} $<$ ({\bf pos}).{\bf width} ? ({\bf pos}).currline + ({\bf pos}).{\bf x}$\ast$(cs) \-: 0 )}}\label{compat_8hpp_a54cd07a861e435d16a7e5dc81e4b72c7}
+\hypertarget{compat_8hpp_a5fa6455acfded26a4a03216ddfc37b9a}{\index{compat.\-hpp@{compat.\-hpp}!C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-R\-I\-G\-H\-T\-\_\-\-W\-R\-A\-P@{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-R\-I\-G\-H\-T\-\_\-\-W\-R\-A\-P}}
+\index{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-R\-I\-G\-H\-T\-\_\-\-W\-R\-A\-P@{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-R\-I\-G\-H\-T\-\_\-\-W\-R\-A\-P}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-R\-I\-G\-H\-T\-\_\-\-W\-R\-A\-P}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-R\-I\-G\-H\-T\-\_\-\-W\-R\-A\-P(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf pos}, }
+\item[{}]{cs}
+\end{DoxyParamCaption}
+)~(({\bf pos}).currline + ( ++({\bf pos}).{\bf x} $<$ ({\bf pos}).{\bf width} ? ({\bf pos}).{\bf x} \-: (({\bf pos}).{\bf x} = 0))$\ast$(cs) )}}\label{compat_8hpp_a5fa6455acfded26a4a03216ddfc37b9a}
+\hypertarget{compat_8hpp_a38876379ccd6aee94970d1065c2e0b00}{\index{compat.\-hpp@{compat.\-hpp}!C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-R\-U@{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-R\-U}}
+\index{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-R\-U@{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-R\-U}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-R\-U}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-R\-U(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf pos}, }
+\item[{}]{cs}
+\end{DoxyParamCaption}
+)~( {\bf C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-R\-I\-G\-H\-T}({\bf pos}, cs), {\bf C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-U\-P}({\bf pos}, cs))}}\label{compat_8hpp_a38876379ccd6aee94970d1065c2e0b00}
+\hypertarget{compat_8hpp_a414f3c390e237e6173ace3c7fb063c9a}{\index{compat.\-hpp@{compat.\-hpp}!C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-R\-U\-\_\-\-W\-R\-A\-P@{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-R\-U\-\_\-\-W\-R\-A\-P}}
+\index{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-R\-U\-\_\-\-W\-R\-A\-P@{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-R\-U\-\_\-\-W\-R\-A\-P}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-R\-U\-\_\-\-W\-R\-A\-P}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-R\-U\-\_\-\-W\-R\-A\-P(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf pos}, }
+\item[{}]{cs}
+\end{DoxyParamCaption}
+)~( {\bf C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-R\-I\-G\-H\-T\-\_\-\-W\-R\-A\-P}({\bf pos}, cs), {\bf C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-U\-P\-\_\-\-W\-R\-A\-P}({\bf pos}, cs))}}\label{compat_8hpp_a414f3c390e237e6173ace3c7fb063c9a}
+\hypertarget{compat_8hpp_a2e6228d55c56da4eed2e3bbafebcd1e0}{\index{compat.\-hpp@{compat.\-hpp}!C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-T\-O@{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-T\-O}}
+\index{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-T\-O@{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-T\-O}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-T\-O}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-T\-O(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf pos}, }
+\item[{}]{\-\_\-x, }
+\item[{}]{\-\_\-y, }
+\item[{}]{cs}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_a2e6228d55c56da4eed2e3bbafebcd1e0}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+((\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).currline = (\_y) >= 0 && (\_y) < (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).height ? (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).topline + ((\_y)+1)*(
+      \hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).step : 0, \(\backslash\)
+ (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).\hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x} = (\_x) >= 0 && (\_x) < (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).width ? (\_x) : 0, (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).currline + (\_x) * (cs) )
+\end{DoxyCode}
+\hypertarget{compat_8hpp_a3a8fac6a80a463f580e46e15d54a1291}{\index{compat.\-hpp@{compat.\-hpp}!C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-U\-P@{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-U\-P}}
+\index{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-U\-P@{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-U\-P}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-U\-P}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-U\-P(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf pos}, }
+\item[{}]{cs}
+\end{DoxyParamCaption}
+)~((({\bf pos}).currline -\/= ({\bf pos}).{\bf step}) != ({\bf pos}).topline ? ({\bf pos}).currline + ({\bf pos}).{\bf x}$\ast$(cs) \-: 0 )}}\label{compat_8hpp_a3a8fac6a80a463f580e46e15d54a1291}
+\hypertarget{compat_8hpp_a63cf7b6891aea3abb0c1d0c356f8216e}{\index{compat.\-hpp@{compat.\-hpp}!C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-U\-P\-\_\-\-W\-R\-A\-P@{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-U\-P\-\_\-\-W\-R\-A\-P}}
+\index{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-U\-P\-\_\-\-W\-R\-A\-P@{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-U\-P\-\_\-\-W\-R\-A\-P}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-U\-P\-\_\-\-W\-R\-A\-P}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-M\-O\-V\-E\-\_\-\-U\-P\-\_\-\-W\-R\-A\-P(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf pos}, }
+\item[{}]{cs}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_a63cf7b6891aea3abb0c1d0c356f8216e}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+((((\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).currline -= (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).step) != (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).topline ? \(\backslash\)
+    (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).currline : ((\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).currline = (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).bottomline - (\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).step)) + (
+      \hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}).\hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x}*(cs) )
+\end{DoxyCode}
+\hypertarget{compat_8hpp_a8b7317b6b7829fc47570a645e18e8b42}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Acc\-Mask@{cv\-Acc\-Mask}}
+\index{cv\-Acc\-Mask@{cv\-Acc\-Mask}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Acc\-Mask}]{\setlength{\rightskip}{0pt plus 5cm}\#define cv\-Acc\-Mask~cv\-Acc}}\label{compat_8hpp_a8b7317b6b7829fc47570a645e18e8b42}
+\hypertarget{compat_8hpp_a360a9bfcf1b28a1ec4c61a9e7f838b51}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Calc\-Hist\-Mask@{cv\-Calc\-Hist\-Mask}}
+\index{cv\-Calc\-Hist\-Mask@{cv\-Calc\-Hist\-Mask}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Calc\-Hist\-Mask}]{\setlength{\rightskip}{0pt plus 5cm}\#define cv\-Calc\-Hist\-Mask(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf img}, }
+\item[{}]{{\bf mask}, }
+\item[{}]{{\bf hist}, }
+\item[{}]{do\-Not\-Clear}
+\end{DoxyParamCaption}
+)~{\bf cv\-Calc\-Hist}({\bf img}, {\bf hist}, do\-Not\-Clear, {\bf mask})}}\label{compat_8hpp_a360a9bfcf1b28a1ec4c61a9e7f838b51}
+\hypertarget{compat_8hpp_a7eb2b8e92490af0e8b4657e51c9488a4}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Contour\-Moments@{cv\-Contour\-Moments}}
+\index{cv\-Contour\-Moments@{cv\-Contour\-Moments}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Contour\-Moments}]{\setlength{\rightskip}{0pt plus 5cm}\#define cv\-Contour\-Moments(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf contour}, }
+\item[{}]{{\bf moments}}
+\end{DoxyParamCaption}
+)~cv\-Moments( {\bf contour}, {\bf moments}, 0 )}}\label{compat_8hpp_a7eb2b8e92490af0e8b4657e51c9488a4}
+\hypertarget{compat_8hpp_a1c2c8fe60cc51cf2ecd84bdfc96d0ee4}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Convert\-Points\-Homogenious@{cv\-Convert\-Points\-Homogenious}}
+\index{cv\-Convert\-Points\-Homogenious@{cv\-Convert\-Points\-Homogenious}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Convert\-Points\-Homogenious}]{\setlength{\rightskip}{0pt plus 5cm}\#define cv\-Convert\-Points\-Homogenious~cv\-Convert\-Points\-Homogeneous}}\label{compat_8hpp_a1c2c8fe60cc51cf2ecd84bdfc96d0ee4}
+\hypertarget{compat_8hpp_ac9adb410fdc30d604cb0db3aae663109}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Copy\-Image@{cv\-Copy\-Image}}
+\index{cv\-Copy\-Image@{cv\-Copy\-Image}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Copy\-Image}]{\setlength{\rightskip}{0pt plus 5cm}\#define cv\-Copy\-Image(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf src}, }
+\item[{}]{{\bf dst}}
+\end{DoxyParamCaption}
+)~cv\-Copy( {\bf src}, {\bf dst}, 0 )}}\label{compat_8hpp_ac9adb410fdc30d604cb0db3aae663109}
+\hypertarget{compat_8hpp_a68fe4a368d8889886adfb875a74f2c17}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Create\-Image\-Data@{cv\-Create\-Image\-Data}}
+\index{cv\-Create\-Image\-Data@{cv\-Create\-Image\-Data}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Create\-Image\-Data}]{\setlength{\rightskip}{0pt plus 5cm}\#define cv\-Create\-Image\-Data~cv\-Create\-Data}}\label{compat_8hpp_a68fe4a368d8889886adfb875a74f2c17}
+\hypertarget{compat_8hpp_a56c9c3da0758a35aedad58879be07b20}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Cvt\-Pix\-To\-Plane@{cv\-Cvt\-Pix\-To\-Plane}}
+\index{cv\-Cvt\-Pix\-To\-Plane@{cv\-Cvt\-Pix\-To\-Plane}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Cvt\-Pix\-To\-Plane}]{\setlength{\rightskip}{0pt plus 5cm}\#define cv\-Cvt\-Pix\-To\-Plane~cv\-Split}}\label{compat_8hpp_a56c9c3da0758a35aedad58879be07b20}
+\hypertarget{compat_8hpp_a728bc049615463ab54c889dad7cf709b}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Cvt\-Plane\-To\-Pix@{cv\-Cvt\-Plane\-To\-Pix}}
+\index{cv\-Cvt\-Plane\-To\-Pix@{cv\-Cvt\-Plane\-To\-Pix}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Cvt\-Plane\-To\-Pix}]{\setlength{\rightskip}{0pt plus 5cm}\#define cv\-Cvt\-Plane\-To\-Pix~cv\-Merge}}\label{compat_8hpp_a728bc049615463ab54c889dad7cf709b}
+\hypertarget{compat_8hpp_a5d11dcc826543250d7668a3c360bc3fd}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Get\-At@{cv\-Get\-At}}
+\index{cv\-Get\-At@{cv\-Get\-At}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Get\-At}]{\setlength{\rightskip}{0pt plus 5cm}\#define cv\-Get\-At~cv\-Get2\-D}}\label{compat_8hpp_a5d11dcc826543250d7668a3c360bc3fd}
+\hypertarget{compat_8hpp_afac56bb56c3ff51e2aead62d04c62bd2}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Get\-Hist\-Value\-\_\-1\-D@{cv\-Get\-Hist\-Value\-\_\-1\-D}}
+\index{cv\-Get\-Hist\-Value\-\_\-1\-D@{cv\-Get\-Hist\-Value\-\_\-1\-D}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Get\-Hist\-Value\-\_\-1\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define cv\-Get\-Hist\-Value\-\_\-1\-D(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf hist}, }
+\item[{}]{{\bf idx0}}
+\end{DoxyParamCaption}
+)~((float$\ast$)cv\-Ptr1\-D( ({\bf hist})-\/$>$bins, ({\bf idx0}), 0))}}\label{compat_8hpp_afac56bb56c3ff51e2aead62d04c62bd2}
+\hypertarget{compat_8hpp_adf8c3175e77fb7b4a7a3294ac7940c6c}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Get\-Hist\-Value\-\_\-2\-D@{cv\-Get\-Hist\-Value\-\_\-2\-D}}
+\index{cv\-Get\-Hist\-Value\-\_\-2\-D@{cv\-Get\-Hist\-Value\-\_\-2\-D}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Get\-Hist\-Value\-\_\-2\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define cv\-Get\-Hist\-Value\-\_\-2\-D(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf hist}, }
+\item[{}]{{\bf idx0}, }
+\item[{}]{{\bf idx1}}
+\end{DoxyParamCaption}
+)~((float$\ast$)cv\-Ptr2\-D( ({\bf hist})-\/$>$bins, ({\bf idx0}), ({\bf idx1}), 0))}}\label{compat_8hpp_adf8c3175e77fb7b4a7a3294ac7940c6c}
+\hypertarget{compat_8hpp_af426a5240b734816c21bbcf7b23fe717}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Get\-Hist\-Value\-\_\-3\-D@{cv\-Get\-Hist\-Value\-\_\-3\-D}}
+\index{cv\-Get\-Hist\-Value\-\_\-3\-D@{cv\-Get\-Hist\-Value\-\_\-3\-D}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Get\-Hist\-Value\-\_\-3\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define cv\-Get\-Hist\-Value\-\_\-3\-D(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf hist}, }
+\item[{}]{{\bf idx0}, }
+\item[{}]{{\bf idx1}, }
+\item[{}]{{\bf idx2}}
+\end{DoxyParamCaption}
+)~((float$\ast$)cv\-Ptr3\-D( ({\bf hist})-\/$>$bins, ({\bf idx0}), ({\bf idx1}), ({\bf idx2}), 0))}}\label{compat_8hpp_af426a5240b734816c21bbcf7b23fe717}
+\hypertarget{compat_8hpp_a03ff7043dd1bb740321b47cd3ca1610e}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Get\-Hist\-Value\-\_\-n\-D@{cv\-Get\-Hist\-Value\-\_\-n\-D}}
+\index{cv\-Get\-Hist\-Value\-\_\-n\-D@{cv\-Get\-Hist\-Value\-\_\-n\-D}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Get\-Hist\-Value\-\_\-n\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define cv\-Get\-Hist\-Value\-\_\-n\-D(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf hist}, }
+\item[{}]{{\bf idx}}
+\end{DoxyParamCaption}
+)~((float$\ast$)cv\-Ptr\-N\-D( ({\bf hist})-\/$>$bins, ({\bf idx}), 0))}}\label{compat_8hpp_a03ff7043dd1bb740321b47cd3ca1610e}
+\hypertarget{compat_8hpp_ad81c1e1ee8287f4c87f87f42ad309d4b}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Get\-Image\-Raw\-Data@{cv\-Get\-Image\-Raw\-Data}}
+\index{cv\-Get\-Image\-Raw\-Data@{cv\-Get\-Image\-Raw\-Data}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Get\-Image\-Raw\-Data}]{\setlength{\rightskip}{0pt plus 5cm}\#define cv\-Get\-Image\-Raw\-Data~cv\-Get\-Raw\-Data}}\label{compat_8hpp_ad81c1e1ee8287f4c87f87f42ad309d4b}
+\hypertarget{compat_8hpp_a6aa86347d2164c2dbe056f2523158643}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Get\-Ptr\-At@{cv\-Get\-Ptr\-At}}
+\index{cv\-Get\-Ptr\-At@{cv\-Get\-Ptr\-At}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Get\-Ptr\-At}]{\setlength{\rightskip}{0pt plus 5cm}\#define cv\-Get\-Ptr\-At~cv\-Ptr2\-D}}\label{compat_8hpp_a6aa86347d2164c2dbe056f2523158643}
+\hypertarget{compat_8hpp_a79b5f6b34b5cf512c134fa8d213ff36b}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Integral\-Image@{cv\-Integral\-Image}}
+\index{cv\-Integral\-Image@{cv\-Integral\-Image}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Integral\-Image}]{\setlength{\rightskip}{0pt plus 5cm}\#define cv\-Integral\-Image~cv\-Integral}}\label{compat_8hpp_a79b5f6b34b5cf512c134fa8d213ff36b}
+\hypertarget{compat_8hpp_a7f0f80c58d7bbfc7cc4a90000245ea62}{\index{compat.\-hpp@{compat.\-hpp}!cvm\-Add@{cvm\-Add}}
+\index{cvm\-Add@{cvm\-Add}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cvm\-Add}]{\setlength{\rightskip}{0pt plus 5cm}\#define cvm\-Add(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf src1}, }
+\item[{}]{{\bf src2}, }
+\item[{}]{{\bf dst}}
+\end{DoxyParamCaption}
+)~cv\-Add( {\bf src1}, {\bf src2}, {\bf dst}, 0 )}}\label{compat_8hpp_a7f0f80c58d7bbfc7cc4a90000245ea62}
+\hypertarget{compat_8hpp_a7e6451c6eea26a0a79edeb2c98bcb4cb}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Make2\-D\-Points@{cv\-Make2\-D\-Points}}
+\index{cv\-Make2\-D\-Points@{cv\-Make2\-D\-Points}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Make2\-D\-Points}]{\setlength{\rightskip}{0pt plus 5cm}\#define cv\-Make2\-D\-Points~cv\-Convert\-Points\-Homogeneous}}\label{compat_8hpp_a7e6451c6eea26a0a79edeb2c98bcb4cb}
+\hypertarget{compat_8hpp_ab54e91738080c5c9cec55950dd68b06a}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Make3\-D\-Points@{cv\-Make3\-D\-Points}}
+\index{cv\-Make3\-D\-Points@{cv\-Make3\-D\-Points}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Make3\-D\-Points}]{\setlength{\rightskip}{0pt plus 5cm}\#define cv\-Make3\-D\-Points~cv\-Convert\-Points\-Homogeneous}}\label{compat_8hpp_ab54e91738080c5c9cec55950dd68b06a}
+\hypertarget{compat_8hpp_ad4507956205b64b37ae74700fbfa2426}{\index{compat.\-hpp@{compat.\-hpp}!cvm\-Alloc@{cvm\-Alloc}}
+\index{cvm\-Alloc@{cvm\-Alloc}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cvm\-Alloc}]{\setlength{\rightskip}{0pt plus 5cm}\#define cvm\-Alloc~cv\-Create\-Data}}\label{compat_8hpp_ad4507956205b64b37ae74700fbfa2426}
+\hypertarget{compat_8hpp_ae4c9490932968d73edd0cdaf3ba14a5c}{\index{compat.\-hpp@{compat.\-hpp}!cvm\-Alloc\-Array@{cvm\-Alloc\-Array}}
+\index{cvm\-Alloc\-Array@{cvm\-Alloc\-Array}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cvm\-Alloc\-Array}]{\setlength{\rightskip}{0pt plus 5cm}\#define cvm\-Alloc\-Array~cv\-Create\-Data}}\label{compat_8hpp_ae4c9490932968d73edd0cdaf3ba14a5c}
+\hypertarget{compat_8hpp_a182f74ac5f20ac905a4847ae1b3b0742}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Match\-Contours@{cv\-Match\-Contours}}
+\index{cv\-Match\-Contours@{cv\-Match\-Contours}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Match\-Contours}]{\setlength{\rightskip}{0pt plus 5cm}\#define cv\-Match\-Contours~cv\-Match\-Shapes}}\label{compat_8hpp_a182f74ac5f20ac905a4847ae1b3b0742}
+\hypertarget{compat_8hpp_a5c777d6185d51dd26b8c094d95b3f8e2}{\index{compat.\-hpp@{compat.\-hpp}!cvm\-Copy@{cvm\-Copy}}
+\index{cvm\-Copy@{cvm\-Copy}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cvm\-Copy}]{\setlength{\rightskip}{0pt plus 5cm}\#define cvm\-Copy(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf src}, }
+\item[{}]{{\bf dst}}
+\end{DoxyParamCaption}
+)~cv\-Copy( {\bf src}, {\bf dst}, 0 )}}\label{compat_8hpp_a5c777d6185d51dd26b8c094d95b3f8e2}
+\hypertarget{compat_8hpp_a872eaebfb9f06b128d7663962844a907}{\index{compat.\-hpp@{compat.\-hpp}!cvm\-Cross\-Product@{cvm\-Cross\-Product}}
+\index{cvm\-Cross\-Product@{cvm\-Cross\-Product}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cvm\-Cross\-Product}]{\setlength{\rightskip}{0pt plus 5cm}\#define cvm\-Cross\-Product(
+\begin{DoxyParamCaption}
+\item[{}]{vec1, }
+\item[{}]{{\bf vec2}, }
+\item[{}]{{\bf dst}}
+\end{DoxyParamCaption}
+)~cv\-Cross\-Product( vec1, {\bf vec2}, {\bf dst} )}}\label{compat_8hpp_a872eaebfb9f06b128d7663962844a907}
+\hypertarget{compat_8hpp_aca499a8358979dd5e122015c9a642e67}{\index{compat.\-hpp@{compat.\-hpp}!cvm\-Det@{cvm\-Det}}
+\index{cvm\-Det@{cvm\-Det}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cvm\-Det}]{\setlength{\rightskip}{0pt plus 5cm}\#define cvm\-Det(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf mat}}
+\end{DoxyParamCaption}
+)~cv\-Det( {\bf mat} )}}\label{compat_8hpp_aca499a8358979dd5e122015c9a642e67}
+\hypertarget{compat_8hpp_af51a2cfba439cec11e96bc4f7799fbf8}{\index{compat.\-hpp@{compat.\-hpp}!cvm\-Dot\-Product@{cvm\-Dot\-Product}}
+\index{cvm\-Dot\-Product@{cvm\-Dot\-Product}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cvm\-Dot\-Product}]{\setlength{\rightskip}{0pt plus 5cm}\#define cvm\-Dot\-Product(
+\begin{DoxyParamCaption}
+\item[{}]{vec1, }
+\item[{}]{{\bf vec2}}
+\end{DoxyParamCaption}
+)~cv\-Dot\-Product( vec1, {\bf vec2} )}}\label{compat_8hpp_af51a2cfba439cec11e96bc4f7799fbf8}
+\hypertarget{compat_8hpp_aea0617ae6725eddab0833c1712a57695}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Mean\-\_\-\-Std\-Dev\-Mask@{cv\-Mean\-\_\-\-Std\-Dev\-Mask}}
+\index{cv\-Mean\-\_\-\-Std\-Dev\-Mask@{cv\-Mean\-\_\-\-Std\-Dev\-Mask}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Mean\-\_\-\-Std\-Dev\-Mask}]{\setlength{\rightskip}{0pt plus 5cm}\#define cv\-Mean\-\_\-\-Std\-Dev\-Mask(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf img}, }
+\item[{}]{{\bf mask}, }
+\item[{}]{{\bf mean}, }
+\item[{}]{sdv}
+\end{DoxyParamCaption}
+)~{\bf cv\-Mean\-\_\-\-Std\-Dev}({\bf img},{\bf mean},sdv,{\bf mask})}}\label{compat_8hpp_aea0617ae6725eddab0833c1712a57695}
+\hypertarget{compat_8hpp_a7f61740e03eacee2c7168c0b3a3d3323}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Mean\-Mask@{cv\-Mean\-Mask}}
+\index{cv\-Mean\-Mask@{cv\-Mean\-Mask}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Mean\-Mask}]{\setlength{\rightskip}{0pt plus 5cm}\#define cv\-Mean\-Mask~{\bf cv\-Mean}}}\label{compat_8hpp_a7f61740e03eacee2c7168c0b3a3d3323}
+\hypertarget{compat_8hpp_af2c110436ac288753ee9716084f9e336}{\index{compat.\-hpp@{compat.\-hpp}!cvm\-Eigen\-V\-V@{cvm\-Eigen\-V\-V}}
+\index{cvm\-Eigen\-V\-V@{cvm\-Eigen\-V\-V}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cvm\-Eigen\-V\-V}]{\setlength{\rightskip}{0pt plus 5cm}\#define cvm\-Eigen\-V\-V(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf mat}, }
+\item[{}]{evec, }
+\item[{}]{eval, }
+\item[{}]{{\bf eps}}
+\end{DoxyParamCaption}
+)~cv\-Eigen\-V\-V( {\bf mat}, evec, eval, {\bf eps} )}}\label{compat_8hpp_af2c110436ac288753ee9716084f9e336}
+\hypertarget{compat_8hpp_afaa5a13236de7219f02b81e7d29b71d3}{\index{compat.\-hpp@{compat.\-hpp}!cvm\-Free@{cvm\-Free}}
+\index{cvm\-Free@{cvm\-Free}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cvm\-Free}]{\setlength{\rightskip}{0pt plus 5cm}\#define cvm\-Free~cv\-Release\-Data}}\label{compat_8hpp_afaa5a13236de7219f02b81e7d29b71d3}
+\hypertarget{compat_8hpp_a47c1b2b1edb3d9f78bb2ec0909e6c177}{\index{compat.\-hpp@{compat.\-hpp}!cvm\-Free\-Array@{cvm\-Free\-Array}}
+\index{cvm\-Free\-Array@{cvm\-Free\-Array}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cvm\-Free\-Array}]{\setlength{\rightskip}{0pt plus 5cm}\#define cvm\-Free\-Array~cv\-Release\-Data}}\label{compat_8hpp_a47c1b2b1edb3d9f78bb2ec0909e6c177}
+\hypertarget{compat_8hpp_acd3f59837fbd6bee0591babc38e05cb4}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Min\-Max\-Loc\-Mask@{cv\-Min\-Max\-Loc\-Mask}}
+\index{cv\-Min\-Max\-Loc\-Mask@{cv\-Min\-Max\-Loc\-Mask}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Min\-Max\-Loc\-Mask}]{\setlength{\rightskip}{0pt plus 5cm}\#define cv\-Min\-Max\-Loc\-Mask(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf img}, }
+\item[{}]{{\bf mask}, }
+\item[{}]{{\bf min\-\_\-val}, }
+\item[{}]{{\bf max\-\_\-val}, }
+\item[{}]{min\-\_\-loc, }
+\item[{}]{max\-\_\-loc}
+\end{DoxyParamCaption}
+)~cv\-Min\-Max\-Loc({\bf img}, {\bf min\-\_\-val}, {\bf max\-\_\-val}, min\-\_\-loc, max\-\_\-loc, {\bf mask})}}\label{compat_8hpp_acd3f59837fbd6bee0591babc38e05cb4}
+\hypertarget{compat_8hpp_ad00552059bf839dec04f1fbaac724543}{\index{compat.\-hpp@{compat.\-hpp}!cvm\-Invert@{cvm\-Invert}}
+\index{cvm\-Invert@{cvm\-Invert}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cvm\-Invert}]{\setlength{\rightskip}{0pt plus 5cm}\#define cvm\-Invert(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf src}, }
+\item[{}]{{\bf dst}}
+\end{DoxyParamCaption}
+)~{\bf cv\-Inv}( {\bf src}, {\bf dst} )}}\label{compat_8hpp_ad00552059bf839dec04f1fbaac724543}
+\hypertarget{compat_8hpp_a11bcf14954bb32ee632052357cc6f384}{\index{compat.\-hpp@{compat.\-hpp}!cvm\-Mahalanobis@{cvm\-Mahalanobis}}
+\index{cvm\-Mahalanobis@{cvm\-Mahalanobis}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cvm\-Mahalanobis}]{\setlength{\rightskip}{0pt plus 5cm}\#define cvm\-Mahalanobis(
+\begin{DoxyParamCaption}
+\item[{}]{vec1, }
+\item[{}]{{\bf vec2}, }
+\item[{}]{{\bf mat}}
+\end{DoxyParamCaption}
+)~cv\-Mahalanobis( vec1, {\bf vec2}, {\bf mat} )}}\label{compat_8hpp_a11bcf14954bb32ee632052357cc6f384}
+\hypertarget{compat_8hpp_ab5838a7bb39b2e5bf783de22c824f3fd}{\index{compat.\-hpp@{compat.\-hpp}!cvm\-Mul@{cvm\-Mul}}
+\index{cvm\-Mul@{cvm\-Mul}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cvm\-Mul}]{\setlength{\rightskip}{0pt plus 5cm}\#define cvm\-Mul(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf src1}, }
+\item[{}]{{\bf src2}, }
+\item[{}]{{\bf dst}}
+\end{DoxyParamCaption}
+)~{\bf cv\-Mat\-Mul\-Add}( {\bf src1}, {\bf src2}, 0, {\bf dst} )}}\label{compat_8hpp_ab5838a7bb39b2e5bf783de22c824f3fd}
+\hypertarget{compat_8hpp_a3d6aeed3aac15e9d256db8df3e57299b}{\index{compat.\-hpp@{compat.\-hpp}!cvm\-Mul\-Transposed@{cvm\-Mul\-Transposed}}
+\index{cvm\-Mul\-Transposed@{cvm\-Mul\-Transposed}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cvm\-Mul\-Transposed}]{\setlength{\rightskip}{0pt plus 5cm}\#define cvm\-Mul\-Transposed(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf src}, }
+\item[{}]{{\bf dst}, }
+\item[{}]{{\bf order}}
+\end{DoxyParamCaption}
+)~cv\-Mul\-Transposed( {\bf src}, {\bf dst}, {\bf order} )}}\label{compat_8hpp_a3d6aeed3aac15e9d256db8df3e57299b}
+\hypertarget{compat_8hpp_a59740dfd1f64f9750708285ddd0365c6}{\index{compat.\-hpp@{compat.\-hpp}!cvm\-Scale@{cvm\-Scale}}
+\index{cvm\-Scale@{cvm\-Scale}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cvm\-Scale}]{\setlength{\rightskip}{0pt plus 5cm}\#define cvm\-Scale(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf src}, }
+\item[{}]{{\bf dst}, }
+\item[{}]{{\bf scale}}
+\end{DoxyParamCaption}
+)~{\bf cv\-Scale}( {\bf src}, {\bf dst}, {\bf scale} )}}\label{compat_8hpp_a59740dfd1f64f9750708285ddd0365c6}
+\hypertarget{compat_8hpp_a377b9a4aa33eabe104f69c73664a2a22}{\index{compat.\-hpp@{compat.\-hpp}!cvm\-Set\-Identity@{cvm\-Set\-Identity}}
+\index{cvm\-Set\-Identity@{cvm\-Set\-Identity}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cvm\-Set\-Identity}]{\setlength{\rightskip}{0pt plus 5cm}\#define cvm\-Set\-Identity(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf mat}}
+\end{DoxyParamCaption}
+)~cv\-Set\-Identity( {\bf mat} )}}\label{compat_8hpp_a377b9a4aa33eabe104f69c73664a2a22}
+\hypertarget{compat_8hpp_ab6337d22561cba6d2fbafc3106826b3e}{\index{compat.\-hpp@{compat.\-hpp}!cvm\-Set\-Zero@{cvm\-Set\-Zero}}
+\index{cvm\-Set\-Zero@{cvm\-Set\-Zero}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cvm\-Set\-Zero}]{\setlength{\rightskip}{0pt plus 5cm}\#define cvm\-Set\-Zero(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf mat}}
+\end{DoxyParamCaption}
+)~cv\-Set\-Zero( {\bf mat} )}}\label{compat_8hpp_ab6337d22561cba6d2fbafc3106826b3e}
+\hypertarget{compat_8hpp_acd113497d3273cf96b55209df040633c}{\index{compat.\-hpp@{compat.\-hpp}!cvm\-Sub@{cvm\-Sub}}
+\index{cvm\-Sub@{cvm\-Sub}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cvm\-Sub}]{\setlength{\rightskip}{0pt plus 5cm}\#define cvm\-Sub(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf src1}, }
+\item[{}]{{\bf src2}, }
+\item[{}]{{\bf dst}}
+\end{DoxyParamCaption}
+)~cv\-Sub( {\bf src1}, {\bf src2}, {\bf dst}, 0 )}}\label{compat_8hpp_acd113497d3273cf96b55209df040633c}
+\hypertarget{compat_8hpp_a85c5f47e54657638b3f88328fc36a87a}{\index{compat.\-hpp@{compat.\-hpp}!cvm\-Trace@{cvm\-Trace}}
+\index{cvm\-Trace@{cvm\-Trace}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cvm\-Trace}]{\setlength{\rightskip}{0pt plus 5cm}\#define cvm\-Trace(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf mat}}
+\end{DoxyParamCaption}
+)~(cv\-Trace( {\bf mat} )).val\mbox{[}0\mbox{]}}}\label{compat_8hpp_a85c5f47e54657638b3f88328fc36a87a}
+\hypertarget{compat_8hpp_a26aec81b3efdb92eba84b8efef5a59c0}{\index{compat.\-hpp@{compat.\-hpp}!cvm\-Transpose@{cvm\-Transpose}}
+\index{cvm\-Transpose@{cvm\-Transpose}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cvm\-Transpose}]{\setlength{\rightskip}{0pt plus 5cm}\#define cvm\-Transpose(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf src}, }
+\item[{}]{{\bf dst}}
+\end{DoxyParamCaption}
+)~{\bf cv\-T}( {\bf src}, {\bf dst} )}}\label{compat_8hpp_a26aec81b3efdb92eba84b8efef5a59c0}
+\hypertarget{compat_8hpp_a61940512dd6f35f9affa6243fada7874}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Multiply\-Acc\-Mask@{cv\-Multiply\-Acc\-Mask}}
+\index{cv\-Multiply\-Acc\-Mask@{cv\-Multiply\-Acc\-Mask}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Multiply\-Acc\-Mask}]{\setlength{\rightskip}{0pt plus 5cm}\#define cv\-Multiply\-Acc\-Mask~cv\-Multiply\-Acc}}\label{compat_8hpp_a61940512dd6f35f9affa6243fada7874}
+\hypertarget{compat_8hpp_aa150972293c98a99a9c8204244e70b72}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Norm\-Mask@{cv\-Norm\-Mask}}
+\index{cv\-Norm\-Mask@{cv\-Norm\-Mask}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Norm\-Mask}]{\setlength{\rightskip}{0pt plus 5cm}\#define cv\-Norm\-Mask(
+\begin{DoxyParamCaption}
+\item[{}]{img\-A, }
+\item[{}]{img\-B, }
+\item[{}]{{\bf mask}, }
+\item[{}]{norm\-Type}
+\end{DoxyParamCaption}
+)~cv\-Norm(img\-A,img\-B,norm\-Type,{\bf mask})}}\label{compat_8hpp_aa150972293c98a99a9c8204244e70b72}
+\hypertarget{compat_8hpp_aa94a373b41c4c2d987f9eca4e88b6e05}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Pseudo\-Inv@{cv\-Pseudo\-Inv}}
+\index{cv\-Pseudo\-Inv@{cv\-Pseudo\-Inv}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Pseudo\-Inv}]{\setlength{\rightskip}{0pt plus 5cm}\#define cv\-Pseudo\-Inv~{\bf cv\-Pseudo\-Inverse}}}\label{compat_8hpp_aa94a373b41c4c2d987f9eca4e88b6e05}
+\hypertarget{compat_8hpp_a860023682c0b2f8e115163960095b654}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Query\-Hist\-Value\-\_\-1\-D@{cv\-Query\-Hist\-Value\-\_\-1\-D}}
+\index{cv\-Query\-Hist\-Value\-\_\-1\-D@{cv\-Query\-Hist\-Value\-\_\-1\-D}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Query\-Hist\-Value\-\_\-1\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define cv\-Query\-Hist\-Value\-\_\-1\-D(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf hist}, }
+\item[{}]{{\bf idx0}}
+\end{DoxyParamCaption}
+)~((float)cv\-Get\-Real1\-D( ({\bf hist})-\/$>$bins, ({\bf idx0})))}}\label{compat_8hpp_a860023682c0b2f8e115163960095b654}
+\hypertarget{compat_8hpp_ac9de67a37065b83080e351525d98c62d}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Query\-Hist\-Value\-\_\-2\-D@{cv\-Query\-Hist\-Value\-\_\-2\-D}}
+\index{cv\-Query\-Hist\-Value\-\_\-2\-D@{cv\-Query\-Hist\-Value\-\_\-2\-D}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Query\-Hist\-Value\-\_\-2\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define cv\-Query\-Hist\-Value\-\_\-2\-D(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf hist}, }
+\item[{}]{{\bf idx0}, }
+\item[{}]{{\bf idx1}}
+\end{DoxyParamCaption}
+)~((float)cv\-Get\-Real2\-D( ({\bf hist})-\/$>$bins, ({\bf idx0}), ({\bf idx1})))}}\label{compat_8hpp_ac9de67a37065b83080e351525d98c62d}
+\hypertarget{compat_8hpp_a7f3de226d2cf79801449bbed00ed04c3}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Query\-Hist\-Value\-\_\-3\-D@{cv\-Query\-Hist\-Value\-\_\-3\-D}}
+\index{cv\-Query\-Hist\-Value\-\_\-3\-D@{cv\-Query\-Hist\-Value\-\_\-3\-D}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Query\-Hist\-Value\-\_\-3\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define cv\-Query\-Hist\-Value\-\_\-3\-D(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf hist}, }
+\item[{}]{{\bf idx0}, }
+\item[{}]{{\bf idx1}, }
+\item[{}]{{\bf idx2}}
+\end{DoxyParamCaption}
+)~((float)cv\-Get\-Real3\-D( ({\bf hist})-\/$>$bins, ({\bf idx0}), ({\bf idx1}), ({\bf idx2})))}}\label{compat_8hpp_a7f3de226d2cf79801449bbed00ed04c3}
+\hypertarget{compat_8hpp_a95de963141abb2ba7e20df569e14cdd7}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Query\-Hist\-Value\-\_\-n\-D@{cv\-Query\-Hist\-Value\-\_\-n\-D}}
+\index{cv\-Query\-Hist\-Value\-\_\-n\-D@{cv\-Query\-Hist\-Value\-\_\-n\-D}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Query\-Hist\-Value\-\_\-n\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define cv\-Query\-Hist\-Value\-\_\-n\-D(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf hist}, }
+\item[{}]{{\bf idx}}
+\end{DoxyParamCaption}
+)~((float)cv\-Get\-Real\-N\-D( ({\bf hist})-\/$>$bins, ({\bf idx})))}}\label{compat_8hpp_a95de963141abb2ba7e20df569e14cdd7}
+\hypertarget{compat_8hpp_a63d1d3eb35eda29ffd29ff6b1e2b12e5}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Rand\-Next@{cv\-Rand\-Next}}
+\index{cv\-Rand\-Next@{cv\-Rand\-Next}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Rand\-Next}]{\setlength{\rightskip}{0pt plus 5cm}\#define cv\-Rand\-Next(
+\begin{DoxyParamCaption}
+\item[{}]{\-\_\-state}
+\end{DoxyParamCaption}
+)~{\bf cv\-Rand\-Int}( \&(\-\_\-state)-\/$>${\bf state} )}}\label{compat_8hpp_a63d1d3eb35eda29ffd29ff6b1e2b12e5}
+\hypertarget{compat_8hpp_a94d78d6ca4cf0f4eae5925ada9803c40}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Release\-Image\-Data@{cv\-Release\-Image\-Data}}
+\index{cv\-Release\-Image\-Data@{cv\-Release\-Image\-Data}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Release\-Image\-Data}]{\setlength{\rightskip}{0pt plus 5cm}\#define cv\-Release\-Image\-Data~cv\-Release\-Data}}\label{compat_8hpp_a94d78d6ca4cf0f4eae5925ada9803c40}
+\hypertarget{compat_8hpp_a1ad07c2eea83f576d82de95816d1fb1a}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Release\-Mat\-Header@{cv\-Release\-Mat\-Header}}
+\index{cv\-Release\-Mat\-Header@{cv\-Release\-Mat\-Header}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Release\-Mat\-Header}]{\setlength{\rightskip}{0pt plus 5cm}\#define cv\-Release\-Mat\-Header~cv\-Release\-Mat}}\label{compat_8hpp_a1ad07c2eea83f576d82de95816d1fb1a}
+\hypertarget{compat_8hpp_ae4687446af1dbbcf8bf054dbbce3f5e4}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Remove\-Memory\-Manager@{cv\-Remove\-Memory\-Manager}}
+\index{cv\-Remove\-Memory\-Manager@{cv\-Remove\-Memory\-Manager}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Remove\-Memory\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}\#define cv\-Remove\-Memory\-Manager~cv\-Set\-Memory\-Manager}}\label{compat_8hpp_ae4687446af1dbbcf8bf054dbbce3f5e4}
+\hypertarget{compat_8hpp_a42b7796ad06ae2c8fa076eb57556a7a6}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Running\-Avg\-Mask@{cv\-Running\-Avg\-Mask}}
+\index{cv\-Running\-Avg\-Mask@{cv\-Running\-Avg\-Mask}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Running\-Avg\-Mask}]{\setlength{\rightskip}{0pt plus 5cm}\#define cv\-Running\-Avg\-Mask(
+\begin{DoxyParamCaption}
+\item[{}]{img\-Y, }
+\item[{}]{img\-U, }
+\item[{}]{{\bf mask}, }
+\item[{}]{{\bf alpha}}
+\end{DoxyParamCaption}
+)~cv\-Running\-Avg(img\-Y, img\-U, {\bf alpha}, {\bf mask})}}\label{compat_8hpp_a42b7796ad06ae2c8fa076eb57556a7a6}
+\hypertarget{compat_8hpp_afcc767137a87bdc879c999567a1078b9}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Set\-At@{cv\-Set\-At}}
+\index{cv\-Set\-At@{cv\-Set\-At}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Set\-At}]{\setlength{\rightskip}{0pt plus 5cm}\#define cv\-Set\-At(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf arr}, }
+\item[{}]{val, }
+\item[{}]{{\bf y}, }
+\item[{}]{{\bf x}}
+\end{DoxyParamCaption}
+)~cv\-Set2\-D(({\bf arr}),({\bf y}),({\bf x}),(val))}}\label{compat_8hpp_afcc767137a87bdc879c999567a1078b9}
+\hypertarget{compat_8hpp_abbf39c2525de7bbc5ed64d8ceb57f803}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Set\-Hist\-Thresh@{cv\-Set\-Hist\-Thresh}}
+\index{cv\-Set\-Hist\-Thresh@{cv\-Set\-Hist\-Thresh}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Set\-Hist\-Thresh}]{\setlength{\rightskip}{0pt plus 5cm}\#define cv\-Set\-Hist\-Thresh~cv\-Set\-Hist\-Bin\-Ranges}}\label{compat_8hpp_abbf39c2525de7bbc5ed64d8ceb57f803}
+\hypertarget{compat_8hpp_a684102cb7c7a8bb34468cb006a7ee1aa}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Set\-Image\-Data@{cv\-Set\-Image\-Data}}
+\index{cv\-Set\-Image\-Data@{cv\-Set\-Image\-Data}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Set\-Image\-Data}]{\setlength{\rightskip}{0pt plus 5cm}\#define cv\-Set\-Image\-Data~cv\-Set\-Data}}\label{compat_8hpp_a684102cb7c7a8bb34468cb006a7ee1aa}
+\hypertarget{compat_8hpp_ac63acf22a0a5427d0553b1f044ab0c0e}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Square\-Acc\-Mask@{cv\-Square\-Acc\-Mask}}
+\index{cv\-Square\-Acc\-Mask@{cv\-Square\-Acc\-Mask}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Square\-Acc\-Mask}]{\setlength{\rightskip}{0pt plus 5cm}\#define cv\-Square\-Acc\-Mask~cv\-Square\-Acc}}\label{compat_8hpp_ac63acf22a0a5427d0553b1f044ab0c0e}
+\hypertarget{compat_8hpp_ae42e7dee00a3371f0f6cd4f43bfc3a73}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Update\-M\-H\-I\-By\-Time@{cv\-Update\-M\-H\-I\-By\-Time}}
+\index{cv\-Update\-M\-H\-I\-By\-Time@{cv\-Update\-M\-H\-I\-By\-Time}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Update\-M\-H\-I\-By\-Time}]{\setlength{\rightskip}{0pt plus 5cm}\#define cv\-Update\-M\-H\-I\-By\-Time~cv\-Update\-Motion\-History}}\label{compat_8hpp_ae42e7dee00a3371f0f6cd4f43bfc3a73}
+\hypertarget{compat_8hpp_a124a51dee4ea8dd86aa7915ba1284241}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Warp\-Perspective\-Q\-Matrix@{cv\-Warp\-Perspective\-Q\-Matrix}}
+\index{cv\-Warp\-Perspective\-Q\-Matrix@{cv\-Warp\-Perspective\-Q\-Matrix}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Warp\-Perspective\-Q\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}\#define cv\-Warp\-Perspective\-Q\-Matrix~cv\-Get\-Perspective\-Transform}}\label{compat_8hpp_a124a51dee4ea8dd86aa7915ba1284241}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{compat_8hpp_a8fc724e4b0adc88b0ecccc7b9258e2ef}{\index{compat.\-hpp@{compat.\-hpp}!Cv\-Adaptive\-Thresh\-Method@{Cv\-Adaptive\-Thresh\-Method}}
+\index{Cv\-Adaptive\-Thresh\-Method@{Cv\-Adaptive\-Thresh\-Method}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{Cv\-Adaptive\-Thresh\-Method}]{\setlength{\rightskip}{0pt plus 5cm}typedef int {\bf Cv\-Adaptive\-Thresh\-Method}}}\label{compat_8hpp_a8fc724e4b0adc88b0ecccc7b9258e2ef}
+\hypertarget{compat_8hpp_ac6fcd5ca53a13d6dc29631ae2f732052}{\index{compat.\-hpp@{compat.\-hpp}!Cv\-Box2\-D32f@{Cv\-Box2\-D32f}}
+\index{Cv\-Box2\-D32f@{Cv\-Box2\-D32f}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{Cv\-Box2\-D32f}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Cv\-Box2\-D} {\bf Cv\-Box2\-D32f}}}\label{compat_8hpp_ac6fcd5ca53a13d6dc29631ae2f732052}
+\hypertarget{compat_8hpp_a8d72f53d16db94273be67394e46a6c01}{\index{compat.\-hpp@{compat.\-hpp}!Cv\-Chain\-Approx\-Method@{Cv\-Chain\-Approx\-Method}}
+\index{Cv\-Chain\-Approx\-Method@{Cv\-Chain\-Approx\-Method}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{Cv\-Chain\-Approx\-Method}]{\setlength{\rightskip}{0pt plus 5cm}typedef int {\bf Cv\-Chain\-Approx\-Method}}}\label{compat_8hpp_a8d72f53d16db94273be67394e46a6c01}
+\hypertarget{compat_8hpp_a9293fe8c629c7cfd06f734c8009562f6}{\index{compat.\-hpp@{compat.\-hpp}!Cv\-Coeff\-Type@{Cv\-Coeff\-Type}}
+\index{Cv\-Coeff\-Type@{Cv\-Coeff\-Type}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{Cv\-Coeff\-Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef int {\bf Cv\-Coeff\-Type}}}\label{compat_8hpp_a9293fe8c629c7cfd06f734c8009562f6}
+\hypertarget{compat_8hpp_ac5b2e1d9fed78693b170a6b03e879c18}{\index{compat.\-hpp@{compat.\-hpp}!Cv\-Compare\-Method@{Cv\-Compare\-Method}}
+\index{Cv\-Compare\-Method@{Cv\-Compare\-Method}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{Cv\-Compare\-Method}]{\setlength{\rightskip}{0pt plus 5cm}typedef int {\bf Cv\-Compare\-Method}}}\label{compat_8hpp_ac5b2e1d9fed78693b170a6b03e879c18}
+\hypertarget{compat_8hpp_ac0657ea858f29c91a913bcef7c8e82b7}{\index{compat.\-hpp@{compat.\-hpp}!Cv\-Contour\-Retrieval\-Mode@{Cv\-Contour\-Retrieval\-Mode}}
+\index{Cv\-Contour\-Retrieval\-Mode@{Cv\-Contour\-Retrieval\-Mode}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{Cv\-Contour\-Retrieval\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}typedef int {\bf Cv\-Contour\-Retrieval\-Mode}}}\label{compat_8hpp_ac0657ea858f29c91a913bcef7c8e82b7}
+\hypertarget{compat_8hpp_aa94e341e268a7d93ebfdb978e7a7a873}{\index{compat.\-hpp@{compat.\-hpp}!Cv\-Contours\-Match\-Method@{Cv\-Contours\-Match\-Method}}
+\index{Cv\-Contours\-Match\-Method@{Cv\-Contours\-Match\-Method}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{Cv\-Contours\-Match\-Method}]{\setlength{\rightskip}{0pt plus 5cm}typedef int {\bf Cv\-Contours\-Match\-Method}}}\label{compat_8hpp_aa94e341e268a7d93ebfdb978e7a7a873}
+\hypertarget{compat_8hpp_a7c949004dd2edecb83c3360509ffeabd}{\index{compat.\-hpp@{compat.\-hpp}!Cv\-Contour\-Trees\-Match\-Method@{Cv\-Contour\-Trees\-Match\-Method}}
+\index{Cv\-Contour\-Trees\-Match\-Method@{Cv\-Contour\-Trees\-Match\-Method}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{Cv\-Contour\-Trees\-Match\-Method}]{\setlength{\rightskip}{0pt plus 5cm}typedef int {\bf Cv\-Contour\-Trees\-Match\-Method}}}\label{compat_8hpp_a7c949004dd2edecb83c3360509ffeabd}
+\hypertarget{compat_8hpp_a257a8c2e7ed67749da3ecee69b994216}{\index{compat.\-hpp@{compat.\-hpp}!Cv\-Dis\-Mask\-Type@{Cv\-Dis\-Mask\-Type}}
+\index{Cv\-Dis\-Mask\-Type@{Cv\-Dis\-Mask\-Type}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{Cv\-Dis\-Mask\-Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef int {\bf Cv\-Dis\-Mask\-Type}}}\label{compat_8hpp_a257a8c2e7ed67749da3ecee69b994216}
+\hypertarget{compat_8hpp_a923775335babba30e7c0bb2c44c033bc}{\index{compat.\-hpp@{compat.\-hpp}!Cv\-Dis\-Type@{Cv\-Dis\-Type}}
+\index{Cv\-Dis\-Type@{Cv\-Dis\-Type}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{Cv\-Dis\-Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef int {\bf Cv\-Dis\-Type}}}\label{compat_8hpp_a923775335babba30e7c0bb2c44c033bc}
+\hypertarget{compat_8hpp_ad93b1533b692c32e56ae7d07c0f7c701}{\index{compat.\-hpp@{compat.\-hpp}!Cv\-Element\-Shape@{Cv\-Element\-Shape}}
+\index{Cv\-Element\-Shape@{Cv\-Element\-Shape}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{Cv\-Element\-Shape}]{\setlength{\rightskip}{0pt plus 5cm}typedef int {\bf Cv\-Element\-Shape}}}\label{compat_8hpp_ad93b1533b692c32e56ae7d07c0f7c701}
+\hypertarget{compat_8hpp_a922cc0697485c8294f2626815445bfcb}{\index{compat.\-hpp@{compat.\-hpp}!Cv\-Font\-Face@{Cv\-Font\-Face}}
+\index{Cv\-Font\-Face@{Cv\-Font\-Face}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{Cv\-Font\-Face}]{\setlength{\rightskip}{0pt plus 5cm}typedef int {\bf Cv\-Font\-Face}}}\label{compat_8hpp_a922cc0697485c8294f2626815445bfcb}
+\hypertarget{compat_8hpp_ab0cc6d8047af9630f9759238c8ab81c5}{\index{compat.\-hpp@{compat.\-hpp}!Cv\-Mat\-Array@{Cv\-Mat\-Array}}
+\index{Cv\-Mat\-Array@{Cv\-Mat\-Array}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{Cv\-Mat\-Array}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Cv\-Mat} {\bf Cv\-Mat\-Array}}}\label{compat_8hpp_ab0cc6d8047af9630f9759238c8ab81c5}
+\hypertarget{compat_8hpp_ac28a78bb52f796748c0a95fffef1ce8c}{\index{compat.\-hpp@{compat.\-hpp}!Cv\-Matr32f@{Cv\-Matr32f}}
+\index{Cv\-Matr32f@{Cv\-Matr32f}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{Cv\-Matr32f}]{\setlength{\rightskip}{0pt plus 5cm}typedef float$\ast$ {\bf Cv\-Matr32f}}}\label{compat_8hpp_ac28a78bb52f796748c0a95fffef1ce8c}
+\hypertarget{compat_8hpp_a4535cb1ff63584db410f38b9cf59c80c}{\index{compat.\-hpp@{compat.\-hpp}!Cv\-Matr64d@{Cv\-Matr64d}}
+\index{Cv\-Matr64d@{Cv\-Matr64d}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{Cv\-Matr64d}]{\setlength{\rightskip}{0pt plus 5cm}typedef double$\ast$ {\bf Cv\-Matr64d}}}\label{compat_8hpp_a4535cb1ff63584db410f38b9cf59c80c}
+\hypertarget{compat_8hpp_adc5ecd4f0f29d1348c6d88ab5dbc1d11}{\index{compat.\-hpp@{compat.\-hpp}!Cv\-Mat\-Type@{Cv\-Mat\-Type}}
+\index{Cv\-Mat\-Type@{Cv\-Mat\-Type}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{Cv\-Mat\-Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef int {\bf Cv\-Mat\-Type}}}\label{compat_8hpp_adc5ecd4f0f29d1348c6d88ab5dbc1d11}
+\hypertarget{compat_8hpp_a43f4cb681ec9011f5b7d6b7d417365aa}{\index{compat.\-hpp@{compat.\-hpp}!Cv\-Morph\-Op@{Cv\-Morph\-Op}}
+\index{Cv\-Morph\-Op@{Cv\-Morph\-Op}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{Cv\-Morph\-Op}]{\setlength{\rightskip}{0pt plus 5cm}typedef int {\bf Cv\-Morph\-Op}}}\label{compat_8hpp_a43f4cb681ec9011f5b7d6b7d417365aa}
+\hypertarget{compat_8hpp_af87750117989c8128fd6eb6a54c7d706}{\index{compat.\-hpp@{compat.\-hpp}!Cv\-M\-S\-E\-R\-Params@{Cv\-M\-S\-E\-R\-Params}}
+\index{Cv\-M\-S\-E\-R\-Params@{Cv\-M\-S\-E\-R\-Params}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{Cv\-M\-S\-E\-R\-Params}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf Cv\-M\-S\-E\-R\-Params}  {\bf Cv\-M\-S\-E\-R\-Params}}}\label{compat_8hpp_af87750117989c8128fd6eb6a54c7d706}
+Maximal Stable Regions Parameters \hypertarget{compat_8hpp_a84d4407e5b175d4cbed07aed8d4db29c}{\index{compat.\-hpp@{compat.\-hpp}!Cv\-Pixel\-Position32f@{Cv\-Pixel\-Position32f}}
+\index{Cv\-Pixel\-Position32f@{Cv\-Pixel\-Position32f}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{Cv\-Pixel\-Position32f}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-\-Cv\-Pixel\-Position32f}  {\bf Cv\-Pixel\-Position32f}}}\label{compat_8hpp_a84d4407e5b175d4cbed07aed8d4db29c}
+\hypertarget{compat_8hpp_ab22659d1a604f72dadbc547e7036d77d}{\index{compat.\-hpp@{compat.\-hpp}!Cv\-Pixel\-Position8s@{Cv\-Pixel\-Position8s}}
+\index{Cv\-Pixel\-Position8s@{Cv\-Pixel\-Position8s}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{Cv\-Pixel\-Position8s}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-\-Cv\-Pixel\-Position8s}  {\bf Cv\-Pixel\-Position8s}}}\label{compat_8hpp_ab22659d1a604f72dadbc547e7036d77d}
+\hypertarget{compat_8hpp_a4e3117154f8bd35ef042fe0e87024e88}{\index{compat.\-hpp@{compat.\-hpp}!Cv\-Pixel\-Position8u@{Cv\-Pixel\-Position8u}}
+\index{Cv\-Pixel\-Position8u@{Cv\-Pixel\-Position8u}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{Cv\-Pixel\-Position8u}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-\-Cv\-Pixel\-Position8u}  {\bf Cv\-Pixel\-Position8u}}}\label{compat_8hpp_a4e3117154f8bd35ef042fe0e87024e88}
+\hypertarget{compat_8hpp_a429bb30dcf3abc259690ac6b4f4ebb42}{\index{compat.\-hpp@{compat.\-hpp}!Cv\-Point2\-D64d@{Cv\-Point2\-D64d}}
+\index{Cv\-Point2\-D64d@{Cv\-Point2\-D64d}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{Cv\-Point2\-D64d}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Cv\-Point2\-D64f} {\bf Cv\-Point2\-D64d}}}\label{compat_8hpp_a429bb30dcf3abc259690ac6b4f4ebb42}
+\hypertarget{compat_8hpp_a2f3488466c36e756862bad17edbd24b1}{\index{compat.\-hpp@{compat.\-hpp}!Cv\-Point3\-D64d@{Cv\-Point3\-D64d}}
+\index{Cv\-Point3\-D64d@{Cv\-Point3\-D64d}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{Cv\-Point3\-D64d}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Cv\-Point3\-D64f} {\bf Cv\-Point3\-D64d}}}\label{compat_8hpp_a2f3488466c36e756862bad17edbd24b1}
+\hypertarget{compat_8hpp_aaf7a8722ec7b2f84f00a4a8de241905d}{\index{compat.\-hpp@{compat.\-hpp}!Cv\-Poly\-Approx\-Method@{Cv\-Poly\-Approx\-Method}}
+\index{Cv\-Poly\-Approx\-Method@{Cv\-Poly\-Approx\-Method}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{Cv\-Poly\-Approx\-Method}]{\setlength{\rightskip}{0pt plus 5cm}typedef int {\bf Cv\-Poly\-Approx\-Method}}}\label{compat_8hpp_aaf7a8722ec7b2f84f00a4a8de241905d}
+\hypertarget{compat_8hpp_ab0285298b29fd0fd38dfec4adff32001}{\index{compat.\-hpp@{compat.\-hpp}!Cv\-Rand\-State@{Cv\-Rand\-State}}
+\index{Cv\-Rand\-State@{Cv\-Rand\-State}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{Cv\-Rand\-State}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf Cv\-Rand\-State}  {\bf Cv\-Rand\-State}}}\label{compat_8hpp_ab0285298b29fd0fd38dfec4adff32001}
+\hypertarget{compat_8hpp_a43cf631b65d625cf5bf04c3ac8c3ca76}{\index{compat.\-hpp@{compat.\-hpp}!Cv\-Rodrigues\-Type@{Cv\-Rodrigues\-Type}}
+\index{Cv\-Rodrigues\-Type@{Cv\-Rodrigues\-Type}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{Cv\-Rodrigues\-Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef int {\bf Cv\-Rodrigues\-Type}}}\label{compat_8hpp_a43cf631b65d625cf5bf04c3ac8c3ca76}
+\hypertarget{compat_8hpp_a8ec546e3ea4eb7a000b3eb77c0649fed}{\index{compat.\-hpp@{compat.\-hpp}!Cv\-Star\-Detector\-Params@{Cv\-Star\-Detector\-Params}}
+\index{Cv\-Star\-Detector\-Params@{Cv\-Star\-Detector\-Params}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{Cv\-Star\-Detector\-Params}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf Cv\-Star\-Detector\-Params}  {\bf Cv\-Star\-Detector\-Params}}}\label{compat_8hpp_a8ec546e3ea4eb7a000b3eb77c0649fed}
+\hypertarget{compat_8hpp_a3a861c677fca07583e7c2cefb9923c4c}{\index{compat.\-hpp@{compat.\-hpp}!Cv\-Star\-Keypoint@{Cv\-Star\-Keypoint}}
+\index{Cv\-Star\-Keypoint@{Cv\-Star\-Keypoint}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{Cv\-Star\-Keypoint}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf Cv\-Star\-Keypoint}  {\bf Cv\-Star\-Keypoint}}}\label{compat_8hpp_a3a861c677fca07583e7c2cefb9923c4c}
+\hypertarget{compat_8hpp_a314165e79b8b61f6aa4f9293f95a01c3}{\index{compat.\-hpp@{compat.\-hpp}!Cv\-S\-U\-R\-F\-Params@{Cv\-S\-U\-R\-F\-Params}}
+\index{Cv\-S\-U\-R\-F\-Params@{Cv\-S\-U\-R\-F\-Params}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{Cv\-S\-U\-R\-F\-Params}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf Cv\-S\-U\-R\-F\-Params}  {\bf Cv\-S\-U\-R\-F\-Params}}}\label{compat_8hpp_a314165e79b8b61f6aa4f9293f95a01c3}
+\hypertarget{compat_8hpp_a34a8e145a6b9530daf392c79f263dfb3}{\index{compat.\-hpp@{compat.\-hpp}!Cv\-S\-U\-R\-F\-Point@{Cv\-S\-U\-R\-F\-Point}}
+\index{Cv\-S\-U\-R\-F\-Point@{Cv\-S\-U\-R\-F\-Point}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{Cv\-S\-U\-R\-F\-Point}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf Cv\-S\-U\-R\-F\-Point}  {\bf Cv\-S\-U\-R\-F\-Point}}}\label{compat_8hpp_a34a8e145a6b9530daf392c79f263dfb3}
+\hypertarget{compat_8hpp_af9d5cde7c006100af74a728d6b078e73}{\index{compat.\-hpp@{compat.\-hpp}!Cv\-Templ\-Match\-Method@{Cv\-Templ\-Match\-Method}}
+\index{Cv\-Templ\-Match\-Method@{Cv\-Templ\-Match\-Method}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{Cv\-Templ\-Match\-Method}]{\setlength{\rightskip}{0pt plus 5cm}typedef int {\bf Cv\-Templ\-Match\-Method}}}\label{compat_8hpp_af9d5cde7c006100af74a728d6b078e73}
+\hypertarget{compat_8hpp_a0ba85f6e077df81b31ea00d6be765056}{\index{compat.\-hpp@{compat.\-hpp}!Cv\-Thresh\-Type@{Cv\-Thresh\-Type}}
+\index{Cv\-Thresh\-Type@{Cv\-Thresh\-Type}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{Cv\-Thresh\-Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef int {\bf Cv\-Thresh\-Type}}}\label{compat_8hpp_a0ba85f6e077df81b31ea00d6be765056}
+\hypertarget{compat_8hpp_a0695a164361a2a8d2f62620465481af3}{\index{compat.\-hpp@{compat.\-hpp}!Cv\-Vect32f@{Cv\-Vect32f}}
+\index{Cv\-Vect32f@{Cv\-Vect32f}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{Cv\-Vect32f}]{\setlength{\rightskip}{0pt plus 5cm}typedef float$\ast$ {\bf Cv\-Vect32f}}}\label{compat_8hpp_a0695a164361a2a8d2f62620465481af3}
+\hypertarget{compat_8hpp_ae3c6bc6d955076b9b8afcda108d4c374}{\index{compat.\-hpp@{compat.\-hpp}!Cv\-Vect64d@{Cv\-Vect64d}}
+\index{Cv\-Vect64d@{Cv\-Vect64d}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{Cv\-Vect64d}]{\setlength{\rightskip}{0pt plus 5cm}typedef double$\ast$ {\bf Cv\-Vect64d}}}\label{compat_8hpp_ae3c6bc6d955076b9b8afcda108d4c374}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{compat_8hpp_a0e96acf73ec595679ffcca6fecc4d705}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{compat_8hpp_a0e96acf73ec595679ffcca6fecc4d705}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{C\-V\-\_\-\-M\-A\-T32\-F@{C\-V\-\_\-\-M\-A\-T32\-F}!compat.\-hpp@{compat.\-hpp}}\index{compat.\-hpp@{compat.\-hpp}!C\-V\-\_\-\-M\-A\-T32\-F@{C\-V\-\_\-\-M\-A\-T32\-F}}\item[{\em 
+\hypertarget{compat_8hpp_a0e96acf73ec595679ffcca6fecc4d705a57526da4f44b3c2ba846625d9886d141}{C\-V\-\_\-\-M\-A\-T32\-F}\label{compat_8hpp_a0e96acf73ec595679ffcca6fecc4d705a57526da4f44b3c2ba846625d9886d141}
+}]\index{C\-V\-\_\-\-M\-A\-T3x1\-\_\-32\-F@{C\-V\-\_\-\-M\-A\-T3x1\-\_\-32\-F}!compat.\-hpp@{compat.\-hpp}}\index{compat.\-hpp@{compat.\-hpp}!C\-V\-\_\-\-M\-A\-T3x1\-\_\-32\-F@{C\-V\-\_\-\-M\-A\-T3x1\-\_\-32\-F}}\item[{\em 
+\hypertarget{compat_8hpp_a0e96acf73ec595679ffcca6fecc4d705ac53a0e0777573fe79de6098f46e05b4e}{C\-V\-\_\-\-M\-A\-T3x1\-\_\-32\-F}\label{compat_8hpp_a0e96acf73ec595679ffcca6fecc4d705ac53a0e0777573fe79de6098f46e05b4e}
+}]\index{C\-V\-\_\-\-M\-A\-T4x1\-\_\-32\-F@{C\-V\-\_\-\-M\-A\-T4x1\-\_\-32\-F}!compat.\-hpp@{compat.\-hpp}}\index{compat.\-hpp@{compat.\-hpp}!C\-V\-\_\-\-M\-A\-T4x1\-\_\-32\-F@{C\-V\-\_\-\-M\-A\-T4x1\-\_\-32\-F}}\item[{\em 
+\hypertarget{compat_8hpp_a0e96acf73ec595679ffcca6fecc4d705af34612f67fc4c4b423f5bd0123bdb03d}{C\-V\-\_\-\-M\-A\-T4x1\-\_\-32\-F}\label{compat_8hpp_a0e96acf73ec595679ffcca6fecc4d705af34612f67fc4c4b423f5bd0123bdb03d}
+}]\index{C\-V\-\_\-\-M\-A\-T3x3\-\_\-32\-F@{C\-V\-\_\-\-M\-A\-T3x3\-\_\-32\-F}!compat.\-hpp@{compat.\-hpp}}\index{compat.\-hpp@{compat.\-hpp}!C\-V\-\_\-\-M\-A\-T3x3\-\_\-32\-F@{C\-V\-\_\-\-M\-A\-T3x3\-\_\-32\-F}}\item[{\em 
+\hypertarget{compat_8hpp_a0e96acf73ec595679ffcca6fecc4d705a4979f2821edfe04cfde9072445d3584f}{C\-V\-\_\-\-M\-A\-T3x3\-\_\-32\-F}\label{compat_8hpp_a0e96acf73ec595679ffcca6fecc4d705a4979f2821edfe04cfde9072445d3584f}
+}]\index{C\-V\-\_\-\-M\-A\-T4x4\-\_\-32\-F@{C\-V\-\_\-\-M\-A\-T4x4\-\_\-32\-F}!compat.\-hpp@{compat.\-hpp}}\index{compat.\-hpp@{compat.\-hpp}!C\-V\-\_\-\-M\-A\-T4x4\-\_\-32\-F@{C\-V\-\_\-\-M\-A\-T4x4\-\_\-32\-F}}\item[{\em 
+\hypertarget{compat_8hpp_a0e96acf73ec595679ffcca6fecc4d705a4906a5af39bbeb57f584b79b87560520}{C\-V\-\_\-\-M\-A\-T4x4\-\_\-32\-F}\label{compat_8hpp_a0e96acf73ec595679ffcca6fecc4d705a4906a5af39bbeb57f584b79b87560520}
+}]\index{C\-V\-\_\-\-M\-A\-T64\-D@{C\-V\-\_\-\-M\-A\-T64\-D}!compat.\-hpp@{compat.\-hpp}}\index{compat.\-hpp@{compat.\-hpp}!C\-V\-\_\-\-M\-A\-T64\-D@{C\-V\-\_\-\-M\-A\-T64\-D}}\item[{\em 
+\hypertarget{compat_8hpp_a0e96acf73ec595679ffcca6fecc4d705a0d5082cda9efdb4dd924165e99c8b705}{C\-V\-\_\-\-M\-A\-T64\-D}\label{compat_8hpp_a0e96acf73ec595679ffcca6fecc4d705a0d5082cda9efdb4dd924165e99c8b705}
+}]\index{C\-V\-\_\-\-M\-A\-T3x1\-\_\-64\-D@{C\-V\-\_\-\-M\-A\-T3x1\-\_\-64\-D}!compat.\-hpp@{compat.\-hpp}}\index{compat.\-hpp@{compat.\-hpp}!C\-V\-\_\-\-M\-A\-T3x1\-\_\-64\-D@{C\-V\-\_\-\-M\-A\-T3x1\-\_\-64\-D}}\item[{\em 
+\hypertarget{compat_8hpp_a0e96acf73ec595679ffcca6fecc4d705a166ce6bbf87593d6f54768a15d8f9ea9}{C\-V\-\_\-\-M\-A\-T3x1\-\_\-64\-D}\label{compat_8hpp_a0e96acf73ec595679ffcca6fecc4d705a166ce6bbf87593d6f54768a15d8f9ea9}
+}]\index{C\-V\-\_\-\-M\-A\-T4x1\-\_\-64\-D@{C\-V\-\_\-\-M\-A\-T4x1\-\_\-64\-D}!compat.\-hpp@{compat.\-hpp}}\index{compat.\-hpp@{compat.\-hpp}!C\-V\-\_\-\-M\-A\-T4x1\-\_\-64\-D@{C\-V\-\_\-\-M\-A\-T4x1\-\_\-64\-D}}\item[{\em 
+\hypertarget{compat_8hpp_a0e96acf73ec595679ffcca6fecc4d705a654a26fb531d7874d6b9e26043a64bae}{C\-V\-\_\-\-M\-A\-T4x1\-\_\-64\-D}\label{compat_8hpp_a0e96acf73ec595679ffcca6fecc4d705a654a26fb531d7874d6b9e26043a64bae}
+}]\index{C\-V\-\_\-\-M\-A\-T3x3\-\_\-64\-D@{C\-V\-\_\-\-M\-A\-T3x3\-\_\-64\-D}!compat.\-hpp@{compat.\-hpp}}\index{compat.\-hpp@{compat.\-hpp}!C\-V\-\_\-\-M\-A\-T3x3\-\_\-64\-D@{C\-V\-\_\-\-M\-A\-T3x3\-\_\-64\-D}}\item[{\em 
+\hypertarget{compat_8hpp_a0e96acf73ec595679ffcca6fecc4d705a5502fa4fa192e78b446d16c18a495e84}{C\-V\-\_\-\-M\-A\-T3x3\-\_\-64\-D}\label{compat_8hpp_a0e96acf73ec595679ffcca6fecc4d705a5502fa4fa192e78b446d16c18a495e84}
+}]\index{C\-V\-\_\-\-M\-A\-T4x4\-\_\-64\-D@{C\-V\-\_\-\-M\-A\-T4x4\-\_\-64\-D}!compat.\-hpp@{compat.\-hpp}}\index{compat.\-hpp@{compat.\-hpp}!C\-V\-\_\-\-M\-A\-T4x4\-\_\-64\-D@{C\-V\-\_\-\-M\-A\-T4x4\-\_\-64\-D}}\item[{\em 
+\hypertarget{compat_8hpp_a0e96acf73ec595679ffcca6fecc4d705acb585a34f77d05d8f976ae9fda7c36ad}{C\-V\-\_\-\-M\-A\-T4x4\-\_\-64\-D}\label{compat_8hpp_a0e96acf73ec595679ffcca6fecc4d705acb585a34f77d05d8f976ae9fda7c36ad}
+}]\end{description}
+\end{Desc}
+\hypertarget{compat_8hpp_a223be06596dd9ff740bf0a09c8632294}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{compat_8hpp_a223be06596dd9ff740bf0a09c8632294}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{I\-P\-L\-\_\-\-G\-A\-U\-S\-S\-I\-A\-N\-\_\-5x5@{I\-P\-L\-\_\-\-G\-A\-U\-S\-S\-I\-A\-N\-\_\-5x5}!compat.\-hpp@{compat.\-hpp}}\index{compat.\-hpp@{compat.\-hpp}!I\-P\-L\-\_\-\-G\-A\-U\-S\-S\-I\-A\-N\-\_\-5x5@{I\-P\-L\-\_\-\-G\-A\-U\-S\-S\-I\-A\-N\-\_\-5x5}}\item[{\em 
+\hypertarget{compat_8hpp_a223be06596dd9ff740bf0a09c8632294afed91723f312729759dbcca72c55929f}{I\-P\-L\-\_\-\-G\-A\-U\-S\-S\-I\-A\-N\-\_\-5x5}\label{compat_8hpp_a223be06596dd9ff740bf0a09c8632294afed91723f312729759dbcca72c55929f}
+}]\end{description}
+\end{Desc}
+\hypertarget{compat_8hpp_ac1351f3e26da80ee24b2888ecc68fca6}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{compat_8hpp_ac1351f3e26da80ee24b2888ecc68fca6}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{C\-V\-\_\-\-S\-H\-I\-F\-T\-\_\-\-N\-O\-N\-E@{C\-V\-\_\-\-S\-H\-I\-F\-T\-\_\-\-N\-O\-N\-E}!compat.\-hpp@{compat.\-hpp}}\index{compat.\-hpp@{compat.\-hpp}!C\-V\-\_\-\-S\-H\-I\-F\-T\-\_\-\-N\-O\-N\-E@{C\-V\-\_\-\-S\-H\-I\-F\-T\-\_\-\-N\-O\-N\-E}}\item[{\em 
+\hypertarget{compat_8hpp_ac1351f3e26da80ee24b2888ecc68fca6a4ff0ecf352403466e858f12f86732d40}{C\-V\-\_\-\-S\-H\-I\-F\-T\-\_\-\-N\-O\-N\-E}\label{compat_8hpp_ac1351f3e26da80ee24b2888ecc68fca6a4ff0ecf352403466e858f12f86732d40}
+}]\index{C\-V\-\_\-\-S\-H\-I\-F\-T\-\_\-\-L\-E\-F\-T@{C\-V\-\_\-\-S\-H\-I\-F\-T\-\_\-\-L\-E\-F\-T}!compat.\-hpp@{compat.\-hpp}}\index{compat.\-hpp@{compat.\-hpp}!C\-V\-\_\-\-S\-H\-I\-F\-T\-\_\-\-L\-E\-F\-T@{C\-V\-\_\-\-S\-H\-I\-F\-T\-\_\-\-L\-E\-F\-T}}\item[{\em 
+\hypertarget{compat_8hpp_ac1351f3e26da80ee24b2888ecc68fca6af16f731d6e9d400a021859b6c81cc782}{C\-V\-\_\-\-S\-H\-I\-F\-T\-\_\-\-L\-E\-F\-T}\label{compat_8hpp_ac1351f3e26da80ee24b2888ecc68fca6af16f731d6e9d400a021859b6c81cc782}
+}]\index{C\-V\-\_\-\-S\-H\-I\-F\-T\-\_\-\-R\-I\-G\-H\-T@{C\-V\-\_\-\-S\-H\-I\-F\-T\-\_\-\-R\-I\-G\-H\-T}!compat.\-hpp@{compat.\-hpp}}\index{compat.\-hpp@{compat.\-hpp}!C\-V\-\_\-\-S\-H\-I\-F\-T\-\_\-\-R\-I\-G\-H\-T@{C\-V\-\_\-\-S\-H\-I\-F\-T\-\_\-\-R\-I\-G\-H\-T}}\item[{\em 
+\hypertarget{compat_8hpp_ac1351f3e26da80ee24b2888ecc68fca6a83831ebba62b9be5a5dc51299b9e3193}{C\-V\-\_\-\-S\-H\-I\-F\-T\-\_\-\-R\-I\-G\-H\-T}\label{compat_8hpp_ac1351f3e26da80ee24b2888ecc68fca6a83831ebba62b9be5a5dc51299b9e3193}
+}]\index{C\-V\-\_\-\-S\-H\-I\-F\-T\-\_\-\-U\-P@{C\-V\-\_\-\-S\-H\-I\-F\-T\-\_\-\-U\-P}!compat.\-hpp@{compat.\-hpp}}\index{compat.\-hpp@{compat.\-hpp}!C\-V\-\_\-\-S\-H\-I\-F\-T\-\_\-\-U\-P@{C\-V\-\_\-\-S\-H\-I\-F\-T\-\_\-\-U\-P}}\item[{\em 
+\hypertarget{compat_8hpp_ac1351f3e26da80ee24b2888ecc68fca6adb873f742a9967f7cfde12819879b082}{C\-V\-\_\-\-S\-H\-I\-F\-T\-\_\-\-U\-P}\label{compat_8hpp_ac1351f3e26da80ee24b2888ecc68fca6adb873f742a9967f7cfde12819879b082}
+}]\index{C\-V\-\_\-\-S\-H\-I\-F\-T\-\_\-\-D\-O\-W\-N@{C\-V\-\_\-\-S\-H\-I\-F\-T\-\_\-\-D\-O\-W\-N}!compat.\-hpp@{compat.\-hpp}}\index{compat.\-hpp@{compat.\-hpp}!C\-V\-\_\-\-S\-H\-I\-F\-T\-\_\-\-D\-O\-W\-N@{C\-V\-\_\-\-S\-H\-I\-F\-T\-\_\-\-D\-O\-W\-N}}\item[{\em 
+\hypertarget{compat_8hpp_ac1351f3e26da80ee24b2888ecc68fca6aa2543a594c34138862fc93eefcebbb3e}{C\-V\-\_\-\-S\-H\-I\-F\-T\-\_\-\-D\-O\-W\-N}\label{compat_8hpp_ac1351f3e26da80ee24b2888ecc68fca6aa2543a594c34138862fc93eefcebbb3e}
+}]\index{C\-V\-\_\-\-S\-H\-I\-F\-T\-\_\-\-L\-U@{C\-V\-\_\-\-S\-H\-I\-F\-T\-\_\-\-L\-U}!compat.\-hpp@{compat.\-hpp}}\index{compat.\-hpp@{compat.\-hpp}!C\-V\-\_\-\-S\-H\-I\-F\-T\-\_\-\-L\-U@{C\-V\-\_\-\-S\-H\-I\-F\-T\-\_\-\-L\-U}}\item[{\em 
+\hypertarget{compat_8hpp_ac1351f3e26da80ee24b2888ecc68fca6a6496a45e2ed37aa2819a6c30b69f8aef}{C\-V\-\_\-\-S\-H\-I\-F\-T\-\_\-\-L\-U}\label{compat_8hpp_ac1351f3e26da80ee24b2888ecc68fca6a6496a45e2ed37aa2819a6c30b69f8aef}
+}]\index{C\-V\-\_\-\-S\-H\-I\-F\-T\-\_\-\-R\-U@{C\-V\-\_\-\-S\-H\-I\-F\-T\-\_\-\-R\-U}!compat.\-hpp@{compat.\-hpp}}\index{compat.\-hpp@{compat.\-hpp}!C\-V\-\_\-\-S\-H\-I\-F\-T\-\_\-\-R\-U@{C\-V\-\_\-\-S\-H\-I\-F\-T\-\_\-\-R\-U}}\item[{\em 
+\hypertarget{compat_8hpp_ac1351f3e26da80ee24b2888ecc68fca6a19f695c163d496b196675b85cfa9ddca}{C\-V\-\_\-\-S\-H\-I\-F\-T\-\_\-\-R\-U}\label{compat_8hpp_ac1351f3e26da80ee24b2888ecc68fca6a19f695c163d496b196675b85cfa9ddca}
+}]\index{C\-V\-\_\-\-S\-H\-I\-F\-T\-\_\-\-L\-D@{C\-V\-\_\-\-S\-H\-I\-F\-T\-\_\-\-L\-D}!compat.\-hpp@{compat.\-hpp}}\index{compat.\-hpp@{compat.\-hpp}!C\-V\-\_\-\-S\-H\-I\-F\-T\-\_\-\-L\-D@{C\-V\-\_\-\-S\-H\-I\-F\-T\-\_\-\-L\-D}}\item[{\em 
+\hypertarget{compat_8hpp_ac1351f3e26da80ee24b2888ecc68fca6ac29ef2130e571534f3fd233bf6c464f5}{C\-V\-\_\-\-S\-H\-I\-F\-T\-\_\-\-L\-D}\label{compat_8hpp_ac1351f3e26da80ee24b2888ecc68fca6ac29ef2130e571534f3fd233bf6c464f5}
+}]\index{C\-V\-\_\-\-S\-H\-I\-F\-T\-\_\-\-R\-D@{C\-V\-\_\-\-S\-H\-I\-F\-T\-\_\-\-R\-D}!compat.\-hpp@{compat.\-hpp}}\index{compat.\-hpp@{compat.\-hpp}!C\-V\-\_\-\-S\-H\-I\-F\-T\-\_\-\-R\-D@{C\-V\-\_\-\-S\-H\-I\-F\-T\-\_\-\-R\-D}}\item[{\em 
+\hypertarget{compat_8hpp_ac1351f3e26da80ee24b2888ecc68fca6aa09dd26fa1aad4c190ff25c2d36b7fae}{C\-V\-\_\-\-S\-H\-I\-F\-T\-\_\-\-R\-D}\label{compat_8hpp_ac1351f3e26da80ee24b2888ecc68fca6aa09dd26fa1aad4c190ff25c2d36b7fae}
+}]\end{description}
+\end{Desc}
+\hypertarget{compat_8hpp_a16db4876b192da08f3ad0cb41afe516f}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{compat_8hpp_a16db4876b192da08f3ad0cb41afe516f}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{C\-V\-\_\-\-R\-O\-D\-R\-I\-G\-U\-E\-S\-\_\-\-M2\-V@{C\-V\-\_\-\-R\-O\-D\-R\-I\-G\-U\-E\-S\-\_\-\-M2\-V}!compat.\-hpp@{compat.\-hpp}}\index{compat.\-hpp@{compat.\-hpp}!C\-V\-\_\-\-R\-O\-D\-R\-I\-G\-U\-E\-S\-\_\-\-M2\-V@{C\-V\-\_\-\-R\-O\-D\-R\-I\-G\-U\-E\-S\-\_\-\-M2\-V}}\item[{\em 
+\hypertarget{compat_8hpp_a16db4876b192da08f3ad0cb41afe516faad12fe47dbef23c7f23672fc005d6d3d}{C\-V\-\_\-\-R\-O\-D\-R\-I\-G\-U\-E\-S\-\_\-\-M2\-V}\label{compat_8hpp_a16db4876b192da08f3ad0cb41afe516faad12fe47dbef23c7f23672fc005d6d3d}
+}]\index{C\-V\-\_\-\-R\-O\-D\-R\-I\-G\-U\-E\-S\-\_\-\-V2\-M@{C\-V\-\_\-\-R\-O\-D\-R\-I\-G\-U\-E\-S\-\_\-\-V2\-M}!compat.\-hpp@{compat.\-hpp}}\index{compat.\-hpp@{compat.\-hpp}!C\-V\-\_\-\-R\-O\-D\-R\-I\-G\-U\-E\-S\-\_\-\-V2\-M@{C\-V\-\_\-\-R\-O\-D\-R\-I\-G\-U\-E\-S\-\_\-\-V2\-M}}\item[{\em 
+\hypertarget{compat_8hpp_a16db4876b192da08f3ad0cb41afe516fa845620d44a10e5c15b3d0935af8f24b5}{C\-V\-\_\-\-R\-O\-D\-R\-I\-G\-U\-E\-S\-\_\-\-V2\-M}\label{compat_8hpp_a16db4876b192da08f3ad0cb41afe516fa845620d44a10e5c15b3d0935af8f24b5}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\hypertarget{compat_8hpp_a9cb7479a31e9618420a739d753ad54ad}{\index{compat.\-hpp@{compat.\-hpp}!C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T@{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}}
+\index{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T@{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}]{\setlength{\rightskip}{0pt plus 5cm}int extended C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T (
+\begin{DoxyParamCaption}
+\item[{0}]{}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_a9cb7479a31e9618420a739d753ad54ad}
+\hypertarget{compat_8hpp_a1c1d6c9fee4bca624c547c04f14c0c87}{\index{compat.\-hpp@{compat.\-hpp}!C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T@{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}}
+\index{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T@{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}]{\setlength{\rightskip}{0pt plus 5cm}int min\-\_\-area C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T (
+\begin{DoxyParamCaption}
+\item[{60}]{}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_a1c1d6c9fee4bca624c547c04f14c0c87}
+\hypertarget{compat_8hpp_ae13765c26c096b6aca20f74344e79956}{\index{compat.\-hpp@{compat.\-hpp}!C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T@{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}}
+\index{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T@{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}]{\setlength{\rightskip}{0pt plus 5cm}int min\-\_\-area int max\-\_\-area C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T (
+\begin{DoxyParamCaption}
+\item[{14400}]{}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_ae13765c26c096b6aca20f74344e79956}
+\hypertarget{compat_8hpp_a4033506ecc57a88a1ea5d737eb35a69d}{\index{compat.\-hpp@{compat.\-hpp}!C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T@{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}}
+\index{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T@{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}]{\setlength{\rightskip}{0pt plus 5cm}const int naive const double {\bf rho} const double tau C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T (
+\begin{DoxyParamCaption}
+\item[{.}]{25f}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_a4033506ecc57a88a1ea5d737eb35a69d}
+\hypertarget{compat_8hpp_a0c6fdb37c753bf21219eef1759988009}{\index{compat.\-hpp@{compat.\-hpp}!C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T@{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}}
+\index{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T@{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}]{\setlength{\rightskip}{0pt plus 5cm}int min\-\_\-area int max\-\_\-area float max\-\_\-variation float min\-\_\-diversity int max\-\_\-evolution C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T (
+\begin{DoxyParamCaption}
+\item[{200}]{}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_a0c6fdb37c753bf21219eef1759988009}
+\hypertarget{compat_8hpp_abb9539985fe6a756a28029732f7bd0ef}{\index{compat.\-hpp@{compat.\-hpp}!C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T@{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}}
+\index{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T@{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}]{\setlength{\rightskip}{0pt plus 5cm}int min\-\_\-area int max\-\_\-area float max\-\_\-variation float min\-\_\-diversity int max\-\_\-evolution double area\-\_\-threshold C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T (
+\begin{DoxyParamCaption}
+\item[{1.}]{01}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_abb9539985fe6a756a28029732f7bd0ef}
+\hypertarget{compat_8hpp_a07e35bdf2ab81d47449aadd3700d28ce}{\index{compat.\-hpp@{compat.\-hpp}!C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T@{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}}
+\index{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T@{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}]{\setlength{\rightskip}{0pt plus 5cm}int min\-\_\-area int max\-\_\-area float max\-\_\-variation float min\-\_\-diversity int max\-\_\-evolution double area\-\_\-threshold double min\-\_\-margin int edge\-\_\-blur\-\_\-size C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T (
+\begin{DoxyParamCaption}
+\item[{5}]{}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_a07e35bdf2ab81d47449aadd3700d28ce}
+\hypertarget{compat_8hpp_adf95b337c259e34bb339d9eb5830ef8b}{\index{compat.\-hpp@{compat.\-hpp}!C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T@{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}}
+\index{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T@{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Mem\-Storage} {\bf Cv\-Star\-Detector\-Params} {\bf params} C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf cv\-Star\-Detector\-Params}()}]{}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_adf95b337c259e34bb339d9eb5830ef8b}
+\hypertarget{compat_8hpp_a1cd7906024d458aa18aa554a261c5e8c}{\index{compat.\-hpp@{compat.\-hpp}!C\-V\-A\-P\-I@{C\-V\-A\-P\-I}}
+\index{C\-V\-A\-P\-I@{C\-V\-A\-P\-I}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{C\-V\-A\-P\-I}]{\setlength{\rightskip}{0pt plus 5cm}C\-V\-A\-P\-I (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-S\-U\-R\-F\-Params}}]{}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_a1cd7906024d458aa18aa554a261c5e8c}
+\hypertarget{compat_8hpp_a08634d519eaacd57fa1efc3849634c9e}{\index{compat.\-hpp@{compat.\-hpp}!C\-V\-A\-P\-I@{C\-V\-A\-P\-I}}
+\index{C\-V\-A\-P\-I@{C\-V\-A\-P\-I}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{C\-V\-A\-P\-I}]{\setlength{\rightskip}{0pt plus 5cm}C\-V\-A\-P\-I (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+) const}}\label{compat_8hpp_a08634d519eaacd57fa1efc3849634c9e}
+\hypertarget{compat_8hpp_ad3cb2b2be29a0967c53e3dc6d80e31c4}{\index{compat.\-hpp@{compat.\-hpp}!C\-V\-A\-P\-I@{C\-V\-A\-P\-I}}
+\index{C\-V\-A\-P\-I@{C\-V\-A\-P\-I}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{C\-V\-A\-P\-I}]{\setlength{\rightskip}{0pt plus 5cm}C\-V\-A\-P\-I (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-M\-S\-E\-R\-Params}}]{}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_ad3cb2b2be29a0967c53e3dc6d80e31c4}
+\hypertarget{compat_8hpp_a06f81de7201aea7d4051be084f412ce4}{\index{compat.\-hpp@{compat.\-hpp}!C\-V\-A\-P\-I@{C\-V\-A\-P\-I}}
+\index{C\-V\-A\-P\-I@{C\-V\-A\-P\-I}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{C\-V\-A\-P\-I}]{\setlength{\rightskip}{0pt plus 5cm}C\-V\-A\-P\-I (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Seq} $\ast$}]{}
+\end{DoxyParamCaption}
+) const}}\label{compat_8hpp_a06f81de7201aea7d4051be084f412ce4}
+\hypertarget{compat_8hpp_a958bebc4d15da252640388035be57be2}{\index{compat.\-hpp@{compat.\-hpp}!cvb\-Cart\-To\-Polar@{cvb\-Cart\-To\-Polar}}
+\index{cvb\-Cart\-To\-Polar@{cvb\-Cart\-To\-Polar}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cvb\-Cart\-To\-Polar}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cvb\-Cart\-To\-Polar (
+\begin{DoxyParamCaption}
+\item[{const float $\ast$}]{y, }
+\item[{const float $\ast$}]{x, }
+\item[{float $\ast$}]{magnitude, }
+\item[{float $\ast$}]{angle, }
+\item[{int}]{len}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_a958bebc4d15da252640388035be57be2}
+\hypertarget{compat_8hpp_a69cf4b65dfd4806a675861d725aef3f6}{\index{compat.\-hpp@{compat.\-hpp}!cvb\-Fast\-Arctan@{cvb\-Fast\-Arctan}}
+\index{cvb\-Fast\-Arctan@{cvb\-Fast\-Arctan}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cvb\-Fast\-Arctan}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cvb\-Fast\-Arctan (
+\begin{DoxyParamCaption}
+\item[{const float $\ast$}]{y, }
+\item[{const float $\ast$}]{x, }
+\item[{float $\ast$}]{angle, }
+\item[{int}]{len}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_a69cf4b65dfd4806a675861d725aef3f6}
+\hypertarget{compat_8hpp_add8b000d52ef80a21aab26ec1f3b38e6}{\index{compat.\-hpp@{compat.\-hpp}!cvb\-Fast\-Exp@{cvb\-Fast\-Exp}}
+\index{cvb\-Fast\-Exp@{cvb\-Fast\-Exp}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cvb\-Fast\-Exp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cvb\-Fast\-Exp (
+\begin{DoxyParamCaption}
+\item[{const float $\ast$}]{x, }
+\item[{double $\ast$}]{y, }
+\item[{int}]{len}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_add8b000d52ef80a21aab26ec1f3b38e6}
+\hypertarget{compat_8hpp_a276333ac6a4666ed064b9265e2eed747}{\index{compat.\-hpp@{compat.\-hpp}!cvb\-Fast\-Log@{cvb\-Fast\-Log}}
+\index{cvb\-Fast\-Log@{cvb\-Fast\-Log}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cvb\-Fast\-Log}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cvb\-Fast\-Log (
+\begin{DoxyParamCaption}
+\item[{const double $\ast$}]{x, }
+\item[{float $\ast$}]{y, }
+\item[{int}]{len}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_a276333ac6a4666ed064b9265e2eed747}
+\hypertarget{compat_8hpp_ad99cdb9842955a334067154211390503}{\index{compat.\-hpp@{compat.\-hpp}!cvb\-Inv\-Sqrt@{cvb\-Inv\-Sqrt}}
+\index{cvb\-Inv\-Sqrt@{cvb\-Inv\-Sqrt}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cvb\-Inv\-Sqrt}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cvb\-Inv\-Sqrt (
+\begin{DoxyParamCaption}
+\item[{const float $\ast$}]{x, }
+\item[{float $\ast$}]{y, }
+\item[{int}]{len}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_ad99cdb9842955a334067154211390503}
+\hypertarget{compat_8hpp_af457a62fc418c2e0dde04b4ea19da33c}{\index{compat.\-hpp@{compat.\-hpp}!cvb\-Rand@{cvb\-Rand}}
+\index{cvb\-Rand@{cvb\-Rand}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cvb\-Rand}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cvb\-Rand (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Rand\-State} $\ast$}]{state, }
+\item[{float $\ast$}]{dst, }
+\item[{int}]{len}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_af457a62fc418c2e0dde04b4ea19da33c}
+\hypertarget{compat_8hpp_affa447f6eb3f68e28378cdf0d3be6709}{\index{compat.\-hpp@{compat.\-hpp}!cvb\-Reciprocal@{cvb\-Reciprocal}}
+\index{cvb\-Reciprocal@{cvb\-Reciprocal}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cvb\-Reciprocal}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cvb\-Reciprocal (
+\begin{DoxyParamCaption}
+\item[{const float $\ast$}]{x, }
+\item[{float $\ast$}]{y, }
+\item[{int}]{len}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_affa447f6eb3f68e28378cdf0d3be6709}
+\hypertarget{compat_8hpp_a5247a2fc7fd03484dd8953095a4abada}{\index{compat.\-hpp@{compat.\-hpp}!cvb\-Sqrt@{cvb\-Sqrt}}
+\index{cvb\-Sqrt@{cvb\-Sqrt}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cvb\-Sqrt}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cvb\-Sqrt (
+\begin{DoxyParamCaption}
+\item[{const float $\ast$}]{x, }
+\item[{float $\ast$}]{y, }
+\item[{int}]{len}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_a5247a2fc7fd03484dd8953095a4abada}
+\hypertarget{compat_8hpp_abefd8d87c0bf7172d4c6ee29ee9542ed}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Calc\-E\-M\-D@{cv\-Calc\-E\-M\-D}}
+\index{cv\-Calc\-E\-M\-D@{cv\-Calc\-E\-M\-D}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Calc\-E\-M\-D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} float cv\-Calc\-E\-M\-D (
+\begin{DoxyParamCaption}
+\item[{const float $\ast$}]{signature1, }
+\item[{int}]{size1, }
+\item[{const float $\ast$}]{signature2, }
+\item[{int}]{size2, }
+\item[{int}]{dims, }
+\item[{int {\bf dist\-\_\-type} }]{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-TC\-V\-\_\-\-D\-I\-S\-T\-\_\-\-L2, }
+\item[{{\bf Cv\-Distance\-Function} dist\-\_\-func }]{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T0, }
+\item[{float $\ast${\bf lower\-\_\-bound} }]{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T0, }
+\item[{{\bf void} $\ast$user\-\_\-param }]{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T0}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_abefd8d87c0bf7172d4c6ee29ee9542ed}
+\hypertarget{compat_8hpp_a12fad54831c3f72c4fdfdb04f60ddbce}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Calibrate\-Camera@{cv\-Calibrate\-Camera}}
+\index{cv\-Calibrate\-Camera@{cv\-Calibrate\-Camera}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Calibrate\-Camera}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cv\-Calibrate\-Camera (
+\begin{DoxyParamCaption}
+\item[{int}]{image\-\_\-count, }
+\item[{int $\ast$}]{\-\_\-point\-\_\-counts, }
+\item[{{\bf Cv\-Size}}]{image\-\_\-size, }
+\item[{{\bf Cv\-Point2\-D32f} $\ast$}]{\-\_\-image\-\_\-points, }
+\item[{{\bf Cv\-Point3\-D32f} $\ast$}]{\-\_\-object\-\_\-points, }
+\item[{float $\ast$}]{\-\_\-distortion\-\_\-coeffs, }
+\item[{float $\ast$}]{\-\_\-camera\-\_\-matrix, }
+\item[{float $\ast$}]{\-\_\-translation\-\_\-vectors, }
+\item[{float $\ast$}]{\-\_\-rotation\-\_\-matrices, }
+\item[{int}]{flags}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_a12fad54831c3f72c4fdfdb04f60ddbce}
+\hypertarget{compat_8hpp_ad6ddb31600e2f9c538aab24b3eeb1d14}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Calibrate\-Camera\-\_\-64d@{cv\-Calibrate\-Camera\-\_\-64d}}
+\index{cv\-Calibrate\-Camera\-\_\-64d@{cv\-Calibrate\-Camera\-\_\-64d}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Calibrate\-Camera\-\_\-64d}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cv\-Calibrate\-Camera\-\_\-64d (
+\begin{DoxyParamCaption}
+\item[{int}]{image\-\_\-count, }
+\item[{int $\ast$}]{\-\_\-point\-\_\-counts, }
+\item[{{\bf Cv\-Size}}]{image\-\_\-size, }
+\item[{{\bf Cv\-Point2\-D64f} $\ast$}]{\-\_\-image\-\_\-points, }
+\item[{{\bf Cv\-Point3\-D64f} $\ast$}]{\-\_\-object\-\_\-points, }
+\item[{double $\ast$}]{\-\_\-distortion\-\_\-coeffs, }
+\item[{double $\ast$}]{\-\_\-camera\-\_\-matrix, }
+\item[{double $\ast$}]{\-\_\-translation\-\_\-vectors, }
+\item[{double $\ast$}]{\-\_\-rotation\-\_\-matrices, }
+\item[{int}]{flags}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_ad6ddb31600e2f9c538aab24b3eeb1d14}
+\hypertarget{compat_8hpp_a3f669469e41bc52d047532441887df06}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Circle\-A\-A@{cv\-Circle\-A\-A}}
+\index{cv\-Circle\-A\-A@{cv\-Circle\-A\-A}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Circle\-A\-A}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cv\-Circle\-A\-A (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Arr} $\ast$}]{img, }
+\item[{{\bf Cv\-Point}}]{center, }
+\item[{int}]{radius, }
+\item[{double}]{color, }
+\item[{int {\bf scale} }]{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T0}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_a3f669469e41bc52d047532441887df06}
+\hypertarget{compat_8hpp_ac26a44905aadf6eb87235c2bd69c5730}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Contour\-Bounding\-Rect@{cv\-Contour\-Bounding\-Rect}}
+\index{cv\-Contour\-Bounding\-Rect@{cv\-Contour\-Bounding\-Rect}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Contour\-Bounding\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf Cv\-Rect} cv\-Contour\-Bounding\-Rect (
+\begin{DoxyParamCaption}
+\item[{{\bf void} $\ast$}]{point\-\_\-set, }
+\item[{int update }]{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T0}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_ac26a44905aadf6eb87235c2bd69c5730}
+\hypertarget{compat_8hpp_ad62d4ad0e034ce831a4c72b0e188e4aa}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Convex\-Hull@{cv\-Convex\-Hull}}
+\index{cv\-Convex\-Hull@{cv\-Convex\-Hull}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Convex\-Hull}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cv\-Convex\-Hull (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Point} $\ast$}]{points, }
+\item[{int}]{num\-\_\-points, }
+\item[{{\bf Cv\-Rect} $\ast$}]{bound\-\_\-rect, }
+\item[{int}]{orientation, }
+\item[{int $\ast$}]{hull, }
+\item[{int $\ast$}]{hullsize}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_ad62d4ad0e034ce831a4c72b0e188e4aa}
+\hypertarget{compat_8hpp_ac55b0c429be29fb7975eee4514829883}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Ellipse\-A\-A@{cv\-Ellipse\-A\-A}}
+\index{cv\-Ellipse\-A\-A@{cv\-Ellipse\-A\-A}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Ellipse\-A\-A}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cv\-Ellipse\-A\-A (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Arr} $\ast$}]{img, }
+\item[{{\bf Cv\-Point}}]{center, }
+\item[{{\bf Cv\-Size}}]{axes, }
+\item[{double}]{angle, }
+\item[{double}]{start\-\_\-angle, }
+\item[{double}]{end\-\_\-angle, }
+\item[{double}]{color, }
+\item[{int {\bf scale} }]{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T0}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_ac55b0c429be29fb7975eee4514829883}
+\hypertarget{compat_8hpp_a8dadcd6999126518f9469e38a88b7fbd}{\index{compat.\-hpp@{compat.\-hpp}!cv\-End\-Scan\-Graph@{cv\-End\-Scan\-Graph}}
+\index{cv\-End\-Scan\-Graph@{cv\-End\-Scan\-Graph}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-End\-Scan\-Graph}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cv\-End\-Scan\-Graph (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Graph\-Scanner} $\ast$}]{scanner}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_a8dadcd6999126518f9469e38a88b7fbd}
+\hypertarget{compat_8hpp_a30a61c503f9d04456e695b1ade41146b}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Fill\-Image@{cv\-Fill\-Image}}
+\index{cv\-Fill\-Image@{cv\-Fill\-Image}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Fill\-Image}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cv\-Fill\-Image (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Arr} $\ast$}]{mat, }
+\item[{double}]{color}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_a30a61c503f9d04456e695b1ade41146b}
+\hypertarget{compat_8hpp_a6bccf4ca6d86dc6d5a5233cc79fd836e}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Find\-Chess\-Board\-Corner\-Guesses@{cv\-Find\-Chess\-Board\-Corner\-Guesses}}
+\index{cv\-Find\-Chess\-Board\-Corner\-Guesses@{cv\-Find\-Chess\-Board\-Corner\-Guesses}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Find\-Chess\-Board\-Corner\-Guesses}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} int cv\-Find\-Chess\-Board\-Corner\-Guesses (
+\begin{DoxyParamCaption}
+\item[{const {\bf void} $\ast$}]{arr, }
+\item[{{\bf void} $\ast$}]{thresharr, }
+\item[{{\bf Cv\-Mem\-Storage} $\ast$}]{storage, }
+\item[{{\bf Cv\-Size}}]{pattern\-\_\-size, }
+\item[{{\bf Cv\-Point2\-D32f} $\ast$}]{corners, }
+\item[{int $\ast$}]{corner\-\_\-count}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_a6bccf4ca6d86dc6d5a5233cc79fd836e}
+\hypertarget{compat_8hpp_a3b8ea7382b9e4b824021ec3926903923}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Find\-Extrinsic\-Camera\-Params@{cv\-Find\-Extrinsic\-Camera\-Params}}
+\index{cv\-Find\-Extrinsic\-Camera\-Params@{cv\-Find\-Extrinsic\-Camera\-Params}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Find\-Extrinsic\-Camera\-Params}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cv\-Find\-Extrinsic\-Camera\-Params (
+\begin{DoxyParamCaption}
+\item[{int}]{point\-\_\-count, }
+\item[{{\bf Cv\-Size}}]{image\-\_\-size, }
+\item[{{\bf Cv\-Point2\-D32f} $\ast$}]{\-\_\-image\-\_\-points, }
+\item[{{\bf Cv\-Point3\-D32f} $\ast$}]{\-\_\-object\-\_\-points, }
+\item[{float $\ast$}]{focal\-\_\-length, }
+\item[{{\bf Cv\-Point2\-D32f}}]{principal\-\_\-point, }
+\item[{float $\ast$}]{\-\_\-distortion\-\_\-coeffs, }
+\item[{float $\ast$}]{\-\_\-rotation\-\_\-vector, }
+\item[{float $\ast$}]{\-\_\-translation\-\_\-vector}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_a3b8ea7382b9e4b824021ec3926903923}
+\hypertarget{compat_8hpp_abd59cbfb1d1a10462120528d55a8e9d6}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Find\-Extrinsic\-Camera\-Params\-\_\-64d@{cv\-Find\-Extrinsic\-Camera\-Params\-\_\-64d}}
+\index{cv\-Find\-Extrinsic\-Camera\-Params\-\_\-64d@{cv\-Find\-Extrinsic\-Camera\-Params\-\_\-64d}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Find\-Extrinsic\-Camera\-Params\-\_\-64d}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cv\-Find\-Extrinsic\-Camera\-Params\-\_\-64d (
+\begin{DoxyParamCaption}
+\item[{int}]{point\-\_\-count, }
+\item[{{\bf Cv\-Size}}]{image\-\_\-size, }
+\item[{{\bf Cv\-Point2\-D64f} $\ast$}]{\-\_\-image\-\_\-points, }
+\item[{{\bf Cv\-Point3\-D64f} $\ast$}]{\-\_\-object\-\_\-points, }
+\item[{double $\ast$}]{focal\-\_\-length, }
+\item[{{\bf Cv\-Point2\-D64f}}]{principal\-\_\-point, }
+\item[{double $\ast$}]{\-\_\-distortion\-\_\-coeffs, }
+\item[{double $\ast$}]{\-\_\-rotation\-\_\-vector, }
+\item[{double $\ast$}]{\-\_\-translation\-\_\-vector}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_abd59cbfb1d1a10462120528d55a8e9d6}
+\hypertarget{compat_8hpp_a4b7897f100e50fdb2007234162eb16a1}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Find\-Fundamental\-Matrix@{cv\-Find\-Fundamental\-Matrix}}
+\index{cv\-Find\-Fundamental\-Matrix@{cv\-Find\-Fundamental\-Matrix}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Find\-Fundamental\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cv\-Find\-Fundamental\-Matrix (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{points1, }
+\item[{int $\ast$}]{points2, }
+\item[{int}]{numpoints, }
+\item[{int}]{method, }
+\item[{float $\ast$}]{matrix}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_a4b7897f100e50fdb2007234162eb16a1}
+\hypertarget{compat_8hpp_aafd55efa458f9d6704a0466c4768f0fc}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Fit\-Ellipse@{cv\-Fit\-Ellipse}}
+\index{cv\-Fit\-Ellipse@{cv\-Fit\-Ellipse}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Fit\-Ellipse}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cv\-Fit\-Ellipse (
+\begin{DoxyParamCaption}
+\item[{const {\bf Cv\-Point2\-D32f} $\ast$}]{points, }
+\item[{int}]{count, }
+\item[{{\bf Cv\-Box2\-D} $\ast$}]{box}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_aafd55efa458f9d6704a0466c4768f0fc}
+\hypertarget{compat_8hpp_aa5797b8d071956308f6c47490fcb3dc0}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Fit\-Line2\-D@{cv\-Fit\-Line2\-D}}
+\index{cv\-Fit\-Line2\-D@{cv\-Fit\-Line2\-D}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Fit\-Line2\-D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cv\-Fit\-Line2\-D (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Point2\-D32f} $\ast$}]{points, }
+\item[{int}]{count, }
+\item[{int}]{dist, }
+\item[{{\bf void} $\ast$}]{param, }
+\item[{float}]{reps, }
+\item[{float}]{aeps, }
+\item[{float $\ast$}]{line}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_aa5797b8d071956308f6c47490fcb3dc0}
+\hypertarget{compat_8hpp_a7146c9e6537cdfd71ffa09b3042b2425}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Fit\-Line3\-D@{cv\-Fit\-Line3\-D}}
+\index{cv\-Fit\-Line3\-D@{cv\-Fit\-Line3\-D}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Fit\-Line3\-D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cv\-Fit\-Line3\-D (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Point3\-D32f} $\ast$}]{points, }
+\item[{int}]{count, }
+\item[{int}]{dist, }
+\item[{{\bf void} $\ast$}]{param, }
+\item[{float}]{reps, }
+\item[{float}]{aeps, }
+\item[{float $\ast$}]{line}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_a7146c9e6537cdfd71ffa09b3042b2425}
+\hypertarget{compat_8hpp_af47110b07672b5a107eecb7d21a87c28}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Hough\-Lines@{cv\-Hough\-Lines}}
+\index{cv\-Hough\-Lines@{cv\-Hough\-Lines}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Hough\-Lines}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} int cv\-Hough\-Lines (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Arr} $\ast$}]{image, }
+\item[{double}]{rho, }
+\item[{double}]{theta, }
+\item[{int}]{threshold, }
+\item[{float $\ast$}]{lines, }
+\item[{int}]{lines\-Number}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_af47110b07672b5a107eecb7d21a87c28}
+\hypertarget{compat_8hpp_a68cded5db10d15c0779ef30a32f8d7a2}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Hough\-Lines\-P@{cv\-Hough\-Lines\-P}}
+\index{cv\-Hough\-Lines\-P@{cv\-Hough\-Lines\-P}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Hough\-Lines\-P}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} int cv\-Hough\-Lines\-P (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Arr} $\ast$}]{image, }
+\item[{double}]{rho, }
+\item[{double}]{theta, }
+\item[{int}]{threshold, }
+\item[{int}]{line\-Length, }
+\item[{int}]{line\-Gap, }
+\item[{int $\ast$}]{lines, }
+\item[{int}]{lines\-Number}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_a68cded5db10d15c0779ef30a32f8d7a2}
+\hypertarget{compat_8hpp_a39ec82e0270dbcea6c44c25ea052a3e8}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Hough\-Lines\-S\-Div@{cv\-Hough\-Lines\-S\-Div}}
+\index{cv\-Hough\-Lines\-S\-Div@{cv\-Hough\-Lines\-S\-Div}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Hough\-Lines\-S\-Div}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} int cv\-Hough\-Lines\-S\-Div (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Arr} $\ast$}]{image, }
+\item[{double}]{rho, }
+\item[{int}]{srn, }
+\item[{double}]{theta, }
+\item[{int}]{stn, }
+\item[{int}]{threshold, }
+\item[{float $\ast$}]{lines, }
+\item[{int}]{lines\-Number}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_a39ec82e0270dbcea6c44c25ea052a3e8}
+\hypertarget{compat_8hpp_a661d5246c96ec2a1b83b8490d54bf32a}{\index{compat.\-hpp@{compat.\-hpp}!cv\-K\-Means@{cv\-K\-Means}}
+\index{cv\-K\-Means@{cv\-K\-Means}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-K\-Means}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cv\-K\-Means (
+\begin{DoxyParamCaption}
+\item[{int}]{num\-\_\-clusters, }
+\item[{float $\ast$$\ast$}]{samples, }
+\item[{int}]{num\-\_\-samples, }
+\item[{int}]{vec\-\_\-size, }
+\item[{{\bf Cv\-Term\-Criteria}}]{termcrit, }
+\item[{int $\ast$}]{cluster\-\_\-idx}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_a661d5246c96ec2a1b83b8490d54bf32a}
+\hypertarget{compat_8hpp_a1fd828427507dbd2686b5dfba43c3c46}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Line\-A\-A@{cv\-Line\-A\-A}}
+\index{cv\-Line\-A\-A@{cv\-Line\-A\-A}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Line\-A\-A}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cv\-Line\-A\-A (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Arr} $\ast$}]{img, }
+\item[{{\bf Cv\-Point}}]{pt1, }
+\item[{{\bf Cv\-Point}}]{pt2, }
+\item[{double}]{color, }
+\item[{int {\bf scale} }]{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T0}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_a1fd828427507dbd2686b5dfba43c3c46}
+\hypertarget{compat_8hpp_a12536a6f8cf4222db1cc2cc81dbb225b}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Mat\-Array@{cv\-Mat\-Array}}
+\index{cv\-Mat\-Array@{cv\-Mat\-Array}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Mat\-Array}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf Cv\-Mat} cv\-Mat\-Array (
+\begin{DoxyParamCaption}
+\item[{int}]{rows, }
+\item[{int}]{cols, }
+\item[{int}]{type, }
+\item[{int}]{count, }
+\item[{{\bf void} $\ast${\bf data} }]{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T0}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_a12536a6f8cf4222db1cc2cc81dbb225b}
+\hypertarget{compat_8hpp_a0217b8875989204a850fba0f153b3f9e}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Mean@{cv\-Mean}}
+\index{cv\-Mean@{cv\-Mean}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Mean}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} double cv\-Mean (
+\begin{DoxyParamCaption}
+\item[{const {\bf Cv\-Arr} $\ast$}]{image, }
+\item[{const {\bf Cv\-Arr} $\ast${\bf mask} }]{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T0}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_a0217b8875989204a850fba0f153b3f9e}
+\hypertarget{compat_8hpp_a96607aa051ca1163457a1b628f605e39}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Mean\-\_\-\-Std\-Dev@{cv\-Mean\-\_\-\-Std\-Dev}}
+\index{cv\-Mean\-\_\-\-Std\-Dev@{cv\-Mean\-\_\-\-Std\-Dev}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Mean\-\_\-\-Std\-Dev}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cv\-Mean\-\_\-\-Std\-Dev (
+\begin{DoxyParamCaption}
+\item[{const {\bf Cv\-Arr} $\ast$}]{image, }
+\item[{double $\ast$}]{mean, }
+\item[{double $\ast$}]{sdv, }
+\item[{const {\bf Cv\-Arr} $\ast${\bf mask} }]{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T0}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_a96607aa051ca1163457a1b628f605e39}
+\hypertarget{compat_8hpp_abb2c082c8f38454011d52120cfcf4931}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Min\-Area\-Rect@{cv\-Min\-Area\-Rect}}
+\index{cv\-Min\-Area\-Rect@{cv\-Min\-Area\-Rect}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Min\-Area\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cv\-Min\-Area\-Rect (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Point} $\ast$}]{points, }
+\item[{int}]{n, }
+\item[{int}]{left, }
+\item[{int}]{bottom, }
+\item[{int}]{right, }
+\item[{int}]{top, }
+\item[{{\bf Cv\-Point2\-D32f} $\ast$}]{anchor, }
+\item[{{\bf Cv\-Point2\-D32f} $\ast$}]{vect1, }
+\item[{{\bf Cv\-Point2\-D32f} $\ast$}]{vect2}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_abb2c082c8f38454011d52120cfcf4931}
+\hypertarget{compat_8hpp_aa7e2bfc10a8aacda3fa2e508e1ec189f}{\index{compat.\-hpp@{compat.\-hpp}!cvm\-Perspective\-Project@{cvm\-Perspective\-Project}}
+\index{cvm\-Perspective\-Project@{cvm\-Perspective\-Project}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cvm\-Perspective\-Project}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cvm\-Perspective\-Project (
+\begin{DoxyParamCaption}
+\item[{const {\bf Cv\-Mat} $\ast$}]{mat, }
+\item[{const {\bf Cv\-Arr} $\ast$}]{src, }
+\item[{{\bf Cv\-Arr} $\ast$}]{dst}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_aa7e2bfc10a8aacda3fa2e508e1ec189f}
+\hypertarget{compat_8hpp_a50c5068099f5294299df42040bff2233}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Poly\-Line\-A\-A@{cv\-Poly\-Line\-A\-A}}
+\index{cv\-Poly\-Line\-A\-A@{cv\-Poly\-Line\-A\-A}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Poly\-Line\-A\-A}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cv\-Poly\-Line\-A\-A (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Arr} $\ast$}]{img, }
+\item[{{\bf Cv\-Point} $\ast$$\ast$}]{pts, }
+\item[{int $\ast$}]{npts, }
+\item[{int}]{contours, }
+\item[{int}]{is\-\_\-closed, }
+\item[{double}]{color, }
+\item[{int {\bf scale} }]{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T0}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_a50c5068099f5294299df42040bff2233}
+\hypertarget{compat_8hpp_a8bc808b236831064ee44f4080c913648}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Project3\-D@{cv\-Project3\-D}}
+\index{cv\-Project3\-D@{cv\-Project3\-D}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Project3\-D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cv\-Project3\-D (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Point3\-D32f} $\ast$}]{points3\-D, }
+\item[{int}]{count, }
+\item[{{\bf Cv\-Point2\-D32f} $\ast$}]{points2\-D, }
+\item[{int x\-Indx }]{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T0, }
+\item[{int y\-Indx }]{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T1}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_a8bc808b236831064ee44f4080c913648}
+\hypertarget{compat_8hpp_af90bda8dcc6100f33c992799fdeac8db}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Project\-Points@{cv\-Project\-Points}}
+\index{cv\-Project\-Points@{cv\-Project\-Points}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Project\-Points}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cv\-Project\-Points (
+\begin{DoxyParamCaption}
+\item[{int}]{point\-\_\-count, }
+\item[{{\bf Cv\-Point3\-D64f} $\ast$}]{\-\_\-object\-\_\-points, }
+\item[{double $\ast$}]{\-\_\-rotation\-\_\-vector, }
+\item[{double $\ast$}]{\-\_\-translation\-\_\-vector, }
+\item[{double $\ast$}]{focal\-\_\-length, }
+\item[{{\bf Cv\-Point2\-D64f}}]{principal\-\_\-point, }
+\item[{double $\ast$}]{\-\_\-distortion, }
+\item[{{\bf Cv\-Point2\-D64f} $\ast$}]{\-\_\-image\-\_\-points, }
+\item[{double $\ast$}]{\-\_\-deriv\-\_\-points\-\_\-rotation\-\_\-matrix, }
+\item[{double $\ast$}]{\-\_\-deriv\-\_\-points\-\_\-translation\-\_\-vect, }
+\item[{double $\ast$}]{\-\_\-deriv\-\_\-points\-\_\-focal, }
+\item[{double $\ast$}]{\-\_\-deriv\-\_\-points\-\_\-principal\-\_\-point, }
+\item[{double $\ast$}]{\-\_\-deriv\-\_\-points\-\_\-distortion\-\_\-coeffs}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_af90bda8dcc6100f33c992799fdeac8db}
+\hypertarget{compat_8hpp_aaa231e136fb1826a9fd797e2286c3fb0}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Project\-Points\-Simple@{cv\-Project\-Points\-Simple}}
+\index{cv\-Project\-Points\-Simple@{cv\-Project\-Points\-Simple}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Project\-Points\-Simple}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cv\-Project\-Points\-Simple (
+\begin{DoxyParamCaption}
+\item[{int}]{point\-\_\-count, }
+\item[{{\bf Cv\-Point3\-D64f} $\ast$}]{\-\_\-object\-\_\-points, }
+\item[{double $\ast$}]{\-\_\-rotation\-\_\-matrix, }
+\item[{double $\ast$}]{\-\_\-translation\-\_\-vector, }
+\item[{double $\ast$}]{\-\_\-camera\-\_\-matrix, }
+\item[{double $\ast$}]{\-\_\-distortion, }
+\item[{{\bf Cv\-Point2\-D64f} $\ast$}]{\-\_\-image\-\_\-points}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_aaa231e136fb1826a9fd797e2286c3fb0}
+\hypertarget{compat_8hpp_af4d234e11d99795acd6124311539af14}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Pseudo\-Inverse@{cv\-Pseudo\-Inverse}}
+\index{cv\-Pseudo\-Inverse@{cv\-Pseudo\-Inverse}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Pseudo\-Inverse}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} double cv\-Pseudo\-Inverse (
+\begin{DoxyParamCaption}
+\item[{const {\bf Cv\-Arr} $\ast$}]{src, }
+\item[{{\bf Cv\-Arr} $\ast$}]{dst}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_af4d234e11d99795acd6124311539af14}
+\hypertarget{compat_8hpp_a0a8adeae9937032894117b8567e0f74f}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Rand@{cv\-Rand}}
+\index{cv\-Rand@{cv\-Rand}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Rand}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cv\-Rand (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Rand\-State} $\ast$}]{state, }
+\item[{{\bf Cv\-Arr} $\ast$}]{arr}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_a0a8adeae9937032894117b8567e0f74f}
+\hypertarget{compat_8hpp_ac187cb015de43f33a6cef8eb73785271}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Rand\-Init@{cv\-Rand\-Init}}
+\index{cv\-Rand\-Init@{cv\-Rand\-Init}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Rand\-Init}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cv\-Rand\-Init (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Rand\-State} $\ast$}]{state, }
+\item[{double}]{param1, }
+\item[{double}]{param2, }
+\item[{int}]{seed, }
+\item[{int disttype }]{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-TC\-V\-\_\-\-R\-A\-N\-D\-\_\-\-U\-N\-I}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_ac187cb015de43f33a6cef8eb73785271}
+\hypertarget{compat_8hpp_a9320146e873eacb695732fb988927dfb}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Rand\-Set\-Range@{cv\-Rand\-Set\-Range}}
+\index{cv\-Rand\-Set\-Range@{cv\-Rand\-Set\-Range}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Rand\-Set\-Range}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cv\-Rand\-Set\-Range (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Rand\-State} $\ast$}]{state, }
+\item[{double}]{param1, }
+\item[{double}]{param2, }
+\item[{int {\bf index} }]{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T-\/1}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_a9320146e873eacb695732fb988927dfb}
+\hypertarget{compat_8hpp_a8447ce7024e30227e14e033100ad4999}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Rodrigues@{cv\-Rodrigues}}
+\index{cv\-Rodrigues@{cv\-Rodrigues}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Rodrigues}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cv\-Rodrigues (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Mat} $\ast$}]{rotation\-\_\-matrix, }
+\item[{{\bf Cv\-Mat} $\ast$}]{rotation\-\_\-vector, }
+\item[{{\bf Cv\-Mat} $\ast$}]{jacobian, }
+\item[{int}]{conv\-\_\-type}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_a8447ce7024e30227e14e033100ad4999}
+\hypertarget{compat_8hpp_a06c87c7caa7c4baf9c36a9909f735de3}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Star\-Detector\-Params@{cv\-Star\-Detector\-Params}}
+\index{cv\-Star\-Detector\-Params@{cv\-Star\-Detector\-Params}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Star\-Detector\-Params}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-I\-N\-L\-I\-N\-E} {\bf Cv\-Star\-Detector\-Params} cv\-Star\-Detector\-Params (
+\begin{DoxyParamCaption}
+\item[{int max\-Size }]{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T45, }
+\item[{int response\-Threshold }]{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T30, }
+\item[{int line\-Threshold\-Projected }]{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T10, }
+\item[{int line\-Threshold\-Binarized }]{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T8, }
+\item[{int suppress\-Nonmax\-Size }]{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T5}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_a06c87c7caa7c4baf9c36a9909f735de3}
+\hypertarget{compat_8hpp_a2f99191cda0700de3f89b88fd939fdaf}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Star\-Keypoint@{cv\-Star\-Keypoint}}
+\index{cv\-Star\-Keypoint@{cv\-Star\-Keypoint}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Star\-Keypoint}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-I\-N\-L\-I\-N\-E} {\bf Cv\-Star\-Keypoint} cv\-Star\-Keypoint (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Point}}]{pt, }
+\item[{int}]{size, }
+\item[{float}]{response}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_a2f99191cda0700de3f89b88fd939fdaf}
+\hypertarget{compat_8hpp_aa0ab2dd832429694af5852682a64af99}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Start\-Scan\-Graph@{cv\-Start\-Scan\-Graph}}
+\index{cv\-Start\-Scan\-Graph@{cv\-Start\-Scan\-Graph}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Start\-Scan\-Graph}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cv\-Start\-Scan\-Graph (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Graph} $\ast$}]{graph, }
+\item[{{\bf Cv\-Graph\-Scanner} $\ast$}]{scanner, }
+\item[{{\bf Cv\-Graph\-Vtx} $\ast${\bf vtx} }]{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-TN\-U\-L\-L, }
+\item[{int {\bf mask} }]{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-TC\-V\-\_\-\-G\-R\-A\-P\-H\-\_\-\-A\-L\-L\-\_\-\-I\-T\-E\-M\-S}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_aa0ab2dd832429694af5852682a64af99}
+\hypertarget{compat_8hpp_ad9184a00c63a9abed781cf2d876308bd}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Sum\-Pixels@{cv\-Sum\-Pixels}}
+\index{cv\-Sum\-Pixels@{cv\-Sum\-Pixels}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Sum\-Pixels}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} double cv\-Sum\-Pixels (
+\begin{DoxyParamCaption}
+\item[{const {\bf Cv\-Arr} $\ast$}]{image}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_ad9184a00c63a9abed781cf2d876308bd}
+\hypertarget{compat_8hpp_a43ee74763557157d5deb0259585bb006}{\index{compat.\-hpp@{compat.\-hpp}!cv\-S\-U\-R\-F\-Point@{cv\-S\-U\-R\-F\-Point}}
+\index{cv\-S\-U\-R\-F\-Point@{cv\-S\-U\-R\-F\-Point}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-S\-U\-R\-F\-Point}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-I\-N\-L\-I\-N\-E} {\bf Cv\-S\-U\-R\-F\-Point} cv\-S\-U\-R\-F\-Point (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Point2\-D32f}}]{pt, }
+\item[{int}]{laplacian, }
+\item[{int}]{size, }
+\item[{float dir }]{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T0, }
+\item[{float hessian }]{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T0}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_a43ee74763557157d5deb0259585bb006}
+\hypertarget{compat_8hpp_a408b956f5780825cb285d3f17c324d01}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Un\-Distort@{cv\-Un\-Distort}}
+\index{cv\-Un\-Distort@{cv\-Un\-Distort}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Un\-Distort}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cv\-Un\-Distort (
+\begin{DoxyParamCaption}
+\item[{const {\bf Cv\-Arr} $\ast$}]{src, }
+\item[{{\bf Cv\-Arr} $\ast$}]{dst, }
+\item[{const {\bf Cv\-Arr} $\ast$}]{undistortion\-\_\-map, }
+\item[{int}]{interpolate}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_a408b956f5780825cb285d3f17c324d01}
+\hypertarget{compat_8hpp_aa5d538bcf12a78b21f394f7323c13f86}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Un\-Distort\-Init@{cv\-Un\-Distort\-Init}}
+\index{cv\-Un\-Distort\-Init@{cv\-Un\-Distort\-Init}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Un\-Distort\-Init}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cv\-Un\-Distort\-Init (
+\begin{DoxyParamCaption}
+\item[{const {\bf Cv\-Arr} $\ast$}]{src, }
+\item[{{\bf Cv\-Arr} $\ast$}]{undistortion\-\_\-map, }
+\item[{const float $\ast$}]{A, }
+\item[{const float $\ast$}]{k, }
+\item[{int}]{interpolate}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_aa5d538bcf12a78b21f394f7323c13f86}
+\hypertarget{compat_8hpp_aa04349eb6dc4250f06e657028c2c7e9d}{\index{compat.\-hpp@{compat.\-hpp}!cv\-Un\-Distort\-Once@{cv\-Un\-Distort\-Once}}
+\index{cv\-Un\-Distort\-Once@{cv\-Un\-Distort\-Once}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{cv\-Un\-Distort\-Once}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cv\-Un\-Distort\-Once (
+\begin{DoxyParamCaption}
+\item[{const {\bf Cv\-Arr} $\ast$}]{src, }
+\item[{{\bf Cv\-Arr} $\ast$}]{dst, }
+\item[{const float $\ast$}]{intrinsic\-\_\-matrix, }
+\item[{const float $\ast$}]{distortion\-\_\-coeffs, }
+\item[{int}]{interpolate}
+\end{DoxyParamCaption}
+)}}\label{compat_8hpp_aa04349eb6dc4250f06e657028c2c7e9d}
+
+
+\subsection{Variable Documentation}
+\hypertarget{compat_8hpp_a2189d8eeeb1db1f788f140ef73979f60}{\index{compat.\-hpp@{compat.\-hpp}!\-\_\-mask@{\-\_\-mask}}
+\index{\-\_\-mask@{\-\_\-mask}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{\-\_\-mask}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Arr}$\ast$ \-\_\-mask}}\label{compat_8hpp_a2189d8eeeb1db1f788f140ef73979f60}
+\hypertarget{compat_8hpp_a04f5d307711b17326d069621f0288f40}{\index{compat.\-hpp@{compat.\-hpp}!contours@{contours}}
+\index{contours@{contours}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{contours}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Arr} {\bf Cv\-Seq}$\ast$$\ast$ contours}}\label{compat_8hpp_a04f5d307711b17326d069621f0288f40}
+\hypertarget{compat_8hpp_a1e3702ddbca6258f57508c22eff26bf2}{\index{compat.\-hpp@{compat.\-hpp}!descriptors@{descriptors}}
+\index{descriptors@{descriptors}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{descriptors}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Arr} {\bf Cv\-Seq} {\bf Cv\-Seq}$\ast$$\ast$ descriptors}}\label{compat_8hpp_a1e3702ddbca6258f57508c22eff26bf2}
+\hypertarget{compat_8hpp_af95b6678bbbdd664ed15fe6d4190d355}{\index{compat.\-hpp@{compat.\-hpp}!keypoints@{keypoints}}
+\index{keypoints@{keypoints}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{keypoints}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Arr} {\bf Cv\-Seq}$\ast$$\ast$ keypoints}}\label{compat_8hpp_af95b6678bbbdd664ed15fe6d4190d355}
+\hypertarget{compat_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{\index{compat.\-hpp@{compat.\-hpp}!mask@{mask}}
+\index{mask@{mask}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{mask}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Arr}$\ast$ mask}}\label{compat_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}
+\hypertarget{compat_8hpp_a0480a03ecc41b20cde376602531d9270}{\index{compat.\-hpp@{compat.\-hpp}!params@{params}}
+\index{params@{params}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{params}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Arr} {\bf Cv\-Seq} {\bf Cv\-Mem\-Storage} {\bf Cv\-M\-S\-E\-R\-Params} params}}\label{compat_8hpp_a0480a03ecc41b20cde376602531d9270}
+\hypertarget{compat_8hpp_ab35a5bdcc2a473820b807911b2c26b8b}{\index{compat.\-hpp@{compat.\-hpp}!storage@{storage}}
+\index{storage@{storage}!compat.hpp@{compat.\-hpp}}
+\subsubsection[{storage}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Mem\-Storage}$\ast$ storage}}\label{compat_8hpp_ab35a5bdcc2a473820b807911b2c26b8b}

@@ -1,0 +1,121 @@
+\hypertarget{classcv_1_1detail_1_1FeaturesMatcher}{\section{cv\-:\-:detail\-:\-:Features\-Matcher Class Reference}
+\label{classcv_1_1detail_1_1FeaturesMatcher}\index{cv\-::detail\-::\-Features\-Matcher@{cv\-::detail\-::\-Features\-Matcher}}
+}
+
+
+{\ttfamily \#include $<$matchers.\-hpp$>$}
+
+
+
+Inheritance diagram for cv\-:\-:detail\-:\-:Features\-Matcher\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{classcv_1_1detail_1_1FeaturesMatcher__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classcv_1_1detail_1_1FeaturesMatcher_a7e0caef3c78089b3311eca9a3be06d95}{$\sim$\-Features\-Matcher} ()
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1detail_1_1FeaturesMatcher_a5d5793f2f71bae1cb72acc3e95d069df}{operator()} (const \hyperlink{structcv_1_1detail_1_1ImageFeatures}{Image\-Features} \&features1, const \hyperlink{structcv_1_1detail_1_1ImageFeatures}{Image\-Features} \&features2, \hyperlink{structcv_1_1detail_1_1MatchesInfo}{Matches\-Info} \&matches\-\_\-info)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1detail_1_1FeaturesMatcher_a6ce148cc528537d6dfb5d07aea6a0337}{operator()} (const std\-::vector$<$ \hyperlink{structcv_1_1detail_1_1ImageFeatures}{Image\-Features} $>$ \&features, std\-::vector$<$ \hyperlink{structcv_1_1detail_1_1MatchesInfo}{Matches\-Info} $>$ \&pairwise\-\_\-matches, const cv\-::\-Mat \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}=cv\-::\-Mat())
+\item 
+bool \hyperlink{classcv_1_1detail_1_1FeaturesMatcher_a0447c45b6a9aca348fdc4872665c3dcb}{is\-Thread\-Safe} () const 
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1detail_1_1FeaturesMatcher_a8520ff70e51e0bb138891ce410abf6e4}{collect\-Garbage} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcv_1_1detail_1_1FeaturesMatcher_a24ba277980b3f2d220f2a0b01c527569}{Features\-Matcher} (bool is\-\_\-thread\-\_\-safe=false)
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1detail_1_1FeaturesMatcher_a22005bcc8bf637398b2a325121b44bb1}{match} (const \hyperlink{structcv_1_1detail_1_1ImageFeatures}{Image\-Features} \&features1, const \hyperlink{structcv_1_1detail_1_1ImageFeatures}{Image\-Features} \&features2, \hyperlink{structcv_1_1detail_1_1MatchesInfo}{Matches\-Info} \&matches\-\_\-info)=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classcv_1_1detail_1_1FeaturesMatcher_ae3b24af101c26164a5a253b7d1c37dda}{is\-\_\-thread\-\_\-safe\-\_\-}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcv_1_1detail_1_1FeaturesMatcher_a7e0caef3c78089b3311eca9a3be06d95}{\index{cv\-::detail\-::\-Features\-Matcher@{cv\-::detail\-::\-Features\-Matcher}!$\sim$\-Features\-Matcher@{$\sim$\-Features\-Matcher}}
+\index{$\sim$\-Features\-Matcher@{$\sim$\-Features\-Matcher}!cv::detail::FeaturesMatcher@{cv\-::detail\-::\-Features\-Matcher}}
+\subsubsection[{$\sim$\-Features\-Matcher}]{\setlength{\rightskip}{0pt plus 5cm}virtual cv\-::detail\-::\-Features\-Matcher\-::$\sim$\-Features\-Matcher (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcv_1_1detail_1_1FeaturesMatcher_a7e0caef3c78089b3311eca9a3be06d95}
+\hypertarget{classcv_1_1detail_1_1FeaturesMatcher_a24ba277980b3f2d220f2a0b01c527569}{\index{cv\-::detail\-::\-Features\-Matcher@{cv\-::detail\-::\-Features\-Matcher}!Features\-Matcher@{Features\-Matcher}}
+\index{Features\-Matcher@{Features\-Matcher}!cv::detail::FeaturesMatcher@{cv\-::detail\-::\-Features\-Matcher}}
+\subsubsection[{Features\-Matcher}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::detail\-::\-Features\-Matcher\-::\-Features\-Matcher (
+\begin{DoxyParamCaption}
+\item[{bool}]{is\-\_\-thread\-\_\-safe = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classcv_1_1detail_1_1FeaturesMatcher_a24ba277980b3f2d220f2a0b01c527569}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcv_1_1detail_1_1FeaturesMatcher_a8520ff70e51e0bb138891ce410abf6e4}{\index{cv\-::detail\-::\-Features\-Matcher@{cv\-::detail\-::\-Features\-Matcher}!collect\-Garbage@{collect\-Garbage}}
+\index{collect\-Garbage@{collect\-Garbage}!cv::detail::FeaturesMatcher@{cv\-::detail\-::\-Features\-Matcher}}
+\subsubsection[{collect\-Garbage}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cv\-::detail\-::\-Features\-Matcher\-::collect\-Garbage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcv_1_1detail_1_1FeaturesMatcher_a8520ff70e51e0bb138891ce410abf6e4}
+
+
+Reimplemented in \hyperlink{classcv_1_1detail_1_1BestOf2NearestMatcher_a333bdd073ad0ea67b67230408813f365}{cv\-::detail\-::\-Best\-Of2\-Nearest\-Matcher}.
+
+\hypertarget{classcv_1_1detail_1_1FeaturesMatcher_a0447c45b6a9aca348fdc4872665c3dcb}{\index{cv\-::detail\-::\-Features\-Matcher@{cv\-::detail\-::\-Features\-Matcher}!is\-Thread\-Safe@{is\-Thread\-Safe}}
+\index{is\-Thread\-Safe@{is\-Thread\-Safe}!cv::detail::FeaturesMatcher@{cv\-::detail\-::\-Features\-Matcher}}
+\subsubsection[{is\-Thread\-Safe}]{\setlength{\rightskip}{0pt plus 5cm}bool cv\-::detail\-::\-Features\-Matcher\-::is\-Thread\-Safe (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1detail_1_1FeaturesMatcher_a0447c45b6a9aca348fdc4872665c3dcb}
+\hypertarget{classcv_1_1detail_1_1FeaturesMatcher_a22005bcc8bf637398b2a325121b44bb1}{\index{cv\-::detail\-::\-Features\-Matcher@{cv\-::detail\-::\-Features\-Matcher}!match@{match}}
+\index{match@{match}!cv::detail::FeaturesMatcher@{cv\-::detail\-::\-Features\-Matcher}}
+\subsubsection[{match}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cv\-::detail\-::\-Features\-Matcher\-::match (
+\begin{DoxyParamCaption}
+\item[{const {\bf Image\-Features} \&}]{features1, }
+\item[{const {\bf Image\-Features} \&}]{features2, }
+\item[{{\bf Matches\-Info} \&}]{matches\-\_\-info}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{classcv_1_1detail_1_1FeaturesMatcher_a22005bcc8bf637398b2a325121b44bb1}
+
+
+Implemented in \hyperlink{classcv_1_1detail_1_1BestOf2NearestMatcher_a427ee6f0c9a75766b535e721d3e395df}{cv\-::detail\-::\-Best\-Of2\-Nearest\-Matcher}.
+
+\hypertarget{classcv_1_1detail_1_1FeaturesMatcher_a5d5793f2f71bae1cb72acc3e95d069df}{\index{cv\-::detail\-::\-Features\-Matcher@{cv\-::detail\-::\-Features\-Matcher}!operator()@{operator()}}
+\index{operator()@{operator()}!cv::detail::FeaturesMatcher@{cv\-::detail\-::\-Features\-Matcher}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::detail\-::\-Features\-Matcher\-::operator() (
+\begin{DoxyParamCaption}
+\item[{const {\bf Image\-Features} \&}]{features1, }
+\item[{const {\bf Image\-Features} \&}]{features2, }
+\item[{{\bf Matches\-Info} \&}]{matches\-\_\-info}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1detail_1_1FeaturesMatcher_a5d5793f2f71bae1cb72acc3e95d069df}
+\hypertarget{classcv_1_1detail_1_1FeaturesMatcher_a6ce148cc528537d6dfb5d07aea6a0337}{\index{cv\-::detail\-::\-Features\-Matcher@{cv\-::detail\-::\-Features\-Matcher}!operator()@{operator()}}
+\index{operator()@{operator()}!cv::detail::FeaturesMatcher@{cv\-::detail\-::\-Features\-Matcher}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::detail\-::\-Features\-Matcher\-::operator() (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ {\bf Image\-Features} $>$ \&}]{features, }
+\item[{std\-::vector$<$ {\bf Matches\-Info} $>$ \&}]{pairwise\-\_\-matches, }
+\item[{const cv\-::\-Mat \&}]{mask = {\ttfamily cv\-:\-:Mat()}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1detail_1_1FeaturesMatcher_a6ce148cc528537d6dfb5d07aea6a0337}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcv_1_1detail_1_1FeaturesMatcher_ae3b24af101c26164a5a253b7d1c37dda}{\index{cv\-::detail\-::\-Features\-Matcher@{cv\-::detail\-::\-Features\-Matcher}!is\-\_\-thread\-\_\-safe\-\_\-@{is\-\_\-thread\-\_\-safe\-\_\-}}
+\index{is\-\_\-thread\-\_\-safe\-\_\-@{is\-\_\-thread\-\_\-safe\-\_\-}!cv::detail::FeaturesMatcher@{cv\-::detail\-::\-Features\-Matcher}}
+\subsubsection[{is\-\_\-thread\-\_\-safe\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}bool cv\-::detail\-::\-Features\-Matcher\-::is\-\_\-thread\-\_\-safe\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1detail_1_1FeaturesMatcher_ae3b24af101c26164a5a253b7d1c37dda}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/stitching/detail/\hyperlink{matchers_8hpp}{matchers.\-hpp}\end{DoxyCompactItemize}

@@ -1,0 +1,24 @@
+<map id="/usr/include/opencv2/stitching/stitcher.hpp" name="/usr/include/opencv2/stitching/stitcher.hpp">
+<area shape="rect" id="node2" href="$core_8hpp.html" title="The Core Functionality. " alt="" coords="921,368,1075,395"/>
+<area shape="rect" id="node14" href="$features2d_2features2d_8hpp.html" title="opencv2/features2d\l/features2d.hpp" alt="" coords="29,278,164,319"/>
+<area shape="rect" id="node16" href="$warpers_8hpp.html" title="opencv2/stitching/warpers.hpp" alt="" coords="719,104,917,131"/>
+<area shape="rect" id="node23" href="$matchers_8hpp.html" title="opencv2/stitching/detail\l/matchers.hpp" alt="" coords="374,187,532,229"/>
+<area shape="rect" id="node24" href="$motion__estimators_8hpp.html" title="opencv2/stitching/detail\l/motion_estimators.hpp" alt="" coords="942,97,1100,138"/>
+<area shape="rect" id="node29" href="$camera_8hpp.html" title="camera.hpp" alt="" coords="1144,195,1235,221"/>
+<area shape="rect" id="node30" href="$exposure__compensate_8hpp.html" title="opencv2/stitching/detail\l/exposure_compensate.hpp" alt="" coords="1411,97,1593,138"/>
+<area shape="rect" id="node31" href="$seam__finders_8hpp.html" title="opencv2/stitching/detail\l/seam_finders.hpp" alt="" coords="190,187,348,229"/>
+<area shape="rect" id="node33" href="$blenders_8hpp.html" title="opencv2/stitching/detail\l/blenders.hpp" alt="" coords="1177,97,1335,138"/>
+<area shape="rect" id="node3" href="$core_2types__c_8h.html" title="opencv2/core/types_c.h" alt="" coords="709,517,869,544"/>
+<area shape="rect" id="node10" href="$version_8hpp.html" title="opencv2/core/version.hpp" alt="" coords="827,443,997,469"/>
+<area shape="rect" id="node11" href="$operations_8hpp.html" title="opencv2/core/operations.hpp" alt="" coords="1021,443,1211,469"/>
+<area shape="rect" id="node13" href="$mat_8hpp.html" title="opencv2/core/mat.hpp" alt="" coords="1235,443,1385,469"/>
+<area shape="rect" id="node15" href="$miniflann_8hpp.html" title="opencv2/flann/miniflann.hpp" alt="" coords="5,368,189,395"/>
+<area shape="rect" id="node17" href="$detail_2warpers_8hpp.html" title="opencv2/stitching/detail\l/warpers.hpp" alt="" coords="757,187,915,229"/>
+<area shape="rect" id="node18" href="$imgproc_8hpp.html" title="The Image Processing. " alt="" coords="577,285,772,312"/>
+<area shape="rect" id="node21" href="$opencv__modules_8hpp.html" title="opencv2/opencv_modules.hpp" alt="" coords="354,285,552,312"/>
+<area shape="rect" id="node22" href="$warpers__inl_8hpp.html" title="warpers_inl.hpp" alt="" coords="797,285,909,312"/>
+<area shape="rect" id="node19" href="$imgproc_2types__c_8h.html" title="opencv2/imgproc/types_c.h" alt="" coords="583,368,765,395"/>
+<area shape="rect" id="node20" href="$core__c_8h.html" title="opencv2/core/core_c.h" alt="" coords="597,443,751,469"/>
+<area shape="rect" id="node25" href="$util_8hpp.html" title="util.hpp" alt="" coords="1056,195,1120,221"/>
+<area shape="rect" id="node27" href="$util__inl_8hpp.html" title="util_inl.hpp" alt="" coords="1150,285,1233,312"/>
+</map>

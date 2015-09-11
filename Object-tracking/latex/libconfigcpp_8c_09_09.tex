@@ -1,0 +1,89 @@
+\hypertarget{libconfigcpp_8c_09_09}{\section{src/3rdparty/libconfig/libconfigcpp.c++ File Reference}
+\label{libconfigcpp_8c_09_09}\index{src/3rdparty/libconfig/libconfigcpp.\-c++@{src/3rdparty/libconfig/libconfigcpp.\-c++}}
+}
+{\ttfamily \#include \char`\"{}libconfig.\-h++\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}wincompat.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}libconfig.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$cstring$>$}\\*
+{\ttfamily \#include $<$cstdlib$>$}\\*
+{\ttfamily \#include $<$sstream$>$}\\*
+Include dependency graph for libconfigcpp.\-c++\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{libconfigcpp_8c_09_09__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{libconfigcpp_8c_09_09__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacelibconfig}{libconfig}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{libconfigcpp_8c_09_09_aac782925c90a12a08457aa1e9eec31bd}{C\-O\-N\-F\-I\-G\-\_\-\-L\-O\-O\-K\-U\-P\-\_\-\-N\-O\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N\-S}(P, T, V)
+\item 
+\#define \hyperlink{libconfigcpp_8c_09_09_abfd54db12d50ab5a5811407b035c743b}{S\-E\-T\-T\-I\-N\-G\-\_\-\-L\-O\-O\-K\-U\-P\-\_\-\-N\-O\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N\-S}(K, T, V)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{namespacelibconfig_a8e110477bf88dac91c60df3cc4e7eebe}{libconfig\-::\-\_\-\-\_\-to\-Type\-Code} (Setting\-::\-Type type)
+\item 
+static void \hyperlink{namespacelibconfig_ac6ddf54284dd0e8344d0e64a61cf9f17}{libconfig\-::\-\_\-\-\_\-construct\-Path} (const Setting \&setting, std\-::stringstream \&path)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{libconfigcpp_8c_09_09_aac782925c90a12a08457aa1e9eec31bd}{\index{libconfigcpp.\-c++@{libconfigcpp.\-c++}!C\-O\-N\-F\-I\-G\-\_\-\-L\-O\-O\-K\-U\-P\-\_\-\-N\-O\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N\-S@{C\-O\-N\-F\-I\-G\-\_\-\-L\-O\-O\-K\-U\-P\-\_\-\-N\-O\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N\-S}}
+\index{C\-O\-N\-F\-I\-G\-\_\-\-L\-O\-O\-K\-U\-P\-\_\-\-N\-O\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N\-S@{C\-O\-N\-F\-I\-G\-\_\-\-L\-O\-O\-K\-U\-P\-\_\-\-N\-O\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N\-S}!libconfigcpp.c++@{libconfigcpp.\-c++}}
+\subsubsection[{C\-O\-N\-F\-I\-G\-\_\-\-L\-O\-O\-K\-U\-P\-\_\-\-N\-O\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-O\-N\-F\-I\-G\-\_\-\-L\-O\-O\-K\-U\-P\-\_\-\-N\-O\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N\-S(
+\begin{DoxyParamCaption}
+\item[{}]{P, }
+\item[{}]{T, }
+\item[{}]{V}
+\end{DoxyParamCaption}
+)}}\label{libconfigcpp_8c_09_09_aac782925c90a12a08457aa1e9eec31bd}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{try}                                           \(\backslash\)
+  \{                                             \(\backslash\)
+    Setting &s = lookup(P);                     \(\backslash\)
+    V = (T)s;                                   \(\backslash\)
+    return(\textcolor{keyword}{true});                               \(\backslash\)
+  \}                                             \(\backslash\)
+  catch(ConfigException)                        \(\backslash\)
+  \{                                             \(\backslash\)
+    return(\textcolor{keyword}{false});                              \(\backslash\)
+  \}
+\end{DoxyCode}
+\hypertarget{libconfigcpp_8c_09_09_abfd54db12d50ab5a5811407b035c743b}{\index{libconfigcpp.\-c++@{libconfigcpp.\-c++}!S\-E\-T\-T\-I\-N\-G\-\_\-\-L\-O\-O\-K\-U\-P\-\_\-\-N\-O\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N\-S@{S\-E\-T\-T\-I\-N\-G\-\_\-\-L\-O\-O\-K\-U\-P\-\_\-\-N\-O\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N\-S}}
+\index{S\-E\-T\-T\-I\-N\-G\-\_\-\-L\-O\-O\-K\-U\-P\-\_\-\-N\-O\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N\-S@{S\-E\-T\-T\-I\-N\-G\-\_\-\-L\-O\-O\-K\-U\-P\-\_\-\-N\-O\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N\-S}!libconfigcpp.c++@{libconfigcpp.\-c++}}
+\subsubsection[{S\-E\-T\-T\-I\-N\-G\-\_\-\-L\-O\-O\-K\-U\-P\-\_\-\-N\-O\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-E\-T\-T\-I\-N\-G\-\_\-\-L\-O\-O\-K\-U\-P\-\_\-\-N\-O\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N\-S(
+\begin{DoxyParamCaption}
+\item[{}]{K, }
+\item[{}]{T, }
+\item[{}]{V}
+\end{DoxyParamCaption}
+)}}\label{libconfigcpp_8c_09_09_abfd54db12d50ab5a5811407b035c743b}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{try}                                           \(\backslash\)
+  \{                                             \(\backslash\)
+    Setting &s = operator[](K);                 \(\backslash\)
+    V = (T)s;                                   \(\backslash\)
+    return(\textcolor{keyword}{true});                               \(\backslash\)
+  \}                                             \(\backslash\)
+  catch(ConfigException)                        \(\backslash\)
+  \{                                             \(\backslash\)
+    return(\textcolor{keyword}{false});                              \(\backslash\)
+  \}
+\end{DoxyCode}

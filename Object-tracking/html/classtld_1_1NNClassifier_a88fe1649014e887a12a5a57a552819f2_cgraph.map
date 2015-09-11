@@ -1,0 +1,8 @@
+<map id="tld::NNClassifier::classifyWindow" name="tld::NNClassifier::classifyWindow">
+<area shape="rect" id="node2" href="$namespacetld.html#a44b5f4d4d087d3369129bdc92e2a555a" title="Extracts normalized patch from the image by boundary (array). " alt="" coords="182,27,349,69"/>
+<area shape="rect" id="node3" href="$namespacetld.html#aff4c05bc28ae29c360be58460a56b579" title="Extracts the date from array (size 4). " alt="" coords="397,5,589,32"/>
+<area shape="rect" id="node4" href="$namespacetld.html#ac965be65b1eae7ec666c3bfbe9da065e" title="Extracts normalized patch from the image by rectangle. " alt="" coords="410,57,577,98"/>
+<area shape="rect" id="node5" href="$namespacetld.html#a16fe2b016494fa66be611f723ed7bebc" title="Extracts the subimage by the reactangle. " alt="" coords="638,39,797,65"/>
+<area shape="rect" id="node7" href="$namespacetld.html#a7facbe495da1f0e058c78b9b7dea412a" title="Returns mean&#45;normalized patch, the image must be greyscale. " alt="" coords="648,89,787,116"/>
+<area shape="rect" id="node6" href="$namespacetld.html#afd43d8a27c419d1f5da8718be917d4b5" title="Creates new rectangle from boundary. " alt="" coords="846,39,1002,65"/>
+</map>

@@ -1,0 +1,89 @@
+\hypertarget{structcvflann_1_1HellingerDistance}{\section{cvflann\-:\-:Hellinger\-Distance$<$ T $>$ Struct Template Reference}
+\label{structcvflann_1_1HellingerDistance}\index{cvflann\-::\-Hellinger\-Distance$<$ T $>$@{cvflann\-::\-Hellinger\-Distance$<$ T $>$}}
+}
+
+
+{\ttfamily \#include $<$dist.\-h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classcvflann_1_1True}{True} \hyperlink{structcvflann_1_1HellingerDistance_aeae75a5a68fe211e7ee909f3a90e93d3}{is\-\_\-kdtree\-\_\-distance}
+\item 
+typedef \hyperlink{classcvflann_1_1True}{True} \hyperlink{structcvflann_1_1HellingerDistance_ab5f54b4b04397ad6a581c55576bf16af}{is\-\_\-vector\-\_\-space\-\_\-distance}
+\item 
+typedef \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \hyperlink{structcvflann_1_1HellingerDistance_a3b4b98376064e5051537fb2ec044f18c}{Element\-Type}
+\item 
+typedef \hyperlink{structcvflann_1_1Accumulator}{Accumulator}$<$ \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} $>$\-::Type \hyperlink{structcvflann_1_1HellingerDistance_a5ea5bc129fed2c06da92c75586ef5833}{Result\-Type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Iterator1 , typename Iterator2 $>$ }\\\hyperlink{structcvflann_1_1HellingerDistance_a5ea5bc129fed2c06da92c75586ef5833}{Result\-Type} \hyperlink{structcvflann_1_1HellingerDistance_ac7fce120a086c9b9f1224ecc923bbbd5}{operator()} (Iterator1 \hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}, Iterator2 \hyperlink{legacy_8hpp_ac04272e8ca865b8fba18d36edae9fd2a}{b}, size\-\_\-t \hyperlink{legacy_8hpp_ae97003f8d5c64cdfb99f6f2606d121b6}{size}, \hyperlink{structcvflann_1_1HellingerDistance_a5ea5bc129fed2c06da92c75586ef5833}{Result\-Type}=-\/1) const 
+\item 
+{\footnotesize template$<$typename U , typename V $>$ }\\\hyperlink{structcvflann_1_1HellingerDistance_a5ea5bc129fed2c06da92c75586ef5833}{Result\-Type} \hyperlink{structcvflann_1_1HellingerDistance_a4f161f3330cb311dc2790d566fe9de28}{accum\-\_\-dist} (const \hyperlink{core__c_8h_aa9c521f41af9a5191e5e4b6ffbae211a}{U} \&\hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}, const \hyperlink{core__c_8h_ad8dd4fff0e3910932187b6de0543cae1}{V} \&\hyperlink{legacy_8hpp_ac04272e8ca865b8fba18d36edae9fd2a}{b}, int) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{structcvflann_1_1HellingerDistance_a3b4b98376064e5051537fb2ec044f18c}{\index{cvflann\-::\-Hellinger\-Distance@{cvflann\-::\-Hellinger\-Distance}!Element\-Type@{Element\-Type}}
+\index{Element\-Type@{Element\-Type}!cvflann::HellingerDistance@{cvflann\-::\-Hellinger\-Distance}}
+\subsubsection[{Element\-Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ typedef {\bf T} {\bf cvflann\-::\-Hellinger\-Distance}$<$ {\bf T} $>$\-::{\bf Element\-Type}}}\label{structcvflann_1_1HellingerDistance_a3b4b98376064e5051537fb2ec044f18c}
+\hypertarget{structcvflann_1_1HellingerDistance_aeae75a5a68fe211e7ee909f3a90e93d3}{\index{cvflann\-::\-Hellinger\-Distance@{cvflann\-::\-Hellinger\-Distance}!is\-\_\-kdtree\-\_\-distance@{is\-\_\-kdtree\-\_\-distance}}
+\index{is\-\_\-kdtree\-\_\-distance@{is\-\_\-kdtree\-\_\-distance}!cvflann::HellingerDistance@{cvflann\-::\-Hellinger\-Distance}}
+\subsubsection[{is\-\_\-kdtree\-\_\-distance}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ typedef {\bf True} {\bf cvflann\-::\-Hellinger\-Distance}$<$ {\bf T} $>$\-::{\bf is\-\_\-kdtree\-\_\-distance}}}\label{structcvflann_1_1HellingerDistance_aeae75a5a68fe211e7ee909f3a90e93d3}
+\hypertarget{structcvflann_1_1HellingerDistance_ab5f54b4b04397ad6a581c55576bf16af}{\index{cvflann\-::\-Hellinger\-Distance@{cvflann\-::\-Hellinger\-Distance}!is\-\_\-vector\-\_\-space\-\_\-distance@{is\-\_\-vector\-\_\-space\-\_\-distance}}
+\index{is\-\_\-vector\-\_\-space\-\_\-distance@{is\-\_\-vector\-\_\-space\-\_\-distance}!cvflann::HellingerDistance@{cvflann\-::\-Hellinger\-Distance}}
+\subsubsection[{is\-\_\-vector\-\_\-space\-\_\-distance}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ typedef {\bf True} {\bf cvflann\-::\-Hellinger\-Distance}$<$ {\bf T} $>$\-::{\bf is\-\_\-vector\-\_\-space\-\_\-distance}}}\label{structcvflann_1_1HellingerDistance_ab5f54b4b04397ad6a581c55576bf16af}
+\hypertarget{structcvflann_1_1HellingerDistance_a5ea5bc129fed2c06da92c75586ef5833}{\index{cvflann\-::\-Hellinger\-Distance@{cvflann\-::\-Hellinger\-Distance}!Result\-Type@{Result\-Type}}
+\index{Result\-Type@{Result\-Type}!cvflann::HellingerDistance@{cvflann\-::\-Hellinger\-Distance}}
+\subsubsection[{Result\-Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ typedef {\bf Accumulator}$<${\bf T}$>$\-::Type {\bf cvflann\-::\-Hellinger\-Distance}$<$ {\bf T} $>$\-::{\bf Result\-Type}}}\label{structcvflann_1_1HellingerDistance_a5ea5bc129fed2c06da92c75586ef5833}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structcvflann_1_1HellingerDistance_a4f161f3330cb311dc2790d566fe9de28}{\index{cvflann\-::\-Hellinger\-Distance@{cvflann\-::\-Hellinger\-Distance}!accum\-\_\-dist@{accum\-\_\-dist}}
+\index{accum\-\_\-dist@{accum\-\_\-dist}!cvflann::HellingerDistance@{cvflann\-::\-Hellinger\-Distance}}
+\subsubsection[{accum\-\_\-dist}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ template$<$typename U , typename V $>$ {\bf Result\-Type} {\bf cvflann\-::\-Hellinger\-Distance}$<$ {\bf T} $>$\-::accum\-\_\-dist (
+\begin{DoxyParamCaption}
+\item[{const {\bf U} \&}]{a, }
+\item[{const {\bf V} \&}]{b, }
+\item[{int}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{structcvflann_1_1HellingerDistance_a4f161f3330cb311dc2790d566fe9de28}
+Partial distance, used by the kd-\/tree. 
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{structcvflann_1_1HellingerDistance_a4f161f3330cb311dc2790d566fe9de28_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{structcvflann_1_1HellingerDistance_ac7fce120a086c9b9f1224ecc923bbbd5}{\index{cvflann\-::\-Hellinger\-Distance@{cvflann\-::\-Hellinger\-Distance}!operator()@{operator()}}
+\index{operator()@{operator()}!cvflann::HellingerDistance@{cvflann\-::\-Hellinger\-Distance}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ template$<$typename Iterator1 , typename Iterator2 $>$ {\bf Result\-Type} {\bf cvflann\-::\-Hellinger\-Distance}$<$ {\bf T} $>$\-::operator() (
+\begin{DoxyParamCaption}
+\item[{Iterator1}]{a, }
+\item[{Iterator2}]{b, }
+\item[{size\-\_\-t}]{size, }
+\item[{{\bf Result\-Type}}]{ = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{structcvflann_1_1HellingerDistance_ac7fce120a086c9b9f1224ecc923bbbd5}
+Compute the histogram intersection distance 
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{structcvflann_1_1HellingerDistance_ac7fce120a086c9b9f1224ecc923bbbd5_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/flann/\hyperlink{dist_8h}{dist.\-h}\end{DoxyCompactItemize}

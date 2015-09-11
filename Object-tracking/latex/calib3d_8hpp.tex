@@ -1,0 +1,878 @@
+\hypertarget{calib3d_8hpp}{\section{/usr/include/opencv2/calib3d/calib3d.hpp File Reference}
+\label{calib3d_8hpp}\index{/usr/include/opencv2/calib3d/calib3d.\-hpp@{/usr/include/opencv2/calib3d/calib3d.\-hpp}}
+}
+{\ttfamily \#include \char`\"{}opencv2/core/core.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}opencv2/features2d/features2d.\-hpp\char`\"{}}\\*
+Include dependency graph for calib3d.\-hpp\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{calib3d_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{calib3d_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structCvStereoBMState}{Cv\-Stereo\-B\-M\-State}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{calib3d_8hpp_acd70e232d9670a0ffbec7624f819e731}{C\-V\-\_\-\-F\-M\-\_\-7\-P\-O\-I\-N\-T}~1
+\item 
+\#define \hyperlink{calib3d_8hpp_a13d5fbc45601fd0d9aa5af81a079d73a}{C\-V\-\_\-\-F\-M\-\_\-8\-P\-O\-I\-N\-T}~2
+\item 
+\#define \hyperlink{calib3d_8hpp_a5e724fe78567220f3104374bce17c859}{C\-V\-\_\-\-L\-M\-E\-D\-S}~4
+\item 
+\#define \hyperlink{calib3d_8hpp_ad583c9874d55e6129ec1b85d9dd9b973}{C\-V\-\_\-\-R\-A\-N\-S\-A\-C}~8
+\item 
+\#define \hyperlink{calib3d_8hpp_ac0df1c0cb05d99880584a828dc6e6a05}{C\-V\-\_\-\-F\-M\-\_\-\-L\-M\-E\-D\-S\-\_\-\-O\-N\-L\-Y}~\hyperlink{calib3d_8hpp_a5e724fe78567220f3104374bce17c859}{C\-V\-\_\-\-L\-M\-E\-D\-S}
+\item 
+\#define \hyperlink{calib3d_8hpp_a3428a14110851e2fba4821bcc999e873}{C\-V\-\_\-\-F\-M\-\_\-\-R\-A\-N\-S\-A\-C\-\_\-\-O\-N\-L\-Y}~\hyperlink{calib3d_8hpp_ad583c9874d55e6129ec1b85d9dd9b973}{C\-V\-\_\-\-R\-A\-N\-S\-A\-C}
+\item 
+\#define \hyperlink{calib3d_8hpp_a8ed05b4cb3044e69e45ed0c8003acf4c}{C\-V\-\_\-\-F\-M\-\_\-\-L\-M\-E\-D\-S}~\hyperlink{calib3d_8hpp_a5e724fe78567220f3104374bce17c859}{C\-V\-\_\-\-L\-M\-E\-D\-S}
+\item 
+\#define \hyperlink{calib3d_8hpp_ab86b19f9732a651e99a6fbad51ec72f0}{C\-V\-\_\-\-F\-M\-\_\-\-R\-A\-N\-S\-A\-C}~\hyperlink{calib3d_8hpp_ad583c9874d55e6129ec1b85d9dd9b973}{C\-V\-\_\-\-R\-A\-N\-S\-A\-C}
+\item 
+\#define \hyperlink{calib3d_8hpp_a34614fa660c6706b09d658142795ca5e}{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-C\-B\-\_\-\-A\-D\-A\-P\-T\-I\-V\-E\-\_\-\-T\-H\-R\-E\-S\-H}~1
+\item 
+\#define \hyperlink{calib3d_8hpp_ad7483a0ebfd83bd0ea11b6281309988d}{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-C\-B\-\_\-\-N\-O\-R\-M\-A\-L\-I\-Z\-E\-\_\-\-I\-M\-A\-G\-E}~2
+\item 
+\#define \hyperlink{calib3d_8hpp_af91a8412f3d681fdc8f9f8ceac25fea0}{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-C\-B\-\_\-\-F\-I\-L\-T\-E\-R\-\_\-\-Q\-U\-A\-D\-S}~4
+\item 
+\#define \hyperlink{calib3d_8hpp_a2f12d56bae5fbd3eb614d930fbbf56eb}{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-C\-B\-\_\-\-F\-A\-S\-T\-\_\-\-C\-H\-E\-C\-K}~8
+\item 
+\#define \hyperlink{calib3d_8hpp_abfe87ad0401432b756600c0dbf04da27}{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-U\-S\-E\-\_\-\-I\-N\-T\-R\-I\-N\-S\-I\-C\-\_\-\-G\-U\-E\-S\-S}~1
+\item 
+\#define \hyperlink{calib3d_8hpp_a6e16c84b20076f05c8fc1568e3a133cf}{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-A\-S\-P\-E\-C\-T\-\_\-\-R\-A\-T\-I\-O}~2
+\item 
+\#define \hyperlink{calib3d_8hpp_a1d7328c564c85ac13da01f5fb715dde5}{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-P\-R\-I\-N\-C\-I\-P\-A\-L\-\_\-\-P\-O\-I\-N\-T}~4
+\item 
+\#define \hyperlink{calib3d_8hpp_a719461ad9ee310c0875078239dfb0cfb}{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-Z\-E\-R\-O\-\_\-\-T\-A\-N\-G\-E\-N\-T\-\_\-\-D\-I\-S\-T}~8
+\item 
+\#define \hyperlink{calib3d_8hpp_a1abada166b1993a95bb42051e16b5b79}{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-F\-O\-C\-A\-L\-\_\-\-L\-E\-N\-G\-T\-H}~16
+\item 
+\#define \hyperlink{calib3d_8hpp_a324ef4dd5afdaef2a0ecdd0fe7860311}{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-K1}~32
+\item 
+\#define \hyperlink{calib3d_8hpp_a84267d64ddfc4d3355f11183941c1047}{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-K2}~64
+\item 
+\#define \hyperlink{calib3d_8hpp_af31634bca23f5213abbf793b2570488f}{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-K3}~128
+\item 
+\#define \hyperlink{calib3d_8hpp_a39d224b0ce447b4f3dd360a2d9aae906}{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-K4}~2048
+\item 
+\#define \hyperlink{calib3d_8hpp_aca023f78c814739894b85446847df06a}{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-K5}~4096
+\item 
+\#define \hyperlink{calib3d_8hpp_aa10447c424fa53e3aa8e9fe308355463}{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-K6}~8192
+\item 
+\#define \hyperlink{calib3d_8hpp_acce494e150af097f8131853935b816aa}{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-R\-A\-T\-I\-O\-N\-A\-L\-\_\-\-M\-O\-D\-E\-L}~16384
+\item 
+\#define \hyperlink{calib3d_8hpp_a0cdd706eab6c916b853b80335d7b2891}{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-I\-N\-T\-R\-I\-N\-S\-I\-C}~256
+\item 
+\#define \hyperlink{calib3d_8hpp_a622637de619e6f335033a431b747d987}{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-S\-A\-M\-E\-\_\-\-F\-O\-C\-A\-L\-\_\-\-L\-E\-N\-G\-T\-H}~512
+\item 
+\#define \hyperlink{calib3d_8hpp_a5e439a1d2e4b65828121d1626a50a4f2}{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-Z\-E\-R\-O\-\_\-\-D\-I\-S\-P\-A\-R\-I\-T\-Y}~1024
+\item 
+\#define \hyperlink{calib3d_8hpp_aac970026f96f5dbf7d3e8baf2851045b}{C\-V\-\_\-\-S\-T\-E\-R\-E\-O\-\_\-\-B\-M\-\_\-\-N\-O\-R\-M\-A\-L\-I\-Z\-E\-D\-\_\-\-R\-E\-S\-P\-O\-N\-S\-E}~0
+\item 
+\#define \hyperlink{calib3d_8hpp_a4fbd854e2c4ff159ed0e513d4356b076}{C\-V\-\_\-\-S\-T\-E\-R\-E\-O\-\_\-\-B\-M\-\_\-\-X\-S\-O\-B\-E\-L}~1
+\item 
+\#define \hyperlink{calib3d_8hpp_a908e78331515a3cafec20b0ea5b2e3a2}{C\-V\-\_\-\-S\-T\-E\-R\-E\-O\-\_\-\-B\-M\-\_\-\-B\-A\-S\-I\-C}~0
+\item 
+\#define \hyperlink{calib3d_8hpp_afed6f6afe3170587b622d216050e4542}{C\-V\-\_\-\-S\-T\-E\-R\-E\-O\-\_\-\-B\-M\-\_\-\-F\-I\-S\-H\-\_\-\-E\-Y\-E}~1
+\item 
+\#define \hyperlink{calib3d_8hpp_af24f1565143452e4b6d10bfe14de862d}{C\-V\-\_\-\-S\-T\-E\-R\-E\-O\-\_\-\-B\-M\-\_\-\-N\-A\-R\-R\-O\-W}~2
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{calib3d_8hpp_af8527638987a0591d819b04e85883509}{Cv\-P\-O\-S\-I\-T\-Object} \hyperlink{calib3d_8hpp_af8527638987a0591d819b04e85883509}{Cv\-P\-O\-S\-I\-T\-Object}
+\item 
+typedef struct \hyperlink{structCvStereoBMState}{Cv\-Stereo\-B\-M\-State} \hyperlink{calib3d_8hpp_a27734121ec91535486c951f738559ee1}{Cv\-Stereo\-B\-M\-State}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{calib3d_8hpp_a06fc87d81c62e9abb8790b6e5713c55ba8be4b232c6acfab1dc69e090d934b426}{C\-V\-\_\-\-I\-T\-E\-R\-A\-T\-I\-V\-E} = 0, 
+\hyperlink{calib3d_8hpp_a06fc87d81c62e9abb8790b6e5713c55ba2ad6ca91b2638cd82dd04df585822cf8}{C\-V\-\_\-\-E\-P\-N\-P} = 1, 
+\hyperlink{calib3d_8hpp_a06fc87d81c62e9abb8790b6e5713c55ba7513c67aacb7baa2ec7611e2cdc85045}{C\-V\-\_\-\-P3\-P} = 2
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{calib3d_8hpp_ab3ff078a73ec6fb00e8e5dc21dbf5593}{C\-V\-A\-P\-I} (\hyperlink{calib3d_8hpp_af8527638987a0591d819b04e85883509}{Cv\-P\-O\-S\-I\-T\-Object} $\ast$) cv\-Create\-P\-O\-S\-I\-T\-Object(\hyperlink{structCvPoint3D32f}{Cv\-Point3\-D32f} $\ast$\hyperlink{legacy_8hpp_a8c4b676395bf614cc92b782d12f18847}{points}
+\item 
+\hyperlink{calib3d_8hpp_a9566e5cf174348ac4968cca3df4dc8ea}{C\-V\-A\-P\-I} (\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void}) cv\-P\-O\-S\-I\-T(\hyperlink{calib3d_8hpp_af8527638987a0591d819b04e85883509}{Cv\-P\-O\-S\-I\-T\-Object} $\ast$posit\-\_\-object
+\item 
+\hyperlink{calib3d_8hpp_a350e05e6c2c77a55a82a234f170c8771}{C\-V\-A\-P\-I} (int) cv\-R\-A\-N\-S\-A\-C\-Update\-Num\-Iters(double p
+\item 
+const \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} int \hyperlink{legacy_8hpp_adc6d8f8df4f2d0df2ece83c432e2681f}{method} \hyperlink{calib3d_8hpp_a726902e5e18dc93fc15fb57cca02e646}{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T} (\hyperlink{calib3d_8hpp_ab86b19f9732a651e99a6fbad51ec72f0}{C\-V\-\_\-\-F\-M\-\_\-\-R\-A\-N\-S\-A\-C})
+\item 
+const \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} int \hyperlink{legacy_8hpp_adc6d8f8df4f2d0df2ece83c432e2681f}{method} \\*
+double \hyperlink{core__c_8h_a4a138cebb3d1124bb552aa80cc860eea}{param1} \hyperlink{calib3d_8hpp_aafb955c38562f949694c201021d010c6}{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T} (3.)
+\item 
+const \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} int \hyperlink{legacy_8hpp_adc6d8f8df4f2d0df2ece83c432e2681f}{method} \\*
+double \hyperlink{core__c_8h_a4a138cebb3d1124bb552aa80cc860eea}{param1} double \hyperlink{core__c_8h_a31355e809c125347b49af078e58da79e}{param2} \hyperlink{calib3d_8hpp_ab3170857821fa295237c47942d47677f}{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T} (0.\-99)
+\item 
+const \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} int \hyperlink{legacy_8hpp_adc6d8f8df4f2d0df2ece83c432e2681f}{method} \\*
+double \hyperlink{core__c_8h_a4a138cebb3d1124bb552aa80cc860eea}{param1} double \hyperlink{core__c_8h_a31355e809c125347b49af078e58da79e}{param2} \\*
+\hyperlink{structCvMat}{Cv\-Mat} $\ast$\hyperlink{tracking_8hpp_ae17b3c2584dab511e91d1c96644018bf}{status} \hyperlink{calib3d_8hpp_ad8185cf807973901d37c72f1a55ab2a7}{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T} (\hyperlink{Config_8cpp_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\-U\-L\-L}))
+\item 
+const \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvSize}{Cv\-Size} double \\*
+\hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvSize}{Cv\-Size} new\-\_\-imag\-\_\-size \hyperlink{calib3d_8hpp_aaaa815a5bc16d34403bca712cf83271b}{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T} (\hyperlink{core_2types__c_8h_ad25ce7ac18665d5c9b062283ff0204ed}{cv\-Size}(0, 0))
+\item 
+const \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvSize}{Cv\-Size} double \\*
+\hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvSize}{Cv\-Size} new\-\_\-imag\-\_\-size \\*
+\hyperlink{structCvRect}{Cv\-Rect} $\ast$valid\-\_\-pixel\-\_\-\-R\-O\-I \hyperlink{calib3d_8hpp_a712cc81422da123251ea9898d506c10c}{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T} (0)
+\item 
+const \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} int \hyperlink{legacy_8hpp_adc6d8f8df4f2d0df2ece83c432e2681f}{method} \\*
+double ransac\-Reproj\-Threshold \hyperlink{calib3d_8hpp_a5e4a1eceb7512a9262e4aff3ef73294b}{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T} (3)
+\item 
+const \hyperlink{structCvMat}{Cv\-Mat} const \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvSize}{Cv\-Size} \\*
+\hyperlink{structCvMat}{Cv\-Mat} double aspect\-\_\-ratio \hyperlink{calib3d_8hpp_a3539fd799bb17d4e14ec4294e31468d7}{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T} (1.))
+\item 
+\hyperlink{structCvSize}{Cv\-Size} \hyperlink{structCvPoint2D32f}{Cv\-Point2\-D32f} int \\*
+$\ast$\hyperlink{imgproc__c_8h_af4c82033b6451ac1c5ca8c80855f783b}{corner\-\_\-count} int \hyperlink{highgui__c_8h_ae51e3a2d4365e85db9630dd3ce9508db}{flags} \hyperlink{calib3d_8hpp_a014c8310a6b7371034d7658acd3d1eab}{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T} (\hyperlink{calib3d_8hpp_a34614fa660c6706b09d658142795ca5e}{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-C\-B\-\_\-\-A\-D\-A\-P\-T\-I\-V\-E\-\_\-\-T\-H\-R\-E\-S\-H}+\hyperlink{calib3d_8hpp_ad7483a0ebfd83bd0ea11b6281309988d}{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-C\-B\-\_\-\-N\-O\-R\-M\-A\-L\-I\-Z\-E\-\_\-\-I\-M\-A\-G\-E}))
+\item 
+\hyperlink{calib3d_8hpp_a0a2c9c2e98350aed6c428c49f7f3ae49}{C\-V\-A\-P\-I} (double) cv\-Calibrate\-Camera2(const \hyperlink{structCvMat}{Cv\-Mat} $\ast$object\-\_\-points
+\item 
+const \hyperlink{structCvMat}{Cv\-Mat} const \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvSize}{Cv\-Size} \\*
+\hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} \\*
+$\ast$rotation\-\_\-vectors \hyperlink{structCvMat}{Cv\-Mat} \\*
+$\ast$translation\-\_\-vectors int \hyperlink{highgui__c_8h_ae51e3a2d4365e85db9630dd3ce9508db}{flags} \\*
+\hyperlink{structCvTermCriteria}{Cv\-Term\-Criteria} term\-\_\-crit \hyperlink{calib3d_8hpp_adbf6b31c678a8a7c3d9b48a0adf2be88}{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T} (\hyperlink{core_2types__c_8h_a798d54ea85fdbd8dad543c3b8721763a}{cv\-Term\-Criteria}(\hyperlink{core_2types__c_8h_a4f6009f584607989e908868751567fe7}{C\-V\-\_\-\-T\-E\-R\-M\-C\-R\-I\-T\-\_\-\-I\-T\-E\-R}+\hyperlink{core_2types__c_8h_a3d22bb48d24b85a1bbc5d10e0ddcff33}{C\-V\-\_\-\-T\-E\-R\-M\-C\-R\-I\-T\-\_\-\-E\-P\-S}, 30, D\-B\-L\-\_\-\-E\-P\-S\-I\-L\-O\-N)))
+\item 
+const \hyperlink{structCvMat}{Cv\-Mat} const \hyperlink{structCvMat}{Cv\-Mat} const \\*
+\hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} \\*
+\hyperlink{structCvSize}{Cv\-Size} \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} $\ast$E \\*
+\hyperlink{structCvMat}{Cv\-Mat} $\ast$\hyperlink{calib3d_8hpp_acc93c21c0e709826b318c946961af8fc}{F} \hyperlink{structCvTermCriteria}{Cv\-Term\-Criteria} \\*
+term\-\_\-crit \hyperlink{calib3d_8hpp_a863b9509119058c3749d4a911f70503d}{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T} (\hyperlink{core_2types__c_8h_a798d54ea85fdbd8dad543c3b8721763a}{cv\-Term\-Criteria}(\hyperlink{core_2types__c_8h_a4f6009f584607989e908868751567fe7}{C\-V\-\_\-\-T\-E\-R\-M\-C\-R\-I\-T\-\_\-\-I\-T\-E\-R}+\hyperlink{core_2types__c_8h_a3d22bb48d24b85a1bbc5d10e0ddcff33}{C\-V\-\_\-\-T\-E\-R\-M\-C\-R\-I\-T\-\_\-\-E\-P\-S}, 30, 1e-\/6))
+\item 
+const \hyperlink{structCvMat}{Cv\-Mat} const \hyperlink{structCvMat}{Cv\-Mat} const \\*
+\hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} \\*
+\hyperlink{structCvSize}{Cv\-Size} \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} $\ast$E \\*
+\hyperlink{structCvMat}{Cv\-Mat} $\ast$\hyperlink{calib3d_8hpp_acc93c21c0e709826b318c946961af8fc}{F} \hyperlink{structCvTermCriteria}{Cv\-Term\-Criteria} \\*
+term\-\_\-crit int \hyperlink{highgui__c_8h_ae51e3a2d4365e85db9630dd3ce9508db}{flags} \hyperlink{calib3d_8hpp_a6d6144c4029223c4824c95c2dd02b097}{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T} (\hyperlink{calib3d_8hpp_a0cdd706eab6c916b853b80335d7b2891}{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-I\-N\-T\-R\-I\-N\-S\-I\-C}))
+\item 
+const \hyperlink{structCvMat}{Cv\-Mat} const \hyperlink{structCvMat}{Cv\-Mat} const \\*
+\hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvSize}{Cv\-Size} const \hyperlink{structCvMat}{Cv\-Mat} const \\*
+\hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} \\*
+\hyperlink{structCvMat}{Cv\-Mat} $\ast$\hyperlink{calib3d_8hpp_a29d14baac63d86e6bbb0b03861384e2c}{Q} int \hyperlink{highgui__c_8h_ae51e3a2d4365e85db9630dd3ce9508db}{flags} \hyperlink{calib3d_8hpp_a611aa2b635978ffe3ad287df46e24cf3}{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T} (\hyperlink{calib3d_8hpp_a5e439a1d2e4b65828121d1626a50a4f2}{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-Z\-E\-R\-O\-\_\-\-D\-I\-S\-P\-A\-R\-I\-T\-Y})
+\item 
+const \hyperlink{structCvMat}{Cv\-Mat} const \hyperlink{structCvMat}{Cv\-Mat} const \\*
+\hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvSize}{Cv\-Size} const \hyperlink{structCvMat}{Cv\-Mat} const \\*
+\hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} \\*
+\hyperlink{structCvMat}{Cv\-Mat} $\ast$\hyperlink{calib3d_8hpp_a29d14baac63d86e6bbb0b03861384e2c}{Q} int \hyperlink{highgui__c_8h_ae51e3a2d4365e85db9630dd3ce9508db}{flags} double \\*
+\hyperlink{legacy_8hpp_a95fc8341ca418bc06b36160632af6d47}{alpha} \hyperlink{calib3d_8hpp_abf1a4417a5028a8e10bab7b1cb53ae33}{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T} (-\/1)
+\item 
+const \hyperlink{structCvMat}{Cv\-Mat} const \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvSize}{Cv\-Size} \\*
+\hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} double \hyperlink{legacy_8hpp_ad486c230317acbbf60577b15e027dc73}{threshold} \hyperlink{calib3d_8hpp_a2367ddbbdd4a5f81426f6681cfa8247a}{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T} (5))
+\item 
+\hyperlink{calib3d_8hpp_ac226efee7940c571dda822e7d2d12936}{C\-V\-A\-P\-I} (\hyperlink{structCvStereoBMState}{Cv\-Stereo\-B\-M\-State} $\ast$) cv\-Create\-Stereo\-B\-M\-State(int preset \hyperlink{tracking_8hpp_a99fa8d92489df6aa329d7166d52cbfb4}{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}(\hyperlink{calib3d_8hpp_a908e78331515a3cafec20b0ea5b2e3a2}{C\-V\-\_\-\-S\-T\-E\-R\-E\-O\-\_\-\-B\-M\-\_\-\-B\-A\-S\-I\-C})
+\item 
+\hyperlink{calib3d_8hpp_af71b8771c8bfe3081156be88ac875ccc}{C\-V\-A\-P\-I} (\hyperlink{structCvRect}{Cv\-Rect}) cv\-Get\-Valid\-Disparity\-R\-O\-I(\hyperlink{structCvRect}{Cv\-Rect} roi1
+\item 
+const \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} int int int \\*
+disp12\-Max\-Diff \hyperlink{calib3d_8hpp_aa67e798e7add63dcc20074b6af9f5603}{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T} (1))
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{calib3d_8hpp_aee23d4be8a352471e2c7d05d83420d72}{point\-\_\-count}
+\item 
+\hyperlink{structCvPoint2D32f}{Cv\-Point2\-D32f} $\ast$ \hyperlink{calib3d_8hpp_a9089b4bcbecdc7f201448956b5929cfb}{image\-\_\-points}
+\item 
+\hyperlink{structCvPoint2D32f}{Cv\-Point2\-D32f} double \hyperlink{calib3d_8hpp_ac0b783fc5dcc5cfa52b26b3fe0f0c94d}{focal\-\_\-length}
+\item 
+\hyperlink{structCvPoint2D32f}{Cv\-Point2\-D32f} double \hyperlink{structCvTermCriteria}{Cv\-Term\-Criteria} \hyperlink{calib3d_8hpp_ac10fcea99ab081e745366c6f5bbc8eb5}{criteria}
+\item 
+\hyperlink{structCvPoint2D32f}{Cv\-Point2\-D32f} double \\*
+\hyperlink{structCvTermCriteria}{Cv\-Term\-Criteria} float $\ast$ \hyperlink{calib3d_8hpp_a9d6ed68fa91ca104fd89a6690ca1bd18}{rotation\-\_\-matrix}
+\item 
+\hyperlink{structCvPoint2D32f}{Cv\-Point2\-D32f} double \\*
+\hyperlink{structCvTermCriteria}{Cv\-Term\-Criteria} float float $\ast$ \hyperlink{calib3d_8hpp_a4fd3a0d35f25e6a3e038c71c431c1166}{translation\-\_\-vector}
+\item 
+double \hyperlink{calib3d_8hpp_a4d5f9774a8db42e354698e465ea49fc1}{err\-\_\-prob}
+\item 
+double int \hyperlink{calib3d_8hpp_aa3f8329d3092f55cbeb2f019aeb0140e}{model\-\_\-points}
+\item 
+double int int \hyperlink{calib3d_8hpp_a4ab0ccb69523029b3f46895a4d7ea1d5}{max\-\_\-iters}
+\item 
+\hyperlink{structCvMat}{Cv\-Mat} $\ast$ \hyperlink{calib3d_8hpp_ad07a04090e384b855c78ca9fb981b7a8}{dst}
+\item 
+const \hyperlink{structCvMat}{Cv\-Mat} $\ast$ \hyperlink{calib3d_8hpp_acc2fdbee95dbdd176a73ce514367bba4}{points2}
+\item 
+const \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} $\ast$ \hyperlink{calib3d_8hpp_a44badab4dc39862b0c9d399034e4abc7}{fundamental\-\_\-matrix}
+\item 
+int \hyperlink{calib3d_8hpp_af29d0bb3c3b8f9f1132c7a82e53f8c65}{which\-\_\-image}
+\item 
+int const \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} $\ast$ \hyperlink{calib3d_8hpp_a33ff6df17251dd3a4807a64048f2c11b}{correspondent\-\_\-lines}
+\item 
+\hyperlink{structCvMat}{Cv\-Mat} $\ast$ \hyperlink{calib3d_8hpp_abebe4d619ecb5103b8488350cdaab219}{proj\-Matr2}
+\item 
+\hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} $\ast$ \hyperlink{calib3d_8hpp_a9bd02faecce9e89211ed2b0c86b1c76e}{proj\-Points1}
+\item 
+\hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} $\ast$ \hyperlink{calib3d_8hpp_aa01a248a8a11fee190913a6ea7110418}{proj\-Points2}
+\item 
+\hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} $\ast$ \hyperlink{calib3d_8hpp_ac0dd99b594246a84f7f13da491eabd28}{points4\-D}
+\item 
+\hyperlink{structCvMat}{Cv\-Mat} $\ast$ \hyperlink{calib3d_8hpp_a3b72d48e58a35993385885cbc187c91d}{points1}
+\item 
+\hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} $\ast$ \hyperlink{calib3d_8hpp_a66c54858764f907c0d9a00f62fabc9ea}{new\-\_\-points1}
+\item 
+\hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} $\ast$ \hyperlink{calib3d_8hpp_a18766e2def35cebada05fcbe904a7ae5}{new\-\_\-points2}
+\item 
+const \hyperlink{structCvMat}{Cv\-Mat} $\ast$ \hyperlink{calib3d_8hpp_a160270bcd068a17164fbd9219e73660b}{dist\-\_\-coeffs}
+\item 
+const \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvSize}{Cv\-Size} \hyperlink{calib3d_8hpp_a3c5695da25794e723582c8b5ccff544c}{image\-\_\-size}
+\item 
+const \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvSize}{Cv\-Size} double \hyperlink{calib3d_8hpp_a95fc8341ca418bc06b36160632af6d47}{alpha}
+\item 
+const \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvSize}{Cv\-Size} double \hyperlink{structCvMat}{Cv\-Mat} $\ast$ \hyperlink{calib3d_8hpp_a98bbb2edcf16e87c8956cca77c1362c2}{new\-\_\-camera\-\_\-matrix}
+\item 
+const \hyperlink{structCvMat}{Cv\-Mat} $\ast$ \hyperlink{calib3d_8hpp_aea2ed824645eeb1982a86e38b6409b7e}{dst\-\_\-points}
+\item 
+const \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} $\ast$ \hyperlink{calib3d_8hpp_a23bb203201ad0ce051975280b687252e}{homography}
+\item 
+\hyperlink{structCvMat}{Cv\-Mat} $\ast$ \hyperlink{calib3d_8hpp_a5662832417cb83b0b9738d0553ecc83e}{matrix\-R}
+\item 
+\hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} $\ast$ \hyperlink{calib3d_8hpp_adf2d2703938737f3ae6f0b88f002f90b}{matrix\-Q}
+\item 
+\hyperlink{structCvMat}{Cv\-Mat} $\ast$ \hyperlink{calib3d_8hpp_a216f2cff747e32bc6606e1b93c514f9e}{calib\-Matr}
+\item 
+\hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} $\ast$ \hyperlink{calib3d_8hpp_a35a11ed99b21a1dc615e57378188030b}{rot\-Matr}
+\item 
+\hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} $\ast$ \hyperlink{calib3d_8hpp_ab90a2c4d9bf1dadcea899394d2e0ecc0}{pos\-Vect}
+\item 
+const \hyperlink{structCvMat}{Cv\-Mat} $\ast$ \hyperlink{calib3d_8hpp_a6d4083f2ac06664833ec1fb9a0ba083e}{B}
+\item 
+const \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} $\ast$ \hyperlink{calib3d_8hpp_a7630a7e01052598112494c366b46140b}{d\-A\-Bd\-A}
+\item 
+const \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} $\ast$ \hyperlink{calib3d_8hpp_a51e7b80873601bf8391fa00e6bdd7d11}{d\-A\-Bd\-B}
+\item 
+const \hyperlink{structCvMat}{Cv\-Mat} $\ast$ \hyperlink{calib3d_8hpp_a8e8960afc063cf229390f8ff4a80c903}{\-\_\-tvec1}
+\item 
+const \hyperlink{structCvMat}{Cv\-Mat} const \hyperlink{structCvMat}{Cv\-Mat} $\ast$ \hyperlink{calib3d_8hpp_a65cae79c8e8dc70dcbfd9a1ef7977c24}{\-\_\-rvec2}
+\item 
+const \hyperlink{structCvMat}{Cv\-Mat} const \hyperlink{structCvMat}{Cv\-Mat} const \\*
+\hyperlink{structCvMat}{Cv\-Mat} $\ast$ \hyperlink{calib3d_8hpp_a433652c7d297d21df47eeb8cbc9b09d6}{\-\_\-tvec2}
+\item 
+const \hyperlink{structCvMat}{Cv\-Mat} const \hyperlink{structCvMat}{Cv\-Mat} const \\*
+\hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} $\ast$ \hyperlink{calib3d_8hpp_a5110838661f3bf726c40a4c6a3147bf8}{\-\_\-rvec3}
+\item 
+const \hyperlink{structCvMat}{Cv\-Mat} const \hyperlink{structCvMat}{Cv\-Mat} const \\*
+\hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} $\ast$ \hyperlink{calib3d_8hpp_a20d9fcd9a04b46403e59a28ecf0ae455}{\-\_\-tvec3}
+\item 
+const \hyperlink{structCvMat}{Cv\-Mat} $\ast$ \hyperlink{calib3d_8hpp_a7537ad9f335658c6a6f2641bc913b6d8}{rotation\-\_\-vector}
+\item 
+const \hyperlink{structCvMat}{Cv\-Mat} const \hyperlink{structCvMat}{Cv\-Mat} const \\*
+\hyperlink{structCvMat}{Cv\-Mat} $\ast$ \hyperlink{calib3d_8hpp_a7c4a9fa12922851216c13fd104e3358b}{camera\-\_\-matrix}
+\item 
+const \hyperlink{structCvMat}{Cv\-Mat} const \hyperlink{structCvMat}{Cv\-Mat} const \\*
+\hyperlink{structCvMat}{Cv\-Mat} const \hyperlink{structCvMat}{Cv\-Mat} $\ast$ \hyperlink{calib3d_8hpp_a6bfd41b33cf2947cd286c77e4bf7edd8}{distortion\-\_\-coeffs}
+\item 
+const \hyperlink{structCvMat}{Cv\-Mat} const \hyperlink{structCvMat}{Cv\-Mat} $\ast$ \hyperlink{calib3d_8hpp_a5cf988c63b6068a0e5767053be288375}{npoints}
+\item 
+\hyperlink{structCvSize}{Cv\-Size} \hyperlink{calib3d_8hpp_ae97003f8d5c64cdfb99f6f2606d121b6}{size}
+\item 
+\hyperlink{structCvSize}{Cv\-Size} \hyperlink{calib3d_8hpp_ada2f272bd1d466c84b2b3cbe3c7679a6}{pattern\-\_\-size}
+\item 
+\hyperlink{structCvSize}{Cv\-Size} \hyperlink{structCvPoint2D32f}{Cv\-Point2\-D32f} $\ast$ \hyperlink{calib3d_8hpp_a7c963d5c0be2901e72c3762c1ddfcee6}{corners}
+\item 
+\hyperlink{structCvSize}{Cv\-Size} \hyperlink{structCvPoint2D32f}{Cv\-Point2\-D32f} int \hyperlink{calib3d_8hpp_a88d78b1935cd8bdee70a44eaaf326b1e}{count}
+\item 
+\hyperlink{structCvSize}{Cv\-Size} \hyperlink{structCvPoint2D32f}{Cv\-Point2\-D32f} int int \hyperlink{calib3d_8hpp_aa1c0ba6afc9fa28486187776c13930af}{pattern\-\_\-was\-\_\-found}
+\item 
+const \hyperlink{structCvMat}{Cv\-Mat} const \hyperlink{structCvMat}{Cv\-Mat} $\ast$ \hyperlink{calib3d_8hpp_a50ee04898c1ffb9bd7451c219d1d5485}{point\-\_\-counts}
+\item 
+const \hyperlink{structCvMat}{Cv\-Mat} $\ast$ \hyperlink{calib3d_8hpp_a2fadf48b4380cd957a2bc3ab7ec6a4e7}{image\-\_\-points1}
+\item 
+const \hyperlink{structCvMat}{Cv\-Mat} const \hyperlink{structCvMat}{Cv\-Mat} $\ast$ \hyperlink{calib3d_8hpp_a0161f225b19505eaec260295e55d4b91}{image\-\_\-points2}
+\item 
+const \hyperlink{structCvMat}{Cv\-Mat} const \hyperlink{structCvMat}{Cv\-Mat} const \\*
+\hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} $\ast$ \hyperlink{calib3d_8hpp_a7e3af207bab42afa1b6e8ba43f65a99c}{camera\-\_\-matrix1}
+\item 
+const \hyperlink{structCvMat}{Cv\-Mat} const \hyperlink{structCvMat}{Cv\-Mat} const \\*
+\hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} $\ast$ \hyperlink{calib3d_8hpp_a78e7bc83a2f124c23d16930d397b065e}{dist\-\_\-coeffs1}
+\item 
+const \hyperlink{structCvMat}{Cv\-Mat} const \hyperlink{structCvMat}{Cv\-Mat} const \\*
+\hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} $\ast$ \hyperlink{calib3d_8hpp_a4387951c8d45b208a57d0e7e8046d828}{camera\-\_\-matrix2}
+\item 
+const \hyperlink{structCvMat}{Cv\-Mat} const \hyperlink{structCvMat}{Cv\-Mat} const \\*
+\hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} $\ast$ \hyperlink{calib3d_8hpp_a897bcee1df5b946487cd588874ad2c9e}{dist\-\_\-coeffs2}
+\item 
+const \hyperlink{structCvMat}{Cv\-Mat} const \hyperlink{structCvMat}{Cv\-Mat} const \\*
+\hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} \\*
+\hyperlink{structCvSize}{Cv\-Size} \hyperlink{structCvMat}{Cv\-Mat} $\ast$ \hyperlink{calib3d_8hpp_a2ea7d948846e496014d0468ad2c8807f}{R}
+\item 
+const \hyperlink{structCvMat}{Cv\-Mat} const \hyperlink{structCvMat}{Cv\-Mat} const \\*
+\hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} \\*
+\hyperlink{structCvSize}{Cv\-Size} \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} $\ast$ \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T}
+\item 
+const \hyperlink{structCvMat}{Cv\-Mat} const \hyperlink{structCvMat}{Cv\-Mat} const \\*
+\hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvSize}{Cv\-Size} const \hyperlink{structCvMat}{Cv\-Mat} const \\*
+\hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} $\ast$ \hyperlink{calib3d_8hpp_ab4d5cbb79188a091449ea6430cd5ec59}{R1}
+\item 
+const \hyperlink{structCvMat}{Cv\-Mat} const \hyperlink{structCvMat}{Cv\-Mat} const \\*
+\hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvSize}{Cv\-Size} const \hyperlink{structCvMat}{Cv\-Mat} const \\*
+\hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} $\ast$ \hyperlink{calib3d_8hpp_a08847b11703596b1db049ef98d450eaa}{R2}
+\item 
+const \hyperlink{structCvMat}{Cv\-Mat} const \hyperlink{structCvMat}{Cv\-Mat} const \\*
+\hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvSize}{Cv\-Size} const \hyperlink{structCvMat}{Cv\-Mat} const \\*
+\hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} $\ast$ \hyperlink{calib3d_8hpp_a81046431a4ff9a0e8b93536f19efac38}{P1}
+\item 
+const \hyperlink{structCvMat}{Cv\-Mat} const \hyperlink{structCvMat}{Cv\-Mat} const \\*
+\hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvSize}{Cv\-Size} const \hyperlink{structCvMat}{Cv\-Mat} const \\*
+\hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} $\ast$ \hyperlink{calib3d_8hpp_a704ac1a3954b1c810117417a050e7f76}{P2}
+\item 
+const \hyperlink{structCvMat}{Cv\-Mat} const \hyperlink{structCvMat}{Cv\-Mat} $\ast$ \hyperlink{calib3d_8hpp_acc93c21c0e709826b318c946961af8fc}{F}
+\item 
+const \hyperlink{structCvMat}{Cv\-Mat} const \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvSize}{Cv\-Size} \hyperlink{calib3d_8hpp_a5573e050b99430dd825c80ad319e0cdc}{img\-\_\-size}
+\item 
+const \hyperlink{structCvMat}{Cv\-Mat} const \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvSize}{Cv\-Size} \\*
+\hyperlink{structCvMat}{Cv\-Mat} $\ast$ \hyperlink{calib3d_8hpp_ae879e5c354958f2a48e55ccadd4d50d4}{H1}
+\item 
+const \hyperlink{structCvMat}{Cv\-Mat} const \hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvSize}{Cv\-Size} \\*
+\hyperlink{structCvMat}{Cv\-Mat} \hyperlink{structCvMat}{Cv\-Mat} $\ast$ \hyperlink{calib3d_8hpp_a648b24a94b6a5ca44f01cc7b4157e45d}{H2}
+\item 
+const \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} $\ast$ \hyperlink{calib3d_8hpp_a6b04b878081bf724144b73c75dfd1894}{right}
+\item 
+const \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} $\ast$ \hyperlink{calib3d_8hpp_acd2ef073a3a4984e0a0ebac5c7e179fd}{disparity}
+\item 
+const \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} \hyperlink{structCvStereoBMState}{Cv\-Stereo\-B\-M\-State} $\ast$ \hyperlink{calib3d_8hpp_ad823b72173a53c77d8a75ca4a2b42a54}{state}
+\item 
+\hyperlink{structCvRect}{Cv\-Rect} \hyperlink{calib3d_8hpp_ae74bb06aacad0765e19fba1c657f9f97}{roi2}
+\item 
+\hyperlink{structCvRect}{Cv\-Rect} int \hyperlink{calib3d_8hpp_aaaa7662dcc8382d7031487b880d91677}{min\-Disparity}
+\item 
+\hyperlink{structCvRect}{Cv\-Rect} int int \hyperlink{calib3d_8hpp_a833b3f1fda9b69decddcee122e27c2fb}{number\-Of\-Disparities}
+\item 
+\hyperlink{structCvRect}{Cv\-Rect} int int int \hyperlink{calib3d_8hpp_a9ee9004051a34720fd22961dd06e5fe5}{S\-A\-D\-Window\-Size}
+\item 
+const \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} $\ast$ \hyperlink{calib3d_8hpp_a3f0b80b177a2a2f0f15aadb947066e2c}{cost}
+\item 
+\hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} $\ast$ \hyperlink{calib3d_8hpp_a4dcc4036d7b5af33c5d137a5acbd7e61}{\-\_\-3d\-Image}
+\item 
+\hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} const \hyperlink{structCvMat}{Cv\-Mat} $\ast$ \hyperlink{calib3d_8hpp_a29d14baac63d86e6bbb0b03861384e2c}{Q}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{calib3d_8hpp_a34614fa660c6706b09d658142795ca5e}{\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-C\-B\-\_\-\-A\-D\-A\-P\-T\-I\-V\-E\-\_\-\-T\-H\-R\-E\-S\-H@{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-C\-B\-\_\-\-A\-D\-A\-P\-T\-I\-V\-E\-\_\-\-T\-H\-R\-E\-S\-H}}
+\index{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-C\-B\-\_\-\-A\-D\-A\-P\-T\-I\-V\-E\-\_\-\-T\-H\-R\-E\-S\-H@{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-C\-B\-\_\-\-A\-D\-A\-P\-T\-I\-V\-E\-\_\-\-T\-H\-R\-E\-S\-H}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-C\-B\-\_\-\-A\-D\-A\-P\-T\-I\-V\-E\-\_\-\-T\-H\-R\-E\-S\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-C\-B\-\_\-\-A\-D\-A\-P\-T\-I\-V\-E\-\_\-\-T\-H\-R\-E\-S\-H~1}}\label{calib3d_8hpp_a34614fa660c6706b09d658142795ca5e}
+\hypertarget{calib3d_8hpp_a2f12d56bae5fbd3eb614d930fbbf56eb}{\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-C\-B\-\_\-\-F\-A\-S\-T\-\_\-\-C\-H\-E\-C\-K@{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-C\-B\-\_\-\-F\-A\-S\-T\-\_\-\-C\-H\-E\-C\-K}}
+\index{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-C\-B\-\_\-\-F\-A\-S\-T\-\_\-\-C\-H\-E\-C\-K@{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-C\-B\-\_\-\-F\-A\-S\-T\-\_\-\-C\-H\-E\-C\-K}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-C\-B\-\_\-\-F\-A\-S\-T\-\_\-\-C\-H\-E\-C\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-C\-B\-\_\-\-F\-A\-S\-T\-\_\-\-C\-H\-E\-C\-K~8}}\label{calib3d_8hpp_a2f12d56bae5fbd3eb614d930fbbf56eb}
+\hypertarget{calib3d_8hpp_af91a8412f3d681fdc8f9f8ceac25fea0}{\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-C\-B\-\_\-\-F\-I\-L\-T\-E\-R\-\_\-\-Q\-U\-A\-D\-S@{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-C\-B\-\_\-\-F\-I\-L\-T\-E\-R\-\_\-\-Q\-U\-A\-D\-S}}
+\index{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-C\-B\-\_\-\-F\-I\-L\-T\-E\-R\-\_\-\-Q\-U\-A\-D\-S@{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-C\-B\-\_\-\-F\-I\-L\-T\-E\-R\-\_\-\-Q\-U\-A\-D\-S}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-C\-B\-\_\-\-F\-I\-L\-T\-E\-R\-\_\-\-Q\-U\-A\-D\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-C\-B\-\_\-\-F\-I\-L\-T\-E\-R\-\_\-\-Q\-U\-A\-D\-S~4}}\label{calib3d_8hpp_af91a8412f3d681fdc8f9f8ceac25fea0}
+\hypertarget{calib3d_8hpp_ad7483a0ebfd83bd0ea11b6281309988d}{\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-C\-B\-\_\-\-N\-O\-R\-M\-A\-L\-I\-Z\-E\-\_\-\-I\-M\-A\-G\-E@{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-C\-B\-\_\-\-N\-O\-R\-M\-A\-L\-I\-Z\-E\-\_\-\-I\-M\-A\-G\-E}}
+\index{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-C\-B\-\_\-\-N\-O\-R\-M\-A\-L\-I\-Z\-E\-\_\-\-I\-M\-A\-G\-E@{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-C\-B\-\_\-\-N\-O\-R\-M\-A\-L\-I\-Z\-E\-\_\-\-I\-M\-A\-G\-E}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-C\-B\-\_\-\-N\-O\-R\-M\-A\-L\-I\-Z\-E\-\_\-\-I\-M\-A\-G\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-C\-B\-\_\-\-N\-O\-R\-M\-A\-L\-I\-Z\-E\-\_\-\-I\-M\-A\-G\-E~2}}\label{calib3d_8hpp_ad7483a0ebfd83bd0ea11b6281309988d}
+\hypertarget{calib3d_8hpp_a6e16c84b20076f05c8fc1568e3a133cf}{\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-A\-S\-P\-E\-C\-T\-\_\-\-R\-A\-T\-I\-O@{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-A\-S\-P\-E\-C\-T\-\_\-\-R\-A\-T\-I\-O}}
+\index{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-A\-S\-P\-E\-C\-T\-\_\-\-R\-A\-T\-I\-O@{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-A\-S\-P\-E\-C\-T\-\_\-\-R\-A\-T\-I\-O}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-A\-S\-P\-E\-C\-T\-\_\-\-R\-A\-T\-I\-O}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-A\-S\-P\-E\-C\-T\-\_\-\-R\-A\-T\-I\-O~2}}\label{calib3d_8hpp_a6e16c84b20076f05c8fc1568e3a133cf}
+\hypertarget{calib3d_8hpp_a1abada166b1993a95bb42051e16b5b79}{\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-F\-O\-C\-A\-L\-\_\-\-L\-E\-N\-G\-T\-H@{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-F\-O\-C\-A\-L\-\_\-\-L\-E\-N\-G\-T\-H}}
+\index{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-F\-O\-C\-A\-L\-\_\-\-L\-E\-N\-G\-T\-H@{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-F\-O\-C\-A\-L\-\_\-\-L\-E\-N\-G\-T\-H}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-F\-O\-C\-A\-L\-\_\-\-L\-E\-N\-G\-T\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-F\-O\-C\-A\-L\-\_\-\-L\-E\-N\-G\-T\-H~16}}\label{calib3d_8hpp_a1abada166b1993a95bb42051e16b5b79}
+\hypertarget{calib3d_8hpp_a0cdd706eab6c916b853b80335d7b2891}{\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-I\-N\-T\-R\-I\-N\-S\-I\-C@{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-I\-N\-T\-R\-I\-N\-S\-I\-C}}
+\index{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-I\-N\-T\-R\-I\-N\-S\-I\-C@{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-I\-N\-T\-R\-I\-N\-S\-I\-C}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-I\-N\-T\-R\-I\-N\-S\-I\-C}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-I\-N\-T\-R\-I\-N\-S\-I\-C~256}}\label{calib3d_8hpp_a0cdd706eab6c916b853b80335d7b2891}
+\hypertarget{calib3d_8hpp_a324ef4dd5afdaef2a0ecdd0fe7860311}{\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-K1@{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-K1}}
+\index{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-K1@{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-K1}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-K1}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-K1~32}}\label{calib3d_8hpp_a324ef4dd5afdaef2a0ecdd0fe7860311}
+\hypertarget{calib3d_8hpp_a84267d64ddfc4d3355f11183941c1047}{\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-K2@{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-K2}}
+\index{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-K2@{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-K2}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-K2}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-K2~64}}\label{calib3d_8hpp_a84267d64ddfc4d3355f11183941c1047}
+\hypertarget{calib3d_8hpp_af31634bca23f5213abbf793b2570488f}{\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-K3@{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-K3}}
+\index{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-K3@{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-K3}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-K3}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-K3~128}}\label{calib3d_8hpp_af31634bca23f5213abbf793b2570488f}
+\hypertarget{calib3d_8hpp_a39d224b0ce447b4f3dd360a2d9aae906}{\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-K4@{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-K4}}
+\index{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-K4@{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-K4}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-K4}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-K4~2048}}\label{calib3d_8hpp_a39d224b0ce447b4f3dd360a2d9aae906}
+\hypertarget{calib3d_8hpp_aca023f78c814739894b85446847df06a}{\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-K5@{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-K5}}
+\index{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-K5@{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-K5}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-K5}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-K5~4096}}\label{calib3d_8hpp_aca023f78c814739894b85446847df06a}
+\hypertarget{calib3d_8hpp_aa10447c424fa53e3aa8e9fe308355463}{\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-K6@{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-K6}}
+\index{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-K6@{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-K6}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-K6}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-K6~8192}}\label{calib3d_8hpp_aa10447c424fa53e3aa8e9fe308355463}
+\hypertarget{calib3d_8hpp_a1d7328c564c85ac13da01f5fb715dde5}{\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-P\-R\-I\-N\-C\-I\-P\-A\-L\-\_\-\-P\-O\-I\-N\-T@{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-P\-R\-I\-N\-C\-I\-P\-A\-L\-\_\-\-P\-O\-I\-N\-T}}
+\index{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-P\-R\-I\-N\-C\-I\-P\-A\-L\-\_\-\-P\-O\-I\-N\-T@{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-P\-R\-I\-N\-C\-I\-P\-A\-L\-\_\-\-P\-O\-I\-N\-T}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-P\-R\-I\-N\-C\-I\-P\-A\-L\-\_\-\-P\-O\-I\-N\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-P\-R\-I\-N\-C\-I\-P\-A\-L\-\_\-\-P\-O\-I\-N\-T~4}}\label{calib3d_8hpp_a1d7328c564c85ac13da01f5fb715dde5}
+\hypertarget{calib3d_8hpp_acce494e150af097f8131853935b816aa}{\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-R\-A\-T\-I\-O\-N\-A\-L\-\_\-\-M\-O\-D\-E\-L@{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-R\-A\-T\-I\-O\-N\-A\-L\-\_\-\-M\-O\-D\-E\-L}}
+\index{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-R\-A\-T\-I\-O\-N\-A\-L\-\_\-\-M\-O\-D\-E\-L@{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-R\-A\-T\-I\-O\-N\-A\-L\-\_\-\-M\-O\-D\-E\-L}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-R\-A\-T\-I\-O\-N\-A\-L\-\_\-\-M\-O\-D\-E\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-R\-A\-T\-I\-O\-N\-A\-L\-\_\-\-M\-O\-D\-E\-L~16384}}\label{calib3d_8hpp_acce494e150af097f8131853935b816aa}
+\hypertarget{calib3d_8hpp_a622637de619e6f335033a431b747d987}{\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-S\-A\-M\-E\-\_\-\-F\-O\-C\-A\-L\-\_\-\-L\-E\-N\-G\-T\-H@{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-S\-A\-M\-E\-\_\-\-F\-O\-C\-A\-L\-\_\-\-L\-E\-N\-G\-T\-H}}
+\index{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-S\-A\-M\-E\-\_\-\-F\-O\-C\-A\-L\-\_\-\-L\-E\-N\-G\-T\-H@{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-S\-A\-M\-E\-\_\-\-F\-O\-C\-A\-L\-\_\-\-L\-E\-N\-G\-T\-H}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-S\-A\-M\-E\-\_\-\-F\-O\-C\-A\-L\-\_\-\-L\-E\-N\-G\-T\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-S\-A\-M\-E\-\_\-\-F\-O\-C\-A\-L\-\_\-\-L\-E\-N\-G\-T\-H~512}}\label{calib3d_8hpp_a622637de619e6f335033a431b747d987}
+\hypertarget{calib3d_8hpp_abfe87ad0401432b756600c0dbf04da27}{\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-U\-S\-E\-\_\-\-I\-N\-T\-R\-I\-N\-S\-I\-C\-\_\-\-G\-U\-E\-S\-S@{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-U\-S\-E\-\_\-\-I\-N\-T\-R\-I\-N\-S\-I\-C\-\_\-\-G\-U\-E\-S\-S}}
+\index{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-U\-S\-E\-\_\-\-I\-N\-T\-R\-I\-N\-S\-I\-C\-\_\-\-G\-U\-E\-S\-S@{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-U\-S\-E\-\_\-\-I\-N\-T\-R\-I\-N\-S\-I\-C\-\_\-\-G\-U\-E\-S\-S}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-U\-S\-E\-\_\-\-I\-N\-T\-R\-I\-N\-S\-I\-C\-\_\-\-G\-U\-E\-S\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-U\-S\-E\-\_\-\-I\-N\-T\-R\-I\-N\-S\-I\-C\-\_\-\-G\-U\-E\-S\-S~1}}\label{calib3d_8hpp_abfe87ad0401432b756600c0dbf04da27}
+\hypertarget{calib3d_8hpp_a5e439a1d2e4b65828121d1626a50a4f2}{\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-Z\-E\-R\-O\-\_\-\-D\-I\-S\-P\-A\-R\-I\-T\-Y@{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-Z\-E\-R\-O\-\_\-\-D\-I\-S\-P\-A\-R\-I\-T\-Y}}
+\index{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-Z\-E\-R\-O\-\_\-\-D\-I\-S\-P\-A\-R\-I\-T\-Y@{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-Z\-E\-R\-O\-\_\-\-D\-I\-S\-P\-A\-R\-I\-T\-Y}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-Z\-E\-R\-O\-\_\-\-D\-I\-S\-P\-A\-R\-I\-T\-Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-Z\-E\-R\-O\-\_\-\-D\-I\-S\-P\-A\-R\-I\-T\-Y~1024}}\label{calib3d_8hpp_a5e439a1d2e4b65828121d1626a50a4f2}
+\hypertarget{calib3d_8hpp_a719461ad9ee310c0875078239dfb0cfb}{\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-Z\-E\-R\-O\-\_\-\-T\-A\-N\-G\-E\-N\-T\-\_\-\-D\-I\-S\-T@{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-Z\-E\-R\-O\-\_\-\-T\-A\-N\-G\-E\-N\-T\-\_\-\-D\-I\-S\-T}}
+\index{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-Z\-E\-R\-O\-\_\-\-T\-A\-N\-G\-E\-N\-T\-\_\-\-D\-I\-S\-T@{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-Z\-E\-R\-O\-\_\-\-T\-A\-N\-G\-E\-N\-T\-\_\-\-D\-I\-S\-T}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-Z\-E\-R\-O\-\_\-\-T\-A\-N\-G\-E\-N\-T\-\_\-\-D\-I\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-Z\-E\-R\-O\-\_\-\-T\-A\-N\-G\-E\-N\-T\-\_\-\-D\-I\-S\-T~8}}\label{calib3d_8hpp_a719461ad9ee310c0875078239dfb0cfb}
+\hypertarget{calib3d_8hpp_acd70e232d9670a0ffbec7624f819e731}{\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-\_\-\-F\-M\-\_\-7\-P\-O\-I\-N\-T@{C\-V\-\_\-\-F\-M\-\_\-7\-P\-O\-I\-N\-T}}
+\index{C\-V\-\_\-\-F\-M\-\_\-7\-P\-O\-I\-N\-T@{C\-V\-\_\-\-F\-M\-\_\-7\-P\-O\-I\-N\-T}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-F\-M\-\_\-7\-P\-O\-I\-N\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-F\-M\-\_\-7\-P\-O\-I\-N\-T~1}}\label{calib3d_8hpp_acd70e232d9670a0ffbec7624f819e731}
+\hypertarget{calib3d_8hpp_a13d5fbc45601fd0d9aa5af81a079d73a}{\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-\_\-\-F\-M\-\_\-8\-P\-O\-I\-N\-T@{C\-V\-\_\-\-F\-M\-\_\-8\-P\-O\-I\-N\-T}}
+\index{C\-V\-\_\-\-F\-M\-\_\-8\-P\-O\-I\-N\-T@{C\-V\-\_\-\-F\-M\-\_\-8\-P\-O\-I\-N\-T}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-F\-M\-\_\-8\-P\-O\-I\-N\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-F\-M\-\_\-8\-P\-O\-I\-N\-T~2}}\label{calib3d_8hpp_a13d5fbc45601fd0d9aa5af81a079d73a}
+\hypertarget{calib3d_8hpp_a8ed05b4cb3044e69e45ed0c8003acf4c}{\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-\_\-\-F\-M\-\_\-\-L\-M\-E\-D\-S@{C\-V\-\_\-\-F\-M\-\_\-\-L\-M\-E\-D\-S}}
+\index{C\-V\-\_\-\-F\-M\-\_\-\-L\-M\-E\-D\-S@{C\-V\-\_\-\-F\-M\-\_\-\-L\-M\-E\-D\-S}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-F\-M\-\_\-\-L\-M\-E\-D\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-F\-M\-\_\-\-L\-M\-E\-D\-S~{\bf C\-V\-\_\-\-L\-M\-E\-D\-S}}}\label{calib3d_8hpp_a8ed05b4cb3044e69e45ed0c8003acf4c}
+\hypertarget{calib3d_8hpp_ac0df1c0cb05d99880584a828dc6e6a05}{\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-\_\-\-F\-M\-\_\-\-L\-M\-E\-D\-S\-\_\-\-O\-N\-L\-Y@{C\-V\-\_\-\-F\-M\-\_\-\-L\-M\-E\-D\-S\-\_\-\-O\-N\-L\-Y}}
+\index{C\-V\-\_\-\-F\-M\-\_\-\-L\-M\-E\-D\-S\-\_\-\-O\-N\-L\-Y@{C\-V\-\_\-\-F\-M\-\_\-\-L\-M\-E\-D\-S\-\_\-\-O\-N\-L\-Y}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-F\-M\-\_\-\-L\-M\-E\-D\-S\-\_\-\-O\-N\-L\-Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-F\-M\-\_\-\-L\-M\-E\-D\-S\-\_\-\-O\-N\-L\-Y~{\bf C\-V\-\_\-\-L\-M\-E\-D\-S}}}\label{calib3d_8hpp_ac0df1c0cb05d99880584a828dc6e6a05}
+\hypertarget{calib3d_8hpp_ab86b19f9732a651e99a6fbad51ec72f0}{\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-\_\-\-F\-M\-\_\-\-R\-A\-N\-S\-A\-C@{C\-V\-\_\-\-F\-M\-\_\-\-R\-A\-N\-S\-A\-C}}
+\index{C\-V\-\_\-\-F\-M\-\_\-\-R\-A\-N\-S\-A\-C@{C\-V\-\_\-\-F\-M\-\_\-\-R\-A\-N\-S\-A\-C}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-F\-M\-\_\-\-R\-A\-N\-S\-A\-C}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-F\-M\-\_\-\-R\-A\-N\-S\-A\-C~{\bf C\-V\-\_\-\-R\-A\-N\-S\-A\-C}}}\label{calib3d_8hpp_ab86b19f9732a651e99a6fbad51ec72f0}
+\hypertarget{calib3d_8hpp_a3428a14110851e2fba4821bcc999e873}{\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-\_\-\-F\-M\-\_\-\-R\-A\-N\-S\-A\-C\-\_\-\-O\-N\-L\-Y@{C\-V\-\_\-\-F\-M\-\_\-\-R\-A\-N\-S\-A\-C\-\_\-\-O\-N\-L\-Y}}
+\index{C\-V\-\_\-\-F\-M\-\_\-\-R\-A\-N\-S\-A\-C\-\_\-\-O\-N\-L\-Y@{C\-V\-\_\-\-F\-M\-\_\-\-R\-A\-N\-S\-A\-C\-\_\-\-O\-N\-L\-Y}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-F\-M\-\_\-\-R\-A\-N\-S\-A\-C\-\_\-\-O\-N\-L\-Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-F\-M\-\_\-\-R\-A\-N\-S\-A\-C\-\_\-\-O\-N\-L\-Y~{\bf C\-V\-\_\-\-R\-A\-N\-S\-A\-C}}}\label{calib3d_8hpp_a3428a14110851e2fba4821bcc999e873}
+\hypertarget{calib3d_8hpp_a5e724fe78567220f3104374bce17c859}{\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-\_\-\-L\-M\-E\-D\-S@{C\-V\-\_\-\-L\-M\-E\-D\-S}}
+\index{C\-V\-\_\-\-L\-M\-E\-D\-S@{C\-V\-\_\-\-L\-M\-E\-D\-S}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-L\-M\-E\-D\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-L\-M\-E\-D\-S~4}}\label{calib3d_8hpp_a5e724fe78567220f3104374bce17c859}
+\hypertarget{calib3d_8hpp_ad583c9874d55e6129ec1b85d9dd9b973}{\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-\_\-\-R\-A\-N\-S\-A\-C@{C\-V\-\_\-\-R\-A\-N\-S\-A\-C}}
+\index{C\-V\-\_\-\-R\-A\-N\-S\-A\-C@{C\-V\-\_\-\-R\-A\-N\-S\-A\-C}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-R\-A\-N\-S\-A\-C}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-R\-A\-N\-S\-A\-C~8}}\label{calib3d_8hpp_ad583c9874d55e6129ec1b85d9dd9b973}
+\hypertarget{calib3d_8hpp_a908e78331515a3cafec20b0ea5b2e3a2}{\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-\_\-\-S\-T\-E\-R\-E\-O\-\_\-\-B\-M\-\_\-\-B\-A\-S\-I\-C@{C\-V\-\_\-\-S\-T\-E\-R\-E\-O\-\_\-\-B\-M\-\_\-\-B\-A\-S\-I\-C}}
+\index{C\-V\-\_\-\-S\-T\-E\-R\-E\-O\-\_\-\-B\-M\-\_\-\-B\-A\-S\-I\-C@{C\-V\-\_\-\-S\-T\-E\-R\-E\-O\-\_\-\-B\-M\-\_\-\-B\-A\-S\-I\-C}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-S\-T\-E\-R\-E\-O\-\_\-\-B\-M\-\_\-\-B\-A\-S\-I\-C}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-S\-T\-E\-R\-E\-O\-\_\-\-B\-M\-\_\-\-B\-A\-S\-I\-C~0}}\label{calib3d_8hpp_a908e78331515a3cafec20b0ea5b2e3a2}
+\hypertarget{calib3d_8hpp_afed6f6afe3170587b622d216050e4542}{\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-\_\-\-S\-T\-E\-R\-E\-O\-\_\-\-B\-M\-\_\-\-F\-I\-S\-H\-\_\-\-E\-Y\-E@{C\-V\-\_\-\-S\-T\-E\-R\-E\-O\-\_\-\-B\-M\-\_\-\-F\-I\-S\-H\-\_\-\-E\-Y\-E}}
+\index{C\-V\-\_\-\-S\-T\-E\-R\-E\-O\-\_\-\-B\-M\-\_\-\-F\-I\-S\-H\-\_\-\-E\-Y\-E@{C\-V\-\_\-\-S\-T\-E\-R\-E\-O\-\_\-\-B\-M\-\_\-\-F\-I\-S\-H\-\_\-\-E\-Y\-E}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-S\-T\-E\-R\-E\-O\-\_\-\-B\-M\-\_\-\-F\-I\-S\-H\-\_\-\-E\-Y\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-S\-T\-E\-R\-E\-O\-\_\-\-B\-M\-\_\-\-F\-I\-S\-H\-\_\-\-E\-Y\-E~1}}\label{calib3d_8hpp_afed6f6afe3170587b622d216050e4542}
+\hypertarget{calib3d_8hpp_af24f1565143452e4b6d10bfe14de862d}{\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-\_\-\-S\-T\-E\-R\-E\-O\-\_\-\-B\-M\-\_\-\-N\-A\-R\-R\-O\-W@{C\-V\-\_\-\-S\-T\-E\-R\-E\-O\-\_\-\-B\-M\-\_\-\-N\-A\-R\-R\-O\-W}}
+\index{C\-V\-\_\-\-S\-T\-E\-R\-E\-O\-\_\-\-B\-M\-\_\-\-N\-A\-R\-R\-O\-W@{C\-V\-\_\-\-S\-T\-E\-R\-E\-O\-\_\-\-B\-M\-\_\-\-N\-A\-R\-R\-O\-W}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-S\-T\-E\-R\-E\-O\-\_\-\-B\-M\-\_\-\-N\-A\-R\-R\-O\-W}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-S\-T\-E\-R\-E\-O\-\_\-\-B\-M\-\_\-\-N\-A\-R\-R\-O\-W~2}}\label{calib3d_8hpp_af24f1565143452e4b6d10bfe14de862d}
+\hypertarget{calib3d_8hpp_aac970026f96f5dbf7d3e8baf2851045b}{\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-\_\-\-S\-T\-E\-R\-E\-O\-\_\-\-B\-M\-\_\-\-N\-O\-R\-M\-A\-L\-I\-Z\-E\-D\-\_\-\-R\-E\-S\-P\-O\-N\-S\-E@{C\-V\-\_\-\-S\-T\-E\-R\-E\-O\-\_\-\-B\-M\-\_\-\-N\-O\-R\-M\-A\-L\-I\-Z\-E\-D\-\_\-\-R\-E\-S\-P\-O\-N\-S\-E}}
+\index{C\-V\-\_\-\-S\-T\-E\-R\-E\-O\-\_\-\-B\-M\-\_\-\-N\-O\-R\-M\-A\-L\-I\-Z\-E\-D\-\_\-\-R\-E\-S\-P\-O\-N\-S\-E@{C\-V\-\_\-\-S\-T\-E\-R\-E\-O\-\_\-\-B\-M\-\_\-\-N\-O\-R\-M\-A\-L\-I\-Z\-E\-D\-\_\-\-R\-E\-S\-P\-O\-N\-S\-E}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-S\-T\-E\-R\-E\-O\-\_\-\-B\-M\-\_\-\-N\-O\-R\-M\-A\-L\-I\-Z\-E\-D\-\_\-\-R\-E\-S\-P\-O\-N\-S\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-S\-T\-E\-R\-E\-O\-\_\-\-B\-M\-\_\-\-N\-O\-R\-M\-A\-L\-I\-Z\-E\-D\-\_\-\-R\-E\-S\-P\-O\-N\-S\-E~0}}\label{calib3d_8hpp_aac970026f96f5dbf7d3e8baf2851045b}
+\hypertarget{calib3d_8hpp_a4fbd854e2c4ff159ed0e513d4356b076}{\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-\_\-\-S\-T\-E\-R\-E\-O\-\_\-\-B\-M\-\_\-\-X\-S\-O\-B\-E\-L@{C\-V\-\_\-\-S\-T\-E\-R\-E\-O\-\_\-\-B\-M\-\_\-\-X\-S\-O\-B\-E\-L}}
+\index{C\-V\-\_\-\-S\-T\-E\-R\-E\-O\-\_\-\-B\-M\-\_\-\-X\-S\-O\-B\-E\-L@{C\-V\-\_\-\-S\-T\-E\-R\-E\-O\-\_\-\-B\-M\-\_\-\-X\-S\-O\-B\-E\-L}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-S\-T\-E\-R\-E\-O\-\_\-\-B\-M\-\_\-\-X\-S\-O\-B\-E\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-S\-T\-E\-R\-E\-O\-\_\-\-B\-M\-\_\-\-X\-S\-O\-B\-E\-L~1}}\label{calib3d_8hpp_a4fbd854e2c4ff159ed0e513d4356b076}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{calib3d_8hpp_af8527638987a0591d819b04e85883509}{\index{calib3d.\-hpp@{calib3d.\-hpp}!Cv\-P\-O\-S\-I\-T\-Object@{Cv\-P\-O\-S\-I\-T\-Object}}
+\index{Cv\-P\-O\-S\-I\-T\-Object@{Cv\-P\-O\-S\-I\-T\-Object}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{Cv\-P\-O\-S\-I\-T\-Object}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf Cv\-P\-O\-S\-I\-T\-Object} {\bf Cv\-P\-O\-S\-I\-T\-Object}}}\label{calib3d_8hpp_af8527638987a0591d819b04e85883509}
+\hypertarget{calib3d_8hpp_a27734121ec91535486c951f738559ee1}{\index{calib3d.\-hpp@{calib3d.\-hpp}!Cv\-Stereo\-B\-M\-State@{Cv\-Stereo\-B\-M\-State}}
+\index{Cv\-Stereo\-B\-M\-State@{Cv\-Stereo\-B\-M\-State}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{Cv\-Stereo\-B\-M\-State}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf Cv\-Stereo\-B\-M\-State}  {\bf Cv\-Stereo\-B\-M\-State}}}\label{calib3d_8hpp_a27734121ec91535486c951f738559ee1}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{calib3d_8hpp_a06fc87d81c62e9abb8790b6e5713c55b}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{calib3d_8hpp_a06fc87d81c62e9abb8790b6e5713c55b}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{C\-V\-\_\-\-I\-T\-E\-R\-A\-T\-I\-V\-E@{C\-V\-\_\-\-I\-T\-E\-R\-A\-T\-I\-V\-E}!calib3d.\-hpp@{calib3d.\-hpp}}\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-\_\-\-I\-T\-E\-R\-A\-T\-I\-V\-E@{C\-V\-\_\-\-I\-T\-E\-R\-A\-T\-I\-V\-E}}\item[{\em 
+\hypertarget{calib3d_8hpp_a06fc87d81c62e9abb8790b6e5713c55ba8be4b232c6acfab1dc69e090d934b426}{C\-V\-\_\-\-I\-T\-E\-R\-A\-T\-I\-V\-E}\label{calib3d_8hpp_a06fc87d81c62e9abb8790b6e5713c55ba8be4b232c6acfab1dc69e090d934b426}
+}]\index{C\-V\-\_\-\-E\-P\-N\-P@{C\-V\-\_\-\-E\-P\-N\-P}!calib3d.\-hpp@{calib3d.\-hpp}}\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-\_\-\-E\-P\-N\-P@{C\-V\-\_\-\-E\-P\-N\-P}}\item[{\em 
+\hypertarget{calib3d_8hpp_a06fc87d81c62e9abb8790b6e5713c55ba2ad6ca91b2638cd82dd04df585822cf8}{C\-V\-\_\-\-E\-P\-N\-P}\label{calib3d_8hpp_a06fc87d81c62e9abb8790b6e5713c55ba2ad6ca91b2638cd82dd04df585822cf8}
+}]\index{C\-V\-\_\-\-P3\-P@{C\-V\-\_\-\-P3\-P}!calib3d.\-hpp@{calib3d.\-hpp}}\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-\_\-\-P3\-P@{C\-V\-\_\-\-P3\-P}}\item[{\em 
+\hypertarget{calib3d_8hpp_a06fc87d81c62e9abb8790b6e5713c55ba7513c67aacb7baa2ec7611e2cdc85045}{C\-V\-\_\-\-P3\-P}\label{calib3d_8hpp_a06fc87d81c62e9abb8790b6e5713c55ba7513c67aacb7baa2ec7611e2cdc85045}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\hypertarget{calib3d_8hpp_a726902e5e18dc93fc15fb57cca02e646}{\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T@{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}}
+\index{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T@{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Mat} {\bf Cv\-Mat} int {\bf method} C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-V\-\_\-\-F\-M\-\_\-\-R\-A\-N\-S\-A\-C}}]{}
+\end{DoxyParamCaption}
+)}}\label{calib3d_8hpp_a726902e5e18dc93fc15fb57cca02e646}
+\hypertarget{calib3d_8hpp_aafb955c38562f949694c201021d010c6}{\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T@{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}}
+\index{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T@{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Mat} {\bf Cv\-Mat} int {\bf method} double {\bf param1} C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T (
+\begin{DoxyParamCaption}
+\item[{3.}]{}
+\end{DoxyParamCaption}
+)}}\label{calib3d_8hpp_aafb955c38562f949694c201021d010c6}
+\hypertarget{calib3d_8hpp_ab3170857821fa295237c47942d47677f}{\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T@{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}}
+\index{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T@{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Arr} {\bf Cv\-Arr} {\bf Cv\-Point2\-D32f} int double double const {\bf Cv\-Arr} $\ast${\bf mask} int {\bf block\-\_\-size} int use\-\_\-harris double {\bf k} C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T (
+\begin{DoxyParamCaption}
+\item[{0.}]{99}
+\end{DoxyParamCaption}
+)}}\label{calib3d_8hpp_ab3170857821fa295237c47942d47677f}
+\hypertarget{calib3d_8hpp_ad8185cf807973901d37c72f1a55ab2a7}{\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T@{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}}
+\index{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T@{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Mat} $\ast$control C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf N\-U\-L\-L}}]{}
+\end{DoxyParamCaption}
+)}}\label{calib3d_8hpp_ad8185cf807973901d37c72f1a55ab2a7}
+\hypertarget{calib3d_8hpp_aaaa815a5bc16d34403bca712cf83271b}{\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T@{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}}
+\index{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T@{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Haar\-Classifier\-Cascade} {\bf Cv\-Mem\-Storage} double scale\-\_\-factor int min\-\_\-neighbors int {\bf flags} {\bf Cv\-Size} min\-\_\-size {\bf Cv\-Size} max\-\_\-size C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf cv\-Size}(0, 0)}]{}
+\end{DoxyParamCaption}
+)}}\label{calib3d_8hpp_aaaa815a5bc16d34403bca712cf83271b}
+\hypertarget{calib3d_8hpp_a712cc81422da123251ea9898d506c10c}{\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T@{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}}
+\index{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T@{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Point} int start\-\_\-stage C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T (
+\begin{DoxyParamCaption}
+\item[{0}]{}
+\end{DoxyParamCaption}
+)}}\label{calib3d_8hpp_a712cc81422da123251ea9898d506c10c}
+\hypertarget{calib3d_8hpp_a5e4a1eceb7512a9262e4aff3ef73294b}{\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T@{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}}
+\index{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T@{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Arr} {\bf Cv\-Arr} {\bf Cv\-Point2\-D32f} int double double const {\bf Cv\-Arr} $\ast${\bf mask} int {\bf block\-\_\-size} C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T (
+\begin{DoxyParamCaption}
+\item[{3}]{}
+\end{DoxyParamCaption}
+)}}\label{calib3d_8hpp_a5e4a1eceb7512a9262e4aff3ef73294b}
+\hypertarget{calib3d_8hpp_a3539fd799bb17d4e14ec4294e31468d7}{\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T@{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}}
+\index{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T@{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Arr} double {\bf a} C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T (
+\begin{DoxyParamCaption}
+\item[{1.}]{}
+\end{DoxyParamCaption}
+)}}\label{calib3d_8hpp_a3539fd799bb17d4e14ec4294e31468d7}
+\hypertarget{calib3d_8hpp_a014c8310a6b7371034d7658acd3d1eab}{\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T@{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}}
+\index{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T@{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Size} {\bf Cv\-Point2\-D32f} int$\ast$ {\bf corner\-\_\-count} int {\bf flags} C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-C\-B\-\_\-\-A\-D\-A\-P\-T\-I\-V\-E\-\_\-\-T\-H\-R\-E\-S\-H}+}]{C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-C\-B\-\_\-\-N\-O\-R\-M\-A\-L\-I\-Z\-E\-\_\-\-I\-M\-A\-G\-E}
+\end{DoxyParamCaption}
+)}}\label{calib3d_8hpp_a014c8310a6b7371034d7658acd3d1eab}
+\hypertarget{calib3d_8hpp_adbf6b31c678a8a7c3d9b48a0adf2be88}{\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T@{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}}
+\index{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T@{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Mat} const {\bf Cv\-Mat} {\bf Cv\-Size} {\bf Cv\-Mat} {\bf Cv\-Mat} {\bf Cv\-Mat}$\ast$ rotation\-\_\-vectors {\bf Cv\-Mat}$\ast$ translation\-\_\-vectors int {\bf flags} {\bf Cv\-Term\-Criteria} term\-\_\-crit C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf cv\-Term\-Criteria}({\bf C\-V\-\_\-\-T\-E\-R\-M\-C\-R\-I\-T\-\_\-\-I\-T\-E\-R}+{\bf C\-V\-\_\-\-T\-E\-R\-M\-C\-R\-I\-T\-\_\-\-E\-P\-S}, 30, D\-B\-L\-\_\-\-E\-P\-S\-I\-L\-O\-N)}]{}
+\end{DoxyParamCaption}
+)}}\label{calib3d_8hpp_adbf6b31c678a8a7c3d9b48a0adf2be88}
+\hypertarget{calib3d_8hpp_a863b9509119058c3749d4a911f70503d}{\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T@{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}}
+\index{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T@{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Mat} const {\bf Cv\-Mat} const {\bf Cv\-Mat} {\bf Cv\-Mat} {\bf Cv\-Mat} {\bf Cv\-Mat} {\bf Cv\-Mat} {\bf Cv\-Size} {\bf Cv\-Mat} {\bf Cv\-Mat} {\bf Cv\-Mat}$\ast$ E {\bf Cv\-Mat}$\ast$ {\bf F} {\bf Cv\-Term\-Criteria} term\-\_\-crit C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf cv\-Term\-Criteria}({\bf C\-V\-\_\-\-T\-E\-R\-M\-C\-R\-I\-T\-\_\-\-I\-T\-E\-R}+{\bf C\-V\-\_\-\-T\-E\-R\-M\-C\-R\-I\-T\-\_\-\-E\-P\-S}, 30, 1e-\/6)}]{}
+\end{DoxyParamCaption}
+)}}\label{calib3d_8hpp_a863b9509119058c3749d4a911f70503d}
+\hypertarget{calib3d_8hpp_a6d6144c4029223c4824c95c2dd02b097}{\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T@{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}}
+\index{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T@{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Mat} const {\bf Cv\-Mat} const {\bf Cv\-Mat} {\bf Cv\-Mat} {\bf Cv\-Mat} {\bf Cv\-Mat} {\bf Cv\-Mat} {\bf Cv\-Size} {\bf Cv\-Mat} {\bf Cv\-Mat} {\bf Cv\-Mat}$\ast$ E {\bf Cv\-Mat}$\ast$ {\bf F} {\bf Cv\-Term\-Criteria} term\-\_\-crit int {\bf flags} C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-F\-I\-X\-\_\-\-I\-N\-T\-R\-I\-N\-S\-I\-C}}]{}
+\end{DoxyParamCaption}
+)}}\label{calib3d_8hpp_a6d6144c4029223c4824c95c2dd02b097}
+\hypertarget{calib3d_8hpp_a611aa2b635978ffe3ad287df46e24cf3}{\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T@{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}}
+\index{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T@{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Mat} const {\bf Cv\-Mat} const {\bf Cv\-Mat} {\bf Cv\-Size} const {\bf Cv\-Mat} const {\bf Cv\-Mat} {\bf Cv\-Mat} {\bf Cv\-Mat} {\bf Cv\-Mat} {\bf Cv\-Mat} {\bf Cv\-Mat}$\ast$ {\bf Q} int {\bf flags} C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-V\-\_\-\-C\-A\-L\-I\-B\-\_\-\-Z\-E\-R\-O\-\_\-\-D\-I\-S\-P\-A\-R\-I\-T\-Y}}]{}
+\end{DoxyParamCaption}
+)}}\label{calib3d_8hpp_a611aa2b635978ffe3ad287df46e24cf3}
+\hypertarget{calib3d_8hpp_abf1a4417a5028a8e10bab7b1cb53ae33}{\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T@{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}}
+\index{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T@{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-B\-G\-Stat\-Model} double learning\-Rate C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T (
+\begin{DoxyParamCaption}
+\item[{-\/}]{1}
+\end{DoxyParamCaption}
+)}}\label{calib3d_8hpp_abf1a4417a5028a8e10bab7b1cb53ae33}
+\hypertarget{calib3d_8hpp_a2367ddbbdd4a5f81426f6681cfa8247a}{\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T@{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}}
+\index{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T@{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Mat} const {\bf Cv\-Mat} {\bf Cv\-Size} {\bf Cv\-Mat} {\bf Cv\-Mat} double {\bf threshold} C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T (
+\begin{DoxyParamCaption}
+\item[{5}]{}
+\end{DoxyParamCaption}
+)}}\label{calib3d_8hpp_a2367ddbbdd4a5f81426f6681cfa8247a}
+\hypertarget{calib3d_8hpp_aa67e798e7add63dcc20074b6af9f5603}{\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T@{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}}
+\index{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T@{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}]{\setlength{\rightskip}{0pt plus 5cm}int poly1\-Hull0 C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T (
+\begin{DoxyParamCaption}
+\item[{1}]{}
+\end{DoxyParamCaption}
+)}}\label{calib3d_8hpp_aa67e798e7add63dcc20074b6af9f5603}
+\hypertarget{calib3d_8hpp_ab3ff078a73ec6fb00e8e5dc21dbf5593}{\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-A\-P\-I@{C\-V\-A\-P\-I}}
+\index{C\-V\-A\-P\-I@{C\-V\-A\-P\-I}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{C\-V\-A\-P\-I}]{\setlength{\rightskip}{0pt plus 5cm}C\-V\-A\-P\-I (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-P\-O\-S\-I\-T\-Object} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{calib3d_8hpp_ab3ff078a73ec6fb00e8e5dc21dbf5593}
+\hypertarget{calib3d_8hpp_a9566e5cf174348ac4968cca3df4dc8ea}{\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-A\-P\-I@{C\-V\-A\-P\-I}}
+\index{C\-V\-A\-P\-I@{C\-V\-A\-P\-I}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{C\-V\-A\-P\-I}]{\setlength{\rightskip}{0pt plus 5cm}C\-V\-A\-P\-I (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)}}\label{calib3d_8hpp_a9566e5cf174348ac4968cca3df4dc8ea}
+
+\begin{DoxyItemize}
+\item Finds selected eigen values and vectors of a symmetric matrix $\ast$/ 
+\end{DoxyItemize}\hypertarget{calib3d_8hpp_a350e05e6c2c77a55a82a234f170c8771}{\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-A\-P\-I@{C\-V\-A\-P\-I}}
+\index{C\-V\-A\-P\-I@{C\-V\-A\-P\-I}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{C\-V\-A\-P\-I}]{\setlength{\rightskip}{0pt plus 5cm}C\-V\-A\-P\-I (
+\begin{DoxyParamCaption}
+\item[{int}]{}
+\end{DoxyParamCaption}
+)}}\label{calib3d_8hpp_a350e05e6c2c77a55a82a234f170c8771}
+\hypertarget{calib3d_8hpp_a0a2c9c2e98350aed6c428c49f7f3ae49}{\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-A\-P\-I@{C\-V\-A\-P\-I}}
+\index{C\-V\-A\-P\-I@{C\-V\-A\-P\-I}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{C\-V\-A\-P\-I}]{\setlength{\rightskip}{0pt plus 5cm}C\-V\-A\-P\-I (
+\begin{DoxyParamCaption}
+\item[{double}]{}
+\end{DoxyParamCaption}
+) const}}\label{calib3d_8hpp_a0a2c9c2e98350aed6c428c49f7f3ae49}
+\hypertarget{calib3d_8hpp_ac226efee7940c571dda822e7d2d12936}{\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-A\-P\-I@{C\-V\-A\-P\-I}}
+\index{C\-V\-A\-P\-I@{C\-V\-A\-P\-I}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{C\-V\-A\-P\-I}]{\setlength{\rightskip}{0pt plus 5cm}C\-V\-A\-P\-I (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Stereo\-B\-M\-State} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{calib3d_8hpp_ac226efee7940c571dda822e7d2d12936}
+\hypertarget{calib3d_8hpp_af71b8771c8bfe3081156be88ac875ccc}{\index{calib3d.\-hpp@{calib3d.\-hpp}!C\-V\-A\-P\-I@{C\-V\-A\-P\-I}}
+\index{C\-V\-A\-P\-I@{C\-V\-A\-P\-I}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{C\-V\-A\-P\-I}]{\setlength{\rightskip}{0pt plus 5cm}C\-V\-A\-P\-I (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Rect}}]{}
+\end{DoxyParamCaption}
+)}}\label{calib3d_8hpp_af71b8771c8bfe3081156be88ac875ccc}
+
+
+\subsection{Variable Documentation}
+\hypertarget{calib3d_8hpp_a4dcc4036d7b5af33c5d137a5acbd7e61}{\index{calib3d.\-hpp@{calib3d.\-hpp}!\-\_\-3d\-Image@{\-\_\-3d\-Image}}
+\index{\-\_\-3d\-Image@{\-\_\-3d\-Image}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{\-\_\-3d\-Image}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Arr}$\ast$ \-\_\-3d\-Image}}\label{calib3d_8hpp_a4dcc4036d7b5af33c5d137a5acbd7e61}
+\hypertarget{calib3d_8hpp_a65cae79c8e8dc70dcbfd9a1ef7977c24}{\index{calib3d.\-hpp@{calib3d.\-hpp}!\-\_\-rvec2@{\-\_\-rvec2}}
+\index{\-\_\-rvec2@{\-\_\-rvec2}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{\-\_\-rvec2}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Mat} const {\bf Cv\-Mat}$\ast$ \-\_\-rvec2}}\label{calib3d_8hpp_a65cae79c8e8dc70dcbfd9a1ef7977c24}
+\hypertarget{calib3d_8hpp_a5110838661f3bf726c40a4c6a3147bf8}{\index{calib3d.\-hpp@{calib3d.\-hpp}!\-\_\-rvec3@{\-\_\-rvec3}}
+\index{\-\_\-rvec3@{\-\_\-rvec3}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{\-\_\-rvec3}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Mat} const {\bf Cv\-Mat} const {\bf Cv\-Mat} {\bf Cv\-Mat}$\ast$ \-\_\-rvec3}}\label{calib3d_8hpp_a5110838661f3bf726c40a4c6a3147bf8}
+\hypertarget{calib3d_8hpp_a8e8960afc063cf229390f8ff4a80c903}{\index{calib3d.\-hpp@{calib3d.\-hpp}!\-\_\-tvec1@{\-\_\-tvec1}}
+\index{\-\_\-tvec1@{\-\_\-tvec1}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{\-\_\-tvec1}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Mat}$\ast$ \-\_\-tvec1}}\label{calib3d_8hpp_a8e8960afc063cf229390f8ff4a80c903}
+\hypertarget{calib3d_8hpp_a433652c7d297d21df47eeb8cbc9b09d6}{\index{calib3d.\-hpp@{calib3d.\-hpp}!\-\_\-tvec2@{\-\_\-tvec2}}
+\index{\-\_\-tvec2@{\-\_\-tvec2}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{\-\_\-tvec2}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Mat} const {\bf Cv\-Mat} const {\bf Cv\-Mat}$\ast$ \-\_\-tvec2}}\label{calib3d_8hpp_a433652c7d297d21df47eeb8cbc9b09d6}
+\hypertarget{calib3d_8hpp_a20d9fcd9a04b46403e59a28ecf0ae455}{\index{calib3d.\-hpp@{calib3d.\-hpp}!\-\_\-tvec3@{\-\_\-tvec3}}
+\index{\-\_\-tvec3@{\-\_\-tvec3}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{\-\_\-tvec3}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Mat} const {\bf Cv\-Mat} const {\bf Cv\-Mat} {\bf Cv\-Mat} {\bf Cv\-Mat}$\ast$ \-\_\-tvec3}}\label{calib3d_8hpp_a20d9fcd9a04b46403e59a28ecf0ae455}
+\hypertarget{calib3d_8hpp_a95fc8341ca418bc06b36160632af6d47}{\index{calib3d.\-hpp@{calib3d.\-hpp}!alpha@{alpha}}
+\index{alpha@{alpha}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{alpha}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uchar} int {\bf uchar} int {\bf uchar} int float alpha}}\label{calib3d_8hpp_a95fc8341ca418bc06b36160632af6d47}
+\hypertarget{calib3d_8hpp_a6d4083f2ac06664833ec1fb9a0ba083e}{\index{calib3d.\-hpp@{calib3d.\-hpp}!B@{B}}
+\index{B@{B}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{B}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Mat}$\ast$ B}}\label{calib3d_8hpp_a6d4083f2ac06664833ec1fb9a0ba083e}
+\hypertarget{calib3d_8hpp_a216f2cff747e32bc6606e1b93c514f9e}{\index{calib3d.\-hpp@{calib3d.\-hpp}!calib\-Matr@{calib\-Matr}}
+\index{calib\-Matr@{calib\-Matr}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{calib\-Matr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Mat}$\ast$ calib\-Matr}}\label{calib3d_8hpp_a216f2cff747e32bc6606e1b93c514f9e}
+\hypertarget{calib3d_8hpp_a7c4a9fa12922851216c13fd104e3358b}{\index{calib3d.\-hpp@{calib3d.\-hpp}!camera\-\_\-matrix@{camera\-\_\-matrix}}
+\index{camera\-\_\-matrix@{camera\-\_\-matrix}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{camera\-\_\-matrix}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Mat} const {\bf Cv\-Mat} $\ast$ camera\-\_\-matrix}}\label{calib3d_8hpp_a7c4a9fa12922851216c13fd104e3358b}
+\hypertarget{calib3d_8hpp_a7e3af207bab42afa1b6e8ba43f65a99c}{\index{calib3d.\-hpp@{calib3d.\-hpp}!camera\-\_\-matrix1@{camera\-\_\-matrix1}}
+\index{camera\-\_\-matrix1@{camera\-\_\-matrix1}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{camera\-\_\-matrix1}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Mat} const {\bf Cv\-Mat} const {\bf Cv\-Mat} {\bf Cv\-Mat}$\ast$ camera\-\_\-matrix1}}\label{calib3d_8hpp_a7e3af207bab42afa1b6e8ba43f65a99c}
+\hypertarget{calib3d_8hpp_a4387951c8d45b208a57d0e7e8046d828}{\index{calib3d.\-hpp@{calib3d.\-hpp}!camera\-\_\-matrix2@{camera\-\_\-matrix2}}
+\index{camera\-\_\-matrix2@{camera\-\_\-matrix2}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{camera\-\_\-matrix2}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Mat} $\ast$ camera\-\_\-matrix2}}\label{calib3d_8hpp_a4387951c8d45b208a57d0e7e8046d828}
+\hypertarget{calib3d_8hpp_a7c963d5c0be2901e72c3762c1ddfcee6}{\index{calib3d.\-hpp@{calib3d.\-hpp}!corners@{corners}}
+\index{corners@{corners}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{corners}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Arr} {\bf Cv\-Arr} {\bf Cv\-Point2\-D32f} $\ast$ corners}}\label{calib3d_8hpp_a7c963d5c0be2901e72c3762c1ddfcee6}
+\hypertarget{calib3d_8hpp_a33ff6df17251dd3a4807a64048f2c11b}{\index{calib3d.\-hpp@{calib3d.\-hpp}!correspondent\-\_\-lines@{correspondent\-\_\-lines}}
+\index{correspondent\-\_\-lines@{correspondent\-\_\-lines}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{correspondent\-\_\-lines}]{\setlength{\rightskip}{0pt plus 5cm}int const {\bf Cv\-Mat} {\bf Cv\-Mat}$\ast$ correspondent\-\_\-lines}}\label{calib3d_8hpp_a33ff6df17251dd3a4807a64048f2c11b}
+\hypertarget{calib3d_8hpp_a3f0b80b177a2a2f0f15aadb947066e2c}{\index{calib3d.\-hpp@{calib3d.\-hpp}!cost@{cost}}
+\index{cost@{cost}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{cost}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Arr}$\ast$ cost}}\label{calib3d_8hpp_a3f0b80b177a2a2f0f15aadb947066e2c}
+\hypertarget{calib3d_8hpp_a88d78b1935cd8bdee70a44eaaf326b1e}{\index{calib3d.\-hpp@{calib3d.\-hpp}!count@{count}}
+\index{count@{count}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{count}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Arr} {\bf Cv\-Arr} {\bf Cv\-Arr} const {\bf Cv\-Point2\-D32f} {\bf Cv\-Point2\-D32f} float int count}}\label{calib3d_8hpp_a88d78b1935cd8bdee70a44eaaf326b1e}
+\hypertarget{calib3d_8hpp_ac10fcea99ab081e745366c6f5bbc8eb5}{\index{calib3d.\-hpp@{calib3d.\-hpp}!criteria@{criteria}}
+\index{criteria@{criteria}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{criteria}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Rect} {\bf Cv\-Term\-Criteria} criteria}}\label{calib3d_8hpp_ac10fcea99ab081e745366c6f5bbc8eb5}
+\hypertarget{calib3d_8hpp_a7630a7e01052598112494c366b46140b}{\index{calib3d.\-hpp@{calib3d.\-hpp}!d\-A\-Bd\-A@{d\-A\-Bd\-A}}
+\index{d\-A\-Bd\-A@{d\-A\-Bd\-A}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{d\-A\-Bd\-A}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Mat} {\bf Cv\-Mat}$\ast$ d\-A\-Bd\-A}}\label{calib3d_8hpp_a7630a7e01052598112494c366b46140b}
+\hypertarget{calib3d_8hpp_a51e7b80873601bf8391fa00e6bdd7d11}{\index{calib3d.\-hpp@{calib3d.\-hpp}!d\-A\-Bd\-B@{d\-A\-Bd\-B}}
+\index{d\-A\-Bd\-B@{d\-A\-Bd\-B}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{d\-A\-Bd\-B}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Mat} {\bf Cv\-Mat} {\bf Cv\-Mat}$\ast$ d\-A\-Bd\-B}}\label{calib3d_8hpp_a51e7b80873601bf8391fa00e6bdd7d11}
+\hypertarget{calib3d_8hpp_acd2ef073a3a4984e0a0ebac5c7e179fd}{\index{calib3d.\-hpp@{calib3d.\-hpp}!disparity@{disparity}}
+\index{disparity@{disparity}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{disparity}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Arr} {\bf Cv\-Arr}$\ast$ disparity}}\label{calib3d_8hpp_acd2ef073a3a4984e0a0ebac5c7e179fd}
+\hypertarget{calib3d_8hpp_a160270bcd068a17164fbd9219e73660b}{\index{calib3d.\-hpp@{calib3d.\-hpp}!dist\-\_\-coeffs@{dist\-\_\-coeffs}}
+\index{dist\-\_\-coeffs@{dist\-\_\-coeffs}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{dist\-\_\-coeffs}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Mat} const {\bf Cv\-Mat} const {\bf Cv\-Mat} $\ast$ dist\-\_\-coeffs}}\label{calib3d_8hpp_a160270bcd068a17164fbd9219e73660b}
+\hypertarget{calib3d_8hpp_a78e7bc83a2f124c23d16930d397b065e}{\index{calib3d.\-hpp@{calib3d.\-hpp}!dist\-\_\-coeffs1@{dist\-\_\-coeffs1}}
+\index{dist\-\_\-coeffs1@{dist\-\_\-coeffs1}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{dist\-\_\-coeffs1}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Mat} const {\bf Cv\-Mat} $\ast$ dist\-\_\-coeffs1}}\label{calib3d_8hpp_a78e7bc83a2f124c23d16930d397b065e}
+\hypertarget{calib3d_8hpp_a897bcee1df5b946487cd588874ad2c9e}{\index{calib3d.\-hpp@{calib3d.\-hpp}!dist\-\_\-coeffs2@{dist\-\_\-coeffs2}}
+\index{dist\-\_\-coeffs2@{dist\-\_\-coeffs2}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{dist\-\_\-coeffs2}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Mat} const {\bf Cv\-Mat} const {\bf Cv\-Mat} $\ast$ dist\-\_\-coeffs2}}\label{calib3d_8hpp_a897bcee1df5b946487cd588874ad2c9e}
+\hypertarget{calib3d_8hpp_a6bfd41b33cf2947cd286c77e4bf7edd8}{\index{calib3d.\-hpp@{calib3d.\-hpp}!distortion\-\_\-coeffs@{distortion\-\_\-coeffs}}
+\index{distortion\-\_\-coeffs@{distortion\-\_\-coeffs}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{distortion\-\_\-coeffs}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Mat} $\ast$ distortion\-\_\-coeffs}}\label{calib3d_8hpp_a6bfd41b33cf2947cd286c77e4bf7edd8}
+\hypertarget{calib3d_8hpp_ad07a04090e384b855c78ca9fb981b7a8}{\index{calib3d.\-hpp@{calib3d.\-hpp}!dst@{dst}}
+\index{dst@{dst}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{dst}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ipl\-Image} {\bf Ipl\-Image} $\ast$ dst}}\label{calib3d_8hpp_ad07a04090e384b855c78ca9fb981b7a8}
+\hypertarget{calib3d_8hpp_aea2ed824645eeb1982a86e38b6409b7e}{\index{calib3d.\-hpp@{calib3d.\-hpp}!dst\-\_\-points@{dst\-\_\-points}}
+\index{dst\-\_\-points@{dst\-\_\-points}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{dst\-\_\-points}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Mat}$\ast$ dst\-\_\-points}}\label{calib3d_8hpp_aea2ed824645eeb1982a86e38b6409b7e}
+\hypertarget{calib3d_8hpp_a4d5f9774a8db42e354698e465ea49fc1}{\index{calib3d.\-hpp@{calib3d.\-hpp}!err\-\_\-prob@{err\-\_\-prob}}
+\index{err\-\_\-prob@{err\-\_\-prob}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{err\-\_\-prob}]{\setlength{\rightskip}{0pt plus 5cm}double err\-\_\-prob}}\label{calib3d_8hpp_a4d5f9774a8db42e354698e465ea49fc1}
+\hypertarget{calib3d_8hpp_acc93c21c0e709826b318c946961af8fc}{\index{calib3d.\-hpp@{calib3d.\-hpp}!F@{F}}
+\index{F@{F}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{F}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Mat} const {\bf Cv\-Mat}$\ast$ F}}\label{calib3d_8hpp_acc93c21c0e709826b318c946961af8fc}
+\hypertarget{calib3d_8hpp_ac0b783fc5dcc5cfa52b26b3fe0f0c94d}{\index{calib3d.\-hpp@{calib3d.\-hpp}!focal\-\_\-length@{focal\-\_\-length}}
+\index{focal\-\_\-length@{focal\-\_\-length}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{focal\-\_\-length}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Point2\-D32f} double focal\-\_\-length}}\label{calib3d_8hpp_ac0b783fc5dcc5cfa52b26b3fe0f0c94d}
+\hypertarget{calib3d_8hpp_a44badab4dc39862b0c9d399034e4abc7}{\index{calib3d.\-hpp@{calib3d.\-hpp}!fundamental\-\_\-matrix@{fundamental\-\_\-matrix}}
+\index{fundamental\-\_\-matrix@{fundamental\-\_\-matrix}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{fundamental\-\_\-matrix}]{\setlength{\rightskip}{0pt plus 5cm}int const {\bf Cv\-Mat} $\ast$ fundamental\-\_\-matrix}}\label{calib3d_8hpp_a44badab4dc39862b0c9d399034e4abc7}
+\hypertarget{calib3d_8hpp_ae879e5c354958f2a48e55ccadd4d50d4}{\index{calib3d.\-hpp@{calib3d.\-hpp}!H1@{H1}}
+\index{H1@{H1}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{H1}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Mat} const {\bf Cv\-Mat} {\bf Cv\-Size} {\bf Cv\-Mat}$\ast$ H1}}\label{calib3d_8hpp_ae879e5c354958f2a48e55ccadd4d50d4}
+\hypertarget{calib3d_8hpp_a648b24a94b6a5ca44f01cc7b4157e45d}{\index{calib3d.\-hpp@{calib3d.\-hpp}!H2@{H2}}
+\index{H2@{H2}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{H2}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Mat} const {\bf Cv\-Mat} {\bf Cv\-Size} {\bf Cv\-Mat} {\bf Cv\-Mat}$\ast$ H2}}\label{calib3d_8hpp_a648b24a94b6a5ca44f01cc7b4157e45d}
+\hypertarget{calib3d_8hpp_a23bb203201ad0ce051975280b687252e}{\index{calib3d.\-hpp@{calib3d.\-hpp}!homography@{homography}}
+\index{homography@{homography}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{homography}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Mat} {\bf Cv\-Mat}$\ast$ homography}}\label{calib3d_8hpp_a23bb203201ad0ce051975280b687252e}
+\hypertarget{calib3d_8hpp_a9089b4bcbecdc7f201448956b5929cfb}{\index{calib3d.\-hpp@{calib3d.\-hpp}!image\-\_\-points@{image\-\_\-points}}
+\index{image\-\_\-points@{image\-\_\-points}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{image\-\_\-points}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Mat} $\ast$ image\-\_\-points}}\label{calib3d_8hpp_a9089b4bcbecdc7f201448956b5929cfb}
+\hypertarget{calib3d_8hpp_a2fadf48b4380cd957a2bc3ab7ec6a4e7}{\index{calib3d.\-hpp@{calib3d.\-hpp}!image\-\_\-points1@{image\-\_\-points1}}
+\index{image\-\_\-points1@{image\-\_\-points1}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{image\-\_\-points1}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Mat}$\ast$ image\-\_\-points1}}\label{calib3d_8hpp_a2fadf48b4380cd957a2bc3ab7ec6a4e7}
+\hypertarget{calib3d_8hpp_a0161f225b19505eaec260295e55d4b91}{\index{calib3d.\-hpp@{calib3d.\-hpp}!image\-\_\-points2@{image\-\_\-points2}}
+\index{image\-\_\-points2@{image\-\_\-points2}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{image\-\_\-points2}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Mat} const {\bf Cv\-Mat}$\ast$ image\-\_\-points2}}\label{calib3d_8hpp_a0161f225b19505eaec260295e55d4b91}
+\hypertarget{calib3d_8hpp_a3c5695da25794e723582c8b5ccff544c}{\index{calib3d.\-hpp@{calib3d.\-hpp}!image\-\_\-size@{image\-\_\-size}}
+\index{image\-\_\-size@{image\-\_\-size}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{image\-\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Mat} const {\bf Cv\-Mat} const {\bf Cv\-Mat} {\bf Cv\-Size} image\-\_\-size}}\label{calib3d_8hpp_a3c5695da25794e723582c8b5ccff544c}
+\hypertarget{calib3d_8hpp_a5573e050b99430dd825c80ad319e0cdc}{\index{calib3d.\-hpp@{calib3d.\-hpp}!img\-\_\-size@{img\-\_\-size}}
+\index{img\-\_\-size@{img\-\_\-size}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{img\-\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Mat} const {\bf Cv\-Mat} {\bf Cv\-Size} img\-\_\-size}}\label{calib3d_8hpp_a5573e050b99430dd825c80ad319e0cdc}
+\hypertarget{calib3d_8hpp_adf2d2703938737f3ae6f0b88f002f90b}{\index{calib3d.\-hpp@{calib3d.\-hpp}!matrix\-Q@{matrix\-Q}}
+\index{matrix\-Q@{matrix\-Q}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{matrix\-Q}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Mat} {\bf Cv\-Mat}$\ast$ matrix\-Q}}\label{calib3d_8hpp_adf2d2703938737f3ae6f0b88f002f90b}
+\hypertarget{calib3d_8hpp_a5662832417cb83b0b9738d0553ecc83e}{\index{calib3d.\-hpp@{calib3d.\-hpp}!matrix\-R@{matrix\-R}}
+\index{matrix\-R@{matrix\-R}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{matrix\-R}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Mat}$\ast$ matrix\-R}}\label{calib3d_8hpp_a5662832417cb83b0b9738d0553ecc83e}
+\hypertarget{calib3d_8hpp_a4ab0ccb69523029b3f46895a4d7ea1d5}{\index{calib3d.\-hpp@{calib3d.\-hpp}!max\-\_\-iters@{max\-\_\-iters}}
+\index{max\-\_\-iters@{max\-\_\-iters}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{max\-\_\-iters}]{\setlength{\rightskip}{0pt plus 5cm}double int int max\-\_\-iters}}\label{calib3d_8hpp_a4ab0ccb69523029b3f46895a4d7ea1d5}
+\hypertarget{calib3d_8hpp_aaaa7662dcc8382d7031487b880d91677}{\index{calib3d.\-hpp@{calib3d.\-hpp}!min\-Disparity@{min\-Disparity}}
+\index{min\-Disparity@{min\-Disparity}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{min\-Disparity}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Arr} int min\-Disparity}}\label{calib3d_8hpp_aaaa7662dcc8382d7031487b880d91677}
+\hypertarget{calib3d_8hpp_aa3f8329d3092f55cbeb2f019aeb0140e}{\index{calib3d.\-hpp@{calib3d.\-hpp}!model\-\_\-points@{model\-\_\-points}}
+\index{model\-\_\-points@{model\-\_\-points}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{model\-\_\-points}]{\setlength{\rightskip}{0pt plus 5cm}double int model\-\_\-points}}\label{calib3d_8hpp_aa3f8329d3092f55cbeb2f019aeb0140e}
+\hypertarget{calib3d_8hpp_a98bbb2edcf16e87c8956cca77c1362c2}{\index{calib3d.\-hpp@{calib3d.\-hpp}!new\-\_\-camera\-\_\-matrix@{new\-\_\-camera\-\_\-matrix}}
+\index{new\-\_\-camera\-\_\-matrix@{new\-\_\-camera\-\_\-matrix}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{new\-\_\-camera\-\_\-matrix}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Mat} {\bf Cv\-Size} double {\bf Cv\-Mat}$\ast$ new\-\_\-camera\-\_\-matrix}}\label{calib3d_8hpp_a98bbb2edcf16e87c8956cca77c1362c2}
+\hypertarget{calib3d_8hpp_a66c54858764f907c0d9a00f62fabc9ea}{\index{calib3d.\-hpp@{calib3d.\-hpp}!new\-\_\-points1@{new\-\_\-points1}}
+\index{new\-\_\-points1@{new\-\_\-points1}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{new\-\_\-points1}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Mat} {\bf Cv\-Mat} {\bf Cv\-Mat}$\ast$ new\-\_\-points1}}\label{calib3d_8hpp_a66c54858764f907c0d9a00f62fabc9ea}
+\hypertarget{calib3d_8hpp_a18766e2def35cebada05fcbe904a7ae5}{\index{calib3d.\-hpp@{calib3d.\-hpp}!new\-\_\-points2@{new\-\_\-points2}}
+\index{new\-\_\-points2@{new\-\_\-points2}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{new\-\_\-points2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Mat} {\bf Cv\-Mat} {\bf Cv\-Mat} {\bf Cv\-Mat}$\ast$ new\-\_\-points2}}\label{calib3d_8hpp_a18766e2def35cebada05fcbe904a7ae5}
+\hypertarget{calib3d_8hpp_a5cf988c63b6068a0e5767053be288375}{\index{calib3d.\-hpp@{calib3d.\-hpp}!npoints@{npoints}}
+\index{npoints@{npoints}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{npoints}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Mat} const {\bf Cv\-Mat} const {\bf Cv\-Mat} $\ast$ npoints}}\label{calib3d_8hpp_a5cf988c63b6068a0e5767053be288375}
+\hypertarget{calib3d_8hpp_a833b3f1fda9b69decddcee122e27c2fb}{\index{calib3d.\-hpp@{calib3d.\-hpp}!number\-Of\-Disparities@{number\-Of\-Disparities}}
+\index{number\-Of\-Disparities@{number\-Of\-Disparities}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{number\-Of\-Disparities}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Arr} int int number\-Of\-Disparities}}\label{calib3d_8hpp_a833b3f1fda9b69decddcee122e27c2fb}
+\hypertarget{calib3d_8hpp_a81046431a4ff9a0e8b93536f19efac38}{\index{calib3d.\-hpp@{calib3d.\-hpp}!P1@{P1}}
+\index{P1@{P1}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{P1}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Mat} const {\bf Cv\-Mat} const {\bf Cv\-Mat} {\bf Cv\-Size} const {\bf Cv\-Mat} const {\bf Cv\-Mat} {\bf Cv\-Mat} {\bf Cv\-Mat} {\bf Cv\-Mat}$\ast$ P1}}\label{calib3d_8hpp_a81046431a4ff9a0e8b93536f19efac38}
+\hypertarget{calib3d_8hpp_a704ac1a3954b1c810117417a050e7f76}{\index{calib3d.\-hpp@{calib3d.\-hpp}!P2@{P2}}
+\index{P2@{P2}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{P2}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Mat} const {\bf Cv\-Mat} const {\bf Cv\-Mat} {\bf Cv\-Size} const {\bf Cv\-Mat} const {\bf Cv\-Mat} {\bf Cv\-Mat} {\bf Cv\-Mat} {\bf Cv\-Mat} {\bf Cv\-Mat}$\ast$ P2}}\label{calib3d_8hpp_a704ac1a3954b1c810117417a050e7f76}
+\hypertarget{calib3d_8hpp_ada2f272bd1d466c84b2b3cbe3c7679a6}{\index{calib3d.\-hpp@{calib3d.\-hpp}!pattern\-\_\-size@{pattern\-\_\-size}}
+\index{pattern\-\_\-size@{pattern\-\_\-size}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{pattern\-\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Size} pattern\-\_\-size}}\label{calib3d_8hpp_ada2f272bd1d466c84b2b3cbe3c7679a6}
+\hypertarget{calib3d_8hpp_aa1c0ba6afc9fa28486187776c13930af}{\index{calib3d.\-hpp@{calib3d.\-hpp}!pattern\-\_\-was\-\_\-found@{pattern\-\_\-was\-\_\-found}}
+\index{pattern\-\_\-was\-\_\-found@{pattern\-\_\-was\-\_\-found}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{pattern\-\_\-was\-\_\-found}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Size} {\bf Cv\-Point2\-D32f} int int pattern\-\_\-was\-\_\-found}}\label{calib3d_8hpp_aa1c0ba6afc9fa28486187776c13930af}
+\hypertarget{calib3d_8hpp_aee23d4be8a352471e2c7d05d83420d72}{\index{calib3d.\-hpp@{calib3d.\-hpp}!point\-\_\-count@{point\-\_\-count}}
+\index{point\-\_\-count@{point\-\_\-count}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{point\-\_\-count}]{\setlength{\rightskip}{0pt plus 5cm}int point\-\_\-count}}\label{calib3d_8hpp_aee23d4be8a352471e2c7d05d83420d72}
+\hypertarget{calib3d_8hpp_a50ee04898c1ffb9bd7451c219d1d5485}{\index{calib3d.\-hpp@{calib3d.\-hpp}!point\-\_\-counts@{point\-\_\-counts}}
+\index{point\-\_\-counts@{point\-\_\-counts}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{point\-\_\-counts}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Mat} const {\bf Cv\-Mat}$\ast$ point\-\_\-counts}}\label{calib3d_8hpp_a50ee04898c1ffb9bd7451c219d1d5485}
+\hypertarget{calib3d_8hpp_a3b72d48e58a35993385885cbc187c91d}{\index{calib3d.\-hpp@{calib3d.\-hpp}!points1@{points1}}
+\index{points1@{points1}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{points1}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Mat}$\ast$ points1}}\label{calib3d_8hpp_a3b72d48e58a35993385885cbc187c91d}
+\hypertarget{calib3d_8hpp_acc2fdbee95dbdd176a73ce514367bba4}{\index{calib3d.\-hpp@{calib3d.\-hpp}!points2@{points2}}
+\index{points2@{points2}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{points2}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Mat} $\ast$ points2}}\label{calib3d_8hpp_acc2fdbee95dbdd176a73ce514367bba4}
+\hypertarget{calib3d_8hpp_ac0dd99b594246a84f7f13da491eabd28}{\index{calib3d.\-hpp@{calib3d.\-hpp}!points4\-D@{points4\-D}}
+\index{points4\-D@{points4\-D}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{points4\-D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Mat} {\bf Cv\-Mat} {\bf Cv\-Mat} {\bf Cv\-Mat}$\ast$ points4\-D}}\label{calib3d_8hpp_ac0dd99b594246a84f7f13da491eabd28}
+\hypertarget{calib3d_8hpp_ab90a2c4d9bf1dadcea899394d2e0ecc0}{\index{calib3d.\-hpp@{calib3d.\-hpp}!pos\-Vect@{pos\-Vect}}
+\index{pos\-Vect@{pos\-Vect}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{pos\-Vect}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Mat} {\bf Cv\-Mat} {\bf Cv\-Mat}$\ast$ pos\-Vect}}\label{calib3d_8hpp_ab90a2c4d9bf1dadcea899394d2e0ecc0}
+\hypertarget{calib3d_8hpp_abebe4d619ecb5103b8488350cdaab219}{\index{calib3d.\-hpp@{calib3d.\-hpp}!proj\-Matr2@{proj\-Matr2}}
+\index{proj\-Matr2@{proj\-Matr2}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{proj\-Matr2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Mat}$\ast$ proj\-Matr2}}\label{calib3d_8hpp_abebe4d619ecb5103b8488350cdaab219}
+\hypertarget{calib3d_8hpp_a9bd02faecce9e89211ed2b0c86b1c76e}{\index{calib3d.\-hpp@{calib3d.\-hpp}!proj\-Points1@{proj\-Points1}}
+\index{proj\-Points1@{proj\-Points1}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{proj\-Points1}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Mat} {\bf Cv\-Mat}$\ast$ proj\-Points1}}\label{calib3d_8hpp_a9bd02faecce9e89211ed2b0c86b1c76e}
+\hypertarget{calib3d_8hpp_aa01a248a8a11fee190913a6ea7110418}{\index{calib3d.\-hpp@{calib3d.\-hpp}!proj\-Points2@{proj\-Points2}}
+\index{proj\-Points2@{proj\-Points2}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{proj\-Points2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Mat} {\bf Cv\-Mat} {\bf Cv\-Mat}$\ast$ proj\-Points2}}\label{calib3d_8hpp_aa01a248a8a11fee190913a6ea7110418}
+\hypertarget{calib3d_8hpp_a29d14baac63d86e6bbb0b03861384e2c}{\index{calib3d.\-hpp@{calib3d.\-hpp}!Q@{Q}}
+\index{Q@{Q}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{Q}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Arr} const {\bf Cv\-Mat}$\ast$ Q}}\label{calib3d_8hpp_a29d14baac63d86e6bbb0b03861384e2c}
+\hypertarget{calib3d_8hpp_a2ea7d948846e496014d0468ad2c8807f}{\index{calib3d.\-hpp@{calib3d.\-hpp}!R@{R}}
+\index{R@{R}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{R}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Mat} const {\bf Cv\-Mat} const {\bf Cv\-Mat} {\bf Cv\-Size} const {\bf Cv\-Mat} $\ast$ R}}\label{calib3d_8hpp_a2ea7d948846e496014d0468ad2c8807f}
+\hypertarget{calib3d_8hpp_ab4d5cbb79188a091449ea6430cd5ec59}{\index{calib3d.\-hpp@{calib3d.\-hpp}!R1@{R1}}
+\index{R1@{R1}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{R1}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Mat} const {\bf Cv\-Mat} const {\bf Cv\-Mat} {\bf Cv\-Size} const {\bf Cv\-Mat} const {\bf Cv\-Mat} {\bf Cv\-Mat}$\ast$ R1}}\label{calib3d_8hpp_ab4d5cbb79188a091449ea6430cd5ec59}
+\hypertarget{calib3d_8hpp_a08847b11703596b1db049ef98d450eaa}{\index{calib3d.\-hpp@{calib3d.\-hpp}!R2@{R2}}
+\index{R2@{R2}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{R2}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Mat} const {\bf Cv\-Mat} const {\bf Cv\-Mat} {\bf Cv\-Size} const {\bf Cv\-Mat} const {\bf Cv\-Mat} {\bf Cv\-Mat} {\bf Cv\-Mat}$\ast$ R2}}\label{calib3d_8hpp_a08847b11703596b1db049ef98d450eaa}
+\hypertarget{calib3d_8hpp_a6b04b878081bf724144b73c75dfd1894}{\index{calib3d.\-hpp@{calib3d.\-hpp}!right@{right}}
+\index{right@{right}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{right}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Arr}$\ast$ right}}\label{calib3d_8hpp_a6b04b878081bf724144b73c75dfd1894}
+\hypertarget{calib3d_8hpp_ae74bb06aacad0765e19fba1c657f9f97}{\index{calib3d.\-hpp@{calib3d.\-hpp}!roi2@{roi2}}
+\index{roi2@{roi2}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{roi2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Rect} roi2}}\label{calib3d_8hpp_ae74bb06aacad0765e19fba1c657f9f97}
+\hypertarget{calib3d_8hpp_a9d6ed68fa91ca104fd89a6690ca1bd18}{\index{calib3d.\-hpp@{calib3d.\-hpp}!rotation\-\_\-matrix@{rotation\-\_\-matrix}}
+\index{rotation\-\_\-matrix@{rotation\-\_\-matrix}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{rotation\-\_\-matrix}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Point2\-D32f} double {\bf Cv\-Term\-Criteria} float$\ast$ rotation\-\_\-matrix}}\label{calib3d_8hpp_a9d6ed68fa91ca104fd89a6690ca1bd18}
+\hypertarget{calib3d_8hpp_a7537ad9f335658c6a6f2641bc913b6d8}{\index{calib3d.\-hpp@{calib3d.\-hpp}!rotation\-\_\-vector@{rotation\-\_\-vector}}
+\index{rotation\-\_\-vector@{rotation\-\_\-vector}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{rotation\-\_\-vector}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Mat} const {\bf Cv\-Mat} const {\bf Cv\-Mat} {\bf Cv\-Mat} $\ast$ rotation\-\_\-vector}}\label{calib3d_8hpp_a7537ad9f335658c6a6f2641bc913b6d8}
+\hypertarget{calib3d_8hpp_a35a11ed99b21a1dc615e57378188030b}{\index{calib3d.\-hpp@{calib3d.\-hpp}!rot\-Matr@{rot\-Matr}}
+\index{rot\-Matr@{rot\-Matr}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{rot\-Matr}]{\setlength{\rightskip}{0pt plus 5cm}double double $\ast$ rot\-Matr}}\label{calib3d_8hpp_a35a11ed99b21a1dc615e57378188030b}
+\hypertarget{calib3d_8hpp_a9ee9004051a34720fd22961dd06e5fe5}{\index{calib3d.\-hpp@{calib3d.\-hpp}!S\-A\-D\-Window\-Size@{S\-A\-D\-Window\-Size}}
+\index{S\-A\-D\-Window\-Size@{S\-A\-D\-Window\-Size}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{S\-A\-D\-Window\-Size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Rect} int int int S\-A\-D\-Window\-Size}}\label{calib3d_8hpp_a9ee9004051a34720fd22961dd06e5fe5}
+\hypertarget{calib3d_8hpp_ae97003f8d5c64cdfb99f6f2606d121b6}{\index{calib3d.\-hpp@{calib3d.\-hpp}!size@{size}}
+\index{size@{size}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Cv\-Seq} float {\bf Cv\-Size2\-D32f} size}}\label{calib3d_8hpp_ae97003f8d5c64cdfb99f6f2606d121b6}
+\hypertarget{calib3d_8hpp_ad823b72173a53c77d8a75ca4a2b42a54}{\index{calib3d.\-hpp@{calib3d.\-hpp}!state@{state}}
+\index{state@{state}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{state}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Arr} {\bf Cv\-Arr} {\bf Cv\-Stereo\-B\-M\-State}$\ast$ state}}\label{calib3d_8hpp_ad823b72173a53c77d8a75ca4a2b42a54}
+\hypertarget{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{\index{calib3d.\-hpp@{calib3d.\-hpp}!T@{T}}
+\index{T@{T}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{T}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Mat} const {\bf Cv\-Mat} const {\bf Cv\-Mat} {\bf Cv\-Size} const {\bf Cv\-Mat} const {\bf Cv\-Mat} $\ast$ T}}\label{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}
+\hypertarget{calib3d_8hpp_a4fd3a0d35f25e6a3e038c71c431c1166}{\index{calib3d.\-hpp@{calib3d.\-hpp}!translation\-\_\-vector@{translation\-\_\-vector}}
+\index{translation\-\_\-vector@{translation\-\_\-vector}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{translation\-\_\-vector}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Mat} const {\bf Cv\-Mat} const {\bf Cv\-Mat} {\bf Cv\-Mat} {\bf Cv\-Mat} $\ast$ translation\-\_\-vector}}\label{calib3d_8hpp_a4fd3a0d35f25e6a3e038c71c431c1166}
+\hypertarget{calib3d_8hpp_af29d0bb3c3b8f9f1132c7a82e53f8c65}{\index{calib3d.\-hpp@{calib3d.\-hpp}!which\-\_\-image@{which\-\_\-image}}
+\index{which\-\_\-image@{which\-\_\-image}!calib3d.hpp@{calib3d.\-hpp}}
+\subsubsection[{which\-\_\-image}]{\setlength{\rightskip}{0pt plus 5cm}int which\-\_\-image}}\label{calib3d_8hpp_af29d0bb3c3b8f9f1132c7a82e53f8c65}

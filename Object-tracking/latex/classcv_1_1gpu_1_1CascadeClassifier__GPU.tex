@@ -1,0 +1,138 @@
+\hypertarget{classcv_1_1gpu_1_1CascadeClassifier__GPU}{\section{cv\-:\-:gpu\-:\-:Cascade\-Classifier\-\_\-\-G\-P\-U Class Reference}
+\label{classcv_1_1gpu_1_1CascadeClassifier__GPU}\index{cv\-::gpu\-::\-Cascade\-Classifier\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Cascade\-Classifier\-\_\-\-G\-P\-U}}
+}
+
+
+{\ttfamily \#include $<$gpu.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcv_1_1gpu_1_1CascadeClassifier__GPU_aaf09238bba6978d99cdfb10162f9833a}{Cascade\-Classifier\-\_\-\-G\-P\-U} ()
+\item 
+\hyperlink{classcv_1_1gpu_1_1CascadeClassifier__GPU_a70ff69b18416b2b5902bfc17f0f821bf}{Cascade\-Classifier\-\_\-\-G\-P\-U} (const std\-::string \&\hyperlink{core__c_8h_acc427f35f3bd9f865d39012657cc42f8}{filename})
+\item 
+\hyperlink{classcv_1_1gpu_1_1CascadeClassifier__GPU_a493961c7677bb5631063c0d7c7f128b5}{$\sim$\-Cascade\-Classifier\-\_\-\-G\-P\-U} ()
+\item 
+bool \hyperlink{classcv_1_1gpu_1_1CascadeClassifier__GPU_a8fa3b2ba32c1929c7ebe4761b92d3fe9}{empty} () const 
+\item 
+bool \hyperlink{classcv_1_1gpu_1_1CascadeClassifier__GPU_a6943886ea4b55939e1f4428b6a072bc5}{load} (const std\-::string \&\hyperlink{core__c_8h_acc427f35f3bd9f865d39012657cc42f8}{filename})
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1CascadeClassifier__GPU_ae3bd3e9c997574c13ce3e11f25690cb4}{release} ()
+\item 
+int \hyperlink{classcv_1_1gpu_1_1CascadeClassifier__GPU_a93efcafb9ab71cc6fe01d3680110417b}{detect\-Multi\-Scale} (const Gpu\-Mat \&\hyperlink{legacy_8hpp_ad62b16ab219ae2483e8a3d921c44cc97}{image}, Gpu\-Mat \&objects\-Buf, double scale\-Factor=1.\-2, int min\-Neighbors=4, Size min\-Size=Size())
+\item 
+int \hyperlink{classcv_1_1gpu_1_1CascadeClassifier__GPU_a1c2d44612ced4cd8cf6d8ba28a6c9e95}{detect\-Multi\-Scale} (const Gpu\-Mat \&\hyperlink{legacy_8hpp_ad62b16ab219ae2483e8a3d921c44cc97}{image}, Gpu\-Mat \&objects\-Buf, Size max\-Object\-Size, Size min\-Size=Size(), double scale\-Factor=1.\-1, int min\-Neighbors=4)
+\item 
+Size \hyperlink{classcv_1_1gpu_1_1CascadeClassifier__GPU_a7c30977e8ebea8bd391c4a1478f02ab7}{get\-Classifier\-Size} () const 
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classcv_1_1gpu_1_1CascadeClassifier__GPU_ae2278404d7669cd4e98598791d6aac2d}{find\-Largest\-Object}
+\item 
+bool \hyperlink{classcv_1_1gpu_1_1CascadeClassifier__GPU_a46c3e4aacca43b5abe7fb048cb08c8f7}{visualize\-In\-Place}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classcv_1_1gpu_1_1CascadeClassifier__GPU_ae58dceeb75c1ee30c78466f3cf43114e}{Cascade\-Classifier\-\_\-\-G\-P\-U\-\_\-\-L\-B\-P}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcv_1_1gpu_1_1CascadeClassifier__GPU_aaf09238bba6978d99cdfb10162f9833a}{\index{cv\-::gpu\-::\-Cascade\-Classifier\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Cascade\-Classifier\-\_\-\-G\-P\-U}!Cascade\-Classifier\-\_\-\-G\-P\-U@{Cascade\-Classifier\-\_\-\-G\-P\-U}}
+\index{Cascade\-Classifier\-\_\-\-G\-P\-U@{Cascade\-Classifier\-\_\-\-G\-P\-U}!cv::gpu::CascadeClassifier_GPU@{cv\-::gpu\-::\-Cascade\-Classifier\-\_\-\-G\-P\-U}}
+\subsubsection[{Cascade\-Classifier\-\_\-\-G\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::gpu\-::\-Cascade\-Classifier\-\_\-\-G\-P\-U\-::\-Cascade\-Classifier\-\_\-\-G\-P\-U (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1CascadeClassifier__GPU_aaf09238bba6978d99cdfb10162f9833a}
+\hypertarget{classcv_1_1gpu_1_1CascadeClassifier__GPU_a70ff69b18416b2b5902bfc17f0f821bf}{\index{cv\-::gpu\-::\-Cascade\-Classifier\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Cascade\-Classifier\-\_\-\-G\-P\-U}!Cascade\-Classifier\-\_\-\-G\-P\-U@{Cascade\-Classifier\-\_\-\-G\-P\-U}}
+\index{Cascade\-Classifier\-\_\-\-G\-P\-U@{Cascade\-Classifier\-\_\-\-G\-P\-U}!cv::gpu::CascadeClassifier_GPU@{cv\-::gpu\-::\-Cascade\-Classifier\-\_\-\-G\-P\-U}}
+\subsubsection[{Cascade\-Classifier\-\_\-\-G\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::gpu\-::\-Cascade\-Classifier\-\_\-\-G\-P\-U\-::\-Cascade\-Classifier\-\_\-\-G\-P\-U (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{filename}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1CascadeClassifier__GPU_a70ff69b18416b2b5902bfc17f0f821bf}
+\hypertarget{classcv_1_1gpu_1_1CascadeClassifier__GPU_a493961c7677bb5631063c0d7c7f128b5}{\index{cv\-::gpu\-::\-Cascade\-Classifier\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Cascade\-Classifier\-\_\-\-G\-P\-U}!$\sim$\-Cascade\-Classifier\-\_\-\-G\-P\-U@{$\sim$\-Cascade\-Classifier\-\_\-\-G\-P\-U}}
+\index{$\sim$\-Cascade\-Classifier\-\_\-\-G\-P\-U@{$\sim$\-Cascade\-Classifier\-\_\-\-G\-P\-U}!cv::gpu::CascadeClassifier_GPU@{cv\-::gpu\-::\-Cascade\-Classifier\-\_\-\-G\-P\-U}}
+\subsubsection[{$\sim$\-Cascade\-Classifier\-\_\-\-G\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::gpu\-::\-Cascade\-Classifier\-\_\-\-G\-P\-U\-::$\sim$\-Cascade\-Classifier\-\_\-\-G\-P\-U (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1CascadeClassifier__GPU_a493961c7677bb5631063c0d7c7f128b5}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcv_1_1gpu_1_1CascadeClassifier__GPU_a93efcafb9ab71cc6fe01d3680110417b}{\index{cv\-::gpu\-::\-Cascade\-Classifier\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Cascade\-Classifier\-\_\-\-G\-P\-U}!detect\-Multi\-Scale@{detect\-Multi\-Scale}}
+\index{detect\-Multi\-Scale@{detect\-Multi\-Scale}!cv::gpu::CascadeClassifier_GPU@{cv\-::gpu\-::\-Cascade\-Classifier\-\_\-\-G\-P\-U}}
+\subsubsection[{detect\-Multi\-Scale}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::gpu\-::\-Cascade\-Classifier\-\_\-\-G\-P\-U\-::detect\-Multi\-Scale (
+\begin{DoxyParamCaption}
+\item[{const Gpu\-Mat \&}]{image, }
+\item[{Gpu\-Mat \&}]{objects\-Buf, }
+\item[{double}]{scale\-Factor = {\ttfamily 1.2}, }
+\item[{int}]{min\-Neighbors = {\ttfamily 4}, }
+\item[{Size}]{min\-Size = {\ttfamily Size()}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1CascadeClassifier__GPU_a93efcafb9ab71cc6fe01d3680110417b}
+\hypertarget{classcv_1_1gpu_1_1CascadeClassifier__GPU_a1c2d44612ced4cd8cf6d8ba28a6c9e95}{\index{cv\-::gpu\-::\-Cascade\-Classifier\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Cascade\-Classifier\-\_\-\-G\-P\-U}!detect\-Multi\-Scale@{detect\-Multi\-Scale}}
+\index{detect\-Multi\-Scale@{detect\-Multi\-Scale}!cv::gpu::CascadeClassifier_GPU@{cv\-::gpu\-::\-Cascade\-Classifier\-\_\-\-G\-P\-U}}
+\subsubsection[{detect\-Multi\-Scale}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::gpu\-::\-Cascade\-Classifier\-\_\-\-G\-P\-U\-::detect\-Multi\-Scale (
+\begin{DoxyParamCaption}
+\item[{const Gpu\-Mat \&}]{image, }
+\item[{Gpu\-Mat \&}]{objects\-Buf, }
+\item[{Size}]{max\-Object\-Size, }
+\item[{Size}]{min\-Size = {\ttfamily Size()}, }
+\item[{double}]{scale\-Factor = {\ttfamily 1.1}, }
+\item[{int}]{min\-Neighbors = {\ttfamily 4}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1CascadeClassifier__GPU_a1c2d44612ced4cd8cf6d8ba28a6c9e95}
+\hypertarget{classcv_1_1gpu_1_1CascadeClassifier__GPU_a8fa3b2ba32c1929c7ebe4761b92d3fe9}{\index{cv\-::gpu\-::\-Cascade\-Classifier\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Cascade\-Classifier\-\_\-\-G\-P\-U}!empty@{empty}}
+\index{empty@{empty}!cv::gpu::CascadeClassifier_GPU@{cv\-::gpu\-::\-Cascade\-Classifier\-\_\-\-G\-P\-U}}
+\subsubsection[{empty}]{\setlength{\rightskip}{0pt plus 5cm}bool cv\-::gpu\-::\-Cascade\-Classifier\-\_\-\-G\-P\-U\-::empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcv_1_1gpu_1_1CascadeClassifier__GPU_a8fa3b2ba32c1929c7ebe4761b92d3fe9}
+\hypertarget{classcv_1_1gpu_1_1CascadeClassifier__GPU_a7c30977e8ebea8bd391c4a1478f02ab7}{\index{cv\-::gpu\-::\-Cascade\-Classifier\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Cascade\-Classifier\-\_\-\-G\-P\-U}!get\-Classifier\-Size@{get\-Classifier\-Size}}
+\index{get\-Classifier\-Size@{get\-Classifier\-Size}!cv::gpu::CascadeClassifier_GPU@{cv\-::gpu\-::\-Cascade\-Classifier\-\_\-\-G\-P\-U}}
+\subsubsection[{get\-Classifier\-Size}]{\setlength{\rightskip}{0pt plus 5cm}Size cv\-::gpu\-::\-Cascade\-Classifier\-\_\-\-G\-P\-U\-::get\-Classifier\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcv_1_1gpu_1_1CascadeClassifier__GPU_a7c30977e8ebea8bd391c4a1478f02ab7}
+\hypertarget{classcv_1_1gpu_1_1CascadeClassifier__GPU_a6943886ea4b55939e1f4428b6a072bc5}{\index{cv\-::gpu\-::\-Cascade\-Classifier\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Cascade\-Classifier\-\_\-\-G\-P\-U}!load@{load}}
+\index{load@{load}!cv::gpu::CascadeClassifier_GPU@{cv\-::gpu\-::\-Cascade\-Classifier\-\_\-\-G\-P\-U}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}bool cv\-::gpu\-::\-Cascade\-Classifier\-\_\-\-G\-P\-U\-::load (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{filename}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1CascadeClassifier__GPU_a6943886ea4b55939e1f4428b6a072bc5}
+\hypertarget{classcv_1_1gpu_1_1CascadeClassifier__GPU_ae3bd3e9c997574c13ce3e11f25690cb4}{\index{cv\-::gpu\-::\-Cascade\-Classifier\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Cascade\-Classifier\-\_\-\-G\-P\-U}!release@{release}}
+\index{release@{release}!cv::gpu::CascadeClassifier_GPU@{cv\-::gpu\-::\-Cascade\-Classifier\-\_\-\-G\-P\-U}}
+\subsubsection[{release}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-Cascade\-Classifier\-\_\-\-G\-P\-U\-::release (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1CascadeClassifier__GPU_ae3bd3e9c997574c13ce3e11f25690cb4}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classcv_1_1gpu_1_1CascadeClassifier__GPU_ae58dceeb75c1ee30c78466f3cf43114e}{\index{cv\-::gpu\-::\-Cascade\-Classifier\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Cascade\-Classifier\-\_\-\-G\-P\-U}!Cascade\-Classifier\-\_\-\-G\-P\-U\-\_\-\-L\-B\-P@{Cascade\-Classifier\-\_\-\-G\-P\-U\-\_\-\-L\-B\-P}}
+\index{Cascade\-Classifier\-\_\-\-G\-P\-U\-\_\-\-L\-B\-P@{Cascade\-Classifier\-\_\-\-G\-P\-U\-\_\-\-L\-B\-P}!cv::gpu::CascadeClassifier_GPU@{cv\-::gpu\-::\-Cascade\-Classifier\-\_\-\-G\-P\-U}}
+\subsubsection[{Cascade\-Classifier\-\_\-\-G\-P\-U\-\_\-\-L\-B\-P}]{\setlength{\rightskip}{0pt plus 5cm}friend class Cascade\-Classifier\-\_\-\-G\-P\-U\-\_\-\-L\-B\-P\hspace{0.3cm}{\ttfamily [friend]}}}\label{classcv_1_1gpu_1_1CascadeClassifier__GPU_ae58dceeb75c1ee30c78466f3cf43114e}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcv_1_1gpu_1_1CascadeClassifier__GPU_ae2278404d7669cd4e98598791d6aac2d}{\index{cv\-::gpu\-::\-Cascade\-Classifier\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Cascade\-Classifier\-\_\-\-G\-P\-U}!find\-Largest\-Object@{find\-Largest\-Object}}
+\index{find\-Largest\-Object@{find\-Largest\-Object}!cv::gpu::CascadeClassifier_GPU@{cv\-::gpu\-::\-Cascade\-Classifier\-\_\-\-G\-P\-U}}
+\subsubsection[{find\-Largest\-Object}]{\setlength{\rightskip}{0pt plus 5cm}bool cv\-::gpu\-::\-Cascade\-Classifier\-\_\-\-G\-P\-U\-::find\-Largest\-Object}}\label{classcv_1_1gpu_1_1CascadeClassifier__GPU_ae2278404d7669cd4e98598791d6aac2d}
+\hypertarget{classcv_1_1gpu_1_1CascadeClassifier__GPU_a46c3e4aacca43b5abe7fb048cb08c8f7}{\index{cv\-::gpu\-::\-Cascade\-Classifier\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Cascade\-Classifier\-\_\-\-G\-P\-U}!visualize\-In\-Place@{visualize\-In\-Place}}
+\index{visualize\-In\-Place@{visualize\-In\-Place}!cv::gpu::CascadeClassifier_GPU@{cv\-::gpu\-::\-Cascade\-Classifier\-\_\-\-G\-P\-U}}
+\subsubsection[{visualize\-In\-Place}]{\setlength{\rightskip}{0pt plus 5cm}bool cv\-::gpu\-::\-Cascade\-Classifier\-\_\-\-G\-P\-U\-::visualize\-In\-Place}}\label{classcv_1_1gpu_1_1CascadeClassifier__GPU_a46c3e4aacca43b5abe7fb048cb08c8f7}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/gpu/\hyperlink{gpu_2gpu_8hpp}{gpu.\-hpp}\end{DoxyCompactItemize}

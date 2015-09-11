@@ -1,0 +1,57 @@
+\hypertarget{namespacecvflann_1_1lsh}{\section{cvflann\-:\-:lsh Namespace Reference}
+\label{namespacecvflann_1_1lsh}\index{cvflann\-::lsh@{cvflann\-::lsh}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structcvflann_1_1lsh_1_1LshStats}{Lsh\-Stats}
+\item 
+class \hyperlink{classcvflann_1_1lsh_1_1LshTable}{Lsh\-Table}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef uint32\-\_\-t \hyperlink{namespacecvflann_1_1lsh_a0df25a3670e022e391bb426c0bd9134d}{Feature\-Index}
+\item 
+typedef unsigned int \hyperlink{namespacecvflann_1_1lsh_a798313f0f282f24b311c4cc90e2a6619}{Bucket\-Key}
+\item 
+typedef std\-::vector$<$ \hyperlink{namespacecvflann_1_1lsh_a0df25a3670e022e391bb426c0bd9134d}{Feature\-Index} $>$ \hyperlink{namespacecvflann_1_1lsh_aef9e4f70918d6013ff72020141fa03d0}{Bucket}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\-::ostream \& \hyperlink{namespacecvflann_1_1lsh_ad142544735030a5ae8ed4614163f7694}{operator$<$$<$} (std\-::ostream \&out, const \hyperlink{structcvflann_1_1lsh_1_1LshStats}{Lsh\-Stats} \&stats)
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{namespacecvflann_1_1lsh_aef9e4f70918d6013ff72020141fa03d0}{\index{cvflann\-::lsh@{cvflann\-::lsh}!Bucket@{Bucket}}
+\index{Bucket@{Bucket}!cvflann::lsh@{cvflann\-::lsh}}
+\subsubsection[{Bucket}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\-::vector$<${\bf Feature\-Index}$>$ {\bf cvflann\-::lsh\-::\-Bucket}}}\label{namespacecvflann_1_1lsh_aef9e4f70918d6013ff72020141fa03d0}
+A bucket in an L\-S\-H table \hypertarget{namespacecvflann_1_1lsh_a798313f0f282f24b311c4cc90e2a6619}{\index{cvflann\-::lsh@{cvflann\-::lsh}!Bucket\-Key@{Bucket\-Key}}
+\index{Bucket\-Key@{Bucket\-Key}!cvflann::lsh@{cvflann\-::lsh}}
+\subsubsection[{Bucket\-Key}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned int {\bf cvflann\-::lsh\-::\-Bucket\-Key}}}\label{namespacecvflann_1_1lsh_a798313f0f282f24b311c4cc90e2a6619}
+The id from which we can get a bucket back in an L\-S\-H table \hypertarget{namespacecvflann_1_1lsh_a0df25a3670e022e391bb426c0bd9134d}{\index{cvflann\-::lsh@{cvflann\-::lsh}!Feature\-Index@{Feature\-Index}}
+\index{Feature\-Index@{Feature\-Index}!cvflann::lsh@{cvflann\-::lsh}}
+\subsubsection[{Feature\-Index}]{\setlength{\rightskip}{0pt plus 5cm}typedef uint32\-\_\-t {\bf cvflann\-::lsh\-::\-Feature\-Index}}}\label{namespacecvflann_1_1lsh_a0df25a3670e022e391bb426c0bd9134d}
+What is stored in an L\-S\-H bucket 
+
+\subsection{Function Documentation}
+\hypertarget{namespacecvflann_1_1lsh_ad142544735030a5ae8ed4614163f7694}{\index{cvflann\-::lsh@{cvflann\-::lsh}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!cvflann::lsh@{cvflann\-::lsh}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std\-::ostream\& cvflann\-::lsh\-::operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{out, }
+\item[{const Lsh\-Stats \&}]{stats}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{namespacecvflann_1_1lsh_ad142544735030a5ae8ed4614163f7694}
+Overload the $<$$<$ operator for \hyperlink{structcvflann_1_1lsh_1_1LshStats}{Lsh\-Stats} 
+\begin{DoxyParams}{Parameters}
+{\em out} & the streams \\
+\hline
+{\em stats} & the stats to display \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the streams 
+\end{DoxyReturn}

@@ -1,0 +1,179 @@
+\hypertarget{classcv_1_1ocl_1_1MOG2}{\section{cv\-:\-:ocl\-:\-:M\-O\-G2 Class Reference}
+\label{classcv_1_1ocl_1_1MOG2}\index{cv\-::ocl\-::\-M\-O\-G2@{cv\-::ocl\-::\-M\-O\-G2}}
+}
+
+
+{\ttfamily \#include $<$ocl.\-hpp$>$}
+
+
+
+Inheritance diagram for cv\-:\-:ocl\-:\-:M\-O\-G2\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{classcv_1_1ocl_1_1MOG2__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for cv\-:\-:ocl\-:\-:M\-O\-G2\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{classcv_1_1ocl_1_1MOG2__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcv_1_1ocl_1_1MOG2_a1aa2b563ee8cba2258d9a597994b6b09}{M\-O\-G2} (int nmixtures=-\/1)
+\begin{DoxyCompactList}\small\item\em the default constructor \end{DoxyCompactList}\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1MOG2_af4786e5aa9459ee0ba71f3ebfe209a88}{initialize} (Size frame\-Size, int frame\-Type)
+\begin{DoxyCompactList}\small\item\em re-\/initiaization method \end{DoxyCompactList}\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1MOG2_ace77a23319941aceeadec468a0fcf800}{operator()} (const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&\hyperlink{core__c_8h_a0430deaafd9043e478f306e33961299d}{frame}, \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&\hyperlink{legacy_8hpp_a7ff9edf5eaa300d3c1cea7de20631fd8}{fgmask}, float learning\-Rate=-\/1.\-0f)
+\begin{DoxyCompactList}\small\item\em the update operator \end{DoxyCompactList}\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1MOG2_a75bf9d42f37e1b90dc6b1eb3cf8a61a4}{get\-Background\-Image} (\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&background\-Image) const 
+\begin{DoxyCompactList}\small\item\em computes a background image which are the mean of all background gaussians \end{DoxyCompactList}\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1MOG2_aa1adac787479b150ff919bb87d136d6a}{release} ()
+\begin{DoxyCompactList}\small\item\em releases all inner buffers \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classcv_1_1ocl_1_1MOG2_a94f6103a28c8757089c37f0855102e1d}{history}
+\item 
+float \hyperlink{classcv_1_1ocl_1_1MOG2_a0872335afe646e84f0dc0e1bf9c370da}{var\-Threshold}
+\item 
+float \hyperlink{classcv_1_1ocl_1_1MOG2_a6ce6183a92badc37d7be1572ceb95e91}{background\-Ratio}
+\item 
+float \hyperlink{classcv_1_1ocl_1_1MOG2_a976a659d47c216c12728a639fdf435b7}{var\-Threshold\-Gen}
+\item 
+float \hyperlink{classcv_1_1ocl_1_1MOG2_ada8de5265e604b68baf48f5135406b5d}{f\-Var\-Init}
+\item 
+float \hyperlink{classcv_1_1ocl_1_1MOG2_a31a2fd79ea05986c084cb3fd2d69bc57}{f\-Var\-Min}
+\item 
+float \hyperlink{classcv_1_1ocl_1_1MOG2_a58b683df18cb7456f5b2e7e28c229a10}{f\-Var\-Max}
+\item 
+float \hyperlink{classcv_1_1ocl_1_1MOG2_a47f4b7400e781ff021dbaba79f84ea38}{f\-C\-T}
+\item 
+bool \hyperlink{classcv_1_1ocl_1_1MOG2_acfef606ea1a73b3ff31527eebd29bc0f}{b\-Shadow\-Detection}
+\item 
+unsigned char \hyperlink{classcv_1_1ocl_1_1MOG2_a2a853b7c187269451503e3b7bb81e35d}{n\-Shadow\-Detection}
+\item 
+float \hyperlink{classcv_1_1ocl_1_1MOG2_a29781e10eeabae3095ba624ecaea3c35}{f\-Tau}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The class implements the following algorithm\-: \char`\"{}\-Improved adaptive Gausian mixture model for background subtraction\char`\"{} Z.\-Zivkovic International Conference Pattern Recognition, U\-K, August, 2004. \href{http://www.zoranz.net/Publications/zivkovic2004ICPR.pdf}{\tt http\-://www.\-zoranz.\-net/\-Publications/zivkovic2004\-I\-C\-P\-R.\-pdf} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcv_1_1ocl_1_1MOG2_a1aa2b563ee8cba2258d9a597994b6b09}{\index{cv\-::ocl\-::\-M\-O\-G2@{cv\-::ocl\-::\-M\-O\-G2}!M\-O\-G2@{M\-O\-G2}}
+\index{M\-O\-G2@{M\-O\-G2}!cv::ocl::MOG2@{cv\-::ocl\-::\-M\-O\-G2}}
+\subsubsection[{M\-O\-G2}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::ocl\-::\-M\-O\-G2\-::\-M\-O\-G2 (
+\begin{DoxyParamCaption}
+\item[{int}]{nmixtures = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1MOG2_a1aa2b563ee8cba2258d9a597994b6b09}
+
+
+the default constructor 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcv_1_1ocl_1_1MOG2_a75bf9d42f37e1b90dc6b1eb3cf8a61a4}{\index{cv\-::ocl\-::\-M\-O\-G2@{cv\-::ocl\-::\-M\-O\-G2}!get\-Background\-Image@{get\-Background\-Image}}
+\index{get\-Background\-Image@{get\-Background\-Image}!cv::ocl::MOG2@{cv\-::ocl\-::\-M\-O\-G2}}
+\subsubsection[{get\-Background\-Image}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::\-M\-O\-G2\-::get\-Background\-Image (
+\begin{DoxyParamCaption}
+\item[{{\bf ocl\-Mat} \&}]{background\-Image}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcv_1_1ocl_1_1MOG2_a75bf9d42f37e1b90dc6b1eb3cf8a61a4}
+
+
+computes a background image which are the mean of all background gaussians 
+
+
+
+Implements \hyperlink{classcv_1_1ocl_1_1BackgroundSubtractor_ab58feb8db76e348a3ce4bceabecb3903}{cv\-::ocl\-::\-Background\-Subtractor}.
+
+\hypertarget{classcv_1_1ocl_1_1MOG2_af4786e5aa9459ee0ba71f3ebfe209a88}{\index{cv\-::ocl\-::\-M\-O\-G2@{cv\-::ocl\-::\-M\-O\-G2}!initialize@{initialize}}
+\index{initialize@{initialize}!cv::ocl::MOG2@{cv\-::ocl\-::\-M\-O\-G2}}
+\subsubsection[{initialize}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::\-M\-O\-G2\-::initialize (
+\begin{DoxyParamCaption}
+\item[{Size}]{frame\-Size, }
+\item[{int}]{frame\-Type}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1MOG2_af4786e5aa9459ee0ba71f3ebfe209a88}
+
+
+re-\/initiaization method 
+
+\hypertarget{classcv_1_1ocl_1_1MOG2_ace77a23319941aceeadec468a0fcf800}{\index{cv\-::ocl\-::\-M\-O\-G2@{cv\-::ocl\-::\-M\-O\-G2}!operator()@{operator()}}
+\index{operator()@{operator()}!cv::ocl::MOG2@{cv\-::ocl\-::\-M\-O\-G2}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::\-M\-O\-G2\-::operator() (
+\begin{DoxyParamCaption}
+\item[{const {\bf ocl\-Mat} \&}]{frame, }
+\item[{{\bf ocl\-Mat} \&}]{fgmask, }
+\item[{float}]{learning\-Rate = {\ttfamily -\/1.0f}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcv_1_1ocl_1_1MOG2_ace77a23319941aceeadec468a0fcf800}
+
+
+the update operator 
+
+
+
+Reimplemented from \hyperlink{classcv_1_1ocl_1_1BackgroundSubtractor_ab8110c1e077b13a09fb2abb281d1edc2}{cv\-::ocl\-::\-Background\-Subtractor}.
+
+\hypertarget{classcv_1_1ocl_1_1MOG2_aa1adac787479b150ff919bb87d136d6a}{\index{cv\-::ocl\-::\-M\-O\-G2@{cv\-::ocl\-::\-M\-O\-G2}!release@{release}}
+\index{release@{release}!cv::ocl::MOG2@{cv\-::ocl\-::\-M\-O\-G2}}
+\subsubsection[{release}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::\-M\-O\-G2\-::release (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1MOG2_aa1adac787479b150ff919bb87d136d6a}
+
+
+releases all inner buffers 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcv_1_1ocl_1_1MOG2_a6ce6183a92badc37d7be1572ceb95e91}{\index{cv\-::ocl\-::\-M\-O\-G2@{cv\-::ocl\-::\-M\-O\-G2}!background\-Ratio@{background\-Ratio}}
+\index{background\-Ratio@{background\-Ratio}!cv::ocl::MOG2@{cv\-::ocl\-::\-M\-O\-G2}}
+\subsubsection[{background\-Ratio}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::ocl\-::\-M\-O\-G2\-::background\-Ratio}}\label{classcv_1_1ocl_1_1MOG2_a6ce6183a92badc37d7be1572ceb95e91}
+\hypertarget{classcv_1_1ocl_1_1MOG2_acfef606ea1a73b3ff31527eebd29bc0f}{\index{cv\-::ocl\-::\-M\-O\-G2@{cv\-::ocl\-::\-M\-O\-G2}!b\-Shadow\-Detection@{b\-Shadow\-Detection}}
+\index{b\-Shadow\-Detection@{b\-Shadow\-Detection}!cv::ocl::MOG2@{cv\-::ocl\-::\-M\-O\-G2}}
+\subsubsection[{b\-Shadow\-Detection}]{\setlength{\rightskip}{0pt plus 5cm}bool cv\-::ocl\-::\-M\-O\-G2\-::b\-Shadow\-Detection}}\label{classcv_1_1ocl_1_1MOG2_acfef606ea1a73b3ff31527eebd29bc0f}
+\hypertarget{classcv_1_1ocl_1_1MOG2_a47f4b7400e781ff021dbaba79f84ea38}{\index{cv\-::ocl\-::\-M\-O\-G2@{cv\-::ocl\-::\-M\-O\-G2}!f\-C\-T@{f\-C\-T}}
+\index{f\-C\-T@{f\-C\-T}!cv::ocl::MOG2@{cv\-::ocl\-::\-M\-O\-G2}}
+\subsubsection[{f\-C\-T}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::ocl\-::\-M\-O\-G2\-::f\-C\-T}}\label{classcv_1_1ocl_1_1MOG2_a47f4b7400e781ff021dbaba79f84ea38}
+\hypertarget{classcv_1_1ocl_1_1MOG2_a29781e10eeabae3095ba624ecaea3c35}{\index{cv\-::ocl\-::\-M\-O\-G2@{cv\-::ocl\-::\-M\-O\-G2}!f\-Tau@{f\-Tau}}
+\index{f\-Tau@{f\-Tau}!cv::ocl::MOG2@{cv\-::ocl\-::\-M\-O\-G2}}
+\subsubsection[{f\-Tau}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::ocl\-::\-M\-O\-G2\-::f\-Tau}}\label{classcv_1_1ocl_1_1MOG2_a29781e10eeabae3095ba624ecaea3c35}
+\hypertarget{classcv_1_1ocl_1_1MOG2_ada8de5265e604b68baf48f5135406b5d}{\index{cv\-::ocl\-::\-M\-O\-G2@{cv\-::ocl\-::\-M\-O\-G2}!f\-Var\-Init@{f\-Var\-Init}}
+\index{f\-Var\-Init@{f\-Var\-Init}!cv::ocl::MOG2@{cv\-::ocl\-::\-M\-O\-G2}}
+\subsubsection[{f\-Var\-Init}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::ocl\-::\-M\-O\-G2\-::f\-Var\-Init}}\label{classcv_1_1ocl_1_1MOG2_ada8de5265e604b68baf48f5135406b5d}
+\hypertarget{classcv_1_1ocl_1_1MOG2_a58b683df18cb7456f5b2e7e28c229a10}{\index{cv\-::ocl\-::\-M\-O\-G2@{cv\-::ocl\-::\-M\-O\-G2}!f\-Var\-Max@{f\-Var\-Max}}
+\index{f\-Var\-Max@{f\-Var\-Max}!cv::ocl::MOG2@{cv\-::ocl\-::\-M\-O\-G2}}
+\subsubsection[{f\-Var\-Max}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::ocl\-::\-M\-O\-G2\-::f\-Var\-Max}}\label{classcv_1_1ocl_1_1MOG2_a58b683df18cb7456f5b2e7e28c229a10}
+\hypertarget{classcv_1_1ocl_1_1MOG2_a31a2fd79ea05986c084cb3fd2d69bc57}{\index{cv\-::ocl\-::\-M\-O\-G2@{cv\-::ocl\-::\-M\-O\-G2}!f\-Var\-Min@{f\-Var\-Min}}
+\index{f\-Var\-Min@{f\-Var\-Min}!cv::ocl::MOG2@{cv\-::ocl\-::\-M\-O\-G2}}
+\subsubsection[{f\-Var\-Min}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::ocl\-::\-M\-O\-G2\-::f\-Var\-Min}}\label{classcv_1_1ocl_1_1MOG2_a31a2fd79ea05986c084cb3fd2d69bc57}
+\hypertarget{classcv_1_1ocl_1_1MOG2_a94f6103a28c8757089c37f0855102e1d}{\index{cv\-::ocl\-::\-M\-O\-G2@{cv\-::ocl\-::\-M\-O\-G2}!history@{history}}
+\index{history@{history}!cv::ocl::MOG2@{cv\-::ocl\-::\-M\-O\-G2}}
+\subsubsection[{history}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::ocl\-::\-M\-O\-G2\-::history}}\label{classcv_1_1ocl_1_1MOG2_a94f6103a28c8757089c37f0855102e1d}
+\hypertarget{classcv_1_1ocl_1_1MOG2_a2a853b7c187269451503e3b7bb81e35d}{\index{cv\-::ocl\-::\-M\-O\-G2@{cv\-::ocl\-::\-M\-O\-G2}!n\-Shadow\-Detection@{n\-Shadow\-Detection}}
+\index{n\-Shadow\-Detection@{n\-Shadow\-Detection}!cv::ocl::MOG2@{cv\-::ocl\-::\-M\-O\-G2}}
+\subsubsection[{n\-Shadow\-Detection}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char cv\-::ocl\-::\-M\-O\-G2\-::n\-Shadow\-Detection}}\label{classcv_1_1ocl_1_1MOG2_a2a853b7c187269451503e3b7bb81e35d}
+\hypertarget{classcv_1_1ocl_1_1MOG2_a0872335afe646e84f0dc0e1bf9c370da}{\index{cv\-::ocl\-::\-M\-O\-G2@{cv\-::ocl\-::\-M\-O\-G2}!var\-Threshold@{var\-Threshold}}
+\index{var\-Threshold@{var\-Threshold}!cv::ocl::MOG2@{cv\-::ocl\-::\-M\-O\-G2}}
+\subsubsection[{var\-Threshold}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::ocl\-::\-M\-O\-G2\-::var\-Threshold}}\label{classcv_1_1ocl_1_1MOG2_a0872335afe646e84f0dc0e1bf9c370da}
+here it is the maximum allowed number of mixture components. Actual number is determined dynamically per pixel \hypertarget{classcv_1_1ocl_1_1MOG2_a976a659d47c216c12728a639fdf435b7}{\index{cv\-::ocl\-::\-M\-O\-G2@{cv\-::ocl\-::\-M\-O\-G2}!var\-Threshold\-Gen@{var\-Threshold\-Gen}}
+\index{var\-Threshold\-Gen@{var\-Threshold\-Gen}!cv::ocl::MOG2@{cv\-::ocl\-::\-M\-O\-G2}}
+\subsubsection[{var\-Threshold\-Gen}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::ocl\-::\-M\-O\-G2\-::var\-Threshold\-Gen}}\label{classcv_1_1ocl_1_1MOG2_a976a659d47c216c12728a639fdf435b7}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/ocl/\hyperlink{ocl_2ocl_8hpp}{ocl.\-hpp}\end{DoxyCompactItemize}

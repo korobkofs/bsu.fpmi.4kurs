@@ -1,0 +1,5 @@
+<map id="tld::EnsembleClassifier::calcConfidence" name="tld::EnsembleClassifier::calcConfidence">
+<area shape="rect" id="node2" href="$classtld_1_1EnsembleClassifier.html#abf7e915ff675720293502be0452cb6c2" title="Classifies the window (positive or negative). " alt="" coords="211,5,368,46"/>
+<area shape="rect" id="node4" href="$classtld_1_1EnsembleClassifier.html#ad088404fdea039b774c2eb088e4cfc04" title="Update positive or negative patches. " alt="" coords="211,70,368,111"/>
+<area shape="rect" id="node3" href="$classtld_1_1EnsembleClassifier.html#a42f1f3606d14a7d274f5bb9f4fa5030f" title="Filtered the windows. " alt="" coords="416,5,573,46"/>
+</map>

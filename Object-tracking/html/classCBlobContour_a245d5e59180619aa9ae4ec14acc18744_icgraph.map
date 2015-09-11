@@ -1,0 +1,43 @@
+<map id="CBlobContour::GetContourPoints" name="CBlobContour::GetContourPoints">
+<area shape="rect" id="node2" href="$classCBlob.html#ab1501b07a2c5ee23843bac66d20974e2" title="Compute extern perimeter. " alt="" coords="247,123,407,149"/>
+<area shape="rect" id="node8" href="$classCBlob.html#a1b12d25f8e470fdd808ac2e3bfe9bad4" title="Get mean grey color. " alt="" coords="521,344,620,371"/>
+<area shape="rect" id="node12" href="$classCBlob.html#a5391167c172eb461eb762fbdd81306de" title="Get bounding box. " alt="" coords="245,499,409,525"/>
+<area shape="rect" id="node26" href="$classCBlob.html#a1a12b6dee61d2db86cd3a60c0671382e" title="CBlob::FillBlob" alt="" coords="272,549,381,576"/>
+<area shape="rect" id="node27" href="$classCBlob.html#aacc50d5d47e0543d4e0a569d05009006" title="CBlob::GetConvexHull" alt="" coords="249,600,404,627"/>
+<area shape="rect" id="node28" href="$classCBlobContour.html#a893d57d625bb8f26f4a31ff0b66b8406" title="Computes perimeter from contour. " alt="" coords="232,292,421,319"/>
+<area shape="rect" id="node32" href="$classCBlobContour.html#a2c68f462fc31a0e7add9a85b007fa42a" title="Computes area from contour. " alt="" coords="247,768,407,795"/>
+<area shape="rect" id="node37" href="$classCBlobContour.html#a301727633680b38714302593945b748f" title="Get contour moment (p,q up to MAX_CALCULATED_MOMENTS) " alt="" coords="237,844,417,871"/>
+<area shape="rect" id="node3" href="$classCBlob.html#a2d56a7dee1cbeb3178ff083630ee31b0" title="0 for extern blobs, 0 if not " alt="" coords="515,5,626,32"/>
+<area shape="rect" id="node5" href="$classCBlobGetExternPerimeter.html#a3c506f7355bab0299f1992dcda2e0a0a" title="Aply operator to blob. " alt="" coords="484,57,657,98"/>
+<area shape="rect" id="node6" href="$classCBlobGetExternPerimeterRatio.html#a28c984e9b6de7d6303704b34b76c1c5b" title="Aply operator to blob. " alt="" coords="721,115,925,157"/>
+<area shape="rect" id="node7" href="$classCBlobGetExternHullPerimeterRatio.html#a9b841221281e5efd45d4e3d8117369c4" title="Aply operator to blob. " alt="" coords="473,174,669,215"/>
+<area shape="rect" id="node4" href="$classCBlobGetExterior.html#ad272326f713272424a2b4763b27edeaa" title="Aply operator to blob. " alt="" coords="729,5,916,32"/>
+<area shape="rect" id="node9" href="$classCBlob.html#a014b670bb748e6767ef070e1bc25be7a" title="Get standard deviation grey color. " alt="" coords="767,247,878,273"/>
+<area shape="rect" id="node11" href="$classCBlobGetMean.html#ad1aff39c601989402d096fb649b9703c" title="Aply operator to blob. " alt="" coords="735,297,910,324"/>
+<area shape="rect" id="node10" href="$classCBlobGetStdDev.html#a9a52512df47b9ff51ad0cb4cb48d3d1f" title="Aply operator to blob. " alt="" coords="973,247,1160,273"/>
+<area shape="rect" id="node13" href="$classCBlob.html#aa3313af22e7f28d65ba245bc3b8a30bc" title="Minimun X. " alt="" coords="523,397,619,424"/>
+<area shape="rect" id="node16" href="$classCBlob.html#a44e2caf6c7fc6e8360d2576c18c9bc2b" title="Minimun Y. " alt="" coords="523,499,619,525"/>
+<area shape="rect" id="node19" href="$classCBlob.html#ab26a757fffc581df39620425de008cbc" title="Maximun X. " alt="" coords="521,448,621,475"/>
+<area shape="rect" id="node21" href="$classCBlob.html#a740a37afcd841bf719587d2f0128c555" title="Maximun Y. " alt="" coords="521,549,621,576"/>
+<area shape="rect" id="node23" href="$classCBlobGetDiffX.html#a0bf92752dbffa496a2551ad9622836ac" title="Aply operator to blob. " alt="" coords="485,600,657,627"/>
+<area shape="rect" id="node24" href="$classCBlobGetDiffY.html#aab9f6a96902b89dd9b8283db51a1b6f3" title="Aply operator to blob. " alt="" coords="485,651,657,677"/>
+<area shape="rect" id="node25" href="$classtld_1_1ForegroundDetector.html#a4f34509fa3a36529a39b911ed7693623" title="Finds regions of foreground in the image. " alt="" coords="491,702,650,743"/>
+<area shape="rect" id="node14" href="$classCBlobGetMinX.html#a4930f236b5afa5c987ce0b5062b79b09" title="Aply operator to blob. " alt="" coords="737,348,909,375"/>
+<area shape="rect" id="node15" href="$classCBlobGetXCenter.html#aaaae40df5c1c031658100b16015896f0" title="Aply operator to blob. " alt="" coords="727,399,918,425"/>
+<area shape="rect" id="node17" href="$classCBlobGetMinY.html#acf1b21431bc7cba83741b6ed8b3f1bd9" title="Aply operator to blob. " alt="" coords="737,500,909,527"/>
+<area shape="rect" id="node18" href="$classCBlobGetYCenter.html#a5cdb219c957adc1bf08c95e7823e407b" title="Aply operator to blob. " alt="" coords="727,551,918,577"/>
+<area shape="rect" id="node20" href="$classCBlobGetMaxX.html#a187bed7f1f1e467fc5170324f4434bc2" title="Aply operator to blob. " alt="" coords="735,449,911,476"/>
+<area shape="rect" id="node22" href="$classCBlobGetMaxY.html#abd3fc708b60aa0716a1f335f4313e46e" title="Aply operator to blob. " alt="" coords="735,601,911,628"/>
+<area shape="rect" id="node29" href="$classCBlob.html#af63853ea55dbebbee5b013189e765b51" title="Compute blob&#39;s perimeter. " alt="" coords="509,240,632,267"/>
+<area shape="rect" id="node31" href="$classCBlobProperties.html#a46a968d4567e6aefd9451f4468595f0a" title="Get blob perimeter. " alt="" coords="469,292,672,319"/>
+<area shape="rect" id="node30" href="$classCBlobGetPerimeter.html#a27d6922b9fb5ad220bd0e3876aef7f28" title="Aply operator to blob. " alt="" coords="751,181,894,222"/>
+<area shape="rect" id="node33" href="$classCBlob.html#a6f1db9fcb42c0a3ea003aaeb0ec65a8d" title="Compute blob&#39;s area. " alt="" coords="524,768,617,795"/>
+<area shape="rect" id="node36" href="$classCBlobProperties.html#abfae07a81bcc204d18c790fc365ad53c" title="Get blob area. " alt="" coords="484,819,657,845"/>
+<area shape="rect" id="node34" href="$classCBlobGetArea.html#a3c8268e93a2271bcd878dbf13d259afb" title="Aply operator to blob. " alt="" coords="738,735,907,761"/>
+<area shape="rect" id="node35" href="$classCBlobGetAreaElipseRatio.html#a24f9703155af6e963a1ae226cdb71125" title="Aply operator to blob. " alt="" coords="980,778,1153,819"/>
+<area shape="rect" id="node38" href="$classCBlob.html#a4f5dfca1ee933e07a39965375f9f07c5" title="Compute blob&#39;s moment (p,q up to MAX_CALCULATED_MOMENTS) " alt="" coords="514,869,627,896"/>
+<area shape="rect" id="node39" href="$classCBlob.html#ad0bb95f395084ee89ca35cf11f203342" title="Get bounding ellipse. " alt="" coords="759,869,886,896"/>
+<area shape="rect" id="node40" href="$classCBlobGetMajorAxisLength.html#a535c9a23d16bf020ed0c6aa9f36b884f" title="Aply operator to blob. " alt="" coords="979,843,1155,885"/>
+<area shape="rect" id="node41" href="$classCBlobGetMinorAxisLength.html#a2269bfa1651667f020e27d9f1e8f8d98" title="Aply operator to blob. " alt="" coords="979,909,1155,950"/>
+<area shape="rect" id="node42" href="$classCBlobGetOrientation.html#a083233587fed855654e580a355265be3" title="Aply operator to blob. " alt="" coords="995,974,1138,1015"/>
+</map>

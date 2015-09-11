@@ -1,0 +1,48 @@
+\hypertarget{scan_8hpp}{\section{/usr/include/opencv2/gpu/device/scan.hpp File Reference}
+\label{scan_8hpp}\index{/usr/include/opencv2/gpu/device/scan.\-hpp@{/usr/include/opencv2/gpu/device/scan.\-hpp}}
+}
+{\ttfamily \#include \char`\"{}opencv2/gpu/device/common.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}opencv2/gpu/device/utility.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}opencv2/gpu/device/warp.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}opencv2/gpu/device/warp\-\_\-shuffle.\-hpp\char`\"{}}\\*
+Include dependency graph for scan.\-hpp\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{scan_8hpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1WarpScan}{cv\-::gpu\-::device\-::\-Warp\-Scan$<$ Kind, T, F $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1WarpScanNoComp}{cv\-::gpu\-::device\-::\-Warp\-Scan\-No\-Comp$<$ Kind, T, F $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1BlockScan}{cv\-::gpu\-::device\-::\-Block\-Scan$<$ Kind, T, Sc, F $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacecv}{cv}
+\item 
+\hyperlink{namespacecv_1_1gpu}{cv\-::gpu}
+\item 
+\hyperlink{namespacecv_1_1gpu_1_1device}{cv\-::gpu\-::device}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespacecv_1_1gpu_1_1device_a28816cb295b05f754b37820576d20aef}{cv\-::gpu\-::device\-::\-Scan\-Kind} \{ \hyperlink{namespacecv_1_1gpu_1_1device_a28816cb295b05f754b37820576d20aefae83736994a983eeaefe370cb672d0390}{cv\-::gpu\-::device\-::\-E\-X\-C\-L\-U\-S\-I\-V\-E} = 0, 
+\hyperlink{namespacecv_1_1gpu_1_1device_a28816cb295b05f754b37820576d20aefa2c3c91d1e8338cd34af5d45feb97bdf7}{cv\-::gpu\-::device\-::\-I\-N\-C\-L\-U\-S\-I\-V\-E} = 1
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\\-\_\-\-\_\-device\-\_\-\-\_\- \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \hyperlink{namespacecv_1_1gpu_1_1device_a87edb73f5d347fb4deb04296ec7cff8d}{cv\-::gpu\-::device\-::warp\-Scan\-Inclusive} (\hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} idata, volatile \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} $\ast$s\-\_\-\-Data, unsigned int tid)
+\item 
+{\footnotesize template$<$typename T $>$ }\\\-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \hyperlink{namespacecv_1_1gpu_1_1device_a9a1d187cef0fe961935dbbe663162c14}{cv\-::gpu\-::device\-::warp\-Scan\-Exclusive} (\hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} idata, volatile \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} $\ast$s\-\_\-\-Data, unsigned int tid)
+\item 
+{\footnotesize template$<$int ti\-Num\-Scan\-Threads, typename T $>$ }\\\-\_\-\-\_\-device\-\_\-\-\_\- \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \hyperlink{namespacecv_1_1gpu_1_1device_a5b0980a87cde3047e1f4554fc37d3f0a}{cv\-::gpu\-::device\-::block\-Scan\-Inclusive} (\hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} idata, volatile \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} $\ast$s\-\_\-\-Data, unsigned int tid)
+\end{DoxyCompactItemize}

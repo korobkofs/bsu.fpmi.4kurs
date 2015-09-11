@@ -1,0 +1,66 @@
+\hypertarget{structCvFileNode}{\section{Cv\-File\-Node Struct Reference}
+\label{structCvFileNode}\index{Cv\-File\-Node@{Cv\-File\-Node}}
+}
+
+
+{\ttfamily \#include $<$types\-\_\-c.\-h$>$}
+
+
+
+Collaboration diagram for Cv\-File\-Node\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{structCvFileNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{structCvFileNode_ac0bb5efe70f520883caa5966e4116b0d}{tag}
+\item 
+struct \hyperlink{structCvTypeInfo}{Cv\-Type\-Info} $\ast$ \hyperlink{structCvFileNode_a70ed8cf9a3e5b24aa8ec462537513b89}{info}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>double \hyperlink{structCvFileNode_a4c8bb4f7092b56aad9c3a7d7f2dfff2d}{f}\\
+\>int \hyperlink{structCvFileNode_afadd155e3f165fc945e0fe2a3ce05831}{i}\\
+\>\hyperlink{structCvString}{CvString} \hyperlink{structCvFileNode_abab378a457de42bc84259515c5bdec9f}{str}\\
+\>\hyperlink{structCvSeq}{CvSeq} $\ast$ \hyperlink{structCvFileNode_ab2d72866b14ccf2414404f0c5ba443bb}{seq}\\
+\>\hyperlink{core_2types__c_8h_a88376488ce3898aeea192d7e43477320}{CvFileNodeHash} $\ast$ \hyperlink{structCvFileNode_a0c054f98473908434e02f37603d746c7}{map}\\
+\} \hyperlink{structCvFileNode_a533ef312fade7e33eb1d7abedfddc696}{data}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structCvFileNode_a533ef312fade7e33eb1d7abedfddc696}{\index{Cv\-File\-Node@{Cv\-File\-Node}!data@{data}}
+\index{data@{data}!CvFileNode@{Cv\-File\-Node}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}union \{ ... \}   Cv\-File\-Node\-::data}}\label{structCvFileNode_a533ef312fade7e33eb1d7abedfddc696}
+\hypertarget{structCvFileNode_a4c8bb4f7092b56aad9c3a7d7f2dfff2d}{\index{Cv\-File\-Node@{Cv\-File\-Node}!f@{f}}
+\index{f@{f}!CvFileNode@{Cv\-File\-Node}}
+\subsubsection[{f}]{\setlength{\rightskip}{0pt plus 5cm}double Cv\-File\-Node\-::f}}\label{structCvFileNode_a4c8bb4f7092b56aad9c3a7d7f2dfff2d}
+\hypertarget{structCvFileNode_afadd155e3f165fc945e0fe2a3ce05831}{\index{Cv\-File\-Node@{Cv\-File\-Node}!i@{i}}
+\index{i@{i}!CvFileNode@{Cv\-File\-Node}}
+\subsubsection[{i}]{\setlength{\rightskip}{0pt plus 5cm}int Cv\-File\-Node\-::i}}\label{structCvFileNode_afadd155e3f165fc945e0fe2a3ce05831}
+\hypertarget{structCvFileNode_a70ed8cf9a3e5b24aa8ec462537513b89}{\index{Cv\-File\-Node@{Cv\-File\-Node}!info@{info}}
+\index{info@{info}!CvFileNode@{Cv\-File\-Node}}
+\subsubsection[{info}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf Cv\-Type\-Info}$\ast$ Cv\-File\-Node\-::info}}\label{structCvFileNode_a70ed8cf9a3e5b24aa8ec462537513b89}
+\hypertarget{structCvFileNode_a0c054f98473908434e02f37603d746c7}{\index{Cv\-File\-Node@{Cv\-File\-Node}!map@{map}}
+\index{map@{map}!CvFileNode@{Cv\-File\-Node}}
+\subsubsection[{map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-File\-Node\-Hash}$\ast$ Cv\-File\-Node\-::map}}\label{structCvFileNode_a0c054f98473908434e02f37603d746c7}
+\hypertarget{structCvFileNode_ab2d72866b14ccf2414404f0c5ba443bb}{\index{Cv\-File\-Node@{Cv\-File\-Node}!seq@{seq}}
+\index{seq@{seq}!CvFileNode@{Cv\-File\-Node}}
+\subsubsection[{seq}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Seq}$\ast$ Cv\-File\-Node\-::seq}}\label{structCvFileNode_ab2d72866b14ccf2414404f0c5ba443bb}
+\hypertarget{structCvFileNode_abab378a457de42bc84259515c5bdec9f}{\index{Cv\-File\-Node@{Cv\-File\-Node}!str@{str}}
+\index{str@{str}!CvFileNode@{Cv\-File\-Node}}
+\subsubsection[{str}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-String} Cv\-File\-Node\-::str}}\label{structCvFileNode_abab378a457de42bc84259515c5bdec9f}
+\hypertarget{structCvFileNode_ac0bb5efe70f520883caa5966e4116b0d}{\index{Cv\-File\-Node@{Cv\-File\-Node}!tag@{tag}}
+\index{tag@{tag}!CvFileNode@{Cv\-File\-Node}}
+\subsubsection[{tag}]{\setlength{\rightskip}{0pt plus 5cm}int Cv\-File\-Node\-::tag}}\label{structCvFileNode_ac0bb5efe70f520883caa5966e4116b0d}
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/core/\hyperlink{core_2types__c_8h}{types\-\_\-c.\-h}\end{DoxyCompactItemize}

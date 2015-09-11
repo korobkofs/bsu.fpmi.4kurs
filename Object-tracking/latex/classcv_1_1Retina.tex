@@ -1,0 +1,522 @@
+\hypertarget{classcv_1_1Retina}{\section{cv\-:\-:Retina Class Reference}
+\label{classcv_1_1Retina}\index{cv\-::\-Retina@{cv\-::\-Retina}}
+}
+
+
+{\ttfamily \#include $<$retina.\-hpp$>$}
+
+
+
+Collaboration diagram for cv\-:\-:Retina\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcv_1_1Retina__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structcv_1_1Retina_1_1RetinaParameters}{Retina\-Parameters}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcv_1_1Retina_a9e47bd1797d51fdf77b6e20c254920f1}{Retina} (Size \hyperlink{classcv_1_1Retina_ad9a6308217d6ca48a644b046d4e2d97e}{input\-Size})
+\item 
+\hyperlink{classcv_1_1Retina_a270e864a77f753edd4d3e86e3248bcfb}{Retina} (Size \hyperlink{classcv_1_1Retina_ad9a6308217d6ca48a644b046d4e2d97e}{input\-Size}, const bool color\-Mode, \hyperlink{namespacecv_a1009b8eb0eac217a128fb5752f887287}{R\-E\-T\-I\-N\-A\-\_\-\-C\-O\-L\-O\-R\-S\-A\-M\-P\-L\-I\-N\-G\-M\-E\-T\-H\-O\-D} color\-Sampling\-Method=\hyperlink{namespacecv_a1009b8eb0eac217a128fb5752f887287ae25654a2d7593d5c498cc9229374895a}{R\-E\-T\-I\-N\-A\-\_\-\-C\-O\-L\-O\-R\-\_\-\-B\-A\-Y\-E\-R}, const bool use\-Retina\-Log\-Sampling=false, const double reduction\-Factor=1.\-0, const double sampling\-Strenght=10.\-0)
+\item 
+virtual \hyperlink{classcv_1_1Retina_a671ac1ee95089926649da1c59a03efab}{$\sim$\-Retina} ()
+\item 
+Size \hyperlink{classcv_1_1Retina_ad9a6308217d6ca48a644b046d4e2d97e}{input\-Size} ()
+\item 
+Size \hyperlink{classcv_1_1Retina_af762a4a1e791d42923c6ca6c2f99ac37}{output\-Size} ()
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1Retina_a0dff7fdf4ccb48be6108fbf1eaef09d3}{setup} (std\-::string retina\-Parameter\-File=\char`\"{}\char`\"{}, const bool apply\-Default\-Setup\-On\-Failure=true)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1Retina_ab977f15c2f0ea710865c799a6c04fcbb}{setup} (cv\-::\-File\-Storage \&fs, const bool apply\-Default\-Setup\-On\-Failure=true)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1Retina_a5c468d8fee7ad6bf002cb5dc5fa83501}{setup} (\hyperlink{structcv_1_1Retina_1_1RetinaParameters}{Retina\-Parameters} new\-Parameters)
+\item 
+\hyperlink{structcv_1_1Retina_1_1RetinaParameters}{Retina\-::\-Retina\-Parameters} \hyperlink{classcv_1_1Retina_ac5f968a2a04c218ccd4cc0594fa51397}{get\-Parameters} ()
+\item 
+const std\-::string \hyperlink{classcv_1_1Retina_ad4198c60334fd3bc03cbd26edb1a39e0}{print\-Setup} ()
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1Retina_afa7d08df652af10134689607a4ae1259}{write} (std\-::string fs) const 
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1Retina_a997451041a354c4d073743d8ffbaf26c}{write} (File\-Storage \&fs) const 
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1Retina_aff944999a5e11eb93487e7bda7653077}{setup\-O\-P\-Land\-I\-P\-L\-Parvo\-Channel} (const bool color\-Mode=true, const bool normalise\-Output=true, const float photoreceptors\-Local\-Adaptation\-Sensitivity=0.\-7, const float photoreceptors\-Temporal\-Constant=0.\-5, const float photoreceptors\-Spatial\-Constant=0.\-53, const float horizontal\-Cells\-Gain=0, const float Hcells\-Temporal\-Constant=1, const float Hcells\-Spatial\-Constant=7, const float ganglion\-Cells\-Sensitivity=0.\-7)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1Retina_a2c1c2e4ff63cce6e74aa4f66f821129b}{setup\-I\-P\-L\-Magno\-Channel} (const bool normalise\-Output=true, const float parasol\-Cells\-\_\-beta=0, const float parasol\-Cells\-\_\-tau=0, const float parasol\-Cells\-\_\-k=7, const float amacrin\-Cells\-Temporal\-Cut\-Frequency=1.\-2, const float V0\-Compression\-Parameter=0.\-95, const float local\-Adaptintegration\-\_\-tau=0, const float local\-Adaptintegration\-\_\-k=7)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1Retina_acae1d7d2d81bcab65ca4fac6e472ca73}{run} (const Mat \&input\-Image)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1Retina_a83c5acfb5d07ccdab0cca6ae11f50eae}{get\-Parvo} (Mat \&retina\-Output\-\_\-parvo)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1Retina_a834ba76a2b5fa191b43cf84b10c6ea99}{get\-Parvo} (std\-::valarray$<$ float $>$ \&retina\-Output\-\_\-parvo)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1Retina_a208c2c46c1e97cc13e938acf4dd06346}{get\-Magno} (Mat \&retina\-Output\-\_\-magno)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1Retina_a0741576091668b74fb4c5632725887b2}{get\-Magno} (std\-::valarray$<$ float $>$ \&retina\-Output\-\_\-magno)
+\item 
+const std\-::valarray$<$ float $>$ \& \hyperlink{classcv_1_1Retina_ab58166ae33c1ab898a13aaa437041b03}{get\-Magno} () const 
+\item 
+const std\-::valarray$<$ float $>$ \& \hyperlink{classcv_1_1Retina_af886323356193756144597e58953993d}{get\-Parvo} () const 
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1Retina_a2db77e12d06dd7844aeaa5cec9a3a5ab}{set\-Color\-Saturation} (const bool saturate\-Colors=true, const float color\-Saturation\-Value=4.\-0)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1Retina_a3f9ccc0875b12fd32a26764951bdfea6}{clear\-Buffers} ()
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1Retina_a4043c09440c5680f2de0266523c68162}{activate\-Moving\-Contours\-Processing} (const bool activate)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1Retina_a7df1d093a4092f56f872fe8f19edd09e}{activate\-Contours\-Processing} (const bool activate)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1Retina_a0221dac8a0e6222ad15cef85ea60ca33}{\-\_\-convert\-Valarray\-Buffer2cv\-Mat} (const std\-::valarray$<$ float $>$ \&gray\-Matrix\-To\-Convert, const unsigned int nb\-Rows, const unsigned int nb\-Columns, const bool color\-Mode, Mat \&out\-Buffer)
+\item 
+bool \hyperlink{classcv_1_1Retina_a411c66889d31acddba2a9792d6bb749d}{\-\_\-convert\-Cv\-Mat2\-Valarray\-Buffer} (const cv\-::\-Mat input\-Mat\-To\-Convert, std\-::valarray$<$ float $>$ \&output\-Valarray\-Matrix)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1Retina_acae9793996be1420f7902daeb752c8f0}{\-\_\-init} (const Size \hyperlink{classcv_1_1Retina_ad9a6308217d6ca48a644b046d4e2d97e}{input\-Size}, const bool color\-Mode, \hyperlink{namespacecv_a1009b8eb0eac217a128fb5752f887287}{R\-E\-T\-I\-N\-A\-\_\-\-C\-O\-L\-O\-R\-S\-A\-M\-P\-L\-I\-N\-G\-M\-E\-T\-H\-O\-D} color\-Sampling\-Method=\hyperlink{namespacecv_a1009b8eb0eac217a128fb5752f887287ae25654a2d7593d5c498cc9229374895a}{R\-E\-T\-I\-N\-A\-\_\-\-C\-O\-L\-O\-R\-\_\-\-B\-A\-Y\-E\-R}, const bool use\-Retina\-Log\-Sampling=false, const double reduction\-Factor=1.\-0, const double sampling\-Strenght=10.\-0)
+\begin{DoxyCompactList}\small\item\em private method called by constructors, gathers their parameters and use them in a unified way \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structcv_1_1Retina_1_1RetinaParameters}{Retina\-Parameters} \hyperlink{classcv_1_1Retina_a2ef9ec525730aadb05194240c764e672}{\-\_\-retina\-Parameters}
+\item 
+std\-::valarray$<$ float $>$ \hyperlink{classcv_1_1Retina_a542455a8c72e81b50c8344754d1a82b4}{\-\_\-input\-Buffer}
+\begin{DoxyCompactList}\small\item\em buffer used to convert input cv\-::\-Mat to internal retina buffers format (valarrays) \end{DoxyCompactList}\item 
+Retina\-Filter $\ast$ \hyperlink{classcv_1_1Retina_a3e16987f0a0134ac1a597c59fa0ce1e0}{\-\_\-retina\-Filter}
+\begin{DoxyCompactList}\small\item\em the pointer to the retina module, allocated with instance construction \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+class which allows the Gipsa/\-Listic Labs model to be used. This retina model allows spatio-\/temporal image processing (applied on still images, video sequences). As a summary, these are the retina model properties\-: =$>$ It applies a spectral whithening (mid-\/frequency details enhancement) =$>$ high frequency spatio-\/temporal noise reduction =$>$ low frequency luminance to be reduced (luminance range compression) =$>$ local logarithmic luminance compression allows details to be enhanced in low light conditions
+
+U\-S\-E \-: this model can be used basically for spatio-\/temporal video effects but also for \-: \-\_\-using the get\-Parvo method output matrix \-: texture analysiswith enhanced signal to noise ratio and enhanced details robust against input images luminance ranges \-\_\-using the get\-Magno method output matrix \-: motion analysis also with the previously cited properties
+
+for more information, reer to the following papers \-: Benoit A., Caplier A., Durette B., Herault, J., \char`\"{}\-U\-S\-I\-N\-G H\-U\-M\-A\-N V\-I\-S\-U\-A\-L S\-Y\-S\-T\-E\-M M\-O\-D\-E\-L\-I\-N\-G F\-O\-R B\-I\-O-\/\-I\-N\-S\-P\-I\-R\-E\-D L\-O\-W L\-E\-V\-E\-L I\-M\-A\-G\-E P\-R\-O\-C\-E\-S\-S\-I\-N\-G\char`\"{}, Elsevier, Computer Vision and Image Understanding 114 (2010), pp. 758-\/773, D\-O\-I\-: \href{http://dx.doi.org/10.1016/j.cviu.2010.01.011}{\tt http\-://dx.\-doi.\-org/10.\-1016/j.\-cviu.\-2010.\-01.\-011} Vision\-: Images, Signals and Neural Networks\-: Models of Neural Processing in Visual Perception (Progress in Neural Processing),By\-: Jeanny Herault, I\-S\-B\-N\-: 9814273686. W\-A\-P\-I (Tower I\-D)\-: 113266891.
+
+The retina filter includes the research contributions of phd/research collegues from which code has been redrawn by the author \-: \-\_\-take a look at the retinacolor.\-hpp module to discover Brice Chaix de Lavarene color mosaicing/demosaicing and the reference paper\-: ====$>$ B. Chaix de Lavarene, D. Alleysson, B. Durette, J. Herault (2007). \char`\"{}\-Efficient demosaicing through recursive filtering\char`\"{}, I\-E\-E\-E International Conference on Image Processing I\-C\-I\-P 2007 \-\_\-take a look at imagelogpolprojection.\-hpp to discover retina spatial log sampling which originates from Barthelemy Durette phd with Jeanny Herault. A \hyperlink{classcv_1_1Retina}{Retina} / V1 cortex projection is also proposed and originates from Jeanny's discussions. ====$>$ more informations in the above cited Jeanny Heraults's book. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcv_1_1Retina_a9e47bd1797d51fdf77b6e20c254920f1}{\index{cv\-::\-Retina@{cv\-::\-Retina}!Retina@{Retina}}
+\index{Retina@{Retina}!cv::Retina@{cv\-::\-Retina}}
+\subsubsection[{Retina}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::\-Retina\-::\-Retina (
+\begin{DoxyParamCaption}
+\item[{Size}]{input\-Size}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1Retina_a9e47bd1797d51fdf77b6e20c254920f1}
+\hyperlink{classMain}{Main} constructor with most commun use setup \-: create an instance of color ready retina model 
+\begin{DoxyParams}{Parameters}
+{\em input\-Size} & \-: the input frame size \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcv_1_1Retina_a270e864a77f753edd4d3e86e3248bcfb}{\index{cv\-::\-Retina@{cv\-::\-Retina}!Retina@{Retina}}
+\index{Retina@{Retina}!cv::Retina@{cv\-::\-Retina}}
+\subsubsection[{Retina}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::\-Retina\-::\-Retina (
+\begin{DoxyParamCaption}
+\item[{Size}]{input\-Size, }
+\item[{const bool}]{color\-Mode, }
+\item[{{\bf R\-E\-T\-I\-N\-A\-\_\-\-C\-O\-L\-O\-R\-S\-A\-M\-P\-L\-I\-N\-G\-M\-E\-T\-H\-O\-D}}]{color\-Sampling\-Method = {\ttfamily {\bf R\-E\-T\-I\-N\-A\-\_\-\-C\-O\-L\-O\-R\-\_\-\-B\-A\-Y\-E\-R}}, }
+\item[{const bool}]{use\-Retina\-Log\-Sampling = {\ttfamily false}, }
+\item[{const double}]{reduction\-Factor = {\ttfamily 1.0}, }
+\item[{const double}]{sampling\-Strenght = {\ttfamily 10.0}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1Retina_a270e864a77f753edd4d3e86e3248bcfb}
+Complete \hyperlink{classcv_1_1Retina}{Retina} filter constructor which allows all basic structural parameters definition 
+\begin{DoxyParams}{Parameters}
+{\em input\-Size} & \-: the input frame size \\
+\hline
+{\em color\-Mode} & \-: the chosen processing mode \-: with or without color processing \\
+\hline
+{\em color\-Sampling\-Method} & specifies which kind of color sampling will be used \\
+\hline
+{\em use\-Retina\-Log\-Sampling} & activate retina log sampling, if true, the 2 following parameters can be used \\
+\hline
+{\em reduction\-Factor} & only usefull if param use\-Retina\-Log\-Sampling=true, specifies the reduction factor of the output frame (as the center (fovea) is high resolution and corners can be underscaled, then a reduction of the output is allowed without precision leak \\
+\hline
+{\em sampling\-Strenght} & only usefull if param use\-Retina\-Log\-Sampling=true, specifies the strenght of the log scale that is applied \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcv_1_1Retina_a671ac1ee95089926649da1c59a03efab}{\index{cv\-::\-Retina@{cv\-::\-Retina}!$\sim$\-Retina@{$\sim$\-Retina}}
+\index{$\sim$\-Retina@{$\sim$\-Retina}!cv::Retina@{cv\-::\-Retina}}
+\subsubsection[{$\sim$\-Retina}]{\setlength{\rightskip}{0pt plus 5cm}virtual cv\-::\-Retina\-::$\sim$\-Retina (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcv_1_1Retina_a671ac1ee95089926649da1c59a03efab}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcv_1_1Retina_a411c66889d31acddba2a9792d6bb749d}{\index{cv\-::\-Retina@{cv\-::\-Retina}!\-\_\-convert\-Cv\-Mat2\-Valarray\-Buffer@{\-\_\-convert\-Cv\-Mat2\-Valarray\-Buffer}}
+\index{\-\_\-convert\-Cv\-Mat2\-Valarray\-Buffer@{\-\_\-convert\-Cv\-Mat2\-Valarray\-Buffer}!cv::Retina@{cv\-::\-Retina}}
+\subsubsection[{\-\_\-convert\-Cv\-Mat2\-Valarray\-Buffer}]{\setlength{\rightskip}{0pt plus 5cm}bool cv\-::\-Retina\-::\-\_\-convert\-Cv\-Mat2\-Valarray\-Buffer (
+\begin{DoxyParamCaption}
+\item[{const cv\-::\-Mat}]{input\-Mat\-To\-Convert, }
+\item[{std\-::valarray$<$ float $>$ \&}]{output\-Valarray\-Matrix}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1Retina_a411c66889d31acddba2a9792d6bb749d}
+
+\begin{DoxyParams}{Parameters}
+{\em input\-Mat\-To\-Convert} & \-: the Open\-C\-V cv\-::\-Mat that has to be converted to gray or R\-G\-B valarray buffer that will be processed by the retina model \\
+\hline
+{\em output\-Valarray\-Matrix} & \-: the output valarray \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the input image color mode (color=true, gray levels=false) 
+\end{DoxyReturn}
+\hypertarget{classcv_1_1Retina_a0221dac8a0e6222ad15cef85ea60ca33}{\index{cv\-::\-Retina@{cv\-::\-Retina}!\-\_\-convert\-Valarray\-Buffer2cv\-Mat@{\-\_\-convert\-Valarray\-Buffer2cv\-Mat}}
+\index{\-\_\-convert\-Valarray\-Buffer2cv\-Mat@{\-\_\-convert\-Valarray\-Buffer2cv\-Mat}!cv::Retina@{cv\-::\-Retina}}
+\subsubsection[{\-\_\-convert\-Valarray\-Buffer2cv\-Mat}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::\-Retina\-::\-\_\-convert\-Valarray\-Buffer2cv\-Mat (
+\begin{DoxyParamCaption}
+\item[{const std\-::valarray$<$ float $>$ \&}]{gray\-Matrix\-To\-Convert, }
+\item[{const unsigned int}]{nb\-Rows, }
+\item[{const unsigned int}]{nb\-Columns, }
+\item[{const bool}]{color\-Mode, }
+\item[{Mat \&}]{out\-Buffer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1Retina_a0221dac8a0e6222ad15cef85ea60ca33}
+exports a valarray buffer outing from H\-V\-Stools objects to a cv\-::\-Mat in C\-V\-\_\-8\-U\-C1 (gray level picture) or C\-V\-\_\-8\-U\-C3 (color) format 
+\begin{DoxyParams}{Parameters}
+{\em gray\-Matrix\-To\-Convert} & the valarray to export to Open\-C\-V \\
+\hline
+{\em nb\-Rows} & \-: the number of rows of the valarray flatten matrix \\
+\hline
+{\em nb\-Columns} & \-: the number of rows of the valarray flatten matrix \\
+\hline
+{\em color\-Mode} & \-: a flag which mentions if matrix is color (true) or graylevel (false) \\
+\hline
+{\em out\-Buffer} & \-: the output matrix which is reallocated to satisfy \hyperlink{classcv_1_1Retina}{Retina} output buffer dimensions \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcv_1_1Retina_acae9793996be1420f7902daeb752c8f0}{\index{cv\-::\-Retina@{cv\-::\-Retina}!\-\_\-init@{\-\_\-init}}
+\index{\-\_\-init@{\-\_\-init}!cv::Retina@{cv\-::\-Retina}}
+\subsubsection[{\-\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::\-Retina\-::\-\_\-init (
+\begin{DoxyParamCaption}
+\item[{const Size}]{input\-Size, }
+\item[{const bool}]{color\-Mode, }
+\item[{{\bf R\-E\-T\-I\-N\-A\-\_\-\-C\-O\-L\-O\-R\-S\-A\-M\-P\-L\-I\-N\-G\-M\-E\-T\-H\-O\-D}}]{color\-Sampling\-Method = {\ttfamily {\bf R\-E\-T\-I\-N\-A\-\_\-\-C\-O\-L\-O\-R\-\_\-\-B\-A\-Y\-E\-R}}, }
+\item[{const bool}]{use\-Retina\-Log\-Sampling = {\ttfamily false}, }
+\item[{const double}]{reduction\-Factor = {\ttfamily 1.0}, }
+\item[{const double}]{sampling\-Strenght = {\ttfamily 10.0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1Retina_acae9793996be1420f7902daeb752c8f0}
+
+
+private method called by constructors, gathers their parameters and use them in a unified way 
+
+\hypertarget{classcv_1_1Retina_a7df1d093a4092f56f872fe8f19edd09e}{\index{cv\-::\-Retina@{cv\-::\-Retina}!activate\-Contours\-Processing@{activate\-Contours\-Processing}}
+\index{activate\-Contours\-Processing@{activate\-Contours\-Processing}!cv::Retina@{cv\-::\-Retina}}
+\subsubsection[{activate\-Contours\-Processing}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::\-Retina\-::activate\-Contours\-Processing (
+\begin{DoxyParamCaption}
+\item[{const bool}]{activate}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1Retina_a7df1d093a4092f56f872fe8f19edd09e}
+Activate/desactivate the Parvocellular pathway processing (contours information extraction), by default, it is activated 
+\begin{DoxyParams}{Parameters}
+{\em activate} & true if Parvocellular (contours information extraction) output should be activated, false if not \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcv_1_1Retina_a4043c09440c5680f2de0266523c68162}{\index{cv\-::\-Retina@{cv\-::\-Retina}!activate\-Moving\-Contours\-Processing@{activate\-Moving\-Contours\-Processing}}
+\index{activate\-Moving\-Contours\-Processing@{activate\-Moving\-Contours\-Processing}!cv::Retina@{cv\-::\-Retina}}
+\subsubsection[{activate\-Moving\-Contours\-Processing}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::\-Retina\-::activate\-Moving\-Contours\-Processing (
+\begin{DoxyParamCaption}
+\item[{const bool}]{activate}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1Retina_a4043c09440c5680f2de0266523c68162}
+Activate/desactivate the Magnocellular pathway processing (motion information extraction), by default, it is activated 
+\begin{DoxyParams}{Parameters}
+{\em activate} & true if Magnocellular output should be activated, false if not \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcv_1_1Retina_a3f9ccc0875b12fd32a26764951bdfea6}{\index{cv\-::\-Retina@{cv\-::\-Retina}!clear\-Buffers@{clear\-Buffers}}
+\index{clear\-Buffers@{clear\-Buffers}!cv::Retina@{cv\-::\-Retina}}
+\subsubsection[{clear\-Buffers}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::\-Retina\-::clear\-Buffers (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1Retina_a3f9ccc0875b12fd32a26764951bdfea6}
+clear all retina buffers (equivalent to opening the eyes after a long period of eye close ;o) \hypertarget{classcv_1_1Retina_a208c2c46c1e97cc13e938acf4dd06346}{\index{cv\-::\-Retina@{cv\-::\-Retina}!get\-Magno@{get\-Magno}}
+\index{get\-Magno@{get\-Magno}!cv::Retina@{cv\-::\-Retina}}
+\subsubsection[{get\-Magno}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::\-Retina\-::get\-Magno (
+\begin{DoxyParamCaption}
+\item[{Mat \&}]{retina\-Output\-\_\-magno}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1Retina_a208c2c46c1e97cc13e938acf4dd06346}
+accessor of the motion channel of the retina (models peripheral vision) 
+\begin{DoxyParams}{Parameters}
+{\em retina\-Output\-\_\-magno} & \-: the output buffer (reallocated if necessary), this output is rescaled for standard 8bits image processing use in Open\-C\-V \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcv_1_1Retina_a0741576091668b74fb4c5632725887b2}{\index{cv\-::\-Retina@{cv\-::\-Retina}!get\-Magno@{get\-Magno}}
+\index{get\-Magno@{get\-Magno}!cv::Retina@{cv\-::\-Retina}}
+\subsubsection[{get\-Magno}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::\-Retina\-::get\-Magno (
+\begin{DoxyParamCaption}
+\item[{std\-::valarray$<$ float $>$ \&}]{retina\-Output\-\_\-magno}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1Retina_a0741576091668b74fb4c5632725887b2}
+accessor of the motion channel of the retina (models peripheral vision) 
+\begin{DoxyParams}{Parameters}
+{\em retina\-Output\-\_\-magno} & \-: the output buffer (reallocated if necessary), this output is the original retina filter model output, without any quantification or rescaling \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcv_1_1Retina_ab58166ae33c1ab898a13aaa437041b03}{\index{cv\-::\-Retina@{cv\-::\-Retina}!get\-Magno@{get\-Magno}}
+\index{get\-Magno@{get\-Magno}!cv::Retina@{cv\-::\-Retina}}
+\subsubsection[{get\-Magno}]{\setlength{\rightskip}{0pt plus 5cm}const std\-::valarray$<$float$>$\& cv\-::\-Retina\-::get\-Magno (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcv_1_1Retina_ab58166ae33c1ab898a13aaa437041b03}
+\hypertarget{classcv_1_1Retina_ac5f968a2a04c218ccd4cc0594fa51397}{\index{cv\-::\-Retina@{cv\-::\-Retina}!get\-Parameters@{get\-Parameters}}
+\index{get\-Parameters@{get\-Parameters}!cv::Retina@{cv\-::\-Retina}}
+\subsubsection[{get\-Parameters}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Retina\-::\-Retina\-Parameters} cv\-::\-Retina\-::get\-Parameters (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1Retina_ac5f968a2a04c218ccd4cc0594fa51397}
+\begin{DoxyReturn}{Returns}
+the current parameters setup 
+\end{DoxyReturn}
+\hypertarget{classcv_1_1Retina_a83c5acfb5d07ccdab0cca6ae11f50eae}{\index{cv\-::\-Retina@{cv\-::\-Retina}!get\-Parvo@{get\-Parvo}}
+\index{get\-Parvo@{get\-Parvo}!cv::Retina@{cv\-::\-Retina}}
+\subsubsection[{get\-Parvo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::\-Retina\-::get\-Parvo (
+\begin{DoxyParamCaption}
+\item[{Mat \&}]{retina\-Output\-\_\-parvo}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1Retina_a83c5acfb5d07ccdab0cca6ae11f50eae}
+accessor of the details channel of the retina (models foveal vision) 
+\begin{DoxyParams}{Parameters}
+{\em retina\-Output\-\_\-parvo} & \-: the output buffer (reallocated if necessary), this output is rescaled for standard 8bits image processing use in Open\-C\-V \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcv_1_1Retina_a834ba76a2b5fa191b43cf84b10c6ea99}{\index{cv\-::\-Retina@{cv\-::\-Retina}!get\-Parvo@{get\-Parvo}}
+\index{get\-Parvo@{get\-Parvo}!cv::Retina@{cv\-::\-Retina}}
+\subsubsection[{get\-Parvo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::\-Retina\-::get\-Parvo (
+\begin{DoxyParamCaption}
+\item[{std\-::valarray$<$ float $>$ \&}]{retina\-Output\-\_\-parvo}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1Retina_a834ba76a2b5fa191b43cf84b10c6ea99}
+accessor of the details channel of the retina (models foveal vision) 
+\begin{DoxyParams}{Parameters}
+{\em retina\-Output\-\_\-parvo} & \-: the output buffer (reallocated if necessary), this output is the original retina filter model output, without any quantification or rescaling \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcv_1_1Retina_af886323356193756144597e58953993d}{\index{cv\-::\-Retina@{cv\-::\-Retina}!get\-Parvo@{get\-Parvo}}
+\index{get\-Parvo@{get\-Parvo}!cv::Retina@{cv\-::\-Retina}}
+\subsubsection[{get\-Parvo}]{\setlength{\rightskip}{0pt plus 5cm}const std\-::valarray$<$float$>$\& cv\-::\-Retina\-::get\-Parvo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcv_1_1Retina_af886323356193756144597e58953993d}
+\hypertarget{classcv_1_1Retina_ad9a6308217d6ca48a644b046d4e2d97e}{\index{cv\-::\-Retina@{cv\-::\-Retina}!input\-Size@{input\-Size}}
+\index{input\-Size@{input\-Size}!cv::Retina@{cv\-::\-Retina}}
+\subsubsection[{input\-Size}]{\setlength{\rightskip}{0pt plus 5cm}Size cv\-::\-Retina\-::input\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1Retina_ad9a6308217d6ca48a644b046d4e2d97e}
+retreive retina input buffer size \hypertarget{classcv_1_1Retina_af762a4a1e791d42923c6ca6c2f99ac37}{\index{cv\-::\-Retina@{cv\-::\-Retina}!output\-Size@{output\-Size}}
+\index{output\-Size@{output\-Size}!cv::Retina@{cv\-::\-Retina}}
+\subsubsection[{output\-Size}]{\setlength{\rightskip}{0pt plus 5cm}Size cv\-::\-Retina\-::output\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1Retina_af762a4a1e791d42923c6ca6c2f99ac37}
+retreive retina output buffer size \hypertarget{classcv_1_1Retina_ad4198c60334fd3bc03cbd26edb1a39e0}{\index{cv\-::\-Retina@{cv\-::\-Retina}!print\-Setup@{print\-Setup}}
+\index{print\-Setup@{print\-Setup}!cv::Retina@{cv\-::\-Retina}}
+\subsubsection[{print\-Setup}]{\setlength{\rightskip}{0pt plus 5cm}const std\-::string cv\-::\-Retina\-::print\-Setup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1Retina_ad4198c60334fd3bc03cbd26edb1a39e0}
+parameters setup display method \begin{DoxyReturn}{Returns}
+a string which contains formatted parameters information 
+\end{DoxyReturn}
+\hypertarget{classcv_1_1Retina_acae1d7d2d81bcab65ca4fac6e472ca73}{\index{cv\-::\-Retina@{cv\-::\-Retina}!run@{run}}
+\index{run@{run}!cv::Retina@{cv\-::\-Retina}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::\-Retina\-::run (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{input\-Image}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1Retina_acae1d7d2d81bcab65ca4fac6e472ca73}
+method which allows retina to be applied on an input image, after run, encapsulated retina module is ready to deliver its outputs using dedicated acccessors, see get\-Parvo and get\-Magno methods 
+\begin{DoxyParams}{Parameters}
+{\em input\-Image} & \-: the input cv\-::\-Mat image to be processed, can be gray level or B\-G\-R coded in any format (from 8bit to 16bits) \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcv_1_1Retina_a2db77e12d06dd7844aeaa5cec9a3a5ab}{\index{cv\-::\-Retina@{cv\-::\-Retina}!set\-Color\-Saturation@{set\-Color\-Saturation}}
+\index{set\-Color\-Saturation@{set\-Color\-Saturation}!cv::Retina@{cv\-::\-Retina}}
+\subsubsection[{set\-Color\-Saturation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::\-Retina\-::set\-Color\-Saturation (
+\begin{DoxyParamCaption}
+\item[{const bool}]{saturate\-Colors = {\ttfamily true}, }
+\item[{const float}]{color\-Saturation\-Value = {\ttfamily 4.0}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1Retina_a2db77e12d06dd7844aeaa5cec9a3a5ab}
+activate color saturation as the final step of the color demultiplexing process -\/$>$ this saturation is a sigmoide function applied to each channel of the demultiplexed image. 
+\begin{DoxyParams}{Parameters}
+{\em saturate\-Colors} & boolean that activates color saturation (if true) or desactivate (if false) \\
+\hline
+{\em color\-Saturation\-Value} & the saturation factor \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcv_1_1Retina_a0dff7fdf4ccb48be6108fbf1eaef09d3}{\index{cv\-::\-Retina@{cv\-::\-Retina}!setup@{setup}}
+\index{setup@{setup}!cv::Retina@{cv\-::\-Retina}}
+\subsubsection[{setup}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::\-Retina\-::setup (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{retina\-Parameter\-File = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{const bool}]{apply\-Default\-Setup\-On\-Failure = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1Retina_a0dff7fdf4ccb48be6108fbf1eaef09d3}
+try to open an X\-M\-L retina parameters file to adjust current retina instance setup =$>$ if the xml file does not exist, then default setup is applied =$>$ warning, Exceptions are thrown if read X\-M\-L file is not valid 
+\begin{DoxyParams}{Parameters}
+{\em retina\-Parameter\-File} & \-: the parameters filename \\
+\hline
+{\em apply\-Default\-Setup\-On\-Failure} & \-: set to true if an error must be thrown on error \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcv_1_1Retina_ab977f15c2f0ea710865c799a6c04fcbb}{\index{cv\-::\-Retina@{cv\-::\-Retina}!setup@{setup}}
+\index{setup@{setup}!cv::Retina@{cv\-::\-Retina}}
+\subsubsection[{setup}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::\-Retina\-::setup (
+\begin{DoxyParamCaption}
+\item[{cv\-::\-File\-Storage \&}]{fs, }
+\item[{const bool}]{apply\-Default\-Setup\-On\-Failure = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1Retina_ab977f15c2f0ea710865c799a6c04fcbb}
+try to open an X\-M\-L retina parameters file to adjust current retina instance setup =$>$ if the xml file does not exist, then default setup is applied =$>$ warning, Exceptions are thrown if read X\-M\-L file is not valid 
+\begin{DoxyParams}{Parameters}
+{\em fs} & \-: the open Filestorage which contains retina parameters \\
+\hline
+{\em apply\-Default\-Setup\-On\-Failure} & \-: set to true if an error must be thrown on error \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcv_1_1Retina_a5c468d8fee7ad6bf002cb5dc5fa83501}{\index{cv\-::\-Retina@{cv\-::\-Retina}!setup@{setup}}
+\index{setup@{setup}!cv::Retina@{cv\-::\-Retina}}
+\subsubsection[{setup}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::\-Retina\-::setup (
+\begin{DoxyParamCaption}
+\item[{{\bf Retina\-Parameters}}]{new\-Parameters}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1Retina_a5c468d8fee7ad6bf002cb5dc5fa83501}
+try to open an X\-M\-L retina parameters file to adjust current retina instance setup =$>$ if the xml file does not exist, then default setup is applied =$>$ warning, Exceptions are thrown if read X\-M\-L file is not valid 
+\begin{DoxyParams}{Parameters}
+{\em new\-Parameters} & \-: a parameters structures updated with the new target configuration \\
+\hline
+{\em apply\-Default\-Setup\-On\-Failure} & \-: set to true if an error must be thrown on error \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcv_1_1Retina_a2c1c2e4ff63cce6e74aa4f66f821129b}{\index{cv\-::\-Retina@{cv\-::\-Retina}!setup\-I\-P\-L\-Magno\-Channel@{setup\-I\-P\-L\-Magno\-Channel}}
+\index{setup\-I\-P\-L\-Magno\-Channel@{setup\-I\-P\-L\-Magno\-Channel}!cv::Retina@{cv\-::\-Retina}}
+\subsubsection[{setup\-I\-P\-L\-Magno\-Channel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::\-Retina\-::setup\-I\-P\-L\-Magno\-Channel (
+\begin{DoxyParamCaption}
+\item[{const bool}]{normalise\-Output = {\ttfamily true}, }
+\item[{const float}]{parasol\-Cells\-\_\-beta = {\ttfamily 0}, }
+\item[{const float}]{parasol\-Cells\-\_\-tau = {\ttfamily 0}, }
+\item[{const float}]{parasol\-Cells\-\_\-k = {\ttfamily 7}, }
+\item[{const float}]{amacrin\-Cells\-Temporal\-Cut\-Frequency = {\ttfamily 1.2}, }
+\item[{const float}]{V0\-Compression\-Parameter = {\ttfamily 0.95}, }
+\item[{const float}]{local\-Adaptintegration\-\_\-tau = {\ttfamily 0}, }
+\item[{const float}]{local\-Adaptintegration\-\_\-k = {\ttfamily 7}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1Retina_a2c1c2e4ff63cce6e74aa4f66f821129b}
+set parameters values for the Inner Plexiform Layer (I\-P\-L) magnocellular channel this channel processes signals outpint from O\-P\-L processing stage in peripheral vision, it allows motion information enhancement. It is decorrelated from the details channel. See reference paper for more details. 
+\begin{DoxyParams}{Parameters}
+{\em normalise\-Output} & \-: specifies if (true) output is rescaled between 0 and 255 of not (false) \\
+\hline
+{\em parasol\-Cells\-\_\-beta} & the low pass filter gain used for local contrast adaptation at the I\-P\-L level of the retina (for ganglion cells local adaptation), typical value is 0 \\
+\hline
+{\em parasol\-Cells\-\_\-tau} & the low pass filter time constant used for local contrast adaptation at the I\-P\-L level of the retina (for ganglion cells local adaptation), unit is frame, typical value is 0 (immediate response) \\
+\hline
+{\em parasol\-Cells\-\_\-k} & the low pass filter spatial constant used for local contrast adaptation at the I\-P\-L level of the retina (for ganglion cells local adaptation), unit is pixels, typical value is 5 \\
+\hline
+{\em amacrin\-Cells\-Temporal\-Cut\-Frequency} & the time constant of the first order high pass fiter of the magnocellular way (motion information channel), unit is frames, tipicall value is 5 \\
+\hline
+{\em V0\-Compression\-Parameter} & the compression strengh of the ganglion cells local adaptation output, set a value between 160 and 250 for best results, a high value increases more the low value sensitivity... and the output saturates faster, recommended value\-: 200 \\
+\hline
+{\em local\-Adaptintegration\-\_\-tau} & specifies the temporal constant of the low pas filter involved in the computation of the local \char`\"{}motion mean\char`\"{} for the local adaptation computation \\
+\hline
+{\em local\-Adaptintegration\-\_\-k} & specifies the spatial constant of the low pas filter involved in the computation of the local \char`\"{}motion mean\char`\"{} for the local adaptation computation \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcv_1_1Retina_aff944999a5e11eb93487e7bda7653077}{\index{cv\-::\-Retina@{cv\-::\-Retina}!setup\-O\-P\-Land\-I\-P\-L\-Parvo\-Channel@{setup\-O\-P\-Land\-I\-P\-L\-Parvo\-Channel}}
+\index{setup\-O\-P\-Land\-I\-P\-L\-Parvo\-Channel@{setup\-O\-P\-Land\-I\-P\-L\-Parvo\-Channel}!cv::Retina@{cv\-::\-Retina}}
+\subsubsection[{setup\-O\-P\-Land\-I\-P\-L\-Parvo\-Channel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::\-Retina\-::setup\-O\-P\-Land\-I\-P\-L\-Parvo\-Channel (
+\begin{DoxyParamCaption}
+\item[{const bool}]{color\-Mode = {\ttfamily true}, }
+\item[{const bool}]{normalise\-Output = {\ttfamily true}, }
+\item[{const float}]{photoreceptors\-Local\-Adaptation\-Sensitivity = {\ttfamily 0.7}, }
+\item[{const float}]{photoreceptors\-Temporal\-Constant = {\ttfamily 0.5}, }
+\item[{const float}]{photoreceptors\-Spatial\-Constant = {\ttfamily 0.53}, }
+\item[{const float}]{horizontal\-Cells\-Gain = {\ttfamily 0}, }
+\item[{const float}]{Hcells\-Temporal\-Constant = {\ttfamily 1}, }
+\item[{const float}]{Hcells\-Spatial\-Constant = {\ttfamily 7}, }
+\item[{const float}]{ganglion\-Cells\-Sensitivity = {\ttfamily 0.7}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1Retina_aff944999a5e11eb93487e7bda7653077}
+setup the O\-P\-L and I\-P\-L parvo channels (see biologocal model) O\-P\-L is referred as Outer Plexiform Layer of the retina, it allows the spatio-\/temporal filtering which withens the spectrum and reduces spatio-\/temporal noise while attenuating global luminance (low frequency energy) I\-P\-L parvo is the O\-P\-L next processing stage, it refers to Inner Plexiform layer of the retina, it allows high contours sensitivity in foveal vision. for more informations, please have a look at the paper Benoit A., Caplier A., Durette B., Herault, J., \char`\"{}\-U\-S\-I\-N\-G H\-U\-M\-A\-N V\-I\-S\-U\-A\-L S\-Y\-S\-T\-E\-M M\-O\-D\-E\-L\-I\-N\-G F\-O\-R B\-I\-O-\/\-I\-N\-S\-P\-I\-R\-E\-D L\-O\-W L\-E\-V\-E\-L I\-M\-A\-G\-E P\-R\-O\-C\-E\-S\-S\-I\-N\-G\char`\"{}, Elsevier, Computer Vision and Image Understanding 114 (2010), pp. 758-\/773, D\-O\-I\-: \href{http://dx.doi.org/10.1016/j.cviu.2010.01.011}{\tt http\-://dx.\-doi.\-org/10.\-1016/j.\-cviu.\-2010.\-01.\-011} 
+\begin{DoxyParams}{Parameters}
+{\em color\-Mode} & \-: specifies if (true) color is processed of not (false) to then processing gray level image \\
+\hline
+{\em normalise\-Output} & \-: specifies if (true) output is rescaled between 0 and 255 of not (false) \\
+\hline
+{\em photoreceptors\-Local\-Adaptation\-Sensitivity} & the photoreceptors sensitivity renage is 0-\/1 (more log compression effect when value increases) \\
+\hline
+{\em photoreceptors\-Temporal\-Constant} & the time constant of the first order low pass filter of the photoreceptors, use it to cut high temporal frequencies (noise or fast motion), unit is frames, typical value is 1 frame \\
+\hline
+{\em photoreceptors\-Spatial\-Constant} & the spatial constant of the first order low pass filter of the photoreceptors, use it to cut high spatial frequencies (noise or thick contours), unit is pixels, typical value is 1 pixel \\
+\hline
+{\em horizontal\-Cells\-Gain} & gain of the horizontal cells network, if 0, then the mean value of the output is zero, if the parameter is near 1, then, the luminance is not filtered and is still reachable at the output, typicall value is 0 \\
+\hline
+{\em Hcells\-Temporal\-Constant} & the time constant of the first order low pass filter of the horizontal cells, use it to cut low temporal frequencies (local luminance variations), unit is frames, typical value is 1 frame, as the photoreceptors \\
+\hline
+{\em Hcells\-Spatial\-Constant} & the spatial constant of the first order low pass filter of the horizontal cells, use it to cut low spatial frequencies (local luminance), unit is pixels, typical value is 5 pixel, this value is also used for local contrast computing when computing the local contrast adaptation at the ganglion cells level (Inner Plexiform Layer parvocellular channel model) \\
+\hline
+{\em ganglion\-Cells\-Sensitivity} & the compression strengh of the ganglion cells local adaptation output, set a value between 160 and 250 for best results, a high value increases more the low value sensitivity... and the output saturates faster, recommended value\-: 230 \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcv_1_1Retina_afa7d08df652af10134689607a4ae1259}{\index{cv\-::\-Retina@{cv\-::\-Retina}!write@{write}}
+\index{write@{write}!cv::Retina@{cv\-::\-Retina}}
+\subsubsection[{write}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cv\-::\-Retina\-::write (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{fs}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcv_1_1Retina_afa7d08df652af10134689607a4ae1259}
+write xml/yml formated parameters information  fs \-: the filename of the xml file that will be open and writen with formatted parameters information \hypertarget{classcv_1_1Retina_a997451041a354c4d073743d8ffbaf26c}{\index{cv\-::\-Retina@{cv\-::\-Retina}!write@{write}}
+\index{write@{write}!cv::Retina@{cv\-::\-Retina}}
+\subsubsection[{write}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cv\-::\-Retina\-::write (
+\begin{DoxyParamCaption}
+\item[{File\-Storage \&}]{fs}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcv_1_1Retina_a997451041a354c4d073743d8ffbaf26c}
+write xml/yml formated parameters information 
+\begin{DoxyParams}{Parameters}
+{\em fs} & \-: a cv\-::\-Filestorage object ready to be filled \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcv_1_1Retina_a542455a8c72e81b50c8344754d1a82b4}{\index{cv\-::\-Retina@{cv\-::\-Retina}!\-\_\-input\-Buffer@{\-\_\-input\-Buffer}}
+\index{\-\_\-input\-Buffer@{\-\_\-input\-Buffer}!cv::Retina@{cv\-::\-Retina}}
+\subsubsection[{\-\_\-input\-Buffer}]{\setlength{\rightskip}{0pt plus 5cm}std\-::valarray$<$float$>$ cv\-::\-Retina\-::\-\_\-input\-Buffer\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1Retina_a542455a8c72e81b50c8344754d1a82b4}
+
+
+buffer used to convert input cv\-::\-Mat to internal retina buffers format (valarrays) 
+
+\hypertarget{classcv_1_1Retina_a3e16987f0a0134ac1a597c59fa0ce1e0}{\index{cv\-::\-Retina@{cv\-::\-Retina}!\-\_\-retina\-Filter@{\-\_\-retina\-Filter}}
+\index{\-\_\-retina\-Filter@{\-\_\-retina\-Filter}!cv::Retina@{cv\-::\-Retina}}
+\subsubsection[{\-\_\-retina\-Filter}]{\setlength{\rightskip}{0pt plus 5cm}Retina\-Filter$\ast$ cv\-::\-Retina\-::\-\_\-retina\-Filter\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1Retina_a3e16987f0a0134ac1a597c59fa0ce1e0}
+
+
+the pointer to the retina module, allocated with instance construction 
+
+\hypertarget{classcv_1_1Retina_a2ef9ec525730aadb05194240c764e672}{\index{cv\-::\-Retina@{cv\-::\-Retina}!\-\_\-retina\-Parameters@{\-\_\-retina\-Parameters}}
+\index{\-\_\-retina\-Parameters@{\-\_\-retina\-Parameters}!cv::Retina@{cv\-::\-Retina}}
+\subsubsection[{\-\_\-retina\-Parameters}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Retina\-Parameters} cv\-::\-Retina\-::\-\_\-retina\-Parameters\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1Retina_a2ef9ec525730aadb05194240c764e672}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/contrib/\hyperlink{retina_8hpp}{retina.\-hpp}\end{DoxyCompactItemize}

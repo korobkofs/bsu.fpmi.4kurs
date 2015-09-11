@@ -1,0 +1,53 @@
+\hypertarget{inpainting_8hpp}{\section{/usr/include/opencv2/videostab/inpainting.hpp File Reference}
+\label{inpainting_8hpp}\index{/usr/include/opencv2/videostab/inpainting.\-hpp@{/usr/include/opencv2/videostab/inpainting.\-hpp}}
+}
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include \char`\"{}opencv2/core/core.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}opencv2/videostab/optical\-\_\-flow.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}opencv2/videostab/fast\-\_\-marching.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}opencv2/photo/photo.\-hpp\char`\"{}}\\*
+Include dependency graph for inpainting.\-hpp\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{inpainting_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{inpainting_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classcv_1_1videostab_1_1InpainterBase}{cv\-::videostab\-::\-Inpainter\-Base}
+\item 
+class \hyperlink{classcv_1_1videostab_1_1NullInpainter}{cv\-::videostab\-::\-Null\-Inpainter}
+\item 
+class \hyperlink{classcv_1_1videostab_1_1InpaintingPipeline}{cv\-::videostab\-::\-Inpainting\-Pipeline}
+\item 
+class \hyperlink{classcv_1_1videostab_1_1ConsistentMosaicInpainter}{cv\-::videostab\-::\-Consistent\-Mosaic\-Inpainter}
+\item 
+class \hyperlink{classcv_1_1videostab_1_1MotionInpainter}{cv\-::videostab\-::\-Motion\-Inpainter}
+\item 
+class \hyperlink{classcv_1_1videostab_1_1ColorAverageInpainter}{cv\-::videostab\-::\-Color\-Average\-Inpainter}
+\item 
+class \hyperlink{classcv_1_1videostab_1_1ColorInpainter}{cv\-::videostab\-::\-Color\-Inpainter}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacecv}{cv}
+\item 
+\hyperlink{namespacecv_1_1videostab}{cv\-::videostab}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1videostab_a779386052e4db6983f4c3eca911b0da1}{cv\-::videostab\-::calc\-Flow\-Mask} (const Mat \&flow\-X, const Mat \&flow\-Y, const Mat \&errors, float max\-Error, const Mat \&mask0, const Mat \&mask1, Mat \&flow\-Mask)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1videostab_ac1b128280dd3363014289925c9eb7553}{cv\-::videostab\-::complete\-Frame\-According\-To\-Flow} (const Mat \&flow\-Mask, const Mat \&flow\-X, const Mat \&flow\-Y, const Mat \&frame1, const Mat \&mask1, float dist\-Thresh, Mat \&frame0, Mat \&mask0)
+\end{DoxyCompactItemize}

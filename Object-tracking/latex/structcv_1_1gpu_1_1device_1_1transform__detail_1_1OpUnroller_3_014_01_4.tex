@@ -1,0 +1,49 @@
+\hypertarget{structcv_1_1gpu_1_1device_1_1transform__detail_1_1OpUnroller_3_014_01_4}{\section{cv\-:\-:gpu\-:\-:device\-:\-:transform\-\_\-detail\-:\-:Op\-Unroller$<$ 4 $>$ Struct Template Reference}
+\label{structcv_1_1gpu_1_1device_1_1transform__detail_1_1OpUnroller_3_014_01_4}\index{cv\-::gpu\-::device\-::transform\-\_\-detail\-::\-Op\-Unroller$<$ 4 $>$@{cv\-::gpu\-::device\-::transform\-\_\-detail\-::\-Op\-Unroller$<$ 4 $>$}}
+}
+
+
+{\ttfamily \#include $<$transform\-\_\-detail.\-hpp$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T , typename D , typename Un\-Op , typename Mask $>$ }\\static \-\_\-\-\_\-device\-\_\-\-\_\- \\*
+\-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{structcv_1_1gpu_1_1device_1_1transform__detail_1_1OpUnroller_3_014_01_4_ac348dcbbe75a172a9d8542428f0efd11}{unroll} (const \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, D \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, const Mask \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}, const Un\-Op \&op, int x\-\_\-shifted, int \hyperlink{highgui__c_8h_af1202c02b14870c18fb3a1da73e9e7c7}{y})
+\item 
+{\footnotesize template$<$typename T1 , typename T2 , typename D , typename Bin\-Op , typename Mask $>$ }\\static \-\_\-\-\_\-device\-\_\-\-\_\- \\*
+\-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{structcv_1_1gpu_1_1device_1_1transform__detail_1_1OpUnroller_3_014_01_4_a76296f284e70e76845aeda7d0ab8d291}{unroll} (const T1 \&\hyperlink{core__c_8h_a897de4702c922f4cccda0d57ccdcafb3}{src1}, const T2 \&\hyperlink{core__c_8h_a7561a36d48069d54a6c8ac4e4750edfd}{src2}, D \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, const Mask \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}, const Bin\-Op \&op, int x\-\_\-shifted, int \hyperlink{highgui__c_8h_af1202c02b14870c18fb3a1da73e9e7c7}{y})
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structcv_1_1gpu_1_1device_1_1transform__detail_1_1OpUnroller_3_014_01_4_ac348dcbbe75a172a9d8542428f0efd11}{\index{cv\-::gpu\-::device\-::transform\-\_\-detail\-::\-Op\-Unroller$<$ 4 $>$@{cv\-::gpu\-::device\-::transform\-\_\-detail\-::\-Op\-Unroller$<$ 4 $>$}!unroll@{unroll}}
+\index{unroll@{unroll}!cv::gpu::device::transform_detail::OpUnroller< 4 >@{cv\-::gpu\-::device\-::transform\-\_\-detail\-::\-Op\-Unroller$<$ 4 $>$}}
+\subsubsection[{unroll}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T , typename D , typename Un\-Op , typename Mask $>$ static \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- {\bf void} {\bf cv\-::gpu\-::device\-::transform\-\_\-detail\-::\-Op\-Unroller}$<$ 4 $>$\-::unroll (
+\begin{DoxyParamCaption}
+\item[{const {\bf T} \&}]{src, }
+\item[{D \&}]{dst, }
+\item[{const Mask \&}]{mask, }
+\item[{const Un\-Op \&}]{op, }
+\item[{int}]{x\-\_\-shifted, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{structcv_1_1gpu_1_1device_1_1transform__detail_1_1OpUnroller_3_014_01_4_ac348dcbbe75a172a9d8542428f0efd11}
+\hypertarget{structcv_1_1gpu_1_1device_1_1transform__detail_1_1OpUnroller_3_014_01_4_a76296f284e70e76845aeda7d0ab8d291}{\index{cv\-::gpu\-::device\-::transform\-\_\-detail\-::\-Op\-Unroller$<$ 4 $>$@{cv\-::gpu\-::device\-::transform\-\_\-detail\-::\-Op\-Unroller$<$ 4 $>$}!unroll@{unroll}}
+\index{unroll@{unroll}!cv::gpu::device::transform_detail::OpUnroller< 4 >@{cv\-::gpu\-::device\-::transform\-\_\-detail\-::\-Op\-Unroller$<$ 4 $>$}}
+\subsubsection[{unroll}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T1 , typename T2 , typename D , typename Bin\-Op , typename Mask $>$ static \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- {\bf void} {\bf cv\-::gpu\-::device\-::transform\-\_\-detail\-::\-Op\-Unroller}$<$ 4 $>$\-::unroll (
+\begin{DoxyParamCaption}
+\item[{const T1 \&}]{src1, }
+\item[{const T2 \&}]{src2, }
+\item[{D \&}]{dst, }
+\item[{const Mask \&}]{mask, }
+\item[{const Bin\-Op \&}]{op, }
+\item[{int}]{x\-\_\-shifted, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{structcv_1_1gpu_1_1device_1_1transform__detail_1_1OpUnroller_3_014_01_4_a76296f284e70e76845aeda7d0ab8d291}
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/gpu/device/detail/\hyperlink{transform__detail_8hpp}{transform\-\_\-detail.\-hpp}\end{DoxyCompactItemize}

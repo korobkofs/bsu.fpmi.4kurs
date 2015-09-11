@@ -1,0 +1,9 @@
+<map id="cvflann::ResultSet&lt; DistanceType &gt;" name="cvflann::ResultSet&lt; DistanceType &gt;">
+<area shape="rect" id="node2" href="$classcvflann_1_1KNNResultSet.html" title="cvflann::KNNResultSet\l\&lt; DistanceType \&gt;" alt="" coords="194,5,353,46"/>
+<area shape="rect" id="node3" href="$classcvflann_1_1KNNSimpleResultSet.html" title="cvflann::KNNSimpleResult\lSet\&lt; DistanceType \&gt;" alt="" coords="184,70,363,111"/>
+<area shape="rect" id="node4" href="$classcvflann_1_1RadiusResultSet.html" title="cvflann::RadiusResultSet\l\&lt; DistanceType \&gt;" alt="" coords="188,135,359,177"/>
+<area shape="rect" id="node5" href="$classcvflann_1_1UniqueResultSet.html" title="cvflann::UniqueResultSet\l\&lt; DistanceType \&gt;" alt="" coords="188,201,359,242"/>
+<area shape="rect" id="node6" href="$classcvflann_1_1KNNUniqueResultSet.html" title="cvflann::KNNUniqueResult\lSet\&lt; DistanceType \&gt;" alt="" coords="417,167,597,209"/>
+<area shape="rect" id="node8" href="$classcvflann_1_1RadiusUniqueResultSet.html" title="cvflann::RadiusUniqueResult\lSet\&lt; DistanceType \&gt;" alt="" coords="411,233,603,274"/>
+<area shape="rect" id="node7" href="$classcvflann_1_1KNNRadiusUniqueResultSet.html" title="cvflann::KNNRadiusUnique\lResultSet\&lt; DistanceType \&gt;" alt="" coords="651,167,837,209"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="cv::gpu::device::color_detail::ColorChannel::half" name="cv::gpu::device::color_detail::ColorChannel::half">
+<area shape="rect" id="node2" href="$namespacecv_1_1gpu_1_1device_1_1color__detail.html#af433ed4738c243b56146f0495b40596d" title="cv::gpu::device::color\l_detail::RGB2YUVConvert" alt="" coords="236,5,415,46"/>
+<area shape="rect" id="node3" href="$namespacecv_1_1gpu_1_1device_1_1color__detail.html#a2394dced2f560842991071f0bf1d6be0" title="cv::gpu::device::color\l_detail::YUV2RGBConvert" alt="" coords="236,70,415,111"/>
+<area shape="rect" id="node4" href="$namespacecv_1_1gpu_1_1device_1_1color__detail.html#ad7a48f57ab89ba955b86b672b967ee13" title="cv::gpu::device::color\l_detail::RGB2YCrCbConvert" alt="" coords="230,135,421,177"/>
+<area shape="rect" id="node5" href="$namespacecv_1_1gpu_1_1device_1_1color__detail.html#ab80a65f0957796a662eecdad97af8bee" title="cv::gpu::device::color\l_detail::YCrCb2RGBConvert" alt="" coords="230,201,421,242"/>
+</map>

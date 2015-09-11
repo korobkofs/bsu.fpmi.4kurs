@@ -1,0 +1,7 @@
+<map id="CBlobGetOrientation::operator()" name="CBlobGetOrientation::operator()">
+<area shape="rect" id="node2" href="$classCBlob.html#ad0bb95f395084ee89ca35cf11f203342" title="Get bounding ellipse. " alt="" coords="198,35,325,61"/>
+<area shape="rect" id="node3" href="$classCBlob.html#a4f5dfca1ee933e07a39965375f9f07c5" title="Compute blob&#39;s moment (p,q up to MAX_CALCULATED_MOMENTS) " alt="" coords="374,35,487,61"/>
+<area shape="rect" id="node4" href="$classCBlobContour.html#a301727633680b38714302593945b748f" title="Get contour moment (p,q up to MAX_CALCULATED_MOMENTS) " alt="" coords="537,35,717,61"/>
+<area shape="rect" id="node5" href="$classCBlobContour.html#af4e715a94924d5dc1a0e67cf75818bb5" title="CBlobContour::IsEmpty" alt="" coords="774,5,935,32"/>
+<area shape="rect" id="node6" href="$classCBlobContour.html#a245d5e59180619aa9ae4ec14acc18744" title="Return all contour points. " alt="" coords="765,57,944,98"/>
+</map>

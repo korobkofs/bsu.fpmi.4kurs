@@ -1,0 +1,8 @@
+<map id="cvflann::load_value" name="cvflann::load_value">
+<area shape="rect" id="node2" href="$classcvflann_1_1AutotunedIndex.html#a7ca4483e58da173490a2b2cada34cafe" title="cvflann::AutotunedIndex\l::loadIndex" alt="" coords="208,5,371,46"/>
+<area shape="rect" id="node3" href="$classcvflann_1_1HierarchicalClusteringIndex.html#a549a094e4701380f027e288095c0741e" title="Loads the index from a stream. " alt="" coords="189,70,389,111"/>
+<area shape="rect" id="node4" href="$classcvflann_1_1KDTreeIndex.html#a2076c89754589df49d24b5d0fa886afc" title="Loads the index from a stream. " alt="" coords="215,135,364,177"/>
+<area shape="rect" id="node5" href="$classcvflann_1_1KDTreeSingleIndex.html#ab895fb2728fdd040790b8278e18a2fb7" title="Loads the index from a stream. " alt="" coords="197,201,382,242"/>
+<area shape="rect" id="node6" href="$classcvflann_1_1KMeansIndex.html#a11e0ff42576490042f640c2c382999d0" title="Loads the index from a stream. " alt="" coords="213,266,365,307"/>
+<area shape="rect" id="node7" href="$classcvflann_1_1LshIndex.html#a1dabad22feab89368be19fedf17b2511" title="Loads the index from a stream. " alt="" coords="223,331,356,373"/>
+</map>

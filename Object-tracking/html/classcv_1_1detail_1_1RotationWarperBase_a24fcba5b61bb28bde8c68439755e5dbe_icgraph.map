@@ -1,0 +1,5 @@
+<map id="cv::detail::RotationWarperBase::detectResultRoiByBorder" name="cv::detail::RotationWarperBase::detectResultRoiByBorder">
+<area shape="rect" id="node2" href="$classcv_1_1detail_1_1CylindricalWarper.html#a432518ff1e88b3f96970384ab44d78b4" title="cv::detail::CylindricalWarper\l::detectResultRoi" alt="" coords="261,5,448,46"/>
+<area shape="rect" id="node3" href="$classcv_1_1detail_1_1CylindricalPortraitWarper.html#a36ea19ffcc170d565e6377ed5d46cf38" title="cv::detail::CylindricalPortrait\lWarper::detectResultRoi" alt="" coords="261,70,448,111"/>
+<area shape="rect" id="node4" href="$classcv_1_1detail_1_1PlanePortraitWarper.html#a16a880cf787d451086cc4b85926b9c91" title="cv::detail::PlanePortrait\lWarper::detectResultRoi" alt="" coords="271,135,438,177"/>
+</map>

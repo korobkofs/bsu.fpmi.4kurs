@@ -1,0 +1,5 @@
+<map id="cv::gpu::device::color_detail::RGB2LabConvert_f" name="cv::gpu::device::color_detail::RGB2LabConvert_f">
+<area shape="rect" id="node2" href="$namespacecv_1_1gpu_1_1device_1_1color__detail.html#ad426e027c0c364afa19fad92ec237f6d" title="cv::gpu::device::color\l_detail::splineInterpolate" alt="" coords="237,23,400,65"/>
+<area shape="rect" id="node3" href="$namespacecv_1_1gpu.html#a8d100341ab11a730a3c90b75d5890a8c" title="computes per&#45;element minimum of two arrays (dst = min(src1, src2)) " alt="" coords="450,5,545,32"/>
+<area shape="rect" id="node4" href="$namespacecv_1_1gpu.html#a706c9def6816de566be2671b75ec5309" title="computes per&#45;element maximum of two arrays (dst = max(src1, src2)) " alt="" coords="448,56,547,83"/>
+</map>

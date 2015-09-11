@@ -1,0 +1,242 @@
+\hypertarget{scanctx_8c}{\section{src/3rdparty/libconfig/scanctx.c File Reference}
+\label{scanctx_8c}\index{src/3rdparty/libconfig/scanctx.\-c@{src/3rdparty/libconfig/scanctx.\-c}}
+}
+{\ttfamily \#include \char`\"{}scanctx.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}wincompat.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$stddef.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+Include dependency graph for scanctx.\-c\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{scanctx_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{scanctx_8c_ad58e8dedb18e631dc57a9f8f623effb9}{S\-T\-R\-I\-N\-G\-\_\-\-B\-L\-O\-C\-K\-\_\-\-S\-I\-Z\-E}~64
+\item 
+\#define \hyperlink{scanctx_8c_aea3cfda4f3a9f978ec759f206cf186fe}{C\-H\-U\-N\-K\-\_\-\-S\-I\-Z\-E}~32
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+static const char $\ast$ \hyperlink{scanctx_8c_a31b7667e42fd1a2dc55f20bd5e33f61f}{\-\_\-\-\_\-scanctx\-\_\-add\-\_\-filename} (struct \hyperlink{structscan__context}{scan\-\_\-context} $\ast$ctx, const char $\ast$filename)
+\item 
+void \hyperlink{scanctx_8c_a71411477cefb2144fa40af836f994bc7}{scanctx\-\_\-init} (struct \hyperlink{structscan__context}{scan\-\_\-context} $\ast$ctx, const char $\ast$top\-\_\-filename)
+\item 
+const char $\ast$$\ast$ \hyperlink{scanctx_8c_a14a602e9acf5d8b5b1bb527082a84f19}{scanctx\-\_\-cleanup} (struct \hyperlink{structscan__context}{scan\-\_\-context} $\ast$ctx, unsigned int $\ast$num\-\_\-filenames)
+\item 
+F\-I\-L\-E $\ast$ \hyperlink{scanctx_8c_af28664df4b16ade27bd69da00f9cb292}{scanctx\-\_\-push\-\_\-include} (struct \hyperlink{structscan__context}{scan\-\_\-context} $\ast$ctx, void $\ast$buffer, const char $\ast$$\ast$error)
+\item 
+void $\ast$ \hyperlink{scanctx_8c_a101e8ed9a1d768c5b70697f6ff14fca3}{scanctx\-\_\-pop\-\_\-include} (struct \hyperlink{structscan__context}{scan\-\_\-context} $\ast$ctx)
+\item 
+char $\ast$ \hyperlink{scanctx_8c_a8865cbf5960e1a551474e363f459083b}{scanctx\-\_\-take\-\_\-string} (struct \hyperlink{structscan__context}{scan\-\_\-context} $\ast$ctx)
+\item 
+const char $\ast$ \hyperlink{scanctx_8c_abb4cccee04b8644306427be8df2978d5}{scanctx\-\_\-current\-\_\-filename} (struct \hyperlink{structscan__context}{scan\-\_\-context} $\ast$ctx)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static const char $\ast$ \hyperlink{scanctx_8c_abd1a4e9338d18eae190b44d756f0a8b7}{err\-\_\-bad\-\_\-include} = \char`\"{}cannot open include file\char`\"{}
+\item 
+static const char $\ast$ \hyperlink{scanctx_8c_af6d67f74a1228092b3c1f1ff1fec74f0}{err\-\_\-include\-\_\-too\-\_\-deep} = \char`\"{}include file nesting too deep\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{scanctx_8c_aea3cfda4f3a9f978ec759f206cf186fe}{\index{scanctx.\-c@{scanctx.\-c}!C\-H\-U\-N\-K\-\_\-\-S\-I\-Z\-E@{C\-H\-U\-N\-K\-\_\-\-S\-I\-Z\-E}}
+\index{C\-H\-U\-N\-K\-\_\-\-S\-I\-Z\-E@{C\-H\-U\-N\-K\-\_\-\-S\-I\-Z\-E}!scanctx.c@{scanctx.\-c}}
+\subsubsection[{C\-H\-U\-N\-K\-\_\-\-S\-I\-Z\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-H\-U\-N\-K\-\_\-\-S\-I\-Z\-E~32}}\label{scanctx_8c_aea3cfda4f3a9f978ec759f206cf186fe}
+\hypertarget{scanctx_8c_ad58e8dedb18e631dc57a9f8f623effb9}{\index{scanctx.\-c@{scanctx.\-c}!S\-T\-R\-I\-N\-G\-\_\-\-B\-L\-O\-C\-K\-\_\-\-S\-I\-Z\-E@{S\-T\-R\-I\-N\-G\-\_\-\-B\-L\-O\-C\-K\-\_\-\-S\-I\-Z\-E}}
+\index{S\-T\-R\-I\-N\-G\-\_\-\-B\-L\-O\-C\-K\-\_\-\-S\-I\-Z\-E@{S\-T\-R\-I\-N\-G\-\_\-\-B\-L\-O\-C\-K\-\_\-\-S\-I\-Z\-E}!scanctx.c@{scanctx.\-c}}
+\subsubsection[{S\-T\-R\-I\-N\-G\-\_\-\-B\-L\-O\-C\-K\-\_\-\-S\-I\-Z\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-T\-R\-I\-N\-G\-\_\-\-B\-L\-O\-C\-K\-\_\-\-S\-I\-Z\-E~64}}\label{scanctx_8c_ad58e8dedb18e631dc57a9f8f623effb9}
+
+
+\subsection{Function Documentation}
+\hypertarget{scanctx_8c_a31b7667e42fd1a2dc55f20bd5e33f61f}{\index{scanctx.\-c@{scanctx.\-c}!\-\_\-\-\_\-scanctx\-\_\-add\-\_\-filename@{\-\_\-\-\_\-scanctx\-\_\-add\-\_\-filename}}
+\index{\-\_\-\-\_\-scanctx\-\_\-add\-\_\-filename@{\-\_\-\-\_\-scanctx\-\_\-add\-\_\-filename}!scanctx.c@{scanctx.\-c}}
+\subsubsection[{\-\_\-\-\_\-scanctx\-\_\-add\-\_\-filename}]{\setlength{\rightskip}{0pt plus 5cm}static const char$\ast$ \-\_\-\-\_\-scanctx\-\_\-add\-\_\-filename (
+\begin{DoxyParamCaption}
+\item[{struct {\bf scan\-\_\-context} $\ast$}]{ctx, }
+\item[{const char $\ast$}]{filename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{scanctx_8c_a31b7667e42fd1a2dc55f20bd5e33f61f}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{scanctx_8c_a31b7667e42fd1a2dc55f20bd5e33f61f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{scanctx_8c_a14a602e9acf5d8b5b1bb527082a84f19}{\index{scanctx.\-c@{scanctx.\-c}!scanctx\-\_\-cleanup@{scanctx\-\_\-cleanup}}
+\index{scanctx\-\_\-cleanup@{scanctx\-\_\-cleanup}!scanctx.c@{scanctx.\-c}}
+\subsubsection[{scanctx\-\_\-cleanup}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$$\ast$ scanctx\-\_\-cleanup (
+\begin{DoxyParamCaption}
+\item[{struct {\bf scan\-\_\-context} $\ast$}]{ctx, }
+\item[{unsigned int $\ast$}]{num\-\_\-filenames}
+\end{DoxyParamCaption}
+)}}\label{scanctx_8c_a14a602e9acf5d8b5b1bb527082a84f19}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{scanctx_8c_a14a602e9acf5d8b5b1bb527082a84f19_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{scanctx_8c_a14a602e9acf5d8b5b1bb527082a84f19_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{scanctx_8c_abb4cccee04b8644306427be8df2978d5}{\index{scanctx.\-c@{scanctx.\-c}!scanctx\-\_\-current\-\_\-filename@{scanctx\-\_\-current\-\_\-filename}}
+\index{scanctx\-\_\-current\-\_\-filename@{scanctx\-\_\-current\-\_\-filename}!scanctx.c@{scanctx.\-c}}
+\subsubsection[{scanctx\-\_\-current\-\_\-filename}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ scanctx\-\_\-current\-\_\-filename (
+\begin{DoxyParamCaption}
+\item[{struct {\bf scan\-\_\-context} $\ast$}]{ctx}
+\end{DoxyParamCaption}
+)}}\label{scanctx_8c_abb4cccee04b8644306427be8df2978d5}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{scanctx_8c_abb4cccee04b8644306427be8df2978d5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{scanctx_8c_a71411477cefb2144fa40af836f994bc7}{\index{scanctx.\-c@{scanctx.\-c}!scanctx\-\_\-init@{scanctx\-\_\-init}}
+\index{scanctx\-\_\-init@{scanctx\-\_\-init}!scanctx.c@{scanctx.\-c}}
+\subsubsection[{scanctx\-\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}void scanctx\-\_\-init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf scan\-\_\-context} $\ast$}]{ctx, }
+\item[{const char $\ast$}]{top\-\_\-filename}
+\end{DoxyParamCaption}
+)}}\label{scanctx_8c_a71411477cefb2144fa40af836f994bc7}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{scanctx_8c_a71411477cefb2144fa40af836f994bc7_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{scanctx_8c_a71411477cefb2144fa40af836f994bc7_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{scanctx_8c_a101e8ed9a1d768c5b70697f6ff14fca3}{\index{scanctx.\-c@{scanctx.\-c}!scanctx\-\_\-pop\-\_\-include@{scanctx\-\_\-pop\-\_\-include}}
+\index{scanctx\-\_\-pop\-\_\-include@{scanctx\-\_\-pop\-\_\-include}!scanctx.c@{scanctx.\-c}}
+\subsubsection[{scanctx\-\_\-pop\-\_\-include}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ scanctx\-\_\-pop\-\_\-include (
+\begin{DoxyParamCaption}
+\item[{struct {\bf scan\-\_\-context} $\ast$}]{ctx}
+\end{DoxyParamCaption}
+)}}\label{scanctx_8c_a101e8ed9a1d768c5b70697f6ff14fca3}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{scanctx_8c_a101e8ed9a1d768c5b70697f6ff14fca3_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{scanctx_8c_af28664df4b16ade27bd69da00f9cb292}{\index{scanctx.\-c@{scanctx.\-c}!scanctx\-\_\-push\-\_\-include@{scanctx\-\_\-push\-\_\-include}}
+\index{scanctx\-\_\-push\-\_\-include@{scanctx\-\_\-push\-\_\-include}!scanctx.c@{scanctx.\-c}}
+\subsubsection[{scanctx\-\_\-push\-\_\-include}]{\setlength{\rightskip}{0pt plus 5cm}F\-I\-L\-E$\ast$ scanctx\-\_\-push\-\_\-include (
+\begin{DoxyParamCaption}
+\item[{struct {\bf scan\-\_\-context} $\ast$}]{ctx, }
+\item[{void $\ast$}]{buffer, }
+\item[{const char $\ast$$\ast$}]{error}
+\end{DoxyParamCaption}
+)}}\label{scanctx_8c_af28664df4b16ade27bd69da00f9cb292}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{scanctx_8c_af28664df4b16ade27bd69da00f9cb292_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{scanctx_8c_af28664df4b16ade27bd69da00f9cb292_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{scanctx_8c_a8865cbf5960e1a551474e363f459083b}{\index{scanctx.\-c@{scanctx.\-c}!scanctx\-\_\-take\-\_\-string@{scanctx\-\_\-take\-\_\-string}}
+\index{scanctx\-\_\-take\-\_\-string@{scanctx\-\_\-take\-\_\-string}!scanctx.c@{scanctx.\-c}}
+\subsubsection[{scanctx\-\_\-take\-\_\-string}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ scanctx\-\_\-take\-\_\-string (
+\begin{DoxyParamCaption}
+\item[{struct {\bf scan\-\_\-context} $\ast$}]{ctx}
+\end{DoxyParamCaption}
+)}}\label{scanctx_8c_a8865cbf5960e1a551474e363f459083b}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{scanctx_8c_a8865cbf5960e1a551474e363f459083b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{scanctx_8c_a8865cbf5960e1a551474e363f459083b_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{scanctx_8c_abd1a4e9338d18eae190b44d756f0a8b7}{\index{scanctx.\-c@{scanctx.\-c}!err\-\_\-bad\-\_\-include@{err\-\_\-bad\-\_\-include}}
+\index{err\-\_\-bad\-\_\-include@{err\-\_\-bad\-\_\-include}!scanctx.c@{scanctx.\-c}}
+\subsubsection[{err\-\_\-bad\-\_\-include}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ err\-\_\-bad\-\_\-include = \char`\"{}cannot open include file\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}}\label{scanctx_8c_abd1a4e9338d18eae190b44d756f0a8b7}
+\hypertarget{scanctx_8c_af6d67f74a1228092b3c1f1ff1fec74f0}{\index{scanctx.\-c@{scanctx.\-c}!err\-\_\-include\-\_\-too\-\_\-deep@{err\-\_\-include\-\_\-too\-\_\-deep}}
+\index{err\-\_\-include\-\_\-too\-\_\-deep@{err\-\_\-include\-\_\-too\-\_\-deep}!scanctx.c@{scanctx.\-c}}
+\subsubsection[{err\-\_\-include\-\_\-too\-\_\-deep}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ err\-\_\-include\-\_\-too\-\_\-deep = \char`\"{}include file nesting too deep\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}}\label{scanctx_8c_af6d67f74a1228092b3c1f1ff1fec74f0}

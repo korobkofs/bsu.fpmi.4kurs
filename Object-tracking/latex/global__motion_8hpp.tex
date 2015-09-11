@@ -1,0 +1,57 @@
+\hypertarget{global__motion_8hpp}{\section{/usr/include/opencv2/videostab/global\-\_\-motion.hpp File Reference}
+\label{global__motion_8hpp}\index{/usr/include/opencv2/videostab/global\-\_\-motion.\-hpp@{/usr/include/opencv2/videostab/global\-\_\-motion.\-hpp}}
+}
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include \char`\"{}opencv2/core/core.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}opencv2/features2d/features2d.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}opencv2/videostab/optical\-\_\-flow.\-hpp\char`\"{}}\\*
+Include dependency graph for global\-\_\-motion.\-hpp\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{global__motion_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{global__motion_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structcv_1_1videostab_1_1RansacParams}{cv\-::videostab\-::\-Ransac\-Params}
+\item 
+class \hyperlink{classcv_1_1videostab_1_1IGlobalMotionEstimator}{cv\-::videostab\-::\-I\-Global\-Motion\-Estimator}
+\item 
+class \hyperlink{classcv_1_1videostab_1_1PyrLkRobustMotionEstimator}{cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacecv}{cv}
+\item 
+\hyperlink{namespacecv_1_1videostab}{cv\-::videostab}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespacecv_1_1videostab_ac61e59db30b7d13983885d3ad3116ce1}{cv\-::videostab\-::\-Motion\-Model} \{ \hyperlink{namespacecv_1_1videostab_ac61e59db30b7d13983885d3ad3116ce1ace445d5731bccc8cdacc3f9754b59674}{cv\-::videostab\-::\-T\-R\-A\-N\-S\-L\-A\-T\-I\-O\-N} = 0, 
+\hyperlink{namespacecv_1_1videostab_ac61e59db30b7d13983885d3ad3116ce1af7781d34aae679f580207b41625cd178}{cv\-::videostab\-::\-T\-R\-A\-N\-S\-L\-A\-T\-I\-O\-N\-\_\-\-A\-N\-D\-\_\-\-S\-C\-A\-L\-E} = 1, 
+\hyperlink{namespacecv_1_1videostab_ac61e59db30b7d13983885d3ad3116ce1ae443ad61ca4230833d8d649d34bfb318}{cv\-::videostab\-::\-L\-I\-N\-E\-A\-R\-\_\-\-S\-I\-M\-I\-L\-A\-R\-I\-T\-Y} = 2, 
+\hyperlink{namespacecv_1_1videostab_ac61e59db30b7d13983885d3ad3116ce1a3b3ab5020ce40832da2080ca63f4a3fc}{cv\-::videostab\-::\-A\-F\-F\-I\-N\-E} = 3
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} Mat \hyperlink{namespacecv_1_1videostab_a2c785630252221715c63352874344d0d}{cv\-::videostab\-::estimate\-Global\-Motion\-Least\-Squares} (const std\-::vector$<$ Point2f $>$ \&points0, const std\-::vector$<$ Point2f $>$ \&\hyperlink{calib3d_8hpp_a3b72d48e58a35993385885cbc187c91d}{points1}, int model=A\-F\-F\-I\-N\-E, float $\ast$rmse=0)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} Mat \hyperlink{namespacecv_1_1videostab_aebf658a7a8e9d1f623ad4b527f47b42f}{cv\-::videostab\-::estimate\-Global\-Motion\-Robust} (const std\-::vector$<$ Point2f $>$ \&points0, const std\-::vector$<$ Point2f $>$ \&\hyperlink{calib3d_8hpp_a3b72d48e58a35993385885cbc187c91d}{points1}, int model=A\-F\-F\-I\-N\-E, const Ransac\-Params \&\hyperlink{compat_8hpp_a0480a03ecc41b20cde376602531d9270}{params}=Ransac\-Params\-::affine2d\-Motion\-Std(), float $\ast$rmse=0, int $\ast$ninliers=0)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} Mat \hyperlink{namespacecv_1_1videostab_aed625f05ee506f2899cbee8cdd64a810}{cv\-::videostab\-::get\-Motion} (int from, int to, const Mat $\ast$motions, int \hyperlink{legacy_8hpp_ae97003f8d5c64cdfb99f6f2606d121b6}{size})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} Mat \hyperlink{namespacecv_1_1videostab_a3c4d339f7e22f330c83af7aebdf720d6}{cv\-::videostab\-::get\-Motion} (int from, int to, const std\-::vector$<$ Mat $>$ \&motions)
+\end{DoxyCompactItemize}

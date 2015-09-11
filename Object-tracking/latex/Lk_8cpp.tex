@@ -1,0 +1,266 @@
+\hypertarget{Lk_8cpp}{\section{src/libopentld/mftracker/\-Lk.cpp File Reference}
+\label{Lk_8cpp}\index{src/libopentld/mftracker/\-Lk.\-cpp@{src/libopentld/mftracker/\-Lk.\-cpp}}
+}
+{\ttfamily \#include \char`\"{}Lk.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$cmath$>$}\\*
+{\ttfamily \#include $<$cstdio$>$}\\*
+{\ttfamily \#include $<$opencv/cv.\-h$>$}\\*
+{\ttfamily \#include $<$opencv/highgui.\-h$>$}\\*
+Include dependency graph for Lk.\-cpp\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Lk_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{Lk_8cpp_a6b1f0fbd52a55b99409b426f14d1b05a}{euclidean\-Distance} (Cv\-Point2\-D32f $\ast$point1, Cv\-Point2\-D32f $\ast$point2, float $\ast$match, int n\-Pts)
+\begin{DoxyCompactList}\small\item\em Calculates euclidean distance between the point pairs. \end{DoxyCompactList}\item 
+void \hyperlink{Lk_8cpp_aecd9b4dead7bfe263a7a068dfb577839}{norm\-Cross\-Correlation} (Ipl\-Image $\ast$img\-I, Ipl\-Image $\ast$img\-J, Cv\-Point2\-D32f $\ast$points0, Cv\-Point2\-D32f $\ast$points1, int n\-Pts, char $\ast$status, float $\ast$match, int winsize, int method)
+\begin{DoxyCompactList}\small\item\em Calculates normalized cross correlation for every point. \end{DoxyCompactList}\item 
+void \hyperlink{Lk_8cpp_a72f8af92e33c2f2c05d9d0b1ecbbc3c6}{init\-Imgs} ()
+\begin{DoxyCompactList}\small\item\em Needed before start of track\-L\-K and at the end of the program for cleanup. Handles P\-Y\-R(\-Pyramid cache) variable. \end{DoxyCompactList}\item 
+int \hyperlink{Lk_8cpp_acaf626622b93b98f39c91967ccc26588}{track\-L\-K} (Ipl\-Image $\ast$img\-I, Ipl\-Image $\ast$img\-J, float pts\-I\mbox{[}$\,$\mbox{]}, int n\-Pts\-I, float pts\-J\mbox{[}$\,$\mbox{]}, int n\-Pts\-J, int level, float $\ast$fb, float $\ast$ncc, char $\ast$status)
+\begin{DoxyCompactList}\small\item\em Tracks Points from 1.\-Image to 2.\-Image. Need init\-Imgs before start and at the end of the program for cleanup. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const int \hyperlink{Lk_8cpp_af50babfff1c5fe54579431e28e45e7ad}{M\-A\-X\-\_\-\-C\-O\-U\-N\-T} = 500
+\begin{DoxyCompactList}\small\item\em It isn't used. \end{DoxyCompactList}\item 
+const int \hyperlink{Lk_8cpp_a52ae776a7c4ac1e8bce389e803672048}{M\-A\-X\-\_\-\-I\-M\-G} = 2
+\begin{DoxyCompactList}\small\item\em the maximum number of image used for track points \end{DoxyCompactList}\item 
+const double \hyperlink{Lk_8cpp_a8e6cabe5b03bb93be3661dee66b4dadc}{N\-\_\-\-A\-\_\-\-N} = -\/1.\-0
+\begin{DoxyCompactList}\small\item\em the value whith replaces Na\-N \end{DoxyCompactList}\item 
+int \hyperlink{Lk_8cpp_a9e5babd1e574af17a2b200cb34933a00}{win\-\_\-size\-\_\-lk} = 4
+\begin{DoxyCompactList}\small\item\em the size of the search window of each pyramid level in cv\-Calc\-Optical\-Flow\-Pyr\-L\-K \end{DoxyCompactList}\item 
+Cv\-Point2\-D32f $\ast$ \hyperlink{Lk_8cpp_a050769e2adadebcaa87cd2362c274d0c}{points} \mbox{[}3\mbox{]} = \{ 0, 0, 0 \}
+\begin{DoxyCompactList}\small\item\em the array of source points in Image 1; the array of tracked points in Image 2; the array of forward-\/backward points in Image 1 \end{DoxyCompactList}\item 
+static Ipl\-Image $\ast$$\ast$ \hyperlink{Lk_8cpp_acfa95a8daab71fc1d5dd357c187fb945}{P\-Y\-R} = 0
+\begin{DoxyCompactList}\small\item\em the array of the pyramid for every frame. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{Lk_8cpp_a6b1f0fbd52a55b99409b426f14d1b05a}{\index{Lk.\-cpp@{Lk.\-cpp}!euclidean\-Distance@{euclidean\-Distance}}
+\index{euclidean\-Distance@{euclidean\-Distance}!Lk.cpp@{Lk.\-cpp}}
+\subsubsection[{euclidean\-Distance}]{\setlength{\rightskip}{0pt plus 5cm}void euclidean\-Distance (
+\begin{DoxyParamCaption}
+\item[{Cv\-Point2\-D32f $\ast$}]{point1, }
+\item[{Cv\-Point2\-D32f $\ast$}]{point2, }
+\item[{float $\ast$}]{match, }
+\item[{int}]{n\-Pts}
+\end{DoxyParamCaption}
+)}}\label{Lk_8cpp_a6b1f0fbd52a55b99409b426f14d1b05a}
+
+
+Calculates euclidean distance between the point pairs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point1} & Array of points. Pairs with point2 at every Position. \\
+\hline
+{\em point2} & Array of points. Pairs with point1 at every Position. \\
+\hline
+{\em match} & Output\-: Contains the result of the distance calculation. Must have the length of n\-Pts. \\
+\hline
+{\em n\-Pts} & Number of pairs. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Lk_8cpp_a6b1f0fbd52a55b99409b426f14d1b05a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{Lk_8cpp_a72f8af92e33c2f2c05d9d0b1ecbbc3c6}{\index{Lk.\-cpp@{Lk.\-cpp}!init\-Imgs@{init\-Imgs}}
+\index{init\-Imgs@{init\-Imgs}!Lk.cpp@{Lk.\-cpp}}
+\subsubsection[{init\-Imgs}]{\setlength{\rightskip}{0pt plus 5cm}void init\-Imgs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{Lk_8cpp_a72f8af92e33c2f2c05d9d0b1ecbbc3c6}
+
+
+Needed before start of track\-L\-K and at the end of the program for cleanup. Handles P\-Y\-R(\-Pyramid cache) variable. 
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Lk_8cpp_a72f8af92e33c2f2c05d9d0b1ecbbc3c6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{Lk_8cpp_aecd9b4dead7bfe263a7a068dfb577839}{\index{Lk.\-cpp@{Lk.\-cpp}!norm\-Cross\-Correlation@{norm\-Cross\-Correlation}}
+\index{norm\-Cross\-Correlation@{norm\-Cross\-Correlation}!Lk.cpp@{Lk.\-cpp}}
+\subsubsection[{norm\-Cross\-Correlation}]{\setlength{\rightskip}{0pt plus 5cm}void norm\-Cross\-Correlation (
+\begin{DoxyParamCaption}
+\item[{Ipl\-Image $\ast$}]{img\-I, }
+\item[{Ipl\-Image $\ast$}]{img\-J, }
+\item[{Cv\-Point2\-D32f $\ast$}]{points0, }
+\item[{Cv\-Point2\-D32f $\ast$}]{points1, }
+\item[{int}]{n\-Pts, }
+\item[{char $\ast$}]{status, }
+\item[{float $\ast$}]{match, }
+\item[{int}]{winsize, }
+\item[{int}]{method}
+\end{DoxyParamCaption}
+)}}\label{Lk_8cpp_aecd9b4dead7bfe263a7a068dfb577839}
+
+
+Calculates normalized cross correlation for every point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em img\-I} & Image 1. \\
+\hline
+{\em img\-J} & Image 2. \\
+\hline
+{\em points0} & Array of points of img\-I \\
+\hline
+{\em points1} & Array of points of img\-J \\
+\hline
+{\em n\-Pts} & Length of array/number of points. \\
+\hline
+{\em status} & Switch which point pairs should be calculated. if status\mbox{[}i\mbox{]} == 1 =$>$ match\mbox{[}i\mbox{]} is calculated. else match\mbox{[}i\mbox{]} = 0.\-0 \\
+\hline
+{\em match} & Output\-: Array will contain ncc values. 0.\-0 if not calculated. \\
+\hline
+{\em winsize} & Size of quadratic area around the point which is compared. \\
+\hline
+{\em method} & Specifies the way how image regions are compared. see cv\-Match\-Template \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Lk_8cpp_aecd9b4dead7bfe263a7a068dfb577839_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{Lk_8cpp_acaf626622b93b98f39c91967ccc26588}{\index{Lk.\-cpp@{Lk.\-cpp}!track\-L\-K@{track\-L\-K}}
+\index{track\-L\-K@{track\-L\-K}!Lk.cpp@{Lk.\-cpp}}
+\subsubsection[{track\-L\-K}]{\setlength{\rightskip}{0pt plus 5cm}int track\-L\-K (
+\begin{DoxyParamCaption}
+\item[{Ipl\-Image $\ast$}]{img\-I, }
+\item[{Ipl\-Image $\ast$}]{img\-J, }
+\item[{float}]{pts\-I\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{n\-Pts\-I, }
+\item[{float}]{pts\-J\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{n\-Pts\-J, }
+\item[{int}]{level, }
+\item[{float $\ast$}]{fb\-Out, }
+\item[{float $\ast$}]{ncc\-Out, }
+\item[{char $\ast$}]{status\-Out}
+\end{DoxyParamCaption}
+)}}\label{Lk_8cpp_acaf626622b93b98f39c91967ccc26588}
+
+
+Tracks Points from 1.\-Image to 2.\-Image. Need init\-Imgs before start and at the end of the program for cleanup. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em img\-I} & previous Image source. (isn't changed) \\
+\hline
+{\em img\-J} & actual Image target. (isn't changed) \\
+\hline
+{\em pts\-I} & points to track from first Image. Format \mbox{[}0\mbox{]} = x1, \mbox{[}1\mbox{]} = y1, \mbox{[}2\mbox{]} = x2 ... \\
+\hline
+{\em n\-Pts\-I} & number of Points to track from first Image \\
+\hline
+{\em pts\-J} & container for calculated points of second Image. Must have the length of n\-Pts\-I. \\
+\hline
+{\em n\-Pts\-J} & number of Points \\
+\hline
+{\em level} & Pyramidlevel, default 5 \\
+\hline
+{\em fb\-Out} & forward-\/backward confidence value. (corresponds to euclidean distance between). Must have the length of n\-Pts\-I\-: n\-Pts\-I $\ast$ sizeof(float). \\
+\hline
+{\em ncc\-Out} & norm\-Cross\-Correlation values. needs as inputlength n\-Pts\-I $\ast$ sizeof(float) \\
+\hline
+{\em status\-Out} & Indicates positive tracks. 1 = Pos\-Track 0 = Neg\-Track needs as inputlength n\-Pts\-I $\ast$ sizeof(char) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1, if success; 0, if n\-Pts\-J != n\-Pts\-I 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{Lk_8cpp_acaf626622b93b98f39c91967ccc26588_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Lk_8cpp_acaf626622b93b98f39c91967ccc26588_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{Lk_8cpp_af50babfff1c5fe54579431e28e45e7ad}{\index{Lk.\-cpp@{Lk.\-cpp}!M\-A\-X\-\_\-\-C\-O\-U\-N\-T@{M\-A\-X\-\_\-\-C\-O\-U\-N\-T}}
+\index{M\-A\-X\-\_\-\-C\-O\-U\-N\-T@{M\-A\-X\-\_\-\-C\-O\-U\-N\-T}!Lk.cpp@{Lk.\-cpp}}
+\subsubsection[{M\-A\-X\-\_\-\-C\-O\-U\-N\-T}]{\setlength{\rightskip}{0pt plus 5cm}const int M\-A\-X\-\_\-\-C\-O\-U\-N\-T = 500}}\label{Lk_8cpp_af50babfff1c5fe54579431e28e45e7ad}
+
+
+It isn't used. 
+
+\hypertarget{Lk_8cpp_a52ae776a7c4ac1e8bce389e803672048}{\index{Lk.\-cpp@{Lk.\-cpp}!M\-A\-X\-\_\-\-I\-M\-G@{M\-A\-X\-\_\-\-I\-M\-G}}
+\index{M\-A\-X\-\_\-\-I\-M\-G@{M\-A\-X\-\_\-\-I\-M\-G}!Lk.cpp@{Lk.\-cpp}}
+\subsubsection[{M\-A\-X\-\_\-\-I\-M\-G}]{\setlength{\rightskip}{0pt plus 5cm}const int M\-A\-X\-\_\-\-I\-M\-G = 2}}\label{Lk_8cpp_a52ae776a7c4ac1e8bce389e803672048}
+
+
+the maximum number of image used for track points 
+
+\hypertarget{Lk_8cpp_a8e6cabe5b03bb93be3661dee66b4dadc}{\index{Lk.\-cpp@{Lk.\-cpp}!N\-\_\-\-A\-\_\-\-N@{N\-\_\-\-A\-\_\-\-N}}
+\index{N\-\_\-\-A\-\_\-\-N@{N\-\_\-\-A\-\_\-\-N}!Lk.cpp@{Lk.\-cpp}}
+\subsubsection[{N\-\_\-\-A\-\_\-\-N}]{\setlength{\rightskip}{0pt plus 5cm}const double N\-\_\-\-A\-\_\-\-N = -\/1.\-0}}\label{Lk_8cpp_a8e6cabe5b03bb93be3661dee66b4dadc}
+
+
+the value whith replaces Na\-N 
+
+\hypertarget{Lk_8cpp_a050769e2adadebcaa87cd2362c274d0c}{\index{Lk.\-cpp@{Lk.\-cpp}!points@{points}}
+\index{points@{points}!Lk.cpp@{Lk.\-cpp}}
+\subsubsection[{points}]{\setlength{\rightskip}{0pt plus 5cm}Cv\-Point2\-D32f$\ast$ points\mbox{[}3\mbox{]} = \{ 0, 0, 0 \}}}\label{Lk_8cpp_a050769e2adadebcaa87cd2362c274d0c}
+
+
+the array of source points in Image 1; the array of tracked points in Image 2; the array of forward-\/backward points in Image 1 
+
+\hypertarget{Lk_8cpp_acfa95a8daab71fc1d5dd357c187fb945}{\index{Lk.\-cpp@{Lk.\-cpp}!P\-Y\-R@{P\-Y\-R}}
+\index{P\-Y\-R@{P\-Y\-R}!Lk.cpp@{Lk.\-cpp}}
+\subsubsection[{P\-Y\-R}]{\setlength{\rightskip}{0pt plus 5cm}Ipl\-Image$\ast$$\ast$ P\-Y\-R = 0\hspace{0.3cm}{\ttfamily [static]}}}\label{Lk_8cpp_acfa95a8daab71fc1d5dd357c187fb945}
+
+
+the array of the pyramid for every frame. 
+
+\hypertarget{Lk_8cpp_a9e5babd1e574af17a2b200cb34933a00}{\index{Lk.\-cpp@{Lk.\-cpp}!win\-\_\-size\-\_\-lk@{win\-\_\-size\-\_\-lk}}
+\index{win\-\_\-size\-\_\-lk@{win\-\_\-size\-\_\-lk}!Lk.cpp@{Lk.\-cpp}}
+\subsubsection[{win\-\_\-size\-\_\-lk}]{\setlength{\rightskip}{0pt plus 5cm}int win\-\_\-size\-\_\-lk = 4}}\label{Lk_8cpp_a9e5babd1e574af17a2b200cb34933a00}
+
+
+the size of the search window of each pyramid level in cv\-Calc\-Optical\-Flow\-Pyr\-L\-K 
+

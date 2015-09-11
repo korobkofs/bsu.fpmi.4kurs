@@ -1,0 +1,230 @@
+\hypertarget{classcv_1_1detail_1_1BundleAdjusterBase}{\section{cv\-:\-:detail\-:\-:Bundle\-Adjuster\-Base Class Reference}
+\label{classcv_1_1detail_1_1BundleAdjusterBase}\index{cv\-::detail\-::\-Bundle\-Adjuster\-Base@{cv\-::detail\-::\-Bundle\-Adjuster\-Base}}
+}
+
+
+{\ttfamily \#include $<$motion\-\_\-estimators.\-hpp$>$}
+
+
+
+Inheritance diagram for cv\-:\-:detail\-:\-:Bundle\-Adjuster\-Base\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcv_1_1detail_1_1BundleAdjusterBase__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for cv\-:\-:detail\-:\-:Bundle\-Adjuster\-Base\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcv_1_1detail_1_1BundleAdjusterBase__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const Mat \hyperlink{classcv_1_1detail_1_1BundleAdjusterBase_aaed5d4280da54b97783b7442ab1c12a0}{refinement\-Mask} () const 
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1detail_1_1BundleAdjusterBase_aa47bf2d3496b65b3e70b5b43681e5360}{set\-Refinement\-Mask} (const Mat \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask})
+\item 
+double \hyperlink{classcv_1_1detail_1_1BundleAdjusterBase_ab6c27eda24c9a237671e2f61c1d2ffe8}{conf\-Thresh} () const 
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1detail_1_1BundleAdjusterBase_aa5e180dd73dc7ce4fa1627fda01b1bfc}{set\-Conf\-Thresh} (double conf\-\_\-thresh)
+\item 
+\hyperlink{structCvTermCriteria}{Cv\-Term\-Criteria} \hyperlink{classcv_1_1detail_1_1BundleAdjusterBase_adb910e3347e43a49dc1cb18a06e1f2c0}{term\-Criteria} ()
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1detail_1_1BundleAdjusterBase_aaf2e8a9fbd52998f8778bd126e393503}{set\-Term\-Criteria} (const \hyperlink{structCvTermCriteria}{Cv\-Term\-Criteria} \&term\-\_\-criteria)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcv_1_1detail_1_1BundleAdjusterBase_a6b2709dce0e39413fa988dc5c0ffc47b}{Bundle\-Adjuster\-Base} (int num\-\_\-params\-\_\-per\-\_\-cam, int num\-\_\-errs\-\_\-per\-\_\-measurement)
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1detail_1_1BundleAdjusterBase_aca5cf5f89209c511b44c0ea962b76a54}{estimate} (const std\-::vector$<$ \hyperlink{structcv_1_1detail_1_1ImageFeatures}{Image\-Features} $>$ \&features, const std\-::vector$<$ \hyperlink{structcv_1_1detail_1_1MatchesInfo}{Matches\-Info} $>$ \&pairwise\-\_\-matches, std\-::vector$<$ \hyperlink{structcv_1_1detail_1_1CameraParams}{Camera\-Params} $>$ \&cameras)
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1detail_1_1BundleAdjusterBase_a7d3b589d7502dd18a1d1dad898816b2e}{set\-Up\-Initial\-Camera\-Params} (const std\-::vector$<$ \hyperlink{structcv_1_1detail_1_1CameraParams}{Camera\-Params} $>$ \&cameras)=0
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1detail_1_1BundleAdjusterBase_aae756bac56334dea76d4064c6a32c1a9}{obtain\-Refined\-Camera\-Params} (std\-::vector$<$ \hyperlink{structcv_1_1detail_1_1CameraParams}{Camera\-Params} $>$ \&cameras) const =0
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1detail_1_1BundleAdjusterBase_a915c63bff1eb2097710d0cf95f2b9784}{calc\-Error} (Mat \&err)=0
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1detail_1_1BundleAdjusterBase_a2d09d69ec01cd5f4967ed861230f9c45}{calc\-Jacobian} (Mat \&jac)=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Mat \hyperlink{classcv_1_1detail_1_1BundleAdjusterBase_a56ea71911cc8a1693544f2f6a890ba73}{refinement\-\_\-mask\-\_\-}
+\item 
+int \hyperlink{classcv_1_1detail_1_1BundleAdjusterBase_a195a4414e1e513a21ad1290cafb2c455}{num\-\_\-images\-\_\-}
+\item 
+int \hyperlink{classcv_1_1detail_1_1BundleAdjusterBase_a4f14cdc846f7f03828c1fb6c21539936}{total\-\_\-num\-\_\-matches\-\_\-}
+\item 
+int \hyperlink{classcv_1_1detail_1_1BundleAdjusterBase_a53a2fe05702415fbf2926179032c727b}{num\-\_\-params\-\_\-per\-\_\-cam\-\_\-}
+\item 
+int \hyperlink{classcv_1_1detail_1_1BundleAdjusterBase_a316c5f7ee2a86061f1aab7169aa78bac}{num\-\_\-errs\-\_\-per\-\_\-measurement\-\_\-}
+\item 
+const \hyperlink{structcv_1_1detail_1_1ImageFeatures}{Image\-Features} $\ast$ \hyperlink{classcv_1_1detail_1_1BundleAdjusterBase_a3e3bcb444b3e4b4bd570653d247c8639}{features\-\_\-}
+\item 
+const \hyperlink{structcv_1_1detail_1_1MatchesInfo}{Matches\-Info} $\ast$ \hyperlink{classcv_1_1detail_1_1BundleAdjusterBase_a5c6d7027fd93d1824ba811a3c7bbf0a5}{pairwise\-\_\-matches\-\_\-}
+\item 
+double \hyperlink{classcv_1_1detail_1_1BundleAdjusterBase_a7496b2ad6eb9893b7cf20a723eb4cec7}{conf\-\_\-thresh\-\_\-}
+\item 
+\hyperlink{structCvTermCriteria}{Cv\-Term\-Criteria} \hyperlink{classcv_1_1detail_1_1BundleAdjusterBase_af4942046f39bdc93ca769b5c29edfe5b}{term\-\_\-criteria\-\_\-}
+\item 
+Mat \hyperlink{classcv_1_1detail_1_1BundleAdjusterBase_a075f23eff9fafb25b01dc0d909ec308c}{cam\-\_\-params\-\_\-}
+\item 
+std\-::vector$<$ std\-::pair$<$ int, \\*
+int $>$ $>$ \hyperlink{classcv_1_1detail_1_1BundleAdjusterBase_a20d50a47ba95683398d61581dcaac28d}{edges\-\_\-}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcv_1_1detail_1_1BundleAdjusterBase_a6b2709dce0e39413fa988dc5c0ffc47b}{\index{cv\-::detail\-::\-Bundle\-Adjuster\-Base@{cv\-::detail\-::\-Bundle\-Adjuster\-Base}!Bundle\-Adjuster\-Base@{Bundle\-Adjuster\-Base}}
+\index{Bundle\-Adjuster\-Base@{Bundle\-Adjuster\-Base}!cv::detail::BundleAdjusterBase@{cv\-::detail\-::\-Bundle\-Adjuster\-Base}}
+\subsubsection[{Bundle\-Adjuster\-Base}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::detail\-::\-Bundle\-Adjuster\-Base\-::\-Bundle\-Adjuster\-Base (
+\begin{DoxyParamCaption}
+\item[{int}]{num\-\_\-params\-\_\-per\-\_\-cam, }
+\item[{int}]{num\-\_\-errs\-\_\-per\-\_\-measurement}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classcv_1_1detail_1_1BundleAdjusterBase_a6b2709dce0e39413fa988dc5c0ffc47b}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{classcv_1_1detail_1_1BundleAdjusterBase_a6b2709dce0e39413fa988dc5c0ffc47b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcv_1_1detail_1_1BundleAdjusterBase_a915c63bff1eb2097710d0cf95f2b9784}{\index{cv\-::detail\-::\-Bundle\-Adjuster\-Base@{cv\-::detail\-::\-Bundle\-Adjuster\-Base}!calc\-Error@{calc\-Error}}
+\index{calc\-Error@{calc\-Error}!cv::detail::BundleAdjusterBase@{cv\-::detail\-::\-Bundle\-Adjuster\-Base}}
+\subsubsection[{calc\-Error}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cv\-::detail\-::\-Bundle\-Adjuster\-Base\-::calc\-Error (
+\begin{DoxyParamCaption}
+\item[{Mat \&}]{err}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{classcv_1_1detail_1_1BundleAdjusterBase_a915c63bff1eb2097710d0cf95f2b9784}
+\hypertarget{classcv_1_1detail_1_1BundleAdjusterBase_a2d09d69ec01cd5f4967ed861230f9c45}{\index{cv\-::detail\-::\-Bundle\-Adjuster\-Base@{cv\-::detail\-::\-Bundle\-Adjuster\-Base}!calc\-Jacobian@{calc\-Jacobian}}
+\index{calc\-Jacobian@{calc\-Jacobian}!cv::detail::BundleAdjusterBase@{cv\-::detail\-::\-Bundle\-Adjuster\-Base}}
+\subsubsection[{calc\-Jacobian}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cv\-::detail\-::\-Bundle\-Adjuster\-Base\-::calc\-Jacobian (
+\begin{DoxyParamCaption}
+\item[{Mat \&}]{jac}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{classcv_1_1detail_1_1BundleAdjusterBase_a2d09d69ec01cd5f4967ed861230f9c45}
+\hypertarget{classcv_1_1detail_1_1BundleAdjusterBase_ab6c27eda24c9a237671e2f61c1d2ffe8}{\index{cv\-::detail\-::\-Bundle\-Adjuster\-Base@{cv\-::detail\-::\-Bundle\-Adjuster\-Base}!conf\-Thresh@{conf\-Thresh}}
+\index{conf\-Thresh@{conf\-Thresh}!cv::detail::BundleAdjusterBase@{cv\-::detail\-::\-Bundle\-Adjuster\-Base}}
+\subsubsection[{conf\-Thresh}]{\setlength{\rightskip}{0pt plus 5cm}double cv\-::detail\-::\-Bundle\-Adjuster\-Base\-::conf\-Thresh (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1detail_1_1BundleAdjusterBase_ab6c27eda24c9a237671e2f61c1d2ffe8}
+\hypertarget{classcv_1_1detail_1_1BundleAdjusterBase_aca5cf5f89209c511b44c0ea962b76a54}{\index{cv\-::detail\-::\-Bundle\-Adjuster\-Base@{cv\-::detail\-::\-Bundle\-Adjuster\-Base}!estimate@{estimate}}
+\index{estimate@{estimate}!cv::detail::BundleAdjusterBase@{cv\-::detail\-::\-Bundle\-Adjuster\-Base}}
+\subsubsection[{estimate}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cv\-::detail\-::\-Bundle\-Adjuster\-Base\-::estimate (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ {\bf Image\-Features} $>$ \&}]{features, }
+\item[{const std\-::vector$<$ {\bf Matches\-Info} $>$ \&}]{pairwise\-\_\-matches, }
+\item[{std\-::vector$<$ {\bf Camera\-Params} $>$ \&}]{cameras}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classcv_1_1detail_1_1BundleAdjusterBase_aca5cf5f89209c511b44c0ea962b76a54}
+
+
+Implements \hyperlink{classcv_1_1detail_1_1Estimator_a2084c2ceeb78d2c9eaebe677613ee6d2}{cv\-::detail\-::\-Estimator}.
+
+\hypertarget{classcv_1_1detail_1_1BundleAdjusterBase_aae756bac56334dea76d4064c6a32c1a9}{\index{cv\-::detail\-::\-Bundle\-Adjuster\-Base@{cv\-::detail\-::\-Bundle\-Adjuster\-Base}!obtain\-Refined\-Camera\-Params@{obtain\-Refined\-Camera\-Params}}
+\index{obtain\-Refined\-Camera\-Params@{obtain\-Refined\-Camera\-Params}!cv::detail::BundleAdjusterBase@{cv\-::detail\-::\-Bundle\-Adjuster\-Base}}
+\subsubsection[{obtain\-Refined\-Camera\-Params}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cv\-::detail\-::\-Bundle\-Adjuster\-Base\-::obtain\-Refined\-Camera\-Params (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ {\bf Camera\-Params} $>$ \&}]{cameras}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{classcv_1_1detail_1_1BundleAdjusterBase_aae756bac56334dea76d4064c6a32c1a9}
+\hypertarget{classcv_1_1detail_1_1BundleAdjusterBase_aaed5d4280da54b97783b7442ab1c12a0}{\index{cv\-::detail\-::\-Bundle\-Adjuster\-Base@{cv\-::detail\-::\-Bundle\-Adjuster\-Base}!refinement\-Mask@{refinement\-Mask}}
+\index{refinement\-Mask@{refinement\-Mask}!cv::detail::BundleAdjusterBase@{cv\-::detail\-::\-Bundle\-Adjuster\-Base}}
+\subsubsection[{refinement\-Mask}]{\setlength{\rightskip}{0pt plus 5cm}const Mat cv\-::detail\-::\-Bundle\-Adjuster\-Base\-::refinement\-Mask (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1detail_1_1BundleAdjusterBase_aaed5d4280da54b97783b7442ab1c12a0}
+\hypertarget{classcv_1_1detail_1_1BundleAdjusterBase_aa5e180dd73dc7ce4fa1627fda01b1bfc}{\index{cv\-::detail\-::\-Bundle\-Adjuster\-Base@{cv\-::detail\-::\-Bundle\-Adjuster\-Base}!set\-Conf\-Thresh@{set\-Conf\-Thresh}}
+\index{set\-Conf\-Thresh@{set\-Conf\-Thresh}!cv::detail::BundleAdjusterBase@{cv\-::detail\-::\-Bundle\-Adjuster\-Base}}
+\subsubsection[{set\-Conf\-Thresh}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::detail\-::\-Bundle\-Adjuster\-Base\-::set\-Conf\-Thresh (
+\begin{DoxyParamCaption}
+\item[{double}]{conf\-\_\-thresh}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1detail_1_1BundleAdjusterBase_aa5e180dd73dc7ce4fa1627fda01b1bfc}
+\hypertarget{classcv_1_1detail_1_1BundleAdjusterBase_aa47bf2d3496b65b3e70b5b43681e5360}{\index{cv\-::detail\-::\-Bundle\-Adjuster\-Base@{cv\-::detail\-::\-Bundle\-Adjuster\-Base}!set\-Refinement\-Mask@{set\-Refinement\-Mask}}
+\index{set\-Refinement\-Mask@{set\-Refinement\-Mask}!cv::detail::BundleAdjusterBase@{cv\-::detail\-::\-Bundle\-Adjuster\-Base}}
+\subsubsection[{set\-Refinement\-Mask}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::detail\-::\-Bundle\-Adjuster\-Base\-::set\-Refinement\-Mask (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{mask}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1detail_1_1BundleAdjusterBase_aa47bf2d3496b65b3e70b5b43681e5360}
+\hypertarget{classcv_1_1detail_1_1BundleAdjusterBase_aaf2e8a9fbd52998f8778bd126e393503}{\index{cv\-::detail\-::\-Bundle\-Adjuster\-Base@{cv\-::detail\-::\-Bundle\-Adjuster\-Base}!set\-Term\-Criteria@{set\-Term\-Criteria}}
+\index{set\-Term\-Criteria@{set\-Term\-Criteria}!cv::detail::BundleAdjusterBase@{cv\-::detail\-::\-Bundle\-Adjuster\-Base}}
+\subsubsection[{set\-Term\-Criteria}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::detail\-::\-Bundle\-Adjuster\-Base\-::set\-Term\-Criteria (
+\begin{DoxyParamCaption}
+\item[{const {\bf Cv\-Term\-Criteria} \&}]{term\-\_\-criteria}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1detail_1_1BundleAdjusterBase_aaf2e8a9fbd52998f8778bd126e393503}
+\hypertarget{classcv_1_1detail_1_1BundleAdjusterBase_a7d3b589d7502dd18a1d1dad898816b2e}{\index{cv\-::detail\-::\-Bundle\-Adjuster\-Base@{cv\-::detail\-::\-Bundle\-Adjuster\-Base}!set\-Up\-Initial\-Camera\-Params@{set\-Up\-Initial\-Camera\-Params}}
+\index{set\-Up\-Initial\-Camera\-Params@{set\-Up\-Initial\-Camera\-Params}!cv::detail::BundleAdjusterBase@{cv\-::detail\-::\-Bundle\-Adjuster\-Base}}
+\subsubsection[{set\-Up\-Initial\-Camera\-Params}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cv\-::detail\-::\-Bundle\-Adjuster\-Base\-::set\-Up\-Initial\-Camera\-Params (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ {\bf Camera\-Params} $>$ \&}]{cameras}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{classcv_1_1detail_1_1BundleAdjusterBase_a7d3b589d7502dd18a1d1dad898816b2e}
+\hypertarget{classcv_1_1detail_1_1BundleAdjusterBase_adb910e3347e43a49dc1cb18a06e1f2c0}{\index{cv\-::detail\-::\-Bundle\-Adjuster\-Base@{cv\-::detail\-::\-Bundle\-Adjuster\-Base}!term\-Criteria@{term\-Criteria}}
+\index{term\-Criteria@{term\-Criteria}!cv::detail::BundleAdjusterBase@{cv\-::detail\-::\-Bundle\-Adjuster\-Base}}
+\subsubsection[{term\-Criteria}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Term\-Criteria} cv\-::detail\-::\-Bundle\-Adjuster\-Base\-::term\-Criteria (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1detail_1_1BundleAdjusterBase_adb910e3347e43a49dc1cb18a06e1f2c0}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcv_1_1detail_1_1BundleAdjusterBase_a075f23eff9fafb25b01dc0d909ec308c}{\index{cv\-::detail\-::\-Bundle\-Adjuster\-Base@{cv\-::detail\-::\-Bundle\-Adjuster\-Base}!cam\-\_\-params\-\_\-@{cam\-\_\-params\-\_\-}}
+\index{cam\-\_\-params\-\_\-@{cam\-\_\-params\-\_\-}!cv::detail::BundleAdjusterBase@{cv\-::detail\-::\-Bundle\-Adjuster\-Base}}
+\subsubsection[{cam\-\_\-params\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}Mat cv\-::detail\-::\-Bundle\-Adjuster\-Base\-::cam\-\_\-params\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1detail_1_1BundleAdjusterBase_a075f23eff9fafb25b01dc0d909ec308c}
+\hypertarget{classcv_1_1detail_1_1BundleAdjusterBase_a7496b2ad6eb9893b7cf20a723eb4cec7}{\index{cv\-::detail\-::\-Bundle\-Adjuster\-Base@{cv\-::detail\-::\-Bundle\-Adjuster\-Base}!conf\-\_\-thresh\-\_\-@{conf\-\_\-thresh\-\_\-}}
+\index{conf\-\_\-thresh\-\_\-@{conf\-\_\-thresh\-\_\-}!cv::detail::BundleAdjusterBase@{cv\-::detail\-::\-Bundle\-Adjuster\-Base}}
+\subsubsection[{conf\-\_\-thresh\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}double cv\-::detail\-::\-Bundle\-Adjuster\-Base\-::conf\-\_\-thresh\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1detail_1_1BundleAdjusterBase_a7496b2ad6eb9893b7cf20a723eb4cec7}
+\hypertarget{classcv_1_1detail_1_1BundleAdjusterBase_a20d50a47ba95683398d61581dcaac28d}{\index{cv\-::detail\-::\-Bundle\-Adjuster\-Base@{cv\-::detail\-::\-Bundle\-Adjuster\-Base}!edges\-\_\-@{edges\-\_\-}}
+\index{edges\-\_\-@{edges\-\_\-}!cv::detail::BundleAdjusterBase@{cv\-::detail\-::\-Bundle\-Adjuster\-Base}}
+\subsubsection[{edges\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$std\-::pair$<$int,int$>$ $>$ cv\-::detail\-::\-Bundle\-Adjuster\-Base\-::edges\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1detail_1_1BundleAdjusterBase_a20d50a47ba95683398d61581dcaac28d}
+\hypertarget{classcv_1_1detail_1_1BundleAdjusterBase_a3e3bcb444b3e4b4bd570653d247c8639}{\index{cv\-::detail\-::\-Bundle\-Adjuster\-Base@{cv\-::detail\-::\-Bundle\-Adjuster\-Base}!features\-\_\-@{features\-\_\-}}
+\index{features\-\_\-@{features\-\_\-}!cv::detail::BundleAdjusterBase@{cv\-::detail\-::\-Bundle\-Adjuster\-Base}}
+\subsubsection[{features\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Image\-Features}$\ast$ cv\-::detail\-::\-Bundle\-Adjuster\-Base\-::features\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1detail_1_1BundleAdjusterBase_a3e3bcb444b3e4b4bd570653d247c8639}
+\hypertarget{classcv_1_1detail_1_1BundleAdjusterBase_a316c5f7ee2a86061f1aab7169aa78bac}{\index{cv\-::detail\-::\-Bundle\-Adjuster\-Base@{cv\-::detail\-::\-Bundle\-Adjuster\-Base}!num\-\_\-errs\-\_\-per\-\_\-measurement\-\_\-@{num\-\_\-errs\-\_\-per\-\_\-measurement\-\_\-}}
+\index{num\-\_\-errs\-\_\-per\-\_\-measurement\-\_\-@{num\-\_\-errs\-\_\-per\-\_\-measurement\-\_\-}!cv::detail::BundleAdjusterBase@{cv\-::detail\-::\-Bundle\-Adjuster\-Base}}
+\subsubsection[{num\-\_\-errs\-\_\-per\-\_\-measurement\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::detail\-::\-Bundle\-Adjuster\-Base\-::num\-\_\-errs\-\_\-per\-\_\-measurement\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1detail_1_1BundleAdjusterBase_a316c5f7ee2a86061f1aab7169aa78bac}
+\hypertarget{classcv_1_1detail_1_1BundleAdjusterBase_a195a4414e1e513a21ad1290cafb2c455}{\index{cv\-::detail\-::\-Bundle\-Adjuster\-Base@{cv\-::detail\-::\-Bundle\-Adjuster\-Base}!num\-\_\-images\-\_\-@{num\-\_\-images\-\_\-}}
+\index{num\-\_\-images\-\_\-@{num\-\_\-images\-\_\-}!cv::detail::BundleAdjusterBase@{cv\-::detail\-::\-Bundle\-Adjuster\-Base}}
+\subsubsection[{num\-\_\-images\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::detail\-::\-Bundle\-Adjuster\-Base\-::num\-\_\-images\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1detail_1_1BundleAdjusterBase_a195a4414e1e513a21ad1290cafb2c455}
+\hypertarget{classcv_1_1detail_1_1BundleAdjusterBase_a53a2fe05702415fbf2926179032c727b}{\index{cv\-::detail\-::\-Bundle\-Adjuster\-Base@{cv\-::detail\-::\-Bundle\-Adjuster\-Base}!num\-\_\-params\-\_\-per\-\_\-cam\-\_\-@{num\-\_\-params\-\_\-per\-\_\-cam\-\_\-}}
+\index{num\-\_\-params\-\_\-per\-\_\-cam\-\_\-@{num\-\_\-params\-\_\-per\-\_\-cam\-\_\-}!cv::detail::BundleAdjusterBase@{cv\-::detail\-::\-Bundle\-Adjuster\-Base}}
+\subsubsection[{num\-\_\-params\-\_\-per\-\_\-cam\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::detail\-::\-Bundle\-Adjuster\-Base\-::num\-\_\-params\-\_\-per\-\_\-cam\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1detail_1_1BundleAdjusterBase_a53a2fe05702415fbf2926179032c727b}
+\hypertarget{classcv_1_1detail_1_1BundleAdjusterBase_a5c6d7027fd93d1824ba811a3c7bbf0a5}{\index{cv\-::detail\-::\-Bundle\-Adjuster\-Base@{cv\-::detail\-::\-Bundle\-Adjuster\-Base}!pairwise\-\_\-matches\-\_\-@{pairwise\-\_\-matches\-\_\-}}
+\index{pairwise\-\_\-matches\-\_\-@{pairwise\-\_\-matches\-\_\-}!cv::detail::BundleAdjusterBase@{cv\-::detail\-::\-Bundle\-Adjuster\-Base}}
+\subsubsection[{pairwise\-\_\-matches\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Matches\-Info}$\ast$ cv\-::detail\-::\-Bundle\-Adjuster\-Base\-::pairwise\-\_\-matches\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1detail_1_1BundleAdjusterBase_a5c6d7027fd93d1824ba811a3c7bbf0a5}
+\hypertarget{classcv_1_1detail_1_1BundleAdjusterBase_a56ea71911cc8a1693544f2f6a890ba73}{\index{cv\-::detail\-::\-Bundle\-Adjuster\-Base@{cv\-::detail\-::\-Bundle\-Adjuster\-Base}!refinement\-\_\-mask\-\_\-@{refinement\-\_\-mask\-\_\-}}
+\index{refinement\-\_\-mask\-\_\-@{refinement\-\_\-mask\-\_\-}!cv::detail::BundleAdjusterBase@{cv\-::detail\-::\-Bundle\-Adjuster\-Base}}
+\subsubsection[{refinement\-\_\-mask\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}Mat cv\-::detail\-::\-Bundle\-Adjuster\-Base\-::refinement\-\_\-mask\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1detail_1_1BundleAdjusterBase_a56ea71911cc8a1693544f2f6a890ba73}
+\hypertarget{classcv_1_1detail_1_1BundleAdjusterBase_af4942046f39bdc93ca769b5c29edfe5b}{\index{cv\-::detail\-::\-Bundle\-Adjuster\-Base@{cv\-::detail\-::\-Bundle\-Adjuster\-Base}!term\-\_\-criteria\-\_\-@{term\-\_\-criteria\-\_\-}}
+\index{term\-\_\-criteria\-\_\-@{term\-\_\-criteria\-\_\-}!cv::detail::BundleAdjusterBase@{cv\-::detail\-::\-Bundle\-Adjuster\-Base}}
+\subsubsection[{term\-\_\-criteria\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Term\-Criteria} cv\-::detail\-::\-Bundle\-Adjuster\-Base\-::term\-\_\-criteria\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1detail_1_1BundleAdjusterBase_af4942046f39bdc93ca769b5c29edfe5b}
+\hypertarget{classcv_1_1detail_1_1BundleAdjusterBase_a4f14cdc846f7f03828c1fb6c21539936}{\index{cv\-::detail\-::\-Bundle\-Adjuster\-Base@{cv\-::detail\-::\-Bundle\-Adjuster\-Base}!total\-\_\-num\-\_\-matches\-\_\-@{total\-\_\-num\-\_\-matches\-\_\-}}
+\index{total\-\_\-num\-\_\-matches\-\_\-@{total\-\_\-num\-\_\-matches\-\_\-}!cv::detail::BundleAdjusterBase@{cv\-::detail\-::\-Bundle\-Adjuster\-Base}}
+\subsubsection[{total\-\_\-num\-\_\-matches\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::detail\-::\-Bundle\-Adjuster\-Base\-::total\-\_\-num\-\_\-matches\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1detail_1_1BundleAdjusterBase_a4f14cdc846f7f03828c1fb6c21539936}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/stitching/detail/\hyperlink{motion__estimators_8hpp}{motion\-\_\-estimators.\-hpp}\end{DoxyCompactItemize}

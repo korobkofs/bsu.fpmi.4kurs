@@ -1,0 +1,69 @@
+\hypertarget{Config_8cpp}{\section{src/opentld/main/\-Config.cpp File Reference}
+\label{Config_8cpp}\index{src/opentld/main/\-Config.\-cpp@{src/opentld/main/\-Config.\-cpp}}
+}
+{\ttfamily \#include \char`\"{}Config.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Main.\-h\char`\"{}}\\*
+Include dependency graph for Config.\-cpp\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Config_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacetld}{tld}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{Config_8cpp_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\-U\-L\-L}~0
+\item 
+\#define \hyperlink{Config_8cpp_a59adc4c82490d23754cd39c2fb99b0da}{E\-O\-F}~(-\/1)
+\item 
+\#define \hyperlink{Config_8cpp_a08aea8facaf5fc0b89d12f3871c5730a}{E\-R\-R}(s, c)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{namespacetld_a5b279570cd95fb0067a41b5a222e2642}{tld\-::getopt} (int argc, char $\ast$$\ast$argv, char $\ast$opts)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static char \hyperlink{namespacetld_a17f0b1eb181c0395a541e031b203040a}{tld\-::help\-\_\-text} \mbox{[}$\,$\mbox{]}
+\item 
+int \hyperlink{namespacetld_a6e180d5067af278cc277ae9c6f7507c1}{tld\-::opterr} = 1
+\item 
+int \hyperlink{namespacetld_ab8c5a378ef03678c537edc84a15abc22}{tld\-::optind} = 1
+\item 
+int \hyperlink{namespacetld_a6d6bd80732b9f396bc03e5f2c5cf30f8}{tld\-::optopt}
+\item 
+char $\ast$ \hyperlink{namespacetld_a1bbc7d3201a2ef41da5495e0e48cfd2e}{tld\-::optarg}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{Config_8cpp_a59adc4c82490d23754cd39c2fb99b0da}{\index{Config.\-cpp@{Config.\-cpp}!E\-O\-F@{E\-O\-F}}
+\index{E\-O\-F@{E\-O\-F}!Config.cpp@{Config.\-cpp}}
+\subsubsection[{E\-O\-F}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\-O\-F~(-\/1)}}\label{Config_8cpp_a59adc4c82490d23754cd39c2fb99b0da}
+\hypertarget{Config_8cpp_a08aea8facaf5fc0b89d12f3871c5730a}{\index{Config.\-cpp@{Config.\-cpp}!E\-R\-R@{E\-R\-R}}
+\index{E\-R\-R@{E\-R\-R}!Config.cpp@{Config.\-cpp}}
+\subsubsection[{E\-R\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\-R\-R(
+\begin{DoxyParamCaption}
+\item[{}]{s, }
+\item[{}]{c}
+\end{DoxyParamCaption}
+)}}\label{Config_8cpp_a08aea8facaf5fc0b89d12f3871c5730a}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{if}(\hyperlink{namespacetld_a6e180d5067af278cc277ae9c6f7507c1}{opterr})\{\(\backslash\)
+    fputs(argv[0], stderr);\(\backslash\)
+    fputs(s, stderr);\(\backslash\)
+    fputc(c, stderr);\}
+\end{DoxyCode}
+\hypertarget{Config_8cpp_a070d2ce7b6bb7e5c05602aa8c308d0c4}{\index{Config.\-cpp@{Config.\-cpp}!N\-U\-L\-L@{N\-U\-L\-L}}
+\index{N\-U\-L\-L@{N\-U\-L\-L}!Config.cpp@{Config.\-cpp}}
+\subsubsection[{N\-U\-L\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\-U\-L\-L~0}}\label{Config_8cpp_a070d2ce7b6bb7e5c05602aa8c308d0c4}

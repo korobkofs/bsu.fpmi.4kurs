@@ -1,0 +1,97 @@
+\hypertarget{reduce_8hpp}{\section{/usr/include/opencv2/gpu/device/reduce.hpp File Reference}
+\label{reduce_8hpp}\index{/usr/include/opencv2/gpu/device/reduce.\-hpp@{/usr/include/opencv2/gpu/device/reduce.\-hpp}}
+}
+{\ttfamily \#include $<$thrust/tuple.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}detail/reduce.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}detail/reduce\-\_\-key\-\_\-val.\-hpp\char`\"{}}\\*
+Include dependency graph for reduce.\-hpp\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{reduce_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{reduce_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacecv}{cv}
+\item 
+\hyperlink{namespacecv_1_1gpu}{cv\-::gpu}
+\item 
+\hyperlink{namespacecv_1_1gpu_1_1device}{cv\-::gpu\-::device}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$int N, typename T , class Op $>$ }\\\-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1gpu_1_1device_a5ca6690fdaef50e3247456bc0029663c}{cv\-::gpu\-::device\-::reduce} (volatile \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} $\ast$smem, \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \&val, unsigned int tid, const Op \&op)
+\item 
+{\footnotesize template$<$int N, typename P0 , typename P1 , typename P2 , typename P3 , typename P4 , typename P5 , typename P6 , typename P7 , typename P8 , typename P9 , typename R0 , typename R1 , typename R2 , typename R3 , typename R4 , typename R5 , typename R6 , typename R7 , typename R8 , typename R9 , class Op0 , class Op1 , class Op2 , class Op3 , class Op4 , class Op5 , class Op6 , class Op7 , class Op8 , class Op9 $>$ }\\\-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1gpu_1_1device_ae15f291b7e1082796aa866b462e4c01b}{cv\-::gpu\-::device\-::reduce} (const thrust\-::tuple$<$ P0, \hyperlink{calib3d_8hpp_a81046431a4ff9a0e8b93536f19efac38}{P1}, \hyperlink{calib3d_8hpp_a704ac1a3954b1c810117417a050e7f76}{P2}, P3, P4, P5, P6, P7, P8, P9 $>$ \&smem, const thrust\-::tuple$<$ R0, \hyperlink{calib3d_8hpp_ab4d5cbb79188a091449ea6430cd5ec59}{R1}, \hyperlink{calib3d_8hpp_a08847b11703596b1db049ef98d450eaa}{R2}, R3, R4, R5, R6, R7, R8, R9 $>$ \&val, unsigned int tid, const thrust\-::tuple$<$ Op0, Op1, Op2, Op3, Op4, Op5, Op6, Op7, Op8, Op9 $>$ \&op)
+\item 
+{\footnotesize template$<$unsigned int N, typename K , typename V , class Cmp $>$ }\\\-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1gpu_1_1device_a7c4513642073faf3329418d143e84581}{cv\-::gpu\-::device\-::reduce\-Key\-Val} (volatile K $\ast$skeys, K \&\hyperlink{core__c_8h_a68cf695b604d08c0b6f6f6bb282a6586}{key}, volatile \hyperlink{core__c_8h_ad8dd4fff0e3910932187b6de0543cae1}{V} $\ast$svals, \hyperlink{core__c_8h_ad8dd4fff0e3910932187b6de0543cae1}{V} \&val, unsigned int tid, const Cmp \&cmp)
+\item 
+{\footnotesize template$<$unsigned int N, typename K , typename V\-P0 , typename V\-P1 , typename V\-P2 , typename V\-P3 , typename V\-P4 , typename V\-P5 , typename V\-P6 , typename V\-P7 , typename V\-P8 , typename V\-P9 , typename V\-R0 , typename V\-R1 , typename V\-R2 , typename V\-R3 , typename V\-R4 , typename V\-R5 , typename V\-R6 , typename V\-R7 , typename V\-R8 , typename V\-R9 , class Cmp $>$ }\\\-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1gpu_1_1device_a7e8932cf6a9bac10d935e860db0539b3}{cv\-::gpu\-::device\-::reduce\-Key\-Val} (volatile K $\ast$skeys, K \&\hyperlink{core__c_8h_a68cf695b604d08c0b6f6f6bb282a6586}{key}, const thrust\-::tuple$<$ V\-P0, V\-P1, V\-P2, V\-P3, V\-P4, V\-P5, V\-P6, V\-P7, V\-P8, V\-P9 $>$ \&svals, const thrust\-::tuple$<$ V\-R0, V\-R1, V\-R2, V\-R3, V\-R4, V\-R5, V\-R6, V\-R7, V\-R8, V\-R9 $>$ \&val, unsigned int tid, const Cmp \&cmp)
+\item 
+{\footnotesize template$<$unsigned int N, typename K\-P0 , typename K\-P1 , typename K\-P2 , typename K\-P3 , typename K\-P4 , typename K\-P5 , typename K\-P6 , typename K\-P7 , typename K\-P8 , typename K\-P9 , typename K\-R0 , typename K\-R1 , typename K\-R2 , typename K\-R3 , typename K\-R4 , typename K\-R5 , typename K\-R6 , typename K\-R7 , typename K\-R8 , typename K\-R9 , typename V\-P0 , typename V\-P1 , typename V\-P2 , typename V\-P3 , typename V\-P4 , typename V\-P5 , typename V\-P6 , typename V\-P7 , typename V\-P8 , typename V\-P9 , typename V\-R0 , typename V\-R1 , typename V\-R2 , typename V\-R3 , typename V\-R4 , typename V\-R5 , typename V\-R6 , typename V\-R7 , typename V\-R8 , typename V\-R9 , class Cmp0 , class Cmp1 , class Cmp2 , class Cmp3 , class Cmp4 , class Cmp5 , class Cmp6 , class Cmp7 , class Cmp8 , class Cmp9 $>$ }\\\-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1gpu_1_1device_a15479095ce7325ba9fb159b60db49b98}{cv\-::gpu\-::device\-::reduce\-Key\-Val} (const thrust\-::tuple$<$ K\-P0, K\-P1, K\-P2, K\-P3, K\-P4, K\-P5, K\-P6, K\-P7, K\-P8, K\-P9 $>$ \&skeys, const thrust\-::tuple$<$ K\-R0, K\-R1, K\-R2, K\-R3, K\-R4, K\-R5, K\-R6, K\-R7, K\-R8, K\-R9 $>$ \&\hyperlink{core__c_8h_a68cf695b604d08c0b6f6f6bb282a6586}{key}, const thrust\-::tuple$<$ V\-P0, V\-P1, V\-P2, V\-P3, V\-P4, V\-P5, V\-P6, V\-P7, V\-P8, V\-P9 $>$ \&svals, const thrust\-::tuple$<$ V\-R0, V\-R1, V\-R2, V\-R3, V\-R4, V\-R5, V\-R6, V\-R7, V\-R8, V\-R9 $>$ \&val, unsigned int tid, const thrust\-::tuple$<$ Cmp0, Cmp1, Cmp2, Cmp3, Cmp4, Cmp5, Cmp6, Cmp7, Cmp8, Cmp9 $>$ \&cmp)
+\item 
+{\footnotesize template$<$typename T0 $>$ }\\\-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \\*
+thrust\-::tuple$<$ volatile T0 $\ast$ $>$ \hyperlink{namespacecv_1_1gpu_1_1device_a4d9ad7c3939d732889bb1e23c73a724e}{cv\-::gpu\-::device\-::smem\-\_\-tuple} (T0 $\ast$t0)
+\item 
+{\footnotesize template$<$typename T0 , typename T1 $>$ }\\\-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \\*
+thrust\-::tuple$<$ volatile T0 \\*
+$\ast$, volatile T1 $\ast$ $>$ \hyperlink{namespacecv_1_1gpu_1_1device_a3326ea114da45330f3e02906ba29cc55}{cv\-::gpu\-::device\-::smem\-\_\-tuple} (T0 $\ast$t0, T1 $\ast$t1)
+\item 
+{\footnotesize template$<$typename T0 , typename T1 , typename T2 $>$ }\\\-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \\*
+thrust\-::tuple$<$ volatile T0 \\*
+$\ast$, volatile T1 $\ast$, volatile T2 $\ast$ $>$ \hyperlink{namespacecv_1_1gpu_1_1device_a3135456d340f045475ceb16697be4797}{cv\-::gpu\-::device\-::smem\-\_\-tuple} (T0 $\ast$t0, T1 $\ast$t1, T2 $\ast$t2)
+\item 
+{\footnotesize template$<$typename T0 , typename T1 , typename T2 , typename T3 $>$ }\\\-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \\*
+thrust\-::tuple$<$ volatile T0 \\*
+$\ast$, volatile T1 $\ast$, volatile T2 \\*
+$\ast$, volatile T3 $\ast$ $>$ \hyperlink{namespacecv_1_1gpu_1_1device_af2e6d9bd1e084d3cbf589a90fcdf790e}{cv\-::gpu\-::device\-::smem\-\_\-tuple} (T0 $\ast$t0, T1 $\ast$t1, T2 $\ast$t2, T3 $\ast$t3)
+\item 
+{\footnotesize template$<$typename T0 , typename T1 , typename T2 , typename T3 , typename T4 $>$ }\\\-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \\*
+thrust\-::tuple$<$ volatile T0 \\*
+$\ast$, volatile T1 $\ast$, volatile T2 \\*
+$\ast$, volatile T3 $\ast$, volatile T4 $\ast$ $>$ \hyperlink{namespacecv_1_1gpu_1_1device_a39b14e522cb1e78698f0efb5d80bd97b}{cv\-::gpu\-::device\-::smem\-\_\-tuple} (T0 $\ast$t0, T1 $\ast$t1, T2 $\ast$t2, T3 $\ast$t3, T4 $\ast$t4)
+\item 
+{\footnotesize template$<$typename T0 , typename T1 , typename T2 , typename T3 , typename T4 , typename T5 $>$ }\\\-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \\*
+thrust\-::tuple$<$ volatile T0 \\*
+$\ast$, volatile T1 $\ast$, volatile T2 \\*
+$\ast$, volatile T3 $\ast$, volatile T4 \\*
+$\ast$, volatile T5 $\ast$ $>$ \hyperlink{namespacecv_1_1gpu_1_1device_af0c383ca5d947c73133b5c86a1ad62c8}{cv\-::gpu\-::device\-::smem\-\_\-tuple} (T0 $\ast$t0, T1 $\ast$t1, T2 $\ast$t2, T3 $\ast$t3, T4 $\ast$t4, T5 $\ast$t5)
+\item 
+{\footnotesize template$<$typename T0 , typename T1 , typename T2 , typename T3 , typename T4 , typename T5 , typename T6 $>$ }\\\-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \\*
+thrust\-::tuple$<$ volatile T0 \\*
+$\ast$, volatile T1 $\ast$, volatile T2 \\*
+$\ast$, volatile T3 $\ast$, volatile T4 \\*
+$\ast$, volatile T5 $\ast$, volatile T6 $\ast$ $>$ \hyperlink{namespacecv_1_1gpu_1_1device_aa6545a498efe2b6dde3aedc33057fd78}{cv\-::gpu\-::device\-::smem\-\_\-tuple} (T0 $\ast$t0, T1 $\ast$t1, T2 $\ast$t2, T3 $\ast$t3, T4 $\ast$t4, T5 $\ast$t5, T6 $\ast$t6)
+\item 
+{\footnotesize template$<$typename T0 , typename T1 , typename T2 , typename T3 , typename T4 , typename T5 , typename T6 , typename T7 $>$ }\\\-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \\*
+thrust\-::tuple$<$ volatile T0 \\*
+$\ast$, volatile T1 $\ast$, volatile T2 \\*
+$\ast$, volatile T3 $\ast$, volatile T4 \\*
+$\ast$, volatile T5 $\ast$, volatile T6 \\*
+$\ast$, volatile T7 $\ast$ $>$ \hyperlink{namespacecv_1_1gpu_1_1device_acc811db08902e97351dbe90dfbf23588}{cv\-::gpu\-::device\-::smem\-\_\-tuple} (T0 $\ast$t0, T1 $\ast$t1, T2 $\ast$t2, T3 $\ast$t3, T4 $\ast$t4, T5 $\ast$t5, T6 $\ast$t6, T7 $\ast$t7)
+\item 
+{\footnotesize template$<$typename T0 , typename T1 , typename T2 , typename T3 , typename T4 , typename T5 , typename T6 , typename T7 , typename T8 $>$ }\\\-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \\*
+thrust\-::tuple$<$ volatile T0 \\*
+$\ast$, volatile T1 $\ast$, volatile T2 \\*
+$\ast$, volatile T3 $\ast$, volatile T4 \\*
+$\ast$, volatile T5 $\ast$, volatile T6 \\*
+$\ast$, volatile T7 $\ast$, volatile T8 $\ast$ $>$ \hyperlink{namespacecv_1_1gpu_1_1device_a5dcc74addd4efbd2f1863655e6291015}{cv\-::gpu\-::device\-::smem\-\_\-tuple} (T0 $\ast$t0, T1 $\ast$t1, T2 $\ast$t2, T3 $\ast$t3, T4 $\ast$t4, T5 $\ast$t5, T6 $\ast$t6, T7 $\ast$t7, T8 $\ast$t8)
+\item 
+{\footnotesize template$<$typename T0 , typename T1 , typename T2 , typename T3 , typename T4 , typename T5 , typename T6 , typename T7 , typename T8 , typename T9 $>$ }\\\-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \\*
+thrust\-::tuple$<$ volatile T0 \\*
+$\ast$, volatile T1 $\ast$, volatile T2 \\*
+$\ast$, volatile T3 $\ast$, volatile T4 \\*
+$\ast$, volatile T5 $\ast$, volatile T6 \\*
+$\ast$, volatile T7 $\ast$, volatile T8 \\*
+$\ast$, volatile T9 $\ast$ $>$ \hyperlink{namespacecv_1_1gpu_1_1device_a8c79f5537969f5770b30298e45e4f8fd}{cv\-::gpu\-::device\-::smem\-\_\-tuple} (T0 $\ast$t0, T1 $\ast$t1, T2 $\ast$t2, T3 $\ast$t3, T4 $\ast$t4, T5 $\ast$t5, T6 $\ast$t6, T7 $\ast$t7, T8 $\ast$t8, T9 $\ast$t9)
+\end{DoxyCompactItemize}

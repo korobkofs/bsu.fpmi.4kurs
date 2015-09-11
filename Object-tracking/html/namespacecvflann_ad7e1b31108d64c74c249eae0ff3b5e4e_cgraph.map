@@ -1,0 +1,4 @@
+<map id="cvflann::load_saved_index" name="cvflann::load_saved_index">
+<area shape="rect" id="node2" href="$namespacecvflann.html#a4dd93d5ecc84d4679ada8a7f404d458f" title="cvflann::load_header" alt="" coords="215,5,358,32"/>
+<area shape="rect" id="node3" href="$classcvflann_1_1NNIndex.html#a4bcaf48ee2ac65a1b3cebea99d021611" title="Loads the index from a stream. " alt="" coords="193,56,381,83"/>
+</map>

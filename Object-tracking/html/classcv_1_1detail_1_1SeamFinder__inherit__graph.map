@@ -1,0 +1,7 @@
+<map id="cv::detail::SeamFinder" name="cv::detail::SeamFinder">
+<area shape="rect" id="node2" href="$classcv_1_1detail_1_1DpSeamFinder.html" title="cv::detail::DpSeamFinder" alt="" coords="209,5,380,32"/>
+<area shape="rect" id="node3" href="$classcv_1_1detail_1_1GraphCutSeamFinder.html" title="cv::detail::GraphCutSeam\lFinder" alt="" coords="208,57,381,98"/>
+<area shape="rect" id="node4" href="$classcv_1_1detail_1_1NoSeamFinder.html" title="cv::detail::NoSeamFinder" alt="" coords="209,123,380,149"/>
+<area shape="rect" id="node5" href="$classcv_1_1detail_1_1PairwiseSeamFinder.html" title="cv::detail::PairwiseSeam\lFinder" alt="" coords="211,174,378,215"/>
+<area shape="rect" id="node6" href="$classcv_1_1detail_1_1VoronoiSeamFinder.html" title="cv::detail::VoronoiSeamFinder" alt="" coords="429,181,627,208"/>
+</map>

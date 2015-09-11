@@ -1,0 +1,10 @@
+<map id="tld::tldBBOverlap" name="tld::tldBBOverlap">
+<area shape="rect" id="node2" href="$namespacetld.html#a018caa7bf4a554814fe61a679a219489" title="Calculates the share overlap of one window and the indexed windows (according). " alt="" coords="193,5,319,32"/>
+<area shape="rect" id="node4" href="$namespacetld.html#afdab54607fed863cdc408f72fd0f774b" title="Calculates the share overlap of two rectangle (the share the intersection area in the occupy area)..." alt="" coords="177,56,335,83"/>
+<area shape="rect" id="node6" href="$namespacetld.html#aa9470de30170cb8b3f877dcae45df1b1" title="Calculates the share overlap of windows and the boundary. " alt="" coords="205,107,307,133"/>
+<area shape="rect" id="node3" href="$classtld_1_1Clustering.html#a340b0bdad9f492f17a2bc10d720d587a" title="Calculates distances (0 to 1) between windows. " alt="" coords="384,5,579,32"/>
+<area shape="rect" id="node5" href="$classtld_1_1TLD.html#a9c7cca98a9fb1d94f8bda3553c83ad7c" title="Fuses (integrates) the results of tracker (Lucas&#45;Kanade) and detector (detects the object with using ..." alt="" coords="395,56,567,83"/>
+<area shape="rect" id="node7" href="$namespacetld.html#ae87c7dbe6b4da1e1923c42bec18caaf6" title="Calculates the share overlap of windows and the rectangle. " alt="" coords="416,107,547,133"/>
+<area shape="rect" id="node8" href="$classtld_1_1TLD.html#afbdde1733ec8944d0ec6224a10881d41" title="Initializes the learning. " alt="" coords="627,81,783,108"/>
+<area shape="rect" id="node9" href="$classtld_1_1TLD.html#a40742c77216ac9b06a4141db6184ac85" title="Learns the tld. " alt="" coords="653,132,758,159"/>
+</map>

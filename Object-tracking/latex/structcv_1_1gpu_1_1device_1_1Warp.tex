@@ -1,0 +1,205 @@
+\hypertarget{structcv_1_1gpu_1_1device_1_1Warp}{\section{cv\-:\-:gpu\-:\-:device\-:\-:Warp Struct Reference}
+\label{structcv_1_1gpu_1_1device_1_1Warp}\index{cv\-::gpu\-::device\-::\-Warp@{cv\-::gpu\-::device\-::\-Warp}}
+}
+
+
+{\ttfamily \#include $<$warp.\-hpp$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{structcv_1_1gpu_1_1device_1_1Warp_aad40243792fd09d3a4589e2751c91f67ae2742eb9f126ca1c5e1c775dfee90a1f}{L\-O\-G\-\_\-\-W\-A\-R\-P\-\_\-\-S\-I\-Z\-E} = 5, 
+\hyperlink{structcv_1_1gpu_1_1device_1_1Warp_aad40243792fd09d3a4589e2751c91f67a5c15f55700844c8c3d7b0254964dfe36}{W\-A\-R\-P\-\_\-\-S\-I\-Z\-E} = 1 $<$$<$ L\-O\-G\-\_\-\-W\-A\-R\-P\-\_\-\-S\-I\-Z\-E, 
+\hyperlink{structcv_1_1gpu_1_1device_1_1Warp_aad40243792fd09d3a4589e2751c91f67ac9a03aeacbff93618f905880a3561736}{S\-T\-R\-I\-D\-E} = W\-A\-R\-P\-\_\-\-S\-I\-Z\-E
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \-\_\-\-\_\-device\-\_\-\-\_\- \\*
+\-\_\-\-\_\-forceinline\-\_\-\-\_\- unsigned int \hyperlink{structcv_1_1gpu_1_1device_1_1Warp_aa48f497ab15265f89f508468d9c12074}{lane\-Id} ()
+\begin{DoxyCompactList}\small\item\em Returns the warp lane I\-D of the calling thread. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename It , typename T $>$ }\\static \-\_\-\-\_\-device\-\_\-\-\_\- \\*
+\-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{structcv_1_1gpu_1_1device_1_1Warp_a609940ad1d1dc2b85bce1f1e540d089d}{fill} (It beg, It \hyperlink{legacy_8hpp_ab21668ff869102944cbf3bb534bba27d}{end}, const \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \&\hyperlink{highgui__c_8h_ad4670c92695d4327c21292905a803901}{value})
+\item 
+{\footnotesize template$<$typename In\-It , typename Out\-It $>$ }\\static \-\_\-\-\_\-device\-\_\-\-\_\- \\*
+\-\_\-\-\_\-forceinline\-\_\-\-\_\- Out\-It \hyperlink{structcv_1_1gpu_1_1device_1_1Warp_ac2ad04e0b268dc2ccbc175130f4943ca}{copy} (In\-It beg, In\-It \hyperlink{legacy_8hpp_ab21668ff869102944cbf3bb534bba27d}{end}, Out\-It out)
+\item 
+{\footnotesize template$<$typename In\-It , typename Out\-It , class Un\-Op $>$ }\\static \-\_\-\-\_\-device\-\_\-\-\_\- \\*
+\-\_\-\-\_\-forceinline\-\_\-\-\_\- Out\-It \hyperlink{structcv_1_1gpu_1_1device_1_1Warp_a6f32591e58ebbf6372ab69870b479eee}{transform} (In\-It beg, In\-It \hyperlink{legacy_8hpp_ab21668ff869102944cbf3bb534bba27d}{end}, Out\-It out, Un\-Op op)
+\item 
+{\footnotesize template$<$typename In\-It1 , typename In\-It2 , typename Out\-It , class Bin\-Op $>$ }\\static \-\_\-\-\_\-device\-\_\-\-\_\- \\*
+\-\_\-\-\_\-forceinline\-\_\-\-\_\- Out\-It \hyperlink{structcv_1_1gpu_1_1device_1_1Warp_abc63734bc10f6b1119aa488caddd2210}{transform} (In\-It1 beg1, In\-It1 end1, In\-It2 beg2, Out\-It out, Bin\-Op op)
+\item 
+{\footnotesize template$<$class T , class Bin\-Op $>$ }\\static \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \hyperlink{structcv_1_1gpu_1_1device_1_1Warp_ab35daeffc6c8ce4ca0f71a19c90f629c}{reduce} (volatile \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} $\ast$\hyperlink{core__c_8h_a166529da793cc1ef241cff347f3db5a5}{ptr}, Bin\-Op op)
+\item 
+{\footnotesize template$<$typename Out\-It , typename T $>$ }\\static \-\_\-\-\_\-device\-\_\-\-\_\- \\*
+\-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{structcv_1_1gpu_1_1device_1_1Warp_a7e34fbaba4e973e00e942a9d5765e161}{yota} (Out\-It beg, Out\-It \hyperlink{legacy_8hpp_ab21668ff869102944cbf3bb534bba27d}{end}, \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \hyperlink{highgui__c_8h_ad4670c92695d4327c21292905a803901}{value})
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{structcv_1_1gpu_1_1device_1_1Warp_aad40243792fd09d3a4589e2751c91f67}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{structcv_1_1gpu_1_1device_1_1Warp_aad40243792fd09d3a4589e2751c91f67}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{L\-O\-G\-\_\-\-W\-A\-R\-P\-\_\-\-S\-I\-Z\-E@{L\-O\-G\-\_\-\-W\-A\-R\-P\-\_\-\-S\-I\-Z\-E}!cv\-::gpu\-::device\-::\-Warp@{cv\-::gpu\-::device\-::\-Warp}}\index{cv\-::gpu\-::device\-::\-Warp@{cv\-::gpu\-::device\-::\-Warp}!L\-O\-G\-\_\-\-W\-A\-R\-P\-\_\-\-S\-I\-Z\-E@{L\-O\-G\-\_\-\-W\-A\-R\-P\-\_\-\-S\-I\-Z\-E}}\item[{\em 
+\hypertarget{structcv_1_1gpu_1_1device_1_1Warp_aad40243792fd09d3a4589e2751c91f67ae2742eb9f126ca1c5e1c775dfee90a1f}{L\-O\-G\-\_\-\-W\-A\-R\-P\-\_\-\-S\-I\-Z\-E}\label{structcv_1_1gpu_1_1device_1_1Warp_aad40243792fd09d3a4589e2751c91f67ae2742eb9f126ca1c5e1c775dfee90a1f}
+}]\index{W\-A\-R\-P\-\_\-\-S\-I\-Z\-E@{W\-A\-R\-P\-\_\-\-S\-I\-Z\-E}!cv\-::gpu\-::device\-::\-Warp@{cv\-::gpu\-::device\-::\-Warp}}\index{cv\-::gpu\-::device\-::\-Warp@{cv\-::gpu\-::device\-::\-Warp}!W\-A\-R\-P\-\_\-\-S\-I\-Z\-E@{W\-A\-R\-P\-\_\-\-S\-I\-Z\-E}}\item[{\em 
+\hypertarget{structcv_1_1gpu_1_1device_1_1Warp_aad40243792fd09d3a4589e2751c91f67a5c15f55700844c8c3d7b0254964dfe36}{W\-A\-R\-P\-\_\-\-S\-I\-Z\-E}\label{structcv_1_1gpu_1_1device_1_1Warp_aad40243792fd09d3a4589e2751c91f67a5c15f55700844c8c3d7b0254964dfe36}
+}]\index{S\-T\-R\-I\-D\-E@{S\-T\-R\-I\-D\-E}!cv\-::gpu\-::device\-::\-Warp@{cv\-::gpu\-::device\-::\-Warp}}\index{cv\-::gpu\-::device\-::\-Warp@{cv\-::gpu\-::device\-::\-Warp}!S\-T\-R\-I\-D\-E@{S\-T\-R\-I\-D\-E}}\item[{\em 
+\hypertarget{structcv_1_1gpu_1_1device_1_1Warp_aad40243792fd09d3a4589e2751c91f67ac9a03aeacbff93618f905880a3561736}{S\-T\-R\-I\-D\-E}\label{structcv_1_1gpu_1_1device_1_1Warp_aad40243792fd09d3a4589e2751c91f67ac9a03aeacbff93618f905880a3561736}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structcv_1_1gpu_1_1device_1_1Warp_ac2ad04e0b268dc2ccbc175130f4943ca}{\index{cv\-::gpu\-::device\-::\-Warp@{cv\-::gpu\-::device\-::\-Warp}!copy@{copy}}
+\index{copy@{copy}!cv::gpu::device::Warp@{cv\-::gpu\-::device\-::\-Warp}}
+\subsubsection[{copy}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename In\-It , typename Out\-It $>$ static \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- Out\-It cv\-::gpu\-::device\-::\-Warp\-::copy (
+\begin{DoxyParamCaption}
+\item[{In\-It}]{beg, }
+\item[{In\-It}]{end, }
+\item[{Out\-It}]{out}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{structcv_1_1gpu_1_1device_1_1Warp_ac2ad04e0b268dc2ccbc175130f4943ca}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{structcv_1_1gpu_1_1device_1_1Warp_ac2ad04e0b268dc2ccbc175130f4943ca_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{structcv_1_1gpu_1_1device_1_1Warp_a609940ad1d1dc2b85bce1f1e540d089d}{\index{cv\-::gpu\-::device\-::\-Warp@{cv\-::gpu\-::device\-::\-Warp}!fill@{fill}}
+\index{fill@{fill}!cv::gpu::device::Warp@{cv\-::gpu\-::device\-::\-Warp}}
+\subsubsection[{fill}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename It , typename T $>$ static \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- {\bf void} cv\-::gpu\-::device\-::\-Warp\-::fill (
+\begin{DoxyParamCaption}
+\item[{It}]{beg, }
+\item[{It}]{end, }
+\item[{const {\bf T} \&}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{structcv_1_1gpu_1_1device_1_1Warp_a609940ad1d1dc2b85bce1f1e540d089d}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{structcv_1_1gpu_1_1device_1_1Warp_a609940ad1d1dc2b85bce1f1e540d089d_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{structcv_1_1gpu_1_1device_1_1Warp_aa48f497ab15265f89f508468d9c12074}{\index{cv\-::gpu\-::device\-::\-Warp@{cv\-::gpu\-::device\-::\-Warp}!lane\-Id@{lane\-Id}}
+\index{lane\-Id@{lane\-Id}!cv::gpu::device::Warp@{cv\-::gpu\-::device\-::\-Warp}}
+\subsubsection[{lane\-Id}]{\setlength{\rightskip}{0pt plus 5cm}static \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- unsigned int cv\-::gpu\-::device\-::\-Warp\-::lane\-Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{structcv_1_1gpu_1_1device_1_1Warp_aa48f497ab15265f89f508468d9c12074}
+
+
+Returns the warp lane I\-D of the calling thread. 
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structcv_1_1gpu_1_1device_1_1Warp_aa48f497ab15265f89f508468d9c12074_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{structcv_1_1gpu_1_1device_1_1Warp_ab35daeffc6c8ce4ca0f71a19c90f629c}{\index{cv\-::gpu\-::device\-::\-Warp@{cv\-::gpu\-::device\-::\-Warp}!reduce@{reduce}}
+\index{reduce@{reduce}!cv::gpu::device::Warp@{cv\-::gpu\-::device\-::\-Warp}}
+\subsubsection[{reduce}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T , class Bin\-Op $>$ static \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- {\bf T} cv\-::gpu\-::device\-::\-Warp\-::reduce (
+\begin{DoxyParamCaption}
+\item[{volatile {\bf T} $\ast$}]{ptr, }
+\item[{Bin\-Op}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{structcv_1_1gpu_1_1device_1_1Warp_ab35daeffc6c8ce4ca0f71a19c90f629c}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{structcv_1_1gpu_1_1device_1_1Warp_ab35daeffc6c8ce4ca0f71a19c90f629c_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{structcv_1_1gpu_1_1device_1_1Warp_a6f32591e58ebbf6372ab69870b479eee}{\index{cv\-::gpu\-::device\-::\-Warp@{cv\-::gpu\-::device\-::\-Warp}!transform@{transform}}
+\index{transform@{transform}!cv::gpu::device::Warp@{cv\-::gpu\-::device\-::\-Warp}}
+\subsubsection[{transform}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename In\-It , typename Out\-It , class Un\-Op $>$ static \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- Out\-It cv\-::gpu\-::device\-::\-Warp\-::transform (
+\begin{DoxyParamCaption}
+\item[{In\-It}]{beg, }
+\item[{In\-It}]{end, }
+\item[{Out\-It}]{out, }
+\item[{Un\-Op}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{structcv_1_1gpu_1_1device_1_1Warp_a6f32591e58ebbf6372ab69870b479eee}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{structcv_1_1gpu_1_1device_1_1Warp_a6f32591e58ebbf6372ab69870b479eee_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{structcv_1_1gpu_1_1device_1_1Warp_abc63734bc10f6b1119aa488caddd2210}{\index{cv\-::gpu\-::device\-::\-Warp@{cv\-::gpu\-::device\-::\-Warp}!transform@{transform}}
+\index{transform@{transform}!cv::gpu::device::Warp@{cv\-::gpu\-::device\-::\-Warp}}
+\subsubsection[{transform}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename In\-It1 , typename In\-It2 , typename Out\-It , class Bin\-Op $>$ static \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- Out\-It cv\-::gpu\-::device\-::\-Warp\-::transform (
+\begin{DoxyParamCaption}
+\item[{In\-It1}]{beg1, }
+\item[{In\-It1}]{end1, }
+\item[{In\-It2}]{beg2, }
+\item[{Out\-It}]{out, }
+\item[{Bin\-Op}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{structcv_1_1gpu_1_1device_1_1Warp_abc63734bc10f6b1119aa488caddd2210}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{structcv_1_1gpu_1_1device_1_1Warp_abc63734bc10f6b1119aa488caddd2210_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{structcv_1_1gpu_1_1device_1_1Warp_a7e34fbaba4e973e00e942a9d5765e161}{\index{cv\-::gpu\-::device\-::\-Warp@{cv\-::gpu\-::device\-::\-Warp}!yota@{yota}}
+\index{yota@{yota}!cv::gpu::device::Warp@{cv\-::gpu\-::device\-::\-Warp}}
+\subsubsection[{yota}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Out\-It , typename T $>$ static \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- {\bf void} cv\-::gpu\-::device\-::\-Warp\-::yota (
+\begin{DoxyParamCaption}
+\item[{Out\-It}]{beg, }
+\item[{Out\-It}]{end, }
+\item[{{\bf T}}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{structcv_1_1gpu_1_1device_1_1Warp_a7e34fbaba4e973e00e942a9d5765e161}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{structcv_1_1gpu_1_1device_1_1Warp_a7e34fbaba4e973e00e942a9d5765e161_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/gpu/device/\hyperlink{warp_8hpp}{warp.\-hpp}\end{DoxyCompactItemize}

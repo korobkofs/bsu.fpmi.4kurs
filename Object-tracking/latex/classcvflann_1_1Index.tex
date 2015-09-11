@@ -1,0 +1,363 @@
+\hypertarget{classcvflann_1_1Index}{\section{cvflann\-:\-:Index$<$ Distance $>$ Class Template Reference}
+\label{classcvflann_1_1Index}\index{cvflann\-::\-Index$<$ Distance $>$@{cvflann\-::\-Index$<$ Distance $>$}}
+}
+
+
+{\ttfamily \#include $<$flann\-\_\-base.\-hpp$>$}
+
+
+
+Inheritance diagram for cvflann\-:\-:Index$<$ Distance $>$\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{classcvflann_1_1Index__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for cvflann\-:\-:Index$<$ Distance $>$\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{classcvflann_1_1Index__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Distance\-::\-Element\-Type \hyperlink{classcvflann_1_1Index_a9fbfc2c13b3226997cfc15fc3a55b7c5}{Element\-Type}
+\item 
+typedef Distance\-::\-Result\-Type \hyperlink{classcvflann_1_1Index_adce66132d9ad41de0181fddd214b5e51}{Distance\-Type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcvflann_1_1Index_a11d668c0e1640b5093f73c9f7d6a1e4e}{Index} (const \hyperlink{classcvflann_1_1Matrix}{Matrix}$<$ \hyperlink{classcvflann_1_1Index_a9fbfc2c13b3226997cfc15fc3a55b7c5}{Element\-Type} $>$ \&features, const \hyperlink{namespacecvflann_a742b4c7076c21012054af74a9ee48289}{Index\-Params} \&\hyperlink{compat_8hpp_a0480a03ecc41b20cde376602531d9270}{params}, Distance distance=Distance())
+\item 
+\hyperlink{classcvflann_1_1Index_a2475b3513ae6b2ccff64f2fc8dfda6e6}{$\sim$\-Index} ()
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcvflann_1_1Index_ad9492a05669ee5bc1b07a4e2d0ac13c6}{build\-Index} ()
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcvflann_1_1Index_a65a17a1a9b2a705e16e8e85947b5a24d}{save} (std\-::string \hyperlink{core__c_8h_acc427f35f3bd9f865d39012657cc42f8}{filename})
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcvflann_1_1Index_a7cad2783e47031b8e1ea0c1a56eb72cc}{save\-Index} (F\-I\-L\-E $\ast$stream)
+\begin{DoxyCompactList}\small\item\em Saves the index to a stream. \end{DoxyCompactList}\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcvflann_1_1Index_ae0c80ab480e30654dbded8eebc25952e}{load\-Index} (F\-I\-L\-E $\ast$stream)
+\begin{DoxyCompactList}\small\item\em Loads the index from a stream. \end{DoxyCompactList}\item 
+size\-\_\-t \hyperlink{classcvflann_1_1Index_a6b7474356bf2d43469d54eb98aabd5d8}{veclen} () const 
+\item 
+size\-\_\-t \hyperlink{classcvflann_1_1Index_a34ac9de2d07ec799f294496a05d9a97d}{size} () const 
+\item 
+\hyperlink{namespacecvflann_a4e3e6c98d774ea77fd7f0045c9bc7817}{flann\-\_\-algorithm\-\_\-t} \hyperlink{classcvflann_1_1Index_ac1c9455f7c67a9f4d0dc70f301a4e617}{get\-Type} () const 
+\item 
+virtual int \hyperlink{classcvflann_1_1Index_a90ac04a2def1bbfd5e7f17e93c0b80ae}{used\-Memory} () const 
+\item 
+\hyperlink{namespacecvflann_a742b4c7076c21012054af74a9ee48289}{Index\-Params} \hyperlink{classcvflann_1_1Index_a6fa0b0b70ea6c14b674ea49befb2fdf7}{get\-Parameters} () const 
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcvflann_1_1Index_ad27d21204e383916770e67bf5c28f4cf}{knn\-Search} (const \hyperlink{classcvflann_1_1Matrix}{Matrix}$<$ \hyperlink{classcvflann_1_1Index_a9fbfc2c13b3226997cfc15fc3a55b7c5}{Element\-Type} $>$ \&queries, \hyperlink{classcvflann_1_1Matrix}{Matrix}$<$ int $>$ \&\hyperlink{legacy_8hpp_a3e3b9b48bcbc7f460efbcfe4399ad24a}{indices}, \hyperlink{classcvflann_1_1Matrix}{Matrix}$<$ \hyperlink{classcvflann_1_1Index_adce66132d9ad41de0181fddd214b5e51}{Distance\-Type} $>$ \&dists, int knn, const \hyperlink{structcvflann_1_1SearchParams}{Search\-Params} \&\hyperlink{compat_8hpp_a0480a03ecc41b20cde376602531d9270}{params})
+\begin{DoxyCompactList}\small\item\em Perform k-\/nearest neighbor search. \end{DoxyCompactList}\item 
+int \hyperlink{classcvflann_1_1Index_a79685d67c8576e5648fde484bb9fceb0}{radius\-Search} (const \hyperlink{classcvflann_1_1Matrix}{Matrix}$<$ \hyperlink{classcvflann_1_1Index_a9fbfc2c13b3226997cfc15fc3a55b7c5}{Element\-Type} $>$ \&query, \hyperlink{classcvflann_1_1Matrix}{Matrix}$<$ int $>$ \&\hyperlink{legacy_8hpp_a3e3b9b48bcbc7f460efbcfe4399ad24a}{indices}, \hyperlink{classcvflann_1_1Matrix}{Matrix}$<$ \hyperlink{classcvflann_1_1Index_adce66132d9ad41de0181fddd214b5e51}{Distance\-Type} $>$ \&dists, float \hyperlink{imgproc__c_8h_a32526d67e420fc7060ade2efeaeda976}{radius}, const \hyperlink{structcvflann_1_1SearchParams}{Search\-Params} \&\hyperlink{compat_8hpp_a0480a03ecc41b20cde376602531d9270}{params})
+\begin{DoxyCompactList}\small\item\em Perform radius search. \end{DoxyCompactList}\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcvflann_1_1Index_a65866d94e0d29a5b9ffca22aba51e6b2}{find\-Neighbors} (\hyperlink{classcvflann_1_1ResultSet}{Result\-Set}$<$ \hyperlink{classcvflann_1_1Index_adce66132d9ad41de0181fddd214b5e51}{Distance\-Type} $>$ \&\hyperlink{legacy_8hpp_a0bb77d54f6769867cfdf389897bd8e43}{result}, const \hyperlink{classcvflann_1_1Index_a9fbfc2c13b3226997cfc15fc3a55b7c5}{Element\-Type} $\ast$vec, const \hyperlink{structcvflann_1_1SearchParams}{Search\-Params} \&search\-Params)
+\begin{DoxyCompactList}\small\item\em Method that searches for nearest-\/neighbours. \end{DoxyCompactList}\item 
+\hyperlink{defines_8h_a7c6f4b56c7a5c676e28c6c6ce0c94fe1}{F\-L\-A\-N\-N\-\_\-\-D\-E\-P\-R\-E\-C\-A\-T\-E\-D} \hyperlink{classcvflann_1_1NNIndex}{N\-N\-Index}\\*
+$<$ Distance $>$ $\ast$ \hyperlink{classcvflann_1_1Index_ac98f80cf8db92245ad28eebe8c72fe69}{get\-Index} ()
+\begin{DoxyCompactList}\small\item\em Returns actual index. \end{DoxyCompactList}\item 
+\hyperlink{defines_8h_a7c6f4b56c7a5c676e28c6c6ce0c94fe1}{F\-L\-A\-N\-N\-\_\-\-D\-E\-P\-R\-E\-C\-A\-T\-E\-D} const \\*
+\hyperlink{namespacecvflann_a742b4c7076c21012054af74a9ee48289}{Index\-Params} $\ast$ \hyperlink{classcvflann_1_1Index_a43b42dbb54c0c923a084d192bfe09073}{get\-Index\-Parameters} ()
+\begin{DoxyCompactList}\small\item\em Returns index parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classcvflann_1_1Index_adce66132d9ad41de0181fddd214b5e51}{\index{cvflann\-::\-Index@{cvflann\-::\-Index}!Distance\-Type@{Distance\-Type}}
+\index{Distance\-Type@{Distance\-Type}!cvflann::Index@{cvflann\-::\-Index}}
+\subsubsection[{Distance\-Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ typedef Distance\-::\-Result\-Type {\bf cvflann\-::\-Index}$<$ Distance $>$\-::{\bf Distance\-Type}}}\label{classcvflann_1_1Index_adce66132d9ad41de0181fddd214b5e51}
+\hypertarget{classcvflann_1_1Index_a9fbfc2c13b3226997cfc15fc3a55b7c5}{\index{cvflann\-::\-Index@{cvflann\-::\-Index}!Element\-Type@{Element\-Type}}
+\index{Element\-Type@{Element\-Type}!cvflann::Index@{cvflann\-::\-Index}}
+\subsubsection[{Element\-Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ typedef Distance\-::\-Element\-Type {\bf cvflann\-::\-Index}$<$ Distance $>$\-::{\bf Element\-Type}}}\label{classcvflann_1_1Index_a9fbfc2c13b3226997cfc15fc3a55b7c5}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcvflann_1_1Index_a11d668c0e1640b5093f73c9f7d6a1e4e}{\index{cvflann\-::\-Index@{cvflann\-::\-Index}!Index@{Index}}
+\index{Index@{Index}!cvflann::Index@{cvflann\-::\-Index}}
+\subsubsection[{Index}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ {\bf cvflann\-::\-Index}$<$ Distance $>$\-::{\bf Index} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ {\bf Element\-Type} $>$ \&}]{features, }
+\item[{const {\bf Index\-Params} \&}]{params, }
+\item[{Distance}]{distance = {\ttfamily Distance()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcvflann_1_1Index_a11d668c0e1640b5093f73c9f7d6a1e4e}
+\hypertarget{classcvflann_1_1Index_a2475b3513ae6b2ccff64f2fc8dfda6e6}{\index{cvflann\-::\-Index@{cvflann\-::\-Index}!$\sim$\-Index@{$\sim$\-Index}}
+\index{$\sim$\-Index@{$\sim$\-Index}!cvflann::Index@{cvflann\-::\-Index}}
+\subsubsection[{$\sim$\-Index}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ {\bf cvflann\-::\-Index}$<$ Distance $>$\-::$\sim${\bf Index} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcvflann_1_1Index_a2475b3513ae6b2ccff64f2fc8dfda6e6}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcvflann_1_1Index_ad9492a05669ee5bc1b07a4e2d0ac13c6}{\index{cvflann\-::\-Index@{cvflann\-::\-Index}!build\-Index@{build\-Index}}
+\index{build\-Index@{build\-Index}!cvflann::Index@{cvflann\-::\-Index}}
+\subsubsection[{build\-Index}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ {\bf void} {\bf cvflann\-::\-Index}$<$ Distance $>$\-::build\-Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1Index_ad9492a05669ee5bc1b07a4e2d0ac13c6}
+Builds the index. 
+
+Implements \hyperlink{classcvflann_1_1NNIndex_aaa8811509bb2f30e91570cefe4dc71e2}{cvflann\-::\-N\-N\-Index$<$ Distance $>$}.
+
+\hypertarget{classcvflann_1_1Index_a65866d94e0d29a5b9ffca22aba51e6b2}{\index{cvflann\-::\-Index@{cvflann\-::\-Index}!find\-Neighbors@{find\-Neighbors}}
+\index{find\-Neighbors@{find\-Neighbors}!cvflann::Index@{cvflann\-::\-Index}}
+\subsubsection[{find\-Neighbors}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ {\bf void} {\bf cvflann\-::\-Index}$<$ Distance $>$\-::find\-Neighbors (
+\begin{DoxyParamCaption}
+\item[{{\bf Result\-Set}$<$ {\bf Distance\-Type} $>$ \&}]{result, }
+\item[{const {\bf Element\-Type} $\ast$}]{vec, }
+\item[{const {\bf Search\-Params} \&}]{search\-Params}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1Index_a65866d94e0d29a5b9ffca22aba51e6b2}
+
+
+Method that searches for nearest-\/neighbours. 
+
+
+
+Implements \hyperlink{classcvflann_1_1NNIndex_ac038c51dc941c7c1a55b08c17e213e41}{cvflann\-::\-N\-N\-Index$<$ Distance $>$}.
+
+\hypertarget{classcvflann_1_1Index_ac98f80cf8db92245ad28eebe8c72fe69}{\index{cvflann\-::\-Index@{cvflann\-::\-Index}!get\-Index@{get\-Index}}
+\index{get\-Index@{get\-Index}!cvflann::Index@{cvflann\-::\-Index}}
+\subsubsection[{get\-Index}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ {\bf F\-L\-A\-N\-N\-\_\-\-D\-E\-P\-R\-E\-C\-A\-T\-E\-D} {\bf N\-N\-Index}$<$Distance$>$$\ast$ {\bf cvflann\-::\-Index}$<$ Distance $>$\-::get\-Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcvflann_1_1Index_ac98f80cf8db92245ad28eebe8c72fe69}
+
+
+Returns actual index. 
+
+\hypertarget{classcvflann_1_1Index_a43b42dbb54c0c923a084d192bfe09073}{\index{cvflann\-::\-Index@{cvflann\-::\-Index}!get\-Index\-Parameters@{get\-Index\-Parameters}}
+\index{get\-Index\-Parameters@{get\-Index\-Parameters}!cvflann::Index@{cvflann\-::\-Index}}
+\subsubsection[{get\-Index\-Parameters}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ {\bf F\-L\-A\-N\-N\-\_\-\-D\-E\-P\-R\-E\-C\-A\-T\-E\-D} const {\bf Index\-Params}$\ast$ {\bf cvflann\-::\-Index}$<$ Distance $>$\-::get\-Index\-Parameters (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcvflann_1_1Index_a43b42dbb54c0c923a084d192bfe09073}
+
+
+Returns index parameters. 
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000001}{Deprecated}]use \hyperlink{classcvflann_1_1Index_a6fa0b0b70ea6c14b674ea49befb2fdf7}{get\-Parameters()} instead. \end{DoxyRefDesc}
+\hypertarget{classcvflann_1_1Index_a6fa0b0b70ea6c14b674ea49befb2fdf7}{\index{cvflann\-::\-Index@{cvflann\-::\-Index}!get\-Parameters@{get\-Parameters}}
+\index{get\-Parameters@{get\-Parameters}!cvflann::Index@{cvflann\-::\-Index}}
+\subsubsection[{get\-Parameters}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ {\bf Index\-Params} {\bf cvflann\-::\-Index}$<$ Distance $>$\-::get\-Parameters (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1Index_a6fa0b0b70ea6c14b674ea49befb2fdf7}
+\begin{DoxyReturn}{Returns}
+The index parameters 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classcvflann_1_1NNIndex_afbc22ebf77f4f376d9e7922727d0abfe}{cvflann\-::\-N\-N\-Index$<$ Distance $>$}.
+
+\hypertarget{classcvflann_1_1Index_ac1c9455f7c67a9f4d0dc70f301a4e617}{\index{cvflann\-::\-Index@{cvflann\-::\-Index}!get\-Type@{get\-Type}}
+\index{get\-Type@{get\-Type}!cvflann::Index@{cvflann\-::\-Index}}
+\subsubsection[{get\-Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ {\bf flann\-\_\-algorithm\-\_\-t} {\bf cvflann\-::\-Index}$<$ Distance $>$\-::get\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1Index_ac1c9455f7c67a9f4d0dc70f301a4e617}
+\begin{DoxyReturn}{Returns}
+The index type (kdtree, kmeans,...) 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classcvflann_1_1NNIndex_ac40469dbc16bcb0fb4b0c9912c5f8acb}{cvflann\-::\-N\-N\-Index$<$ Distance $>$}.
+
+\hypertarget{classcvflann_1_1Index_ad27d21204e383916770e67bf5c28f4cf}{\index{cvflann\-::\-Index@{cvflann\-::\-Index}!knn\-Search@{knn\-Search}}
+\index{knn\-Search@{knn\-Search}!cvflann::Index@{cvflann\-::\-Index}}
+\subsubsection[{knn\-Search}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ {\bf void} {\bf cvflann\-::\-Index}$<$ Distance $>$\-::knn\-Search (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ {\bf Element\-Type} $>$ \&}]{queries, }
+\item[{{\bf Matrix}$<$ int $>$ \&}]{indices, }
+\item[{{\bf Matrix}$<$ {\bf Distance\-Type} $>$ \&}]{dists, }
+\item[{int}]{knn, }
+\item[{const {\bf Search\-Params} \&}]{params}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1Index_ad27d21204e383916770e67bf5c28f4cf}
+
+
+Perform k-\/nearest neighbor search. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em queries} & The query points for which to find the nearest neighbors \\
+\hline
+\mbox{\tt out}  & {\em indices} & The indices of the nearest neighbors found \\
+\hline
+\mbox{\tt out}  & {\em dists} & Distances to the nearest neighbors found \\
+\hline
+\mbox{\tt in}  & {\em knn} & Number of nearest neighbors to return \\
+\hline
+\mbox{\tt in}  & {\em params} & Search parameters \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classcvflann_1_1NNIndex_a8cf5c942430421358bf67d93565942db}{cvflann\-::\-N\-N\-Index$<$ Distance $>$}.
+
+\hypertarget{classcvflann_1_1Index_ae0c80ab480e30654dbded8eebc25952e}{\index{cvflann\-::\-Index@{cvflann\-::\-Index}!load\-Index@{load\-Index}}
+\index{load\-Index@{load\-Index}!cvflann::Index@{cvflann\-::\-Index}}
+\subsubsection[{load\-Index}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ virtual {\bf void} {\bf cvflann\-::\-Index}$<$ Distance $>$\-::load\-Index (
+\begin{DoxyParamCaption}
+\item[{F\-I\-L\-E $\ast$}]{stream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1Index_ae0c80ab480e30654dbded8eebc25952e}
+
+
+Loads the index from a stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & The stream from which the index is loaded \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classcvflann_1_1NNIndex_a4bcaf48ee2ac65a1b3cebea99d021611}{cvflann\-::\-N\-N\-Index$<$ Distance $>$}.
+
+\hypertarget{classcvflann_1_1Index_a79685d67c8576e5648fde484bb9fceb0}{\index{cvflann\-::\-Index@{cvflann\-::\-Index}!radius\-Search@{radius\-Search}}
+\index{radius\-Search@{radius\-Search}!cvflann::Index@{cvflann\-::\-Index}}
+\subsubsection[{radius\-Search}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ int {\bf cvflann\-::\-Index}$<$ Distance $>$\-::radius\-Search (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ {\bf Element\-Type} $>$ \&}]{query, }
+\item[{{\bf Matrix}$<$ int $>$ \&}]{indices, }
+\item[{{\bf Matrix}$<$ {\bf Distance\-Type} $>$ \&}]{dists, }
+\item[{float}]{radius, }
+\item[{const {\bf Search\-Params} \&}]{params}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1Index_a79685d67c8576e5648fde484bb9fceb0}
+
+
+Perform radius search. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em query} & The query point \\
+\hline
+\mbox{\tt out}  & {\em indices} & The indinces of the neighbors found within the given radius \\
+\hline
+\mbox{\tt out}  & {\em dists} & The distances to the nearest neighbors found \\
+\hline
+\mbox{\tt in}  & {\em radius} & The radius used for search \\
+\hline
+\mbox{\tt in}  & {\em params} & Search parameters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of neighbors found 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classcvflann_1_1NNIndex_a142da9423596dd59766d1dcbcac433e9}{cvflann\-::\-N\-N\-Index$<$ Distance $>$}.
+
+\hypertarget{classcvflann_1_1Index_a65a17a1a9b2a705e16e8e85947b5a24d}{\index{cvflann\-::\-Index@{cvflann\-::\-Index}!save@{save}}
+\index{save@{save}!cvflann::Index@{cvflann\-::\-Index}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ {\bf void} {\bf cvflann\-::\-Index}$<$ Distance $>$\-::save (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{filename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcvflann_1_1Index_a65a17a1a9b2a705e16e8e85947b5a24d}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcvflann_1_1Index_a65a17a1a9b2a705e16e8e85947b5a24d_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcvflann_1_1Index_a7cad2783e47031b8e1ea0c1a56eb72cc}{\index{cvflann\-::\-Index@{cvflann\-::\-Index}!save\-Index@{save\-Index}}
+\index{save\-Index@{save\-Index}!cvflann::Index@{cvflann\-::\-Index}}
+\subsubsection[{save\-Index}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ virtual {\bf void} {\bf cvflann\-::\-Index}$<$ Distance $>$\-::save\-Index (
+\begin{DoxyParamCaption}
+\item[{F\-I\-L\-E $\ast$}]{stream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1Index_a7cad2783e47031b8e1ea0c1a56eb72cc}
+
+
+Saves the index to a stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & The stream to save the index to \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classcvflann_1_1NNIndex_aad5c63116e3dbeccc96de7c70f0a8db7}{cvflann\-::\-N\-N\-Index$<$ Distance $>$}.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcvflann_1_1Index_a7cad2783e47031b8e1ea0c1a56eb72cc_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcvflann_1_1Index_a34ac9de2d07ec799f294496a05d9a97d}{\index{cvflann\-::\-Index@{cvflann\-::\-Index}!size@{size}}
+\index{size@{size}!cvflann::Index@{cvflann\-::\-Index}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ size\-\_\-t {\bf cvflann\-::\-Index}$<$ Distance $>$\-::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1Index_a34ac9de2d07ec799f294496a05d9a97d}
+\begin{DoxyReturn}{Returns}
+The dimensionality of the features in this index. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classcvflann_1_1NNIndex_ae75fd979d25a239b4aba751114493fe0}{cvflann\-::\-N\-N\-Index$<$ Distance $>$}.
+
+\hypertarget{classcvflann_1_1Index_a90ac04a2def1bbfd5e7f17e93c0b80ae}{\index{cvflann\-::\-Index@{cvflann\-::\-Index}!used\-Memory@{used\-Memory}}
+\index{used\-Memory@{used\-Memory}!cvflann::Index@{cvflann\-::\-Index}}
+\subsubsection[{used\-Memory}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ virtual int {\bf cvflann\-::\-Index}$<$ Distance $>$\-::used\-Memory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1Index_a90ac04a2def1bbfd5e7f17e93c0b80ae}
+\begin{DoxyReturn}{Returns}
+The amount of memory (in bytes) used by the index. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classcvflann_1_1NNIndex_ac172cb3774f8ae39ff1107bee4fadbf9}{cvflann\-::\-N\-N\-Index$<$ Distance $>$}.
+
+\hypertarget{classcvflann_1_1Index_a6b7474356bf2d43469d54eb98aabd5d8}{\index{cvflann\-::\-Index@{cvflann\-::\-Index}!veclen@{veclen}}
+\index{veclen@{veclen}!cvflann::Index@{cvflann\-::\-Index}}
+\subsubsection[{veclen}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ size\-\_\-t {\bf cvflann\-::\-Index}$<$ Distance $>$\-::veclen (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1Index_a6b7474356bf2d43469d54eb98aabd5d8}
+\begin{DoxyReturn}{Returns}
+number of features in this index. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classcvflann_1_1NNIndex_acdcc255d1b67d5636a0f76b68809e6be}{cvflann\-::\-N\-N\-Index$<$ Distance $>$}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/flann/\hyperlink{flann__base_8hpp}{flann\-\_\-base.\-hpp}\end{DoxyCompactItemize}

@@ -1,0 +1,10 @@
+<map id="cvflann::test_index_precisions" name="cvflann::test_index_precisions">
+<area shape="rect" id="node2" href="$namespaceperf.html#ab13b16a0f5e3f27a0f51aa412796276a" title="perf::sort" alt="" coords="221,77,296,104"/>
+<area shape="rect" id="node3" href="$namespacecvflann.html#aff249b1a3cfbd449db4ee469a0cb2a62" title="cvflann::search_with\l_ground_truth" alt="" coords="187,129,330,170"/>
+<area shape="rect" id="node4" href="$classcvflann_1_1StartStopTimer.html#abef9e74190be725316f45a082a384f61" title="cvflann::StartStopTimer\l::start" alt="" coords="405,5,565,46"/>
+<area shape="rect" id="node5" href="$classcvflann_1_1KNNResultSet.html#ae9eab3480d859a6bc93d3c8ca963b41b" title="cvflann::KNNResultSet\l::init" alt="" coords="406,70,565,111"/>
+<area shape="rect" id="node7" href="$classcvflann_1_1NNIndex.html#ac038c51dc941c7c1a55b08c17e213e41" title="Method that searches for nearest&#45;neighbours. " alt="" coords="379,136,591,163"/>
+<area shape="rect" id="node8" href="$namespacecvflann.html#acf6c205af1874107b827a6d73fc0d8e4" title="cvflann::countCorrectMatches" alt="" coords="387,187,584,213"/>
+<area shape="rect" id="node9" href="$classcvflann_1_1StartStopTimer.html#a57063682a9b200f92069d29ddc329190" title="cvflann::StartStopTimer\l::stop" alt="" coords="405,238,565,279"/>
+<area shape="rect" id="node6" href="$namespacecv_1_1gpu.html#a706c9def6816de566be2671b75ec5309" title="computes per&#45;element maximum of two arrays (dst = max(src1, src2)) " alt="" coords="640,77,739,104"/>
+</map>

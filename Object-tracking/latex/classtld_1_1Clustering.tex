@@ -1,0 +1,204 @@
+\hypertarget{classtld_1_1Clustering}{\section{tld\-:\-:Clustering Class Reference}
+\label{classtld_1_1Clustering}\index{tld\-::\-Clustering@{tld\-::\-Clustering}}
+}
+
+
+The clustering of detector cascade results.  
+
+
+
+
+{\ttfamily \#include $<$Clustering.\-h$>$}
+
+
+
+Collaboration diagram for tld\-:\-:Clustering\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{classtld_1_1Clustering__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtld_1_1Clustering_ae900a3a513ddad5e5b2f5f49d25d8358}{Clustering} ()
+\begin{DoxyCompactList}\small\item\em This constructor initializes the class variables. \end{DoxyCompactList}\item 
+virtual \hyperlink{classtld_1_1Clustering_a86532276b1db43fc44ff201b385c4967}{$\sim$\-Clustering} ()
+\begin{DoxyCompactList}\small\item\em Empty destructor. \end{DoxyCompactList}\item 
+void \hyperlink{classtld_1_1Clustering_a2dbde4a94a483e8befe4b710445941bf}{release} ()
+\begin{DoxyCompactList}\small\item\em Releases memory on the array of windows. \end{DoxyCompactList}\item 
+void \hyperlink{classtld_1_1Clustering_a772750b3a1183ef80a9b4cf202e4c203}{cluster\-Confident\-Indices} ()
+\begin{DoxyCompactList}\small\item\em Calculates the bounding box from Confident\-Indices (the indices of сonfident windows), if the number of clusters equal 1. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int $\ast$ \hyperlink{classtld_1_1Clustering_acd1251895c2999f2041b50142cf81dda}{windows}
+\begin{DoxyCompactList}\small\item\em the array of windows \end{DoxyCompactList}\item 
+int \hyperlink{classtld_1_1Clustering_a25b3b82795ea06758b6a321f856f004b}{num\-Windows}
+\begin{DoxyCompactList}\small\item\em the number of windows \end{DoxyCompactList}\item 
+\hyperlink{classtld_1_1DetectionResult}{Detection\-Result} $\ast$ \hyperlink{classtld_1_1Clustering_abfc41de1f95b5c019676aa5f42d9e960}{detection\-Result}
+\begin{DoxyCompactList}\small\item\em the result of detection \end{DoxyCompactList}\item 
+float \hyperlink{classtld_1_1Clustering_ae5fcb2d589b404b081dad28977467707}{cutoff}
+\begin{DoxyCompactList}\small\item\em the threshold for detect of belong the windows to the same cluster \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classtld_1_1Clustering_adb56b7e5381c8c87364f288f7093e7fc}{calc\-Mean\-Rect} (std\-::vector$<$ int $>$ $\ast$indices)
+\begin{DoxyCompactList}\small\item\em Calculates the mean of indexed rectangles (windows). \end{DoxyCompactList}\item 
+void \hyperlink{classtld_1_1Clustering_a340b0bdad9f492f17a2bc10d720d587a}{calc\-Distances} (float $\ast$distances)
+\begin{DoxyCompactList}\small\item\em Calculates distances (0 to 1) between windows. \end{DoxyCompactList}\item 
+void \hyperlink{classtld_1_1Clustering_a5c85305aa57a86b7eb890c723cfe4821}{cluster} (float $\ast$distances, int $\ast$cluster\-Indices)
+\begin{DoxyCompactList}\small\item\em Determines the number of clusters and the indices of clusters which belong the сonfident windows to. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The clustering of detector cascade results. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classtld_1_1Clustering_ae900a3a513ddad5e5b2f5f49d25d8358}{\index{tld\-::\-Clustering@{tld\-::\-Clustering}!Clustering@{Clustering}}
+\index{Clustering@{Clustering}!tld::Clustering@{tld\-::\-Clustering}}
+\subsubsection[{Clustering}]{\setlength{\rightskip}{0pt plus 5cm}tld\-::\-Clustering\-::\-Clustering (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1Clustering_ae900a3a513ddad5e5b2f5f49d25d8358}
+
+
+This constructor initializes the class variables. 
+
+\hypertarget{classtld_1_1Clustering_a86532276b1db43fc44ff201b385c4967}{\index{tld\-::\-Clustering@{tld\-::\-Clustering}!$\sim$\-Clustering@{$\sim$\-Clustering}}
+\index{$\sim$\-Clustering@{$\sim$\-Clustering}!tld::Clustering@{tld\-::\-Clustering}}
+\subsubsection[{$\sim$\-Clustering}]{\setlength{\rightskip}{0pt plus 5cm}tld\-::\-Clustering\-::$\sim$\-Clustering (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classtld_1_1Clustering_a86532276b1db43fc44ff201b385c4967}
+
+
+Empty destructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classtld_1_1Clustering_a340b0bdad9f492f17a2bc10d720d587a}{\index{tld\-::\-Clustering@{tld\-::\-Clustering}!calc\-Distances@{calc\-Distances}}
+\index{calc\-Distances@{calc\-Distances}!tld::Clustering@{tld\-::\-Clustering}}
+\subsubsection[{calc\-Distances}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::\-Clustering\-::calc\-Distances (
+\begin{DoxyParamCaption}
+\item[{float $\ast$}]{distances}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classtld_1_1Clustering_a340b0bdad9f492f17a2bc10d720d587a}
+
+
+Calculates distances (0 to 1) between windows. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em distances} & the destination array of distances (however must be of size n$\ast$(n+1)/2, n=detection\-Result-\/$>$confident\-Indices) \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtld_1_1Clustering_a340b0bdad9f492f17a2bc10d720d587a_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classtld_1_1Clustering_adb56b7e5381c8c87364f288f7093e7fc}{\index{tld\-::\-Clustering@{tld\-::\-Clustering}!calc\-Mean\-Rect@{calc\-Mean\-Rect}}
+\index{calc\-Mean\-Rect@{calc\-Mean\-Rect}!tld::Clustering@{tld\-::\-Clustering}}
+\subsubsection[{calc\-Mean\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::\-Clustering\-::calc\-Mean\-Rect (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ int $>$ $\ast$}]{indices}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classtld_1_1Clustering_adb56b7e5381c8c87364f288f7093e7fc}
+
+
+Calculates the mean of indexed rectangles (windows). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em indices} & the indices of the interesting windows \\
+\hline
+\end{DoxyParams}
+\hypertarget{classtld_1_1Clustering_a5c85305aa57a86b7eb890c723cfe4821}{\index{tld\-::\-Clustering@{tld\-::\-Clustering}!cluster@{cluster}}
+\index{cluster@{cluster}!tld::Clustering@{tld\-::\-Clustering}}
+\subsubsection[{cluster}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::\-Clustering\-::cluster (
+\begin{DoxyParamCaption}
+\item[{float $\ast$}]{distances, }
+\item[{int $\ast$}]{cluster\-Indices}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classtld_1_1Clustering_a5c85305aa57a86b7eb890c723cfe4821}
+
+
+Determines the number of clusters and the indices of clusters which belong the сonfident windows to. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em distances} & the array of distances \\
+\hline
+{\em cluster\-Indices} & the indices of clusters (the size must be equal detection\-Result-\/$>$confident\-Indices-\/$>$size()) \\
+\hline
+\end{DoxyParams}
+\hypertarget{classtld_1_1Clustering_a772750b3a1183ef80a9b4cf202e4c203}{\index{tld\-::\-Clustering@{tld\-::\-Clustering}!cluster\-Confident\-Indices@{cluster\-Confident\-Indices}}
+\index{cluster\-Confident\-Indices@{cluster\-Confident\-Indices}!tld::Clustering@{tld\-::\-Clustering}}
+\subsubsection[{cluster\-Confident\-Indices}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::\-Clustering\-::cluster\-Confident\-Indices (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1Clustering_a772750b3a1183ef80a9b4cf202e4c203}
+
+
+Calculates the bounding box from Confident\-Indices (the indices of сonfident windows), if the number of clusters equal 1. 
+
+\hypertarget{classtld_1_1Clustering_a2dbde4a94a483e8befe4b710445941bf}{\index{tld\-::\-Clustering@{tld\-::\-Clustering}!release@{release}}
+\index{release@{release}!tld::Clustering@{tld\-::\-Clustering}}
+\subsubsection[{release}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::\-Clustering\-::release (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1Clustering_a2dbde4a94a483e8befe4b710445941bf}
+
+
+Releases memory on the array of windows. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classtld_1_1Clustering_ae5fcb2d589b404b081dad28977467707}{\index{tld\-::\-Clustering@{tld\-::\-Clustering}!cutoff@{cutoff}}
+\index{cutoff@{cutoff}!tld::Clustering@{tld\-::\-Clustering}}
+\subsubsection[{cutoff}]{\setlength{\rightskip}{0pt plus 5cm}float tld\-::\-Clustering\-::cutoff}}\label{classtld_1_1Clustering_ae5fcb2d589b404b081dad28977467707}
+
+
+the threshold for detect of belong the windows to the same cluster 
+
+\hypertarget{classtld_1_1Clustering_abfc41de1f95b5c019676aa5f42d9e960}{\index{tld\-::\-Clustering@{tld\-::\-Clustering}!detection\-Result@{detection\-Result}}
+\index{detection\-Result@{detection\-Result}!tld::Clustering@{tld\-::\-Clustering}}
+\subsubsection[{detection\-Result}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Detection\-Result}$\ast$ tld\-::\-Clustering\-::detection\-Result}}\label{classtld_1_1Clustering_abfc41de1f95b5c019676aa5f42d9e960}
+
+
+the result of detection 
+
+\hypertarget{classtld_1_1Clustering_a25b3b82795ea06758b6a321f856f004b}{\index{tld\-::\-Clustering@{tld\-::\-Clustering}!num\-Windows@{num\-Windows}}
+\index{num\-Windows@{num\-Windows}!tld::Clustering@{tld\-::\-Clustering}}
+\subsubsection[{num\-Windows}]{\setlength{\rightskip}{0pt plus 5cm}int tld\-::\-Clustering\-::num\-Windows}}\label{classtld_1_1Clustering_a25b3b82795ea06758b6a321f856f004b}
+
+
+the number of windows 
+
+\hypertarget{classtld_1_1Clustering_acd1251895c2999f2041b50142cf81dda}{\index{tld\-::\-Clustering@{tld\-::\-Clustering}!windows@{windows}}
+\index{windows@{windows}!tld::Clustering@{tld\-::\-Clustering}}
+\subsubsection[{windows}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ tld\-::\-Clustering\-::windows}}\label{classtld_1_1Clustering_acd1251895c2999f2041b50142cf81dda}
+
+
+the array of windows 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/libopentld/tld/\hyperlink{Clustering_8h}{Clustering.\-h}\item 
+src/libopentld/tld/\hyperlink{Clustering_8cpp}{Clustering.\-cpp}\end{DoxyCompactItemize}

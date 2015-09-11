@@ -1,0 +1,5 @@
+<map id="config_setting_get_bool" name="config_setting_get_bool">
+<area shape="rect" id="node2" href="$libconfig_8h.html#aa97b187527fdda6441a8e7b8e7e332b4" title="config_setting_lookup_bool" alt="" coords="213,5,392,32"/>
+<area shape="rect" id="node3" href="$libconfig_8h.html#a739e9db5af42e4ebc5f895e9f0ecb5c6" title="config_lookup_bool" alt="" coords="236,56,369,83"/>
+<area shape="rect" id="node4" href="$classlibconfig_1_1Setting.html#ad8adda53b1f1021da61d00e27637a88f" title="libconfig::Setting\l::operator bool" alt="" coords="243,107,362,149"/>
+</map>

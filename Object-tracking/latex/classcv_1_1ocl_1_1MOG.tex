@@ -1,0 +1,146 @@
+\hypertarget{classcv_1_1ocl_1_1MOG}{\section{cv\-:\-:ocl\-:\-:M\-O\-G Class Reference}
+\label{classcv_1_1ocl_1_1MOG}\index{cv\-::ocl\-::\-M\-O\-G@{cv\-::ocl\-::\-M\-O\-G}}
+}
+
+
+{\ttfamily \#include $<$ocl.\-hpp$>$}
+
+
+
+Inheritance diagram for cv\-:\-:ocl\-:\-:M\-O\-G\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{classcv_1_1ocl_1_1MOG__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for cv\-:\-:ocl\-:\-:M\-O\-G\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{classcv_1_1ocl_1_1MOG__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcv_1_1ocl_1_1MOG_a460cd25b57fd4690b496deb342f414ed}{M\-O\-G} (int nmixtures=-\/1)
+\begin{DoxyCompactList}\small\item\em the default constructor \end{DoxyCompactList}\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1MOG_aacbf6a989c9ba1a0594f20192085533b}{initialize} (Size frame\-Size, int frame\-Type)
+\begin{DoxyCompactList}\small\item\em re-\/initiaization method \end{DoxyCompactList}\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1MOG_a501fb6247c1cf49c085fa8875d692b40}{operator()} (const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&\hyperlink{core__c_8h_a0430deaafd9043e478f306e33961299d}{frame}, \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&\hyperlink{legacy_8hpp_a7ff9edf5eaa300d3c1cea7de20631fd8}{fgmask}, float learning\-Rate=0.f)
+\begin{DoxyCompactList}\small\item\em the update operator \end{DoxyCompactList}\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1MOG_a3162d8e7ee2e3479ef0f48eab4d8fbc7}{get\-Background\-Image} (\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&background\-Image) const 
+\begin{DoxyCompactList}\small\item\em computes a background image which are the mean of all background gaussians \end{DoxyCompactList}\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1MOG_a90ab5e3e0558ac902cf35f514f53e569}{release} ()
+\begin{DoxyCompactList}\small\item\em releases all inner buffers \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classcv_1_1ocl_1_1MOG_a9577630863c64d082769278e35df9c9f}{history}
+\item 
+float \hyperlink{classcv_1_1ocl_1_1MOG_a598c0e1d23f892c93fa45185b1d940cc}{var\-Threshold}
+\item 
+float \hyperlink{classcv_1_1ocl_1_1MOG_ad70652a47c37fe012a9f6789729a8e42}{background\-Ratio}
+\item 
+float \hyperlink{classcv_1_1ocl_1_1MOG_a60c52e20b306cce50e1e23bbc356431a}{noise\-Sigma}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Gaussian Mixture-\/based Backbround/\-Foreground Segmentation Algorithm
+
+The class implements the following algorithm\-: \char`\"{}\-An improved adaptive background mixture model for real-\/time tracking with shadow detection\char`\"{} P. Kadew\-Tra\-Ku\-Pong and R. Bowden, Proc. 2nd European Workshp on Advanced Video-\/\-Based Surveillance Systems, 2001." \href{http://personal.ee.surrey.ac.uk/Personal/R.Bowden/publications/avbs01/avbs01.pdf}{\tt http\-://personal.\-ee.\-surrey.\-ac.\-uk/\-Personal/\-R.\-Bowden/publications/avbs01/avbs01.\-pdf} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcv_1_1ocl_1_1MOG_a460cd25b57fd4690b496deb342f414ed}{\index{cv\-::ocl\-::\-M\-O\-G@{cv\-::ocl\-::\-M\-O\-G}!M\-O\-G@{M\-O\-G}}
+\index{M\-O\-G@{M\-O\-G}!cv::ocl::MOG@{cv\-::ocl\-::\-M\-O\-G}}
+\subsubsection[{M\-O\-G}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::ocl\-::\-M\-O\-G\-::\-M\-O\-G (
+\begin{DoxyParamCaption}
+\item[{int}]{nmixtures = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1MOG_a460cd25b57fd4690b496deb342f414ed}
+
+
+the default constructor 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcv_1_1ocl_1_1MOG_a3162d8e7ee2e3479ef0f48eab4d8fbc7}{\index{cv\-::ocl\-::\-M\-O\-G@{cv\-::ocl\-::\-M\-O\-G}!get\-Background\-Image@{get\-Background\-Image}}
+\index{get\-Background\-Image@{get\-Background\-Image}!cv::ocl::MOG@{cv\-::ocl\-::\-M\-O\-G}}
+\subsubsection[{get\-Background\-Image}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::\-M\-O\-G\-::get\-Background\-Image (
+\begin{DoxyParamCaption}
+\item[{{\bf ocl\-Mat} \&}]{background\-Image}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcv_1_1ocl_1_1MOG_a3162d8e7ee2e3479ef0f48eab4d8fbc7}
+
+
+computes a background image which are the mean of all background gaussians 
+
+
+
+Implements \hyperlink{classcv_1_1ocl_1_1BackgroundSubtractor_ab58feb8db76e348a3ce4bceabecb3903}{cv\-::ocl\-::\-Background\-Subtractor}.
+
+\hypertarget{classcv_1_1ocl_1_1MOG_aacbf6a989c9ba1a0594f20192085533b}{\index{cv\-::ocl\-::\-M\-O\-G@{cv\-::ocl\-::\-M\-O\-G}!initialize@{initialize}}
+\index{initialize@{initialize}!cv::ocl::MOG@{cv\-::ocl\-::\-M\-O\-G}}
+\subsubsection[{initialize}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::\-M\-O\-G\-::initialize (
+\begin{DoxyParamCaption}
+\item[{Size}]{frame\-Size, }
+\item[{int}]{frame\-Type}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1MOG_aacbf6a989c9ba1a0594f20192085533b}
+
+
+re-\/initiaization method 
+
+\hypertarget{classcv_1_1ocl_1_1MOG_a501fb6247c1cf49c085fa8875d692b40}{\index{cv\-::ocl\-::\-M\-O\-G@{cv\-::ocl\-::\-M\-O\-G}!operator()@{operator()}}
+\index{operator()@{operator()}!cv::ocl::MOG@{cv\-::ocl\-::\-M\-O\-G}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::\-M\-O\-G\-::operator() (
+\begin{DoxyParamCaption}
+\item[{const {\bf ocl\-Mat} \&}]{frame, }
+\item[{{\bf ocl\-Mat} \&}]{fgmask, }
+\item[{float}]{learning\-Rate = {\ttfamily 0.f}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcv_1_1ocl_1_1MOG_a501fb6247c1cf49c085fa8875d692b40}
+
+
+the update operator 
+
+
+
+Reimplemented from \hyperlink{classcv_1_1ocl_1_1BackgroundSubtractor_ab8110c1e077b13a09fb2abb281d1edc2}{cv\-::ocl\-::\-Background\-Subtractor}.
+
+\hypertarget{classcv_1_1ocl_1_1MOG_a90ab5e3e0558ac902cf35f514f53e569}{\index{cv\-::ocl\-::\-M\-O\-G@{cv\-::ocl\-::\-M\-O\-G}!release@{release}}
+\index{release@{release}!cv::ocl::MOG@{cv\-::ocl\-::\-M\-O\-G}}
+\subsubsection[{release}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::\-M\-O\-G\-::release (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1MOG_a90ab5e3e0558ac902cf35f514f53e569}
+
+
+releases all inner buffers 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcv_1_1ocl_1_1MOG_ad70652a47c37fe012a9f6789729a8e42}{\index{cv\-::ocl\-::\-M\-O\-G@{cv\-::ocl\-::\-M\-O\-G}!background\-Ratio@{background\-Ratio}}
+\index{background\-Ratio@{background\-Ratio}!cv::ocl::MOG@{cv\-::ocl\-::\-M\-O\-G}}
+\subsubsection[{background\-Ratio}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::ocl\-::\-M\-O\-G\-::background\-Ratio}}\label{classcv_1_1ocl_1_1MOG_ad70652a47c37fe012a9f6789729a8e42}
+\hypertarget{classcv_1_1ocl_1_1MOG_a9577630863c64d082769278e35df9c9f}{\index{cv\-::ocl\-::\-M\-O\-G@{cv\-::ocl\-::\-M\-O\-G}!history@{history}}
+\index{history@{history}!cv::ocl::MOG@{cv\-::ocl\-::\-M\-O\-G}}
+\subsubsection[{history}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::ocl\-::\-M\-O\-G\-::history}}\label{classcv_1_1ocl_1_1MOG_a9577630863c64d082769278e35df9c9f}
+\hypertarget{classcv_1_1ocl_1_1MOG_a60c52e20b306cce50e1e23bbc356431a}{\index{cv\-::ocl\-::\-M\-O\-G@{cv\-::ocl\-::\-M\-O\-G}!noise\-Sigma@{noise\-Sigma}}
+\index{noise\-Sigma@{noise\-Sigma}!cv::ocl::MOG@{cv\-::ocl\-::\-M\-O\-G}}
+\subsubsection[{noise\-Sigma}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::ocl\-::\-M\-O\-G\-::noise\-Sigma}}\label{classcv_1_1ocl_1_1MOG_a60c52e20b306cce50e1e23bbc356431a}
+\hypertarget{classcv_1_1ocl_1_1MOG_a598c0e1d23f892c93fa45185b1d940cc}{\index{cv\-::ocl\-::\-M\-O\-G@{cv\-::ocl\-::\-M\-O\-G}!var\-Threshold@{var\-Threshold}}
+\index{var\-Threshold@{var\-Threshold}!cv::ocl::MOG@{cv\-::ocl\-::\-M\-O\-G}}
+\subsubsection[{var\-Threshold}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::ocl\-::\-M\-O\-G\-::var\-Threshold}}\label{classcv_1_1ocl_1_1MOG_a598c0e1d23f892c93fa45185b1d940cc}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/ocl/\hyperlink{ocl_2ocl_8hpp}{ocl.\-hpp}\end{DoxyCompactItemize}

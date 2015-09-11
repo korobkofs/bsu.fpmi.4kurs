@@ -1,0 +1,1348 @@
+\hypertarget{classcv_1_1ocl_1_1oclMat}{\section{cv\-:\-:ocl\-:\-:ocl\-Mat Class Reference}
+\label{classcv_1_1ocl_1_1oclMat}\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}}
+}
+
+
+{\ttfamily \#include $<$ocl.\-hpp$>$}
+
+
+
+Collaboration diagram for cv\-:\-:ocl\-:\-:ocl\-Mat\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{classcv_1_1ocl_1_1oclMat__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat_a1012cff89dfdfd53468b97ead16e8999}{ocl\-Mat} ()
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat_a2a5dbcff1873222278f6669caa969186}{ocl\-Mat} (int \hyperlink{classcv_1_1ocl_1_1oclMat_a1ccf0125fff51e419aa89b144ed511be}{rows}, int \hyperlink{classcv_1_1ocl_1_1oclMat_ac814acb1fd2613d43e5fbb9c2166ac9f}{cols}, int \hyperlink{classcv_1_1ocl_1_1oclMat_acf6fe0735d1dac151e2c301f01470827}{type})
+\begin{DoxyCompactList}\small\item\em constructs ocl\-Matrix of the specified size and type (\-\_\-type is C\-V\-\_\-8\-U\-C1, C\-V\-\_\-64\-F\-C3, \hyperlink{core_2types__c_8h_ae9e13c89621697e73aea4636da5674ff}{C\-V\-\_\-32\-S\-C(12)} etc.) \end{DoxyCompactList}\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat_aef9ee851fbba441e651fbac5774b4137}{ocl\-Mat} (Size \hyperlink{classcv_1_1ocl_1_1oclMat_a21384709f0d43efd26d0c70edc7adf8a}{size}, int \hyperlink{classcv_1_1ocl_1_1oclMat_acf6fe0735d1dac151e2c301f01470827}{type})
+\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat_acf653026d1156b8b11c1e319dc9e0c70}{ocl\-Mat} (int \hyperlink{classcv_1_1ocl_1_1oclMat_a1ccf0125fff51e419aa89b144ed511be}{rows}, int \hyperlink{classcv_1_1ocl_1_1oclMat_ac814acb1fd2613d43e5fbb9c2166ac9f}{cols}, int \hyperlink{classcv_1_1ocl_1_1oclMat_acf6fe0735d1dac151e2c301f01470827}{type}, const Scalar \&s)
+\begin{DoxyCompactList}\small\item\em constucts ocl\-Matrix and fills it with the specified value \-\_\-s. \end{DoxyCompactList}\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat_a1647b7a81a85de433adc4d1c0dc44934}{ocl\-Mat} (Size \hyperlink{classcv_1_1ocl_1_1oclMat_a21384709f0d43efd26d0c70edc7adf8a}{size}, int \hyperlink{classcv_1_1ocl_1_1oclMat_acf6fe0735d1dac151e2c301f01470827}{type}, const Scalar \&s)
+\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat_a1b06b658bf4bcb8f9a41c969ded8af22}{ocl\-Mat} (const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&m)
+\begin{DoxyCompactList}\small\item\em copy constructor \end{DoxyCompactList}\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat_a73947d6aaec7670cda8f91edf6c9111a}{ocl\-Mat} (int \hyperlink{classcv_1_1ocl_1_1oclMat_a1ccf0125fff51e419aa89b144ed511be}{rows}, int \hyperlink{classcv_1_1ocl_1_1oclMat_ac814acb1fd2613d43e5fbb9c2166ac9f}{cols}, int \hyperlink{classcv_1_1ocl_1_1oclMat_acf6fe0735d1dac151e2c301f01470827}{type}, \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} $\ast$\hyperlink{classcv_1_1ocl_1_1oclMat_a9eeb429cbc7aca93239988592a40aac5}{data}, size\-\_\-t \hyperlink{classcv_1_1ocl_1_1oclMat_a5449adbd0cfb2cd99a84282d5b4ae8fb}{step}=Mat\-::\-A\-U\-T\-O\-\_\-\-S\-T\-E\-P)
+\begin{DoxyCompactList}\small\item\em constructor for ocl\-Matrix headers pointing to user-\/allocated data \end{DoxyCompactList}\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat_a81a03473778f2e51d39af5a51113a20c}{ocl\-Mat} (Size \hyperlink{classcv_1_1ocl_1_1oclMat_a21384709f0d43efd26d0c70edc7adf8a}{size}, int \hyperlink{classcv_1_1ocl_1_1oclMat_acf6fe0735d1dac151e2c301f01470827}{type}, \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} $\ast$\hyperlink{classcv_1_1ocl_1_1oclMat_a9eeb429cbc7aca93239988592a40aac5}{data}, size\-\_\-t \hyperlink{classcv_1_1ocl_1_1oclMat_a5449adbd0cfb2cd99a84282d5b4ae8fb}{step}=Mat\-::\-A\-U\-T\-O\-\_\-\-S\-T\-E\-P)
+\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat_a23929ec8c2874a22b575524e50c073e6}{ocl\-Mat} (const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&m, const Range \&\hyperlink{classcv_1_1ocl_1_1oclMat_a60bd94d8a6110a2e50bf9fbcfc2db0d2}{row\-Range}, const Range \&\hyperlink{classcv_1_1ocl_1_1oclMat_a8d61c3d2a4c840c9f785ea1e319e1981}{col\-Range})
+\begin{DoxyCompactList}\small\item\em creates a matrix header for a part of the bigger matrix \end{DoxyCompactList}\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat_a6dbad9f24d0d84f6c644a202cdaa97c9}{ocl\-Mat} (const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&m, const Rect \&\hyperlink{legacy_8hpp_a22e52b2b51d064865d3ac2f27b308c33}{roi})
+\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat_ae057b17121bdf3abc744a7e4da310b9f}{ocl\-Mat} (const Mat \&m)
+\begin{DoxyCompactList}\small\item\em builds \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} from Mat. Perfom blocking upload to device. \end{DoxyCompactList}\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat_ae547fbc3ec1d4768ffcb6e5ba380bc22}{$\sim$ocl\-Mat} ()
+\begin{DoxyCompactList}\small\item\em destructor -\/ calls \hyperlink{classcv_1_1ocl_1_1oclMat_a2a0c869ae649fe790de272feb7989b33}{release()} \end{DoxyCompactList}\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \& \hyperlink{classcv_1_1ocl_1_1oclMat_a59696d5aa1631f6d1dcd3617efec2fb9}{operator=} (const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&m)
+\begin{DoxyCompactList}\small\item\em assignment operators \end{DoxyCompactList}\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \& \hyperlink{classcv_1_1ocl_1_1oclMat_afa3a7a89e26bec6c1c881142d93cd751}{operator=} (const Mat \&m)
+\begin{DoxyCompactList}\small\item\em assignment operator. Perfom blocking upload to device. \end{DoxyCompactList}\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \& \hyperlink{classcv_1_1ocl_1_1oclMat_ab542a679c8aea496338e466f9acf6008}{operator=} (const \hyperlink{classcv_1_1ocl_1_1oclMatExpr}{ocl\-Mat\-Expr} \&expr)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1oclMat_ab117cd9e6b8e6b63571f3cdea44e2277}{upload} (const cv\-::\-Mat \&m)
+\begin{DoxyCompactList}\small\item\em pefroms blocking upload data to \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat}. \end{DoxyCompactList}\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat_a07963db194491e7b8114e83fb6f95666}{operator Mat} () const 
+\begin{DoxyCompactList}\small\item\em downloads data from device to host memory. Blocking calls. \end{DoxyCompactList}\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1oclMat_aa3289945ebb9580cec3c980965d09adc}{download} (cv\-::\-Mat \&m) const 
+\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat_a63f34ef7e3435940638f6dcc7b54f802}{operator \-\_\-\-Input\-Array} ()
+\begin{DoxyCompactList}\small\item\em convert to \-\_\-\-Input\-Array \end{DoxyCompactList}\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat_ac06c4e759a7c4f97ccb8e55ee2e5db24}{operator \-\_\-\-Output\-Array} ()
+\begin{DoxyCompactList}\small\item\em convert to \-\_\-\-Output\-Array \end{DoxyCompactList}\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \hyperlink{classcv_1_1ocl_1_1oclMat_a5e927c1ab9729772df69829e29467fd7}{row} (int \hyperlink{highgui__c_8h_af1202c02b14870c18fb3a1da73e9e7c7}{y}) const 
+\begin{DoxyCompactList}\small\item\em returns a new ocl\-Matrix header for the specified row \end{DoxyCompactList}\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \hyperlink{classcv_1_1ocl_1_1oclMat_a761d9493dc8d989b0bec105e832e8fb6}{col} (int \hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x}) const 
+\begin{DoxyCompactList}\small\item\em returns a new ocl\-Matrix header for the specified column \end{DoxyCompactList}\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \hyperlink{classcv_1_1ocl_1_1oclMat_a60bd94d8a6110a2e50bf9fbcfc2db0d2}{row\-Range} (int startrow, int endrow) const 
+\begin{DoxyCompactList}\small\item\em ... for the specified row span \end{DoxyCompactList}\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \hyperlink{classcv_1_1ocl_1_1oclMat_ad03275f533e77035425a08ed6510db0b}{row\-Range} (const Range \&\hyperlink{core__c_8h_a54709f3b06b33b66763f1613cc7fb571}{r}) const 
+\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \hyperlink{classcv_1_1ocl_1_1oclMat_a8d61c3d2a4c840c9f785ea1e319e1981}{col\-Range} (int startcol, int endcol) const 
+\begin{DoxyCompactList}\small\item\em ... for the specified column span \end{DoxyCompactList}\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \hyperlink{classcv_1_1ocl_1_1oclMat_aa7ea95ea946e3b85133627dcc748a5fa}{col\-Range} (const Range \&\hyperlink{core__c_8h_a54709f3b06b33b66763f1613cc7fb571}{r}) const 
+\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \hyperlink{classcv_1_1ocl_1_1oclMat_ab6d0ca3f3b2093abe6325d24dc9cee63}{clone} () const 
+\begin{DoxyCompactList}\small\item\em returns deep copy of the ocl\-Matrix, i.\-e. the data is copied \end{DoxyCompactList}\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1oclMat_af97b3a1bc63dba9143e4eb835dc0bf48}{copy\-To} (\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&m, const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}=\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat}()) const 
+\begin{DoxyCompactList}\small\item\em copies those ocl\-Matrix elements to \char`\"{}m\char`\"{} that are marked with non-\/zero mask elements. \end{DoxyCompactList}\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1oclMat_a4d11801c217de657e68b784834bdd627}{convert\-To} (\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&m, int rtype, double \hyperlink{legacy_8hpp_a95fc8341ca418bc06b36160632af6d47}{alpha}=1, double \hyperlink{legacy_8hpp_af8b31eb489dfbd87f3b1a1925cca3589}{beta}=0) const 
+\begin{DoxyCompactList}\small\item\em converts ocl\-Matrix to another datatype with optional scalng. See cv\-Convert\-Scale. \end{DoxyCompactList}\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1oclMat_aa206f6004efd4fda483bf7a7ca47e9e6}{assign\-To} (\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&m, int \hyperlink{classcv_1_1ocl_1_1oclMat_acf6fe0735d1dac151e2c301f01470827}{type}=-\/1) const 
+\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \& \hyperlink{classcv_1_1ocl_1_1oclMat_aaa6ceaeab62d67ecf2e6e53e2eb2e907}{operator=} (const Scalar \&s)
+\begin{DoxyCompactList}\small\item\em sets every ocl\-Matrix element to s \end{DoxyCompactList}\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \& \hyperlink{classcv_1_1ocl_1_1oclMat_af7211da97e0a6838e6cfc252d202a93b}{set\-To} (const Scalar \&s, const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}=\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat}())
+\begin{DoxyCompactList}\small\item\em sets some of the ocl\-Matrix elements to s, according to the mask \end{DoxyCompactList}\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \hyperlink{classcv_1_1ocl_1_1oclMat_ae53a7bd4ac1386e0cddf2a95eed51a2e}{reshape} (int cn, int \hyperlink{classcv_1_1ocl_1_1oclMat_a1ccf0125fff51e419aa89b144ed511be}{rows}=0) const 
+\begin{DoxyCompactList}\small\item\em creates alternative ocl\-Matrix header for the same data, with different \end{DoxyCompactList}\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1oclMat_aa230a306d044e659d535e9ecfca2ab31}{create} (int \hyperlink{classcv_1_1ocl_1_1oclMat_a1ccf0125fff51e419aa89b144ed511be}{rows}, int \hyperlink{classcv_1_1ocl_1_1oclMat_ac814acb1fd2613d43e5fbb9c2166ac9f}{cols}, int \hyperlink{classcv_1_1ocl_1_1oclMat_acf6fe0735d1dac151e2c301f01470827}{type})
+\begin{DoxyCompactList}\small\item\em allocates new ocl\-Matrix data unless the ocl\-Matrix already has specified size and type. \end{DoxyCompactList}\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1oclMat_a89ec842b647387a3e932dd2e79a83f2f}{create} (Size \hyperlink{classcv_1_1ocl_1_1oclMat_a21384709f0d43efd26d0c70edc7adf8a}{size}, int \hyperlink{classcv_1_1ocl_1_1oclMat_acf6fe0735d1dac151e2c301f01470827}{type})
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1oclMat_a25f73dfb1e968f7068174d64383ff9ff}{create\-Ex} (int \hyperlink{classcv_1_1ocl_1_1oclMat_a1ccf0125fff51e419aa89b144ed511be}{rows}, int \hyperlink{classcv_1_1ocl_1_1oclMat_ac814acb1fd2613d43e5fbb9c2166ac9f}{cols}, int \hyperlink{classcv_1_1ocl_1_1oclMat_acf6fe0735d1dac151e2c301f01470827}{type}, \hyperlink{namespacecv_1_1ocl_a80a07717be48231d1ad6002ecd66729c}{Dev\-Mem\-R\-W} rw\-\_\-type, \hyperlink{namespacecv_1_1ocl_a06a87c6cbc228b6ee12b32dd5c27c52c}{Dev\-Mem\-Type} mem\-\_\-type)
+\begin{DoxyCompactList}\small\item\em allocates new ocl\-Matrix with specified device memory type. \end{DoxyCompactList}\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1oclMat_ac88dc143ee820b06f5a677c70cbade3a}{create\-Ex} (Size \hyperlink{classcv_1_1ocl_1_1oclMat_a21384709f0d43efd26d0c70edc7adf8a}{size}, int \hyperlink{classcv_1_1ocl_1_1oclMat_acf6fe0735d1dac151e2c301f01470827}{type}, \hyperlink{namespacecv_1_1ocl_a80a07717be48231d1ad6002ecd66729c}{Dev\-Mem\-R\-W} rw\-\_\-type, \hyperlink{namespacecv_1_1ocl_a06a87c6cbc228b6ee12b32dd5c27c52c}{Dev\-Mem\-Type} mem\-\_\-type)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1oclMat_a2a0c869ae649fe790de272feb7989b33}{release} ()
+\begin{DoxyCompactList}\small\item\em decreases reference counter; \end{DoxyCompactList}\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1oclMat_a851539016beb446ae6e5752fe11d5ed6}{swap} (\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&\hyperlink{imgproc__c_8h_ad9325e85114e7b9ab738a23b62ea10a0}{mat})
+\begin{DoxyCompactList}\small\item\em swaps with other smart pointer \end{DoxyCompactList}\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1oclMat_ac5162869d68bd8a82339b2287136c079}{locate\-R\-O\-I} (Size \&whole\-Size, Point \&ofs) const 
+\begin{DoxyCompactList}\small\item\em locates ocl\-Matrix header within a parent ocl\-Matrix. See below \end{DoxyCompactList}\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \& \hyperlink{classcv_1_1ocl_1_1oclMat_a6303d07326fb07501d21153c2c5d6a2a}{adjust\-R\-O\-I} (int dtop, int dbottom, int dleft, int dright)
+\begin{DoxyCompactList}\small\item\em moves/resizes the current ocl\-Matrix R\-O\-I inside the parent ocl\-Matrix. \end{DoxyCompactList}\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \hyperlink{classcv_1_1ocl_1_1oclMat_a6d603d156ac2e731adff478dd03a0d9b}{operator()} (Range \hyperlink{classcv_1_1ocl_1_1oclMat_a60bd94d8a6110a2e50bf9fbcfc2db0d2}{row\-Range}, Range \hyperlink{classcv_1_1ocl_1_1oclMat_a8d61c3d2a4c840c9f785ea1e319e1981}{col\-Range}) const 
+\begin{DoxyCompactList}\small\item\em extracts a rectangular sub-\/ocl\-Matrix \end{DoxyCompactList}\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \hyperlink{classcv_1_1ocl_1_1oclMat_a5419a1174407d3df4804fe95440014e5}{operator()} (const Rect \&\hyperlink{legacy_8hpp_a22e52b2b51d064865d3ac2f27b308c33}{roi}) const 
+\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \& \hyperlink{classcv_1_1ocl_1_1oclMat_a63fec80cebe9fec8d70b2a97943f9fac}{operator+=} (const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&m)
+\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \& \hyperlink{classcv_1_1ocl_1_1oclMat_a97b34e86a17e11332cc0b332209e7ee5}{operator-\/=} (const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&m)
+\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \& \hyperlink{classcv_1_1ocl_1_1oclMat_aefb8803c6926b83ebbb927f3cae698d4}{operator$\ast$=} (const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&m)
+\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \& \hyperlink{classcv_1_1ocl_1_1oclMat_a55a00c571b0f1528ceb8ca22b81ec57b}{operator/=} (const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&m)
+\item 
+bool \hyperlink{classcv_1_1ocl_1_1oclMat_a7a932d59a666315afe295d259b6e61b6}{is\-Continuous} () const 
+\begin{DoxyCompactList}\small\item\em returns true if the ocl\-Matrix data is continuous \end{DoxyCompactList}\item 
+size\-\_\-t \hyperlink{classcv_1_1ocl_1_1oclMat_a1de55188d5af96a1a022d3133552ffd9}{elem\-Size} () const 
+\begin{DoxyCompactList}\small\item\em returns element size in bytes, \end{DoxyCompactList}\item 
+size\-\_\-t \hyperlink{classcv_1_1ocl_1_1oclMat_a5b326c91f92154e5ff83b5652d839f11}{elem\-Size1} () const 
+\begin{DoxyCompactList}\small\item\em returns the size of element channel in bytes. \end{DoxyCompactList}\item 
+int \hyperlink{classcv_1_1ocl_1_1oclMat_acf6fe0735d1dac151e2c301f01470827}{type} () const 
+\begin{DoxyCompactList}\small\item\em returns element type, similar to C\-V\-\_\-\-M\-A\-T\-\_\-\-T\-Y\-P\-E(cv\-Mat-\/$>$type) \end{DoxyCompactList}\item 
+int \hyperlink{classcv_1_1ocl_1_1oclMat_a0a9f2229824edf123947d5cb54d828fe}{ocltype} () const 
+\item 
+int \hyperlink{classcv_1_1ocl_1_1oclMat_a6524ddd17e3b832159515533d64e67d8}{depth} () const 
+\begin{DoxyCompactList}\small\item\em returns element type, similar to C\-V\-\_\-\-M\-A\-T\-\_\-\-D\-E\-P\-T\-H(cv\-Mat-\/$>$type) \end{DoxyCompactList}\item 
+int \hyperlink{classcv_1_1ocl_1_1oclMat_a16c42ad18b85e6c55ce5e8ec5fcbd114}{channels} () const 
+\begin{DoxyCompactList}\small\item\em returns element type, similar to C\-V\-\_\-\-M\-A\-T\-\_\-\-C\-N(cv\-Mat-\/$>$type) \end{DoxyCompactList}\item 
+int \hyperlink{classcv_1_1ocl_1_1oclMat_a7a49c475a2be5e83c505834e213bb5bf}{oclchannels} () const 
+\item 
+size\-\_\-t \hyperlink{classcv_1_1ocl_1_1oclMat_a6e2fee6844dea9694975f23c67b4049d}{step1} () const 
+\begin{DoxyCompactList}\small\item\em returns step/elem\-Size1() \end{DoxyCompactList}\item 
+Size \hyperlink{classcv_1_1ocl_1_1oclMat_a21384709f0d43efd26d0c70edc7adf8a}{size} () const 
+\begin{DoxyCompactList}\small\item\em returns ocl\-Matrix size\-: \end{DoxyCompactList}\item 
+bool \hyperlink{classcv_1_1ocl_1_1oclMat_a2a50eb2fc7a2b44041708abab9b6ec9f}{empty} () const 
+\begin{DoxyCompactList}\small\item\em returns true if ocl\-Matrix data is N\-U\-L\-L \end{DoxyCompactList}\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \hyperlink{classcv_1_1ocl_1_1oclMat_a95e16f4d80e664e581b194d27b47204d}{t} () const 
+\begin{DoxyCompactList}\small\item\em matrix transposition \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classcv_1_1ocl_1_1oclMat_ae53eaacd0018d7b762a5c69c9a1d0d5f}{flags}
+\item 
+int \hyperlink{classcv_1_1ocl_1_1oclMat_a1ccf0125fff51e419aa89b144ed511be}{rows}
+\begin{DoxyCompactList}\small\item\em the number of rows and columns \end{DoxyCompactList}\item 
+int \hyperlink{classcv_1_1ocl_1_1oclMat_ac814acb1fd2613d43e5fbb9c2166ac9f}{cols}
+\item 
+size\-\_\-t \hyperlink{classcv_1_1ocl_1_1oclMat_a5449adbd0cfb2cd99a84282d5b4ae8fb}{step}
+\begin{DoxyCompactList}\small\item\em a distance between successive rows in bytes; includes the gap if any \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar} $\ast$ \hyperlink{classcv_1_1ocl_1_1oclMat_a9eeb429cbc7aca93239988592a40aac5}{data}
+\begin{DoxyCompactList}\small\item\em pointer to the data(\-O\-C\-L memory object) \end{DoxyCompactList}\item 
+int $\ast$ \hyperlink{classcv_1_1ocl_1_1oclMat_a5209f38351516306c7e045fea768ae41}{refcount}
+\begin{DoxyCompactList}\small\item\em pointer to the reference counter; \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar} $\ast$ \hyperlink{classcv_1_1ocl_1_1oclMat_a475b64df881ea635c8990837c5bf5822}{datastart}
+\begin{DoxyCompactList}\small\item\em helper fields used in locate\-R\-O\-I and adjust\-R\-O\-I \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar} $\ast$ \hyperlink{classcv_1_1ocl_1_1oclMat_a0fd49cee884addef5f6302a7246be445}{dataend}
+\item 
+\hyperlink{classcv_1_1ocl_1_1Context}{Context} $\ast$ \hyperlink{classcv_1_1ocl_1_1oclMat_acf2c7fa26f7668778ca9ef1fb7f1e7cb}{cl\-Cxt}
+\begin{DoxyCompactList}\small\item\em Open\-C\-L context associated with the \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} object. \end{DoxyCompactList}\item 
+int \hyperlink{classcv_1_1ocl_1_1oclMat_a65fd2fd0e6f224bd577ae9a28cad2097}{offset}
+\item 
+int \hyperlink{classcv_1_1ocl_1_1oclMat_a44c93654f3c64228a79a8c626d8ad05e}{wholerows}
+\item 
+int \hyperlink{classcv_1_1ocl_1_1oclMat_a14c2fba8e91788465d55af4eb81ee8da}{wholecols}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcv_1_1ocl_1_1oclMat_a1012cff89dfdfd53468b97ead16e8999}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!ocl\-Mat@{ocl\-Mat}}
+\index{ocl\-Mat@{ocl\-Mat}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{ocl\-Mat}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::ocl\-::ocl\-Mat\-::ocl\-Mat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1ocl_1_1oclMat_a1012cff89dfdfd53468b97ead16e8999}
+
+
+default constructor 
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcv_1_1ocl_1_1oclMat_a1012cff89dfdfd53468b97ead16e8999_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_a2a5dbcff1873222278f6669caa969186}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!ocl\-Mat@{ocl\-Mat}}
+\index{ocl\-Mat@{ocl\-Mat}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{ocl\-Mat}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::ocl\-::ocl\-Mat\-::ocl\-Mat (
+\begin{DoxyParamCaption}
+\item[{int}]{rows, }
+\item[{int}]{cols, }
+\item[{int}]{type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1ocl_1_1oclMat_a2a5dbcff1873222278f6669caa969186}
+
+
+constructs ocl\-Matrix of the specified size and type (\-\_\-type is C\-V\-\_\-8\-U\-C1, C\-V\-\_\-64\-F\-C3, \hyperlink{core_2types__c_8h_ae9e13c89621697e73aea4636da5674ff}{C\-V\-\_\-32\-S\-C(12)} etc.) 
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{classcv_1_1ocl_1_1oclMat_a2a5dbcff1873222278f6669caa969186_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_aef9ee851fbba441e651fbac5774b4137}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!ocl\-Mat@{ocl\-Mat}}
+\index{ocl\-Mat@{ocl\-Mat}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{ocl\-Mat}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::ocl\-::ocl\-Mat\-::ocl\-Mat (
+\begin{DoxyParamCaption}
+\item[{Size}]{size, }
+\item[{int}]{type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1ocl_1_1oclMat_aef9ee851fbba441e651fbac5774b4137}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{classcv_1_1ocl_1_1oclMat_aef9ee851fbba441e651fbac5774b4137_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_acf653026d1156b8b11c1e319dc9e0c70}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!ocl\-Mat@{ocl\-Mat}}
+\index{ocl\-Mat@{ocl\-Mat}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{ocl\-Mat}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::ocl\-::ocl\-Mat\-::ocl\-Mat (
+\begin{DoxyParamCaption}
+\item[{int}]{rows, }
+\item[{int}]{cols, }
+\item[{int}]{type, }
+\item[{const Scalar \&}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1ocl_1_1oclMat_acf653026d1156b8b11c1e319dc9e0c70}
+
+
+constucts ocl\-Matrix and fills it with the specified value \-\_\-s. 
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{classcv_1_1ocl_1_1oclMat_acf653026d1156b8b11c1e319dc9e0c70_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_a1647b7a81a85de433adc4d1c0dc44934}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!ocl\-Mat@{ocl\-Mat}}
+\index{ocl\-Mat@{ocl\-Mat}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{ocl\-Mat}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::ocl\-::ocl\-Mat\-::ocl\-Mat (
+\begin{DoxyParamCaption}
+\item[{Size}]{size, }
+\item[{int}]{type, }
+\item[{const Scalar \&}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1ocl_1_1oclMat_a1647b7a81a85de433adc4d1c0dc44934}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{classcv_1_1ocl_1_1oclMat_a1647b7a81a85de433adc4d1c0dc44934_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_a1b06b658bf4bcb8f9a41c969ded8af22}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!ocl\-Mat@{ocl\-Mat}}
+\index{ocl\-Mat@{ocl\-Mat}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{ocl\-Mat}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::ocl\-::ocl\-Mat\-::ocl\-Mat (
+\begin{DoxyParamCaption}
+\item[{const {\bf ocl\-Mat} \&}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1ocl_1_1oclMat_a1b06b658bf4bcb8f9a41c969ded8af22}
+
+
+copy constructor 
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_a73947d6aaec7670cda8f91edf6c9111a}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!ocl\-Mat@{ocl\-Mat}}
+\index{ocl\-Mat@{ocl\-Mat}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{ocl\-Mat}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::ocl\-::ocl\-Mat\-::ocl\-Mat (
+\begin{DoxyParamCaption}
+\item[{int}]{rows, }
+\item[{int}]{cols, }
+\item[{int}]{type, }
+\item[{{\bf void} $\ast$}]{data, }
+\item[{size\-\_\-t}]{step = {\ttfamily Mat\-:\-:AUTO\-\_\-STEP}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1ocl_1_1oclMat_a73947d6aaec7670cda8f91edf6c9111a}
+
+
+constructor for ocl\-Matrix headers pointing to user-\/allocated data 
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{classcv_1_1ocl_1_1oclMat_a73947d6aaec7670cda8f91edf6c9111a_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_a81a03473778f2e51d39af5a51113a20c}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!ocl\-Mat@{ocl\-Mat}}
+\index{ocl\-Mat@{ocl\-Mat}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{ocl\-Mat}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::ocl\-::ocl\-Mat\-::ocl\-Mat (
+\begin{DoxyParamCaption}
+\item[{Size}]{size, }
+\item[{int}]{type, }
+\item[{{\bf void} $\ast$}]{data, }
+\item[{size\-\_\-t}]{step = {\ttfamily Mat\-:\-:AUTO\-\_\-STEP}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1ocl_1_1oclMat_a81a03473778f2e51d39af5a51113a20c}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{classcv_1_1ocl_1_1oclMat_a81a03473778f2e51d39af5a51113a20c_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_a23929ec8c2874a22b575524e50c073e6}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!ocl\-Mat@{ocl\-Mat}}
+\index{ocl\-Mat@{ocl\-Mat}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{ocl\-Mat}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::ocl\-::ocl\-Mat\-::ocl\-Mat (
+\begin{DoxyParamCaption}
+\item[{const {\bf ocl\-Mat} \&}]{m, }
+\item[{const Range \&}]{row\-Range, }
+\item[{const Range \&}]{col\-Range}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1ocl_1_1oclMat_a23929ec8c2874a22b575524e50c073e6}
+
+
+creates a matrix header for a part of the bigger matrix 
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcv_1_1ocl_1_1oclMat_a23929ec8c2874a22b575524e50c073e6_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_a6dbad9f24d0d84f6c644a202cdaa97c9}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!ocl\-Mat@{ocl\-Mat}}
+\index{ocl\-Mat@{ocl\-Mat}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{ocl\-Mat}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::ocl\-::ocl\-Mat\-::ocl\-Mat (
+\begin{DoxyParamCaption}
+\item[{const {\bf ocl\-Mat} \&}]{m, }
+\item[{const Rect \&}]{roi}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1ocl_1_1oclMat_a6dbad9f24d0d84f6c644a202cdaa97c9}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcv_1_1ocl_1_1oclMat_a6dbad9f24d0d84f6c644a202cdaa97c9_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_ae057b17121bdf3abc744a7e4da310b9f}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!ocl\-Mat@{ocl\-Mat}}
+\index{ocl\-Mat@{ocl\-Mat}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{ocl\-Mat}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::ocl\-::ocl\-Mat\-::ocl\-Mat (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classcv_1_1ocl_1_1oclMat_ae057b17121bdf3abc744a7e4da310b9f}
+
+
+builds \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} from Mat. Perfom blocking upload to device. 
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{classcv_1_1ocl_1_1oclMat_ae057b17121bdf3abc744a7e4da310b9f_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_ae547fbc3ec1d4768ffcb6e5ba380bc22}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!$\sim$ocl\-Mat@{$\sim$ocl\-Mat}}
+\index{$\sim$ocl\-Mat@{$\sim$ocl\-Mat}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{$\sim$ocl\-Mat}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::ocl\-::ocl\-Mat\-::$\sim$ocl\-Mat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1ocl_1_1oclMat_ae547fbc3ec1d4768ffcb6e5ba380bc22}
+
+
+destructor -\/ calls \hyperlink{classcv_1_1ocl_1_1oclMat_a2a0c869ae649fe790de272feb7989b33}{release()} 
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcv_1_1ocl_1_1oclMat_ae547fbc3ec1d4768ffcb6e5ba380bc22_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcv_1_1ocl_1_1oclMat_a6303d07326fb07501d21153c2c5d6a2a}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!adjust\-R\-O\-I@{adjust\-R\-O\-I}}
+\index{adjust\-R\-O\-I@{adjust\-R\-O\-I}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{adjust\-R\-O\-I}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ocl\-Mat} \& cv\-::ocl\-::ocl\-Mat\-::adjust\-R\-O\-I (
+\begin{DoxyParamCaption}
+\item[{int}]{dtop, }
+\item[{int}]{dbottom, }
+\item[{int}]{dleft, }
+\item[{int}]{dright}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1ocl_1_1oclMat_a6303d07326fb07501d21153c2c5d6a2a}
+
+
+moves/resizes the current ocl\-Matrix R\-O\-I inside the parent ocl\-Matrix. 
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcv_1_1ocl_1_1oclMat_a6303d07326fb07501d21153c2c5d6a2a_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_aa206f6004efd4fda483bf7a7ca47e9e6}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!assign\-To@{assign\-To}}
+\index{assign\-To@{assign\-To}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{assign\-To}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::ocl\-Mat\-::assign\-To (
+\begin{DoxyParamCaption}
+\item[{{\bf ocl\-Mat} \&}]{m, }
+\item[{int}]{type = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1ocl_1_1oclMat_aa206f6004efd4fda483bf7a7ca47e9e6}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcv_1_1ocl_1_1oclMat_aa206f6004efd4fda483bf7a7ca47e9e6_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_a16c42ad18b85e6c55ce5e8ec5fcbd114}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!channels@{channels}}
+\index{channels@{channels}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{channels}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::ocl\-::ocl\-Mat\-::channels (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1ocl_1_1oclMat_a16c42ad18b85e6c55ce5e8ec5fcbd114}
+
+
+returns element type, similar to C\-V\-\_\-\-M\-A\-T\-\_\-\-C\-N(cv\-Mat-\/$>$type) 
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_ab6d0ca3f3b2093abe6325d24dc9cee63}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!clone@{clone}}
+\index{clone@{clone}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ocl\-Mat} cv\-::ocl\-::ocl\-Mat\-::clone (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1ocl_1_1oclMat_ab6d0ca3f3b2093abe6325d24dc9cee63}
+
+
+returns deep copy of the ocl\-Matrix, i.\-e. the data is copied 
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{classcv_1_1ocl_1_1oclMat_ab6d0ca3f3b2093abe6325d24dc9cee63_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_a761d9493dc8d989b0bec105e832e8fb6}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!col@{col}}
+\index{col@{col}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{col}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ocl\-Mat} cv\-::ocl\-::ocl\-Mat\-::col (
+\begin{DoxyParamCaption}
+\item[{int}]{x}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1ocl_1_1oclMat_a761d9493dc8d989b0bec105e832e8fb6}
+
+
+returns a new ocl\-Matrix header for the specified column 
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{classcv_1_1ocl_1_1oclMat_a761d9493dc8d989b0bec105e832e8fb6_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_a8d61c3d2a4c840c9f785ea1e319e1981}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!col\-Range@{col\-Range}}
+\index{col\-Range@{col\-Range}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{col\-Range}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ocl\-Mat} cv\-::ocl\-::ocl\-Mat\-::col\-Range (
+\begin{DoxyParamCaption}
+\item[{int}]{startcol, }
+\item[{int}]{endcol}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1ocl_1_1oclMat_a8d61c3d2a4c840c9f785ea1e319e1981}
+
+
+... for the specified column span 
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcv_1_1ocl_1_1oclMat_a8d61c3d2a4c840c9f785ea1e319e1981_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_aa7ea95ea946e3b85133627dcc748a5fa}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!col\-Range@{col\-Range}}
+\index{col\-Range@{col\-Range}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{col\-Range}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ocl\-Mat} cv\-::ocl\-::ocl\-Mat\-::col\-Range (
+\begin{DoxyParamCaption}
+\item[{const Range \&}]{r}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1ocl_1_1oclMat_aa7ea95ea946e3b85133627dcc748a5fa}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcv_1_1ocl_1_1oclMat_aa7ea95ea946e3b85133627dcc748a5fa_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_a4d11801c217de657e68b784834bdd627}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!convert\-To@{convert\-To}}
+\index{convert\-To@{convert\-To}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{convert\-To}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::ocl\-Mat\-::convert\-To (
+\begin{DoxyParamCaption}
+\item[{{\bf ocl\-Mat} \&}]{m, }
+\item[{int}]{rtype, }
+\item[{double}]{alpha = {\ttfamily 1}, }
+\item[{double}]{beta = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}}\label{classcv_1_1ocl_1_1oclMat_a4d11801c217de657e68b784834bdd627}
+
+
+converts ocl\-Matrix to another datatype with optional scalng. See cv\-Convert\-Scale. 
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcv_1_1ocl_1_1oclMat_a4d11801c217de657e68b784834bdd627_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_af97b3a1bc63dba9143e4eb835dc0bf48}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!copy\-To@{copy\-To}}
+\index{copy\-To@{copy\-To}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{copy\-To}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::ocl\-Mat\-::copy\-To (
+\begin{DoxyParamCaption}
+\item[{{\bf ocl\-Mat} \&}]{m, }
+\item[{const {\bf ocl\-Mat} \&}]{mask = {\ttfamily {\bf ocl\-Mat}()}}
+\end{DoxyParamCaption}
+) const}}\label{classcv_1_1ocl_1_1oclMat_af97b3a1bc63dba9143e4eb835dc0bf48}
+
+
+copies those ocl\-Matrix elements to \char`\"{}m\char`\"{} that are marked with non-\/zero mask elements. 
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{classcv_1_1ocl_1_1oclMat_af97b3a1bc63dba9143e4eb835dc0bf48_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_aa230a306d044e659d535e9ecfca2ab31}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!create@{create}}
+\index{create@{create}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::ocl\-Mat\-::create (
+\begin{DoxyParamCaption}
+\item[{int}]{rows, }
+\item[{int}]{cols, }
+\item[{int}]{type}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1oclMat_aa230a306d044e659d535e9ecfca2ab31}
+
+
+allocates new ocl\-Matrix data unless the ocl\-Matrix already has specified size and type. 
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcv_1_1ocl_1_1oclMat_aa230a306d044e659d535e9ecfca2ab31_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_a89ec842b647387a3e932dd2e79a83f2f}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!create@{create}}
+\index{create@{create}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::ocl\-Mat\-::create (
+\begin{DoxyParamCaption}
+\item[{Size}]{size, }
+\item[{int}]{type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1ocl_1_1oclMat_a89ec842b647387a3e932dd2e79a83f2f}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{classcv_1_1ocl_1_1oclMat_a89ec842b647387a3e932dd2e79a83f2f_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_a25f73dfb1e968f7068174d64383ff9ff}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!create\-Ex@{create\-Ex}}
+\index{create\-Ex@{create\-Ex}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{create\-Ex}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::ocl\-Mat\-::create\-Ex (
+\begin{DoxyParamCaption}
+\item[{int}]{rows, }
+\item[{int}]{cols, }
+\item[{int}]{type, }
+\item[{{\bf Dev\-Mem\-R\-W}}]{rw\-\_\-type, }
+\item[{{\bf Dev\-Mem\-Type}}]{mem\-\_\-type}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1oclMat_a25f73dfb1e968f7068174d64383ff9ff}
+
+
+allocates new ocl\-Matrix with specified device memory type. 
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_ac88dc143ee820b06f5a677c70cbade3a}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!create\-Ex@{create\-Ex}}
+\index{create\-Ex@{create\-Ex}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{create\-Ex}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::ocl\-Mat\-::create\-Ex (
+\begin{DoxyParamCaption}
+\item[{Size}]{size, }
+\item[{int}]{type, }
+\item[{{\bf Dev\-Mem\-R\-W}}]{rw\-\_\-type, }
+\item[{{\bf Dev\-Mem\-Type}}]{mem\-\_\-type}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1oclMat_ac88dc143ee820b06f5a677c70cbade3a}
+\hypertarget{classcv_1_1ocl_1_1oclMat_a6524ddd17e3b832159515533d64e67d8}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!depth@{depth}}
+\index{depth@{depth}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{depth}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::ocl\-::ocl\-Mat\-::depth (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1ocl_1_1oclMat_a6524ddd17e3b832159515533d64e67d8}
+
+
+returns element type, similar to C\-V\-\_\-\-M\-A\-T\-\_\-\-D\-E\-P\-T\-H(cv\-Mat-\/$>$type) 
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{classcv_1_1ocl_1_1oclMat_a6524ddd17e3b832159515533d64e67d8_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_aa3289945ebb9580cec3c980965d09adc}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!download@{download}}
+\index{download@{download}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{download}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::ocl\-Mat\-::download (
+\begin{DoxyParamCaption}
+\item[{cv\-::\-Mat \&}]{m}
+\end{DoxyParamCaption}
+) const}}\label{classcv_1_1ocl_1_1oclMat_aa3289945ebb9580cec3c980965d09adc}
+\hypertarget{classcv_1_1ocl_1_1oclMat_a1de55188d5af96a1a022d3133552ffd9}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!elem\-Size@{elem\-Size}}
+\index{elem\-Size@{elem\-Size}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{elem\-Size}]{\setlength{\rightskip}{0pt plus 5cm}size\-\_\-t cv\-::ocl\-::ocl\-Mat\-::elem\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1ocl_1_1oclMat_a1de55188d5af96a1a022d3133552ffd9}
+
+
+returns element size in bytes, 
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcv_1_1ocl_1_1oclMat_a1de55188d5af96a1a022d3133552ffd9_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcv_1_1ocl_1_1oclMat_a1de55188d5af96a1a022d3133552ffd9_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_a5b326c91f92154e5ff83b5652d839f11}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!elem\-Size1@{elem\-Size1}}
+\index{elem\-Size1@{elem\-Size1}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{elem\-Size1}]{\setlength{\rightskip}{0pt plus 5cm}size\-\_\-t cv\-::ocl\-::ocl\-Mat\-::elem\-Size1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1ocl_1_1oclMat_a5b326c91f92154e5ff83b5652d839f11}
+
+
+returns the size of element channel in bytes. 
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcv_1_1ocl_1_1oclMat_a5b326c91f92154e5ff83b5652d839f11_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_a2a50eb2fc7a2b44041708abab9b6ec9f}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!empty@{empty}}
+\index{empty@{empty}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{empty}]{\setlength{\rightskip}{0pt plus 5cm}bool cv\-::ocl\-::ocl\-Mat\-::empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1ocl_1_1oclMat_a2a50eb2fc7a2b44041708abab9b6ec9f}
+
+
+returns true if ocl\-Matrix data is N\-U\-L\-L 
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_a7a932d59a666315afe295d259b6e61b6}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!is\-Continuous@{is\-Continuous}}
+\index{is\-Continuous@{is\-Continuous}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{is\-Continuous}]{\setlength{\rightskip}{0pt plus 5cm}bool cv\-::ocl\-::ocl\-Mat\-::is\-Continuous (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1ocl_1_1oclMat_a7a932d59a666315afe295d259b6e61b6}
+
+
+returns true if the ocl\-Matrix data is continuous 
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_ac5162869d68bd8a82339b2287136c079}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!locate\-R\-O\-I@{locate\-R\-O\-I}}
+\index{locate\-R\-O\-I@{locate\-R\-O\-I}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{locate\-R\-O\-I}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::ocl\-Mat\-::locate\-R\-O\-I (
+\begin{DoxyParamCaption}
+\item[{Size \&}]{whole\-Size, }
+\item[{Point \&}]{ofs}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1ocl_1_1oclMat_ac5162869d68bd8a82339b2287136c079}
+
+
+locates ocl\-Matrix header within a parent ocl\-Matrix. See below 
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcv_1_1ocl_1_1oclMat_ac5162869d68bd8a82339b2287136c079_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcv_1_1ocl_1_1oclMat_ac5162869d68bd8a82339b2287136c079_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_a7a49c475a2be5e83c505834e213bb5bf}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!oclchannels@{oclchannels}}
+\index{oclchannels@{oclchannels}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{oclchannels}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::ocl\-::ocl\-Mat\-::oclchannels (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1ocl_1_1oclMat_a7a49c475a2be5e83c505834e213bb5bf}
+returns element type, return 4 for 3 channels element, becuase 3 channels element actually use 4 channel space 
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcv_1_1ocl_1_1oclMat_a7a49c475a2be5e83c505834e213bb5bf_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_a0a9f2229824edf123947d5cb54d828fe}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!ocltype@{ocltype}}
+\index{ocltype@{ocltype}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{ocltype}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::ocl\-::ocl\-Mat\-::ocltype (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1ocl_1_1oclMat_a0a9f2229824edf123947d5cb54d828fe}
+returns element type, i.\-e. 8\-U\-C3 returns 8\-U\-C4 because in ocl 3 channels element actually use 4 channel space 
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcv_1_1ocl_1_1oclMat_a0a9f2229824edf123947d5cb54d828fe_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_a63f34ef7e3435940638f6dcc7b54f802}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!operator \-\_\-\-Input\-Array@{operator \-\_\-\-Input\-Array}}
+\index{operator \-\_\-\-Input\-Array@{operator \-\_\-\-Input\-Array}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{operator \-\_\-\-Input\-Array}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::ocl\-::ocl\-Mat\-::operator \-\_\-\-Input\-Array (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1oclMat_a63f34ef7e3435940638f6dcc7b54f802}
+
+
+convert to \-\_\-\-Input\-Array 
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_ac06c4e759a7c4f97ccb8e55ee2e5db24}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!operator \-\_\-\-Output\-Array@{operator \-\_\-\-Output\-Array}}
+\index{operator \-\_\-\-Output\-Array@{operator \-\_\-\-Output\-Array}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{operator \-\_\-\-Output\-Array}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::ocl\-::ocl\-Mat\-::operator \-\_\-\-Output\-Array (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1oclMat_ac06c4e759a7c4f97ccb8e55ee2e5db24}
+
+
+convert to \-\_\-\-Output\-Array 
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_a07963db194491e7b8114e83fb6f95666}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!operator Mat@{operator Mat}}
+\index{operator Mat@{operator Mat}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{operator Mat}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::ocl\-::ocl\-Mat\-::operator Mat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1ocl_1_1oclMat_a07963db194491e7b8114e83fb6f95666}
+
+
+downloads data from device to host memory. Blocking calls. 
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_a6d603d156ac2e731adff478dd03a0d9b}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!operator()@{operator()}}
+\index{operator()@{operator()}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ocl\-Mat} cv\-::ocl\-::ocl\-Mat\-::operator() (
+\begin{DoxyParamCaption}
+\item[{Range}]{row\-Range, }
+\item[{Range}]{col\-Range}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1ocl_1_1oclMat_a6d603d156ac2e731adff478dd03a0d9b}
+
+
+extracts a rectangular sub-\/ocl\-Matrix 
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcv_1_1ocl_1_1oclMat_a6d603d156ac2e731adff478dd03a0d9b_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_a5419a1174407d3df4804fe95440014e5}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!operator()@{operator()}}
+\index{operator()@{operator()}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ocl\-Mat} cv\-::ocl\-::ocl\-Mat\-::operator() (
+\begin{DoxyParamCaption}
+\item[{const Rect \&}]{roi}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1ocl_1_1oclMat_a5419a1174407d3df4804fe95440014e5}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcv_1_1ocl_1_1oclMat_a5419a1174407d3df4804fe95440014e5_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_aefb8803c6926b83ebbb927f3cae698d4}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{operator$\ast$=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ocl\-Mat}\& cv\-::ocl\-::ocl\-Mat\-::operator$\ast$= (
+\begin{DoxyParamCaption}
+\item[{const {\bf ocl\-Mat} \&}]{m}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1oclMat_aefb8803c6926b83ebbb927f3cae698d4}
+\hypertarget{classcv_1_1ocl_1_1oclMat_a63fec80cebe9fec8d70b2a97943f9fac}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{operator+=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ocl\-Mat}\& cv\-::ocl\-::ocl\-Mat\-::operator+= (
+\begin{DoxyParamCaption}
+\item[{const {\bf ocl\-Mat} \&}]{m}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1oclMat_a63fec80cebe9fec8d70b2a97943f9fac}
+\hypertarget{classcv_1_1ocl_1_1oclMat_a97b34e86a17e11332cc0b332209e7ee5}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{operator-\/=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ocl\-Mat}\& cv\-::ocl\-::ocl\-Mat\-::operator-\/= (
+\begin{DoxyParamCaption}
+\item[{const {\bf ocl\-Mat} \&}]{m}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1oclMat_a97b34e86a17e11332cc0b332209e7ee5}
+\hypertarget{classcv_1_1ocl_1_1oclMat_a55a00c571b0f1528ceb8ca22b81ec57b}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{operator/=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ocl\-Mat}\& cv\-::ocl\-::ocl\-Mat\-::operator/= (
+\begin{DoxyParamCaption}
+\item[{const {\bf ocl\-Mat} \&}]{m}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1oclMat_a55a00c571b0f1528ceb8ca22b81ec57b}
+\hypertarget{classcv_1_1ocl_1_1oclMat_a59696d5aa1631f6d1dcd3617efec2fb9}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!operator=@{operator=}}
+\index{operator=@{operator=}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ocl\-Mat} \& cv\-::ocl\-::ocl\-Mat\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf ocl\-Mat} \&}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1ocl_1_1oclMat_a59696d5aa1631f6d1dcd3617efec2fb9}
+
+
+assignment operators 
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcv_1_1ocl_1_1oclMat_a59696d5aa1631f6d1dcd3617efec2fb9_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_afa3a7a89e26bec6c1c881142d93cd751}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!operator=@{operator=}}
+\index{operator=@{operator=}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ocl\-Mat} \& cv\-::ocl\-::ocl\-Mat\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1ocl_1_1oclMat_afa3a7a89e26bec6c1c881142d93cd751}
+
+
+assignment operator. Perfom blocking upload to device. 
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcv_1_1ocl_1_1oclMat_afa3a7a89e26bec6c1c881142d93cd751_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_ab542a679c8aea496338e466f9acf6008}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!operator=@{operator=}}
+\index{operator=@{operator=}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ocl\-Mat} \& cv\-::ocl\-::ocl\-Mat\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf ocl\-Mat\-Expr} \&}]{expr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1ocl_1_1oclMat_ab542a679c8aea496338e466f9acf6008}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{classcv_1_1ocl_1_1oclMat_ab542a679c8aea496338e466f9acf6008_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_aaa6ceaeab62d67ecf2e6e53e2eb2e907}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!operator=@{operator=}}
+\index{operator=@{operator=}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ocl\-Mat}\& cv\-::ocl\-::ocl\-Mat\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const Scalar \&}]{s}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1oclMat_aaa6ceaeab62d67ecf2e6e53e2eb2e907}
+
+
+sets every ocl\-Matrix element to s 
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_a2a0c869ae649fe790de272feb7989b33}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!release@{release}}
+\index{release@{release}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{release}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::ocl\-Mat\-::release (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1oclMat_a2a0c869ae649fe790de272feb7989b33}
+
+
+decreases reference counter; 
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcv_1_1ocl_1_1oclMat_a2a0c869ae649fe790de272feb7989b33_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_ae53a7bd4ac1386e0cddf2a95eed51a2e}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!reshape@{reshape}}
+\index{reshape@{reshape}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{reshape}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ocl\-Mat} cv\-::ocl\-::ocl\-Mat\-::reshape (
+\begin{DoxyParamCaption}
+\item[{int}]{cn, }
+\item[{int}]{rows = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}}\label{classcv_1_1ocl_1_1oclMat_ae53a7bd4ac1386e0cddf2a95eed51a2e}
+
+
+creates alternative ocl\-Matrix header for the same data, with different 
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_a5e927c1ab9729772df69829e29467fd7}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!row@{row}}
+\index{row@{row}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{row}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ocl\-Mat} cv\-::ocl\-::ocl\-Mat\-::row (
+\begin{DoxyParamCaption}
+\item[{int}]{y}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1ocl_1_1oclMat_a5e927c1ab9729772df69829e29467fd7}
+
+
+returns a new ocl\-Matrix header for the specified row 
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{classcv_1_1ocl_1_1oclMat_a5e927c1ab9729772df69829e29467fd7_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_a60bd94d8a6110a2e50bf9fbcfc2db0d2}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!row\-Range@{row\-Range}}
+\index{row\-Range@{row\-Range}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{row\-Range}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ocl\-Mat} cv\-::ocl\-::ocl\-Mat\-::row\-Range (
+\begin{DoxyParamCaption}
+\item[{int}]{startrow, }
+\item[{int}]{endrow}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1ocl_1_1oclMat_a60bd94d8a6110a2e50bf9fbcfc2db0d2}
+
+
+... for the specified row span 
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcv_1_1ocl_1_1oclMat_a60bd94d8a6110a2e50bf9fbcfc2db0d2_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_ad03275f533e77035425a08ed6510db0b}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!row\-Range@{row\-Range}}
+\index{row\-Range@{row\-Range}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{row\-Range}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ocl\-Mat} cv\-::ocl\-::ocl\-Mat\-::row\-Range (
+\begin{DoxyParamCaption}
+\item[{const Range \&}]{r}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1ocl_1_1oclMat_ad03275f533e77035425a08ed6510db0b}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcv_1_1ocl_1_1oclMat_ad03275f533e77035425a08ed6510db0b_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_af7211da97e0a6838e6cfc252d202a93b}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!set\-To@{set\-To}}
+\index{set\-To@{set\-To}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{set\-To}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ocl\-Mat}\& cv\-::ocl\-::ocl\-Mat\-::set\-To (
+\begin{DoxyParamCaption}
+\item[{const Scalar \&}]{s, }
+\item[{const {\bf ocl\-Mat} \&}]{mask = {\ttfamily {\bf ocl\-Mat}()}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1oclMat_af7211da97e0a6838e6cfc252d202a93b}
+
+
+sets some of the ocl\-Matrix elements to s, according to the mask 
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_a21384709f0d43efd26d0c70edc7adf8a}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!size@{size}}
+\index{size@{size}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}Size cv\-::ocl\-::ocl\-Mat\-::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1ocl_1_1oclMat_a21384709f0d43efd26d0c70edc7adf8a}
+
+
+returns ocl\-Matrix size\-: 
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_a6e2fee6844dea9694975f23c67b4049d}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!step1@{step1}}
+\index{step1@{step1}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{step1}]{\setlength{\rightskip}{0pt plus 5cm}size\-\_\-t cv\-::ocl\-::ocl\-Mat\-::step1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1ocl_1_1oclMat_a6e2fee6844dea9694975f23c67b4049d}
+
+
+returns step/elem\-Size1() 
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcv_1_1ocl_1_1oclMat_a6e2fee6844dea9694975f23c67b4049d_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_a851539016beb446ae6e5752fe11d5ed6}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!swap@{swap}}
+\index{swap@{swap}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{swap}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::ocl\-Mat\-::swap (
+\begin{DoxyParamCaption}
+\item[{{\bf ocl\-Mat} \&}]{mat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1ocl_1_1oclMat_a851539016beb446ae6e5752fe11d5ed6}
+
+
+swaps with other smart pointer 
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{classcv_1_1ocl_1_1oclMat_a851539016beb446ae6e5752fe11d5ed6_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{classcv_1_1ocl_1_1oclMat_a851539016beb446ae6e5752fe11d5ed6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_a95e16f4d80e664e581b194d27b47204d}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!t@{t}}
+\index{t@{t}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{t}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ocl\-Mat} cv\-::ocl\-::ocl\-Mat\-::t (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1ocl_1_1oclMat_a95e16f4d80e664e581b194d27b47204d}
+
+
+matrix transposition 
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{classcv_1_1ocl_1_1oclMat_a95e16f4d80e664e581b194d27b47204d_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_acf6fe0735d1dac151e2c301f01470827}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!type@{type}}
+\index{type@{type}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{type}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::ocl\-::ocl\-Mat\-::type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1ocl_1_1oclMat_acf6fe0735d1dac151e2c301f01470827}
+
+
+returns element type, similar to C\-V\-\_\-\-M\-A\-T\-\_\-\-T\-Y\-P\-E(cv\-Mat-\/$>$type) 
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcv_1_1ocl_1_1oclMat_acf6fe0735d1dac151e2c301f01470827_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_ab117cd9e6b8e6b63571f3cdea44e2277}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!upload@{upload}}
+\index{upload@{upload}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{upload}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::ocl\-Mat\-::upload (
+\begin{DoxyParamCaption}
+\item[{const cv\-::\-Mat \&}]{m}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1oclMat_ab117cd9e6b8e6b63571f3cdea44e2277}
+
+
+pefroms blocking upload data to \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat}. 
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcv_1_1ocl_1_1oclMat_ab117cd9e6b8e6b63571f3cdea44e2277_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcv_1_1ocl_1_1oclMat_acf2c7fa26f7668778ca9ef1fb7f1e7cb}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!cl\-Cxt@{cl\-Cxt}}
+\index{cl\-Cxt@{cl\-Cxt}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{cl\-Cxt}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Context}$\ast$ cv\-::ocl\-::ocl\-Mat\-::cl\-Cxt}}\label{classcv_1_1ocl_1_1oclMat_acf2c7fa26f7668778ca9ef1fb7f1e7cb}
+
+
+Open\-C\-L context associated with the \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} object. 
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_ac814acb1fd2613d43e5fbb9c2166ac9f}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!cols@{cols}}
+\index{cols@{cols}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{cols}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::ocl\-::ocl\-Mat\-::cols}}\label{classcv_1_1ocl_1_1oclMat_ac814acb1fd2613d43e5fbb9c2166ac9f}
+\hypertarget{classcv_1_1ocl_1_1oclMat_a9eeb429cbc7aca93239988592a40aac5}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!data@{data}}
+\index{data@{data}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uchar}$\ast$ cv\-::ocl\-::ocl\-Mat\-::data}}\label{classcv_1_1ocl_1_1oclMat_a9eeb429cbc7aca93239988592a40aac5}
+
+
+pointer to the data(\-O\-C\-L memory object) 
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_a0fd49cee884addef5f6302a7246be445}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!dataend@{dataend}}
+\index{dataend@{dataend}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{dataend}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uchar}$\ast$ cv\-::ocl\-::ocl\-Mat\-::dataend}}\label{classcv_1_1ocl_1_1oclMat_a0fd49cee884addef5f6302a7246be445}
+\hypertarget{classcv_1_1ocl_1_1oclMat_a475b64df881ea635c8990837c5bf5822}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!datastart@{datastart}}
+\index{datastart@{datastart}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{datastart}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uchar}$\ast$ cv\-::ocl\-::ocl\-Mat\-::datastart}}\label{classcv_1_1ocl_1_1oclMat_a475b64df881ea635c8990837c5bf5822}
+
+
+helper fields used in locate\-R\-O\-I and adjust\-R\-O\-I 
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_ae53eaacd0018d7b762a5c69c9a1d0d5f}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!flags@{flags}}
+\index{flags@{flags}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{flags}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::ocl\-::ocl\-Mat\-::flags}}\label{classcv_1_1ocl_1_1oclMat_ae53eaacd0018d7b762a5c69c9a1d0d5f}
+includes several bit-\/fields\-:
+\begin{DoxyItemize}
+\item the magic signature
+\item continuity flag
+\item depth
+\item number of channels 
+\end{DoxyItemize}\hypertarget{classcv_1_1ocl_1_1oclMat_a65fd2fd0e6f224bd577ae9a28cad2097}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!offset@{offset}}
+\index{offset@{offset}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{offset}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::ocl\-::ocl\-Mat\-::offset}}\label{classcv_1_1ocl_1_1oclMat_a65fd2fd0e6f224bd577ae9a28cad2097}
+\hypertarget{classcv_1_1ocl_1_1oclMat_a5209f38351516306c7e045fea768ae41}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!refcount@{refcount}}
+\index{refcount@{refcount}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{refcount}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ cv\-::ocl\-::ocl\-Mat\-::refcount}}\label{classcv_1_1ocl_1_1oclMat_a5209f38351516306c7e045fea768ae41}
+
+
+pointer to the reference counter; 
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_a1ccf0125fff51e419aa89b144ed511be}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!rows@{rows}}
+\index{rows@{rows}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{rows}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::ocl\-::ocl\-Mat\-::rows}}\label{classcv_1_1ocl_1_1oclMat_a1ccf0125fff51e419aa89b144ed511be}
+
+
+the number of rows and columns 
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_a5449adbd0cfb2cd99a84282d5b4ae8fb}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!step@{step}}
+\index{step@{step}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{step}]{\setlength{\rightskip}{0pt plus 5cm}size\-\_\-t cv\-::ocl\-::ocl\-Mat\-::step}}\label{classcv_1_1ocl_1_1oclMat_a5449adbd0cfb2cd99a84282d5b4ae8fb}
+
+
+a distance between successive rows in bytes; includes the gap if any 
+
+\hypertarget{classcv_1_1ocl_1_1oclMat_a14c2fba8e91788465d55af4eb81ee8da}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!wholecols@{wholecols}}
+\index{wholecols@{wholecols}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{wholecols}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::ocl\-::ocl\-Mat\-::wholecols}}\label{classcv_1_1ocl_1_1oclMat_a14c2fba8e91788465d55af4eb81ee8da}
+\hypertarget{classcv_1_1ocl_1_1oclMat_a44c93654f3c64228a79a8c626d8ad05e}{\index{cv\-::ocl\-::ocl\-Mat@{cv\-::ocl\-::ocl\-Mat}!wholerows@{wholerows}}
+\index{wholerows@{wholerows}!cv::ocl::oclMat@{cv\-::ocl\-::ocl\-Mat}}
+\subsubsection[{wholerows}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::ocl\-::ocl\-Mat\-::wholerows}}\label{classcv_1_1ocl_1_1oclMat_a44c93654f3c64228a79a8c626d8ad05e}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/ocl/\hyperlink{ocl_2ocl_8hpp}{ocl.\-hpp}\item 
+/usr/include/opencv2/ocl/\hyperlink{matrix__operations_8hpp}{matrix\-\_\-operations.\-hpp}\end{DoxyCompactItemize}

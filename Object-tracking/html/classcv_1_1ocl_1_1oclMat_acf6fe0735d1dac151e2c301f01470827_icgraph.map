@@ -1,0 +1,8 @@
+<map id="cv::ocl::oclMat::type" name="cv::ocl::oclMat::type">
+<area shape="rect" id="node2" href="$classcv_1_1ocl_1_1oclMat.html#a1de55188d5af96a1a022d3133552ffd9" title="returns element size in bytes, " alt="" coords="204,69,375,96"/>
+<area shape="rect" id="node6" href="$namespacecv_1_1ocl.html#ac47692f18c81f5f4e0b2ce15e98fac8e" title="cv::ocl::ensureSizeIsEnough" alt="" coords="195,132,384,159"/>
+<area shape="rect" id="node3" href="$classcv_1_1ocl_1_1oclMat.html#a23929ec8c2874a22b575524e50c073e6" title="creates a matrix header for a part of the bigger matrix " alt="" coords="449,5,604,32"/>
+<area shape="rect" id="node4" href="$classcv_1_1ocl_1_1oclMat.html#ac5162869d68bd8a82339b2287136c079" title="locates oclMatrix header within a parent oclMatrix. See below " alt="" coords="439,56,614,83"/>
+<area shape="rect" id="node5" href="$classcv_1_1ocl_1_1oclMat.html#a6303d07326fb07501d21153c2c5d6a2a" title="moves/resizes the current oclMatrix ROI inside the parent oclMatrix. " alt="" coords="670,81,845,108"/>
+<area shape="rect" id="node7" href="$namespacecv_1_1ocl.html#a3512feff2362fefd50232ae0e749b21b" title="cv::ocl::ensureSizeIsEnough" alt="" coords="432,157,621,184"/>
+</map>

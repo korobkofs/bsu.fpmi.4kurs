@@ -1,0 +1,5 @@
+<map id="imAcqGetImgByCurrentTime" name="imAcqGetImgByCurrentTime">
+<area shape="rect" id="node2" href="$ImAcq_8cpp.html#affd4242000946f8dcf68beed336cb540" title="Grabs the image (for IMACQ_CAM, IMACQ_VID, IMACQ_STREAM). " alt="" coords="265,5,351,32"/>
+<area shape="rect" id="node4" href="$ImAcq_8cpp.html#ad7a472fe90064b4c9292c879ecea82fe" title="Loads the frame by number. " alt="" coords="246,56,370,83"/>
+<area shape="rect" id="node3" href="$ImAcq_8cpp.html#a2fb18ba9075695bd7dc0a2811ae441cc" title="msleep" alt="" coords="419,5,483,32"/>
+</map>

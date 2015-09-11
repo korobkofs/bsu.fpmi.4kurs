@@ -1,0 +1,82 @@
+\hypertarget{classcv_1_1detail_1_1FeaturesFinder}{\section{cv\-:\-:detail\-:\-:Features\-Finder Class Reference}
+\label{classcv_1_1detail_1_1FeaturesFinder}\index{cv\-::detail\-::\-Features\-Finder@{cv\-::detail\-::\-Features\-Finder}}
+}
+
+
+{\ttfamily \#include $<$matchers.\-hpp$>$}
+
+
+
+Inheritance diagram for cv\-:\-:detail\-:\-:Features\-Finder\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcv_1_1detail_1_1FeaturesFinder__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classcv_1_1detail_1_1FeaturesFinder_a5665e513a4e3db92fc3127206f9a66a0}{$\sim$\-Features\-Finder} ()
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1detail_1_1FeaturesFinder_a028d953e983592bacd2f186ebd9ec146}{operator()} (const Mat \&\hyperlink{legacy_8hpp_ad62b16ab219ae2483e8a3d921c44cc97}{image}, \hyperlink{structcv_1_1detail_1_1ImageFeatures}{Image\-Features} \&features)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1detail_1_1FeaturesFinder_a80b61fcace77ef89441da2abeb3072fd}{operator()} (const Mat \&\hyperlink{legacy_8hpp_ad62b16ab219ae2483e8a3d921c44cc97}{image}, \hyperlink{structcv_1_1detail_1_1ImageFeatures}{Image\-Features} \&features, const std\-::vector$<$ cv\-::\-Rect $>$ \&rois)
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1detail_1_1FeaturesFinder_adb51fd886db491ea004cd3542d43a982}{collect\-Garbage} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1detail_1_1FeaturesFinder_a3c91c21541a4cce5e1221ee1ac475756}{find} (const Mat \&\hyperlink{legacy_8hpp_ad62b16ab219ae2483e8a3d921c44cc97}{image}, \hyperlink{structcv_1_1detail_1_1ImageFeatures}{Image\-Features} \&features)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcv_1_1detail_1_1FeaturesFinder_a5665e513a4e3db92fc3127206f9a66a0}{\index{cv\-::detail\-::\-Features\-Finder@{cv\-::detail\-::\-Features\-Finder}!$\sim$\-Features\-Finder@{$\sim$\-Features\-Finder}}
+\index{$\sim$\-Features\-Finder@{$\sim$\-Features\-Finder}!cv::detail::FeaturesFinder@{cv\-::detail\-::\-Features\-Finder}}
+\subsubsection[{$\sim$\-Features\-Finder}]{\setlength{\rightskip}{0pt plus 5cm}virtual cv\-::detail\-::\-Features\-Finder\-::$\sim$\-Features\-Finder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcv_1_1detail_1_1FeaturesFinder_a5665e513a4e3db92fc3127206f9a66a0}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcv_1_1detail_1_1FeaturesFinder_adb51fd886db491ea004cd3542d43a982}{\index{cv\-::detail\-::\-Features\-Finder@{cv\-::detail\-::\-Features\-Finder}!collect\-Garbage@{collect\-Garbage}}
+\index{collect\-Garbage@{collect\-Garbage}!cv::detail::FeaturesFinder@{cv\-::detail\-::\-Features\-Finder}}
+\subsubsection[{collect\-Garbage}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cv\-::detail\-::\-Features\-Finder\-::collect\-Garbage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcv_1_1detail_1_1FeaturesFinder_adb51fd886db491ea004cd3542d43a982}
+\hypertarget{classcv_1_1detail_1_1FeaturesFinder_a3c91c21541a4cce5e1221ee1ac475756}{\index{cv\-::detail\-::\-Features\-Finder@{cv\-::detail\-::\-Features\-Finder}!find@{find}}
+\index{find@{find}!cv::detail::FeaturesFinder@{cv\-::detail\-::\-Features\-Finder}}
+\subsubsection[{find}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cv\-::detail\-::\-Features\-Finder\-::find (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{image, }
+\item[{{\bf Image\-Features} \&}]{features}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{classcv_1_1detail_1_1FeaturesFinder_a3c91c21541a4cce5e1221ee1ac475756}
+\hypertarget{classcv_1_1detail_1_1FeaturesFinder_a028d953e983592bacd2f186ebd9ec146}{\index{cv\-::detail\-::\-Features\-Finder@{cv\-::detail\-::\-Features\-Finder}!operator()@{operator()}}
+\index{operator()@{operator()}!cv::detail::FeaturesFinder@{cv\-::detail\-::\-Features\-Finder}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::detail\-::\-Features\-Finder\-::operator() (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{image, }
+\item[{{\bf Image\-Features} \&}]{features}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1detail_1_1FeaturesFinder_a028d953e983592bacd2f186ebd9ec146}
+\hypertarget{classcv_1_1detail_1_1FeaturesFinder_a80b61fcace77ef89441da2abeb3072fd}{\index{cv\-::detail\-::\-Features\-Finder@{cv\-::detail\-::\-Features\-Finder}!operator()@{operator()}}
+\index{operator()@{operator()}!cv::detail::FeaturesFinder@{cv\-::detail\-::\-Features\-Finder}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::detail\-::\-Features\-Finder\-::operator() (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{image, }
+\item[{{\bf Image\-Features} \&}]{features, }
+\item[{const std\-::vector$<$ cv\-::\-Rect $>$ \&}]{rois}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1detail_1_1FeaturesFinder_a80b61fcace77ef89441da2abeb3072fd}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/stitching/detail/\hyperlink{matchers_8hpp}{matchers.\-hpp}\end{DoxyCompactItemize}

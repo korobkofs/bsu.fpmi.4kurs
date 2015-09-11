@@ -1,0 +1,285 @@
+\hypertarget{classperf_1_1TestBase}{\section{perf\-:\-:Test\-Base Class Reference}
+\label{classperf_1_1TestBase}\index{perf\-::\-Test\-Base@{perf\-::\-Test\-Base}}
+}
+
+
+{\ttfamily \#include $<$ts\-\_\-perf.\-hpp$>$}
+
+
+
+Inheritance diagram for perf\-:\-:Test\-Base\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{classperf_1_1TestBase__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for perf\-:\-:Test\-Base\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{classperf_1_1TestBase__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classperf_1_1TestBase_1_1PerfSkipTestException}{Perf\-Skip\-Test\-Exception}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classperf_1_1TestBase_abfbfbb6d566e4c5a2915ba954a1b15aa}{Test\-Base} ()
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classperf_1_1TestBase_aaf20fcb26864620893d0009ae958a4e8}{set\-Verified} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classperf_1_1TestBase_ad9b11a9d2427b3ac8e01bc66086b8a0f}{Init} (int \hyperlink{highgui__c_8h_a4ee2a7de047a0a236fe118a35e8f76a4}{argc}, const char $\ast$const \hyperlink{highgui__c_8h_a1b5d2a82062528707ab3855772528912}{argv}\mbox{[}$\,$\mbox{]})
+\item 
+static \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classperf_1_1TestBase_ab20aae40b12109b476bc9e18f15e2bfd}{Init} (const std\-::vector$<$ std\-::string $>$ \&available\-Impls, int \hyperlink{highgui__c_8h_a4ee2a7de047a0a236fe118a35e8f76a4}{argc}, const char $\ast$const \hyperlink{highgui__c_8h_a1b5d2a82062528707ab3855772528912}{argv}\mbox{[}$\,$\mbox{]})
+\item 
+static \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classperf_1_1TestBase_ac1d7dfef0343b4f6b6318199796a3b57}{Record\-Run\-Parameters} ()
+\item 
+static std\-::string \hyperlink{classperf_1_1TestBase_ab687157320d53edf4067caca495d27c6}{get\-Data\-Path} (const std\-::string \&relative\-Path)
+\item 
+static std\-::string \hyperlink{classperf_1_1TestBase_a4d5f71f58b3fcc423a583c44185d0ad4}{get\-Selected\-Impl} ()
+\item 
+static enum \hyperlink{namespaceperf_ae0c38b71955bcc6424ad4de8b5284d57}{P\-E\-R\-F\-\_\-\-S\-T\-R\-A\-T\-E\-G\-Y} \hyperlink{classperf_1_1TestBase_a0f428c919d53d8a7a62082e0b969e7a8}{get\-Performance\-Strategy} ()
+\item 
+static enum \hyperlink{namespaceperf_ae0c38b71955bcc6424ad4de8b5284d57}{P\-E\-R\-F\-\_\-\-S\-T\-R\-A\-T\-E\-G\-Y} \hyperlink{classperf_1_1TestBase_aa7fed2540f5de0dd19f79d41da134167}{set\-Performance\-Strategy} (enum \hyperlink{namespaceperf_ae0c38b71955bcc6424ad4de8b5284d57}{P\-E\-R\-F\-\_\-\-S\-T\-R\-A\-T\-E\-G\-Y} strategy)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classperf_1_1TestBase_aac6d781fcc79b1daa0c48d37d837bd64}{\-\_\-declare\-Helper} \hyperlink{classperf_1_1TestBase_a348d9b977a878ef8bdc226cf0b4ab43d}{declare}
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{classperf_1_1TestBase_ac5e0802870e938aef3c7eca288eaa57eae6c5cd60009a21181231f958eb0564ac}{W\-A\-R\-M\-U\-P\-\_\-\-R\-E\-A\-D}, 
+\hyperlink{classperf_1_1TestBase_ac5e0802870e938aef3c7eca288eaa57eaab6bfe3e63bf74d1ae114862abe8ad77}{W\-A\-R\-M\-U\-P\-\_\-\-W\-R\-I\-T\-E}, 
+\hyperlink{classperf_1_1TestBase_ac5e0802870e938aef3c7eca288eaa57eabb2dbb88f8e032a1603682a21035f673}{W\-A\-R\-M\-U\-P\-\_\-\-R\-N\-G}, 
+\hyperlink{classperf_1_1TestBase_ac5e0802870e938aef3c7eca288eaa57ea0ad7cd6ed1cb1f5ab9dd17f20f4d73f3}{W\-A\-R\-M\-U\-P\-\_\-\-N\-O\-N\-E}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classperf_1_1TestBase_aa206aa9d492f0f930d1593ff231ed022}{Perf\-Test\-Body} ()=0
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classperf_1_1TestBase_a3f966246d7b641d63ee6c6ee56429d7e}{Set\-Up} ()
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classperf_1_1TestBase_afceb7f961d1d17e285dce0330a406929}{Tear\-Down} ()
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classperf_1_1TestBase_a62cb8c8a482c7a566c7f4b2a9266ac3f}{start\-Timer} ()
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classperf_1_1TestBase_ac823dd0211529db6a2a7816a11ec5583}{stop\-Timer} ()
+\item 
+bool \hyperlink{classperf_1_1TestBase_a2777ab8a13c39629a5755acd2edcc79a}{next} ()
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classperf_1_1TestBase_a8cb1d05cb1d9cbe45dfd1267d2914ac9}{report\-Metrics} (bool to\-J\-Unit\-X\-M\-L=false)
+\item 
+\hyperlink{structperf_1_1performance__metrics}{performance\-\_\-metrics} \& \hyperlink{classperf_1_1TestBase_a6a0b90d1934de9c619f8b71964b2a8b6}{calc\-Metrics} ()
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classperf_1_1TestBase_a64992faed4b0ec09237e165e53ebae0d}{Run\-Perf\-Test\-Body} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classperf_1_1TestBase_ae147f8300d4b64452448c529249d3420}{warmup} (cv\-::\-Input\-Output\-Array \hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}, int wtype=\hyperlink{classperf_1_1TestBase_ac5e0802870e938aef3c7eca288eaa57eae6c5cd60009a21181231f958eb0564ac}{W\-A\-R\-M\-U\-P\-\_\-\-R\-E\-A\-D})
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classperf_1_1TestBase_aac6d781fcc79b1daa0c48d37d837bd64}{\-\_\-declare\-Helper}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classperf_1_1TestBase_ac5e0802870e938aef3c7eca288eaa57e}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum\hspace{0.3cm}{\ttfamily [protected]}}}\label{classperf_1_1TestBase_ac5e0802870e938aef3c7eca288eaa57e}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{W\-A\-R\-M\-U\-P\-\_\-\-R\-E\-A\-D@{W\-A\-R\-M\-U\-P\-\_\-\-R\-E\-A\-D}!perf\-::\-Test\-Base@{perf\-::\-Test\-Base}}\index{perf\-::\-Test\-Base@{perf\-::\-Test\-Base}!W\-A\-R\-M\-U\-P\-\_\-\-R\-E\-A\-D@{W\-A\-R\-M\-U\-P\-\_\-\-R\-E\-A\-D}}\item[{\em 
+\hypertarget{classperf_1_1TestBase_ac5e0802870e938aef3c7eca288eaa57eae6c5cd60009a21181231f958eb0564ac}{W\-A\-R\-M\-U\-P\-\_\-\-R\-E\-A\-D}\label{classperf_1_1TestBase_ac5e0802870e938aef3c7eca288eaa57eae6c5cd60009a21181231f958eb0564ac}
+}]\index{W\-A\-R\-M\-U\-P\-\_\-\-W\-R\-I\-T\-E@{W\-A\-R\-M\-U\-P\-\_\-\-W\-R\-I\-T\-E}!perf\-::\-Test\-Base@{perf\-::\-Test\-Base}}\index{perf\-::\-Test\-Base@{perf\-::\-Test\-Base}!W\-A\-R\-M\-U\-P\-\_\-\-W\-R\-I\-T\-E@{W\-A\-R\-M\-U\-P\-\_\-\-W\-R\-I\-T\-E}}\item[{\em 
+\hypertarget{classperf_1_1TestBase_ac5e0802870e938aef3c7eca288eaa57eaab6bfe3e63bf74d1ae114862abe8ad77}{W\-A\-R\-M\-U\-P\-\_\-\-W\-R\-I\-T\-E}\label{classperf_1_1TestBase_ac5e0802870e938aef3c7eca288eaa57eaab6bfe3e63bf74d1ae114862abe8ad77}
+}]\index{W\-A\-R\-M\-U\-P\-\_\-\-R\-N\-G@{W\-A\-R\-M\-U\-P\-\_\-\-R\-N\-G}!perf\-::\-Test\-Base@{perf\-::\-Test\-Base}}\index{perf\-::\-Test\-Base@{perf\-::\-Test\-Base}!W\-A\-R\-M\-U\-P\-\_\-\-R\-N\-G@{W\-A\-R\-M\-U\-P\-\_\-\-R\-N\-G}}\item[{\em 
+\hypertarget{classperf_1_1TestBase_ac5e0802870e938aef3c7eca288eaa57eabb2dbb88f8e032a1603682a21035f673}{W\-A\-R\-M\-U\-P\-\_\-\-R\-N\-G}\label{classperf_1_1TestBase_ac5e0802870e938aef3c7eca288eaa57eabb2dbb88f8e032a1603682a21035f673}
+}]\index{W\-A\-R\-M\-U\-P\-\_\-\-N\-O\-N\-E@{W\-A\-R\-M\-U\-P\-\_\-\-N\-O\-N\-E}!perf\-::\-Test\-Base@{perf\-::\-Test\-Base}}\index{perf\-::\-Test\-Base@{perf\-::\-Test\-Base}!W\-A\-R\-M\-U\-P\-\_\-\-N\-O\-N\-E@{W\-A\-R\-M\-U\-P\-\_\-\-N\-O\-N\-E}}\item[{\em 
+\hypertarget{classperf_1_1TestBase_ac5e0802870e938aef3c7eca288eaa57ea0ad7cd6ed1cb1f5ab9dd17f20f4d73f3}{W\-A\-R\-M\-U\-P\-\_\-\-N\-O\-N\-E}\label{classperf_1_1TestBase_ac5e0802870e938aef3c7eca288eaa57ea0ad7cd6ed1cb1f5ab9dd17f20f4d73f3}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classperf_1_1TestBase_abfbfbb6d566e4c5a2915ba954a1b15aa}{\index{perf\-::\-Test\-Base@{perf\-::\-Test\-Base}!Test\-Base@{Test\-Base}}
+\index{Test\-Base@{Test\-Base}!perf::TestBase@{perf\-::\-Test\-Base}}
+\subsubsection[{Test\-Base}]{\setlength{\rightskip}{0pt plus 5cm}perf\-::\-Test\-Base\-::\-Test\-Base (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classperf_1_1TestBase_abfbfbb6d566e4c5a2915ba954a1b15aa}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classperf_1_1TestBase_a6a0b90d1934de9c619f8b71964b2a8b6}{\index{perf\-::\-Test\-Base@{perf\-::\-Test\-Base}!calc\-Metrics@{calc\-Metrics}}
+\index{calc\-Metrics@{calc\-Metrics}!perf::TestBase@{perf\-::\-Test\-Base}}
+\subsubsection[{calc\-Metrics}]{\setlength{\rightskip}{0pt plus 5cm}{\bf performance\-\_\-metrics}\& perf\-::\-Test\-Base\-::calc\-Metrics (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classperf_1_1TestBase_a6a0b90d1934de9c619f8b71964b2a8b6}
+\hypertarget{classperf_1_1TestBase_ab687157320d53edf4067caca495d27c6}{\index{perf\-::\-Test\-Base@{perf\-::\-Test\-Base}!get\-Data\-Path@{get\-Data\-Path}}
+\index{get\-Data\-Path@{get\-Data\-Path}!perf::TestBase@{perf\-::\-Test\-Base}}
+\subsubsection[{get\-Data\-Path}]{\setlength{\rightskip}{0pt plus 5cm}static std\-::string perf\-::\-Test\-Base\-::get\-Data\-Path (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{relative\-Path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classperf_1_1TestBase_ab687157320d53edf4067caca495d27c6}
+\hypertarget{classperf_1_1TestBase_a0f428c919d53d8a7a62082e0b969e7a8}{\index{perf\-::\-Test\-Base@{perf\-::\-Test\-Base}!get\-Performance\-Strategy@{get\-Performance\-Strategy}}
+\index{get\-Performance\-Strategy@{get\-Performance\-Strategy}!perf::TestBase@{perf\-::\-Test\-Base}}
+\subsubsection[{get\-Performance\-Strategy}]{\setlength{\rightskip}{0pt plus 5cm}static enum {\bf P\-E\-R\-F\-\_\-\-S\-T\-R\-A\-T\-E\-G\-Y} perf\-::\-Test\-Base\-::get\-Performance\-Strategy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classperf_1_1TestBase_a0f428c919d53d8a7a62082e0b969e7a8}
+\hypertarget{classperf_1_1TestBase_a4d5f71f58b3fcc423a583c44185d0ad4}{\index{perf\-::\-Test\-Base@{perf\-::\-Test\-Base}!get\-Selected\-Impl@{get\-Selected\-Impl}}
+\index{get\-Selected\-Impl@{get\-Selected\-Impl}!perf::TestBase@{perf\-::\-Test\-Base}}
+\subsubsection[{get\-Selected\-Impl}]{\setlength{\rightskip}{0pt plus 5cm}static std\-::string perf\-::\-Test\-Base\-::get\-Selected\-Impl (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classperf_1_1TestBase_a4d5f71f58b3fcc423a583c44185d0ad4}
+\hypertarget{classperf_1_1TestBase_ad9b11a9d2427b3ac8e01bc66086b8a0f}{\index{perf\-::\-Test\-Base@{perf\-::\-Test\-Base}!Init@{Init}}
+\index{Init@{Init}!perf::TestBase@{perf\-::\-Test\-Base}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf void} perf\-::\-Test\-Base\-::\-Init (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{const char $\ast$const}]{argv\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classperf_1_1TestBase_ad9b11a9d2427b3ac8e01bc66086b8a0f}
+\hypertarget{classperf_1_1TestBase_ab20aae40b12109b476bc9e18f15e2bfd}{\index{perf\-::\-Test\-Base@{perf\-::\-Test\-Base}!Init@{Init}}
+\index{Init@{Init}!perf::TestBase@{perf\-::\-Test\-Base}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf void} perf\-::\-Test\-Base\-::\-Init (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ std\-::string $>$ \&}]{available\-Impls, }
+\item[{int}]{argc, }
+\item[{const char $\ast$const}]{argv\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classperf_1_1TestBase_ab20aae40b12109b476bc9e18f15e2bfd}
+\hypertarget{classperf_1_1TestBase_a2777ab8a13c39629a5755acd2edcc79a}{\index{perf\-::\-Test\-Base@{perf\-::\-Test\-Base}!next@{next}}
+\index{next@{next}!perf::TestBase@{perf\-::\-Test\-Base}}
+\subsubsection[{next}]{\setlength{\rightskip}{0pt plus 5cm}bool perf\-::\-Test\-Base\-::next (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classperf_1_1TestBase_a2777ab8a13c39629a5755acd2edcc79a}
+\hypertarget{classperf_1_1TestBase_aa206aa9d492f0f930d1593ff231ed022}{\index{perf\-::\-Test\-Base@{perf\-::\-Test\-Base}!Perf\-Test\-Body@{Perf\-Test\-Body}}
+\index{Perf\-Test\-Body@{Perf\-Test\-Body}!perf::TestBase@{perf\-::\-Test\-Base}}
+\subsubsection[{Perf\-Test\-Body}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} perf\-::\-Test\-Base\-::\-Perf\-Test\-Body (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{classperf_1_1TestBase_aa206aa9d492f0f930d1593ff231ed022}
+\hypertarget{classperf_1_1TestBase_ac1d7dfef0343b4f6b6318199796a3b57}{\index{perf\-::\-Test\-Base@{perf\-::\-Test\-Base}!Record\-Run\-Parameters@{Record\-Run\-Parameters}}
+\index{Record\-Run\-Parameters@{Record\-Run\-Parameters}!perf::TestBase@{perf\-::\-Test\-Base}}
+\subsubsection[{Record\-Run\-Parameters}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf void} perf\-::\-Test\-Base\-::\-Record\-Run\-Parameters (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classperf_1_1TestBase_ac1d7dfef0343b4f6b6318199796a3b57}
+\hypertarget{classperf_1_1TestBase_a8cb1d05cb1d9cbe45dfd1267d2914ac9}{\index{perf\-::\-Test\-Base@{perf\-::\-Test\-Base}!report\-Metrics@{report\-Metrics}}
+\index{report\-Metrics@{report\-Metrics}!perf::TestBase@{perf\-::\-Test\-Base}}
+\subsubsection[{report\-Metrics}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} perf\-::\-Test\-Base\-::report\-Metrics (
+\begin{DoxyParamCaption}
+\item[{bool}]{to\-J\-Unit\-X\-M\-L = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classperf_1_1TestBase_a8cb1d05cb1d9cbe45dfd1267d2914ac9}
+\hypertarget{classperf_1_1TestBase_a64992faed4b0ec09237e165e53ebae0d}{\index{perf\-::\-Test\-Base@{perf\-::\-Test\-Base}!Run\-Perf\-Test\-Body@{Run\-Perf\-Test\-Body}}
+\index{Run\-Perf\-Test\-Body@{Run\-Perf\-Test\-Body}!perf::TestBase@{perf\-::\-Test\-Base}}
+\subsubsection[{Run\-Perf\-Test\-Body}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} perf\-::\-Test\-Base\-::\-Run\-Perf\-Test\-Body (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classperf_1_1TestBase_a64992faed4b0ec09237e165e53ebae0d}
+\hypertarget{classperf_1_1TestBase_aa7fed2540f5de0dd19f79d41da134167}{\index{perf\-::\-Test\-Base@{perf\-::\-Test\-Base}!set\-Performance\-Strategy@{set\-Performance\-Strategy}}
+\index{set\-Performance\-Strategy@{set\-Performance\-Strategy}!perf::TestBase@{perf\-::\-Test\-Base}}
+\subsubsection[{set\-Performance\-Strategy}]{\setlength{\rightskip}{0pt plus 5cm}static enum {\bf P\-E\-R\-F\-\_\-\-S\-T\-R\-A\-T\-E\-G\-Y} perf\-::\-Test\-Base\-::set\-Performance\-Strategy (
+\begin{DoxyParamCaption}
+\item[{enum {\bf P\-E\-R\-F\-\_\-\-S\-T\-R\-A\-T\-E\-G\-Y}}]{strategy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classperf_1_1TestBase_aa7fed2540f5de0dd19f79d41da134167}
+\hypertarget{classperf_1_1TestBase_a3f966246d7b641d63ee6c6ee56429d7e}{\index{perf\-::\-Test\-Base@{perf\-::\-Test\-Base}!Set\-Up@{Set\-Up}}
+\index{Set\-Up@{Set\-Up}!perf::TestBase@{perf\-::\-Test\-Base}}
+\subsubsection[{Set\-Up}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} perf\-::\-Test\-Base\-::\-Set\-Up (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classperf_1_1TestBase_a3f966246d7b641d63ee6c6ee56429d7e}
+
+
+Reimplemented from \hyperlink{classtesting_1_1Test_a8b38992669fb844864807cf32e416853}{testing\-::\-Test}.
+
+\hypertarget{classperf_1_1TestBase_aaf20fcb26864620893d0009ae958a4e8}{\index{perf\-::\-Test\-Base@{perf\-::\-Test\-Base}!set\-Verified@{set\-Verified}}
+\index{set\-Verified@{set\-Verified}!perf::TestBase@{perf\-::\-Test\-Base}}
+\subsubsection[{set\-Verified}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} perf\-::\-Test\-Base\-::set\-Verified (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classperf_1_1TestBase_aaf20fcb26864620893d0009ae958a4e8}
+\hypertarget{classperf_1_1TestBase_a62cb8c8a482c7a566c7f4b2a9266ac3f}{\index{perf\-::\-Test\-Base@{perf\-::\-Test\-Base}!start\-Timer@{start\-Timer}}
+\index{start\-Timer@{start\-Timer}!perf::TestBase@{perf\-::\-Test\-Base}}
+\subsubsection[{start\-Timer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} perf\-::\-Test\-Base\-::start\-Timer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classperf_1_1TestBase_a62cb8c8a482c7a566c7f4b2a9266ac3f}
+\hypertarget{classperf_1_1TestBase_ac823dd0211529db6a2a7816a11ec5583}{\index{perf\-::\-Test\-Base@{perf\-::\-Test\-Base}!stop\-Timer@{stop\-Timer}}
+\index{stop\-Timer@{stop\-Timer}!perf::TestBase@{perf\-::\-Test\-Base}}
+\subsubsection[{stop\-Timer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} perf\-::\-Test\-Base\-::stop\-Timer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classperf_1_1TestBase_ac823dd0211529db6a2a7816a11ec5583}
+\hypertarget{classperf_1_1TestBase_afceb7f961d1d17e285dce0330a406929}{\index{perf\-::\-Test\-Base@{perf\-::\-Test\-Base}!Tear\-Down@{Tear\-Down}}
+\index{Tear\-Down@{Tear\-Down}!perf::TestBase@{perf\-::\-Test\-Base}}
+\subsubsection[{Tear\-Down}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} perf\-::\-Test\-Base\-::\-Tear\-Down (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classperf_1_1TestBase_afceb7f961d1d17e285dce0330a406929}
+
+
+Reimplemented from \hyperlink{classtesting_1_1Test_aab3c02c9f81afe1357adfc45afccd474}{testing\-::\-Test}.
+
+\hypertarget{classperf_1_1TestBase_ae147f8300d4b64452448c529249d3420}{\index{perf\-::\-Test\-Base@{perf\-::\-Test\-Base}!warmup@{warmup}}
+\index{warmup@{warmup}!perf::TestBase@{perf\-::\-Test\-Base}}
+\subsubsection[{warmup}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf void} perf\-::\-Test\-Base\-::warmup (
+\begin{DoxyParamCaption}
+\item[{cv\-::\-Input\-Output\-Array}]{a, }
+\item[{int}]{wtype = {\ttfamily {\bf W\-A\-R\-M\-U\-P\-\_\-\-R\-E\-A\-D}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{classperf_1_1TestBase_ae147f8300d4b64452448c529249d3420}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classperf_1_1TestBase_aac6d781fcc79b1daa0c48d37d837bd64}{\index{perf\-::\-Test\-Base@{perf\-::\-Test\-Base}!\-\_\-declare\-Helper@{\-\_\-declare\-Helper}}
+\index{\-\_\-declare\-Helper@{\-\_\-declare\-Helper}!perf::TestBase@{perf\-::\-Test\-Base}}
+\subsubsection[{\-\_\-declare\-Helper}]{\setlength{\rightskip}{0pt plus 5cm}friend class \-\_\-declare\-Helper\hspace{0.3cm}{\ttfamily [friend]}}}\label{classperf_1_1TestBase_aac6d781fcc79b1daa0c48d37d837bd64}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classperf_1_1TestBase_a348d9b977a878ef8bdc226cf0b4ab43d}{\index{perf\-::\-Test\-Base@{perf\-::\-Test\-Base}!declare@{declare}}
+\index{declare@{declare}!perf::TestBase@{perf\-::\-Test\-Base}}
+\subsubsection[{declare}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-\_\-declare\-Helper} perf\-::\-Test\-Base\-::declare}}\label{classperf_1_1TestBase_a348d9b977a878ef8bdc226cf0b4ab43d}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/ts/\hyperlink{ts__perf_8hpp}{ts\-\_\-perf.\-hpp}\end{DoxyCompactItemize}

@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['sanity_5fcheck',['SANITY_CHECK',['../ts__perf_8hpp.html#a34dc92159af1d943e424100edf16cf1d',1,'ts_perf.hpp']]],
+  ['sanity_5fcheck_5fkeypoints',['SANITY_CHECK_KEYPOINTS',['../ts__perf_8hpp.html#a8cd56cc66f9739ff35c2c9cf095d5a39',1,'ts_perf.hpp']]],
+  ['sanity_5fcheck_5fmatches',['SANITY_CHECK_MATCHES',['../ts__perf_8hpp.html#ad33b1b40712b3fa5c82124009cbb23d7',1,'ts_perf.hpp']]],
+  ['sanity_5fcheck_5fnothing',['SANITY_CHECK_NOTHING',['../ts__perf_8hpp.html#ab00d6ea828e49d632ba3b6f7134fda2e',1,'ts_perf.hpp']]],
+  ['scanctx_5fappend_5fstring',['scanctx_append_string',['../scanctx_8h.html#ade0ae565e63adca6284791f2f27abca0',1,'scanctx.h']]],
+  ['scoped_5ftrace',['SCOPED_TRACE',['../ts__gtest_8h.html#a4dac08f15adc8cb1ee0e5c1bfb0f440d',1,'ts_gtest.h']]],
+  ['set_5fpostprocess_5ffunc',['set_postprocess_func',['../highgui__c_8h.html#a941ccdce19be0f3287fae7849eaeb933',1,'highgui_c.h']]],
+  ['set_5fpreprocess_5ffunc',['set_preprocess_func',['../highgui__c_8h.html#ab4a81671c531346dda9bec12e6bb6325',1,'highgui_c.h']]],
+  ['setting_5flookup_5fno_5fexceptions',['SETTING_LOOKUP_NO_EXCEPTIONS',['../libconfigcpp_8c_09_09.html#abfd54db12d50ab5a5811407b035c743b',1,'libconfigcpp.c++']]],
+  ['small_5fpolicy',['SMALL_POLICY',['../any_8h.html#a15619cd5252aacebdeb7d225efcf47eb',1,'any.h']]],
+  ['sqrt2',['SQRT2',['../BlobProperties_8cpp.html#a514396dd60fa0621c83072091fb2a0cd',1,'BlobProperties.cpp']]],
+  ['string',['STRING',['../scanner_8c.html#a0f4d394a3ab4e09bff60f714c66dc5ee',1,'scanner.c']]],
+  ['string_5fblock_5fsize',['STRING_BLOCK_SIZE',['../scanctx_8c.html#ad58e8dedb18e631dc57a9f8f623effb9',1,'STRING_BLOCK_SIZE():&#160;scanctx.c'],['../strbuf_8c.html#ad58e8dedb18e631dc57a9f8f623effb9',1,'STRING_BLOCK_SIZE():&#160;strbuf.c']]],
+  ['sub2idx',['sub2idx',['../DetectorCascade_8cpp.html#a46b6d61644f123e9f367092cf5ac4de7',1,'sub2idx():&#160;DetectorCascade.cpp'],['../EnsembleClassifier_8cpp.html#ae5effd9bd728422d5e50bf875a609421',1,'sub2idx():&#160;EnsembleClassifier.cpp']]],
+  ['succeed',['SUCCEED',['../ts__gtest_8h.html#a75adcdf89f69b0b615e395daafc315af',1,'ts_gtest.h']]],
+  ['sz_5fall',['SZ_ALL',['../ts__perf_8hpp.html#ab6d5bc9408480f6bf75b7154514e1f1d',1,'ts_perf.hpp']]],
+  ['sz_5fall_5fga',['SZ_ALL_GA',['../ts__perf_8hpp.html#a01994f8c1789eeccac25df51925a3661',1,'ts_perf.hpp']]],
+  ['sz_5fall_5fhd',['SZ_ALL_HD',['../ts__perf_8hpp.html#a7f35a426bfd9bfcce5f125f9b6f7f3fa',1,'ts_perf.hpp']]],
+  ['sz_5fall_5fsmall',['SZ_ALL_SMALL',['../ts__perf_8hpp.html#a0aa5324e840420879bb622856d6d1047',1,'ts_perf.hpp']]],
+  ['sz_5fall_5fvga',['SZ_ALL_VGA',['../ts__perf_8hpp.html#aa524997830de7aebe77050a0cd565b58',1,'ts_perf.hpp']]],
+  ['sz_5ftypical',['SZ_TYPICAL',['../ts__perf_8hpp.html#afcbb8b462813d27b05060eab9a0f644e',1,'ts_perf.hpp']]]
+];

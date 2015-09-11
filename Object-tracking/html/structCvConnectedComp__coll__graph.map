@@ -1,0 +1,5 @@
+<map id="CvConnectedComp" name="CvConnectedComp">
+<area shape="rect" id="node2" href="$structCvRect.html" title="CvRect" alt="" coords="5,5,72,32"/>
+<area shape="rect" id="node3" href="$structCvScalar.html" title="CvScalar" alt="" coords="97,5,172,32"/>
+<area shape="rect" id="node4" href="$structCvSeq.html" title="CvSeq" alt="" coords="197,5,259,32"/>
+</map>

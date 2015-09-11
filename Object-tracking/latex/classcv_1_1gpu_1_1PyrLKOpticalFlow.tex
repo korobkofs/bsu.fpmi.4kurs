@@ -1,0 +1,116 @@
+\hypertarget{classcv_1_1gpu_1_1PyrLKOpticalFlow}{\section{cv\-:\-:gpu\-:\-:Pyr\-L\-K\-Optical\-Flow Class Reference}
+\label{classcv_1_1gpu_1_1PyrLKOpticalFlow}\index{cv\-::gpu\-::\-Pyr\-L\-K\-Optical\-Flow@{cv\-::gpu\-::\-Pyr\-L\-K\-Optical\-Flow}}
+}
+
+
+{\ttfamily \#include $<$gpu.\-hpp$>$}
+
+
+
+Collaboration diagram for cv\-:\-:gpu\-:\-:Pyr\-L\-K\-Optical\-Flow\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{classcv_1_1gpu_1_1PyrLKOpticalFlow__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcv_1_1gpu_1_1PyrLKOpticalFlow_afe312e0710a2c1da0cdc8f1bd0242811}{Pyr\-L\-K\-Optical\-Flow} ()
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1PyrLKOpticalFlow_aa4281071384c58e1a642064e14e9437c}{sparse} (const Gpu\-Mat \&prev\-Img, const Gpu\-Mat \&next\-Img, const Gpu\-Mat \&prev\-Pts, Gpu\-Mat \&next\-Pts, Gpu\-Mat \&\hyperlink{tracking_8hpp_ae17b3c2584dab511e91d1c96644018bf}{status}, Gpu\-Mat $\ast$err=0)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1PyrLKOpticalFlow_a17cea0e7ae9c6a85730448179bc3d816}{dense} (const Gpu\-Mat \&prev\-Img, const Gpu\-Mat \&next\-Img, Gpu\-Mat \&u, Gpu\-Mat \&v, Gpu\-Mat $\ast$err=0)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1PyrLKOpticalFlow_a43e7b0856d228e95fc981caed310a266}{release\-Memory} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Size \hyperlink{classcv_1_1gpu_1_1PyrLKOpticalFlow_a30efdd5ddcd7f9add4d1e54e1cae4d13}{win\-Size}
+\item 
+int \hyperlink{classcv_1_1gpu_1_1PyrLKOpticalFlow_a9547259cedcde31896d4048facb2e42c}{max\-Level}
+\item 
+int \hyperlink{classcv_1_1gpu_1_1PyrLKOpticalFlow_a2eacc032fafd4e2c0a88812f595ac3fd}{iters}
+\item 
+double \hyperlink{classcv_1_1gpu_1_1PyrLKOpticalFlow_a1bab1d7e3675aead1a2a06d02e1bf7d0}{deriv\-Lambda}
+\item 
+bool \hyperlink{classcv_1_1gpu_1_1PyrLKOpticalFlow_abf0839aead118df3ad71dbf43e4c0d81}{use\-Initial\-Flow}
+\item 
+float \hyperlink{classcv_1_1gpu_1_1PyrLKOpticalFlow_acb8639f4ef29e9c6e5a4d242e97e6e52}{min\-Eig\-Threshold}
+\item 
+bool \hyperlink{classcv_1_1gpu_1_1PyrLKOpticalFlow_a605dc8a54385d4058a2fc49929c41ec4}{get\-Min\-Eigen\-Vals}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcv_1_1gpu_1_1PyrLKOpticalFlow_afe312e0710a2c1da0cdc8f1bd0242811}{\index{cv\-::gpu\-::\-Pyr\-L\-K\-Optical\-Flow@{cv\-::gpu\-::\-Pyr\-L\-K\-Optical\-Flow}!Pyr\-L\-K\-Optical\-Flow@{Pyr\-L\-K\-Optical\-Flow}}
+\index{Pyr\-L\-K\-Optical\-Flow@{Pyr\-L\-K\-Optical\-Flow}!cv::gpu::PyrLKOpticalFlow@{cv\-::gpu\-::\-Pyr\-L\-K\-Optical\-Flow}}
+\subsubsection[{Pyr\-L\-K\-Optical\-Flow}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::gpu\-::\-Pyr\-L\-K\-Optical\-Flow\-::\-Pyr\-L\-K\-Optical\-Flow (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1PyrLKOpticalFlow_afe312e0710a2c1da0cdc8f1bd0242811}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcv_1_1gpu_1_1PyrLKOpticalFlow_a17cea0e7ae9c6a85730448179bc3d816}{\index{cv\-::gpu\-::\-Pyr\-L\-K\-Optical\-Flow@{cv\-::gpu\-::\-Pyr\-L\-K\-Optical\-Flow}!dense@{dense}}
+\index{dense@{dense}!cv::gpu::PyrLKOpticalFlow@{cv\-::gpu\-::\-Pyr\-L\-K\-Optical\-Flow}}
+\subsubsection[{dense}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-Pyr\-L\-K\-Optical\-Flow\-::dense (
+\begin{DoxyParamCaption}
+\item[{const Gpu\-Mat \&}]{prev\-Img, }
+\item[{const Gpu\-Mat \&}]{next\-Img, }
+\item[{Gpu\-Mat \&}]{u, }
+\item[{Gpu\-Mat \&}]{v, }
+\item[{Gpu\-Mat $\ast$}]{err = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1PyrLKOpticalFlow_a17cea0e7ae9c6a85730448179bc3d816}
+\hypertarget{classcv_1_1gpu_1_1PyrLKOpticalFlow_a43e7b0856d228e95fc981caed310a266}{\index{cv\-::gpu\-::\-Pyr\-L\-K\-Optical\-Flow@{cv\-::gpu\-::\-Pyr\-L\-K\-Optical\-Flow}!release\-Memory@{release\-Memory}}
+\index{release\-Memory@{release\-Memory}!cv::gpu::PyrLKOpticalFlow@{cv\-::gpu\-::\-Pyr\-L\-K\-Optical\-Flow}}
+\subsubsection[{release\-Memory}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-Pyr\-L\-K\-Optical\-Flow\-::release\-Memory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1PyrLKOpticalFlow_a43e7b0856d228e95fc981caed310a266}
+\hypertarget{classcv_1_1gpu_1_1PyrLKOpticalFlow_aa4281071384c58e1a642064e14e9437c}{\index{cv\-::gpu\-::\-Pyr\-L\-K\-Optical\-Flow@{cv\-::gpu\-::\-Pyr\-L\-K\-Optical\-Flow}!sparse@{sparse}}
+\index{sparse@{sparse}!cv::gpu::PyrLKOpticalFlow@{cv\-::gpu\-::\-Pyr\-L\-K\-Optical\-Flow}}
+\subsubsection[{sparse}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-Pyr\-L\-K\-Optical\-Flow\-::sparse (
+\begin{DoxyParamCaption}
+\item[{const Gpu\-Mat \&}]{prev\-Img, }
+\item[{const Gpu\-Mat \&}]{next\-Img, }
+\item[{const Gpu\-Mat \&}]{prev\-Pts, }
+\item[{Gpu\-Mat \&}]{next\-Pts, }
+\item[{Gpu\-Mat \&}]{status, }
+\item[{Gpu\-Mat $\ast$}]{err = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1PyrLKOpticalFlow_aa4281071384c58e1a642064e14e9437c}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcv_1_1gpu_1_1PyrLKOpticalFlow_a1bab1d7e3675aead1a2a06d02e1bf7d0}{\index{cv\-::gpu\-::\-Pyr\-L\-K\-Optical\-Flow@{cv\-::gpu\-::\-Pyr\-L\-K\-Optical\-Flow}!deriv\-Lambda@{deriv\-Lambda}}
+\index{deriv\-Lambda@{deriv\-Lambda}!cv::gpu::PyrLKOpticalFlow@{cv\-::gpu\-::\-Pyr\-L\-K\-Optical\-Flow}}
+\subsubsection[{deriv\-Lambda}]{\setlength{\rightskip}{0pt plus 5cm}double cv\-::gpu\-::\-Pyr\-L\-K\-Optical\-Flow\-::deriv\-Lambda}}\label{classcv_1_1gpu_1_1PyrLKOpticalFlow_a1bab1d7e3675aead1a2a06d02e1bf7d0}
+\hypertarget{classcv_1_1gpu_1_1PyrLKOpticalFlow_a605dc8a54385d4058a2fc49929c41ec4}{\index{cv\-::gpu\-::\-Pyr\-L\-K\-Optical\-Flow@{cv\-::gpu\-::\-Pyr\-L\-K\-Optical\-Flow}!get\-Min\-Eigen\-Vals@{get\-Min\-Eigen\-Vals}}
+\index{get\-Min\-Eigen\-Vals@{get\-Min\-Eigen\-Vals}!cv::gpu::PyrLKOpticalFlow@{cv\-::gpu\-::\-Pyr\-L\-K\-Optical\-Flow}}
+\subsubsection[{get\-Min\-Eigen\-Vals}]{\setlength{\rightskip}{0pt plus 5cm}bool cv\-::gpu\-::\-Pyr\-L\-K\-Optical\-Flow\-::get\-Min\-Eigen\-Vals}}\label{classcv_1_1gpu_1_1PyrLKOpticalFlow_a605dc8a54385d4058a2fc49929c41ec4}
+\hypertarget{classcv_1_1gpu_1_1PyrLKOpticalFlow_a2eacc032fafd4e2c0a88812f595ac3fd}{\index{cv\-::gpu\-::\-Pyr\-L\-K\-Optical\-Flow@{cv\-::gpu\-::\-Pyr\-L\-K\-Optical\-Flow}!iters@{iters}}
+\index{iters@{iters}!cv::gpu::PyrLKOpticalFlow@{cv\-::gpu\-::\-Pyr\-L\-K\-Optical\-Flow}}
+\subsubsection[{iters}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::gpu\-::\-Pyr\-L\-K\-Optical\-Flow\-::iters}}\label{classcv_1_1gpu_1_1PyrLKOpticalFlow_a2eacc032fafd4e2c0a88812f595ac3fd}
+\hypertarget{classcv_1_1gpu_1_1PyrLKOpticalFlow_a9547259cedcde31896d4048facb2e42c}{\index{cv\-::gpu\-::\-Pyr\-L\-K\-Optical\-Flow@{cv\-::gpu\-::\-Pyr\-L\-K\-Optical\-Flow}!max\-Level@{max\-Level}}
+\index{max\-Level@{max\-Level}!cv::gpu::PyrLKOpticalFlow@{cv\-::gpu\-::\-Pyr\-L\-K\-Optical\-Flow}}
+\subsubsection[{max\-Level}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::gpu\-::\-Pyr\-L\-K\-Optical\-Flow\-::max\-Level}}\label{classcv_1_1gpu_1_1PyrLKOpticalFlow_a9547259cedcde31896d4048facb2e42c}
+\hypertarget{classcv_1_1gpu_1_1PyrLKOpticalFlow_acb8639f4ef29e9c6e5a4d242e97e6e52}{\index{cv\-::gpu\-::\-Pyr\-L\-K\-Optical\-Flow@{cv\-::gpu\-::\-Pyr\-L\-K\-Optical\-Flow}!min\-Eig\-Threshold@{min\-Eig\-Threshold}}
+\index{min\-Eig\-Threshold@{min\-Eig\-Threshold}!cv::gpu::PyrLKOpticalFlow@{cv\-::gpu\-::\-Pyr\-L\-K\-Optical\-Flow}}
+\subsubsection[{min\-Eig\-Threshold}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::gpu\-::\-Pyr\-L\-K\-Optical\-Flow\-::min\-Eig\-Threshold}}\label{classcv_1_1gpu_1_1PyrLKOpticalFlow_acb8639f4ef29e9c6e5a4d242e97e6e52}
+\hypertarget{classcv_1_1gpu_1_1PyrLKOpticalFlow_abf0839aead118df3ad71dbf43e4c0d81}{\index{cv\-::gpu\-::\-Pyr\-L\-K\-Optical\-Flow@{cv\-::gpu\-::\-Pyr\-L\-K\-Optical\-Flow}!use\-Initial\-Flow@{use\-Initial\-Flow}}
+\index{use\-Initial\-Flow@{use\-Initial\-Flow}!cv::gpu::PyrLKOpticalFlow@{cv\-::gpu\-::\-Pyr\-L\-K\-Optical\-Flow}}
+\subsubsection[{use\-Initial\-Flow}]{\setlength{\rightskip}{0pt plus 5cm}bool cv\-::gpu\-::\-Pyr\-L\-K\-Optical\-Flow\-::use\-Initial\-Flow}}\label{classcv_1_1gpu_1_1PyrLKOpticalFlow_abf0839aead118df3ad71dbf43e4c0d81}
+\hypertarget{classcv_1_1gpu_1_1PyrLKOpticalFlow_a30efdd5ddcd7f9add4d1e54e1cae4d13}{\index{cv\-::gpu\-::\-Pyr\-L\-K\-Optical\-Flow@{cv\-::gpu\-::\-Pyr\-L\-K\-Optical\-Flow}!win\-Size@{win\-Size}}
+\index{win\-Size@{win\-Size}!cv::gpu::PyrLKOpticalFlow@{cv\-::gpu\-::\-Pyr\-L\-K\-Optical\-Flow}}
+\subsubsection[{win\-Size}]{\setlength{\rightskip}{0pt plus 5cm}Size cv\-::gpu\-::\-Pyr\-L\-K\-Optical\-Flow\-::win\-Size}}\label{classcv_1_1gpu_1_1PyrLKOpticalFlow_a30efdd5ddcd7f9add4d1e54e1cae4d13}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/gpu/\hyperlink{gpu_2gpu_8hpp}{gpu.\-hpp}\end{DoxyCompactItemize}

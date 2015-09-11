@@ -1,0 +1,445 @@
+\hypertarget{gpu__test_8hpp}{\section{/usr/include/opencv2/ts/gpu\-\_\-test.hpp File Reference}
+\label{gpu__test_8hpp}\index{/usr/include/opencv2/ts/gpu\-\_\-test.\-hpp@{/usr/include/opencv2/ts/gpu\-\_\-test.\-hpp}}
+}
+{\ttfamily \#include \char`\"{}opencv2/core/core.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}opencv2/core/gpumat.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}opencv2/highgui/highgui.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}opencv2/imgproc/imgproc.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}opencv2/ts/ts.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}opencv2/ts/ts\-\_\-perf.\-hpp\char`\"{}}\\*
+Include dependency graph for gpu\-\_\-test.\-hpp\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{gpu__test_8hpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classcvtest_1_1DeviceManager}{cvtest\-::\-Device\-Manager}
+\item 
+class \hyperlink{classcvtest_1_1UseRoi}{cvtest\-::\-Use\-Roi}
+\item 
+class \hyperlink{classcvtest_1_1Inverse}{cvtest\-::\-Inverse}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacecvtest}{cvtest}
+\item 
+\hyperlink{namespacecv}{cv}
+\item 
+\hyperlink{namespacecv_1_1gpu}{cv\-::gpu}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{gpu__test_8hpp_aff9576f93a0bb76223fedbd0a30bed31}{A\-L\-L\-\_\-\-D\-E\-V\-I\-C\-E\-S}~\hyperlink{namespacetesting_a5f8e1eb074d24671d679f6ccda6710bc}{testing\-::\-Values\-In}(\hyperlink{classcvtest_1_1DeviceManager_ad41798648f87ee394568d84099b9e873}{cvtest\-::\-Device\-Manager\-::instance}().values())
+\item 
+\#define \hyperlink{gpu__test_8hpp_ab0a1aef0d4a411ca01d53170c372b3a1}{E\-X\-P\-E\-C\-T\-\_\-\-M\-A\-T\-\_\-\-N\-E\-A\-R}(m1, m2, \hyperlink{imgproc__c_8h_aabece9d4af1ab09d2f85ade473757e32}{eps})~\hyperlink{ts__gtest_8h_a7285708fa5d37d6d8ed5b5e59da08bae}{E\-X\-P\-E\-C\-T\-\_\-\-P\-R\-E\-D\-\_\-\-F\-O\-R\-M\-A\-T3}(\hyperlink{namespacecvtest_a62ea6d823dd154406f86d715391862e9}{cvtest\-::assert\-Mat\-Near}, m1, m2, \hyperlink{imgproc__c_8h_aabece9d4af1ab09d2f85ade473757e32}{eps})
+\item 
+\#define \hyperlink{gpu__test_8hpp_a56bc81dfb1e1688231e4b8ccc8358dc2}{A\-S\-S\-E\-R\-T\-\_\-\-M\-A\-T\-\_\-\-N\-E\-A\-R}(m1, m2, \hyperlink{imgproc__c_8h_aabece9d4af1ab09d2f85ade473757e32}{eps})~\hyperlink{ts__gtest_8h_a494e3b8dc22f4765f7e041f16c930e3d}{A\-S\-S\-E\-R\-T\-\_\-\-P\-R\-E\-D\-\_\-\-F\-O\-R\-M\-A\-T3}(\hyperlink{namespacecvtest_a62ea6d823dd154406f86d715391862e9}{cvtest\-::assert\-Mat\-Near}, m1, m2, \hyperlink{imgproc__c_8h_aabece9d4af1ab09d2f85ade473757e32}{eps})
+\item 
+\#define \hyperlink{gpu__test_8hpp_abca54414b18bb34e8c03d1ef091b7391}{E\-X\-P\-E\-C\-T\-\_\-\-S\-C\-A\-L\-A\-R\-\_\-\-N\-E\-A\-R}(s1, s2, \hyperlink{imgproc__c_8h_aabece9d4af1ab09d2f85ade473757e32}{eps})
+\item 
+\#define \hyperlink{gpu__test_8hpp_a63ec9a695ddb96cda06a8800a1d84650}{A\-S\-S\-E\-R\-T\-\_\-\-S\-C\-A\-L\-A\-R\-\_\-\-N\-E\-A\-R}(s1, s2, \hyperlink{imgproc__c_8h_aabece9d4af1ab09d2f85ade473757e32}{eps})
+\item 
+\#define \hyperlink{gpu__test_8hpp_a61e279e8894153c8abd221364501424b}{E\-X\-P\-E\-C\-T\-\_\-\-P\-O\-I\-N\-T2\-\_\-\-N\-E\-A\-R}(p1, \hyperlink{legacy_8hpp_aaed7591dd18d92f8033f952b64ae30f5}{p2}, \hyperlink{imgproc__c_8h_aabece9d4af1ab09d2f85ade473757e32}{eps})
+\item 
+\#define \hyperlink{gpu__test_8hpp_af47ebd42fecd57ce6cba80389a710d5e}{A\-S\-S\-E\-R\-T\-\_\-\-P\-O\-I\-N\-T2\-\_\-\-N\-E\-A\-R}(p1, \hyperlink{legacy_8hpp_aaed7591dd18d92f8033f952b64ae30f5}{p2}, \hyperlink{imgproc__c_8h_aabece9d4af1ab09d2f85ade473757e32}{eps})
+\item 
+\#define \hyperlink{gpu__test_8hpp_a0a8ca8aa60d8349d6342305a5ad82d43}{E\-X\-P\-E\-C\-T\-\_\-\-P\-O\-I\-N\-T3\-\_\-\-N\-E\-A\-R}(p1, \hyperlink{legacy_8hpp_aaed7591dd18d92f8033f952b64ae30f5}{p2}, \hyperlink{imgproc__c_8h_aabece9d4af1ab09d2f85ade473757e32}{eps})
+\item 
+\#define \hyperlink{gpu__test_8hpp_ae0dbb38a4232cd413775cfa5477a1b3f}{A\-S\-S\-E\-R\-T\-\_\-\-P\-O\-I\-N\-T3\-\_\-\-N\-E\-A\-R}(p1, \hyperlink{legacy_8hpp_aaed7591dd18d92f8033f952b64ae30f5}{p2}, \hyperlink{imgproc__c_8h_aabece9d4af1ab09d2f85ade473757e32}{eps})
+\item 
+\#define \hyperlink{gpu__test_8hpp_a1424d38b4d76cbde346fef38bbc5f6d1}{E\-X\-P\-E\-C\-T\-\_\-\-M\-A\-T\-\_\-\-S\-I\-M\-I\-L\-A\-R}(mat1, mat2, \hyperlink{imgproc__c_8h_aabece9d4af1ab09d2f85ade473757e32}{eps})
+\item 
+\#define \hyperlink{gpu__test_8hpp_a01067c4b3267136518120d6323bf343e}{A\-S\-S\-E\-R\-T\-\_\-\-M\-A\-T\-\_\-\-S\-I\-M\-I\-L\-A\-R}(mat1, mat2, \hyperlink{imgproc__c_8h_aabece9d4af1ab09d2f85ade473757e32}{eps})
+\item 
+\#define \hyperlink{gpu__test_8hpp_a62b85810728db1d103c752300baaa2ce}{G\-P\-U\-\_\-\-T\-E\-S\-T\-\_\-\-P}(test\-\_\-case\-\_\-name, test\-\_\-name)
+\item 
+\#define \hyperlink{gpu__test_8hpp_a78817222575664b72da2cdac0cdf12e0}{P\-A\-R\-A\-M\-\_\-\-T\-E\-S\-T\-\_\-\-C\-A\-S\-E}(\hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name},...)~struct \hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name} \-: \hyperlink{classtesting_1_1TestWithParam}{testing\-::\-Test\-With\-Param}$<$ \hyperlink{classstd_1_1tr1_1_1tuple}{std\-::tr1\-::tuple}$<$ \-\_\-\-\_\-\-V\-A\-\_\-\-A\-R\-G\-S\-\_\-\-\_\- $>$ $>$
+\item 
+\#define \hyperlink{gpu__test_8hpp_a6e1988a6b51b80bfff61468ac1d243b8}{G\-E\-T\-\_\-\-P\-A\-R\-A\-M}(\hyperlink{legacy_8hpp_a7be9b6436e5ea72ff5d5a66779b4bd38}{k})~std\-::tr1\-::get$<$ \hyperlink{legacy_8hpp_a7be9b6436e5ea72ff5d5a66779b4bd38}{k} $>$(Get\-Param())
+\item 
+\#define \hyperlink{gpu__test_8hpp_a8b05671ca974a9e9cae7c9d92a79f485}{D\-I\-F\-F\-E\-R\-E\-N\-T\-\_\-\-S\-I\-Z\-E\-S}~\hyperlink{namespacetesting_a8209ef59db08b8ad4beed30d8d6e6a88}{testing\-::\-Values}(cv\-::\-Size(128, 128), cv\-::\-Size(113, 113))
+\item 
+\#define \hyperlink{gpu__test_8hpp_afadac2b155c8ae4ec88d41c0ef644c47}{A\-L\-L\-\_\-\-D\-E\-P\-T\-H}~\hyperlink{namespacetesting_a8209ef59db08b8ad4beed30d8d6e6a88}{testing\-::\-Values}(Mat\-Depth(\hyperlink{core_2types__c_8h_a32b18d904ee2b1731a9416a8eef67d06}{C\-V\-\_\-8\-U}), Mat\-Depth(\hyperlink{core_2types__c_8h_a26f5e76cbfb2fd9c2ba6fadc6cc19ce3}{C\-V\-\_\-8\-S}), Mat\-Depth(\hyperlink{core_2types__c_8h_af55ae5a94c48cae66b96979877576f12}{C\-V\-\_\-16\-U}), Mat\-Depth(\hyperlink{core_2types__c_8h_a9d2ee1a8334733dea7482a47a88e0f87}{C\-V\-\_\-16\-S}), Mat\-Depth(\hyperlink{core_2types__c_8h_a4067910fc388075c3ea3aa14393e83b9}{C\-V\-\_\-32\-S}), Mat\-Depth(\hyperlink{core_2types__c_8h_a4a3def5d72b74bed31f5f8ab7676099c}{C\-V\-\_\-32\-F}), Mat\-Depth(\hyperlink{core_2types__c_8h_a30a562691cc5987bc88eb7bb7a8faf2b}{C\-V\-\_\-64\-F}))
+\item 
+\#define \hyperlink{gpu__test_8hpp_af055255d0277c1df839045ef2cdda5f6}{D\-E\-P\-T\-H\-\_\-\-P\-A\-I\-R\-S}
+\item 
+\#define \hyperlink{gpu__test_8hpp_affe70acbccd9ee8ce30b7699adfc3070}{A\-L\-L\-\_\-\-T\-Y\-P\-E\-S}~\hyperlink{namespacetesting_a5f8e1eb074d24671d679f6ccda6710bc}{testing\-::\-Values\-In}(all\-\_\-types())
+\item 
+\#define \hyperlink{gpu__test_8hpp_a0b531dd8376e3a9bf5af7275966604f6}{T\-Y\-P\-E\-S}(depth\-\_\-start, depth\-\_\-end, cn\-\_\-start, cn\-\_\-end)~\hyperlink{namespacetesting_a5f8e1eb074d24671d679f6ccda6710bc}{testing\-::\-Values\-In}(types(depth\-\_\-start, depth\-\_\-end, cn\-\_\-start, cn\-\_\-end))
+\item 
+\#define \hyperlink{gpu__test_8hpp_a583cee743a0ee58c06e8d3172fd18f60}{W\-H\-O\-L\-E\-\_\-\-S\-U\-B\-M\-A\-T}~\hyperlink{namespacetesting_a8209ef59db08b8ad4beed30d8d6e6a88}{testing\-::\-Values}(Use\-Roi(false), Use\-Roi(true))
+\item 
+\#define \hyperlink{gpu__test_8hpp_a8d85f8157edadaff33c2b40bd00e0be7}{D\-I\-R\-E\-C\-T\-\_\-\-I\-N\-V\-E\-R\-S\-E}~\hyperlink{namespacetesting_a8209ef59db08b8ad4beed30d8d6e6a88}{testing\-::\-Values}(Inverse(false), Inverse(true))
+\item 
+\#define \hyperlink{gpu__test_8hpp_a27d37f00fda70b53de5267fb6b78820e}{I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-P\-A\-R\-A\-M\-\_\-\-C\-L\-A\-S\-S}(\hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name}, \hyperlink{imgproc__c_8h_a84612d8738bf935200cf32a103d8efe1}{type})
+\item 
+\#define \hyperlink{gpu__test_8hpp_ac9dcdba2096f6b3adab742b8b1a256c2}{A\-L\-L\-\_\-\-C\-H\-A\-N\-N\-E\-L\-S}~\hyperlink{namespacetesting_a8209ef59db08b8ad4beed30d8d6e6a88}{testing\-::\-Values}(Channels(1), Channels(2), Channels(3), Channels(4))
+\item 
+\#define \hyperlink{gpu__test_8hpp_a92cf7d9a59764221ec0a58bc80aba202}{I\-M\-A\-G\-E\-\_\-\-C\-H\-A\-N\-N\-E\-L\-S}~\hyperlink{namespacetesting_a8209ef59db08b8ad4beed30d8d6e6a88}{testing\-::\-Values}(Channels(1), Channels(3), Channels(4))
+\item 
+\#define \hyperlink{gpu__test_8hpp_aefac1ac9c01e10da7ccd14b1fddd1d18}{A\-L\-L\-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-T\-Y\-P\-E\-S}~\hyperlink{namespacetesting_a8209ef59db08b8ad4beed30d8d6e6a88}{testing\-::\-Values}(Border\-Type(cv\-::\-B\-O\-R\-D\-E\-R\-\_\-\-R\-E\-F\-L\-E\-C\-T101), Border\-Type(cv\-::\-B\-O\-R\-D\-E\-R\-\_\-\-R\-E\-P\-L\-I\-C\-A\-T\-E), Border\-Type(cv\-::\-B\-O\-R\-D\-E\-R\-\_\-\-C\-O\-N\-S\-T\-A\-N\-T), Border\-Type(cv\-::\-B\-O\-R\-D\-E\-R\-\_\-\-R\-E\-F\-L\-E\-C\-T), Border\-Type(cv\-::\-B\-O\-R\-D\-E\-R\-\_\-\-W\-R\-A\-P))
+\item 
+\#define \hyperlink{gpu__test_8hpp_afe3f5d23845042e5a44b5adc69ab0e01}{A\-S\-S\-E\-R\-T\-\_\-\-K\-E\-Y\-P\-O\-I\-N\-T\-S\-\_\-\-E\-Q}(gold, actual)~\hyperlink{ts__gtest_8h_af0141918615a5e2d5247e9cda8324dae}{E\-X\-P\-E\-C\-T\-\_\-\-P\-R\-E\-D\-\_\-\-F\-O\-R\-M\-A\-T2}(assert\-Key\-Points\-Equals, gold, actual)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} int \hyperlink{namespacecvtest_a9eac1832de1eb9d633c2239c5d764f45}{cvtest\-::random\-Int} (int min\-Val, int max\-Val)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} double \hyperlink{namespacecvtest_a0ea150bc084ea73ef92a0af3b404f733}{cvtest\-::random\-Double} (double min\-Val, double max\-Val)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} cv\-::\-Size \hyperlink{namespacecvtest_ad214be493df2f6a360470007f417c2c4}{cvtest\-::random\-Size} (int min\-Val, int max\-Val)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} cv\-::\-Scalar \hyperlink{namespacecvtest_af12771814e01f3ebaf94961c36d46185}{cvtest\-::random\-Scalar} (double min\-Val, double max\-Val)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} cv\-::\-Mat \hyperlink{namespacecvtest_aa1501de3d28a48d8f05c0ce4ce769172}{cvtest\-::random\-Mat} (cv\-::\-Size \hyperlink{legacy_8hpp_ae97003f8d5c64cdfb99f6f2606d121b6}{size}, int \hyperlink{imgproc__c_8h_a84612d8738bf935200cf32a103d8efe1}{type}, double min\-Val=0.\-0, double max\-Val=255.\-0)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} cv\-::gpu\-::\-Gpu\-Mat \hyperlink{namespacecvtest_a7adcf82f14b525d21b8c4f8ed756b778}{cvtest\-::create\-Mat} (cv\-::\-Size \hyperlink{legacy_8hpp_ae97003f8d5c64cdfb99f6f2606d121b6}{size}, int \hyperlink{imgproc__c_8h_a84612d8738bf935200cf32a103d8efe1}{type}, bool use\-Roi=false)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} cv\-::gpu\-::\-Gpu\-Mat \hyperlink{namespacecvtest_adc16cec6a6ee3add97e870ec5e376226}{cvtest\-::load\-Mat} (const cv\-::\-Mat \&m, bool use\-Roi=false)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} cv\-::\-Mat \hyperlink{namespacecvtest_ae223362863a0c00baf65b481361fa286}{cvtest\-::read\-Image} (const std\-::string \&file\-Name, int \hyperlink{highgui__c_8h_ae51e3a2d4365e85db9630dd3ce9508db}{flags}=cv\-::\-I\-M\-R\-E\-A\-D\-\_\-\-C\-O\-L\-O\-R)
+\begin{DoxyCompactList}\small\item\em read image from testdata folder \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} cv\-::\-Mat \hyperlink{namespacecvtest_ad051b05ec01725e6f1b8d4ab7a8752c4}{cvtest\-::read\-Image\-Type} (const std\-::string \&fname, int \hyperlink{imgproc__c_8h_a84612d8738bf935200cf32a103d8efe1}{type})
+\begin{DoxyCompactList}\small\item\em read image from testdata folder and convert it to specified type \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} bool \hyperlink{namespacecvtest_a085a1265f44a20d04cce5684b11bcecc}{cvtest\-::support\-Feature} (const cv\-::gpu\-::\-Device\-Info \&info, cv\-::gpu\-::\-Feature\-Set feature)
+\begin{DoxyCompactList}\small\item\em return true if device supports specified feature and gpu module was built with support the feature. \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_a173aef4e10da98b9e25d652fb5b9cb9c}{cvtest\-::min\-Max\-Loc\-Gold} (const cv\-::\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, double $\ast$min\-Val\-\_\-, double $\ast$max\-Val\-\_\-=0, cv\-::\-Point $\ast$min\-Loc\-\_\-=0, cv\-::\-Point $\ast$max\-Loc\-\_\-=0, const cv\-::\-Mat \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}=cv\-::\-Mat())
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} cv\-::\-Mat \hyperlink{namespacecvtest_a013423daee12cfe7a2d35e3f50f5648b}{cvtest\-::get\-Mat} (cv\-::\-Input\-Array \hyperlink{core__c_8h_ab8e13ef59ba6f71bb02934957ba61c65}{arr})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{classtesting_1_1AssertionResult}{testing\-::\-Assertion\-Result} \hyperlink{namespacecvtest_a62ea6d823dd154406f86d715391862e9}{cvtest\-::assert\-Mat\-Near} (const char $\ast$expr1, const char $\ast$expr2, const char $\ast$eps\-\_\-expr, cv\-::\-Input\-Array m1, cv\-::\-Input\-Array m2, double \hyperlink{imgproc__c_8h_aabece9d4af1ab09d2f85ade473757e32}{eps})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} double \hyperlink{namespacecvtest_a4cc42c7e95bcddc013cd3a5ada8071bd}{cvtest\-::check\-Similarity} (cv\-::\-Input\-Array m1, cv\-::\-Input\-Array m2)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} std\-::vector$<$ Mat\-Type $>$ \hyperlink{namespacecvtest_afa1b01409165231a61684009dad82ee4}{cvtest\-::types} (int depth\-\_\-start, int depth\-\_\-end, int cn\-\_\-start, int cn\-\_\-end)
+\begin{DoxyCompactList}\small\item\em return vector with types from specified range. \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} const std\-::vector\\*
+$<$ Mat\-Type $>$ \& \hyperlink{namespacecvtest_ade018e0613b17d05c275510815622f80}{cvtest\-::all\-\_\-types} ()
+\begin{DoxyCompactList}\small\item\em return vector with all types (depth\-: C\-V\-\_\-8\-U-\/\-C\-V\-\_\-64\-F, channels\-: 1-\/4). \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_a7b5f91689f87845d2eb78fe213bd2ad6}{cvtest\-::\-Print\-To} (const Use\-Roi \&use\-Roi, std\-::ostream $\ast$os)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_a7338785aeee089758774e3eb5d1728d4}{cvtest\-::\-Print\-To} (const Inverse \&use\-Roi, std\-::ostream $\ast$os)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{classtesting_1_1AssertionResult}{testing\-::\-Assertion\-Result} \hyperlink{namespacecvtest_a095e7a087f1b85db0dc0ba18c542ef0b}{cvtest\-::assert\-Key\-Points\-Equals} (const char $\ast$gold\-\_\-expr, const char $\ast$actual\-\_\-expr, std\-::vector$<$ cv\-::\-Key\-Point $>$ \&gold, std\-::vector$<$ cv\-::\-Key\-Point $>$ \&actual)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} int \hyperlink{namespacecvtest_a2ae43940bcb727e8843d8b290bdfe3ff}{cvtest\-::get\-Matched\-Points\-Count} (std\-::vector$<$ cv\-::\-Key\-Point $>$ \&gold, std\-::vector$<$ cv\-::\-Key\-Point $>$ \&actual)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} int \hyperlink{namespacecvtest_a24ebdb69863aa30101d780ac1eb2d8c5}{cvtest\-::get\-Matched\-Points\-Count} (const std\-::vector$<$ cv\-::\-Key\-Point $>$ \&keypoints1, const std\-::vector$<$ cv\-::\-Key\-Point $>$ \&keypoints2, const std\-::vector$<$ cv\-::\-D\-Match $>$ \&matches)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_a82f5ad3928bdb1f0b38465f61b9fdd77}{cvtest\-::dump\-Image} (const std\-::string \&file\-Name, const cv\-::\-Mat \&\hyperlink{legacy_8hpp_ad62b16ab219ae2483e8a3d921c44cc97}{image})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_a42a57baaa6ef670d1c8032d7de406d58}{cvtest\-::show\-Diff} (cv\-::\-Input\-Array gold, cv\-::\-Input\-Array actual, double \hyperlink{imgproc__c_8h_aabece9d4af1ab09d2f85ade473757e32}{eps})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_a843732e6969ab0b29e9ebeee65f2cc4a}{cvtest\-::print\-Cuda\-Info} ()
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1gpu_a1cf93194b02d6a71eb65bcbb028c41f1}{cv\-::gpu\-::\-Print\-To} (const Device\-Info \&info, std\-::ostream $\ast$os)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{gpu__test_8hpp_aefac1ac9c01e10da7ccd14b1fddd1d18}{\index{gpu\-\_\-test.\-hpp@{gpu\-\_\-test.\-hpp}!A\-L\-L\-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-T\-Y\-P\-E\-S@{A\-L\-L\-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-T\-Y\-P\-E\-S}}
+\index{A\-L\-L\-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-T\-Y\-P\-E\-S@{A\-L\-L\-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-T\-Y\-P\-E\-S}!gpu_test.hpp@{gpu\-\_\-test.\-hpp}}
+\subsubsection[{A\-L\-L\-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-T\-Y\-P\-E\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-L\-L\-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-T\-Y\-P\-E\-S~{\bf testing\-::\-Values}(Border\-Type(cv\-::\-B\-O\-R\-D\-E\-R\-\_\-\-R\-E\-F\-L\-E\-C\-T101), Border\-Type(cv\-::\-B\-O\-R\-D\-E\-R\-\_\-\-R\-E\-P\-L\-I\-C\-A\-T\-E), Border\-Type(cv\-::\-B\-O\-R\-D\-E\-R\-\_\-\-C\-O\-N\-S\-T\-A\-N\-T), Border\-Type(cv\-::\-B\-O\-R\-D\-E\-R\-\_\-\-R\-E\-F\-L\-E\-C\-T), Border\-Type(cv\-::\-B\-O\-R\-D\-E\-R\-\_\-\-W\-R\-A\-P))}}\label{gpu__test_8hpp_aefac1ac9c01e10da7ccd14b1fddd1d18}
+\hypertarget{gpu__test_8hpp_ac9dcdba2096f6b3adab742b8b1a256c2}{\index{gpu\-\_\-test.\-hpp@{gpu\-\_\-test.\-hpp}!A\-L\-L\-\_\-\-C\-H\-A\-N\-N\-E\-L\-S@{A\-L\-L\-\_\-\-C\-H\-A\-N\-N\-E\-L\-S}}
+\index{A\-L\-L\-\_\-\-C\-H\-A\-N\-N\-E\-L\-S@{A\-L\-L\-\_\-\-C\-H\-A\-N\-N\-E\-L\-S}!gpu_test.hpp@{gpu\-\_\-test.\-hpp}}
+\subsubsection[{A\-L\-L\-\_\-\-C\-H\-A\-N\-N\-E\-L\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-L\-L\-\_\-\-C\-H\-A\-N\-N\-E\-L\-S~{\bf testing\-::\-Values}(Channels(1), Channels(2), Channels(3), Channels(4))}}\label{gpu__test_8hpp_ac9dcdba2096f6b3adab742b8b1a256c2}
+\hypertarget{gpu__test_8hpp_afadac2b155c8ae4ec88d41c0ef644c47}{\index{gpu\-\_\-test.\-hpp@{gpu\-\_\-test.\-hpp}!A\-L\-L\-\_\-\-D\-E\-P\-T\-H@{A\-L\-L\-\_\-\-D\-E\-P\-T\-H}}
+\index{A\-L\-L\-\_\-\-D\-E\-P\-T\-H@{A\-L\-L\-\_\-\-D\-E\-P\-T\-H}!gpu_test.hpp@{gpu\-\_\-test.\-hpp}}
+\subsubsection[{A\-L\-L\-\_\-\-D\-E\-P\-T\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-L\-L\-\_\-\-D\-E\-P\-T\-H~{\bf testing\-::\-Values}(Mat\-Depth({\bf C\-V\-\_\-8\-U}), Mat\-Depth({\bf C\-V\-\_\-8\-S}), Mat\-Depth({\bf C\-V\-\_\-16\-U}), Mat\-Depth({\bf C\-V\-\_\-16\-S}), Mat\-Depth({\bf C\-V\-\_\-32\-S}), Mat\-Depth({\bf C\-V\-\_\-32\-F}), Mat\-Depth({\bf C\-V\-\_\-64\-F}))}}\label{gpu__test_8hpp_afadac2b155c8ae4ec88d41c0ef644c47}
+\hypertarget{gpu__test_8hpp_aff9576f93a0bb76223fedbd0a30bed31}{\index{gpu\-\_\-test.\-hpp@{gpu\-\_\-test.\-hpp}!A\-L\-L\-\_\-\-D\-E\-V\-I\-C\-E\-S@{A\-L\-L\-\_\-\-D\-E\-V\-I\-C\-E\-S}}
+\index{A\-L\-L\-\_\-\-D\-E\-V\-I\-C\-E\-S@{A\-L\-L\-\_\-\-D\-E\-V\-I\-C\-E\-S}!gpu_test.hpp@{gpu\-\_\-test.\-hpp}}
+\subsubsection[{A\-L\-L\-\_\-\-D\-E\-V\-I\-C\-E\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-L\-L\-\_\-\-D\-E\-V\-I\-C\-E\-S~{\bf testing\-::\-Values\-In}({\bf cvtest\-::\-Device\-Manager\-::instance}().values())}}\label{gpu__test_8hpp_aff9576f93a0bb76223fedbd0a30bed31}
+\hypertarget{gpu__test_8hpp_affe70acbccd9ee8ce30b7699adfc3070}{\index{gpu\-\_\-test.\-hpp@{gpu\-\_\-test.\-hpp}!A\-L\-L\-\_\-\-T\-Y\-P\-E\-S@{A\-L\-L\-\_\-\-T\-Y\-P\-E\-S}}
+\index{A\-L\-L\-\_\-\-T\-Y\-P\-E\-S@{A\-L\-L\-\_\-\-T\-Y\-P\-E\-S}!gpu_test.hpp@{gpu\-\_\-test.\-hpp}}
+\subsubsection[{A\-L\-L\-\_\-\-T\-Y\-P\-E\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-L\-L\-\_\-\-T\-Y\-P\-E\-S~{\bf testing\-::\-Values\-In}(all\-\_\-types())}}\label{gpu__test_8hpp_affe70acbccd9ee8ce30b7699adfc3070}
+\hypertarget{gpu__test_8hpp_afe3f5d23845042e5a44b5adc69ab0e01}{\index{gpu\-\_\-test.\-hpp@{gpu\-\_\-test.\-hpp}!A\-S\-S\-E\-R\-T\-\_\-\-K\-E\-Y\-P\-O\-I\-N\-T\-S\-\_\-\-E\-Q@{A\-S\-S\-E\-R\-T\-\_\-\-K\-E\-Y\-P\-O\-I\-N\-T\-S\-\_\-\-E\-Q}}
+\index{A\-S\-S\-E\-R\-T\-\_\-\-K\-E\-Y\-P\-O\-I\-N\-T\-S\-\_\-\-E\-Q@{A\-S\-S\-E\-R\-T\-\_\-\-K\-E\-Y\-P\-O\-I\-N\-T\-S\-\_\-\-E\-Q}!gpu_test.hpp@{gpu\-\_\-test.\-hpp}}
+\subsubsection[{A\-S\-S\-E\-R\-T\-\_\-\-K\-E\-Y\-P\-O\-I\-N\-T\-S\-\_\-\-E\-Q}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-S\-S\-E\-R\-T\-\_\-\-K\-E\-Y\-P\-O\-I\-N\-T\-S\-\_\-\-E\-Q(
+\begin{DoxyParamCaption}
+\item[{}]{gold, }
+\item[{}]{actual}
+\end{DoxyParamCaption}
+)~{\bf E\-X\-P\-E\-C\-T\-\_\-\-P\-R\-E\-D\-\_\-\-F\-O\-R\-M\-A\-T2}(assert\-Key\-Points\-Equals, gold, actual)}}\label{gpu__test_8hpp_afe3f5d23845042e5a44b5adc69ab0e01}
+\hypertarget{gpu__test_8hpp_a56bc81dfb1e1688231e4b8ccc8358dc2}{\index{gpu\-\_\-test.\-hpp@{gpu\-\_\-test.\-hpp}!A\-S\-S\-E\-R\-T\-\_\-\-M\-A\-T\-\_\-\-N\-E\-A\-R@{A\-S\-S\-E\-R\-T\-\_\-\-M\-A\-T\-\_\-\-N\-E\-A\-R}}
+\index{A\-S\-S\-E\-R\-T\-\_\-\-M\-A\-T\-\_\-\-N\-E\-A\-R@{A\-S\-S\-E\-R\-T\-\_\-\-M\-A\-T\-\_\-\-N\-E\-A\-R}!gpu_test.hpp@{gpu\-\_\-test.\-hpp}}
+\subsubsection[{A\-S\-S\-E\-R\-T\-\_\-\-M\-A\-T\-\_\-\-N\-E\-A\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-S\-S\-E\-R\-T\-\_\-\-M\-A\-T\-\_\-\-N\-E\-A\-R(
+\begin{DoxyParamCaption}
+\item[{}]{m1, }
+\item[{}]{m2, }
+\item[{}]{{\bf eps}}
+\end{DoxyParamCaption}
+)~{\bf A\-S\-S\-E\-R\-T\-\_\-\-P\-R\-E\-D\-\_\-\-F\-O\-R\-M\-A\-T3}({\bf cvtest\-::assert\-Mat\-Near}, m1, m2, {\bf eps})}}\label{gpu__test_8hpp_a56bc81dfb1e1688231e4b8ccc8358dc2}
+\hypertarget{gpu__test_8hpp_a01067c4b3267136518120d6323bf343e}{\index{gpu\-\_\-test.\-hpp@{gpu\-\_\-test.\-hpp}!A\-S\-S\-E\-R\-T\-\_\-\-M\-A\-T\-\_\-\-S\-I\-M\-I\-L\-A\-R@{A\-S\-S\-E\-R\-T\-\_\-\-M\-A\-T\-\_\-\-S\-I\-M\-I\-L\-A\-R}}
+\index{A\-S\-S\-E\-R\-T\-\_\-\-M\-A\-T\-\_\-\-S\-I\-M\-I\-L\-A\-R@{A\-S\-S\-E\-R\-T\-\_\-\-M\-A\-T\-\_\-\-S\-I\-M\-I\-L\-A\-R}!gpu_test.hpp@{gpu\-\_\-test.\-hpp}}
+\subsubsection[{A\-S\-S\-E\-R\-T\-\_\-\-M\-A\-T\-\_\-\-S\-I\-M\-I\-L\-A\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-S\-S\-E\-R\-T\-\_\-\-M\-A\-T\-\_\-\-S\-I\-M\-I\-L\-A\-R(
+\begin{DoxyParamCaption}
+\item[{}]{mat1, }
+\item[{}]{mat2, }
+\item[{}]{{\bf eps}}
+\end{DoxyParamCaption}
+)}}\label{gpu__test_8hpp_a01067c4b3267136518120d6323bf343e}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\{ \hyperlink{ts__gtest_8h_a1a6db8b1338ee7040329322b77779086}{\(\backslash\)}
+\hyperlink{ts__gtest_8h_a1a6db8b1338ee7040329322b77779086}{            ASSERT\_EQ}(mat1.type(), mat2.type()); \hyperlink{ts__gtest_8h_a1a6db8b1338ee7040329322b77779086}{\(\backslash\)}
+\hyperlink{ts__gtest_8h_a1a6db8b1338ee7040329322b77779086}{            ASSERT\_EQ}(mat1.size(), mat2.size()); \hyperlink{ts__gtest_8h_a775643748feff0b490aae651d041e971}{\(\backslash\)}
+\hyperlink{ts__gtest_8h_a775643748feff0b490aae651d041e971}{            ASSERT\_LE}(\hyperlink{namespacecvtest_a4cc42c7e95bcddc013cd3a5ada8071bd}{checkSimilarity}(mat1, mat2), 
+      \hyperlink{imgproc__c_8h_aabece9d4af1ab09d2f85ade473757e32}{eps}); \(\backslash\)
+        \}
+\end{DoxyCode}
+\hypertarget{gpu__test_8hpp_af47ebd42fecd57ce6cba80389a710d5e}{\index{gpu\-\_\-test.\-hpp@{gpu\-\_\-test.\-hpp}!A\-S\-S\-E\-R\-T\-\_\-\-P\-O\-I\-N\-T2\-\_\-\-N\-E\-A\-R@{A\-S\-S\-E\-R\-T\-\_\-\-P\-O\-I\-N\-T2\-\_\-\-N\-E\-A\-R}}
+\index{A\-S\-S\-E\-R\-T\-\_\-\-P\-O\-I\-N\-T2\-\_\-\-N\-E\-A\-R@{A\-S\-S\-E\-R\-T\-\_\-\-P\-O\-I\-N\-T2\-\_\-\-N\-E\-A\-R}!gpu_test.hpp@{gpu\-\_\-test.\-hpp}}
+\subsubsection[{A\-S\-S\-E\-R\-T\-\_\-\-P\-O\-I\-N\-T2\-\_\-\-N\-E\-A\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-S\-S\-E\-R\-T\-\_\-\-P\-O\-I\-N\-T2\-\_\-\-N\-E\-A\-R(
+\begin{DoxyParamCaption}
+\item[{}]{p1, }
+\item[{}]{{\bf p2}, }
+\item[{}]{{\bf eps}}
+\end{DoxyParamCaption}
+)}}\label{gpu__test_8hpp_af47ebd42fecd57ce6cba80389a710d5e}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\{ \hyperlink{ts__gtest_8h_a73cce6b752d204f91a36bef2f8e663b3}{\(\backslash\)}
+\hyperlink{ts__gtest_8h_a73cce6b752d204f91a36bef2f8e663b3}{            ASSERT\_NEAR}(p1.x, \hyperlink{legacy_8hpp_aaed7591dd18d92f8033f952b64ae30f5}{p2}.\hyperlink{structCvPoint2D32f_a8d77880e3d92682aec3cbb36eae9cc40}{x}, \hyperlink{imgproc__c_8h_aabece9d4af1ab09d2f85ade473757e32}{eps}); \hyperlink{ts__gtest_8h_a73cce6b752d204f91a36bef2f8e663b3}{\(\backslash\)}
+\hyperlink{ts__gtest_8h_a73cce6b752d204f91a36bef2f8e663b3}{            ASSERT\_NEAR}(p1.y, \hyperlink{legacy_8hpp_aaed7591dd18d92f8033f952b64ae30f5}{p2}.\hyperlink{structCvPoint2D32f_afaec75e4e30df5f2e3ab02c46dae0cb0}{y}, \hyperlink{imgproc__c_8h_aabece9d4af1ab09d2f85ade473757e32}{eps}); \(\backslash\)
+        \}
+\end{DoxyCode}
+\hypertarget{gpu__test_8hpp_ae0dbb38a4232cd413775cfa5477a1b3f}{\index{gpu\-\_\-test.\-hpp@{gpu\-\_\-test.\-hpp}!A\-S\-S\-E\-R\-T\-\_\-\-P\-O\-I\-N\-T3\-\_\-\-N\-E\-A\-R@{A\-S\-S\-E\-R\-T\-\_\-\-P\-O\-I\-N\-T3\-\_\-\-N\-E\-A\-R}}
+\index{A\-S\-S\-E\-R\-T\-\_\-\-P\-O\-I\-N\-T3\-\_\-\-N\-E\-A\-R@{A\-S\-S\-E\-R\-T\-\_\-\-P\-O\-I\-N\-T3\-\_\-\-N\-E\-A\-R}!gpu_test.hpp@{gpu\-\_\-test.\-hpp}}
+\subsubsection[{A\-S\-S\-E\-R\-T\-\_\-\-P\-O\-I\-N\-T3\-\_\-\-N\-E\-A\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-S\-S\-E\-R\-T\-\_\-\-P\-O\-I\-N\-T3\-\_\-\-N\-E\-A\-R(
+\begin{DoxyParamCaption}
+\item[{}]{p1, }
+\item[{}]{{\bf p2}, }
+\item[{}]{{\bf eps}}
+\end{DoxyParamCaption}
+)}}\label{gpu__test_8hpp_ae0dbb38a4232cd413775cfa5477a1b3f}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\{ \hyperlink{ts__gtest_8h_a73cce6b752d204f91a36bef2f8e663b3}{\(\backslash\)}
+\hyperlink{ts__gtest_8h_a73cce6b752d204f91a36bef2f8e663b3}{            ASSERT\_NEAR}(p1.x, \hyperlink{legacy_8hpp_aaed7591dd18d92f8033f952b64ae30f5}{p2}.\hyperlink{structCvPoint2D32f_a8d77880e3d92682aec3cbb36eae9cc40}{x}, \hyperlink{imgproc__c_8h_aabece9d4af1ab09d2f85ade473757e32}{eps}); \hyperlink{ts__gtest_8h_a73cce6b752d204f91a36bef2f8e663b3}{\(\backslash\)}
+\hyperlink{ts__gtest_8h_a73cce6b752d204f91a36bef2f8e663b3}{            ASSERT\_NEAR}(p1.y, \hyperlink{legacy_8hpp_aaed7591dd18d92f8033f952b64ae30f5}{p2}.\hyperlink{structCvPoint2D32f_afaec75e4e30df5f2e3ab02c46dae0cb0}{y}, \hyperlink{imgproc__c_8h_aabece9d4af1ab09d2f85ade473757e32}{eps}); \hyperlink{ts__gtest_8h_a73cce6b752d204f91a36bef2f8e663b3}{\(\backslash\)}
+\hyperlink{ts__gtest_8h_a73cce6b752d204f91a36bef2f8e663b3}{            ASSERT\_NEAR}(p1.z, \hyperlink{legacy_8hpp_aaed7591dd18d92f8033f952b64ae30f5}{p2}.z, \hyperlink{imgproc__c_8h_aabece9d4af1ab09d2f85ade473757e32}{eps}); \(\backslash\)
+        \}
+\end{DoxyCode}
+\hypertarget{gpu__test_8hpp_a63ec9a695ddb96cda06a8800a1d84650}{\index{gpu\-\_\-test.\-hpp@{gpu\-\_\-test.\-hpp}!A\-S\-S\-E\-R\-T\-\_\-\-S\-C\-A\-L\-A\-R\-\_\-\-N\-E\-A\-R@{A\-S\-S\-E\-R\-T\-\_\-\-S\-C\-A\-L\-A\-R\-\_\-\-N\-E\-A\-R}}
+\index{A\-S\-S\-E\-R\-T\-\_\-\-S\-C\-A\-L\-A\-R\-\_\-\-N\-E\-A\-R@{A\-S\-S\-E\-R\-T\-\_\-\-S\-C\-A\-L\-A\-R\-\_\-\-N\-E\-A\-R}!gpu_test.hpp@{gpu\-\_\-test.\-hpp}}
+\subsubsection[{A\-S\-S\-E\-R\-T\-\_\-\-S\-C\-A\-L\-A\-R\-\_\-\-N\-E\-A\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-S\-S\-E\-R\-T\-\_\-\-S\-C\-A\-L\-A\-R\-\_\-\-N\-E\-A\-R(
+\begin{DoxyParamCaption}
+\item[{}]{s1, }
+\item[{}]{s2, }
+\item[{}]{{\bf eps}}
+\end{DoxyParamCaption}
+)}}\label{gpu__test_8hpp_a63ec9a695ddb96cda06a8800a1d84650}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\{ \hyperlink{ts__gtest_8h_a73cce6b752d204f91a36bef2f8e663b3}{\(\backslash\)}
+\hyperlink{ts__gtest_8h_a73cce6b752d204f91a36bef2f8e663b3}{            ASSERT\_NEAR}(s1[0], s2[0], \hyperlink{imgproc__c_8h_aabece9d4af1ab09d2f85ade473757e32}{eps}); \hyperlink{ts__gtest_8h_a73cce6b752d204f91a36bef2f8e663b3}{\(\backslash\)}
+\hyperlink{ts__gtest_8h_a73cce6b752d204f91a36bef2f8e663b3}{            ASSERT\_NEAR}(s1[1], s2[1], \hyperlink{imgproc__c_8h_aabece9d4af1ab09d2f85ade473757e32}{eps}); \hyperlink{ts__gtest_8h_a73cce6b752d204f91a36bef2f8e663b3}{\(\backslash\)}
+\hyperlink{ts__gtest_8h_a73cce6b752d204f91a36bef2f8e663b3}{            ASSERT\_NEAR}(s1[2], s2[2], \hyperlink{imgproc__c_8h_aabece9d4af1ab09d2f85ade473757e32}{eps}); \hyperlink{ts__gtest_8h_a73cce6b752d204f91a36bef2f8e663b3}{\(\backslash\)}
+\hyperlink{ts__gtest_8h_a73cce6b752d204f91a36bef2f8e663b3}{            ASSERT\_NEAR}(s1[3], s2[3], \hyperlink{imgproc__c_8h_aabece9d4af1ab09d2f85ade473757e32}{eps}); \(\backslash\)
+        \}
+\end{DoxyCode}
+\hypertarget{gpu__test_8hpp_af055255d0277c1df839045ef2cdda5f6}{\index{gpu\-\_\-test.\-hpp@{gpu\-\_\-test.\-hpp}!D\-E\-P\-T\-H\-\_\-\-P\-A\-I\-R\-S@{D\-E\-P\-T\-H\-\_\-\-P\-A\-I\-R\-S}}
+\index{D\-E\-P\-T\-H\-\_\-\-P\-A\-I\-R\-S@{D\-E\-P\-T\-H\-\_\-\-P\-A\-I\-R\-S}!gpu_test.hpp@{gpu\-\_\-test.\-hpp}}
+\subsubsection[{D\-E\-P\-T\-H\-\_\-\-P\-A\-I\-R\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-E\-P\-T\-H\-\_\-\-P\-A\-I\-R\-S}}\label{gpu__test_8hpp_af055255d0277c1df839045ef2cdda5f6}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\hyperlink{namespacetesting_a8209ef59db08b8ad4beed30d8d6e6a88}{testing::Values}(std::make\_pair(MatDepth(\hyperlink{core_2types__c_8h_a32b18d904ee2b1731a9416a8eef67d06}{CV\_8U}), MatDepth(
+      \hyperlink{core_2types__c_8h_a32b18d904ee2b1731a9416a8eef67d06}{CV\_8U})),   \(\backslash\)
+                                        std::make\_pair(MatDepth(\hyperlink{core_2types__c_8h_a32b18d904ee2b1731a9416a8eef67d06}{CV\_8U}), MatDepth(
+      \hyperlink{core_2types__c_8h_af55ae5a94c48cae66b96979877576f12}{CV\_16U})),  \(\backslash\)
+                                        std::make\_pair(MatDepth(\hyperlink{core_2types__c_8h_a32b18d904ee2b1731a9416a8eef67d06}{CV\_8U}), MatDepth(
+      \hyperlink{core_2types__c_8h_a9d2ee1a8334733dea7482a47a88e0f87}{CV\_16S})),  \(\backslash\)
+                                        std::make\_pair(MatDepth(\hyperlink{core_2types__c_8h_a32b18d904ee2b1731a9416a8eef67d06}{CV\_8U}), MatDepth(
+      \hyperlink{core_2types__c_8h_a4067910fc388075c3ea3aa14393e83b9}{CV\_32S})),  \(\backslash\)
+                                        std::make\_pair(MatDepth(\hyperlink{core_2types__c_8h_a32b18d904ee2b1731a9416a8eef67d06}{CV\_8U}), MatDepth(
+      \hyperlink{core_2types__c_8h_a4a3def5d72b74bed31f5f8ab7676099c}{CV\_32F})),  \(\backslash\)
+                                        std::make\_pair(MatDepth(\hyperlink{core_2types__c_8h_a32b18d904ee2b1731a9416a8eef67d06}{CV\_8U}), MatDepth(
+      \hyperlink{core_2types__c_8h_a30a562691cc5987bc88eb7bb7a8faf2b}{CV\_64F})),  \(\backslash\)
+                                                                                            \(\backslash\)
+                                        std::make\_pair(MatDepth(\hyperlink{core_2types__c_8h_af55ae5a94c48cae66b96979877576f12}{CV\_16U}), MatDepth(
+      \hyperlink{core_2types__c_8h_af55ae5a94c48cae66b96979877576f12}{CV\_16U})), \(\backslash\)
+                                        std::make\_pair(MatDepth(\hyperlink{core_2types__c_8h_af55ae5a94c48cae66b96979877576f12}{CV\_16U}), MatDepth(
+      \hyperlink{core_2types__c_8h_a4067910fc388075c3ea3aa14393e83b9}{CV\_32S})), \(\backslash\)
+                                        std::make\_pair(MatDepth(\hyperlink{core_2types__c_8h_af55ae5a94c48cae66b96979877576f12}{CV\_16U}), MatDepth(
+      \hyperlink{core_2types__c_8h_a4a3def5d72b74bed31f5f8ab7676099c}{CV\_32F})), \(\backslash\)
+                                        std::make\_pair(MatDepth(\hyperlink{core_2types__c_8h_af55ae5a94c48cae66b96979877576f12}{CV\_16U}), MatDepth(
+      \hyperlink{core_2types__c_8h_a30a562691cc5987bc88eb7bb7a8faf2b}{CV\_64F})), \(\backslash\)
+                                                                                            \(\backslash\)
+                                        std::make\_pair(MatDepth(\hyperlink{core_2types__c_8h_a9d2ee1a8334733dea7482a47a88e0f87}{CV\_16S}), MatDepth(
+      \hyperlink{core_2types__c_8h_a9d2ee1a8334733dea7482a47a88e0f87}{CV\_16S})), \(\backslash\)
+                                        std::make\_pair(MatDepth(\hyperlink{core_2types__c_8h_a9d2ee1a8334733dea7482a47a88e0f87}{CV\_16S}), MatDepth(
+      \hyperlink{core_2types__c_8h_a4067910fc388075c3ea3aa14393e83b9}{CV\_32S})), \(\backslash\)
+                                        std::make\_pair(MatDepth(\hyperlink{core_2types__c_8h_a9d2ee1a8334733dea7482a47a88e0f87}{CV\_16S}), MatDepth(
+      \hyperlink{core_2types__c_8h_a4a3def5d72b74bed31f5f8ab7676099c}{CV\_32F})), \(\backslash\)
+                                        std::make\_pair(MatDepth(\hyperlink{core_2types__c_8h_a9d2ee1a8334733dea7482a47a88e0f87}{CV\_16S}), MatDepth(
+      \hyperlink{core_2types__c_8h_a30a562691cc5987bc88eb7bb7a8faf2b}{CV\_64F})), \(\backslash\)
+                                                                                            \(\backslash\)
+                                        std::make\_pair(MatDepth(\hyperlink{core_2types__c_8h_a4067910fc388075c3ea3aa14393e83b9}{CV\_32S}), MatDepth(
+      \hyperlink{core_2types__c_8h_a4067910fc388075c3ea3aa14393e83b9}{CV\_32S})), \(\backslash\)
+                                        std::make\_pair(MatDepth(\hyperlink{core_2types__c_8h_a4067910fc388075c3ea3aa14393e83b9}{CV\_32S}), MatDepth(
+      \hyperlink{core_2types__c_8h_a4a3def5d72b74bed31f5f8ab7676099c}{CV\_32F})), \(\backslash\)
+                                        std::make\_pair(MatDepth(\hyperlink{core_2types__c_8h_a4067910fc388075c3ea3aa14393e83b9}{CV\_32S}), MatDepth(
+      \hyperlink{core_2types__c_8h_a30a562691cc5987bc88eb7bb7a8faf2b}{CV\_64F})), \(\backslash\)
+                                                                                            \(\backslash\)
+                                        std::make\_pair(MatDepth(\hyperlink{core_2types__c_8h_a4a3def5d72b74bed31f5f8ab7676099c}{CV\_32F}), MatDepth(
+      \hyperlink{core_2types__c_8h_a4a3def5d72b74bed31f5f8ab7676099c}{CV\_32F})), \(\backslash\)
+                                        std::make\_pair(MatDepth(\hyperlink{core_2types__c_8h_a4a3def5d72b74bed31f5f8ab7676099c}{CV\_32F}), MatDepth(
+      \hyperlink{core_2types__c_8h_a30a562691cc5987bc88eb7bb7a8faf2b}{CV\_64F})), \(\backslash\)
+                                                                                            \(\backslash\)
+                                        std::make\_pair(MatDepth(\hyperlink{core_2types__c_8h_a30a562691cc5987bc88eb7bb7a8faf2b}{CV\_64F}), MatDepth(
+      \hyperlink{core_2types__c_8h_a30a562691cc5987bc88eb7bb7a8faf2b}{CV\_64F})))
+\end{DoxyCode}
+\hypertarget{gpu__test_8hpp_a8b05671ca974a9e9cae7c9d92a79f485}{\index{gpu\-\_\-test.\-hpp@{gpu\-\_\-test.\-hpp}!D\-I\-F\-F\-E\-R\-E\-N\-T\-\_\-\-S\-I\-Z\-E\-S@{D\-I\-F\-F\-E\-R\-E\-N\-T\-\_\-\-S\-I\-Z\-E\-S}}
+\index{D\-I\-F\-F\-E\-R\-E\-N\-T\-\_\-\-S\-I\-Z\-E\-S@{D\-I\-F\-F\-E\-R\-E\-N\-T\-\_\-\-S\-I\-Z\-E\-S}!gpu_test.hpp@{gpu\-\_\-test.\-hpp}}
+\subsubsection[{D\-I\-F\-F\-E\-R\-E\-N\-T\-\_\-\-S\-I\-Z\-E\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-I\-F\-F\-E\-R\-E\-N\-T\-\_\-\-S\-I\-Z\-E\-S~{\bf testing\-::\-Values}(cv\-::\-Size(128, 128), cv\-::\-Size(113, 113))}}\label{gpu__test_8hpp_a8b05671ca974a9e9cae7c9d92a79f485}
+\hypertarget{gpu__test_8hpp_a8d85f8157edadaff33c2b40bd00e0be7}{\index{gpu\-\_\-test.\-hpp@{gpu\-\_\-test.\-hpp}!D\-I\-R\-E\-C\-T\-\_\-\-I\-N\-V\-E\-R\-S\-E@{D\-I\-R\-E\-C\-T\-\_\-\-I\-N\-V\-E\-R\-S\-E}}
+\index{D\-I\-R\-E\-C\-T\-\_\-\-I\-N\-V\-E\-R\-S\-E@{D\-I\-R\-E\-C\-T\-\_\-\-I\-N\-V\-E\-R\-S\-E}!gpu_test.hpp@{gpu\-\_\-test.\-hpp}}
+\subsubsection[{D\-I\-R\-E\-C\-T\-\_\-\-I\-N\-V\-E\-R\-S\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-I\-R\-E\-C\-T\-\_\-\-I\-N\-V\-E\-R\-S\-E~{\bf testing\-::\-Values}(Inverse(false), Inverse(true))}}\label{gpu__test_8hpp_a8d85f8157edadaff33c2b40bd00e0be7}
+\hypertarget{gpu__test_8hpp_ab0a1aef0d4a411ca01d53170c372b3a1}{\index{gpu\-\_\-test.\-hpp@{gpu\-\_\-test.\-hpp}!E\-X\-P\-E\-C\-T\-\_\-\-M\-A\-T\-\_\-\-N\-E\-A\-R@{E\-X\-P\-E\-C\-T\-\_\-\-M\-A\-T\-\_\-\-N\-E\-A\-R}}
+\index{E\-X\-P\-E\-C\-T\-\_\-\-M\-A\-T\-\_\-\-N\-E\-A\-R@{E\-X\-P\-E\-C\-T\-\_\-\-M\-A\-T\-\_\-\-N\-E\-A\-R}!gpu_test.hpp@{gpu\-\_\-test.\-hpp}}
+\subsubsection[{E\-X\-P\-E\-C\-T\-\_\-\-M\-A\-T\-\_\-\-N\-E\-A\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\-X\-P\-E\-C\-T\-\_\-\-M\-A\-T\-\_\-\-N\-E\-A\-R(
+\begin{DoxyParamCaption}
+\item[{}]{m1, }
+\item[{}]{m2, }
+\item[{}]{{\bf eps}}
+\end{DoxyParamCaption}
+)~{\bf E\-X\-P\-E\-C\-T\-\_\-\-P\-R\-E\-D\-\_\-\-F\-O\-R\-M\-A\-T3}({\bf cvtest\-::assert\-Mat\-Near}, m1, m2, {\bf eps})}}\label{gpu__test_8hpp_ab0a1aef0d4a411ca01d53170c372b3a1}
+\hypertarget{gpu__test_8hpp_a1424d38b4d76cbde346fef38bbc5f6d1}{\index{gpu\-\_\-test.\-hpp@{gpu\-\_\-test.\-hpp}!E\-X\-P\-E\-C\-T\-\_\-\-M\-A\-T\-\_\-\-S\-I\-M\-I\-L\-A\-R@{E\-X\-P\-E\-C\-T\-\_\-\-M\-A\-T\-\_\-\-S\-I\-M\-I\-L\-A\-R}}
+\index{E\-X\-P\-E\-C\-T\-\_\-\-M\-A\-T\-\_\-\-S\-I\-M\-I\-L\-A\-R@{E\-X\-P\-E\-C\-T\-\_\-\-M\-A\-T\-\_\-\-S\-I\-M\-I\-L\-A\-R}!gpu_test.hpp@{gpu\-\_\-test.\-hpp}}
+\subsubsection[{E\-X\-P\-E\-C\-T\-\_\-\-M\-A\-T\-\_\-\-S\-I\-M\-I\-L\-A\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\-X\-P\-E\-C\-T\-\_\-\-M\-A\-T\-\_\-\-S\-I\-M\-I\-L\-A\-R(
+\begin{DoxyParamCaption}
+\item[{}]{mat1, }
+\item[{}]{mat2, }
+\item[{}]{{\bf eps}}
+\end{DoxyParamCaption}
+)}}\label{gpu__test_8hpp_a1424d38b4d76cbde346fef38bbc5f6d1}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\{ \hyperlink{ts__gtest_8h_a1a6db8b1338ee7040329322b77779086}{\(\backslash\)}
+\hyperlink{ts__gtest_8h_a1a6db8b1338ee7040329322b77779086}{            ASSERT\_EQ}(mat1.type(), mat2.type()); \hyperlink{ts__gtest_8h_a1a6db8b1338ee7040329322b77779086}{\(\backslash\)}
+\hyperlink{ts__gtest_8h_a1a6db8b1338ee7040329322b77779086}{            ASSERT\_EQ}(mat1.size(), mat2.size()); \hyperlink{ts__gtest_8h_ae0f265632323b4a07b585dcfde10f60a}{\(\backslash\)}
+\hyperlink{ts__gtest_8h_ae0f265632323b4a07b585dcfde10f60a}{            EXPECT\_LE}(\hyperlink{namespacecvtest_a4cc42c7e95bcddc013cd3a5ada8071bd}{checkSimilarity}(mat1, mat2), 
+      \hyperlink{imgproc__c_8h_aabece9d4af1ab09d2f85ade473757e32}{eps}); \(\backslash\)
+        \}
+\end{DoxyCode}
+\hypertarget{gpu__test_8hpp_a61e279e8894153c8abd221364501424b}{\index{gpu\-\_\-test.\-hpp@{gpu\-\_\-test.\-hpp}!E\-X\-P\-E\-C\-T\-\_\-\-P\-O\-I\-N\-T2\-\_\-\-N\-E\-A\-R@{E\-X\-P\-E\-C\-T\-\_\-\-P\-O\-I\-N\-T2\-\_\-\-N\-E\-A\-R}}
+\index{E\-X\-P\-E\-C\-T\-\_\-\-P\-O\-I\-N\-T2\-\_\-\-N\-E\-A\-R@{E\-X\-P\-E\-C\-T\-\_\-\-P\-O\-I\-N\-T2\-\_\-\-N\-E\-A\-R}!gpu_test.hpp@{gpu\-\_\-test.\-hpp}}
+\subsubsection[{E\-X\-P\-E\-C\-T\-\_\-\-P\-O\-I\-N\-T2\-\_\-\-N\-E\-A\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\-X\-P\-E\-C\-T\-\_\-\-P\-O\-I\-N\-T2\-\_\-\-N\-E\-A\-R(
+\begin{DoxyParamCaption}
+\item[{}]{p1, }
+\item[{}]{{\bf p2}, }
+\item[{}]{{\bf eps}}
+\end{DoxyParamCaption}
+)}}\label{gpu__test_8hpp_a61e279e8894153c8abd221364501424b}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\{ \hyperlink{ts__gtest_8h_a88cd7978af0e7dbd42cd606dfabdcc6f}{\(\backslash\)}
+\hyperlink{ts__gtest_8h_a88cd7978af0e7dbd42cd606dfabdcc6f}{            EXPECT\_NEAR}(p1.x, \hyperlink{legacy_8hpp_aaed7591dd18d92f8033f952b64ae30f5}{p2}.\hyperlink{structCvPoint2D32f_a8d77880e3d92682aec3cbb36eae9cc40}{x}, \hyperlink{imgproc__c_8h_aabece9d4af1ab09d2f85ade473757e32}{eps}); \hyperlink{ts__gtest_8h_a88cd7978af0e7dbd42cd606dfabdcc6f}{\(\backslash\)}
+\hyperlink{ts__gtest_8h_a88cd7978af0e7dbd42cd606dfabdcc6f}{            EXPECT\_NEAR}(p1.y, \hyperlink{legacy_8hpp_aaed7591dd18d92f8033f952b64ae30f5}{p2}.\hyperlink{structCvPoint2D32f_afaec75e4e30df5f2e3ab02c46dae0cb0}{y}, \hyperlink{imgproc__c_8h_aabece9d4af1ab09d2f85ade473757e32}{eps}); \(\backslash\)
+        \}
+\end{DoxyCode}
+\hypertarget{gpu__test_8hpp_a0a8ca8aa60d8349d6342305a5ad82d43}{\index{gpu\-\_\-test.\-hpp@{gpu\-\_\-test.\-hpp}!E\-X\-P\-E\-C\-T\-\_\-\-P\-O\-I\-N\-T3\-\_\-\-N\-E\-A\-R@{E\-X\-P\-E\-C\-T\-\_\-\-P\-O\-I\-N\-T3\-\_\-\-N\-E\-A\-R}}
+\index{E\-X\-P\-E\-C\-T\-\_\-\-P\-O\-I\-N\-T3\-\_\-\-N\-E\-A\-R@{E\-X\-P\-E\-C\-T\-\_\-\-P\-O\-I\-N\-T3\-\_\-\-N\-E\-A\-R}!gpu_test.hpp@{gpu\-\_\-test.\-hpp}}
+\subsubsection[{E\-X\-P\-E\-C\-T\-\_\-\-P\-O\-I\-N\-T3\-\_\-\-N\-E\-A\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\-X\-P\-E\-C\-T\-\_\-\-P\-O\-I\-N\-T3\-\_\-\-N\-E\-A\-R(
+\begin{DoxyParamCaption}
+\item[{}]{p1, }
+\item[{}]{{\bf p2}, }
+\item[{}]{{\bf eps}}
+\end{DoxyParamCaption}
+)}}\label{gpu__test_8hpp_a0a8ca8aa60d8349d6342305a5ad82d43}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\{ \hyperlink{ts__gtest_8h_a88cd7978af0e7dbd42cd606dfabdcc6f}{\(\backslash\)}
+\hyperlink{ts__gtest_8h_a88cd7978af0e7dbd42cd606dfabdcc6f}{            EXPECT\_NEAR}(p1.x, \hyperlink{legacy_8hpp_aaed7591dd18d92f8033f952b64ae30f5}{p2}.\hyperlink{structCvPoint2D32f_a8d77880e3d92682aec3cbb36eae9cc40}{x}, \hyperlink{imgproc__c_8h_aabece9d4af1ab09d2f85ade473757e32}{eps}); \hyperlink{ts__gtest_8h_a88cd7978af0e7dbd42cd606dfabdcc6f}{\(\backslash\)}
+\hyperlink{ts__gtest_8h_a88cd7978af0e7dbd42cd606dfabdcc6f}{            EXPECT\_NEAR}(p1.y, \hyperlink{legacy_8hpp_aaed7591dd18d92f8033f952b64ae30f5}{p2}.\hyperlink{structCvPoint2D32f_afaec75e4e30df5f2e3ab02c46dae0cb0}{y}, \hyperlink{imgproc__c_8h_aabece9d4af1ab09d2f85ade473757e32}{eps}); \hyperlink{ts__gtest_8h_a88cd7978af0e7dbd42cd606dfabdcc6f}{\(\backslash\)}
+\hyperlink{ts__gtest_8h_a88cd7978af0e7dbd42cd606dfabdcc6f}{            EXPECT\_NEAR}(p1.z, \hyperlink{legacy_8hpp_aaed7591dd18d92f8033f952b64ae30f5}{p2}.z, \hyperlink{imgproc__c_8h_aabece9d4af1ab09d2f85ade473757e32}{eps}); \(\backslash\)
+        \}
+\end{DoxyCode}
+\hypertarget{gpu__test_8hpp_abca54414b18bb34e8c03d1ef091b7391}{\index{gpu\-\_\-test.\-hpp@{gpu\-\_\-test.\-hpp}!E\-X\-P\-E\-C\-T\-\_\-\-S\-C\-A\-L\-A\-R\-\_\-\-N\-E\-A\-R@{E\-X\-P\-E\-C\-T\-\_\-\-S\-C\-A\-L\-A\-R\-\_\-\-N\-E\-A\-R}}
+\index{E\-X\-P\-E\-C\-T\-\_\-\-S\-C\-A\-L\-A\-R\-\_\-\-N\-E\-A\-R@{E\-X\-P\-E\-C\-T\-\_\-\-S\-C\-A\-L\-A\-R\-\_\-\-N\-E\-A\-R}!gpu_test.hpp@{gpu\-\_\-test.\-hpp}}
+\subsubsection[{E\-X\-P\-E\-C\-T\-\_\-\-S\-C\-A\-L\-A\-R\-\_\-\-N\-E\-A\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\-X\-P\-E\-C\-T\-\_\-\-S\-C\-A\-L\-A\-R\-\_\-\-N\-E\-A\-R(
+\begin{DoxyParamCaption}
+\item[{}]{s1, }
+\item[{}]{s2, }
+\item[{}]{{\bf eps}}
+\end{DoxyParamCaption}
+)}}\label{gpu__test_8hpp_abca54414b18bb34e8c03d1ef091b7391}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\{ \hyperlink{ts__gtest_8h_a88cd7978af0e7dbd42cd606dfabdcc6f}{\(\backslash\)}
+\hyperlink{ts__gtest_8h_a88cd7978af0e7dbd42cd606dfabdcc6f}{            EXPECT\_NEAR}(s1[0], s2[0], \hyperlink{imgproc__c_8h_aabece9d4af1ab09d2f85ade473757e32}{eps}); \hyperlink{ts__gtest_8h_a88cd7978af0e7dbd42cd606dfabdcc6f}{\(\backslash\)}
+\hyperlink{ts__gtest_8h_a88cd7978af0e7dbd42cd606dfabdcc6f}{            EXPECT\_NEAR}(s1[1], s2[1], \hyperlink{imgproc__c_8h_aabece9d4af1ab09d2f85ade473757e32}{eps}); \hyperlink{ts__gtest_8h_a88cd7978af0e7dbd42cd606dfabdcc6f}{\(\backslash\)}
+\hyperlink{ts__gtest_8h_a88cd7978af0e7dbd42cd606dfabdcc6f}{            EXPECT\_NEAR}(s1[2], s2[2], \hyperlink{imgproc__c_8h_aabece9d4af1ab09d2f85ade473757e32}{eps}); \hyperlink{ts__gtest_8h_a88cd7978af0e7dbd42cd606dfabdcc6f}{\(\backslash\)}
+\hyperlink{ts__gtest_8h_a88cd7978af0e7dbd42cd606dfabdcc6f}{            EXPECT\_NEAR}(s1[3], s2[3], \hyperlink{imgproc__c_8h_aabece9d4af1ab09d2f85ade473757e32}{eps}); \(\backslash\)
+        \}
+\end{DoxyCode}
+\hypertarget{gpu__test_8hpp_a6e1988a6b51b80bfff61468ac1d243b8}{\index{gpu\-\_\-test.\-hpp@{gpu\-\_\-test.\-hpp}!G\-E\-T\-\_\-\-P\-A\-R\-A\-M@{G\-E\-T\-\_\-\-P\-A\-R\-A\-M}}
+\index{G\-E\-T\-\_\-\-P\-A\-R\-A\-M@{G\-E\-T\-\_\-\-P\-A\-R\-A\-M}!gpu_test.hpp@{gpu\-\_\-test.\-hpp}}
+\subsubsection[{G\-E\-T\-\_\-\-P\-A\-R\-A\-M}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-E\-T\-\_\-\-P\-A\-R\-A\-M(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf k}}
+\end{DoxyParamCaption}
+)~std\-::tr1\-::get$<$ {\bf k} $>$(Get\-Param())}}\label{gpu__test_8hpp_a6e1988a6b51b80bfff61468ac1d243b8}
+\hypertarget{gpu__test_8hpp_a62b85810728db1d103c752300baaa2ce}{\index{gpu\-\_\-test.\-hpp@{gpu\-\_\-test.\-hpp}!G\-P\-U\-\_\-\-T\-E\-S\-T\-\_\-\-P@{G\-P\-U\-\_\-\-T\-E\-S\-T\-\_\-\-P}}
+\index{G\-P\-U\-\_\-\-T\-E\-S\-T\-\_\-\-P@{G\-P\-U\-\_\-\-T\-E\-S\-T\-\_\-\-P}!gpu_test.hpp@{gpu\-\_\-test.\-hpp}}
+\subsubsection[{G\-P\-U\-\_\-\-T\-E\-S\-T\-\_\-\-P}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-P\-U\-\_\-\-T\-E\-S\-T\-\_\-\-P(
+\begin{DoxyParamCaption}
+\item[{}]{test\-\_\-case\-\_\-name, }
+\item[{}]{test\-\_\-name}
+\end{DoxyParamCaption}
+)}}\label{gpu__test_8hpp_a62b85810728db1d103c752300baaa2ce}
+\hypertarget{gpu__test_8hpp_a92cf7d9a59764221ec0a58bc80aba202}{\index{gpu\-\_\-test.\-hpp@{gpu\-\_\-test.\-hpp}!I\-M\-A\-G\-E\-\_\-\-C\-H\-A\-N\-N\-E\-L\-S@{I\-M\-A\-G\-E\-\_\-\-C\-H\-A\-N\-N\-E\-L\-S}}
+\index{I\-M\-A\-G\-E\-\_\-\-C\-H\-A\-N\-N\-E\-L\-S@{I\-M\-A\-G\-E\-\_\-\-C\-H\-A\-N\-N\-E\-L\-S}!gpu_test.hpp@{gpu\-\_\-test.\-hpp}}
+\subsubsection[{I\-M\-A\-G\-E\-\_\-\-C\-H\-A\-N\-N\-E\-L\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-M\-A\-G\-E\-\_\-\-C\-H\-A\-N\-N\-E\-L\-S~{\bf testing\-::\-Values}(Channels(1), Channels(3), Channels(4))}}\label{gpu__test_8hpp_a92cf7d9a59764221ec0a58bc80aba202}
+\hypertarget{gpu__test_8hpp_a27d37f00fda70b53de5267fb6b78820e}{\index{gpu\-\_\-test.\-hpp@{gpu\-\_\-test.\-hpp}!I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-P\-A\-R\-A\-M\-\_\-\-C\-L\-A\-S\-S@{I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-P\-A\-R\-A\-M\-\_\-\-C\-L\-A\-S\-S}}
+\index{I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-P\-A\-R\-A\-M\-\_\-\-C\-L\-A\-S\-S@{I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-P\-A\-R\-A\-M\-\_\-\-C\-L\-A\-S\-S}!gpu_test.hpp@{gpu\-\_\-test.\-hpp}}
+\subsubsection[{I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-P\-A\-R\-A\-M\-\_\-\-C\-L\-A\-S\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-P\-A\-R\-A\-M\-\_\-\-C\-L\-A\-S\-S(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf name}, }
+\item[{}]{{\bf type}}
+\end{DoxyParamCaption}
+)}}\label{gpu__test_8hpp_a27d37f00fda70b53de5267fb6b78820e}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{keyword}{class }\hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name} \(\backslash\)
+        \{ \(\backslash\)
+        public: \hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{\(\backslash\)}
+\hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{            name} ( \hyperlink{core__c_8h_a8bc957583d2a5247e490ea9ce960cf21}{type} arg = \hyperlink{core__c_8h_a8bc957583d2a5247e490ea9ce960cf21}{type} ()) : val\_(arg) \{\} \(\backslash\)
+            operator \hyperlink{core__c_8h_a8bc957583d2a5247e490ea9ce960cf21}{type} ()\textcolor{keyword}{ const }\{\textcolor{keywordflow}{return} val\_;\} \(\backslash\)
+        private: \hyperlink{core__c_8h_a8bc957583d2a5247e490ea9ce960cf21}{\(\backslash\)}
+\hyperlink{core__c_8h_a8bc957583d2a5247e490ea9ce960cf21}{            type} val\_; \(\backslash\)
+        \}; \(\backslash\)
+        inline \textcolor{keywordtype}{void} \hyperlink{namespacecv_1_1gpu_a1cf93194b02d6a71eb65bcbb028c41f1}{PrintTo}( \hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name} \hyperlink{highgui__c_8h_a2fad04a6d56e23dd58d9ebbcffae688f}{param}, std::ostream* os) \(\backslash\)
+        \{ \(\backslash\)
+            *os << #\hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name} <<  \textcolor{stringliteral}{"("} << \hyperlink{namespacetesting_aa5717bb1144edd1d262d310ba70c82ed}{testing::PrintToString}(static\_cast< type >(
+      \hyperlink{highgui__c_8h_a2fad04a6d56e23dd58d9ebbcffae688f}{param})) << \textcolor{stringliteral}{")"}; \(\backslash\)
+        \}
+\end{DoxyCode}
+\hypertarget{gpu__test_8hpp_a78817222575664b72da2cdac0cdf12e0}{\index{gpu\-\_\-test.\-hpp@{gpu\-\_\-test.\-hpp}!P\-A\-R\-A\-M\-\_\-\-T\-E\-S\-T\-\_\-\-C\-A\-S\-E@{P\-A\-R\-A\-M\-\_\-\-T\-E\-S\-T\-\_\-\-C\-A\-S\-E}}
+\index{P\-A\-R\-A\-M\-\_\-\-T\-E\-S\-T\-\_\-\-C\-A\-S\-E@{P\-A\-R\-A\-M\-\_\-\-T\-E\-S\-T\-\_\-\-C\-A\-S\-E}!gpu_test.hpp@{gpu\-\_\-test.\-hpp}}
+\subsubsection[{P\-A\-R\-A\-M\-\_\-\-T\-E\-S\-T\-\_\-\-C\-A\-S\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-A\-R\-A\-M\-\_\-\-T\-E\-S\-T\-\_\-\-C\-A\-S\-E(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf name}, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)~struct {\bf name} \-: {\bf testing\-::\-Test\-With\-Param}$<$ {\bf std\-::tr1\-::tuple}$<$ \-\_\-\-\_\-\-V\-A\-\_\-\-A\-R\-G\-S\-\_\-\-\_\- $>$ $>$}}\label{gpu__test_8hpp_a78817222575664b72da2cdac0cdf12e0}
+\hypertarget{gpu__test_8hpp_a0b531dd8376e3a9bf5af7275966604f6}{\index{gpu\-\_\-test.\-hpp@{gpu\-\_\-test.\-hpp}!T\-Y\-P\-E\-S@{T\-Y\-P\-E\-S}}
+\index{T\-Y\-P\-E\-S@{T\-Y\-P\-E\-S}!gpu_test.hpp@{gpu\-\_\-test.\-hpp}}
+\subsubsection[{T\-Y\-P\-E\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-Y\-P\-E\-S(
+\begin{DoxyParamCaption}
+\item[{}]{depth\-\_\-start, }
+\item[{}]{depth\-\_\-end, }
+\item[{}]{cn\-\_\-start, }
+\item[{}]{cn\-\_\-end}
+\end{DoxyParamCaption}
+)~{\bf testing\-::\-Values\-In}(types(depth\-\_\-start, depth\-\_\-end, cn\-\_\-start, cn\-\_\-end))}}\label{gpu__test_8hpp_a0b531dd8376e3a9bf5af7275966604f6}
+\hypertarget{gpu__test_8hpp_a583cee743a0ee58c06e8d3172fd18f60}{\index{gpu\-\_\-test.\-hpp@{gpu\-\_\-test.\-hpp}!W\-H\-O\-L\-E\-\_\-\-S\-U\-B\-M\-A\-T@{W\-H\-O\-L\-E\-\_\-\-S\-U\-B\-M\-A\-T}}
+\index{W\-H\-O\-L\-E\-\_\-\-S\-U\-B\-M\-A\-T@{W\-H\-O\-L\-E\-\_\-\-S\-U\-B\-M\-A\-T}!gpu_test.hpp@{gpu\-\_\-test.\-hpp}}
+\subsubsection[{W\-H\-O\-L\-E\-\_\-\-S\-U\-B\-M\-A\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define W\-H\-O\-L\-E\-\_\-\-S\-U\-B\-M\-A\-T~{\bf testing\-::\-Values}(Use\-Roi(false), Use\-Roi(true))}}\label{gpu__test_8hpp_a583cee743a0ee58c06e8d3172fd18f60}

@@ -1,0 +1,136 @@
+\hypertarget{classcvflann_1_1RadiusUniqueResultSet}{\section{cvflann\-:\-:Radius\-Unique\-Result\-Set$<$ Distance\-Type $>$ Class Template Reference}
+\label{classcvflann_1_1RadiusUniqueResultSet}\index{cvflann\-::\-Radius\-Unique\-Result\-Set$<$ Distance\-Type $>$@{cvflann\-::\-Radius\-Unique\-Result\-Set$<$ Distance\-Type $>$}}
+}
+
+
+{\ttfamily \#include $<$result\-\_\-set.\-h$>$}
+
+
+
+Inheritance diagram for cvflann\-:\-:Radius\-Unique\-Result\-Set$<$ Distance\-Type $>$\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{classcvflann_1_1RadiusUniqueResultSet__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for cvflann\-:\-:Radius\-Unique\-Result\-Set$<$ Distance\-Type $>$\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{classcvflann_1_1RadiusUniqueResultSet__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcvflann_1_1RadiusUniqueResultSet_a21f0ac724ab27c3b856ad8c2642c3634}{Radius\-Unique\-Result\-Set} (Distance\-Type \hyperlink{imgproc__c_8h_a32526d67e420fc7060ade2efeaeda976}{radius})
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcvflann_1_1RadiusUniqueResultSet_a41fcdc5b25ee294094814b98548e4374}{add\-Point} (Distance\-Type \hyperlink{legacy_8hpp_ae895c2003a87eda49126845b7ac3688e}{dist}, int \hyperlink{core__c_8h_a750b5d744c39a06bfb13e6eb010e35d0}{index})
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcvflann_1_1RadiusUniqueResultSet_ae9b39884adddbb060d6661ec4e7c0b0d}{clear} ()
+\item 
+bool \hyperlink{classcvflann_1_1RadiusUniqueResultSet_a74a655e91b339927b458609a1d4e1eb4}{full} () const 
+\item 
+Distance\-Type \hyperlink{classcvflann_1_1RadiusUniqueResultSet_a07cc3d2c8825a1ff9c56b6d050fc4c50}{worst\-Dist} () const 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Distance\-Type$>$class cvflann\-::\-Radius\-Unique\-Result\-Set$<$ Distance\-Type $>$}
+
+Class that holds the radius nearest neighbors It is more accurate than Radius\-Result as it is not limited in the number of neighbors 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcvflann_1_1RadiusUniqueResultSet_a21f0ac724ab27c3b856ad8c2642c3634}{\index{cvflann\-::\-Radius\-Unique\-Result\-Set@{cvflann\-::\-Radius\-Unique\-Result\-Set}!Radius\-Unique\-Result\-Set@{Radius\-Unique\-Result\-Set}}
+\index{Radius\-Unique\-Result\-Set@{Radius\-Unique\-Result\-Set}!cvflann::RadiusUniqueResultSet@{cvflann\-::\-Radius\-Unique\-Result\-Set}}
+\subsubsection[{Radius\-Unique\-Result\-Set}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance\-Type$>$ {\bf cvflann\-::\-Radius\-Unique\-Result\-Set}$<$ Distance\-Type $>$\-::{\bf Radius\-Unique\-Result\-Set} (
+\begin{DoxyParamCaption}
+\item[{Distance\-Type}]{radius}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcvflann_1_1RadiusUniqueResultSet_a21f0ac724ab27c3b856ad8c2642c3634}
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em capacity} & the number of neighbors to store at max \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcvflann_1_1RadiusUniqueResultSet_a41fcdc5b25ee294094814b98548e4374}{\index{cvflann\-::\-Radius\-Unique\-Result\-Set@{cvflann\-::\-Radius\-Unique\-Result\-Set}!add\-Point@{add\-Point}}
+\index{add\-Point@{add\-Point}!cvflann::RadiusUniqueResultSet@{cvflann\-::\-Radius\-Unique\-Result\-Set}}
+\subsubsection[{add\-Point}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance\-Type$>$ {\bf void} {\bf cvflann\-::\-Radius\-Unique\-Result\-Set}$<$ Distance\-Type $>$\-::add\-Point (
+\begin{DoxyParamCaption}
+\item[{Distance\-Type}]{dist, }
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1RadiusUniqueResultSet_a41fcdc5b25ee294094814b98548e4374}
+Add a possible candidate to the best neighbors 
+\begin{DoxyParams}{Parameters}
+{\em dist} & distance for that neighbor \\
+\hline
+{\em index} & index of that neighbor \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classcvflann_1_1ResultSet_a35c882b9e106e29fb76f2bdb5ab742d5}{cvflann\-::\-Result\-Set$<$ Distance\-Type $>$}.
+
+\hypertarget{classcvflann_1_1RadiusUniqueResultSet_ae9b39884adddbb060d6661ec4e7c0b0d}{\index{cvflann\-::\-Radius\-Unique\-Result\-Set@{cvflann\-::\-Radius\-Unique\-Result\-Set}!clear@{clear}}
+\index{clear@{clear}!cvflann::RadiusUniqueResultSet@{cvflann\-::\-Radius\-Unique\-Result\-Set}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance\-Type$>$ {\bf void} {\bf cvflann\-::\-Radius\-Unique\-Result\-Set}$<$ Distance\-Type $>$\-::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1RadiusUniqueResultSet_ae9b39884adddbb060d6661ec4e7c0b0d}
+Remove all elements in the set 
+
+Implements \hyperlink{classcvflann_1_1UniqueResultSet_ad0f6df2b89548ce26bbdfa398436a3e7}{cvflann\-::\-Unique\-Result\-Set$<$ Distance\-Type $>$}.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcvflann_1_1RadiusUniqueResultSet_ae9b39884adddbb060d6661ec4e7c0b0d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcvflann_1_1RadiusUniqueResultSet_a74a655e91b339927b458609a1d4e1eb4}{\index{cvflann\-::\-Radius\-Unique\-Result\-Set@{cvflann\-::\-Radius\-Unique\-Result\-Set}!full@{full}}
+\index{full@{full}!cvflann::RadiusUniqueResultSet@{cvflann\-::\-Radius\-Unique\-Result\-Set}}
+\subsubsection[{full}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance\-Type$>$ bool {\bf cvflann\-::\-Radius\-Unique\-Result\-Set}$<$ Distance\-Type $>$\-::full (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1RadiusUniqueResultSet_a74a655e91b339927b458609a1d4e1eb4}
+Check the status of the set \begin{DoxyReturn}{Returns}
+alwys false 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classcvflann_1_1UniqueResultSet_a6be2e327fabb1e4e62f08f9f746fd6ba}{cvflann\-::\-Unique\-Result\-Set$<$ Distance\-Type $>$}.
+
+\hypertarget{classcvflann_1_1RadiusUniqueResultSet_a07cc3d2c8825a1ff9c56b6d050fc4c50}{\index{cvflann\-::\-Radius\-Unique\-Result\-Set@{cvflann\-::\-Radius\-Unique\-Result\-Set}!worst\-Dist@{worst\-Dist}}
+\index{worst\-Dist@{worst\-Dist}!cvflann::RadiusUniqueResultSet@{cvflann\-::\-Radius\-Unique\-Result\-Set}}
+\subsubsection[{worst\-Dist}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance\-Type$>$ Distance\-Type {\bf cvflann\-::\-Radius\-Unique\-Result\-Set}$<$ Distance\-Type $>$\-::worst\-Dist (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1RadiusUniqueResultSet_a07cc3d2c8825a1ff9c56b6d050fc4c50}
+The distance of the furthest neighbor If we don't have enough neighbors, it returns the max possible value \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classcvflann_1_1UniqueResultSet_af626aa35c3c2821b769ecec88d7c249f}{cvflann\-::\-Unique\-Result\-Set$<$ Distance\-Type $>$}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/flann/\hyperlink{result__set_8h}{result\-\_\-set.\-h}\end{DoxyCompactItemize}

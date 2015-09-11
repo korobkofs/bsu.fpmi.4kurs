@@ -1,0 +1,127 @@
+\hypertarget{classtld_1_1IntegralImage}{\section{tld\-:\-:Integral\-Image$<$ T $>$ Class Template Reference}
+\label{classtld_1_1IntegralImage}\index{tld\-::\-Integral\-Image$<$ T $>$@{tld\-::\-Integral\-Image$<$ T $>$}}
+}
+
+
+The class for calculating the integral image.  
+
+
+
+
+{\ttfamily \#include $<$Integral\-Image.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtld_1_1IntegralImage_abc8beb4ec0dcfb6f28645648f5849250}{Integral\-Image} (cv\-::\-Size size)
+\begin{DoxyCompactList}\small\item\em This constructor allocates the integral image. \end{DoxyCompactList}\item 
+virtual \hyperlink{classtld_1_1IntegralImage_a79213d3f8187e10f1dc49f0b7e499caa}{$\sim$\-Integral\-Image} ()
+\begin{DoxyCompactList}\small\item\em This destructor releases of data memory. \end{DoxyCompactList}\item 
+void \hyperlink{classtld_1_1IntegralImage_a85bb20526a40615c3d0d7c0b5e53b55a}{calc\-Int\-Img} (const cv\-::\-Mat \&img, bool squared=false)
+\begin{DoxyCompactList}\small\item\em Calculates the integral image. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+T $\ast$ \hyperlink{classtld_1_1IntegralImage_a671be18d2f3a30aa1aea12d63a787e48}{data}
+\begin{DoxyCompactList}\small\item\em Array containg the entries for the integral image in row-\/first manner. Of size width$\ast$height. \end{DoxyCompactList}\item 
+int \hyperlink{classtld_1_1IntegralImage_af8ea5fee24e9726087c0e9f6159141e8}{width}
+\begin{DoxyCompactList}\small\item\em the width of integral image. \end{DoxyCompactList}\item 
+int \hyperlink{classtld_1_1IntegralImage_ad5f65eee66dc3ba0d8f0462f858c1e99}{height}
+\begin{DoxyCompactList}\small\item\em the height of integral image. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$class tld\-::\-Integral\-Image$<$ T $>$}
+
+The class for calculating the integral image. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classtld_1_1IntegralImage_abc8beb4ec0dcfb6f28645648f5849250}{\index{tld\-::\-Integral\-Image@{tld\-::\-Integral\-Image}!Integral\-Image@{Integral\-Image}}
+\index{Integral\-Image@{Integral\-Image}!tld::IntegralImage@{tld\-::\-Integral\-Image}}
+\subsubsection[{Integral\-Image}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf tld\-::\-Integral\-Image}$<$ T $>$\-::{\bf Integral\-Image} (
+\begin{DoxyParamCaption}
+\item[{cv\-::\-Size}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classtld_1_1IntegralImage_abc8beb4ec0dcfb6f28645648f5849250}
+
+
+This constructor allocates the integral image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & the size of the integral image. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classtld_1_1IntegralImage_a79213d3f8187e10f1dc49f0b7e499caa}{\index{tld\-::\-Integral\-Image@{tld\-::\-Integral\-Image}!$\sim$\-Integral\-Image@{$\sim$\-Integral\-Image}}
+\index{$\sim$\-Integral\-Image@{$\sim$\-Integral\-Image}!tld::IntegralImage@{tld\-::\-Integral\-Image}}
+\subsubsection[{$\sim$\-Integral\-Image}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ virtual {\bf tld\-::\-Integral\-Image}$<$ T $>$\-::$\sim${\bf Integral\-Image} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classtld_1_1IntegralImage_a79213d3f8187e10f1dc49f0b7e499caa}
+
+
+This destructor releases of data memory. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classtld_1_1IntegralImage_a85bb20526a40615c3d0d7c0b5e53b55a}{\index{tld\-::\-Integral\-Image@{tld\-::\-Integral\-Image}!calc\-Int\-Img@{calc\-Int\-Img}}
+\index{calc\-Int\-Img@{calc\-Int\-Img}!tld::IntegralImage@{tld\-::\-Integral\-Image}}
+\subsubsection[{calc\-Int\-Img}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf tld\-::\-Integral\-Image}$<$ T $>$\-::calc\-Int\-Img (
+\begin{DoxyParamCaption}
+\item[{const cv\-::\-Mat \&}]{img, }
+\item[{bool}]{squared = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classtld_1_1IntegralImage_a85bb20526a40615c3d0d7c0b5e53b55a}
+
+
+Calculates the integral image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em img} & the transforming image. \\
+\hline
+{\em squared} & if true, the integral image is calculated for square pixel values; if false, the integral image is calculated standard \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{classtld_1_1IntegralImage_a85bb20526a40615c3d0d7c0b5e53b55a_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classtld_1_1IntegralImage_a671be18d2f3a30aa1aea12d63a787e48}{\index{tld\-::\-Integral\-Image@{tld\-::\-Integral\-Image}!data@{data}}
+\index{data@{data}!tld::IntegralImage@{tld\-::\-Integral\-Image}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ T$\ast$ {\bf tld\-::\-Integral\-Image}$<$ T $>$\-::data}}\label{classtld_1_1IntegralImage_a671be18d2f3a30aa1aea12d63a787e48}
+
+
+Array containg the entries for the integral image in row-\/first manner. Of size width$\ast$height. 
+
+\hypertarget{classtld_1_1IntegralImage_ad5f65eee66dc3ba0d8f0462f858c1e99}{\index{tld\-::\-Integral\-Image@{tld\-::\-Integral\-Image}!height@{height}}
+\index{height@{height}!tld::IntegralImage@{tld\-::\-Integral\-Image}}
+\subsubsection[{height}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ int {\bf tld\-::\-Integral\-Image}$<$ T $>$\-::height}}\label{classtld_1_1IntegralImage_ad5f65eee66dc3ba0d8f0462f858c1e99}
+
+
+the height of integral image. 
+
+\hypertarget{classtld_1_1IntegralImage_af8ea5fee24e9726087c0e9f6159141e8}{\index{tld\-::\-Integral\-Image@{tld\-::\-Integral\-Image}!width@{width}}
+\index{width@{width}!tld::IntegralImage@{tld\-::\-Integral\-Image}}
+\subsubsection[{width}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ int {\bf tld\-::\-Integral\-Image}$<$ T $>$\-::width}}\label{classtld_1_1IntegralImage_af8ea5fee24e9726087c0e9f6159141e8}
+
+
+the width of integral image. 
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/libopentld/tld/\hyperlink{IntegralImage_8h}{Integral\-Image.\-h}\end{DoxyCompactItemize}

@@ -1,0 +1,10 @@
+<map id="libconfig::Setting::add" name="libconfig::Setting::add">
+<area shape="rect" id="node2" href="$namespacelibconfig.html#a8e110477bf88dac91c60df3cc4e7eebe" title="libconfig::__toTypeCode" alt="" coords="203,13,365,40"/>
+<area shape="rect" id="node3" href="$libconfig_8c.html#af6b5f1049d3c527210b34c0274ffe360" title="config_setting_add" alt="" coords="219,64,349,91"/>
+<area shape="rect" id="node4" href="$libconfig_8c.html#a870489e55f5b29528004f6f3f8edf780" title="__config_validate_name" alt="" coords="413,5,576,32"/>
+<area shape="rect" id="node5" href="$libconfig_8c.html#ac49409f325b9cd30915be9583636e2b9" title="config_setting_get\l_member" alt="" coords="431,57,559,98"/>
+<area shape="rect" id="node8" href="$libconfig_8c.html#a8d1e88d9f713cc67d2a8e84b549313f5" title="config_setting_create" alt="" coords="421,123,568,149"/>
+<area shape="rect" id="node6" href="$libconfig_8c.html#a8b3b3fe8f3eb75216abe2a755d082c31" title="__config_list_search" alt="" coords="624,64,765,91"/>
+<area shape="rect" id="node7" href="$libconfig_8c.html#ac06b1f76965033ccc88ff4f81e1c1cc9" title="__config_name_compare" alt="" coords="814,64,981,91"/>
+<area shape="rect" id="node9" href="$libconfig_8c.html#a4ab61735cc71a53d22ce061ab91a2478" title="__config_list_add" alt="" coords="633,123,756,149"/>
+</map>

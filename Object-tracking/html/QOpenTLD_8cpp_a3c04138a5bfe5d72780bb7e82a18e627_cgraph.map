@@ -1,0 +1,27 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$ImAcq_8cpp.html#a92fb66a856dbc776d02d3f39e2373679" title="Allocates of memory and initializes date (except the capture) of stucture ImAcq. " alt="" coords="157,5,245,32"/>
+<area shape="rect" id="node3" href="$ConfigDialog_8cpp.html#a25273d83c6fbf5a277f6a46ad99b8bce" title="getSettingsFromConfigDialog" alt="" coords="105,56,298,83"/>
+<area shape="rect" id="node4" href="$classtld_1_1Config.html#a920f1659e8823a127eca60b228da416a" title="Configures the CamNode, ImAcq and TldClassifier. " alt="" coords="130,107,273,133"/>
+<area shape="rect" id="node5" href="$ImAcq_8cpp.html#a9d45e2a76bf8d7db08e938dd16383f10" title="Initializes the capture. " alt="" coords="163,157,240,184"/>
+<area shape="rect" id="node7" href="$classtld_1_1Gui.html#aed1a0c246dfc3795560422ae762d58b3" title="Creates the output window. " alt="" coords="157,208,246,235"/>
+<area shape="rect" id="node8" href="$classMain.html#a5effa58c6ae671f8ce4ff31cb6e07aa5" title="Begins the work. " alt="" coords="150,335,253,361"/>
+<area shape="rect" id="node6" href="$ImAcq_8cpp.html#a443b3a926d4435ab46a37f483138681b" title="Gets the number of frames (IMACQ_VID) " alt="" coords="347,107,549,133"/>
+<area shape="rect" id="node9" href="$ImAcq_8cpp.html#aa2d578629cc485cf191adede101d032f" title="Gets the next image with increase the count of frames. " alt="" coords="625,309,727,336"/>
+<area shape="rect" id="node16" href="$classtld_1_1Trajectory.html#a635927cb2bca22f884ddc00a0e18b6d7" title="Initializes the trajectory. " alt="" coords="385,512,511,539"/>
+<area shape="rect" id="node17" href="$classMain.html#a1eb1fa4005a0235d28035ec4c02ebd80" title="Determines a maximun of the moving regions. " alt="" coords="365,411,531,437"/>
+<area shape="rect" id="node18" href="$ImAcq_8cpp.html#a864124578948857087e2ba9021351e80" title="Determines if there are more frame. " alt="" coords="598,360,754,387"/>
+<area shape="rect" id="node19" href="$classMain.html#a1be636e85ee5221937fca1d29f344842" title="Determines whether there is motion in the box. " alt="" coords="605,461,747,488"/>
+<area shape="rect" id="node21" href="$namespacetld.html#ad23d08bb67b847f43e2781a53f4af957" title="Converts the array (size 4) to rectangle. " alt="" coords="382,563,514,589"/>
+<area shape="rect" id="node22" href="$classtld_1_1Trajectory.html#a28a92000e31f71ce0831d72b068ae97b" title="Adds a new point to the trajectory. If you want to add a &quot;place holder&quot; point just add a cvPoint(&#45;1..." alt="" coords="367,157,529,184"/>
+<area shape="rect" id="node23" href="$classtld_1_1Trajectory.html#af8a0ffc5eb86050e0d26c766e4b2098d" title="Draws the trajectory into an image. " alt="" coords="350,208,546,235"/>
+<area shape="rect" id="node24" href="$namespacetld.html#a75cd208f8053ece69d5d7de9c2ed33fd" title="Gets a bounding box from the user. " alt="" coords="379,259,517,285"/>
+<area shape="rect" id="node10" href="$ImAcq_8cpp.html#affd4242000946f8dcf68beed336cb540" title="Grabs the image (for IMACQ_CAM, IMACQ_VID, IMACQ_STREAM). " alt="" coords="1062,259,1149,285"/>
+<area shape="rect" id="node12" href="$ImAcq_8cpp.html#a302e2a11dfe69f3925807ae0ff9cb2ec" title="Loads the current frame. " alt="" coords="815,335,982,361"/>
+<area shape="rect" id="node14" href="$ImAcq_8cpp.html#adad11684c86a1fcdbb6f736878bba8cc" title="Gets image by current time. " alt="" coords="803,284,994,311"/>
+<area shape="rect" id="node15" href="$ImAcq_8cpp.html#a8f0d4ea2207021c8b2f9884edcb50fee" title="Increases the count of frames. " alt="" coords="843,385,954,412"/>
+<area shape="rect" id="node11" href="$ImAcq_8cpp.html#a2fb18ba9075695bd7dc0a2811ae441cc" title="msleep" alt="" coords="1216,259,1280,285"/>
+<area shape="rect" id="node13" href="$ImAcq_8cpp.html#ad7a472fe90064b4c9292c879ecea82fe" title="Loads the frame by number. " alt="" coords="1043,309,1167,336"/>
+<area shape="rect" id="node20" href="$classMain.html#a5d36ac4bd55c63eae9b37d194a6017ce" title="Unites the overlapping rectangles. " alt="" coords="602,411,750,437"/>
+<area shape="rect" id="node25" href="$classtld_1_1Gui.html#acc98f1b85990af20927cbf3e691a8f1a" title="Gets the name of the output window. " alt="" coords="601,208,751,235"/>
+<area shape="rect" id="node26" href="$namespacetld.html#aed141e469725fa20f8828efbe29e57f1" title="tld::mouseHandler" alt="" coords="612,259,740,285"/>
+</map>

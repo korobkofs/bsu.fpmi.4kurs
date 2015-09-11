@@ -1,0 +1,5 @@
+<map id="cv::gpu::device::reduce_key_val_detail::Unroll::loopShfl" name="cv::gpu::device::reduce_key_val_detail::Unroll::loopShfl">
+<area shape="rect" id="node2" href="$namespacecv_1_1gpu_1_1device_1_1reduce__key__val__detail.html#aaef6abf3d0a904c43b8e28c4a8ca3c70" title="cv::gpu::device::reduce\l_key_val_detail::mergeShfl" alt="" coords="213,13,392,54"/>
+<area shape="rect" id="node3" href="$namespacecv_1_1gpu_1_1device.html#a9036877715cb1db89bf387b835582333" title="cv::gpu::device::shfl_down" alt="" coords="685,20,864,47"/>
+<area shape="rect" id="node4" href="$namespacecv_1_1gpu_1_1device_1_1reduce__key__val__detail.html#aed43794ec9cbb892e897b2ea7f650107" title="cv::gpu::device::reduce\l_key_val_detail::copyValsShfl" alt="" coords="440,42,637,83"/>
+</map>

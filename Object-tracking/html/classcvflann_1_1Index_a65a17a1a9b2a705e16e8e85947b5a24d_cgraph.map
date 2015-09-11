@@ -1,0 +1,7 @@
+<map id="cvflann::Index::save" name="cvflann::Index::save">
+<area shape="rect" id="node2" href="$namespacecvflann.html#a7982bbe71fa4c72c311baf11f84a3816" title="cvflann::save_header" alt="" coords="208,56,355,83"/>
+<area shape="rect" id="node6" href="$classcvflann_1_1Index.html#a7cad2783e47031b8e1ea0c1a56eb72cc" title="Saves the index to a stream. " alt="" coords="195,107,367,133"/>
+<area shape="rect" id="node3" href="$classcvflann_1_1NNIndex.html#ac40469dbc16bcb0fb4b0c9912c5f8acb" title="cvflann::NNIndex::getType" alt="" coords="416,5,595,32"/>
+<area shape="rect" id="node4" href="$classcvflann_1_1NNIndex.html#ae75fd979d25a239b4aba751114493fe0" title="cvflann::NNIndex::size" alt="" coords="427,56,583,83"/>
+<area shape="rect" id="node5" href="$classcvflann_1_1NNIndex.html#acdcc255d1b67d5636a0f76b68809e6be" title="cvflann::NNIndex::veclen" alt="" coords="420,107,591,133"/>
+</map>

@@ -1,0 +1,175 @@
+\hypertarget{classtld_1_1Trajectory}{\section{tld\-:\-:Trajectory Class Reference}
+\label{classtld_1_1Trajectory}\index{tld\-::\-Trajectory@{tld\-::\-Trajectory}}
+}
+
+
+Detection trajectory; a line which associates the last detections. The data is stored in 2 \char`\"{}shift registers\char`\"{}.  
+
+
+
+
+{\ttfamily \#include $<$Trajectory.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtld_1_1Trajectory_ab6baa664e2ea39e5ec0075f525a466ba}{Trajectory} ()
+\begin{DoxyCompactList}\small\item\em Constructor; don't forget to call init(length) afterwards. \end{DoxyCompactList}\item 
+\hyperlink{classtld_1_1Trajectory_add295e2524012793dd3040fe098ddf65}{$\sim$\-Trajectory} ()
+\begin{DoxyCompactList}\small\item\em Empty destructor. \end{DoxyCompactList}\item 
+void \hyperlink{classtld_1_1Trajectory_a635927cb2bca22f884ddc00a0e18b6d7}{init} (std\-::size\-\_\-t length)
+\begin{DoxyCompactList}\small\item\em Initializes the trajectory. \end{DoxyCompactList}\item 
+void \hyperlink{classtld_1_1Trajectory_a28a92000e31f71ce0831d72b068ae97b}{add\-Point} (Cv\-Point \hyperlink{namespacetld_a680868c3e5a47352c5353897519636d4}{point}, Cv\-Scalar color)
+\begin{DoxyCompactList}\small\item\em Adds a new point to the trajectory. If you want to add a \char`\"{}place holder\char`\"{} point just add a cv\-Point(-\/1, -\/1) and cv\-Scalar(-\/1 , -\/1, -\/1) \end{DoxyCompactList}\item 
+void \hyperlink{classtld_1_1Trajectory_af8a0ffc5eb86050e0d26c766e4b2098d}{draw\-Trajectory} (Ipl\-Image $\ast$image)
+\begin{DoxyCompactList}\small\item\em Draws the trajectory into an image. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::size\-\_\-t \hyperlink{classtld_1_1Trajectory_a116616c9feae2932359a858cf4f947a0}{m\-\_\-length}
+\item 
+std\-::vector$<$ Cv\-Point $>$ \hyperlink{classtld_1_1Trajectory_aa9090109c11c57313b8fa7853e0d98fa}{m\-\_\-track\-\_\-positions}
+\begin{DoxyCompactList}\small\item\em !$<$ number of the last frames which are considered by the trajectory \end{DoxyCompactList}\item 
+std\-::vector$<$ Cv\-Scalar $>$ \hyperlink{classtld_1_1Trajectory_a16024c5a1a5853ad73d5ea5626578561}{m\-\_\-track\-\_\-colors}
+\begin{DoxyCompactList}\small\item\em !$<$ vector containing the locations of the points \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Detection trajectory; a line which associates the last detections. The data is stored in 2 \char`\"{}shift registers\char`\"{}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classtld_1_1Trajectory_ab6baa664e2ea39e5ec0075f525a466ba}{\index{tld\-::\-Trajectory@{tld\-::\-Trajectory}!Trajectory@{Trajectory}}
+\index{Trajectory@{Trajectory}!tld::Trajectory@{tld\-::\-Trajectory}}
+\subsubsection[{Trajectory}]{\setlength{\rightskip}{0pt plus 5cm}tld\-::\-Trajectory\-::\-Trajectory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1Trajectory_ab6baa664e2ea39e5ec0075f525a466ba}
+
+
+Constructor; don't forget to call init(length) afterwards. 
+
+\hypertarget{classtld_1_1Trajectory_add295e2524012793dd3040fe098ddf65}{\index{tld\-::\-Trajectory@{tld\-::\-Trajectory}!$\sim$\-Trajectory@{$\sim$\-Trajectory}}
+\index{$\sim$\-Trajectory@{$\sim$\-Trajectory}!tld::Trajectory@{tld\-::\-Trajectory}}
+\subsubsection[{$\sim$\-Trajectory}]{\setlength{\rightskip}{0pt plus 5cm}tld\-::\-Trajectory\-::$\sim$\-Trajectory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1Trajectory_add295e2524012793dd3040fe098ddf65}
+
+
+Empty destructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classtld_1_1Trajectory_a28a92000e31f71ce0831d72b068ae97b}{\index{tld\-::\-Trajectory@{tld\-::\-Trajectory}!add\-Point@{add\-Point}}
+\index{add\-Point@{add\-Point}!tld::Trajectory@{tld\-::\-Trajectory}}
+\subsubsection[{add\-Point}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::\-Trajectory\-::add\-Point (
+\begin{DoxyParamCaption}
+\item[{Cv\-Point}]{point, }
+\item[{Cv\-Scalar}]{color}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1Trajectory_a28a92000e31f71ce0831d72b068ae97b}
+
+
+Adds a new point to the trajectory. If you want to add a \char`\"{}place holder\char`\"{} point just add a cv\-Point(-\/1, -\/1) and cv\-Scalar(-\/1 , -\/1, -\/1) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & point which specifies the location of the point \\
+\hline
+{\em color} & defines the color (confidence) of the point \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtld_1_1Trajectory_a28a92000e31f71ce0831d72b068ae97b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classtld_1_1Trajectory_af8a0ffc5eb86050e0d26c766e4b2098d}{\index{tld\-::\-Trajectory@{tld\-::\-Trajectory}!draw\-Trajectory@{draw\-Trajectory}}
+\index{draw\-Trajectory@{draw\-Trajectory}!tld::Trajectory@{tld\-::\-Trajectory}}
+\subsubsection[{draw\-Trajectory}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::\-Trajectory\-::draw\-Trajectory (
+\begin{DoxyParamCaption}
+\item[{Ipl\-Image $\ast$}]{image}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1Trajectory_af8a0ffc5eb86050e0d26c766e4b2098d}
+
+
+Draws the trajectory into an image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & image to draw \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtld_1_1Trajectory_af8a0ffc5eb86050e0d26c766e4b2098d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classtld_1_1Trajectory_a635927cb2bca22f884ddc00a0e18b6d7}{\index{tld\-::\-Trajectory@{tld\-::\-Trajectory}!init@{init}}
+\index{init@{init}!tld::Trajectory@{tld\-::\-Trajectory}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::\-Trajectory\-::init (
+\begin{DoxyParamCaption}
+\item[{std\-::size\-\_\-t}]{length}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1Trajectory_a635927cb2bca22f884ddc00a0e18b6d7}
+
+
+Initializes the trajectory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em length} & specifies the number of the last frames which are considered by the trajectory \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtld_1_1Trajectory_a635927cb2bca22f884ddc00a0e18b6d7_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classtld_1_1Trajectory_a116616c9feae2932359a858cf4f947a0}{\index{tld\-::\-Trajectory@{tld\-::\-Trajectory}!m\-\_\-length@{m\-\_\-length}}
+\index{m\-\_\-length@{m\-\_\-length}!tld::Trajectory@{tld\-::\-Trajectory}}
+\subsubsection[{m\-\_\-length}]{\setlength{\rightskip}{0pt plus 5cm}std\-::size\-\_\-t tld\-::\-Trajectory\-::m\-\_\-length\hspace{0.3cm}{\ttfamily [private]}}}\label{classtld_1_1Trajectory_a116616c9feae2932359a858cf4f947a0}
+\hypertarget{classtld_1_1Trajectory_a16024c5a1a5853ad73d5ea5626578561}{\index{tld\-::\-Trajectory@{tld\-::\-Trajectory}!m\-\_\-track\-\_\-colors@{m\-\_\-track\-\_\-colors}}
+\index{m\-\_\-track\-\_\-colors@{m\-\_\-track\-\_\-colors}!tld::Trajectory@{tld\-::\-Trajectory}}
+\subsubsection[{m\-\_\-track\-\_\-colors}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$Cv\-Scalar$>$ tld\-::\-Trajectory\-::m\-\_\-track\-\_\-colors\hspace{0.3cm}{\ttfamily [private]}}}\label{classtld_1_1Trajectory_a16024c5a1a5853ad73d5ea5626578561}
+
+
+!$<$ vector containing the locations of the points 
+
+\hypertarget{classtld_1_1Trajectory_aa9090109c11c57313b8fa7853e0d98fa}{\index{tld\-::\-Trajectory@{tld\-::\-Trajectory}!m\-\_\-track\-\_\-positions@{m\-\_\-track\-\_\-positions}}
+\index{m\-\_\-track\-\_\-positions@{m\-\_\-track\-\_\-positions}!tld::Trajectory@{tld\-::\-Trajectory}}
+\subsubsection[{m\-\_\-track\-\_\-positions}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$Cv\-Point$>$ tld\-::\-Trajectory\-::m\-\_\-track\-\_\-positions\hspace{0.3cm}{\ttfamily [private]}}}\label{classtld_1_1Trajectory_aa9090109c11c57313b8fa7853e0d98fa}
+
+
+!$<$ number of the last frames which are considered by the trajectory 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/opentld/main/\hyperlink{Trajectory_8h}{Trajectory.\-h}\item 
+src/opentld/main/\hyperlink{Trajectory_8cpp}{Trajectory.\-cpp}\end{DoxyCompactItemize}

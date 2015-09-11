@@ -1,0 +1,6 @@
+<map id="CvBGCodeBookModel" name="CvBGCodeBookModel">
+<area shape="rect" id="node2" href="$structCvSize.html" title="CvSize" alt="" coords="5,112,69,139"/>
+<area shape="rect" id="node3" href="$structCvBGCodeBookElem.html" title="CvBGCodeBookElem" alt="" coords="93,112,241,139"/>
+<area shape="rect" id="node4" href="$structCvMemStorage.html" title="CvMemStorage" alt="" coords="321,112,433,139"/>
+<area shape="rect" id="node5" href="$structCvMemBlock.html" title="CvMemBlock" alt="" coords="327,7,428,33"/>
+</map>

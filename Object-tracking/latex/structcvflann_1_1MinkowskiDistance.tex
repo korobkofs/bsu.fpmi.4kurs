@@ -1,0 +1,116 @@
+\hypertarget{structcvflann_1_1MinkowskiDistance}{\section{cvflann\-:\-:Minkowski\-Distance$<$ T $>$ Struct Template Reference}
+\label{structcvflann_1_1MinkowskiDistance}\index{cvflann\-::\-Minkowski\-Distance$<$ T $>$@{cvflann\-::\-Minkowski\-Distance$<$ T $>$}}
+}
+
+
+{\ttfamily \#include $<$dist.\-h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classcvflann_1_1True}{True} \hyperlink{structcvflann_1_1MinkowskiDistance_ab0f43baaf0a36a5598a88b2ee55a3e01}{is\-\_\-kdtree\-\_\-distance}
+\item 
+typedef \hyperlink{classcvflann_1_1True}{True} \hyperlink{structcvflann_1_1MinkowskiDistance_a84506bd48e3b43e87d56e9b60d9fb464}{is\-\_\-vector\-\_\-space\-\_\-distance}
+\item 
+typedef \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \hyperlink{structcvflann_1_1MinkowskiDistance_ade76f2298b0f811a466afdf72b18846b}{Element\-Type}
+\item 
+typedef \hyperlink{structcvflann_1_1Accumulator}{Accumulator}$<$ \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} $>$\-::Type \hyperlink{structcvflann_1_1MinkowskiDistance_a21baf56e06b45cdea5de1530c2e7c0ec}{Result\-Type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structcvflann_1_1MinkowskiDistance_a47e723962a1c64dc6f488f6e2e481d29}{Minkowski\-Distance} (int order\-\_\-)
+\item 
+{\footnotesize template$<$typename Iterator1 , typename Iterator2 $>$ }\\\hyperlink{structcvflann_1_1MinkowskiDistance_a21baf56e06b45cdea5de1530c2e7c0ec}{Result\-Type} \hyperlink{structcvflann_1_1MinkowskiDistance_ac9ebfdd3f6bbf978ef88d68510828b75}{operator()} (Iterator1 \hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}, Iterator2 \hyperlink{legacy_8hpp_ac04272e8ca865b8fba18d36edae9fd2a}{b}, size\-\_\-t \hyperlink{legacy_8hpp_ae97003f8d5c64cdfb99f6f2606d121b6}{size}, \hyperlink{structcvflann_1_1MinkowskiDistance_a21baf56e06b45cdea5de1530c2e7c0ec}{Result\-Type} worst\-\_\-dist=-\/1) const 
+\item 
+{\footnotesize template$<$typename U , typename V $>$ }\\\hyperlink{structcvflann_1_1MinkowskiDistance_a21baf56e06b45cdea5de1530c2e7c0ec}{Result\-Type} \hyperlink{structcvflann_1_1MinkowskiDistance_a548c7c4e8edf95dd3484463fc675a8a9}{accum\-\_\-dist} (const \hyperlink{core__c_8h_aa9c521f41af9a5191e5e4b6ffbae211a}{U} \&\hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}, const \hyperlink{core__c_8h_ad8dd4fff0e3910932187b6de0543cae1}{V} \&\hyperlink{legacy_8hpp_ac04272e8ca865b8fba18d36edae9fd2a}{b}, int) const 
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{structcvflann_1_1MinkowskiDistance_a2703b6de832914cac0163cab19803759}{order}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{structcvflann_1_1MinkowskiDistance_ade76f2298b0f811a466afdf72b18846b}{\index{cvflann\-::\-Minkowski\-Distance@{cvflann\-::\-Minkowski\-Distance}!Element\-Type@{Element\-Type}}
+\index{Element\-Type@{Element\-Type}!cvflann::MinkowskiDistance@{cvflann\-::\-Minkowski\-Distance}}
+\subsubsection[{Element\-Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ typedef {\bf T} {\bf cvflann\-::\-Minkowski\-Distance}$<$ {\bf T} $>$\-::{\bf Element\-Type}}}\label{structcvflann_1_1MinkowskiDistance_ade76f2298b0f811a466afdf72b18846b}
+\hypertarget{structcvflann_1_1MinkowskiDistance_ab0f43baaf0a36a5598a88b2ee55a3e01}{\index{cvflann\-::\-Minkowski\-Distance@{cvflann\-::\-Minkowski\-Distance}!is\-\_\-kdtree\-\_\-distance@{is\-\_\-kdtree\-\_\-distance}}
+\index{is\-\_\-kdtree\-\_\-distance@{is\-\_\-kdtree\-\_\-distance}!cvflann::MinkowskiDistance@{cvflann\-::\-Minkowski\-Distance}}
+\subsubsection[{is\-\_\-kdtree\-\_\-distance}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ typedef {\bf True} {\bf cvflann\-::\-Minkowski\-Distance}$<$ {\bf T} $>$\-::{\bf is\-\_\-kdtree\-\_\-distance}}}\label{structcvflann_1_1MinkowskiDistance_ab0f43baaf0a36a5598a88b2ee55a3e01}
+\hypertarget{structcvflann_1_1MinkowskiDistance_a84506bd48e3b43e87d56e9b60d9fb464}{\index{cvflann\-::\-Minkowski\-Distance@{cvflann\-::\-Minkowski\-Distance}!is\-\_\-vector\-\_\-space\-\_\-distance@{is\-\_\-vector\-\_\-space\-\_\-distance}}
+\index{is\-\_\-vector\-\_\-space\-\_\-distance@{is\-\_\-vector\-\_\-space\-\_\-distance}!cvflann::MinkowskiDistance@{cvflann\-::\-Minkowski\-Distance}}
+\subsubsection[{is\-\_\-vector\-\_\-space\-\_\-distance}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ typedef {\bf True} {\bf cvflann\-::\-Minkowski\-Distance}$<$ {\bf T} $>$\-::{\bf is\-\_\-vector\-\_\-space\-\_\-distance}}}\label{structcvflann_1_1MinkowskiDistance_a84506bd48e3b43e87d56e9b60d9fb464}
+\hypertarget{structcvflann_1_1MinkowskiDistance_a21baf56e06b45cdea5de1530c2e7c0ec}{\index{cvflann\-::\-Minkowski\-Distance@{cvflann\-::\-Minkowski\-Distance}!Result\-Type@{Result\-Type}}
+\index{Result\-Type@{Result\-Type}!cvflann::MinkowskiDistance@{cvflann\-::\-Minkowski\-Distance}}
+\subsubsection[{Result\-Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ typedef {\bf Accumulator}$<${\bf T}$>$\-::Type {\bf cvflann\-::\-Minkowski\-Distance}$<$ {\bf T} $>$\-::{\bf Result\-Type}}}\label{structcvflann_1_1MinkowskiDistance_a21baf56e06b45cdea5de1530c2e7c0ec}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structcvflann_1_1MinkowskiDistance_a47e723962a1c64dc6f488f6e2e481d29}{\index{cvflann\-::\-Minkowski\-Distance@{cvflann\-::\-Minkowski\-Distance}!Minkowski\-Distance@{Minkowski\-Distance}}
+\index{Minkowski\-Distance@{Minkowski\-Distance}!cvflann::MinkowskiDistance@{cvflann\-::\-Minkowski\-Distance}}
+\subsubsection[{Minkowski\-Distance}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf cvflann\-::\-Minkowski\-Distance}$<$ {\bf T} $>$\-::{\bf Minkowski\-Distance} (
+\begin{DoxyParamCaption}
+\item[{int}]{order\-\_\-}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{structcvflann_1_1MinkowskiDistance_a47e723962a1c64dc6f488f6e2e481d29}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structcvflann_1_1MinkowskiDistance_a548c7c4e8edf95dd3484463fc675a8a9}{\index{cvflann\-::\-Minkowski\-Distance@{cvflann\-::\-Minkowski\-Distance}!accum\-\_\-dist@{accum\-\_\-dist}}
+\index{accum\-\_\-dist@{accum\-\_\-dist}!cvflann::MinkowskiDistance@{cvflann\-::\-Minkowski\-Distance}}
+\subsubsection[{accum\-\_\-dist}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ template$<$typename U , typename V $>$ {\bf Result\-Type} {\bf cvflann\-::\-Minkowski\-Distance}$<$ {\bf T} $>$\-::accum\-\_\-dist (
+\begin{DoxyParamCaption}
+\item[{const {\bf U} \&}]{a, }
+\item[{const {\bf V} \&}]{b, }
+\item[{int}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{structcvflann_1_1MinkowskiDistance_a548c7c4e8edf95dd3484463fc675a8a9}
+Partial distance, used by the kd-\/tree. 
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{structcvflann_1_1MinkowskiDistance_a548c7c4e8edf95dd3484463fc675a8a9_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{structcvflann_1_1MinkowskiDistance_ac9ebfdd3f6bbf978ef88d68510828b75}{\index{cvflann\-::\-Minkowski\-Distance@{cvflann\-::\-Minkowski\-Distance}!operator()@{operator()}}
+\index{operator()@{operator()}!cvflann::MinkowskiDistance@{cvflann\-::\-Minkowski\-Distance}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ template$<$typename Iterator1 , typename Iterator2 $>$ {\bf Result\-Type} {\bf cvflann\-::\-Minkowski\-Distance}$<$ {\bf T} $>$\-::operator() (
+\begin{DoxyParamCaption}
+\item[{Iterator1}]{a, }
+\item[{Iterator2}]{b, }
+\item[{size\-\_\-t}]{size, }
+\item[{{\bf Result\-Type}}]{worst\-\_\-dist = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{structcvflann_1_1MinkowskiDistance_ac9ebfdd3f6bbf978ef88d68510828b75}
+Compute the Minkowsky (L\-\_\-p) distance between two vectors.
+
+This is highly optimised, with loop unrolling, as it is one of the most expensive inner loops.
+
+The computation of squared root at the end is omitted for efficiency. 
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{structcvflann_1_1MinkowskiDistance_ac9ebfdd3f6bbf978ef88d68510828b75_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structcvflann_1_1MinkowskiDistance_a2703b6de832914cac0163cab19803759}{\index{cvflann\-::\-Minkowski\-Distance@{cvflann\-::\-Minkowski\-Distance}!order@{order}}
+\index{order@{order}!cvflann::MinkowskiDistance@{cvflann\-::\-Minkowski\-Distance}}
+\subsubsection[{order}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ int {\bf cvflann\-::\-Minkowski\-Distance}$<$ {\bf T} $>$\-::order}}\label{structcvflann_1_1MinkowskiDistance_a2703b6de832914cac0163cab19803759}
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/flann/\hyperlink{dist_8h}{dist.\-h}\end{DoxyCompactItemize}

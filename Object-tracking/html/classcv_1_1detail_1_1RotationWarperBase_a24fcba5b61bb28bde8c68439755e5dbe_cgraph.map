@@ -1,0 +1,4 @@
+<map id="cv::detail::RotationWarperBase::detectResultRoiByBorder" name="cv::detail::RotationWarperBase::detectResultRoiByBorder">
+<area shape="rect" id="node2" href="$namespacecv_1_1gpu.html#a706c9def6816de566be2671b75ec5309" title="computes per&#45;element maximum of two arrays (dst = max(src1, src2)) " alt="" coords="261,5,360,32"/>
+<area shape="rect" id="node3" href="$namespacecv_1_1gpu.html#a8d100341ab11a730a3c90b75d5890a8c" title="computes per&#45;element minimum of two arrays (dst = min(src1, src2)) " alt="" coords="263,56,358,83"/>
+</map>

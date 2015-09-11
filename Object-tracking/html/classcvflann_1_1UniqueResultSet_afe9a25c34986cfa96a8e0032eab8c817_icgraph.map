@@ -1,0 +1,5 @@
+<map id="cvflann::UniqueResultSet::sortAndCopy" name="cvflann::UniqueResultSet::sortAndCopy">
+<area shape="rect" id="node2" href="$classcvflann_1_1LshIndex.html#a82b5dd8af0ae2cbad219a42a66bcccbf" title="Perform k&#45;nearest neighbor search. " alt="" coords="255,5,388,46"/>
+<area shape="rect" id="node3" href="$classcvflann_1_1NNIndex.html#a8cf5c942430421358bf67d93565942db" title="Perform k&#45;nearest neighbor search. " alt="" coords="224,71,419,97"/>
+<area shape="rect" id="node4" href="$classcvflann_1_1NNIndex.html#a142da9423596dd59766d1dcbcac433e9" title="Perform radius search. " alt="" coords="238,122,405,163"/>
+</map>

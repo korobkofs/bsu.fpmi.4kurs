@@ -1,0 +1,72 @@
+\hypertarget{classcv_1_1gpu_1_1BaseRowFilter__GPU}{\section{cv\-:\-:gpu\-:\-:Base\-Row\-Filter\-\_\-\-G\-P\-U Class Reference}
+\label{classcv_1_1gpu_1_1BaseRowFilter__GPU}\index{cv\-::gpu\-::\-Base\-Row\-Filter\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Base\-Row\-Filter\-\_\-\-G\-P\-U}}
+}
+
+
+{\ttfamily \#include $<$gpu.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcv_1_1gpu_1_1BaseRowFilter__GPU_a7121438e5db45a777d0453fd25d96ead}{Base\-Row\-Filter\-\_\-\-G\-P\-U} (int ksize\-\_\-, int anchor\-\_\-)
+\item 
+virtual \hyperlink{classcv_1_1gpu_1_1BaseRowFilter__GPU_af3f6539f6fccc43c07920bc9dacbd00a}{$\sim$\-Base\-Row\-Filter\-\_\-\-G\-P\-U} ()
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1BaseRowFilter__GPU_aa7a0ad3bfebfabcc7abcb7e3058b2c9a}{operator()} (const Gpu\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, Gpu\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, \hyperlink{classcv_1_1gpu_1_1Stream}{Stream} \&stream=\hyperlink{classcv_1_1gpu_1_1Stream_af96c23564834f88333dcb8997df553f1}{Stream\-::\-Null}())=0
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classcv_1_1gpu_1_1BaseRowFilter__GPU_a913539544c388aa5194776cf1b918b91}{ksize}
+\item 
+int \hyperlink{classcv_1_1gpu_1_1BaseRowFilter__GPU_aa900d2965b5818209c0f91f75881a2b3}{anchor}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The Base Class for 1\-D or Row-\/wise Filters
+
+This is the base class for linear or non-\/linear filters that process 1\-D data. In particular, such filters are used for the \char`\"{}horizontal\char`\"{} filtering parts in separable filters. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcv_1_1gpu_1_1BaseRowFilter__GPU_a7121438e5db45a777d0453fd25d96ead}{\index{cv\-::gpu\-::\-Base\-Row\-Filter\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Base\-Row\-Filter\-\_\-\-G\-P\-U}!Base\-Row\-Filter\-\_\-\-G\-P\-U@{Base\-Row\-Filter\-\_\-\-G\-P\-U}}
+\index{Base\-Row\-Filter\-\_\-\-G\-P\-U@{Base\-Row\-Filter\-\_\-\-G\-P\-U}!cv::gpu::BaseRowFilter_GPU@{cv\-::gpu\-::\-Base\-Row\-Filter\-\_\-\-G\-P\-U}}
+\subsubsection[{Base\-Row\-Filter\-\_\-\-G\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::gpu\-::\-Base\-Row\-Filter\-\_\-\-G\-P\-U\-::\-Base\-Row\-Filter\-\_\-\-G\-P\-U (
+\begin{DoxyParamCaption}
+\item[{int}]{ksize\-\_\-, }
+\item[{int}]{anchor\-\_\-}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1gpu_1_1BaseRowFilter__GPU_a7121438e5db45a777d0453fd25d96ead}
+\hypertarget{classcv_1_1gpu_1_1BaseRowFilter__GPU_af3f6539f6fccc43c07920bc9dacbd00a}{\index{cv\-::gpu\-::\-Base\-Row\-Filter\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Base\-Row\-Filter\-\_\-\-G\-P\-U}!$\sim$\-Base\-Row\-Filter\-\_\-\-G\-P\-U@{$\sim$\-Base\-Row\-Filter\-\_\-\-G\-P\-U}}
+\index{$\sim$\-Base\-Row\-Filter\-\_\-\-G\-P\-U@{$\sim$\-Base\-Row\-Filter\-\_\-\-G\-P\-U}!cv::gpu::BaseRowFilter_GPU@{cv\-::gpu\-::\-Base\-Row\-Filter\-\_\-\-G\-P\-U}}
+\subsubsection[{$\sim$\-Base\-Row\-Filter\-\_\-\-G\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}virtual cv\-::gpu\-::\-Base\-Row\-Filter\-\_\-\-G\-P\-U\-::$\sim$\-Base\-Row\-Filter\-\_\-\-G\-P\-U (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcv_1_1gpu_1_1BaseRowFilter__GPU_af3f6539f6fccc43c07920bc9dacbd00a}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcv_1_1gpu_1_1BaseRowFilter__GPU_aa7a0ad3bfebfabcc7abcb7e3058b2c9a}{\index{cv\-::gpu\-::\-Base\-Row\-Filter\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Base\-Row\-Filter\-\_\-\-G\-P\-U}!operator()@{operator()}}
+\index{operator()@{operator()}!cv::gpu::BaseRowFilter_GPU@{cv\-::gpu\-::\-Base\-Row\-Filter\-\_\-\-G\-P\-U}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cv\-::gpu\-::\-Base\-Row\-Filter\-\_\-\-G\-P\-U\-::operator() (
+\begin{DoxyParamCaption}
+\item[{const Gpu\-Mat \&}]{src, }
+\item[{Gpu\-Mat \&}]{dst, }
+\item[{{\bf Stream} \&}]{stream = {\ttfamily {\bf Stream\-::\-Null}()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classcv_1_1gpu_1_1BaseRowFilter__GPU_aa7a0ad3bfebfabcc7abcb7e3058b2c9a}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcv_1_1gpu_1_1BaseRowFilter__GPU_aa900d2965b5818209c0f91f75881a2b3}{\index{cv\-::gpu\-::\-Base\-Row\-Filter\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Base\-Row\-Filter\-\_\-\-G\-P\-U}!anchor@{anchor}}
+\index{anchor@{anchor}!cv::gpu::BaseRowFilter_GPU@{cv\-::gpu\-::\-Base\-Row\-Filter\-\_\-\-G\-P\-U}}
+\subsubsection[{anchor}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::gpu\-::\-Base\-Row\-Filter\-\_\-\-G\-P\-U\-::anchor}}\label{classcv_1_1gpu_1_1BaseRowFilter__GPU_aa900d2965b5818209c0f91f75881a2b3}
+\hypertarget{classcv_1_1gpu_1_1BaseRowFilter__GPU_a913539544c388aa5194776cf1b918b91}{\index{cv\-::gpu\-::\-Base\-Row\-Filter\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Base\-Row\-Filter\-\_\-\-G\-P\-U}!ksize@{ksize}}
+\index{ksize@{ksize}!cv::gpu::BaseRowFilter_GPU@{cv\-::gpu\-::\-Base\-Row\-Filter\-\_\-\-G\-P\-U}}
+\subsubsection[{ksize}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::gpu\-::\-Base\-Row\-Filter\-\_\-\-G\-P\-U\-::ksize}}\label{classcv_1_1gpu_1_1BaseRowFilter__GPU_a913539544c388aa5194776cf1b918b91}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/gpu/\hyperlink{gpu_2gpu_8hpp}{gpu.\-hpp}\end{DoxyCompactItemize}

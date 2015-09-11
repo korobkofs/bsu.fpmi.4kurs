@@ -1,0 +1,116 @@
+\hypertarget{classcv_1_1gpu_1_1VideoReader__GPU_1_1VideoSource}{\section{cv\-:\-:gpu\-:\-:Video\-Reader\-\_\-\-G\-P\-U\-:\-:Video\-Source Class Reference}
+\label{classcv_1_1gpu_1_1VideoReader__GPU_1_1VideoSource}\index{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U\-::\-Video\-Source@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U\-::\-Video\-Source}}
+}
+
+
+{\ttfamily \#include $<$gpu.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcv_1_1gpu_1_1VideoReader__GPU_1_1VideoSource_a51a5f17a2f3073d98f85f63b6df5c161}{Video\-Source} ()
+\item 
+virtual \hyperlink{classcv_1_1gpu_1_1VideoReader__GPU_1_1VideoSource_a09b5047e0cdc07ef132e1cdd3ae32612}{$\sim$\-Video\-Source} ()
+\item 
+virtual \hyperlink{structcv_1_1gpu_1_1VideoReader__GPU_1_1FormatInfo}{Format\-Info} \hyperlink{classcv_1_1gpu_1_1VideoReader__GPU_1_1VideoSource_a33f91b3b49e5fd57dcf3bd5926e44985}{format} () const =0
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1VideoReader__GPU_1_1VideoSource_a627071b28ff464bf11e9e13f418463f0}{start} ()=0
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1VideoReader__GPU_1_1VideoSource_af1ba0851c67d6b0b0967d6c3fbe5036b}{stop} ()=0
+\item 
+virtual bool \hyperlink{classcv_1_1gpu_1_1VideoReader__GPU_1_1VideoSource_a0e53b56adc811f1fb67dd210f6c79297}{is\-Started} () const =0
+\item 
+virtual bool \hyperlink{classcv_1_1gpu_1_1VideoReader__GPU_1_1VideoSource_a2c789baa7fbec6b3f753ac30c9813fdb}{has\-Error} () const =0
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1VideoReader__GPU_1_1VideoSource_a685f8c0310e885841aee10cf019897ed}{set\-Frame\-Queue} (detail\-::\-Frame\-Queue $\ast$frame\-Queue)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1VideoReader__GPU_1_1VideoSource_a1f1313d4699ba15e2740efd4b69e1eae}{set\-Video\-Parser} (detail\-::\-Video\-Parser $\ast$video\-Parser)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classcv_1_1gpu_1_1VideoReader__GPU_1_1VideoSource_a11b65c8ff266d3c2bb3d112578f9cd10}{parse\-Video\-Data} (const \hyperlink{core_2types__c_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar} $\ast$\hyperlink{legacy_8hpp_ab9fe6c09e6d02865a953fffc12fe6ca0}{data}, size\-\_\-t \hyperlink{legacy_8hpp_ae97003f8d5c64cdfb99f6f2606d121b6}{size}, bool end\-Of\-Stream=false)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcv_1_1gpu_1_1VideoReader__GPU_1_1VideoSource_a51a5f17a2f3073d98f85f63b6df5c161}{\index{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U\-::\-Video\-Source@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U\-::\-Video\-Source}!Video\-Source@{Video\-Source}}
+\index{Video\-Source@{Video\-Source}!cv::gpu::VideoReader_GPU::VideoSource@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U\-::\-Video\-Source}}
+\subsubsection[{Video\-Source}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U\-::\-Video\-Source\-::\-Video\-Source (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1gpu_1_1VideoReader__GPU_1_1VideoSource_a51a5f17a2f3073d98f85f63b6df5c161}
+\hypertarget{classcv_1_1gpu_1_1VideoReader__GPU_1_1VideoSource_a09b5047e0cdc07ef132e1cdd3ae32612}{\index{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U\-::\-Video\-Source@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U\-::\-Video\-Source}!$\sim$\-Video\-Source@{$\sim$\-Video\-Source}}
+\index{$\sim$\-Video\-Source@{$\sim$\-Video\-Source}!cv::gpu::VideoReader_GPU::VideoSource@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U\-::\-Video\-Source}}
+\subsubsection[{$\sim$\-Video\-Source}]{\setlength{\rightskip}{0pt plus 5cm}virtual cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U\-::\-Video\-Source\-::$\sim$\-Video\-Source (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcv_1_1gpu_1_1VideoReader__GPU_1_1VideoSource_a09b5047e0cdc07ef132e1cdd3ae32612}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcv_1_1gpu_1_1VideoReader__GPU_1_1VideoSource_a33f91b3b49e5fd57dcf3bd5926e44985}{\index{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U\-::\-Video\-Source@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U\-::\-Video\-Source}!format@{format}}
+\index{format@{format}!cv::gpu::VideoReader_GPU::VideoSource@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U\-::\-Video\-Source}}
+\subsubsection[{format}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Format\-Info} cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U\-::\-Video\-Source\-::format (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classcv_1_1gpu_1_1VideoReader__GPU_1_1VideoSource_a33f91b3b49e5fd57dcf3bd5926e44985}
+\hypertarget{classcv_1_1gpu_1_1VideoReader__GPU_1_1VideoSource_a2c789baa7fbec6b3f753ac30c9813fdb}{\index{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U\-::\-Video\-Source@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U\-::\-Video\-Source}!has\-Error@{has\-Error}}
+\index{has\-Error@{has\-Error}!cv::gpu::VideoReader_GPU::VideoSource@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U\-::\-Video\-Source}}
+\subsubsection[{has\-Error}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U\-::\-Video\-Source\-::has\-Error (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classcv_1_1gpu_1_1VideoReader__GPU_1_1VideoSource_a2c789baa7fbec6b3f753ac30c9813fdb}
+\hypertarget{classcv_1_1gpu_1_1VideoReader__GPU_1_1VideoSource_a0e53b56adc811f1fb67dd210f6c79297}{\index{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U\-::\-Video\-Source@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U\-::\-Video\-Source}!is\-Started@{is\-Started}}
+\index{is\-Started@{is\-Started}!cv::gpu::VideoReader_GPU::VideoSource@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U\-::\-Video\-Source}}
+\subsubsection[{is\-Started}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U\-::\-Video\-Source\-::is\-Started (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classcv_1_1gpu_1_1VideoReader__GPU_1_1VideoSource_a0e53b56adc811f1fb67dd210f6c79297}
+\hypertarget{classcv_1_1gpu_1_1VideoReader__GPU_1_1VideoSource_a11b65c8ff266d3c2bb3d112578f9cd10}{\index{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U\-::\-Video\-Source@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U\-::\-Video\-Source}!parse\-Video\-Data@{parse\-Video\-Data}}
+\index{parse\-Video\-Data@{parse\-Video\-Data}!cv::gpu::VideoReader_GPU::VideoSource@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U\-::\-Video\-Source}}
+\subsubsection[{parse\-Video\-Data}]{\setlength{\rightskip}{0pt plus 5cm}bool cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U\-::\-Video\-Source\-::parse\-Video\-Data (
+\begin{DoxyParamCaption}
+\item[{const {\bf uchar} $\ast$}]{data, }
+\item[{size\-\_\-t}]{size, }
+\item[{bool}]{end\-Of\-Stream = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1gpu_1_1VideoReader__GPU_1_1VideoSource_a11b65c8ff266d3c2bb3d112578f9cd10}
+\hypertarget{classcv_1_1gpu_1_1VideoReader__GPU_1_1VideoSource_a685f8c0310e885841aee10cf019897ed}{\index{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U\-::\-Video\-Source@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U\-::\-Video\-Source}!set\-Frame\-Queue@{set\-Frame\-Queue}}
+\index{set\-Frame\-Queue@{set\-Frame\-Queue}!cv::gpu::VideoReader_GPU::VideoSource@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U\-::\-Video\-Source}}
+\subsubsection[{set\-Frame\-Queue}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U\-::\-Video\-Source\-::set\-Frame\-Queue (
+\begin{DoxyParamCaption}
+\item[{detail\-::\-Frame\-Queue $\ast$}]{frame\-Queue}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1gpu_1_1VideoReader__GPU_1_1VideoSource_a685f8c0310e885841aee10cf019897ed}
+\hypertarget{classcv_1_1gpu_1_1VideoReader__GPU_1_1VideoSource_a1f1313d4699ba15e2740efd4b69e1eae}{\index{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U\-::\-Video\-Source@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U\-::\-Video\-Source}!set\-Video\-Parser@{set\-Video\-Parser}}
+\index{set\-Video\-Parser@{set\-Video\-Parser}!cv::gpu::VideoReader_GPU::VideoSource@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U\-::\-Video\-Source}}
+\subsubsection[{set\-Video\-Parser}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U\-::\-Video\-Source\-::set\-Video\-Parser (
+\begin{DoxyParamCaption}
+\item[{detail\-::\-Video\-Parser $\ast$}]{video\-Parser}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1gpu_1_1VideoReader__GPU_1_1VideoSource_a1f1313d4699ba15e2740efd4b69e1eae}
+\hypertarget{classcv_1_1gpu_1_1VideoReader__GPU_1_1VideoSource_a627071b28ff464bf11e9e13f418463f0}{\index{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U\-::\-Video\-Source@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U\-::\-Video\-Source}!start@{start}}
+\index{start@{start}!cv::gpu::VideoReader_GPU::VideoSource@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U\-::\-Video\-Source}}
+\subsubsection[{start}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U\-::\-Video\-Source\-::start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classcv_1_1gpu_1_1VideoReader__GPU_1_1VideoSource_a627071b28ff464bf11e9e13f418463f0}
+\hypertarget{classcv_1_1gpu_1_1VideoReader__GPU_1_1VideoSource_af1ba0851c67d6b0b0967d6c3fbe5036b}{\index{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U\-::\-Video\-Source@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U\-::\-Video\-Source}!stop@{stop}}
+\index{stop@{stop}!cv::gpu::VideoReader_GPU::VideoSource@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U\-::\-Video\-Source}}
+\subsubsection[{stop}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U\-::\-Video\-Source\-::stop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classcv_1_1gpu_1_1VideoReader__GPU_1_1VideoSource_af1ba0851c67d6b0b0967d6c3fbe5036b}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/gpu/\hyperlink{gpu_2gpu_8hpp}{gpu.\-hpp}\end{DoxyCompactItemize}

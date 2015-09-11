@@ -1,0 +1,448 @@
+\hypertarget{structcvflann_1_1any}{\section{cvflann\-:\-:any Struct Reference}
+\label{structcvflann_1_1any}\index{cvflann\-::any@{cvflann\-::any}}
+}
+
+
+{\ttfamily \#include $<$any.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{structcvflann_1_1any_a614f578056e7fceff5cee29109da70cf}{any} (const \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \&\hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x})
+\begin{DoxyCompactList}\small\item\em Initializing constructor. \end{DoxyCompactList}\item 
+\hyperlink{structcvflann_1_1any_aebac2eb1e78c9326fba282f064e4c06d}{any} ()
+\begin{DoxyCompactList}\small\item\em Empty constructor. \end{DoxyCompactList}\item 
+\hyperlink{structcvflann_1_1any_a93751f7a76eb1b9502a8169de639b1a5}{any} (const char $\ast$\hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x})
+\begin{DoxyCompactList}\small\item\em Special initializing constructor for string literals. \end{DoxyCompactList}\item 
+\hyperlink{structcvflann_1_1any_a7d8e54b78178d93012ec2dfaf5b462fc}{any} (const \hyperlink{structcvflann_1_1any}{any} \&\hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x})
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\hyperlink{structcvflann_1_1any_a2a2adac28a53cac0cd5051cefc4d301a}{$\sim$any} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hyperlink{structcvflann_1_1any}{any} \& \hyperlink{structcvflann_1_1any_a93340efbe792946f31c9590176cc245e}{assign} (const \hyperlink{structcvflann_1_1any}{any} \&\hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x})
+\begin{DoxyCompactList}\small\item\em Assignment function from another any. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{structcvflann_1_1any}{any} \& \hyperlink{structcvflann_1_1any_aa7b590fb6d936c0ec41f07b4c0944a5b}{assign} (const \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \&\hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x})
+\begin{DoxyCompactList}\small\item\em Assignment function. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{structcvflann_1_1any}{any} \& \hyperlink{structcvflann_1_1any_a21f7f4442898eb3c5fb9971dc9a6d0ba}{operator=} (const \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \&\hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x})
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\hyperlink{structcvflann_1_1any}{any} \& \hyperlink{structcvflann_1_1any_a5146e87ec22f45b1ca806ec25c98956a}{operator=} (const char $\ast$\hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x})
+\item 
+\hyperlink{structcvflann_1_1any}{any} \& \hyperlink{structcvflann_1_1any_a77373c634d1cb126148f2e8b8a94f8ff}{swap} (\hyperlink{structcvflann_1_1any}{any} \&\hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x})
+\begin{DoxyCompactList}\small\item\em Utility functions. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \& \hyperlink{structcvflann_1_1any_a6434473fb7b9ef53e4bcbfd066d3435d}{cast} ()
+\begin{DoxyCompactList}\small\item\em Cast operator. You can only cast to the original type. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\const \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \& \hyperlink{structcvflann_1_1any_a8a30d3102c07ef58a2e8b3a49864d418}{cast} () const 
+\begin{DoxyCompactList}\small\item\em Cast operator. You can only cast to the original type. \end{DoxyCompactList}\item 
+bool \hyperlink{structcvflann_1_1any_a2f9c16a22aca2a6e6053d5bfedac9901}{empty} () const 
+\begin{DoxyCompactList}\small\item\em Returns true if the any contains no value. \end{DoxyCompactList}\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{structcvflann_1_1any_a56cb2ce55b54eaa62cdc88cbd441ef86}{reset} ()
+\begin{DoxyCompactList}\small\item\em Frees any allocated memory, and sets the value to N\-U\-L\-L. \end{DoxyCompactList}\item 
+bool \hyperlink{structcvflann_1_1any_a755b50cc51c7c37162d7b39d1010f117}{compatible} (const \hyperlink{structcvflann_1_1any}{any} \&\hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x}) const 
+\begin{DoxyCompactList}\small\item\em Returns true if the two types are the same. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{structcvflann_1_1any_a4ef5cda72c6a25e1f0ddd926966e639c}{has\-\_\-type} ()
+\begin{DoxyCompactList}\small\item\em Returns if the type is compatible with the policy. \end{DoxyCompactList}\item 
+const std\-::type\-\_\-info \& \hyperlink{structcvflann_1_1any_af841fa57af8b0ad38106f833d31a84dc}{type} () const 
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\-::ostream \& \hyperlink{structcvflann_1_1any_a2987b17b8a128cbefb105ed12f5b8f92}{operator$<$$<$} (std\-::ostream \&out, const \hyperlink{structcvflann_1_1any}{any} \&any\-\_\-val)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structcvflann_1_1any_a614f578056e7fceff5cee29109da70cf}{\index{cvflann\-::any@{cvflann\-::any}!any@{any}}
+\index{any@{any}!cvflann::any@{cvflann\-::any}}
+\subsubsection[{any}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ cvflann\-::any\-::any (
+\begin{DoxyParamCaption}
+\item[{const {\bf T} \&}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{structcvflann_1_1any_a614f578056e7fceff5cee29109da70cf}
+
+
+Initializing constructor. 
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structcvflann_1_1any_a614f578056e7fceff5cee29109da70cf_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{structcvflann_1_1any_aebac2eb1e78c9326fba282f064e4c06d}{\index{cvflann\-::any@{cvflann\-::any}!any@{any}}
+\index{any@{any}!cvflann::any@{cvflann\-::any}}
+\subsubsection[{any}]{\setlength{\rightskip}{0pt plus 5cm}cvflann\-::any\-::any (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{structcvflann_1_1any_aebac2eb1e78c9326fba282f064e4c06d}
+
+
+Empty constructor. 
+
+\hypertarget{structcvflann_1_1any_a93751f7a76eb1b9502a8169de639b1a5}{\index{cvflann\-::any@{cvflann\-::any}!any@{any}}
+\index{any@{any}!cvflann::any@{cvflann\-::any}}
+\subsubsection[{any}]{\setlength{\rightskip}{0pt plus 5cm}cvflann\-::any\-::any (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{structcvflann_1_1any_a93751f7a76eb1b9502a8169de639b1a5}
+
+
+Special initializing constructor for string literals. 
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structcvflann_1_1any_a93751f7a76eb1b9502a8169de639b1a5_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{structcvflann_1_1any_a7d8e54b78178d93012ec2dfaf5b462fc}{\index{cvflann\-::any@{cvflann\-::any}!any@{any}}
+\index{any@{any}!cvflann::any@{cvflann\-::any}}
+\subsubsection[{any}]{\setlength{\rightskip}{0pt plus 5cm}cvflann\-::any\-::any (
+\begin{DoxyParamCaption}
+\item[{const {\bf any} \&}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{structcvflann_1_1any_a7d8e54b78178d93012ec2dfaf5b462fc}
+
+
+Copy constructor. 
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structcvflann_1_1any_a7d8e54b78178d93012ec2dfaf5b462fc_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{structcvflann_1_1any_a2a2adac28a53cac0cd5051cefc4d301a}{\index{cvflann\-::any@{cvflann\-::any}!$\sim$any@{$\sim$any}}
+\index{$\sim$any@{$\sim$any}!cvflann::any@{cvflann\-::any}}
+\subsubsection[{$\sim$any}]{\setlength{\rightskip}{0pt plus 5cm}cvflann\-::any\-::$\sim$any (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{structcvflann_1_1any_a2a2adac28a53cac0cd5051cefc4d301a}
+
+
+Destructor. 
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{structcvflann_1_1any_a2a2adac28a53cac0cd5051cefc4d301a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structcvflann_1_1any_a93340efbe792946f31c9590176cc245e}{\index{cvflann\-::any@{cvflann\-::any}!assign@{assign}}
+\index{assign@{assign}!cvflann::any@{cvflann\-::any}}
+\subsubsection[{assign}]{\setlength{\rightskip}{0pt plus 5cm}{\bf any}\& cvflann\-::any\-::assign (
+\begin{DoxyParamCaption}
+\item[{const {\bf any} \&}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{structcvflann_1_1any_a93340efbe792946f31c9590176cc245e}
+
+
+Assignment function from another any. 
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structcvflann_1_1any_a93340efbe792946f31c9590176cc245e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{structcvflann_1_1any_a93340efbe792946f31c9590176cc245e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{structcvflann_1_1any_aa7b590fb6d936c0ec41f07b4c0944a5b}{\index{cvflann\-::any@{cvflann\-::any}!assign@{assign}}
+\index{assign@{assign}!cvflann::any@{cvflann\-::any}}
+\subsubsection[{assign}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf any}\& cvflann\-::any\-::assign (
+\begin{DoxyParamCaption}
+\item[{const {\bf T} \&}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{structcvflann_1_1any_aa7b590fb6d936c0ec41f07b4c0944a5b}
+
+
+Assignment function. 
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structcvflann_1_1any_aa7b590fb6d936c0ec41f07b4c0944a5b_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{structcvflann_1_1any_a6434473fb7b9ef53e4bcbfd066d3435d}{\index{cvflann\-::any@{cvflann\-::any}!cast@{cast}}
+\index{cast@{cast}!cvflann::any@{cvflann\-::any}}
+\subsubsection[{cast}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf T}\& cvflann\-::any\-::cast (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{structcvflann_1_1any_a6434473fb7b9ef53e4bcbfd066d3435d}
+
+
+Cast operator. You can only cast to the original type. 
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{structcvflann_1_1any_a6434473fb7b9ef53e4bcbfd066d3435d_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{structcvflann_1_1any_a8a30d3102c07ef58a2e8b3a49864d418}{\index{cvflann\-::any@{cvflann\-::any}!cast@{cast}}
+\index{cast@{cast}!cvflann::any@{cvflann\-::any}}
+\subsubsection[{cast}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ const {\bf T}\& cvflann\-::any\-::cast (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{structcvflann_1_1any_a8a30d3102c07ef58a2e8b3a49864d418}
+
+
+Cast operator. You can only cast to the original type. 
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{structcvflann_1_1any_a8a30d3102c07ef58a2e8b3a49864d418_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{structcvflann_1_1any_a755b50cc51c7c37162d7b39d1010f117}{\index{cvflann\-::any@{cvflann\-::any}!compatible@{compatible}}
+\index{compatible@{compatible}!cvflann::any@{cvflann\-::any}}
+\subsubsection[{compatible}]{\setlength{\rightskip}{0pt plus 5cm}bool cvflann\-::any\-::compatible (
+\begin{DoxyParamCaption}
+\item[{const {\bf any} \&}]{x}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{structcvflann_1_1any_a755b50cc51c7c37162d7b39d1010f117}
+
+
+Returns true if the two types are the same. 
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structcvflann_1_1any_a755b50cc51c7c37162d7b39d1010f117_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{structcvflann_1_1any_a2f9c16a22aca2a6e6053d5bfedac9901}{\index{cvflann\-::any@{cvflann\-::any}!empty@{empty}}
+\index{empty@{empty}!cvflann::any@{cvflann\-::any}}
+\subsubsection[{empty}]{\setlength{\rightskip}{0pt plus 5cm}bool cvflann\-::any\-::empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{structcvflann_1_1any_a2f9c16a22aca2a6e6053d5bfedac9901}
+
+
+Returns true if the any contains no value. 
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{structcvflann_1_1any_a2f9c16a22aca2a6e6053d5bfedac9901_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{structcvflann_1_1any_a4ef5cda72c6a25e1f0ddd926966e639c}{\index{cvflann\-::any@{cvflann\-::any}!has\-\_\-type@{has\-\_\-type}}
+\index{has\-\_\-type@{has\-\_\-type}!cvflann::any@{cvflann\-::any}}
+\subsubsection[{has\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ bool cvflann\-::any\-::has\-\_\-type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{structcvflann_1_1any_a4ef5cda72c6a25e1f0ddd926966e639c}
+
+
+Returns if the type is compatible with the policy. 
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{structcvflann_1_1any_a4ef5cda72c6a25e1f0ddd926966e639c_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{structcvflann_1_1any_a21f7f4442898eb3c5fb9971dc9a6d0ba}{\index{cvflann\-::any@{cvflann\-::any}!operator=@{operator=}}
+\index{operator=@{operator=}!cvflann::any@{cvflann\-::any}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf any}\& cvflann\-::any\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf T} \&}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{structcvflann_1_1any_a21f7f4442898eb3c5fb9971dc9a6d0ba}
+
+
+Assignment operator. 
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structcvflann_1_1any_a21f7f4442898eb3c5fb9971dc9a6d0ba_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{structcvflann_1_1any_a5146e87ec22f45b1ca806ec25c98956a}{\index{cvflann\-::any@{cvflann\-::any}!operator=@{operator=}}
+\index{operator=@{operator=}!cvflann::any@{cvflann\-::any}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf any}\& cvflann\-::any\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{structcvflann_1_1any_a5146e87ec22f45b1ca806ec25c98956a}
+Assignment operator, specialed for literal strings. They have types like const char \mbox{[}6\mbox{]} which don't work as expected. 
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structcvflann_1_1any_a5146e87ec22f45b1ca806ec25c98956a_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{structcvflann_1_1any_a56cb2ce55b54eaa62cdc88cbd441ef86}{\index{cvflann\-::any@{cvflann\-::any}!reset@{reset}}
+\index{reset@{reset}!cvflann::any@{cvflann\-::any}}
+\subsubsection[{reset}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cvflann\-::any\-::reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{structcvflann_1_1any_a56cb2ce55b54eaa62cdc88cbd441ef86}
+
+
+Frees any allocated memory, and sets the value to N\-U\-L\-L. 
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{structcvflann_1_1any_a56cb2ce55b54eaa62cdc88cbd441ef86_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structcvflann_1_1any_a56cb2ce55b54eaa62cdc88cbd441ef86_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{structcvflann_1_1any_a77373c634d1cb126148f2e8b8a94f8ff}{\index{cvflann\-::any@{cvflann\-::any}!swap@{swap}}
+\index{swap@{swap}!cvflann::any@{cvflann\-::any}}
+\subsubsection[{swap}]{\setlength{\rightskip}{0pt plus 5cm}{\bf any}\& cvflann\-::any\-::swap (
+\begin{DoxyParamCaption}
+\item[{{\bf any} \&}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{structcvflann_1_1any_a77373c634d1cb126148f2e8b8a94f8ff}
+
+
+Utility functions. 
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{structcvflann_1_1any_a77373c634d1cb126148f2e8b8a94f8ff_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{structcvflann_1_1any_af841fa57af8b0ad38106f833d31a84dc}{\index{cvflann\-::any@{cvflann\-::any}!type@{type}}
+\index{type@{type}!cvflann::any@{cvflann\-::any}}
+\subsubsection[{type}]{\setlength{\rightskip}{0pt plus 5cm}const std\-::type\-\_\-info\& cvflann\-::any\-::type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{structcvflann_1_1any_af841fa57af8b0ad38106f833d31a84dc}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{structcvflann_1_1any_af841fa57af8b0ad38106f833d31a84dc_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{structcvflann_1_1any_a2987b17b8a128cbefb105ed12f5b8f92}{\index{cvflann\-::any@{cvflann\-::any}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!cvflann::any@{cvflann\-::any}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std\-::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{out, }
+\item[{const {\bf any} \&}]{any\-\_\-val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{structcvflann_1_1any_a2987b17b8a128cbefb105ed12f5b8f92}
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/flann/\hyperlink{any_8h}{any.\-h}\end{DoxyCompactItemize}

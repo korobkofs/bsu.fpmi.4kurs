@@ -1,0 +1,142 @@
+\hypertarget{classcv_1_1detail_1_1FeatherBlender}{\section{cv\-:\-:detail\-:\-:Feather\-Blender Class Reference}
+\label{classcv_1_1detail_1_1FeatherBlender}\index{cv\-::detail\-::\-Feather\-Blender@{cv\-::detail\-::\-Feather\-Blender}}
+}
+
+
+{\ttfamily \#include $<$blenders.\-hpp$>$}
+
+
+
+Inheritance diagram for cv\-:\-:detail\-:\-:Feather\-Blender\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classcv_1_1detail_1_1FeatherBlender__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for cv\-:\-:detail\-:\-:Feather\-Blender\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{classcv_1_1detail_1_1FeatherBlender__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcv_1_1detail_1_1FeatherBlender_a8af0665c8cb305e32a208a873addece9}{Feather\-Blender} (float \hyperlink{classcv_1_1detail_1_1FeatherBlender_ac2c53caa58c13db6cacb637e0495cac6}{sharpness}=0.\-02f)
+\item 
+float \hyperlink{classcv_1_1detail_1_1FeatherBlender_ac2c53caa58c13db6cacb637e0495cac6}{sharpness} () const 
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1detail_1_1FeatherBlender_aa4c09de778a01cdad7af1aabc443b279}{set\-Sharpness} (float val)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1detail_1_1FeatherBlender_a8e495775d443ff6cb600fb927ebe6516}{prepare} (Rect dst\-\_\-roi)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1detail_1_1FeatherBlender_ad42e4d99cc5ce7d3b9796f8cf1e038df}{feed} (const Mat \&\hyperlink{legacy_8hpp_a5349238b3772bed6eae0fda3117ccfef}{img}, const Mat \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}, Point tl)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1detail_1_1FeatherBlender_a02d486e87cc508c9368de08227c9133b}{blend} (Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, Mat \&dst\-\_\-mask)
+\item 
+Rect \hyperlink{classcv_1_1detail_1_1FeatherBlender_a7f19aee54c676a96fdf5d428ce049e1b}{create\-Weight\-Maps} (const std\-::vector$<$ Mat $>$ \&masks, const std\-::vector$<$ Point $>$ \&\hyperlink{imgproc__c_8h_a223e965e192c7025d6c6be77305f515b}{corners}, std\-::vector$<$ Mat $>$ \&weight\-\_\-maps)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcv_1_1detail_1_1FeatherBlender_a8af0665c8cb305e32a208a873addece9}{\index{cv\-::detail\-::\-Feather\-Blender@{cv\-::detail\-::\-Feather\-Blender}!Feather\-Blender@{Feather\-Blender}}
+\index{Feather\-Blender@{Feather\-Blender}!cv::detail::FeatherBlender@{cv\-::detail\-::\-Feather\-Blender}}
+\subsubsection[{Feather\-Blender}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::detail\-::\-Feather\-Blender\-::\-Feather\-Blender (
+\begin{DoxyParamCaption}
+\item[{float}]{sharpness = {\ttfamily 0.02f}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1detail_1_1FeatherBlender_a8af0665c8cb305e32a208a873addece9}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcv_1_1detail_1_1FeatherBlender_a8af0665c8cb305e32a208a873addece9_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcv_1_1detail_1_1FeatherBlender_a02d486e87cc508c9368de08227c9133b}{\index{cv\-::detail\-::\-Feather\-Blender@{cv\-::detail\-::\-Feather\-Blender}!blend@{blend}}
+\index{blend@{blend}!cv::detail::FeatherBlender@{cv\-::detail\-::\-Feather\-Blender}}
+\subsubsection[{blend}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::detail\-::\-Feather\-Blender\-::blend (
+\begin{DoxyParamCaption}
+\item[{Mat \&}]{dst, }
+\item[{Mat \&}]{dst\-\_\-mask}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcv_1_1detail_1_1FeatherBlender_a02d486e87cc508c9368de08227c9133b}
+
+
+Reimplemented from \hyperlink{classcv_1_1detail_1_1Blender_aa7f395032fff97cb5d058388568006a8}{cv\-::detail\-::\-Blender}.
+
+\hypertarget{classcv_1_1detail_1_1FeatherBlender_a7f19aee54c676a96fdf5d428ce049e1b}{\index{cv\-::detail\-::\-Feather\-Blender@{cv\-::detail\-::\-Feather\-Blender}!create\-Weight\-Maps@{create\-Weight\-Maps}}
+\index{create\-Weight\-Maps@{create\-Weight\-Maps}!cv::detail::FeatherBlender@{cv\-::detail\-::\-Feather\-Blender}}
+\subsubsection[{create\-Weight\-Maps}]{\setlength{\rightskip}{0pt plus 5cm}Rect cv\-::detail\-::\-Feather\-Blender\-::create\-Weight\-Maps (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ Mat $>$ \&}]{masks, }
+\item[{const std\-::vector$<$ Point $>$ \&}]{corners, }
+\item[{std\-::vector$<$ Mat $>$ \&}]{weight\-\_\-maps}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1detail_1_1FeatherBlender_a7f19aee54c676a96fdf5d428ce049e1b}
+\hypertarget{classcv_1_1detail_1_1FeatherBlender_ad42e4d99cc5ce7d3b9796f8cf1e038df}{\index{cv\-::detail\-::\-Feather\-Blender@{cv\-::detail\-::\-Feather\-Blender}!feed@{feed}}
+\index{feed@{feed}!cv::detail::FeatherBlender@{cv\-::detail\-::\-Feather\-Blender}}
+\subsubsection[{feed}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::detail\-::\-Feather\-Blender\-::feed (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{img, }
+\item[{const Mat \&}]{mask, }
+\item[{Point}]{tl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcv_1_1detail_1_1FeatherBlender_ad42e4d99cc5ce7d3b9796f8cf1e038df}
+
+
+Reimplemented from \hyperlink{classcv_1_1detail_1_1Blender_a48285084faa1686d8ddcf8faa0d53ad0}{cv\-::detail\-::\-Blender}.
+
+\hypertarget{classcv_1_1detail_1_1FeatherBlender_a8e495775d443ff6cb600fb927ebe6516}{\index{cv\-::detail\-::\-Feather\-Blender@{cv\-::detail\-::\-Feather\-Blender}!prepare@{prepare}}
+\index{prepare@{prepare}!cv::detail::FeatherBlender@{cv\-::detail\-::\-Feather\-Blender}}
+\subsubsection[{prepare}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::detail\-::\-Feather\-Blender\-::prepare (
+\begin{DoxyParamCaption}
+\item[{Rect}]{dst\-\_\-roi}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcv_1_1detail_1_1FeatherBlender_a8e495775d443ff6cb600fb927ebe6516}
+
+
+Reimplemented from \hyperlink{classcv_1_1detail_1_1Blender_a6d81cd6a0a2284de3ec7898409c7c0a8}{cv\-::detail\-::\-Blender}.
+
+\hypertarget{classcv_1_1detail_1_1FeatherBlender_aa4c09de778a01cdad7af1aabc443b279}{\index{cv\-::detail\-::\-Feather\-Blender@{cv\-::detail\-::\-Feather\-Blender}!set\-Sharpness@{set\-Sharpness}}
+\index{set\-Sharpness@{set\-Sharpness}!cv::detail::FeatherBlender@{cv\-::detail\-::\-Feather\-Blender}}
+\subsubsection[{set\-Sharpness}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::detail\-::\-Feather\-Blender\-::set\-Sharpness (
+\begin{DoxyParamCaption}
+\item[{float}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1detail_1_1FeatherBlender_aa4c09de778a01cdad7af1aabc443b279}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcv_1_1detail_1_1FeatherBlender_aa4c09de778a01cdad7af1aabc443b279_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcv_1_1detail_1_1FeatherBlender_ac2c53caa58c13db6cacb637e0495cac6}{\index{cv\-::detail\-::\-Feather\-Blender@{cv\-::detail\-::\-Feather\-Blender}!sharpness@{sharpness}}
+\index{sharpness@{sharpness}!cv::detail::FeatherBlender@{cv\-::detail\-::\-Feather\-Blender}}
+\subsubsection[{sharpness}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::detail\-::\-Feather\-Blender\-::sharpness (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1detail_1_1FeatherBlender_ac2c53caa58c13db6cacb637e0495cac6}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/stitching/detail/\hyperlink{blenders_8hpp}{blenders.\-hpp}\end{DoxyCompactItemize}

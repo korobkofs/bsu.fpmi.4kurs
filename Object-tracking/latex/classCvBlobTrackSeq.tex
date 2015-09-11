@@ -1,0 +1,128 @@
+\hypertarget{classCvBlobTrackSeq}{\section{Cv\-Blob\-Track\-Seq Class Reference}
+\label{classCvBlobTrackSeq}\index{Cv\-Blob\-Track\-Seq@{Cv\-Blob\-Track\-Seq}}
+}
+
+
+{\ttfamily \#include $<$blobtrack.\-hpp$>$}
+
+
+
+Collaboration diagram for Cv\-Blob\-Track\-Seq\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{classCvBlobTrackSeq__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCvBlobTrackSeq_ae0bae5e12b49568d98c414e14e4a95a9}{Cv\-Blob\-Track\-Seq} (int Track\-Size=sizeof(\hyperlink{structCvBlobTrack}{Cv\-Blob\-Track}))
+\item 
+virtual \hyperlink{classCvBlobTrackSeq_aaac7d16cda3786e5bbe2a28504bf4cfe}{$\sim$\-Cv\-Blob\-Track\-Seq} ()
+\item 
+virtual \hyperlink{structCvBlobTrack}{Cv\-Blob\-Track} $\ast$ \hyperlink{classCvBlobTrackSeq_a33a388060a59ac777bca6155559e23eb}{Get\-Blob\-Track} (int Track\-Index)
+\item 
+virtual \hyperlink{structCvBlobTrack}{Cv\-Blob\-Track} $\ast$ \hyperlink{classCvBlobTrackSeq_aa6f830778964d6aafaf79b37f63f2f3b}{Get\-Blob\-Track\-By\-I\-D} (int Track\-I\-D)
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classCvBlobTrackSeq_a9d2833254b2bce4c4e42568ba01d0ff6}{Del\-Blob\-Track} (int Track\-Index)
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classCvBlobTrackSeq_a286b753c687f368ae0d6461f960cbdc2}{Del\-Blob\-Track\-By\-I\-D} (int Track\-I\-D)
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classCvBlobTrackSeq_adcbeea9b41ae215fe743b36936356ac5}{Clear} ()
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classCvBlobTrackSeq_a272d2802d12872dec6fe7b76f10b04cc}{Add\-Blob\-Track} (int Track\-I\-D, int Start\-Frame=0)
+\item 
+virtual int \hyperlink{classCvBlobTrackSeq_aa53fe0690a5b3ecdd773c9c54b961352}{Get\-Blob\-Track\-Num} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structCvMemStorage}{Cv\-Mem\-Storage} $\ast$ \hyperlink{classCvBlobTrackSeq_ac2af59cd26d4ff1bfb97fe465b3e6cab}{m\-\_\-p\-Mem}
+\item 
+\hyperlink{structCvSeq}{Cv\-Seq} $\ast$ \hyperlink{classCvBlobTrackSeq_a20db44731735887d26e16eff42d19259}{m\-\_\-p\-Seq}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCvBlobTrackSeq_ae0bae5e12b49568d98c414e14e4a95a9}{\index{Cv\-Blob\-Track\-Seq@{Cv\-Blob\-Track\-Seq}!Cv\-Blob\-Track\-Seq@{Cv\-Blob\-Track\-Seq}}
+\index{Cv\-Blob\-Track\-Seq@{Cv\-Blob\-Track\-Seq}!CvBlobTrackSeq@{Cv\-Blob\-Track\-Seq}}
+\subsubsection[{Cv\-Blob\-Track\-Seq}]{\setlength{\rightskip}{0pt plus 5cm}Cv\-Blob\-Track\-Seq\-::\-Cv\-Blob\-Track\-Seq (
+\begin{DoxyParamCaption}
+\item[{int}]{Track\-Size = {\ttfamily sizeof({\bf Cv\-Blob\-Track})}}
+\end{DoxyParamCaption}
+)}}\label{classCvBlobTrackSeq_ae0bae5e12b49568d98c414e14e4a95a9}
+\hypertarget{classCvBlobTrackSeq_aaac7d16cda3786e5bbe2a28504bf4cfe}{\index{Cv\-Blob\-Track\-Seq@{Cv\-Blob\-Track\-Seq}!$\sim$\-Cv\-Blob\-Track\-Seq@{$\sim$\-Cv\-Blob\-Track\-Seq}}
+\index{$\sim$\-Cv\-Blob\-Track\-Seq@{$\sim$\-Cv\-Blob\-Track\-Seq}!CvBlobTrackSeq@{Cv\-Blob\-Track\-Seq}}
+\subsubsection[{$\sim$\-Cv\-Blob\-Track\-Seq}]{\setlength{\rightskip}{0pt plus 5cm}virtual Cv\-Blob\-Track\-Seq\-::$\sim$\-Cv\-Blob\-Track\-Seq (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCvBlobTrackSeq_aaac7d16cda3786e5bbe2a28504bf4cfe}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classCvBlobTrackSeq_a272d2802d12872dec6fe7b76f10b04cc}{\index{Cv\-Blob\-Track\-Seq@{Cv\-Blob\-Track\-Seq}!Add\-Blob\-Track@{Add\-Blob\-Track}}
+\index{Add\-Blob\-Track@{Add\-Blob\-Track}!CvBlobTrackSeq@{Cv\-Blob\-Track\-Seq}}
+\subsubsection[{Add\-Blob\-Track}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Cv\-Blob\-Track\-Seq\-::\-Add\-Blob\-Track (
+\begin{DoxyParamCaption}
+\item[{int}]{Track\-I\-D, }
+\item[{int}]{Start\-Frame = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCvBlobTrackSeq_a272d2802d12872dec6fe7b76f10b04cc}
+\hypertarget{classCvBlobTrackSeq_adcbeea9b41ae215fe743b36936356ac5}{\index{Cv\-Blob\-Track\-Seq@{Cv\-Blob\-Track\-Seq}!Clear@{Clear}}
+\index{Clear@{Clear}!CvBlobTrackSeq@{Cv\-Blob\-Track\-Seq}}
+\subsubsection[{Clear}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Cv\-Blob\-Track\-Seq\-::\-Clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCvBlobTrackSeq_adcbeea9b41ae215fe743b36936356ac5}
+\hypertarget{classCvBlobTrackSeq_a9d2833254b2bce4c4e42568ba01d0ff6}{\index{Cv\-Blob\-Track\-Seq@{Cv\-Blob\-Track\-Seq}!Del\-Blob\-Track@{Del\-Blob\-Track}}
+\index{Del\-Blob\-Track@{Del\-Blob\-Track}!CvBlobTrackSeq@{Cv\-Blob\-Track\-Seq}}
+\subsubsection[{Del\-Blob\-Track}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Cv\-Blob\-Track\-Seq\-::\-Del\-Blob\-Track (
+\begin{DoxyParamCaption}
+\item[{int}]{Track\-Index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCvBlobTrackSeq_a9d2833254b2bce4c4e42568ba01d0ff6}
+\hypertarget{classCvBlobTrackSeq_a286b753c687f368ae0d6461f960cbdc2}{\index{Cv\-Blob\-Track\-Seq@{Cv\-Blob\-Track\-Seq}!Del\-Blob\-Track\-By\-I\-D@{Del\-Blob\-Track\-By\-I\-D}}
+\index{Del\-Blob\-Track\-By\-I\-D@{Del\-Blob\-Track\-By\-I\-D}!CvBlobTrackSeq@{Cv\-Blob\-Track\-Seq}}
+\subsubsection[{Del\-Blob\-Track\-By\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Cv\-Blob\-Track\-Seq\-::\-Del\-Blob\-Track\-By\-I\-D (
+\begin{DoxyParamCaption}
+\item[{int}]{Track\-I\-D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCvBlobTrackSeq_a286b753c687f368ae0d6461f960cbdc2}
+\hypertarget{classCvBlobTrackSeq_a33a388060a59ac777bca6155559e23eb}{\index{Cv\-Blob\-Track\-Seq@{Cv\-Blob\-Track\-Seq}!Get\-Blob\-Track@{Get\-Blob\-Track}}
+\index{Get\-Blob\-Track@{Get\-Blob\-Track}!CvBlobTrackSeq@{Cv\-Blob\-Track\-Seq}}
+\subsubsection[{Get\-Blob\-Track}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Cv\-Blob\-Track}$\ast$ Cv\-Blob\-Track\-Seq\-::\-Get\-Blob\-Track (
+\begin{DoxyParamCaption}
+\item[{int}]{Track\-Index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCvBlobTrackSeq_a33a388060a59ac777bca6155559e23eb}
+\hypertarget{classCvBlobTrackSeq_aa6f830778964d6aafaf79b37f63f2f3b}{\index{Cv\-Blob\-Track\-Seq@{Cv\-Blob\-Track\-Seq}!Get\-Blob\-Track\-By\-I\-D@{Get\-Blob\-Track\-By\-I\-D}}
+\index{Get\-Blob\-Track\-By\-I\-D@{Get\-Blob\-Track\-By\-I\-D}!CvBlobTrackSeq@{Cv\-Blob\-Track\-Seq}}
+\subsubsection[{Get\-Blob\-Track\-By\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Cv\-Blob\-Track}$\ast$ Cv\-Blob\-Track\-Seq\-::\-Get\-Blob\-Track\-By\-I\-D (
+\begin{DoxyParamCaption}
+\item[{int}]{Track\-I\-D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCvBlobTrackSeq_aa6f830778964d6aafaf79b37f63f2f3b}
+\hypertarget{classCvBlobTrackSeq_aa53fe0690a5b3ecdd773c9c54b961352}{\index{Cv\-Blob\-Track\-Seq@{Cv\-Blob\-Track\-Seq}!Get\-Blob\-Track\-Num@{Get\-Blob\-Track\-Num}}
+\index{Get\-Blob\-Track\-Num@{Get\-Blob\-Track\-Num}!CvBlobTrackSeq@{Cv\-Blob\-Track\-Seq}}
+\subsubsection[{Get\-Blob\-Track\-Num}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Cv\-Blob\-Track\-Seq\-::\-Get\-Blob\-Track\-Num (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCvBlobTrackSeq_aa53fe0690a5b3ecdd773c9c54b961352}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classCvBlobTrackSeq_ac2af59cd26d4ff1bfb97fe465b3e6cab}{\index{Cv\-Blob\-Track\-Seq@{Cv\-Blob\-Track\-Seq}!m\-\_\-p\-Mem@{m\-\_\-p\-Mem}}
+\index{m\-\_\-p\-Mem@{m\-\_\-p\-Mem}!CvBlobTrackSeq@{Cv\-Blob\-Track\-Seq}}
+\subsubsection[{m\-\_\-p\-Mem}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Mem\-Storage}$\ast$ Cv\-Blob\-Track\-Seq\-::m\-\_\-p\-Mem\hspace{0.3cm}{\ttfamily [protected]}}}\label{classCvBlobTrackSeq_ac2af59cd26d4ff1bfb97fe465b3e6cab}
+\hypertarget{classCvBlobTrackSeq_a20db44731735887d26e16eff42d19259}{\index{Cv\-Blob\-Track\-Seq@{Cv\-Blob\-Track\-Seq}!m\-\_\-p\-Seq@{m\-\_\-p\-Seq}}
+\index{m\-\_\-p\-Seq@{m\-\_\-p\-Seq}!CvBlobTrackSeq@{Cv\-Blob\-Track\-Seq}}
+\subsubsection[{m\-\_\-p\-Seq}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Seq}$\ast$ Cv\-Blob\-Track\-Seq\-::m\-\_\-p\-Seq\hspace{0.3cm}{\ttfamily [protected]}}}\label{classCvBlobTrackSeq_a20db44731735887d26e16eff42d19259}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/legacy/\hyperlink{blobtrack_8hpp}{blobtrack.\-hpp}\end{DoxyCompactItemize}

@@ -1,0 +1,7 @@
+<map id="parse_context" name="parse_context">
+<area shape="rect" id="node2" href="$structconfig__t.html" title="config_t" alt="" coords="124,5,192,32"/>
+<area shape="rect" id="node3" href="$structconfig__setting__t.html" title="config_setting_t" alt="" coords="158,96,273,123"/>
+<area shape="rect" id="node5" href="$structconfig__list__t.html" title="config_list_t" alt="" coords="284,200,376,227"/>
+<area shape="rect" id="node4" href="$unionconfig__value__t.html" title="config_value_t" alt="" coords="208,291,314,317"/>
+<area shape="rect" id="node6" href="$structstrbuf__t.html" title="strbuf_t" alt="" coords="64,96,130,123"/>
+</map>

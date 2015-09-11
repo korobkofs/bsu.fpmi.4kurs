@@ -1,0 +1,6 @@
+<map id="CBlob::GetEllipse" name="CBlob::GetEllipse">
+<area shape="rect" id="node2" href="$classCBlobGetMajorAxisLength.html#a535c9a23d16bf020ed0c6aa9f36b884f" title="Aply operator to blob. " alt="" coords="181,5,357,46"/>
+<area shape="rect" id="node3" href="$classCBlobGetAreaElipseRatio.html#a24f9703155af6e963a1ae226cdb71125" title="Aply operator to blob. " alt="" coords="183,70,356,111"/>
+<area shape="rect" id="node4" href="$classCBlobGetMinorAxisLength.html#a2269bfa1651667f020e27d9f1e8f8d98" title="Aply operator to blob. " alt="" coords="181,135,357,177"/>
+<area shape="rect" id="node5" href="$classCBlobGetOrientation.html#a083233587fed855654e580a355265be3" title="Aply operator to blob. " alt="" coords="198,201,341,242"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="config_setting_get_int64" name="config_setting_get_int64">
+<area shape="rect" id="node2" href="$libconfig_8h.html#ae1caf2966faa2e765222a6db47549fe6" title="config_setting_get\l_int64_elem" alt="" coords="184,5,312,46"/>
+<area shape="rect" id="node3" href="$classlibconfig_1_1Setting.html#abd5bac17fa972df2d4b909594325134f" title="libconfig::Setting\l::operator long long" alt="" coords="181,70,315,111"/>
+<area shape="rect" id="node4" href="$classlibconfig_1_1Setting.html#a4a297e1c19d6d37d0ba067ba892d86ea" title="libconfig::Setting\l::operator unsigned\l long long" alt="" coords="181,135,315,191"/>
+</map>

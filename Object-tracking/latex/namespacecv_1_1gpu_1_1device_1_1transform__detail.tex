@@ -1,0 +1,84 @@
+\hypertarget{namespacecv_1_1gpu_1_1device_1_1transform__detail}{\section{cv\-:\-:gpu\-:\-:device\-:\-:transform\-\_\-detail Namespace Reference}
+\label{namespacecv_1_1gpu_1_1device_1_1transform__detail}\index{cv\-::gpu\-::device\-::transform\-\_\-detail@{cv\-::gpu\-::device\-::transform\-\_\-detail}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1transform__detail_1_1UnaryReadWriteTraits}{Unary\-Read\-Write\-Traits}
+\begin{DoxyCompactList}\small\item\em Read Write Traits. \end{DoxyCompactList}\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1transform__detail_1_1BinaryReadWriteTraits}{Binary\-Read\-Write\-Traits}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1transform__detail_1_1OpUnroller}{Op\-Unroller}
+\begin{DoxyCompactList}\small\item\em Transform kernels. \end{DoxyCompactList}\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1transform__detail_1_1OpUnroller_3_011_01_4}{Op\-Unroller$<$ 1 $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1transform__detail_1_1OpUnroller_3_012_01_4}{Op\-Unroller$<$ 2 $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1transform__detail_1_1OpUnroller_3_013_01_4}{Op\-Unroller$<$ 3 $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1transform__detail_1_1OpUnroller_3_014_01_4}{Op\-Unroller$<$ 4 $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1transform__detail_1_1OpUnroller_3_018_01_4}{Op\-Unroller$<$ 8 $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1transform__detail_1_1TransformDispatcher}{Transform\-Dispatcher}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1transform__detail_1_1TransformDispatcher_3_01false_01_4}{Transform\-Dispatcher$<$ false $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1transform__detail_1_1TransformDispatcher_3_01true_01_4}{Transform\-Dispatcher$<$ true $>$}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T , typename D , typename Un\-Op , typename Mask $>$ }\\static \-\_\-\-\_\-global\-\_\-\-\_\- \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1gpu_1_1device_1_1transform__detail_a1e6c00f77e187e8927ed0422605baade}{transform\-Smart} (const Ptr\-Step\-Sz$<$ \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} $>$ src\-\_\-, Ptr\-Step$<$ D $>$ dst\-\_\-, const Mask \hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}, const Un\-Op op)
+\item 
+{\footnotesize template$<$typename T , typename D , typename Un\-Op , typename Mask $>$ }\\static \-\_\-\-\_\-global\-\_\-\-\_\- \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1gpu_1_1device_1_1transform__detail_ae4e08132e59457833e15708710e80aec}{transform\-Simple} (const Ptr\-Step\-Sz$<$ \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} $>$ \hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, Ptr\-Step$<$ D $>$ \hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, const Mask \hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}, const Un\-Op op)
+\item 
+{\footnotesize template$<$typename T1 , typename T2 , typename D , typename Bin\-Op , typename Mask $>$ }\\static \-\_\-\-\_\-global\-\_\-\-\_\- \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1gpu_1_1device_1_1transform__detail_a704230bb3a0f6234eb4c7d51b8e1092e}{transform\-Smart} (const Ptr\-Step\-Sz$<$ T1 $>$ src1\-\_\-, const Ptr\-Step$<$ T2 $>$ src2\-\_\-, Ptr\-Step$<$ D $>$ dst\-\_\-, const Mask \hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}, const Bin\-Op op)
+\item 
+{\footnotesize template$<$typename T1 , typename T2 , typename D , typename Bin\-Op , typename Mask $>$ }\\static \-\_\-\-\_\-global\-\_\-\-\_\- \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1gpu_1_1device_1_1transform__detail_af429c0b72424a6de1bf87ac9b9088a94}{transform\-Simple} (const Ptr\-Step\-Sz$<$ T1 $>$ \hyperlink{core__c_8h_a897de4702c922f4cccda0d57ccdcafb3}{src1}, const Ptr\-Step$<$ T2 $>$ \hyperlink{core__c_8h_a7561a36d48069d54a6c8ac4e4750edfd}{src2}, Ptr\-Step$<$ D $>$ \hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, const Mask \hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}, const Bin\-Op op)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespacecv_1_1gpu_1_1device_1_1transform__detail_ae4e08132e59457833e15708710e80aec}{\index{cv\-::gpu\-::device\-::transform\-\_\-detail@{cv\-::gpu\-::device\-::transform\-\_\-detail}!transform\-Simple@{transform\-Simple}}
+\index{transform\-Simple@{transform\-Simple}!cv::gpu::device::transform_detail@{cv\-::gpu\-::device\-::transform\-\_\-detail}}
+\subsubsection[{transform\-Simple}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T , typename D , typename Un\-Op , typename Mask $>$ static \-\_\-\-\_\-global\-\_\-\-\_\- {\bf void} cv\-::gpu\-::device\-::transform\-\_\-detail\-::transform\-Simple (
+\begin{DoxyParamCaption}
+\item[{const Ptr\-Step\-Sz$<$ {\bf T} $>$}]{src, }
+\item[{Ptr\-Step$<$ D $>$}]{dst, }
+\item[{const Mask}]{mask, }
+\item[{const Un\-Op}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{namespacecv_1_1gpu_1_1device_1_1transform__detail_ae4e08132e59457833e15708710e80aec}
+\hypertarget{namespacecv_1_1gpu_1_1device_1_1transform__detail_af429c0b72424a6de1bf87ac9b9088a94}{\index{cv\-::gpu\-::device\-::transform\-\_\-detail@{cv\-::gpu\-::device\-::transform\-\_\-detail}!transform\-Simple@{transform\-Simple}}
+\index{transform\-Simple@{transform\-Simple}!cv::gpu::device::transform_detail@{cv\-::gpu\-::device\-::transform\-\_\-detail}}
+\subsubsection[{transform\-Simple}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T1 , typename T2 , typename D , typename Bin\-Op , typename Mask $>$ static \-\_\-\-\_\-global\-\_\-\-\_\- {\bf void} cv\-::gpu\-::device\-::transform\-\_\-detail\-::transform\-Simple (
+\begin{DoxyParamCaption}
+\item[{const Ptr\-Step\-Sz$<$ T1 $>$}]{src1, }
+\item[{const Ptr\-Step$<$ T2 $>$}]{src2, }
+\item[{Ptr\-Step$<$ D $>$}]{dst, }
+\item[{const Mask}]{mask, }
+\item[{const Bin\-Op}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{namespacecv_1_1gpu_1_1device_1_1transform__detail_af429c0b72424a6de1bf87ac9b9088a94}
+\hypertarget{namespacecv_1_1gpu_1_1device_1_1transform__detail_a1e6c00f77e187e8927ed0422605baade}{\index{cv\-::gpu\-::device\-::transform\-\_\-detail@{cv\-::gpu\-::device\-::transform\-\_\-detail}!transform\-Smart@{transform\-Smart}}
+\index{transform\-Smart@{transform\-Smart}!cv::gpu::device::transform_detail@{cv\-::gpu\-::device\-::transform\-\_\-detail}}
+\subsubsection[{transform\-Smart}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T , typename D , typename Un\-Op , typename Mask $>$ static \-\_\-\-\_\-global\-\_\-\-\_\- {\bf void} cv\-::gpu\-::device\-::transform\-\_\-detail\-::transform\-Smart (
+\begin{DoxyParamCaption}
+\item[{const Ptr\-Step\-Sz$<$ {\bf T} $>$}]{src\-\_\-, }
+\item[{Ptr\-Step$<$ D $>$}]{dst\-\_\-, }
+\item[{const Mask}]{mask, }
+\item[{const Un\-Op}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{namespacecv_1_1gpu_1_1device_1_1transform__detail_a1e6c00f77e187e8927ed0422605baade}
+\hypertarget{namespacecv_1_1gpu_1_1device_1_1transform__detail_a704230bb3a0f6234eb4c7d51b8e1092e}{\index{cv\-::gpu\-::device\-::transform\-\_\-detail@{cv\-::gpu\-::device\-::transform\-\_\-detail}!transform\-Smart@{transform\-Smart}}
+\index{transform\-Smart@{transform\-Smart}!cv::gpu::device::transform_detail@{cv\-::gpu\-::device\-::transform\-\_\-detail}}
+\subsubsection[{transform\-Smart}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T1 , typename T2 , typename D , typename Bin\-Op , typename Mask $>$ static \-\_\-\-\_\-global\-\_\-\-\_\- {\bf void} cv\-::gpu\-::device\-::transform\-\_\-detail\-::transform\-Smart (
+\begin{DoxyParamCaption}
+\item[{const Ptr\-Step\-Sz$<$ T1 $>$}]{src1\-\_\-, }
+\item[{const Ptr\-Step$<$ T2 $>$}]{src2\-\_\-, }
+\item[{Ptr\-Step$<$ D $>$}]{dst\-\_\-, }
+\item[{const Mask}]{mask, }
+\item[{const Bin\-Op}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{namespacecv_1_1gpu_1_1device_1_1transform__detail_a704230bb3a0f6234eb4c7d51b8e1092e}

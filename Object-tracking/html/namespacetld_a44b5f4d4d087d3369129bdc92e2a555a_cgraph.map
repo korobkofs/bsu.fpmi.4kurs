@@ -1,0 +1,7 @@
+<map id="tld::tldExtractNormalizedPatchBB" name="tld::tldExtractNormalizedPatchBB">
+<area shape="rect" id="node2" href="$namespacetld.html#aff4c05bc28ae29c360be58460a56b579" title="Extracts the date from array (size 4). " alt="" coords="221,5,413,32"/>
+<area shape="rect" id="node3" href="$namespacetld.html#ac965be65b1eae7ec666c3bfbe9da065e" title="Extracts normalized patch from the image by rectangle. " alt="" coords="234,57,401,98"/>
+<area shape="rect" id="node4" href="$namespacetld.html#a16fe2b016494fa66be611f723ed7bebc" title="Extracts the subimage by the reactangle. " alt="" coords="462,39,621,65"/>
+<area shape="rect" id="node6" href="$namespacetld.html#a7facbe495da1f0e058c78b9b7dea412a" title="Returns mean&#45;normalized patch, the image must be greyscale. " alt="" coords="472,89,611,116"/>
+<area shape="rect" id="node5" href="$namespacetld.html#afd43d8a27c419d1f5da8718be917d4b5" title="Creates new rectangle from boundary. " alt="" coords="670,39,826,65"/>
+</map>

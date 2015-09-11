@@ -1,0 +1,5 @@
+<map id="cv::ocl::oclMat::locateROI" name="cv::ocl::oclMat::locateROI">
+<area shape="rect" id="node2" href="$classcv_1_1ocl_1_1oclMat.html#a1de55188d5af96a1a022d3133552ffd9" title="returns element size in bytes, " alt="" coords="229,31,400,57"/>
+<area shape="rect" id="node3" href="$classcv_1_1ocl_1_1oclMat.html#acf6fe0735d1dac151e2c301f01470827" title="returns element type, similar to CV_MAT_TYPE(cvMat&#45;&gt;type) " alt="" coords="471,5,612,32"/>
+<area shape="rect" id="node4" href="$classcv_1_1ocl_1_1oclMat.html#a7a49c475a2be5e83c505834e213bb5bf" title="cv::ocl::oclMat::oclchannels" alt="" coords="449,56,634,83"/>
+</map>

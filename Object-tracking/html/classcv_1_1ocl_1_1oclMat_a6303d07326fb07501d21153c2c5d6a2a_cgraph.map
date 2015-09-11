@@ -1,0 +1,8 @@
+<map id="cv::ocl::oclMat::adjustROI" name="cv::ocl::oclMat::adjustROI">
+<area shape="rect" id="node2" href="$classcv_1_1ocl_1_1oclMat.html#a1de55188d5af96a1a022d3133552ffd9" title="returns element size in bytes, " alt="" coords="453,31,624,57"/>
+<area shape="rect" id="node5" href="$classcv_1_1ocl_1_1oclMat.html#ac5162869d68bd8a82339b2287136c079" title="locates oclMatrix header within a parent oclMatrix. See below " alt="" coords="230,56,405,83"/>
+<area shape="rect" id="node6" href="$namespacecv_1_1gpu.html#a706c9def6816de566be2671b75ec5309" title="computes per&#45;element maximum of two arrays (dst = max(src1, src2)) " alt="" coords="268,107,367,133"/>
+<area shape="rect" id="node7" href="$namespacecv_1_1gpu.html#a8d100341ab11a730a3c90b75d5890a8c" title="computes per&#45;element minimum of two arrays (dst = min(src1, src2)) " alt="" coords="270,157,365,184"/>
+<area shape="rect" id="node3" href="$classcv_1_1ocl_1_1oclMat.html#acf6fe0735d1dac151e2c301f01470827" title="returns element type, similar to CV_MAT_TYPE(cvMat&#45;&gt;type) " alt="" coords="695,5,836,32"/>
+<area shape="rect" id="node4" href="$classcv_1_1ocl_1_1oclMat.html#a7a49c475a2be5e83c505834e213bb5bf" title="cv::ocl::oclMat::oclchannels" alt="" coords="673,56,858,83"/>
+</map>

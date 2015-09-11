@@ -1,0 +1,387 @@
+\hypertarget{tracking_8hpp}{\section{/usr/include/opencv2/video/tracking.hpp File Reference}
+\label{tracking_8hpp}\index{/usr/include/opencv2/video/tracking.\-hpp@{/usr/include/opencv2/video/tracking.\-hpp}}
+}
+
+
+The Object and Feature Tracking.  
+
+
+{\ttfamily \#include \char`\"{}opencv2/core/core.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}opencv2/imgproc/imgproc.\-hpp\char`\"{}}\\*
+Include dependency graph for tracking.\-hpp\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tracking_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tracking_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structCvKalman}{Cv\-Kalman}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{tracking_8hpp_ab7b9b58b932ef2c4884c483a70d90f76}{C\-V\-\_\-\-L\-K\-F\-L\-O\-W\-\_\-\-P\-Y\-R\-\_\-\-A\-\_\-\-R\-E\-A\-D\-Y}~1
+\item 
+\#define \hyperlink{tracking_8hpp_af91150e333df61f5f825961d047b4700}{C\-V\-\_\-\-L\-K\-F\-L\-O\-W\-\_\-\-P\-Y\-R\-\_\-\-B\-\_\-\-R\-E\-A\-D\-Y}~2
+\item 
+\#define \hyperlink{tracking_8hpp_a5416d26c10df0509861761a1d7996bce}{C\-V\-\_\-\-L\-K\-F\-L\-O\-W\-\_\-\-I\-N\-I\-T\-I\-A\-L\-\_\-\-G\-U\-E\-S\-S\-E\-S}~4
+\item 
+\#define \hyperlink{tracking_8hpp_a219cb98ab00f22da96752e46faaa2afc}{C\-V\-\_\-\-L\-K\-F\-L\-O\-W\-\_\-\-G\-E\-T\-\_\-\-M\-I\-N\-\_\-\-E\-I\-G\-E\-N\-V\-A\-L\-S}~8
+\item 
+\#define \hyperlink{tracking_8hpp_ac8c1b946da32143bfcbbc996e746355e}{cv\-Kalman\-Update\-By\-Time}~cv\-Kalman\-Predict
+\item 
+\#define \hyperlink{tracking_8hpp_a28ae96c4431a9c7fdd6908008ecee638}{cv\-Kalman\-Update\-By\-Measurement}~cv\-Kalman\-Correct
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structCvKalman}{Cv\-Kalman} \hyperlink{tracking_8hpp_a453f3b128386d3cba2ab3ca6757bb689}{Cv\-Kalman}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{tracking_8hpp_aacaafb36e1cfb485d0493810752cc7ff}{C\-V\-A\-P\-I} (\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void}) cv\-Calc\-Optical\-Flow\-Pyr\-L\-K(const \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} $\ast$prev
+\item 
+\hyperlink{tracking_8hpp_ad24010c44257d61408250d4ebb3d3e0d}{C\-V\-A\-P\-I} (int) cv\-Estimate\-Rigid\-Transform(const \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} $\ast$A
+\item 
+\hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} double double int \\*
+aperture\-\_\-size \hyperlink{tracking_8hpp_a7c11879b56c49afb72c137c36b23db00}{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T} (3))
+\item 
+\hyperlink{tracking_8hpp_ac196176d0986bb5fecf60f7b1f2b590c}{C\-V\-A\-P\-I} (double) cv\-Calc\-Global\-Orientation(const \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} $\ast$\hyperlink{tracking_8hpp_a8a0898c06d9f70093b4eb8c24ae1097f}{orientation}
+\item 
+\hyperlink{tracking_8hpp_ae6e4d050a87cd8833f6c821dbd197b49}{C\-V\-A\-P\-I} (\hyperlink{structCvSeq}{Cv\-Seq} $\ast$) cv\-Segment\-Motion(const \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} $\ast$\hyperlink{tracking_8hpp_a347a3bbed38267ff5957ea351211f457}{mhi}
+\item 
+\hyperlink{structCvRect}{Cv\-Rect} \hyperlink{structCvTermCriteria}{Cv\-Term\-Criteria} \\*
+\hyperlink{structCvConnectedComp}{Cv\-Connected\-Comp} \hyperlink{structCvBox2D}{Cv\-Box2\-D} $\ast$box \hyperlink{tracking_8hpp_a37643d764ac079120c970b3f62f7845b}{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T} (\hyperlink{Config_8cpp_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\-U\-L\-L}))
+\item 
+\hyperlink{tracking_8hpp_ab806ea1b88397170f95517309c90e722}{C\-V\-A\-P\-I} (\hyperlink{structCvKalman}{Cv\-Kalman} $\ast$) cv\-Create\-Kalman(int dynam\-\_\-params
+\item 
+int int control\-\_\-params \hyperlink{tracking_8hpp_a99fa8d92489df6aa329d7166d52cbfb4}{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T} (0))
+\item 
+\hyperlink{tracking_8hpp_aad1c3a71ba42556a07af91ffb5c3e7f4}{C\-V\-A\-P\-I} (const \hyperlink{structCvMat}{Cv\-Mat} $\ast$) cv\-Kalman\-Predict(\hyperlink{structCvKalman}{Cv\-Kalman} $\ast$kalman
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} $\ast$ \hyperlink{tracking_8hpp_a017ed49f5dd5b9919fe8abdc0e628d1a}{curr}
+\item 
+const \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} $\ast$ \hyperlink{tracking_8hpp_a96157359a9d84f9a2180c62cbdec0b3b}{prev\-\_\-pyr}
+\item 
+const \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} $\ast$ \hyperlink{tracking_8hpp_a5d05ab4bce135cc1c44b2e32762dae27}{curr\-\_\-pyr}
+\item 
+const \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} const \\*
+\hyperlink{structCvPoint2D32f}{Cv\-Point2\-D32f} $\ast$ \hyperlink{tracking_8hpp_a4ebc4a5ec77b6502b3b78e8ed81dfd27}{prev\-\_\-features}
+\item 
+const \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} const \\*
+\hyperlink{structCvPoint2D32f}{Cv\-Point2\-D32f} \hyperlink{structCvPoint2D32f}{Cv\-Point2\-D32f} $\ast$ \hyperlink{tracking_8hpp_ae4ad2f697b4e4926324c24a34fe0cbc3}{curr\-\_\-features}
+\item 
+const \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} const \\*
+\hyperlink{structCvPoint2D32f}{Cv\-Point2\-D32f} \hyperlink{structCvPoint2D32f}{Cv\-Point2\-D32f} int \hyperlink{tracking_8hpp_a88d78b1935cd8bdee70a44eaaf326b1e}{count}
+\item 
+const \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} const \\*
+\hyperlink{structCvPoint2D32f}{Cv\-Point2\-D32f} \hyperlink{structCvPoint2D32f}{Cv\-Point2\-D32f} int \\*
+\hyperlink{structCvSize}{Cv\-Size} \hyperlink{tracking_8hpp_a288228f7d1b8c11df847057580afc5b2}{win\-\_\-size}
+\item 
+const \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} const \\*
+\hyperlink{structCvPoint2D32f}{Cv\-Point2\-D32f} \hyperlink{structCvPoint2D32f}{Cv\-Point2\-D32f} int \\*
+\hyperlink{structCvSize}{Cv\-Size} int \hyperlink{tracking_8hpp_ac693e272fb1883fe0343f55a14d72b22}{level}
+\item 
+const \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} const \\*
+\hyperlink{structCvPoint2D32f}{Cv\-Point2\-D32f} \hyperlink{structCvPoint2D32f}{Cv\-Point2\-D32f} int \\*
+\hyperlink{structCvSize}{Cv\-Size} int char $\ast$ \hyperlink{tracking_8hpp_ae17b3c2584dab511e91d1c96644018bf}{status}
+\item 
+const \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} const \\*
+\hyperlink{structCvPoint2D32f}{Cv\-Point2\-D32f} \hyperlink{structCvPoint2D32f}{Cv\-Point2\-D32f} int \\*
+\hyperlink{structCvSize}{Cv\-Size} int char float $\ast$ \hyperlink{tracking_8hpp_a31a3a12d3f337fc47e38e9f020385238}{track\-\_\-error}
+\item 
+const \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} const \\*
+\hyperlink{structCvPoint2D32f}{Cv\-Point2\-D32f} \hyperlink{structCvPoint2D32f}{Cv\-Point2\-D32f} int \\*
+\hyperlink{structCvSize}{Cv\-Size} int char float \\*
+\hyperlink{structCvTermCriteria}{Cv\-Term\-Criteria} \hyperlink{tracking_8hpp_ac10fcea99ab081e745366c6f5bbc8eb5}{criteria}
+\item 
+const \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} const \\*
+\hyperlink{structCvPoint2D32f}{Cv\-Point2\-D32f} \hyperlink{structCvPoint2D32f}{Cv\-Point2\-D32f} int \\*
+\hyperlink{structCvSize}{Cv\-Size} int char float \\*
+\hyperlink{structCvTermCriteria}{Cv\-Term\-Criteria} int \hyperlink{tracking_8hpp_ae51e3a2d4365e85db9630dd3ce9508db}{flags}
+\item 
+const \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} const \\*
+\hyperlink{structCvPoint2D32f}{Cv\-Point2\-D32f} \hyperlink{structCvPoint2D32f}{Cv\-Point2\-D32f} \\*
+float $\ast$ \hyperlink{tracking_8hpp_acf29ff3f45fd2eb388e86ba773d5b9f7}{matrices}
+\item 
+const \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} $\ast$ \hyperlink{tracking_8hpp_abfbb8a90031c2fb62897dafb4d390f6d}{B}
+\item 
+const \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} \hyperlink{structCvMat}{Cv\-Mat} $\ast$ \hyperlink{tracking_8hpp_aa81fa9fd378ecf463757e9274a136e70}{M}
+\item 
+const \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} \hyperlink{structCvMat}{Cv\-Mat} int \hyperlink{tracking_8hpp_a5ac544ef03234b26243dce13b405da19}{full\-\_\-affine}
+\item 
+const \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} $\ast$ \hyperlink{tracking_8hpp_a271d716db1f200e7bc0483683c5c7fa7}{next}
+\item 
+const \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} $\ast$ \hyperlink{tracking_8hpp_aa1384c506450d21d9f146e96ca217e8f}{flow}
+\item 
+const \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} double \hyperlink{tracking_8hpp_a26054080aedb92d717f1d7880ea567a6}{pyr\-\_\-scale}
+\item 
+const \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} double int \hyperlink{tracking_8hpp_a1c85c8190b686c9f597e5c1c6cc154a7}{levels}
+\item 
+const \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} double int int \hyperlink{tracking_8hpp_a174ccada67e4a08881702c43934f7b54}{winsize}
+\item 
+const \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} double int \\*
+int int \hyperlink{tracking_8hpp_a17372ac3c8ba01bc6cfc265b2824992e}{iterations}
+\item 
+const \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} double int \\*
+int int int \hyperlink{tracking_8hpp_ae81d3795222e7d8084b0c26af99df5af}{poly\-\_\-n}
+\item 
+const \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} double int \\*
+int int int double \hyperlink{tracking_8hpp_a838e6cc030ee97e0f2c63df245c9dd19}{poly\-\_\-sigma}
+\item 
+\hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} $\ast$ \hyperlink{tracking_8hpp_a347a3bbed38267ff5957ea351211f457}{mhi}
+\item 
+\hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} double \hyperlink{tracking_8hpp_a3a7879fcacf6b20a39e8d8d2d59c7ec3}{timestamp}
+\item 
+\hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} double double \hyperlink{tracking_8hpp_a5d8760bf0f498e7123ac61ba641a0a7d}{duration}
+\item 
+\hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} $\ast$ \hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}
+\item 
+\hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} $\ast$ \hyperlink{tracking_8hpp_a8a0898c06d9f70093b4eb8c24ae1097f}{orientation}
+\item 
+\hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} double \hyperlink{tracking_8hpp_ab0595571b84ee5da2bc2037df7de196c}{delta1}
+\item 
+\hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} \hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} double double \hyperlink{tracking_8hpp_af27924af1f81d1ecc7702aa46e7cb3d6}{delta2}
+\item 
+\hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} $\ast$ \hyperlink{tracking_8hpp_ae424f818ac2ad4d70af83829bcd32225}{seg\-\_\-mask}
+\item 
+\hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} \hyperlink{structCvMemStorage}{Cv\-Mem\-Storage} $\ast$ \hyperlink{tracking_8hpp_af280dda601d192e49a9ae094198a7e16}{storage}
+\item 
+\hyperlink{core_2types__c_8h_ac5046bc0456e9295d80b37774384798c}{Cv\-Arr} \hyperlink{structCvMemStorage}{Cv\-Mem\-Storage} double double \hyperlink{tracking_8hpp_acea49d99abb2ac58a38bbb76fe266126}{seg\-\_\-thresh}
+\item 
+\hyperlink{structCvRect}{Cv\-Rect} \hyperlink{tracking_8hpp_a1b64c58c64aaa8f792a6a64460bca138}{window}
+\item 
+\hyperlink{structCvRect}{Cv\-Rect} \hyperlink{structCvTermCriteria}{Cv\-Term\-Criteria} \\*
+\hyperlink{structCvConnectedComp}{Cv\-Connected\-Comp} $\ast$ \hyperlink{tracking_8hpp_acff450bc3feb40e2742a4be71b0a804e}{comp}
+\item 
+int \hyperlink{tracking_8hpp_a022ed63ec96d82738a4238474fe60294}{measure\-\_\-params}
+\item 
+const \hyperlink{structCvMat}{Cv\-Mat} $\ast$ \hyperlink{tracking_8hpp_a418553f0076326b269a34730ffa3890f}{measurement}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The Object and Feature Tracking. 
+
+\subsection{Macro Definition Documentation}
+\hypertarget{tracking_8hpp_a219cb98ab00f22da96752e46faaa2afc}{\index{tracking.\-hpp@{tracking.\-hpp}!C\-V\-\_\-\-L\-K\-F\-L\-O\-W\-\_\-\-G\-E\-T\-\_\-\-M\-I\-N\-\_\-\-E\-I\-G\-E\-N\-V\-A\-L\-S@{C\-V\-\_\-\-L\-K\-F\-L\-O\-W\-\_\-\-G\-E\-T\-\_\-\-M\-I\-N\-\_\-\-E\-I\-G\-E\-N\-V\-A\-L\-S}}
+\index{C\-V\-\_\-\-L\-K\-F\-L\-O\-W\-\_\-\-G\-E\-T\-\_\-\-M\-I\-N\-\_\-\-E\-I\-G\-E\-N\-V\-A\-L\-S@{C\-V\-\_\-\-L\-K\-F\-L\-O\-W\-\_\-\-G\-E\-T\-\_\-\-M\-I\-N\-\_\-\-E\-I\-G\-E\-N\-V\-A\-L\-S}!tracking.hpp@{tracking.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-L\-K\-F\-L\-O\-W\-\_\-\-G\-E\-T\-\_\-\-M\-I\-N\-\_\-\-E\-I\-G\-E\-N\-V\-A\-L\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-L\-K\-F\-L\-O\-W\-\_\-\-G\-E\-T\-\_\-\-M\-I\-N\-\_\-\-E\-I\-G\-E\-N\-V\-A\-L\-S~8}}\label{tracking_8hpp_a219cb98ab00f22da96752e46faaa2afc}
+\hypertarget{tracking_8hpp_a5416d26c10df0509861761a1d7996bce}{\index{tracking.\-hpp@{tracking.\-hpp}!C\-V\-\_\-\-L\-K\-F\-L\-O\-W\-\_\-\-I\-N\-I\-T\-I\-A\-L\-\_\-\-G\-U\-E\-S\-S\-E\-S@{C\-V\-\_\-\-L\-K\-F\-L\-O\-W\-\_\-\-I\-N\-I\-T\-I\-A\-L\-\_\-\-G\-U\-E\-S\-S\-E\-S}}
+\index{C\-V\-\_\-\-L\-K\-F\-L\-O\-W\-\_\-\-I\-N\-I\-T\-I\-A\-L\-\_\-\-G\-U\-E\-S\-S\-E\-S@{C\-V\-\_\-\-L\-K\-F\-L\-O\-W\-\_\-\-I\-N\-I\-T\-I\-A\-L\-\_\-\-G\-U\-E\-S\-S\-E\-S}!tracking.hpp@{tracking.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-L\-K\-F\-L\-O\-W\-\_\-\-I\-N\-I\-T\-I\-A\-L\-\_\-\-G\-U\-E\-S\-S\-E\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-L\-K\-F\-L\-O\-W\-\_\-\-I\-N\-I\-T\-I\-A\-L\-\_\-\-G\-U\-E\-S\-S\-E\-S~4}}\label{tracking_8hpp_a5416d26c10df0509861761a1d7996bce}
+\hypertarget{tracking_8hpp_ab7b9b58b932ef2c4884c483a70d90f76}{\index{tracking.\-hpp@{tracking.\-hpp}!C\-V\-\_\-\-L\-K\-F\-L\-O\-W\-\_\-\-P\-Y\-R\-\_\-\-A\-\_\-\-R\-E\-A\-D\-Y@{C\-V\-\_\-\-L\-K\-F\-L\-O\-W\-\_\-\-P\-Y\-R\-\_\-\-A\-\_\-\-R\-E\-A\-D\-Y}}
+\index{C\-V\-\_\-\-L\-K\-F\-L\-O\-W\-\_\-\-P\-Y\-R\-\_\-\-A\-\_\-\-R\-E\-A\-D\-Y@{C\-V\-\_\-\-L\-K\-F\-L\-O\-W\-\_\-\-P\-Y\-R\-\_\-\-A\-\_\-\-R\-E\-A\-D\-Y}!tracking.hpp@{tracking.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-L\-K\-F\-L\-O\-W\-\_\-\-P\-Y\-R\-\_\-\-A\-\_\-\-R\-E\-A\-D\-Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-L\-K\-F\-L\-O\-W\-\_\-\-P\-Y\-R\-\_\-\-A\-\_\-\-R\-E\-A\-D\-Y~1}}\label{tracking_8hpp_ab7b9b58b932ef2c4884c483a70d90f76}
+\hypertarget{tracking_8hpp_af91150e333df61f5f825961d047b4700}{\index{tracking.\-hpp@{tracking.\-hpp}!C\-V\-\_\-\-L\-K\-F\-L\-O\-W\-\_\-\-P\-Y\-R\-\_\-\-B\-\_\-\-R\-E\-A\-D\-Y@{C\-V\-\_\-\-L\-K\-F\-L\-O\-W\-\_\-\-P\-Y\-R\-\_\-\-B\-\_\-\-R\-E\-A\-D\-Y}}
+\index{C\-V\-\_\-\-L\-K\-F\-L\-O\-W\-\_\-\-P\-Y\-R\-\_\-\-B\-\_\-\-R\-E\-A\-D\-Y@{C\-V\-\_\-\-L\-K\-F\-L\-O\-W\-\_\-\-P\-Y\-R\-\_\-\-B\-\_\-\-R\-E\-A\-D\-Y}!tracking.hpp@{tracking.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-L\-K\-F\-L\-O\-W\-\_\-\-P\-Y\-R\-\_\-\-B\-\_\-\-R\-E\-A\-D\-Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-L\-K\-F\-L\-O\-W\-\_\-\-P\-Y\-R\-\_\-\-B\-\_\-\-R\-E\-A\-D\-Y~2}}\label{tracking_8hpp_af91150e333df61f5f825961d047b4700}
+\hypertarget{tracking_8hpp_a28ae96c4431a9c7fdd6908008ecee638}{\index{tracking.\-hpp@{tracking.\-hpp}!cv\-Kalman\-Update\-By\-Measurement@{cv\-Kalman\-Update\-By\-Measurement}}
+\index{cv\-Kalman\-Update\-By\-Measurement@{cv\-Kalman\-Update\-By\-Measurement}!tracking.hpp@{tracking.\-hpp}}
+\subsubsection[{cv\-Kalman\-Update\-By\-Measurement}]{\setlength{\rightskip}{0pt plus 5cm}\#define cv\-Kalman\-Update\-By\-Measurement~cv\-Kalman\-Correct}}\label{tracking_8hpp_a28ae96c4431a9c7fdd6908008ecee638}
+\hypertarget{tracking_8hpp_ac8c1b946da32143bfcbbc996e746355e}{\index{tracking.\-hpp@{tracking.\-hpp}!cv\-Kalman\-Update\-By\-Time@{cv\-Kalman\-Update\-By\-Time}}
+\index{cv\-Kalman\-Update\-By\-Time@{cv\-Kalman\-Update\-By\-Time}!tracking.hpp@{tracking.\-hpp}}
+\subsubsection[{cv\-Kalman\-Update\-By\-Time}]{\setlength{\rightskip}{0pt plus 5cm}\#define cv\-Kalman\-Update\-By\-Time~cv\-Kalman\-Predict}}\label{tracking_8hpp_ac8c1b946da32143bfcbbc996e746355e}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{tracking_8hpp_a453f3b128386d3cba2ab3ca6757bb689}{\index{tracking.\-hpp@{tracking.\-hpp}!Cv\-Kalman@{Cv\-Kalman}}
+\index{Cv\-Kalman@{Cv\-Kalman}!tracking.hpp@{tracking.\-hpp}}
+\subsubsection[{Cv\-Kalman}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf Cv\-Kalman}  {\bf Cv\-Kalman}}}\label{tracking_8hpp_a453f3b128386d3cba2ab3ca6757bb689}
+
+
+\subsection{Function Documentation}
+\hypertarget{tracking_8hpp_a7c11879b56c49afb72c137c36b23db00}{\index{tracking.\-hpp@{tracking.\-hpp}!C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T@{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}}
+\index{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T@{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}!tracking.hpp@{tracking.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Arr} {\bf Cv\-Arr} double double int aperture\-\_\-size C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T (
+\begin{DoxyParamCaption}
+\item[{3}]{}
+\end{DoxyParamCaption}
+)}}\label{tracking_8hpp_a7c11879b56c49afb72c137c36b23db00}
+\hypertarget{tracking_8hpp_a37643d764ac079120c970b3f62f7845b}{\index{tracking.\-hpp@{tracking.\-hpp}!C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T@{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}}
+\index{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T@{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}!tracking.hpp@{tracking.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Rect} {\bf Cv\-Term\-Criteria} {\bf Cv\-Connected\-Comp} {\bf Cv\-Box2\-D}$\ast$ box C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf N\-U\-L\-L}}]{}
+\end{DoxyParamCaption}
+)}}\label{tracking_8hpp_a37643d764ac079120c970b3f62f7845b}
+\hypertarget{tracking_8hpp_a99fa8d92489df6aa329d7166d52cbfb4}{\index{tracking.\-hpp@{tracking.\-hpp}!C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T@{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}}
+\index{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T@{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}!tracking.hpp@{tracking.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T}]{\setlength{\rightskip}{0pt plus 5cm}int int control\-\_\-params C\-V\-\_\-\-D\-E\-F\-A\-U\-L\-T (
+\begin{DoxyParamCaption}
+\item[{0}]{}
+\end{DoxyParamCaption}
+)}}\label{tracking_8hpp_a99fa8d92489df6aa329d7166d52cbfb4}
+\hypertarget{tracking_8hpp_aacaafb36e1cfb485d0493810752cc7ff}{\index{tracking.\-hpp@{tracking.\-hpp}!C\-V\-A\-P\-I@{C\-V\-A\-P\-I}}
+\index{C\-V\-A\-P\-I@{C\-V\-A\-P\-I}!tracking.hpp@{tracking.\-hpp}}
+\subsubsection[{C\-V\-A\-P\-I}]{\setlength{\rightskip}{0pt plus 5cm}C\-V\-A\-P\-I (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+) const}}\label{tracking_8hpp_aacaafb36e1cfb485d0493810752cc7ff}
+\hypertarget{tracking_8hpp_ad24010c44257d61408250d4ebb3d3e0d}{\index{tracking.\-hpp@{tracking.\-hpp}!C\-V\-A\-P\-I@{C\-V\-A\-P\-I}}
+\index{C\-V\-A\-P\-I@{C\-V\-A\-P\-I}!tracking.hpp@{tracking.\-hpp}}
+\subsubsection[{C\-V\-A\-P\-I}]{\setlength{\rightskip}{0pt plus 5cm}C\-V\-A\-P\-I (
+\begin{DoxyParamCaption}
+\item[{int}]{}
+\end{DoxyParamCaption}
+) const}}\label{tracking_8hpp_ad24010c44257d61408250d4ebb3d3e0d}
+\hypertarget{tracking_8hpp_ac196176d0986bb5fecf60f7b1f2b590c}{\index{tracking.\-hpp@{tracking.\-hpp}!C\-V\-A\-P\-I@{C\-V\-A\-P\-I}}
+\index{C\-V\-A\-P\-I@{C\-V\-A\-P\-I}!tracking.hpp@{tracking.\-hpp}}
+\subsubsection[{C\-V\-A\-P\-I}]{\setlength{\rightskip}{0pt plus 5cm}C\-V\-A\-P\-I (
+\begin{DoxyParamCaption}
+\item[{double}]{}
+\end{DoxyParamCaption}
+) const}}\label{tracking_8hpp_ac196176d0986bb5fecf60f7b1f2b590c}
+\hypertarget{tracking_8hpp_ae6e4d050a87cd8833f6c821dbd197b49}{\index{tracking.\-hpp@{tracking.\-hpp}!C\-V\-A\-P\-I@{C\-V\-A\-P\-I}}
+\index{C\-V\-A\-P\-I@{C\-V\-A\-P\-I}!tracking.hpp@{tracking.\-hpp}}
+\subsubsection[{C\-V\-A\-P\-I}]{\setlength{\rightskip}{0pt plus 5cm}C\-V\-A\-P\-I (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Seq} $\ast$}]{}
+\end{DoxyParamCaption}
+) const}}\label{tracking_8hpp_ae6e4d050a87cd8833f6c821dbd197b49}
+\hypertarget{tracking_8hpp_ab806ea1b88397170f95517309c90e722}{\index{tracking.\-hpp@{tracking.\-hpp}!C\-V\-A\-P\-I@{C\-V\-A\-P\-I}}
+\index{C\-V\-A\-P\-I@{C\-V\-A\-P\-I}!tracking.hpp@{tracking.\-hpp}}
+\subsubsection[{C\-V\-A\-P\-I}]{\setlength{\rightskip}{0pt plus 5cm}C\-V\-A\-P\-I (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Kalman} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{tracking_8hpp_ab806ea1b88397170f95517309c90e722}
+\hypertarget{tracking_8hpp_aad1c3a71ba42556a07af91ffb5c3e7f4}{\index{tracking.\-hpp@{tracking.\-hpp}!C\-V\-A\-P\-I@{C\-V\-A\-P\-I}}
+\index{C\-V\-A\-P\-I@{C\-V\-A\-P\-I}!tracking.hpp@{tracking.\-hpp}}
+\subsubsection[{C\-V\-A\-P\-I}]{\setlength{\rightskip}{0pt plus 5cm}C\-V\-A\-P\-I (
+\begin{DoxyParamCaption}
+\item[{const {\bf Cv\-Mat} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{tracking_8hpp_aad1c3a71ba42556a07af91ffb5c3e7f4}
+
+
+\subsection{Variable Documentation}
+\hypertarget{tracking_8hpp_abfbb8a90031c2fb62897dafb4d390f6d}{\index{tracking.\-hpp@{tracking.\-hpp}!B@{B}}
+\index{B@{B}!tracking.hpp@{tracking.\-hpp}}
+\subsubsection[{B}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Arr}$\ast$ B}}\label{tracking_8hpp_abfbb8a90031c2fb62897dafb4d390f6d}
+\hypertarget{tracking_8hpp_acff450bc3feb40e2742a4be71b0a804e}{\index{tracking.\-hpp@{tracking.\-hpp}!comp@{comp}}
+\index{comp@{comp}!tracking.hpp@{tracking.\-hpp}}
+\subsubsection[{comp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Rect} {\bf Cv\-Term\-Criteria} {\bf Cv\-Connected\-Comp}$\ast$ comp}}\label{tracking_8hpp_acff450bc3feb40e2742a4be71b0a804e}
+\hypertarget{tracking_8hpp_a88d78b1935cd8bdee70a44eaaf326b1e}{\index{tracking.\-hpp@{tracking.\-hpp}!count@{count}}
+\index{count@{count}!tracking.hpp@{tracking.\-hpp}}
+\subsubsection[{count}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Arr} {\bf Cv\-Arr} {\bf Cv\-Arr} const {\bf Cv\-Point2\-D32f} {\bf Cv\-Point2\-D32f} float int count}}\label{tracking_8hpp_a88d78b1935cd8bdee70a44eaaf326b1e}
+\hypertarget{tracking_8hpp_ac10fcea99ab081e745366c6f5bbc8eb5}{\index{tracking.\-hpp@{tracking.\-hpp}!criteria@{criteria}}
+\index{criteria@{criteria}!tracking.hpp@{tracking.\-hpp}}
+\subsubsection[{criteria}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Rect} {\bf Cv\-Term\-Criteria} criteria}}\label{tracking_8hpp_ac10fcea99ab081e745366c6f5bbc8eb5}
+\hypertarget{tracking_8hpp_a017ed49f5dd5b9919fe8abdc0e628d1a}{\index{tracking.\-hpp@{tracking.\-hpp}!curr@{curr}}
+\index{curr@{curr}!tracking.hpp@{tracking.\-hpp}}
+\subsubsection[{curr}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Arr}$\ast$ curr}}\label{tracking_8hpp_a017ed49f5dd5b9919fe8abdc0e628d1a}
+\hypertarget{tracking_8hpp_ae4ad2f697b4e4926324c24a34fe0cbc3}{\index{tracking.\-hpp@{tracking.\-hpp}!curr\-\_\-features@{curr\-\_\-features}}
+\index{curr\-\_\-features@{curr\-\_\-features}!tracking.hpp@{tracking.\-hpp}}
+\subsubsection[{curr\-\_\-features}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Arr} {\bf Cv\-Arr} {\bf Cv\-Arr} const {\bf Cv\-Point2\-D32f} {\bf Cv\-Point2\-D32f} $\ast$ curr\-\_\-features}}\label{tracking_8hpp_ae4ad2f697b4e4926324c24a34fe0cbc3}
+\hypertarget{tracking_8hpp_a5d05ab4bce135cc1c44b2e32762dae27}{\index{tracking.\-hpp@{tracking.\-hpp}!curr\-\_\-pyr@{curr\-\_\-pyr}}
+\index{curr\-\_\-pyr@{curr\-\_\-pyr}!tracking.hpp@{tracking.\-hpp}}
+\subsubsection[{curr\-\_\-pyr}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Arr} {\bf Cv\-Arr} {\bf Cv\-Arr} $\ast$ curr\-\_\-pyr}}\label{tracking_8hpp_a5d05ab4bce135cc1c44b2e32762dae27}
+\hypertarget{tracking_8hpp_ab0595571b84ee5da2bc2037df7de196c}{\index{tracking.\-hpp@{tracking.\-hpp}!delta1@{delta1}}
+\index{delta1@{delta1}!tracking.hpp@{tracking.\-hpp}}
+\subsubsection[{delta1}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Arr} {\bf Cv\-Arr} double delta1}}\label{tracking_8hpp_ab0595571b84ee5da2bc2037df7de196c}
+\hypertarget{tracking_8hpp_af27924af1f81d1ecc7702aa46e7cb3d6}{\index{tracking.\-hpp@{tracking.\-hpp}!delta2@{delta2}}
+\index{delta2@{delta2}!tracking.hpp@{tracking.\-hpp}}
+\subsubsection[{delta2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Arr} {\bf Cv\-Arr} double double delta2}}\label{tracking_8hpp_af27924af1f81d1ecc7702aa46e7cb3d6}
+\hypertarget{tracking_8hpp_a5d8760bf0f498e7123ac61ba641a0a7d}{\index{tracking.\-hpp@{tracking.\-hpp}!duration@{duration}}
+\index{duration@{duration}!tracking.hpp@{tracking.\-hpp}}
+\subsubsection[{duration}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Arr} const {\bf Cv\-Arr} double double duration}}\label{tracking_8hpp_a5d8760bf0f498e7123ac61ba641a0a7d}
+\hypertarget{tracking_8hpp_ae51e3a2d4365e85db9630dd3ce9508db}{\index{tracking.\-hpp@{tracking.\-hpp}!flags@{flags}}
+\index{flags@{flags}!tracking.hpp@{tracking.\-hpp}}
+\subsubsection[{flags}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Arr} {\bf Cv\-Arr} double int int int int double int {\bf flags}}}\label{tracking_8hpp_ae51e3a2d4365e85db9630dd3ce9508db}
+\hypertarget{tracking_8hpp_aa1384c506450d21d9f146e96ca217e8f}{\index{tracking.\-hpp@{tracking.\-hpp}!flow@{flow}}
+\index{flow@{flow}!tracking.hpp@{tracking.\-hpp}}
+\subsubsection[{flow}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Arr} {\bf Cv\-Arr}$\ast$ flow}}\label{tracking_8hpp_aa1384c506450d21d9f146e96ca217e8f}
+\hypertarget{tracking_8hpp_a5ac544ef03234b26243dce13b405da19}{\index{tracking.\-hpp@{tracking.\-hpp}!full\-\_\-affine@{full\-\_\-affine}}
+\index{full\-\_\-affine@{full\-\_\-affine}!tracking.hpp@{tracking.\-hpp}}
+\subsubsection[{full\-\_\-affine}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Arr} {\bf Cv\-Mat} int full\-\_\-affine}}\label{tracking_8hpp_a5ac544ef03234b26243dce13b405da19}
+\hypertarget{tracking_8hpp_a17372ac3c8ba01bc6cfc265b2824992e}{\index{tracking.\-hpp@{tracking.\-hpp}!iterations@{iterations}}
+\index{iterations@{iterations}!tracking.hpp@{tracking.\-hpp}}
+\subsubsection[{iterations}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Arr} {\bf Cv\-Arr} double int int int iterations}}\label{tracking_8hpp_a17372ac3c8ba01bc6cfc265b2824992e}
+\hypertarget{tracking_8hpp_ac693e272fb1883fe0343f55a14d72b22}{\index{tracking.\-hpp@{tracking.\-hpp}!level@{level}}
+\index{level@{level}!tracking.hpp@{tracking.\-hpp}}
+\subsubsection[{level}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Arr} {\bf Cv\-Arr} {\bf Cv\-Arr} const {\bf Cv\-Point2\-D32f} {\bf Cv\-Point2\-D32f} float int {\bf Cv\-Size} int level}}\label{tracking_8hpp_ac693e272fb1883fe0343f55a14d72b22}
+\hypertarget{tracking_8hpp_a1c85c8190b686c9f597e5c1c6cc154a7}{\index{tracking.\-hpp@{tracking.\-hpp}!levels@{levels}}
+\index{levels@{levels}!tracking.hpp@{tracking.\-hpp}}
+\subsubsection[{levels}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Arr} {\bf Cv\-Arr} double int levels}}\label{tracking_8hpp_a1c85c8190b686c9f597e5c1c6cc154a7}
+\hypertarget{tracking_8hpp_aa81fa9fd378ecf463757e9274a136e70}{\index{tracking.\-hpp@{tracking.\-hpp}!M@{M}}
+\index{M@{M}!tracking.hpp@{tracking.\-hpp}}
+\subsubsection[{M}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Arr} {\bf Cv\-Mat}$\ast$ M}}\label{tracking_8hpp_aa81fa9fd378ecf463757e9274a136e70}
+\hypertarget{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{\index{tracking.\-hpp@{tracking.\-hpp}!mask@{mask}}
+\index{mask@{mask}!tracking.hpp@{tracking.\-hpp}}
+\subsubsection[{mask}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Arr}$\ast$ mask}}\label{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}
+\hypertarget{tracking_8hpp_acf29ff3f45fd2eb388e86ba773d5b9f7}{\index{tracking.\-hpp@{tracking.\-hpp}!matrices@{matrices}}
+\index{matrices@{matrices}!tracking.hpp@{tracking.\-hpp}}
+\subsubsection[{matrices}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Arr} {\bf Cv\-Arr} {\bf Cv\-Arr} const {\bf Cv\-Point2\-D32f} {\bf Cv\-Point2\-D32f} float$\ast$ matrices}}\label{tracking_8hpp_acf29ff3f45fd2eb388e86ba773d5b9f7}
+\hypertarget{tracking_8hpp_a022ed63ec96d82738a4238474fe60294}{\index{tracking.\-hpp@{tracking.\-hpp}!measure\-\_\-params@{measure\-\_\-params}}
+\index{measure\-\_\-params@{measure\-\_\-params}!tracking.hpp@{tracking.\-hpp}}
+\subsubsection[{measure\-\_\-params}]{\setlength{\rightskip}{0pt plus 5cm}int measure\-\_\-params}}\label{tracking_8hpp_a022ed63ec96d82738a4238474fe60294}
+\hypertarget{tracking_8hpp_a418553f0076326b269a34730ffa3890f}{\index{tracking.\-hpp@{tracking.\-hpp}!measurement@{measurement}}
+\index{measurement@{measurement}!tracking.hpp@{tracking.\-hpp}}
+\subsubsection[{measurement}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Mat}$\ast$ measurement}}\label{tracking_8hpp_a418553f0076326b269a34730ffa3890f}
+\hypertarget{tracking_8hpp_a347a3bbed38267ff5957ea351211f457}{\index{tracking.\-hpp@{tracking.\-hpp}!mhi@{mhi}}
+\index{mhi@{mhi}!tracking.hpp@{tracking.\-hpp}}
+\subsubsection[{mhi}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Arr} const {\bf Cv\-Arr} $\ast$ mhi}}\label{tracking_8hpp_a347a3bbed38267ff5957ea351211f457}
+\hypertarget{tracking_8hpp_a271d716db1f200e7bc0483683c5c7fa7}{\index{tracking.\-hpp@{tracking.\-hpp}!next@{next}}
+\index{next@{next}!tracking.hpp@{tracking.\-hpp}}
+\subsubsection[{next}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Arr}$\ast$ next}}\label{tracking_8hpp_a271d716db1f200e7bc0483683c5c7fa7}
+\hypertarget{tracking_8hpp_a8a0898c06d9f70093b4eb8c24ae1097f}{\index{tracking.\-hpp@{tracking.\-hpp}!orientation@{orientation}}
+\index{orientation@{orientation}!tracking.hpp@{tracking.\-hpp}}
+\subsubsection[{orientation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Arr} {\bf Cv\-Arr}$\ast$ orientation}}\label{tracking_8hpp_a8a0898c06d9f70093b4eb8c24ae1097f}
+\hypertarget{tracking_8hpp_ae81d3795222e7d8084b0c26af99df5af}{\index{tracking.\-hpp@{tracking.\-hpp}!poly\-\_\-n@{poly\-\_\-n}}
+\index{poly\-\_\-n@{poly\-\_\-n}!tracking.hpp@{tracking.\-hpp}}
+\subsubsection[{poly\-\_\-n}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Arr} {\bf Cv\-Arr} double int int int int poly\-\_\-n}}\label{tracking_8hpp_ae81d3795222e7d8084b0c26af99df5af}
+\hypertarget{tracking_8hpp_a838e6cc030ee97e0f2c63df245c9dd19}{\index{tracking.\-hpp@{tracking.\-hpp}!poly\-\_\-sigma@{poly\-\_\-sigma}}
+\index{poly\-\_\-sigma@{poly\-\_\-sigma}!tracking.hpp@{tracking.\-hpp}}
+\subsubsection[{poly\-\_\-sigma}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Arr} {\bf Cv\-Arr} double int int int int double poly\-\_\-sigma}}\label{tracking_8hpp_a838e6cc030ee97e0f2c63df245c9dd19}
+\hypertarget{tracking_8hpp_a4ebc4a5ec77b6502b3b78e8ed81dfd27}{\index{tracking.\-hpp@{tracking.\-hpp}!prev\-\_\-features@{prev\-\_\-features}}
+\index{prev\-\_\-features@{prev\-\_\-features}!tracking.hpp@{tracking.\-hpp}}
+\subsubsection[{prev\-\_\-features}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Arr} {\bf Cv\-Arr} {\bf Cv\-Arr} const {\bf Cv\-Point2\-D32f} $\ast$ prev\-\_\-features}}\label{tracking_8hpp_a4ebc4a5ec77b6502b3b78e8ed81dfd27}
+\hypertarget{tracking_8hpp_a96157359a9d84f9a2180c62cbdec0b3b}{\index{tracking.\-hpp@{tracking.\-hpp}!prev\-\_\-pyr@{prev\-\_\-pyr}}
+\index{prev\-\_\-pyr@{prev\-\_\-pyr}!tracking.hpp@{tracking.\-hpp}}
+\subsubsection[{prev\-\_\-pyr}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Arr} {\bf Cv\-Arr} $\ast$ prev\-\_\-pyr}}\label{tracking_8hpp_a96157359a9d84f9a2180c62cbdec0b3b}
+\hypertarget{tracking_8hpp_a26054080aedb92d717f1d7880ea567a6}{\index{tracking.\-hpp@{tracking.\-hpp}!pyr\-\_\-scale@{pyr\-\_\-scale}}
+\index{pyr\-\_\-scale@{pyr\-\_\-scale}!tracking.hpp@{tracking.\-hpp}}
+\subsubsection[{pyr\-\_\-scale}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Arr} {\bf Cv\-Arr} double pyr\-\_\-scale}}\label{tracking_8hpp_a26054080aedb92d717f1d7880ea567a6}
+\hypertarget{tracking_8hpp_ae424f818ac2ad4d70af83829bcd32225}{\index{tracking.\-hpp@{tracking.\-hpp}!seg\-\_\-mask@{seg\-\_\-mask}}
+\index{seg\-\_\-mask@{seg\-\_\-mask}!tracking.hpp@{tracking.\-hpp}}
+\subsubsection[{seg\-\_\-mask}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Arr}$\ast$ seg\-\_\-mask}}\label{tracking_8hpp_ae424f818ac2ad4d70af83829bcd32225}
+\hypertarget{tracking_8hpp_acea49d99abb2ac58a38bbb76fe266126}{\index{tracking.\-hpp@{tracking.\-hpp}!seg\-\_\-thresh@{seg\-\_\-thresh}}
+\index{seg\-\_\-thresh@{seg\-\_\-thresh}!tracking.hpp@{tracking.\-hpp}}
+\subsubsection[{seg\-\_\-thresh}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Arr} {\bf Cv\-Mem\-Storage} double double seg\-\_\-thresh}}\label{tracking_8hpp_acea49d99abb2ac58a38bbb76fe266126}
+\hypertarget{tracking_8hpp_ae17b3c2584dab511e91d1c96644018bf}{\index{tracking.\-hpp@{tracking.\-hpp}!status@{status}}
+\index{status@{status}!tracking.hpp@{tracking.\-hpp}}
+\subsubsection[{status}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Arr} {\bf Cv\-Arr} {\bf Cv\-Arr} const {\bf Cv\-Point2\-D32f} {\bf Cv\-Point2\-D32f} float int {\bf Cv\-Size} int char $\ast$ status}}\label{tracking_8hpp_ae17b3c2584dab511e91d1c96644018bf}
+\hypertarget{tracking_8hpp_af280dda601d192e49a9ae094198a7e16}{\index{tracking.\-hpp@{tracking.\-hpp}!storage@{storage}}
+\index{storage@{storage}!tracking.hpp@{tracking.\-hpp}}
+\subsubsection[{storage}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Arr} {\bf Cv\-Mem\-Storage}$\ast$ storage}}\label{tracking_8hpp_af280dda601d192e49a9ae094198a7e16}
+\hypertarget{tracking_8hpp_a3a7879fcacf6b20a39e8d8d2d59c7ec3}{\index{tracking.\-hpp@{tracking.\-hpp}!timestamp@{timestamp}}
+\index{timestamp@{timestamp}!tracking.hpp@{tracking.\-hpp}}
+\subsubsection[{timestamp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Arr} {\bf Cv\-Mem\-Storage} double timestamp}}\label{tracking_8hpp_a3a7879fcacf6b20a39e8d8d2d59c7ec3}
+\hypertarget{tracking_8hpp_a31a3a12d3f337fc47e38e9f020385238}{\index{tracking.\-hpp@{tracking.\-hpp}!track\-\_\-error@{track\-\_\-error}}
+\index{track\-\_\-error@{track\-\_\-error}!tracking.hpp@{tracking.\-hpp}}
+\subsubsection[{track\-\_\-error}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Arr} {\bf Cv\-Arr} {\bf Cv\-Arr} const {\bf Cv\-Point2\-D32f} {\bf Cv\-Point2\-D32f} float int {\bf Cv\-Size} int char float $\ast$ track\-\_\-error}}\label{tracking_8hpp_a31a3a12d3f337fc47e38e9f020385238}
+\hypertarget{tracking_8hpp_a288228f7d1b8c11df847057580afc5b2}{\index{tracking.\-hpp@{tracking.\-hpp}!win\-\_\-size@{win\-\_\-size}}
+\index{win\-\_\-size@{win\-\_\-size}!tracking.hpp@{tracking.\-hpp}}
+\subsubsection[{win\-\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Arr} {\bf Cv\-Arr} {\bf Cv\-Arr} const {\bf Cv\-Point2\-D32f} {\bf Cv\-Point2\-D32f} float int {\bf Cv\-Size} win\-\_\-size}}\label{tracking_8hpp_a288228f7d1b8c11df847057580afc5b2}
+\hypertarget{tracking_8hpp_a1b64c58c64aaa8f792a6a64460bca138}{\index{tracking.\-hpp@{tracking.\-hpp}!window@{window}}
+\index{window@{window}!tracking.hpp@{tracking.\-hpp}}
+\subsubsection[{window}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Rect} window}}\label{tracking_8hpp_a1b64c58c64aaa8f792a6a64460bca138}
+\hypertarget{tracking_8hpp_a174ccada67e4a08881702c43934f7b54}{\index{tracking.\-hpp@{tracking.\-hpp}!winsize@{winsize}}
+\index{winsize@{winsize}!tracking.hpp@{tracking.\-hpp}}
+\subsubsection[{winsize}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-Arr} {\bf Cv\-Arr} double int int winsize}}\label{tracking_8hpp_a174ccada67e4a08881702c43934f7b54}

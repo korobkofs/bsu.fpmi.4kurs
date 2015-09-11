@@ -1,0 +1,51 @@
+<map id="cv::gpu::max" name="cv::gpu::max">
+<area shape="rect" id="node2" href="$namespacetld.html#a19776566a098d3b1fb15030e945a8c14" title="Calculates the share overlap of two bounding boxes (the share the intersection area in the occupy are..." alt="" coords="202,100,323,127"/>
+<area shape="rect" id="node7" href="$classMain.html#a5d36ac4bd55c63eae9b37d194a6017ce" title="Unites the overlapping rectangles. " alt="" coords="189,164,337,191"/>
+<area shape="rect" id="node10" href="$classcvflann_1_1KMeansIndex.html#ae4bea160d9e9d70f0f8177be8e0d1f0e" title="cvflann::KMeansIndex\l::KMeansIndex" alt="" coords="187,241,339,282"/>
+<area shape="rect" id="node11" href="$classcvflann_1_1LshIndex.html#a82b5dd8af0ae2cbad219a42a66bcccbf" title="Perform k&#45;nearest neighbor search. " alt="" coords="465,457,599,498"/>
+<area shape="rect" id="node12" href="$classcvflann_1_1KNNSimpleResultSet.html#ad3b74564e2e5dbd947fc2f8d40a2f152" title="cvflann::KNNSimpleResult\lSet::init" alt="" coords="173,306,352,347"/>
+<area shape="rect" id="node14" href="$classcvflann_1_1KNNResultSet.html#ae9eab3480d859a6bc93d3c8ca963b41b" title="cvflann::KNNResultSet\l::init" alt="" coords="183,371,342,413"/>
+<area shape="rect" id="node20" href="$classcvflann_1_1KNNUniqueResultSet.html#afcf19c6a201b4580983b6baaae0a8383" title="cvflann::KNNUniqueResult\lSet::clear" alt="" coords="173,447,353,489"/>
+<area shape="rect" id="node22" href="$structcv_1_1gpu_1_1device_1_1BrdRowReplicate.html#a6be808f3a6e448abfdb5c2ce74dd5ae0" title="cv::gpu::device::BrdRowReplicate\l::idx_col_low" alt="" coords="152,587,373,629"/>
+<area shape="rect" id="node26" href="$structcv_1_1gpu_1_1device_1_1BrdColReplicate.html#aeb1ab4a731b0a9087d5f4be60090da6d" title="cv::gpu::device::BrdColReplicate\l::idx_row_low" alt="" coords="155,706,370,747"/>
+<area shape="rect" id="node29" href="$structcv_1_1gpu_1_1device_1_1BrdReplicate.html#a8b76a54ae4e547c2fe579b0b3499f840" title="cv::gpu::device::BrdReplicate\l::idx_row_low" alt="" coords="165,771,360,813"/>
+<area shape="rect" id="node31" href="$structcv_1_1gpu_1_1device_1_1BrdReplicate.html#abf0b0b6b11a82acb8634911080bb43ad" title="cv::gpu::device::BrdReplicate\l::idx_col_low" alt="" coords="165,837,360,878"/>
+<area shape="rect" id="node33" href="$structcv_1_1gpu_1_1device_1_1color__detail_1_1ColorChannel.html#aedd738fa8d5f922cb3dffcb3fe005b7d" title="cv::gpu::device::color\l_detail::ColorChannel::max" alt="" coords="173,902,353,943"/>
+<area shape="rect" id="node36" href="$namespacecv_1_1gpu_1_1device_1_1color__detail.html#ae8bf2db64c21d855b713ed013aa35c42" title="cv::gpu::device::color\l_detail::RGB2HSVConvert" alt="" coords="173,967,352,1009"/>
+<area shape="rect" id="node37" href="$namespacecv_1_1gpu_1_1device_1_1color__detail.html#ad426e027c0c364afa19fad92ec237f6d" title="cv::gpu::device::color\l_detail::splineInterpolate" alt="" coords="181,1033,344,1074"/>
+<area shape="rect" id="node42" href="$structcv_1_1gpu_1_1device_1_1maximum.html#a69ab416d4bac9ec57cec6810e4358c13" title="cv::gpu::device::maximum\l::operator()" alt="" coords="175,1098,351,1139"/>
+<area shape="rect" id="node43" href="$namespacecv_1_1gpu_1_1device.html#aa4728e8d42337f57cd135611466d11b7" title="cv::gpu::device::vabsdiff2" alt="" coords="177,1164,349,1191"/>
+<area shape="rect" id="node44" href="$namespacecv_1_1gpu_1_1device.html#ab7fc773837da55e6618c8d0747d936ce" title="cv::gpu::device::vmax2" alt="" coords="183,1215,342,1241"/>
+<area shape="rect" id="node45" href="$classcv_1_1ocl_1_1oclMat.html#a6303d07326fb07501d21153c2c5d6a2a" title="moves/resizes the current oclMatrix ROI inside the parent oclMatrix. " alt="" coords="175,1265,350,1292"/>
+<area shape="rect" id="node46" href="$classcv_1_1detail_1_1RotationWarperBase.html#a53f78bba27757e5a137e2e49e65b75ac" title="cv::detail::RotationWarper\lBase::detectResultRoi" alt="" coords="175,1317,350,1358"/>
+<area shape="rect" id="node47" href="$classcv_1_1detail_1_1RotationWarperBase.html#a24fcba5b61bb28bde8c68439755e5dbe" title="cv::detail::RotationWarper\lBase::detectResultRoiByBorder" alt="" coords="159,1382,367,1423"/>
+<area shape="rect" id="node3" href="$namespacetld.html#a018caa7bf4a554814fe61a679a219489" title="Calculates the share overlap of one window and the indexed windows (according). " alt="" coords="469,5,595,32"/>
+<area shape="rect" id="node4" href="$namespacetld.html#afdab54607fed863cdc408f72fd0f774b" title="Calculates the share overlap of two rectangle (the share the intersection area in the occupy area)..." alt="" coords="453,56,611,83"/>
+<area shape="rect" id="node5" href="$namespacetld.html#aa9470de30170cb8b3f877dcae45df1b1" title="Calculates the share overlap of windows and the boundary. " alt="" coords="481,107,583,133"/>
+<area shape="rect" id="node6" href="$namespacetld.html#ae87c7dbe6b4da1e1923c42bec18caaf6" title="Calculates the share overlap of windows and the rectangle. " alt="" coords="745,107,876,133"/>
+<area shape="rect" id="node8" href="$classMain.html#a1eb1fa4005a0235d28035ec4c02ebd80" title="Determines a maximun of the moving regions. " alt="" coords="449,157,615,184"/>
+<area shape="rect" id="node9" href="$classMain.html#a5effa58c6ae671f8ce4ff31cb6e07aa5" title="Begins the work. " alt="" coords="759,157,862,184"/>
+<area shape="rect" id="node13" href="$classcvflann_1_1KDTreeSingleIndex.html#a5f53f54a2b04a25a370cb7f03a5317df" title="Perform k&#45;nearest neighbor search. " alt="" coords="439,209,625,250"/>
+<area shape="rect" id="node15" href="$namespacecvflann.html#aff249b1a3cfbd449db4ee469a0cb2a62" title="cvflann::search_with\l_ground_truth" alt="" coords="461,274,603,315"/>
+<area shape="rect" id="node19" href="$classcvflann_1_1NNIndex.html#a8cf5c942430421358bf67d93565942db" title="Perform k&#45;nearest neighbor search. " alt="" coords="435,340,629,367"/>
+<area shape="rect" id="node16" href="$namespacecvflann.html#a1d76012b7d0afeea6c4b43ec48cda7a4" title="cvflann::test_index\l_checks" alt="" coords="745,209,877,250"/>
+<area shape="rect" id="node17" href="$namespacecvflann.html#aff89fafb22b62a454cef8ce83960b89f" title="cvflann::test_index\l_precision" alt="" coords="745,274,877,315"/>
+<area shape="rect" id="node18" href="$namespacecvflann.html#aa27ca9a7a0e97f3b09f781421b5ffa05" title="cvflann::test_index\l_precisions" alt="" coords="745,339,877,381"/>
+<area shape="rect" id="node21" href="$classcvflann_1_1KNNUniqueResultSet.html#a9fc19d69ea8ecbb9b9c995499d910dd1" title="cvflann::KNNUniqueResult\lSet::KNNUniqueResultSet" alt="" coords="442,391,622,433"/>
+<area shape="rect" id="node23" href="$structcv_1_1gpu_1_1device_1_1BrdRowReplicate.html#a5afd0faf29477d122a3fcdbf8db6f033" title="cv::gpu::device::BrdRowReplicate\l::idx_col" alt="" coords="421,522,643,563"/>
+<area shape="rect" id="node25" href="$structcv_1_1gpu_1_1device_1_1BrdRowReplicate.html#a47b592a6c65534431b6b0931d6715ec0" title="cv::gpu::device::BrdRowReplicate\l::at_low" alt="" coords="421,587,643,629"/>
+<area shape="rect" id="node24" href="$structcv_1_1gpu_1_1device_1_1BrdRowReplicate.html#a14f4ae04f499044a554888ce48695134" title="cv::gpu::device::BrdRowReplicate::at" alt="" coords="691,529,931,556"/>
+<area shape="rect" id="node27" href="$structcv_1_1gpu_1_1device_1_1BrdColReplicate.html#af2add1532ed32489745a1f10b14a3e06" title="cv::gpu::device::BrdColReplicate\l::idx_row" alt="" coords="425,653,639,694"/>
+<area shape="rect" id="node28" href="$structcv_1_1gpu_1_1device_1_1BrdColReplicate.html#a153d7dc6b3aaf55f9920da87b379f26b" title="cv::gpu::device::BrdColReplicate\l::at_low" alt="" coords="425,718,639,759"/>
+<area shape="rect" id="node30" href="$structcv_1_1gpu_1_1device_1_1BrdReplicate.html#aeece666b32c8aa3cffe77ef4b76a0277" title="cv::gpu::device::BrdReplicate\l::idx_row" alt="" coords="435,783,629,825"/>
+<area shape="rect" id="node32" href="$structcv_1_1gpu_1_1device_1_1BrdReplicate.html#a955d599b3f9bc63c4aae49142a216a20" title="cv::gpu::device::BrdReplicate\l::idx_col" alt="" coords="435,849,629,890"/>
+<area shape="rect" id="node34" href="$structcv_1_1gpu_1_1device_1_1color__detail_1_1ColorChannel.html#ad020f174d41d85e13cac35a75582b7ee" title="cv::gpu::device::color\l_detail::ColorChannel::half" alt="" coords="444,914,620,955"/>
+<area shape="rect" id="node35" href="$namespacecv_1_1gpu_1_1device_1_1color__detail.html#a6a2dae8f593965d0cae8c83e5b26a0c5" title="cv::gpu::device::color\l_detail::getAlpha" alt="" coords="459,979,605,1021"/>
+<area shape="rect" id="node38" href="$namespacecv_1_1gpu_1_1device_1_1color__detail.html#a47e6db9ce003f19e852caabc7c651798" title="cv::gpu::device::color\l_detail::RGB2LabConvert_f" alt="" coords="441,1045,623,1086"/>
+<area shape="rect" id="node39" href="$namespacecv_1_1gpu_1_1device_1_1color__detail.html#a1021bc1a42a68722a129367c6a333d7b" title="cv::gpu::device::color\l_detail::Lab2RGBConvert_f" alt="" coords="441,1110,623,1151"/>
+<area shape="rect" id="node40" href="$namespacecv_1_1gpu_1_1device_1_1color__detail.html#aace7150463a11bee146c2cf36fdebd8b" title="cv::gpu::device::color\l_detail::RGB2LuvConvert_f" alt="" coords="441,1175,623,1217"/>
+<area shape="rect" id="node41" href="$namespacecv_1_1gpu_1_1device_1_1color__detail.html#aab1c4297ad9db320e720b1882b6f7708" title="cv::gpu::device::color\l_detail::Luv2RGBConvert_f" alt="" coords="441,1241,623,1282"/>
+<area shape="rect" id="node48" href="$classcv_1_1detail_1_1CylindricalWarper.html#a432518ff1e88b3f96970384ab44d78b4" title="cv::detail::CylindricalWarper\l::detectResultRoi" alt="" coords="439,1317,625,1358"/>
+<area shape="rect" id="node49" href="$classcv_1_1detail_1_1CylindricalPortraitWarper.html#a36ea19ffcc170d565e6377ed5d46cf38" title="cv::detail::CylindricalPortrait\lWarper::detectResultRoi" alt="" coords="439,1382,625,1423"/>
+<area shape="rect" id="node50" href="$classcv_1_1detail_1_1PlanePortraitWarper.html#a16a880cf787d451086cc4b85926b9c91" title="cv::detail::PlanePortrait\lWarper::detectResultRoi" alt="" coords="449,1447,615,1489"/>
+</map>

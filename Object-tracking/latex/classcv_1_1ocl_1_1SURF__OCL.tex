@@ -1,0 +1,311 @@
+\hypertarget{classcv_1_1ocl_1_1SURF__OCL}{\section{cv\-:\-:ocl\-:\-:S\-U\-R\-F\-\_\-\-O\-C\-L Class Reference}
+\label{classcv_1_1ocl_1_1SURF__OCL}\index{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}}
+}
+
+
+Speeded up robust features, port from G\-P\-U module. /////////////////////////////// S\-U\-R\-F //////////////////////////////////////////.  
+
+
+
+
+{\ttfamily \#include $<$ocl.\-hpp$>$}
+
+
+
+Collaboration diagram for cv\-:\-:ocl\-:\-:S\-U\-R\-F\-\_\-\-O\-C\-L\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=195pt]{classcv_1_1ocl_1_1SURF__OCL__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classcv_1_1ocl_1_1SURF__OCL_a4170a69e35ab5bfd09754c4132a69df9}{Keypoint\-Layout} \{ \\*
+\hyperlink{classcv_1_1ocl_1_1SURF__OCL_a4170a69e35ab5bfd09754c4132a69df9a004c8c79a3a0b973bdb3194f6755cb45}{X\-\_\-\-R\-O\-W} = 0, 
+\hyperlink{classcv_1_1ocl_1_1SURF__OCL_a4170a69e35ab5bfd09754c4132a69df9a90dabbe9d34a89db34738aa634dee12a}{Y\-\_\-\-R\-O\-W}, 
+\hyperlink{classcv_1_1ocl_1_1SURF__OCL_a4170a69e35ab5bfd09754c4132a69df9aaae943645468028820ce7c9172f6c7ac}{L\-A\-P\-L\-A\-C\-I\-A\-N\-\_\-\-R\-O\-W}, 
+\hyperlink{classcv_1_1ocl_1_1SURF__OCL_a4170a69e35ab5bfd09754c4132a69df9ac6f864aba760899a39acce0dde26d3f4}{O\-C\-T\-A\-V\-E\-\_\-\-R\-O\-W}, 
+\\*
+\hyperlink{classcv_1_1ocl_1_1SURF__OCL_a4170a69e35ab5bfd09754c4132a69df9aeffc12dab13d79959bbc8dfab113ea0d}{S\-I\-Z\-E\-\_\-\-R\-O\-W}, 
+\hyperlink{classcv_1_1ocl_1_1SURF__OCL_a4170a69e35ab5bfd09754c4132a69df9a8bfc5124e8f217134e28f682a885a67e}{A\-N\-G\-L\-E\-\_\-\-R\-O\-W}, 
+\hyperlink{classcv_1_1ocl_1_1SURF__OCL_a4170a69e35ab5bfd09754c4132a69df9a27df10eb7f9f16e7fe45c93853edf1bc}{H\-E\-S\-S\-I\-A\-N\-\_\-\-R\-O\-W}, 
+\hyperlink{classcv_1_1ocl_1_1SURF__OCL_a4170a69e35ab5bfd09754c4132a69df9a1402661f4dd81d020c2e570a87ce12c3}{R\-O\-W\-S\-\_\-\-C\-O\-U\-N\-T}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcv_1_1ocl_1_1SURF__OCL_add613a19d821691ea227315cf42676b7}{S\-U\-R\-F\-\_\-\-O\-C\-L} ()
+\begin{DoxyCompactList}\small\item\em the default constructor \end{DoxyCompactList}\item 
+\hyperlink{classcv_1_1ocl_1_1SURF__OCL_adac3951107e8e768e77f959200345a31}{S\-U\-R\-F\-\_\-\-O\-C\-L} (double \-\_\-hessian\-Threshold, int \-\_\-n\-Octaves=4, int \-\_\-n\-Octave\-Layers=2, bool \-\_\-extended=false, float \-\_\-keypoints\-Ratio=0.\-01f, bool \-\_\-upright=false)
+\begin{DoxyCompactList}\small\item\em the full constructor taking all the necessary parameters \end{DoxyCompactList}\item 
+int \hyperlink{classcv_1_1ocl_1_1SURF__OCL_abd081df5dda19bb9f6501968cc37510c}{descriptor\-Size} () const 
+\begin{DoxyCompactList}\small\item\em returns the descriptor size in float's (64 or 128) \end{DoxyCompactList}\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1SURF__OCL_a0becb122c1ca5cd5172fd40cd8655507}{upload\-Keypoints} (const vector$<$ cv\-::\-Key\-Point $>$ \&\hyperlink{compat_8hpp_af95b6678bbbdd664ed15fe6d4190d355}{keypoints}, \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&keypointsocl)
+\begin{DoxyCompactList}\small\item\em upload host keypoints to device memory \end{DoxyCompactList}\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1SURF__OCL_aa9f92446712ec5a4472fe092a99c06f0}{download\-Keypoints} (const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&keypointsocl, vector$<$ Key\-Point $>$ \&\hyperlink{compat_8hpp_af95b6678bbbdd664ed15fe6d4190d355}{keypoints})
+\begin{DoxyCompactList}\small\item\em download keypoints from device to host memory \end{DoxyCompactList}\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1SURF__OCL_a9c67f4b0a79b92082dd6a2b0fae117e6}{download\-Descriptors} (const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&descriptorsocl, vector$<$ float $>$ \&\hyperlink{compat_8hpp_a1e3702ddbca6258f57508c22eff26bf2}{descriptors})
+\begin{DoxyCompactList}\small\item\em download descriptors from device to host memory \end{DoxyCompactList}\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1SURF__OCL_a75a31edae91e28e7d74bbf2c9c01409e}{operator()} (const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&\hyperlink{legacy_8hpp_a5349238b3772bed6eae0fda3117ccfef}{img}, const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}, \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&\hyperlink{compat_8hpp_af95b6678bbbdd664ed15fe6d4190d355}{keypoints})
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1SURF__OCL_a3474e6ab7a9a0ff1d30a9a06466681d9}{operator()} (const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&\hyperlink{legacy_8hpp_a5349238b3772bed6eae0fda3117ccfef}{img}, const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}, \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&\hyperlink{compat_8hpp_af95b6678bbbdd664ed15fe6d4190d355}{keypoints}, \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&\hyperlink{compat_8hpp_a1e3702ddbca6258f57508c22eff26bf2}{descriptors}, bool use\-Provided\-Keypoints=false)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1SURF__OCL_a10d30cfb74c96dfb9ad9bef4dd969739}{operator()} (const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&\hyperlink{legacy_8hpp_a5349238b3772bed6eae0fda3117ccfef}{img}, const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}, std\-::vector$<$ Key\-Point $>$ \&\hyperlink{compat_8hpp_af95b6678bbbdd664ed15fe6d4190d355}{keypoints})
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1SURF__OCL_aadfb80df324ebda488339187ae08ef0d}{operator()} (const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&\hyperlink{legacy_8hpp_a5349238b3772bed6eae0fda3117ccfef}{img}, const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}, std\-::vector$<$ Key\-Point $>$ \&\hyperlink{compat_8hpp_af95b6678bbbdd664ed15fe6d4190d355}{keypoints}, \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&\hyperlink{compat_8hpp_a1e3702ddbca6258f57508c22eff26bf2}{descriptors}, bool use\-Provided\-Keypoints=false)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1SURF__OCL_a17fe83cf3292679da4608b09ac128d80}{operator()} (const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&\hyperlink{legacy_8hpp_a5349238b3772bed6eae0fda3117ccfef}{img}, const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}, std\-::vector$<$ Key\-Point $>$ \&\hyperlink{compat_8hpp_af95b6678bbbdd664ed15fe6d4190d355}{keypoints}, std\-::vector$<$ float $>$ \&\hyperlink{compat_8hpp_a1e3702ddbca6258f57508c22eff26bf2}{descriptors}, bool use\-Provided\-Keypoints=false)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1SURF__OCL_aca068cfbb91614933e7bc71a11a43c29}{release\-Memory} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{classcv_1_1ocl_1_1SURF__OCL_aae1213f3be9a95a42dbcc0df047b8c00}{hessian\-Threshold}
+\item 
+int \hyperlink{classcv_1_1ocl_1_1SURF__OCL_a406c2ed99157de3203506c175726c773}{n\-Octaves}
+\item 
+int \hyperlink{classcv_1_1ocl_1_1SURF__OCL_a379bc4a32533ce4aa78f85e210667deb}{n\-Octave\-Layers}
+\item 
+bool \hyperlink{classcv_1_1ocl_1_1SURF__OCL_a80d15ad07a11261a87fcc57a5ae1a183}{extended}
+\item 
+bool \hyperlink{classcv_1_1ocl_1_1SURF__OCL_aa2d233892c230bb56c2016b69cb6d492}{upright}
+\item 
+float \hyperlink{classcv_1_1ocl_1_1SURF__OCL_a477c4b356f862ae981b4f1421ba47410}{keypoints\-Ratio}
+\begin{DoxyCompactList}\small\item\em max keypoints = min(keypoints\-Ratio $\ast$ img.\-size().area(), 65535) \end{DoxyCompactList}\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \hyperlink{classcv_1_1ocl_1_1SURF__OCL_a2e5e88a6e1f212ff74b78cfe9842993b}{sum}
+\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \hyperlink{classcv_1_1ocl_1_1SURF__OCL_ab09f464a0c1e59bfe6979b979272b45e}{mask1}
+\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \hyperlink{classcv_1_1ocl_1_1SURF__OCL_adb29df077bd0226bb887889f3f5389fc}{mask\-Sum}
+\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \hyperlink{classcv_1_1ocl_1_1SURF__OCL_ae00b2e62267a2a189d0dda909b41dfda}{int\-Buffer}
+\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \hyperlink{classcv_1_1ocl_1_1SURF__OCL_a1f4ebd553574b5add58fe75539e29502}{det}
+\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \hyperlink{classcv_1_1ocl_1_1SURF__OCL_aef0a9250881cbf6ac305bb7da974a1e7}{trace}
+\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \hyperlink{classcv_1_1ocl_1_1SURF__OCL_a611eab9482f991153407968cdfcc3873}{max\-Pos\-Buffer}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Speeded up robust features, port from G\-P\-U module. /////////////////////////////// S\-U\-R\-F //////////////////////////////////////////. 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classcv_1_1ocl_1_1SURF__OCL_a4170a69e35ab5bfd09754c4132a69df9}{\index{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}!Keypoint\-Layout@{Keypoint\-Layout}}
+\index{Keypoint\-Layout@{Keypoint\-Layout}!cv::ocl::SURF_OCL@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}}
+\subsubsection[{Keypoint\-Layout}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L\-::\-Keypoint\-Layout}}}\label{classcv_1_1ocl_1_1SURF__OCL_a4170a69e35ab5bfd09754c4132a69df9}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{X\-\_\-\-R\-O\-W@{X\-\_\-\-R\-O\-W}!cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}}\index{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}!X\-\_\-\-R\-O\-W@{X\-\_\-\-R\-O\-W}}\item[{\em 
+\hypertarget{classcv_1_1ocl_1_1SURF__OCL_a4170a69e35ab5bfd09754c4132a69df9a004c8c79a3a0b973bdb3194f6755cb45}{X\-\_\-\-R\-O\-W}\label{classcv_1_1ocl_1_1SURF__OCL_a4170a69e35ab5bfd09754c4132a69df9a004c8c79a3a0b973bdb3194f6755cb45}
+}]\index{Y\-\_\-\-R\-O\-W@{Y\-\_\-\-R\-O\-W}!cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}}\index{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}!Y\-\_\-\-R\-O\-W@{Y\-\_\-\-R\-O\-W}}\item[{\em 
+\hypertarget{classcv_1_1ocl_1_1SURF__OCL_a4170a69e35ab5bfd09754c4132a69df9a90dabbe9d34a89db34738aa634dee12a}{Y\-\_\-\-R\-O\-W}\label{classcv_1_1ocl_1_1SURF__OCL_a4170a69e35ab5bfd09754c4132a69df9a90dabbe9d34a89db34738aa634dee12a}
+}]\index{L\-A\-P\-L\-A\-C\-I\-A\-N\-\_\-\-R\-O\-W@{L\-A\-P\-L\-A\-C\-I\-A\-N\-\_\-\-R\-O\-W}!cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}}\index{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}!L\-A\-P\-L\-A\-C\-I\-A\-N\-\_\-\-R\-O\-W@{L\-A\-P\-L\-A\-C\-I\-A\-N\-\_\-\-R\-O\-W}}\item[{\em 
+\hypertarget{classcv_1_1ocl_1_1SURF__OCL_a4170a69e35ab5bfd09754c4132a69df9aaae943645468028820ce7c9172f6c7ac}{L\-A\-P\-L\-A\-C\-I\-A\-N\-\_\-\-R\-O\-W}\label{classcv_1_1ocl_1_1SURF__OCL_a4170a69e35ab5bfd09754c4132a69df9aaae943645468028820ce7c9172f6c7ac}
+}]\index{O\-C\-T\-A\-V\-E\-\_\-\-R\-O\-W@{O\-C\-T\-A\-V\-E\-\_\-\-R\-O\-W}!cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}}\index{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}!O\-C\-T\-A\-V\-E\-\_\-\-R\-O\-W@{O\-C\-T\-A\-V\-E\-\_\-\-R\-O\-W}}\item[{\em 
+\hypertarget{classcv_1_1ocl_1_1SURF__OCL_a4170a69e35ab5bfd09754c4132a69df9ac6f864aba760899a39acce0dde26d3f4}{O\-C\-T\-A\-V\-E\-\_\-\-R\-O\-W}\label{classcv_1_1ocl_1_1SURF__OCL_a4170a69e35ab5bfd09754c4132a69df9ac6f864aba760899a39acce0dde26d3f4}
+}]\index{S\-I\-Z\-E\-\_\-\-R\-O\-W@{S\-I\-Z\-E\-\_\-\-R\-O\-W}!cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}}\index{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}!S\-I\-Z\-E\-\_\-\-R\-O\-W@{S\-I\-Z\-E\-\_\-\-R\-O\-W}}\item[{\em 
+\hypertarget{classcv_1_1ocl_1_1SURF__OCL_a4170a69e35ab5bfd09754c4132a69df9aeffc12dab13d79959bbc8dfab113ea0d}{S\-I\-Z\-E\-\_\-\-R\-O\-W}\label{classcv_1_1ocl_1_1SURF__OCL_a4170a69e35ab5bfd09754c4132a69df9aeffc12dab13d79959bbc8dfab113ea0d}
+}]\index{A\-N\-G\-L\-E\-\_\-\-R\-O\-W@{A\-N\-G\-L\-E\-\_\-\-R\-O\-W}!cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}}\index{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}!A\-N\-G\-L\-E\-\_\-\-R\-O\-W@{A\-N\-G\-L\-E\-\_\-\-R\-O\-W}}\item[{\em 
+\hypertarget{classcv_1_1ocl_1_1SURF__OCL_a4170a69e35ab5bfd09754c4132a69df9a8bfc5124e8f217134e28f682a885a67e}{A\-N\-G\-L\-E\-\_\-\-R\-O\-W}\label{classcv_1_1ocl_1_1SURF__OCL_a4170a69e35ab5bfd09754c4132a69df9a8bfc5124e8f217134e28f682a885a67e}
+}]\index{H\-E\-S\-S\-I\-A\-N\-\_\-\-R\-O\-W@{H\-E\-S\-S\-I\-A\-N\-\_\-\-R\-O\-W}!cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}}\index{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}!H\-E\-S\-S\-I\-A\-N\-\_\-\-R\-O\-W@{H\-E\-S\-S\-I\-A\-N\-\_\-\-R\-O\-W}}\item[{\em 
+\hypertarget{classcv_1_1ocl_1_1SURF__OCL_a4170a69e35ab5bfd09754c4132a69df9a27df10eb7f9f16e7fe45c93853edf1bc}{H\-E\-S\-S\-I\-A\-N\-\_\-\-R\-O\-W}\label{classcv_1_1ocl_1_1SURF__OCL_a4170a69e35ab5bfd09754c4132a69df9a27df10eb7f9f16e7fe45c93853edf1bc}
+}]\index{R\-O\-W\-S\-\_\-\-C\-O\-U\-N\-T@{R\-O\-W\-S\-\_\-\-C\-O\-U\-N\-T}!cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}}\index{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}!R\-O\-W\-S\-\_\-\-C\-O\-U\-N\-T@{R\-O\-W\-S\-\_\-\-C\-O\-U\-N\-T}}\item[{\em 
+\hypertarget{classcv_1_1ocl_1_1SURF__OCL_a4170a69e35ab5bfd09754c4132a69df9a1402661f4dd81d020c2e570a87ce12c3}{R\-O\-W\-S\-\_\-\-C\-O\-U\-N\-T}\label{classcv_1_1ocl_1_1SURF__OCL_a4170a69e35ab5bfd09754c4132a69df9a1402661f4dd81d020c2e570a87ce12c3}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcv_1_1ocl_1_1SURF__OCL_add613a19d821691ea227315cf42676b7}{\index{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}!S\-U\-R\-F\-\_\-\-O\-C\-L@{S\-U\-R\-F\-\_\-\-O\-C\-L}}
+\index{S\-U\-R\-F\-\_\-\-O\-C\-L@{S\-U\-R\-F\-\_\-\-O\-C\-L}!cv::ocl::SURF_OCL@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}}
+\subsubsection[{S\-U\-R\-F\-\_\-\-O\-C\-L}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1SURF__OCL_add613a19d821691ea227315cf42676b7}
+
+
+the default constructor 
+
+\hypertarget{classcv_1_1ocl_1_1SURF__OCL_adac3951107e8e768e77f959200345a31}{\index{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}!S\-U\-R\-F\-\_\-\-O\-C\-L@{S\-U\-R\-F\-\_\-\-O\-C\-L}}
+\index{S\-U\-R\-F\-\_\-\-O\-C\-L@{S\-U\-R\-F\-\_\-\-O\-C\-L}!cv::ocl::SURF_OCL@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}}
+\subsubsection[{S\-U\-R\-F\-\_\-\-O\-C\-L}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L (
+\begin{DoxyParamCaption}
+\item[{double}]{\-\_\-hessian\-Threshold, }
+\item[{int}]{\-\_\-n\-Octaves = {\ttfamily 4}, }
+\item[{int}]{\-\_\-n\-Octave\-Layers = {\ttfamily 2}, }
+\item[{bool}]{\-\_\-extended = {\ttfamily false}, }
+\item[{float}]{\-\_\-keypoints\-Ratio = {\ttfamily 0.01f}, }
+\item[{bool}]{\-\_\-upright = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{classcv_1_1ocl_1_1SURF__OCL_adac3951107e8e768e77f959200345a31}
+
+
+the full constructor taking all the necessary parameters 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcv_1_1ocl_1_1SURF__OCL_abd081df5dda19bb9f6501968cc37510c}{\index{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}!descriptor\-Size@{descriptor\-Size}}
+\index{descriptor\-Size@{descriptor\-Size}!cv::ocl::SURF_OCL@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}}
+\subsubsection[{descriptor\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L\-::descriptor\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcv_1_1ocl_1_1SURF__OCL_abd081df5dda19bb9f6501968cc37510c}
+
+
+returns the descriptor size in float's (64 or 128) 
+
+\hypertarget{classcv_1_1ocl_1_1SURF__OCL_a9c67f4b0a79b92082dd6a2b0fae117e6}{\index{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}!download\-Descriptors@{download\-Descriptors}}
+\index{download\-Descriptors@{download\-Descriptors}!cv::ocl::SURF_OCL@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}}
+\subsubsection[{download\-Descriptors}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L\-::download\-Descriptors (
+\begin{DoxyParamCaption}
+\item[{const {\bf ocl\-Mat} \&}]{descriptorsocl, }
+\item[{vector$<$ float $>$ \&}]{descriptors}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1SURF__OCL_a9c67f4b0a79b92082dd6a2b0fae117e6}
+
+
+download descriptors from device to host memory 
+
+\hypertarget{classcv_1_1ocl_1_1SURF__OCL_aa9f92446712ec5a4472fe092a99c06f0}{\index{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}!download\-Keypoints@{download\-Keypoints}}
+\index{download\-Keypoints@{download\-Keypoints}!cv::ocl::SURF_OCL@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}}
+\subsubsection[{download\-Keypoints}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L\-::download\-Keypoints (
+\begin{DoxyParamCaption}
+\item[{const {\bf ocl\-Mat} \&}]{keypointsocl, }
+\item[{vector$<$ Key\-Point $>$ \&}]{keypoints}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1SURF__OCL_aa9f92446712ec5a4472fe092a99c06f0}
+
+
+download keypoints from device to host memory 
+
+\hypertarget{classcv_1_1ocl_1_1SURF__OCL_a75a31edae91e28e7d74bbf2c9c01409e}{\index{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}!operator()@{operator()}}
+\index{operator()@{operator()}!cv::ocl::SURF_OCL@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L\-::operator() (
+\begin{DoxyParamCaption}
+\item[{const {\bf ocl\-Mat} \&}]{img, }
+\item[{const {\bf ocl\-Mat} \&}]{mask, }
+\item[{{\bf ocl\-Mat} \&}]{keypoints}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1SURF__OCL_a75a31edae91e28e7d74bbf2c9c01409e}
+finds the keypoints using fast hessian detector used in S\-U\-R\-F supports C\-V\-\_\-8\-U\-C1 images keypoints will have n\-Feature cols and 6 rows keypoints.\-ptr$<$float$>$(\-X\-\_\-\-R\-O\-W)\mbox{[}i\mbox{]} will contain x coordinate of i'th feature keypoints.\-ptr$<$float$>$(\-Y\-\_\-\-R\-O\-W)\mbox{[}i\mbox{]} will contain y coordinate of i'th feature keypoints.\-ptr$<$float$>$(\-L\-A\-P\-L\-A\-C\-I\-A\-N\-\_\-\-R\-O\-W)\mbox{[}i\mbox{]} will contain laplacian sign of i'th feature keypoints.\-ptr$<$float$>$(\-O\-C\-T\-A\-V\-E\-\_\-\-R\-O\-W)\mbox{[}i\mbox{]} will contain octave of i'th feature keypoints.\-ptr$<$float$>$(\-S\-I\-Z\-E\-\_\-\-R\-O\-W)\mbox{[}i\mbox{]} will contain size of i'th feature keypoints.\-ptr$<$float$>$(\-A\-N\-G\-L\-E\-\_\-\-R\-O\-W)\mbox{[}i\mbox{]} will contain orientation of i'th feature keypoints.\-ptr$<$float$>$(\-H\-E\-S\-S\-I\-A\-N\-\_\-\-R\-O\-W)\mbox{[}i\mbox{]} will contain response of i'th feature \hypertarget{classcv_1_1ocl_1_1SURF__OCL_a3474e6ab7a9a0ff1d30a9a06466681d9}{\index{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}!operator()@{operator()}}
+\index{operator()@{operator()}!cv::ocl::SURF_OCL@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L\-::operator() (
+\begin{DoxyParamCaption}
+\item[{const {\bf ocl\-Mat} \&}]{img, }
+\item[{const {\bf ocl\-Mat} \&}]{mask, }
+\item[{{\bf ocl\-Mat} \&}]{keypoints, }
+\item[{{\bf ocl\-Mat} \&}]{descriptors, }
+\item[{bool}]{use\-Provided\-Keypoints = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1SURF__OCL_a3474e6ab7a9a0ff1d30a9a06466681d9}
+finds the keypoints and computes their descriptors. Optionally it can compute descriptors for the user-\/provided keypoints and recompute keypoints direction \hypertarget{classcv_1_1ocl_1_1SURF__OCL_a10d30cfb74c96dfb9ad9bef4dd969739}{\index{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}!operator()@{operator()}}
+\index{operator()@{operator()}!cv::ocl::SURF_OCL@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L\-::operator() (
+\begin{DoxyParamCaption}
+\item[{const {\bf ocl\-Mat} \&}]{img, }
+\item[{const {\bf ocl\-Mat} \&}]{mask, }
+\item[{std\-::vector$<$ Key\-Point $>$ \&}]{keypoints}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1SURF__OCL_a10d30cfb74c96dfb9ad9bef4dd969739}
+\hypertarget{classcv_1_1ocl_1_1SURF__OCL_aadfb80df324ebda488339187ae08ef0d}{\index{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}!operator()@{operator()}}
+\index{operator()@{operator()}!cv::ocl::SURF_OCL@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L\-::operator() (
+\begin{DoxyParamCaption}
+\item[{const {\bf ocl\-Mat} \&}]{img, }
+\item[{const {\bf ocl\-Mat} \&}]{mask, }
+\item[{std\-::vector$<$ Key\-Point $>$ \&}]{keypoints, }
+\item[{{\bf ocl\-Mat} \&}]{descriptors, }
+\item[{bool}]{use\-Provided\-Keypoints = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1SURF__OCL_aadfb80df324ebda488339187ae08ef0d}
+\hypertarget{classcv_1_1ocl_1_1SURF__OCL_a17fe83cf3292679da4608b09ac128d80}{\index{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}!operator()@{operator()}}
+\index{operator()@{operator()}!cv::ocl::SURF_OCL@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L\-::operator() (
+\begin{DoxyParamCaption}
+\item[{const {\bf ocl\-Mat} \&}]{img, }
+\item[{const {\bf ocl\-Mat} \&}]{mask, }
+\item[{std\-::vector$<$ Key\-Point $>$ \&}]{keypoints, }
+\item[{std\-::vector$<$ float $>$ \&}]{descriptors, }
+\item[{bool}]{use\-Provided\-Keypoints = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1SURF__OCL_a17fe83cf3292679da4608b09ac128d80}
+\hypertarget{classcv_1_1ocl_1_1SURF__OCL_aca068cfbb91614933e7bc71a11a43c29}{\index{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}!release\-Memory@{release\-Memory}}
+\index{release\-Memory@{release\-Memory}!cv::ocl::SURF_OCL@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}}
+\subsubsection[{release\-Memory}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L\-::release\-Memory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1SURF__OCL_aca068cfbb91614933e7bc71a11a43c29}
+\hypertarget{classcv_1_1ocl_1_1SURF__OCL_a0becb122c1ca5cd5172fd40cd8655507}{\index{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}!upload\-Keypoints@{upload\-Keypoints}}
+\index{upload\-Keypoints@{upload\-Keypoints}!cv::ocl::SURF_OCL@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}}
+\subsubsection[{upload\-Keypoints}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L\-::upload\-Keypoints (
+\begin{DoxyParamCaption}
+\item[{const vector$<$ cv\-::\-Key\-Point $>$ \&}]{keypoints, }
+\item[{{\bf ocl\-Mat} \&}]{keypointsocl}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1SURF__OCL_a0becb122c1ca5cd5172fd40cd8655507}
+
+
+upload host keypoints to device memory 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcv_1_1ocl_1_1SURF__OCL_a1f4ebd553574b5add58fe75539e29502}{\index{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}!det@{det}}
+\index{det@{det}!cv::ocl::SURF_OCL@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}}
+\subsubsection[{det}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ocl\-Mat} cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L\-::det}}\label{classcv_1_1ocl_1_1SURF__OCL_a1f4ebd553574b5add58fe75539e29502}
+\hypertarget{classcv_1_1ocl_1_1SURF__OCL_a80d15ad07a11261a87fcc57a5ae1a183}{\index{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}!extended@{extended}}
+\index{extended@{extended}!cv::ocl::SURF_OCL@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}}
+\subsubsection[{extended}]{\setlength{\rightskip}{0pt plus 5cm}bool cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L\-::extended}}\label{classcv_1_1ocl_1_1SURF__OCL_a80d15ad07a11261a87fcc57a5ae1a183}
+\hypertarget{classcv_1_1ocl_1_1SURF__OCL_aae1213f3be9a95a42dbcc0df047b8c00}{\index{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}!hessian\-Threshold@{hessian\-Threshold}}
+\index{hessian\-Threshold@{hessian\-Threshold}!cv::ocl::SURF_OCL@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}}
+\subsubsection[{hessian\-Threshold}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L\-::hessian\-Threshold}}\label{classcv_1_1ocl_1_1SURF__OCL_aae1213f3be9a95a42dbcc0df047b8c00}
+\hypertarget{classcv_1_1ocl_1_1SURF__OCL_ae00b2e62267a2a189d0dda909b41dfda}{\index{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}!int\-Buffer@{int\-Buffer}}
+\index{int\-Buffer@{int\-Buffer}!cv::ocl::SURF_OCL@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}}
+\subsubsection[{int\-Buffer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ocl\-Mat} cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L\-::int\-Buffer}}\label{classcv_1_1ocl_1_1SURF__OCL_ae00b2e62267a2a189d0dda909b41dfda}
+\hypertarget{classcv_1_1ocl_1_1SURF__OCL_a477c4b356f862ae981b4f1421ba47410}{\index{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}!keypoints\-Ratio@{keypoints\-Ratio}}
+\index{keypoints\-Ratio@{keypoints\-Ratio}!cv::ocl::SURF_OCL@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}}
+\subsubsection[{keypoints\-Ratio}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L\-::keypoints\-Ratio}}\label{classcv_1_1ocl_1_1SURF__OCL_a477c4b356f862ae981b4f1421ba47410}
+
+
+max keypoints = min(keypoints\-Ratio $\ast$ img.\-size().area(), 65535) 
+
+\hypertarget{classcv_1_1ocl_1_1SURF__OCL_ab09f464a0c1e59bfe6979b979272b45e}{\index{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}!mask1@{mask1}}
+\index{mask1@{mask1}!cv::ocl::SURF_OCL@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}}
+\subsubsection[{mask1}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ocl\-Mat} cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L\-::mask1}}\label{classcv_1_1ocl_1_1SURF__OCL_ab09f464a0c1e59bfe6979b979272b45e}
+\hypertarget{classcv_1_1ocl_1_1SURF__OCL_adb29df077bd0226bb887889f3f5389fc}{\index{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}!mask\-Sum@{mask\-Sum}}
+\index{mask\-Sum@{mask\-Sum}!cv::ocl::SURF_OCL@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}}
+\subsubsection[{mask\-Sum}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ocl\-Mat} cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L\-::mask\-Sum}}\label{classcv_1_1ocl_1_1SURF__OCL_adb29df077bd0226bb887889f3f5389fc}
+\hypertarget{classcv_1_1ocl_1_1SURF__OCL_a611eab9482f991153407968cdfcc3873}{\index{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}!max\-Pos\-Buffer@{max\-Pos\-Buffer}}
+\index{max\-Pos\-Buffer@{max\-Pos\-Buffer}!cv::ocl::SURF_OCL@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}}
+\subsubsection[{max\-Pos\-Buffer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ocl\-Mat} cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L\-::max\-Pos\-Buffer}}\label{classcv_1_1ocl_1_1SURF__OCL_a611eab9482f991153407968cdfcc3873}
+\hypertarget{classcv_1_1ocl_1_1SURF__OCL_a379bc4a32533ce4aa78f85e210667deb}{\index{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}!n\-Octave\-Layers@{n\-Octave\-Layers}}
+\index{n\-Octave\-Layers@{n\-Octave\-Layers}!cv::ocl::SURF_OCL@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}}
+\subsubsection[{n\-Octave\-Layers}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L\-::n\-Octave\-Layers}}\label{classcv_1_1ocl_1_1SURF__OCL_a379bc4a32533ce4aa78f85e210667deb}
+\hypertarget{classcv_1_1ocl_1_1SURF__OCL_a406c2ed99157de3203506c175726c773}{\index{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}!n\-Octaves@{n\-Octaves}}
+\index{n\-Octaves@{n\-Octaves}!cv::ocl::SURF_OCL@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}}
+\subsubsection[{n\-Octaves}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L\-::n\-Octaves}}\label{classcv_1_1ocl_1_1SURF__OCL_a406c2ed99157de3203506c175726c773}
+\hypertarget{classcv_1_1ocl_1_1SURF__OCL_a2e5e88a6e1f212ff74b78cfe9842993b}{\index{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}!sum@{sum}}
+\index{sum@{sum}!cv::ocl::SURF_OCL@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}}
+\subsubsection[{sum}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ocl\-Mat} cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L\-::sum}}\label{classcv_1_1ocl_1_1SURF__OCL_a2e5e88a6e1f212ff74b78cfe9842993b}
+\hypertarget{classcv_1_1ocl_1_1SURF__OCL_aef0a9250881cbf6ac305bb7da974a1e7}{\index{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}!trace@{trace}}
+\index{trace@{trace}!cv::ocl::SURF_OCL@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}}
+\subsubsection[{trace}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ocl\-Mat} cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L\-::trace}}\label{classcv_1_1ocl_1_1SURF__OCL_aef0a9250881cbf6ac305bb7da974a1e7}
+\hypertarget{classcv_1_1ocl_1_1SURF__OCL_aa2d233892c230bb56c2016b69cb6d492}{\index{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}!upright@{upright}}
+\index{upright@{upright}!cv::ocl::SURF_OCL@{cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L}}
+\subsubsection[{upright}]{\setlength{\rightskip}{0pt plus 5cm}bool cv\-::ocl\-::\-S\-U\-R\-F\-\_\-\-O\-C\-L\-::upright}}\label{classcv_1_1ocl_1_1SURF__OCL_aa2d233892c230bb56c2016b69cb6d492}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/nonfree/\hyperlink{nonfree_2ocl_8hpp}{ocl.\-hpp}\end{DoxyCompactItemize}

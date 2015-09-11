@@ -1,0 +1,43 @@
+<map id="cv::gpu::min" name="cv::gpu::min">
+<area shape="rect" id="node2" href="$namespacetld.html#a19776566a098d3b1fb15030e945a8c14" title="Calculates the share overlap of two bounding boxes (the share the intersection area in the occupy are..." alt="" coords="199,81,321,108"/>
+<area shape="rect" id="node7" href="$classMain.html#a1eb1fa4005a0235d28035ec4c02ebd80" title="Determines a maximun of the moving regions. " alt="" coords="446,157,613,184"/>
+<area shape="rect" id="node10" href="$classMain.html#a5d36ac4bd55c63eae9b37d194a6017ce" title="Unites the overlapping rectangles. " alt="" coords="186,213,334,240"/>
+<area shape="rect" id="node11" href="$classcvflann_1_1KMeansIndex.html#a02bf5e31ac3996251fea5e2de6bd3fea" title="cvflann::KMeansIndex\l::chooseCentersKMeanspp" alt="" coords="170,271,350,313"/>
+<area shape="rect" id="node13" href="$structcv_1_1gpu_1_1device_1_1BrdRowReplicate.html#a0374ab5b7ce00b82b6a726f06834e2c2" title="cv::gpu::device::BrdRowReplicate\l::idx_col_high" alt="" coords="149,339,371,381"/>
+<area shape="rect" id="node17" href="$structcv_1_1gpu_1_1device_1_1BrdColReplicate.html#a0ec03a1523293aff1d0f58c2841a06ee" title="cv::gpu::device::BrdColReplicate\l::idx_row_high" alt="" coords="153,405,367,446"/>
+<area shape="rect" id="node21" href="$structcv_1_1gpu_1_1device_1_1BrdReplicate.html#a5a51d62b901428b1a57e21856c443562" title="cv::gpu::device::BrdReplicate\l::idx_row_high" alt="" coords="163,470,357,511"/>
+<area shape="rect" id="node24" href="$structcv_1_1gpu_1_1device_1_1BrdReplicate.html#afe4de9667df19d1721877d0b73c5af3e" title="cv::gpu::device::BrdReplicate\l::idx_col_high" alt="" coords="163,535,357,577"/>
+<area shape="rect" id="node26" href="$namespacecv_1_1gpu_1_1device_1_1color__detail.html#ae8bf2db64c21d855b713ed013aa35c42" title="cv::gpu::device::color\l_detail::RGB2HSVConvert" alt="" coords="171,601,349,642"/>
+<area shape="rect" id="node27" href="$namespacecv_1_1gpu_1_1device_1_1color__detail.html#ad426e027c0c364afa19fad92ec237f6d" title="cv::gpu::device::color\l_detail::splineInterpolate" alt="" coords="179,666,341,707"/>
+<area shape="rect" id="node32" href="$structcv_1_1gpu_1_1device_1_1Emulation_1_1smem.html#ae72c3596905e3ca880b82471ef1d0a4e" title="cv::gpu::device::Emulation\l::smem::atomicMin" alt="" coords="171,731,349,773"/>
+<area shape="rect" id="node33" href="$structcv_1_1gpu_1_1device_1_1minimum.html#a938598560f0a543c0c8d0adbedbbe897" title="cv::gpu::device::minimum\l::operator()" alt="" coords="174,797,346,838"/>
+<area shape="rect" id="node34" href="$namespacecv_1_1gpu_1_1device.html#aa4728e8d42337f57cd135611466d11b7" title="cv::gpu::device::vabsdiff2" alt="" coords="174,863,346,889"/>
+<area shape="rect" id="node35" href="$namespacecv_1_1gpu_1_1device.html#a810356d0c852a7cc42a7ae2400411cf8" title="cv::gpu::device::vmin2" alt="" coords="183,913,337,940"/>
+<area shape="rect" id="node36" href="$classcv_1_1ocl_1_1oclMat.html#a6303d07326fb07501d21153c2c5d6a2a" title="moves/resizes the current oclMatrix ROI inside the parent oclMatrix. " alt="" coords="173,964,347,991"/>
+<area shape="rect" id="node37" href="$classcv_1_1detail_1_1RotationWarperBase.html#a53f78bba27757e5a137e2e49e65b75ac" title="cv::detail::RotationWarper\lBase::detectResultRoi" alt="" coords="173,1015,347,1057"/>
+<area shape="rect" id="node38" href="$classcv_1_1detail_1_1RotationWarperBase.html#a24fcba5b61bb28bde8c68439755e5dbe" title="cv::detail::RotationWarper\lBase::detectResultRoiByBorder" alt="" coords="156,1081,364,1122"/>
+<area shape="rect" id="node42" href="$classcv_1_1videostab_1_1FastMarchingMethod.html#ad2ad5cfa1255ce0f8a9b461b0f7f5dd8" title="cv::videostab::FastMarching\lMethod::run" alt="" coords="167,1146,353,1187"/>
+<area shape="rect" id="node3" href="$namespacetld.html#a018caa7bf4a554814fe61a679a219489" title="Calculates the share overlap of one window and the indexed windows (according). " alt="" coords="466,5,593,32"/>
+<area shape="rect" id="node4" href="$namespacetld.html#afdab54607fed863cdc408f72fd0f774b" title="Calculates the share overlap of two rectangle (the share the intersection area in the occupy area)..." alt="" coords="450,56,609,83"/>
+<area shape="rect" id="node5" href="$namespacetld.html#aa9470de30170cb8b3f877dcae45df1b1" title="Calculates the share overlap of windows and the boundary. " alt="" coords="478,107,581,133"/>
+<area shape="rect" id="node6" href="$namespacetld.html#ae87c7dbe6b4da1e1923c42bec18caaf6" title="Calculates the share overlap of windows and the rectangle. " alt="" coords="743,107,873,133"/>
+<area shape="rect" id="node8" href="$classMain.html#a5effa58c6ae671f8ce4ff31cb6e07aa5" title="Begins the work. " alt="" coords="757,157,859,184"/>
+<area shape="rect" id="node9" href="$OpenTLD_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="976,157,1027,184"/>
+<area shape="rect" id="node12" href="$classcvflann_1_1KMeansIndex.html#ae4bea160d9e9d70f0f8177be8e0d1f0e" title="cvflann::KMeansIndex\l::KMeansIndex" alt="" coords="453,209,605,250"/>
+<area shape="rect" id="node14" href="$structcv_1_1gpu_1_1device_1_1BrdRowReplicate.html#a5afd0faf29477d122a3fcdbf8db6f033" title="cv::gpu::device::BrdRowReplicate\l::idx_col" alt="" coords="419,274,640,315"/>
+<area shape="rect" id="node16" href="$structcv_1_1gpu_1_1device_1_1BrdRowReplicate.html#a4a26a9ba1fba4fe7e2297ca937fc02de" title="cv::gpu::device::BrdRowReplicate\l::at_high" alt="" coords="419,339,640,381"/>
+<area shape="rect" id="node15" href="$structcv_1_1gpu_1_1device_1_1BrdRowReplicate.html#a14f4ae04f499044a554888ce48695134" title="cv::gpu::device::BrdRowReplicate::at" alt="" coords="688,281,928,308"/>
+<area shape="rect" id="node18" href="$structcv_1_1gpu_1_1device_1_1BrdColReplicate.html#af2add1532ed32489745a1f10b14a3e06" title="cv::gpu::device::BrdColReplicate\l::idx_row" alt="" coords="422,405,637,446"/>
+<area shape="rect" id="node20" href="$structcv_1_1gpu_1_1device_1_1BrdColReplicate.html#a4f9f1e916eedd29f4bf657955ba32231" title="cv::gpu::device::BrdColReplicate\l::at_high" alt="" coords="422,470,637,511"/>
+<area shape="rect" id="node19" href="$structcv_1_1gpu_1_1device_1_1BrdColReplicate.html#a3190260762aba8b74b6375b8c884f75a" title="cv::gpu::device::BrdColReplicate::at" alt="" coords="691,412,925,439"/>
+<area shape="rect" id="node22" href="$structcv_1_1gpu_1_1device_1_1BrdReplicate.html#aeece666b32c8aa3cffe77ef4b76a0277" title="cv::gpu::device::BrdReplicate\l::idx_row" alt="" coords="432,535,627,577"/>
+<area shape="rect" id="node23" href="$structcv_1_1gpu_1_1device_1_1BrdReplicate.html#ae0bd9dcb8afa382bde1a9bbb85020cf7" title="cv::gpu::device::BrdReplicate::at" alt="" coords="701,575,915,601"/>
+<area shape="rect" id="node25" href="$structcv_1_1gpu_1_1device_1_1BrdReplicate.html#a955d599b3f9bc63c4aae49142a216a20" title="cv::gpu::device::BrdReplicate\l::idx_col" alt="" coords="432,601,627,642"/>
+<area shape="rect" id="node28" href="$namespacecv_1_1gpu_1_1device_1_1color__detail.html#a47e6db9ce003f19e852caabc7c651798" title="cv::gpu::device::color\l_detail::RGB2LabConvert_f" alt="" coords="438,666,621,707"/>
+<area shape="rect" id="node29" href="$namespacecv_1_1gpu_1_1device_1_1color__detail.html#a1021bc1a42a68722a129367c6a333d7b" title="cv::gpu::device::color\l_detail::Lab2RGBConvert_f" alt="" coords="438,731,621,773"/>
+<area shape="rect" id="node30" href="$namespacecv_1_1gpu_1_1device_1_1color__detail.html#aace7150463a11bee146c2cf36fdebd8b" title="cv::gpu::device::color\l_detail::RGB2LuvConvert_f" alt="" coords="438,797,621,838"/>
+<area shape="rect" id="node31" href="$namespacecv_1_1gpu_1_1device_1_1color__detail.html#aab1c4297ad9db320e720b1882b6f7708" title="cv::gpu::device::color\l_detail::Luv2RGBConvert_f" alt="" coords="438,862,621,903"/>
+<area shape="rect" id="node39" href="$classcv_1_1detail_1_1CylindricalWarper.html#a432518ff1e88b3f96970384ab44d78b4" title="cv::detail::CylindricalWarper\l::detectResultRoi" alt="" coords="436,1015,623,1057"/>
+<area shape="rect" id="node40" href="$classcv_1_1detail_1_1CylindricalPortraitWarper.html#a36ea19ffcc170d565e6377ed5d46cf38" title="cv::detail::CylindricalPortrait\lWarper::detectResultRoi" alt="" coords="436,1081,623,1122"/>
+<area shape="rect" id="node41" href="$classcv_1_1detail_1_1PlanePortraitWarper.html#a16a880cf787d451086cc4b85926b9c91" title="cv::detail::PlanePortrait\lWarper::detectResultRoi" alt="" coords="446,1146,613,1187"/>
+</map>

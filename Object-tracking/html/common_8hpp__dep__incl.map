@@ -1,0 +1,21 @@
+<map id="/usr/include/opencv2/gpu/device/common.hpp" name="/usr/include/opencv2/gpu/device/common.hpp">
+<area shape="rect" id="node2" href="$saturate__cast_8hpp.html" title="/usr/include/opencv2\l/gpu/device/saturate\l_cast.hpp" alt="" coords="566,187,708,243"/>
+<area shape="rect" id="node6" href="$color__detail_8hpp.html" title="/usr/include/opencv2\l/gpu/device/detail/color\l_detail.hpp" alt="" coords="158,485,313,541"/>
+<area shape="rect" id="node9" href="$transform__detail_8hpp.html" title="/usr/include/opencv2\l/gpu/device/detail/transform\l_detail.hpp" alt="" coords="1361,485,1543,541"/>
+<area shape="rect" id="node10" href="$transform_8hpp.html" title="/usr/include/opencv2\l/gpu/device/transform.hpp" alt="" coords="1191,590,1364,631"/>
+<area shape="rect" id="node13" href="$scan_8hpp.html" title="/usr/include/opencv2\l/gpu/device/scan.hpp" alt="" coords="1315,395,1461,437"/>
+<area shape="rect" id="node14" href="$vec__traits_8hpp.html" title="/usr/include/opencv2\l/gpu/device/vec_traits.hpp" alt="" coords="719,97,893,138"/>
+<area shape="rect" id="node15" href="$type__traits__detail_8hpp.html" title="/usr/include/opencv2\l/gpu/device/detail/type\l_traits_detail.hpp" alt="" coords="886,187,1039,243"/>
+<area shape="rect" id="node17" href="$limits_8hpp.html" title="/usr/include/opencv2\l/gpu/device/limits.hpp" alt="" coords="5,97,153,138"/>
+<area shape="rect" id="node18" href="$datamov__utils_8hpp.html" title="/usr/include/opencv2\l/gpu/device/datamov_utils.hpp" alt="" coords="1063,194,1261,235"/>
+<area shape="rect" id="node20" href="$simd__functions_8hpp.html" title="/usr/include/opencv2\l/gpu/device/simd_functions.hpp" alt="" coords="1587,97,1793,138"/>
+<area shape="rect" id="node3" href="$border__interpolate_8hpp.html" title="/usr/include/opencv2\l/gpu/device/border_interpolate.hpp" alt="" coords="389,395,611,437"/>
+<area shape="rect" id="node4" href="$vec__math_8hpp.html" title="/usr/include/opencv2\l/gpu/device/vec_math.hpp" alt="" coords="483,298,657,339"/>
+<area shape="rect" id="node5" href="$filters_8hpp.html" title="/usr/include/opencv2\l/gpu/device/filters.hpp" alt="" coords="677,395,827,437"/>
+<area shape="rect" id="node8" href="$functional_8hpp.html" title="/usr/include/opencv2\l/gpu/device/functional.hpp" alt="" coords="865,395,1039,437"/>
+<area shape="rect" id="node12" href="$utility_8hpp.html" title="/usr/include/opencv2\l/gpu/device/utility.hpp" alt="" coords="1261,298,1409,339"/>
+<area shape="rect" id="node7" href="$color_8hpp.html" title="/usr/include/opencv2\l/gpu/device/color.hpp" alt="" coords="163,590,309,631"/>
+<area shape="rect" id="node11" href="$vec__distance_8hpp.html" title="/usr/include/opencv2\l/gpu/device/vec_distance.hpp" alt="" coords="932,493,1127,534"/>
+<area shape="rect" id="node16" href="$type__traits_8hpp.html" title="/usr/include/opencv2\l/gpu/device/type_traits.hpp" alt="" coords="835,298,1013,339"/>
+<area shape="rect" id="node19" href="$vec__distance__detail_8hpp.html" title="/usr/include/opencv2\l/gpu/device/detail/vec\l_distance_detail.hpp" alt="" coords="1088,291,1236,347"/>
+</map>

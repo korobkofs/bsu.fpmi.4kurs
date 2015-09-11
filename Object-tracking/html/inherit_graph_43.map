@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classcv_1_1gpu_1_1BruteForceMatcher__GPU__base.html" title="cv::gpu::BruteForceMatcher\l_GPU_base" alt="" coords="5,90,189,131"/>
+<area shape="rect" id="node2" href="$classcv_1_1gpu_1_1BFMatcher__GPU.html" title="cv::gpu::BFMatcher_GPU" alt="" coords="243,5,416,32"/>
+<area shape="rect" id="node3" href="$classcv_1_1gpu_1_1BruteForceMatcher__GPU_3_01Hamming_01_4.html" title="cv::gpu::BruteForceMatcher\l_GPU\&lt; Hamming \&gt;" alt="" coords="237,57,421,98"/>
+<area shape="rect" id="node4" href="$classcv_1_1gpu_1_1BruteForceMatcher__GPU_3_01L1_3_01T_01_4_01_4.html" title="cv::gpu::BruteForceMatcher\l_GPU\&lt; L1\&lt; T \&gt; \&gt;" alt="" coords="237,122,421,163"/>
+<area shape="rect" id="node5" href="$classcv_1_1gpu_1_1BruteForceMatcher__GPU_3_01L2_3_01T_01_4_01_4.html" title="cv::gpu::BruteForceMatcher\l_GPU\&lt; L2\&lt; T \&gt; \&gt;" alt="" coords="237,187,421,229"/>
+</map>

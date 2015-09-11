@@ -1,0 +1,11 @@
+<map id="yy_get_next_buffer" name="yy_get_next_buffer">
+<area shape="rect" id="node2" href="$scanner_8c.html#a6f3299c5e90df0c63044f644540c1394" title="libconfig_yyrealloc" alt="" coords="559,5,689,32"/>
+<area shape="rect" id="node3" href="$scanner_8c.html#a08c14cb755b463f6582a93ad1e431412" title="libconfig_yyrestart" alt="" coords="187,100,315,127"/>
+<area shape="rect" id="node4" href="$scanner_8c.html#a3f1aa55ce66a8b6d505a750192d4c5fe" title="libconfig_yyensure\l_buffer_stack" alt="" coords="365,27,496,69"/>
+<area shape="rect" id="node6" href="$scanner_8c.html#afb80695feb88cc40493a776f051bffec" title="libconfig_yy_create\l_buffer" alt="" coords="363,93,498,134"/>
+<area shape="rect" id="node7" href="$scanner_8c.html#a935c4c363076b2c9b19d5e38f2336bbe" title="libconfig_yy_init_buffer" alt="" coords="547,144,701,171"/>
+<area shape="rect" id="node9" href="$scanner_8c.html#aaee4631cc811fa8107b2612e59dee126" title="libconfig_yy_load_buffer\l_state" alt="" coords="925,147,1088,189"/>
+<area shape="rect" id="node5" href="$scanner_8c.html#a182b1385d7760277395a645045aa9474" title="libconfig_yyalloc" alt="" coords="565,79,683,105"/>
+<area shape="rect" id="node8" href="$scanner_8c.html#a2262ac14fc607ff8e363b6f2c3c7e7e0" title="libconfig_yy_flush\l_buffer" alt="" coords="750,93,877,134"/>
+<area shape="rect" id="node10" href="$scanner_8c.html#ab4155ffea05dab2dafae68fd88a0517f" title="isatty" alt="" coords="786,159,841,185"/>
+</map>

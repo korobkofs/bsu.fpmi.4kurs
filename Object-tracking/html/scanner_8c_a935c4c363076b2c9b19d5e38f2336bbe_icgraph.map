@@ -1,0 +1,16 @@
+<map id="libconfig_yy_init_buffer" name="libconfig_yy_init_buffer">
+<area shape="rect" id="node2" href="$scanner_8h.html#a08c14cb755b463f6582a93ad1e431412" title="libconfig_yyrestart" alt="" coords="392,113,520,140"/>
+<area shape="rect" id="node14" href="$scanner_8h.html#afb80695feb88cc40493a776f051bffec" title="libconfig_yy_create\l_buffer" alt="" coords="209,161,343,202"/>
+<area shape="rect" id="node3" href="$libconfig_8c.html#a304fc54660c19cf654d0fdc4e44ec724" title="__config_read" alt="" coords="583,64,686,91"/>
+<area shape="rect" id="node12" href="$scanner_8c.html#a29d30a2c7f7ce166f1198f5a1c1d7757" title="yy_get_next_buffer" alt="" coords="568,115,701,141"/>
+<area shape="rect" id="node4" href="$libconfig_8h.html#ade3e90a918cb62daf3f71ebdc785a9d5" title="config_read" alt="" coords="769,9,858,36"/>
+<area shape="rect" id="node6" href="$libconfig_8h.html#af949fcd25cd9adca27c78a49f62c2ebd" title="config_read_string" alt="" coords="749,64,877,91"/>
+<area shape="rect" id="node8" href="$libconfig_8h.html#a07dc4858f102ee91fafc17ed5932215e" title="config_read_file" alt="" coords="757,115,870,141"/>
+<area shape="rect" id="node5" href="$classlibconfig_1_1Config.html#a468e6ef4c2e36bdd57fc23708dee69a1" title="libconfig::Config::read" alt="" coords="925,5,1075,32"/>
+<area shape="rect" id="node7" href="$classlibconfig_1_1Config.html#af3076c6839fa256bef1ad3fc33e17f98" title="libconfig::Config::\lreadString" alt="" coords="938,57,1062,98"/>
+<area shape="rect" id="node9" href="$classlibconfig_1_1Config.html#a31bc78ca36d4081560de025cbb08c022" title="libconfig::Config::\lreadFile" alt="" coords="938,122,1062,163"/>
+<area shape="rect" id="node10" href="$classtld_1_1Config.html#ab2f2fb863b08832e2b877e6f09073333" title="Initializes the Config. " alt="" coords="1123,129,1229,156"/>
+<area shape="rect" id="node11" href="$OpenTLD_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="1277,129,1328,156"/>
+<area shape="rect" id="node13" href="$scanner_8c.html#a8fdafe3be7e00ce3d4f0cb50a9a5eb39" title="while" alt="" coords="787,165,839,192"/>
+<area shape="rect" id="node15" href="$scanner_8c.html#a33e91cd0cef6786e9e3a27ac67707207" title="if" alt="" coords="437,216,475,243"/>
+</map>

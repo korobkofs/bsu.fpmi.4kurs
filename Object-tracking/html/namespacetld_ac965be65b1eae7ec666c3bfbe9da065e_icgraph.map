@@ -1,0 +1,8 @@
+<map id="tld::tldExtractNormalizedPatch" name="tld::tldExtractNormalizedPatch">
+<area shape="rect" id="node2" href="$namespacetld.html#a44b5f4d4d087d3369129bdc92e2a555a" title="Extracts normalized patch from the image by boundary (array). " alt="" coords="222,57,389,98"/>
+<area shape="rect" id="node6" href="$namespacetld.html#aa6c803037b38609e1fceadbb2ad8a75c" title="Extracts normalized patch from the image by reactangle. " alt="" coords="222,122,389,163"/>
+<area shape="rect" id="node3" href="$classtld_1_1NNClassifier.html#a88fe1649014e887a12a5a57a552819f2" title="Compares patch (obtain from the image and the index of window) to positive and negative patches..." alt="" coords="453,5,579,46"/>
+<area shape="rect" id="node4" href="$classtld_1_1TLD.html#afbdde1733ec8944d0ec6224a10881d41" title="Initializes the learning. " alt="" coords="438,71,594,97"/>
+<area shape="rect" id="node5" href="$classtld_1_1TLD.html#a40742c77216ac9b06a4141db6184ac85" title="Learns the tld. " alt="" coords="463,121,569,148"/>
+<area shape="rect" id="node7" href="$classtld_1_1NNClassifier.html#a4b926da10ab0ce0d05fdb19b7e90bf8b" title="Compares patch (obtain from the image and the bounding box) to positive and negative patches..." alt="" coords="453,173,579,214"/>
+</map>

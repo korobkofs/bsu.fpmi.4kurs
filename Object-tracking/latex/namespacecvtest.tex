@@ -1,0 +1,999 @@
+\hypertarget{namespacecvtest}{\section{cvtest Namespace Reference}
+\label{namespacecvtest}\index{cvtest@{cvtest}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classcvtest_1_1DeviceManager}{Device\-Manager}
+\item 
+class \hyperlink{classcvtest_1_1UseRoi}{Use\-Roi}
+\item 
+class \hyperlink{classcvtest_1_1Inverse}{Inverse}
+\item 
+struct \hyperlink{structcvtest_1_1MatInfo}{Mat\-Info}
+\item 
+struct \hyperlink{structcvtest_1_1MatComparator}{Mat\-Comparator}
+\item 
+class \hyperlink{classcvtest_1_1BaseTest}{Base\-Test}
+\item 
+struct \hyperlink{structcvtest_1_1TestInfo}{Test\-Info}
+\item 
+struct \hyperlink{structcvtest_1_1TSParams}{T\-S\-Params}
+\item 
+class \hyperlink{classcvtest_1_1TS}{T\-S}
+\item 
+class \hyperlink{classcvtest_1_1ArrayTest}{Array\-Test}
+\item 
+class \hyperlink{classcvtest_1_1BadArgTest}{Bad\-Arg\-Test}
+\item 
+struct \hyperlink{structcvtest_1_1DefaultRngAuto}{Default\-Rng\-Auto}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} int \hyperlink{namespacecvtest_a9eac1832de1eb9d633c2239c5d764f45}{random\-Int} (int min\-Val, int max\-Val)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} double \hyperlink{namespacecvtest_a0ea150bc084ea73ef92a0af3b404f733}{random\-Double} (double min\-Val, double max\-Val)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} cv\-::\-Size \hyperlink{namespacecvtest_ad214be493df2f6a360470007f417c2c4}{random\-Size} (int min\-Val, int max\-Val)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} cv\-::\-Scalar \hyperlink{namespacecvtest_af12771814e01f3ebaf94961c36d46185}{random\-Scalar} (double min\-Val, double max\-Val)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} cv\-::\-Mat \hyperlink{namespacecvtest_aa1501de3d28a48d8f05c0ce4ce769172}{random\-Mat} (cv\-::\-Size \hyperlink{legacy_8hpp_ae97003f8d5c64cdfb99f6f2606d121b6}{size}, int \hyperlink{imgproc__c_8h_a84612d8738bf935200cf32a103d8efe1}{type}, double min\-Val=0.\-0, double max\-Val=255.\-0)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} cv\-::gpu\-::\-Gpu\-Mat \hyperlink{namespacecvtest_a7adcf82f14b525d21b8c4f8ed756b778}{create\-Mat} (cv\-::\-Size \hyperlink{legacy_8hpp_ae97003f8d5c64cdfb99f6f2606d121b6}{size}, int \hyperlink{imgproc__c_8h_a84612d8738bf935200cf32a103d8efe1}{type}, bool use\-Roi=false)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} cv\-::gpu\-::\-Gpu\-Mat \hyperlink{namespacecvtest_adc16cec6a6ee3add97e870ec5e376226}{load\-Mat} (const cv\-::\-Mat \&m, bool use\-Roi=false)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} cv\-::\-Mat \hyperlink{namespacecvtest_ae223362863a0c00baf65b481361fa286}{read\-Image} (const std\-::string \&file\-Name, int \hyperlink{highgui__c_8h_ae51e3a2d4365e85db9630dd3ce9508db}{flags}=cv\-::\-I\-M\-R\-E\-A\-D\-\_\-\-C\-O\-L\-O\-R)
+\begin{DoxyCompactList}\small\item\em read image from testdata folder \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} cv\-::\-Mat \hyperlink{namespacecvtest_ad051b05ec01725e6f1b8d4ab7a8752c4}{read\-Image\-Type} (const std\-::string \&fname, int \hyperlink{imgproc__c_8h_a84612d8738bf935200cf32a103d8efe1}{type})
+\begin{DoxyCompactList}\small\item\em read image from testdata folder and convert it to specified type \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} bool \hyperlink{namespacecvtest_a085a1265f44a20d04cce5684b11bcecc}{support\-Feature} (const cv\-::gpu\-::\-Device\-Info \&info, cv\-::gpu\-::\-Feature\-Set feature)
+\begin{DoxyCompactList}\small\item\em return true if device supports specified feature and gpu module was built with support the feature. \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_a173aef4e10da98b9e25d652fb5b9cb9c}{min\-Max\-Loc\-Gold} (const cv\-::\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, double $\ast$min\-Val\-\_\-, double $\ast$max\-Val\-\_\-=0, cv\-::\-Point $\ast$min\-Loc\-\_\-=0, cv\-::\-Point $\ast$max\-Loc\-\_\-=0, const cv\-::\-Mat \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}=cv\-::\-Mat())
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} cv\-::\-Mat \hyperlink{namespacecvtest_a013423daee12cfe7a2d35e3f50f5648b}{get\-Mat} (cv\-::\-Input\-Array \hyperlink{core__c_8h_ab8e13ef59ba6f71bb02934957ba61c65}{arr})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{classtesting_1_1AssertionResult}{testing\-::\-Assertion\-Result} \hyperlink{namespacecvtest_a62ea6d823dd154406f86d715391862e9}{assert\-Mat\-Near} (const char $\ast$expr1, const char $\ast$expr2, const char $\ast$eps\-\_\-expr, cv\-::\-Input\-Array m1, cv\-::\-Input\-Array m2, double \hyperlink{imgproc__c_8h_aabece9d4af1ab09d2f85ade473757e32}{eps})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} double \hyperlink{namespacecvtest_a4cc42c7e95bcddc013cd3a5ada8071bd}{check\-Similarity} (cv\-::\-Input\-Array m1, cv\-::\-Input\-Array m2)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} std\-::vector$<$ \hyperlink{classperf_1_1MatType}{Mat\-Type} $>$ \hyperlink{namespacecvtest_afa1b01409165231a61684009dad82ee4}{types} (int depth\-\_\-start, int depth\-\_\-end, int cn\-\_\-start, int cn\-\_\-end)
+\begin{DoxyCompactList}\small\item\em return vector with types from specified range. \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} const std\-::vector\\*
+$<$ \hyperlink{classperf_1_1MatType}{Mat\-Type} $>$ \& \hyperlink{namespacecvtest_ade018e0613b17d05c275510815622f80}{all\-\_\-types} ()
+\begin{DoxyCompactList}\small\item\em return vector with all types (depth\-: C\-V\-\_\-8\-U-\/\-C\-V\-\_\-64\-F, channels\-: 1-\/4). \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_a7b5f91689f87845d2eb78fe213bd2ad6}{Print\-To} (const \hyperlink{classcvtest_1_1UseRoi}{Use\-Roi} \&use\-Roi, std\-::ostream $\ast$os)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_a7338785aeee089758774e3eb5d1728d4}{Print\-To} (const \hyperlink{classcvtest_1_1Inverse}{Inverse} \&use\-Roi, std\-::ostream $\ast$os)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{classtesting_1_1AssertionResult}{testing\-::\-Assertion\-Result} \hyperlink{namespacecvtest_a095e7a087f1b85db0dc0ba18c542ef0b}{assert\-Key\-Points\-Equals} (const char $\ast$gold\-\_\-expr, const char $\ast$actual\-\_\-expr, std\-::vector$<$ cv\-::\-Key\-Point $>$ \&gold, std\-::vector$<$ cv\-::\-Key\-Point $>$ \&actual)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} int \hyperlink{namespacecvtest_a2ae43940bcb727e8843d8b290bdfe3ff}{get\-Matched\-Points\-Count} (std\-::vector$<$ cv\-::\-Key\-Point $>$ \&gold, std\-::vector$<$ cv\-::\-Key\-Point $>$ \&actual)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} int \hyperlink{namespacecvtest_a24ebdb69863aa30101d780ac1eb2d8c5}{get\-Matched\-Points\-Count} (const std\-::vector$<$ cv\-::\-Key\-Point $>$ \&keypoints1, const std\-::vector$<$ cv\-::\-Key\-Point $>$ \&keypoints2, const std\-::vector$<$ cv\-::\-D\-Match $>$ \&matches)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_a82f5ad3928bdb1f0b38465f61b9fdd77}{dump\-Image} (const std\-::string \&file\-Name, const cv\-::\-Mat \&\hyperlink{legacy_8hpp_ad62b16ab219ae2483e8a3d921c44cc97}{image})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_a42a57baaa6ef670d1c8032d7de406d58}{show\-Diff} (cv\-::\-Input\-Array gold, cv\-::\-Input\-Array actual, double \hyperlink{imgproc__c_8h_aabece9d4af1ab09d2f85ade473757e32}{eps})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_a843732e6969ab0b29e9ebeee65f2cc4a}{print\-Cuda\-Info} ()
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{core_2types__c_8h_a7cde0074dfd288f2d70c0e035dacb28a}{int64} \hyperlink{namespacecvtest_ab0222728fa931142fef72ae0074fa864}{read\-Seed} (const char $\ast$\hyperlink{core__c_8h_a5f3a65d240411b0018990ff992b348c0}{str})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_a0808ba0b7eb71c9714343795cc8f4a73}{rand\-Uni} (R\-N\-G \&\hyperlink{core__c_8h_a8d3f239dca9d5c72c8a66d7a1c142efd}{rng}, Mat \&\hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}, const Scalar \&\hyperlink{core__c_8h_a4a138cebb3d1124bb552aa80cc860eea}{param1}, const Scalar \&\hyperlink{core__c_8h_a31355e809c125347b49af078e58da79e}{param2})
+\item 
+unsigned \hyperlink{namespacecvtest_a26cc57bf4a8d91168ad8e371644506bc}{rand\-Int} (R\-N\-G \&\hyperlink{core__c_8h_a8d3f239dca9d5c72c8a66d7a1c142efd}{rng})
+\item 
+double \hyperlink{namespacecvtest_a9639bfa71aa22e5763f66cd4c0bb1533}{rand\-Real} (R\-N\-G \&\hyperlink{core__c_8h_a8d3f239dca9d5c72c8a66d7a1c142efd}{rng})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} const char $\ast$ \hyperlink{namespacecvtest_a6976036fa96fda433ab30aac85585c1e}{get\-Type\-Name} (int \hyperlink{imgproc__c_8h_a84612d8738bf935200cf32a103d8efe1}{type})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} int \hyperlink{namespacecvtest_aa761fe30295aeb4e1a0a836301200319}{type\-By\-Name} (const char $\ast$type\-\_\-name)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} string \hyperlink{namespacecvtest_acd977ea496ae0145582b4ca2172dd46f}{vec2str} (const string \&sep, const int $\ast$v, size\-\_\-t nelems)
+\item 
+int \hyperlink{namespacecvtest_a58f2a5f3a78076f6b287adf539c08a35}{clip\-Int} (int val, int \hyperlink{core__c_8h_a2c60d4e453921f07a407a647c96e8316}{min\-\_\-val}, int \hyperlink{core__c_8h_a928495205a5ca34548c11042d48d733b}{max\-\_\-val})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} double \hyperlink{namespacecvtest_aae60ea3df2f2a5880f0b37d58e09054c}{get\-Min\-Val} (int \hyperlink{core__c_8h_acb5ba97551079e0b072c62c21d784ac5}{depth})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} double \hyperlink{namespacecvtest_aef7feb873a9078fa8343822014120dfd}{get\-Max\-Val} (int \hyperlink{core__c_8h_acb5ba97551079e0b072c62c21d784ac5}{depth})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} Size \hyperlink{namespacecvtest_a6bc34c509892c3ba1adba15ee9f3992f}{random\-Size} (R\-N\-G \&\hyperlink{core__c_8h_a8d3f239dca9d5c72c8a66d7a1c142efd}{rng}, double max\-Size\-Log)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_a219e0cb0744cd51b22891584f17e026d}{random\-Size} (R\-N\-G \&\hyperlink{core__c_8h_a8d3f239dca9d5c72c8a66d7a1c142efd}{rng}, int min\-Dims, int max\-Dims, double max\-Size\-Log, vector$<$ int $>$ \&sz)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} int \hyperlink{namespacecvtest_a8ccb9ed0c011023ef7e4b43cea5ed124}{random\-Type} (R\-N\-G \&\hyperlink{core__c_8h_a8d3f239dca9d5c72c8a66d7a1c142efd}{rng}, int type\-Mask, int min\-Channels, int max\-Channels)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} Mat \hyperlink{namespacecvtest_aa4b4d920a2fb2eb67490e58953e8f0f3}{random\-Mat} (R\-N\-G \&\hyperlink{core__c_8h_a8d3f239dca9d5c72c8a66d7a1c142efd}{rng}, Size \hyperlink{legacy_8hpp_ae97003f8d5c64cdfb99f6f2606d121b6}{size}, int \hyperlink{imgproc__c_8h_a84612d8738bf935200cf32a103d8efe1}{type}, double min\-Val, double max\-Val, bool use\-Roi)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} Mat \hyperlink{namespacecvtest_a0aa43772f6987882cc98332627f4c21a}{random\-Mat} (R\-N\-G \&\hyperlink{core__c_8h_a8d3f239dca9d5c72c8a66d7a1c142efd}{rng}, const vector$<$ int $>$ \&\hyperlink{legacy_8hpp_ae97003f8d5c64cdfb99f6f2606d121b6}{size}, int \hyperlink{imgproc__c_8h_a84612d8738bf935200cf32a103d8efe1}{type}, double min\-Val, double max\-Val, bool use\-Roi)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_a9ec05f98099c0ae2c5ac12e842e12e86}{add} (const Mat \&\hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}, double \hyperlink{legacy_8hpp_a95fc8341ca418bc06b36160632af6d47}{alpha}, const Mat \&\hyperlink{legacy_8hpp_ac04272e8ca865b8fba18d36edae9fd2a}{b}, double \hyperlink{legacy_8hpp_af8b31eb489dfbd87f3b1a1925cca3589}{beta}, Scalar \hyperlink{legacy_8hpp_a977df9847c7e455667f9fdaa49fbaa11}{gamma}, Mat \&\hyperlink{legacy_8hpp_a1971420173e06f45845eed2ab4e3d5d0}{c}, int ctype, bool calc\-Abs=false)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_a5ccf7637727de44a3f68f53b3abf4b07}{multiply} (const Mat \&\hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}, const Mat \&\hyperlink{legacy_8hpp_ac04272e8ca865b8fba18d36edae9fd2a}{b}, Mat \&\hyperlink{legacy_8hpp_a1971420173e06f45845eed2ab4e3d5d0}{c}, double \hyperlink{legacy_8hpp_a95fc8341ca418bc06b36160632af6d47}{alpha}=1)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_a801eea4b4b3c00fe00d9640456ebd275}{divide} (const Mat \&\hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}, const Mat \&\hyperlink{legacy_8hpp_ac04272e8ca865b8fba18d36edae9fd2a}{b}, Mat \&\hyperlink{legacy_8hpp_a1971420173e06f45845eed2ab4e3d5d0}{c}, double \hyperlink{legacy_8hpp_a95fc8341ca418bc06b36160632af6d47}{alpha}=1)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_a0c5ec616590629900e1e7178a05701dd}{convert} (const Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, int dtype, double \hyperlink{legacy_8hpp_a95fc8341ca418bc06b36160632af6d47}{alpha}=1, double \hyperlink{legacy_8hpp_af8b31eb489dfbd87f3b1a1925cca3589}{beta}=0)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_aa0fc2ccf37b3852803f075fd741e536f}{copy} (const Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, const Mat \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}=Mat(), bool invert\-Mask=false)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_a3ea16e468a830d72142a851c48efe630}{set} (Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, const Scalar \&\hyperlink{legacy_8hpp_a977df9847c7e455667f9fdaa49fbaa11}{gamma}, const Mat \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}=Mat())
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_ac7b8597cdafba6cbe9c627e415fd199a}{extract} (const Mat \&\hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}, Mat \&plane, int \hyperlink{core__c_8h_a77674fb914cf2e14c0ddff790b225dbe}{coi})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_a9c6ea7d8b339c0ec8385154ad331ee0f}{insert} (const Mat \&plane, Mat \&\hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}, int \hyperlink{core__c_8h_a77674fb914cf2e14c0ddff790b225dbe}{coi})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} int \hyperlink{namespacecvtest_a8543a691c795c3f9bbfbb19cdb377790}{check} (const Mat \&\hyperlink{legacy_8hpp_ab9fe6c09e6d02865a953fffc12fe6ca0}{data}, double \hyperlink{core__c_8h_a2c60d4e453921f07a407a647c96e8316}{min\-\_\-val}, double \hyperlink{core__c_8h_a928495205a5ca34548c11042d48d733b}{max\-\_\-val}, vector$<$ int $>$ $\ast$\hyperlink{core__c_8h_a5c7c842f447336aa2f10826df65a28b3}{idx})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_a875892bf4b05664246e17498fe6f9065}{patch\-Zeros} (Mat \&\hyperlink{imgproc__c_8h_ad9325e85114e7b9ab738a23b62ea10a0}{mat}, double \hyperlink{tracking_8hpp_ac693e272fb1883fe0343f55a14d72b22}{level})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_a5afd7dc69b9f9e91a7ff2615d29dcd52}{transpose} (const Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_aeb152e6a82e24d8019ff81fe96af3314}{erode} (const Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, const Mat \&\-\_\-kernel, Point anchor=Point(-\/1,-\/1), int border\-Type=\hyperlink{core_2types__c_8h_a3775e9c53907519fd716c628c3af8c3b}{I\-P\-L\-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-C\-O\-N\-S\-T\-A\-N\-T}, const Scalar \&border\-Value=Scalar())
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_abcb992a5f861df28d90c71272a3689f9}{dilate} (const Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, const Mat \&\-\_\-kernel, Point anchor=Point(-\/1,-\/1), int border\-Type=\hyperlink{core_2types__c_8h_a3775e9c53907519fd716c628c3af8c3b}{I\-P\-L\-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-C\-O\-N\-S\-T\-A\-N\-T}, const Scalar \&border\-Value=Scalar())
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_aa48e1cd9d730d55e3d89a5932da6139b}{filter2\-D} (const Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, int ddepth, const Mat \&\hyperlink{imgproc__c_8h_a863a75780ba6c5de552f5361cb0d2c89}{kernel}, Point anchor, double \hyperlink{legacy_8hpp_ac867054f00f4be8b1f3ebce6fba31982}{delta}, int border\-Type, const Scalar \&border\-Value=Scalar())
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_afdeafc9424ce61318e29085a27622816}{copy\-Make\-Border} (const Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, int top, int bottom, int left, int \hyperlink{legacy_8hpp_a6b04b878081bf724144b73c75dfd1894}{right}, int border\-Type, const Scalar \&border\-Value=Scalar())
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} Mat \hyperlink{namespacecvtest_a7d10f1488683810d8954900653e3996d}{calc\-Sobel\-Kernel2\-D} (int dx, int dy, int aperture\-Size, int origin=0)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} Mat \hyperlink{namespacecvtest_a95a6a03cbf86d721168e03fe6096f649}{calc\-Laplace\-Kernel2\-D} (int aperture\-\_\-size)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_aa74e3cb54c90fa2d263fe3ff81a0c9fe}{init\-Undistort\-Map} (const Mat \&\hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}, const Mat \&\hyperlink{legacy_8hpp_a7be9b6436e5ea72ff5d5a66779b4bd38}{k}, Size sz, Mat \&\hyperlink{imgproc__c_8h_a81ed33f30ee89704887ae4e4dbb20d46}{mapx}, Mat \&\hyperlink{imgproc__c_8h_a934abd37467ed645178fbe201add061e}{mapy})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_a99c63c88a0832d8e71bfe2779dc28af4}{min\-Max\-Loc} (const Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, double $\ast$minval, double $\ast$maxval, vector$<$ int $>$ $\ast$minloc, vector$<$ int $>$ $\ast$maxloc, const Mat \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}=Mat())
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} double \hyperlink{namespacecvtest_afe0b69beddeea94657c1b36b104acaa4}{norm} (const Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, int norm\-Type, const Mat \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}=Mat())
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} double \hyperlink{namespacecvtest_a1779e0c4158a2ffa0d6fa249327f3ee2}{norm} (const Mat \&\hyperlink{core__c_8h_a897de4702c922f4cccda0d57ccdcafb3}{src1}, const Mat \&\hyperlink{core__c_8h_a7561a36d48069d54a6c8ac4e4750edfd}{src2}, int norm\-Type, const Mat \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}=Mat())
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} Scalar \hyperlink{namespacecvtest_afd1b0e1dfbfdaea885e52c2a75bd9d81}{mean} (const Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, const Mat \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}=Mat())
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} bool \hyperlink{namespacecvtest_a67cfdf3f5efcf71a6783b0995546f20f}{cmp\-Ulps} (const Mat \&\hyperlink{legacy_8hpp_ab9fe6c09e6d02865a953fffc12fe6ca0}{data}, const Mat \&refdata, int exp\-Max\-Diff, double $\ast$real\-Max\-Diff, vector$<$ int $>$ $\ast$\hyperlink{core__c_8h_a5c7c842f447336aa2f10826df65a28b3}{idx})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} int \hyperlink{namespacecvtest_a2ddc262232f5485daac0e20b1b31037c}{cmp\-Eps} (const Mat \&\hyperlink{legacy_8hpp_ab9fe6c09e6d02865a953fffc12fe6ca0}{data}, const Mat \&refdata, double $\ast$max\-\_\-diff, double success\-\_\-err\-\_\-level, vector$<$ int $>$ $\ast$\hyperlink{core__c_8h_a5c7c842f447336aa2f10826df65a28b3}{idx}, bool element\-\_\-wise\-\_\-relative\-\_\-error)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} int \hyperlink{namespacecvtest_acb38dbcf89cbc383085ba144365fab07}{cmp\-Eps2} (\hyperlink{classcvtest_1_1TS}{T\-S} $\ast$ts, const Mat \&\hyperlink{legacy_8hpp_ab9fe6c09e6d02865a953fffc12fe6ca0}{data}, const Mat \&refdata, double success\-\_\-err\-\_\-level, bool element\-\_\-wise\-\_\-relative\-\_\-error, const char $\ast$desc)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} int \hyperlink{namespacecvtest_a42478f500d29b3eea5568931673acdde}{cmp\-Eps2\-\_\-64f} (\hyperlink{classcvtest_1_1TS}{T\-S} $\ast$ts, const double $\ast$val, const double $\ast$refval, int \hyperlink{core__c_8h_accb79be93f4fbcaa15b5a7670569c9f8}{len}, double \hyperlink{imgproc__c_8h_aabece9d4af1ab09d2f85ade473757e32}{eps}, const char $\ast$param\-\_\-name)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_a89ff58bf012784160a2b902cd831baf1}{logic\-Op} (const Mat \&\hyperlink{core__c_8h_a897de4702c922f4cccda0d57ccdcafb3}{src1}, const Mat \&\hyperlink{core__c_8h_a7561a36d48069d54a6c8ac4e4750edfd}{src2}, Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, char \hyperlink{legacy_8hpp_a1971420173e06f45845eed2ab4e3d5d0}{c})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_a47a0d01f72edb496d4b84ee033031201}{logic\-Op} (const Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, const Scalar \&s, Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, char \hyperlink{legacy_8hpp_a1971420173e06f45845eed2ab4e3d5d0}{c})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_a4ea963c34f3a83d0fd1927124ec5354a}{min} (const Mat \&\hyperlink{core__c_8h_a897de4702c922f4cccda0d57ccdcafb3}{src1}, const Mat \&\hyperlink{core__c_8h_a7561a36d48069d54a6c8ac4e4750edfd}{src2}, Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_ad3ec55e5c78f842a29788a63d6b4ba14}{min} (const Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, double s, Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_a86aca546545a31151753fe45ebc4221a}{max} (const Mat \&\hyperlink{core__c_8h_a897de4702c922f4cccda0d57ccdcafb3}{src1}, const Mat \&\hyperlink{core__c_8h_a7561a36d48069d54a6c8ac4e4750edfd}{src2}, Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_a9d50f67da7a85c16200a106fe264ad07}{max} (const Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, double s, Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_aaabd659b14b333a35e5b3bada3c3b2f7}{compare} (const Mat \&\hyperlink{core__c_8h_a897de4702c922f4cccda0d57ccdcafb3}{src1}, const Mat \&\hyperlink{core__c_8h_a7561a36d48069d54a6c8ac4e4750edfd}{src2}, Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, int cmpop)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_a45c91e1858e8d71aac6b394243aa08e6}{compare} (const Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, double s, Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, int cmpop)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_ad8bf206bdedaebaef04492c219c80265}{gemm} (const Mat \&\hyperlink{core__c_8h_a897de4702c922f4cccda0d57ccdcafb3}{src1}, const Mat \&\hyperlink{core__c_8h_a7561a36d48069d54a6c8ac4e4750edfd}{src2}, double \hyperlink{legacy_8hpp_a95fc8341ca418bc06b36160632af6d47}{alpha}, const Mat \&\hyperlink{core__c_8h_a311f39c2d5ee53342a493cbed3d77de3}{src3}, double \hyperlink{legacy_8hpp_af8b31eb489dfbd87f3b1a1925cca3589}{beta}, Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, int \hyperlink{highgui__c_8h_ae51e3a2d4365e85db9630dd3ce9508db}{flags})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_a2bfa2b9373551f8fd748ab1f9ba79606}{transform} (const Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, const Mat \&\hyperlink{core__c_8h_afc335fd0c8a1c8db35bdfbdcb4ef30d7}{transmat}, const Mat \&shift)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} double \hyperlink{namespacecvtest_a7dbcf42c2486a0fde93ca14400d9a63e}{cross\-Corr} (const Mat \&\hyperlink{core__c_8h_a897de4702c922f4cccda0d57ccdcafb3}{src1}, const Mat \&\hyperlink{core__c_8h_a7561a36d48069d54a6c8ac4e4750edfd}{src2})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} std\-::ostream \& \hyperlink{namespacecvtest_a26d3e3d171c7188f1930582ad5942eeb}{operator$<$$<$} (std\-::ostream \&out, const \hyperlink{structcvtest_1_1MatInfo}{Mat\-Info} \&m)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_a05033377cd913b17c1c21235981e1c3e}{fill\-Gradient} (Mat \&\hyperlink{legacy_8hpp_a5349238b3772bed6eae0fda3117ccfef}{img}, int \hyperlink{legacy_8hpp_ac867054f00f4be8b1f3ebce6fba31982}{delta}=5)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_ad269b0afda8fae3f66b52812be976146}{smooth\-Border} (Mat \&\hyperlink{legacy_8hpp_a5349238b3772bed6eae0fda3117ccfef}{img}, const Scalar \&\hyperlink{core__c_8h_a4ea898fa4dd23d613d19923509d8e249}{color}, int \hyperlink{legacy_8hpp_ac867054f00f4be8b1f3ebce6fba31982}{delta}=3)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_ae4cdd987333c3910e7b991b32f14bf7a}{print\-Version\-Info} (bool use\-Std\-Out=true)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{namespacecvtest_a61d75b2d1c52a63797c1516e029b9cb0}{T\-S}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespacecvtest_a9ec05f98099c0ae2c5ac12e842e12e86}{\index{cvtest@{cvtest}!add@{add}}
+\index{add@{add}!cvtest@{cvtest}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cvtest\-::add (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{a, }
+\item[{double}]{alpha, }
+\item[{const Mat \&}]{b, }
+\item[{double}]{beta, }
+\item[{Scalar}]{gamma, }
+\item[{Mat \&}]{c, }
+\item[{int}]{ctype, }
+\item[{bool}]{calc\-Abs = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_a9ec05f98099c0ae2c5ac12e842e12e86}
+\hypertarget{namespacecvtest_ade018e0613b17d05c275510815622f80}{\index{cvtest@{cvtest}!all\-\_\-types@{all\-\_\-types}}
+\index{all\-\_\-types@{all\-\_\-types}!cvtest@{cvtest}}
+\subsubsection[{all\-\_\-types}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} const std\-::vector$<${\bf Mat\-Type}$>$\& cvtest\-::all\-\_\-types (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_ade018e0613b17d05c275510815622f80}
+
+
+return vector with all types (depth\-: C\-V\-\_\-8\-U-\/\-C\-V\-\_\-64\-F, channels\-: 1-\/4). 
+
+\hypertarget{namespacecvtest_a095e7a087f1b85db0dc0ba18c542ef0b}{\index{cvtest@{cvtest}!assert\-Key\-Points\-Equals@{assert\-Key\-Points\-Equals}}
+\index{assert\-Key\-Points\-Equals@{assert\-Key\-Points\-Equals}!cvtest@{cvtest}}
+\subsubsection[{assert\-Key\-Points\-Equals}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf testing\-::\-Assertion\-Result} cvtest\-::assert\-Key\-Points\-Equals (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{gold\-\_\-expr, }
+\item[{const char $\ast$}]{actual\-\_\-expr, }
+\item[{std\-::vector$<$ cv\-::\-Key\-Point $>$ \&}]{gold, }
+\item[{std\-::vector$<$ cv\-::\-Key\-Point $>$ \&}]{actual}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_a095e7a087f1b85db0dc0ba18c542ef0b}
+\hypertarget{namespacecvtest_a62ea6d823dd154406f86d715391862e9}{\index{cvtest@{cvtest}!assert\-Mat\-Near@{assert\-Mat\-Near}}
+\index{assert\-Mat\-Near@{assert\-Mat\-Near}!cvtest@{cvtest}}
+\subsubsection[{assert\-Mat\-Near}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf testing\-::\-Assertion\-Result} cvtest\-::assert\-Mat\-Near (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{expr1, }
+\item[{const char $\ast$}]{expr2, }
+\item[{const char $\ast$}]{eps\-\_\-expr, }
+\item[{cv\-::\-Input\-Array}]{m1, }
+\item[{cv\-::\-Input\-Array}]{m2, }
+\item[{double}]{eps}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_a62ea6d823dd154406f86d715391862e9}
+\hypertarget{namespacecvtest_a95a6a03cbf86d721168e03fe6096f649}{\index{cvtest@{cvtest}!calc\-Laplace\-Kernel2\-D@{calc\-Laplace\-Kernel2\-D}}
+\index{calc\-Laplace\-Kernel2\-D@{calc\-Laplace\-Kernel2\-D}!cvtest@{cvtest}}
+\subsubsection[{calc\-Laplace\-Kernel2\-D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} Mat cvtest\-::calc\-Laplace\-Kernel2\-D (
+\begin{DoxyParamCaption}
+\item[{int}]{aperture\-\_\-size}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_a95a6a03cbf86d721168e03fe6096f649}
+\hypertarget{namespacecvtest_a7d10f1488683810d8954900653e3996d}{\index{cvtest@{cvtest}!calc\-Sobel\-Kernel2\-D@{calc\-Sobel\-Kernel2\-D}}
+\index{calc\-Sobel\-Kernel2\-D@{calc\-Sobel\-Kernel2\-D}!cvtest@{cvtest}}
+\subsubsection[{calc\-Sobel\-Kernel2\-D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} Mat cvtest\-::calc\-Sobel\-Kernel2\-D (
+\begin{DoxyParamCaption}
+\item[{int}]{dx, }
+\item[{int}]{dy, }
+\item[{int}]{aperture\-Size, }
+\item[{int}]{origin = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_a7d10f1488683810d8954900653e3996d}
+\hypertarget{namespacecvtest_a8543a691c795c3f9bbfbb19cdb377790}{\index{cvtest@{cvtest}!check@{check}}
+\index{check@{check}!cvtest@{cvtest}}
+\subsubsection[{check}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} int cvtest\-::check (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{data, }
+\item[{double}]{min\-\_\-val, }
+\item[{double}]{max\-\_\-val, }
+\item[{vector$<$ int $>$ $\ast$}]{idx}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_a8543a691c795c3f9bbfbb19cdb377790}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{namespacecvtest_a8543a691c795c3f9bbfbb19cdb377790_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespacecvtest_a4cc42c7e95bcddc013cd3a5ada8071bd}{\index{cvtest@{cvtest}!check\-Similarity@{check\-Similarity}}
+\index{check\-Similarity@{check\-Similarity}!cvtest@{cvtest}}
+\subsubsection[{check\-Similarity}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} double cvtest\-::check\-Similarity (
+\begin{DoxyParamCaption}
+\item[{cv\-::\-Input\-Array}]{m1, }
+\item[{cv\-::\-Input\-Array}]{m2}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_a4cc42c7e95bcddc013cd3a5ada8071bd}
+\hypertarget{namespacecvtest_a58f2a5f3a78076f6b287adf539c08a35}{\index{cvtest@{cvtest}!clip\-Int@{clip\-Int}}
+\index{clip\-Int@{clip\-Int}!cvtest@{cvtest}}
+\subsubsection[{clip\-Int}]{\setlength{\rightskip}{0pt plus 5cm}int cvtest\-::clip\-Int (
+\begin{DoxyParamCaption}
+\item[{int}]{val, }
+\item[{int}]{min\-\_\-val, }
+\item[{int}]{max\-\_\-val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{namespacecvtest_a58f2a5f3a78076f6b287adf539c08a35}
+\hypertarget{namespacecvtest_a2ddc262232f5485daac0e20b1b31037c}{\index{cvtest@{cvtest}!cmp\-Eps@{cmp\-Eps}}
+\index{cmp\-Eps@{cmp\-Eps}!cvtest@{cvtest}}
+\subsubsection[{cmp\-Eps}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} int cvtest\-::cmp\-Eps (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{data, }
+\item[{const Mat \&}]{refdata, }
+\item[{double $\ast$}]{max\-\_\-diff, }
+\item[{double}]{success\-\_\-err\-\_\-level, }
+\item[{vector$<$ int $>$ $\ast$}]{idx, }
+\item[{bool}]{element\-\_\-wise\-\_\-relative\-\_\-error}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_a2ddc262232f5485daac0e20b1b31037c}
+\hypertarget{namespacecvtest_acb38dbcf89cbc383085ba144365fab07}{\index{cvtest@{cvtest}!cmp\-Eps2@{cmp\-Eps2}}
+\index{cmp\-Eps2@{cmp\-Eps2}!cvtest@{cvtest}}
+\subsubsection[{cmp\-Eps2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} int cvtest\-::cmp\-Eps2 (
+\begin{DoxyParamCaption}
+\item[{T\-S $\ast$}]{ts, }
+\item[{const Mat \&}]{data, }
+\item[{const Mat \&}]{refdata, }
+\item[{double}]{success\-\_\-err\-\_\-level, }
+\item[{bool}]{element\-\_\-wise\-\_\-relative\-\_\-error, }
+\item[{const char $\ast$}]{desc}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_acb38dbcf89cbc383085ba144365fab07}
+\hypertarget{namespacecvtest_a42478f500d29b3eea5568931673acdde}{\index{cvtest@{cvtest}!cmp\-Eps2\-\_\-64f@{cmp\-Eps2\-\_\-64f}}
+\index{cmp\-Eps2\-\_\-64f@{cmp\-Eps2\-\_\-64f}!cvtest@{cvtest}}
+\subsubsection[{cmp\-Eps2\-\_\-64f}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} int cvtest\-::cmp\-Eps2\-\_\-64f (
+\begin{DoxyParamCaption}
+\item[{T\-S $\ast$}]{ts, }
+\item[{const double $\ast$}]{val, }
+\item[{const double $\ast$}]{refval, }
+\item[{int}]{len, }
+\item[{double}]{eps, }
+\item[{const char $\ast$}]{param\-\_\-name}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_a42478f500d29b3eea5568931673acdde}
+\hypertarget{namespacecvtest_a67cfdf3f5efcf71a6783b0995546f20f}{\index{cvtest@{cvtest}!cmp\-Ulps@{cmp\-Ulps}}
+\index{cmp\-Ulps@{cmp\-Ulps}!cvtest@{cvtest}}
+\subsubsection[{cmp\-Ulps}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} bool cvtest\-::cmp\-Ulps (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{data, }
+\item[{const Mat \&}]{refdata, }
+\item[{int}]{exp\-Max\-Diff, }
+\item[{double $\ast$}]{real\-Max\-Diff, }
+\item[{vector$<$ int $>$ $\ast$}]{idx}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_a67cfdf3f5efcf71a6783b0995546f20f}
+\hypertarget{namespacecvtest_aaabd659b14b333a35e5b3bada3c3b2f7}{\index{cvtest@{cvtest}!compare@{compare}}
+\index{compare@{compare}!cvtest@{cvtest}}
+\subsubsection[{compare}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cvtest\-::compare (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{src1, }
+\item[{const Mat \&}]{src2, }
+\item[{Mat \&}]{dst, }
+\item[{int}]{cmpop}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_aaabd659b14b333a35e5b3bada3c3b2f7}
+\hypertarget{namespacecvtest_a45c91e1858e8d71aac6b394243aa08e6}{\index{cvtest@{cvtest}!compare@{compare}}
+\index{compare@{compare}!cvtest@{cvtest}}
+\subsubsection[{compare}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cvtest\-::compare (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{src, }
+\item[{double}]{s, }
+\item[{Mat \&}]{dst, }
+\item[{int}]{cmpop}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_a45c91e1858e8d71aac6b394243aa08e6}
+\hypertarget{namespacecvtest_a0c5ec616590629900e1e7178a05701dd}{\index{cvtest@{cvtest}!convert@{convert}}
+\index{convert@{convert}!cvtest@{cvtest}}
+\subsubsection[{convert}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cvtest\-::convert (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{src, }
+\item[{Mat \&}]{dst, }
+\item[{int}]{dtype, }
+\item[{double}]{alpha = {\ttfamily 1}, }
+\item[{double}]{beta = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_a0c5ec616590629900e1e7178a05701dd}
+\hypertarget{namespacecvtest_aa0fc2ccf37b3852803f075fd741e536f}{\index{cvtest@{cvtest}!copy@{copy}}
+\index{copy@{copy}!cvtest@{cvtest}}
+\subsubsection[{copy}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cvtest\-::copy (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{src, }
+\item[{Mat \&}]{dst, }
+\item[{const Mat \&}]{mask = {\ttfamily Mat()}, }
+\item[{bool}]{invert\-Mask = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_aa0fc2ccf37b3852803f075fd741e536f}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecvtest_aa0fc2ccf37b3852803f075fd741e536f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespacecvtest_afdeafc9424ce61318e29085a27622816}{\index{cvtest@{cvtest}!copy\-Make\-Border@{copy\-Make\-Border}}
+\index{copy\-Make\-Border@{copy\-Make\-Border}!cvtest@{cvtest}}
+\subsubsection[{copy\-Make\-Border}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cvtest\-::copy\-Make\-Border (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{src, }
+\item[{Mat \&}]{dst, }
+\item[{int}]{top, }
+\item[{int}]{bottom, }
+\item[{int}]{left, }
+\item[{int}]{right, }
+\item[{int}]{border\-Type, }
+\item[{const Scalar \&}]{border\-Value = {\ttfamily Scalar()}}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_afdeafc9424ce61318e29085a27622816}
+\hypertarget{namespacecvtest_a7adcf82f14b525d21b8c4f8ed756b778}{\index{cvtest@{cvtest}!create\-Mat@{create\-Mat}}
+\index{create\-Mat@{create\-Mat}!cvtest@{cvtest}}
+\subsubsection[{create\-Mat}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} cv\-::gpu\-::\-Gpu\-Mat cvtest\-::create\-Mat (
+\begin{DoxyParamCaption}
+\item[{cv\-::\-Size}]{size, }
+\item[{int}]{type, }
+\item[{bool}]{use\-Roi = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_a7adcf82f14b525d21b8c4f8ed756b778}
+\hypertarget{namespacecvtest_a7dbcf42c2486a0fde93ca14400d9a63e}{\index{cvtest@{cvtest}!cross\-Corr@{cross\-Corr}}
+\index{cross\-Corr@{cross\-Corr}!cvtest@{cvtest}}
+\subsubsection[{cross\-Corr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} double cvtest\-::cross\-Corr (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{src1, }
+\item[{const Mat \&}]{src2}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_a7dbcf42c2486a0fde93ca14400d9a63e}
+\hypertarget{namespacecvtest_abcb992a5f861df28d90c71272a3689f9}{\index{cvtest@{cvtest}!dilate@{dilate}}
+\index{dilate@{dilate}!cvtest@{cvtest}}
+\subsubsection[{dilate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cvtest\-::dilate (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{src, }
+\item[{Mat \&}]{dst, }
+\item[{const Mat \&}]{\-\_\-kernel, }
+\item[{Point}]{anchor = {\ttfamily Point(-\/1,-\/1)}, }
+\item[{int}]{border\-Type = {\ttfamily {\bf I\-P\-L\-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-C\-O\-N\-S\-T\-A\-N\-T}}, }
+\item[{const Scalar \&}]{border\-Value = {\ttfamily Scalar()}}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_abcb992a5f861df28d90c71272a3689f9}
+\hypertarget{namespacecvtest_a801eea4b4b3c00fe00d9640456ebd275}{\index{cvtest@{cvtest}!divide@{divide}}
+\index{divide@{divide}!cvtest@{cvtest}}
+\subsubsection[{divide}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cvtest\-::divide (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{a, }
+\item[{const Mat \&}]{b, }
+\item[{Mat \&}]{c, }
+\item[{double}]{alpha = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_a801eea4b4b3c00fe00d9640456ebd275}
+\hypertarget{namespacecvtest_a82f5ad3928bdb1f0b38465f61b9fdd77}{\index{cvtest@{cvtest}!dump\-Image@{dump\-Image}}
+\index{dump\-Image@{dump\-Image}!cvtest@{cvtest}}
+\subsubsection[{dump\-Image}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cvtest\-::dump\-Image (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{file\-Name, }
+\item[{const cv\-::\-Mat \&}]{image}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_a82f5ad3928bdb1f0b38465f61b9fdd77}
+\hypertarget{namespacecvtest_aeb152e6a82e24d8019ff81fe96af3314}{\index{cvtest@{cvtest}!erode@{erode}}
+\index{erode@{erode}!cvtest@{cvtest}}
+\subsubsection[{erode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cvtest\-::erode (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{src, }
+\item[{Mat \&}]{dst, }
+\item[{const Mat \&}]{\-\_\-kernel, }
+\item[{Point}]{anchor = {\ttfamily Point(-\/1,-\/1)}, }
+\item[{int}]{border\-Type = {\ttfamily {\bf I\-P\-L\-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-C\-O\-N\-S\-T\-A\-N\-T}}, }
+\item[{const Scalar \&}]{border\-Value = {\ttfamily Scalar()}}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_aeb152e6a82e24d8019ff81fe96af3314}
+\hypertarget{namespacecvtest_ac7b8597cdafba6cbe9c627e415fd199a}{\index{cvtest@{cvtest}!extract@{extract}}
+\index{extract@{extract}!cvtest@{cvtest}}
+\subsubsection[{extract}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cvtest\-::extract (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{a, }
+\item[{Mat \&}]{plane, }
+\item[{int}]{coi}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_ac7b8597cdafba6cbe9c627e415fd199a}
+\hypertarget{namespacecvtest_a05033377cd913b17c1c21235981e1c3e}{\index{cvtest@{cvtest}!fill\-Gradient@{fill\-Gradient}}
+\index{fill\-Gradient@{fill\-Gradient}!cvtest@{cvtest}}
+\subsubsection[{fill\-Gradient}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cvtest\-::fill\-Gradient (
+\begin{DoxyParamCaption}
+\item[{Mat \&}]{img, }
+\item[{int}]{delta = {\ttfamily 5}}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_a05033377cd913b17c1c21235981e1c3e}
+\hypertarget{namespacecvtest_aa48e1cd9d730d55e3d89a5932da6139b}{\index{cvtest@{cvtest}!filter2\-D@{filter2\-D}}
+\index{filter2\-D@{filter2\-D}!cvtest@{cvtest}}
+\subsubsection[{filter2\-D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cvtest\-::filter2\-D (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{src, }
+\item[{Mat \&}]{dst, }
+\item[{int}]{ddepth, }
+\item[{const Mat \&}]{kernel, }
+\item[{Point}]{anchor, }
+\item[{double}]{delta, }
+\item[{int}]{border\-Type, }
+\item[{const Scalar \&}]{border\-Value = {\ttfamily Scalar()}}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_aa48e1cd9d730d55e3d89a5932da6139b}
+\hypertarget{namespacecvtest_ad8bf206bdedaebaef04492c219c80265}{\index{cvtest@{cvtest}!gemm@{gemm}}
+\index{gemm@{gemm}!cvtest@{cvtest}}
+\subsubsection[{gemm}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cvtest\-::gemm (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{src1, }
+\item[{const Mat \&}]{src2, }
+\item[{double}]{alpha, }
+\item[{const Mat \&}]{src3, }
+\item[{double}]{beta, }
+\item[{Mat \&}]{dst, }
+\item[{int}]{flags}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_ad8bf206bdedaebaef04492c219c80265}
+\hypertarget{namespacecvtest_a013423daee12cfe7a2d35e3f50f5648b}{\index{cvtest@{cvtest}!get\-Mat@{get\-Mat}}
+\index{get\-Mat@{get\-Mat}!cvtest@{cvtest}}
+\subsubsection[{get\-Mat}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} cv\-::\-Mat cvtest\-::get\-Mat (
+\begin{DoxyParamCaption}
+\item[{cv\-::\-Input\-Array}]{arr}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_a013423daee12cfe7a2d35e3f50f5648b}
+\hypertarget{namespacecvtest_a2ae43940bcb727e8843d8b290bdfe3ff}{\index{cvtest@{cvtest}!get\-Matched\-Points\-Count@{get\-Matched\-Points\-Count}}
+\index{get\-Matched\-Points\-Count@{get\-Matched\-Points\-Count}!cvtest@{cvtest}}
+\subsubsection[{get\-Matched\-Points\-Count}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} int cvtest\-::get\-Matched\-Points\-Count (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ cv\-::\-Key\-Point $>$ \&}]{gold, }
+\item[{std\-::vector$<$ cv\-::\-Key\-Point $>$ \&}]{actual}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_a2ae43940bcb727e8843d8b290bdfe3ff}
+\hypertarget{namespacecvtest_a24ebdb69863aa30101d780ac1eb2d8c5}{\index{cvtest@{cvtest}!get\-Matched\-Points\-Count@{get\-Matched\-Points\-Count}}
+\index{get\-Matched\-Points\-Count@{get\-Matched\-Points\-Count}!cvtest@{cvtest}}
+\subsubsection[{get\-Matched\-Points\-Count}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} int cvtest\-::get\-Matched\-Points\-Count (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ cv\-::\-Key\-Point $>$ \&}]{keypoints1, }
+\item[{const std\-::vector$<$ cv\-::\-Key\-Point $>$ \&}]{keypoints2, }
+\item[{const std\-::vector$<$ cv\-::\-D\-Match $>$ \&}]{matches}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_a24ebdb69863aa30101d780ac1eb2d8c5}
+\hypertarget{namespacecvtest_aef7feb873a9078fa8343822014120dfd}{\index{cvtest@{cvtest}!get\-Max\-Val@{get\-Max\-Val}}
+\index{get\-Max\-Val@{get\-Max\-Val}!cvtest@{cvtest}}
+\subsubsection[{get\-Max\-Val}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} double cvtest\-::get\-Max\-Val (
+\begin{DoxyParamCaption}
+\item[{int}]{depth}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_aef7feb873a9078fa8343822014120dfd}
+\hypertarget{namespacecvtest_aae60ea3df2f2a5880f0b37d58e09054c}{\index{cvtest@{cvtest}!get\-Min\-Val@{get\-Min\-Val}}
+\index{get\-Min\-Val@{get\-Min\-Val}!cvtest@{cvtest}}
+\subsubsection[{get\-Min\-Val}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} double cvtest\-::get\-Min\-Val (
+\begin{DoxyParamCaption}
+\item[{int}]{depth}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_aae60ea3df2f2a5880f0b37d58e09054c}
+\hypertarget{namespacecvtest_a6976036fa96fda433ab30aac85585c1e}{\index{cvtest@{cvtest}!get\-Type\-Name@{get\-Type\-Name}}
+\index{get\-Type\-Name@{get\-Type\-Name}!cvtest@{cvtest}}
+\subsubsection[{get\-Type\-Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} const char$\ast$ cvtest\-::get\-Type\-Name (
+\begin{DoxyParamCaption}
+\item[{int}]{type}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_a6976036fa96fda433ab30aac85585c1e}
+\hypertarget{namespacecvtest_aa74e3cb54c90fa2d263fe3ff81a0c9fe}{\index{cvtest@{cvtest}!init\-Undistort\-Map@{init\-Undistort\-Map}}
+\index{init\-Undistort\-Map@{init\-Undistort\-Map}!cvtest@{cvtest}}
+\subsubsection[{init\-Undistort\-Map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cvtest\-::init\-Undistort\-Map (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{a, }
+\item[{const Mat \&}]{k, }
+\item[{Size}]{sz, }
+\item[{Mat \&}]{mapx, }
+\item[{Mat \&}]{mapy}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_aa74e3cb54c90fa2d263fe3ff81a0c9fe}
+\hypertarget{namespacecvtest_a9c6ea7d8b339c0ec8385154ad331ee0f}{\index{cvtest@{cvtest}!insert@{insert}}
+\index{insert@{insert}!cvtest@{cvtest}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cvtest\-::insert (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{plane, }
+\item[{Mat \&}]{a, }
+\item[{int}]{coi}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_a9c6ea7d8b339c0ec8385154ad331ee0f}
+\hypertarget{namespacecvtest_adc16cec6a6ee3add97e870ec5e376226}{\index{cvtest@{cvtest}!load\-Mat@{load\-Mat}}
+\index{load\-Mat@{load\-Mat}!cvtest@{cvtest}}
+\subsubsection[{load\-Mat}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} cv\-::gpu\-::\-Gpu\-Mat cvtest\-::load\-Mat (
+\begin{DoxyParamCaption}
+\item[{const cv\-::\-Mat \&}]{m, }
+\item[{bool}]{use\-Roi = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_adc16cec6a6ee3add97e870ec5e376226}
+\hypertarget{namespacecvtest_a89ff58bf012784160a2b902cd831baf1}{\index{cvtest@{cvtest}!logic\-Op@{logic\-Op}}
+\index{logic\-Op@{logic\-Op}!cvtest@{cvtest}}
+\subsubsection[{logic\-Op}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cvtest\-::logic\-Op (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{src1, }
+\item[{const Mat \&}]{src2, }
+\item[{Mat \&}]{dst, }
+\item[{char}]{c}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_a89ff58bf012784160a2b902cd831baf1}
+\hypertarget{namespacecvtest_a47a0d01f72edb496d4b84ee033031201}{\index{cvtest@{cvtest}!logic\-Op@{logic\-Op}}
+\index{logic\-Op@{logic\-Op}!cvtest@{cvtest}}
+\subsubsection[{logic\-Op}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cvtest\-::logic\-Op (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{src, }
+\item[{const Scalar \&}]{s, }
+\item[{Mat \&}]{dst, }
+\item[{char}]{c}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_a47a0d01f72edb496d4b84ee033031201}
+\hypertarget{namespacecvtest_a86aca546545a31151753fe45ebc4221a}{\index{cvtest@{cvtest}!max@{max}}
+\index{max@{max}!cvtest@{cvtest}}
+\subsubsection[{max}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cvtest\-::max (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{src1, }
+\item[{const Mat \&}]{src2, }
+\item[{Mat \&}]{dst}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_a86aca546545a31151753fe45ebc4221a}
+\hypertarget{namespacecvtest_a9d50f67da7a85c16200a106fe264ad07}{\index{cvtest@{cvtest}!max@{max}}
+\index{max@{max}!cvtest@{cvtest}}
+\subsubsection[{max}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cvtest\-::max (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{src, }
+\item[{double}]{s, }
+\item[{Mat \&}]{dst}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_a9d50f67da7a85c16200a106fe264ad07}
+\hypertarget{namespacecvtest_afd1b0e1dfbfdaea885e52c2a75bd9d81}{\index{cvtest@{cvtest}!mean@{mean}}
+\index{mean@{mean}!cvtest@{cvtest}}
+\subsubsection[{mean}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} Scalar cvtest\-::mean (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{src, }
+\item[{const Mat \&}]{mask = {\ttfamily Mat()}}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_afd1b0e1dfbfdaea885e52c2a75bd9d81}
+\hypertarget{namespacecvtest_a4ea963c34f3a83d0fd1927124ec5354a}{\index{cvtest@{cvtest}!min@{min}}
+\index{min@{min}!cvtest@{cvtest}}
+\subsubsection[{min}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cvtest\-::min (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{src1, }
+\item[{const Mat \&}]{src2, }
+\item[{Mat \&}]{dst}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_a4ea963c34f3a83d0fd1927124ec5354a}
+\hypertarget{namespacecvtest_ad3ec55e5c78f842a29788a63d6b4ba14}{\index{cvtest@{cvtest}!min@{min}}
+\index{min@{min}!cvtest@{cvtest}}
+\subsubsection[{min}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cvtest\-::min (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{src, }
+\item[{double}]{s, }
+\item[{Mat \&}]{dst}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_ad3ec55e5c78f842a29788a63d6b4ba14}
+\hypertarget{namespacecvtest_a99c63c88a0832d8e71bfe2779dc28af4}{\index{cvtest@{cvtest}!min\-Max\-Loc@{min\-Max\-Loc}}
+\index{min\-Max\-Loc@{min\-Max\-Loc}!cvtest@{cvtest}}
+\subsubsection[{min\-Max\-Loc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cvtest\-::min\-Max\-Loc (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{src, }
+\item[{double $\ast$}]{minval, }
+\item[{double $\ast$}]{maxval, }
+\item[{vector$<$ int $>$ $\ast$}]{minloc, }
+\item[{vector$<$ int $>$ $\ast$}]{maxloc, }
+\item[{const Mat \&}]{mask = {\ttfamily Mat()}}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_a99c63c88a0832d8e71bfe2779dc28af4}
+\hypertarget{namespacecvtest_a173aef4e10da98b9e25d652fb5b9cb9c}{\index{cvtest@{cvtest}!min\-Max\-Loc\-Gold@{min\-Max\-Loc\-Gold}}
+\index{min\-Max\-Loc\-Gold@{min\-Max\-Loc\-Gold}!cvtest@{cvtest}}
+\subsubsection[{min\-Max\-Loc\-Gold}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cvtest\-::min\-Max\-Loc\-Gold (
+\begin{DoxyParamCaption}
+\item[{const cv\-::\-Mat \&}]{src, }
+\item[{double $\ast$}]{min\-Val\-\_\-, }
+\item[{double $\ast$}]{max\-Val\-\_\- = {\ttfamily 0}, }
+\item[{cv\-::\-Point $\ast$}]{min\-Loc\-\_\- = {\ttfamily 0}, }
+\item[{cv\-::\-Point $\ast$}]{max\-Loc\-\_\- = {\ttfamily 0}, }
+\item[{const cv\-::\-Mat \&}]{mask = {\ttfamily cv\-:\-:Mat()}}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_a173aef4e10da98b9e25d652fb5b9cb9c}
+\hypertarget{namespacecvtest_a5ccf7637727de44a3f68f53b3abf4b07}{\index{cvtest@{cvtest}!multiply@{multiply}}
+\index{multiply@{multiply}!cvtest@{cvtest}}
+\subsubsection[{multiply}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cvtest\-::multiply (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{a, }
+\item[{const Mat \&}]{b, }
+\item[{Mat \&}]{c, }
+\item[{double}]{alpha = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_a5ccf7637727de44a3f68f53b3abf4b07}
+\hypertarget{namespacecvtest_afe0b69beddeea94657c1b36b104acaa4}{\index{cvtest@{cvtest}!norm@{norm}}
+\index{norm@{norm}!cvtest@{cvtest}}
+\subsubsection[{norm}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} double cvtest\-::norm (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{src, }
+\item[{int}]{norm\-Type, }
+\item[{const Mat \&}]{mask = {\ttfamily Mat()}}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_afe0b69beddeea94657c1b36b104acaa4}
+\hypertarget{namespacecvtest_a1779e0c4158a2ffa0d6fa249327f3ee2}{\index{cvtest@{cvtest}!norm@{norm}}
+\index{norm@{norm}!cvtest@{cvtest}}
+\subsubsection[{norm}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} double cvtest\-::norm (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{src1, }
+\item[{const Mat \&}]{src2, }
+\item[{int}]{norm\-Type, }
+\item[{const Mat \&}]{mask = {\ttfamily Mat()}}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_a1779e0c4158a2ffa0d6fa249327f3ee2}
+\hypertarget{namespacecvtest_a26d3e3d171c7188f1930582ad5942eeb}{\index{cvtest@{cvtest}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!cvtest@{cvtest}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} std\-::ostream\& cvtest\-::operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{out, }
+\item[{const Mat\-Info \&}]{m}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_a26d3e3d171c7188f1930582ad5942eeb}
+\hypertarget{namespacecvtest_a875892bf4b05664246e17498fe6f9065}{\index{cvtest@{cvtest}!patch\-Zeros@{patch\-Zeros}}
+\index{patch\-Zeros@{patch\-Zeros}!cvtest@{cvtest}}
+\subsubsection[{patch\-Zeros}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cvtest\-::patch\-Zeros (
+\begin{DoxyParamCaption}
+\item[{Mat \&}]{mat, }
+\item[{double}]{level}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_a875892bf4b05664246e17498fe6f9065}
+\hypertarget{namespacecvtest_a843732e6969ab0b29e9ebeee65f2cc4a}{\index{cvtest@{cvtest}!print\-Cuda\-Info@{print\-Cuda\-Info}}
+\index{print\-Cuda\-Info@{print\-Cuda\-Info}!cvtest@{cvtest}}
+\subsubsection[{print\-Cuda\-Info}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cvtest\-::print\-Cuda\-Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_a843732e6969ab0b29e9ebeee65f2cc4a}
+\hypertarget{namespacecvtest_a7b5f91689f87845d2eb78fe213bd2ad6}{\index{cvtest@{cvtest}!Print\-To@{Print\-To}}
+\index{Print\-To@{Print\-To}!cvtest@{cvtest}}
+\subsubsection[{Print\-To}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cvtest\-::\-Print\-To (
+\begin{DoxyParamCaption}
+\item[{const Use\-Roi \&}]{use\-Roi, }
+\item[{std\-::ostream $\ast$}]{os}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_a7b5f91689f87845d2eb78fe213bd2ad6}
+\hypertarget{namespacecvtest_a7338785aeee089758774e3eb5d1728d4}{\index{cvtest@{cvtest}!Print\-To@{Print\-To}}
+\index{Print\-To@{Print\-To}!cvtest@{cvtest}}
+\subsubsection[{Print\-To}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cvtest\-::\-Print\-To (
+\begin{DoxyParamCaption}
+\item[{const Inverse \&}]{use\-Roi, }
+\item[{std\-::ostream $\ast$}]{os}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_a7338785aeee089758774e3eb5d1728d4}
+\hypertarget{namespacecvtest_ae4cdd987333c3910e7b991b32f14bf7a}{\index{cvtest@{cvtest}!print\-Version\-Info@{print\-Version\-Info}}
+\index{print\-Version\-Info@{print\-Version\-Info}!cvtest@{cvtest}}
+\subsubsection[{print\-Version\-Info}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cvtest\-::print\-Version\-Info (
+\begin{DoxyParamCaption}
+\item[{bool}]{use\-Std\-Out = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_ae4cdd987333c3910e7b991b32f14bf7a}
+\hypertarget{namespacecvtest_a26cc57bf4a8d91168ad8e371644506bc}{\index{cvtest@{cvtest}!rand\-Int@{rand\-Int}}
+\index{rand\-Int@{rand\-Int}!cvtest@{cvtest}}
+\subsubsection[{rand\-Int}]{\setlength{\rightskip}{0pt plus 5cm}unsigned cvtest\-::rand\-Int (
+\begin{DoxyParamCaption}
+\item[{R\-N\-G \&}]{rng}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{namespacecvtest_a26cc57bf4a8d91168ad8e371644506bc}
+\hypertarget{namespacecvtest_a0ea150bc084ea73ef92a0af3b404f733}{\index{cvtest@{cvtest}!random\-Double@{random\-Double}}
+\index{random\-Double@{random\-Double}!cvtest@{cvtest}}
+\subsubsection[{random\-Double}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} double cvtest\-::random\-Double (
+\begin{DoxyParamCaption}
+\item[{double}]{min\-Val, }
+\item[{double}]{max\-Val}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_a0ea150bc084ea73ef92a0af3b404f733}
+\hypertarget{namespacecvtest_a9eac1832de1eb9d633c2239c5d764f45}{\index{cvtest@{cvtest}!random\-Int@{random\-Int}}
+\index{random\-Int@{random\-Int}!cvtest@{cvtest}}
+\subsubsection[{random\-Int}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} int cvtest\-::random\-Int (
+\begin{DoxyParamCaption}
+\item[{int}]{min\-Val, }
+\item[{int}]{max\-Val}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_a9eac1832de1eb9d633c2239c5d764f45}
+\hypertarget{namespacecvtest_aa1501de3d28a48d8f05c0ce4ce769172}{\index{cvtest@{cvtest}!random\-Mat@{random\-Mat}}
+\index{random\-Mat@{random\-Mat}!cvtest@{cvtest}}
+\subsubsection[{random\-Mat}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} cv\-::\-Mat cvtest\-::random\-Mat (
+\begin{DoxyParamCaption}
+\item[{cv\-::\-Size}]{size, }
+\item[{int}]{type, }
+\item[{double}]{min\-Val = {\ttfamily 0.0}, }
+\item[{double}]{max\-Val = {\ttfamily 255.0}}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_aa1501de3d28a48d8f05c0ce4ce769172}
+\hypertarget{namespacecvtest_aa4b4d920a2fb2eb67490e58953e8f0f3}{\index{cvtest@{cvtest}!random\-Mat@{random\-Mat}}
+\index{random\-Mat@{random\-Mat}!cvtest@{cvtest}}
+\subsubsection[{random\-Mat}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} Mat cvtest\-::random\-Mat (
+\begin{DoxyParamCaption}
+\item[{R\-N\-G \&}]{rng, }
+\item[{Size}]{size, }
+\item[{int}]{type, }
+\item[{double}]{min\-Val, }
+\item[{double}]{max\-Val, }
+\item[{bool}]{use\-Roi}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_aa4b4d920a2fb2eb67490e58953e8f0f3}
+\hypertarget{namespacecvtest_a0aa43772f6987882cc98332627f4c21a}{\index{cvtest@{cvtest}!random\-Mat@{random\-Mat}}
+\index{random\-Mat@{random\-Mat}!cvtest@{cvtest}}
+\subsubsection[{random\-Mat}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} Mat cvtest\-::random\-Mat (
+\begin{DoxyParamCaption}
+\item[{R\-N\-G \&}]{rng, }
+\item[{const vector$<$ int $>$ \&}]{size, }
+\item[{int}]{type, }
+\item[{double}]{min\-Val, }
+\item[{double}]{max\-Val, }
+\item[{bool}]{use\-Roi}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_a0aa43772f6987882cc98332627f4c21a}
+\hypertarget{namespacecvtest_af12771814e01f3ebaf94961c36d46185}{\index{cvtest@{cvtest}!random\-Scalar@{random\-Scalar}}
+\index{random\-Scalar@{random\-Scalar}!cvtest@{cvtest}}
+\subsubsection[{random\-Scalar}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} cv\-::\-Scalar cvtest\-::random\-Scalar (
+\begin{DoxyParamCaption}
+\item[{double}]{min\-Val, }
+\item[{double}]{max\-Val}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_af12771814e01f3ebaf94961c36d46185}
+\hypertarget{namespacecvtest_ad214be493df2f6a360470007f417c2c4}{\index{cvtest@{cvtest}!random\-Size@{random\-Size}}
+\index{random\-Size@{random\-Size}!cvtest@{cvtest}}
+\subsubsection[{random\-Size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} cv\-::\-Size cvtest\-::random\-Size (
+\begin{DoxyParamCaption}
+\item[{int}]{min\-Val, }
+\item[{int}]{max\-Val}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_ad214be493df2f6a360470007f417c2c4}
+\hypertarget{namespacecvtest_a6bc34c509892c3ba1adba15ee9f3992f}{\index{cvtest@{cvtest}!random\-Size@{random\-Size}}
+\index{random\-Size@{random\-Size}!cvtest@{cvtest}}
+\subsubsection[{random\-Size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} Size cvtest\-::random\-Size (
+\begin{DoxyParamCaption}
+\item[{R\-N\-G \&}]{rng, }
+\item[{double}]{max\-Size\-Log}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_a6bc34c509892c3ba1adba15ee9f3992f}
+\hypertarget{namespacecvtest_a219e0cb0744cd51b22891584f17e026d}{\index{cvtest@{cvtest}!random\-Size@{random\-Size}}
+\index{random\-Size@{random\-Size}!cvtest@{cvtest}}
+\subsubsection[{random\-Size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cvtest\-::random\-Size (
+\begin{DoxyParamCaption}
+\item[{R\-N\-G \&}]{rng, }
+\item[{int}]{min\-Dims, }
+\item[{int}]{max\-Dims, }
+\item[{double}]{max\-Size\-Log, }
+\item[{vector$<$ int $>$ \&}]{sz}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_a219e0cb0744cd51b22891584f17e026d}
+\hypertarget{namespacecvtest_a8ccb9ed0c011023ef7e4b43cea5ed124}{\index{cvtest@{cvtest}!random\-Type@{random\-Type}}
+\index{random\-Type@{random\-Type}!cvtest@{cvtest}}
+\subsubsection[{random\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} int cvtest\-::random\-Type (
+\begin{DoxyParamCaption}
+\item[{R\-N\-G \&}]{rng, }
+\item[{int}]{type\-Mask, }
+\item[{int}]{min\-Channels, }
+\item[{int}]{max\-Channels}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_a8ccb9ed0c011023ef7e4b43cea5ed124}
+\hypertarget{namespacecvtest_a9639bfa71aa22e5763f66cd4c0bb1533}{\index{cvtest@{cvtest}!rand\-Real@{rand\-Real}}
+\index{rand\-Real@{rand\-Real}!cvtest@{cvtest}}
+\subsubsection[{rand\-Real}]{\setlength{\rightskip}{0pt plus 5cm}double cvtest\-::rand\-Real (
+\begin{DoxyParamCaption}
+\item[{R\-N\-G \&}]{rng}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{namespacecvtest_a9639bfa71aa22e5763f66cd4c0bb1533}
+\hypertarget{namespacecvtest_a0808ba0b7eb71c9714343795cc8f4a73}{\index{cvtest@{cvtest}!rand\-Uni@{rand\-Uni}}
+\index{rand\-Uni@{rand\-Uni}!cvtest@{cvtest}}
+\subsubsection[{rand\-Uni}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cvtest\-::rand\-Uni (
+\begin{DoxyParamCaption}
+\item[{R\-N\-G \&}]{rng, }
+\item[{Mat \&}]{a, }
+\item[{const Scalar \&}]{param1, }
+\item[{const Scalar \&}]{param2}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_a0808ba0b7eb71c9714343795cc8f4a73}
+\hypertarget{namespacecvtest_ae223362863a0c00baf65b481361fa286}{\index{cvtest@{cvtest}!read\-Image@{read\-Image}}
+\index{read\-Image@{read\-Image}!cvtest@{cvtest}}
+\subsubsection[{read\-Image}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} cv\-::\-Mat cvtest\-::read\-Image (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{file\-Name, }
+\item[{int}]{flags = {\ttfamily cv\-:\-:IMREAD\-\_\-COLOR}}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_ae223362863a0c00baf65b481361fa286}
+
+
+read image from testdata folder 
+
+\hypertarget{namespacecvtest_ad051b05ec01725e6f1b8d4ab7a8752c4}{\index{cvtest@{cvtest}!read\-Image\-Type@{read\-Image\-Type}}
+\index{read\-Image\-Type@{read\-Image\-Type}!cvtest@{cvtest}}
+\subsubsection[{read\-Image\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} cv\-::\-Mat cvtest\-::read\-Image\-Type (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{fname, }
+\item[{int}]{type}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_ad051b05ec01725e6f1b8d4ab7a8752c4}
+
+
+read image from testdata folder and convert it to specified type 
+
+\hypertarget{namespacecvtest_ab0222728fa931142fef72ae0074fa864}{\index{cvtest@{cvtest}!read\-Seed@{read\-Seed}}
+\index{read\-Seed@{read\-Seed}!cvtest@{cvtest}}
+\subsubsection[{read\-Seed}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf int64} cvtest\-::read\-Seed (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{str}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_ab0222728fa931142fef72ae0074fa864}
+\hypertarget{namespacecvtest_a3ea16e468a830d72142a851c48efe630}{\index{cvtest@{cvtest}!set@{set}}
+\index{set@{set}!cvtest@{cvtest}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cvtest\-::set (
+\begin{DoxyParamCaption}
+\item[{Mat \&}]{dst, }
+\item[{const Scalar \&}]{gamma, }
+\item[{const Mat \&}]{mask = {\ttfamily Mat()}}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_a3ea16e468a830d72142a851c48efe630}
+\hypertarget{namespacecvtest_a42a57baaa6ef670d1c8032d7de406d58}{\index{cvtest@{cvtest}!show\-Diff@{show\-Diff}}
+\index{show\-Diff@{show\-Diff}!cvtest@{cvtest}}
+\subsubsection[{show\-Diff}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cvtest\-::show\-Diff (
+\begin{DoxyParamCaption}
+\item[{cv\-::\-Input\-Array}]{gold, }
+\item[{cv\-::\-Input\-Array}]{actual, }
+\item[{double}]{eps}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_a42a57baaa6ef670d1c8032d7de406d58}
+\hypertarget{namespacecvtest_ad269b0afda8fae3f66b52812be976146}{\index{cvtest@{cvtest}!smooth\-Border@{smooth\-Border}}
+\index{smooth\-Border@{smooth\-Border}!cvtest@{cvtest}}
+\subsubsection[{smooth\-Border}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cvtest\-::smooth\-Border (
+\begin{DoxyParamCaption}
+\item[{Mat \&}]{img, }
+\item[{const Scalar \&}]{color, }
+\item[{int}]{delta = {\ttfamily 3}}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_ad269b0afda8fae3f66b52812be976146}
+\hypertarget{namespacecvtest_a085a1265f44a20d04cce5684b11bcecc}{\index{cvtest@{cvtest}!support\-Feature@{support\-Feature}}
+\index{support\-Feature@{support\-Feature}!cvtest@{cvtest}}
+\subsubsection[{support\-Feature}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} bool cvtest\-::support\-Feature (
+\begin{DoxyParamCaption}
+\item[{const cv\-::gpu\-::\-Device\-Info \&}]{info, }
+\item[{cv\-::gpu\-::\-Feature\-Set}]{feature}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_a085a1265f44a20d04cce5684b11bcecc}
+
+
+return true if device supports specified feature and gpu module was built with support the feature. 
+
+\hypertarget{namespacecvtest_a2bfa2b9373551f8fd748ab1f9ba79606}{\index{cvtest@{cvtest}!transform@{transform}}
+\index{transform@{transform}!cvtest@{cvtest}}
+\subsubsection[{transform}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cvtest\-::transform (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{src, }
+\item[{Mat \&}]{dst, }
+\item[{const Mat \&}]{transmat, }
+\item[{const Mat \&}]{shift}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_a2bfa2b9373551f8fd748ab1f9ba79606}
+\hypertarget{namespacecvtest_a5afd7dc69b9f9e91a7ff2615d29dcd52}{\index{cvtest@{cvtest}!transpose@{transpose}}
+\index{transpose@{transpose}!cvtest@{cvtest}}
+\subsubsection[{transpose}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cvtest\-::transpose (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{src, }
+\item[{Mat \&}]{dst}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_a5afd7dc69b9f9e91a7ff2615d29dcd52}
+\hypertarget{namespacecvtest_aa761fe30295aeb4e1a0a836301200319}{\index{cvtest@{cvtest}!type\-By\-Name@{type\-By\-Name}}
+\index{type\-By\-Name@{type\-By\-Name}!cvtest@{cvtest}}
+\subsubsection[{type\-By\-Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} int cvtest\-::type\-By\-Name (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{type\-\_\-name}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_aa761fe30295aeb4e1a0a836301200319}
+\hypertarget{namespacecvtest_afa1b01409165231a61684009dad82ee4}{\index{cvtest@{cvtest}!types@{types}}
+\index{types@{types}!cvtest@{cvtest}}
+\subsubsection[{types}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} std\-::vector$<${\bf Mat\-Type}$>$ cvtest\-::types (
+\begin{DoxyParamCaption}
+\item[{int}]{depth\-\_\-start, }
+\item[{int}]{depth\-\_\-end, }
+\item[{int}]{cn\-\_\-start, }
+\item[{int}]{cn\-\_\-end}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_afa1b01409165231a61684009dad82ee4}
+
+
+return vector with types from specified range. 
+
+\hypertarget{namespacecvtest_acd977ea496ae0145582b4ca2172dd46f}{\index{cvtest@{cvtest}!vec2str@{vec2str}}
+\index{vec2str@{vec2str}!cvtest@{cvtest}}
+\subsubsection[{vec2str}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} string cvtest\-::vec2str (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{sep, }
+\item[{const int $\ast$}]{v, }
+\item[{size\-\_\-t}]{nelems}
+\end{DoxyParamCaption}
+)}}\label{namespacecvtest_acd977ea496ae0145582b4ca2172dd46f}
+
+
+\subsection{Variable Documentation}
+\hypertarget{namespacecvtest_a61d75b2d1c52a63797c1516e029b9cb0}{\index{cvtest@{cvtest}!T\-S@{T\-S}}
+\index{T\-S@{T\-S}!cvtest@{cvtest}}
+\subsubsection[{T\-S}]{\setlength{\rightskip}{0pt plus 5cm}class {\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf cvtest\-::\-T\-S}}}\label{namespacecvtest_a61d75b2d1c52a63797c1516e029b9cb0}

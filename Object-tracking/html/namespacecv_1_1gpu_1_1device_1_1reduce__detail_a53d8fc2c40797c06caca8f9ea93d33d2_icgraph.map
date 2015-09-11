@@ -1,0 +1,6 @@
+<map id="cv::gpu::device::reduce_detail::loadToSmem" name="cv::gpu::device::reduce_detail::loadToSmem">
+<area shape="rect" id="node2" href="$namespacecv_1_1gpu_1_1device_1_1reduce__detail.html#a442c9f9e45bb0f1e400baaa9dbf897b6" title="cv::gpu::device::reduce\l_detail::loadToSmem" alt="" coords="227,5,386,46"/>
+<area shape="rect" id="node3" href="$structcv_1_1gpu_1_1device_1_1reduce__detail_1_1Generic.html#afa48757cbb315acb4744d021985af749" title="cv::gpu::device::reduce\l_detail::Generic::reduce" alt="" coords="227,70,387,111"/>
+<area shape="rect" id="node4" href="$structcv_1_1gpu_1_1device_1_1reduce__detail_1_1WarpOptimized.html#abdb3ddd80af6c6e12b19d3752c4eb90e" title="cv::gpu::device::reduce\l_detail::WarpOptimized\l::reduce" alt="" coords="227,135,386,191"/>
+<area shape="rect" id="node5" href="$structcv_1_1gpu_1_1device_1_1reduce__detail_1_1GenericOptimized32.html#a8296b8051da411ba92d067dd3d714775" title="cv::gpu::device::reduce\l_detail::GenericOptimized32\l::reduce" alt="" coords="213,215,400,271"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="cvflann::PooledAllocator::allocateMemory" name="cvflann::PooledAllocator::allocateMemory">
+<area shape="rect" id="node2" href="$classcvflann_1_1PooledAllocator.html#aaf127cab57cd0e0f4d3b335efd8d3a67" title="cvflann::PooledAllocator\l::allocate" alt="" coords="216,38,379,79"/>
+<area shape="rect" id="node3" href="$classcvflann_1_1HierarchicalClusteringIndex.html#ad306898d16cd94b44e0a4a678e9bdca6" title="cvflann::HierarchicalClustering\lIndex::buildIndex" alt="" coords="427,5,627,46"/>
+<area shape="rect" id="node4" href="$classcvflann_1_1KMeansIndex.html#a8018b120cc79371b02e58b50f8992634" title="cvflann::KMeansIndex\l::buildIndex" alt="" coords="451,70,603,111"/>
+<area shape="rect" id="node5" href="$namespacecvflann.html#aa43d8d0d11bb830e96fe73c5984bf6d0" title="cvflann::hierarchicalClustering" alt="" coords="675,77,872,104"/>
+</map>

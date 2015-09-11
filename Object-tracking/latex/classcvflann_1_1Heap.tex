@@ -1,0 +1,130 @@
+\hypertarget{classcvflann_1_1Heap}{\section{cvflann\-:\-:Heap$<$ T $>$ Class Template Reference}
+\label{classcvflann_1_1Heap}\index{cvflann\-::\-Heap$<$ T $>$@{cvflann\-::\-Heap$<$ T $>$}}
+}
+
+
+{\ttfamily \#include $<$heap.\-h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structcvflann_1_1Heap_1_1CompareT}{Compare\-T}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcvflann_1_1Heap_a477eb646c7992fc9986c64b927f885fc}{Heap} (int sz)
+\item 
+int \hyperlink{classcvflann_1_1Heap_ade1994ba5149445d0292804dea5fdc20}{size} ()
+\item 
+bool \hyperlink{classcvflann_1_1Heap_ac10663597fecfcfc1d4b940c83eb687f}{empty} ()
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcvflann_1_1Heap_ae48047dff69cce90629cf8a8b4f6ab6d}{clear} ()
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcvflann_1_1Heap_abba4d73d454ec9324af80c299715067c}{insert} (\hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \hyperlink{highgui__c_8h_ad4670c92695d4327c21292905a803901}{value})
+\item 
+bool \hyperlink{classcvflann_1_1Heap_a6c6d2fd6b7522e13049389ab4ae0e0ab}{pop\-Min} (\hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \&\hyperlink{highgui__c_8h_ad4670c92695d4327c21292905a803901}{value})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$class cvflann\-::\-Heap$<$ T $>$}
+
+Priority Queue Implementation
+
+The priority queue is implemented with a heap. A heap is a complete (full) binary tree in which each parent is less than both of its children, but the order of the children is unspecified. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcvflann_1_1Heap_a477eb646c7992fc9986c64b927f885fc}{\index{cvflann\-::\-Heap@{cvflann\-::\-Heap}!Heap@{Heap}}
+\index{Heap@{Heap}!cvflann::Heap@{cvflann\-::\-Heap}}
+\subsubsection[{Heap}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf cvflann\-::\-Heap}$<$ {\bf T} $>$\-::{\bf Heap} (
+\begin{DoxyParamCaption}
+\item[{int}]{sz}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcvflann_1_1Heap_a477eb646c7992fc9986c64b927f885fc}
+Constructor.
+
+Params\-: sz = heap size 
+
+\subsection{Member Function Documentation}
+\hypertarget{classcvflann_1_1Heap_ae48047dff69cce90629cf8a8b4f6ab6d}{\index{cvflann\-::\-Heap@{cvflann\-::\-Heap}!clear@{clear}}
+\index{clear@{clear}!cvflann::Heap@{cvflann\-::\-Heap}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf void} {\bf cvflann\-::\-Heap}$<$ {\bf T} $>$\-::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcvflann_1_1Heap_ae48047dff69cce90629cf8a8b4f6ab6d}
+Clears the heap. \hypertarget{classcvflann_1_1Heap_ac10663597fecfcfc1d4b940c83eb687f}{\index{cvflann\-::\-Heap@{cvflann\-::\-Heap}!empty@{empty}}
+\index{empty@{empty}!cvflann::Heap@{cvflann\-::\-Heap}}
+\subsubsection[{empty}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ bool {\bf cvflann\-::\-Heap}$<$ {\bf T} $>$\-::empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcvflann_1_1Heap_ac10663597fecfcfc1d4b940c83eb687f}
+Tests if the heap is empty
+
+Returns\-: true is heap empty, false otherwise 
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{classcvflann_1_1Heap_ac10663597fecfcfc1d4b940c83eb687f_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcvflann_1_1Heap_abba4d73d454ec9324af80c299715067c}{\index{cvflann\-::\-Heap@{cvflann\-::\-Heap}!insert@{insert}}
+\index{insert@{insert}!cvflann::Heap@{cvflann\-::\-Heap}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf void} {\bf cvflann\-::\-Heap}$<$ {\bf T} $>$\-::insert (
+\begin{DoxyParamCaption}
+\item[{{\bf T}}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcvflann_1_1Heap_abba4d73d454ec9324af80c299715067c}
+Insert a new element in the heap.
+
+We select the next empty leaf node, and then keep moving any larger parents down until the right location is found to store this element.
+
+Params\-: value = the new element to be inserted in the heap \hypertarget{classcvflann_1_1Heap_a6c6d2fd6b7522e13049389ab4ae0e0ab}{\index{cvflann\-::\-Heap@{cvflann\-::\-Heap}!pop\-Min@{pop\-Min}}
+\index{pop\-Min@{pop\-Min}!cvflann::Heap@{cvflann\-::\-Heap}}
+\subsubsection[{pop\-Min}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ bool {\bf cvflann\-::\-Heap}$<$ {\bf T} $>$\-::pop\-Min (
+\begin{DoxyParamCaption}
+\item[{{\bf T} \&}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcvflann_1_1Heap_a6c6d2fd6b7522e13049389ab4ae0e0ab}
+Returns the node of minimum value from the heap (top of the heap).
+
+Params\-: value = out parameter used to return the min element Returns\-: false if heap empty 
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcvflann_1_1Heap_a6c6d2fd6b7522e13049389ab4ae0e0ab_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcvflann_1_1Heap_ade1994ba5149445d0292804dea5fdc20}{\index{cvflann\-::\-Heap@{cvflann\-::\-Heap}!size@{size}}
+\index{size@{size}!cvflann::Heap@{cvflann\-::\-Heap}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ int {\bf cvflann\-::\-Heap}$<$ {\bf T} $>$\-::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcvflann_1_1Heap_ade1994ba5149445d0292804dea5fdc20}
+Returns\-: heap size 
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{classcvflann_1_1Heap_ade1994ba5149445d0292804dea5fdc20_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/flann/\hyperlink{heap_8h}{heap.\-h}\end{DoxyCompactItemize}

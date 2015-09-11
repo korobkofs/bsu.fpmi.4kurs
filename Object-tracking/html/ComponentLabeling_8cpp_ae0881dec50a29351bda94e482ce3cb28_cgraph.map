@@ -1,0 +1,5 @@
+<map id="tracer" name="tracer">
+<area shape="rect" id="node2" href="$ComponentLabeling_8cpp.html#a2bcdcae4cc36c0060f85f904cc6c826e" title="GET_IMAGE_PIXEL" alt="" coords="129,5,273,32"/>
+<area shape="rect" id="node3" href="$ComponentLabeling_8cpp.html#ae2b92da1ce3ca327bddd6b4a5c39cfc5" title="GET_IMAGEMASK_PIXEL" alt="" coords="110,56,293,83"/>
+<area shape="rect" id="node4" href="$ComponentLabeling_8cpp.html#a60f487d43bfd39b64f320c5487926a23" title="ASSIGN_VISITED" alt="" coords="135,107,268,133"/>
+</map>

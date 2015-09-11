@@ -1,0 +1,118 @@
+\hypertarget{Lk_8h}{\section{src/libopentld/mftracker/\-Lk.h File Reference}
+\label{Lk_8h}\index{src/libopentld/mftracker/\-Lk.\-h@{src/libopentld/mftracker/\-Lk.\-h}}
+}
+{\ttfamily \#include $<$opencv/cv.\-h$>$}\\*
+Include dependency graph for Lk.\-h\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{Lk_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{Lk_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{Lk_8h_a72f8af92e33c2f2c05d9d0b1ecbbc3c6}{init\-Imgs} ()
+\begin{DoxyCompactList}\small\item\em Needed before start of track\-L\-K and at the end of the program for cleanup. Handles P\-Y\-R(\-Pyramid cache) variable. \end{DoxyCompactList}\item 
+int \hyperlink{Lk_8h_aeb798560b2c1eda165af271062b840ab}{track\-L\-K} (Ipl\-Image $\ast$img\-I, Ipl\-Image $\ast$img\-J, float pts\-I\mbox{[}$\,$\mbox{]}, int n\-Pts\-I, float pts\-J\mbox{[}$\,$\mbox{]}, int n\-Pts\-J, int level, float $\ast$fb\-Out, float $\ast$ncc\-Out, char $\ast$status\-Out)
+\begin{DoxyCompactList}\small\item\em Tracks Points from 1.\-Image to 2.\-Image. Need init\-Imgs before start and at the end of the program for cleanup. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{Lk_8h_a72f8af92e33c2f2c05d9d0b1ecbbc3c6}{\index{Lk.\-h@{Lk.\-h}!init\-Imgs@{init\-Imgs}}
+\index{init\-Imgs@{init\-Imgs}!Lk.h@{Lk.\-h}}
+\subsubsection[{init\-Imgs}]{\setlength{\rightskip}{0pt plus 5cm}void init\-Imgs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{Lk_8h_a72f8af92e33c2f2c05d9d0b1ecbbc3c6}
+
+
+Needed before start of track\-L\-K and at the end of the program for cleanup. Handles P\-Y\-R(\-Pyramid cache) variable. 
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Lk_8h_a72f8af92e33c2f2c05d9d0b1ecbbc3c6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{Lk_8h_aeb798560b2c1eda165af271062b840ab}{\index{Lk.\-h@{Lk.\-h}!track\-L\-K@{track\-L\-K}}
+\index{track\-L\-K@{track\-L\-K}!Lk.h@{Lk.\-h}}
+\subsubsection[{track\-L\-K}]{\setlength{\rightskip}{0pt plus 5cm}int track\-L\-K (
+\begin{DoxyParamCaption}
+\item[{Ipl\-Image $\ast$}]{img\-I, }
+\item[{Ipl\-Image $\ast$}]{img\-J, }
+\item[{float}]{pts\-I\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{n\-Pts\-I, }
+\item[{float}]{pts\-J\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{n\-Pts\-J, }
+\item[{int}]{level, }
+\item[{float $\ast$}]{fb\-Out, }
+\item[{float $\ast$}]{ncc\-Out, }
+\item[{char $\ast$}]{status\-Out}
+\end{DoxyParamCaption}
+)}}\label{Lk_8h_aeb798560b2c1eda165af271062b840ab}
+
+
+Tracks Points from 1.\-Image to 2.\-Image. Need init\-Imgs before start and at the end of the program for cleanup. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em img\-I} & previous Image source. (isn't changed) \\
+\hline
+{\em img\-J} & actual Image target. (isn't changed) \\
+\hline
+{\em pts\-I} & points to track from first Image. Format \mbox{[}0\mbox{]} = x1, \mbox{[}1\mbox{]} = y1, \mbox{[}2\mbox{]} = x2 ... \\
+\hline
+{\em n\-Pts\-I} & number of Points to track from first Image \\
+\hline
+{\em pts\-J} & container for calculated points of second Image. Must have the length of n\-Pts\-I. \\
+\hline
+{\em n\-Pts\-J} & number of Points \\
+\hline
+{\em level} & Pyramidlevel, default 5 \\
+\hline
+{\em fb\-Out} & forward-\/backward confidence value. (corresponds to euclidean distance between). Must have the length of n\-Pts\-I\-: n\-Pts\-I $\ast$ sizeof(float). \\
+\hline
+{\em ncc\-Out} & norm\-Cross\-Correlation values. needs as inputlength n\-Pts\-I $\ast$ sizeof(float) \\
+\hline
+{\em status\-Out} & Indicates positive tracks. 1 = Pos\-Track 0 = Neg\-Track needs as inputlength n\-Pts\-I $\ast$ sizeof(char) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1, if success; 0, if n\-Pts\-J != n\-Pts\-I 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{Lk_8h_aeb798560b2c1eda165af271062b840ab_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Lk_8h_aeb798560b2c1eda165af271062b840ab_icgraph}
+\end{center}
+\end{figure}
+
+

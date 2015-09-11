@@ -1,0 +1,374 @@
+\hypertarget{ComponentLabeling_8cpp}{\section{src/3rdparty/cvblobs/\-Component\-Labeling.cpp File Reference}
+\label{ComponentLabeling_8cpp}\index{src/3rdparty/cvblobs/\-Component\-Labeling.\-cpp@{src/3rdparty/cvblobs/\-Component\-Labeling.\-cpp}}
+}
+{\ttfamily \#include \char`\"{}Component\-Labeling.\-h\char`\"{}}\\*
+Include dependency graph for Component\-Labeling.\-cpp\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ComponentLabeling_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+unsigned char \hyperlink{ComponentLabeling_8cpp_ad8321f7b7a9d8b1a2c8b20a5bcefa164}{G\-E\-T\-\_\-\-A\-B\-O\-V\-E\-\_\-\-I\-M\-A\-G\-E\-P\-I\-X\-E\-L} (unsigned char $\ast$current\-Pixel, Ipl\-Image $\ast$image)
+\item 
+unsigned char \hyperlink{ComponentLabeling_8cpp_ae716ac630740753ca934744210736ee2}{G\-E\-T\-\_\-\-B\-E\-L\-O\-W\-\_\-\-I\-M\-A\-G\-E\-P\-I\-X\-E\-L} (unsigned char $\ast$current\-Pixel, Ipl\-Image $\ast$image)
+\item 
+unsigned char \hyperlink{ComponentLabeling_8cpp_a2bcdcae4cc36c0060f85f904cc6c826e}{G\-E\-T\-\_\-\-I\-M\-A\-G\-E\-\_\-\-P\-I\-X\-E\-L} (Ipl\-Image $\ast$image, Cv\-Point p)
+\item 
+bool \hyperlink{ComponentLabeling_8cpp_ae2b92da1ce3ca327bddd6b4a5c39cfc5}{G\-E\-T\-\_\-\-I\-M\-A\-G\-E\-M\-A\-S\-K\-\_\-\-P\-I\-X\-E\-L} (Ipl\-Image $\ast$mask, Cv\-Point p)
+\item 
+bool \hyperlink{ComponentLabeling_8cpp_ae950b1a18f9c56ae84e9338f2b87aa84}{G\-E\-T\-\_\-\-B\-E\-L\-O\-W\-\_\-\-V\-I\-S\-I\-T\-E\-D\-P\-I\-X\-E\-L} (bool $\ast$current\-Pixel, int image\-Width)
+\item 
+void \hyperlink{ComponentLabeling_8cpp_a509d4ac5415f87f32ac7a8b088bf3d68}{A\-S\-S\-I\-G\-N\-\_\-\-L\-A\-B\-E\-L} (Cv\-Point p, \hyperlink{blob_8h_ae21ba61a4f023a2f91fc5feaad495073}{t\-\_\-label\-Type} $\ast$labels, int image\-Width, int new\-Label)
+\item 
+void \hyperlink{ComponentLabeling_8cpp_a60f487d43bfd39b64f320c5487926a23}{A\-S\-S\-I\-G\-N\-\_\-\-V\-I\-S\-I\-T\-E\-D} (Cv\-Point p, bool $\ast$visited\-Points, int image\-Width)
+\item 
+bool \hyperlink{ComponentLabeling_8cpp_a05b80d9c559310ac95461bd523d888f6}{Component\-Labeling} (Ipl\-Image $\ast$input\-Image, Ipl\-Image $\ast$mask\-Image, unsigned char background\-Color, \hyperlink{ComponentLabeling_8h_a9b2ee33d26a482072b82620e6709e66e}{Blob\-\_\-vector} \&blobs)
+\item 
+void \hyperlink{ComponentLabeling_8cpp_a36ce253ae4e842675730bfc013e6485a}{contour\-Tracing} (Ipl\-Image $\ast$image, Ipl\-Image $\ast$mask\-Image, Cv\-Point contour\-Start, \hyperlink{blob_8h_ae21ba61a4f023a2f91fc5feaad495073}{t\-\_\-label\-Type} $\ast$labels, bool $\ast$visited\-Points, \hyperlink{blob_8h_ae21ba61a4f023a2f91fc5feaad495073}{t\-\_\-label\-Type} label, bool internal\-Contour, unsigned char background\-Color, \hyperlink{classCBlobContour}{C\-Blob\-Contour} $\ast$current\-Blobcontour)
+\item 
+Cv\-Point \hyperlink{ComponentLabeling_8cpp_ae0881dec50a29351bda94e482ce3cb28}{tracer} (Ipl\-Image $\ast$image, Ipl\-Image $\ast$mask\-Image, Cv\-Point P, bool $\ast$visited\-Points, short initial\-Movement, unsigned char background\-Color, short \&movement)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static const Cv\-Point \hyperlink{ComponentLabeling_8cpp_a33a14323597d0c85dc6d29810b9f312a}{freeman\-Code\-Increment} \mbox{[}8\mbox{]}
+\begin{DoxyCompactList}\small\item\em Conversion from freeman code to coordinate increments (counterclockwise) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{ComponentLabeling_8cpp_a509d4ac5415f87f32ac7a8b088bf3d68}{\index{Component\-Labeling.\-cpp@{Component\-Labeling.\-cpp}!A\-S\-S\-I\-G\-N\-\_\-\-L\-A\-B\-E\-L@{A\-S\-S\-I\-G\-N\-\_\-\-L\-A\-B\-E\-L}}
+\index{A\-S\-S\-I\-G\-N\-\_\-\-L\-A\-B\-E\-L@{A\-S\-S\-I\-G\-N\-\_\-\-L\-A\-B\-E\-L}!ComponentLabeling.cpp@{Component\-Labeling.\-cpp}}
+\subsubsection[{A\-S\-S\-I\-G\-N\-\_\-\-L\-A\-B\-E\-L}]{\setlength{\rightskip}{0pt plus 5cm}void A\-S\-S\-I\-G\-N\-\_\-\-L\-A\-B\-E\-L (
+\begin{DoxyParamCaption}
+\item[{Cv\-Point}]{p, }
+\item[{{\bf t\-\_\-label\-Type} $\ast$}]{labels, }
+\item[{int}]{image\-Width, }
+\item[{int}]{new\-Label}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{ComponentLabeling_8cpp_a509d4ac5415f87f32ac7a8b088bf3d68}
+
+\begin{DoxyItemize}
+\item F\-U\-N\-C\-IÓ\-: A\-S\-S\-I\-G\-N\-\_\-\-L\-A\-B\-E\-L
+\item F\-U\-N\-C\-I\-O\-N\-A\-L\-I\-T\-A\-T\-: Assigns label value to label image
+\item P\-A\-RÀ\-M\-E\-T\-R\-E\-S\-:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item R\-E\-S\-U\-L\-T\-A\-T\-:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item R\-E\-S\-T\-R\-I\-C\-C\-I\-O\-N\-S\-:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item A\-U\-T\-O\-R\-: rborras
+\item D\-A\-T\-A D\-E C\-R\-E\-A\-C\-IÓ\-: 2008/04/29
+\item M\-O\-D\-I\-F\-I\-C\-A\-C\-IÓ\-: Data. Autor. Descripció. 
+\end{DoxyItemize}
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ComponentLabeling_8cpp_a509d4ac5415f87f32ac7a8b088bf3d68_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{ComponentLabeling_8cpp_a60f487d43bfd39b64f320c5487926a23}{\index{Component\-Labeling.\-cpp@{Component\-Labeling.\-cpp}!A\-S\-S\-I\-G\-N\-\_\-\-V\-I\-S\-I\-T\-E\-D@{A\-S\-S\-I\-G\-N\-\_\-\-V\-I\-S\-I\-T\-E\-D}}
+\index{A\-S\-S\-I\-G\-N\-\_\-\-V\-I\-S\-I\-T\-E\-D@{A\-S\-S\-I\-G\-N\-\_\-\-V\-I\-S\-I\-T\-E\-D}!ComponentLabeling.cpp@{Component\-Labeling.\-cpp}}
+\subsubsection[{A\-S\-S\-I\-G\-N\-\_\-\-V\-I\-S\-I\-T\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}void A\-S\-S\-I\-G\-N\-\_\-\-V\-I\-S\-I\-T\-E\-D (
+\begin{DoxyParamCaption}
+\item[{Cv\-Point}]{p, }
+\item[{bool $\ast$}]{visited\-Points, }
+\item[{int}]{image\-Width}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{ComponentLabeling_8cpp_a60f487d43bfd39b64f320c5487926a23}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ComponentLabeling_8cpp_a60f487d43bfd39b64f320c5487926a23_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{ComponentLabeling_8cpp_a05b80d9c559310ac95461bd523d888f6}{\index{Component\-Labeling.\-cpp@{Component\-Labeling.\-cpp}!Component\-Labeling@{Component\-Labeling}}
+\index{Component\-Labeling@{Component\-Labeling}!ComponentLabeling.cpp@{Component\-Labeling.\-cpp}}
+\subsubsection[{Component\-Labeling}]{\setlength{\rightskip}{0pt plus 5cm}bool Component\-Labeling (
+\begin{DoxyParamCaption}
+\item[{Ipl\-Image $\ast$}]{input\-Image, }
+\item[{Ipl\-Image $\ast$}]{mask\-Image, }
+\item[{unsigned char}]{background\-Color, }
+\item[{{\bf Blob\-\_\-vector} \&}]{blobs}
+\end{DoxyParamCaption}
+)}}\label{ComponentLabeling_8cpp_a05b80d9c559310ac95461bd523d888f6}
+
+\begin{DoxyItemize}
+\item F\-U\-N\-C\-IÓ\-: Component\-Labeling
+\item F\-U\-N\-C\-I\-O\-N\-A\-L\-I\-T\-A\-T\-: Calcula els components binaris (blobs) d'una imatge amb connectivitat a 8
+\item P\-A\-RÀ\-M\-E\-T\-R\-E\-S\-:
+\begin{DoxyItemize}
+\item input\-Image\-: image to segment (pixel values different than blob\-Color are treated as background)
+\item mask\-Image\-: if not N\-U\-L\-L, all the pixels equal to 0 in mask are skipped in input image
+\item background\-Color\-: color of background (ignored pixels)
+\item blobs\-: blob vector destination
+\end{DoxyItemize}
+\item R\-E\-S\-U\-L\-T\-A\-T\-:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item R\-E\-S\-T\-R\-I\-C\-C\-I\-O\-N\-S\-:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item A\-U\-T\-O\-R\-: rborras
+\item D\-A\-T\-A D\-E C\-R\-E\-A\-C\-IÓ\-: 2008/04/21
+\item M\-O\-D\-I\-F\-I\-C\-A\-C\-IÓ\-: Data. Autor. Descripció.
+\item N\-O\-T\-A\-: Algorithm based on \char`\"{}\-A linear-\/time component labeling algorithm using contour tracing technique\char`\"{}, F.\-Chang et al 
+\end{DoxyItemize}current blob pointer 
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ComponentLabeling_8cpp_a05b80d9c559310ac95461bd523d888f6_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ComponentLabeling_8cpp_a05b80d9c559310ac95461bd523d888f6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{ComponentLabeling_8cpp_a36ce253ae4e842675730bfc013e6485a}{\index{Component\-Labeling.\-cpp@{Component\-Labeling.\-cpp}!contour\-Tracing@{contour\-Tracing}}
+\index{contour\-Tracing@{contour\-Tracing}!ComponentLabeling.cpp@{Component\-Labeling.\-cpp}}
+\subsubsection[{contour\-Tracing}]{\setlength{\rightskip}{0pt plus 5cm}void contour\-Tracing (
+\begin{DoxyParamCaption}
+\item[{Ipl\-Image $\ast$}]{image, }
+\item[{Ipl\-Image $\ast$}]{mask\-Image, }
+\item[{Cv\-Point}]{contour\-Start, }
+\item[{{\bf t\-\_\-label\-Type} $\ast$}]{labels, }
+\item[{bool $\ast$}]{visited\-Points, }
+\item[{{\bf t\-\_\-label\-Type}}]{label, }
+\item[{bool}]{internal\-Contour, }
+\item[{unsigned char}]{background\-Color, }
+\item[{{\bf C\-Blob\-Contour} $\ast$}]{current\-Blobcontour}
+\end{DoxyParamCaption}
+)}}\label{ComponentLabeling_8cpp_a36ce253ae4e842675730bfc013e6485a}
+
+\begin{DoxyItemize}
+\item F\-U\-N\-C\-IÓ\-:
+\item F\-U\-N\-C\-I\-O\-N\-A\-L\-I\-T\-A\-T\-:
+\item P\-A\-RÀ\-M\-E\-T\-R\-E\-S\-:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item R\-E\-S\-U\-L\-T\-A\-T\-:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item R\-E\-S\-T\-R\-I\-C\-C\-I\-O\-N\-S\-:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item A\-U\-T\-O\-R\-: rborras
+\item D\-A\-T\-A D\-E C\-R\-E\-A\-C\-IÓ\-: 2008/04/29
+\item M\-O\-D\-I\-F\-I\-C\-A\-C\-IÓ\-: Data. Autor. Descripció. 
+\end{DoxyItemize}
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ComponentLabeling_8cpp_a36ce253ae4e842675730bfc013e6485a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ComponentLabeling_8cpp_a36ce253ae4e842675730bfc013e6485a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{ComponentLabeling_8cpp_ad8321f7b7a9d8b1a2c8b20a5bcefa164}{\index{Component\-Labeling.\-cpp@{Component\-Labeling.\-cpp}!G\-E\-T\-\_\-\-A\-B\-O\-V\-E\-\_\-\-I\-M\-A\-G\-E\-P\-I\-X\-E\-L@{G\-E\-T\-\_\-\-A\-B\-O\-V\-E\-\_\-\-I\-M\-A\-G\-E\-P\-I\-X\-E\-L}}
+\index{G\-E\-T\-\_\-\-A\-B\-O\-V\-E\-\_\-\-I\-M\-A\-G\-E\-P\-I\-X\-E\-L@{G\-E\-T\-\_\-\-A\-B\-O\-V\-E\-\_\-\-I\-M\-A\-G\-E\-P\-I\-X\-E\-L}!ComponentLabeling.cpp@{Component\-Labeling.\-cpp}}
+\subsubsection[{G\-E\-T\-\_\-\-A\-B\-O\-V\-E\-\_\-\-I\-M\-A\-G\-E\-P\-I\-X\-E\-L}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char G\-E\-T\-\_\-\-A\-B\-O\-V\-E\-\_\-\-I\-M\-A\-G\-E\-P\-I\-X\-E\-L (
+\begin{DoxyParamCaption}
+\item[{unsigned char $\ast$}]{current\-Pixel, }
+\item[{Ipl\-Image $\ast$}]{image}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{ComponentLabeling_8cpp_ad8321f7b7a9d8b1a2c8b20a5bcefa164}
+
+\begin{DoxyItemize}
+\item F\-U\-N\-C\-IÓ\-:
+\item F\-U\-N\-C\-I\-O\-N\-A\-L\-I\-T\-A\-T\-:
+\item P\-A\-RÀ\-M\-E\-T\-R\-E\-S\-:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item R\-E\-S\-U\-L\-T\-A\-T\-:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item R\-E\-S\-T\-R\-I\-C\-C\-I\-O\-N\-S\-:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item A\-U\-T\-O\-R\-: rborras
+\item D\-A\-T\-A D\-E C\-R\-E\-A\-C\-IÓ\-: 2008/04/29
+\item M\-O\-D\-I\-F\-I\-C\-A\-C\-IÓ\-: Data. Autor. Descripció. 
+\end{DoxyItemize}\hypertarget{ComponentLabeling_8cpp_ae716ac630740753ca934744210736ee2}{\index{Component\-Labeling.\-cpp@{Component\-Labeling.\-cpp}!G\-E\-T\-\_\-\-B\-E\-L\-O\-W\-\_\-\-I\-M\-A\-G\-E\-P\-I\-X\-E\-L@{G\-E\-T\-\_\-\-B\-E\-L\-O\-W\-\_\-\-I\-M\-A\-G\-E\-P\-I\-X\-E\-L}}
+\index{G\-E\-T\-\_\-\-B\-E\-L\-O\-W\-\_\-\-I\-M\-A\-G\-E\-P\-I\-X\-E\-L@{G\-E\-T\-\_\-\-B\-E\-L\-O\-W\-\_\-\-I\-M\-A\-G\-E\-P\-I\-X\-E\-L}!ComponentLabeling.cpp@{Component\-Labeling.\-cpp}}
+\subsubsection[{G\-E\-T\-\_\-\-B\-E\-L\-O\-W\-\_\-\-I\-M\-A\-G\-E\-P\-I\-X\-E\-L}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char G\-E\-T\-\_\-\-B\-E\-L\-O\-W\-\_\-\-I\-M\-A\-G\-E\-P\-I\-X\-E\-L (
+\begin{DoxyParamCaption}
+\item[{unsigned char $\ast$}]{current\-Pixel, }
+\item[{Ipl\-Image $\ast$}]{image}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{ComponentLabeling_8cpp_ae716ac630740753ca934744210736ee2}
+\hypertarget{ComponentLabeling_8cpp_ae950b1a18f9c56ae84e9338f2b87aa84}{\index{Component\-Labeling.\-cpp@{Component\-Labeling.\-cpp}!G\-E\-T\-\_\-\-B\-E\-L\-O\-W\-\_\-\-V\-I\-S\-I\-T\-E\-D\-P\-I\-X\-E\-L@{G\-E\-T\-\_\-\-B\-E\-L\-O\-W\-\_\-\-V\-I\-S\-I\-T\-E\-D\-P\-I\-X\-E\-L}}
+\index{G\-E\-T\-\_\-\-B\-E\-L\-O\-W\-\_\-\-V\-I\-S\-I\-T\-E\-D\-P\-I\-X\-E\-L@{G\-E\-T\-\_\-\-B\-E\-L\-O\-W\-\_\-\-V\-I\-S\-I\-T\-E\-D\-P\-I\-X\-E\-L}!ComponentLabeling.cpp@{Component\-Labeling.\-cpp}}
+\subsubsection[{G\-E\-T\-\_\-\-B\-E\-L\-O\-W\-\_\-\-V\-I\-S\-I\-T\-E\-D\-P\-I\-X\-E\-L}]{\setlength{\rightskip}{0pt plus 5cm}bool G\-E\-T\-\_\-\-B\-E\-L\-O\-W\-\_\-\-V\-I\-S\-I\-T\-E\-D\-P\-I\-X\-E\-L (
+\begin{DoxyParamCaption}
+\item[{bool $\ast$}]{current\-Pixel, }
+\item[{int}]{image\-Width}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{ComponentLabeling_8cpp_ae950b1a18f9c56ae84e9338f2b87aa84}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ComponentLabeling_8cpp_ae950b1a18f9c56ae84e9338f2b87aa84_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{ComponentLabeling_8cpp_a2bcdcae4cc36c0060f85f904cc6c826e}{\index{Component\-Labeling.\-cpp@{Component\-Labeling.\-cpp}!G\-E\-T\-\_\-\-I\-M\-A\-G\-E\-\_\-\-P\-I\-X\-E\-L@{G\-E\-T\-\_\-\-I\-M\-A\-G\-E\-\_\-\-P\-I\-X\-E\-L}}
+\index{G\-E\-T\-\_\-\-I\-M\-A\-G\-E\-\_\-\-P\-I\-X\-E\-L@{G\-E\-T\-\_\-\-I\-M\-A\-G\-E\-\_\-\-P\-I\-X\-E\-L}!ComponentLabeling.cpp@{Component\-Labeling.\-cpp}}
+\subsubsection[{G\-E\-T\-\_\-\-I\-M\-A\-G\-E\-\_\-\-P\-I\-X\-E\-L}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char G\-E\-T\-\_\-\-I\-M\-A\-G\-E\-\_\-\-P\-I\-X\-E\-L (
+\begin{DoxyParamCaption}
+\item[{Ipl\-Image $\ast$}]{image, }
+\item[{Cv\-Point}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{ComponentLabeling_8cpp_a2bcdcae4cc36c0060f85f904cc6c826e}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ComponentLabeling_8cpp_a2bcdcae4cc36c0060f85f904cc6c826e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{ComponentLabeling_8cpp_ae2b92da1ce3ca327bddd6b4a5c39cfc5}{\index{Component\-Labeling.\-cpp@{Component\-Labeling.\-cpp}!G\-E\-T\-\_\-\-I\-M\-A\-G\-E\-M\-A\-S\-K\-\_\-\-P\-I\-X\-E\-L@{G\-E\-T\-\_\-\-I\-M\-A\-G\-E\-M\-A\-S\-K\-\_\-\-P\-I\-X\-E\-L}}
+\index{G\-E\-T\-\_\-\-I\-M\-A\-G\-E\-M\-A\-S\-K\-\_\-\-P\-I\-X\-E\-L@{G\-E\-T\-\_\-\-I\-M\-A\-G\-E\-M\-A\-S\-K\-\_\-\-P\-I\-X\-E\-L}!ComponentLabeling.cpp@{Component\-Labeling.\-cpp}}
+\subsubsection[{G\-E\-T\-\_\-\-I\-M\-A\-G\-E\-M\-A\-S\-K\-\_\-\-P\-I\-X\-E\-L}]{\setlength{\rightskip}{0pt plus 5cm}bool G\-E\-T\-\_\-\-I\-M\-A\-G\-E\-M\-A\-S\-K\-\_\-\-P\-I\-X\-E\-L (
+\begin{DoxyParamCaption}
+\item[{Ipl\-Image $\ast$}]{mask, }
+\item[{Cv\-Point}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{ComponentLabeling_8cpp_ae2b92da1ce3ca327bddd6b4a5c39cfc5}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ComponentLabeling_8cpp_ae2b92da1ce3ca327bddd6b4a5c39cfc5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{ComponentLabeling_8cpp_ae0881dec50a29351bda94e482ce3cb28}{\index{Component\-Labeling.\-cpp@{Component\-Labeling.\-cpp}!tracer@{tracer}}
+\index{tracer@{tracer}!ComponentLabeling.cpp@{Component\-Labeling.\-cpp}}
+\subsubsection[{tracer}]{\setlength{\rightskip}{0pt plus 5cm}Cv\-Point tracer (
+\begin{DoxyParamCaption}
+\item[{Ipl\-Image $\ast$}]{image, }
+\item[{Ipl\-Image $\ast$}]{mask\-Image, }
+\item[{Cv\-Point}]{P, }
+\item[{bool $\ast$}]{visited\-Points, }
+\item[{short}]{initial\-Movement, }
+\item[{unsigned char}]{background\-Color, }
+\item[{short \&}]{movement}
+\end{DoxyParamCaption}
+)}}\label{ComponentLabeling_8cpp_ae0881dec50a29351bda94e482ce3cb28}
+
+\begin{DoxyItemize}
+\item F\-U\-N\-C\-IÓ\-: tracer
+\item F\-U\-N\-C\-I\-O\-N\-A\-L\-I\-T\-A\-T\-: Searches for next point of a contour
+\item P\-A\-RÀ\-M\-E\-T\-R\-E\-S\-:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item R\-E\-S\-U\-L\-T\-A\-T\-:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item R\-E\-S\-T\-R\-I\-C\-C\-I\-O\-N\-S\-:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item A\-U\-T\-O\-R\-: rborras
+\item D\-A\-T\-A D\-E C\-R\-E\-A\-C\-IÓ\-: 2008/04/30
+\item M\-O\-D\-I\-F\-I\-C\-A\-C\-IÓ\-: Data. Autor. Descripció. 
+\end{DoxyItemize}
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{ComponentLabeling_8cpp_ae0881dec50a29351bda94e482ce3cb28_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ComponentLabeling_8cpp_ae0881dec50a29351bda94e482ce3cb28_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{ComponentLabeling_8cpp_a33a14323597d0c85dc6d29810b9f312a}{\index{Component\-Labeling.\-cpp@{Component\-Labeling.\-cpp}!freeman\-Code\-Increment@{freeman\-Code\-Increment}}
+\index{freeman\-Code\-Increment@{freeman\-Code\-Increment}!ComponentLabeling.cpp@{Component\-Labeling.\-cpp}}
+\subsubsection[{freeman\-Code\-Increment}]{\setlength{\rightskip}{0pt plus 5cm}const Cv\-Point freeman\-Code\-Increment\mbox{[}8\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}}\label{ComponentLabeling_8cpp_a33a14323597d0c85dc6d29810b9f312a}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+=
+    \{ \{1, 0\}, \{1, -1\}, \{0, -1\}, \{-1, -1\}, \{-1, 0\}, \{-1, 1\}, \{0, 1\}, \{1, 1\} \}
+\end{DoxyCode}
+
+
+Conversion from freeman code to coordinate increments (counterclockwise) 
+

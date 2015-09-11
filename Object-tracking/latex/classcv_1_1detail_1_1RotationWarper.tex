@@ -1,0 +1,141 @@
+\hypertarget{classcv_1_1detail_1_1RotationWarper}{\section{cv\-:\-:detail\-:\-:Rotation\-Warper Class Reference}
+\label{classcv_1_1detail_1_1RotationWarper}\index{cv\-::detail\-::\-Rotation\-Warper@{cv\-::detail\-::\-Rotation\-Warper}}
+}
+
+
+{\ttfamily \#include $<$warpers.\-hpp$>$}
+
+
+
+Inheritance diagram for cv\-:\-:detail\-:\-:Rotation\-Warper\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcv_1_1detail_1_1RotationWarper__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classcv_1_1detail_1_1RotationWarper_a1ae345a2e77c4afe0175215c791334d2}{$\sim$\-Rotation\-Warper} ()
+\item 
+virtual Point2f \hyperlink{classcv_1_1detail_1_1RotationWarper_a0ef604efd67eea8821209fd6f28b0f91}{warp\-Point} (const Point2f \&\hyperlink{objdetect_8hpp_a69c6090aa56793ec8ef2457bc6d45b45}{pt}, const Mat \&K, const Mat \&\hyperlink{imgproc__c_8h_a51837f120208319f026dc8c4a71e56e0}{R})=0
+\item 
+virtual Rect \hyperlink{classcv_1_1detail_1_1RotationWarper_a802ed92a1db4035b9bc33f38f4e96673}{build\-Maps} (Size src\-\_\-size, const Mat \&K, const Mat \&\hyperlink{imgproc__c_8h_a51837f120208319f026dc8c4a71e56e0}{R}, Mat \&xmap, Mat \&ymap)=0
+\item 
+virtual Point \hyperlink{classcv_1_1detail_1_1RotationWarper_a2c80c045287f1f4c5a903bdaa209f468}{warp} (const Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, const Mat \&K, const Mat \&\hyperlink{imgproc__c_8h_a51837f120208319f026dc8c4a71e56e0}{R}, int interp\-\_\-mode, int border\-\_\-mode, Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst})=0
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1detail_1_1RotationWarper_a37992e25622931e33bc402aa42e8f8de}{warp\-Backward} (const Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, const Mat \&K, const Mat \&\hyperlink{imgproc__c_8h_a51837f120208319f026dc8c4a71e56e0}{R}, int interp\-\_\-mode, int border\-\_\-mode, Size dst\-\_\-size, Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst})=0
+\item 
+virtual Rect \hyperlink{classcv_1_1detail_1_1RotationWarper_a10e953cc9d9a5b88e736f3b68de91f0d}{warp\-Roi} (Size src\-\_\-size, const Mat \&K, const Mat \&\hyperlink{imgproc__c_8h_a51837f120208319f026dc8c4a71e56e0}{R})=0
+\item 
+float \hyperlink{classcv_1_1detail_1_1RotationWarper_aec8eebee3a65efba9d110f2b819c9357}{get\-Scale} () const 
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1detail_1_1RotationWarper_aee889077080ac6891f15cfbb675f939b}{set\-Scale} (float)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcv_1_1detail_1_1RotationWarper_a1ae345a2e77c4afe0175215c791334d2}{\index{cv\-::detail\-::\-Rotation\-Warper@{cv\-::detail\-::\-Rotation\-Warper}!$\sim$\-Rotation\-Warper@{$\sim$\-Rotation\-Warper}}
+\index{$\sim$\-Rotation\-Warper@{$\sim$\-Rotation\-Warper}!cv::detail::RotationWarper@{cv\-::detail\-::\-Rotation\-Warper}}
+\subsubsection[{$\sim$\-Rotation\-Warper}]{\setlength{\rightskip}{0pt plus 5cm}virtual cv\-::detail\-::\-Rotation\-Warper\-::$\sim$\-Rotation\-Warper (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcv_1_1detail_1_1RotationWarper_a1ae345a2e77c4afe0175215c791334d2}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcv_1_1detail_1_1RotationWarper_a802ed92a1db4035b9bc33f38f4e96673}{\index{cv\-::detail\-::\-Rotation\-Warper@{cv\-::detail\-::\-Rotation\-Warper}!build\-Maps@{build\-Maps}}
+\index{build\-Maps@{build\-Maps}!cv::detail::RotationWarper@{cv\-::detail\-::\-Rotation\-Warper}}
+\subsubsection[{build\-Maps}]{\setlength{\rightskip}{0pt plus 5cm}virtual Rect cv\-::detail\-::\-Rotation\-Warper\-::build\-Maps (
+\begin{DoxyParamCaption}
+\item[{Size}]{src\-\_\-size, }
+\item[{const Mat \&}]{K, }
+\item[{const Mat \&}]{R, }
+\item[{Mat \&}]{xmap, }
+\item[{Mat \&}]{ymap}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classcv_1_1detail_1_1RotationWarper_a802ed92a1db4035b9bc33f38f4e96673}
+
+
+Implemented in \hyperlink{classcv_1_1detail_1_1RotationWarperBase_a1fb8153656f3ae144be520245dae071c}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ P $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_a1fb8153656f3ae144be520245dae071c}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Plane\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_a1fb8153656f3ae144be520245dae071c}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Spherical\-Portrait\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_a1fb8153656f3ae144be520245dae071c}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Panini\-Portrait\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_a1fb8153656f3ae144be520245dae071c}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Stereographic\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_a1fb8153656f3ae144be520245dae071c}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Compressed\-Rectilinear\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_a1fb8153656f3ae144be520245dae071c}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Spherical\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_a1fb8153656f3ae144be520245dae071c}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Fisheye\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_a1fb8153656f3ae144be520245dae071c}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Compressed\-Rectilinear\-Portrait\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_a1fb8153656f3ae144be520245dae071c}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Panini\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_a1fb8153656f3ae144be520245dae071c}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Transverse\-Mercator\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_a1fb8153656f3ae144be520245dae071c}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Cylindrical\-Portrait\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_a1fb8153656f3ae144be520245dae071c}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Cylindrical\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_a1fb8153656f3ae144be520245dae071c}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Mercator\-Projector $>$}, and \hyperlink{classcv_1_1detail_1_1RotationWarperBase_a1fb8153656f3ae144be520245dae071c}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Plane\-Portrait\-Projector $>$}.
+
+\hypertarget{classcv_1_1detail_1_1RotationWarper_aec8eebee3a65efba9d110f2b819c9357}{\index{cv\-::detail\-::\-Rotation\-Warper@{cv\-::detail\-::\-Rotation\-Warper}!get\-Scale@{get\-Scale}}
+\index{get\-Scale@{get\-Scale}!cv::detail::RotationWarper@{cv\-::detail\-::\-Rotation\-Warper}}
+\subsubsection[{get\-Scale}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::detail\-::\-Rotation\-Warper\-::get\-Scale (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1detail_1_1RotationWarper_aec8eebee3a65efba9d110f2b819c9357}
+\hypertarget{classcv_1_1detail_1_1RotationWarper_aee889077080ac6891f15cfbb675f939b}{\index{cv\-::detail\-::\-Rotation\-Warper@{cv\-::detail\-::\-Rotation\-Warper}!set\-Scale@{set\-Scale}}
+\index{set\-Scale@{set\-Scale}!cv::detail::RotationWarper@{cv\-::detail\-::\-Rotation\-Warper}}
+\subsubsection[{set\-Scale}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::detail\-::\-Rotation\-Warper\-::set\-Scale (
+\begin{DoxyParamCaption}
+\item[{float}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1detail_1_1RotationWarper_aee889077080ac6891f15cfbb675f939b}
+\hypertarget{classcv_1_1detail_1_1RotationWarper_a2c80c045287f1f4c5a903bdaa209f468}{\index{cv\-::detail\-::\-Rotation\-Warper@{cv\-::detail\-::\-Rotation\-Warper}!warp@{warp}}
+\index{warp@{warp}!cv::detail::RotationWarper@{cv\-::detail\-::\-Rotation\-Warper}}
+\subsubsection[{warp}]{\setlength{\rightskip}{0pt plus 5cm}virtual Point cv\-::detail\-::\-Rotation\-Warper\-::warp (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{src, }
+\item[{const Mat \&}]{K, }
+\item[{const Mat \&}]{R, }
+\item[{int}]{interp\-\_\-mode, }
+\item[{int}]{border\-\_\-mode, }
+\item[{Mat \&}]{dst}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classcv_1_1detail_1_1RotationWarper_a2c80c045287f1f4c5a903bdaa209f468}
+
+
+Implemented in \hyperlink{classcv_1_1detail_1_1RotationWarperBase_adec180b584eed3586018998f68308072}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ P $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_adec180b584eed3586018998f68308072}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Plane\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_adec180b584eed3586018998f68308072}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Spherical\-Portrait\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_adec180b584eed3586018998f68308072}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Panini\-Portrait\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_adec180b584eed3586018998f68308072}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Stereographic\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_adec180b584eed3586018998f68308072}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Compressed\-Rectilinear\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_adec180b584eed3586018998f68308072}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Spherical\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_adec180b584eed3586018998f68308072}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Fisheye\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_adec180b584eed3586018998f68308072}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Compressed\-Rectilinear\-Portrait\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_adec180b584eed3586018998f68308072}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Panini\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_adec180b584eed3586018998f68308072}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Transverse\-Mercator\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_adec180b584eed3586018998f68308072}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Cylindrical\-Portrait\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_adec180b584eed3586018998f68308072}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Cylindrical\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_adec180b584eed3586018998f68308072}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Mercator\-Projector $>$}, and \hyperlink{classcv_1_1detail_1_1RotationWarperBase_adec180b584eed3586018998f68308072}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Plane\-Portrait\-Projector $>$}.
+
+\hypertarget{classcv_1_1detail_1_1RotationWarper_a37992e25622931e33bc402aa42e8f8de}{\index{cv\-::detail\-::\-Rotation\-Warper@{cv\-::detail\-::\-Rotation\-Warper}!warp\-Backward@{warp\-Backward}}
+\index{warp\-Backward@{warp\-Backward}!cv::detail::RotationWarper@{cv\-::detail\-::\-Rotation\-Warper}}
+\subsubsection[{warp\-Backward}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cv\-::detail\-::\-Rotation\-Warper\-::warp\-Backward (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{src, }
+\item[{const Mat \&}]{K, }
+\item[{const Mat \&}]{R, }
+\item[{int}]{interp\-\_\-mode, }
+\item[{int}]{border\-\_\-mode, }
+\item[{Size}]{dst\-\_\-size, }
+\item[{Mat \&}]{dst}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classcv_1_1detail_1_1RotationWarper_a37992e25622931e33bc402aa42e8f8de}
+
+
+Implemented in \hyperlink{classcv_1_1detail_1_1RotationWarperBase_a17379efef91b209a58f09e89003db687}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ P $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_a17379efef91b209a58f09e89003db687}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Plane\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_a17379efef91b209a58f09e89003db687}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Spherical\-Portrait\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_a17379efef91b209a58f09e89003db687}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Panini\-Portrait\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_a17379efef91b209a58f09e89003db687}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Stereographic\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_a17379efef91b209a58f09e89003db687}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Compressed\-Rectilinear\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_a17379efef91b209a58f09e89003db687}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Spherical\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_a17379efef91b209a58f09e89003db687}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Fisheye\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_a17379efef91b209a58f09e89003db687}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Compressed\-Rectilinear\-Portrait\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_a17379efef91b209a58f09e89003db687}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Panini\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_a17379efef91b209a58f09e89003db687}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Transverse\-Mercator\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_a17379efef91b209a58f09e89003db687}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Cylindrical\-Portrait\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_a17379efef91b209a58f09e89003db687}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Cylindrical\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_a17379efef91b209a58f09e89003db687}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Mercator\-Projector $>$}, and \hyperlink{classcv_1_1detail_1_1RotationWarperBase_a17379efef91b209a58f09e89003db687}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Plane\-Portrait\-Projector $>$}.
+
+\hypertarget{classcv_1_1detail_1_1RotationWarper_a0ef604efd67eea8821209fd6f28b0f91}{\index{cv\-::detail\-::\-Rotation\-Warper@{cv\-::detail\-::\-Rotation\-Warper}!warp\-Point@{warp\-Point}}
+\index{warp\-Point@{warp\-Point}!cv::detail::RotationWarper@{cv\-::detail\-::\-Rotation\-Warper}}
+\subsubsection[{warp\-Point}]{\setlength{\rightskip}{0pt plus 5cm}virtual Point2f cv\-::detail\-::\-Rotation\-Warper\-::warp\-Point (
+\begin{DoxyParamCaption}
+\item[{const Point2f \&}]{pt, }
+\item[{const Mat \&}]{K, }
+\item[{const Mat \&}]{R}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classcv_1_1detail_1_1RotationWarper_a0ef604efd67eea8821209fd6f28b0f91}
+
+
+Implemented in \hyperlink{classcv_1_1detail_1_1RotationWarperBase_ac77b06752bf8edee12a281d85c497a1b}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ P $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_ac77b06752bf8edee12a281d85c497a1b}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Plane\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_ac77b06752bf8edee12a281d85c497a1b}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Spherical\-Portrait\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_ac77b06752bf8edee12a281d85c497a1b}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Panini\-Portrait\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_ac77b06752bf8edee12a281d85c497a1b}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Stereographic\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_ac77b06752bf8edee12a281d85c497a1b}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Compressed\-Rectilinear\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_ac77b06752bf8edee12a281d85c497a1b}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Spherical\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_ac77b06752bf8edee12a281d85c497a1b}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Fisheye\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_ac77b06752bf8edee12a281d85c497a1b}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Compressed\-Rectilinear\-Portrait\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_ac77b06752bf8edee12a281d85c497a1b}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Panini\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_ac77b06752bf8edee12a281d85c497a1b}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Transverse\-Mercator\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_ac77b06752bf8edee12a281d85c497a1b}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Cylindrical\-Portrait\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_ac77b06752bf8edee12a281d85c497a1b}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Cylindrical\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_ac77b06752bf8edee12a281d85c497a1b}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Mercator\-Projector $>$}, and \hyperlink{classcv_1_1detail_1_1RotationWarperBase_ac77b06752bf8edee12a281d85c497a1b}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Plane\-Portrait\-Projector $>$}.
+
+\hypertarget{classcv_1_1detail_1_1RotationWarper_a10e953cc9d9a5b88e736f3b68de91f0d}{\index{cv\-::detail\-::\-Rotation\-Warper@{cv\-::detail\-::\-Rotation\-Warper}!warp\-Roi@{warp\-Roi}}
+\index{warp\-Roi@{warp\-Roi}!cv::detail::RotationWarper@{cv\-::detail\-::\-Rotation\-Warper}}
+\subsubsection[{warp\-Roi}]{\setlength{\rightskip}{0pt plus 5cm}virtual Rect cv\-::detail\-::\-Rotation\-Warper\-::warp\-Roi (
+\begin{DoxyParamCaption}
+\item[{Size}]{src\-\_\-size, }
+\item[{const Mat \&}]{K, }
+\item[{const Mat \&}]{R}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classcv_1_1detail_1_1RotationWarper_a10e953cc9d9a5b88e736f3b68de91f0d}
+
+
+Implemented in \hyperlink{classcv_1_1detail_1_1RotationWarperBase_a6d1e3fa225896a69be90272f699648ba}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ P $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_a6d1e3fa225896a69be90272f699648ba}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Plane\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_a6d1e3fa225896a69be90272f699648ba}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Spherical\-Portrait\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_a6d1e3fa225896a69be90272f699648ba}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Panini\-Portrait\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_a6d1e3fa225896a69be90272f699648ba}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Stereographic\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_a6d1e3fa225896a69be90272f699648ba}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Compressed\-Rectilinear\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_a6d1e3fa225896a69be90272f699648ba}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Spherical\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_a6d1e3fa225896a69be90272f699648ba}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Fisheye\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_a6d1e3fa225896a69be90272f699648ba}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Compressed\-Rectilinear\-Portrait\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_a6d1e3fa225896a69be90272f699648ba}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Panini\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_a6d1e3fa225896a69be90272f699648ba}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Transverse\-Mercator\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_a6d1e3fa225896a69be90272f699648ba}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Cylindrical\-Portrait\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_a6d1e3fa225896a69be90272f699648ba}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Cylindrical\-Projector $>$}, \hyperlink{classcv_1_1detail_1_1RotationWarperBase_a6d1e3fa225896a69be90272f699648ba}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Mercator\-Projector $>$}, and \hyperlink{classcv_1_1detail_1_1RotationWarperBase_a6d1e3fa225896a69be90272f699648ba}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Plane\-Portrait\-Projector $>$}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/stitching/detail/\hyperlink{detail_2warpers_8hpp}{warpers.\-hpp}\end{DoxyCompactItemize}

@@ -1,0 +1,6 @@
+<map id="CBlobContour::GetArea" name="CBlobContour::GetArea">
+<area shape="rect" id="node2" href="$classCBlob.html#a6f1db9fcb42c0a3ea003aaeb0ec65a8d" title="Compute blob&#39;s area. " alt="" coords="253,35,347,61"/>
+<area shape="rect" id="node5" href="$classCBlobProperties.html#abfae07a81bcc204d18c790fc365ad53c" title="Get blob area. " alt="" coords="213,85,387,112"/>
+<area shape="rect" id="node3" href="$classCBlobGetArea.html#a3c8268e93a2271bcd878dbf13d259afb" title="Aply operator to blob. " alt="" coords="437,5,606,32"/>
+<area shape="rect" id="node4" href="$classCBlobGetAreaElipseRatio.html#a24f9703155af6e963a1ae226cdb71125" title="Aply operator to blob. " alt="" coords="435,57,608,98"/>
+</map>

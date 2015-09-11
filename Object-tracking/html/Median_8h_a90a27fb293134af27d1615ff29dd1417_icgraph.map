@@ -1,0 +1,6 @@
+<map id="getMedianUnmanaged" name="getMedianUnmanaged">
+<area shape="rect" id="node2" href="$BBPredict_8h.html#a0181c4b3c3e424d149a8d89a05c98de7" title="Calculates the new (moved and resized) Bounding box. Calculation based on all relative distance chang..." alt="" coords="209,5,284,32"/>
+<area shape="rect" id="node5" href="$Median_8h.html#a6c78c19fafa7ef19523fb62d09086f30" title="Calculates the median of the array. Don&#39;t change array(makes copy). " alt="" coords="205,56,288,83"/>
+<area shape="rect" id="node3" href="$FBTrack_8h.html#a2c818794e6fe6aa3f6efdc9c46ffd164" title="Calculate the bounding box of an Object in a following Image. Imgs aren&#39;t changed. " alt="" coords="337,31,399,57"/>
+<area shape="rect" id="node4" href="$classtld_1_1MedianFlowTracker.html#addcc103122a93f098583b8f9cf72e8ff" title="Calculate the bounding box of an Object in a following Image (with analyse of success and correctness..." alt="" coords="449,23,607,65"/>
+</map>

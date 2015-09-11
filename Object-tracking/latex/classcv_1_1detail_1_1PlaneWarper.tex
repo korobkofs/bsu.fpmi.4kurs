@@ -1,0 +1,129 @@
+\hypertarget{classcv_1_1detail_1_1PlaneWarper}{\section{cv\-:\-:detail\-:\-:Plane\-Warper Class Reference}
+\label{classcv_1_1detail_1_1PlaneWarper}\index{cv\-::detail\-::\-Plane\-Warper@{cv\-::detail\-::\-Plane\-Warper}}
+}
+
+
+{\ttfamily \#include $<$warpers.\-hpp$>$}
+
+
+
+Inheritance diagram for cv\-:\-:detail\-:\-:Plane\-Warper\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{classcv_1_1detail_1_1PlaneWarper__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for cv\-:\-:detail\-:\-:Plane\-Warper\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcv_1_1detail_1_1PlaneWarper__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcv_1_1detail_1_1PlaneWarper_aa2ad12b1558467a7efd9763210067726}{Plane\-Warper} (float \hyperlink{objdetect_8hpp_a1f622eb9b9e06b30862ca90cdf2c078b}{scale}=1.f)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1detail_1_1PlaneWarper_a82ddac5630472d8645bc57c74c1061f6}{set\-Scale} (float \hyperlink{objdetect_8hpp_a1f622eb9b9e06b30862ca90cdf2c078b}{scale})
+\item 
+Point2f \hyperlink{classcv_1_1detail_1_1PlaneWarper_a6726f77dc2f0929289719ff6c90ba8c8}{warp\-Point} (const Point2f \&\hyperlink{objdetect_8hpp_a69c6090aa56793ec8ef2457bc6d45b45}{pt}, const Mat \&K, const Mat \&\hyperlink{imgproc__c_8h_a51837f120208319f026dc8c4a71e56e0}{R}, const Mat \&\hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T})
+\item 
+Rect \hyperlink{classcv_1_1detail_1_1PlaneWarper_a487cc124d4f4e482fa8a5ec5a2eeecbb}{build\-Maps} (Size src\-\_\-size, const Mat \&K, const Mat \&\hyperlink{imgproc__c_8h_a51837f120208319f026dc8c4a71e56e0}{R}, const Mat \&\hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T}, Mat \&xmap, Mat \&ymap)
+\item 
+Point \hyperlink{classcv_1_1detail_1_1PlaneWarper_a1d87f7472b0239599b652ed079b2a6bd}{warp} (const Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, const Mat \&K, const Mat \&\hyperlink{imgproc__c_8h_a51837f120208319f026dc8c4a71e56e0}{R}, const Mat \&\hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T}, int interp\-\_\-mode, int border\-\_\-mode, Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst})
+\item 
+Rect \hyperlink{classcv_1_1detail_1_1PlaneWarper_ad86ba550c0c6b53a21e03f46451d3945}{warp\-Roi} (Size src\-\_\-size, const Mat \&K, const Mat \&\hyperlink{imgproc__c_8h_a51837f120208319f026dc8c4a71e56e0}{R}, const Mat \&\hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T})
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1detail_1_1PlaneWarper_a79ea75cda359ffa5ac5ef16bc4d7ab63}{detect\-Result\-Roi} (Size src\-\_\-size, Point \&dst\-\_\-tl, Point \&dst\-\_\-br)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcv_1_1detail_1_1PlaneWarper_aa2ad12b1558467a7efd9763210067726}{\index{cv\-::detail\-::\-Plane\-Warper@{cv\-::detail\-::\-Plane\-Warper}!Plane\-Warper@{Plane\-Warper}}
+\index{Plane\-Warper@{Plane\-Warper}!cv::detail::PlaneWarper@{cv\-::detail\-::\-Plane\-Warper}}
+\subsubsection[{Plane\-Warper}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::detail\-::\-Plane\-Warper\-::\-Plane\-Warper (
+\begin{DoxyParamCaption}
+\item[{float}]{scale = {\ttfamily 1.f}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1detail_1_1PlaneWarper_aa2ad12b1558467a7efd9763210067726}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcv_1_1detail_1_1PlaneWarper_a487cc124d4f4e482fa8a5ec5a2eeecbb}{\index{cv\-::detail\-::\-Plane\-Warper@{cv\-::detail\-::\-Plane\-Warper}!build\-Maps@{build\-Maps}}
+\index{build\-Maps@{build\-Maps}!cv::detail::PlaneWarper@{cv\-::detail\-::\-Plane\-Warper}}
+\subsubsection[{build\-Maps}]{\setlength{\rightskip}{0pt plus 5cm}Rect cv\-::detail\-::\-Plane\-Warper\-::build\-Maps (
+\begin{DoxyParamCaption}
+\item[{Size}]{src\-\_\-size, }
+\item[{const Mat \&}]{K, }
+\item[{const Mat \&}]{R, }
+\item[{const Mat \&}]{T, }
+\item[{Mat \&}]{xmap, }
+\item[{Mat \&}]{ymap}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1detail_1_1PlaneWarper_a487cc124d4f4e482fa8a5ec5a2eeecbb}
+\hypertarget{classcv_1_1detail_1_1PlaneWarper_a79ea75cda359ffa5ac5ef16bc4d7ab63}{\index{cv\-::detail\-::\-Plane\-Warper@{cv\-::detail\-::\-Plane\-Warper}!detect\-Result\-Roi@{detect\-Result\-Roi}}
+\index{detect\-Result\-Roi@{detect\-Result\-Roi}!cv::detail::PlaneWarper@{cv\-::detail\-::\-Plane\-Warper}}
+\subsubsection[{detect\-Result\-Roi}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::detail\-::\-Plane\-Warper\-::detect\-Result\-Roi (
+\begin{DoxyParamCaption}
+\item[{Size}]{src\-\_\-size, }
+\item[{Point \&}]{dst\-\_\-tl, }
+\item[{Point \&}]{dst\-\_\-br}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classcv_1_1detail_1_1PlaneWarper_a79ea75cda359ffa5ac5ef16bc4d7ab63}
+
+
+Reimplemented from \hyperlink{classcv_1_1detail_1_1RotationWarperBase_a53f78bba27757e5a137e2e49e65b75ac}{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ Plane\-Projector $>$}.
+
+\hypertarget{classcv_1_1detail_1_1PlaneWarper_a82ddac5630472d8645bc57c74c1061f6}{\index{cv\-::detail\-::\-Plane\-Warper@{cv\-::detail\-::\-Plane\-Warper}!set\-Scale@{set\-Scale}}
+\index{set\-Scale@{set\-Scale}!cv::detail::PlaneWarper@{cv\-::detail\-::\-Plane\-Warper}}
+\subsubsection[{set\-Scale}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::detail\-::\-Plane\-Warper\-::set\-Scale (
+\begin{DoxyParamCaption}
+\item[{float}]{scale}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1detail_1_1PlaneWarper_a82ddac5630472d8645bc57c74c1061f6}
+\hypertarget{classcv_1_1detail_1_1PlaneWarper_a1d87f7472b0239599b652ed079b2a6bd}{\index{cv\-::detail\-::\-Plane\-Warper@{cv\-::detail\-::\-Plane\-Warper}!warp@{warp}}
+\index{warp@{warp}!cv::detail::PlaneWarper@{cv\-::detail\-::\-Plane\-Warper}}
+\subsubsection[{warp}]{\setlength{\rightskip}{0pt plus 5cm}Point cv\-::detail\-::\-Plane\-Warper\-::warp (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{src, }
+\item[{const Mat \&}]{K, }
+\item[{const Mat \&}]{R, }
+\item[{const Mat \&}]{T, }
+\item[{int}]{interp\-\_\-mode, }
+\item[{int}]{border\-\_\-mode, }
+\item[{Mat \&}]{dst}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1detail_1_1PlaneWarper_a1d87f7472b0239599b652ed079b2a6bd}
+\hypertarget{classcv_1_1detail_1_1PlaneWarper_a6726f77dc2f0929289719ff6c90ba8c8}{\index{cv\-::detail\-::\-Plane\-Warper@{cv\-::detail\-::\-Plane\-Warper}!warp\-Point@{warp\-Point}}
+\index{warp\-Point@{warp\-Point}!cv::detail::PlaneWarper@{cv\-::detail\-::\-Plane\-Warper}}
+\subsubsection[{warp\-Point}]{\setlength{\rightskip}{0pt plus 5cm}Point2f cv\-::detail\-::\-Plane\-Warper\-::warp\-Point (
+\begin{DoxyParamCaption}
+\item[{const Point2f \&}]{pt, }
+\item[{const Mat \&}]{K, }
+\item[{const Mat \&}]{R, }
+\item[{const Mat \&}]{T}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1detail_1_1PlaneWarper_a6726f77dc2f0929289719ff6c90ba8c8}
+\hypertarget{classcv_1_1detail_1_1PlaneWarper_ad86ba550c0c6b53a21e03f46451d3945}{\index{cv\-::detail\-::\-Plane\-Warper@{cv\-::detail\-::\-Plane\-Warper}!warp\-Roi@{warp\-Roi}}
+\index{warp\-Roi@{warp\-Roi}!cv::detail::PlaneWarper@{cv\-::detail\-::\-Plane\-Warper}}
+\subsubsection[{warp\-Roi}]{\setlength{\rightskip}{0pt plus 5cm}Rect cv\-::detail\-::\-Plane\-Warper\-::warp\-Roi (
+\begin{DoxyParamCaption}
+\item[{Size}]{src\-\_\-size, }
+\item[{const Mat \&}]{K, }
+\item[{const Mat \&}]{R, }
+\item[{const Mat \&}]{T}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1detail_1_1PlaneWarper_ad86ba550c0c6b53a21e03f46451d3945}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/stitching/detail/\hyperlink{detail_2warpers_8hpp}{warpers.\-hpp}\end{DoxyCompactItemize}

@@ -1,0 +1,4 @@
+<map id="cv::gpu::device::warpScanInclusive" name="cv::gpu::device::warpScanInclusive">
+<area shape="rect" id="node2" href="$structcv_1_1gpu_1_1device_1_1Warp.html#aa48f497ab15265f89f508468d9c12074" title="Returns the warp lane ID of the calling thread. " alt="" coords="238,5,389,46"/>
+<area shape="rect" id="node3" href="$namespacecv_1_1gpu_1_1device.html#aef8a737a22483c1fbc7224718c19fc47" title="cv::gpu::device::shfl_up" alt="" coords="233,71,394,97"/>
+</map>

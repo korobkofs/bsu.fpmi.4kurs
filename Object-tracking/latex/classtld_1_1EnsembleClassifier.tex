@@ -1,0 +1,666 @@
+\hypertarget{classtld_1_1EnsembleClassifier}{\section{tld\-:\-:Ensemble\-Classifier Class Reference}
+\label{classtld_1_1EnsembleClassifier}\index{tld\-::\-Ensemble\-Classifier@{tld\-::\-Ensemble\-Classifier}}
+}
+
+
+The ensemble classifier.  
+
+
+
+
+{\ttfamily \#include $<$Ensemble\-Classifier.\-h$>$}
+
+
+
+Collaboration diagram for tld\-:\-:Ensemble\-Classifier\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{classtld_1_1EnsembleClassifier__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtld_1_1EnsembleClassifier_a7ce76942175fecdf2b44be726f1f7a89}{Ensemble\-Classifier} ()
+\begin{DoxyCompactList}\small\item\em This constructor initializes the class variables by default. \end{DoxyCompactList}\item 
+virtual \hyperlink{classtld_1_1EnsembleClassifier_a71a3976d9dccf15dcdd6a14826d5ec5a}{$\sim$\-Ensemble\-Classifier} ()
+\begin{DoxyCompactList}\small\item\em This destructor releases the memory. \end{DoxyCompactList}\item 
+void \hyperlink{classtld_1_1EnsembleClassifier_afb0e8ed03adef91257801bf0e3ca73f7}{init} ()
+\begin{DoxyCompactList}\small\item\em Initializes the all class variables. \end{DoxyCompactList}\item 
+void \hyperlink{classtld_1_1EnsembleClassifier_a3fc444f59e0f23a97f9889e58adaba73}{init\-Feature\-Locations} ()
+\begin{DoxyCompactList}\small\item\em Generates random measurements in the format $<$x1,y1,x2,y2$>$. \end{DoxyCompactList}\item 
+void \hyperlink{classtld_1_1EnsembleClassifier_a92ddef7701b1062b1f4a53e5cfcd79a2}{init\-Feature\-Offsets} ()
+\begin{DoxyCompactList}\small\item\em Creates offsets that can be added to bounding boxes \par
+ offsets are contained in the form delta11, delta12,... (combined index of dw and dh) \par
+ Order\-: scale.\-tree-\/$>$feature. \end{DoxyCompactList}\item 
+void \hyperlink{classtld_1_1EnsembleClassifier_ab342db231d14bbaa892b2664d210e152}{init\-Posteriors} ()
+\begin{DoxyCompactList}\small\item\em Initializes the variable such as posteriors, positives, negatives. \end{DoxyCompactList}\item 
+void \hyperlink{classtld_1_1EnsembleClassifier_a3fd93c80d37f7f115443c2e147ec9967}{release} ()
+\begin{DoxyCompactList}\small\item\em Releases the memory. \end{DoxyCompactList}\item 
+void \hyperlink{classtld_1_1EnsembleClassifier_a7871296c03de06293ebd3dc29ecab5de}{next\-Iteration} (const cv\-::\-Mat \&\hyperlink{classtld_1_1EnsembleClassifier_a0894da7012fdd72a562dbf78f719bfe9}{img})
+\begin{DoxyCompactList}\small\item\em Sets the current image. \end{DoxyCompactList}\item 
+void \hyperlink{classtld_1_1EnsembleClassifier_abf7e915ff675720293502be0452cb6c2}{classify\-Window} (int window\-Idx)
+\begin{DoxyCompactList}\small\item\em Classifies the window (positive or negative). \end{DoxyCompactList}\item 
+void \hyperlink{classtld_1_1EnsembleClassifier_acfc0c9d71c16dfed9750b6aa409afb0c}{update\-Posterior} (int tree\-Idx, int idx, int positive, int amount)
+\begin{DoxyCompactList}\small\item\em Updates positive or negative branches and posteriors for one tree. \end{DoxyCompactList}\item 
+void \hyperlink{classtld_1_1EnsembleClassifier_ad088404fdea039b774c2eb088e4cfc04}{learn} (int $\ast$boundary, int positive, int $\ast$feature\-Vector)
+\begin{DoxyCompactList}\small\item\em Update positive or negative patches. \end{DoxyCompactList}\item 
+bool \hyperlink{classtld_1_1EnsembleClassifier_a42f1f3606d14a7d274f5bb9f4fa5030f}{filter} (int i)
+\begin{DoxyCompactList}\small\item\em Filtered the windows. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classtld_1_1EnsembleClassifier_a539d429a773ec9b2b86946fddb39ac52}{enabled}
+\begin{DoxyCompactList}\small\item\em enables ensemble classifier \end{DoxyCompactList}\item 
+int \hyperlink{classtld_1_1EnsembleClassifier_a60e802769e79c833d1484d96bb345b7c}{num\-Trees}
+\begin{DoxyCompactList}\small\item\em the number of trees \end{DoxyCompactList}\item 
+int \hyperlink{classtld_1_1EnsembleClassifier_a176aba4e90f0b9373d8aedd7c25fa262}{num\-Features}
+\begin{DoxyCompactList}\small\item\em the number of fetures \end{DoxyCompactList}\item 
+int \hyperlink{classtld_1_1EnsembleClassifier_a149e36a3d0d287ee804ec7cf92dc6569}{img\-Width\-Step}
+\begin{DoxyCompactList}\small\item\em the width step of image \end{DoxyCompactList}\item 
+int \hyperlink{classtld_1_1EnsembleClassifier_ae10dcd7614a39f9b29b3fbe957889fb9}{num\-Scales}
+\begin{DoxyCompactList}\small\item\em the number of scales \end{DoxyCompactList}\item 
+cv\-::\-Size $\ast$ \hyperlink{classtld_1_1EnsembleClassifier_ae2ea00a933d9c96498ba756a2b4ec6b5}{scales}
+\begin{DoxyCompactList}\small\item\em the array of scales \end{DoxyCompactList}\item 
+int $\ast$ \hyperlink{classtld_1_1EnsembleClassifier_abc6ed3b991a724b07dfcc25108769e92}{window\-Offsets}
+\begin{DoxyCompactList}\small\item\em the window offsets \end{DoxyCompactList}\item 
+int $\ast$ \hyperlink{classtld_1_1EnsembleClassifier_acf42e105ca1cb616aaf2d8e4d8755c41}{feature\-Offsets}
+\begin{DoxyCompactList}\small\item\em the feature offsets \end{DoxyCompactList}\item 
+float $\ast$ \hyperlink{classtld_1_1EnsembleClassifier_a02deffee640b4106051024d1ae8a55aa}{features}
+\begin{DoxyCompactList}\small\item\em the array of features \end{DoxyCompactList}\item 
+int \hyperlink{classtld_1_1EnsembleClassifier_afbfbda1b693525895467fba88a8debe3}{num\-Indices}
+\begin{DoxyCompactList}\small\item\em the number of indices \end{DoxyCompactList}\item 
+float $\ast$ \hyperlink{classtld_1_1EnsembleClassifier_a34092918268be97eb1e1f2f0fc7d4254}{posteriors}
+\begin{DoxyCompactList}\small\item\em the vector of verdicts \end{DoxyCompactList}\item 
+int $\ast$ \hyperlink{classtld_1_1EnsembleClassifier_a572549e31f9bfc34c7b464e02aa41397}{positives}
+\begin{DoxyCompactList}\small\item\em the positive branches \end{DoxyCompactList}\item 
+int $\ast$ \hyperlink{classtld_1_1EnsembleClassifier_a2de7561eb20a0f0a1b4909d6dfd89d0b}{negatives}
+\begin{DoxyCompactList}\small\item\em the negative branches \end{DoxyCompactList}\item 
+\hyperlink{classtld_1_1DetectionResult}{Detection\-Result} $\ast$ \hyperlink{classtld_1_1EnsembleClassifier_af57e5de2c583e7f1cf39e6de03159323}{detection\-Result}
+\begin{DoxyCompactList}\small\item\em the result of detection \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{classtld_1_1EnsembleClassifier_a61bfb5ac45a8ab7f3c36c9c30dc7f927}{calc\-Confidence} (int $\ast$feature\-Vector)
+\begin{DoxyCompactList}\small\item\em Calculates the verdict of trees (0 to 1). \end{DoxyCompactList}\item 
+int \hyperlink{classtld_1_1EnsembleClassifier_aae503fd99be0b876d9a5ca75460c2f27}{calc\-Fern\-Feature} (int window\-Idx, int tree\-Idx)
+\begin{DoxyCompactList}\small\item\em Calculates branch (response tree to patch). \end{DoxyCompactList}\item 
+void \hyperlink{classtld_1_1EnsembleClassifier_abb535a84ebd8b15aa401a11d94e0a641}{calc\-Feature\-Vector} (int window\-Idx, int $\ast$feature\-Vector)
+\begin{DoxyCompactList}\small\item\em Calculates the vector of features (the indeces of branches for all trees). \end{DoxyCompactList}\item 
+void \hyperlink{classtld_1_1EnsembleClassifier_a0d7853e4cee2e0220c218f43ae78b5a9}{update\-Posteriors} (int $\ast$feature\-Vector, int positive, int amount)
+\begin{DoxyCompactList}\small\item\em Updates positive or negative branches and posteriors for all tree. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const unsigned char $\ast$ \hyperlink{classtld_1_1EnsembleClassifier_a0894da7012fdd72a562dbf78f719bfe9}{img}
+\begin{DoxyCompactList}\small\item\em the current image \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The ensemble classifier. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classtld_1_1EnsembleClassifier_a7ce76942175fecdf2b44be726f1f7a89}{\index{tld\-::\-Ensemble\-Classifier@{tld\-::\-Ensemble\-Classifier}!Ensemble\-Classifier@{Ensemble\-Classifier}}
+\index{Ensemble\-Classifier@{Ensemble\-Classifier}!tld::EnsembleClassifier@{tld\-::\-Ensemble\-Classifier}}
+\subsubsection[{Ensemble\-Classifier}]{\setlength{\rightskip}{0pt plus 5cm}tld\-::\-Ensemble\-Classifier\-::\-Ensemble\-Classifier (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1EnsembleClassifier_a7ce76942175fecdf2b44be726f1f7a89}
+
+
+This constructor initializes the class variables by default. 
+
+\hypertarget{classtld_1_1EnsembleClassifier_a71a3976d9dccf15dcdd6a14826d5ec5a}{\index{tld\-::\-Ensemble\-Classifier@{tld\-::\-Ensemble\-Classifier}!$\sim$\-Ensemble\-Classifier@{$\sim$\-Ensemble\-Classifier}}
+\index{$\sim$\-Ensemble\-Classifier@{$\sim$\-Ensemble\-Classifier}!tld::EnsembleClassifier@{tld\-::\-Ensemble\-Classifier}}
+\subsubsection[{$\sim$\-Ensemble\-Classifier}]{\setlength{\rightskip}{0pt plus 5cm}tld\-::\-Ensemble\-Classifier\-::$\sim$\-Ensemble\-Classifier (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classtld_1_1EnsembleClassifier_a71a3976d9dccf15dcdd6a14826d5ec5a}
+
+
+This destructor releases the memory. 
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtld_1_1EnsembleClassifier_a71a3976d9dccf15dcdd6a14826d5ec5a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classtld_1_1EnsembleClassifier_a61bfb5ac45a8ab7f3c36c9c30dc7f927}{\index{tld\-::\-Ensemble\-Classifier@{tld\-::\-Ensemble\-Classifier}!calc\-Confidence@{calc\-Confidence}}
+\index{calc\-Confidence@{calc\-Confidence}!tld::EnsembleClassifier@{tld\-::\-Ensemble\-Classifier}}
+\subsubsection[{calc\-Confidence}]{\setlength{\rightskip}{0pt plus 5cm}float tld\-::\-Ensemble\-Classifier\-::calc\-Confidence (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{feature\-Vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classtld_1_1EnsembleClassifier_a61bfb5ac45a8ab7f3c36c9c30dc7f927}
+
+
+Calculates the verdict of trees (0 to 1). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em feature\-Vector} & the vector of features \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the confidence 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtld_1_1EnsembleClassifier_a61bfb5ac45a8ab7f3c36c9c30dc7f927_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classtld_1_1EnsembleClassifier_abb535a84ebd8b15aa401a11d94e0a641}{\index{tld\-::\-Ensemble\-Classifier@{tld\-::\-Ensemble\-Classifier}!calc\-Feature\-Vector@{calc\-Feature\-Vector}}
+\index{calc\-Feature\-Vector@{calc\-Feature\-Vector}!tld::EnsembleClassifier@{tld\-::\-Ensemble\-Classifier}}
+\subsubsection[{calc\-Feature\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::\-Ensemble\-Classifier\-::calc\-Feature\-Vector (
+\begin{DoxyParamCaption}
+\item[{int}]{window\-Idx, }
+\item[{int $\ast$}]{feature\-Vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classtld_1_1EnsembleClassifier_abb535a84ebd8b15aa401a11d94e0a641}
+
+
+Calculates the vector of features (the indeces of branches for all trees). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window\-Idx} & the window index \\
+\hline
+{\em feature\-Vector} & the destination vector of features \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtld_1_1EnsembleClassifier_abb535a84ebd8b15aa401a11d94e0a641_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtld_1_1EnsembleClassifier_abb535a84ebd8b15aa401a11d94e0a641_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classtld_1_1EnsembleClassifier_aae503fd99be0b876d9a5ca75460c2f27}{\index{tld\-::\-Ensemble\-Classifier@{tld\-::\-Ensemble\-Classifier}!calc\-Fern\-Feature@{calc\-Fern\-Feature}}
+\index{calc\-Fern\-Feature@{calc\-Fern\-Feature}!tld::EnsembleClassifier@{tld\-::\-Ensemble\-Classifier}}
+\subsubsection[{calc\-Fern\-Feature}]{\setlength{\rightskip}{0pt plus 5cm}int tld\-::\-Ensemble\-Classifier\-::calc\-Fern\-Feature (
+\begin{DoxyParamCaption}
+\item[{int}]{window\-Idx, }
+\item[{int}]{tree\-Idx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classtld_1_1EnsembleClassifier_aae503fd99be0b876d9a5ca75460c2f27}
+
+
+Calculates branch (response tree to patch). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window\-Idx} & the window index \\
+\hline
+{\em tree\-Idx} & the tree index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the index of branch 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtld_1_1EnsembleClassifier_aae503fd99be0b876d9a5ca75460c2f27_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classtld_1_1EnsembleClassifier_abf7e915ff675720293502be0452cb6c2}{\index{tld\-::\-Ensemble\-Classifier@{tld\-::\-Ensemble\-Classifier}!classify\-Window@{classify\-Window}}
+\index{classify\-Window@{classify\-Window}!tld::EnsembleClassifier@{tld\-::\-Ensemble\-Classifier}}
+\subsubsection[{classify\-Window}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::\-Ensemble\-Classifier\-::classify\-Window (
+\begin{DoxyParamCaption}
+\item[{int}]{window\-Idx}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1EnsembleClassifier_abf7e915ff675720293502be0452cb6c2}
+
+
+Classifies the window (positive or negative). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window\-Idx} & the index of window \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtld_1_1EnsembleClassifier_abf7e915ff675720293502be0452cb6c2_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtld_1_1EnsembleClassifier_abf7e915ff675720293502be0452cb6c2_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classtld_1_1EnsembleClassifier_a42f1f3606d14a7d274f5bb9f4fa5030f}{\index{tld\-::\-Ensemble\-Classifier@{tld\-::\-Ensemble\-Classifier}!filter@{filter}}
+\index{filter@{filter}!tld::EnsembleClassifier@{tld\-::\-Ensemble\-Classifier}}
+\subsubsection[{filter}]{\setlength{\rightskip}{0pt plus 5cm}bool tld\-::\-Ensemble\-Classifier\-::filter (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1EnsembleClassifier_a42f1f3606d14a7d274f5bb9f4fa5030f}
+
+
+Filtered the windows. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & the index of window \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true, if the window isn't filtered; false, otherwise 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtld_1_1EnsembleClassifier_a42f1f3606d14a7d274f5bb9f4fa5030f_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classtld_1_1EnsembleClassifier_afb0e8ed03adef91257801bf0e3ca73f7}{\index{tld\-::\-Ensemble\-Classifier@{tld\-::\-Ensemble\-Classifier}!init@{init}}
+\index{init@{init}!tld::EnsembleClassifier@{tld\-::\-Ensemble\-Classifier}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::\-Ensemble\-Classifier\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1EnsembleClassifier_afb0e8ed03adef91257801bf0e3ca73f7}
+
+
+Initializes the all class variables. 
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtld_1_1EnsembleClassifier_afb0e8ed03adef91257801bf0e3ca73f7_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classtld_1_1EnsembleClassifier_a3fc444f59e0f23a97f9889e58adaba73}{\index{tld\-::\-Ensemble\-Classifier@{tld\-::\-Ensemble\-Classifier}!init\-Feature\-Locations@{init\-Feature\-Locations}}
+\index{init\-Feature\-Locations@{init\-Feature\-Locations}!tld::EnsembleClassifier@{tld\-::\-Ensemble\-Classifier}}
+\subsubsection[{init\-Feature\-Locations}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::\-Ensemble\-Classifier\-::init\-Feature\-Locations (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1EnsembleClassifier_a3fc444f59e0f23a97f9889e58adaba73}
+
+
+Generates random measurements in the format $<$x1,y1,x2,y2$>$. 
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtld_1_1EnsembleClassifier_a3fc444f59e0f23a97f9889e58adaba73_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classtld_1_1EnsembleClassifier_a92ddef7701b1062b1f4a53e5cfcd79a2}{\index{tld\-::\-Ensemble\-Classifier@{tld\-::\-Ensemble\-Classifier}!init\-Feature\-Offsets@{init\-Feature\-Offsets}}
+\index{init\-Feature\-Offsets@{init\-Feature\-Offsets}!tld::EnsembleClassifier@{tld\-::\-Ensemble\-Classifier}}
+\subsubsection[{init\-Feature\-Offsets}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::\-Ensemble\-Classifier\-::init\-Feature\-Offsets (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1EnsembleClassifier_a92ddef7701b1062b1f4a53e5cfcd79a2}
+
+
+Creates offsets that can be added to bounding boxes \par
+ offsets are contained in the form delta11, delta12,... (combined index of dw and dh) \par
+ Order\-: scale.\-tree-\/$>$feature. 
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtld_1_1EnsembleClassifier_a92ddef7701b1062b1f4a53e5cfcd79a2_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classtld_1_1EnsembleClassifier_ab342db231d14bbaa892b2664d210e152}{\index{tld\-::\-Ensemble\-Classifier@{tld\-::\-Ensemble\-Classifier}!init\-Posteriors@{init\-Posteriors}}
+\index{init\-Posteriors@{init\-Posteriors}!tld::EnsembleClassifier@{tld\-::\-Ensemble\-Classifier}}
+\subsubsection[{init\-Posteriors}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::\-Ensemble\-Classifier\-::init\-Posteriors (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1EnsembleClassifier_ab342db231d14bbaa892b2664d210e152}
+
+
+Initializes the variable such as posteriors, positives, negatives. 
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtld_1_1EnsembleClassifier_ab342db231d14bbaa892b2664d210e152_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classtld_1_1EnsembleClassifier_ad088404fdea039b774c2eb088e4cfc04}{\index{tld\-::\-Ensemble\-Classifier@{tld\-::\-Ensemble\-Classifier}!learn@{learn}}
+\index{learn@{learn}!tld::EnsembleClassifier@{tld\-::\-Ensemble\-Classifier}}
+\subsubsection[{learn}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::\-Ensemble\-Classifier\-::learn (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{boundary, }
+\item[{int}]{positive, }
+\item[{int $\ast$}]{feature\-Vector}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1EnsembleClassifier_ad088404fdea039b774c2eb088e4cfc04}
+
+
+Update positive or negative patches. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em boundary} & not used \\
+\hline
+{\em positive} & if 1 , positive; if 0, negative patch \\
+\hline
+{\em feature\-Vector} & the vector of features \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtld_1_1EnsembleClassifier_ad088404fdea039b774c2eb088e4cfc04_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classtld_1_1EnsembleClassifier_a7871296c03de06293ebd3dc29ecab5de}{\index{tld\-::\-Ensemble\-Classifier@{tld\-::\-Ensemble\-Classifier}!next\-Iteration@{next\-Iteration}}
+\index{next\-Iteration@{next\-Iteration}!tld::EnsembleClassifier@{tld\-::\-Ensemble\-Classifier}}
+\subsubsection[{next\-Iteration}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::\-Ensemble\-Classifier\-::next\-Iteration (
+\begin{DoxyParamCaption}
+\item[{const cv\-::\-Mat \&}]{img}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1EnsembleClassifier_a7871296c03de06293ebd3dc29ecab5de}
+
+
+Sets the current image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em img} & the image \\
+\hline
+\end{DoxyParams}
+\hypertarget{classtld_1_1EnsembleClassifier_a3fd93c80d37f7f115443c2e147ec9967}{\index{tld\-::\-Ensemble\-Classifier@{tld\-::\-Ensemble\-Classifier}!release@{release}}
+\index{release@{release}!tld::EnsembleClassifier@{tld\-::\-Ensemble\-Classifier}}
+\subsubsection[{release}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::\-Ensemble\-Classifier\-::release (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1EnsembleClassifier_a3fd93c80d37f7f115443c2e147ec9967}
+
+
+Releases the memory. 
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtld_1_1EnsembleClassifier_a3fd93c80d37f7f115443c2e147ec9967_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classtld_1_1EnsembleClassifier_acfc0c9d71c16dfed9750b6aa409afb0c}{\index{tld\-::\-Ensemble\-Classifier@{tld\-::\-Ensemble\-Classifier}!update\-Posterior@{update\-Posterior}}
+\index{update\-Posterior@{update\-Posterior}!tld::EnsembleClassifier@{tld\-::\-Ensemble\-Classifier}}
+\subsubsection[{update\-Posterior}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::\-Ensemble\-Classifier\-::update\-Posterior (
+\begin{DoxyParamCaption}
+\item[{int}]{tree\-Idx, }
+\item[{int}]{idx, }
+\item[{int}]{positive, }
+\item[{int}]{amount}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1EnsembleClassifier_acfc0c9d71c16dfed9750b6aa409afb0c}
+
+
+Updates positive or negative branches and posteriors for one tree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tree\-Idx} & the index of tree \\
+\hline
+{\em idx} & the index of branch \\
+\hline
+{\em positive} & if 1 , positive; if 0, negative patch \\
+\hline
+{\em amount} & the amount of patches \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtld_1_1EnsembleClassifier_acfc0c9d71c16dfed9750b6aa409afb0c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classtld_1_1EnsembleClassifier_a0d7853e4cee2e0220c218f43ae78b5a9}{\index{tld\-::\-Ensemble\-Classifier@{tld\-::\-Ensemble\-Classifier}!update\-Posteriors@{update\-Posteriors}}
+\index{update\-Posteriors@{update\-Posteriors}!tld::EnsembleClassifier@{tld\-::\-Ensemble\-Classifier}}
+\subsubsection[{update\-Posteriors}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::\-Ensemble\-Classifier\-::update\-Posteriors (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{feature\-Vector, }
+\item[{int}]{positive, }
+\item[{int}]{amount}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classtld_1_1EnsembleClassifier_a0d7853e4cee2e0220c218f43ae78b5a9}
+
+
+Updates positive or negative branches and posteriors for all tree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em feature\-Vector} & the vector of features \\
+\hline
+{\em positive} & if 1 , positive; if 0, negative patch \\
+\hline
+{\em amount} & the amount of patches \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtld_1_1EnsembleClassifier_a0d7853e4cee2e0220c218f43ae78b5a9_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtld_1_1EnsembleClassifier_a0d7853e4cee2e0220c218f43ae78b5a9_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classtld_1_1EnsembleClassifier_af57e5de2c583e7f1cf39e6de03159323}{\index{tld\-::\-Ensemble\-Classifier@{tld\-::\-Ensemble\-Classifier}!detection\-Result@{detection\-Result}}
+\index{detection\-Result@{detection\-Result}!tld::EnsembleClassifier@{tld\-::\-Ensemble\-Classifier}}
+\subsubsection[{detection\-Result}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Detection\-Result}$\ast$ tld\-::\-Ensemble\-Classifier\-::detection\-Result}}\label{classtld_1_1EnsembleClassifier_af57e5de2c583e7f1cf39e6de03159323}
+
+
+the result of detection 
+
+\hypertarget{classtld_1_1EnsembleClassifier_a539d429a773ec9b2b86946fddb39ac52}{\index{tld\-::\-Ensemble\-Classifier@{tld\-::\-Ensemble\-Classifier}!enabled@{enabled}}
+\index{enabled@{enabled}!tld::EnsembleClassifier@{tld\-::\-Ensemble\-Classifier}}
+\subsubsection[{enabled}]{\setlength{\rightskip}{0pt plus 5cm}bool tld\-::\-Ensemble\-Classifier\-::enabled}}\label{classtld_1_1EnsembleClassifier_a539d429a773ec9b2b86946fddb39ac52}
+
+
+enables ensemble classifier 
+
+\hypertarget{classtld_1_1EnsembleClassifier_acf42e105ca1cb616aaf2d8e4d8755c41}{\index{tld\-::\-Ensemble\-Classifier@{tld\-::\-Ensemble\-Classifier}!feature\-Offsets@{feature\-Offsets}}
+\index{feature\-Offsets@{feature\-Offsets}!tld::EnsembleClassifier@{tld\-::\-Ensemble\-Classifier}}
+\subsubsection[{feature\-Offsets}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ tld\-::\-Ensemble\-Classifier\-::feature\-Offsets}}\label{classtld_1_1EnsembleClassifier_acf42e105ca1cb616aaf2d8e4d8755c41}
+
+
+the feature offsets 
+
+\hypertarget{classtld_1_1EnsembleClassifier_a02deffee640b4106051024d1ae8a55aa}{\index{tld\-::\-Ensemble\-Classifier@{tld\-::\-Ensemble\-Classifier}!features@{features}}
+\index{features@{features}!tld::EnsembleClassifier@{tld\-::\-Ensemble\-Classifier}}
+\subsubsection[{features}]{\setlength{\rightskip}{0pt plus 5cm}float$\ast$ tld\-::\-Ensemble\-Classifier\-::features}}\label{classtld_1_1EnsembleClassifier_a02deffee640b4106051024d1ae8a55aa}
+
+
+the array of features 
+
+\hypertarget{classtld_1_1EnsembleClassifier_a0894da7012fdd72a562dbf78f719bfe9}{\index{tld\-::\-Ensemble\-Classifier@{tld\-::\-Ensemble\-Classifier}!img@{img}}
+\index{img@{img}!tld::EnsembleClassifier@{tld\-::\-Ensemble\-Classifier}}
+\subsubsection[{img}]{\setlength{\rightskip}{0pt plus 5cm}const unsigned char$\ast$ tld\-::\-Ensemble\-Classifier\-::img\hspace{0.3cm}{\ttfamily [private]}}}\label{classtld_1_1EnsembleClassifier_a0894da7012fdd72a562dbf78f719bfe9}
+
+
+the current image 
+
+\hypertarget{classtld_1_1EnsembleClassifier_a149e36a3d0d287ee804ec7cf92dc6569}{\index{tld\-::\-Ensemble\-Classifier@{tld\-::\-Ensemble\-Classifier}!img\-Width\-Step@{img\-Width\-Step}}
+\index{img\-Width\-Step@{img\-Width\-Step}!tld::EnsembleClassifier@{tld\-::\-Ensemble\-Classifier}}
+\subsubsection[{img\-Width\-Step}]{\setlength{\rightskip}{0pt plus 5cm}int tld\-::\-Ensemble\-Classifier\-::img\-Width\-Step}}\label{classtld_1_1EnsembleClassifier_a149e36a3d0d287ee804ec7cf92dc6569}
+
+
+the width step of image 
+
+\hypertarget{classtld_1_1EnsembleClassifier_a2de7561eb20a0f0a1b4909d6dfd89d0b}{\index{tld\-::\-Ensemble\-Classifier@{tld\-::\-Ensemble\-Classifier}!negatives@{negatives}}
+\index{negatives@{negatives}!tld::EnsembleClassifier@{tld\-::\-Ensemble\-Classifier}}
+\subsubsection[{negatives}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ tld\-::\-Ensemble\-Classifier\-::negatives}}\label{classtld_1_1EnsembleClassifier_a2de7561eb20a0f0a1b4909d6dfd89d0b}
+
+
+the negative branches 
+
+\hypertarget{classtld_1_1EnsembleClassifier_a176aba4e90f0b9373d8aedd7c25fa262}{\index{tld\-::\-Ensemble\-Classifier@{tld\-::\-Ensemble\-Classifier}!num\-Features@{num\-Features}}
+\index{num\-Features@{num\-Features}!tld::EnsembleClassifier@{tld\-::\-Ensemble\-Classifier}}
+\subsubsection[{num\-Features}]{\setlength{\rightskip}{0pt plus 5cm}int tld\-::\-Ensemble\-Classifier\-::num\-Features}}\label{classtld_1_1EnsembleClassifier_a176aba4e90f0b9373d8aedd7c25fa262}
+
+
+the number of fetures 
+
+\hypertarget{classtld_1_1EnsembleClassifier_afbfbda1b693525895467fba88a8debe3}{\index{tld\-::\-Ensemble\-Classifier@{tld\-::\-Ensemble\-Classifier}!num\-Indices@{num\-Indices}}
+\index{num\-Indices@{num\-Indices}!tld::EnsembleClassifier@{tld\-::\-Ensemble\-Classifier}}
+\subsubsection[{num\-Indices}]{\setlength{\rightskip}{0pt plus 5cm}int tld\-::\-Ensemble\-Classifier\-::num\-Indices}}\label{classtld_1_1EnsembleClassifier_afbfbda1b693525895467fba88a8debe3}
+
+
+the number of indices 
+
+\hypertarget{classtld_1_1EnsembleClassifier_ae10dcd7614a39f9b29b3fbe957889fb9}{\index{tld\-::\-Ensemble\-Classifier@{tld\-::\-Ensemble\-Classifier}!num\-Scales@{num\-Scales}}
+\index{num\-Scales@{num\-Scales}!tld::EnsembleClassifier@{tld\-::\-Ensemble\-Classifier}}
+\subsubsection[{num\-Scales}]{\setlength{\rightskip}{0pt plus 5cm}int tld\-::\-Ensemble\-Classifier\-::num\-Scales}}\label{classtld_1_1EnsembleClassifier_ae10dcd7614a39f9b29b3fbe957889fb9}
+
+
+the number of scales 
+
+\hypertarget{classtld_1_1EnsembleClassifier_a60e802769e79c833d1484d96bb345b7c}{\index{tld\-::\-Ensemble\-Classifier@{tld\-::\-Ensemble\-Classifier}!num\-Trees@{num\-Trees}}
+\index{num\-Trees@{num\-Trees}!tld::EnsembleClassifier@{tld\-::\-Ensemble\-Classifier}}
+\subsubsection[{num\-Trees}]{\setlength{\rightskip}{0pt plus 5cm}int tld\-::\-Ensemble\-Classifier\-::num\-Trees}}\label{classtld_1_1EnsembleClassifier_a60e802769e79c833d1484d96bb345b7c}
+
+
+the number of trees 
+
+\hypertarget{classtld_1_1EnsembleClassifier_a572549e31f9bfc34c7b464e02aa41397}{\index{tld\-::\-Ensemble\-Classifier@{tld\-::\-Ensemble\-Classifier}!positives@{positives}}
+\index{positives@{positives}!tld::EnsembleClassifier@{tld\-::\-Ensemble\-Classifier}}
+\subsubsection[{positives}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ tld\-::\-Ensemble\-Classifier\-::positives}}\label{classtld_1_1EnsembleClassifier_a572549e31f9bfc34c7b464e02aa41397}
+
+
+the positive branches 
+
+\hypertarget{classtld_1_1EnsembleClassifier_a34092918268be97eb1e1f2f0fc7d4254}{\index{tld\-::\-Ensemble\-Classifier@{tld\-::\-Ensemble\-Classifier}!posteriors@{posteriors}}
+\index{posteriors@{posteriors}!tld::EnsembleClassifier@{tld\-::\-Ensemble\-Classifier}}
+\subsubsection[{posteriors}]{\setlength{\rightskip}{0pt plus 5cm}float$\ast$ tld\-::\-Ensemble\-Classifier\-::posteriors}}\label{classtld_1_1EnsembleClassifier_a34092918268be97eb1e1f2f0fc7d4254}
+
+
+the vector of verdicts 
+
+\hypertarget{classtld_1_1EnsembleClassifier_ae2ea00a933d9c96498ba756a2b4ec6b5}{\index{tld\-::\-Ensemble\-Classifier@{tld\-::\-Ensemble\-Classifier}!scales@{scales}}
+\index{scales@{scales}!tld::EnsembleClassifier@{tld\-::\-Ensemble\-Classifier}}
+\subsubsection[{scales}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::\-Size$\ast$ tld\-::\-Ensemble\-Classifier\-::scales}}\label{classtld_1_1EnsembleClassifier_ae2ea00a933d9c96498ba756a2b4ec6b5}
+
+
+the array of scales 
+
+\hypertarget{classtld_1_1EnsembleClassifier_abc6ed3b991a724b07dfcc25108769e92}{\index{tld\-::\-Ensemble\-Classifier@{tld\-::\-Ensemble\-Classifier}!window\-Offsets@{window\-Offsets}}
+\index{window\-Offsets@{window\-Offsets}!tld::EnsembleClassifier@{tld\-::\-Ensemble\-Classifier}}
+\subsubsection[{window\-Offsets}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ tld\-::\-Ensemble\-Classifier\-::window\-Offsets}}\label{classtld_1_1EnsembleClassifier_abc6ed3b991a724b07dfcc25108769e92}
+
+
+the window offsets 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/libopentld/tld/\hyperlink{EnsembleClassifier_8h}{Ensemble\-Classifier.\-h}\item 
+src/libopentld/tld/\hyperlink{EnsembleClassifier_8cpp}{Ensemble\-Classifier.\-cpp}\end{DoxyCompactItemize}

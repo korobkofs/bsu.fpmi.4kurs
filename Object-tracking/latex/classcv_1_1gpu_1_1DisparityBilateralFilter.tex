@@ -1,0 +1,101 @@
+\hypertarget{classcv_1_1gpu_1_1DisparityBilateralFilter}{\section{cv\-:\-:gpu\-:\-:Disparity\-Bilateral\-Filter Class Reference}
+\label{classcv_1_1gpu_1_1DisparityBilateralFilter}\index{cv\-::gpu\-::\-Disparity\-Bilateral\-Filter@{cv\-::gpu\-::\-Disparity\-Bilateral\-Filter}}
+}
+
+
+{\ttfamily \#include $<$gpu.\-hpp$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{classcv_1_1gpu_1_1DisparityBilateralFilter_a63ac0856feae5097af3ff4e36addebcdaf836d97561d11485f55798919244662d}{D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-D\-I\-S\-P} = 64
+ \}
+\item 
+enum \{ \hyperlink{classcv_1_1gpu_1_1DisparityBilateralFilter_a9425d7ecb0640b4155376a55f4be8fe2a4d67e68ea06c6e8c17538039d92371b2}{D\-E\-F\-A\-U\-L\-T\-\_\-\-R\-A\-D\-I\-U\-S} = 3
+ \}
+\item 
+enum \{ \hyperlink{classcv_1_1gpu_1_1DisparityBilateralFilter_ac8df35acbf75dd8638f9dae2c1ab750da86aa9f9a5e2905c7adc57c6d479f91d9}{D\-E\-F\-A\-U\-L\-T\-\_\-\-I\-T\-E\-R\-S} = 1
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcv_1_1gpu_1_1DisparityBilateralFilter_aee39c542701a7511ad5c2be08f51f94d}{Disparity\-Bilateral\-Filter} (int ndisp=\hyperlink{classcv_1_1gpu_1_1DisparityBilateralFilter_a63ac0856feae5097af3ff4e36addebcdaf836d97561d11485f55798919244662d}{D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-D\-I\-S\-P}, int radius=\hyperlink{classcv_1_1gpu_1_1DisparityBilateralFilter_a9425d7ecb0640b4155376a55f4be8fe2a4d67e68ea06c6e8c17538039d92371b2}{D\-E\-F\-A\-U\-L\-T\-\_\-\-R\-A\-D\-I\-U\-S}, int iters=\hyperlink{classcv_1_1gpu_1_1DisparityBilateralFilter_ac8df35acbf75dd8638f9dae2c1ab750da86aa9f9a5e2905c7adc57c6d479f91d9}{D\-E\-F\-A\-U\-L\-T\-\_\-\-I\-T\-E\-R\-S})
+\begin{DoxyCompactList}\small\item\em the default constructor \end{DoxyCompactList}\item 
+\hyperlink{classcv_1_1gpu_1_1DisparityBilateralFilter_a6552806631ea5ef9b18ab12f2ac8270f}{Disparity\-Bilateral\-Filter} (int ndisp, int radius, int iters, float edge\-\_\-threshold, float max\-\_\-disc\-\_\-threshold, float sigma\-\_\-range)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1DisparityBilateralFilter_a7267c537f4558687730a1e967246b2f8}{operator()} (const Gpu\-Mat \&\hyperlink{calib3d_8hpp_acd2ef073a3a4984e0a0ebac5c7e179fd}{disparity}, const Gpu\-Mat \&\hyperlink{legacy_8hpp_ad62b16ab219ae2483e8a3d921c44cc97}{image}, Gpu\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, \hyperlink{classcv_1_1gpu_1_1Stream}{Stream} \&stream=\hyperlink{classcv_1_1gpu_1_1Stream_af96c23564834f88333dcb8997df553f1}{Stream\-::\-Null}())
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classcv_1_1gpu_1_1DisparityBilateralFilter_a63ac0856feae5097af3ff4e36addebcd}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{classcv_1_1gpu_1_1DisparityBilateralFilter_a63ac0856feae5097af3ff4e36addebcd}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-D\-I\-S\-P@{D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-D\-I\-S\-P}!cv\-::gpu\-::\-Disparity\-Bilateral\-Filter@{cv\-::gpu\-::\-Disparity\-Bilateral\-Filter}}\index{cv\-::gpu\-::\-Disparity\-Bilateral\-Filter@{cv\-::gpu\-::\-Disparity\-Bilateral\-Filter}!D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-D\-I\-S\-P@{D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-D\-I\-S\-P}}\item[{\em 
+\hypertarget{classcv_1_1gpu_1_1DisparityBilateralFilter_a63ac0856feae5097af3ff4e36addebcdaf836d97561d11485f55798919244662d}{D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-D\-I\-S\-P}\label{classcv_1_1gpu_1_1DisparityBilateralFilter_a63ac0856feae5097af3ff4e36addebcdaf836d97561d11485f55798919244662d}
+}]\end{description}
+\end{Desc}
+\hypertarget{classcv_1_1gpu_1_1DisparityBilateralFilter_a9425d7ecb0640b4155376a55f4be8fe2}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{classcv_1_1gpu_1_1DisparityBilateralFilter_a9425d7ecb0640b4155376a55f4be8fe2}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{D\-E\-F\-A\-U\-L\-T\-\_\-\-R\-A\-D\-I\-U\-S@{D\-E\-F\-A\-U\-L\-T\-\_\-\-R\-A\-D\-I\-U\-S}!cv\-::gpu\-::\-Disparity\-Bilateral\-Filter@{cv\-::gpu\-::\-Disparity\-Bilateral\-Filter}}\index{cv\-::gpu\-::\-Disparity\-Bilateral\-Filter@{cv\-::gpu\-::\-Disparity\-Bilateral\-Filter}!D\-E\-F\-A\-U\-L\-T\-\_\-\-R\-A\-D\-I\-U\-S@{D\-E\-F\-A\-U\-L\-T\-\_\-\-R\-A\-D\-I\-U\-S}}\item[{\em 
+\hypertarget{classcv_1_1gpu_1_1DisparityBilateralFilter_a9425d7ecb0640b4155376a55f4be8fe2a4d67e68ea06c6e8c17538039d92371b2}{D\-E\-F\-A\-U\-L\-T\-\_\-\-R\-A\-D\-I\-U\-S}\label{classcv_1_1gpu_1_1DisparityBilateralFilter_a9425d7ecb0640b4155376a55f4be8fe2a4d67e68ea06c6e8c17538039d92371b2}
+}]\end{description}
+\end{Desc}
+\hypertarget{classcv_1_1gpu_1_1DisparityBilateralFilter_ac8df35acbf75dd8638f9dae2c1ab750d}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{classcv_1_1gpu_1_1DisparityBilateralFilter_ac8df35acbf75dd8638f9dae2c1ab750d}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{D\-E\-F\-A\-U\-L\-T\-\_\-\-I\-T\-E\-R\-S@{D\-E\-F\-A\-U\-L\-T\-\_\-\-I\-T\-E\-R\-S}!cv\-::gpu\-::\-Disparity\-Bilateral\-Filter@{cv\-::gpu\-::\-Disparity\-Bilateral\-Filter}}\index{cv\-::gpu\-::\-Disparity\-Bilateral\-Filter@{cv\-::gpu\-::\-Disparity\-Bilateral\-Filter}!D\-E\-F\-A\-U\-L\-T\-\_\-\-I\-T\-E\-R\-S@{D\-E\-F\-A\-U\-L\-T\-\_\-\-I\-T\-E\-R\-S}}\item[{\em 
+\hypertarget{classcv_1_1gpu_1_1DisparityBilateralFilter_ac8df35acbf75dd8638f9dae2c1ab750da86aa9f9a5e2905c7adc57c6d479f91d9}{D\-E\-F\-A\-U\-L\-T\-\_\-\-I\-T\-E\-R\-S}\label{classcv_1_1gpu_1_1DisparityBilateralFilter_ac8df35acbf75dd8638f9dae2c1ab750da86aa9f9a5e2905c7adc57c6d479f91d9}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcv_1_1gpu_1_1DisparityBilateralFilter_aee39c542701a7511ad5c2be08f51f94d}{\index{cv\-::gpu\-::\-Disparity\-Bilateral\-Filter@{cv\-::gpu\-::\-Disparity\-Bilateral\-Filter}!Disparity\-Bilateral\-Filter@{Disparity\-Bilateral\-Filter}}
+\index{Disparity\-Bilateral\-Filter@{Disparity\-Bilateral\-Filter}!cv::gpu::DisparityBilateralFilter@{cv\-::gpu\-::\-Disparity\-Bilateral\-Filter}}
+\subsubsection[{Disparity\-Bilateral\-Filter}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::gpu\-::\-Disparity\-Bilateral\-Filter\-::\-Disparity\-Bilateral\-Filter (
+\begin{DoxyParamCaption}
+\item[{int}]{ndisp = {\ttfamily {\bf D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-D\-I\-S\-P}}, }
+\item[{int}]{radius = {\ttfamily {\bf D\-E\-F\-A\-U\-L\-T\-\_\-\-R\-A\-D\-I\-U\-S}}, }
+\item[{int}]{iters = {\ttfamily {\bf D\-E\-F\-A\-U\-L\-T\-\_\-\-I\-T\-E\-R\-S}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{classcv_1_1gpu_1_1DisparityBilateralFilter_aee39c542701a7511ad5c2be08f51f94d}
+
+
+the default constructor 
+
+\hypertarget{classcv_1_1gpu_1_1DisparityBilateralFilter_a6552806631ea5ef9b18ab12f2ac8270f}{\index{cv\-::gpu\-::\-Disparity\-Bilateral\-Filter@{cv\-::gpu\-::\-Disparity\-Bilateral\-Filter}!Disparity\-Bilateral\-Filter@{Disparity\-Bilateral\-Filter}}
+\index{Disparity\-Bilateral\-Filter@{Disparity\-Bilateral\-Filter}!cv::gpu::DisparityBilateralFilter@{cv\-::gpu\-::\-Disparity\-Bilateral\-Filter}}
+\subsubsection[{Disparity\-Bilateral\-Filter}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::gpu\-::\-Disparity\-Bilateral\-Filter\-::\-Disparity\-Bilateral\-Filter (
+\begin{DoxyParamCaption}
+\item[{int}]{ndisp, }
+\item[{int}]{radius, }
+\item[{int}]{iters, }
+\item[{float}]{edge\-\_\-threshold, }
+\item[{float}]{max\-\_\-disc\-\_\-threshold, }
+\item[{float}]{sigma\-\_\-range}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1DisparityBilateralFilter_a6552806631ea5ef9b18ab12f2ac8270f}
+the full constructor taking the number of disparities, filter radius, number of iterations, truncation of data continuity, truncation of disparity continuity and filter range sigma 
+
+\subsection{Member Function Documentation}
+\hypertarget{classcv_1_1gpu_1_1DisparityBilateralFilter_a7267c537f4558687730a1e967246b2f8}{\index{cv\-::gpu\-::\-Disparity\-Bilateral\-Filter@{cv\-::gpu\-::\-Disparity\-Bilateral\-Filter}!operator()@{operator()}}
+\index{operator()@{operator()}!cv::gpu::DisparityBilateralFilter@{cv\-::gpu\-::\-Disparity\-Bilateral\-Filter}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-Disparity\-Bilateral\-Filter\-::operator() (
+\begin{DoxyParamCaption}
+\item[{const Gpu\-Mat \&}]{disparity, }
+\item[{const Gpu\-Mat \&}]{image, }
+\item[{Gpu\-Mat \&}]{dst, }
+\item[{{\bf Stream} \&}]{stream = {\ttfamily {\bf Stream\-::\-Null}()}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1DisparityBilateralFilter_a7267c537f4558687730a1e967246b2f8}
+the disparity map refinement operator. Refine disparity map using joint bilateral filtering given a single color image. disparity must have C\-V\-\_\-8\-U or C\-V\-\_\-16\-S type, image must have C\-V\-\_\-8\-U\-C1 or C\-V\-\_\-8\-U\-C3 type. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/gpu/\hyperlink{gpu_2gpu_8hpp}{gpu.\-hpp}\end{DoxyCompactItemize}

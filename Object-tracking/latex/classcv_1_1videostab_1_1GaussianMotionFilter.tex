@@ -1,0 +1,95 @@
+\hypertarget{classcv_1_1videostab_1_1GaussianMotionFilter}{\section{cv\-:\-:videostab\-:\-:Gaussian\-Motion\-Filter Class Reference}
+\label{classcv_1_1videostab_1_1GaussianMotionFilter}\index{cv\-::videostab\-::\-Gaussian\-Motion\-Filter@{cv\-::videostab\-::\-Gaussian\-Motion\-Filter}}
+}
+
+
+{\ttfamily \#include $<$motion\-\_\-stabilizing.\-hpp$>$}
+
+
+
+Inheritance diagram for cv\-:\-:videostab\-:\-:Gaussian\-Motion\-Filter\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{classcv_1_1videostab_1_1GaussianMotionFilter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for cv\-:\-:videostab\-:\-:Gaussian\-Motion\-Filter\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{classcv_1_1videostab_1_1GaussianMotionFilter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcv_1_1videostab_1_1GaussianMotionFilter_a0fb2f875f46ee3edbd7d2813997c0d6c}{Gaussian\-Motion\-Filter} ()
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1videostab_1_1GaussianMotionFilter_a05c3fc964fa86a93955d4ad9a044180b}{set\-Stdev} (float val)
+\item 
+float \hyperlink{classcv_1_1videostab_1_1GaussianMotionFilter_a88ad8b2983a435cddfb90afe635ec773}{stdev} () const 
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1videostab_1_1GaussianMotionFilter_ad52434d1a6fa3517195f92eb66240e52}{update} ()
+\item 
+virtual Mat \hyperlink{classcv_1_1videostab_1_1GaussianMotionFilter_ac952c5b4b1b394f69f0f2893534deb7b}{stabilize} (int \hyperlink{core__c_8h_a750b5d744c39a06bfb13e6eb010e35d0}{index}, const Mat $\ast$motions, int \hyperlink{legacy_8hpp_ae97003f8d5c64cdfb99f6f2606d121b6}{size}) const 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcv_1_1videostab_1_1GaussianMotionFilter_a0fb2f875f46ee3edbd7d2813997c0d6c}{\index{cv\-::videostab\-::\-Gaussian\-Motion\-Filter@{cv\-::videostab\-::\-Gaussian\-Motion\-Filter}!Gaussian\-Motion\-Filter@{Gaussian\-Motion\-Filter}}
+\index{Gaussian\-Motion\-Filter@{Gaussian\-Motion\-Filter}!cv::videostab::GaussianMotionFilter@{cv\-::videostab\-::\-Gaussian\-Motion\-Filter}}
+\subsubsection[{Gaussian\-Motion\-Filter}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::videostab\-::\-Gaussian\-Motion\-Filter\-::\-Gaussian\-Motion\-Filter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1videostab_1_1GaussianMotionFilter_a0fb2f875f46ee3edbd7d2813997c0d6c}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcv_1_1videostab_1_1GaussianMotionFilter_a05c3fc964fa86a93955d4ad9a044180b}{\index{cv\-::videostab\-::\-Gaussian\-Motion\-Filter@{cv\-::videostab\-::\-Gaussian\-Motion\-Filter}!set\-Stdev@{set\-Stdev}}
+\index{set\-Stdev@{set\-Stdev}!cv::videostab::GaussianMotionFilter@{cv\-::videostab\-::\-Gaussian\-Motion\-Filter}}
+\subsubsection[{set\-Stdev}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::videostab\-::\-Gaussian\-Motion\-Filter\-::set\-Stdev (
+\begin{DoxyParamCaption}
+\item[{float}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1videostab_1_1GaussianMotionFilter_a05c3fc964fa86a93955d4ad9a044180b}
+\hypertarget{classcv_1_1videostab_1_1GaussianMotionFilter_ac952c5b4b1b394f69f0f2893534deb7b}{\index{cv\-::videostab\-::\-Gaussian\-Motion\-Filter@{cv\-::videostab\-::\-Gaussian\-Motion\-Filter}!stabilize@{stabilize}}
+\index{stabilize@{stabilize}!cv::videostab::GaussianMotionFilter@{cv\-::videostab\-::\-Gaussian\-Motion\-Filter}}
+\subsubsection[{stabilize}]{\setlength{\rightskip}{0pt plus 5cm}virtual Mat cv\-::videostab\-::\-Gaussian\-Motion\-Filter\-::stabilize (
+\begin{DoxyParamCaption}
+\item[{int}]{index, }
+\item[{const Mat $\ast$}]{motions, }
+\item[{int}]{size}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcv_1_1videostab_1_1GaussianMotionFilter_ac952c5b4b1b394f69f0f2893534deb7b}
+
+
+Implements \hyperlink{classcv_1_1videostab_1_1MotionFilterBase_ac1e438a7905fafca7d94ce48ef6666dd}{cv\-::videostab\-::\-Motion\-Filter\-Base}.
+
+\hypertarget{classcv_1_1videostab_1_1GaussianMotionFilter_a88ad8b2983a435cddfb90afe635ec773}{\index{cv\-::videostab\-::\-Gaussian\-Motion\-Filter@{cv\-::videostab\-::\-Gaussian\-Motion\-Filter}!stdev@{stdev}}
+\index{stdev@{stdev}!cv::videostab::GaussianMotionFilter@{cv\-::videostab\-::\-Gaussian\-Motion\-Filter}}
+\subsubsection[{stdev}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::videostab\-::\-Gaussian\-Motion\-Filter\-::stdev (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1videostab_1_1GaussianMotionFilter_a88ad8b2983a435cddfb90afe635ec773}
+\hypertarget{classcv_1_1videostab_1_1GaussianMotionFilter_ad52434d1a6fa3517195f92eb66240e52}{\index{cv\-::videostab\-::\-Gaussian\-Motion\-Filter@{cv\-::videostab\-::\-Gaussian\-Motion\-Filter}!update@{update}}
+\index{update@{update}!cv::videostab::GaussianMotionFilter@{cv\-::videostab\-::\-Gaussian\-Motion\-Filter}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cv\-::videostab\-::\-Gaussian\-Motion\-Filter\-::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcv_1_1videostab_1_1GaussianMotionFilter_ad52434d1a6fa3517195f92eb66240e52}
+
+
+Reimplemented from \hyperlink{classcv_1_1videostab_1_1MotionFilterBase_a3d79ee83d55691988ec7be91e4828ad6}{cv\-::videostab\-::\-Motion\-Filter\-Base}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/videostab/\hyperlink{motion__stabilizing_8hpp}{motion\-\_\-stabilizing.\-hpp}\end{DoxyCompactItemize}

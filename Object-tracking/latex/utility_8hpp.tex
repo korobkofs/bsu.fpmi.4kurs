@@ -1,0 +1,75 @@
+\hypertarget{utility_8hpp}{\section{/usr/include/opencv2/gpu/device/utility.hpp File Reference}
+\label{utility_8hpp}\index{/usr/include/opencv2/gpu/device/utility.\-hpp@{/usr/include/opencv2/gpu/device/utility.\-hpp}}
+}
+{\ttfamily \#include \char`\"{}saturate\-\_\-cast.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}datamov\-\_\-utils.\-hpp\char`\"{}}\\*
+Include dependency graph for utility.\-hpp\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{utility_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{utility_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1SingleMask}{cv\-::gpu\-::device\-::\-Single\-Mask}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1SingleMaskChannels}{cv\-::gpu\-::device\-::\-Single\-Mask\-Channels}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1MaskCollection}{cv\-::gpu\-::device\-::\-Mask\-Collection}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1WithOutMask}{cv\-::gpu\-::device\-::\-With\-Out\-Mask}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacecv}{cv}
+\item 
+\hyperlink{namespacecv_1_1gpu}{cv\-::gpu}
+\item 
+\hyperlink{namespacecv_1_1gpu_1_1device}{cv\-::gpu\-::device}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{utility_8hpp_af319a0e1e8b3564bc74ab0534f750911}{O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-L\-O\-G\-\_\-\-W\-A\-R\-P\-\_\-\-S\-I\-Z\-E}~(5)
+\item 
+\#define \hyperlink{utility_8hpp_a2807239c858f98c92407b49e439a085d}{O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-W\-A\-R\-P\-\_\-\-S\-I\-Z\-E}~(1 $<$$<$ \hyperlink{utility_8hpp_af319a0e1e8b3564bc74ab0534f750911}{O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-L\-O\-G\-\_\-\-W\-A\-R\-P\-\_\-\-S\-I\-Z\-E})
+\item 
+\#define \hyperlink{utility_8hpp_a5cafb730c4b8d79352384eae9787e2e6}{O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-L\-O\-G\-\_\-\-M\-E\-M\-\_\-\-B\-A\-N\-K\-S}~((\-\_\-\-\_\-\-C\-U\-D\-A\-\_\-\-A\-R\-C\-H\-\_\-\-\_\- $>$= 200) ? 5 \-: 4)
+\item 
+\#define \hyperlink{utility_8hpp_a5dc5ec59aeb425a8692825ff423c561d}{O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-M\-E\-M\-\_\-\-B\-A\-N\-K\-S}~(1 $<$$<$ \hyperlink{utility_8hpp_a5cafb730c4b8d79352384eae9787e2e6}{O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-L\-O\-G\-\_\-\-M\-E\-M\-\_\-\-B\-A\-N\-K\-S})
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-host\-\_\-\-\_\- \\*
+\-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{namespacecv_1_1gpu_1_1device_a899a4194a9f1e46cf120982057b3d32b}{cv\-::gpu\-::device\-::swap} (\hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \&\hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}, \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \&\hyperlink{legacy_8hpp_ac04272e8ca865b8fba18d36edae9fd2a}{b})
+\item 
+{\footnotesize template$<$typename T $>$ }\\\-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- bool \hyperlink{namespacecv_1_1gpu_1_1device_a95f5310328ba4279fa4d83a2c6c6ee3a}{cv\-::gpu\-::device\-::solve2x2} (const \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} A\mbox{[}2\mbox{]}\mbox{[}2\mbox{]}, const \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \hyperlink{legacy_8hpp_ac04272e8ca865b8fba18d36edae9fd2a}{b}\mbox{[}2\mbox{]}, \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x}\mbox{[}2\mbox{]})
+\item 
+{\footnotesize template$<$typename T $>$ }\\\-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- bool \hyperlink{namespacecv_1_1gpu_1_1device_af782a2bb1e3615216baf919623438b82}{cv\-::gpu\-::device\-::solve3x3} (const \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} A\mbox{[}3\mbox{]}\mbox{[}3\mbox{]}, const \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \hyperlink{legacy_8hpp_ac04272e8ca865b8fba18d36edae9fd2a}{b}\mbox{[}3\mbox{]}, \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x}\mbox{[}3\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{utility_8hpp_a5cafb730c4b8d79352384eae9787e2e6}{\index{utility.\-hpp@{utility.\-hpp}!O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-L\-O\-G\-\_\-\-M\-E\-M\-\_\-\-B\-A\-N\-K\-S@{O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-L\-O\-G\-\_\-\-M\-E\-M\-\_\-\-B\-A\-N\-K\-S}}
+\index{O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-L\-O\-G\-\_\-\-M\-E\-M\-\_\-\-B\-A\-N\-K\-S@{O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-L\-O\-G\-\_\-\-M\-E\-M\-\_\-\-B\-A\-N\-K\-S}!utility.hpp@{utility.\-hpp}}
+\subsubsection[{O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-L\-O\-G\-\_\-\-M\-E\-M\-\_\-\-B\-A\-N\-K\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-L\-O\-G\-\_\-\-M\-E\-M\-\_\-\-B\-A\-N\-K\-S~((\-\_\-\-\_\-\-C\-U\-D\-A\-\_\-\-A\-R\-C\-H\-\_\-\-\_\- $>$= 200) ? 5 \-: 4)}}\label{utility_8hpp_a5cafb730c4b8d79352384eae9787e2e6}
+\hypertarget{utility_8hpp_af319a0e1e8b3564bc74ab0534f750911}{\index{utility.\-hpp@{utility.\-hpp}!O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-L\-O\-G\-\_\-\-W\-A\-R\-P\-\_\-\-S\-I\-Z\-E@{O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-L\-O\-G\-\_\-\-W\-A\-R\-P\-\_\-\-S\-I\-Z\-E}}
+\index{O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-L\-O\-G\-\_\-\-W\-A\-R\-P\-\_\-\-S\-I\-Z\-E@{O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-L\-O\-G\-\_\-\-W\-A\-R\-P\-\_\-\-S\-I\-Z\-E}!utility.hpp@{utility.\-hpp}}
+\subsubsection[{O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-L\-O\-G\-\_\-\-W\-A\-R\-P\-\_\-\-S\-I\-Z\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-L\-O\-G\-\_\-\-W\-A\-R\-P\-\_\-\-S\-I\-Z\-E~(5)}}\label{utility_8hpp_af319a0e1e8b3564bc74ab0534f750911}
+\hypertarget{utility_8hpp_a5dc5ec59aeb425a8692825ff423c561d}{\index{utility.\-hpp@{utility.\-hpp}!O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-M\-E\-M\-\_\-\-B\-A\-N\-K\-S@{O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-M\-E\-M\-\_\-\-B\-A\-N\-K\-S}}
+\index{O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-M\-E\-M\-\_\-\-B\-A\-N\-K\-S@{O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-M\-E\-M\-\_\-\-B\-A\-N\-K\-S}!utility.hpp@{utility.\-hpp}}
+\subsubsection[{O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-M\-E\-M\-\_\-\-B\-A\-N\-K\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-M\-E\-M\-\_\-\-B\-A\-N\-K\-S~(1 $<$$<$ {\bf O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-L\-O\-G\-\_\-\-M\-E\-M\-\_\-\-B\-A\-N\-K\-S})}}\label{utility_8hpp_a5dc5ec59aeb425a8692825ff423c561d}
+\hypertarget{utility_8hpp_a2807239c858f98c92407b49e439a085d}{\index{utility.\-hpp@{utility.\-hpp}!O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-W\-A\-R\-P\-\_\-\-S\-I\-Z\-E@{O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-W\-A\-R\-P\-\_\-\-S\-I\-Z\-E}}
+\index{O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-W\-A\-R\-P\-\_\-\-S\-I\-Z\-E@{O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-W\-A\-R\-P\-\_\-\-S\-I\-Z\-E}!utility.hpp@{utility.\-hpp}}
+\subsubsection[{O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-W\-A\-R\-P\-\_\-\-S\-I\-Z\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-W\-A\-R\-P\-\_\-\-S\-I\-Z\-E~(1 $<$$<$ {\bf O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-L\-O\-G\-\_\-\-W\-A\-R\-P\-\_\-\-S\-I\-Z\-E})}}\label{utility_8hpp_a2807239c858f98c92407b49e439a085d}

@@ -1,0 +1,5 @@
+<map id="scanctx_push_include" name="scanctx_push_include">
+<area shape="rect" id="node2" href="$scanctx_8c.html#a8865cbf5960e1a551474e363f459083b" title="scanctx_take_string" alt="" coords="220,5,359,32"/>
+<area shape="rect" id="node4" href="$scanctx_8c.html#a31b7667e42fd1a2dc55f20bd5e33f61f" title="__scanctx_add_filename" alt="" coords="206,56,373,83"/>
+<area shape="rect" id="node3" href="$strbuf_8c.html#afd2cb5519e41bc819733aae836c7a0f3" title="strbuf_release" alt="" coords="421,5,525,32"/>
+</map>

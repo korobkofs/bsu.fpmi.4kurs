@@ -1,0 +1,337 @@
+\hypertarget{namespaceperf}{\section{perf Namespace Reference}
+\label{namespaceperf}\index{perf@{perf}}
+}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceperf_1_1comparators}{comparators}
+\end{DoxyCompactItemize}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structperf_1_1CvtColorInfo}{Cvt\-Color\-Info}
+\item 
+class \hyperlink{classperf_1_1MatType}{Mat\-Type}
+\item 
+class \hyperlink{classperf_1_1Regression}{Regression}
+\item 
+class \hyperlink{classperf_1_1GpuPerf}{Gpu\-Perf}
+\item 
+struct \hyperlink{structperf_1_1performance__metrics}{performance\-\_\-metrics}
+\item 
+class \hyperlink{classperf_1_1TestBase}{Test\-Base}
+\item 
+class \hyperlink{classperf_1_1TestBaseWithParam}{Test\-Base\-With\-Param}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{namespaceperf_a5592072ff8cfeb1c5501095c7d4b2059}{perf\-::\-Size\-\_\-\-Mat\-Type} \hyperlink{namespaceperf_ab354e59e542bcbd03202ffce12f238d2}{Sz\-\_\-\-Type}
+\item 
+typedef struct \hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \\*
+\hyperlink{structperf_1_1performance__metrics}{perf\-::performance\-\_\-metrics} \hyperlink{namespaceperf_a822f7e10ad2c9baf40c200904e0b65b5}{performance\-\_\-metrics}
+\item 
+typedef \hyperlink{classstd_1_1tr1_1_1tuple}{std\-::tr1\-::tuple}\\*
+$<$ cv\-::\-Size, \hyperlink{classperf_1_1MatType}{Mat\-Type} $>$ \hyperlink{namespaceperf_ac1950eaa74f7a24dcfb4fe4f6fbc6cc9}{Size\-\_\-\-Mat\-Type\-\_\-t}
+\item 
+typedef \hyperlink{classperf_1_1TestBaseWithParam}{Test\-Base\-With\-Param}\\*
+$<$ \hyperlink{namespaceperf_ac1950eaa74f7a24dcfb4fe4f6fbc6cc9}{Size\-\_\-\-Mat\-Type\-\_\-t} $>$ \hyperlink{namespaceperf_a5592072ff8cfeb1c5501095c7d4b2059}{Size\-\_\-\-Mat\-Type}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{namespaceperf_a131f9ba0a5af6eeb148ff248f8ad6f92aa696e8d4812896231028f66e8990fdbe}{Gray} = 1, 
+\hyperlink{namespaceperf_a131f9ba0a5af6eeb148ff248f8ad6f92a89e2d0908a99ed3831671e639b88b720}{Two\-Channel} = 2, 
+\hyperlink{namespaceperf_a131f9ba0a5af6eeb148ff248f8ad6f92aef5b694af6fbc3f9e532e7d96ccdc708}{B\-G\-R} = 3, 
+\hyperlink{namespaceperf_a131f9ba0a5af6eeb148ff248f8ad6f92a4d96ca889faa7acd07aeee2520f01485}{B\-G\-R\-A} = 4
+ \}
+\item 
+enum \hyperlink{namespaceperf_afd1ef30dd7868637f168926100ed2ba8}{E\-R\-R\-O\-R\-\_\-\-T\-Y\-P\-E} \{ \hyperlink{namespaceperf_afd1ef30dd7868637f168926100ed2ba8a1f890b566341b120aa632095d9a8259f}{E\-R\-R\-O\-R\-\_\-\-A\-B\-S\-O\-L\-U\-T\-E} = 0, 
+\hyperlink{namespaceperf_afd1ef30dd7868637f168926100ed2ba8a9de46d4034be5105a101d8c45da33508}{E\-R\-R\-O\-R\-\_\-\-R\-E\-L\-A\-T\-I\-V\-E} = 1
+ \}
+\item 
+enum \hyperlink{namespaceperf_ae0c38b71955bcc6424ad4de8b5284d57}{P\-E\-R\-F\-\_\-\-S\-T\-R\-A\-T\-E\-G\-Y} \{ \hyperlink{namespaceperf_ae0c38b71955bcc6424ad4de8b5284d57ad61de15dddca486cec1670452cb1da02}{P\-E\-R\-F\-\_\-\-S\-T\-R\-A\-T\-E\-G\-Y\-\_\-\-B\-A\-S\-E} = 0, 
+\hyperlink{namespaceperf_ae0c38b71955bcc6424ad4de8b5284d57ad3f0680bd61cfe3c63b46af00269e8ad}{P\-E\-R\-F\-\_\-\-S\-T\-R\-A\-T\-E\-G\-Y\-\_\-\-S\-I\-M\-P\-L\-E} = 1
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceperf_aee4aac75a52f21b615b8a0e3a5865629}{D\-E\-F\-\_\-\-P\-A\-R\-A\-M\-\_\-\-T\-E\-S\-T\-\_\-1} (Sz, cv\-::\-Size)
+\item 
+\hyperlink{namespaceperf_abe6d05b643a7d681b3e139d83b9d2d64}{D\-E\-F\-\_\-\-P\-A\-R\-A\-M\-\_\-\-T\-E\-S\-T} (Sz\-\_\-\-Depth, cv\-::\-Size, perf\-::\-Mat\-Depth)
+\item 
+\hyperlink{namespaceperf_a348406073b8cfba77c7265fcec8466cc}{D\-E\-F\-\_\-\-P\-A\-R\-A\-M\-\_\-\-T\-E\-S\-T} (Sz\-\_\-\-Depth\-\_\-\-Cn, cv\-::\-Size, perf\-::\-Mat\-Depth, Mat\-Cn)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} cv\-::\-Mat \hyperlink{namespaceperf_a83899156f75eac1b6ab0c9630ae0f2d0}{read\-Image} (const std\-::string \&file\-Name, int \hyperlink{highgui__c_8h_ae51e3a2d4365e85db9630dd3ce9508db}{flags}=cv\-::\-I\-M\-R\-E\-A\-D\-\_\-\-C\-O\-L\-O\-R)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespaceperf_ac433f45f9fbed2bb542f82867dd3823c}{Print\-To} (const \hyperlink{structperf_1_1CvtColorInfo}{Cvt\-Color\-Info} \&info, std\-::ostream $\ast$os)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespaceperf_aea633a4d17697bbb9c8815309677c894}{print\-Cuda\-Info} ()
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespaceperf_aec35791c2eaab450915b88e6e80e585e}{sort\-Key\-Points} (std\-::vector$<$ cv\-::\-Key\-Point $>$ \&\hyperlink{compat_8hpp_af95b6678bbbdd664ed15fe6d4190d355}{keypoints}, cv\-::\-Input\-Output\-Array \-\_\-descriptors=cv\-::no\-Array())
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespaceperf_a5af9ada3b18517950993017cdde078ee}{Print\-To} (const \hyperlink{classperf_1_1MatType}{Mat\-Type} \&t, std\-::ostream $\ast$os)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{namespaceperf_ab13b16a0f5e3f27a0f51aa412796276a}{sort} (std\-::vector$<$ cv\-::\-Key\-Point $>$ \&\hyperlink{core__c_8h_ab62b1919fa12a68dd1196a0d42f7937e}{pts}, cv\-::\-Input\-Output\-Array \hyperlink{compat_8hpp_a1e3702ddbca6258f57508c22eff26bf2}{descriptors})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const cv\-::\-Size \hyperlink{namespaceperf_a8d3d0bf3b89981e67bc30a3bd2befde1}{sz\-Q\-V\-G\-A} = cv\-::\-Size(320, 240)
+\item 
+const cv\-::\-Size \hyperlink{namespaceperf_a198109adcb948fd8823f5fd653ae4813}{sz\-V\-G\-A} = cv\-::\-Size(640, 480)
+\item 
+const cv\-::\-Size \hyperlink{namespaceperf_a8188190bc9ebd429fb46c05c671009c6}{sz\-S\-V\-G\-A} = cv\-::\-Size(800, 600)
+\item 
+const cv\-::\-Size \hyperlink{namespaceperf_a5e19cb1374414c082b73208f4893bb90}{sz\-X\-G\-A} = cv\-::\-Size(1024, 768)
+\item 
+const cv\-::\-Size \hyperlink{namespaceperf_af0980e07fe76ff27e882ecd10f34be75}{sz\-S\-X\-G\-A} = cv\-::\-Size(1280, 1024)
+\item 
+const cv\-::\-Size \hyperlink{namespaceperf_a7d5416da78b41a2c9c541594c7168464}{sz\-W\-Q\-H\-D} = cv\-::\-Size(2560, 1440)
+\item 
+const cv\-::\-Size \hyperlink{namespaceperf_af94d4bf8af282e3aa46c9d1f85630225}{szn\-H\-D} = cv\-::\-Size(640, 360)
+\item 
+const cv\-::\-Size \hyperlink{namespaceperf_a2aec1a98d3dfcd2d7f5546d61eb4e24c}{szq\-H\-D} = cv\-::\-Size(960, 540)
+\item 
+const cv\-::\-Size \hyperlink{namespaceperf_a92903038b656ae2b6620911dd2097efd}{sz240p} = \hyperlink{namespaceperf_a8d3d0bf3b89981e67bc30a3bd2befde1}{sz\-Q\-V\-G\-A}
+\item 
+const cv\-::\-Size \hyperlink{namespaceperf_a6ede89be4112c563e5f2c046f3cee64f}{sz720p} = cv\-::\-Size(1280, 720)
+\item 
+const cv\-::\-Size \hyperlink{namespaceperf_ad795e18c34cc44bf1f2d59896d6e9d4d}{sz1080p} = cv\-::\-Size(1920, 1080)
+\item 
+const cv\-::\-Size \hyperlink{namespaceperf_a07606d46d2938bf6d9769ef87c6ddf11}{sz1440p} = \hyperlink{namespaceperf_a7d5416da78b41a2c9c541594c7168464}{sz\-W\-Q\-H\-D}
+\item 
+const cv\-::\-Size \hyperlink{namespaceperf_af269eb69cb3ed2ca1ced688349d96118}{sz2160p} = cv\-::\-Size(3840, 2160)
+\item 
+const cv\-::\-Size \hyperlink{namespaceperf_a0abef7f9f2f4c44b279ef47a55c91bbd}{sz4320p} = cv\-::\-Size(7680, 4320)
+\item 
+const cv\-::\-Size \hyperlink{namespaceperf_ae3bee08aa583b875fcbc11a757da3ef3}{sz3\-M\-P} = cv\-::\-Size(2048, 1536)
+\item 
+const cv\-::\-Size \hyperlink{namespaceperf_a6a094d73abcea734bcf1f546ff1abba6}{sz5\-M\-P} = cv\-::\-Size(2592, 1944)
+\item 
+const cv\-::\-Size \hyperlink{namespaceperf_ae7f6275505429ec52cb19523c5db333a}{sz2\-K} = cv\-::\-Size(2048, 2048)
+\item 
+const cv\-::\-Size \hyperlink{namespaceperf_af52e6b9008d035b07afca749a825b143}{sz\-O\-D\-D} = cv\-::\-Size(127, 61)
+\item 
+const cv\-::\-Size \hyperlink{namespaceperf_a7d5bf0103f9ee3afc0be30535b9c63d2}{sz\-Small24} = cv\-::\-Size(24, 24)
+\item 
+const cv\-::\-Size \hyperlink{namespaceperf_a00d601232dc9acbbd7ac710d2f0f0070}{sz\-Small32} = cv\-::\-Size(32, 32)
+\item 
+const cv\-::\-Size \hyperlink{namespaceperf_a814dfec6d0d13f821a164e3c562cc1ec}{sz\-Small64} = cv\-::\-Size(64, 64)
+\item 
+const cv\-::\-Size \hyperlink{namespaceperf_af5e22599b492125ccaba714aa0a729f4}{sz\-Small128} = cv\-::\-Size(128, 128)
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{namespaceperf_a822f7e10ad2c9baf40c200904e0b65b5}{\index{perf@{perf}!performance\-\_\-metrics@{performance\-\_\-metrics}}
+\index{performance\-\_\-metrics@{performance\-\_\-metrics}!perf@{perf}}
+\subsubsection[{performance\-\_\-metrics}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf perf\-::performance\-\_\-metrics}  {\bf perf\-::performance\-\_\-metrics}}}\label{namespaceperf_a822f7e10ad2c9baf40c200904e0b65b5}
+\hypertarget{namespaceperf_a5592072ff8cfeb1c5501095c7d4b2059}{\index{perf@{perf}!Size\-\_\-\-Mat\-Type@{Size\-\_\-\-Mat\-Type}}
+\index{Size\-\_\-\-Mat\-Type@{Size\-\_\-\-Mat\-Type}!perf@{perf}}
+\subsubsection[{Size\-\_\-\-Mat\-Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Test\-Base\-With\-Param}$<${\bf Size\-\_\-\-Mat\-Type\-\_\-t}$>$ {\bf perf\-::\-Size\-\_\-\-Mat\-Type}}}\label{namespaceperf_a5592072ff8cfeb1c5501095c7d4b2059}
+\hypertarget{namespaceperf_ac1950eaa74f7a24dcfb4fe4f6fbc6cc9}{\index{perf@{perf}!Size\-\_\-\-Mat\-Type\-\_\-t@{Size\-\_\-\-Mat\-Type\-\_\-t}}
+\index{Size\-\_\-\-Mat\-Type\-\_\-t@{Size\-\_\-\-Mat\-Type\-\_\-t}!perf@{perf}}
+\subsubsection[{Size\-\_\-\-Mat\-Type\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf std\-::tr1\-::tuple}$<$cv\-::\-Size, {\bf Mat\-Type}$>$ {\bf perf\-::\-Size\-\_\-\-Mat\-Type\-\_\-t}}}\label{namespaceperf_ac1950eaa74f7a24dcfb4fe4f6fbc6cc9}
+\hypertarget{namespaceperf_ab354e59e542bcbd03202ffce12f238d2}{\index{perf@{perf}!Sz\-\_\-\-Type@{Sz\-\_\-\-Type}}
+\index{Sz\-\_\-\-Type@{Sz\-\_\-\-Type}!perf@{perf}}
+\subsubsection[{Sz\-\_\-\-Type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf perf\-::\-Size\-\_\-\-Mat\-Type} {\bf perf\-::\-Sz\-\_\-\-Type}}}\label{namespaceperf_ab354e59e542bcbd03202ffce12f238d2}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{namespaceperf_a131f9ba0a5af6eeb148ff248f8ad6f92}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{namespaceperf_a131f9ba0a5af6eeb148ff248f8ad6f92}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Gray@{Gray}!perf@{perf}}\index{perf@{perf}!Gray@{Gray}}\item[{\em 
+\hypertarget{namespaceperf_a131f9ba0a5af6eeb148ff248f8ad6f92aa696e8d4812896231028f66e8990fdbe}{Gray}\label{namespaceperf_a131f9ba0a5af6eeb148ff248f8ad6f92aa696e8d4812896231028f66e8990fdbe}
+}]\index{Two\-Channel@{Two\-Channel}!perf@{perf}}\index{perf@{perf}!Two\-Channel@{Two\-Channel}}\item[{\em 
+\hypertarget{namespaceperf_a131f9ba0a5af6eeb148ff248f8ad6f92a89e2d0908a99ed3831671e639b88b720}{Two\-Channel}\label{namespaceperf_a131f9ba0a5af6eeb148ff248f8ad6f92a89e2d0908a99ed3831671e639b88b720}
+}]\index{B\-G\-R@{B\-G\-R}!perf@{perf}}\index{perf@{perf}!B\-G\-R@{B\-G\-R}}\item[{\em 
+\hypertarget{namespaceperf_a131f9ba0a5af6eeb148ff248f8ad6f92aef5b694af6fbc3f9e532e7d96ccdc708}{B\-G\-R}\label{namespaceperf_a131f9ba0a5af6eeb148ff248f8ad6f92aef5b694af6fbc3f9e532e7d96ccdc708}
+}]\index{B\-G\-R\-A@{B\-G\-R\-A}!perf@{perf}}\index{perf@{perf}!B\-G\-R\-A@{B\-G\-R\-A}}\item[{\em 
+\hypertarget{namespaceperf_a131f9ba0a5af6eeb148ff248f8ad6f92a4d96ca889faa7acd07aeee2520f01485}{B\-G\-R\-A}\label{namespaceperf_a131f9ba0a5af6eeb148ff248f8ad6f92a4d96ca889faa7acd07aeee2520f01485}
+}]\end{description}
+\end{Desc}
+\hypertarget{namespaceperf_afd1ef30dd7868637f168926100ed2ba8}{\index{perf@{perf}!E\-R\-R\-O\-R\-\_\-\-T\-Y\-P\-E@{E\-R\-R\-O\-R\-\_\-\-T\-Y\-P\-E}}
+\index{E\-R\-R\-O\-R\-\_\-\-T\-Y\-P\-E@{E\-R\-R\-O\-R\-\_\-\-T\-Y\-P\-E}!perf@{perf}}
+\subsubsection[{E\-R\-R\-O\-R\-\_\-\-T\-Y\-P\-E}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf perf\-::\-E\-R\-R\-O\-R\-\_\-\-T\-Y\-P\-E}}}\label{namespaceperf_afd1ef30dd7868637f168926100ed2ba8}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{E\-R\-R\-O\-R\-\_\-\-A\-B\-S\-O\-L\-U\-T\-E@{E\-R\-R\-O\-R\-\_\-\-A\-B\-S\-O\-L\-U\-T\-E}!perf@{perf}}\index{perf@{perf}!E\-R\-R\-O\-R\-\_\-\-A\-B\-S\-O\-L\-U\-T\-E@{E\-R\-R\-O\-R\-\_\-\-A\-B\-S\-O\-L\-U\-T\-E}}\item[{\em 
+\hypertarget{namespaceperf_afd1ef30dd7868637f168926100ed2ba8a1f890b566341b120aa632095d9a8259f}{E\-R\-R\-O\-R\-\_\-\-A\-B\-S\-O\-L\-U\-T\-E}\label{namespaceperf_afd1ef30dd7868637f168926100ed2ba8a1f890b566341b120aa632095d9a8259f}
+}]\index{E\-R\-R\-O\-R\-\_\-\-R\-E\-L\-A\-T\-I\-V\-E@{E\-R\-R\-O\-R\-\_\-\-R\-E\-L\-A\-T\-I\-V\-E}!perf@{perf}}\index{perf@{perf}!E\-R\-R\-O\-R\-\_\-\-R\-E\-L\-A\-T\-I\-V\-E@{E\-R\-R\-O\-R\-\_\-\-R\-E\-L\-A\-T\-I\-V\-E}}\item[{\em 
+\hypertarget{namespaceperf_afd1ef30dd7868637f168926100ed2ba8a9de46d4034be5105a101d8c45da33508}{E\-R\-R\-O\-R\-\_\-\-R\-E\-L\-A\-T\-I\-V\-E}\label{namespaceperf_afd1ef30dd7868637f168926100ed2ba8a9de46d4034be5105a101d8c45da33508}
+}]\end{description}
+\end{Desc}
+\hypertarget{namespaceperf_ae0c38b71955bcc6424ad4de8b5284d57}{\index{perf@{perf}!P\-E\-R\-F\-\_\-\-S\-T\-R\-A\-T\-E\-G\-Y@{P\-E\-R\-F\-\_\-\-S\-T\-R\-A\-T\-E\-G\-Y}}
+\index{P\-E\-R\-F\-\_\-\-S\-T\-R\-A\-T\-E\-G\-Y@{P\-E\-R\-F\-\_\-\-S\-T\-R\-A\-T\-E\-G\-Y}!perf@{perf}}
+\subsubsection[{P\-E\-R\-F\-\_\-\-S\-T\-R\-A\-T\-E\-G\-Y}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf perf\-::\-P\-E\-R\-F\-\_\-\-S\-T\-R\-A\-T\-E\-G\-Y}}}\label{namespaceperf_ae0c38b71955bcc6424ad4de8b5284d57}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{P\-E\-R\-F\-\_\-\-S\-T\-R\-A\-T\-E\-G\-Y\-\_\-\-B\-A\-S\-E@{P\-E\-R\-F\-\_\-\-S\-T\-R\-A\-T\-E\-G\-Y\-\_\-\-B\-A\-S\-E}!perf@{perf}}\index{perf@{perf}!P\-E\-R\-F\-\_\-\-S\-T\-R\-A\-T\-E\-G\-Y\-\_\-\-B\-A\-S\-E@{P\-E\-R\-F\-\_\-\-S\-T\-R\-A\-T\-E\-G\-Y\-\_\-\-B\-A\-S\-E}}\item[{\em 
+\hypertarget{namespaceperf_ae0c38b71955bcc6424ad4de8b5284d57ad61de15dddca486cec1670452cb1da02}{P\-E\-R\-F\-\_\-\-S\-T\-R\-A\-T\-E\-G\-Y\-\_\-\-B\-A\-S\-E}\label{namespaceperf_ae0c38b71955bcc6424ad4de8b5284d57ad61de15dddca486cec1670452cb1da02}
+}]\index{P\-E\-R\-F\-\_\-\-S\-T\-R\-A\-T\-E\-G\-Y\-\_\-\-S\-I\-M\-P\-L\-E@{P\-E\-R\-F\-\_\-\-S\-T\-R\-A\-T\-E\-G\-Y\-\_\-\-S\-I\-M\-P\-L\-E}!perf@{perf}}\index{perf@{perf}!P\-E\-R\-F\-\_\-\-S\-T\-R\-A\-T\-E\-G\-Y\-\_\-\-S\-I\-M\-P\-L\-E@{P\-E\-R\-F\-\_\-\-S\-T\-R\-A\-T\-E\-G\-Y\-\_\-\-S\-I\-M\-P\-L\-E}}\item[{\em 
+\hypertarget{namespaceperf_ae0c38b71955bcc6424ad4de8b5284d57ad3f0680bd61cfe3c63b46af00269e8ad}{P\-E\-R\-F\-\_\-\-S\-T\-R\-A\-T\-E\-G\-Y\-\_\-\-S\-I\-M\-P\-L\-E}\label{namespaceperf_ae0c38b71955bcc6424ad4de8b5284d57ad3f0680bd61cfe3c63b46af00269e8ad}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespaceperf_abe6d05b643a7d681b3e139d83b9d2d64}{\index{perf@{perf}!D\-E\-F\-\_\-\-P\-A\-R\-A\-M\-\_\-\-T\-E\-S\-T@{D\-E\-F\-\_\-\-P\-A\-R\-A\-M\-\_\-\-T\-E\-S\-T}}
+\index{D\-E\-F\-\_\-\-P\-A\-R\-A\-M\-\_\-\-T\-E\-S\-T@{D\-E\-F\-\_\-\-P\-A\-R\-A\-M\-\_\-\-T\-E\-S\-T}!perf@{perf}}
+\subsubsection[{D\-E\-F\-\_\-\-P\-A\-R\-A\-M\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}perf\-::\-D\-E\-F\-\_\-\-P\-A\-R\-A\-M\-\_\-\-T\-E\-S\-T (
+\begin{DoxyParamCaption}
+\item[{Sz\-\_\-\-Depth}]{, }
+\item[{cv\-::\-Size}]{, }
+\item[{perf\-::\-Mat\-Depth}]{}
+\end{DoxyParamCaption}
+)}}\label{namespaceperf_abe6d05b643a7d681b3e139d83b9d2d64}
+\hypertarget{namespaceperf_a348406073b8cfba77c7265fcec8466cc}{\index{perf@{perf}!D\-E\-F\-\_\-\-P\-A\-R\-A\-M\-\_\-\-T\-E\-S\-T@{D\-E\-F\-\_\-\-P\-A\-R\-A\-M\-\_\-\-T\-E\-S\-T}}
+\index{D\-E\-F\-\_\-\-P\-A\-R\-A\-M\-\_\-\-T\-E\-S\-T@{D\-E\-F\-\_\-\-P\-A\-R\-A\-M\-\_\-\-T\-E\-S\-T}!perf@{perf}}
+\subsubsection[{D\-E\-F\-\_\-\-P\-A\-R\-A\-M\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}perf\-::\-D\-E\-F\-\_\-\-P\-A\-R\-A\-M\-\_\-\-T\-E\-S\-T (
+\begin{DoxyParamCaption}
+\item[{Sz\-\_\-\-Depth\-\_\-\-Cn}]{, }
+\item[{cv\-::\-Size}]{, }
+\item[{perf\-::\-Mat\-Depth}]{, }
+\item[{Mat\-Cn}]{}
+\end{DoxyParamCaption}
+)}}\label{namespaceperf_a348406073b8cfba77c7265fcec8466cc}
+\hypertarget{namespaceperf_aee4aac75a52f21b615b8a0e3a5865629}{\index{perf@{perf}!D\-E\-F\-\_\-\-P\-A\-R\-A\-M\-\_\-\-T\-E\-S\-T\-\_\-1@{D\-E\-F\-\_\-\-P\-A\-R\-A\-M\-\_\-\-T\-E\-S\-T\-\_\-1}}
+\index{D\-E\-F\-\_\-\-P\-A\-R\-A\-M\-\_\-\-T\-E\-S\-T\-\_\-1@{D\-E\-F\-\_\-\-P\-A\-R\-A\-M\-\_\-\-T\-E\-S\-T\-\_\-1}!perf@{perf}}
+\subsubsection[{D\-E\-F\-\_\-\-P\-A\-R\-A\-M\-\_\-\-T\-E\-S\-T\-\_\-1}]{\setlength{\rightskip}{0pt plus 5cm}perf\-::\-D\-E\-F\-\_\-\-P\-A\-R\-A\-M\-\_\-\-T\-E\-S\-T\-\_\-1 (
+\begin{DoxyParamCaption}
+\item[{Sz}]{, }
+\item[{cv\-::\-Size}]{}
+\end{DoxyParamCaption}
+)}}\label{namespaceperf_aee4aac75a52f21b615b8a0e3a5865629}
+\hypertarget{namespaceperf_aea633a4d17697bbb9c8815309677c894}{\index{perf@{perf}!print\-Cuda\-Info@{print\-Cuda\-Info}}
+\index{print\-Cuda\-Info@{print\-Cuda\-Info}!perf@{perf}}
+\subsubsection[{print\-Cuda\-Info}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} perf\-::print\-Cuda\-Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{namespaceperf_aea633a4d17697bbb9c8815309677c894}
+\hypertarget{namespaceperf_ac433f45f9fbed2bb542f82867dd3823c}{\index{perf@{perf}!Print\-To@{Print\-To}}
+\index{Print\-To@{Print\-To}!perf@{perf}}
+\subsubsection[{Print\-To}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} perf\-::\-Print\-To (
+\begin{DoxyParamCaption}
+\item[{const Cvt\-Color\-Info \&}]{info, }
+\item[{std\-::ostream $\ast$}]{os}
+\end{DoxyParamCaption}
+)}}\label{namespaceperf_ac433f45f9fbed2bb542f82867dd3823c}
+\hypertarget{namespaceperf_a5af9ada3b18517950993017cdde078ee}{\index{perf@{perf}!Print\-To@{Print\-To}}
+\index{Print\-To@{Print\-To}!perf@{perf}}
+\subsubsection[{Print\-To}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} perf\-::\-Print\-To (
+\begin{DoxyParamCaption}
+\item[{const Mat\-Type \&}]{t, }
+\item[{std\-::ostream $\ast$}]{os}
+\end{DoxyParamCaption}
+)}}\label{namespaceperf_a5af9ada3b18517950993017cdde078ee}
+\hypertarget{namespaceperf_a83899156f75eac1b6ab0c9630ae0f2d0}{\index{perf@{perf}!read\-Image@{read\-Image}}
+\index{read\-Image@{read\-Image}!perf@{perf}}
+\subsubsection[{read\-Image}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} cv\-::\-Mat perf\-::read\-Image (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{file\-Name, }
+\item[{int}]{flags = {\ttfamily cv\-:\-:IMREAD\-\_\-COLOR}}
+\end{DoxyParamCaption}
+)}}\label{namespaceperf_a83899156f75eac1b6ab0c9630ae0f2d0}
+\hypertarget{namespaceperf_ab13b16a0f5e3f27a0f51aa412796276a}{\index{perf@{perf}!sort@{sort}}
+\index{sort@{sort}!perf@{perf}}
+\subsubsection[{sort}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} perf\-::sort (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ cv\-::\-Key\-Point $>$ \&}]{pts, }
+\item[{cv\-::\-Input\-Output\-Array}]{descriptors}
+\end{DoxyParamCaption}
+)}}\label{namespaceperf_ab13b16a0f5e3f27a0f51aa412796276a}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{namespaceperf_ab13b16a0f5e3f27a0f51aa412796276a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespaceperf_aec35791c2eaab450915b88e6e80e585e}{\index{perf@{perf}!sort\-Key\-Points@{sort\-Key\-Points}}
+\index{sort\-Key\-Points@{sort\-Key\-Points}!perf@{perf}}
+\subsubsection[{sort\-Key\-Points}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} perf\-::sort\-Key\-Points (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ cv\-::\-Key\-Point $>$ \&}]{keypoints, }
+\item[{cv\-::\-Input\-Output\-Array}]{\-\_\-descriptors = {\ttfamily cv\-:\-:noArray()}}
+\end{DoxyParamCaption}
+)}}\label{namespaceperf_aec35791c2eaab450915b88e6e80e585e}
+
+
+\subsection{Variable Documentation}
+\hypertarget{namespaceperf_ad795e18c34cc44bf1f2d59896d6e9d4d}{\index{perf@{perf}!sz1080p@{sz1080p}}
+\index{sz1080p@{sz1080p}!perf@{perf}}
+\subsubsection[{sz1080p}]{\setlength{\rightskip}{0pt plus 5cm}const cv\-::\-Size perf\-::sz1080p = cv\-::\-Size(1920, 1080)}}\label{namespaceperf_ad795e18c34cc44bf1f2d59896d6e9d4d}
+\hypertarget{namespaceperf_a07606d46d2938bf6d9769ef87c6ddf11}{\index{perf@{perf}!sz1440p@{sz1440p}}
+\index{sz1440p@{sz1440p}!perf@{perf}}
+\subsubsection[{sz1440p}]{\setlength{\rightskip}{0pt plus 5cm}const cv\-::\-Size perf\-::sz1440p = {\bf sz\-W\-Q\-H\-D}}}\label{namespaceperf_a07606d46d2938bf6d9769ef87c6ddf11}
+\hypertarget{namespaceperf_af269eb69cb3ed2ca1ced688349d96118}{\index{perf@{perf}!sz2160p@{sz2160p}}
+\index{sz2160p@{sz2160p}!perf@{perf}}
+\subsubsection[{sz2160p}]{\setlength{\rightskip}{0pt plus 5cm}const cv\-::\-Size perf\-::sz2160p = cv\-::\-Size(3840, 2160)}}\label{namespaceperf_af269eb69cb3ed2ca1ced688349d96118}
+\hypertarget{namespaceperf_a92903038b656ae2b6620911dd2097efd}{\index{perf@{perf}!sz240p@{sz240p}}
+\index{sz240p@{sz240p}!perf@{perf}}
+\subsubsection[{sz240p}]{\setlength{\rightskip}{0pt plus 5cm}const cv\-::\-Size perf\-::sz240p = {\bf sz\-Q\-V\-G\-A}}}\label{namespaceperf_a92903038b656ae2b6620911dd2097efd}
+\hypertarget{namespaceperf_ae7f6275505429ec52cb19523c5db333a}{\index{perf@{perf}!sz2\-K@{sz2\-K}}
+\index{sz2\-K@{sz2\-K}!perf@{perf}}
+\subsubsection[{sz2\-K}]{\setlength{\rightskip}{0pt plus 5cm}const cv\-::\-Size perf\-::sz2\-K = cv\-::\-Size(2048, 2048)}}\label{namespaceperf_ae7f6275505429ec52cb19523c5db333a}
+\hypertarget{namespaceperf_ae3bee08aa583b875fcbc11a757da3ef3}{\index{perf@{perf}!sz3\-M\-P@{sz3\-M\-P}}
+\index{sz3\-M\-P@{sz3\-M\-P}!perf@{perf}}
+\subsubsection[{sz3\-M\-P}]{\setlength{\rightskip}{0pt plus 5cm}const cv\-::\-Size perf\-::sz3\-M\-P = cv\-::\-Size(2048, 1536)}}\label{namespaceperf_ae3bee08aa583b875fcbc11a757da3ef3}
+\hypertarget{namespaceperf_a0abef7f9f2f4c44b279ef47a55c91bbd}{\index{perf@{perf}!sz4320p@{sz4320p}}
+\index{sz4320p@{sz4320p}!perf@{perf}}
+\subsubsection[{sz4320p}]{\setlength{\rightskip}{0pt plus 5cm}const cv\-::\-Size perf\-::sz4320p = cv\-::\-Size(7680, 4320)}}\label{namespaceperf_a0abef7f9f2f4c44b279ef47a55c91bbd}
+\hypertarget{namespaceperf_a6a094d73abcea734bcf1f546ff1abba6}{\index{perf@{perf}!sz5\-M\-P@{sz5\-M\-P}}
+\index{sz5\-M\-P@{sz5\-M\-P}!perf@{perf}}
+\subsubsection[{sz5\-M\-P}]{\setlength{\rightskip}{0pt plus 5cm}const cv\-::\-Size perf\-::sz5\-M\-P = cv\-::\-Size(2592, 1944)}}\label{namespaceperf_a6a094d73abcea734bcf1f546ff1abba6}
+\hypertarget{namespaceperf_a6ede89be4112c563e5f2c046f3cee64f}{\index{perf@{perf}!sz720p@{sz720p}}
+\index{sz720p@{sz720p}!perf@{perf}}
+\subsubsection[{sz720p}]{\setlength{\rightskip}{0pt plus 5cm}const cv\-::\-Size perf\-::sz720p = cv\-::\-Size(1280, 720)}}\label{namespaceperf_a6ede89be4112c563e5f2c046f3cee64f}
+\hypertarget{namespaceperf_af94d4bf8af282e3aa46c9d1f85630225}{\index{perf@{perf}!szn\-H\-D@{szn\-H\-D}}
+\index{szn\-H\-D@{szn\-H\-D}!perf@{perf}}
+\subsubsection[{szn\-H\-D}]{\setlength{\rightskip}{0pt plus 5cm}const cv\-::\-Size perf\-::szn\-H\-D = cv\-::\-Size(640, 360)}}\label{namespaceperf_af94d4bf8af282e3aa46c9d1f85630225}
+\hypertarget{namespaceperf_af52e6b9008d035b07afca749a825b143}{\index{perf@{perf}!sz\-O\-D\-D@{sz\-O\-D\-D}}
+\index{sz\-O\-D\-D@{sz\-O\-D\-D}!perf@{perf}}
+\subsubsection[{sz\-O\-D\-D}]{\setlength{\rightskip}{0pt plus 5cm}const cv\-::\-Size perf\-::sz\-O\-D\-D = cv\-::\-Size(127, 61)}}\label{namespaceperf_af52e6b9008d035b07afca749a825b143}
+\hypertarget{namespaceperf_a2aec1a98d3dfcd2d7f5546d61eb4e24c}{\index{perf@{perf}!szq\-H\-D@{szq\-H\-D}}
+\index{szq\-H\-D@{szq\-H\-D}!perf@{perf}}
+\subsubsection[{szq\-H\-D}]{\setlength{\rightskip}{0pt plus 5cm}const cv\-::\-Size perf\-::szq\-H\-D = cv\-::\-Size(960, 540)}}\label{namespaceperf_a2aec1a98d3dfcd2d7f5546d61eb4e24c}
+\hypertarget{namespaceperf_a8d3d0bf3b89981e67bc30a3bd2befde1}{\index{perf@{perf}!sz\-Q\-V\-G\-A@{sz\-Q\-V\-G\-A}}
+\index{sz\-Q\-V\-G\-A@{sz\-Q\-V\-G\-A}!perf@{perf}}
+\subsubsection[{sz\-Q\-V\-G\-A}]{\setlength{\rightskip}{0pt plus 5cm}const cv\-::\-Size perf\-::sz\-Q\-V\-G\-A = cv\-::\-Size(320, 240)}}\label{namespaceperf_a8d3d0bf3b89981e67bc30a3bd2befde1}
+\hypertarget{namespaceperf_af5e22599b492125ccaba714aa0a729f4}{\index{perf@{perf}!sz\-Small128@{sz\-Small128}}
+\index{sz\-Small128@{sz\-Small128}!perf@{perf}}
+\subsubsection[{sz\-Small128}]{\setlength{\rightskip}{0pt plus 5cm}const cv\-::\-Size perf\-::sz\-Small128 = cv\-::\-Size(128, 128)}}\label{namespaceperf_af5e22599b492125ccaba714aa0a729f4}
+\hypertarget{namespaceperf_a7d5bf0103f9ee3afc0be30535b9c63d2}{\index{perf@{perf}!sz\-Small24@{sz\-Small24}}
+\index{sz\-Small24@{sz\-Small24}!perf@{perf}}
+\subsubsection[{sz\-Small24}]{\setlength{\rightskip}{0pt plus 5cm}const cv\-::\-Size perf\-::sz\-Small24 = cv\-::\-Size(24, 24)}}\label{namespaceperf_a7d5bf0103f9ee3afc0be30535b9c63d2}
+\hypertarget{namespaceperf_a00d601232dc9acbbd7ac710d2f0f0070}{\index{perf@{perf}!sz\-Small32@{sz\-Small32}}
+\index{sz\-Small32@{sz\-Small32}!perf@{perf}}
+\subsubsection[{sz\-Small32}]{\setlength{\rightskip}{0pt plus 5cm}const cv\-::\-Size perf\-::sz\-Small32 = cv\-::\-Size(32, 32)}}\label{namespaceperf_a00d601232dc9acbbd7ac710d2f0f0070}
+\hypertarget{namespaceperf_a814dfec6d0d13f821a164e3c562cc1ec}{\index{perf@{perf}!sz\-Small64@{sz\-Small64}}
+\index{sz\-Small64@{sz\-Small64}!perf@{perf}}
+\subsubsection[{sz\-Small64}]{\setlength{\rightskip}{0pt plus 5cm}const cv\-::\-Size perf\-::sz\-Small64 = cv\-::\-Size(64, 64)}}\label{namespaceperf_a814dfec6d0d13f821a164e3c562cc1ec}
+\hypertarget{namespaceperf_a8188190bc9ebd429fb46c05c671009c6}{\index{perf@{perf}!sz\-S\-V\-G\-A@{sz\-S\-V\-G\-A}}
+\index{sz\-S\-V\-G\-A@{sz\-S\-V\-G\-A}!perf@{perf}}
+\subsubsection[{sz\-S\-V\-G\-A}]{\setlength{\rightskip}{0pt plus 5cm}const cv\-::\-Size perf\-::sz\-S\-V\-G\-A = cv\-::\-Size(800, 600)}}\label{namespaceperf_a8188190bc9ebd429fb46c05c671009c6}
+\hypertarget{namespaceperf_af0980e07fe76ff27e882ecd10f34be75}{\index{perf@{perf}!sz\-S\-X\-G\-A@{sz\-S\-X\-G\-A}}
+\index{sz\-S\-X\-G\-A@{sz\-S\-X\-G\-A}!perf@{perf}}
+\subsubsection[{sz\-S\-X\-G\-A}]{\setlength{\rightskip}{0pt plus 5cm}const cv\-::\-Size perf\-::sz\-S\-X\-G\-A = cv\-::\-Size(1280, 1024)}}\label{namespaceperf_af0980e07fe76ff27e882ecd10f34be75}
+\hypertarget{namespaceperf_a198109adcb948fd8823f5fd653ae4813}{\index{perf@{perf}!sz\-V\-G\-A@{sz\-V\-G\-A}}
+\index{sz\-V\-G\-A@{sz\-V\-G\-A}!perf@{perf}}
+\subsubsection[{sz\-V\-G\-A}]{\setlength{\rightskip}{0pt plus 5cm}const cv\-::\-Size perf\-::sz\-V\-G\-A = cv\-::\-Size(640, 480)}}\label{namespaceperf_a198109adcb948fd8823f5fd653ae4813}
+\hypertarget{namespaceperf_a7d5416da78b41a2c9c541594c7168464}{\index{perf@{perf}!sz\-W\-Q\-H\-D@{sz\-W\-Q\-H\-D}}
+\index{sz\-W\-Q\-H\-D@{sz\-W\-Q\-H\-D}!perf@{perf}}
+\subsubsection[{sz\-W\-Q\-H\-D}]{\setlength{\rightskip}{0pt plus 5cm}const cv\-::\-Size perf\-::sz\-W\-Q\-H\-D = cv\-::\-Size(2560, 1440)}}\label{namespaceperf_a7d5416da78b41a2c9c541594c7168464}
+\hypertarget{namespaceperf_a5e19cb1374414c082b73208f4893bb90}{\index{perf@{perf}!sz\-X\-G\-A@{sz\-X\-G\-A}}
+\index{sz\-X\-G\-A@{sz\-X\-G\-A}!perf@{perf}}
+\subsubsection[{sz\-X\-G\-A}]{\setlength{\rightskip}{0pt plus 5cm}const cv\-::\-Size perf\-::sz\-X\-G\-A = cv\-::\-Size(1024, 768)}}\label{namespaceperf_a5e19cb1374414c082b73208f4893bb90}

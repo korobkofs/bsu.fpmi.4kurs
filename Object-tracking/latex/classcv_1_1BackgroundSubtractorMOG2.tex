@@ -1,0 +1,230 @@
+\hypertarget{classcv_1_1BackgroundSubtractorMOG2}{\section{cv\-:\-:Background\-Subtractor\-M\-O\-G2 Class Reference}
+\label{classcv_1_1BackgroundSubtractorMOG2}\index{cv\-::\-Background\-Subtractor\-M\-O\-G2@{cv\-::\-Background\-Subtractor\-M\-O\-G2}}
+}
+
+
+{\ttfamily \#include $<$background\-\_\-segm.\-hpp$>$}
+
+
+
+Inheritance diagram for cv\-:\-:Background\-Subtractor\-M\-O\-G2\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{classcv_1_1BackgroundSubtractorMOG2__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for cv\-:\-:Background\-Subtractor\-M\-O\-G2\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcv_1_1BackgroundSubtractorMOG2__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{core_2types__c_8h_ae435babf3ce7cca990524b23adf6b4a3}{C\-V\-\_\-\-W\-R\-A\-P} \hyperlink{classcv_1_1BackgroundSubtractorMOG2_a7b1ab507f04ad8fe3f3bb76312732231}{Background\-Subtractor\-M\-O\-G2} ()
+\begin{DoxyCompactList}\small\item\em the default constructor \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_ae435babf3ce7cca990524b23adf6b4a3}{C\-V\-\_\-\-W\-R\-A\-P} \hyperlink{classcv_1_1BackgroundSubtractorMOG2_ae32743988e75f1cc7bc1ca744255dba6}{Background\-Subtractor\-M\-O\-G2} (int \hyperlink{classcv_1_1BackgroundSubtractorMOG2_a4f9ee3abc7718c771437c954ce787670}{history}, float \hyperlink{classcv_1_1BackgroundSubtractorMOG2_a29b2fd0136714c18f5dac426f23891e3}{var\-Threshold}, bool \hyperlink{classcv_1_1BackgroundSubtractorMOG2_ad3f5f023594da1e0e90e85c7c04a5bf2}{b\-Shadow\-Detection}=true)
+\begin{DoxyCompactList}\small\item\em the full constructor that takes the length of the history, the number of gaussian mixtures, the background ratio parameter and the noise strength \end{DoxyCompactList}\item 
+virtual \hyperlink{classcv_1_1BackgroundSubtractorMOG2_a90f856e25c64f088180cfaa841b8af05}{$\sim$\-Background\-Subtractor\-M\-O\-G2} ()
+\begin{DoxyCompactList}\small\item\em the destructor \end{DoxyCompactList}\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1BackgroundSubtractorMOG2_ad59120c6709073e6b13a9ae5a53ed7fb}{operator()} (Input\-Array \hyperlink{legacy_8hpp_ad62b16ab219ae2483e8a3d921c44cc97}{image}, Output\-Array \hyperlink{classcv_1_1BackgroundSubtractor_a3a04333e20f88e6799f368d7abb2abd9}{fgmask}, double \hyperlink{classcv_1_1BackgroundSubtractor_a98797ef02141e31b050f1ed6259fd229}{learning\-Rate}=-\/1)
+\begin{DoxyCompactList}\small\item\em the update operator \end{DoxyCompactList}\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1BackgroundSubtractorMOG2_a0106eb2e0a1c7e3b409bb73ec2958438}{get\-Background\-Image} (Output\-Array background\-Image) const 
+\begin{DoxyCompactList}\small\item\em computes a background image which are the mean of all background gaussians \end{DoxyCompactList}\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1BackgroundSubtractorMOG2_a175d48e63228d1b9f1f13ea317783f38}{initialize} (Size \hyperlink{classcv_1_1BackgroundSubtractorMOG2_a83315ebddce879ed98e82b498cd3fe39}{frame\-Size}, int \hyperlink{classcv_1_1BackgroundSubtractorMOG2_a4b7d5f7c5f83596b04e91ff491130fcc}{frame\-Type})
+\begin{DoxyCompactList}\small\item\em re-\/initiaization method \end{DoxyCompactList}\item 
+virtual Algorithm\-Info $\ast$ \hyperlink{classcv_1_1BackgroundSubtractorMOG2_aac9633c107a0a1e23411c9f86ab53d0d}{info} () const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Size \hyperlink{classcv_1_1BackgroundSubtractorMOG2_a83315ebddce879ed98e82b498cd3fe39}{frame\-Size}
+\item 
+int \hyperlink{classcv_1_1BackgroundSubtractorMOG2_a4b7d5f7c5f83596b04e91ff491130fcc}{frame\-Type}
+\item 
+Mat \hyperlink{classcv_1_1BackgroundSubtractorMOG2_ab1fd7b8bfe82a8ca85a89f5eb89d30f2}{bgmodel}
+\item 
+Mat \hyperlink{classcv_1_1BackgroundSubtractorMOG2_a61da8c79d3d8e00a79f98488faa9fdeb}{bgmodel\-Used\-Modes}
+\item 
+int \hyperlink{classcv_1_1BackgroundSubtractorMOG2_ab11b49adc9af83ba0f0256e6ff32f3e3}{nframes}
+\item 
+int \hyperlink{classcv_1_1BackgroundSubtractorMOG2_a4f9ee3abc7718c771437c954ce787670}{history}
+\item 
+int \hyperlink{classcv_1_1BackgroundSubtractorMOG2_ac30e10d48c1123f96f4c5efe48943cbe}{nmixtures}
+\item 
+double \hyperlink{classcv_1_1BackgroundSubtractorMOG2_a29b2fd0136714c18f5dac426f23891e3}{var\-Threshold}
+\item 
+float \hyperlink{classcv_1_1BackgroundSubtractorMOG2_a6a90564206833ec72568f59978efe1d6}{background\-Ratio}
+\item 
+float \hyperlink{classcv_1_1BackgroundSubtractorMOG2_a7989b0787eb340a8e9bac7f5dd42f6a7}{var\-Threshold\-Gen}
+\item 
+float \hyperlink{classcv_1_1BackgroundSubtractorMOG2_a89adf62b1e29f0caeddb6716c4ee746d}{f\-Var\-Init}
+\item 
+float \hyperlink{classcv_1_1BackgroundSubtractorMOG2_a85ed3739d6b278dafec0ea7eb6c6eebf}{f\-Var\-Min}
+\item 
+float \hyperlink{classcv_1_1BackgroundSubtractorMOG2_a979e313829b634396d951090bb6a11ac}{f\-Var\-Max}
+\item 
+float \hyperlink{classcv_1_1BackgroundSubtractorMOG2_ac9879982900ad4e9998f5a1f6e5f837f}{f\-C\-T}
+\item 
+bool \hyperlink{classcv_1_1BackgroundSubtractorMOG2_ad3f5f023594da1e0e90e85c7c04a5bf2}{b\-Shadow\-Detection}
+\item 
+unsigned char \hyperlink{classcv_1_1BackgroundSubtractorMOG2_a7cf3027fdb993e02b2b7a0bdfc012c6d}{n\-Shadow\-Detection}
+\item 
+float \hyperlink{classcv_1_1BackgroundSubtractorMOG2_a13f9679efdd758a6b5ed886f0a2d43bb}{f\-Tau}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The class implements the following algorithm\-: \char`\"{}\-Improved adaptive Gausian mixture model for background subtraction\char`\"{} Z.\-Zivkovic International Conference Pattern Recognition, U\-K, August, 2004. \href{http://www.zoranz.net/Publications/zivkovic2004ICPR.pdf}{\tt http\-://www.\-zoranz.\-net/\-Publications/zivkovic2004\-I\-C\-P\-R.\-pdf} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcv_1_1BackgroundSubtractorMOG2_a7b1ab507f04ad8fe3f3bb76312732231}{\index{cv\-::\-Background\-Subtractor\-M\-O\-G2@{cv\-::\-Background\-Subtractor\-M\-O\-G2}!Background\-Subtractor\-M\-O\-G2@{Background\-Subtractor\-M\-O\-G2}}
+\index{Background\-Subtractor\-M\-O\-G2@{Background\-Subtractor\-M\-O\-G2}!cv::BackgroundSubtractorMOG2@{cv\-::\-Background\-Subtractor\-M\-O\-G2}}
+\subsubsection[{Background\-Subtractor\-M\-O\-G2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-W\-R\-A\-P} cv\-::\-Background\-Subtractor\-M\-O\-G2\-::\-Background\-Subtractor\-M\-O\-G2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1BackgroundSubtractorMOG2_a7b1ab507f04ad8fe3f3bb76312732231}
+
+
+the default constructor 
+
+\hypertarget{classcv_1_1BackgroundSubtractorMOG2_ae32743988e75f1cc7bc1ca744255dba6}{\index{cv\-::\-Background\-Subtractor\-M\-O\-G2@{cv\-::\-Background\-Subtractor\-M\-O\-G2}!Background\-Subtractor\-M\-O\-G2@{Background\-Subtractor\-M\-O\-G2}}
+\index{Background\-Subtractor\-M\-O\-G2@{Background\-Subtractor\-M\-O\-G2}!cv::BackgroundSubtractorMOG2@{cv\-::\-Background\-Subtractor\-M\-O\-G2}}
+\subsubsection[{Background\-Subtractor\-M\-O\-G2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-W\-R\-A\-P} cv\-::\-Background\-Subtractor\-M\-O\-G2\-::\-Background\-Subtractor\-M\-O\-G2 (
+\begin{DoxyParamCaption}
+\item[{int}]{history, }
+\item[{float}]{var\-Threshold, }
+\item[{bool}]{b\-Shadow\-Detection = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1BackgroundSubtractorMOG2_ae32743988e75f1cc7bc1ca744255dba6}
+
+
+the full constructor that takes the length of the history, the number of gaussian mixtures, the background ratio parameter and the noise strength 
+
+\hypertarget{classcv_1_1BackgroundSubtractorMOG2_a90f856e25c64f088180cfaa841b8af05}{\index{cv\-::\-Background\-Subtractor\-M\-O\-G2@{cv\-::\-Background\-Subtractor\-M\-O\-G2}!$\sim$\-Background\-Subtractor\-M\-O\-G2@{$\sim$\-Background\-Subtractor\-M\-O\-G2}}
+\index{$\sim$\-Background\-Subtractor\-M\-O\-G2@{$\sim$\-Background\-Subtractor\-M\-O\-G2}!cv::BackgroundSubtractorMOG2@{cv\-::\-Background\-Subtractor\-M\-O\-G2}}
+\subsubsection[{$\sim$\-Background\-Subtractor\-M\-O\-G2}]{\setlength{\rightskip}{0pt plus 5cm}virtual cv\-::\-Background\-Subtractor\-M\-O\-G2\-::$\sim$\-Background\-Subtractor\-M\-O\-G2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcv_1_1BackgroundSubtractorMOG2_a90f856e25c64f088180cfaa841b8af05}
+
+
+the destructor 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcv_1_1BackgroundSubtractorMOG2_a0106eb2e0a1c7e3b409bb73ec2958438}{\index{cv\-::\-Background\-Subtractor\-M\-O\-G2@{cv\-::\-Background\-Subtractor\-M\-O\-G2}!get\-Background\-Image@{get\-Background\-Image}}
+\index{get\-Background\-Image@{get\-Background\-Image}!cv::BackgroundSubtractorMOG2@{cv\-::\-Background\-Subtractor\-M\-O\-G2}}
+\subsubsection[{get\-Background\-Image}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cv\-::\-Background\-Subtractor\-M\-O\-G2\-::get\-Background\-Image (
+\begin{DoxyParamCaption}
+\item[{Output\-Array}]{background\-Image}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcv_1_1BackgroundSubtractorMOG2_a0106eb2e0a1c7e3b409bb73ec2958438}
+
+
+computes a background image which are the mean of all background gaussians 
+
+
+
+Reimplemented from \hyperlink{classcv_1_1BackgroundSubtractor_ad6bbeb733a9cb258a7c9a69442fd0bda}{cv\-::\-Background\-Subtractor}.
+
+\hypertarget{classcv_1_1BackgroundSubtractorMOG2_aac9633c107a0a1e23411c9f86ab53d0d}{\index{cv\-::\-Background\-Subtractor\-M\-O\-G2@{cv\-::\-Background\-Subtractor\-M\-O\-G2}!info@{info}}
+\index{info@{info}!cv::BackgroundSubtractorMOG2@{cv\-::\-Background\-Subtractor\-M\-O\-G2}}
+\subsubsection[{info}]{\setlength{\rightskip}{0pt plus 5cm}virtual Algorithm\-Info$\ast$ cv\-::\-Background\-Subtractor\-M\-O\-G2\-::info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcv_1_1BackgroundSubtractorMOG2_aac9633c107a0a1e23411c9f86ab53d0d}
+\hypertarget{classcv_1_1BackgroundSubtractorMOG2_a175d48e63228d1b9f1f13ea317783f38}{\index{cv\-::\-Background\-Subtractor\-M\-O\-G2@{cv\-::\-Background\-Subtractor\-M\-O\-G2}!initialize@{initialize}}
+\index{initialize@{initialize}!cv::BackgroundSubtractorMOG2@{cv\-::\-Background\-Subtractor\-M\-O\-G2}}
+\subsubsection[{initialize}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cv\-::\-Background\-Subtractor\-M\-O\-G2\-::initialize (
+\begin{DoxyParamCaption}
+\item[{Size}]{frame\-Size, }
+\item[{int}]{frame\-Type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcv_1_1BackgroundSubtractorMOG2_a175d48e63228d1b9f1f13ea317783f38}
+
+
+re-\/initiaization method 
+
+\hypertarget{classcv_1_1BackgroundSubtractorMOG2_ad59120c6709073e6b13a9ae5a53ed7fb}{\index{cv\-::\-Background\-Subtractor\-M\-O\-G2@{cv\-::\-Background\-Subtractor\-M\-O\-G2}!operator()@{operator()}}
+\index{operator()@{operator()}!cv::BackgroundSubtractorMOG2@{cv\-::\-Background\-Subtractor\-M\-O\-G2}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cv\-::\-Background\-Subtractor\-M\-O\-G2\-::operator() (
+\begin{DoxyParamCaption}
+\item[{Input\-Array}]{image, }
+\item[{Output\-Array}]{fgmask, }
+\item[{double}]{learning\-Rate = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcv_1_1BackgroundSubtractorMOG2_ad59120c6709073e6b13a9ae5a53ed7fb}
+
+
+the update operator 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcv_1_1BackgroundSubtractorMOG2_a6a90564206833ec72568f59978efe1d6}{\index{cv\-::\-Background\-Subtractor\-M\-O\-G2@{cv\-::\-Background\-Subtractor\-M\-O\-G2}!background\-Ratio@{background\-Ratio}}
+\index{background\-Ratio@{background\-Ratio}!cv::BackgroundSubtractorMOG2@{cv\-::\-Background\-Subtractor\-M\-O\-G2}}
+\subsubsection[{background\-Ratio}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::\-Background\-Subtractor\-M\-O\-G2\-::background\-Ratio\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1BackgroundSubtractorMOG2_a6a90564206833ec72568f59978efe1d6}
+\hypertarget{classcv_1_1BackgroundSubtractorMOG2_ab1fd7b8bfe82a8ca85a89f5eb89d30f2}{\index{cv\-::\-Background\-Subtractor\-M\-O\-G2@{cv\-::\-Background\-Subtractor\-M\-O\-G2}!bgmodel@{bgmodel}}
+\index{bgmodel@{bgmodel}!cv::BackgroundSubtractorMOG2@{cv\-::\-Background\-Subtractor\-M\-O\-G2}}
+\subsubsection[{bgmodel}]{\setlength{\rightskip}{0pt plus 5cm}Mat cv\-::\-Background\-Subtractor\-M\-O\-G2\-::bgmodel\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1BackgroundSubtractorMOG2_ab1fd7b8bfe82a8ca85a89f5eb89d30f2}
+\hypertarget{classcv_1_1BackgroundSubtractorMOG2_a61da8c79d3d8e00a79f98488faa9fdeb}{\index{cv\-::\-Background\-Subtractor\-M\-O\-G2@{cv\-::\-Background\-Subtractor\-M\-O\-G2}!bgmodel\-Used\-Modes@{bgmodel\-Used\-Modes}}
+\index{bgmodel\-Used\-Modes@{bgmodel\-Used\-Modes}!cv::BackgroundSubtractorMOG2@{cv\-::\-Background\-Subtractor\-M\-O\-G2}}
+\subsubsection[{bgmodel\-Used\-Modes}]{\setlength{\rightskip}{0pt plus 5cm}Mat cv\-::\-Background\-Subtractor\-M\-O\-G2\-::bgmodel\-Used\-Modes\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1BackgroundSubtractorMOG2_a61da8c79d3d8e00a79f98488faa9fdeb}
+\hypertarget{classcv_1_1BackgroundSubtractorMOG2_ad3f5f023594da1e0e90e85c7c04a5bf2}{\index{cv\-::\-Background\-Subtractor\-M\-O\-G2@{cv\-::\-Background\-Subtractor\-M\-O\-G2}!b\-Shadow\-Detection@{b\-Shadow\-Detection}}
+\index{b\-Shadow\-Detection@{b\-Shadow\-Detection}!cv::BackgroundSubtractorMOG2@{cv\-::\-Background\-Subtractor\-M\-O\-G2}}
+\subsubsection[{b\-Shadow\-Detection}]{\setlength{\rightskip}{0pt plus 5cm}bool cv\-::\-Background\-Subtractor\-M\-O\-G2\-::b\-Shadow\-Detection\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1BackgroundSubtractorMOG2_ad3f5f023594da1e0e90e85c7c04a5bf2}
+\hypertarget{classcv_1_1BackgroundSubtractorMOG2_ac9879982900ad4e9998f5a1f6e5f837f}{\index{cv\-::\-Background\-Subtractor\-M\-O\-G2@{cv\-::\-Background\-Subtractor\-M\-O\-G2}!f\-C\-T@{f\-C\-T}}
+\index{f\-C\-T@{f\-C\-T}!cv::BackgroundSubtractorMOG2@{cv\-::\-Background\-Subtractor\-M\-O\-G2}}
+\subsubsection[{f\-C\-T}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::\-Background\-Subtractor\-M\-O\-G2\-::f\-C\-T\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1BackgroundSubtractorMOG2_ac9879982900ad4e9998f5a1f6e5f837f}
+\hypertarget{classcv_1_1BackgroundSubtractorMOG2_a83315ebddce879ed98e82b498cd3fe39}{\index{cv\-::\-Background\-Subtractor\-M\-O\-G2@{cv\-::\-Background\-Subtractor\-M\-O\-G2}!frame\-Size@{frame\-Size}}
+\index{frame\-Size@{frame\-Size}!cv::BackgroundSubtractorMOG2@{cv\-::\-Background\-Subtractor\-M\-O\-G2}}
+\subsubsection[{frame\-Size}]{\setlength{\rightskip}{0pt plus 5cm}Size cv\-::\-Background\-Subtractor\-M\-O\-G2\-::frame\-Size\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1BackgroundSubtractorMOG2_a83315ebddce879ed98e82b498cd3fe39}
+\hypertarget{classcv_1_1BackgroundSubtractorMOG2_a4b7d5f7c5f83596b04e91ff491130fcc}{\index{cv\-::\-Background\-Subtractor\-M\-O\-G2@{cv\-::\-Background\-Subtractor\-M\-O\-G2}!frame\-Type@{frame\-Type}}
+\index{frame\-Type@{frame\-Type}!cv::BackgroundSubtractorMOG2@{cv\-::\-Background\-Subtractor\-M\-O\-G2}}
+\subsubsection[{frame\-Type}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::\-Background\-Subtractor\-M\-O\-G2\-::frame\-Type\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1BackgroundSubtractorMOG2_a4b7d5f7c5f83596b04e91ff491130fcc}
+\hypertarget{classcv_1_1BackgroundSubtractorMOG2_a13f9679efdd758a6b5ed886f0a2d43bb}{\index{cv\-::\-Background\-Subtractor\-M\-O\-G2@{cv\-::\-Background\-Subtractor\-M\-O\-G2}!f\-Tau@{f\-Tau}}
+\index{f\-Tau@{f\-Tau}!cv::BackgroundSubtractorMOG2@{cv\-::\-Background\-Subtractor\-M\-O\-G2}}
+\subsubsection[{f\-Tau}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::\-Background\-Subtractor\-M\-O\-G2\-::f\-Tau\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1BackgroundSubtractorMOG2_a13f9679efdd758a6b5ed886f0a2d43bb}
+\hypertarget{classcv_1_1BackgroundSubtractorMOG2_a89adf62b1e29f0caeddb6716c4ee746d}{\index{cv\-::\-Background\-Subtractor\-M\-O\-G2@{cv\-::\-Background\-Subtractor\-M\-O\-G2}!f\-Var\-Init@{f\-Var\-Init}}
+\index{f\-Var\-Init@{f\-Var\-Init}!cv::BackgroundSubtractorMOG2@{cv\-::\-Background\-Subtractor\-M\-O\-G2}}
+\subsubsection[{f\-Var\-Init}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::\-Background\-Subtractor\-M\-O\-G2\-::f\-Var\-Init\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1BackgroundSubtractorMOG2_a89adf62b1e29f0caeddb6716c4ee746d}
+\hypertarget{classcv_1_1BackgroundSubtractorMOG2_a979e313829b634396d951090bb6a11ac}{\index{cv\-::\-Background\-Subtractor\-M\-O\-G2@{cv\-::\-Background\-Subtractor\-M\-O\-G2}!f\-Var\-Max@{f\-Var\-Max}}
+\index{f\-Var\-Max@{f\-Var\-Max}!cv::BackgroundSubtractorMOG2@{cv\-::\-Background\-Subtractor\-M\-O\-G2}}
+\subsubsection[{f\-Var\-Max}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::\-Background\-Subtractor\-M\-O\-G2\-::f\-Var\-Max\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1BackgroundSubtractorMOG2_a979e313829b634396d951090bb6a11ac}
+\hypertarget{classcv_1_1BackgroundSubtractorMOG2_a85ed3739d6b278dafec0ea7eb6c6eebf}{\index{cv\-::\-Background\-Subtractor\-M\-O\-G2@{cv\-::\-Background\-Subtractor\-M\-O\-G2}!f\-Var\-Min@{f\-Var\-Min}}
+\index{f\-Var\-Min@{f\-Var\-Min}!cv::BackgroundSubtractorMOG2@{cv\-::\-Background\-Subtractor\-M\-O\-G2}}
+\subsubsection[{f\-Var\-Min}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::\-Background\-Subtractor\-M\-O\-G2\-::f\-Var\-Min\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1BackgroundSubtractorMOG2_a85ed3739d6b278dafec0ea7eb6c6eebf}
+\hypertarget{classcv_1_1BackgroundSubtractorMOG2_a4f9ee3abc7718c771437c954ce787670}{\index{cv\-::\-Background\-Subtractor\-M\-O\-G2@{cv\-::\-Background\-Subtractor\-M\-O\-G2}!history@{history}}
+\index{history@{history}!cv::BackgroundSubtractorMOG2@{cv\-::\-Background\-Subtractor\-M\-O\-G2}}
+\subsubsection[{history}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::\-Background\-Subtractor\-M\-O\-G2\-::history\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1BackgroundSubtractorMOG2_a4f9ee3abc7718c771437c954ce787670}
+\hypertarget{classcv_1_1BackgroundSubtractorMOG2_ab11b49adc9af83ba0f0256e6ff32f3e3}{\index{cv\-::\-Background\-Subtractor\-M\-O\-G2@{cv\-::\-Background\-Subtractor\-M\-O\-G2}!nframes@{nframes}}
+\index{nframes@{nframes}!cv::BackgroundSubtractorMOG2@{cv\-::\-Background\-Subtractor\-M\-O\-G2}}
+\subsubsection[{nframes}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::\-Background\-Subtractor\-M\-O\-G2\-::nframes\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1BackgroundSubtractorMOG2_ab11b49adc9af83ba0f0256e6ff32f3e3}
+\hypertarget{classcv_1_1BackgroundSubtractorMOG2_ac30e10d48c1123f96f4c5efe48943cbe}{\index{cv\-::\-Background\-Subtractor\-M\-O\-G2@{cv\-::\-Background\-Subtractor\-M\-O\-G2}!nmixtures@{nmixtures}}
+\index{nmixtures@{nmixtures}!cv::BackgroundSubtractorMOG2@{cv\-::\-Background\-Subtractor\-M\-O\-G2}}
+\subsubsection[{nmixtures}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::\-Background\-Subtractor\-M\-O\-G2\-::nmixtures\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1BackgroundSubtractorMOG2_ac30e10d48c1123f96f4c5efe48943cbe}
+\hypertarget{classcv_1_1BackgroundSubtractorMOG2_a7cf3027fdb993e02b2b7a0bdfc012c6d}{\index{cv\-::\-Background\-Subtractor\-M\-O\-G2@{cv\-::\-Background\-Subtractor\-M\-O\-G2}!n\-Shadow\-Detection@{n\-Shadow\-Detection}}
+\index{n\-Shadow\-Detection@{n\-Shadow\-Detection}!cv::BackgroundSubtractorMOG2@{cv\-::\-Background\-Subtractor\-M\-O\-G2}}
+\subsubsection[{n\-Shadow\-Detection}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char cv\-::\-Background\-Subtractor\-M\-O\-G2\-::n\-Shadow\-Detection\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1BackgroundSubtractorMOG2_a7cf3027fdb993e02b2b7a0bdfc012c6d}
+\hypertarget{classcv_1_1BackgroundSubtractorMOG2_a29b2fd0136714c18f5dac426f23891e3}{\index{cv\-::\-Background\-Subtractor\-M\-O\-G2@{cv\-::\-Background\-Subtractor\-M\-O\-G2}!var\-Threshold@{var\-Threshold}}
+\index{var\-Threshold@{var\-Threshold}!cv::BackgroundSubtractorMOG2@{cv\-::\-Background\-Subtractor\-M\-O\-G2}}
+\subsubsection[{var\-Threshold}]{\setlength{\rightskip}{0pt plus 5cm}double cv\-::\-Background\-Subtractor\-M\-O\-G2\-::var\-Threshold\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1BackgroundSubtractorMOG2_a29b2fd0136714c18f5dac426f23891e3}
+here it is the maximum allowed number of mixture components. Actual number is determined dynamically per pixel \hypertarget{classcv_1_1BackgroundSubtractorMOG2_a7989b0787eb340a8e9bac7f5dd42f6a7}{\index{cv\-::\-Background\-Subtractor\-M\-O\-G2@{cv\-::\-Background\-Subtractor\-M\-O\-G2}!var\-Threshold\-Gen@{var\-Threshold\-Gen}}
+\index{var\-Threshold\-Gen@{var\-Threshold\-Gen}!cv::BackgroundSubtractorMOG2@{cv\-::\-Background\-Subtractor\-M\-O\-G2}}
+\subsubsection[{var\-Threshold\-Gen}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::\-Background\-Subtractor\-M\-O\-G2\-::var\-Threshold\-Gen\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1BackgroundSubtractorMOG2_a7989b0787eb340a8e9bac7f5dd42f6a7}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/video/\hyperlink{background__segm_8hpp}{background\-\_\-segm.\-hpp}\end{DoxyCompactItemize}

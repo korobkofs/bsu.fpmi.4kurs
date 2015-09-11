@@ -1,0 +1,305 @@
+\hypertarget{classtesting_1_1UnitTest}{\section{testing\-:\-:Unit\-Test Class Reference}
+\label{classtesting_1_1UnitTest}\index{testing\-::\-Unit\-Test@{testing\-::\-Unit\-Test}}
+}
+
+
+{\ttfamily \#include $<$ts\-\_\-gtest.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classtesting_1_1UnitTest_a2febc800536b44500565f4c423f359d3}{Run} () \hyperlink{ts__gtest_8h_a8e5aab8276b2645f64f41c9e3021b935}{G\-T\-E\-S\-T\-\_\-\-M\-U\-S\-T\-\_\-\-U\-S\-E\-\_\-\-R\-E\-S\-U\-L\-T\-\_\-}
+\item 
+const char $\ast$ \hyperlink{classtesting_1_1UnitTest_adf043d0ac041bf2fd5dbae335e3d51a4}{original\-\_\-working\-\_\-dir} () const 
+\item 
+const \hyperlink{classtesting_1_1TestCase}{Test\-Case} $\ast$ \hyperlink{classtesting_1_1UnitTest_a158da6213cf0b2c6100e9cb1f8151e63}{current\-\_\-test\-\_\-case} () const \hyperlink{ts__gtest_8h_a69abff5a4efdd07bd5faebe3dd318d06}{G\-T\-E\-S\-T\-\_\-\-L\-O\-C\-K\-\_\-\-E\-X\-C\-L\-U\-D\-E\-D\-\_\-}(mutex\-\_\-)
+\item 
+const \hyperlink{classtesting_1_1TestInfo}{Test\-Info} $\ast$ \hyperlink{classtesting_1_1UnitTest_a02b6ab72bb9d93805bd0efbb099b4ccc}{current\-\_\-test\-\_\-info} () const \hyperlink{ts__gtest_8h_a69abff5a4efdd07bd5faebe3dd318d06}{G\-T\-E\-S\-T\-\_\-\-L\-O\-C\-K\-\_\-\-E\-X\-C\-L\-U\-D\-E\-D\-\_\-}(mutex\-\_\-)
+\item 
+int \hyperlink{classtesting_1_1UnitTest_a6fa3161a230329e07fc31a339b682a20}{random\-\_\-seed} () const 
+\item 
+\hyperlink{classtesting_1_1internal_1_1ParameterizedTestCaseRegistry}{internal\-::\-Parameterized\-Test\-Case\-Registry} \& \hyperlink{classtesting_1_1UnitTest_a1d9bd4ed86901c44b525a7b6ca4cbf3b}{parameterized\-\_\-test\-\_\-registry} () \hyperlink{ts__gtest_8h_a69abff5a4efdd07bd5faebe3dd318d06}{G\-T\-E\-S\-T\-\_\-\-L\-O\-C\-K\-\_\-\-E\-X\-C\-L\-U\-D\-E\-D\-\_\-}(mutex\-\_\-)
+\item 
+int \hyperlink{classtesting_1_1UnitTest_a1761c6274386032db8315156632eab6d}{successful\-\_\-test\-\_\-case\-\_\-count} () const 
+\item 
+int \hyperlink{classtesting_1_1UnitTest_a1084a93a4b92c6506738e309b0a9eeea}{failed\-\_\-test\-\_\-case\-\_\-count} () const 
+\item 
+int \hyperlink{classtesting_1_1UnitTest_a6802793a0be9cee17380fdd8c7161fcd}{total\-\_\-test\-\_\-case\-\_\-count} () const 
+\item 
+int \hyperlink{classtesting_1_1UnitTest_abb7330165eb5be7beac3f7e6ced5fcdd}{test\-\_\-case\-\_\-to\-\_\-run\-\_\-count} () const 
+\item 
+int \hyperlink{classtesting_1_1UnitTest_a4795d58351f03498d5823a743b0722c5}{successful\-\_\-test\-\_\-count} () const 
+\item 
+int \hyperlink{classtesting_1_1UnitTest_aeda0f8ca87adf65f634c3d6d9ab98598}{failed\-\_\-test\-\_\-count} () const 
+\item 
+int \hyperlink{classtesting_1_1UnitTest_aa5eaf98c5d9cc0afe501ac03e6414188}{reportable\-\_\-disabled\-\_\-test\-\_\-count} () const 
+\item 
+int \hyperlink{classtesting_1_1UnitTest_a4cbd084447b74784d1bb85c1ed4b96d5}{disabled\-\_\-test\-\_\-count} () const 
+\item 
+int \hyperlink{classtesting_1_1UnitTest_aa32cb4f3cd34564a5c641bd409f8f83b}{reportable\-\_\-test\-\_\-count} () const 
+\item 
+int \hyperlink{classtesting_1_1UnitTest_a54315b233d354693b9aa1184cf2996de}{total\-\_\-test\-\_\-count} () const 
+\item 
+int \hyperlink{classtesting_1_1UnitTest_a953a52f89898a04ee4a4e08469407cd3}{test\-\_\-to\-\_\-run\-\_\-count} () const 
+\item 
+\hyperlink{namespacetesting_a992de1d091ce660f451d1e8b3ce30fd6}{Time\-In\-Millis} \hyperlink{classtesting_1_1UnitTest_adb9fdaf25b601f91bd55606941d05c80}{start\-\_\-timestamp} () const 
+\item 
+\hyperlink{namespacetesting_a992de1d091ce660f451d1e8b3ce30fd6}{Time\-In\-Millis} \hyperlink{classtesting_1_1UnitTest_a87853e2fe9f0b172467534323cb9d267}{elapsed\-\_\-time} () const 
+\item 
+bool \hyperlink{classtesting_1_1UnitTest_a4ef49e958702bf741e7eaa4864e28a48}{Passed} () const 
+\item 
+bool \hyperlink{classtesting_1_1UnitTest_ad7711156d07d6037d8f497e5c385f78d}{Failed} () const 
+\item 
+const \hyperlink{classtesting_1_1TestCase}{Test\-Case} $\ast$ \hyperlink{classtesting_1_1UnitTest_a7967986c217975d4de70739d28b4109d}{Get\-Test\-Case} (int i) const 
+\item 
+const \hyperlink{classtesting_1_1TestResult}{Test\-Result} \& \hyperlink{classtesting_1_1UnitTest_ab4ecadf87d00bc67d15553e2998ef81d}{ad\-\_\-hoc\-\_\-test\-\_\-result} () const 
+\item 
+\hyperlink{classtesting_1_1TestEventListeners}{Test\-Event\-Listeners} \& \hyperlink{classtesting_1_1UnitTest_a1b7387b0b3daa2433ed6b685027bf285}{listeners} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classtesting_1_1UnitTest}{Unit\-Test} $\ast$ \hyperlink{classtesting_1_1UnitTest_af254e2e695471eb9f128bc556bae3668}{Get\-Instance} ()
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classtesting_1_1UnitTest_a5b78b1c2e1fa07ffed92da365593eaa4}{Test}
+\item 
+class \hyperlink{classtesting_1_1UnitTest_a183151aa061362c87572e743fe233db1}{internal\-::\-Assert\-Helper}
+\item 
+class \hyperlink{classtesting_1_1UnitTest_afa3927576c08d7b1e197ba16b2b3dcb7}{internal\-::\-Scoped\-Trace}
+\item 
+class \hyperlink{classtesting_1_1UnitTest_adc037d188dab349a94868991955c9cd4}{internal\-::\-Streaming\-Listener\-Test}
+\item 
+class \hyperlink{classtesting_1_1UnitTest_ae970f89a9f477a349fe5778be85ef42e}{internal\-::\-Unit\-Test\-Record\-Property\-Test\-Helper}
+\item 
+\hyperlink{classtesting_1_1Environment}{Environment} $\ast$ \hyperlink{classtesting_1_1UnitTest_a5ec26e4c31220ff8e769cc09689a4d6d}{Add\-Global\-Test\-Environment} (\hyperlink{classtesting_1_1Environment}{Environment} $\ast$env)
+\item 
+internal\-::\-Unit\-Test\-Impl $\ast$ \hyperlink{classtesting_1_1UnitTest_a56e56be7066957d612e53b5c60f6ac08}{internal\-::\-Get\-Unit\-Test\-Impl} ()
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classtesting_1_1UnitTest_a73f5a158c13793b90c80d854c9a75120}{internal\-::\-Report\-Failure\-In\-Unknown\-Location} (\hyperlink{classtesting_1_1TestPartResult_a65ae656b33fdfdfffaf34858778a52d5}{Test\-Part\-Result\-::\-Type} result\-\_\-type, const std\-::string \&message)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classtesting_1_1UnitTest_ab4ecadf87d00bc67d15553e2998ef81d}{\index{testing\-::\-Unit\-Test@{testing\-::\-Unit\-Test}!ad\-\_\-hoc\-\_\-test\-\_\-result@{ad\-\_\-hoc\-\_\-test\-\_\-result}}
+\index{ad\-\_\-hoc\-\_\-test\-\_\-result@{ad\-\_\-hoc\-\_\-test\-\_\-result}!testing::UnitTest@{testing\-::\-Unit\-Test}}
+\subsubsection[{ad\-\_\-hoc\-\_\-test\-\_\-result}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Test\-Result}\& testing\-::\-Unit\-Test\-::ad\-\_\-hoc\-\_\-test\-\_\-result (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classtesting_1_1UnitTest_ab4ecadf87d00bc67d15553e2998ef81d}
+\hypertarget{classtesting_1_1UnitTest_a158da6213cf0b2c6100e9cb1f8151e63}{\index{testing\-::\-Unit\-Test@{testing\-::\-Unit\-Test}!current\-\_\-test\-\_\-case@{current\-\_\-test\-\_\-case}}
+\index{current\-\_\-test\-\_\-case@{current\-\_\-test\-\_\-case}!testing::UnitTest@{testing\-::\-Unit\-Test}}
+\subsubsection[{current\-\_\-test\-\_\-case}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Test\-Case}$\ast$ testing\-::\-Unit\-Test\-::current\-\_\-test\-\_\-case (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classtesting_1_1UnitTest_a158da6213cf0b2c6100e9cb1f8151e63}
+\hypertarget{classtesting_1_1UnitTest_a02b6ab72bb9d93805bd0efbb099b4ccc}{\index{testing\-::\-Unit\-Test@{testing\-::\-Unit\-Test}!current\-\_\-test\-\_\-info@{current\-\_\-test\-\_\-info}}
+\index{current\-\_\-test\-\_\-info@{current\-\_\-test\-\_\-info}!testing::UnitTest@{testing\-::\-Unit\-Test}}
+\subsubsection[{current\-\_\-test\-\_\-info}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Test\-Info}$\ast$ testing\-::\-Unit\-Test\-::current\-\_\-test\-\_\-info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classtesting_1_1UnitTest_a02b6ab72bb9d93805bd0efbb099b4ccc}
+\hypertarget{classtesting_1_1UnitTest_a4cbd084447b74784d1bb85c1ed4b96d5}{\index{testing\-::\-Unit\-Test@{testing\-::\-Unit\-Test}!disabled\-\_\-test\-\_\-count@{disabled\-\_\-test\-\_\-count}}
+\index{disabled\-\_\-test\-\_\-count@{disabled\-\_\-test\-\_\-count}!testing::UnitTest@{testing\-::\-Unit\-Test}}
+\subsubsection[{disabled\-\_\-test\-\_\-count}]{\setlength{\rightskip}{0pt plus 5cm}int testing\-::\-Unit\-Test\-::disabled\-\_\-test\-\_\-count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classtesting_1_1UnitTest_a4cbd084447b74784d1bb85c1ed4b96d5}
+\hypertarget{classtesting_1_1UnitTest_a87853e2fe9f0b172467534323cb9d267}{\index{testing\-::\-Unit\-Test@{testing\-::\-Unit\-Test}!elapsed\-\_\-time@{elapsed\-\_\-time}}
+\index{elapsed\-\_\-time@{elapsed\-\_\-time}!testing::UnitTest@{testing\-::\-Unit\-Test}}
+\subsubsection[{elapsed\-\_\-time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Time\-In\-Millis} testing\-::\-Unit\-Test\-::elapsed\-\_\-time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classtesting_1_1UnitTest_a87853e2fe9f0b172467534323cb9d267}
+\hypertarget{classtesting_1_1UnitTest_ad7711156d07d6037d8f497e5c385f78d}{\index{testing\-::\-Unit\-Test@{testing\-::\-Unit\-Test}!Failed@{Failed}}
+\index{Failed@{Failed}!testing::UnitTest@{testing\-::\-Unit\-Test}}
+\subsubsection[{Failed}]{\setlength{\rightskip}{0pt plus 5cm}bool testing\-::\-Unit\-Test\-::\-Failed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classtesting_1_1UnitTest_ad7711156d07d6037d8f497e5c385f78d}
+\hypertarget{classtesting_1_1UnitTest_a1084a93a4b92c6506738e309b0a9eeea}{\index{testing\-::\-Unit\-Test@{testing\-::\-Unit\-Test}!failed\-\_\-test\-\_\-case\-\_\-count@{failed\-\_\-test\-\_\-case\-\_\-count}}
+\index{failed\-\_\-test\-\_\-case\-\_\-count@{failed\-\_\-test\-\_\-case\-\_\-count}!testing::UnitTest@{testing\-::\-Unit\-Test}}
+\subsubsection[{failed\-\_\-test\-\_\-case\-\_\-count}]{\setlength{\rightskip}{0pt plus 5cm}int testing\-::\-Unit\-Test\-::failed\-\_\-test\-\_\-case\-\_\-count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classtesting_1_1UnitTest_a1084a93a4b92c6506738e309b0a9eeea}
+\hypertarget{classtesting_1_1UnitTest_aeda0f8ca87adf65f634c3d6d9ab98598}{\index{testing\-::\-Unit\-Test@{testing\-::\-Unit\-Test}!failed\-\_\-test\-\_\-count@{failed\-\_\-test\-\_\-count}}
+\index{failed\-\_\-test\-\_\-count@{failed\-\_\-test\-\_\-count}!testing::UnitTest@{testing\-::\-Unit\-Test}}
+\subsubsection[{failed\-\_\-test\-\_\-count}]{\setlength{\rightskip}{0pt plus 5cm}int testing\-::\-Unit\-Test\-::failed\-\_\-test\-\_\-count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classtesting_1_1UnitTest_aeda0f8ca87adf65f634c3d6d9ab98598}
+\hypertarget{classtesting_1_1UnitTest_af254e2e695471eb9f128bc556bae3668}{\index{testing\-::\-Unit\-Test@{testing\-::\-Unit\-Test}!Get\-Instance@{Get\-Instance}}
+\index{Get\-Instance@{Get\-Instance}!testing::UnitTest@{testing\-::\-Unit\-Test}}
+\subsubsection[{Get\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Unit\-Test}$\ast$ testing\-::\-Unit\-Test\-::\-Get\-Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classtesting_1_1UnitTest_af254e2e695471eb9f128bc556bae3668}
+\hypertarget{classtesting_1_1UnitTest_a7967986c217975d4de70739d28b4109d}{\index{testing\-::\-Unit\-Test@{testing\-::\-Unit\-Test}!Get\-Test\-Case@{Get\-Test\-Case}}
+\index{Get\-Test\-Case@{Get\-Test\-Case}!testing::UnitTest@{testing\-::\-Unit\-Test}}
+\subsubsection[{Get\-Test\-Case}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Test\-Case}$\ast$ testing\-::\-Unit\-Test\-::\-Get\-Test\-Case (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+) const}}\label{classtesting_1_1UnitTest_a7967986c217975d4de70739d28b4109d}
+\hypertarget{classtesting_1_1UnitTest_a1b7387b0b3daa2433ed6b685027bf285}{\index{testing\-::\-Unit\-Test@{testing\-::\-Unit\-Test}!listeners@{listeners}}
+\index{listeners@{listeners}!testing::UnitTest@{testing\-::\-Unit\-Test}}
+\subsubsection[{listeners}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Test\-Event\-Listeners}\& testing\-::\-Unit\-Test\-::listeners (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtesting_1_1UnitTest_a1b7387b0b3daa2433ed6b685027bf285}
+\hypertarget{classtesting_1_1UnitTest_adf043d0ac041bf2fd5dbae335e3d51a4}{\index{testing\-::\-Unit\-Test@{testing\-::\-Unit\-Test}!original\-\_\-working\-\_\-dir@{original\-\_\-working\-\_\-dir}}
+\index{original\-\_\-working\-\_\-dir@{original\-\_\-working\-\_\-dir}!testing::UnitTest@{testing\-::\-Unit\-Test}}
+\subsubsection[{original\-\_\-working\-\_\-dir}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ testing\-::\-Unit\-Test\-::original\-\_\-working\-\_\-dir (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classtesting_1_1UnitTest_adf043d0ac041bf2fd5dbae335e3d51a4}
+\hypertarget{classtesting_1_1UnitTest_a1d9bd4ed86901c44b525a7b6ca4cbf3b}{\index{testing\-::\-Unit\-Test@{testing\-::\-Unit\-Test}!parameterized\-\_\-test\-\_\-registry@{parameterized\-\_\-test\-\_\-registry}}
+\index{parameterized\-\_\-test\-\_\-registry@{parameterized\-\_\-test\-\_\-registry}!testing::UnitTest@{testing\-::\-Unit\-Test}}
+\subsubsection[{parameterized\-\_\-test\-\_\-registry}]{\setlength{\rightskip}{0pt plus 5cm}{\bf internal\-::\-Parameterized\-Test\-Case\-Registry}\& testing\-::\-Unit\-Test\-::parameterized\-\_\-test\-\_\-registry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtesting_1_1UnitTest_a1d9bd4ed86901c44b525a7b6ca4cbf3b}
+\hypertarget{classtesting_1_1UnitTest_a4ef49e958702bf741e7eaa4864e28a48}{\index{testing\-::\-Unit\-Test@{testing\-::\-Unit\-Test}!Passed@{Passed}}
+\index{Passed@{Passed}!testing::UnitTest@{testing\-::\-Unit\-Test}}
+\subsubsection[{Passed}]{\setlength{\rightskip}{0pt plus 5cm}bool testing\-::\-Unit\-Test\-::\-Passed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classtesting_1_1UnitTest_a4ef49e958702bf741e7eaa4864e28a48}
+\hypertarget{classtesting_1_1UnitTest_a6fa3161a230329e07fc31a339b682a20}{\index{testing\-::\-Unit\-Test@{testing\-::\-Unit\-Test}!random\-\_\-seed@{random\-\_\-seed}}
+\index{random\-\_\-seed@{random\-\_\-seed}!testing::UnitTest@{testing\-::\-Unit\-Test}}
+\subsubsection[{random\-\_\-seed}]{\setlength{\rightskip}{0pt plus 5cm}int testing\-::\-Unit\-Test\-::random\-\_\-seed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classtesting_1_1UnitTest_a6fa3161a230329e07fc31a339b682a20}
+\hypertarget{classtesting_1_1UnitTest_aa5eaf98c5d9cc0afe501ac03e6414188}{\index{testing\-::\-Unit\-Test@{testing\-::\-Unit\-Test}!reportable\-\_\-disabled\-\_\-test\-\_\-count@{reportable\-\_\-disabled\-\_\-test\-\_\-count}}
+\index{reportable\-\_\-disabled\-\_\-test\-\_\-count@{reportable\-\_\-disabled\-\_\-test\-\_\-count}!testing::UnitTest@{testing\-::\-Unit\-Test}}
+\subsubsection[{reportable\-\_\-disabled\-\_\-test\-\_\-count}]{\setlength{\rightskip}{0pt plus 5cm}int testing\-::\-Unit\-Test\-::reportable\-\_\-disabled\-\_\-test\-\_\-count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classtesting_1_1UnitTest_aa5eaf98c5d9cc0afe501ac03e6414188}
+\hypertarget{classtesting_1_1UnitTest_aa32cb4f3cd34564a5c641bd409f8f83b}{\index{testing\-::\-Unit\-Test@{testing\-::\-Unit\-Test}!reportable\-\_\-test\-\_\-count@{reportable\-\_\-test\-\_\-count}}
+\index{reportable\-\_\-test\-\_\-count@{reportable\-\_\-test\-\_\-count}!testing::UnitTest@{testing\-::\-Unit\-Test}}
+\subsubsection[{reportable\-\_\-test\-\_\-count}]{\setlength{\rightskip}{0pt plus 5cm}int testing\-::\-Unit\-Test\-::reportable\-\_\-test\-\_\-count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classtesting_1_1UnitTest_aa32cb4f3cd34564a5c641bd409f8f83b}
+\hypertarget{classtesting_1_1UnitTest_a2febc800536b44500565f4c423f359d3}{\index{testing\-::\-Unit\-Test@{testing\-::\-Unit\-Test}!Run@{Run}}
+\index{Run@{Run}!testing::UnitTest@{testing\-::\-Unit\-Test}}
+\subsubsection[{Run}]{\setlength{\rightskip}{0pt plus 5cm}int testing\-::\-Unit\-Test\-::\-Run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtesting_1_1UnitTest_a2febc800536b44500565f4c423f359d3}
+\hypertarget{classtesting_1_1UnitTest_adb9fdaf25b601f91bd55606941d05c80}{\index{testing\-::\-Unit\-Test@{testing\-::\-Unit\-Test}!start\-\_\-timestamp@{start\-\_\-timestamp}}
+\index{start\-\_\-timestamp@{start\-\_\-timestamp}!testing::UnitTest@{testing\-::\-Unit\-Test}}
+\subsubsection[{start\-\_\-timestamp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Time\-In\-Millis} testing\-::\-Unit\-Test\-::start\-\_\-timestamp (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classtesting_1_1UnitTest_adb9fdaf25b601f91bd55606941d05c80}
+\hypertarget{classtesting_1_1UnitTest_a1761c6274386032db8315156632eab6d}{\index{testing\-::\-Unit\-Test@{testing\-::\-Unit\-Test}!successful\-\_\-test\-\_\-case\-\_\-count@{successful\-\_\-test\-\_\-case\-\_\-count}}
+\index{successful\-\_\-test\-\_\-case\-\_\-count@{successful\-\_\-test\-\_\-case\-\_\-count}!testing::UnitTest@{testing\-::\-Unit\-Test}}
+\subsubsection[{successful\-\_\-test\-\_\-case\-\_\-count}]{\setlength{\rightskip}{0pt plus 5cm}int testing\-::\-Unit\-Test\-::successful\-\_\-test\-\_\-case\-\_\-count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classtesting_1_1UnitTest_a1761c6274386032db8315156632eab6d}
+\hypertarget{classtesting_1_1UnitTest_a4795d58351f03498d5823a743b0722c5}{\index{testing\-::\-Unit\-Test@{testing\-::\-Unit\-Test}!successful\-\_\-test\-\_\-count@{successful\-\_\-test\-\_\-count}}
+\index{successful\-\_\-test\-\_\-count@{successful\-\_\-test\-\_\-count}!testing::UnitTest@{testing\-::\-Unit\-Test}}
+\subsubsection[{successful\-\_\-test\-\_\-count}]{\setlength{\rightskip}{0pt plus 5cm}int testing\-::\-Unit\-Test\-::successful\-\_\-test\-\_\-count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classtesting_1_1UnitTest_a4795d58351f03498d5823a743b0722c5}
+\hypertarget{classtesting_1_1UnitTest_abb7330165eb5be7beac3f7e6ced5fcdd}{\index{testing\-::\-Unit\-Test@{testing\-::\-Unit\-Test}!test\-\_\-case\-\_\-to\-\_\-run\-\_\-count@{test\-\_\-case\-\_\-to\-\_\-run\-\_\-count}}
+\index{test\-\_\-case\-\_\-to\-\_\-run\-\_\-count@{test\-\_\-case\-\_\-to\-\_\-run\-\_\-count}!testing::UnitTest@{testing\-::\-Unit\-Test}}
+\subsubsection[{test\-\_\-case\-\_\-to\-\_\-run\-\_\-count}]{\setlength{\rightskip}{0pt plus 5cm}int testing\-::\-Unit\-Test\-::test\-\_\-case\-\_\-to\-\_\-run\-\_\-count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classtesting_1_1UnitTest_abb7330165eb5be7beac3f7e6ced5fcdd}
+\hypertarget{classtesting_1_1UnitTest_a953a52f89898a04ee4a4e08469407cd3}{\index{testing\-::\-Unit\-Test@{testing\-::\-Unit\-Test}!test\-\_\-to\-\_\-run\-\_\-count@{test\-\_\-to\-\_\-run\-\_\-count}}
+\index{test\-\_\-to\-\_\-run\-\_\-count@{test\-\_\-to\-\_\-run\-\_\-count}!testing::UnitTest@{testing\-::\-Unit\-Test}}
+\subsubsection[{test\-\_\-to\-\_\-run\-\_\-count}]{\setlength{\rightskip}{0pt plus 5cm}int testing\-::\-Unit\-Test\-::test\-\_\-to\-\_\-run\-\_\-count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classtesting_1_1UnitTest_a953a52f89898a04ee4a4e08469407cd3}
+\hypertarget{classtesting_1_1UnitTest_a6802793a0be9cee17380fdd8c7161fcd}{\index{testing\-::\-Unit\-Test@{testing\-::\-Unit\-Test}!total\-\_\-test\-\_\-case\-\_\-count@{total\-\_\-test\-\_\-case\-\_\-count}}
+\index{total\-\_\-test\-\_\-case\-\_\-count@{total\-\_\-test\-\_\-case\-\_\-count}!testing::UnitTest@{testing\-::\-Unit\-Test}}
+\subsubsection[{total\-\_\-test\-\_\-case\-\_\-count}]{\setlength{\rightskip}{0pt plus 5cm}int testing\-::\-Unit\-Test\-::total\-\_\-test\-\_\-case\-\_\-count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classtesting_1_1UnitTest_a6802793a0be9cee17380fdd8c7161fcd}
+\hypertarget{classtesting_1_1UnitTest_a54315b233d354693b9aa1184cf2996de}{\index{testing\-::\-Unit\-Test@{testing\-::\-Unit\-Test}!total\-\_\-test\-\_\-count@{total\-\_\-test\-\_\-count}}
+\index{total\-\_\-test\-\_\-count@{total\-\_\-test\-\_\-count}!testing::UnitTest@{testing\-::\-Unit\-Test}}
+\subsubsection[{total\-\_\-test\-\_\-count}]{\setlength{\rightskip}{0pt plus 5cm}int testing\-::\-Unit\-Test\-::total\-\_\-test\-\_\-count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classtesting_1_1UnitTest_a54315b233d354693b9aa1184cf2996de}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classtesting_1_1UnitTest_a5ec26e4c31220ff8e769cc09689a4d6d}{\index{testing\-::\-Unit\-Test@{testing\-::\-Unit\-Test}!Add\-Global\-Test\-Environment@{Add\-Global\-Test\-Environment}}
+\index{Add\-Global\-Test\-Environment@{Add\-Global\-Test\-Environment}!testing::UnitTest@{testing\-::\-Unit\-Test}}
+\subsubsection[{Add\-Global\-Test\-Environment}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Environment}$\ast$ Add\-Global\-Test\-Environment (
+\begin{DoxyParamCaption}
+\item[{{\bf Environment} $\ast$}]{env}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classtesting_1_1UnitTest_a5ec26e4c31220ff8e769cc09689a4d6d}
+\hypertarget{classtesting_1_1UnitTest_a183151aa061362c87572e743fe233db1}{\index{testing\-::\-Unit\-Test@{testing\-::\-Unit\-Test}!internal\-::\-Assert\-Helper@{internal\-::\-Assert\-Helper}}
+\index{internal\-::\-Assert\-Helper@{internal\-::\-Assert\-Helper}!testing::UnitTest@{testing\-::\-Unit\-Test}}
+\subsubsection[{internal\-::\-Assert\-Helper}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf internal\-::\-Assert\-Helper}\hspace{0.3cm}{\ttfamily [friend]}}}\label{classtesting_1_1UnitTest_a183151aa061362c87572e743fe233db1}
+\hypertarget{classtesting_1_1UnitTest_a56e56be7066957d612e53b5c60f6ac08}{\index{testing\-::\-Unit\-Test@{testing\-::\-Unit\-Test}!internal\-::\-Get\-Unit\-Test\-Impl@{internal\-::\-Get\-Unit\-Test\-Impl}}
+\index{internal\-::\-Get\-Unit\-Test\-Impl@{internal\-::\-Get\-Unit\-Test\-Impl}!testing::UnitTest@{testing\-::\-Unit\-Test}}
+\subsubsection[{internal\-::\-Get\-Unit\-Test\-Impl}]{\setlength{\rightskip}{0pt plus 5cm}internal\-::\-Unit\-Test\-Impl$\ast$ {\bf internal\-::\-Get\-Unit\-Test\-Impl} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classtesting_1_1UnitTest_a56e56be7066957d612e53b5c60f6ac08}
+\hypertarget{classtesting_1_1UnitTest_a73f5a158c13793b90c80d854c9a75120}{\index{testing\-::\-Unit\-Test@{testing\-::\-Unit\-Test}!internal\-::\-Report\-Failure\-In\-Unknown\-Location@{internal\-::\-Report\-Failure\-In\-Unknown\-Location}}
+\index{internal\-::\-Report\-Failure\-In\-Unknown\-Location@{internal\-::\-Report\-Failure\-In\-Unknown\-Location}!testing::UnitTest@{testing\-::\-Unit\-Test}}
+\subsubsection[{internal\-::\-Report\-Failure\-In\-Unknown\-Location}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf internal\-::\-Report\-Failure\-In\-Unknown\-Location} (
+\begin{DoxyParamCaption}
+\item[{{\bf Test\-Part\-Result\-::\-Type}}]{result\-\_\-type, }
+\item[{const std\-::string \&}]{message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classtesting_1_1UnitTest_a73f5a158c13793b90c80d854c9a75120}
+\hypertarget{classtesting_1_1UnitTest_afa3927576c08d7b1e197ba16b2b3dcb7}{\index{testing\-::\-Unit\-Test@{testing\-::\-Unit\-Test}!internal\-::\-Scoped\-Trace@{internal\-::\-Scoped\-Trace}}
+\index{internal\-::\-Scoped\-Trace@{internal\-::\-Scoped\-Trace}!testing::UnitTest@{testing\-::\-Unit\-Test}}
+\subsubsection[{internal\-::\-Scoped\-Trace}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf internal\-::\-Scoped\-Trace}\hspace{0.3cm}{\ttfamily [friend]}}}\label{classtesting_1_1UnitTest_afa3927576c08d7b1e197ba16b2b3dcb7}
+\hypertarget{classtesting_1_1UnitTest_adc037d188dab349a94868991955c9cd4}{\index{testing\-::\-Unit\-Test@{testing\-::\-Unit\-Test}!internal\-::\-Streaming\-Listener\-Test@{internal\-::\-Streaming\-Listener\-Test}}
+\index{internal\-::\-Streaming\-Listener\-Test@{internal\-::\-Streaming\-Listener\-Test}!testing::UnitTest@{testing\-::\-Unit\-Test}}
+\subsubsection[{internal\-::\-Streaming\-Listener\-Test}]{\setlength{\rightskip}{0pt plus 5cm}friend class internal\-::\-Streaming\-Listener\-Test\hspace{0.3cm}{\ttfamily [friend]}}}\label{classtesting_1_1UnitTest_adc037d188dab349a94868991955c9cd4}
+\hypertarget{classtesting_1_1UnitTest_ae970f89a9f477a349fe5778be85ef42e}{\index{testing\-::\-Unit\-Test@{testing\-::\-Unit\-Test}!internal\-::\-Unit\-Test\-Record\-Property\-Test\-Helper@{internal\-::\-Unit\-Test\-Record\-Property\-Test\-Helper}}
+\index{internal\-::\-Unit\-Test\-Record\-Property\-Test\-Helper@{internal\-::\-Unit\-Test\-Record\-Property\-Test\-Helper}!testing::UnitTest@{testing\-::\-Unit\-Test}}
+\subsubsection[{internal\-::\-Unit\-Test\-Record\-Property\-Test\-Helper}]{\setlength{\rightskip}{0pt plus 5cm}friend class internal\-::\-Unit\-Test\-Record\-Property\-Test\-Helper\hspace{0.3cm}{\ttfamily [friend]}}}\label{classtesting_1_1UnitTest_ae970f89a9f477a349fe5778be85ef42e}
+\hypertarget{classtesting_1_1UnitTest_a5b78b1c2e1fa07ffed92da365593eaa4}{\index{testing\-::\-Unit\-Test@{testing\-::\-Unit\-Test}!Test@{Test}}
+\index{Test@{Test}!testing::UnitTest@{testing\-::\-Unit\-Test}}
+\subsubsection[{Test}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Test}\hspace{0.3cm}{\ttfamily [friend]}}}\label{classtesting_1_1UnitTest_a5b78b1c2e1fa07ffed92da365593eaa4}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/ts/\hyperlink{ts__gtest_8h}{ts\-\_\-gtest.\-h}\end{DoxyCompactItemize}

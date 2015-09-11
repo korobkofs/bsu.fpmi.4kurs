@@ -1,0 +1,5 @@
+<map id="cvflann::search_with_ground_truth" name="cvflann::search_with_ground_truth">
+<area shape="rect" id="node2" href="$namespacecvflann.html#a1d76012b7d0afeea6c4b43ec48cda7a4" title="cvflann::test_index\l_checks" alt="" coords="198,5,330,46"/>
+<area shape="rect" id="node3" href="$namespacecvflann.html#aff89fafb22b62a454cef8ce83960b89f" title="cvflann::test_index\l_precision" alt="" coords="198,70,330,111"/>
+<area shape="rect" id="node4" href="$namespacecvflann.html#aa27ca9a7a0e97f3b09f781421b5ffa05" title="cvflann::test_index\l_precisions" alt="" coords="198,135,330,177"/>
+</map>

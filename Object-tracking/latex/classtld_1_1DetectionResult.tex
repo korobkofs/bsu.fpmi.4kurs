@@ -1,0 +1,181 @@
+\hypertarget{classtld_1_1DetectionResult}{\section{tld\-:\-:Detection\-Result Class Reference}
+\label{classtld_1_1DetectionResult}\index{tld\-::\-Detection\-Result@{tld\-::\-Detection\-Result}}
+}
+
+
+The detection result.  
+
+
+
+
+{\ttfamily \#include $<$Detection\-Result.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtld_1_1DetectionResult_a603fdd04a64eb7e6c60ee7e9bb27d747}{Detection\-Result} ()
+\begin{DoxyCompactList}\small\item\em This constructor initializes the class variables. \end{DoxyCompactList}\item 
+virtual \hyperlink{classtld_1_1DetectionResult_a6e76739d206edcdbbac3d2da474fa5ff}{$\sim$\-Detection\-Result} ()
+\begin{DoxyCompactList}\small\item\em This destructor releases the memory. \end{DoxyCompactList}\item 
+void \hyperlink{classtld_1_1DetectionResult_a20c6fc21a478b99cf88b6e955931e530}{init} (int num\-Windows, int num\-Trees)
+\begin{DoxyCompactList}\small\item\em Initializes the class variables. \end{DoxyCompactList}\item 
+void \hyperlink{classtld_1_1DetectionResult_afeda3b61ba3d7ba3304b96baf65d184b}{reset} ()
+\begin{DoxyCompactList}\small\item\em Resets the class variables. \end{DoxyCompactList}\item 
+void \hyperlink{classtld_1_1DetectionResult_a23dc924e308f7a2d8f3795fb48fb6648}{release} ()
+\begin{DoxyCompactList}\small\item\em Release the memory occupied with the class variables. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classtld_1_1DetectionResult_af5202404b0b269bd5f8c6b483356c517}{contains\-Valid\-Data}
+\begin{DoxyCompactList}\small\item\em true, if class contain valid data; false, otherwise \end{DoxyCompactList}\item 
+std\-::vector$<$ cv\-::\-Rect $>$ $\ast$ \hyperlink{classtld_1_1DetectionResult_ac640285c436ff5166d0ea34116d4dc69}{fg\-List}
+\begin{DoxyCompactList}\small\item\em the list of regions of foreground \end{DoxyCompactList}\item 
+float $\ast$ \hyperlink{classtld_1_1DetectionResult_abe6b7a8cc4478cce6351207939e96333}{posteriors}
+\begin{DoxyCompactList}\small\item\em the array contains the posteriors for each sliding window. Is of size num\-Windows. Allocated by init\-Posteriors. \end{DoxyCompactList}\item 
+std\-::vector$<$ int $>$ $\ast$ \hyperlink{classtld_1_1DetectionResult_aae986474ad532795e262e240a3ddb951}{confident\-Indices}
+\begin{DoxyCompactList}\small\item\em the vector of indices of confident windows \end{DoxyCompactList}\item 
+int $\ast$ \hyperlink{classtld_1_1DetectionResult_a2650bfbdb106c7dd9b774cfccf5fdb25}{feature\-Vectors}
+\begin{DoxyCompactList}\small\item\em the feature vectors (in Essemble Classifier) \end{DoxyCompactList}\item 
+float $\ast$ \hyperlink{classtld_1_1DetectionResult_ae0725362fbe07964e4ac6861fa1d32fb}{variances}
+\begin{DoxyCompactList}\small\item\em the array of variance in window offsets \end{DoxyCompactList}\item 
+int \hyperlink{classtld_1_1DetectionResult_aebf70a6b9d27b4cb34248ac26e5876ab}{num\-Clusters}
+\begin{DoxyCompactList}\small\item\em the number of clusters \end{DoxyCompactList}\item 
+cv\-::\-Rect $\ast$ \hyperlink{classtld_1_1DetectionResult_ab3cade119a99e868902e6bca2e6271df}{detector\-B\-B}
+\begin{DoxyCompactList}\small\item\em the result bounding box, contains a valid result only if num\-Clusters = 1 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The detection result. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classtld_1_1DetectionResult_a603fdd04a64eb7e6c60ee7e9bb27d747}{\index{tld\-::\-Detection\-Result@{tld\-::\-Detection\-Result}!Detection\-Result@{Detection\-Result}}
+\index{Detection\-Result@{Detection\-Result}!tld::DetectionResult@{tld\-::\-Detection\-Result}}
+\subsubsection[{Detection\-Result}]{\setlength{\rightskip}{0pt plus 5cm}tld\-::\-Detection\-Result\-::\-Detection\-Result (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1DetectionResult_a603fdd04a64eb7e6c60ee7e9bb27d747}
+
+
+This constructor initializes the class variables. 
+
+\hypertarget{classtld_1_1DetectionResult_a6e76739d206edcdbbac3d2da474fa5ff}{\index{tld\-::\-Detection\-Result@{tld\-::\-Detection\-Result}!$\sim$\-Detection\-Result@{$\sim$\-Detection\-Result}}
+\index{$\sim$\-Detection\-Result@{$\sim$\-Detection\-Result}!tld::DetectionResult@{tld\-::\-Detection\-Result}}
+\subsubsection[{$\sim$\-Detection\-Result}]{\setlength{\rightskip}{0pt plus 5cm}tld\-::\-Detection\-Result\-::$\sim$\-Detection\-Result (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classtld_1_1DetectionResult_a6e76739d206edcdbbac3d2da474fa5ff}
+
+
+This destructor releases the memory. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classtld_1_1DetectionResult_a20c6fc21a478b99cf88b6e955931e530}{\index{tld\-::\-Detection\-Result@{tld\-::\-Detection\-Result}!init@{init}}
+\index{init@{init}!tld::DetectionResult@{tld\-::\-Detection\-Result}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::\-Detection\-Result\-::init (
+\begin{DoxyParamCaption}
+\item[{int}]{num\-Windows, }
+\item[{int}]{num\-Trees}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1DetectionResult_a20c6fc21a478b99cf88b6e955931e530}
+
+
+Initializes the class variables. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\-Windows} & the number of windows \\
+\hline
+{\em num\-Trees} & the number of trees \\
+\hline
+\end{DoxyParams}
+\hypertarget{classtld_1_1DetectionResult_a23dc924e308f7a2d8f3795fb48fb6648}{\index{tld\-::\-Detection\-Result@{tld\-::\-Detection\-Result}!release@{release}}
+\index{release@{release}!tld::DetectionResult@{tld\-::\-Detection\-Result}}
+\subsubsection[{release}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::\-Detection\-Result\-::release (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1DetectionResult_a23dc924e308f7a2d8f3795fb48fb6648}
+
+
+Release the memory occupied with the class variables. 
+
+\hypertarget{classtld_1_1DetectionResult_afeda3b61ba3d7ba3304b96baf65d184b}{\index{tld\-::\-Detection\-Result@{tld\-::\-Detection\-Result}!reset@{reset}}
+\index{reset@{reset}!tld::DetectionResult@{tld\-::\-Detection\-Result}}
+\subsubsection[{reset}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::\-Detection\-Result\-::reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1DetectionResult_afeda3b61ba3d7ba3304b96baf65d184b}
+
+
+Resets the class variables. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classtld_1_1DetectionResult_aae986474ad532795e262e240a3ddb951}{\index{tld\-::\-Detection\-Result@{tld\-::\-Detection\-Result}!confident\-Indices@{confident\-Indices}}
+\index{confident\-Indices@{confident\-Indices}!tld::DetectionResult@{tld\-::\-Detection\-Result}}
+\subsubsection[{confident\-Indices}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$int$>$$\ast$ tld\-::\-Detection\-Result\-::confident\-Indices}}\label{classtld_1_1DetectionResult_aae986474ad532795e262e240a3ddb951}
+
+
+the vector of indices of confident windows 
+
+\hypertarget{classtld_1_1DetectionResult_af5202404b0b269bd5f8c6b483356c517}{\index{tld\-::\-Detection\-Result@{tld\-::\-Detection\-Result}!contains\-Valid\-Data@{contains\-Valid\-Data}}
+\index{contains\-Valid\-Data@{contains\-Valid\-Data}!tld::DetectionResult@{tld\-::\-Detection\-Result}}
+\subsubsection[{contains\-Valid\-Data}]{\setlength{\rightskip}{0pt plus 5cm}bool tld\-::\-Detection\-Result\-::contains\-Valid\-Data}}\label{classtld_1_1DetectionResult_af5202404b0b269bd5f8c6b483356c517}
+
+
+true, if class contain valid data; false, otherwise 
+
+\hypertarget{classtld_1_1DetectionResult_ab3cade119a99e868902e6bca2e6271df}{\index{tld\-::\-Detection\-Result@{tld\-::\-Detection\-Result}!detector\-B\-B@{detector\-B\-B}}
+\index{detector\-B\-B@{detector\-B\-B}!tld::DetectionResult@{tld\-::\-Detection\-Result}}
+\subsubsection[{detector\-B\-B}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::\-Rect$\ast$ tld\-::\-Detection\-Result\-::detector\-B\-B}}\label{classtld_1_1DetectionResult_ab3cade119a99e868902e6bca2e6271df}
+
+
+the result bounding box, contains a valid result only if num\-Clusters = 1 
+
+\hypertarget{classtld_1_1DetectionResult_a2650bfbdb106c7dd9b774cfccf5fdb25}{\index{tld\-::\-Detection\-Result@{tld\-::\-Detection\-Result}!feature\-Vectors@{feature\-Vectors}}
+\index{feature\-Vectors@{feature\-Vectors}!tld::DetectionResult@{tld\-::\-Detection\-Result}}
+\subsubsection[{feature\-Vectors}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ tld\-::\-Detection\-Result\-::feature\-Vectors}}\label{classtld_1_1DetectionResult_a2650bfbdb106c7dd9b774cfccf5fdb25}
+
+
+the feature vectors (in Essemble Classifier) 
+
+\hypertarget{classtld_1_1DetectionResult_ac640285c436ff5166d0ea34116d4dc69}{\index{tld\-::\-Detection\-Result@{tld\-::\-Detection\-Result}!fg\-List@{fg\-List}}
+\index{fg\-List@{fg\-List}!tld::DetectionResult@{tld\-::\-Detection\-Result}}
+\subsubsection[{fg\-List}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$cv\-::\-Rect$>$$\ast$ tld\-::\-Detection\-Result\-::fg\-List}}\label{classtld_1_1DetectionResult_ac640285c436ff5166d0ea34116d4dc69}
+
+
+the list of regions of foreground 
+
+\hypertarget{classtld_1_1DetectionResult_aebf70a6b9d27b4cb34248ac26e5876ab}{\index{tld\-::\-Detection\-Result@{tld\-::\-Detection\-Result}!num\-Clusters@{num\-Clusters}}
+\index{num\-Clusters@{num\-Clusters}!tld::DetectionResult@{tld\-::\-Detection\-Result}}
+\subsubsection[{num\-Clusters}]{\setlength{\rightskip}{0pt plus 5cm}int tld\-::\-Detection\-Result\-::num\-Clusters}}\label{classtld_1_1DetectionResult_aebf70a6b9d27b4cb34248ac26e5876ab}
+
+
+the number of clusters 
+
+\hypertarget{classtld_1_1DetectionResult_abe6b7a8cc4478cce6351207939e96333}{\index{tld\-::\-Detection\-Result@{tld\-::\-Detection\-Result}!posteriors@{posteriors}}
+\index{posteriors@{posteriors}!tld::DetectionResult@{tld\-::\-Detection\-Result}}
+\subsubsection[{posteriors}]{\setlength{\rightskip}{0pt plus 5cm}float$\ast$ tld\-::\-Detection\-Result\-::posteriors}}\label{classtld_1_1DetectionResult_abe6b7a8cc4478cce6351207939e96333}
+
+
+the array contains the posteriors for each sliding window. Is of size num\-Windows. Allocated by init\-Posteriors. 
+
+\hypertarget{classtld_1_1DetectionResult_ae0725362fbe07964e4ac6861fa1d32fb}{\index{tld\-::\-Detection\-Result@{tld\-::\-Detection\-Result}!variances@{variances}}
+\index{variances@{variances}!tld::DetectionResult@{tld\-::\-Detection\-Result}}
+\subsubsection[{variances}]{\setlength{\rightskip}{0pt plus 5cm}float$\ast$ tld\-::\-Detection\-Result\-::variances}}\label{classtld_1_1DetectionResult_ae0725362fbe07964e4ac6861fa1d32fb}
+
+
+the array of variance in window offsets 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/libopentld/tld/\hyperlink{DetectionResult_8h}{Detection\-Result.\-h}\item 
+src/libopentld/tld/\hyperlink{DetectionResult_8cpp}{Detection\-Result.\-cpp}\end{DoxyCompactItemize}

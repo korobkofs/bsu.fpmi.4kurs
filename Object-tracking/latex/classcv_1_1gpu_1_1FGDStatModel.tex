@@ -1,0 +1,105 @@
+\hypertarget{classcv_1_1gpu_1_1FGDStatModel}{\section{cv\-:\-:gpu\-:\-:F\-G\-D\-Stat\-Model Class Reference}
+\label{classcv_1_1gpu_1_1FGDStatModel}\index{cv\-::gpu\-::\-F\-G\-D\-Stat\-Model@{cv\-::gpu\-::\-F\-G\-D\-Stat\-Model}}
+}
+
+
+{\ttfamily \#include $<$gpu.\-hpp$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1FGDStatModel_1_1Params}{Params}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcv_1_1gpu_1_1FGDStatModel_a44f2f3e939a21b4978b7399ce706335d}{F\-G\-D\-Stat\-Model} (int out\-\_\-cn=3)
+\item 
+\hyperlink{classcv_1_1gpu_1_1FGDStatModel_a1941766a912afc498ff76807aa4dad68}{F\-G\-D\-Stat\-Model} (const cv\-::gpu\-::\-Gpu\-Mat \&first\-Frame, const \hyperlink{structcv_1_1gpu_1_1FGDStatModel_1_1Params}{Params} \&\hyperlink{compat_8hpp_a0480a03ecc41b20cde376602531d9270}{params}=\hyperlink{structcv_1_1gpu_1_1FGDStatModel_1_1Params}{Params}(), int out\-\_\-cn=3)
+\item 
+\hyperlink{classcv_1_1gpu_1_1FGDStatModel_ab2d4c63fcc1df838e6311ac5e423c1b4}{$\sim$\-F\-G\-D\-Stat\-Model} ()
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1FGDStatModel_ad01cae89012281d70c63ec698974ce35}{create} (const cv\-::gpu\-::\-Gpu\-Mat \&first\-Frame, const \hyperlink{structcv_1_1gpu_1_1FGDStatModel_1_1Params}{Params} \&\hyperlink{compat_8hpp_a0480a03ecc41b20cde376602531d9270}{params}=\hyperlink{structcv_1_1gpu_1_1FGDStatModel_1_1Params}{Params}())
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1FGDStatModel_a16e796b802d2bf74d5591fce51fa91fa}{release} ()
+\item 
+int \hyperlink{classcv_1_1gpu_1_1FGDStatModel_af488f4b536aa0a287b03205490fd59bc}{update} (const cv\-::gpu\-::\-Gpu\-Mat \&cur\-Frame)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+cv\-::gpu\-::\-Gpu\-Mat \hyperlink{classcv_1_1gpu_1_1FGDStatModel_a5338d077962abc68f3bdf86dbfdf7fb5}{background}
+\item 
+cv\-::gpu\-::\-Gpu\-Mat \hyperlink{classcv_1_1gpu_1_1FGDStatModel_a45433418635a48e18f1faefca63b2d19}{foreground}
+\item 
+std\-::vector$<$ std\-::vector\\*
+$<$ cv\-::\-Point $>$ $>$ \hyperlink{classcv_1_1gpu_1_1FGDStatModel_a8ebaaacff6c039db9c53d60640102243}{foreground\-\_\-regions}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcv_1_1gpu_1_1FGDStatModel_a44f2f3e939a21b4978b7399ce706335d}{\index{cv\-::gpu\-::\-F\-G\-D\-Stat\-Model@{cv\-::gpu\-::\-F\-G\-D\-Stat\-Model}!F\-G\-D\-Stat\-Model@{F\-G\-D\-Stat\-Model}}
+\index{F\-G\-D\-Stat\-Model@{F\-G\-D\-Stat\-Model}!cv::gpu::FGDStatModel@{cv\-::gpu\-::\-F\-G\-D\-Stat\-Model}}
+\subsubsection[{F\-G\-D\-Stat\-Model}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::gpu\-::\-F\-G\-D\-Stat\-Model\-::\-F\-G\-D\-Stat\-Model (
+\begin{DoxyParamCaption}
+\item[{int}]{out\-\_\-cn = {\ttfamily 3}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{classcv_1_1gpu_1_1FGDStatModel_a44f2f3e939a21b4978b7399ce706335d}
+\hypertarget{classcv_1_1gpu_1_1FGDStatModel_a1941766a912afc498ff76807aa4dad68}{\index{cv\-::gpu\-::\-F\-G\-D\-Stat\-Model@{cv\-::gpu\-::\-F\-G\-D\-Stat\-Model}!F\-G\-D\-Stat\-Model@{F\-G\-D\-Stat\-Model}}
+\index{F\-G\-D\-Stat\-Model@{F\-G\-D\-Stat\-Model}!cv::gpu::FGDStatModel@{cv\-::gpu\-::\-F\-G\-D\-Stat\-Model}}
+\subsubsection[{F\-G\-D\-Stat\-Model}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::gpu\-::\-F\-G\-D\-Stat\-Model\-::\-F\-G\-D\-Stat\-Model (
+\begin{DoxyParamCaption}
+\item[{const cv\-::gpu\-::\-Gpu\-Mat \&}]{first\-Frame, }
+\item[{const {\bf Params} \&}]{params = {\ttfamily {\bf Params}()}, }
+\item[{int}]{out\-\_\-cn = {\ttfamily 3}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{classcv_1_1gpu_1_1FGDStatModel_a1941766a912afc498ff76807aa4dad68}
+\hypertarget{classcv_1_1gpu_1_1FGDStatModel_ab2d4c63fcc1df838e6311ac5e423c1b4}{\index{cv\-::gpu\-::\-F\-G\-D\-Stat\-Model@{cv\-::gpu\-::\-F\-G\-D\-Stat\-Model}!$\sim$\-F\-G\-D\-Stat\-Model@{$\sim$\-F\-G\-D\-Stat\-Model}}
+\index{$\sim$\-F\-G\-D\-Stat\-Model@{$\sim$\-F\-G\-D\-Stat\-Model}!cv::gpu::FGDStatModel@{cv\-::gpu\-::\-F\-G\-D\-Stat\-Model}}
+\subsubsection[{$\sim$\-F\-G\-D\-Stat\-Model}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::gpu\-::\-F\-G\-D\-Stat\-Model\-::$\sim$\-F\-G\-D\-Stat\-Model (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1FGDStatModel_ab2d4c63fcc1df838e6311ac5e423c1b4}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcv_1_1gpu_1_1FGDStatModel_ad01cae89012281d70c63ec698974ce35}{\index{cv\-::gpu\-::\-F\-G\-D\-Stat\-Model@{cv\-::gpu\-::\-F\-G\-D\-Stat\-Model}!create@{create}}
+\index{create@{create}!cv::gpu::FGDStatModel@{cv\-::gpu\-::\-F\-G\-D\-Stat\-Model}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-F\-G\-D\-Stat\-Model\-::create (
+\begin{DoxyParamCaption}
+\item[{const cv\-::gpu\-::\-Gpu\-Mat \&}]{first\-Frame, }
+\item[{const {\bf Params} \&}]{params = {\ttfamily {\bf Params}()}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1FGDStatModel_ad01cae89012281d70c63ec698974ce35}
+\hypertarget{classcv_1_1gpu_1_1FGDStatModel_a16e796b802d2bf74d5591fce51fa91fa}{\index{cv\-::gpu\-::\-F\-G\-D\-Stat\-Model@{cv\-::gpu\-::\-F\-G\-D\-Stat\-Model}!release@{release}}
+\index{release@{release}!cv::gpu::FGDStatModel@{cv\-::gpu\-::\-F\-G\-D\-Stat\-Model}}
+\subsubsection[{release}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-F\-G\-D\-Stat\-Model\-::release (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1FGDStatModel_a16e796b802d2bf74d5591fce51fa91fa}
+\hypertarget{classcv_1_1gpu_1_1FGDStatModel_af488f4b536aa0a287b03205490fd59bc}{\index{cv\-::gpu\-::\-F\-G\-D\-Stat\-Model@{cv\-::gpu\-::\-F\-G\-D\-Stat\-Model}!update@{update}}
+\index{update@{update}!cv::gpu::FGDStatModel@{cv\-::gpu\-::\-F\-G\-D\-Stat\-Model}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::gpu\-::\-F\-G\-D\-Stat\-Model\-::update (
+\begin{DoxyParamCaption}
+\item[{const cv\-::gpu\-::\-Gpu\-Mat \&}]{cur\-Frame}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1FGDStatModel_af488f4b536aa0a287b03205490fd59bc}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcv_1_1gpu_1_1FGDStatModel_a5338d077962abc68f3bdf86dbfdf7fb5}{\index{cv\-::gpu\-::\-F\-G\-D\-Stat\-Model@{cv\-::gpu\-::\-F\-G\-D\-Stat\-Model}!background@{background}}
+\index{background@{background}!cv::gpu::FGDStatModel@{cv\-::gpu\-::\-F\-G\-D\-Stat\-Model}}
+\subsubsection[{background}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::gpu\-::\-Gpu\-Mat cv\-::gpu\-::\-F\-G\-D\-Stat\-Model\-::background}}\label{classcv_1_1gpu_1_1FGDStatModel_a5338d077962abc68f3bdf86dbfdf7fb5}
+\hypertarget{classcv_1_1gpu_1_1FGDStatModel_a45433418635a48e18f1faefca63b2d19}{\index{cv\-::gpu\-::\-F\-G\-D\-Stat\-Model@{cv\-::gpu\-::\-F\-G\-D\-Stat\-Model}!foreground@{foreground}}
+\index{foreground@{foreground}!cv::gpu::FGDStatModel@{cv\-::gpu\-::\-F\-G\-D\-Stat\-Model}}
+\subsubsection[{foreground}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::gpu\-::\-Gpu\-Mat cv\-::gpu\-::\-F\-G\-D\-Stat\-Model\-::foreground}}\label{classcv_1_1gpu_1_1FGDStatModel_a45433418635a48e18f1faefca63b2d19}
+\hypertarget{classcv_1_1gpu_1_1FGDStatModel_a8ebaaacff6c039db9c53d60640102243}{\index{cv\-::gpu\-::\-F\-G\-D\-Stat\-Model@{cv\-::gpu\-::\-F\-G\-D\-Stat\-Model}!foreground\-\_\-regions@{foreground\-\_\-regions}}
+\index{foreground\-\_\-regions@{foreground\-\_\-regions}!cv::gpu::FGDStatModel@{cv\-::gpu\-::\-F\-G\-D\-Stat\-Model}}
+\subsubsection[{foreground\-\_\-regions}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ std\-::vector$<$cv\-::\-Point$>$ $>$ cv\-::gpu\-::\-F\-G\-D\-Stat\-Model\-::foreground\-\_\-regions}}\label{classcv_1_1gpu_1_1FGDStatModel_a8ebaaacff6c039db9c53d60640102243}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/gpu/\hyperlink{gpu_2gpu_8hpp}{gpu.\-hpp}\end{DoxyCompactItemize}

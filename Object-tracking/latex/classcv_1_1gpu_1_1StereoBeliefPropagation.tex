@@ -1,0 +1,181 @@
+\hypertarget{classcv_1_1gpu_1_1StereoBeliefPropagation}{\section{cv\-:\-:gpu\-:\-:Stereo\-Belief\-Propagation Class Reference}
+\label{classcv_1_1gpu_1_1StereoBeliefPropagation}\index{cv\-::gpu\-::\-Stereo\-Belief\-Propagation@{cv\-::gpu\-::\-Stereo\-Belief\-Propagation}}
+}
+
+
+{\ttfamily \#include $<$gpu.\-hpp$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{classcv_1_1gpu_1_1StereoBeliefPropagation_a325b976b8eca6b8d84a8300ff33b16f8aecfcc3cfb804629964bf3c1b1e43d208}{D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-D\-I\-S\-P} = 64
+ \}
+\item 
+enum \{ \hyperlink{classcv_1_1gpu_1_1StereoBeliefPropagation_a5b44f8076697e28779d65c5ee23d5319a82ed1ac88762686b4b120f335c471fc4}{D\-E\-F\-A\-U\-L\-T\-\_\-\-I\-T\-E\-R\-S} = 5
+ \}
+\item 
+enum \{ \hyperlink{classcv_1_1gpu_1_1StereoBeliefPropagation_a64bc6ee2db8d4fb1ba7f0a7fd53cd14fa1768c3b920473c62f5b20668842a8fc7}{D\-E\-F\-A\-U\-L\-T\-\_\-\-L\-E\-V\-E\-L\-S} = 5
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcv_1_1gpu_1_1StereoBeliefPropagation_a7c19feccc40f1617ba64f3b96b0b297e}{Stereo\-Belief\-Propagation} (int \hyperlink{classcv_1_1gpu_1_1StereoBeliefPropagation_a0d731e1e2cfc606e05853ad240339b85}{ndisp}=\hyperlink{classcv_1_1gpu_1_1StereoBeliefPropagation_a325b976b8eca6b8d84a8300ff33b16f8aecfcc3cfb804629964bf3c1b1e43d208}{D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-D\-I\-S\-P}, int \hyperlink{classcv_1_1gpu_1_1StereoBeliefPropagation_a468adfcd6c5453ec3b79b496d404610f}{iters}=\hyperlink{classcv_1_1gpu_1_1StereoBeliefPropagation_a5b44f8076697e28779d65c5ee23d5319a82ed1ac88762686b4b120f335c471fc4}{D\-E\-F\-A\-U\-L\-T\-\_\-\-I\-T\-E\-R\-S}, int \hyperlink{classcv_1_1gpu_1_1StereoBeliefPropagation_abf1426daac046c64ff00b02065b15caf}{levels}=\hyperlink{classcv_1_1gpu_1_1StereoBeliefPropagation_a64bc6ee2db8d4fb1ba7f0a7fd53cd14fa1768c3b920473c62f5b20668842a8fc7}{D\-E\-F\-A\-U\-L\-T\-\_\-\-L\-E\-V\-E\-L\-S}, int \hyperlink{classcv_1_1gpu_1_1StereoBeliefPropagation_a0a7d82324e2922f8e7e826b26a447ee6}{msg\-\_\-type}=\hyperlink{core_2types__c_8h_a4a3def5d72b74bed31f5f8ab7676099c}{C\-V\-\_\-32\-F})
+\begin{DoxyCompactList}\small\item\em the default constructor \end{DoxyCompactList}\item 
+\hyperlink{classcv_1_1gpu_1_1StereoBeliefPropagation_ae3d644c32d63d82149bc97ccd2c0451f}{Stereo\-Belief\-Propagation} (int \hyperlink{classcv_1_1gpu_1_1StereoBeliefPropagation_a0d731e1e2cfc606e05853ad240339b85}{ndisp}, int \hyperlink{classcv_1_1gpu_1_1StereoBeliefPropagation_a468adfcd6c5453ec3b79b496d404610f}{iters}, int \hyperlink{classcv_1_1gpu_1_1StereoBeliefPropagation_abf1426daac046c64ff00b02065b15caf}{levels}, float \hyperlink{classcv_1_1gpu_1_1StereoBeliefPropagation_a40764d557deb13ec8505fdb59ea9df66}{max\-\_\-data\-\_\-term}, float \hyperlink{classcv_1_1gpu_1_1StereoBeliefPropagation_aa228ac4e9eb3ba78eb3039d972c458b1}{data\-\_\-weight}, float \hyperlink{classcv_1_1gpu_1_1StereoBeliefPropagation_ad6ecab0b3d6ddb925d08fa9030f8bc91}{max\-\_\-disc\-\_\-term}, float \hyperlink{classcv_1_1gpu_1_1StereoBeliefPropagation_a87bd96dd0ef5d823fec95a5145685b34}{disc\-\_\-single\-\_\-jump}, int \hyperlink{classcv_1_1gpu_1_1StereoBeliefPropagation_a0a7d82324e2922f8e7e826b26a447ee6}{msg\-\_\-type}=\hyperlink{core_2types__c_8h_a4a3def5d72b74bed31f5f8ab7676099c}{C\-V\-\_\-32\-F})
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1StereoBeliefPropagation_acf67833fd3526b717ac25c0e015be138}{operator()} (const Gpu\-Mat \&left, const Gpu\-Mat \&\hyperlink{legacy_8hpp_a6b04b878081bf724144b73c75dfd1894}{right}, Gpu\-Mat \&\hyperlink{calib3d_8hpp_acd2ef073a3a4984e0a0ebac5c7e179fd}{disparity}, \hyperlink{classcv_1_1gpu_1_1Stream}{Stream} \&stream=\hyperlink{classcv_1_1gpu_1_1Stream_af96c23564834f88333dcb8997df553f1}{Stream\-::\-Null}())
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1StereoBeliefPropagation_af1ba484859a60cb5e1d5a7d4512dc7e1}{operator()} (const Gpu\-Mat \&\hyperlink{legacy_8hpp_ab9fe6c09e6d02865a953fffc12fe6ca0}{data}, Gpu\-Mat \&\hyperlink{calib3d_8hpp_acd2ef073a3a4984e0a0ebac5c7e179fd}{disparity}, \hyperlink{classcv_1_1gpu_1_1Stream}{Stream} \&stream=\hyperlink{classcv_1_1gpu_1_1Stream_af96c23564834f88333dcb8997df553f1}{Stream\-::\-Null}())
+\begin{DoxyCompactList}\small\item\em version for user specified data term \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1StereoBeliefPropagation_a76ccf1c9d6388fa73170dd3ca83e8bce}{estimate\-Recommended\-Params} (int \hyperlink{highgui__c_8h_a2474a5474cbff19523a51eb1de01cda4}{width}, int \hyperlink{highgui__c_8h_adc7b4b8a6ef510e136071efbc9cd9a58}{height}, int \&\hyperlink{classcv_1_1gpu_1_1StereoBeliefPropagation_a0d731e1e2cfc606e05853ad240339b85}{ndisp}, int \&\hyperlink{classcv_1_1gpu_1_1StereoBeliefPropagation_a468adfcd6c5453ec3b79b496d404610f}{iters}, int \&\hyperlink{classcv_1_1gpu_1_1StereoBeliefPropagation_abf1426daac046c64ff00b02065b15caf}{levels})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classcv_1_1gpu_1_1StereoBeliefPropagation_a0d731e1e2cfc606e05853ad240339b85}{ndisp}
+\item 
+int \hyperlink{classcv_1_1gpu_1_1StereoBeliefPropagation_a468adfcd6c5453ec3b79b496d404610f}{iters}
+\item 
+int \hyperlink{classcv_1_1gpu_1_1StereoBeliefPropagation_abf1426daac046c64ff00b02065b15caf}{levels}
+\item 
+float \hyperlink{classcv_1_1gpu_1_1StereoBeliefPropagation_a40764d557deb13ec8505fdb59ea9df66}{max\-\_\-data\-\_\-term}
+\item 
+float \hyperlink{classcv_1_1gpu_1_1StereoBeliefPropagation_aa228ac4e9eb3ba78eb3039d972c458b1}{data\-\_\-weight}
+\item 
+float \hyperlink{classcv_1_1gpu_1_1StereoBeliefPropagation_ad6ecab0b3d6ddb925d08fa9030f8bc91}{max\-\_\-disc\-\_\-term}
+\item 
+float \hyperlink{classcv_1_1gpu_1_1StereoBeliefPropagation_a87bd96dd0ef5d823fec95a5145685b34}{disc\-\_\-single\-\_\-jump}
+\item 
+int \hyperlink{classcv_1_1gpu_1_1StereoBeliefPropagation_a0a7d82324e2922f8e7e826b26a447ee6}{msg\-\_\-type}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classcv_1_1gpu_1_1StereoBeliefPropagation_a325b976b8eca6b8d84a8300ff33b16f8}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{classcv_1_1gpu_1_1StereoBeliefPropagation_a325b976b8eca6b8d84a8300ff33b16f8}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-D\-I\-S\-P@{D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-D\-I\-S\-P}!cv\-::gpu\-::\-Stereo\-Belief\-Propagation@{cv\-::gpu\-::\-Stereo\-Belief\-Propagation}}\index{cv\-::gpu\-::\-Stereo\-Belief\-Propagation@{cv\-::gpu\-::\-Stereo\-Belief\-Propagation}!D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-D\-I\-S\-P@{D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-D\-I\-S\-P}}\item[{\em 
+\hypertarget{classcv_1_1gpu_1_1StereoBeliefPropagation_a325b976b8eca6b8d84a8300ff33b16f8aecfcc3cfb804629964bf3c1b1e43d208}{D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-D\-I\-S\-P}\label{classcv_1_1gpu_1_1StereoBeliefPropagation_a325b976b8eca6b8d84a8300ff33b16f8aecfcc3cfb804629964bf3c1b1e43d208}
+}]\end{description}
+\end{Desc}
+\hypertarget{classcv_1_1gpu_1_1StereoBeliefPropagation_a5b44f8076697e28779d65c5ee23d5319}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{classcv_1_1gpu_1_1StereoBeliefPropagation_a5b44f8076697e28779d65c5ee23d5319}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{D\-E\-F\-A\-U\-L\-T\-\_\-\-I\-T\-E\-R\-S@{D\-E\-F\-A\-U\-L\-T\-\_\-\-I\-T\-E\-R\-S}!cv\-::gpu\-::\-Stereo\-Belief\-Propagation@{cv\-::gpu\-::\-Stereo\-Belief\-Propagation}}\index{cv\-::gpu\-::\-Stereo\-Belief\-Propagation@{cv\-::gpu\-::\-Stereo\-Belief\-Propagation}!D\-E\-F\-A\-U\-L\-T\-\_\-\-I\-T\-E\-R\-S@{D\-E\-F\-A\-U\-L\-T\-\_\-\-I\-T\-E\-R\-S}}\item[{\em 
+\hypertarget{classcv_1_1gpu_1_1StereoBeliefPropagation_a5b44f8076697e28779d65c5ee23d5319a82ed1ac88762686b4b120f335c471fc4}{D\-E\-F\-A\-U\-L\-T\-\_\-\-I\-T\-E\-R\-S}\label{classcv_1_1gpu_1_1StereoBeliefPropagation_a5b44f8076697e28779d65c5ee23d5319a82ed1ac88762686b4b120f335c471fc4}
+}]\end{description}
+\end{Desc}
+\hypertarget{classcv_1_1gpu_1_1StereoBeliefPropagation_a64bc6ee2db8d4fb1ba7f0a7fd53cd14f}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{classcv_1_1gpu_1_1StereoBeliefPropagation_a64bc6ee2db8d4fb1ba7f0a7fd53cd14f}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{D\-E\-F\-A\-U\-L\-T\-\_\-\-L\-E\-V\-E\-L\-S@{D\-E\-F\-A\-U\-L\-T\-\_\-\-L\-E\-V\-E\-L\-S}!cv\-::gpu\-::\-Stereo\-Belief\-Propagation@{cv\-::gpu\-::\-Stereo\-Belief\-Propagation}}\index{cv\-::gpu\-::\-Stereo\-Belief\-Propagation@{cv\-::gpu\-::\-Stereo\-Belief\-Propagation}!D\-E\-F\-A\-U\-L\-T\-\_\-\-L\-E\-V\-E\-L\-S@{D\-E\-F\-A\-U\-L\-T\-\_\-\-L\-E\-V\-E\-L\-S}}\item[{\em 
+\hypertarget{classcv_1_1gpu_1_1StereoBeliefPropagation_a64bc6ee2db8d4fb1ba7f0a7fd53cd14fa1768c3b920473c62f5b20668842a8fc7}{D\-E\-F\-A\-U\-L\-T\-\_\-\-L\-E\-V\-E\-L\-S}\label{classcv_1_1gpu_1_1StereoBeliefPropagation_a64bc6ee2db8d4fb1ba7f0a7fd53cd14fa1768c3b920473c62f5b20668842a8fc7}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcv_1_1gpu_1_1StereoBeliefPropagation_a7c19feccc40f1617ba64f3b96b0b297e}{\index{cv\-::gpu\-::\-Stereo\-Belief\-Propagation@{cv\-::gpu\-::\-Stereo\-Belief\-Propagation}!Stereo\-Belief\-Propagation@{Stereo\-Belief\-Propagation}}
+\index{Stereo\-Belief\-Propagation@{Stereo\-Belief\-Propagation}!cv::gpu::StereoBeliefPropagation@{cv\-::gpu\-::\-Stereo\-Belief\-Propagation}}
+\subsubsection[{Stereo\-Belief\-Propagation}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::gpu\-::\-Stereo\-Belief\-Propagation\-::\-Stereo\-Belief\-Propagation (
+\begin{DoxyParamCaption}
+\item[{int}]{ndisp = {\ttfamily {\bf D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-D\-I\-S\-P}}, }
+\item[{int}]{iters = {\ttfamily {\bf D\-E\-F\-A\-U\-L\-T\-\_\-\-I\-T\-E\-R\-S}}, }
+\item[{int}]{levels = {\ttfamily {\bf D\-E\-F\-A\-U\-L\-T\-\_\-\-L\-E\-V\-E\-L\-S}}, }
+\item[{int}]{msg\-\_\-type = {\ttfamily {\bf C\-V\-\_\-32\-F}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{classcv_1_1gpu_1_1StereoBeliefPropagation_a7c19feccc40f1617ba64f3b96b0b297e}
+
+
+the default constructor 
+
+\hypertarget{classcv_1_1gpu_1_1StereoBeliefPropagation_ae3d644c32d63d82149bc97ccd2c0451f}{\index{cv\-::gpu\-::\-Stereo\-Belief\-Propagation@{cv\-::gpu\-::\-Stereo\-Belief\-Propagation}!Stereo\-Belief\-Propagation@{Stereo\-Belief\-Propagation}}
+\index{Stereo\-Belief\-Propagation@{Stereo\-Belief\-Propagation}!cv::gpu::StereoBeliefPropagation@{cv\-::gpu\-::\-Stereo\-Belief\-Propagation}}
+\subsubsection[{Stereo\-Belief\-Propagation}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::gpu\-::\-Stereo\-Belief\-Propagation\-::\-Stereo\-Belief\-Propagation (
+\begin{DoxyParamCaption}
+\item[{int}]{ndisp, }
+\item[{int}]{iters, }
+\item[{int}]{levels, }
+\item[{float}]{max\-\_\-data\-\_\-term, }
+\item[{float}]{data\-\_\-weight, }
+\item[{float}]{max\-\_\-disc\-\_\-term, }
+\item[{float}]{disc\-\_\-single\-\_\-jump, }
+\item[{int}]{msg\-\_\-type = {\ttfamily {\bf C\-V\-\_\-32\-F}}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1StereoBeliefPropagation_ae3d644c32d63d82149bc97ccd2c0451f}
+the full constructor taking the number of disparities, number of B\-P iterations on each level, number of levels, truncation of data cost, data weight, truncation of discontinuity cost and discontinuity single jump Data\-Term = data\-\_\-weight $\ast$ min(fabs(I2-\/\-I1), max\-\_\-data\-\_\-term) Disc\-Term = min(disc\-\_\-single\-\_\-jump $\ast$ fabs(f1-\/f2), max\-\_\-disc\-\_\-term) please see paper for more details 
+
+\subsection{Member Function Documentation}
+\hypertarget{classcv_1_1gpu_1_1StereoBeliefPropagation_a76ccf1c9d6388fa73170dd3ca83e8bce}{\index{cv\-::gpu\-::\-Stereo\-Belief\-Propagation@{cv\-::gpu\-::\-Stereo\-Belief\-Propagation}!estimate\-Recommended\-Params@{estimate\-Recommended\-Params}}
+\index{estimate\-Recommended\-Params@{estimate\-Recommended\-Params}!cv::gpu::StereoBeliefPropagation@{cv\-::gpu\-::\-Stereo\-Belief\-Propagation}}
+\subsubsection[{estimate\-Recommended\-Params}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf void} cv\-::gpu\-::\-Stereo\-Belief\-Propagation\-::estimate\-Recommended\-Params (
+\begin{DoxyParamCaption}
+\item[{int}]{width, }
+\item[{int}]{height, }
+\item[{int \&}]{ndisp, }
+\item[{int \&}]{iters, }
+\item[{int \&}]{levels}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcv_1_1gpu_1_1StereoBeliefPropagation_a76ccf1c9d6388fa73170dd3ca83e8bce}
+\hypertarget{classcv_1_1gpu_1_1StereoBeliefPropagation_acf67833fd3526b717ac25c0e015be138}{\index{cv\-::gpu\-::\-Stereo\-Belief\-Propagation@{cv\-::gpu\-::\-Stereo\-Belief\-Propagation}!operator()@{operator()}}
+\index{operator()@{operator()}!cv::gpu::StereoBeliefPropagation@{cv\-::gpu\-::\-Stereo\-Belief\-Propagation}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-Stereo\-Belief\-Propagation\-::operator() (
+\begin{DoxyParamCaption}
+\item[{const Gpu\-Mat \&}]{left, }
+\item[{const Gpu\-Mat \&}]{right, }
+\item[{Gpu\-Mat \&}]{disparity, }
+\item[{{\bf Stream} \&}]{stream = {\ttfamily {\bf Stream\-::\-Null}()}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1StereoBeliefPropagation_acf67833fd3526b717ac25c0e015be138}
+the stereo correspondence operator. Finds the disparity for the specified rectified stereo pair, if disparity is empty output type will be C\-V\-\_\-16\-S else output type will be disparity.\-type(). \hypertarget{classcv_1_1gpu_1_1StereoBeliefPropagation_af1ba484859a60cb5e1d5a7d4512dc7e1}{\index{cv\-::gpu\-::\-Stereo\-Belief\-Propagation@{cv\-::gpu\-::\-Stereo\-Belief\-Propagation}!operator()@{operator()}}
+\index{operator()@{operator()}!cv::gpu::StereoBeliefPropagation@{cv\-::gpu\-::\-Stereo\-Belief\-Propagation}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-Stereo\-Belief\-Propagation\-::operator() (
+\begin{DoxyParamCaption}
+\item[{const Gpu\-Mat \&}]{data, }
+\item[{Gpu\-Mat \&}]{disparity, }
+\item[{{\bf Stream} \&}]{stream = {\ttfamily {\bf Stream\-::\-Null}()}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1StereoBeliefPropagation_af1ba484859a60cb5e1d5a7d4512dc7e1}
+
+
+version for user specified data term 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcv_1_1gpu_1_1StereoBeliefPropagation_aa228ac4e9eb3ba78eb3039d972c458b1}{\index{cv\-::gpu\-::\-Stereo\-Belief\-Propagation@{cv\-::gpu\-::\-Stereo\-Belief\-Propagation}!data\-\_\-weight@{data\-\_\-weight}}
+\index{data\-\_\-weight@{data\-\_\-weight}!cv::gpu::StereoBeliefPropagation@{cv\-::gpu\-::\-Stereo\-Belief\-Propagation}}
+\subsubsection[{data\-\_\-weight}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::gpu\-::\-Stereo\-Belief\-Propagation\-::data\-\_\-weight}}\label{classcv_1_1gpu_1_1StereoBeliefPropagation_aa228ac4e9eb3ba78eb3039d972c458b1}
+\hypertarget{classcv_1_1gpu_1_1StereoBeliefPropagation_a87bd96dd0ef5d823fec95a5145685b34}{\index{cv\-::gpu\-::\-Stereo\-Belief\-Propagation@{cv\-::gpu\-::\-Stereo\-Belief\-Propagation}!disc\-\_\-single\-\_\-jump@{disc\-\_\-single\-\_\-jump}}
+\index{disc\-\_\-single\-\_\-jump@{disc\-\_\-single\-\_\-jump}!cv::gpu::StereoBeliefPropagation@{cv\-::gpu\-::\-Stereo\-Belief\-Propagation}}
+\subsubsection[{disc\-\_\-single\-\_\-jump}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::gpu\-::\-Stereo\-Belief\-Propagation\-::disc\-\_\-single\-\_\-jump}}\label{classcv_1_1gpu_1_1StereoBeliefPropagation_a87bd96dd0ef5d823fec95a5145685b34}
+\hypertarget{classcv_1_1gpu_1_1StereoBeliefPropagation_a468adfcd6c5453ec3b79b496d404610f}{\index{cv\-::gpu\-::\-Stereo\-Belief\-Propagation@{cv\-::gpu\-::\-Stereo\-Belief\-Propagation}!iters@{iters}}
+\index{iters@{iters}!cv::gpu::StereoBeliefPropagation@{cv\-::gpu\-::\-Stereo\-Belief\-Propagation}}
+\subsubsection[{iters}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::gpu\-::\-Stereo\-Belief\-Propagation\-::iters}}\label{classcv_1_1gpu_1_1StereoBeliefPropagation_a468adfcd6c5453ec3b79b496d404610f}
+\hypertarget{classcv_1_1gpu_1_1StereoBeliefPropagation_abf1426daac046c64ff00b02065b15caf}{\index{cv\-::gpu\-::\-Stereo\-Belief\-Propagation@{cv\-::gpu\-::\-Stereo\-Belief\-Propagation}!levels@{levels}}
+\index{levels@{levels}!cv::gpu::StereoBeliefPropagation@{cv\-::gpu\-::\-Stereo\-Belief\-Propagation}}
+\subsubsection[{levels}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::gpu\-::\-Stereo\-Belief\-Propagation\-::levels}}\label{classcv_1_1gpu_1_1StereoBeliefPropagation_abf1426daac046c64ff00b02065b15caf}
+\hypertarget{classcv_1_1gpu_1_1StereoBeliefPropagation_a40764d557deb13ec8505fdb59ea9df66}{\index{cv\-::gpu\-::\-Stereo\-Belief\-Propagation@{cv\-::gpu\-::\-Stereo\-Belief\-Propagation}!max\-\_\-data\-\_\-term@{max\-\_\-data\-\_\-term}}
+\index{max\-\_\-data\-\_\-term@{max\-\_\-data\-\_\-term}!cv::gpu::StereoBeliefPropagation@{cv\-::gpu\-::\-Stereo\-Belief\-Propagation}}
+\subsubsection[{max\-\_\-data\-\_\-term}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::gpu\-::\-Stereo\-Belief\-Propagation\-::max\-\_\-data\-\_\-term}}\label{classcv_1_1gpu_1_1StereoBeliefPropagation_a40764d557deb13ec8505fdb59ea9df66}
+\hypertarget{classcv_1_1gpu_1_1StereoBeliefPropagation_ad6ecab0b3d6ddb925d08fa9030f8bc91}{\index{cv\-::gpu\-::\-Stereo\-Belief\-Propagation@{cv\-::gpu\-::\-Stereo\-Belief\-Propagation}!max\-\_\-disc\-\_\-term@{max\-\_\-disc\-\_\-term}}
+\index{max\-\_\-disc\-\_\-term@{max\-\_\-disc\-\_\-term}!cv::gpu::StereoBeliefPropagation@{cv\-::gpu\-::\-Stereo\-Belief\-Propagation}}
+\subsubsection[{max\-\_\-disc\-\_\-term}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::gpu\-::\-Stereo\-Belief\-Propagation\-::max\-\_\-disc\-\_\-term}}\label{classcv_1_1gpu_1_1StereoBeliefPropagation_ad6ecab0b3d6ddb925d08fa9030f8bc91}
+\hypertarget{classcv_1_1gpu_1_1StereoBeliefPropagation_a0a7d82324e2922f8e7e826b26a447ee6}{\index{cv\-::gpu\-::\-Stereo\-Belief\-Propagation@{cv\-::gpu\-::\-Stereo\-Belief\-Propagation}!msg\-\_\-type@{msg\-\_\-type}}
+\index{msg\-\_\-type@{msg\-\_\-type}!cv::gpu::StereoBeliefPropagation@{cv\-::gpu\-::\-Stereo\-Belief\-Propagation}}
+\subsubsection[{msg\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::gpu\-::\-Stereo\-Belief\-Propagation\-::msg\-\_\-type}}\label{classcv_1_1gpu_1_1StereoBeliefPropagation_a0a7d82324e2922f8e7e826b26a447ee6}
+\hypertarget{classcv_1_1gpu_1_1StereoBeliefPropagation_a0d731e1e2cfc606e05853ad240339b85}{\index{cv\-::gpu\-::\-Stereo\-Belief\-Propagation@{cv\-::gpu\-::\-Stereo\-Belief\-Propagation}!ndisp@{ndisp}}
+\index{ndisp@{ndisp}!cv::gpu::StereoBeliefPropagation@{cv\-::gpu\-::\-Stereo\-Belief\-Propagation}}
+\subsubsection[{ndisp}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::gpu\-::\-Stereo\-Belief\-Propagation\-::ndisp}}\label{classcv_1_1gpu_1_1StereoBeliefPropagation_a0d731e1e2cfc606e05853ad240339b85}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/gpu/\hyperlink{gpu_2gpu_8hpp}{gpu.\-hpp}\end{DoxyCompactItemize}

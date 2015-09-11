@@ -1,0 +1,73 @@
+\hypertarget{TLDUtil_8h}{\section{src/libopentld/tld/\-T\-L\-D\-Util.h File Reference}
+\label{TLDUtil_8h}\index{src/libopentld/tld/\-T\-L\-D\-Util.\-h@{src/libopentld/tld/\-T\-L\-D\-Util.\-h}}
+}
+{\ttfamily \#include $<$utility$>$}\\*
+{\ttfamily \#include $<$opencv/cv.\-h$>$}\\*
+Include dependency graph for T\-L\-D\-Util.\-h\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{TLDUtil_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{TLDUtil_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacetld}{tld}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T1 , class T2 $>$ }\\void \hyperlink{namespacetld_a76d4a1c9344fcb821fda1f8c6ad587bc}{tld\-::tld\-Convert\-B\-B} (T1 $\ast$src, T2 $\ast$dest)
+\begin{DoxyCompactList}\small\item\em Converts the bouning box to other type. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{namespacetld_ac08655e901fb2ced507566217d4b5aca}{tld\-::tld\-Copy\-B\-B} (T $\ast$src, T $\ast$dest)
+\begin{DoxyCompactList}\small\item\em Copies the bouning box to the other. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{namespacetld_aefacde9f718a4102ac40901afa1b35f7}{tld\-::tld\-Copy\-Boundary\-To\-Array} (T x, T y, T width, T height, T $\ast$array)
+\begin{DoxyCompactList}\small\item\em Copies the boundary to the array (size 4). \end{DoxyCompactList}\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{namespacetld_aff4c05bc28ae29c360be58460a56b579}{tld\-::tld\-Extract\-Dims\-From\-Array} (T $\ast$boundary, T $\ast$x, T $\ast$y, T $\ast$width, T $\ast$height)
+\begin{DoxyCompactList}\small\item\em Extracts the date from array (size 4). \end{DoxyCompactList}\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{namespacetld_a18975268ebbf3daf5eaf46d30fd782e9}{tld\-::tld\-Rect\-To\-Array} (cv\-::\-Rect rect, T $\ast$boundary)
+\begin{DoxyCompactList}\small\item\em Converts the rectangle to array (size 4). \end{DoxyCompactList}\item 
+{\footnotesize template$<$class T $>$ }\\cv\-::\-Rect \hyperlink{namespacetld_ad23d08bb67b847f43e2781a53f4af957}{tld\-::tld\-Array\-To\-Rect} (T $\ast$boundary)
+\begin{DoxyCompactList}\small\item\em Converts the array (size 4) to rectangle. \end{DoxyCompactList}\item 
+int \hyperlink{namespacetld_a8b28e6d4868ad30e826a6248dd2ae7a0}{tld\-::tld\-Is\-Inside} (int $\ast$bb1, int $\ast$bb2)
+\begin{DoxyCompactList}\small\item\em Checks whether the one bouning box is completely inside the other. \end{DoxyCompactList}\item 
+void \hyperlink{namespacetld_ac0c16951370c978dee562ac3d3bd1554}{tld\-::tld\-Rect\-To\-Points} (Cv\-Rect rect, Cv\-Point $\ast$p1, Cv\-Point $\ast$p2)
+\begin{DoxyCompactList}\small\item\em Converts the rectangle to two points. \end{DoxyCompactList}\item 
+void \hyperlink{namespacetld_a0c77964d9fc8756d176352372745a0ff}{tld\-::tld\-Bounding\-Box\-To\-Points} (int $\ast$bb, Cv\-Point $\ast$p1, Cv\-Point $\ast$p2)
+\begin{DoxyCompactList}\small\item\em Converts the array (size 4) to two points. \end{DoxyCompactList}\item 
+void \hyperlink{namespacetld_a7facbe495da1f0e058c78b9b7dea412a}{tld\-::tld\-Normalize\-Img} (const cv\-::\-Mat \&img, float $\ast$output)
+\begin{DoxyCompactList}\small\item\em Returns mean-\/normalized patch, the image must be greyscale. \end{DoxyCompactList}\item 
+void \hyperlink{namespacetld_ac965be65b1eae7ec666c3bfbe9da065e}{tld\-::tld\-Extract\-Normalized\-Patch} (const cv\-::\-Mat \&img, int x, int y, int w, int h, float $\ast$output)
+\begin{DoxyCompactList}\small\item\em Extracts normalized patch from the image by rectangle. \end{DoxyCompactList}\item 
+void \hyperlink{namespacetld_a44b5f4d4d087d3369129bdc92e2a555a}{tld\-::tld\-Extract\-Normalized\-Patch\-B\-B} (const cv\-::\-Mat \&img, int $\ast$boundary, float $\ast$output)
+\begin{DoxyCompactList}\small\item\em Extracts normalized patch from the image by boundary (array). \end{DoxyCompactList}\item 
+void \hyperlink{namespacetld_aa6c803037b38609e1fceadbb2ad8a75c}{tld\-::tld\-Extract\-Normalized\-Patch\-Rect} (const cv\-::\-Mat \&img, cv\-::\-Rect $\ast$rect, float $\ast$output)
+\begin{DoxyCompactList}\small\item\em Extracts normalized patch from the image by reactangle. \end{DoxyCompactList}\item 
+void \hyperlink{namespacetld_a16fe2b016494fa66be611f723ed7bebc}{tld\-::tld\-Extract\-Sub\-Image} (const cv\-::\-Mat \&img, cv\-::\-Mat \&sub\-Image, int $\ast$boundary)
+\begin{DoxyCompactList}\small\item\em Extracts the subimage by the reactangle. \end{DoxyCompactList}\item 
+void \hyperlink{namespacetld_a7699b7dc20502fc6d7c5c6c6cbd4be7b}{tld\-::tld\-Extract\-Sub\-Image} (const cv\-::\-Mat \&img, cv\-::\-Mat \&sub\-Image, int x, int y, int w, int h)
+\begin{DoxyCompactList}\small\item\em Extracts the subimage by the reactangle. \end{DoxyCompactList}\item 
+float \hyperlink{namespacetld_ac0065f4088098aca6e1edd49b2b0f9d3}{tld\-::tld\-Calc\-Mean} (float $\ast$value, int n)
+\begin{DoxyCompactList}\small\item\em It isn't realized. \end{DoxyCompactList}\item 
+float \hyperlink{namespacetld_a53d4a014fd3df2b3e8a3026a1c1768a7}{tld\-::tld\-Calc\-Variance} (float $\ast$value, int n)
+\begin{DoxyCompactList}\small\item\em Calculates the variance. \end{DoxyCompactList}\item 
+bool \hyperlink{namespacetld_acaf374df081816ecaf9079e200a8f5af}{tld\-::tld\-Sort\-By\-Overlap\-Desc} (std\-::pair$<$ int, float $>$ bb1, std\-::pair$<$ int, float $>$ bb2)
+\begin{DoxyCompactList}\small\item\em Checks whether the second parameter of one pair is more then the second parameter of other pair. \end{DoxyCompactList}\item 
+cv\-::\-Rect $\ast$ \hyperlink{namespacetld_aa09746d2aa3c9d71e4e0ba54d70d0e66}{tld\-::tld\-Copy\-Rect} (cv\-::\-Rect $\ast$r)
+\begin{DoxyCompactList}\small\item\em Creates the copy of rectangle. \end{DoxyCompactList}\item 
+float \hyperlink{namespacetld_afdab54607fed863cdc408f72fd0f774b}{tld\-::tld\-Overlap\-Rect\-Rect} (cv\-::\-Rect r1, cv\-::\-Rect r2)
+\begin{DoxyCompactList}\small\item\em Calculates the share overlap of two rectangle (the share the intersection area in the occupy area). \end{DoxyCompactList}\item 
+void \hyperlink{namespacetld_a018caa7bf4a554814fe61a679a219489}{tld\-::tld\-Overlap\-One} (int $\ast$windows, int num\-Windows, int index, std\-::vector$<$ int $>$ $\ast$indices, float $\ast$overlap)
+\begin{DoxyCompactList}\small\item\em Calculates the share overlap of one window and the indexed windows (according). \end{DoxyCompactList}\item 
+void \hyperlink{namespacetld_aa9470de30170cb8b3f877dcae45df1b1}{tld\-::tld\-Overlap} (int $\ast$windows, int num\-Windows, int $\ast$boundary, float $\ast$overlap)
+\begin{DoxyCompactList}\small\item\em Calculates the share overlap of windows and the boundary. \end{DoxyCompactList}\item 
+void \hyperlink{namespacetld_ae87c7dbe6b4da1e1923c42bec18caaf6}{tld\-::tld\-Overlap\-Rect} (int $\ast$windows, int num\-Windows, cv\-::\-Rect $\ast$boundary, float $\ast$overlap)
+\begin{DoxyCompactList}\small\item\em Calculates the share overlap of windows and the rectangle. \end{DoxyCompactList}\end{DoxyCompactItemize}

@@ -1,0 +1,11 @@
+<map id="scanctx_cleanup" name="scanctx_cleanup">
+<area shape="rect" id="node2" href="$libconfig_8c.html#a304fc54660c19cf654d0fdc4e44ec724" title="__config_read" alt="" coords="174,64,277,91"/>
+<area shape="rect" id="node3" href="$libconfig_8h.html#ade3e90a918cb62daf3f71ebdc785a9d5" title="config_read" alt="" coords="345,9,434,36"/>
+<area shape="rect" id="node5" href="$libconfig_8h.html#af949fcd25cd9adca27c78a49f62c2ebd" title="config_read_string" alt="" coords="325,64,453,91"/>
+<area shape="rect" id="node7" href="$libconfig_8h.html#a07dc4858f102ee91fafc17ed5932215e" title="config_read_file" alt="" coords="333,121,446,148"/>
+<area shape="rect" id="node4" href="$classlibconfig_1_1Config.html#a468e6ef4c2e36bdd57fc23708dee69a1" title="libconfig::Config::read" alt="" coords="501,5,651,32"/>
+<area shape="rect" id="node6" href="$classlibconfig_1_1Config.html#af3076c6839fa256bef1ad3fc33e17f98" title="libconfig::Config::\lreadString" alt="" coords="514,57,638,98"/>
+<area shape="rect" id="node8" href="$classlibconfig_1_1Config.html#a31bc78ca36d4081560de025cbb08c022" title="libconfig::Config::\lreadFile" alt="" coords="514,122,638,163"/>
+<area shape="rect" id="node9" href="$classtld_1_1Config.html#ab2f2fb863b08832e2b877e6f09073333" title="Initializes the Config. " alt="" coords="699,129,805,156"/>
+<area shape="rect" id="node10" href="$OpenTLD_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="853,129,904,156"/>
+</map>

@@ -1,0 +1,119 @@
+\hypertarget{classtld_1_1MedianFlowTracker}{\section{tld\-:\-:Median\-Flow\-Tracker Class Reference}
+\label{classtld_1_1MedianFlowTracker}\index{tld\-::\-Median\-Flow\-Tracker@{tld\-::\-Median\-Flow\-Tracker}}
+}
+
+
+The median flow tracker (based on the forward-\/backward error).  
+
+
+
+
+{\ttfamily \#include $<$Median\-Flow\-Tracker.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtld_1_1MedianFlowTracker_a10af34f4759e504cce93662c11714d7e}{Median\-Flow\-Tracker} ()
+\begin{DoxyCompactList}\small\item\em This Constructor initializes the bounding box by N\-U\-L\-L. \end{DoxyCompactList}\item 
+virtual \hyperlink{classtld_1_1MedianFlowTracker_a604feb65f62399c68b84ec5a981e528a}{$\sim$\-Median\-Flow\-Tracker} ()
+\begin{DoxyCompactList}\small\item\em This Destructor cleans the variable class. \end{DoxyCompactList}\item 
+void \hyperlink{classtld_1_1MedianFlowTracker_ad5c1599acad1607c20c7d2ca8aacf56c}{clean\-Previous\-Data} ()
+\begin{DoxyCompactList}\small\item\em Cleans data about the bounding box. \end{DoxyCompactList}\item 
+void \hyperlink{classtld_1_1MedianFlowTracker_addcc103122a93f098583b8f9cf72e8ff}{track} (const cv\-::\-Mat \&prev\-Img, const cv\-::\-Mat \&curr\-Img, cv\-::\-Rect $\ast$prev\-B\-B)
+\begin{DoxyCompactList}\small\item\em Calculate the bounding box of an Object in a following Image (with analyse of success and correctness of bounding boxes) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+cv\-::\-Rect $\ast$ \hyperlink{classtld_1_1MedianFlowTracker_a254c6f56a5b4567357321acc5a36b844}{tracker\-B\-B}
+\begin{DoxyCompactList}\small\item\em the found bounding box \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The median flow tracker (based on the forward-\/backward error). 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classtld_1_1MedianFlowTracker_a10af34f4759e504cce93662c11714d7e}{\index{tld\-::\-Median\-Flow\-Tracker@{tld\-::\-Median\-Flow\-Tracker}!Median\-Flow\-Tracker@{Median\-Flow\-Tracker}}
+\index{Median\-Flow\-Tracker@{Median\-Flow\-Tracker}!tld::MedianFlowTracker@{tld\-::\-Median\-Flow\-Tracker}}
+\subsubsection[{Median\-Flow\-Tracker}]{\setlength{\rightskip}{0pt plus 5cm}tld\-::\-Median\-Flow\-Tracker\-::\-Median\-Flow\-Tracker (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1MedianFlowTracker_a10af34f4759e504cce93662c11714d7e}
+
+
+This Constructor initializes the bounding box by N\-U\-L\-L. 
+
+\hypertarget{classtld_1_1MedianFlowTracker_a604feb65f62399c68b84ec5a981e528a}{\index{tld\-::\-Median\-Flow\-Tracker@{tld\-::\-Median\-Flow\-Tracker}!$\sim$\-Median\-Flow\-Tracker@{$\sim$\-Median\-Flow\-Tracker}}
+\index{$\sim$\-Median\-Flow\-Tracker@{$\sim$\-Median\-Flow\-Tracker}!tld::MedianFlowTracker@{tld\-::\-Median\-Flow\-Tracker}}
+\subsubsection[{$\sim$\-Median\-Flow\-Tracker}]{\setlength{\rightskip}{0pt plus 5cm}tld\-::\-Median\-Flow\-Tracker\-::$\sim$\-Median\-Flow\-Tracker (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classtld_1_1MedianFlowTracker_a604feb65f62399c68b84ec5a981e528a}
+
+
+This Destructor cleans the variable class. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classtld_1_1MedianFlowTracker_ad5c1599acad1607c20c7d2ca8aacf56c}{\index{tld\-::\-Median\-Flow\-Tracker@{tld\-::\-Median\-Flow\-Tracker}!clean\-Previous\-Data@{clean\-Previous\-Data}}
+\index{clean\-Previous\-Data@{clean\-Previous\-Data}!tld::MedianFlowTracker@{tld\-::\-Median\-Flow\-Tracker}}
+\subsubsection[{clean\-Previous\-Data}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::\-Median\-Flow\-Tracker\-::clean\-Previous\-Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1MedianFlowTracker_ad5c1599acad1607c20c7d2ca8aacf56c}
+
+
+Cleans data about the bounding box. 
+
+\hypertarget{classtld_1_1MedianFlowTracker_addcc103122a93f098583b8f9cf72e8ff}{\index{tld\-::\-Median\-Flow\-Tracker@{tld\-::\-Median\-Flow\-Tracker}!track@{track}}
+\index{track@{track}!tld::MedianFlowTracker@{tld\-::\-Median\-Flow\-Tracker}}
+\subsubsection[{track}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::\-Median\-Flow\-Tracker\-::track (
+\begin{DoxyParamCaption}
+\item[{const cv\-::\-Mat \&}]{prev\-Img, }
+\item[{const cv\-::\-Mat \&}]{curr\-Img, }
+\item[{cv\-::\-Rect $\ast$}]{prev\-B\-B}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1MedianFlowTracker_addcc103122a93f098583b8f9cf72e8ff}
+
+
+Calculate the bounding box of an Object in a following Image (with analyse of success and correctness of bounding boxes) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em prev\-Img} & the previous image \\
+\hline
+{\em curr\-Img} & the current image \\
+\hline
+{\em prev\-B\-B} & the previous bounding box \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtld_1_1MedianFlowTracker_addcc103122a93f098583b8f9cf72e8ff_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classtld_1_1MedianFlowTracker_a254c6f56a5b4567357321acc5a36b844}{\index{tld\-::\-Median\-Flow\-Tracker@{tld\-::\-Median\-Flow\-Tracker}!tracker\-B\-B@{tracker\-B\-B}}
+\index{tracker\-B\-B@{tracker\-B\-B}!tld::MedianFlowTracker@{tld\-::\-Median\-Flow\-Tracker}}
+\subsubsection[{tracker\-B\-B}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::\-Rect$\ast$ tld\-::\-Median\-Flow\-Tracker\-::tracker\-B\-B}}\label{classtld_1_1MedianFlowTracker_a254c6f56a5b4567357321acc5a36b844}
+
+
+the found bounding box 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/libopentld/tld/\hyperlink{MedianFlowTracker_8h}{Median\-Flow\-Tracker.\-h}\item 
+src/libopentld/tld/\hyperlink{MedianFlowTracker_8cpp}{Median\-Flow\-Tracker.\-cpp}\end{DoxyCompactItemize}

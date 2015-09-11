@@ -1,0 +1,227 @@
+\hypertarget{classCBlobProperties}{\section{C\-Blob\-Properties Class Reference}
+\label{classCBlobProperties}\index{C\-Blob\-Properties@{C\-Blob\-Properties}}
+}
+
+
+Blob class.  
+
+
+
+
+{\ttfamily \#include $<$Blob\-Properties.\-h$>$}
+
+
+
+Collaboration diagram for C\-Blob\-Properties\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{classCBlobProperties__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCBlobProperties_ab680b9906868e1d388d565e377e6e85f}{C\-Blob\-Properties} ()
+\item 
+virtual \hyperlink{classCBlobProperties_a9653537e440c88247ad6493f66d9ba3d}{$\sim$\-C\-Blob\-Properties} ()
+\item 
+double \hyperlink{classCBlobProperties_abfae07a81bcc204d18c790fc365ad53c}{Get\-Area} ()
+\begin{DoxyCompactList}\small\item\em Get blob area. \end{DoxyCompactList}\item 
+double \hyperlink{classCBlobProperties_a46a968d4567e6aefd9451f4468595f0a}{Get\-Perimeter} ()
+\begin{DoxyCompactList}\small\item\em Get blob perimeter. \end{DoxyCompactList}\item 
+double \hyperlink{classCBlobProperties_a09dd8fd159ab2adf65e2f03456c0a3b6}{Get\-Moment} (int p, int q)
+\begin{DoxyCompactList}\small\item\em Get contour moment (p,q up to M\-A\-X\-\_\-\-C\-A\-L\-C\-U\-L\-A\-T\-E\-D\-\_\-\-M\-O\-M\-E\-N\-T\-S) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Cv\-Mem\-Storage $\ast$ \hyperlink{classCBlobProperties_a5ad248fa47d9ee6c10a706800defb897}{m\-\_\-storage}
+\begin{DoxyCompactList}\small\item\em Contour storage memory. \end{DoxyCompactList}\item 
+\hyperlink{classCBlobContour}{C\-Blob\-Contour} \hyperlink{classCBlobProperties_af48f14bb97d9998f4eb94e4044dc9701}{m\-\_\-external\-Contour}
+\begin{DoxyCompactList}\small\item\em External contour of the blob (crack codes) \end{DoxyCompactList}\item 
+\hyperlink{classCBlobProperties_a3dbe31fe76c14529127e5510e4c99f3a}{t\-\_\-contour\-List} \hyperlink{classCBlobProperties_a49ba625a9099d39c1472d838ab21130e}{m\-\_\-internal\-Contours}
+\begin{DoxyCompactList}\small\item\em Internal contours (crack codes) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\-::list$<$ \hyperlink{classCBlobContour}{C\-Blob\-Contour} $>$ \hyperlink{classCBlobProperties_a3dbe31fe76c14529127e5510e4c99f3a}{t\-\_\-contour\-List}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classCBlobProperties_a64493e9d3f6c1df49888f60ed324d9e7}{m\-\_\-area}
+\begin{DoxyCompactList}\small\item\em Computed area from blob. \end{DoxyCompactList}\item 
+double \hyperlink{classCBlobProperties_a1d38f30b6af5098a82f75a8730312615}{m\-\_\-perimeter}
+\begin{DoxyCompactList}\small\item\em Computed perimeter from blob. \end{DoxyCompactList}\item 
+double \hyperlink{classCBlobProperties_a108af6c721198cfab8062c29b9e29b3d}{m\-\_\-moment} \mbox{[}\hyperlink{BlobProperties_8h_a151d88ca40f6e7d179e1b13ed82488b8}{M\-A\-X\-\_\-\-M\-O\-M\-E\-N\-T\-S\-\_\-\-O\-R\-D\-E\-R} $\ast$\hyperlink{BlobProperties_8h_a151d88ca40f6e7d179e1b13ed82488b8}{M\-A\-X\-\_\-\-M\-O\-M\-E\-N\-T\-S\-\_\-\-O\-R\-D\-E\-R}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Blob class. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classCBlobProperties_a3dbe31fe76c14529127e5510e4c99f3a}{\index{C\-Blob\-Properties@{C\-Blob\-Properties}!t\-\_\-contour\-List@{t\-\_\-contour\-List}}
+\index{t\-\_\-contour\-List@{t\-\_\-contour\-List}!CBlobProperties@{C\-Blob\-Properties}}
+\subsubsection[{t\-\_\-contour\-List}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\-::list$<${\bf C\-Blob\-Contour}$>$ {\bf C\-Blob\-Properties\-::t\-\_\-contour\-List}\hspace{0.3cm}{\ttfamily [private]}}}\label{classCBlobProperties_a3dbe31fe76c14529127e5510e4c99f3a}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCBlobProperties_ab680b9906868e1d388d565e377e6e85f}{\index{C\-Blob\-Properties@{C\-Blob\-Properties}!C\-Blob\-Properties@{C\-Blob\-Properties}}
+\index{C\-Blob\-Properties@{C\-Blob\-Properties}!CBlobProperties@{C\-Blob\-Properties}}
+\subsubsection[{C\-Blob\-Properties}]{\setlength{\rightskip}{0pt plus 5cm}C\-Blob\-Properties\-::\-C\-Blob\-Properties (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCBlobProperties_ab680b9906868e1d388d565e377e6e85f}
+\hypertarget{classCBlobProperties_a9653537e440c88247ad6493f66d9ba3d}{\index{C\-Blob\-Properties@{C\-Blob\-Properties}!$\sim$\-C\-Blob\-Properties@{$\sim$\-C\-Blob\-Properties}}
+\index{$\sim$\-C\-Blob\-Properties@{$\sim$\-C\-Blob\-Properties}!CBlobProperties@{C\-Blob\-Properties}}
+\subsubsection[{$\sim$\-C\-Blob\-Properties}]{\setlength{\rightskip}{0pt plus 5cm}virtual C\-Blob\-Properties\-::$\sim$\-C\-Blob\-Properties (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCBlobProperties_a9653537e440c88247ad6493f66d9ba3d}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classCBlobProperties_abfae07a81bcc204d18c790fc365ad53c}{\index{C\-Blob\-Properties@{C\-Blob\-Properties}!Get\-Area@{Get\-Area}}
+\index{Get\-Area@{Get\-Area}!CBlobProperties@{C\-Blob\-Properties}}
+\subsubsection[{Get\-Area}]{\setlength{\rightskip}{0pt plus 5cm}double C\-Blob\-Properties\-::\-Get\-Area (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCBlobProperties_abfae07a81bcc204d18c790fc365ad53c}
+
+
+Get blob area. 
+
+
+\begin{DoxyItemize}
+\item F\-U\-N\-C\-IÓ\-: Get\-Perimeter
+\item F\-U\-N\-C\-I\-O\-N\-A\-L\-I\-T\-A\-T\-: Get blob area, ie. external contour area minus internal contours area
+\item P\-A\-RÀ\-M\-E\-T\-R\-E\-S\-:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item R\-E\-S\-U\-L\-T\-A\-T\-:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item R\-E\-S\-T\-R\-I\-C\-C\-I\-O\-N\-S\-:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item A\-U\-T\-O\-R\-: rborras
+\item D\-A\-T\-A D\-E C\-R\-E\-A\-C\-IÓ\-: 2008/04/30
+\item M\-O\-D\-I\-F\-I\-C\-A\-C\-IÓ\-: Data. Autor. Descripció. 
+\end{DoxyItemize}
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCBlobProperties_abfae07a81bcc204d18c790fc365ad53c_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classCBlobProperties_a09dd8fd159ab2adf65e2f03456c0a3b6}{\index{C\-Blob\-Properties@{C\-Blob\-Properties}!Get\-Moment@{Get\-Moment}}
+\index{Get\-Moment@{Get\-Moment}!CBlobProperties@{C\-Blob\-Properties}}
+\subsubsection[{Get\-Moment}]{\setlength{\rightskip}{0pt plus 5cm}double C\-Blob\-Properties\-::\-Get\-Moment (
+\begin{DoxyParamCaption}
+\item[{int}]{p, }
+\item[{int}]{q}
+\end{DoxyParamCaption}
+)}}\label{classCBlobProperties_a09dd8fd159ab2adf65e2f03456c0a3b6}
+
+
+Get contour moment (p,q up to M\-A\-X\-\_\-\-C\-A\-L\-C\-U\-L\-A\-T\-E\-D\-\_\-\-M\-O\-M\-E\-N\-T\-S) 
+
+\hypertarget{classCBlobProperties_a46a968d4567e6aefd9451f4468595f0a}{\index{C\-Blob\-Properties@{C\-Blob\-Properties}!Get\-Perimeter@{Get\-Perimeter}}
+\index{Get\-Perimeter@{Get\-Perimeter}!CBlobProperties@{C\-Blob\-Properties}}
+\subsubsection[{Get\-Perimeter}]{\setlength{\rightskip}{0pt plus 5cm}double C\-Blob\-Properties\-::\-Get\-Perimeter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCBlobProperties_a46a968d4567e6aefd9451f4468595f0a}
+
+
+Get blob perimeter. 
+
+
+\begin{DoxyItemize}
+\item F\-U\-N\-C\-IÓ\-: Get\-Perimeter
+\item F\-U\-N\-C\-I\-O\-N\-A\-L\-I\-T\-A\-T\-: Get blob perimeter, ie. sum of the lenght of all the contours
+\item P\-A\-RÀ\-M\-E\-T\-R\-E\-S\-:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item R\-E\-S\-U\-L\-T\-A\-T\-:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item R\-E\-S\-T\-R\-I\-C\-C\-I\-O\-N\-S\-:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item A\-U\-T\-O\-R\-: rborras
+\item D\-A\-T\-A D\-E C\-R\-E\-A\-C\-IÓ\-: 2008/04/30
+\item M\-O\-D\-I\-F\-I\-C\-A\-C\-IÓ\-: Data. Autor. Descripció. 
+\end{DoxyItemize}
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCBlobProperties_a46a968d4567e6aefd9451f4468595f0a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classCBlobProperties_a64493e9d3f6c1df49888f60ed324d9e7}{\index{C\-Blob\-Properties@{C\-Blob\-Properties}!m\-\_\-area@{m\-\_\-area}}
+\index{m\-\_\-area@{m\-\_\-area}!CBlobProperties@{C\-Blob\-Properties}}
+\subsubsection[{m\-\_\-area}]{\setlength{\rightskip}{0pt plus 5cm}double C\-Blob\-Properties\-::m\-\_\-area\hspace{0.3cm}{\ttfamily [private]}}}\label{classCBlobProperties_a64493e9d3f6c1df49888f60ed324d9e7}
+
+
+Computed area from blob. 
+
+\hypertarget{classCBlobProperties_af48f14bb97d9998f4eb94e4044dc9701}{\index{C\-Blob\-Properties@{C\-Blob\-Properties}!m\-\_\-external\-Contour@{m\-\_\-external\-Contour}}
+\index{m\-\_\-external\-Contour@{m\-\_\-external\-Contour}!CBlobProperties@{C\-Blob\-Properties}}
+\subsubsection[{m\-\_\-external\-Contour}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Blob\-Contour} C\-Blob\-Properties\-::m\-\_\-external\-Contour}}\label{classCBlobProperties_af48f14bb97d9998f4eb94e4044dc9701}
+
+
+External contour of the blob (crack codes) 
+
+\hypertarget{classCBlobProperties_a49ba625a9099d39c1472d838ab21130e}{\index{C\-Blob\-Properties@{C\-Blob\-Properties}!m\-\_\-internal\-Contours@{m\-\_\-internal\-Contours}}
+\index{m\-\_\-internal\-Contours@{m\-\_\-internal\-Contours}!CBlobProperties@{C\-Blob\-Properties}}
+\subsubsection[{m\-\_\-internal\-Contours}]{\setlength{\rightskip}{0pt plus 5cm}{\bf t\-\_\-contour\-List} C\-Blob\-Properties\-::m\-\_\-internal\-Contours}}\label{classCBlobProperties_a49ba625a9099d39c1472d838ab21130e}
+
+
+Internal contours (crack codes) 
+
+\hypertarget{classCBlobProperties_a108af6c721198cfab8062c29b9e29b3d}{\index{C\-Blob\-Properties@{C\-Blob\-Properties}!m\-\_\-moment@{m\-\_\-moment}}
+\index{m\-\_\-moment@{m\-\_\-moment}!CBlobProperties@{C\-Blob\-Properties}}
+\subsubsection[{m\-\_\-moment}]{\setlength{\rightskip}{0pt plus 5cm}double C\-Blob\-Properties\-::m\-\_\-moment\mbox{[}{\bf M\-A\-X\-\_\-\-M\-O\-M\-E\-N\-T\-S\-\_\-\-O\-R\-D\-E\-R} $\ast${\bf M\-A\-X\-\_\-\-M\-O\-M\-E\-N\-T\-S\-\_\-\-O\-R\-D\-E\-R}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{classCBlobProperties_a108af6c721198cfab8062c29b9e29b3d}
+\hypertarget{classCBlobProperties_a1d38f30b6af5098a82f75a8730312615}{\index{C\-Blob\-Properties@{C\-Blob\-Properties}!m\-\_\-perimeter@{m\-\_\-perimeter}}
+\index{m\-\_\-perimeter@{m\-\_\-perimeter}!CBlobProperties@{C\-Blob\-Properties}}
+\subsubsection[{m\-\_\-perimeter}]{\setlength{\rightskip}{0pt plus 5cm}double C\-Blob\-Properties\-::m\-\_\-perimeter\hspace{0.3cm}{\ttfamily [private]}}}\label{classCBlobProperties_a1d38f30b6af5098a82f75a8730312615}
+
+
+Computed perimeter from blob. 
+
+\hypertarget{classCBlobProperties_a5ad248fa47d9ee6c10a706800defb897}{\index{C\-Blob\-Properties@{C\-Blob\-Properties}!m\-\_\-storage@{m\-\_\-storage}}
+\index{m\-\_\-storage@{m\-\_\-storage}!CBlobProperties@{C\-Blob\-Properties}}
+\subsubsection[{m\-\_\-storage}]{\setlength{\rightskip}{0pt plus 5cm}Cv\-Mem\-Storage$\ast$ C\-Blob\-Properties\-::m\-\_\-storage}}\label{classCBlobProperties_a5ad248fa47d9ee6c10a706800defb897}
+
+
+Contour storage memory. 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/3rdparty/cvblobs/\hyperlink{BlobProperties_8h}{Blob\-Properties.\-h}\item 
+src/3rdparty/cvblobs/\hyperlink{BlobProperties_8cpp}{Blob\-Properties.\-cpp}\end{DoxyCompactItemize}

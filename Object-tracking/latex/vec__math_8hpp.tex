@@ -1,0 +1,291 @@
+\hypertarget{vec__math_8hpp}{\section{/usr/include/opencv2/gpu/device/vec\-\_\-math.hpp File Reference}
+\label{vec__math_8hpp}\index{/usr/include/opencv2/gpu/device/vec\-\_\-math.\-hpp@{/usr/include/opencv2/gpu/device/vec\-\_\-math.\-hpp}}
+}
+{\ttfamily \#include \char`\"{}vec\-\_\-traits.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}saturate\-\_\-cast.\-hpp\char`\"{}}\\*
+Include dependency graph for vec\-\_\-math.\-hpp\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{vec__math_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{vec__math_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1vec__math__detail_1_1SatCastHelper}{cv\-::gpu\-::device\-::vec\-\_\-math\-\_\-detail\-::\-Sat\-Cast\-Helper$<$ cn, Vec\-D $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1vec__math__detail_1_1SatCastHelper_3_011_00_01VecD_01_4}{cv\-::gpu\-::device\-::vec\-\_\-math\-\_\-detail\-::\-Sat\-Cast\-Helper$<$ 1, Vec\-D $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1vec__math__detail_1_1SatCastHelper_3_012_00_01VecD_01_4}{cv\-::gpu\-::device\-::vec\-\_\-math\-\_\-detail\-::\-Sat\-Cast\-Helper$<$ 2, Vec\-D $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1vec__math__detail_1_1SatCastHelper_3_013_00_01VecD_01_4}{cv\-::gpu\-::device\-::vec\-\_\-math\-\_\-detail\-::\-Sat\-Cast\-Helper$<$ 3, Vec\-D $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1vec__math__detail_1_1SatCastHelper_3_014_00_01VecD_01_4}{cv\-::gpu\-::device\-::vec\-\_\-math\-\_\-detail\-::\-Sat\-Cast\-Helper$<$ 4, Vec\-D $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacecv}{cv}
+\item 
+\hyperlink{namespacecv_1_1gpu}{cv\-::gpu}
+\item 
+\hyperlink{namespacecv_1_1gpu_1_1device}{cv\-::gpu\-::device}
+\item 
+\hyperlink{namespacecv_1_1gpu_1_1device_1_1vec__math__detail}{cv\-::gpu\-::device\-::vec\-\_\-math\-\_\-detail}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{vec__math_8hpp_a4644495144331441714ad839a02b2968}{C\-V\-\_\-\-C\-U\-D\-E\-V\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-V\-E\-C\-\_\-\-U\-N\-A\-R\-Y\-\_\-\-O\-P}(op, input\-\_\-type, output\-\_\-type)
+\item 
+\#define \hyperlink{vec__math_8hpp_a0d92c5a410ac876c8aaecc87e62fe292}{C\-V\-\_\-\-C\-U\-D\-E\-V\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-V\-E\-C\-\_\-\-U\-N\-A\-R\-Y\-\_\-\-F\-U\-N\-C}(\hyperlink{core__c_8h_ae06ca743ad073c1d28554b5b159ebf4f}{func\-\_\-name}, \hyperlink{core__c_8h_a120677ac732b3c9bfecab149fc978afa}{func}, input\-\_\-type, output\-\_\-type)
+\item 
+\#define \hyperlink{vec__math_8hpp_ab6b550323b99c96478a5bbe1e6eee53d}{C\-V\-\_\-\-C\-U\-D\-E\-V\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-V\-E\-C\-\_\-\-B\-I\-N\-A\-R\-Y\-\_\-\-O\-P}(op, input\-\_\-type, output\-\_\-type)
+\item 
+\#define \hyperlink{vec__math_8hpp_aa5b11c427d43242d51b5975d390f0196}{C\-V\-\_\-\-C\-U\-D\-E\-V\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-S\-C\-A\-L\-A\-R\-\_\-\-B\-I\-N\-A\-R\-Y\-\_\-\-O\-P}(op, input\-\_\-type, scalar\-\_\-type, output\-\_\-type)
+\item 
+\#define \hyperlink{vec__math_8hpp_ac567966e73eb04a2b696e9ba213e068b}{C\-V\-\_\-\-C\-U\-D\-E\-V\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-V\-E\-C\-\_\-\-B\-I\-N\-A\-R\-Y\-\_\-\-F\-U\-N\-C}(\hyperlink{core__c_8h_ae06ca743ad073c1d28554b5b159ebf4f}{func\-\_\-name}, \hyperlink{core__c_8h_a120677ac732b3c9bfecab149fc978afa}{func}, input\-\_\-type, output\-\_\-type)
+\item 
+\#define \hyperlink{vec__math_8hpp_a0483608aac615e025013470f9254833f}{C\-V\-\_\-\-C\-U\-D\-E\-V\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-S\-C\-A\-L\-A\-R\-\_\-\-B\-I\-N\-A\-R\-Y\-\_\-\-F\-U\-N\-C}(\hyperlink{core__c_8h_ae06ca743ad073c1d28554b5b159ebf4f}{func\-\_\-name}, \hyperlink{core__c_8h_a120677ac732b3c9bfecab149fc978afa}{func}, input\-\_\-type, scalar\-\_\-type, output\-\_\-type)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Vec\-D , typename Vec\-S $>$ }\\static \-\_\-\-\_\-device\-\_\-\-\_\- \\*
+\-\_\-\-\_\-forceinline\-\_\-\-\_\- Vec\-D \hyperlink{namespacecv_1_1gpu_1_1device_1_1vec__math__detail_adbbcb95e294d2ffcc8d5e8e30314edea}{cv\-::gpu\-::device\-::vec\-\_\-math\-\_\-detail\-::saturate\-\_\-cast\-\_\-helper} (const Vec\-S \&v)
+\item 
+{\footnotesize template$<$typename T $>$ }\\static \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \hyperlink{namespacecv_1_1gpu_1_1device_afa45916a894fc2d2df4ab073caf18ae3}{cv\-::gpu\-::device\-::saturate\-\_\-cast} (const uchar1 \&v)
+\item 
+{\footnotesize template$<$typename T $>$ }\\static \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \hyperlink{namespacecv_1_1gpu_1_1device_a229a206ba6346bbdc9716877a3f87d66}{cv\-::gpu\-::device\-::saturate\-\_\-cast} (const char1 \&v)
+\item 
+{\footnotesize template$<$typename T $>$ }\\static \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \hyperlink{namespacecv_1_1gpu_1_1device_a70ea7688cef1117e46bf214ba87c1e90}{cv\-::gpu\-::device\-::saturate\-\_\-cast} (const ushort1 \&v)
+\item 
+{\footnotesize template$<$typename T $>$ }\\static \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \hyperlink{namespacecv_1_1gpu_1_1device_acda225c74a2dc10d84591c277f88d3de}{cv\-::gpu\-::device\-::saturate\-\_\-cast} (const short1 \&v)
+\item 
+{\footnotesize template$<$typename T $>$ }\\static \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \hyperlink{namespacecv_1_1gpu_1_1device_ae640b9f66c916463b7286d6a36186110}{cv\-::gpu\-::device\-::saturate\-\_\-cast} (const uint1 \&v)
+\item 
+{\footnotesize template$<$typename T $>$ }\\static \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \hyperlink{namespacecv_1_1gpu_1_1device_a99877f2f8ccd48e3bb30a1df417a03dc}{cv\-::gpu\-::device\-::saturate\-\_\-cast} (const int1 \&v)
+\item 
+{\footnotesize template$<$typename T $>$ }\\static \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \hyperlink{namespacecv_1_1gpu_1_1device_a598a69f83f0fe47a27e10f1629a88506}{cv\-::gpu\-::device\-::saturate\-\_\-cast} (const float1 \&v)
+\item 
+{\footnotesize template$<$typename T $>$ }\\static \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \hyperlink{namespacecv_1_1gpu_1_1device_ae225d9213f2a3f3d4d1eacd318ce1105}{cv\-::gpu\-::device\-::saturate\-\_\-cast} (const double1 \&v)
+\item 
+{\footnotesize template$<$typename T $>$ }\\static \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \hyperlink{namespacecv_1_1gpu_1_1device_a4127a3d27967bc7f96e566f362a7ceb0}{cv\-::gpu\-::device\-::saturate\-\_\-cast} (const uchar2 \&v)
+\item 
+{\footnotesize template$<$typename T $>$ }\\static \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \hyperlink{namespacecv_1_1gpu_1_1device_ab277a66d11547a59779ef44774652961}{cv\-::gpu\-::device\-::saturate\-\_\-cast} (const char2 \&v)
+\item 
+{\footnotesize template$<$typename T $>$ }\\static \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \hyperlink{namespacecv_1_1gpu_1_1device_a010e1405717a9741aa0937788a32f1a9}{cv\-::gpu\-::device\-::saturate\-\_\-cast} (const ushort2 \&v)
+\item 
+{\footnotesize template$<$typename T $>$ }\\static \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \hyperlink{namespacecv_1_1gpu_1_1device_ace1abe7f1c5ee1d8320800f78fac1e72}{cv\-::gpu\-::device\-::saturate\-\_\-cast} (const short2 \&v)
+\item 
+{\footnotesize template$<$typename T $>$ }\\static \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \hyperlink{namespacecv_1_1gpu_1_1device_a19c15cdbda1ebf12d7405ecb6806d80a}{cv\-::gpu\-::device\-::saturate\-\_\-cast} (const uint2 \&v)
+\item 
+{\footnotesize template$<$typename T $>$ }\\static \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \hyperlink{namespacecv_1_1gpu_1_1device_ad4bd02687261bf26045ca1695a5531ce}{cv\-::gpu\-::device\-::saturate\-\_\-cast} (const int2 \&v)
+\item 
+{\footnotesize template$<$typename T $>$ }\\static \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \hyperlink{namespacecv_1_1gpu_1_1device_add505ecd489fef4ca905e56f1f70aeee}{cv\-::gpu\-::device\-::saturate\-\_\-cast} (const float2 \&v)
+\item 
+{\footnotesize template$<$typename T $>$ }\\static \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \hyperlink{namespacecv_1_1gpu_1_1device_a6d138c0fad0bdc776228735535492b23}{cv\-::gpu\-::device\-::saturate\-\_\-cast} (const double2 \&v)
+\item 
+{\footnotesize template$<$typename T $>$ }\\static \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \hyperlink{namespacecv_1_1gpu_1_1device_af8284d084a9ca9933c014681c943237d}{cv\-::gpu\-::device\-::saturate\-\_\-cast} (const uchar3 \&v)
+\item 
+{\footnotesize template$<$typename T $>$ }\\static \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \hyperlink{namespacecv_1_1gpu_1_1device_adb7e45f6278fcec48b7dffe6edcf99b7}{cv\-::gpu\-::device\-::saturate\-\_\-cast} (const char3 \&v)
+\item 
+{\footnotesize template$<$typename T $>$ }\\static \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \hyperlink{namespacecv_1_1gpu_1_1device_a2c49ddf34a19b428992f156d3b703c1d}{cv\-::gpu\-::device\-::saturate\-\_\-cast} (const ushort3 \&v)
+\item 
+{\footnotesize template$<$typename T $>$ }\\static \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \hyperlink{namespacecv_1_1gpu_1_1device_ae77997ee1b5613274a7625dab348d3da}{cv\-::gpu\-::device\-::saturate\-\_\-cast} (const short3 \&v)
+\item 
+{\footnotesize template$<$typename T $>$ }\\static \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \hyperlink{namespacecv_1_1gpu_1_1device_a5e46931de8a39cc5101b73ccc79885eb}{cv\-::gpu\-::device\-::saturate\-\_\-cast} (const uint3 \&v)
+\item 
+{\footnotesize template$<$typename T $>$ }\\static \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \hyperlink{namespacecv_1_1gpu_1_1device_af373deffabb256baf1f69832f80cd0e2}{cv\-::gpu\-::device\-::saturate\-\_\-cast} (const int3 \&v)
+\item 
+{\footnotesize template$<$typename T $>$ }\\static \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \hyperlink{namespacecv_1_1gpu_1_1device_afdc37afdc4b7149c0953f669034e148f}{cv\-::gpu\-::device\-::saturate\-\_\-cast} (const float3 \&v)
+\item 
+{\footnotesize template$<$typename T $>$ }\\static \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \hyperlink{namespacecv_1_1gpu_1_1device_a68728503d9fc1a2102c0bd69bcb95e7c}{cv\-::gpu\-::device\-::saturate\-\_\-cast} (const double3 \&v)
+\item 
+{\footnotesize template$<$typename T $>$ }\\static \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \hyperlink{namespacecv_1_1gpu_1_1device_a334a58d46cb6b3e082b37636908394d6}{cv\-::gpu\-::device\-::saturate\-\_\-cast} (const uchar4 \&v)
+\item 
+{\footnotesize template$<$typename T $>$ }\\static \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \hyperlink{namespacecv_1_1gpu_1_1device_a35062a2d2e472327725c0836b60d361e}{cv\-::gpu\-::device\-::saturate\-\_\-cast} (const char4 \&v)
+\item 
+{\footnotesize template$<$typename T $>$ }\\static \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \hyperlink{namespacecv_1_1gpu_1_1device_ad9467d2dea6ee0d88d97cdb488331603}{cv\-::gpu\-::device\-::saturate\-\_\-cast} (const ushort4 \&v)
+\item 
+{\footnotesize template$<$typename T $>$ }\\static \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \hyperlink{namespacecv_1_1gpu_1_1device_a5a38b1c8a85acfd3050432cdc8bbdf98}{cv\-::gpu\-::device\-::saturate\-\_\-cast} (const short4 \&v)
+\item 
+{\footnotesize template$<$typename T $>$ }\\static \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \hyperlink{namespacecv_1_1gpu_1_1device_ab4599535f7fc9e48d211d43a6f88387e}{cv\-::gpu\-::device\-::saturate\-\_\-cast} (const uint4 \&v)
+\item 
+{\footnotesize template$<$typename T $>$ }\\static \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \hyperlink{namespacecv_1_1gpu_1_1device_ab2d032226070f3e351a3fb018e4babcf}{cv\-::gpu\-::device\-::saturate\-\_\-cast} (const int4 \&v)
+\item 
+{\footnotesize template$<$typename T $>$ }\\static \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \hyperlink{namespacecv_1_1gpu_1_1device_ae24a7343fa395c8c229cadbc50228ef0}{cv\-::gpu\-::device\-::saturate\-\_\-cast} (const float4 \&v)
+\item 
+{\footnotesize template$<$typename T $>$ }\\static \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \hyperlink{namespacecv_1_1gpu_1_1device_a47c7684bea915263504677826b8f9176}{cv\-::gpu\-::device\-::saturate\-\_\-cast} (const double4 \&v)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{vec__math_8hpp_a0483608aac615e025013470f9254833f}{\index{vec\-\_\-math.\-hpp@{vec\-\_\-math.\-hpp}!C\-V\-\_\-\-C\-U\-D\-E\-V\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-S\-C\-A\-L\-A\-R\-\_\-\-B\-I\-N\-A\-R\-Y\-\_\-\-F\-U\-N\-C@{C\-V\-\_\-\-C\-U\-D\-E\-V\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-S\-C\-A\-L\-A\-R\-\_\-\-B\-I\-N\-A\-R\-Y\-\_\-\-F\-U\-N\-C}}
+\index{C\-V\-\_\-\-C\-U\-D\-E\-V\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-S\-C\-A\-L\-A\-R\-\_\-\-B\-I\-N\-A\-R\-Y\-\_\-\-F\-U\-N\-C@{C\-V\-\_\-\-C\-U\-D\-E\-V\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-S\-C\-A\-L\-A\-R\-\_\-\-B\-I\-N\-A\-R\-Y\-\_\-\-F\-U\-N\-C}!vec_math.hpp@{vec\-\_\-math.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-C\-U\-D\-E\-V\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-S\-C\-A\-L\-A\-R\-\_\-\-B\-I\-N\-A\-R\-Y\-\_\-\-F\-U\-N\-C}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-C\-U\-D\-E\-V\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-S\-C\-A\-L\-A\-R\-\_\-\-B\-I\-N\-A\-R\-Y\-\_\-\-F\-U\-N\-C(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf func\-\_\-name}, }
+\item[{}]{{\bf func}, }
+\item[{}]{input\-\_\-type, }
+\item[{}]{scalar\-\_\-type, }
+\item[{}]{output\-\_\-type}
+\end{DoxyParamCaption}
+)}}\label{vec__math_8hpp_a0483608aac615e025013470f9254833f}
+\hypertarget{vec__math_8hpp_aa5b11c427d43242d51b5975d390f0196}{\index{vec\-\_\-math.\-hpp@{vec\-\_\-math.\-hpp}!C\-V\-\_\-\-C\-U\-D\-E\-V\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-S\-C\-A\-L\-A\-R\-\_\-\-B\-I\-N\-A\-R\-Y\-\_\-\-O\-P@{C\-V\-\_\-\-C\-U\-D\-E\-V\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-S\-C\-A\-L\-A\-R\-\_\-\-B\-I\-N\-A\-R\-Y\-\_\-\-O\-P}}
+\index{C\-V\-\_\-\-C\-U\-D\-E\-V\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-S\-C\-A\-L\-A\-R\-\_\-\-B\-I\-N\-A\-R\-Y\-\_\-\-O\-P@{C\-V\-\_\-\-C\-U\-D\-E\-V\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-S\-C\-A\-L\-A\-R\-\_\-\-B\-I\-N\-A\-R\-Y\-\_\-\-O\-P}!vec_math.hpp@{vec\-\_\-math.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-C\-U\-D\-E\-V\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-S\-C\-A\-L\-A\-R\-\_\-\-B\-I\-N\-A\-R\-Y\-\_\-\-O\-P}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-C\-U\-D\-E\-V\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-S\-C\-A\-L\-A\-R\-\_\-\-B\-I\-N\-A\-R\-Y\-\_\-\-O\-P(
+\begin{DoxyParamCaption}
+\item[{}]{op, }
+\item[{}]{input\-\_\-type, }
+\item[{}]{scalar\-\_\-type, }
+\item[{}]{output\-\_\-type}
+\end{DoxyParamCaption}
+)}}\label{vec__math_8hpp_aa5b11c427d43242d51b5975d390f0196}
+\hypertarget{vec__math_8hpp_ac567966e73eb04a2b696e9ba213e068b}{\index{vec\-\_\-math.\-hpp@{vec\-\_\-math.\-hpp}!C\-V\-\_\-\-C\-U\-D\-E\-V\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-V\-E\-C\-\_\-\-B\-I\-N\-A\-R\-Y\-\_\-\-F\-U\-N\-C@{C\-V\-\_\-\-C\-U\-D\-E\-V\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-V\-E\-C\-\_\-\-B\-I\-N\-A\-R\-Y\-\_\-\-F\-U\-N\-C}}
+\index{C\-V\-\_\-\-C\-U\-D\-E\-V\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-V\-E\-C\-\_\-\-B\-I\-N\-A\-R\-Y\-\_\-\-F\-U\-N\-C@{C\-V\-\_\-\-C\-U\-D\-E\-V\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-V\-E\-C\-\_\-\-B\-I\-N\-A\-R\-Y\-\_\-\-F\-U\-N\-C}!vec_math.hpp@{vec\-\_\-math.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-C\-U\-D\-E\-V\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-V\-E\-C\-\_\-\-B\-I\-N\-A\-R\-Y\-\_\-\-F\-U\-N\-C}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-C\-U\-D\-E\-V\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-V\-E\-C\-\_\-\-B\-I\-N\-A\-R\-Y\-\_\-\-F\-U\-N\-C(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf func\-\_\-name}, }
+\item[{}]{{\bf func}, }
+\item[{}]{input\-\_\-type, }
+\item[{}]{output\-\_\-type}
+\end{DoxyParamCaption}
+)}}\label{vec__math_8hpp_ac567966e73eb04a2b696e9ba213e068b}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\_\_device\_\_ \_\_forceinline\_\_ output\_type ## 1 \hyperlink{core__c_8h_ae06ca743ad073c1d28554b5b159ebf4f}{func\_name}(\textcolor{keyword}{const} input\_type ## 1 & 
+      \hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}, \textcolor{keyword}{const} input\_type ## 1 & \hyperlink{legacy_8hpp_ac04272e8ca865b8fba18d36edae9fd2a}{b}) \(\backslash\)
+    \{ \(\backslash\)
+        return VecTraits<output\_type ## 1>::make(\hyperlink{core__c_8h_a120677ac732b3c9bfecab149fc978afa}{func} (\hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}.\hyperlink{structCvPoint2D32f_a8d77880e3d92682aec3cbb36eae9cc40}{x}, \hyperlink{legacy_8hpp_ac04272e8ca865b8fba18d36edae9fd2a}{b}.\hyperlink{structCvPoint2D32f_a8d77880e3d92682aec3cbb36eae9cc40}{x})); \(\backslash\)
+    \} \(\backslash\)
+    \_\_device\_\_ \_\_forceinline\_\_ output\_type ## 2 \hyperlink{core__c_8h_ae06ca743ad073c1d28554b5b159ebf4f}{func\_name}(\textcolor{keyword}{const} input\_type ## 2 & 
+      \hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}, \textcolor{keyword}{const} input\_type ## 2 & \hyperlink{legacy_8hpp_ac04272e8ca865b8fba18d36edae9fd2a}{b}) \(\backslash\)
+    \{ \(\backslash\)
+        return VecTraits<output\_type ## 2>::make(\hyperlink{core__c_8h_a120677ac732b3c9bfecab149fc978afa}{func} (\hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}.\hyperlink{structCvPoint2D32f_a8d77880e3d92682aec3cbb36eae9cc40}{x}, \hyperlink{legacy_8hpp_ac04272e8ca865b8fba18d36edae9fd2a}{b}.\hyperlink{structCvPoint2D32f_a8d77880e3d92682aec3cbb36eae9cc40}{x}), \hyperlink{core__c_8h_a120677ac732b3c9bfecab149fc978afa}{func} (
+      \hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}.\hyperlink{structCvPoint2D32f_afaec75e4e30df5f2e3ab02c46dae0cb0}{y}, \hyperlink{legacy_8hpp_ac04272e8ca865b8fba18d36edae9fd2a}{b}.\hyperlink{structCvPoint2D32f_afaec75e4e30df5f2e3ab02c46dae0cb0}{y})); \(\backslash\)
+    \} \(\backslash\)
+    \_\_device\_\_ \_\_forceinline\_\_ output\_type ## 3 \hyperlink{core__c_8h_ae06ca743ad073c1d28554b5b159ebf4f}{func\_name}(\textcolor{keyword}{const} input\_type ## 3 & 
+      \hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}, \textcolor{keyword}{const} input\_type ## 3 & \hyperlink{legacy_8hpp_ac04272e8ca865b8fba18d36edae9fd2a}{b}) \(\backslash\)
+    \{ \(\backslash\)
+        return VecTraits<output\_type ## 3>::make(\hyperlink{core__c_8h_a120677ac732b3c9bfecab149fc978afa}{func} (\hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}.\hyperlink{structCvPoint2D32f_a8d77880e3d92682aec3cbb36eae9cc40}{x}, \hyperlink{legacy_8hpp_ac04272e8ca865b8fba18d36edae9fd2a}{b}.\hyperlink{structCvPoint2D32f_a8d77880e3d92682aec3cbb36eae9cc40}{x}), \hyperlink{core__c_8h_a120677ac732b3c9bfecab149fc978afa}{func} (
+      \hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}.\hyperlink{structCvPoint2D32f_afaec75e4e30df5f2e3ab02c46dae0cb0}{y}, \hyperlink{legacy_8hpp_ac04272e8ca865b8fba18d36edae9fd2a}{b}.\hyperlink{structCvPoint2D32f_afaec75e4e30df5f2e3ab02c46dae0cb0}{y}), \hyperlink{core__c_8h_a120677ac732b3c9bfecab149fc978afa}{func} (\hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}.z, \hyperlink{legacy_8hpp_ac04272e8ca865b8fba18d36edae9fd2a}{b}.z)); \(\backslash\)
+    \} \(\backslash\)
+    \_\_device\_\_ \_\_forceinline\_\_ output\_type ## 4 \hyperlink{core__c_8h_ae06ca743ad073c1d28554b5b159ebf4f}{func\_name}(\textcolor{keyword}{const} input\_type ## 4 & 
+      \hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}, \textcolor{keyword}{const} input\_type ## 4 & \hyperlink{legacy_8hpp_ac04272e8ca865b8fba18d36edae9fd2a}{b}) \(\backslash\)
+    \{ \(\backslash\)
+        return VecTraits<output\_type ## 4>::make(\hyperlink{core__c_8h_a120677ac732b3c9bfecab149fc978afa}{func} (\hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}.\hyperlink{structCvPoint2D32f_a8d77880e3d92682aec3cbb36eae9cc40}{x}, \hyperlink{legacy_8hpp_ac04272e8ca865b8fba18d36edae9fd2a}{b}.\hyperlink{structCvPoint2D32f_a8d77880e3d92682aec3cbb36eae9cc40}{x}), \hyperlink{core__c_8h_a120677ac732b3c9bfecab149fc978afa}{func} (
+      \hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}.\hyperlink{structCvPoint2D32f_afaec75e4e30df5f2e3ab02c46dae0cb0}{y}, \hyperlink{legacy_8hpp_ac04272e8ca865b8fba18d36edae9fd2a}{b}.\hyperlink{structCvPoint2D32f_afaec75e4e30df5f2e3ab02c46dae0cb0}{y}), \hyperlink{core__c_8h_a120677ac732b3c9bfecab149fc978afa}{func} (\hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}.z, \hyperlink{legacy_8hpp_ac04272e8ca865b8fba18d36edae9fd2a}{b}.z), \hyperlink{core__c_8h_a120677ac732b3c9bfecab149fc978afa}{func} (\hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}.w, \hyperlink{legacy_8hpp_ac04272e8ca865b8fba18d36edae9fd2a}{b}.w)); \(\backslash\)
+    \}
+\end{DoxyCode}
+\hypertarget{vec__math_8hpp_ab6b550323b99c96478a5bbe1e6eee53d}{\index{vec\-\_\-math.\-hpp@{vec\-\_\-math.\-hpp}!C\-V\-\_\-\-C\-U\-D\-E\-V\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-V\-E\-C\-\_\-\-B\-I\-N\-A\-R\-Y\-\_\-\-O\-P@{C\-V\-\_\-\-C\-U\-D\-E\-V\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-V\-E\-C\-\_\-\-B\-I\-N\-A\-R\-Y\-\_\-\-O\-P}}
+\index{C\-V\-\_\-\-C\-U\-D\-E\-V\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-V\-E\-C\-\_\-\-B\-I\-N\-A\-R\-Y\-\_\-\-O\-P@{C\-V\-\_\-\-C\-U\-D\-E\-V\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-V\-E\-C\-\_\-\-B\-I\-N\-A\-R\-Y\-\_\-\-O\-P}!vec_math.hpp@{vec\-\_\-math.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-C\-U\-D\-E\-V\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-V\-E\-C\-\_\-\-B\-I\-N\-A\-R\-Y\-\_\-\-O\-P}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-C\-U\-D\-E\-V\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-V\-E\-C\-\_\-\-B\-I\-N\-A\-R\-Y\-\_\-\-O\-P(
+\begin{DoxyParamCaption}
+\item[{}]{op, }
+\item[{}]{input\-\_\-type, }
+\item[{}]{output\-\_\-type}
+\end{DoxyParamCaption}
+)}}\label{vec__math_8hpp_ab6b550323b99c96478a5bbe1e6eee53d}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\_\_device\_\_ \_\_forceinline\_\_ output\_type ## 1 \textcolor{keyword}{operator} op(\textcolor{keyword}{const} input\_type ## 1 & 
+      \hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}, \textcolor{keyword}{const} input\_type ## 1 & \hyperlink{legacy_8hpp_ac04272e8ca865b8fba18d36edae9fd2a}{b}) \(\backslash\)
+    \{ \(\backslash\)
+        return VecTraits<output\_type ## 1>::make(\hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}.\hyperlink{structCvPoint2D32f_a8d77880e3d92682aec3cbb36eae9cc40}{x} op \hyperlink{legacy_8hpp_ac04272e8ca865b8fba18d36edae9fd2a}{b}.\hyperlink{structCvPoint2D32f_a8d77880e3d92682aec3cbb36eae9cc40}{x}); \(\backslash\)
+    \} \(\backslash\)
+    \_\_device\_\_ \_\_forceinline\_\_ output\_type ## 2 \textcolor{keyword}{operator} op(\textcolor{keyword}{const} input\_type ## 2 & 
+      \hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}, \textcolor{keyword}{const} input\_type ## 2 & \hyperlink{legacy_8hpp_ac04272e8ca865b8fba18d36edae9fd2a}{b}) \(\backslash\)
+    \{ \(\backslash\)
+        return VecTraits<output\_type ## 2>::make(\hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}.\hyperlink{structCvPoint2D32f_a8d77880e3d92682aec3cbb36eae9cc40}{x} op \hyperlink{legacy_8hpp_ac04272e8ca865b8fba18d36edae9fd2a}{b}.\hyperlink{structCvPoint2D32f_a8d77880e3d92682aec3cbb36eae9cc40}{x}, \hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}.\hyperlink{structCvPoint2D32f_afaec75e4e30df5f2e3ab02c46dae0cb0}{y} op \hyperlink{legacy_8hpp_ac04272e8ca865b8fba18d36edae9fd2a}{b}.\hyperlink{structCvPoint2D32f_afaec75e4e30df5f2e3ab02c46dae0cb0}{y}); \(\backslash\)
+    \} \(\backslash\)
+    \_\_device\_\_ \_\_forceinline\_\_ output\_type ## 3 \textcolor{keyword}{operator} op(\textcolor{keyword}{const} input\_type ## 3 & 
+      \hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}, \textcolor{keyword}{const} input\_type ## 3 & \hyperlink{legacy_8hpp_ac04272e8ca865b8fba18d36edae9fd2a}{b}) \(\backslash\)
+    \{ \(\backslash\)
+        return VecTraits<output\_type ## 3>::make(\hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}.\hyperlink{structCvPoint2D32f_a8d77880e3d92682aec3cbb36eae9cc40}{x} op \hyperlink{legacy_8hpp_ac04272e8ca865b8fba18d36edae9fd2a}{b}.\hyperlink{structCvPoint2D32f_a8d77880e3d92682aec3cbb36eae9cc40}{x}, \hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}.\hyperlink{structCvPoint2D32f_afaec75e4e30df5f2e3ab02c46dae0cb0}{y} op \hyperlink{legacy_8hpp_ac04272e8ca865b8fba18d36edae9fd2a}{b}.\hyperlink{structCvPoint2D32f_afaec75e4e30df5f2e3ab02c46dae0cb0}{y}, 
+      \hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}.z op \hyperlink{legacy_8hpp_ac04272e8ca865b8fba18d36edae9fd2a}{b}.z); \(\backslash\)
+    \} \(\backslash\)
+    \_\_device\_\_ \_\_forceinline\_\_ output\_type ## 4 \textcolor{keyword}{operator} op(\textcolor{keyword}{const} input\_type ## 4 & 
+      \hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}, \textcolor{keyword}{const} input\_type ## 4 & \hyperlink{legacy_8hpp_ac04272e8ca865b8fba18d36edae9fd2a}{b}) \(\backslash\)
+    \{ \(\backslash\)
+        return VecTraits<output\_type ## 4>::make(\hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}.\hyperlink{structCvPoint2D32f_a8d77880e3d92682aec3cbb36eae9cc40}{x} op \hyperlink{legacy_8hpp_ac04272e8ca865b8fba18d36edae9fd2a}{b}.\hyperlink{structCvPoint2D32f_a8d77880e3d92682aec3cbb36eae9cc40}{x}, \hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}.\hyperlink{structCvPoint2D32f_afaec75e4e30df5f2e3ab02c46dae0cb0}{y} op \hyperlink{legacy_8hpp_ac04272e8ca865b8fba18d36edae9fd2a}{b}.\hyperlink{structCvPoint2D32f_afaec75e4e30df5f2e3ab02c46dae0cb0}{y}, 
+      \hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}.z op \hyperlink{legacy_8hpp_ac04272e8ca865b8fba18d36edae9fd2a}{b}.z, \hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}.w op \hyperlink{legacy_8hpp_ac04272e8ca865b8fba18d36edae9fd2a}{b}.w); \(\backslash\)
+    \}
+\end{DoxyCode}
+\hypertarget{vec__math_8hpp_a0d92c5a410ac876c8aaecc87e62fe292}{\index{vec\-\_\-math.\-hpp@{vec\-\_\-math.\-hpp}!C\-V\-\_\-\-C\-U\-D\-E\-V\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-V\-E\-C\-\_\-\-U\-N\-A\-R\-Y\-\_\-\-F\-U\-N\-C@{C\-V\-\_\-\-C\-U\-D\-E\-V\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-V\-E\-C\-\_\-\-U\-N\-A\-R\-Y\-\_\-\-F\-U\-N\-C}}
+\index{C\-V\-\_\-\-C\-U\-D\-E\-V\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-V\-E\-C\-\_\-\-U\-N\-A\-R\-Y\-\_\-\-F\-U\-N\-C@{C\-V\-\_\-\-C\-U\-D\-E\-V\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-V\-E\-C\-\_\-\-U\-N\-A\-R\-Y\-\_\-\-F\-U\-N\-C}!vec_math.hpp@{vec\-\_\-math.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-C\-U\-D\-E\-V\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-V\-E\-C\-\_\-\-U\-N\-A\-R\-Y\-\_\-\-F\-U\-N\-C}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-C\-U\-D\-E\-V\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-V\-E\-C\-\_\-\-U\-N\-A\-R\-Y\-\_\-\-F\-U\-N\-C(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf func\-\_\-name}, }
+\item[{}]{{\bf func}, }
+\item[{}]{input\-\_\-type, }
+\item[{}]{output\-\_\-type}
+\end{DoxyParamCaption}
+)}}\label{vec__math_8hpp_a0d92c5a410ac876c8aaecc87e62fe292}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\_\_device\_\_ \_\_forceinline\_\_ output\_type ## 1 \hyperlink{core__c_8h_ae06ca743ad073c1d28554b5b159ebf4f}{func\_name}(\textcolor{keyword}{const} input\_type ## 1 & 
+      \hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}) \(\backslash\)
+    \{ \(\backslash\)
+        return VecTraits<output\_type ## 1>::make(\hyperlink{core__c_8h_a120677ac732b3c9bfecab149fc978afa}{func} (\hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}.\hyperlink{structCvPoint2D32f_a8d77880e3d92682aec3cbb36eae9cc40}{x})); \(\backslash\)
+    \} \(\backslash\)
+    \_\_device\_\_ \_\_forceinline\_\_ output\_type ## 2 \hyperlink{core__c_8h_ae06ca743ad073c1d28554b5b159ebf4f}{func\_name}(\textcolor{keyword}{const} input\_type ## 2 & 
+      \hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}) \(\backslash\)
+    \{ \(\backslash\)
+        return VecTraits<output\_type ## 2>::make(\hyperlink{core__c_8h_a120677ac732b3c9bfecab149fc978afa}{func} (\hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}.\hyperlink{structCvPoint2D32f_a8d77880e3d92682aec3cbb36eae9cc40}{x}), \hyperlink{core__c_8h_a120677ac732b3c9bfecab149fc978afa}{func} (\hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}.
+      \hyperlink{structCvPoint2D32f_afaec75e4e30df5f2e3ab02c46dae0cb0}{y})); \(\backslash\)
+    \} \(\backslash\)
+    \_\_device\_\_ \_\_forceinline\_\_ output\_type ## 3 \hyperlink{core__c_8h_ae06ca743ad073c1d28554b5b159ebf4f}{func\_name}(\textcolor{keyword}{const} input\_type ## 3 & 
+      \hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}) \(\backslash\)
+    \{ \(\backslash\)
+        return VecTraits<output\_type ## 3>::make(\hyperlink{core__c_8h_a120677ac732b3c9bfecab149fc978afa}{func} (\hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}.\hyperlink{structCvPoint2D32f_a8d77880e3d92682aec3cbb36eae9cc40}{x}), \hyperlink{core__c_8h_a120677ac732b3c9bfecab149fc978afa}{func} (\hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}.
+      \hyperlink{structCvPoint2D32f_afaec75e4e30df5f2e3ab02c46dae0cb0}{y}), \hyperlink{core__c_8h_a120677ac732b3c9bfecab149fc978afa}{func} (\hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}.z)); \(\backslash\)
+    \} \(\backslash\)
+    \_\_device\_\_ \_\_forceinline\_\_ output\_type ## 4 \hyperlink{core__c_8h_ae06ca743ad073c1d28554b5b159ebf4f}{func\_name}(\textcolor{keyword}{const} input\_type ## 4 & 
+      \hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}) \(\backslash\)
+    \{ \(\backslash\)
+        return VecTraits<output\_type ## 4>::make(\hyperlink{core__c_8h_a120677ac732b3c9bfecab149fc978afa}{func} (\hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}.\hyperlink{structCvPoint2D32f_a8d77880e3d92682aec3cbb36eae9cc40}{x}), \hyperlink{core__c_8h_a120677ac732b3c9bfecab149fc978afa}{func} (\hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}.
+      \hyperlink{structCvPoint2D32f_afaec75e4e30df5f2e3ab02c46dae0cb0}{y}), \hyperlink{core__c_8h_a120677ac732b3c9bfecab149fc978afa}{func} (\hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}.z), \hyperlink{core__c_8h_a120677ac732b3c9bfecab149fc978afa}{func} (\hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}.w)); \(\backslash\)
+    \}
+\end{DoxyCode}
+\hypertarget{vec__math_8hpp_a4644495144331441714ad839a02b2968}{\index{vec\-\_\-math.\-hpp@{vec\-\_\-math.\-hpp}!C\-V\-\_\-\-C\-U\-D\-E\-V\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-V\-E\-C\-\_\-\-U\-N\-A\-R\-Y\-\_\-\-O\-P@{C\-V\-\_\-\-C\-U\-D\-E\-V\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-V\-E\-C\-\_\-\-U\-N\-A\-R\-Y\-\_\-\-O\-P}}
+\index{C\-V\-\_\-\-C\-U\-D\-E\-V\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-V\-E\-C\-\_\-\-U\-N\-A\-R\-Y\-\_\-\-O\-P@{C\-V\-\_\-\-C\-U\-D\-E\-V\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-V\-E\-C\-\_\-\-U\-N\-A\-R\-Y\-\_\-\-O\-P}!vec_math.hpp@{vec\-\_\-math.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-C\-U\-D\-E\-V\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-V\-E\-C\-\_\-\-U\-N\-A\-R\-Y\-\_\-\-O\-P}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-C\-U\-D\-E\-V\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-V\-E\-C\-\_\-\-U\-N\-A\-R\-Y\-\_\-\-O\-P(
+\begin{DoxyParamCaption}
+\item[{}]{op, }
+\item[{}]{input\-\_\-type, }
+\item[{}]{output\-\_\-type}
+\end{DoxyParamCaption}
+)}}\label{vec__math_8hpp_a4644495144331441714ad839a02b2968}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\_\_device\_\_ \_\_forceinline\_\_ output\_type ## 1 \textcolor{keyword}{operator} op(\textcolor{keyword}{const} input\_type ## 1 & 
+      \hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}) \(\backslash\)
+    \{ \(\backslash\)
+        return VecTraits<output\_type ## 1>::make(op (\hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}.\hyperlink{structCvPoint2D32f_a8d77880e3d92682aec3cbb36eae9cc40}{x})); \(\backslash\)
+    \} \(\backslash\)
+    \_\_device\_\_ \_\_forceinline\_\_ output\_type ## 2 \textcolor{keyword}{operator} op(\textcolor{keyword}{const} input\_type ## 2 & 
+      \hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}) \(\backslash\)
+    \{ \(\backslash\)
+        return VecTraits<output\_type ## 2>::make(op (\hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}.\hyperlink{structCvPoint2D32f_a8d77880e3d92682aec3cbb36eae9cc40}{x}), op (\hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}.\hyperlink{structCvPoint2D32f_afaec75e4e30df5f2e3ab02c46dae0cb0}{y})); \(\backslash\)
+    \} \(\backslash\)
+    \_\_device\_\_ \_\_forceinline\_\_ output\_type ## 3 \textcolor{keyword}{operator} op(\textcolor{keyword}{const} input\_type ## 3 & 
+      \hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}) \(\backslash\)
+    \{ \(\backslash\)
+        return VecTraits<output\_type ## 3>::make(op (\hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}.\hyperlink{structCvPoint2D32f_a8d77880e3d92682aec3cbb36eae9cc40}{x}), op (\hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}.\hyperlink{structCvPoint2D32f_afaec75e4e30df5f2e3ab02c46dae0cb0}{y}), op (\hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}.z)); \(\backslash\)
+    \} \(\backslash\)
+    \_\_device\_\_ \_\_forceinline\_\_ output\_type ## 4 \textcolor{keyword}{operator} op(\textcolor{keyword}{const} input\_type ## 4 & 
+      \hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}) \(\backslash\)
+    \{ \(\backslash\)
+        return VecTraits<output\_type ## 4>::make(op (\hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}.\hyperlink{structCvPoint2D32f_a8d77880e3d92682aec3cbb36eae9cc40}{x}), op (\hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}.\hyperlink{structCvPoint2D32f_afaec75e4e30df5f2e3ab02c46dae0cb0}{y}), op (\hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}.z), op (
+      \hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}.w)); \(\backslash\)
+    \}
+\end{DoxyCode}

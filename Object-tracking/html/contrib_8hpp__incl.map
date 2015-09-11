@@ -1,0 +1,13 @@
+<map id="/usr/include/opencv2/contrib/contrib.hpp" name="/usr/include/opencv2/contrib/contrib.hpp">
+<area shape="rect" id="node2" href="$core_8hpp.html" title="The Core Functionality. " alt="" coords="377,187,531,213"/>
+<area shape="rect" id="node14" href="$imgproc_8hpp.html" title="The Image Processing. " alt="" coords="94,104,289,131"/>
+<area shape="rect" id="node17" href="$features2d_2features2d_8hpp.html" title="opencv2/features2d\l/features2d.hpp" alt="" coords="600,97,735,138"/>
+<area shape="rect" id="node19" href="$objdetect_8hpp.html" title="opencv2/objdetect/objdetect.hpp" alt="" coords="365,104,575,131"/>
+<area shape="rect" id="node3" href="$core_2types__c_8h.html" title="opencv2/core/types_c.h" alt="" coords="169,336,329,363"/>
+<area shape="rect" id="node10" href="$version_8hpp.html" title="opencv2/core/version.hpp" alt="" coords="733,261,904,288"/>
+<area shape="rect" id="node11" href="$operations_8hpp.html" title="opencv2/core/operations.hpp" alt="" coords="344,261,533,288"/>
+<area shape="rect" id="node13" href="$mat_8hpp.html" title="opencv2/core/mat.hpp" alt="" coords="558,261,708,288"/>
+<area shape="rect" id="node15" href="$imgproc_2types__c_8h.html" title="opencv2/imgproc/types_c.h" alt="" coords="101,187,283,213"/>
+<area shape="rect" id="node16" href="$core__c_8h.html" title="opencv2/core/core_c.h" alt="" coords="115,261,268,288"/>
+<area shape="rect" id="node18" href="$miniflann_8hpp.html" title="opencv2/flann/miniflann.hpp" alt="" coords="576,187,760,213"/>
+</map>

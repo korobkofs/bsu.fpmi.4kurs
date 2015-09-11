@@ -1,0 +1,10 @@
+<map id="cv::gpu::device::reduce_detail::GenericOptimized32::reduce" name="cv::gpu::device::reduce_detail::GenericOptimized32::reduce">
+<area shape="rect" id="node2" href="$structcv_1_1gpu_1_1device_1_1Warp.html#aa48f497ab15265f89f508468d9c12074" title="Returns the warp lane ID of the calling thread. " alt="" coords="245,5,395,46"/>
+<area shape="rect" id="node3" href="$structcv_1_1gpu_1_1device_1_1reduce__detail_1_1Unroll.html#aa22f16c42584d64c4f2089ccac393f7d" title="cv::gpu::device::reduce\l_detail::Unroll::loopShfl" alt="" coords="241,70,399,111"/>
+<area shape="rect" id="node6" href="$namespacecv_1_1gpu_1_1device_1_1reduce__detail.html#a53d8fc2c40797c06caca8f9ea93d33d2" title="cv::gpu::device::reduce\l_detail::loadToSmem" alt="" coords="241,135,399,177"/>
+<area shape="rect" id="node7" href="$structcv_1_1gpu_1_1device_1_1reduce__detail_1_1Unroll.html#a00c7372deefa36fb586952f6fe08c6a3" title="cv::gpu::device::reduce\l_detail::Unroll::loop" alt="" coords="241,201,399,242"/>
+<area shape="rect" id="node9" href="$namespacecv_1_1gpu_1_1device_1_1reduce__detail.html#a261236c3c0cccd9f4c73c8683f25e731" title="cv::gpu::device::reduce\l_detail::loadFromSmem" alt="" coords="240,266,400,307"/>
+<area shape="rect" id="node4" href="$namespacecv_1_1gpu_1_1device_1_1reduce__detail.html#a161a9b41c39044b65c1ba8839611a6e4" title="cv::gpu::device::reduce\l_detail::mergeShfl" alt="" coords="449,70,607,111"/>
+<area shape="rect" id="node5" href="$namespacecv_1_1gpu_1_1device.html#a9036877715cb1db89bf387b835582333" title="cv::gpu::device::shfl_down" alt="" coords="656,77,835,104"/>
+<area shape="rect" id="node8" href="$namespacecv_1_1gpu_1_1device_1_1reduce__detail.html#a5da421bdac170cb8c318e91e77c31fe6" title="cv::gpu::device::reduce\l_detail::merge" alt="" coords="449,201,607,242"/>
+</map>

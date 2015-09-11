@@ -1,0 +1,107 @@
+\hypertarget{BB_8cpp}{\section{src/libopentld/mftracker/\-B\-B.cpp File Reference}
+\label{BB_8cpp}\index{src/libopentld/mftracker/\-B\-B.\-cpp@{src/libopentld/mftracker/\-B\-B.\-cpp}}
+}
+{\ttfamily \#include \char`\"{}B\-B.\-h\char`\"{}}\\*
+Include dependency graph for B\-B.\-cpp\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{BB_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{BB_8cpp_acf54357bbf511d049e50a99f0ee28121}{calculate\-B\-B\-Center} (float bb\mbox{[}4\mbox{]}, float center\mbox{[}2\mbox{]})
+\begin{DoxyCompactList}\small\item\em Calculates center of a Rectangle/\-Boundingbox. \end{DoxyCompactList}\item 
+int \hyperlink{BB_8cpp_a2ef4a63d6f593c4477ece315fe7d1ae4}{get\-Filled\-B\-B\-Points} (float $\ast$bb, int num\-M, int num\-N, int margin, float $\ast$pts)
+\begin{DoxyCompactList}\small\item\em Creates num\-M x num\-N points grid on B\-Box. Points ordered in 1 dimensional array (x1, y1, x2, y2). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{BB_8cpp_acf54357bbf511d049e50a99f0ee28121}{\index{B\-B.\-cpp@{B\-B.\-cpp}!calculate\-B\-B\-Center@{calculate\-B\-B\-Center}}
+\index{calculate\-B\-B\-Center@{calculate\-B\-B\-Center}!BB.cpp@{B\-B.\-cpp}}
+\subsubsection[{calculate\-B\-B\-Center}]{\setlength{\rightskip}{0pt plus 5cm}int calculate\-B\-B\-Center (
+\begin{DoxyParamCaption}
+\item[{float}]{bb\mbox{[}4\mbox{]}, }
+\item[{float}]{center\mbox{[}2\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{BB_8cpp_acf54357bbf511d049e50a99f0ee28121}
+
+
+Calculates center of a Rectangle/\-Boundingbox. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bb} & defined with 2 points x,y,x1,y1 \\
+\hline
+{\em center} & Output. point center\mbox{[}0\mbox{]}=x,center\mbox{[}1\mbox{]}=y \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if bb is N\-U\-L\-L and the center couldn't be computed, 1 on success. 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{BB_8cpp_acf54357bbf511d049e50a99f0ee28121_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{BB_8cpp_a2ef4a63d6f593c4477ece315fe7d1ae4}{\index{B\-B.\-cpp@{B\-B.\-cpp}!get\-Filled\-B\-B\-Points@{get\-Filled\-B\-B\-Points}}
+\index{get\-Filled\-B\-B\-Points@{get\-Filled\-B\-B\-Points}!BB.cpp@{B\-B.\-cpp}}
+\subsubsection[{get\-Filled\-B\-B\-Points}]{\setlength{\rightskip}{0pt plus 5cm}int get\-Filled\-B\-B\-Points (
+\begin{DoxyParamCaption}
+\item[{float $\ast$}]{bb, }
+\item[{int}]{num\-M, }
+\item[{int}]{num\-N, }
+\item[{int}]{margin, }
+\item[{float $\ast$}]{pts}
+\end{DoxyParamCaption}
+)}}\label{BB_8cpp_a2ef4a63d6f593c4477ece315fe7d1ae4}
+
+
+Creates num\-M x num\-N points grid on B\-Box. Points ordered in 1 dimensional array (x1, y1, x2, y2). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bb} & Bounding box represented through 2 points(x1,y1,x2,y2) \\
+\hline
+{\em num\-M} & Number of points in height direction. \\
+\hline
+{\em num\-N} & Number of points in width direction. \\
+\hline
+{\em margin} & margin (in pixel) \\
+\hline
+{\em pts} & Contains the calculated points in the form (x1, y1, x2, y2). Size of the array must be num\-M $\ast$ num\-N $\ast$ 2. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{BB_8cpp_a2ef4a63d6f593c4477ece315fe7d1ae4_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{BB_8cpp_a2ef4a63d6f593c4477ece315fe7d1ae4_icgraph}
+\end{center}
+\end{figure}
+
+

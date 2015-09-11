@@ -1,0 +1,134 @@
+\hypertarget{classcvflann_1_1KNNResultSet}{\section{cvflann\-:\-:K\-N\-N\-Result\-Set$<$ Distance\-Type $>$ Class Template Reference}
+\label{classcvflann_1_1KNNResultSet}\index{cvflann\-::\-K\-N\-N\-Result\-Set$<$ Distance\-Type $>$@{cvflann\-::\-K\-N\-N\-Result\-Set$<$ Distance\-Type $>$}}
+}
+
+
+{\ttfamily \#include $<$result\-\_\-set.\-h$>$}
+
+
+
+Inheritance diagram for cvflann\-:\-:K\-N\-N\-Result\-Set$<$ Distance\-Type $>$\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{classcvflann_1_1KNNResultSet__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for cvflann\-:\-:K\-N\-N\-Result\-Set$<$ Distance\-Type $>$\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{classcvflann_1_1KNNResultSet__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcvflann_1_1KNNResultSet_aed8fc59bf2fec164a47e2fabf63dc281}{K\-N\-N\-Result\-Set} (int capacity\-\_\-)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcvflann_1_1KNNResultSet_ae9eab3480d859a6bc93d3c8ca963b41b}{init} (int $\ast$indices\-\_\-, Distance\-Type $\ast$dists\-\_\-)
+\item 
+size\-\_\-t \hyperlink{classcvflann_1_1KNNResultSet_ae5eb6c6791ff2dbc4db29aded5bd8195}{size} () const 
+\item 
+bool \hyperlink{classcvflann_1_1KNNResultSet_acd2c32a6aeb78a2ba1d1f63201a8fb7c}{full} () const 
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcvflann_1_1KNNResultSet_aa937f5fcd5e697de077f92d081c73e11}{add\-Point} (Distance\-Type \hyperlink{legacy_8hpp_ae895c2003a87eda49126845b7ac3688e}{dist}, int \hyperlink{core__c_8h_a750b5d744c39a06bfb13e6eb010e35d0}{index})
+\item 
+Distance\-Type \hyperlink{classcvflann_1_1KNNResultSet_abdeef6c6419cd4a0f3ccd5a67e3d0c38}{worst\-Dist} () const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Distance\-Type$>$class cvflann\-::\-K\-N\-N\-Result\-Set$<$ Distance\-Type $>$}
+
+K-\/\-Nearest neighbour result set. Ensures that the elements inserted are unique 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcvflann_1_1KNNResultSet_aed8fc59bf2fec164a47e2fabf63dc281}{\index{cvflann\-::\-K\-N\-N\-Result\-Set@{cvflann\-::\-K\-N\-N\-Result\-Set}!K\-N\-N\-Result\-Set@{K\-N\-N\-Result\-Set}}
+\index{K\-N\-N\-Result\-Set@{K\-N\-N\-Result\-Set}!cvflann::KNNResultSet@{cvflann\-::\-K\-N\-N\-Result\-Set}}
+\subsubsection[{K\-N\-N\-Result\-Set}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance\-Type$>$ {\bf cvflann\-::\-K\-N\-N\-Result\-Set}$<$ Distance\-Type $>$\-::{\bf K\-N\-N\-Result\-Set} (
+\begin{DoxyParamCaption}
+\item[{int}]{capacity\-\_\-}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcvflann_1_1KNNResultSet_aed8fc59bf2fec164a47e2fabf63dc281}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcvflann_1_1KNNResultSet_aa937f5fcd5e697de077f92d081c73e11}{\index{cvflann\-::\-K\-N\-N\-Result\-Set@{cvflann\-::\-K\-N\-N\-Result\-Set}!add\-Point@{add\-Point}}
+\index{add\-Point@{add\-Point}!cvflann::KNNResultSet@{cvflann\-::\-K\-N\-N\-Result\-Set}}
+\subsubsection[{add\-Point}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance\-Type$>$ {\bf void} {\bf cvflann\-::\-K\-N\-N\-Result\-Set}$<$ Distance\-Type $>$\-::add\-Point (
+\begin{DoxyParamCaption}
+\item[{Distance\-Type}]{dist, }
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1KNNResultSet_aa937f5fcd5e697de077f92d081c73e11}
+
+
+Implements \hyperlink{classcvflann_1_1ResultSet_a35c882b9e106e29fb76f2bdb5ab742d5}{cvflann\-::\-Result\-Set$<$ Distance\-Type $>$}.
+
+\hypertarget{classcvflann_1_1KNNResultSet_acd2c32a6aeb78a2ba1d1f63201a8fb7c}{\index{cvflann\-::\-K\-N\-N\-Result\-Set@{cvflann\-::\-K\-N\-N\-Result\-Set}!full@{full}}
+\index{full@{full}!cvflann::KNNResultSet@{cvflann\-::\-K\-N\-N\-Result\-Set}}
+\subsubsection[{full}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance\-Type$>$ bool {\bf cvflann\-::\-K\-N\-N\-Result\-Set}$<$ Distance\-Type $>$\-::full (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1KNNResultSet_acd2c32a6aeb78a2ba1d1f63201a8fb7c}
+
+
+Implements \hyperlink{classcvflann_1_1ResultSet_a8e29e42b9f3eb9c636f19927f46c8db4}{cvflann\-::\-Result\-Set$<$ Distance\-Type $>$}.
+
+\hypertarget{classcvflann_1_1KNNResultSet_ae9eab3480d859a6bc93d3c8ca963b41b}{\index{cvflann\-::\-K\-N\-N\-Result\-Set@{cvflann\-::\-K\-N\-N\-Result\-Set}!init@{init}}
+\index{init@{init}!cvflann::KNNResultSet@{cvflann\-::\-K\-N\-N\-Result\-Set}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance\-Type$>$ {\bf void} {\bf cvflann\-::\-K\-N\-N\-Result\-Set}$<$ Distance\-Type $>$\-::init (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{indices\-\_\-, }
+\item[{Distance\-Type $\ast$}]{dists\-\_\-}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcvflann_1_1KNNResultSet_ae9eab3480d859a6bc93d3c8ca963b41b}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{classcvflann_1_1KNNResultSet_ae9eab3480d859a6bc93d3c8ca963b41b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcvflann_1_1KNNResultSet_ae9eab3480d859a6bc93d3c8ca963b41b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcvflann_1_1KNNResultSet_ae5eb6c6791ff2dbc4db29aded5bd8195}{\index{cvflann\-::\-K\-N\-N\-Result\-Set@{cvflann\-::\-K\-N\-N\-Result\-Set}!size@{size}}
+\index{size@{size}!cvflann::KNNResultSet@{cvflann\-::\-K\-N\-N\-Result\-Set}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance\-Type$>$ size\-\_\-t {\bf cvflann\-::\-K\-N\-N\-Result\-Set}$<$ Distance\-Type $>$\-::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcvflann_1_1KNNResultSet_ae5eb6c6791ff2dbc4db29aded5bd8195}
+\hypertarget{classcvflann_1_1KNNResultSet_abdeef6c6419cd4a0f3ccd5a67e3d0c38}{\index{cvflann\-::\-K\-N\-N\-Result\-Set@{cvflann\-::\-K\-N\-N\-Result\-Set}!worst\-Dist@{worst\-Dist}}
+\index{worst\-Dist@{worst\-Dist}!cvflann::KNNResultSet@{cvflann\-::\-K\-N\-N\-Result\-Set}}
+\subsubsection[{worst\-Dist}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance\-Type$>$ Distance\-Type {\bf cvflann\-::\-K\-N\-N\-Result\-Set}$<$ Distance\-Type $>$\-::worst\-Dist (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1KNNResultSet_abdeef6c6419cd4a0f3ccd5a67e3d0c38}
+
+
+Implements \hyperlink{classcvflann_1_1ResultSet_a7d0240d65865aace32c1422095ed1094}{cvflann\-::\-Result\-Set$<$ Distance\-Type $>$}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/flann/\hyperlink{result__set_8h}{result\-\_\-set.\-h}\end{DoxyCompactItemize}

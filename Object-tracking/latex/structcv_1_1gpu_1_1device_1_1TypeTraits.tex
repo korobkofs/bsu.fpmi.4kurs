@@ -1,0 +1,179 @@
+\hypertarget{structcv_1_1gpu_1_1device_1_1TypeTraits}{\section{cv\-:\-:gpu\-:\-:device\-:\-:Type\-Traits$<$ T $>$ Struct Template Reference}
+\label{structcv_1_1gpu_1_1device_1_1TypeTraits}\index{cv\-::gpu\-::device\-::\-Type\-Traits$<$ T $>$@{cv\-::gpu\-::device\-::\-Type\-Traits$<$ T $>$}}
+}
+
+
+{\ttfamily \#include $<$type\-\_\-traits.\-hpp$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{structcv_1_1gpu_1_1device_1_1TypeTraits_a7e963477dc3be2323f037b99bdcd18caa73df44f7c1e815e7f4b9aa24df68a437}{is\-Const} = type\-\_\-traits\-\_\-detail\-:\-:Un\-Const$<$T$>$\-:\-:value
+ \}
+\item 
+enum \{ \hyperlink{structcv_1_1gpu_1_1device_1_1TypeTraits_a11ee9d259d6bd5bcb2747aeb71129375ad561a4ec8e03c3870afd96f887d86905}{is\-Volatile} = type\-\_\-traits\-\_\-detail\-:\-:Un\-Volatile$<$T$>$\-:\-:value
+ \}
+\item 
+enum \{ \hyperlink{structcv_1_1gpu_1_1device_1_1TypeTraits_add0f50eaac60defc7e9da5e62d693f81abd458d388c20965daae50bb8f32c450b}{is\-Reference} = type\-\_\-traits\-\_\-detail\-:\-:Reference\-Traits$<$Unqualified\-Type$>$\-:\-:value
+ \}
+\item 
+enum \{ \hyperlink{structcv_1_1gpu_1_1device_1_1TypeTraits_ab2825627daf52f0bd9f7d70af80a6843aa0c646b9dc2b5cf236e1a113d6355017}{is\-Pointer} = type\-\_\-traits\-\_\-detail\-:\-:Pointer\-Traits$<$typename type\-\_\-traits\-\_\-detail\-:\-:Reference\-Traits$<$Unqualified\-Type$>$\-:\-:type$>$\-:\-:value
+ \}
+\item 
+enum \{ \hyperlink{structcv_1_1gpu_1_1device_1_1TypeTraits_aafd47850bf29e6f5b30210d9b959f7d9a067a61f683fc8e6782f05cdc7b931249}{is\-Unsigned\-Int} = type\-\_\-traits\-\_\-detail\-:\-:Is\-Unsigned\-Integral$<$Unqualified\-Type$>$\-:\-:value
+ \}
+\item 
+enum \{ \hyperlink{structcv_1_1gpu_1_1device_1_1TypeTraits_a886af89632b4ec2297a7c3508c89b6eba8e65c1a50ff62c47a7ce768ab7afa272}{is\-Signed\-Int} = type\-\_\-traits\-\_\-detail\-:\-:Is\-Signed\-Intergral$<$Unqualified\-Type$>$\-:\-:value
+ \}
+\item 
+enum \{ \hyperlink{structcv_1_1gpu_1_1device_1_1TypeTraits_aaee5e3a06b6165d42c95103ac9353418aafbf343d282dd7af2644e54ce9d82156}{is\-Integral} = type\-\_\-traits\-\_\-detail\-:\-:Is\-Integral$<$Unqualified\-Type$>$\-:\-:value
+ \}
+\item 
+enum \{ \hyperlink{structcv_1_1gpu_1_1device_1_1TypeTraits_a1105027a8044e6dc92cc0b3669e46186aecc6d1c89bbabbeab0b5923b69524be6}{is\-Float} = type\-\_\-traits\-\_\-detail\-:\-:Is\-Float$<$Unqualified\-Type$>$\-:\-:value
+ \}
+\item 
+enum \{ \hyperlink{structcv_1_1gpu_1_1device_1_1TypeTraits_a5217d1545337d09eef549e94ab3a0a28a2e61d3b1fa20d883ae07dc90e8903d69}{is\-Arith} = is\-Integral $\vert$$\vert$ is\-Float
+ \}
+\item 
+enum \{ \hyperlink{structcv_1_1gpu_1_1device_1_1TypeTraits_af7de7964f05c34971145d4ec78fca202affdb3d6220ab72fc6cb1b6582618e608}{is\-Vec} = type\-\_\-traits\-\_\-detail\-:\-:Is\-Vec$<$Unqualified\-Type$>$\-:\-:value
+ \}
+\item 
+typedef \\*
+\hyperlink{structcv_1_1gpu_1_1device_1_1type__traits__detail_1_1UnConst}{type\-\_\-traits\-\_\-detail\-::\-Un\-Const}$<$ \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} $>$\\*
+\-::\hyperlink{imgproc__c_8h_a84612d8738bf935200cf32a103d8efe1}{type} \hyperlink{structcv_1_1gpu_1_1device_1_1TypeTraits_a5eb017695f64e787767dd56e3c0c8ced}{Non\-Const\-Type}
+\item 
+typedef \\*
+\hyperlink{structcv_1_1gpu_1_1device_1_1type__traits__detail_1_1UnVolatile}{type\-\_\-traits\-\_\-detail\-::\-Un\-Volatile}\\*
+$<$ \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} $>$\-::\hyperlink{imgproc__c_8h_a84612d8738bf935200cf32a103d8efe1}{type} \hyperlink{structcv_1_1gpu_1_1device_1_1TypeTraits_a1accc54314dac906cf94ca2664e2052c}{Non\-Volatile\-Type}
+\item 
+typedef \\*
+\hyperlink{structcv_1_1gpu_1_1device_1_1type__traits__detail_1_1UnVolatile}{type\-\_\-traits\-\_\-detail\-::\-Un\-Volatile}\\*
+$<$ typename \\*
+\hyperlink{structcv_1_1gpu_1_1device_1_1type__traits__detail_1_1UnConst}{type\-\_\-traits\-\_\-detail\-::\-Un\-Const}$<$ \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} $>$\\*
+\-::\hyperlink{imgproc__c_8h_a84612d8738bf935200cf32a103d8efe1}{type} $>$\-::\hyperlink{imgproc__c_8h_a84612d8738bf935200cf32a103d8efe1}{type} \hyperlink{structcv_1_1gpu_1_1device_1_1TypeTraits_aa4919b39d8e375e205450f59857419a3}{Unqualified\-Type}
+\item 
+typedef \\*
+\hyperlink{structcv_1_1gpu_1_1device_1_1type__traits__detail_1_1PointerTraits}{type\-\_\-traits\-\_\-detail\-::\-Pointer\-Traits}\\*
+$<$ \hyperlink{structcv_1_1gpu_1_1device_1_1TypeTraits_aa4919b39d8e375e205450f59857419a3}{Unqualified\-Type} $>$\-::\hyperlink{imgproc__c_8h_a84612d8738bf935200cf32a103d8efe1}{type} \hyperlink{structcv_1_1gpu_1_1device_1_1TypeTraits_a9767965cf3dcc3ac52c3ab7c23e54cd0}{Pointee\-Type}
+\item 
+typedef \\*
+\hyperlink{structcv_1_1gpu_1_1device_1_1type__traits__detail_1_1ReferenceTraits}{type\-\_\-traits\-\_\-detail\-::\-Reference\-Traits}\\*
+$<$ \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} $>$\-::\hyperlink{imgproc__c_8h_a84612d8738bf935200cf32a103d8efe1}{type} \hyperlink{structcv_1_1gpu_1_1device_1_1TypeTraits_a8fca712a58b7b161f578010412278a97}{Referred\-Type}
+\item 
+typedef \\*
+\hyperlink{structcv_1_1gpu_1_1device_1_1type__traits__detail_1_1Select}{type\-\_\-traits\-\_\-detail\-::\-Select}\\*
+$<$ \hyperlink{structcv_1_1gpu_1_1device_1_1IsSimpleParameter}{Is\-Simple\-Parameter}\\*
+$<$ \hyperlink{structcv_1_1gpu_1_1device_1_1TypeTraits_aa4919b39d8e375e205450f59857419a3}{Unqualified\-Type} $>$\-::\hyperlink{highgui__c_8h_ad4670c92695d4327c21292905a803901}{value}, \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T}, \\*
+typename \\*
+\hyperlink{structcv_1_1gpu_1_1device_1_1type__traits__detail_1_1AddParameterType}{type\-\_\-traits\-\_\-detail\-::\-Add\-Parameter\-Type}\\*
+$<$ \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} $>$\-::\hyperlink{imgproc__c_8h_a84612d8738bf935200cf32a103d8efe1}{type} $>$\-::\hyperlink{imgproc__c_8h_a84612d8738bf935200cf32a103d8efe1}{type} \hyperlink{structcv_1_1gpu_1_1device_1_1TypeTraits_a27a6644315cebcfdb7b02e65bf131658}{Parameter\-Type}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{structcv_1_1gpu_1_1device_1_1TypeTraits_a5eb017695f64e787767dd56e3c0c8ced}{\index{cv\-::gpu\-::device\-::\-Type\-Traits@{cv\-::gpu\-::device\-::\-Type\-Traits}!Non\-Const\-Type@{Non\-Const\-Type}}
+\index{Non\-Const\-Type@{Non\-Const\-Type}!cv::gpu::device::TypeTraits@{cv\-::gpu\-::device\-::\-Type\-Traits}}
+\subsubsection[{Non\-Const\-Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ typedef {\bf type\-\_\-traits\-\_\-detail\-::\-Un\-Const}$<${\bf T}$>$\-::{\bf type} {\bf cv\-::gpu\-::device\-::\-Type\-Traits}$<$ {\bf T} $>$\-::{\bf Non\-Const\-Type}}}\label{structcv_1_1gpu_1_1device_1_1TypeTraits_a5eb017695f64e787767dd56e3c0c8ced}
+\hypertarget{structcv_1_1gpu_1_1device_1_1TypeTraits_a1accc54314dac906cf94ca2664e2052c}{\index{cv\-::gpu\-::device\-::\-Type\-Traits@{cv\-::gpu\-::device\-::\-Type\-Traits}!Non\-Volatile\-Type@{Non\-Volatile\-Type}}
+\index{Non\-Volatile\-Type@{Non\-Volatile\-Type}!cv::gpu::device::TypeTraits@{cv\-::gpu\-::device\-::\-Type\-Traits}}
+\subsubsection[{Non\-Volatile\-Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ typedef {\bf type\-\_\-traits\-\_\-detail\-::\-Un\-Volatile}$<${\bf T}$>$\-::{\bf type} {\bf cv\-::gpu\-::device\-::\-Type\-Traits}$<$ {\bf T} $>$\-::{\bf Non\-Volatile\-Type}}}\label{structcv_1_1gpu_1_1device_1_1TypeTraits_a1accc54314dac906cf94ca2664e2052c}
+\hypertarget{structcv_1_1gpu_1_1device_1_1TypeTraits_a27a6644315cebcfdb7b02e65bf131658}{\index{cv\-::gpu\-::device\-::\-Type\-Traits@{cv\-::gpu\-::device\-::\-Type\-Traits}!Parameter\-Type@{Parameter\-Type}}
+\index{Parameter\-Type@{Parameter\-Type}!cv::gpu::device::TypeTraits@{cv\-::gpu\-::device\-::\-Type\-Traits}}
+\subsubsection[{Parameter\-Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ typedef {\bf type\-\_\-traits\-\_\-detail\-::\-Select}$<${\bf Is\-Simple\-Parameter}$<${\bf Unqualified\-Type}$>$\-::{\bf value}, {\bf T}, typename {\bf type\-\_\-traits\-\_\-detail\-::\-Add\-Parameter\-Type}$<${\bf T}$>$\-::{\bf type}$>$\-::{\bf type} {\bf cv\-::gpu\-::device\-::\-Type\-Traits}$<$ {\bf T} $>$\-::{\bf Parameter\-Type}}}\label{structcv_1_1gpu_1_1device_1_1TypeTraits_a27a6644315cebcfdb7b02e65bf131658}
+\hypertarget{structcv_1_1gpu_1_1device_1_1TypeTraits_a9767965cf3dcc3ac52c3ab7c23e54cd0}{\index{cv\-::gpu\-::device\-::\-Type\-Traits@{cv\-::gpu\-::device\-::\-Type\-Traits}!Pointee\-Type@{Pointee\-Type}}
+\index{Pointee\-Type@{Pointee\-Type}!cv::gpu::device::TypeTraits@{cv\-::gpu\-::device\-::\-Type\-Traits}}
+\subsubsection[{Pointee\-Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ typedef {\bf type\-\_\-traits\-\_\-detail\-::\-Pointer\-Traits}$<${\bf Unqualified\-Type}$>$\-::{\bf type} {\bf cv\-::gpu\-::device\-::\-Type\-Traits}$<$ {\bf T} $>$\-::{\bf Pointee\-Type}}}\label{structcv_1_1gpu_1_1device_1_1TypeTraits_a9767965cf3dcc3ac52c3ab7c23e54cd0}
+\hypertarget{structcv_1_1gpu_1_1device_1_1TypeTraits_a8fca712a58b7b161f578010412278a97}{\index{cv\-::gpu\-::device\-::\-Type\-Traits@{cv\-::gpu\-::device\-::\-Type\-Traits}!Referred\-Type@{Referred\-Type}}
+\index{Referred\-Type@{Referred\-Type}!cv::gpu::device::TypeTraits@{cv\-::gpu\-::device\-::\-Type\-Traits}}
+\subsubsection[{Referred\-Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ typedef {\bf type\-\_\-traits\-\_\-detail\-::\-Reference\-Traits}$<${\bf T}$>$\-::{\bf type} {\bf cv\-::gpu\-::device\-::\-Type\-Traits}$<$ {\bf T} $>$\-::{\bf Referred\-Type}}}\label{structcv_1_1gpu_1_1device_1_1TypeTraits_a8fca712a58b7b161f578010412278a97}
+\hypertarget{structcv_1_1gpu_1_1device_1_1TypeTraits_aa4919b39d8e375e205450f59857419a3}{\index{cv\-::gpu\-::device\-::\-Type\-Traits@{cv\-::gpu\-::device\-::\-Type\-Traits}!Unqualified\-Type@{Unqualified\-Type}}
+\index{Unqualified\-Type@{Unqualified\-Type}!cv::gpu::device::TypeTraits@{cv\-::gpu\-::device\-::\-Type\-Traits}}
+\subsubsection[{Unqualified\-Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ typedef {\bf type\-\_\-traits\-\_\-detail\-::\-Un\-Volatile}$<$typename {\bf type\-\_\-traits\-\_\-detail\-::\-Un\-Const}$<${\bf T}$>$\-::{\bf type}$>$\-::{\bf type} {\bf cv\-::gpu\-::device\-::\-Type\-Traits}$<$ {\bf T} $>$\-::{\bf Unqualified\-Type}}}\label{structcv_1_1gpu_1_1device_1_1TypeTraits_aa4919b39d8e375e205450f59857419a3}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{structcv_1_1gpu_1_1device_1_1TypeTraits_a7e963477dc3be2323f037b99bdcd18ca}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ anonymous enum}}\label{structcv_1_1gpu_1_1device_1_1TypeTraits_a7e963477dc3be2323f037b99bdcd18ca}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{is\-Const@{is\-Const}!cv\-::gpu\-::device\-::\-Type\-Traits@{cv\-::gpu\-::device\-::\-Type\-Traits}}\index{cv\-::gpu\-::device\-::\-Type\-Traits@{cv\-::gpu\-::device\-::\-Type\-Traits}!is\-Const@{is\-Const}}\item[{\em 
+\hypertarget{structcv_1_1gpu_1_1device_1_1TypeTraits_a7e963477dc3be2323f037b99bdcd18caa73df44f7c1e815e7f4b9aa24df68a437}{is\-Const}\label{structcv_1_1gpu_1_1device_1_1TypeTraits_a7e963477dc3be2323f037b99bdcd18caa73df44f7c1e815e7f4b9aa24df68a437}
+}]\end{description}
+\end{Desc}
+\hypertarget{structcv_1_1gpu_1_1device_1_1TypeTraits_a11ee9d259d6bd5bcb2747aeb71129375}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ anonymous enum}}\label{structcv_1_1gpu_1_1device_1_1TypeTraits_a11ee9d259d6bd5bcb2747aeb71129375}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{is\-Volatile@{is\-Volatile}!cv\-::gpu\-::device\-::\-Type\-Traits@{cv\-::gpu\-::device\-::\-Type\-Traits}}\index{cv\-::gpu\-::device\-::\-Type\-Traits@{cv\-::gpu\-::device\-::\-Type\-Traits}!is\-Volatile@{is\-Volatile}}\item[{\em 
+\hypertarget{structcv_1_1gpu_1_1device_1_1TypeTraits_a11ee9d259d6bd5bcb2747aeb71129375ad561a4ec8e03c3870afd96f887d86905}{is\-Volatile}\label{structcv_1_1gpu_1_1device_1_1TypeTraits_a11ee9d259d6bd5bcb2747aeb71129375ad561a4ec8e03c3870afd96f887d86905}
+}]\end{description}
+\end{Desc}
+\hypertarget{structcv_1_1gpu_1_1device_1_1TypeTraits_add0f50eaac60defc7e9da5e62d693f81}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ anonymous enum}}\label{structcv_1_1gpu_1_1device_1_1TypeTraits_add0f50eaac60defc7e9da5e62d693f81}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{is\-Reference@{is\-Reference}!cv\-::gpu\-::device\-::\-Type\-Traits@{cv\-::gpu\-::device\-::\-Type\-Traits}}\index{cv\-::gpu\-::device\-::\-Type\-Traits@{cv\-::gpu\-::device\-::\-Type\-Traits}!is\-Reference@{is\-Reference}}\item[{\em 
+\hypertarget{structcv_1_1gpu_1_1device_1_1TypeTraits_add0f50eaac60defc7e9da5e62d693f81abd458d388c20965daae50bb8f32c450b}{is\-Reference}\label{structcv_1_1gpu_1_1device_1_1TypeTraits_add0f50eaac60defc7e9da5e62d693f81abd458d388c20965daae50bb8f32c450b}
+}]\end{description}
+\end{Desc}
+\hypertarget{structcv_1_1gpu_1_1device_1_1TypeTraits_ab2825627daf52f0bd9f7d70af80a6843}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ anonymous enum}}\label{structcv_1_1gpu_1_1device_1_1TypeTraits_ab2825627daf52f0bd9f7d70af80a6843}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{is\-Pointer@{is\-Pointer}!cv\-::gpu\-::device\-::\-Type\-Traits@{cv\-::gpu\-::device\-::\-Type\-Traits}}\index{cv\-::gpu\-::device\-::\-Type\-Traits@{cv\-::gpu\-::device\-::\-Type\-Traits}!is\-Pointer@{is\-Pointer}}\item[{\em 
+\hypertarget{structcv_1_1gpu_1_1device_1_1TypeTraits_ab2825627daf52f0bd9f7d70af80a6843aa0c646b9dc2b5cf236e1a113d6355017}{is\-Pointer}\label{structcv_1_1gpu_1_1device_1_1TypeTraits_ab2825627daf52f0bd9f7d70af80a6843aa0c646b9dc2b5cf236e1a113d6355017}
+}]\end{description}
+\end{Desc}
+\hypertarget{structcv_1_1gpu_1_1device_1_1TypeTraits_aafd47850bf29e6f5b30210d9b959f7d9}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ anonymous enum}}\label{structcv_1_1gpu_1_1device_1_1TypeTraits_aafd47850bf29e6f5b30210d9b959f7d9}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{is\-Unsigned\-Int@{is\-Unsigned\-Int}!cv\-::gpu\-::device\-::\-Type\-Traits@{cv\-::gpu\-::device\-::\-Type\-Traits}}\index{cv\-::gpu\-::device\-::\-Type\-Traits@{cv\-::gpu\-::device\-::\-Type\-Traits}!is\-Unsigned\-Int@{is\-Unsigned\-Int}}\item[{\em 
+\hypertarget{structcv_1_1gpu_1_1device_1_1TypeTraits_aafd47850bf29e6f5b30210d9b959f7d9a067a61f683fc8e6782f05cdc7b931249}{is\-Unsigned\-Int}\label{structcv_1_1gpu_1_1device_1_1TypeTraits_aafd47850bf29e6f5b30210d9b959f7d9a067a61f683fc8e6782f05cdc7b931249}
+}]\end{description}
+\end{Desc}
+\hypertarget{structcv_1_1gpu_1_1device_1_1TypeTraits_a886af89632b4ec2297a7c3508c89b6eb}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ anonymous enum}}\label{structcv_1_1gpu_1_1device_1_1TypeTraits_a886af89632b4ec2297a7c3508c89b6eb}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{is\-Signed\-Int@{is\-Signed\-Int}!cv\-::gpu\-::device\-::\-Type\-Traits@{cv\-::gpu\-::device\-::\-Type\-Traits}}\index{cv\-::gpu\-::device\-::\-Type\-Traits@{cv\-::gpu\-::device\-::\-Type\-Traits}!is\-Signed\-Int@{is\-Signed\-Int}}\item[{\em 
+\hypertarget{structcv_1_1gpu_1_1device_1_1TypeTraits_a886af89632b4ec2297a7c3508c89b6eba8e65c1a50ff62c47a7ce768ab7afa272}{is\-Signed\-Int}\label{structcv_1_1gpu_1_1device_1_1TypeTraits_a886af89632b4ec2297a7c3508c89b6eba8e65c1a50ff62c47a7ce768ab7afa272}
+}]\end{description}
+\end{Desc}
+\hypertarget{structcv_1_1gpu_1_1device_1_1TypeTraits_aaee5e3a06b6165d42c95103ac9353418}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ anonymous enum}}\label{structcv_1_1gpu_1_1device_1_1TypeTraits_aaee5e3a06b6165d42c95103ac9353418}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{is\-Integral@{is\-Integral}!cv\-::gpu\-::device\-::\-Type\-Traits@{cv\-::gpu\-::device\-::\-Type\-Traits}}\index{cv\-::gpu\-::device\-::\-Type\-Traits@{cv\-::gpu\-::device\-::\-Type\-Traits}!is\-Integral@{is\-Integral}}\item[{\em 
+\hypertarget{structcv_1_1gpu_1_1device_1_1TypeTraits_aaee5e3a06b6165d42c95103ac9353418aafbf343d282dd7af2644e54ce9d82156}{is\-Integral}\label{structcv_1_1gpu_1_1device_1_1TypeTraits_aaee5e3a06b6165d42c95103ac9353418aafbf343d282dd7af2644e54ce9d82156}
+}]\end{description}
+\end{Desc}
+\hypertarget{structcv_1_1gpu_1_1device_1_1TypeTraits_a1105027a8044e6dc92cc0b3669e46186}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ anonymous enum}}\label{structcv_1_1gpu_1_1device_1_1TypeTraits_a1105027a8044e6dc92cc0b3669e46186}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{is\-Float@{is\-Float}!cv\-::gpu\-::device\-::\-Type\-Traits@{cv\-::gpu\-::device\-::\-Type\-Traits}}\index{cv\-::gpu\-::device\-::\-Type\-Traits@{cv\-::gpu\-::device\-::\-Type\-Traits}!is\-Float@{is\-Float}}\item[{\em 
+\hypertarget{structcv_1_1gpu_1_1device_1_1TypeTraits_a1105027a8044e6dc92cc0b3669e46186aecc6d1c89bbabbeab0b5923b69524be6}{is\-Float}\label{structcv_1_1gpu_1_1device_1_1TypeTraits_a1105027a8044e6dc92cc0b3669e46186aecc6d1c89bbabbeab0b5923b69524be6}
+}]\end{description}
+\end{Desc}
+\hypertarget{structcv_1_1gpu_1_1device_1_1TypeTraits_a5217d1545337d09eef549e94ab3a0a28}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ anonymous enum}}\label{structcv_1_1gpu_1_1device_1_1TypeTraits_a5217d1545337d09eef549e94ab3a0a28}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{is\-Arith@{is\-Arith}!cv\-::gpu\-::device\-::\-Type\-Traits@{cv\-::gpu\-::device\-::\-Type\-Traits}}\index{cv\-::gpu\-::device\-::\-Type\-Traits@{cv\-::gpu\-::device\-::\-Type\-Traits}!is\-Arith@{is\-Arith}}\item[{\em 
+\hypertarget{structcv_1_1gpu_1_1device_1_1TypeTraits_a5217d1545337d09eef549e94ab3a0a28a2e61d3b1fa20d883ae07dc90e8903d69}{is\-Arith}\label{structcv_1_1gpu_1_1device_1_1TypeTraits_a5217d1545337d09eef549e94ab3a0a28a2e61d3b1fa20d883ae07dc90e8903d69}
+}]\end{description}
+\end{Desc}
+\hypertarget{structcv_1_1gpu_1_1device_1_1TypeTraits_af7de7964f05c34971145d4ec78fca202}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ anonymous enum}}\label{structcv_1_1gpu_1_1device_1_1TypeTraits_af7de7964f05c34971145d4ec78fca202}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{is\-Vec@{is\-Vec}!cv\-::gpu\-::device\-::\-Type\-Traits@{cv\-::gpu\-::device\-::\-Type\-Traits}}\index{cv\-::gpu\-::device\-::\-Type\-Traits@{cv\-::gpu\-::device\-::\-Type\-Traits}!is\-Vec@{is\-Vec}}\item[{\em 
+\hypertarget{structcv_1_1gpu_1_1device_1_1TypeTraits_af7de7964f05c34971145d4ec78fca202affdb3d6220ab72fc6cb1b6582618e608}{is\-Vec}\label{structcv_1_1gpu_1_1device_1_1TypeTraits_af7de7964f05c34971145d4ec78fca202affdb3d6220ab72fc6cb1b6582618e608}
+}]\end{description}
+\end{Desc}
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/gpu/device/\hyperlink{type__traits_8hpp}{type\-\_\-traits.\-hpp}\end{DoxyCompactItemize}

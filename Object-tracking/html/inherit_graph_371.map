@@ -1,0 +1,10 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node2" href="$classcv_1_1BackgroundSubtractor.html" title="cv::BackgroundSubtractor" alt="" coords="256,56,429,83"/>
+<area shape="rect" id="node6" href="$classcv_1_1gpu_1_1GeneralizedHough__GPU.html" title="cv::gpu::GeneralizedHough_GPU" alt="" coords="235,107,451,133"/>
+<area shape="rect" id="node7" href="$classcv_1_1superres_1_1DenseOpticalFlowExt.html" title="cv::superres::DenseOptical\lFlowExt" alt="" coords="252,158,433,199"/>
+<area shape="rect" id="node8" href="$classcv_1_1superres_1_1SuperResolution.html" title="cv::superres::SuperResolution" alt="" coords="243,224,442,251"/>
+<area shape="rect" id="node3" href="$classcv_1_1BackgroundSubtractorGMG.html" title="cv::BackgroundSubtractorGMG" alt="" coords="502,5,706,32"/>
+<area shape="rect" id="node4" href="$classcv_1_1BackgroundSubtractorMOG.html" title="cv::BackgroundSubtractorMOG" alt="" coords="502,56,706,83"/>
+<area shape="rect" id="node5" href="$classcv_1_1BackgroundSubtractorMOG2.html" title="cv::BackgroundSubtractorMOG2" alt="" coords="499,107,709,133"/>
+<area shape="rect" id="node9" href="$classcv_1_1superres_1_1FrameSource.html" title="cv::superres::FrameSource" alt="" coords="6,224,186,251"/>
+</map>

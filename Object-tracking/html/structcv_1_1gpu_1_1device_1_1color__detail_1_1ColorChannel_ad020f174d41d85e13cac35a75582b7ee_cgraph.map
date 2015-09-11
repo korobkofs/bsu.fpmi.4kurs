@@ -1,0 +1,4 @@
+<map id="cv::gpu::device::color_detail::ColorChannel::half" name="cv::gpu::device::color_detail::ColorChannel::half">
+<area shape="rect" id="node2" href="$structcv_1_1gpu_1_1device_1_1color__detail_1_1ColorChannel.html#aedd738fa8d5f922cb3dffcb3fe005b7d" title="cv::gpu::device::color\l_detail::ColorChannel::max" alt="" coords="230,5,410,46"/>
+<area shape="rect" id="node3" href="$namespacecv_1_1gpu.html#a706c9def6816de566be2671b75ec5309" title="computes per&#45;element maximum of two arrays (dst = max(src1, src2)) " alt="" coords="459,12,557,39"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="CBlobGetArea::operator()" name="CBlobGetArea::operator()">
+<area shape="rect" id="node2" href="$classCBlob.html#a6f1db9fcb42c0a3ea003aaeb0ec65a8d" title="Compute blob&#39;s area. " alt="" coords="224,35,317,61"/>
+<area shape="rect" id="node3" href="$classCBlobContour.html#a2c68f462fc31a0e7add9a85b007fa42a" title="Computes area from contour. " alt="" coords="365,35,525,61"/>
+<area shape="rect" id="node4" href="$classCBlobContour.html#af4e715a94924d5dc1a0e67cf75818bb5" title="CBlobContour::IsEmpty" alt="" coords="582,5,743,32"/>
+<area shape="rect" id="node5" href="$classCBlobContour.html#a245d5e59180619aa9ae4ec14acc18744" title="Return all contour points. " alt="" coords="573,57,752,98"/>
+</map>

@@ -1,0 +1,138 @@
+\hypertarget{classcv_1_1ocl_1_1CvSVM__OCL}{\section{cv\-:\-:ocl\-:\-:Cv\-S\-V\-M\-\_\-\-O\-C\-L Class Reference}
+\label{classcv_1_1ocl_1_1CvSVM__OCL}\index{cv\-::ocl\-::\-Cv\-S\-V\-M\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-Cv\-S\-V\-M\-\_\-\-O\-C\-L}}
+}
+
+
+{\ttfamily \#include $<$ocl.\-hpp$>$}
+
+
+
+Inheritance diagram for cv\-:\-:ocl\-:\-:Cv\-S\-V\-M\-\_\-\-O\-C\-L\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classcv_1_1ocl_1_1CvSVM__OCL__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for cv\-:\-:ocl\-:\-:Cv\-S\-V\-M\-\_\-\-O\-C\-L\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classcv_1_1ocl_1_1CvSVM__OCL__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcv_1_1ocl_1_1CvSVM__OCL_abc2f9c3478f6ebb16a85309442f2ba29}{Cv\-S\-V\-M\-\_\-\-O\-C\-L} ()
+\item 
+\hyperlink{classcv_1_1ocl_1_1CvSVM__OCL_a29fd946f49a715e173a4778471839087}{Cv\-S\-V\-M\-\_\-\-O\-C\-L} (const cv\-::\-Mat \&train\-Data, const cv\-::\-Mat \&responses, const cv\-::\-Mat \&var\-Idx=cv\-::\-Mat(), const cv\-::\-Mat \&sample\-Idx=cv\-::\-Mat(), Cv\-S\-V\-M\-Params \hyperlink{compat_8hpp_a0480a03ecc41b20cde376602531d9270}{params}=Cv\-S\-V\-M\-Params())
+\item 
+\hyperlink{core_2types__c_8h_ae435babf3ce7cca990524b23adf6b4a3}{C\-V\-\_\-\-W\-R\-A\-P} float \hyperlink{classcv_1_1ocl_1_1CvSVM__OCL_a82dffabc246dfddca6d1ff54c884b447}{predict} (const int row\-\_\-index, Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, bool return\-D\-F\-Val=false) const 
+\item 
+\hyperlink{core_2types__c_8h_ae435babf3ce7cca990524b23adf6b4a3}{C\-V\-\_\-\-W\-R\-A\-P} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1CvSVM__OCL_a0e7c10b7d6b376e5e12a77cf6a48ae3c}{predict} (cv\-::\-Input\-Array \hyperlink{legacy_8hpp_a4fd80ec44eadba9c1fc910f5132046b6}{samples}, cv\-::\-Output\-Array results) const 
+\item 
+\hyperlink{core_2types__c_8h_ae435babf3ce7cca990524b23adf6b4a3}{C\-V\-\_\-\-W\-R\-A\-P} float \hyperlink{classcv_1_1ocl_1_1CvSVM__OCL_a2b476695fa02a882b0679b95faf646fd}{predict} (const cv\-::\-Mat \&sample, bool return\-D\-F\-Val=false) const 
+\item 
+float \hyperlink{classcv_1_1ocl_1_1CvSVM__OCL_a928f7e27515babcdb05e4e92e24e0149}{predict} (const \hyperlink{structCvMat}{Cv\-Mat} $\ast$\hyperlink{legacy_8hpp_a4fd80ec44eadba9c1fc910f5132046b6}{samples}, \hyperlink{core_2types__c_8h_a4e999bc21cb894d3ed789f3f0bc26778}{C\-V\-\_\-\-O\-U\-T} \hyperlink{structCvMat}{Cv\-Mat} $\ast$results) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{classcv_1_1ocl_1_1CvSVM__OCL_a06d0567cc55fe43b510f1d4916a4ffea}{predict} (const int row\-\_\-index, int row\-\_\-len, Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, bool return\-D\-F\-Val=false) const 
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1CvSVM__OCL_a6ca9e0530824dafd41be2b880890ca83}{create\-\_\-kernel} ()
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1CvSVM__OCL_af9413d69eb36ce2321644b7d008828e2}{create\-\_\-solver} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$ S\-V\-M $\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$! 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcv_1_1ocl_1_1CvSVM__OCL_abc2f9c3478f6ebb16a85309442f2ba29}{\index{cv\-::ocl\-::\-Cv\-S\-V\-M\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-Cv\-S\-V\-M\-\_\-\-O\-C\-L}!Cv\-S\-V\-M\-\_\-\-O\-C\-L@{Cv\-S\-V\-M\-\_\-\-O\-C\-L}}
+\index{Cv\-S\-V\-M\-\_\-\-O\-C\-L@{Cv\-S\-V\-M\-\_\-\-O\-C\-L}!cv::ocl::CvSVM_OCL@{cv\-::ocl\-::\-Cv\-S\-V\-M\-\_\-\-O\-C\-L}}
+\subsubsection[{Cv\-S\-V\-M\-\_\-\-O\-C\-L}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::ocl\-::\-Cv\-S\-V\-M\-\_\-\-O\-C\-L\-::\-Cv\-S\-V\-M\-\_\-\-O\-C\-L (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1CvSVM__OCL_abc2f9c3478f6ebb16a85309442f2ba29}
+\hypertarget{classcv_1_1ocl_1_1CvSVM__OCL_a29fd946f49a715e173a4778471839087}{\index{cv\-::ocl\-::\-Cv\-S\-V\-M\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-Cv\-S\-V\-M\-\_\-\-O\-C\-L}!Cv\-S\-V\-M\-\_\-\-O\-C\-L@{Cv\-S\-V\-M\-\_\-\-O\-C\-L}}
+\index{Cv\-S\-V\-M\-\_\-\-O\-C\-L@{Cv\-S\-V\-M\-\_\-\-O\-C\-L}!cv::ocl::CvSVM_OCL@{cv\-::ocl\-::\-Cv\-S\-V\-M\-\_\-\-O\-C\-L}}
+\subsubsection[{Cv\-S\-V\-M\-\_\-\-O\-C\-L}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::ocl\-::\-Cv\-S\-V\-M\-\_\-\-O\-C\-L\-::\-Cv\-S\-V\-M\-\_\-\-O\-C\-L (
+\begin{DoxyParamCaption}
+\item[{const cv\-::\-Mat \&}]{train\-Data, }
+\item[{const cv\-::\-Mat \&}]{responses, }
+\item[{const cv\-::\-Mat \&}]{var\-Idx = {\ttfamily cv\-:\-:Mat()}, }
+\item[{const cv\-::\-Mat \&}]{sample\-Idx = {\ttfamily cv\-:\-:Mat()}, }
+\item[{Cv\-S\-V\-M\-Params}]{params = {\ttfamily CvSVMParams()}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1CvSVM__OCL_a29fd946f49a715e173a4778471839087}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcv_1_1ocl_1_1CvSVM__OCL_a6ca9e0530824dafd41be2b880890ca83}{\index{cv\-::ocl\-::\-Cv\-S\-V\-M\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-Cv\-S\-V\-M\-\_\-\-O\-C\-L}!create\-\_\-kernel@{create\-\_\-kernel}}
+\index{create\-\_\-kernel@{create\-\_\-kernel}!cv::ocl::CvSVM_OCL@{cv\-::ocl\-::\-Cv\-S\-V\-M\-\_\-\-O\-C\-L}}
+\subsubsection[{create\-\_\-kernel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::\-Cv\-S\-V\-M\-\_\-\-O\-C\-L\-::create\-\_\-kernel (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1ocl_1_1CvSVM__OCL_a6ca9e0530824dafd41be2b880890ca83}
+\hypertarget{classcv_1_1ocl_1_1CvSVM__OCL_af9413d69eb36ce2321644b7d008828e2}{\index{cv\-::ocl\-::\-Cv\-S\-V\-M\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-Cv\-S\-V\-M\-\_\-\-O\-C\-L}!create\-\_\-solver@{create\-\_\-solver}}
+\index{create\-\_\-solver@{create\-\_\-solver}!cv::ocl::CvSVM_OCL@{cv\-::ocl\-::\-Cv\-S\-V\-M\-\_\-\-O\-C\-L}}
+\subsubsection[{create\-\_\-solver}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::\-Cv\-S\-V\-M\-\_\-\-O\-C\-L\-::create\-\_\-solver (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1ocl_1_1CvSVM__OCL_af9413d69eb36ce2321644b7d008828e2}
+\hypertarget{classcv_1_1ocl_1_1CvSVM__OCL_a82dffabc246dfddca6d1ff54c884b447}{\index{cv\-::ocl\-::\-Cv\-S\-V\-M\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-Cv\-S\-V\-M\-\_\-\-O\-C\-L}!predict@{predict}}
+\index{predict@{predict}!cv::ocl::CvSVM_OCL@{cv\-::ocl\-::\-Cv\-S\-V\-M\-\_\-\-O\-C\-L}}
+\subsubsection[{predict}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-W\-R\-A\-P} float cv\-::ocl\-::\-Cv\-S\-V\-M\-\_\-\-O\-C\-L\-::predict (
+\begin{DoxyParamCaption}
+\item[{const int}]{row\-\_\-index, }
+\item[{Mat \&}]{src, }
+\item[{bool}]{return\-D\-F\-Val = {\ttfamily false}}
+\end{DoxyParamCaption}
+) const}}\label{classcv_1_1ocl_1_1CvSVM__OCL_a82dffabc246dfddca6d1ff54c884b447}
+\hypertarget{classcv_1_1ocl_1_1CvSVM__OCL_a0e7c10b7d6b376e5e12a77cf6a48ae3c}{\index{cv\-::ocl\-::\-Cv\-S\-V\-M\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-Cv\-S\-V\-M\-\_\-\-O\-C\-L}!predict@{predict}}
+\index{predict@{predict}!cv::ocl::CvSVM_OCL@{cv\-::ocl\-::\-Cv\-S\-V\-M\-\_\-\-O\-C\-L}}
+\subsubsection[{predict}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-W\-R\-A\-P} {\bf void} cv\-::ocl\-::\-Cv\-S\-V\-M\-\_\-\-O\-C\-L\-::predict (
+\begin{DoxyParamCaption}
+\item[{cv\-::\-Input\-Array}]{samples, }
+\item[{cv\-::\-Output\-Array}]{results}
+\end{DoxyParamCaption}
+) const}}\label{classcv_1_1ocl_1_1CvSVM__OCL_a0e7c10b7d6b376e5e12a77cf6a48ae3c}
+\hypertarget{classcv_1_1ocl_1_1CvSVM__OCL_a2b476695fa02a882b0679b95faf646fd}{\index{cv\-::ocl\-::\-Cv\-S\-V\-M\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-Cv\-S\-V\-M\-\_\-\-O\-C\-L}!predict@{predict}}
+\index{predict@{predict}!cv::ocl::CvSVM_OCL@{cv\-::ocl\-::\-Cv\-S\-V\-M\-\_\-\-O\-C\-L}}
+\subsubsection[{predict}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-W\-R\-A\-P} float cv\-::ocl\-::\-Cv\-S\-V\-M\-\_\-\-O\-C\-L\-::predict (
+\begin{DoxyParamCaption}
+\item[{const cv\-::\-Mat \&}]{sample, }
+\item[{bool}]{return\-D\-F\-Val = {\ttfamily false}}
+\end{DoxyParamCaption}
+) const}}\label{classcv_1_1ocl_1_1CvSVM__OCL_a2b476695fa02a882b0679b95faf646fd}
+\hypertarget{classcv_1_1ocl_1_1CvSVM__OCL_a928f7e27515babcdb05e4e92e24e0149}{\index{cv\-::ocl\-::\-Cv\-S\-V\-M\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-Cv\-S\-V\-M\-\_\-\-O\-C\-L}!predict@{predict}}
+\index{predict@{predict}!cv::ocl::CvSVM_OCL@{cv\-::ocl\-::\-Cv\-S\-V\-M\-\_\-\-O\-C\-L}}
+\subsubsection[{predict}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::ocl\-::\-Cv\-S\-V\-M\-\_\-\-O\-C\-L\-::predict (
+\begin{DoxyParamCaption}
+\item[{const {\bf Cv\-Mat} $\ast$}]{samples, }
+\item[{{\bf C\-V\-\_\-\-O\-U\-T} {\bf Cv\-Mat} $\ast$}]{results}
+\end{DoxyParamCaption}
+) const}}\label{classcv_1_1ocl_1_1CvSVM__OCL_a928f7e27515babcdb05e4e92e24e0149}
+\hypertarget{classcv_1_1ocl_1_1CvSVM__OCL_a06d0567cc55fe43b510f1d4916a4ffea}{\index{cv\-::ocl\-::\-Cv\-S\-V\-M\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-Cv\-S\-V\-M\-\_\-\-O\-C\-L}!predict@{predict}}
+\index{predict@{predict}!cv::ocl::CvSVM_OCL@{cv\-::ocl\-::\-Cv\-S\-V\-M\-\_\-\-O\-C\-L}}
+\subsubsection[{predict}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::ocl\-::\-Cv\-S\-V\-M\-\_\-\-O\-C\-L\-::predict (
+\begin{DoxyParamCaption}
+\item[{const int}]{row\-\_\-index, }
+\item[{int}]{row\-\_\-len, }
+\item[{Mat \&}]{src, }
+\item[{bool}]{return\-D\-F\-Val = {\ttfamily false}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1ocl_1_1CvSVM__OCL_a06d0567cc55fe43b510f1d4916a4ffea}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/ocl/\hyperlink{ocl_2ocl_8hpp}{ocl.\-hpp}\end{DoxyCompactItemize}

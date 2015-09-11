@@ -1,0 +1,5 @@
+<map id="CBlob::Perimeter" name="CBlob::Perimeter">
+<area shape="rect" id="node2" href="$classCBlobContour.html#a893d57d625bb8f26f4a31ff0b66b8406" title="Computes perimeter from contour. " alt="" coords="176,35,365,61"/>
+<area shape="rect" id="node3" href="$classCBlobContour.html#af4e715a94924d5dc1a0e67cf75818bb5" title="CBlobContour::IsEmpty" alt="" coords="422,5,583,32"/>
+<area shape="rect" id="node4" href="$classCBlobContour.html#a245d5e59180619aa9ae4ec14acc18744" title="Return all contour points. " alt="" coords="413,57,592,98"/>
+</map>

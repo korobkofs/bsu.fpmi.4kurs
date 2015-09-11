@@ -1,0 +1,346 @@
+\hypertarget{classcvflann_1_1HierarchicalClusteringIndex}{\section{cvflann\-:\-:Hierarchical\-Clustering\-Index$<$ Distance $>$ Class Template Reference}
+\label{classcvflann_1_1HierarchicalClusteringIndex}\index{cvflann\-::\-Hierarchical\-Clustering\-Index$<$ Distance $>$@{cvflann\-::\-Hierarchical\-Clustering\-Index$<$ Distance $>$}}
+}
+
+
+{\ttfamily \#include $<$hierarchical\-\_\-clustering\-\_\-index.\-h$>$}
+
+
+
+Inheritance diagram for cvflann\-:\-:Hierarchical\-Clustering\-Index$<$ Distance $>$\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{classcvflann_1_1HierarchicalClusteringIndex__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for cvflann\-:\-:Hierarchical\-Clustering\-Index$<$ Distance $>$\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{classcvflann_1_1HierarchicalClusteringIndex__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Distance\-::\-Element\-Type \hyperlink{classcvflann_1_1HierarchicalClusteringIndex_a8b00f29310310cb2b1ebf3bfc61ec2ed}{Element\-Type}
+\item 
+typedef Distance\-::\-Result\-Type \hyperlink{classcvflann_1_1HierarchicalClusteringIndex_af8e155c4fe99eaf41a492fddfcb87fcf}{Distance\-Type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcvflann_1_1HierarchicalClusteringIndex_ab4542350c465b556bdad9364ee6538ec}{Hierarchical\-Clustering\-Index} (const \hyperlink{classcvflann_1_1Matrix}{Matrix}$<$ \hyperlink{classcvflann_1_1HierarchicalClusteringIndex_a8b00f29310310cb2b1ebf3bfc61ec2ed}{Element\-Type} $>$ \&input\-Data, const \hyperlink{namespacecvflann_a742b4c7076c21012054af74a9ee48289}{Index\-Params} \&index\-\_\-params=\hyperlink{structcvflann_1_1HierarchicalClusteringIndexParams}{Hierarchical\-Clustering\-Index\-Params}(), Distance \hyperlink{legacy_8hpp_a6f364afbe132c4ecfea48bde1b0618ba}{d}=Distance())
+\item 
+\hyperlink{classcvflann_1_1HierarchicalClusteringIndex_a399bc070378dc578098e829974e53b02}{Hierarchical\-Clustering\-Index} (const \hyperlink{classcvflann_1_1HierarchicalClusteringIndex}{Hierarchical\-Clustering\-Index} \&)
+\item 
+\hyperlink{classcvflann_1_1HierarchicalClusteringIndex}{Hierarchical\-Clustering\-Index} \& \hyperlink{classcvflann_1_1HierarchicalClusteringIndex_a3b66c3e46d85547b53bce25e4681f4ea}{operator=} (const \hyperlink{classcvflann_1_1HierarchicalClusteringIndex}{Hierarchical\-Clustering\-Index} \&)
+\item 
+virtual \hyperlink{classcvflann_1_1HierarchicalClusteringIndex_a51bd5c842b324a0d1f2869e20102be90}{$\sim$\-Hierarchical\-Clustering\-Index} ()
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcvflann_1_1HierarchicalClusteringIndex_a085dd40374648c92ea3a649ba80ac456}{free\-\_\-elements} ()
+\item 
+size\-\_\-t \hyperlink{classcvflann_1_1HierarchicalClusteringIndex_aa79541da9d11fa1f74b5565805e7e8be}{size} () const 
+\item 
+size\-\_\-t \hyperlink{classcvflann_1_1HierarchicalClusteringIndex_ad781ea5411f66fcb8f1d4dae9312498f}{veclen} () const 
+\item 
+int \hyperlink{classcvflann_1_1HierarchicalClusteringIndex_aceddef1308678b0ad8629ae6a32178f5}{used\-Memory} () const 
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcvflann_1_1HierarchicalClusteringIndex_ad306898d16cd94b44e0a4a678e9bdca6}{build\-Index} ()
+\item 
+\hyperlink{namespacecvflann_a4e3e6c98d774ea77fd7f0045c9bc7817}{flann\-\_\-algorithm\-\_\-t} \hyperlink{classcvflann_1_1HierarchicalClusteringIndex_a19238f026b1b894bf7cbff71b3cd67ec}{get\-Type} () const 
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcvflann_1_1HierarchicalClusteringIndex_a8159af14901976754a61fd6a41ef3345}{save\-Index} (F\-I\-L\-E $\ast$stream)
+\begin{DoxyCompactList}\small\item\em Saves the index to a stream. \end{DoxyCompactList}\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcvflann_1_1HierarchicalClusteringIndex_a549a094e4701380f027e288095c0741e}{load\-Index} (F\-I\-L\-E $\ast$stream)
+\begin{DoxyCompactList}\small\item\em Loads the index from a stream. \end{DoxyCompactList}\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcvflann_1_1HierarchicalClusteringIndex_af25708c9cdeed93aeef8a533756832a8}{find\-Neighbors} (\hyperlink{classcvflann_1_1ResultSet}{Result\-Set}$<$ \hyperlink{classcvflann_1_1HierarchicalClusteringIndex_af8e155c4fe99eaf41a492fddfcb87fcf}{Distance\-Type} $>$ \&\hyperlink{legacy_8hpp_a0bb77d54f6769867cfdf389897bd8e43}{result}, const \hyperlink{classcvflann_1_1HierarchicalClusteringIndex_a8b00f29310310cb2b1ebf3bfc61ec2ed}{Element\-Type} $\ast$vec, const \hyperlink{structcvflann_1_1SearchParams}{Search\-Params} \&search\-Params)
+\item 
+\hyperlink{namespacecvflann_a742b4c7076c21012054af74a9ee48289}{Index\-Params} \hyperlink{classcvflann_1_1HierarchicalClusteringIndex_a66c74a8e10afd5f45e3c34232d2c0fd4}{get\-Parameters} () const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Distance$>$class cvflann\-::\-Hierarchical\-Clustering\-Index$<$ Distance $>$}
+
+Hierarchical index
+
+Contains a tree constructed through a hierarchical clustering and other information for indexing a set of points for nearest-\/neighbour matching. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classcvflann_1_1HierarchicalClusteringIndex_af8e155c4fe99eaf41a492fddfcb87fcf}{\index{cvflann\-::\-Hierarchical\-Clustering\-Index@{cvflann\-::\-Hierarchical\-Clustering\-Index}!Distance\-Type@{Distance\-Type}}
+\index{Distance\-Type@{Distance\-Type}!cvflann::HierarchicalClusteringIndex@{cvflann\-::\-Hierarchical\-Clustering\-Index}}
+\subsubsection[{Distance\-Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ typedef Distance\-::\-Result\-Type {\bf cvflann\-::\-Hierarchical\-Clustering\-Index}$<$ Distance $>$\-::{\bf Distance\-Type}}}\label{classcvflann_1_1HierarchicalClusteringIndex_af8e155c4fe99eaf41a492fddfcb87fcf}
+\hypertarget{classcvflann_1_1HierarchicalClusteringIndex_a8b00f29310310cb2b1ebf3bfc61ec2ed}{\index{cvflann\-::\-Hierarchical\-Clustering\-Index@{cvflann\-::\-Hierarchical\-Clustering\-Index}!Element\-Type@{Element\-Type}}
+\index{Element\-Type@{Element\-Type}!cvflann::HierarchicalClusteringIndex@{cvflann\-::\-Hierarchical\-Clustering\-Index}}
+\subsubsection[{Element\-Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ typedef Distance\-::\-Element\-Type {\bf cvflann\-::\-Hierarchical\-Clustering\-Index}$<$ Distance $>$\-::{\bf Element\-Type}}}\label{classcvflann_1_1HierarchicalClusteringIndex_a8b00f29310310cb2b1ebf3bfc61ec2ed}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcvflann_1_1HierarchicalClusteringIndex_ab4542350c465b556bdad9364ee6538ec}{\index{cvflann\-::\-Hierarchical\-Clustering\-Index@{cvflann\-::\-Hierarchical\-Clustering\-Index}!Hierarchical\-Clustering\-Index@{Hierarchical\-Clustering\-Index}}
+\index{Hierarchical\-Clustering\-Index@{Hierarchical\-Clustering\-Index}!cvflann::HierarchicalClusteringIndex@{cvflann\-::\-Hierarchical\-Clustering\-Index}}
+\subsubsection[{Hierarchical\-Clustering\-Index}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ {\bf cvflann\-::\-Hierarchical\-Clustering\-Index}$<$ Distance $>$\-::{\bf Hierarchical\-Clustering\-Index} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ {\bf Element\-Type} $>$ \&}]{input\-Data, }
+\item[{const {\bf Index\-Params} \&}]{index\-\_\-params = {\ttfamily {\bf Hierarchical\-Clustering\-Index\-Params}()}, }
+\item[{Distance}]{d = {\ttfamily Distance()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcvflann_1_1HierarchicalClusteringIndex_ab4542350c465b556bdad9364ee6538ec}
+\hyperlink{classcvflann_1_1Index}{Index} constructor
+
+Params\-: input\-Data = dataset with the input features params = parameters passed to the hierarchical k-\/means algorithm 
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcvflann_1_1HierarchicalClusteringIndex_ab4542350c465b556bdad9364ee6538ec_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcvflann_1_1HierarchicalClusteringIndex_a399bc070378dc578098e829974e53b02}{\index{cvflann\-::\-Hierarchical\-Clustering\-Index@{cvflann\-::\-Hierarchical\-Clustering\-Index}!Hierarchical\-Clustering\-Index@{Hierarchical\-Clustering\-Index}}
+\index{Hierarchical\-Clustering\-Index@{Hierarchical\-Clustering\-Index}!cvflann::HierarchicalClusteringIndex@{cvflann\-::\-Hierarchical\-Clustering\-Index}}
+\subsubsection[{Hierarchical\-Clustering\-Index}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ {\bf cvflann\-::\-Hierarchical\-Clustering\-Index}$<$ Distance $>$\-::{\bf Hierarchical\-Clustering\-Index} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Hierarchical\-Clustering\-Index}$<$ Distance $>$ \&}]{}
+\end{DoxyParamCaption}
+)}}\label{classcvflann_1_1HierarchicalClusteringIndex_a399bc070378dc578098e829974e53b02}
+\hypertarget{classcvflann_1_1HierarchicalClusteringIndex_a51bd5c842b324a0d1f2869e20102be90}{\index{cvflann\-::\-Hierarchical\-Clustering\-Index@{cvflann\-::\-Hierarchical\-Clustering\-Index}!$\sim$\-Hierarchical\-Clustering\-Index@{$\sim$\-Hierarchical\-Clustering\-Index}}
+\index{$\sim$\-Hierarchical\-Clustering\-Index@{$\sim$\-Hierarchical\-Clustering\-Index}!cvflann::HierarchicalClusteringIndex@{cvflann\-::\-Hierarchical\-Clustering\-Index}}
+\subsubsection[{$\sim$\-Hierarchical\-Clustering\-Index}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ virtual {\bf cvflann\-::\-Hierarchical\-Clustering\-Index}$<$ Distance $>$\-::$\sim${\bf Hierarchical\-Clustering\-Index} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1HierarchicalClusteringIndex_a51bd5c842b324a0d1f2869e20102be90}
+\hyperlink{classcvflann_1_1Index}{Index} destructor.
+
+Release the memory used by the index. 
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcvflann_1_1HierarchicalClusteringIndex_a51bd5c842b324a0d1f2869e20102be90_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcvflann_1_1HierarchicalClusteringIndex_ad306898d16cd94b44e0a4a678e9bdca6}{\index{cvflann\-::\-Hierarchical\-Clustering\-Index@{cvflann\-::\-Hierarchical\-Clustering\-Index}!build\-Index@{build\-Index}}
+\index{build\-Index@{build\-Index}!cvflann::HierarchicalClusteringIndex@{cvflann\-::\-Hierarchical\-Clustering\-Index}}
+\subsubsection[{build\-Index}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ {\bf void} {\bf cvflann\-::\-Hierarchical\-Clustering\-Index}$<$ Distance $>$\-::build\-Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1HierarchicalClusteringIndex_ad306898d16cd94b44e0a4a678e9bdca6}
+Builds the index 
+
+Implements \hyperlink{classcvflann_1_1NNIndex_aaa8811509bb2f30e91570cefe4dc71e2}{cvflann\-::\-N\-N\-Index$<$ Distance $>$}.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcvflann_1_1HierarchicalClusteringIndex_ad306898d16cd94b44e0a4a678e9bdca6_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcvflann_1_1HierarchicalClusteringIndex_af25708c9cdeed93aeef8a533756832a8}{\index{cvflann\-::\-Hierarchical\-Clustering\-Index@{cvflann\-::\-Hierarchical\-Clustering\-Index}!find\-Neighbors@{find\-Neighbors}}
+\index{find\-Neighbors@{find\-Neighbors}!cvflann::HierarchicalClusteringIndex@{cvflann\-::\-Hierarchical\-Clustering\-Index}}
+\subsubsection[{find\-Neighbors}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ {\bf void} {\bf cvflann\-::\-Hierarchical\-Clustering\-Index}$<$ Distance $>$\-::find\-Neighbors (
+\begin{DoxyParamCaption}
+\item[{{\bf Result\-Set}$<$ {\bf Distance\-Type} $>$ \&}]{result, }
+\item[{const {\bf Element\-Type} $\ast$}]{vec, }
+\item[{const {\bf Search\-Params} \&}]{search\-Params}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1HierarchicalClusteringIndex_af25708c9cdeed93aeef8a533756832a8}
+Find set of nearest neighbors to vec. Their indices are stored inside the result object.
+
+Params\-: result = the result object in which the indices of the nearest-\/neighbors are stored vec = the vector for which to search the nearest neighbors search\-Params = parameters that influence the search algorithm (checks) 
+
+Implements \hyperlink{classcvflann_1_1NNIndex_ac038c51dc941c7c1a55b08c17e213e41}{cvflann\-::\-N\-N\-Index$<$ Distance $>$}.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcvflann_1_1HierarchicalClusteringIndex_af25708c9cdeed93aeef8a533756832a8_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcvflann_1_1HierarchicalClusteringIndex_a085dd40374648c92ea3a649ba80ac456}{\index{cvflann\-::\-Hierarchical\-Clustering\-Index@{cvflann\-::\-Hierarchical\-Clustering\-Index}!free\-\_\-elements@{free\-\_\-elements}}
+\index{free\-\_\-elements@{free\-\_\-elements}!cvflann::HierarchicalClusteringIndex@{cvflann\-::\-Hierarchical\-Clustering\-Index}}
+\subsubsection[{free\-\_\-elements}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ {\bf void} {\bf cvflann\-::\-Hierarchical\-Clustering\-Index}$<$ Distance $>$\-::free\-\_\-elements (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcvflann_1_1HierarchicalClusteringIndex_a085dd40374648c92ea3a649ba80ac456}
+Release the inner elements of indices\mbox{[}\mbox{]} 
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcvflann_1_1HierarchicalClusteringIndex_a085dd40374648c92ea3a649ba80ac456_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcvflann_1_1HierarchicalClusteringIndex_a66c74a8e10afd5f45e3c34232d2c0fd4}{\index{cvflann\-::\-Hierarchical\-Clustering\-Index@{cvflann\-::\-Hierarchical\-Clustering\-Index}!get\-Parameters@{get\-Parameters}}
+\index{get\-Parameters@{get\-Parameters}!cvflann::HierarchicalClusteringIndex@{cvflann\-::\-Hierarchical\-Clustering\-Index}}
+\subsubsection[{get\-Parameters}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ {\bf Index\-Params} {\bf cvflann\-::\-Hierarchical\-Clustering\-Index}$<$ Distance $>$\-::get\-Parameters (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1HierarchicalClusteringIndex_a66c74a8e10afd5f45e3c34232d2c0fd4}
+\begin{DoxyReturn}{Returns}
+The index parameters 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classcvflann_1_1NNIndex_afbc22ebf77f4f376d9e7922727d0abfe}{cvflann\-::\-N\-N\-Index$<$ Distance $>$}.
+
+\hypertarget{classcvflann_1_1HierarchicalClusteringIndex_a19238f026b1b894bf7cbff71b3cd67ec}{\index{cvflann\-::\-Hierarchical\-Clustering\-Index@{cvflann\-::\-Hierarchical\-Clustering\-Index}!get\-Type@{get\-Type}}
+\index{get\-Type@{get\-Type}!cvflann::HierarchicalClusteringIndex@{cvflann\-::\-Hierarchical\-Clustering\-Index}}
+\subsubsection[{get\-Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ {\bf flann\-\_\-algorithm\-\_\-t} {\bf cvflann\-::\-Hierarchical\-Clustering\-Index}$<$ Distance $>$\-::get\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1HierarchicalClusteringIndex_a19238f026b1b894bf7cbff71b3cd67ec}
+\begin{DoxyReturn}{Returns}
+The index type (kdtree, kmeans,...) 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classcvflann_1_1NNIndex_ac40469dbc16bcb0fb4b0c9912c5f8acb}{cvflann\-::\-N\-N\-Index$<$ Distance $>$}.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcvflann_1_1HierarchicalClusteringIndex_a19238f026b1b894bf7cbff71b3cd67ec_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcvflann_1_1HierarchicalClusteringIndex_a549a094e4701380f027e288095c0741e}{\index{cvflann\-::\-Hierarchical\-Clustering\-Index@{cvflann\-::\-Hierarchical\-Clustering\-Index}!load\-Index@{load\-Index}}
+\index{load\-Index@{load\-Index}!cvflann::HierarchicalClusteringIndex@{cvflann\-::\-Hierarchical\-Clustering\-Index}}
+\subsubsection[{load\-Index}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ {\bf void} {\bf cvflann\-::\-Hierarchical\-Clustering\-Index}$<$ Distance $>$\-::load\-Index (
+\begin{DoxyParamCaption}
+\item[{F\-I\-L\-E $\ast$}]{stream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1HierarchicalClusteringIndex_a549a094e4701380f027e288095c0741e}
+
+
+Loads the index from a stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & The stream from which the index is loaded \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classcvflann_1_1NNIndex_a4bcaf48ee2ac65a1b3cebea99d021611}{cvflann\-::\-N\-N\-Index$<$ Distance $>$}.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcvflann_1_1HierarchicalClusteringIndex_a549a094e4701380f027e288095c0741e_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcvflann_1_1HierarchicalClusteringIndex_a3b66c3e46d85547b53bce25e4681f4ea}{\index{cvflann\-::\-Hierarchical\-Clustering\-Index@{cvflann\-::\-Hierarchical\-Clustering\-Index}!operator=@{operator=}}
+\index{operator=@{operator=}!cvflann::HierarchicalClusteringIndex@{cvflann\-::\-Hierarchical\-Clustering\-Index}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ {\bf Hierarchical\-Clustering\-Index}\& {\bf cvflann\-::\-Hierarchical\-Clustering\-Index}$<$ Distance $>$\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Hierarchical\-Clustering\-Index}$<$ Distance $>$ \&}]{}
+\end{DoxyParamCaption}
+)}}\label{classcvflann_1_1HierarchicalClusteringIndex_a3b66c3e46d85547b53bce25e4681f4ea}
+\hypertarget{classcvflann_1_1HierarchicalClusteringIndex_a8159af14901976754a61fd6a41ef3345}{\index{cvflann\-::\-Hierarchical\-Clustering\-Index@{cvflann\-::\-Hierarchical\-Clustering\-Index}!save\-Index@{save\-Index}}
+\index{save\-Index@{save\-Index}!cvflann::HierarchicalClusteringIndex@{cvflann\-::\-Hierarchical\-Clustering\-Index}}
+\subsubsection[{save\-Index}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ {\bf void} {\bf cvflann\-::\-Hierarchical\-Clustering\-Index}$<$ Distance $>$\-::save\-Index (
+\begin{DoxyParamCaption}
+\item[{F\-I\-L\-E $\ast$}]{stream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1HierarchicalClusteringIndex_a8159af14901976754a61fd6a41ef3345}
+
+
+Saves the index to a stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & The stream to save the index to \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classcvflann_1_1NNIndex_aad5c63116e3dbeccc96de7c70f0a8db7}{cvflann\-::\-N\-N\-Index$<$ Distance $>$}.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcvflann_1_1HierarchicalClusteringIndex_a8159af14901976754a61fd6a41ef3345_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcvflann_1_1HierarchicalClusteringIndex_aa79541da9d11fa1f74b5565805e7e8be}{\index{cvflann\-::\-Hierarchical\-Clustering\-Index@{cvflann\-::\-Hierarchical\-Clustering\-Index}!size@{size}}
+\index{size@{size}!cvflann::HierarchicalClusteringIndex@{cvflann\-::\-Hierarchical\-Clustering\-Index}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ size\-\_\-t {\bf cvflann\-::\-Hierarchical\-Clustering\-Index}$<$ Distance $>$\-::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1HierarchicalClusteringIndex_aa79541da9d11fa1f74b5565805e7e8be}
+Returns size of index. 
+
+Implements \hyperlink{classcvflann_1_1NNIndex_ae75fd979d25a239b4aba751114493fe0}{cvflann\-::\-N\-N\-Index$<$ Distance $>$}.
+
+\hypertarget{classcvflann_1_1HierarchicalClusteringIndex_aceddef1308678b0ad8629ae6a32178f5}{\index{cvflann\-::\-Hierarchical\-Clustering\-Index@{cvflann\-::\-Hierarchical\-Clustering\-Index}!used\-Memory@{used\-Memory}}
+\index{used\-Memory@{used\-Memory}!cvflann::HierarchicalClusteringIndex@{cvflann\-::\-Hierarchical\-Clustering\-Index}}
+\subsubsection[{used\-Memory}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ int {\bf cvflann\-::\-Hierarchical\-Clustering\-Index}$<$ Distance $>$\-::used\-Memory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1HierarchicalClusteringIndex_aceddef1308678b0ad8629ae6a32178f5}
+Computes the inde memory usage Returns\-: memory used by the index 
+
+Implements \hyperlink{classcvflann_1_1NNIndex_ac172cb3774f8ae39ff1107bee4fadbf9}{cvflann\-::\-N\-N\-Index$<$ Distance $>$}.
+
+\hypertarget{classcvflann_1_1HierarchicalClusteringIndex_ad781ea5411f66fcb8f1d4dae9312498f}{\index{cvflann\-::\-Hierarchical\-Clustering\-Index@{cvflann\-::\-Hierarchical\-Clustering\-Index}!veclen@{veclen}}
+\index{veclen@{veclen}!cvflann::HierarchicalClusteringIndex@{cvflann\-::\-Hierarchical\-Clustering\-Index}}
+\subsubsection[{veclen}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ size\-\_\-t {\bf cvflann\-::\-Hierarchical\-Clustering\-Index}$<$ Distance $>$\-::veclen (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1HierarchicalClusteringIndex_ad781ea5411f66fcb8f1d4dae9312498f}
+Returns the length of an index feature. 
+
+Implements \hyperlink{classcvflann_1_1NNIndex_acdcc255d1b67d5636a0f76b68809e6be}{cvflann\-::\-N\-N\-Index$<$ Distance $>$}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/flann/\hyperlink{hierarchical__clustering__index_8h}{hierarchical\-\_\-clustering\-\_\-index.\-h}\end{DoxyCompactItemize}

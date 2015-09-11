@@ -1,0 +1,361 @@
+\hypertarget{structcv_1_1ocl_1_1HOGDescriptor}{\section{cv\-:\-:ocl\-:\-:H\-O\-G\-Descriptor Struct Reference}
+\label{structcv_1_1ocl_1_1HOGDescriptor}\index{cv\-::ocl\-::\-H\-O\-G\-Descriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}}
+}
+
+
+{\ttfamily \#include $<$ocl.\-hpp$>$}
+
+
+
+Collaboration diagram for cv\-:\-:ocl\-:\-:H\-O\-G\-Descriptor\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{structcv_1_1ocl_1_1HOGDescriptor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{structcv_1_1ocl_1_1HOGDescriptor_a15ea7c60854f4623d645e9cf7cf9b69ba18bf6dea38c97cf555b692fb916e1803}{D\-E\-F\-A\-U\-L\-T\-\_\-\-W\-I\-N\-\_\-\-S\-I\-G\-M\-A} = -\/1
+ \}
+\item 
+enum \{ \hyperlink{structcv_1_1ocl_1_1HOGDescriptor_a0ea747b7fd46b8ba3ef6a8c0046e2222a8fe4e2e78c3e8e64497d87af9dd8ca20}{D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-L\-E\-V\-E\-L\-S} = 64
+ \}
+\item 
+enum \{ \hyperlink{structcv_1_1ocl_1_1HOGDescriptor_a5c0042000c5db61a1c3fa8c54fccffeca2585a6b35b1f73d04c4d8f0df2a924ca}{D\-E\-S\-C\-R\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-R\-O\-W\-\_\-\-B\-Y\-\_\-\-R\-O\-W}, 
+\hyperlink{structcv_1_1ocl_1_1HOGDescriptor_a5c0042000c5db61a1c3fa8c54fccffeca5f7459a35f56ad3745c725e88a9d7539}{D\-E\-S\-C\-R\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-C\-O\-L\-\_\-\-B\-Y\-\_\-\-C\-O\-L}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structcv_1_1ocl_1_1HOGDescriptor_ac1157c7baf7cfb1e75880e8e3c66aa17}{H\-O\-G\-Descriptor} (Size \hyperlink{structcv_1_1ocl_1_1HOGDescriptor_a64a0fb7b26799b3b7b62ecc3db2c5601}{win\-\_\-size}=Size(64, 128), Size \hyperlink{structcv_1_1ocl_1_1HOGDescriptor_a2d0121236387d4113568acb367b5f2ef}{block\-\_\-size}=Size(16, 16), Size \hyperlink{structcv_1_1ocl_1_1HOGDescriptor_aae17ffc7bbc09ec8f7485a00724fc9b0}{block\-\_\-stride}=Size(8, 8), Size \hyperlink{structcv_1_1ocl_1_1HOGDescriptor_af6d032325c0a50fdf0faf4cf559ee4cf}{cell\-\_\-size}=Size(8, 8), int \hyperlink{structcv_1_1ocl_1_1HOGDescriptor_ab2b56c734be1244d99ed925580e1e54e}{nbins}=9, double \hyperlink{structcv_1_1ocl_1_1HOGDescriptor_ab022766fbe3ac26172e15cefaa4c5a25}{win\-\_\-sigma}=\hyperlink{structcv_1_1ocl_1_1HOGDescriptor_a15ea7c60854f4623d645e9cf7cf9b69ba18bf6dea38c97cf555b692fb916e1803}{D\-E\-F\-A\-U\-L\-T\-\_\-\-W\-I\-N\-\_\-\-S\-I\-G\-M\-A}, double \hyperlink{structcv_1_1ocl_1_1HOGDescriptor_aa46d855bd7e5532380e5a96f97f90b11}{threshold\-\_\-\-L2hys}=0.\-2, bool \hyperlink{structcv_1_1ocl_1_1HOGDescriptor_ab27413637f05ea0eac7a0dfcc2d1921b}{gamma\-\_\-correction}=true, int \hyperlink{structcv_1_1ocl_1_1HOGDescriptor_a73e83320d5318b5703a6ca9b05038ab2}{nlevels}=\hyperlink{structcv_1_1ocl_1_1HOGDescriptor_a0ea747b7fd46b8ba3ef6a8c0046e2222a8fe4e2e78c3e8e64497d87af9dd8ca20}{D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-L\-E\-V\-E\-L\-S})
+\item 
+size\-\_\-t \hyperlink{structcv_1_1ocl_1_1HOGDescriptor_abbd30e55004c7a42143cfed5134da9d5}{get\-Descriptor\-Size} () const 
+\item 
+size\-\_\-t \hyperlink{structcv_1_1ocl_1_1HOGDescriptor_a5752938f3d4a1c29a58bfc943f908e59}{get\-Block\-Histogram\-Size} () const 
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{structcv_1_1ocl_1_1HOGDescriptor_a789ee263a38868a1ecadb08d5feac593}{set\-S\-V\-M\-Detector} (const vector$<$ float $>$ \&\hyperlink{structcv_1_1ocl_1_1HOGDescriptor_a52a29986e44a552923de5c5669f2e130}{detector})
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{structcv_1_1ocl_1_1HOGDescriptor_a97913083c1c3219fdabfb2937506471e}{detect} (const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&\hyperlink{legacy_8hpp_a5349238b3772bed6eae0fda3117ccfef}{img}, vector$<$ Point $>$ \&found\-\_\-locations, double hit\-\_\-threshold=0, Size win\-\_\-stride=Size(), Size padding=Size())
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{structcv_1_1ocl_1_1HOGDescriptor_aa50f628616630390a2e88de08afa4416}{detect\-Multi\-Scale} (const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&\hyperlink{legacy_8hpp_a5349238b3772bed6eae0fda3117ccfef}{img}, vector$<$ Rect $>$ \&found\-\_\-locations, double hit\-\_\-threshold=0, Size win\-\_\-stride=Size(), Size padding=Size(), double scale0=1.\-05, int group\-\_\-threshold=2)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{structcv_1_1ocl_1_1HOGDescriptor_aa9cdfdba40f53a217a8dd6e37f4632ef}{get\-Descriptors} (const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&\hyperlink{legacy_8hpp_a5349238b3772bed6eae0fda3117ccfef}{img}, Size win\-\_\-stride, \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&\hyperlink{compat_8hpp_a1e3702ddbca6258f57508c22eff26bf2}{descriptors}, int descr\-\_\-format=\hyperlink{structcv_1_1ocl_1_1HOGDescriptor_a5c0042000c5db61a1c3fa8c54fccffeca5f7459a35f56ad3745c725e88a9d7539}{D\-E\-S\-C\-R\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-C\-O\-L\-\_\-\-B\-Y\-\_\-\-C\-O\-L})
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static vector$<$ float $>$ \hyperlink{structcv_1_1ocl_1_1HOGDescriptor_a08f932edec3a1076d25790c50b469690}{get\-Default\-People\-Detector} ()
+\item 
+static vector$<$ float $>$ \hyperlink{structcv_1_1ocl_1_1HOGDescriptor_a1fd36c804b71e1e5cabf8d26cf5ae4cb}{get\-People\-Detector48x96} ()
+\item 
+static vector$<$ float $>$ \hyperlink{structcv_1_1ocl_1_1HOGDescriptor_aa64dc25bbbe470f00f7ed1278ecee845}{get\-People\-Detector64x128} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Size \hyperlink{structcv_1_1ocl_1_1HOGDescriptor_a64a0fb7b26799b3b7b62ecc3db2c5601}{win\-\_\-size}
+\item 
+Size \hyperlink{structcv_1_1ocl_1_1HOGDescriptor_a2d0121236387d4113568acb367b5f2ef}{block\-\_\-size}
+\item 
+Size \hyperlink{structcv_1_1ocl_1_1HOGDescriptor_aae17ffc7bbc09ec8f7485a00724fc9b0}{block\-\_\-stride}
+\item 
+Size \hyperlink{structcv_1_1ocl_1_1HOGDescriptor_af6d032325c0a50fdf0faf4cf559ee4cf}{cell\-\_\-size}
+\item 
+int \hyperlink{structcv_1_1ocl_1_1HOGDescriptor_ab2b56c734be1244d99ed925580e1e54e}{nbins}
+\item 
+double \hyperlink{structcv_1_1ocl_1_1HOGDescriptor_ab022766fbe3ac26172e15cefaa4c5a25}{win\-\_\-sigma}
+\item 
+double \hyperlink{structcv_1_1ocl_1_1HOGDescriptor_aa46d855bd7e5532380e5a96f97f90b11}{threshold\-\_\-\-L2hys}
+\item 
+bool \hyperlink{structcv_1_1ocl_1_1HOGDescriptor_ab27413637f05ea0eac7a0dfcc2d1921b}{gamma\-\_\-correction}
+\item 
+int \hyperlink{structcv_1_1ocl_1_1HOGDescriptor_a73e83320d5318b5703a6ca9b05038ab2}{nlevels}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{structcv_1_1ocl_1_1HOGDescriptor_ad2617f2a47388bdaacfa6ba1de50475b}{init\-\_\-buffer} (const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&\hyperlink{legacy_8hpp_a5349238b3772bed6eae0fda3117ccfef}{img}, Size win\-\_\-stride)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{structcv_1_1ocl_1_1HOGDescriptor_a1caa8dcc80bdfc9c601a24f4e29a73d4}{compute\-Block\-Histograms} (const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&\hyperlink{legacy_8hpp_a5349238b3772bed6eae0fda3117ccfef}{img})
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{structcv_1_1ocl_1_1HOGDescriptor_abf81df13748667e19915e3f3ae94215c}{compute\-Gradient} (const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&\hyperlink{legacy_8hpp_a5349238b3772bed6eae0fda3117ccfef}{img}, \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&\hyperlink{structcv_1_1ocl_1_1HOGDescriptor_a1d40070e508df4b2629f66f8d2a34618}{grad}, \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&\hyperlink{structcv_1_1ocl_1_1HOGDescriptor_a35ab7536fc22a7751c929d63543e31cc}{qangle})
+\item 
+double \hyperlink{structcv_1_1ocl_1_1HOGDescriptor_ae8013894c9c94834408b244bd876b37f}{get\-Win\-Sigma} () const 
+\item 
+bool \hyperlink{structcv_1_1ocl_1_1HOGDescriptor_a6bbd154a01496d02665dd1b3478404d7}{check\-Detector\-Size} () const 
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{structcv_1_1ocl_1_1HOGDescriptor_a81c89d7aaf0b7c5e1a06ceba8ac9b287}{num\-Parts\-Within} (int \hyperlink{legacy_8hpp_ae97003f8d5c64cdfb99f6f2606d121b6}{size}, int part\-\_\-size, int stride)
+\item 
+static Size \hyperlink{structcv_1_1ocl_1_1HOGDescriptor_a51a4fa0091e7b9220ba2d0d240debda9}{num\-Parts\-Within} (Size \hyperlink{legacy_8hpp_ae97003f8d5c64cdfb99f6f2606d121b6}{size}, Size part\-\_\-size, Size stride)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{structcv_1_1ocl_1_1HOGDescriptor_a22c27636575792ee17cd29f38d9d9fd3}{free\-\_\-coef}
+\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \hyperlink{structcv_1_1ocl_1_1HOGDescriptor_a52a29986e44a552923de5c5669f2e130}{detector}
+\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \hyperlink{structcv_1_1ocl_1_1HOGDescriptor_a01a584dcc9a5c4da7f70f21baf85d5f5}{labels}
+\item 
+Mat \hyperlink{structcv_1_1ocl_1_1HOGDescriptor_abff7fc1290bd19dd5c3913070acea05a}{labels\-\_\-host}
+\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \hyperlink{structcv_1_1ocl_1_1HOGDescriptor_ad585b916230f651b3c1bf85e172eba43}{block\-\_\-hists}
+\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \hyperlink{structcv_1_1ocl_1_1HOGDescriptor_a1d40070e508df4b2629f66f8d2a34618}{grad}
+\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \hyperlink{structcv_1_1ocl_1_1HOGDescriptor_a35ab7536fc22a7751c929d63543e31cc}{qangle}
+\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \hyperlink{structcv_1_1ocl_1_1HOGDescriptor_a3a3ba94390579a2eee2fd14ec7a89b0e}{image\-\_\-scale}
+\item 
+Size \hyperlink{structcv_1_1ocl_1_1HOGDescriptor_a7302856d7a07e1bc2547aba53ec89cf6}{effect\-\_\-size}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{structcv_1_1ocl_1_1HOGDescriptor_a15ea7c60854f4623d645e9cf7cf9b69b}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{structcv_1_1ocl_1_1HOGDescriptor_a15ea7c60854f4623d645e9cf7cf9b69b}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{D\-E\-F\-A\-U\-L\-T\-\_\-\-W\-I\-N\-\_\-\-S\-I\-G\-M\-A@{D\-E\-F\-A\-U\-L\-T\-\_\-\-W\-I\-N\-\_\-\-S\-I\-G\-M\-A}!cv\-::ocl\-::\-H\-O\-G\-Descriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}}\index{cv\-::ocl\-::\-H\-O\-G\-Descriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}!D\-E\-F\-A\-U\-L\-T\-\_\-\-W\-I\-N\-\_\-\-S\-I\-G\-M\-A@{D\-E\-F\-A\-U\-L\-T\-\_\-\-W\-I\-N\-\_\-\-S\-I\-G\-M\-A}}\item[{\em 
+\hypertarget{structcv_1_1ocl_1_1HOGDescriptor_a15ea7c60854f4623d645e9cf7cf9b69ba18bf6dea38c97cf555b692fb916e1803}{D\-E\-F\-A\-U\-L\-T\-\_\-\-W\-I\-N\-\_\-\-S\-I\-G\-M\-A}\label{structcv_1_1ocl_1_1HOGDescriptor_a15ea7c60854f4623d645e9cf7cf9b69ba18bf6dea38c97cf555b692fb916e1803}
+}]\end{description}
+\end{Desc}
+\hypertarget{structcv_1_1ocl_1_1HOGDescriptor_a0ea747b7fd46b8ba3ef6a8c0046e2222}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{structcv_1_1ocl_1_1HOGDescriptor_a0ea747b7fd46b8ba3ef6a8c0046e2222}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-L\-E\-V\-E\-L\-S@{D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-L\-E\-V\-E\-L\-S}!cv\-::ocl\-::\-H\-O\-G\-Descriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}}\index{cv\-::ocl\-::\-H\-O\-G\-Descriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}!D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-L\-E\-V\-E\-L\-S@{D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-L\-E\-V\-E\-L\-S}}\item[{\em 
+\hypertarget{structcv_1_1ocl_1_1HOGDescriptor_a0ea747b7fd46b8ba3ef6a8c0046e2222a8fe4e2e78c3e8e64497d87af9dd8ca20}{D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-L\-E\-V\-E\-L\-S}\label{structcv_1_1ocl_1_1HOGDescriptor_a0ea747b7fd46b8ba3ef6a8c0046e2222a8fe4e2e78c3e8e64497d87af9dd8ca20}
+}]\end{description}
+\end{Desc}
+\hypertarget{structcv_1_1ocl_1_1HOGDescriptor_a5c0042000c5db61a1c3fa8c54fccffec}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{structcv_1_1ocl_1_1HOGDescriptor_a5c0042000c5db61a1c3fa8c54fccffec}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{D\-E\-S\-C\-R\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-R\-O\-W\-\_\-\-B\-Y\-\_\-\-R\-O\-W@{D\-E\-S\-C\-R\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-R\-O\-W\-\_\-\-B\-Y\-\_\-\-R\-O\-W}!cv\-::ocl\-::\-H\-O\-G\-Descriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}}\index{cv\-::ocl\-::\-H\-O\-G\-Descriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}!D\-E\-S\-C\-R\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-R\-O\-W\-\_\-\-B\-Y\-\_\-\-R\-O\-W@{D\-E\-S\-C\-R\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-R\-O\-W\-\_\-\-B\-Y\-\_\-\-R\-O\-W}}\item[{\em 
+\hypertarget{structcv_1_1ocl_1_1HOGDescriptor_a5c0042000c5db61a1c3fa8c54fccffeca2585a6b35b1f73d04c4d8f0df2a924ca}{D\-E\-S\-C\-R\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-R\-O\-W\-\_\-\-B\-Y\-\_\-\-R\-O\-W}\label{structcv_1_1ocl_1_1HOGDescriptor_a5c0042000c5db61a1c3fa8c54fccffeca2585a6b35b1f73d04c4d8f0df2a924ca}
+}]\index{D\-E\-S\-C\-R\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-C\-O\-L\-\_\-\-B\-Y\-\_\-\-C\-O\-L@{D\-E\-S\-C\-R\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-C\-O\-L\-\_\-\-B\-Y\-\_\-\-C\-O\-L}!cv\-::ocl\-::\-H\-O\-G\-Descriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}}\index{cv\-::ocl\-::\-H\-O\-G\-Descriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}!D\-E\-S\-C\-R\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-C\-O\-L\-\_\-\-B\-Y\-\_\-\-C\-O\-L@{D\-E\-S\-C\-R\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-C\-O\-L\-\_\-\-B\-Y\-\_\-\-C\-O\-L}}\item[{\em 
+\hypertarget{structcv_1_1ocl_1_1HOGDescriptor_a5c0042000c5db61a1c3fa8c54fccffeca5f7459a35f56ad3745c725e88a9d7539}{D\-E\-S\-C\-R\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-C\-O\-L\-\_\-\-B\-Y\-\_\-\-C\-O\-L}\label{structcv_1_1ocl_1_1HOGDescriptor_a5c0042000c5db61a1c3fa8c54fccffeca5f7459a35f56ad3745c725e88a9d7539}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structcv_1_1ocl_1_1HOGDescriptor_ac1157c7baf7cfb1e75880e8e3c66aa17}{\index{cv\-::ocl\-::\-H\-O\-G\-Descriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}!H\-O\-G\-Descriptor@{H\-O\-G\-Descriptor}}
+\index{H\-O\-G\-Descriptor@{H\-O\-G\-Descriptor}!cv::ocl::HOGDescriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{H\-O\-G\-Descriptor}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::ocl\-::\-H\-O\-G\-Descriptor\-::\-H\-O\-G\-Descriptor (
+\begin{DoxyParamCaption}
+\item[{Size}]{win\-\_\-size = {\ttfamily Size(64,~128)}, }
+\item[{Size}]{block\-\_\-size = {\ttfamily Size(16,~16)}, }
+\item[{Size}]{block\-\_\-stride = {\ttfamily Size(8,~8)}, }
+\item[{Size}]{cell\-\_\-size = {\ttfamily Size(8,~8)}, }
+\item[{int}]{nbins = {\ttfamily 9}, }
+\item[{double}]{win\-\_\-sigma = {\ttfamily {\bf D\-E\-F\-A\-U\-L\-T\-\_\-\-W\-I\-N\-\_\-\-S\-I\-G\-M\-A}}, }
+\item[{double}]{threshold\-\_\-\-L2hys = {\ttfamily 0.2}, }
+\item[{bool}]{gamma\-\_\-correction = {\ttfamily true}, }
+\item[{int}]{nlevels = {\ttfamily {\bf D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-L\-E\-V\-E\-L\-S}}}
+\end{DoxyParamCaption}
+)}}\label{structcv_1_1ocl_1_1HOGDescriptor_ac1157c7baf7cfb1e75880e8e3c66aa17}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structcv_1_1ocl_1_1HOGDescriptor_a6bbd154a01496d02665dd1b3478404d7}{\index{cv\-::ocl\-::\-H\-O\-G\-Descriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}!check\-Detector\-Size@{check\-Detector\-Size}}
+\index{check\-Detector\-Size@{check\-Detector\-Size}!cv::ocl::HOGDescriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{check\-Detector\-Size}]{\setlength{\rightskip}{0pt plus 5cm}bool cv\-::ocl\-::\-H\-O\-G\-Descriptor\-::check\-Detector\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}}\label{structcv_1_1ocl_1_1HOGDescriptor_a6bbd154a01496d02665dd1b3478404d7}
+\hypertarget{structcv_1_1ocl_1_1HOGDescriptor_a1caa8dcc80bdfc9c601a24f4e29a73d4}{\index{cv\-::ocl\-::\-H\-O\-G\-Descriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}!compute\-Block\-Histograms@{compute\-Block\-Histograms}}
+\index{compute\-Block\-Histograms@{compute\-Block\-Histograms}!cv::ocl::HOGDescriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{compute\-Block\-Histograms}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::\-H\-O\-G\-Descriptor\-::compute\-Block\-Histograms (
+\begin{DoxyParamCaption}
+\item[{const {\bf ocl\-Mat} \&}]{img}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{structcv_1_1ocl_1_1HOGDescriptor_a1caa8dcc80bdfc9c601a24f4e29a73d4}
+\hypertarget{structcv_1_1ocl_1_1HOGDescriptor_abf81df13748667e19915e3f3ae94215c}{\index{cv\-::ocl\-::\-H\-O\-G\-Descriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}!compute\-Gradient@{compute\-Gradient}}
+\index{compute\-Gradient@{compute\-Gradient}!cv::ocl::HOGDescriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{compute\-Gradient}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::\-H\-O\-G\-Descriptor\-::compute\-Gradient (
+\begin{DoxyParamCaption}
+\item[{const {\bf ocl\-Mat} \&}]{img, }
+\item[{{\bf ocl\-Mat} \&}]{grad, }
+\item[{{\bf ocl\-Mat} \&}]{qangle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{structcv_1_1ocl_1_1HOGDescriptor_abf81df13748667e19915e3f3ae94215c}
+\hypertarget{structcv_1_1ocl_1_1HOGDescriptor_a97913083c1c3219fdabfb2937506471e}{\index{cv\-::ocl\-::\-H\-O\-G\-Descriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}!detect@{detect}}
+\index{detect@{detect}!cv::ocl::HOGDescriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{detect}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::\-H\-O\-G\-Descriptor\-::detect (
+\begin{DoxyParamCaption}
+\item[{const {\bf ocl\-Mat} \&}]{img, }
+\item[{vector$<$ Point $>$ \&}]{found\-\_\-locations, }
+\item[{double}]{hit\-\_\-threshold = {\ttfamily 0}, }
+\item[{Size}]{win\-\_\-stride = {\ttfamily Size()}, }
+\item[{Size}]{padding = {\ttfamily Size()}}
+\end{DoxyParamCaption}
+)}}\label{structcv_1_1ocl_1_1HOGDescriptor_a97913083c1c3219fdabfb2937506471e}
+\hypertarget{structcv_1_1ocl_1_1HOGDescriptor_aa50f628616630390a2e88de08afa4416}{\index{cv\-::ocl\-::\-H\-O\-G\-Descriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}!detect\-Multi\-Scale@{detect\-Multi\-Scale}}
+\index{detect\-Multi\-Scale@{detect\-Multi\-Scale}!cv::ocl::HOGDescriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{detect\-Multi\-Scale}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::\-H\-O\-G\-Descriptor\-::detect\-Multi\-Scale (
+\begin{DoxyParamCaption}
+\item[{const {\bf ocl\-Mat} \&}]{img, }
+\item[{vector$<$ Rect $>$ \&}]{found\-\_\-locations, }
+\item[{double}]{hit\-\_\-threshold = {\ttfamily 0}, }
+\item[{Size}]{win\-\_\-stride = {\ttfamily Size()}, }
+\item[{Size}]{padding = {\ttfamily Size()}, }
+\item[{double}]{scale0 = {\ttfamily 1.05}, }
+\item[{int}]{group\-\_\-threshold = {\ttfamily 2}}
+\end{DoxyParamCaption}
+)}}\label{structcv_1_1ocl_1_1HOGDescriptor_aa50f628616630390a2e88de08afa4416}
+\hypertarget{structcv_1_1ocl_1_1HOGDescriptor_a5752938f3d4a1c29a58bfc943f908e59}{\index{cv\-::ocl\-::\-H\-O\-G\-Descriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}!get\-Block\-Histogram\-Size@{get\-Block\-Histogram\-Size}}
+\index{get\-Block\-Histogram\-Size@{get\-Block\-Histogram\-Size}!cv::ocl::HOGDescriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{get\-Block\-Histogram\-Size}]{\setlength{\rightskip}{0pt plus 5cm}size\-\_\-t cv\-::ocl\-::\-H\-O\-G\-Descriptor\-::get\-Block\-Histogram\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{structcv_1_1ocl_1_1HOGDescriptor_a5752938f3d4a1c29a58bfc943f908e59}
+\hypertarget{structcv_1_1ocl_1_1HOGDescriptor_a08f932edec3a1076d25790c50b469690}{\index{cv\-::ocl\-::\-H\-O\-G\-Descriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}!get\-Default\-People\-Detector@{get\-Default\-People\-Detector}}
+\index{get\-Default\-People\-Detector@{get\-Default\-People\-Detector}!cv::ocl::HOGDescriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{get\-Default\-People\-Detector}]{\setlength{\rightskip}{0pt plus 5cm}static vector$<$float$>$ cv\-::ocl\-::\-H\-O\-G\-Descriptor\-::get\-Default\-People\-Detector (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{structcv_1_1ocl_1_1HOGDescriptor_a08f932edec3a1076d25790c50b469690}
+\hypertarget{structcv_1_1ocl_1_1HOGDescriptor_aa9cdfdba40f53a217a8dd6e37f4632ef}{\index{cv\-::ocl\-::\-H\-O\-G\-Descriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}!get\-Descriptors@{get\-Descriptors}}
+\index{get\-Descriptors@{get\-Descriptors}!cv::ocl::HOGDescriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{get\-Descriptors}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::\-H\-O\-G\-Descriptor\-::get\-Descriptors (
+\begin{DoxyParamCaption}
+\item[{const {\bf ocl\-Mat} \&}]{img, }
+\item[{Size}]{win\-\_\-stride, }
+\item[{{\bf ocl\-Mat} \&}]{descriptors, }
+\item[{int}]{descr\-\_\-format = {\ttfamily {\bf D\-E\-S\-C\-R\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-C\-O\-L\-\_\-\-B\-Y\-\_\-\-C\-O\-L}}}
+\end{DoxyParamCaption}
+)}}\label{structcv_1_1ocl_1_1HOGDescriptor_aa9cdfdba40f53a217a8dd6e37f4632ef}
+\hypertarget{structcv_1_1ocl_1_1HOGDescriptor_abbd30e55004c7a42143cfed5134da9d5}{\index{cv\-::ocl\-::\-H\-O\-G\-Descriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}!get\-Descriptor\-Size@{get\-Descriptor\-Size}}
+\index{get\-Descriptor\-Size@{get\-Descriptor\-Size}!cv::ocl::HOGDescriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{get\-Descriptor\-Size}]{\setlength{\rightskip}{0pt plus 5cm}size\-\_\-t cv\-::ocl\-::\-H\-O\-G\-Descriptor\-::get\-Descriptor\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{structcv_1_1ocl_1_1HOGDescriptor_abbd30e55004c7a42143cfed5134da9d5}
+\hypertarget{structcv_1_1ocl_1_1HOGDescriptor_a1fd36c804b71e1e5cabf8d26cf5ae4cb}{\index{cv\-::ocl\-::\-H\-O\-G\-Descriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}!get\-People\-Detector48x96@{get\-People\-Detector48x96}}
+\index{get\-People\-Detector48x96@{get\-People\-Detector48x96}!cv::ocl::HOGDescriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{get\-People\-Detector48x96}]{\setlength{\rightskip}{0pt plus 5cm}static vector$<$float$>$ cv\-::ocl\-::\-H\-O\-G\-Descriptor\-::get\-People\-Detector48x96 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{structcv_1_1ocl_1_1HOGDescriptor_a1fd36c804b71e1e5cabf8d26cf5ae4cb}
+\hypertarget{structcv_1_1ocl_1_1HOGDescriptor_aa64dc25bbbe470f00f7ed1278ecee845}{\index{cv\-::ocl\-::\-H\-O\-G\-Descriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}!get\-People\-Detector64x128@{get\-People\-Detector64x128}}
+\index{get\-People\-Detector64x128@{get\-People\-Detector64x128}!cv::ocl::HOGDescriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{get\-People\-Detector64x128}]{\setlength{\rightskip}{0pt plus 5cm}static vector$<$float$>$ cv\-::ocl\-::\-H\-O\-G\-Descriptor\-::get\-People\-Detector64x128 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{structcv_1_1ocl_1_1HOGDescriptor_aa64dc25bbbe470f00f7ed1278ecee845}
+\hypertarget{structcv_1_1ocl_1_1HOGDescriptor_ae8013894c9c94834408b244bd876b37f}{\index{cv\-::ocl\-::\-H\-O\-G\-Descriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}!get\-Win\-Sigma@{get\-Win\-Sigma}}
+\index{get\-Win\-Sigma@{get\-Win\-Sigma}!cv::ocl::HOGDescriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{get\-Win\-Sigma}]{\setlength{\rightskip}{0pt plus 5cm}double cv\-::ocl\-::\-H\-O\-G\-Descriptor\-::get\-Win\-Sigma (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}}\label{structcv_1_1ocl_1_1HOGDescriptor_ae8013894c9c94834408b244bd876b37f}
+\hypertarget{structcv_1_1ocl_1_1HOGDescriptor_ad2617f2a47388bdaacfa6ba1de50475b}{\index{cv\-::ocl\-::\-H\-O\-G\-Descriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}!init\-\_\-buffer@{init\-\_\-buffer}}
+\index{init\-\_\-buffer@{init\-\_\-buffer}!cv::ocl::HOGDescriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{init\-\_\-buffer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::\-H\-O\-G\-Descriptor\-::init\-\_\-buffer (
+\begin{DoxyParamCaption}
+\item[{const {\bf ocl\-Mat} \&}]{img, }
+\item[{Size}]{win\-\_\-stride}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{structcv_1_1ocl_1_1HOGDescriptor_ad2617f2a47388bdaacfa6ba1de50475b}
+\hypertarget{structcv_1_1ocl_1_1HOGDescriptor_a81c89d7aaf0b7c5e1a06ceba8ac9b287}{\index{cv\-::ocl\-::\-H\-O\-G\-Descriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}!num\-Parts\-Within@{num\-Parts\-Within}}
+\index{num\-Parts\-Within@{num\-Parts\-Within}!cv::ocl::HOGDescriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{num\-Parts\-Within}]{\setlength{\rightskip}{0pt plus 5cm}static int cv\-::ocl\-::\-H\-O\-G\-Descriptor\-::num\-Parts\-Within (
+\begin{DoxyParamCaption}
+\item[{int}]{size, }
+\item[{int}]{part\-\_\-size, }
+\item[{int}]{stride}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{structcv_1_1ocl_1_1HOGDescriptor_a81c89d7aaf0b7c5e1a06ceba8ac9b287}
+\hypertarget{structcv_1_1ocl_1_1HOGDescriptor_a51a4fa0091e7b9220ba2d0d240debda9}{\index{cv\-::ocl\-::\-H\-O\-G\-Descriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}!num\-Parts\-Within@{num\-Parts\-Within}}
+\index{num\-Parts\-Within@{num\-Parts\-Within}!cv::ocl::HOGDescriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{num\-Parts\-Within}]{\setlength{\rightskip}{0pt plus 5cm}static Size cv\-::ocl\-::\-H\-O\-G\-Descriptor\-::num\-Parts\-Within (
+\begin{DoxyParamCaption}
+\item[{Size}]{size, }
+\item[{Size}]{part\-\_\-size, }
+\item[{Size}]{stride}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{structcv_1_1ocl_1_1HOGDescriptor_a51a4fa0091e7b9220ba2d0d240debda9}
+\hypertarget{structcv_1_1ocl_1_1HOGDescriptor_a789ee263a38868a1ecadb08d5feac593}{\index{cv\-::ocl\-::\-H\-O\-G\-Descriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}!set\-S\-V\-M\-Detector@{set\-S\-V\-M\-Detector}}
+\index{set\-S\-V\-M\-Detector@{set\-S\-V\-M\-Detector}!cv::ocl::HOGDescriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{set\-S\-V\-M\-Detector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::\-H\-O\-G\-Descriptor\-::set\-S\-V\-M\-Detector (
+\begin{DoxyParamCaption}
+\item[{const vector$<$ float $>$ \&}]{detector}
+\end{DoxyParamCaption}
+)}}\label{structcv_1_1ocl_1_1HOGDescriptor_a789ee263a38868a1ecadb08d5feac593}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structcv_1_1ocl_1_1HOGDescriptor_ad585b916230f651b3c1bf85e172eba43}{\index{cv\-::ocl\-::\-H\-O\-G\-Descriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}!block\-\_\-hists@{block\-\_\-hists}}
+\index{block\-\_\-hists@{block\-\_\-hists}!cv::ocl::HOGDescriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{block\-\_\-hists}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ocl\-Mat} cv\-::ocl\-::\-H\-O\-G\-Descriptor\-::block\-\_\-hists\hspace{0.3cm}{\ttfamily [protected]}}}\label{structcv_1_1ocl_1_1HOGDescriptor_ad585b916230f651b3c1bf85e172eba43}
+\hypertarget{structcv_1_1ocl_1_1HOGDescriptor_a2d0121236387d4113568acb367b5f2ef}{\index{cv\-::ocl\-::\-H\-O\-G\-Descriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}!block\-\_\-size@{block\-\_\-size}}
+\index{block\-\_\-size@{block\-\_\-size}!cv::ocl::HOGDescriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{block\-\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}Size cv\-::ocl\-::\-H\-O\-G\-Descriptor\-::block\-\_\-size}}\label{structcv_1_1ocl_1_1HOGDescriptor_a2d0121236387d4113568acb367b5f2ef}
+\hypertarget{structcv_1_1ocl_1_1HOGDescriptor_aae17ffc7bbc09ec8f7485a00724fc9b0}{\index{cv\-::ocl\-::\-H\-O\-G\-Descriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}!block\-\_\-stride@{block\-\_\-stride}}
+\index{block\-\_\-stride@{block\-\_\-stride}!cv::ocl::HOGDescriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{block\-\_\-stride}]{\setlength{\rightskip}{0pt plus 5cm}Size cv\-::ocl\-::\-H\-O\-G\-Descriptor\-::block\-\_\-stride}}\label{structcv_1_1ocl_1_1HOGDescriptor_aae17ffc7bbc09ec8f7485a00724fc9b0}
+\hypertarget{structcv_1_1ocl_1_1HOGDescriptor_af6d032325c0a50fdf0faf4cf559ee4cf}{\index{cv\-::ocl\-::\-H\-O\-G\-Descriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}!cell\-\_\-size@{cell\-\_\-size}}
+\index{cell\-\_\-size@{cell\-\_\-size}!cv::ocl::HOGDescriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{cell\-\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}Size cv\-::ocl\-::\-H\-O\-G\-Descriptor\-::cell\-\_\-size}}\label{structcv_1_1ocl_1_1HOGDescriptor_af6d032325c0a50fdf0faf4cf559ee4cf}
+\hypertarget{structcv_1_1ocl_1_1HOGDescriptor_a52a29986e44a552923de5c5669f2e130}{\index{cv\-::ocl\-::\-H\-O\-G\-Descriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}!detector@{detector}}
+\index{detector@{detector}!cv::ocl::HOGDescriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{detector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ocl\-Mat} cv\-::ocl\-::\-H\-O\-G\-Descriptor\-::detector\hspace{0.3cm}{\ttfamily [protected]}}}\label{structcv_1_1ocl_1_1HOGDescriptor_a52a29986e44a552923de5c5669f2e130}
+\hypertarget{structcv_1_1ocl_1_1HOGDescriptor_a7302856d7a07e1bc2547aba53ec89cf6}{\index{cv\-::ocl\-::\-H\-O\-G\-Descriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}!effect\-\_\-size@{effect\-\_\-size}}
+\index{effect\-\_\-size@{effect\-\_\-size}!cv::ocl::HOGDescriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{effect\-\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}Size cv\-::ocl\-::\-H\-O\-G\-Descriptor\-::effect\-\_\-size\hspace{0.3cm}{\ttfamily [protected]}}}\label{structcv_1_1ocl_1_1HOGDescriptor_a7302856d7a07e1bc2547aba53ec89cf6}
+\hypertarget{structcv_1_1ocl_1_1HOGDescriptor_a22c27636575792ee17cd29f38d9d9fd3}{\index{cv\-::ocl\-::\-H\-O\-G\-Descriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}!free\-\_\-coef@{free\-\_\-coef}}
+\index{free\-\_\-coef@{free\-\_\-coef}!cv::ocl::HOGDescriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{free\-\_\-coef}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::ocl\-::\-H\-O\-G\-Descriptor\-::free\-\_\-coef\hspace{0.3cm}{\ttfamily [protected]}}}\label{structcv_1_1ocl_1_1HOGDescriptor_a22c27636575792ee17cd29f38d9d9fd3}
+\hypertarget{structcv_1_1ocl_1_1HOGDescriptor_ab27413637f05ea0eac7a0dfcc2d1921b}{\index{cv\-::ocl\-::\-H\-O\-G\-Descriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}!gamma\-\_\-correction@{gamma\-\_\-correction}}
+\index{gamma\-\_\-correction@{gamma\-\_\-correction}!cv::ocl::HOGDescriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{gamma\-\_\-correction}]{\setlength{\rightskip}{0pt plus 5cm}bool cv\-::ocl\-::\-H\-O\-G\-Descriptor\-::gamma\-\_\-correction}}\label{structcv_1_1ocl_1_1HOGDescriptor_ab27413637f05ea0eac7a0dfcc2d1921b}
+\hypertarget{structcv_1_1ocl_1_1HOGDescriptor_a1d40070e508df4b2629f66f8d2a34618}{\index{cv\-::ocl\-::\-H\-O\-G\-Descriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}!grad@{grad}}
+\index{grad@{grad}!cv::ocl::HOGDescriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{grad}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ocl\-Mat} cv\-::ocl\-::\-H\-O\-G\-Descriptor\-::grad\hspace{0.3cm}{\ttfamily [protected]}}}\label{structcv_1_1ocl_1_1HOGDescriptor_a1d40070e508df4b2629f66f8d2a34618}
+\hypertarget{structcv_1_1ocl_1_1HOGDescriptor_a3a3ba94390579a2eee2fd14ec7a89b0e}{\index{cv\-::ocl\-::\-H\-O\-G\-Descriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}!image\-\_\-scale@{image\-\_\-scale}}
+\index{image\-\_\-scale@{image\-\_\-scale}!cv::ocl::HOGDescriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{image\-\_\-scale}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ocl\-Mat} cv\-::ocl\-::\-H\-O\-G\-Descriptor\-::image\-\_\-scale\hspace{0.3cm}{\ttfamily [protected]}}}\label{structcv_1_1ocl_1_1HOGDescriptor_a3a3ba94390579a2eee2fd14ec7a89b0e}
+\hypertarget{structcv_1_1ocl_1_1HOGDescriptor_a01a584dcc9a5c4da7f70f21baf85d5f5}{\index{cv\-::ocl\-::\-H\-O\-G\-Descriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}!labels@{labels}}
+\index{labels@{labels}!cv::ocl::HOGDescriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{labels}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ocl\-Mat} cv\-::ocl\-::\-H\-O\-G\-Descriptor\-::labels\hspace{0.3cm}{\ttfamily [protected]}}}\label{structcv_1_1ocl_1_1HOGDescriptor_a01a584dcc9a5c4da7f70f21baf85d5f5}
+\hypertarget{structcv_1_1ocl_1_1HOGDescriptor_abff7fc1290bd19dd5c3913070acea05a}{\index{cv\-::ocl\-::\-H\-O\-G\-Descriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}!labels\-\_\-host@{labels\-\_\-host}}
+\index{labels\-\_\-host@{labels\-\_\-host}!cv::ocl::HOGDescriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{labels\-\_\-host}]{\setlength{\rightskip}{0pt plus 5cm}Mat cv\-::ocl\-::\-H\-O\-G\-Descriptor\-::labels\-\_\-host\hspace{0.3cm}{\ttfamily [protected]}}}\label{structcv_1_1ocl_1_1HOGDescriptor_abff7fc1290bd19dd5c3913070acea05a}
+\hypertarget{structcv_1_1ocl_1_1HOGDescriptor_ab2b56c734be1244d99ed925580e1e54e}{\index{cv\-::ocl\-::\-H\-O\-G\-Descriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}!nbins@{nbins}}
+\index{nbins@{nbins}!cv::ocl::HOGDescriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{nbins}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::ocl\-::\-H\-O\-G\-Descriptor\-::nbins}}\label{structcv_1_1ocl_1_1HOGDescriptor_ab2b56c734be1244d99ed925580e1e54e}
+\hypertarget{structcv_1_1ocl_1_1HOGDescriptor_a73e83320d5318b5703a6ca9b05038ab2}{\index{cv\-::ocl\-::\-H\-O\-G\-Descriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}!nlevels@{nlevels}}
+\index{nlevels@{nlevels}!cv::ocl::HOGDescriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{nlevels}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::ocl\-::\-H\-O\-G\-Descriptor\-::nlevels}}\label{structcv_1_1ocl_1_1HOGDescriptor_a73e83320d5318b5703a6ca9b05038ab2}
+\hypertarget{structcv_1_1ocl_1_1HOGDescriptor_a35ab7536fc22a7751c929d63543e31cc}{\index{cv\-::ocl\-::\-H\-O\-G\-Descriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}!qangle@{qangle}}
+\index{qangle@{qangle}!cv::ocl::HOGDescriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{qangle}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ocl\-Mat} cv\-::ocl\-::\-H\-O\-G\-Descriptor\-::qangle\hspace{0.3cm}{\ttfamily [protected]}}}\label{structcv_1_1ocl_1_1HOGDescriptor_a35ab7536fc22a7751c929d63543e31cc}
+\hypertarget{structcv_1_1ocl_1_1HOGDescriptor_aa46d855bd7e5532380e5a96f97f90b11}{\index{cv\-::ocl\-::\-H\-O\-G\-Descriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}!threshold\-\_\-\-L2hys@{threshold\-\_\-\-L2hys}}
+\index{threshold\-\_\-\-L2hys@{threshold\-\_\-\-L2hys}!cv::ocl::HOGDescriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{threshold\-\_\-\-L2hys}]{\setlength{\rightskip}{0pt plus 5cm}double cv\-::ocl\-::\-H\-O\-G\-Descriptor\-::threshold\-\_\-\-L2hys}}\label{structcv_1_1ocl_1_1HOGDescriptor_aa46d855bd7e5532380e5a96f97f90b11}
+\hypertarget{structcv_1_1ocl_1_1HOGDescriptor_ab022766fbe3ac26172e15cefaa4c5a25}{\index{cv\-::ocl\-::\-H\-O\-G\-Descriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}!win\-\_\-sigma@{win\-\_\-sigma}}
+\index{win\-\_\-sigma@{win\-\_\-sigma}!cv::ocl::HOGDescriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{win\-\_\-sigma}]{\setlength{\rightskip}{0pt plus 5cm}double cv\-::ocl\-::\-H\-O\-G\-Descriptor\-::win\-\_\-sigma}}\label{structcv_1_1ocl_1_1HOGDescriptor_ab022766fbe3ac26172e15cefaa4c5a25}
+\hypertarget{structcv_1_1ocl_1_1HOGDescriptor_a64a0fb7b26799b3b7b62ecc3db2c5601}{\index{cv\-::ocl\-::\-H\-O\-G\-Descriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}!win\-\_\-size@{win\-\_\-size}}
+\index{win\-\_\-size@{win\-\_\-size}!cv::ocl::HOGDescriptor@{cv\-::ocl\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{win\-\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}Size cv\-::ocl\-::\-H\-O\-G\-Descriptor\-::win\-\_\-size}}\label{structcv_1_1ocl_1_1HOGDescriptor_a64a0fb7b26799b3b7b62ecc3db2c5601}
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/ocl/\hyperlink{ocl_2ocl_8hpp}{ocl.\-hpp}\end{DoxyCompactItemize}

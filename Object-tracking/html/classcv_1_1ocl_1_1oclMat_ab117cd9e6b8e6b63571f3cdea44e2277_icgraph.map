@@ -1,0 +1,4 @@
+<map id="cv::ocl::oclMat::upload" name="cv::ocl::oclMat::upload">
+<area shape="rect" id="node2" href="$classcv_1_1ocl_1_1oclMat.html#a73947d6aaec7670cda8f91edf6c9111a" title="constructor for oclMatrix headers pointing to user&#45;allocated data " alt="" coords="216,5,371,32"/>
+<area shape="rect" id="node3" href="$classcv_1_1ocl_1_1oclMat.html#afa3a7a89e26bec6c1c881142d93cd751" title="assignment operator. Perfom blocking upload to device. " alt="" coords="208,56,379,83"/>
+</map>

@@ -1,0 +1,155 @@
+\hypertarget{classcv_1_1gpu_1_1MOG2__GPU}{\section{cv\-:\-:gpu\-:\-:M\-O\-G2\-\_\-\-G\-P\-U Class Reference}
+\label{classcv_1_1gpu_1_1MOG2__GPU}\index{cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U}}
+}
+
+
+{\ttfamily \#include $<$gpu.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcv_1_1gpu_1_1MOG2__GPU_a48d81f0eca6cae9357c588cfbdca98a0}{M\-O\-G2\-\_\-\-G\-P\-U} (int nmixtures=-\/1)
+\begin{DoxyCompactList}\small\item\em the default constructor \end{DoxyCompactList}\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1MOG2__GPU_a88346adae81c978b8f73155d9976bab4}{initialize} (Size frame\-Size, int frame\-Type)
+\begin{DoxyCompactList}\small\item\em re-\/initiaization method \end{DoxyCompactList}\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1MOG2__GPU_a52af0b1759b5918d5a25d7bac5f74954}{operator()} (const Gpu\-Mat \&\hyperlink{core__c_8h_a0430deaafd9043e478f306e33961299d}{frame}, Gpu\-Mat \&\hyperlink{legacy_8hpp_a7ff9edf5eaa300d3c1cea7de20631fd8}{fgmask}, float learning\-Rate=-\/1.\-0f, Stream \&stream=\-Stream\-::\-Null())
+\begin{DoxyCompactList}\small\item\em the update operator \end{DoxyCompactList}\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1MOG2__GPU_a75c4ea0642c30771c0cde08c8ec56e97}{get\-Background\-Image} (Gpu\-Mat \&background\-Image, \hyperlink{classcv_1_1gpu_1_1Stream}{Stream} \&stream=\hyperlink{classcv_1_1gpu_1_1Stream_af96c23564834f88333dcb8997df553f1}{Stream\-::\-Null}()) const 
+\begin{DoxyCompactList}\small\item\em computes a background image which are the mean of all background gaussians \end{DoxyCompactList}\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1MOG2__GPU_aa94e1815c0bbc13320ed311af29e8f49}{release} ()
+\begin{DoxyCompactList}\small\item\em releases all inner buffers \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classcv_1_1gpu_1_1MOG2__GPU_a403f85c4f33fb111943daba58b0b21f0}{history}
+\item 
+float \hyperlink{classcv_1_1gpu_1_1MOG2__GPU_a19f742a3fa03f0d43e73a288b8cab65c}{var\-Threshold}
+\item 
+float \hyperlink{classcv_1_1gpu_1_1MOG2__GPU_ab646673e679c021d6971eeba1b44abfa}{background\-Ratio}
+\item 
+float \hyperlink{classcv_1_1gpu_1_1MOG2__GPU_a90ab8efe3e16585ecb93656d321fbebc}{var\-Threshold\-Gen}
+\item 
+float \hyperlink{classcv_1_1gpu_1_1MOG2__GPU_af6c5ff19e5ca4c4e80bdb330a40a9b0f}{f\-Var\-Init}
+\item 
+float \hyperlink{classcv_1_1gpu_1_1MOG2__GPU_a898eb021a33aeb3ba8883dd1e734dce0}{f\-Var\-Min}
+\item 
+float \hyperlink{classcv_1_1gpu_1_1MOG2__GPU_ad45804934365ec0dd8dc49f90b6ebce2}{f\-Var\-Max}
+\item 
+float \hyperlink{classcv_1_1gpu_1_1MOG2__GPU_a2dd28f1330681ced7f872e0ae8b3f0ef}{f\-C\-T}
+\item 
+bool \hyperlink{classcv_1_1gpu_1_1MOG2__GPU_ae7b0f3d5c29a710e4185ec1fb9335b96}{b\-Shadow\-Detection}
+\item 
+unsigned char \hyperlink{classcv_1_1gpu_1_1MOG2__GPU_aa78756f4db93b7c599a5830d3fc9592e}{n\-Shadow\-Detection}
+\item 
+float \hyperlink{classcv_1_1gpu_1_1MOG2__GPU_a0a1a2553c82bd821783e4840e4c9c6ee}{f\-Tau}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The class implements the following algorithm\-: \char`\"{}\-Improved adaptive Gausian mixture model for background subtraction\char`\"{} Z.\-Zivkovic International Conference Pattern Recognition, U\-K, August, 2004. \href{http://www.zoranz.net/Publications/zivkovic2004ICPR.pdf}{\tt http\-://www.\-zoranz.\-net/\-Publications/zivkovic2004\-I\-C\-P\-R.\-pdf} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcv_1_1gpu_1_1MOG2__GPU_a48d81f0eca6cae9357c588cfbdca98a0}{\index{cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U}!M\-O\-G2\-\_\-\-G\-P\-U@{M\-O\-G2\-\_\-\-G\-P\-U}}
+\index{M\-O\-G2\-\_\-\-G\-P\-U@{M\-O\-G2\-\_\-\-G\-P\-U}!cv::gpu::MOG2_GPU@{cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U}}
+\subsubsection[{M\-O\-G2\-\_\-\-G\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U\-::\-M\-O\-G2\-\_\-\-G\-P\-U (
+\begin{DoxyParamCaption}
+\item[{int}]{nmixtures = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1MOG2__GPU_a48d81f0eca6cae9357c588cfbdca98a0}
+
+
+the default constructor 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcv_1_1gpu_1_1MOG2__GPU_a75c4ea0642c30771c0cde08c8ec56e97}{\index{cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U}!get\-Background\-Image@{get\-Background\-Image}}
+\index{get\-Background\-Image@{get\-Background\-Image}!cv::gpu::MOG2_GPU@{cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U}}
+\subsubsection[{get\-Background\-Image}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U\-::get\-Background\-Image (
+\begin{DoxyParamCaption}
+\item[{Gpu\-Mat \&}]{background\-Image, }
+\item[{{\bf Stream} \&}]{stream = {\ttfamily {\bf Stream\-::\-Null}()}}
+\end{DoxyParamCaption}
+) const}}\label{classcv_1_1gpu_1_1MOG2__GPU_a75c4ea0642c30771c0cde08c8ec56e97}
+
+
+computes a background image which are the mean of all background gaussians 
+
+\hypertarget{classcv_1_1gpu_1_1MOG2__GPU_a88346adae81c978b8f73155d9976bab4}{\index{cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U}!initialize@{initialize}}
+\index{initialize@{initialize}!cv::gpu::MOG2_GPU@{cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U}}
+\subsubsection[{initialize}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U\-::initialize (
+\begin{DoxyParamCaption}
+\item[{Size}]{frame\-Size, }
+\item[{int}]{frame\-Type}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1MOG2__GPU_a88346adae81c978b8f73155d9976bab4}
+
+
+re-\/initiaization method 
+
+\hypertarget{classcv_1_1gpu_1_1MOG2__GPU_a52af0b1759b5918d5a25d7bac5f74954}{\index{cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U}!operator()@{operator()}}
+\index{operator()@{operator()}!cv::gpu::MOG2_GPU@{cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U\-::operator() (
+\begin{DoxyParamCaption}
+\item[{const Gpu\-Mat \&}]{frame, }
+\item[{Gpu\-Mat \&}]{fgmask, }
+\item[{float}]{learning\-Rate = {\ttfamily -\/1.0f}, }
+\item[{{\bf Stream} \&}]{stream = {\ttfamily {\bf Stream\-::\-Null}()}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1MOG2__GPU_a52af0b1759b5918d5a25d7bac5f74954}
+
+
+the update operator 
+
+\hypertarget{classcv_1_1gpu_1_1MOG2__GPU_aa94e1815c0bbc13320ed311af29e8f49}{\index{cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U}!release@{release}}
+\index{release@{release}!cv::gpu::MOG2_GPU@{cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U}}
+\subsubsection[{release}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U\-::release (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1MOG2__GPU_aa94e1815c0bbc13320ed311af29e8f49}
+
+
+releases all inner buffers 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcv_1_1gpu_1_1MOG2__GPU_ab646673e679c021d6971eeba1b44abfa}{\index{cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U}!background\-Ratio@{background\-Ratio}}
+\index{background\-Ratio@{background\-Ratio}!cv::gpu::MOG2_GPU@{cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U}}
+\subsubsection[{background\-Ratio}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U\-::background\-Ratio}}\label{classcv_1_1gpu_1_1MOG2__GPU_ab646673e679c021d6971eeba1b44abfa}
+\hypertarget{classcv_1_1gpu_1_1MOG2__GPU_ae7b0f3d5c29a710e4185ec1fb9335b96}{\index{cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U}!b\-Shadow\-Detection@{b\-Shadow\-Detection}}
+\index{b\-Shadow\-Detection@{b\-Shadow\-Detection}!cv::gpu::MOG2_GPU@{cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U}}
+\subsubsection[{b\-Shadow\-Detection}]{\setlength{\rightskip}{0pt plus 5cm}bool cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U\-::b\-Shadow\-Detection}}\label{classcv_1_1gpu_1_1MOG2__GPU_ae7b0f3d5c29a710e4185ec1fb9335b96}
+\hypertarget{classcv_1_1gpu_1_1MOG2__GPU_a2dd28f1330681ced7f872e0ae8b3f0ef}{\index{cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U}!f\-C\-T@{f\-C\-T}}
+\index{f\-C\-T@{f\-C\-T}!cv::gpu::MOG2_GPU@{cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U}}
+\subsubsection[{f\-C\-T}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U\-::f\-C\-T}}\label{classcv_1_1gpu_1_1MOG2__GPU_a2dd28f1330681ced7f872e0ae8b3f0ef}
+\hypertarget{classcv_1_1gpu_1_1MOG2__GPU_a0a1a2553c82bd821783e4840e4c9c6ee}{\index{cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U}!f\-Tau@{f\-Tau}}
+\index{f\-Tau@{f\-Tau}!cv::gpu::MOG2_GPU@{cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U}}
+\subsubsection[{f\-Tau}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U\-::f\-Tau}}\label{classcv_1_1gpu_1_1MOG2__GPU_a0a1a2553c82bd821783e4840e4c9c6ee}
+\hypertarget{classcv_1_1gpu_1_1MOG2__GPU_af6c5ff19e5ca4c4e80bdb330a40a9b0f}{\index{cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U}!f\-Var\-Init@{f\-Var\-Init}}
+\index{f\-Var\-Init@{f\-Var\-Init}!cv::gpu::MOG2_GPU@{cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U}}
+\subsubsection[{f\-Var\-Init}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U\-::f\-Var\-Init}}\label{classcv_1_1gpu_1_1MOG2__GPU_af6c5ff19e5ca4c4e80bdb330a40a9b0f}
+\hypertarget{classcv_1_1gpu_1_1MOG2__GPU_ad45804934365ec0dd8dc49f90b6ebce2}{\index{cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U}!f\-Var\-Max@{f\-Var\-Max}}
+\index{f\-Var\-Max@{f\-Var\-Max}!cv::gpu::MOG2_GPU@{cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U}}
+\subsubsection[{f\-Var\-Max}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U\-::f\-Var\-Max}}\label{classcv_1_1gpu_1_1MOG2__GPU_ad45804934365ec0dd8dc49f90b6ebce2}
+\hypertarget{classcv_1_1gpu_1_1MOG2__GPU_a898eb021a33aeb3ba8883dd1e734dce0}{\index{cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U}!f\-Var\-Min@{f\-Var\-Min}}
+\index{f\-Var\-Min@{f\-Var\-Min}!cv::gpu::MOG2_GPU@{cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U}}
+\subsubsection[{f\-Var\-Min}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U\-::f\-Var\-Min}}\label{classcv_1_1gpu_1_1MOG2__GPU_a898eb021a33aeb3ba8883dd1e734dce0}
+\hypertarget{classcv_1_1gpu_1_1MOG2__GPU_a403f85c4f33fb111943daba58b0b21f0}{\index{cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U}!history@{history}}
+\index{history@{history}!cv::gpu::MOG2_GPU@{cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U}}
+\subsubsection[{history}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U\-::history}}\label{classcv_1_1gpu_1_1MOG2__GPU_a403f85c4f33fb111943daba58b0b21f0}
+\hypertarget{classcv_1_1gpu_1_1MOG2__GPU_aa78756f4db93b7c599a5830d3fc9592e}{\index{cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U}!n\-Shadow\-Detection@{n\-Shadow\-Detection}}
+\index{n\-Shadow\-Detection@{n\-Shadow\-Detection}!cv::gpu::MOG2_GPU@{cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U}}
+\subsubsection[{n\-Shadow\-Detection}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U\-::n\-Shadow\-Detection}}\label{classcv_1_1gpu_1_1MOG2__GPU_aa78756f4db93b7c599a5830d3fc9592e}
+\hypertarget{classcv_1_1gpu_1_1MOG2__GPU_a19f742a3fa03f0d43e73a288b8cab65c}{\index{cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U}!var\-Threshold@{var\-Threshold}}
+\index{var\-Threshold@{var\-Threshold}!cv::gpu::MOG2_GPU@{cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U}}
+\subsubsection[{var\-Threshold}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U\-::var\-Threshold}}\label{classcv_1_1gpu_1_1MOG2__GPU_a19f742a3fa03f0d43e73a288b8cab65c}
+here it is the maximum allowed number of mixture components. Actual number is determined dynamically per pixel \hypertarget{classcv_1_1gpu_1_1MOG2__GPU_a90ab8efe3e16585ecb93656d321fbebc}{\index{cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U}!var\-Threshold\-Gen@{var\-Threshold\-Gen}}
+\index{var\-Threshold\-Gen@{var\-Threshold\-Gen}!cv::gpu::MOG2_GPU@{cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U}}
+\subsubsection[{var\-Threshold\-Gen}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::gpu\-::\-M\-O\-G2\-\_\-\-G\-P\-U\-::var\-Threshold\-Gen}}\label{classcv_1_1gpu_1_1MOG2__GPU_a90ab8efe3e16585ecb93656d321fbebc}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/gpu/\hyperlink{gpu_2gpu_8hpp}{gpu.\-hpp}\end{DoxyCompactItemize}

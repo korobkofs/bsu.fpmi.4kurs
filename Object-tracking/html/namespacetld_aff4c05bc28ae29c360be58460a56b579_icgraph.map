@@ -1,0 +1,6 @@
+<map id="tld::tldExtractDimsFromArray" name="tld::tldExtractDimsFromArray">
+<area shape="rect" id="node2" href="$namespacetld.html#a44b5f4d4d087d3369129bdc92e2a555a" title="Extracts normalized patch from the image by boundary (array). " alt="" coords="246,63,413,105"/>
+<area shape="rect" id="node3" href="$classtld_1_1NNClassifier.html#a88fe1649014e887a12a5a57a552819f2" title="Compares patch (obtain from the image and the index of window) to positive and negative patches..." alt="" coords="477,5,603,46"/>
+<area shape="rect" id="node4" href="$classtld_1_1TLD.html#afbdde1733ec8944d0ec6224a10881d41" title="Initializes the learning. " alt="" coords="462,71,618,97"/>
+<area shape="rect" id="node5" href="$classtld_1_1TLD.html#a40742c77216ac9b06a4141db6184ac85" title="Learns the tld. " alt="" coords="487,121,593,148"/>
+</map>

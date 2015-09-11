@@ -1,0 +1,269 @@
+\hypertarget{classtld_1_1Config}{\section{tld\-:\-:Config Class Reference}
+\label{classtld_1_1Config}\index{tld\-::\-Config@{tld\-::\-Config}}
+}
+
+
+\hyperlink{classtld_1_1Config}{Config} is used to configure the program by cli and/or by a config file.  
+
+
+
+
+{\ttfamily \#include $<$Config.\-h$>$}
+
+
+
+Collaboration diagram for tld\-:\-:Config\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtld_1_1Config__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtld_1_1Config_a41ed67defe7392fe1ecc3233ad2a7a62}{Config} ()
+\begin{DoxyCompactList}\small\item\em This constructor configures by default. \end{DoxyCompactList}\item 
+\hyperlink{classtld_1_1Config_ade40e6027fbdc054bd5772a5baa898ae}{Config} (\hyperlink{classtld_1_1Settings}{Settings} \&settings)
+\begin{DoxyCompactList}\small\item\em This constructor configures on settings. \end{DoxyCompactList}\item 
+\hyperlink{classtld_1_1Config_a794ffe6627a441e41f22d368a279f2e5}{$\sim$\-Config} ()
+\begin{DoxyCompactList}\small\item\em Empty destructor. \end{DoxyCompactList}\item 
+int \hyperlink{classtld_1_1Config_ab2f2fb863b08832e2b877e6f09073333}{init} (int argc, char $\ast$$\ast$argv)
+\begin{DoxyCompactList}\small\item\em Initializes the \hyperlink{classtld_1_1Config}{Config}. \end{DoxyCompactList}\item 
+int \hyperlink{classtld_1_1Config_a920f1659e8823a127eca60b228da416a}{configure} (\hyperlink{classMain}{Main} $\ast$\hyperlink{QOpenTLD_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main})
+\begin{DoxyCompactList}\small\item\em Configures the Cam\-Node, \hyperlink{structImAcq}{Im\-Acq} and Tld\-Classifier. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlibconfig_1_1Config}{libconfig\-::\-Config} \hyperlink{classtld_1_1Config_af86a3db9ddcd73af323b3f8a1e5c7c0e}{m\-\_\-cfg}
+\begin{DoxyCompactList}\small\item\em libconfig++ \end{DoxyCompactList}\item 
+std\-::string \hyperlink{classtld_1_1Config_a20d627bd78d0dece60cfcbb872daa199}{m\-\_\-config\-Path}
+\begin{DoxyCompactList}\small\item\em path to the config file \end{DoxyCompactList}\item 
+\hyperlink{classtld_1_1Settings}{Settings} \hyperlink{classtld_1_1Config_a0b6892d71d871a35dec2c718696d47bc}{m\-\_\-settings}
+\end{DoxyCompactItemize}
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classtld_1_1Config_ac9b4f0739710476e605e210a5034ec05}{m\-\_\-select\-Manually\-Set}
+\item 
+bool \hyperlink{classtld_1_1Config_a5e9e3986bc7c358b2873dd504e431e76}{m\-\_\-method\-Set}
+\item 
+bool \hyperlink{classtld_1_1Config_ad687474e03c708cb894c22f3fe945c06}{m\-\_\-start\-Frame\-Set}
+\item 
+bool \hyperlink{classtld_1_1Config_af8ca60a6ed0416150c2ff42ce03826f5}{m\-\_\-last\-Frame\-Set}
+\item 
+bool \hyperlink{classtld_1_1Config_a15524b83cfa73659aad6a2113ccd1b61}{m\-\_\-trajectory\-Set}
+\item 
+bool \hyperlink{classtld_1_1Config_aad85246fc8376bc6e3e6b7e21a24a6a0}{m\-\_\-show\-Detections\-Set}
+\item 
+bool \hyperlink{classtld_1_1Config_a120216f53831c7066c0e54c9c1b2bdaf}{m\-\_\-show\-Foreground\-Set}
+\item 
+bool \hyperlink{classtld_1_1Config_afdb22a0de5e6f0a2bda59be3c01db38c}{m\-\_\-theta\-Set}
+\item 
+bool \hyperlink{classtld_1_1Config_aaf7ca6a043ed777f86a3f3554f766b54}{m\-\_\-print\-Results\-Set}
+\item 
+bool \hyperlink{classtld_1_1Config_a02c8e73d04439a88f1c89557b3aae875}{m\-\_\-cam\-No\-Set}
+\item 
+bool \hyperlink{classtld_1_1Config_a7677f68cd2ec4065796424d2386ff294}{m\-\_\-image\-Path\-Set}
+\item 
+bool \hyperlink{classtld_1_1Config_a293320dc272ffbdfac03fa09b3a6cd66}{m\-\_\-model\-Path\-Set}
+\item 
+bool \hyperlink{classtld_1_1Config_a75217fc93a9503fe55e0ed1a172e4380}{m\-\_\-initial\-B\-B\-Set}
+\item 
+bool \hyperlink{classtld_1_1Config_a73f08ef2700b5109fadc8370d81083e0}{m\-\_\-show\-Output\-Set}
+\item 
+bool \hyperlink{classtld_1_1Config_aaca6f6dea56dfb8ad8627c41fd1dd8ed}{m\-\_\-export\-Model\-After\-Run\-Set}
+\end{DoxyCompactItemize}
+
+
+
+\subsection{Detailed Description}
+\hyperlink{classtld_1_1Config}{Config} is used to configure the program by cli and/or by a config file. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classtld_1_1Config_a41ed67defe7392fe1ecc3233ad2a7a62}{\index{tld\-::\-Config@{tld\-::\-Config}!Config@{Config}}
+\index{Config@{Config}!tld::Config@{tld\-::\-Config}}
+\subsubsection[{Config}]{\setlength{\rightskip}{0pt plus 5cm}tld\-::\-Config\-::\-Config (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1Config_a41ed67defe7392fe1ecc3233ad2a7a62}
+
+
+This constructor configures by default. 
+
+\hypertarget{classtld_1_1Config_ade40e6027fbdc054bd5772a5baa898ae}{\index{tld\-::\-Config@{tld\-::\-Config}!Config@{Config}}
+\index{Config@{Config}!tld::Config@{tld\-::\-Config}}
+\subsubsection[{Config}]{\setlength{\rightskip}{0pt plus 5cm}tld\-::\-Config\-::\-Config (
+\begin{DoxyParamCaption}
+\item[{{\bf Settings} \&}]{settings}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1Config_ade40e6027fbdc054bd5772a5baa898ae}
+
+
+This constructor configures on settings. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em settings} & the settings \\
+\hline
+\end{DoxyParams}
+\hypertarget{classtld_1_1Config_a794ffe6627a441e41f22d368a279f2e5}{\index{tld\-::\-Config@{tld\-::\-Config}!$\sim$\-Config@{$\sim$\-Config}}
+\index{$\sim$\-Config@{$\sim$\-Config}!tld::Config@{tld\-::\-Config}}
+\subsubsection[{$\sim$\-Config}]{\setlength{\rightskip}{0pt plus 5cm}tld\-::\-Config\-::$\sim$\-Config (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1Config_a794ffe6627a441e41f22d368a279f2e5}
+
+
+Empty destructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classtld_1_1Config_a920f1659e8823a127eca60b228da416a}{\index{tld\-::\-Config@{tld\-::\-Config}!configure@{configure}}
+\index{configure@{configure}!tld::Config@{tld\-::\-Config}}
+\subsubsection[{configure}]{\setlength{\rightskip}{0pt plus 5cm}int tld\-::\-Config\-::configure (
+\begin{DoxyParamCaption}
+\item[{{\bf Main} $\ast$}]{main}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1Config_a920f1659e8823a127eca60b228da416a}
+
+
+Configures the Cam\-Node, \hyperlink{structImAcq}{Im\-Acq} and Tld\-Classifier. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em main} & the main object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\-U\-C\-C\-E\-S\-S 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{classtld_1_1Config_a920f1659e8823a127eca60b228da416a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classtld_1_1Config_ab2f2fb863b08832e2b877e6f09073333}{\index{tld\-::\-Config@{tld\-::\-Config}!init@{init}}
+\index{init@{init}!tld::Config@{tld\-::\-Config}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}int tld\-::\-Config\-::init (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$$\ast$}]{argv}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1Config_ab2f2fb863b08832e2b877e6f09073333}
+
+
+Initializes the \hyperlink{classtld_1_1Config}{Config}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & number of command line arguments \\
+\hline
+{\em argv} & command line arguments \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+P\-R\-O\-G\-R\-A\-M\-\_\-\-E\-X\-I\-T when an error occurred, S\-U\-C\-C\-E\-S\-S if not 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtld_1_1Config_ab2f2fb863b08832e2b877e6f09073333_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{classtld_1_1Config_ab2f2fb863b08832e2b877e6f09073333_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classtld_1_1Config_a02c8e73d04439a88f1c89557b3aae875}{\index{tld\-::\-Config@{tld\-::\-Config}!m\-\_\-cam\-No\-Set@{m\-\_\-cam\-No\-Set}}
+\index{m\-\_\-cam\-No\-Set@{m\-\_\-cam\-No\-Set}!tld::Config@{tld\-::\-Config}}
+\subsubsection[{m\-\_\-cam\-No\-Set}]{\setlength{\rightskip}{0pt plus 5cm}bool tld\-::\-Config\-::m\-\_\-cam\-No\-Set\hspace{0.3cm}{\ttfamily [private]}}}\label{classtld_1_1Config_a02c8e73d04439a88f1c89557b3aae875}
+\hypertarget{classtld_1_1Config_af86a3db9ddcd73af323b3f8a1e5c7c0e}{\index{tld\-::\-Config@{tld\-::\-Config}!m\-\_\-cfg@{m\-\_\-cfg}}
+\index{m\-\_\-cfg@{m\-\_\-cfg}!tld::Config@{tld\-::\-Config}}
+\subsubsection[{m\-\_\-cfg}]{\setlength{\rightskip}{0pt plus 5cm}{\bf libconfig\-::\-Config} tld\-::\-Config\-::m\-\_\-cfg\hspace{0.3cm}{\ttfamily [private]}}}\label{classtld_1_1Config_af86a3db9ddcd73af323b3f8a1e5c7c0e}
+
+
+libconfig++ 
+
+\hypertarget{classtld_1_1Config_a20d627bd78d0dece60cfcbb872daa199}{\index{tld\-::\-Config@{tld\-::\-Config}!m\-\_\-config\-Path@{m\-\_\-config\-Path}}
+\index{m\-\_\-config\-Path@{m\-\_\-config\-Path}!tld::Config@{tld\-::\-Config}}
+\subsubsection[{m\-\_\-config\-Path}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string tld\-::\-Config\-::m\-\_\-config\-Path\hspace{0.3cm}{\ttfamily [private]}}}\label{classtld_1_1Config_a20d627bd78d0dece60cfcbb872daa199}
+
+
+path to the config file 
+
+\hypertarget{classtld_1_1Config_aaca6f6dea56dfb8ad8627c41fd1dd8ed}{\index{tld\-::\-Config@{tld\-::\-Config}!m\-\_\-export\-Model\-After\-Run\-Set@{m\-\_\-export\-Model\-After\-Run\-Set}}
+\index{m\-\_\-export\-Model\-After\-Run\-Set@{m\-\_\-export\-Model\-After\-Run\-Set}!tld::Config@{tld\-::\-Config}}
+\subsubsection[{m\-\_\-export\-Model\-After\-Run\-Set}]{\setlength{\rightskip}{0pt plus 5cm}bool tld\-::\-Config\-::m\-\_\-export\-Model\-After\-Run\-Set\hspace{0.3cm}{\ttfamily [private]}}}\label{classtld_1_1Config_aaca6f6dea56dfb8ad8627c41fd1dd8ed}
+\hypertarget{classtld_1_1Config_a7677f68cd2ec4065796424d2386ff294}{\index{tld\-::\-Config@{tld\-::\-Config}!m\-\_\-image\-Path\-Set@{m\-\_\-image\-Path\-Set}}
+\index{m\-\_\-image\-Path\-Set@{m\-\_\-image\-Path\-Set}!tld::Config@{tld\-::\-Config}}
+\subsubsection[{m\-\_\-image\-Path\-Set}]{\setlength{\rightskip}{0pt plus 5cm}bool tld\-::\-Config\-::m\-\_\-image\-Path\-Set\hspace{0.3cm}{\ttfamily [private]}}}\label{classtld_1_1Config_a7677f68cd2ec4065796424d2386ff294}
+\hypertarget{classtld_1_1Config_a75217fc93a9503fe55e0ed1a172e4380}{\index{tld\-::\-Config@{tld\-::\-Config}!m\-\_\-initial\-B\-B\-Set@{m\-\_\-initial\-B\-B\-Set}}
+\index{m\-\_\-initial\-B\-B\-Set@{m\-\_\-initial\-B\-B\-Set}!tld::Config@{tld\-::\-Config}}
+\subsubsection[{m\-\_\-initial\-B\-B\-Set}]{\setlength{\rightskip}{0pt plus 5cm}bool tld\-::\-Config\-::m\-\_\-initial\-B\-B\-Set\hspace{0.3cm}{\ttfamily [private]}}}\label{classtld_1_1Config_a75217fc93a9503fe55e0ed1a172e4380}
+\hypertarget{classtld_1_1Config_af8ca60a6ed0416150c2ff42ce03826f5}{\index{tld\-::\-Config@{tld\-::\-Config}!m\-\_\-last\-Frame\-Set@{m\-\_\-last\-Frame\-Set}}
+\index{m\-\_\-last\-Frame\-Set@{m\-\_\-last\-Frame\-Set}!tld::Config@{tld\-::\-Config}}
+\subsubsection[{m\-\_\-last\-Frame\-Set}]{\setlength{\rightskip}{0pt plus 5cm}bool tld\-::\-Config\-::m\-\_\-last\-Frame\-Set\hspace{0.3cm}{\ttfamily [private]}}}\label{classtld_1_1Config_af8ca60a6ed0416150c2ff42ce03826f5}
+\hypertarget{classtld_1_1Config_a5e9e3986bc7c358b2873dd504e431e76}{\index{tld\-::\-Config@{tld\-::\-Config}!m\-\_\-method\-Set@{m\-\_\-method\-Set}}
+\index{m\-\_\-method\-Set@{m\-\_\-method\-Set}!tld::Config@{tld\-::\-Config}}
+\subsubsection[{m\-\_\-method\-Set}]{\setlength{\rightskip}{0pt plus 5cm}bool tld\-::\-Config\-::m\-\_\-method\-Set\hspace{0.3cm}{\ttfamily [private]}}}\label{classtld_1_1Config_a5e9e3986bc7c358b2873dd504e431e76}
+\hypertarget{classtld_1_1Config_a293320dc272ffbdfac03fa09b3a6cd66}{\index{tld\-::\-Config@{tld\-::\-Config}!m\-\_\-model\-Path\-Set@{m\-\_\-model\-Path\-Set}}
+\index{m\-\_\-model\-Path\-Set@{m\-\_\-model\-Path\-Set}!tld::Config@{tld\-::\-Config}}
+\subsubsection[{m\-\_\-model\-Path\-Set}]{\setlength{\rightskip}{0pt plus 5cm}bool tld\-::\-Config\-::m\-\_\-model\-Path\-Set\hspace{0.3cm}{\ttfamily [private]}}}\label{classtld_1_1Config_a293320dc272ffbdfac03fa09b3a6cd66}
+\hypertarget{classtld_1_1Config_aaf7ca6a043ed777f86a3f3554f766b54}{\index{tld\-::\-Config@{tld\-::\-Config}!m\-\_\-print\-Results\-Set@{m\-\_\-print\-Results\-Set}}
+\index{m\-\_\-print\-Results\-Set@{m\-\_\-print\-Results\-Set}!tld::Config@{tld\-::\-Config}}
+\subsubsection[{m\-\_\-print\-Results\-Set}]{\setlength{\rightskip}{0pt plus 5cm}bool tld\-::\-Config\-::m\-\_\-print\-Results\-Set\hspace{0.3cm}{\ttfamily [private]}}}\label{classtld_1_1Config_aaf7ca6a043ed777f86a3f3554f766b54}
+\hypertarget{classtld_1_1Config_ac9b4f0739710476e605e210a5034ec05}{\index{tld\-::\-Config@{tld\-::\-Config}!m\-\_\-select\-Manually\-Set@{m\-\_\-select\-Manually\-Set}}
+\index{m\-\_\-select\-Manually\-Set@{m\-\_\-select\-Manually\-Set}!tld::Config@{tld\-::\-Config}}
+\subsubsection[{m\-\_\-select\-Manually\-Set}]{\setlength{\rightskip}{0pt plus 5cm}bool tld\-::\-Config\-::m\-\_\-select\-Manually\-Set\hspace{0.3cm}{\ttfamily [private]}}}\label{classtld_1_1Config_ac9b4f0739710476e605e210a5034ec05}
+Flags if parameters were set by cli-\/arguments. When the flags are set, the parameters couldn't be overwritten by the options in the config file. The cli-\/arguments have a higher priority than the options in the config file. \hypertarget{classtld_1_1Config_a0b6892d71d871a35dec2c718696d47bc}{\index{tld\-::\-Config@{tld\-::\-Config}!m\-\_\-settings@{m\-\_\-settings}}
+\index{m\-\_\-settings@{m\-\_\-settings}!tld::Config@{tld\-::\-Config}}
+\subsubsection[{m\-\_\-settings}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Settings} tld\-::\-Config\-::m\-\_\-settings\hspace{0.3cm}{\ttfamily [private]}}}\label{classtld_1_1Config_a0b6892d71d871a35dec2c718696d47bc}
+adjusted settings \hypertarget{classtld_1_1Config_aad85246fc8376bc6e3e6b7e21a24a6a0}{\index{tld\-::\-Config@{tld\-::\-Config}!m\-\_\-show\-Detections\-Set@{m\-\_\-show\-Detections\-Set}}
+\index{m\-\_\-show\-Detections\-Set@{m\-\_\-show\-Detections\-Set}!tld::Config@{tld\-::\-Config}}
+\subsubsection[{m\-\_\-show\-Detections\-Set}]{\setlength{\rightskip}{0pt plus 5cm}bool tld\-::\-Config\-::m\-\_\-show\-Detections\-Set\hspace{0.3cm}{\ttfamily [private]}}}\label{classtld_1_1Config_aad85246fc8376bc6e3e6b7e21a24a6a0}
+\hypertarget{classtld_1_1Config_a120216f53831c7066c0e54c9c1b2bdaf}{\index{tld\-::\-Config@{tld\-::\-Config}!m\-\_\-show\-Foreground\-Set@{m\-\_\-show\-Foreground\-Set}}
+\index{m\-\_\-show\-Foreground\-Set@{m\-\_\-show\-Foreground\-Set}!tld::Config@{tld\-::\-Config}}
+\subsubsection[{m\-\_\-show\-Foreground\-Set}]{\setlength{\rightskip}{0pt plus 5cm}bool tld\-::\-Config\-::m\-\_\-show\-Foreground\-Set\hspace{0.3cm}{\ttfamily [private]}}}\label{classtld_1_1Config_a120216f53831c7066c0e54c9c1b2bdaf}
+\hypertarget{classtld_1_1Config_a73f08ef2700b5109fadc8370d81083e0}{\index{tld\-::\-Config@{tld\-::\-Config}!m\-\_\-show\-Output\-Set@{m\-\_\-show\-Output\-Set}}
+\index{m\-\_\-show\-Output\-Set@{m\-\_\-show\-Output\-Set}!tld::Config@{tld\-::\-Config}}
+\subsubsection[{m\-\_\-show\-Output\-Set}]{\setlength{\rightskip}{0pt plus 5cm}bool tld\-::\-Config\-::m\-\_\-show\-Output\-Set\hspace{0.3cm}{\ttfamily [private]}}}\label{classtld_1_1Config_a73f08ef2700b5109fadc8370d81083e0}
+\hypertarget{classtld_1_1Config_ad687474e03c708cb894c22f3fe945c06}{\index{tld\-::\-Config@{tld\-::\-Config}!m\-\_\-start\-Frame\-Set@{m\-\_\-start\-Frame\-Set}}
+\index{m\-\_\-start\-Frame\-Set@{m\-\_\-start\-Frame\-Set}!tld::Config@{tld\-::\-Config}}
+\subsubsection[{m\-\_\-start\-Frame\-Set}]{\setlength{\rightskip}{0pt plus 5cm}bool tld\-::\-Config\-::m\-\_\-start\-Frame\-Set\hspace{0.3cm}{\ttfamily [private]}}}\label{classtld_1_1Config_ad687474e03c708cb894c22f3fe945c06}
+\hypertarget{classtld_1_1Config_afdb22a0de5e6f0a2bda59be3c01db38c}{\index{tld\-::\-Config@{tld\-::\-Config}!m\-\_\-theta\-Set@{m\-\_\-theta\-Set}}
+\index{m\-\_\-theta\-Set@{m\-\_\-theta\-Set}!tld::Config@{tld\-::\-Config}}
+\subsubsection[{m\-\_\-theta\-Set}]{\setlength{\rightskip}{0pt plus 5cm}bool tld\-::\-Config\-::m\-\_\-theta\-Set\hspace{0.3cm}{\ttfamily [private]}}}\label{classtld_1_1Config_afdb22a0de5e6f0a2bda59be3c01db38c}
+\hypertarget{classtld_1_1Config_a15524b83cfa73659aad6a2113ccd1b61}{\index{tld\-::\-Config@{tld\-::\-Config}!m\-\_\-trajectory\-Set@{m\-\_\-trajectory\-Set}}
+\index{m\-\_\-trajectory\-Set@{m\-\_\-trajectory\-Set}!tld::Config@{tld\-::\-Config}}
+\subsubsection[{m\-\_\-trajectory\-Set}]{\setlength{\rightskip}{0pt plus 5cm}bool tld\-::\-Config\-::m\-\_\-trajectory\-Set\hspace{0.3cm}{\ttfamily [private]}}}\label{classtld_1_1Config_a15524b83cfa73659aad6a2113ccd1b61}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/opentld/main/\hyperlink{Config_8h}{Config.\-h}\item 
+src/opentld/main/\hyperlink{Config_8cpp}{Config.\-cpp}\end{DoxyCompactItemize}

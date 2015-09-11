@@ -1,0 +1,82 @@
+\hypertarget{classperf_1_1Regression}{\section{perf\-:\-:Regression Class Reference}
+\label{classperf_1_1Regression}\index{perf\-::\-Regression@{perf\-::\-Regression}}
+}
+
+
+{\ttfamily \#include $<$ts\-\_\-perf.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classperf_1_1Regression}{Regression} \& \hyperlink{classperf_1_1Regression_a99f28b203098fa5fb1fed5f6be8aa7ef}{operator()} (const std\-::string \&\hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name}, cv\-::\-Input\-Array array, double \hyperlink{imgproc__c_8h_aabece9d4af1ab09d2f85ade473757e32}{eps}=D\-B\-L\-\_\-\-E\-P\-S\-I\-L\-O\-N, \hyperlink{namespaceperf_afd1ef30dd7868637f168926100ed2ba8}{E\-R\-R\-O\-R\-\_\-\-T\-Y\-P\-E} err=\hyperlink{namespaceperf_afd1ef30dd7868637f168926100ed2ba8a1f890b566341b120aa632095d9a8259f}{E\-R\-R\-O\-R\-\_\-\-A\-B\-S\-O\-L\-U\-T\-E})
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classperf_1_1Regression}{Regression} \& \hyperlink{classperf_1_1Regression_ac1319e939b68d59c61083584cec3611c}{add} (\hyperlink{classperf_1_1TestBase}{Test\-Base} $\ast$test, const std\-::string \&\hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name}, cv\-::\-Input\-Array array, double \hyperlink{imgproc__c_8h_aabece9d4af1ab09d2f85ade473757e32}{eps}=D\-B\-L\-\_\-\-E\-P\-S\-I\-L\-O\-N, \hyperlink{namespaceperf_afd1ef30dd7868637f168926100ed2ba8}{E\-R\-R\-O\-R\-\_\-\-T\-Y\-P\-E} err=\hyperlink{namespaceperf_afd1ef30dd7868637f168926100ed2ba8a1f890b566341b120aa632095d9a8259f}{E\-R\-R\-O\-R\-\_\-\-A\-B\-S\-O\-L\-U\-T\-E})
+\item 
+static \hyperlink{classperf_1_1Regression}{Regression} \& \hyperlink{classperf_1_1Regression_afdc2eaa5169bd86bb826ad5758b9359b}{add\-Keypoints} (\hyperlink{classperf_1_1TestBase}{Test\-Base} $\ast$test, const std\-::string \&\hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name}, const std\-::vector$<$ cv\-::\-Key\-Point $>$ \&array, double \hyperlink{imgproc__c_8h_aabece9d4af1ab09d2f85ade473757e32}{eps}=D\-B\-L\-\_\-\-E\-P\-S\-I\-L\-O\-N, \hyperlink{namespaceperf_afd1ef30dd7868637f168926100ed2ba8}{E\-R\-R\-O\-R\-\_\-\-T\-Y\-P\-E} err=\hyperlink{namespaceperf_afd1ef30dd7868637f168926100ed2ba8a1f890b566341b120aa632095d9a8259f}{E\-R\-R\-O\-R\-\_\-\-A\-B\-S\-O\-L\-U\-T\-E})
+\item 
+static \hyperlink{classperf_1_1Regression}{Regression} \& \hyperlink{classperf_1_1Regression_a93cd18c06bc63569dc9e3e98356a2db9}{add\-Matches} (\hyperlink{classperf_1_1TestBase}{Test\-Base} $\ast$test, const std\-::string \&\hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name}, const std\-::vector$<$ cv\-::\-D\-Match $>$ \&array, double \hyperlink{imgproc__c_8h_aabece9d4af1ab09d2f85ade473757e32}{eps}=D\-B\-L\-\_\-\-E\-P\-S\-I\-L\-O\-N, \hyperlink{namespaceperf_afd1ef30dd7868637f168926100ed2ba8}{E\-R\-R\-O\-R\-\_\-\-T\-Y\-P\-E} err=\hyperlink{namespaceperf_afd1ef30dd7868637f168926100ed2ba8a1f890b566341b120aa632095d9a8259f}{E\-R\-R\-O\-R\-\_\-\-A\-B\-S\-O\-L\-U\-T\-E})
+\item 
+static \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classperf_1_1Regression_a34d86f52b801bbbfc19bf83bbed267e8}{Init} (const std\-::string \&test\-Suit\-Name, const std\-::string \&ext=\char`\"{}.xml\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classperf_1_1Regression_ac1319e939b68d59c61083584cec3611c}{\index{perf\-::\-Regression@{perf\-::\-Regression}!add@{add}}
+\index{add@{add}!perf::Regression@{perf\-::\-Regression}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Regression}\& perf\-::\-Regression\-::add (
+\begin{DoxyParamCaption}
+\item[{{\bf Test\-Base} $\ast$}]{test, }
+\item[{const std\-::string \&}]{name, }
+\item[{cv\-::\-Input\-Array}]{array, }
+\item[{double}]{eps = {\ttfamily DBL\-\_\-EPSILON}, }
+\item[{{\bf E\-R\-R\-O\-R\-\_\-\-T\-Y\-P\-E}}]{err = {\ttfamily {\bf E\-R\-R\-O\-R\-\_\-\-A\-B\-S\-O\-L\-U\-T\-E}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classperf_1_1Regression_ac1319e939b68d59c61083584cec3611c}
+\hypertarget{classperf_1_1Regression_afdc2eaa5169bd86bb826ad5758b9359b}{\index{perf\-::\-Regression@{perf\-::\-Regression}!add\-Keypoints@{add\-Keypoints}}
+\index{add\-Keypoints@{add\-Keypoints}!perf::Regression@{perf\-::\-Regression}}
+\subsubsection[{add\-Keypoints}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Regression}\& perf\-::\-Regression\-::add\-Keypoints (
+\begin{DoxyParamCaption}
+\item[{{\bf Test\-Base} $\ast$}]{test, }
+\item[{const std\-::string \&}]{name, }
+\item[{const std\-::vector$<$ cv\-::\-Key\-Point $>$ \&}]{array, }
+\item[{double}]{eps = {\ttfamily DBL\-\_\-EPSILON}, }
+\item[{{\bf E\-R\-R\-O\-R\-\_\-\-T\-Y\-P\-E}}]{err = {\ttfamily {\bf E\-R\-R\-O\-R\-\_\-\-A\-B\-S\-O\-L\-U\-T\-E}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classperf_1_1Regression_afdc2eaa5169bd86bb826ad5758b9359b}
+\hypertarget{classperf_1_1Regression_a93cd18c06bc63569dc9e3e98356a2db9}{\index{perf\-::\-Regression@{perf\-::\-Regression}!add\-Matches@{add\-Matches}}
+\index{add\-Matches@{add\-Matches}!perf::Regression@{perf\-::\-Regression}}
+\subsubsection[{add\-Matches}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Regression}\& perf\-::\-Regression\-::add\-Matches (
+\begin{DoxyParamCaption}
+\item[{{\bf Test\-Base} $\ast$}]{test, }
+\item[{const std\-::string \&}]{name, }
+\item[{const std\-::vector$<$ cv\-::\-D\-Match $>$ \&}]{array, }
+\item[{double}]{eps = {\ttfamily DBL\-\_\-EPSILON}, }
+\item[{{\bf E\-R\-R\-O\-R\-\_\-\-T\-Y\-P\-E}}]{err = {\ttfamily {\bf E\-R\-R\-O\-R\-\_\-\-A\-B\-S\-O\-L\-U\-T\-E}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classperf_1_1Regression_a93cd18c06bc63569dc9e3e98356a2db9}
+\hypertarget{classperf_1_1Regression_a34d86f52b801bbbfc19bf83bbed267e8}{\index{perf\-::\-Regression@{perf\-::\-Regression}!Init@{Init}}
+\index{Init@{Init}!perf::Regression@{perf\-::\-Regression}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf void} perf\-::\-Regression\-::\-Init (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{test\-Suit\-Name, }
+\item[{const std\-::string \&}]{ext = {\ttfamily \char`\"{}.xml\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classperf_1_1Regression_a34d86f52b801bbbfc19bf83bbed267e8}
+\hypertarget{classperf_1_1Regression_a99f28b203098fa5fb1fed5f6be8aa7ef}{\index{perf\-::\-Regression@{perf\-::\-Regression}!operator()@{operator()}}
+\index{operator()@{operator()}!perf::Regression@{perf\-::\-Regression}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Regression}\& perf\-::\-Regression\-::operator() (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{name, }
+\item[{cv\-::\-Input\-Array}]{array, }
+\item[{double}]{eps = {\ttfamily DBL\-\_\-EPSILON}, }
+\item[{{\bf E\-R\-R\-O\-R\-\_\-\-T\-Y\-P\-E}}]{err = {\ttfamily {\bf E\-R\-R\-O\-R\-\_\-\-A\-B\-S\-O\-L\-U\-T\-E}}}
+\end{DoxyParamCaption}
+)}}\label{classperf_1_1Regression_a99f28b203098fa5fb1fed5f6be8aa7ef}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/ts/\hyperlink{ts__perf_8hpp}{ts\-\_\-perf.\-hpp}\end{DoxyCompactItemize}

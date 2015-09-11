@@ -1,0 +1,36 @@
+\hypertarget{MovingRegions__oldd_8cpp}{\section{src/opentld/main/\-Moving\-Regions\-\_\-oldd.cpp File Reference}
+\label{MovingRegions__oldd_8cpp}\index{src/opentld/main/\-Moving\-Regions\-\_\-oldd.\-cpp@{src/opentld/main/\-Moving\-Regions\-\_\-oldd.\-cpp}}
+}
+{\ttfamily \#include $<$opencv2/imgproc/imgproc.\-hpp$>$}\\*
+{\ttfamily \#include $<$opencv2/video/tracking.\-hpp$>$}\\*
+{\ttfamily \#include $<$math.\-h$>$}\\*
+{\ttfamily \#include $<$Moving\-Regions.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}Main.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Im\-Acq.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{MovingRegions__oldd_8cpp_aad9cc64d45a76ba0d37c00f8cd9caa37}{T\-R\-A\-C\-E}~printf
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const double \hyperlink{MovingRegions__oldd_8cpp_a3e86d7f1c3a5a888d67e45f1a8b25baf}{M\-O\-T\-I\-O\-N\-\_\-\-T\-H\-R\-E\-S\-H\-O\-L\-D} = 10
+\item 
+const double \hyperlink{MovingRegions__oldd_8cpp_a3762e62e674cd38326224e6599e11a2b}{M\-I\-N\-\_\-\-B\-O\-X\-\_\-\-S\-I\-D\-E} = 15
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{MovingRegions__oldd_8cpp_aad9cc64d45a76ba0d37c00f8cd9caa37}{\index{Moving\-Regions\-\_\-oldd.\-cpp@{Moving\-Regions\-\_\-oldd.\-cpp}!T\-R\-A\-C\-E@{T\-R\-A\-C\-E}}
+\index{T\-R\-A\-C\-E@{T\-R\-A\-C\-E}!MovingRegions_oldd.cpp@{Moving\-Regions\-\_\-oldd.\-cpp}}
+\subsubsection[{T\-R\-A\-C\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-R\-A\-C\-E~printf}}\label{MovingRegions__oldd_8cpp_aad9cc64d45a76ba0d37c00f8cd9caa37}
+
+
+\subsection{Variable Documentation}
+\hypertarget{MovingRegions__oldd_8cpp_a3762e62e674cd38326224e6599e11a2b}{\index{Moving\-Regions\-\_\-oldd.\-cpp@{Moving\-Regions\-\_\-oldd.\-cpp}!M\-I\-N\-\_\-\-B\-O\-X\-\_\-\-S\-I\-D\-E@{M\-I\-N\-\_\-\-B\-O\-X\-\_\-\-S\-I\-D\-E}}
+\index{M\-I\-N\-\_\-\-B\-O\-X\-\_\-\-S\-I\-D\-E@{M\-I\-N\-\_\-\-B\-O\-X\-\_\-\-S\-I\-D\-E}!MovingRegions_oldd.cpp@{Moving\-Regions\-\_\-oldd.\-cpp}}
+\subsubsection[{M\-I\-N\-\_\-\-B\-O\-X\-\_\-\-S\-I\-D\-E}]{\setlength{\rightskip}{0pt plus 5cm}const double M\-I\-N\-\_\-\-B\-O\-X\-\_\-\-S\-I\-D\-E = 15}}\label{MovingRegions__oldd_8cpp_a3762e62e674cd38326224e6599e11a2b}
+\hypertarget{MovingRegions__oldd_8cpp_a3e86d7f1c3a5a888d67e45f1a8b25baf}{\index{Moving\-Regions\-\_\-oldd.\-cpp@{Moving\-Regions\-\_\-oldd.\-cpp}!M\-O\-T\-I\-O\-N\-\_\-\-T\-H\-R\-E\-S\-H\-O\-L\-D@{M\-O\-T\-I\-O\-N\-\_\-\-T\-H\-R\-E\-S\-H\-O\-L\-D}}
+\index{M\-O\-T\-I\-O\-N\-\_\-\-T\-H\-R\-E\-S\-H\-O\-L\-D@{M\-O\-T\-I\-O\-N\-\_\-\-T\-H\-R\-E\-S\-H\-O\-L\-D}!MovingRegions_oldd.cpp@{Moving\-Regions\-\_\-oldd.\-cpp}}
+\subsubsection[{M\-O\-T\-I\-O\-N\-\_\-\-T\-H\-R\-E\-S\-H\-O\-L\-D}]{\setlength{\rightskip}{0pt plus 5cm}const double M\-O\-T\-I\-O\-N\-\_\-\-T\-H\-R\-E\-S\-H\-O\-L\-D = 10}}\label{MovingRegions__oldd_8cpp_a3e86d7f1c3a5a888d67e45f1a8b25baf}

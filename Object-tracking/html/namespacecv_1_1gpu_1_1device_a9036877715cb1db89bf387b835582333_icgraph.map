@@ -1,0 +1,14 @@
+<map id="cv::gpu::device::shfl_down" name="cv::gpu::device::shfl_down">
+<area shape="rect" id="node2" href="$structcv_1_1gpu_1_1device_1_1reduce__detail_1_1For.html#aa4a8db1757215f7e95f081c6ec0dfc74" title="cv::gpu::device::reduce\l_detail::For::mergeShfl" alt="" coords="251,5,410,46"/>
+<area shape="rect" id="node3" href="$namespacecv_1_1gpu_1_1device_1_1reduce__detail.html#a161a9b41c39044b65c1ba8839611a6e4" title="cv::gpu::device::reduce\l_detail::mergeShfl" alt="" coords="251,70,410,111"/>
+<area shape="rect" id="node7" href="$structcv_1_1gpu_1_1device_1_1reduce__key__val__detail_1_1For.html#a9abeac6e76418349b7935d8326cc6d1f" title="cv::gpu::device::reduce\l_key_val_detail::For::\lcopyShfl" alt="" coords="251,135,410,191"/>
+<area shape="rect" id="node8" href="$structcv_1_1gpu_1_1device_1_1reduce__key__val__detail_1_1For.html#a09272157bfd731cbe7e105449380ccfe" title="cv::gpu::device::reduce\l_key_val_detail::For::\lmergeShfl" alt="" coords="251,215,410,271"/>
+<area shape="rect" id="node9" href="$namespacecv_1_1gpu_1_1device_1_1reduce__key__val__detail.html#aed43794ec9cbb892e897b2ea7f650107" title="cv::gpu::device::reduce\l_key_val_detail::copyValsShfl" alt="" coords="232,294,429,335"/>
+<area shape="rect" id="node10" href="$namespacecv_1_1gpu_1_1device_1_1reduce__key__val__detail.html#aaef6abf3d0a904c43b8e28c4a8ca3c70" title="cv::gpu::device::reduce\l_key_val_detail::mergeShfl" alt="" coords="477,323,656,365"/>
+<area shape="rect" id="node4" href="$namespacecv_1_1gpu_1_1device_1_1reduce__detail.html#a65e87aab1cfdbf709ae09e949d52714d" title="cv::gpu::device::reduce\l_detail::mergeShfl" alt="" coords="487,38,646,79"/>
+<area shape="rect" id="node5" href="$structcv_1_1gpu_1_1device_1_1reduce__detail_1_1Unroll.html#aa22f16c42584d64c4f2089ccac393f7d" title="cv::gpu::device::reduce\l_detail::Unroll::loopShfl" alt="" coords="487,103,646,145"/>
+<area shape="rect" id="node6" href="$structcv_1_1gpu_1_1device_1_1reduce__detail_1_1GenericOptimized32.html#a8296b8051da411ba92d067dd3d714775" title="cv::gpu::device::reduce\l_detail::GenericOptimized32\l::reduce" alt="" coords="704,96,891,152"/>
+<area shape="rect" id="node11" href="$namespacecv_1_1gpu_1_1device_1_1reduce__key__val__detail.html#a7631b7354f0f0b05d103227a5c7e55be" title="cv::gpu::device::reduce\l_key_val_detail::mergeShfl" alt="" coords="708,287,887,329"/>
+<area shape="rect" id="node12" href="$structcv_1_1gpu_1_1device_1_1reduce__key__val__detail_1_1Unroll.html#a4b58709ed74d7cd37b467f397197a47e" title="cv::gpu::device::reduce\l_key_val_detail::Unroll\l::loopShfl" alt="" coords="718,352,877,408"/>
+<area shape="rect" id="node13" href="$structcv_1_1gpu_1_1device_1_1reduce__key__val__detail_1_1GenericOptimized32.html#ac61f56ddcc428c76eb2c4f59c0007320" title="cv::gpu::device::reduce\l_key_val_detail::GenericOptimized32\l::reduce" alt="" coords="939,352,1178,408"/>
+</map>

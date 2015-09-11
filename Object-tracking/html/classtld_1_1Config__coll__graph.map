@@ -1,0 +1,8 @@
+<map id="tld::Config" name="tld::Config">
+<area shape="rect" id="node2" href="$classlibconfig_1_1Config.html" title="libconfig::Config" alt="" coords="210,168,325,195"/>
+<area shape="rect" id="node3" href="$structconfig__t.html" title="config_t" alt="" coords="86,5,153,32"/>
+<area shape="rect" id="node4" href="$structconfig__setting__t.html" title="config_setting_t" alt="" coords="5,168,120,195"/>
+<area shape="rect" id="node6" href="$structconfig__list__t.html" title="config_list_t" alt="" coords="86,259,177,285"/>
+<area shape="rect" id="node5" href="$unionconfig__value__t.html" title="config_value_t" alt="" coords="9,349,116,376"/>
+<area shape="rect" id="node7" href="$classtld_1_1Settings.html" title="In this class all settings are stored. " alt="" coords="485,168,576,195"/>
+</map>

@@ -1,0 +1,277 @@
+\hypertarget{classcvflann_1_1AutotunedIndex}{\section{cvflann\-:\-:Autotuned\-Index$<$ Distance $>$ Class Template Reference}
+\label{classcvflann_1_1AutotunedIndex}\index{cvflann\-::\-Autotuned\-Index$<$ Distance $>$@{cvflann\-::\-Autotuned\-Index$<$ Distance $>$}}
+}
+
+
+{\ttfamily \#include $<$autotuned\-\_\-index.\-h$>$}
+
+
+
+Inheritance diagram for cvflann\-:\-:Autotuned\-Index$<$ Distance $>$\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{classcvflann_1_1AutotunedIndex__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for cvflann\-:\-:Autotuned\-Index$<$ Distance $>$\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{classcvflann_1_1AutotunedIndex__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Distance\-::\-Element\-Type \hyperlink{classcvflann_1_1AutotunedIndex_a127e9c73fbe6846733e1d0e5bbab1122}{Element\-Type}
+\item 
+typedef Distance\-::\-Result\-Type \hyperlink{classcvflann_1_1AutotunedIndex_af9e75c21685cbb82c25e5c3a254a9b5e}{Distance\-Type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcvflann_1_1AutotunedIndex_adf5ec7cdf104de8aa4ecb829fe62ccce}{Autotuned\-Index} (const \hyperlink{classcvflann_1_1Matrix}{Matrix}$<$ \hyperlink{classcvflann_1_1AutotunedIndex_a127e9c73fbe6846733e1d0e5bbab1122}{Element\-Type} $>$ \&input\-Data, const \hyperlink{namespacecvflann_a742b4c7076c21012054af74a9ee48289}{Index\-Params} \&\hyperlink{compat_8hpp_a0480a03ecc41b20cde376602531d9270}{params}=\hyperlink{structcvflann_1_1AutotunedIndexParams}{Autotuned\-Index\-Params}(), Distance \hyperlink{legacy_8hpp_a6f364afbe132c4ecfea48bde1b0618ba}{d}=Distance())
+\item 
+\hyperlink{classcvflann_1_1AutotunedIndex_a45866900a6193bf112f73800d14b4057}{Autotuned\-Index} (const \hyperlink{classcvflann_1_1AutotunedIndex}{Autotuned\-Index} \&)
+\item 
+\hyperlink{classcvflann_1_1AutotunedIndex}{Autotuned\-Index} \& \hyperlink{classcvflann_1_1AutotunedIndex_a070b15f0f5903ea73b38cb6b88267cff}{operator=} (const \hyperlink{classcvflann_1_1AutotunedIndex}{Autotuned\-Index} \&)
+\item 
+virtual \hyperlink{classcvflann_1_1AutotunedIndex_a6f51e0e58f135a38d6164622ae165823}{$\sim$\-Autotuned\-Index} ()
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcvflann_1_1AutotunedIndex_adb8d4a52826b8578165dd9dfb1002f3e}{build\-Index} ()
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcvflann_1_1AutotunedIndex_ab9552f173c22040794429231c6a13407}{save\-Index} (F\-I\-L\-E $\ast$stream)
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcvflann_1_1AutotunedIndex_a7ca4483e58da173490a2b2cada34cafe}{load\-Index} (F\-I\-L\-E $\ast$stream)
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcvflann_1_1AutotunedIndex_a9cbf8f750d1f0df4db4c805b96103f3c}{find\-Neighbors} (\hyperlink{classcvflann_1_1ResultSet}{Result\-Set}$<$ \hyperlink{classcvflann_1_1AutotunedIndex_af9e75c21685cbb82c25e5c3a254a9b5e}{Distance\-Type} $>$ \&\hyperlink{legacy_8hpp_a0bb77d54f6769867cfdf389897bd8e43}{result}, const \hyperlink{classcvflann_1_1AutotunedIndex_a127e9c73fbe6846733e1d0e5bbab1122}{Element\-Type} $\ast$vec, const \hyperlink{structcvflann_1_1SearchParams}{Search\-Params} \&search\-Params)
+\item 
+\hyperlink{namespacecvflann_a742b4c7076c21012054af74a9ee48289}{Index\-Params} \hyperlink{classcvflann_1_1AutotunedIndex_a026442092c6d822042c325dd1da4e3f4}{get\-Parameters} () const 
+\item 
+\hyperlink{structcvflann_1_1SearchParams}{Search\-Params} \hyperlink{classcvflann_1_1AutotunedIndex_a9126bbdaee0a4ace0c843ac238919e79}{get\-Search\-Parameters} () const 
+\item 
+float \hyperlink{classcvflann_1_1AutotunedIndex_aab6f87953c3045bdb23d30b479c30a91}{get\-Speedup} () const 
+\item 
+virtual size\-\_\-t \hyperlink{classcvflann_1_1AutotunedIndex_ace7b8a8b15394241ffde821ec034cc7f}{size} () const 
+\item 
+virtual size\-\_\-t \hyperlink{classcvflann_1_1AutotunedIndex_aad8c5c2a8c18c86752840d7e1ff95cdc}{veclen} () const 
+\item 
+virtual int \hyperlink{classcvflann_1_1AutotunedIndex_ae1b1a921b5b7e278b15b33ebd215d1cb}{used\-Memory} () const 
+\item 
+virtual \hyperlink{namespacecvflann_a4e3e6c98d774ea77fd7f0045c9bc7817}{flann\-\_\-algorithm\-\_\-t} \hyperlink{classcvflann_1_1AutotunedIndex_a87c161d647b564a15a2f18b3295ce6be}{get\-Type} () const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classcvflann_1_1AutotunedIndex_af9e75c21685cbb82c25e5c3a254a9b5e}{\index{cvflann\-::\-Autotuned\-Index@{cvflann\-::\-Autotuned\-Index}!Distance\-Type@{Distance\-Type}}
+\index{Distance\-Type@{Distance\-Type}!cvflann::AutotunedIndex@{cvflann\-::\-Autotuned\-Index}}
+\subsubsection[{Distance\-Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ typedef Distance\-::\-Result\-Type {\bf cvflann\-::\-Autotuned\-Index}$<$ Distance $>$\-::{\bf Distance\-Type}}}\label{classcvflann_1_1AutotunedIndex_af9e75c21685cbb82c25e5c3a254a9b5e}
+\hypertarget{classcvflann_1_1AutotunedIndex_a127e9c73fbe6846733e1d0e5bbab1122}{\index{cvflann\-::\-Autotuned\-Index@{cvflann\-::\-Autotuned\-Index}!Element\-Type@{Element\-Type}}
+\index{Element\-Type@{Element\-Type}!cvflann::AutotunedIndex@{cvflann\-::\-Autotuned\-Index}}
+\subsubsection[{Element\-Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ typedef Distance\-::\-Element\-Type {\bf cvflann\-::\-Autotuned\-Index}$<$ Distance $>$\-::{\bf Element\-Type}}}\label{classcvflann_1_1AutotunedIndex_a127e9c73fbe6846733e1d0e5bbab1122}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcvflann_1_1AutotunedIndex_adf5ec7cdf104de8aa4ecb829fe62ccce}{\index{cvflann\-::\-Autotuned\-Index@{cvflann\-::\-Autotuned\-Index}!Autotuned\-Index@{Autotuned\-Index}}
+\index{Autotuned\-Index@{Autotuned\-Index}!cvflann::AutotunedIndex@{cvflann\-::\-Autotuned\-Index}}
+\subsubsection[{Autotuned\-Index}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ {\bf cvflann\-::\-Autotuned\-Index}$<$ Distance $>$\-::{\bf Autotuned\-Index} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ {\bf Element\-Type} $>$ \&}]{input\-Data, }
+\item[{const {\bf Index\-Params} \&}]{params = {\ttfamily {\bf Autotuned\-Index\-Params}()}, }
+\item[{Distance}]{d = {\ttfamily Distance()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcvflann_1_1AutotunedIndex_adf5ec7cdf104de8aa4ecb829fe62ccce}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{classcvflann_1_1AutotunedIndex_adf5ec7cdf104de8aa4ecb829fe62ccce_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcvflann_1_1AutotunedIndex_a45866900a6193bf112f73800d14b4057}{\index{cvflann\-::\-Autotuned\-Index@{cvflann\-::\-Autotuned\-Index}!Autotuned\-Index@{Autotuned\-Index}}
+\index{Autotuned\-Index@{Autotuned\-Index}!cvflann::AutotunedIndex@{cvflann\-::\-Autotuned\-Index}}
+\subsubsection[{Autotuned\-Index}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ {\bf cvflann\-::\-Autotuned\-Index}$<$ Distance $>$\-::{\bf Autotuned\-Index} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Autotuned\-Index}$<$ Distance $>$ \&}]{}
+\end{DoxyParamCaption}
+)}}\label{classcvflann_1_1AutotunedIndex_a45866900a6193bf112f73800d14b4057}
+\hypertarget{classcvflann_1_1AutotunedIndex_a6f51e0e58f135a38d6164622ae165823}{\index{cvflann\-::\-Autotuned\-Index@{cvflann\-::\-Autotuned\-Index}!$\sim$\-Autotuned\-Index@{$\sim$\-Autotuned\-Index}}
+\index{$\sim$\-Autotuned\-Index@{$\sim$\-Autotuned\-Index}!cvflann::AutotunedIndex@{cvflann\-::\-Autotuned\-Index}}
+\subsubsection[{$\sim$\-Autotuned\-Index}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ virtual {\bf cvflann\-::\-Autotuned\-Index}$<$ Distance $>$\-::$\sim${\bf Autotuned\-Index} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1AutotunedIndex_a6f51e0e58f135a38d6164622ae165823}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcvflann_1_1AutotunedIndex_adb8d4a52826b8578165dd9dfb1002f3e}{\index{cvflann\-::\-Autotuned\-Index@{cvflann\-::\-Autotuned\-Index}!build\-Index@{build\-Index}}
+\index{build\-Index@{build\-Index}!cvflann::AutotunedIndex@{cvflann\-::\-Autotuned\-Index}}
+\subsubsection[{build\-Index}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ virtual {\bf void} {\bf cvflann\-::\-Autotuned\-Index}$<$ Distance $>$\-::build\-Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1AutotunedIndex_adb8d4a52826b8578165dd9dfb1002f3e}
+Method responsible with building the index. 
+
+Implements \hyperlink{classcvflann_1_1NNIndex_aaa8811509bb2f30e91570cefe4dc71e2}{cvflann\-::\-N\-N\-Index$<$ Distance $>$}.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{classcvflann_1_1AutotunedIndex_adb8d4a52826b8578165dd9dfb1002f3e_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcvflann_1_1AutotunedIndex_a9cbf8f750d1f0df4db4c805b96103f3c}{\index{cvflann\-::\-Autotuned\-Index@{cvflann\-::\-Autotuned\-Index}!find\-Neighbors@{find\-Neighbors}}
+\index{find\-Neighbors@{find\-Neighbors}!cvflann::AutotunedIndex@{cvflann\-::\-Autotuned\-Index}}
+\subsubsection[{find\-Neighbors}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ virtual {\bf void} {\bf cvflann\-::\-Autotuned\-Index}$<$ Distance $>$\-::find\-Neighbors (
+\begin{DoxyParamCaption}
+\item[{{\bf Result\-Set}$<$ {\bf Distance\-Type} $>$ \&}]{result, }
+\item[{const {\bf Element\-Type} $\ast$}]{vec, }
+\item[{const {\bf Search\-Params} \&}]{search\-Params}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1AutotunedIndex_a9cbf8f750d1f0df4db4c805b96103f3c}
+Method that searches for nearest-\/neighbors 
+
+Implements \hyperlink{classcvflann_1_1NNIndex_ac038c51dc941c7c1a55b08c17e213e41}{cvflann\-::\-N\-N\-Index$<$ Distance $>$}.
+
+\hypertarget{classcvflann_1_1AutotunedIndex_a026442092c6d822042c325dd1da4e3f4}{\index{cvflann\-::\-Autotuned\-Index@{cvflann\-::\-Autotuned\-Index}!get\-Parameters@{get\-Parameters}}
+\index{get\-Parameters@{get\-Parameters}!cvflann::AutotunedIndex@{cvflann\-::\-Autotuned\-Index}}
+\subsubsection[{get\-Parameters}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ {\bf Index\-Params} {\bf cvflann\-::\-Autotuned\-Index}$<$ Distance $>$\-::get\-Parameters (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1AutotunedIndex_a026442092c6d822042c325dd1da4e3f4}
+\begin{DoxyReturn}{Returns}
+The index parameters 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classcvflann_1_1NNIndex_afbc22ebf77f4f376d9e7922727d0abfe}{cvflann\-::\-N\-N\-Index$<$ Distance $>$}.
+
+\hypertarget{classcvflann_1_1AutotunedIndex_a9126bbdaee0a4ace0c843ac238919e79}{\index{cvflann\-::\-Autotuned\-Index@{cvflann\-::\-Autotuned\-Index}!get\-Search\-Parameters@{get\-Search\-Parameters}}
+\index{get\-Search\-Parameters@{get\-Search\-Parameters}!cvflann::AutotunedIndex@{cvflann\-::\-Autotuned\-Index}}
+\subsubsection[{get\-Search\-Parameters}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ {\bf Search\-Params} {\bf cvflann\-::\-Autotuned\-Index}$<$ Distance $>$\-::get\-Search\-Parameters (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcvflann_1_1AutotunedIndex_a9126bbdaee0a4ace0c843ac238919e79}
+\hypertarget{classcvflann_1_1AutotunedIndex_aab6f87953c3045bdb23d30b479c30a91}{\index{cvflann\-::\-Autotuned\-Index@{cvflann\-::\-Autotuned\-Index}!get\-Speedup@{get\-Speedup}}
+\index{get\-Speedup@{get\-Speedup}!cvflann::AutotunedIndex@{cvflann\-::\-Autotuned\-Index}}
+\subsubsection[{get\-Speedup}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ float {\bf cvflann\-::\-Autotuned\-Index}$<$ Distance $>$\-::get\-Speedup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcvflann_1_1AutotunedIndex_aab6f87953c3045bdb23d30b479c30a91}
+\hypertarget{classcvflann_1_1AutotunedIndex_a87c161d647b564a15a2f18b3295ce6be}{\index{cvflann\-::\-Autotuned\-Index@{cvflann\-::\-Autotuned\-Index}!get\-Type@{get\-Type}}
+\index{get\-Type@{get\-Type}!cvflann::AutotunedIndex@{cvflann\-::\-Autotuned\-Index}}
+\subsubsection[{get\-Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ virtual {\bf flann\-\_\-algorithm\-\_\-t} {\bf cvflann\-::\-Autotuned\-Index}$<$ Distance $>$\-::get\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1AutotunedIndex_a87c161d647b564a15a2f18b3295ce6be}
+Algorithm name 
+
+Implements \hyperlink{classcvflann_1_1NNIndex_ac40469dbc16bcb0fb4b0c9912c5f8acb}{cvflann\-::\-N\-N\-Index$<$ Distance $>$}.
+
+\hypertarget{classcvflann_1_1AutotunedIndex_a7ca4483e58da173490a2b2cada34cafe}{\index{cvflann\-::\-Autotuned\-Index@{cvflann\-::\-Autotuned\-Index}!load\-Index@{load\-Index}}
+\index{load\-Index@{load\-Index}!cvflann::AutotunedIndex@{cvflann\-::\-Autotuned\-Index}}
+\subsubsection[{load\-Index}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ virtual {\bf void} {\bf cvflann\-::\-Autotuned\-Index}$<$ Distance $>$\-::load\-Index (
+\begin{DoxyParamCaption}
+\item[{F\-I\-L\-E $\ast$}]{stream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1AutotunedIndex_a7ca4483e58da173490a2b2cada34cafe}
+Loads the index from a stream 
+
+Implements \hyperlink{classcvflann_1_1NNIndex_a4bcaf48ee2ac65a1b3cebea99d021611}{cvflann\-::\-N\-N\-Index$<$ Distance $>$}.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{classcvflann_1_1AutotunedIndex_a7ca4483e58da173490a2b2cada34cafe_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcvflann_1_1AutotunedIndex_a070b15f0f5903ea73b38cb6b88267cff}{\index{cvflann\-::\-Autotuned\-Index@{cvflann\-::\-Autotuned\-Index}!operator=@{operator=}}
+\index{operator=@{operator=}!cvflann::AutotunedIndex@{cvflann\-::\-Autotuned\-Index}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ {\bf Autotuned\-Index}\& {\bf cvflann\-::\-Autotuned\-Index}$<$ Distance $>$\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Autotuned\-Index}$<$ Distance $>$ \&}]{}
+\end{DoxyParamCaption}
+)}}\label{classcvflann_1_1AutotunedIndex_a070b15f0f5903ea73b38cb6b88267cff}
+\hypertarget{classcvflann_1_1AutotunedIndex_ab9552f173c22040794429231c6a13407}{\index{cvflann\-::\-Autotuned\-Index@{cvflann\-::\-Autotuned\-Index}!save\-Index@{save\-Index}}
+\index{save\-Index@{save\-Index}!cvflann::AutotunedIndex@{cvflann\-::\-Autotuned\-Index}}
+\subsubsection[{save\-Index}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ virtual {\bf void} {\bf cvflann\-::\-Autotuned\-Index}$<$ Distance $>$\-::save\-Index (
+\begin{DoxyParamCaption}
+\item[{F\-I\-L\-E $\ast$}]{stream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1AutotunedIndex_ab9552f173c22040794429231c6a13407}
+Saves the index to a stream 
+
+Implements \hyperlink{classcvflann_1_1NNIndex_aad5c63116e3dbeccc96de7c70f0a8db7}{cvflann\-::\-N\-N\-Index$<$ Distance $>$}.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{classcvflann_1_1AutotunedIndex_ab9552f173c22040794429231c6a13407_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcvflann_1_1AutotunedIndex_ace7b8a8b15394241ffde821ec034cc7f}{\index{cvflann\-::\-Autotuned\-Index@{cvflann\-::\-Autotuned\-Index}!size@{size}}
+\index{size@{size}!cvflann::AutotunedIndex@{cvflann\-::\-Autotuned\-Index}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ virtual size\-\_\-t {\bf cvflann\-::\-Autotuned\-Index}$<$ Distance $>$\-::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1AutotunedIndex_ace7b8a8b15394241ffde821ec034cc7f}
+Number of features in this index. 
+
+Implements \hyperlink{classcvflann_1_1NNIndex_ae75fd979d25a239b4aba751114493fe0}{cvflann\-::\-N\-N\-Index$<$ Distance $>$}.
+
+\hypertarget{classcvflann_1_1AutotunedIndex_ae1b1a921b5b7e278b15b33ebd215d1cb}{\index{cvflann\-::\-Autotuned\-Index@{cvflann\-::\-Autotuned\-Index}!used\-Memory@{used\-Memory}}
+\index{used\-Memory@{used\-Memory}!cvflann::AutotunedIndex@{cvflann\-::\-Autotuned\-Index}}
+\subsubsection[{used\-Memory}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ virtual int {\bf cvflann\-::\-Autotuned\-Index}$<$ Distance $>$\-::used\-Memory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1AutotunedIndex_ae1b1a921b5b7e278b15b33ebd215d1cb}
+The amount of memory (in bytes) this index uses. 
+
+Implements \hyperlink{classcvflann_1_1NNIndex_ac172cb3774f8ae39ff1107bee4fadbf9}{cvflann\-::\-N\-N\-Index$<$ Distance $>$}.
+
+\hypertarget{classcvflann_1_1AutotunedIndex_aad8c5c2a8c18c86752840d7e1ff95cdc}{\index{cvflann\-::\-Autotuned\-Index@{cvflann\-::\-Autotuned\-Index}!veclen@{veclen}}
+\index{veclen@{veclen}!cvflann::AutotunedIndex@{cvflann\-::\-Autotuned\-Index}}
+\subsubsection[{veclen}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ virtual size\-\_\-t {\bf cvflann\-::\-Autotuned\-Index}$<$ Distance $>$\-::veclen (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1AutotunedIndex_aad8c5c2a8c18c86752840d7e1ff95cdc}
+The length of each vector in this index. 
+
+Implements \hyperlink{classcvflann_1_1NNIndex_acdcc255d1b67d5636a0f76b68809e6be}{cvflann\-::\-N\-N\-Index$<$ Distance $>$}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/flann/\hyperlink{autotuned__index_8h}{autotuned\-\_\-index.\-h}\end{DoxyCompactItemize}

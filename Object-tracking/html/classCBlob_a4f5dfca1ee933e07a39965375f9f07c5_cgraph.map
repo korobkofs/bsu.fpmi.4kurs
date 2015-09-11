@@ -1,0 +1,5 @@
+<map id="CBlob::Moment" name="CBlob::Moment">
+<area shape="rect" id="node2" href="$classCBlobContour.html#a301727633680b38714302593945b748f" title="Get contour moment (p,q up to MAX_CALCULATED_MOMENTS) " alt="" coords="169,35,349,61"/>
+<area shape="rect" id="node3" href="$classCBlobContour.html#af4e715a94924d5dc1a0e67cf75818bb5" title="CBlobContour::IsEmpty" alt="" coords="406,5,567,32"/>
+<area shape="rect" id="node4" href="$classCBlobContour.html#a245d5e59180619aa9ae4ec14acc18744" title="Return all contour points. " alt="" coords="397,57,576,98"/>
+</map>

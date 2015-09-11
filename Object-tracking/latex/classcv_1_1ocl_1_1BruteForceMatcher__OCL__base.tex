@@ -1,0 +1,447 @@
+\hypertarget{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base}{\section{cv\-:\-:ocl\-:\-:Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base Class Reference}
+\label{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base}\index{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}}
+}
+
+
+{\ttfamily \#include $<$ocl.\-hpp$>$}
+
+
+
+Inheritance diagram for cv\-:\-:ocl\-:\-:Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a138bb23658e4007b7bb3c0f294075e68}{Dist\-Type} \{ \hyperlink{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a138bb23658e4007b7bb3c0f294075e68ae44fa0b7a196ce3e007c059ab182a9bf}{L1\-Dist} = 0, 
+\hyperlink{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a138bb23658e4007b7bb3c0f294075e68a72ee9970d2cadd04468a41459aece56e}{L2\-Dist}, 
+\hyperlink{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a138bb23658e4007b7bb3c0f294075e68ab5d3cbb0b1f2f5d3a196658e2eac4e2b}{Hamming\-Dist}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a2b787265970bd80836f9dd15249f7aa1}{Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base} (\hyperlink{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a138bb23658e4007b7bb3c0f294075e68}{Dist\-Type} \hyperlink{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a5f9e04f63994ff96aa4a6b17b11f6f8c}{dist\-Type}=\hyperlink{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a138bb23658e4007b7bb3c0f294075e68a72ee9970d2cadd04468a41459aece56e}{L2\-Dist})
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_aa5bbacdf86b8576c0b303a47a2e75a70}{add} (const std\-::vector$<$ \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} $>$ \&desc\-Collection)
+\item 
+const std\-::vector$<$ \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} $>$ \& \hyperlink{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a30e3c67a532cc63fb820533e0c4ec4d0}{get\-Train\-Descriptors} () const 
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a967d2d54b84fca4eb0ecad39670ed3ca}{clear} ()
+\item 
+bool \hyperlink{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_aa0fb9ba146269213084c200e815d200d}{empty} () const 
+\item 
+bool \hyperlink{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_aa0a356448e14ba2370fc616624d8418a}{is\-Mask\-Supported} () const 
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_aa4fcdb9ce44d9b021ce4582489e3fa1a}{match\-Single} (const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&query, const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&train, \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&train\-Idx, \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&distance, const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}=\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat}())
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_ae5966aaa82666edef2aaa842aa8cb8a4}{match} (const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&query, const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&train, std\-::vector$<$ D\-Match $>$ \&matches, const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}=\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat}())
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a7093dd7a7518585fca7058cdd812d347}{make\-Gpu\-Collection} (\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&train\-Collection, \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&mask\-Collection, const std\-::vector$<$ \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} $>$ \&masks=std\-::vector$<$ \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} $>$())
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_ad203d9c1a6c759596ee835373e9e4296}{match\-Collection} (const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&query, const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&train\-Collection, \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&train\-Idx, \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&img\-Idx, \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&distance, const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&masks=\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat}())
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a8a42378671aff0139207cfff72022151}{match} (const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&query, std\-::vector$<$ D\-Match $>$ \&matches, const std\-::vector$<$ \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} $>$ \&masks=std\-::vector$<$ \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} $>$())
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a41167c939c05786ec559c14ef45f2814}{knn\-Match\-Single} (const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&query, const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&train, \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&train\-Idx, \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&distance, \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&all\-Dist, int \hyperlink{legacy_8hpp_a7be9b6436e5ea72ff5d5a66779b4bd38}{k}, const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}=\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat}())
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a75df85ed9c69e745e20188f6eca4f27d}{knn\-Match} (const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&query, const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&train, std\-::vector$<$ std\-::vector$<$ D\-Match $>$ $>$ \&matches, int \hyperlink{legacy_8hpp_a7be9b6436e5ea72ff5d5a66779b4bd38}{k}, const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}=\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat}(), bool compact\-Result=false)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_abc0dbe82b0937d9aefe0009e72c1221f}{knn\-Match2\-Collection} (const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&query, const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&train\-Collection, \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&train\-Idx, \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&img\-Idx, \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&distance, const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&mask\-Collection=\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat}())
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_ad9c01b9e6fa097194b882a359d359c29}{knn\-Match} (const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&query, std\-::vector$<$ std\-::vector$<$ D\-Match $>$ $>$ \&matches, int \hyperlink{legacy_8hpp_a7be9b6436e5ea72ff5d5a66779b4bd38}{k}, const std\-::vector$<$ \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} $>$ \&masks=std\-::vector$<$ \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} $>$(), bool compact\-Result=false)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_ab10fba086aeae3a04d6fa4dd5663ff7f}{radius\-Match\-Single} (const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&query, const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&train, \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&train\-Idx, \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&distance, \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&n\-Matches, float max\-Distance, const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}=\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat}())
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a33241541cdc10d736ff4e9b80b6d59e8}{radius\-Match} (const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&query, const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&train, std\-::vector$<$ std\-::vector$<$ D\-Match $>$ $>$ \&matches, float max\-Distance, const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}=\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat}(), bool compact\-Result=false)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a7f469948ba5afa5b039d8c1998e02ea4}{radius\-Match\-Collection} (const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&query, \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&train\-Idx, \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&img\-Idx, \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&distance, \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&n\-Matches, float max\-Distance, const std\-::vector$<$ \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} $>$ \&masks=std\-::vector$<$ \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} $>$())
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_aba5ff7d6c54310d241452f4cc96af40a}{radius\-Match} (const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&query, std\-::vector$<$ std\-::vector$<$ D\-Match $>$ $>$ \&matches, float max\-Distance, const std\-::vector$<$ \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} $>$ \&masks=std\-::vector$<$ \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} $>$(), bool compact\-Result=false)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_af70393abadc1bf8c3f3857050e79f531}{match\-Download} (const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&train\-Idx, const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&distance, std\-::vector$<$ D\-Match $>$ \&matches)
+\item 
+static \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a0b140f6266bcfd8279db5a01f7fc2d57}{match\-Convert} (const Mat \&train\-Idx, const Mat \&distance, std\-::vector$<$ D\-Match $>$ \&matches)
+\item 
+static \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_af50434a072371e695988aa63eb7d70ee}{match\-Download} (const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&train\-Idx, const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&img\-Idx, const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&distance, std\-::vector$<$ D\-Match $>$ \&matches)
+\item 
+static \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a007afa9401fcceacea7b07124383fc18}{match\-Convert} (const Mat \&train\-Idx, const Mat \&img\-Idx, const Mat \&distance, std\-::vector$<$ D\-Match $>$ \&matches)
+\item 
+static \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_abe09dce6c71a724c10ef9b8c36d6e16f}{knn\-Match\-Download} (const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&train\-Idx, const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&distance, std\-::vector$<$ std\-::vector$<$ D\-Match $>$ $>$ \&matches, bool compact\-Result=false)
+\item 
+static \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a1462555aace96452d9b8fbb0831f004f}{knn\-Match\-Convert} (const Mat \&train\-Idx, const Mat \&distance, std\-::vector$<$ std\-::vector$<$ D\-Match $>$ $>$ \&matches, bool compact\-Result=false)
+\item 
+static \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a23a31c03c91aa42abb3bf1b64a834ea3}{knn\-Match2\-Download} (const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&train\-Idx, const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&img\-Idx, const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&distance, std\-::vector$<$ std\-::vector$<$ D\-Match $>$ $>$ \&matches, bool compact\-Result=false)
+\item 
+static \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a9cb7ae54393d803349bbc37f6f0131aa}{knn\-Match2\-Convert} (const Mat \&train\-Idx, const Mat \&img\-Idx, const Mat \&distance, std\-::vector$<$ std\-::vector$<$ D\-Match $>$ $>$ \&matches, bool compact\-Result=false)
+\item 
+static \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_ae0504c1717abce957cbcd18ded6a56b7}{radius\-Match\-Download} (const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&train\-Idx, const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&distance, const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&n\-Matches, std\-::vector$<$ std\-::vector$<$ D\-Match $>$ $>$ \&matches, bool compact\-Result=false)
+\item 
+static \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a1e2186cf894984ac2062aba44603ce67}{radius\-Match\-Convert} (const Mat \&train\-Idx, const Mat \&distance, const Mat \&n\-Matches, std\-::vector$<$ std\-::vector$<$ D\-Match $>$ $>$ \&matches, bool compact\-Result=false)
+\item 
+static \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_aa5dec2e6ed73f5afc684206532ca8831}{radius\-Match\-Download} (const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&train\-Idx, const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&img\-Idx, const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&distance, const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&n\-Matches, std\-::vector$<$ std\-::vector$<$ D\-Match $>$ $>$ \&matches, bool compact\-Result=false)
+\item 
+static \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a0efd3f02741641c94739ef41b63b2fcb}{radius\-Match\-Convert} (const Mat \&train\-Idx, const Mat \&img\-Idx, const Mat \&distance, const Mat \&n\-Matches, std\-::vector$<$ std\-::vector$<$ D\-Match $>$ $>$ \&matches, bool compact\-Result=false)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a138bb23658e4007b7bb3c0f294075e68}{Dist\-Type} \hyperlink{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a5f9e04f63994ff96aa4a6b17b11f6f8c}{dist\-Type}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a138bb23658e4007b7bb3c0f294075e68}{\index{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}!Dist\-Type@{Dist\-Type}}
+\index{Dist\-Type@{Dist\-Type}!cv::ocl::BruteForceMatcher_OCL_base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}}
+\subsubsection[{Dist\-Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base\-::\-Dist\-Type}}}\label{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a138bb23658e4007b7bb3c0f294075e68}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{L1\-Dist@{L1\-Dist}!cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}}\index{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}!L1\-Dist@{L1\-Dist}}\item[{\em 
+\hypertarget{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a138bb23658e4007b7bb3c0f294075e68ae44fa0b7a196ce3e007c059ab182a9bf}{L1\-Dist}\label{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a138bb23658e4007b7bb3c0f294075e68ae44fa0b7a196ce3e007c059ab182a9bf}
+}]\index{L2\-Dist@{L2\-Dist}!cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}}\index{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}!L2\-Dist@{L2\-Dist}}\item[{\em 
+\hypertarget{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a138bb23658e4007b7bb3c0f294075e68a72ee9970d2cadd04468a41459aece56e}{L2\-Dist}\label{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a138bb23658e4007b7bb3c0f294075e68a72ee9970d2cadd04468a41459aece56e}
+}]\index{Hamming\-Dist@{Hamming\-Dist}!cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}}\index{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}!Hamming\-Dist@{Hamming\-Dist}}\item[{\em 
+\hypertarget{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a138bb23658e4007b7bb3c0f294075e68ab5d3cbb0b1f2f5d3a196658e2eac4e2b}{Hamming\-Dist}\label{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a138bb23658e4007b7bb3c0f294075e68ab5d3cbb0b1f2f5d3a196658e2eac4e2b}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a2b787265970bd80836f9dd15249f7aa1}{\index{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}!Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base@{Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}}
+\index{Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base@{Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}!cv::ocl::BruteForceMatcher_OCL_base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}}
+\subsubsection[{Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base (
+\begin{DoxyParamCaption}
+\item[{{\bf Dist\-Type}}]{dist\-Type = {\ttfamily {\bf L2\-Dist}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a2b787265970bd80836f9dd15249f7aa1}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_aa5bbacdf86b8576c0b303a47a2e75a70}{\index{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}!add@{add}}
+\index{add@{add}!cv::ocl::BruteForceMatcher_OCL_base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base\-::add (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ {\bf ocl\-Mat} $>$ \&}]{desc\-Collection}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_aa5bbacdf86b8576c0b303a47a2e75a70}
+\hypertarget{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a967d2d54b84fca4eb0ecad39670ed3ca}{\index{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}!clear@{clear}}
+\index{clear@{clear}!cv::ocl::BruteForceMatcher_OCL_base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base\-::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a967d2d54b84fca4eb0ecad39670ed3ca}
+\hypertarget{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_aa0fb9ba146269213084c200e815d200d}{\index{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}!empty@{empty}}
+\index{empty@{empty}!cv::ocl::BruteForceMatcher_OCL_base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}}
+\subsubsection[{empty}]{\setlength{\rightskip}{0pt plus 5cm}bool cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base\-::empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_aa0fb9ba146269213084c200e815d200d}
+\hypertarget{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a30e3c67a532cc63fb820533e0c4ec4d0}{\index{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}!get\-Train\-Descriptors@{get\-Train\-Descriptors}}
+\index{get\-Train\-Descriptors@{get\-Train\-Descriptors}!cv::ocl::BruteForceMatcher_OCL_base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}}
+\subsubsection[{get\-Train\-Descriptors}]{\setlength{\rightskip}{0pt plus 5cm}const std\-::vector$<${\bf ocl\-Mat}$>$\& cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base\-::get\-Train\-Descriptors (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a30e3c67a532cc63fb820533e0c4ec4d0}
+\hypertarget{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_aa0a356448e14ba2370fc616624d8418a}{\index{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}!is\-Mask\-Supported@{is\-Mask\-Supported}}
+\index{is\-Mask\-Supported@{is\-Mask\-Supported}!cv::ocl::BruteForceMatcher_OCL_base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}}
+\subsubsection[{is\-Mask\-Supported}]{\setlength{\rightskip}{0pt plus 5cm}bool cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base\-::is\-Mask\-Supported (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_aa0a356448e14ba2370fc616624d8418a}
+\hypertarget{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a75df85ed9c69e745e20188f6eca4f27d}{\index{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}!knn\-Match@{knn\-Match}}
+\index{knn\-Match@{knn\-Match}!cv::ocl::BruteForceMatcher_OCL_base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}}
+\subsubsection[{knn\-Match}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base\-::knn\-Match (
+\begin{DoxyParamCaption}
+\item[{const {\bf ocl\-Mat} \&}]{query, }
+\item[{const {\bf ocl\-Mat} \&}]{train, }
+\item[{std\-::vector$<$ std\-::vector$<$ D\-Match $>$ $>$ \&}]{matches, }
+\item[{int}]{k, }
+\item[{const {\bf ocl\-Mat} \&}]{mask = {\ttfamily {\bf ocl\-Mat}()}, }
+\item[{bool}]{compact\-Result = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a75df85ed9c69e745e20188f6eca4f27d}
+\hypertarget{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_ad9c01b9e6fa097194b882a359d359c29}{\index{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}!knn\-Match@{knn\-Match}}
+\index{knn\-Match@{knn\-Match}!cv::ocl::BruteForceMatcher_OCL_base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}}
+\subsubsection[{knn\-Match}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base\-::knn\-Match (
+\begin{DoxyParamCaption}
+\item[{const {\bf ocl\-Mat} \&}]{query, }
+\item[{std\-::vector$<$ std\-::vector$<$ D\-Match $>$ $>$ \&}]{matches, }
+\item[{int}]{k, }
+\item[{const std\-::vector$<$ {\bf ocl\-Mat} $>$ \&}]{masks = {\ttfamily std\-:\-:vector$<$~{\bf ocl\-Mat}~$>$()}, }
+\item[{bool}]{compact\-Result = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_ad9c01b9e6fa097194b882a359d359c29}
+\hypertarget{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_abc0dbe82b0937d9aefe0009e72c1221f}{\index{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}!knn\-Match2\-Collection@{knn\-Match2\-Collection}}
+\index{knn\-Match2\-Collection@{knn\-Match2\-Collection}!cv::ocl::BruteForceMatcher_OCL_base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}}
+\subsubsection[{knn\-Match2\-Collection}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base\-::knn\-Match2\-Collection (
+\begin{DoxyParamCaption}
+\item[{const {\bf ocl\-Mat} \&}]{query, }
+\item[{const {\bf ocl\-Mat} \&}]{train\-Collection, }
+\item[{{\bf ocl\-Mat} \&}]{train\-Idx, }
+\item[{{\bf ocl\-Mat} \&}]{img\-Idx, }
+\item[{{\bf ocl\-Mat} \&}]{distance, }
+\item[{const {\bf ocl\-Mat} \&}]{mask\-Collection = {\ttfamily {\bf ocl\-Mat}()}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_abc0dbe82b0937d9aefe0009e72c1221f}
+\hypertarget{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a9cb7ae54393d803349bbc37f6f0131aa}{\index{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}!knn\-Match2\-Convert@{knn\-Match2\-Convert}}
+\index{knn\-Match2\-Convert@{knn\-Match2\-Convert}!cv::ocl::BruteForceMatcher_OCL_base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}}
+\subsubsection[{knn\-Match2\-Convert}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf void} cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base\-::knn\-Match2\-Convert (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{train\-Idx, }
+\item[{const Mat \&}]{img\-Idx, }
+\item[{const Mat \&}]{distance, }
+\item[{std\-::vector$<$ std\-::vector$<$ D\-Match $>$ $>$ \&}]{matches, }
+\item[{bool}]{compact\-Result = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a9cb7ae54393d803349bbc37f6f0131aa}
+\hypertarget{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a23a31c03c91aa42abb3bf1b64a834ea3}{\index{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}!knn\-Match2\-Download@{knn\-Match2\-Download}}
+\index{knn\-Match2\-Download@{knn\-Match2\-Download}!cv::ocl::BruteForceMatcher_OCL_base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}}
+\subsubsection[{knn\-Match2\-Download}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf void} cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base\-::knn\-Match2\-Download (
+\begin{DoxyParamCaption}
+\item[{const {\bf ocl\-Mat} \&}]{train\-Idx, }
+\item[{const {\bf ocl\-Mat} \&}]{img\-Idx, }
+\item[{const {\bf ocl\-Mat} \&}]{distance, }
+\item[{std\-::vector$<$ std\-::vector$<$ D\-Match $>$ $>$ \&}]{matches, }
+\item[{bool}]{compact\-Result = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a23a31c03c91aa42abb3bf1b64a834ea3}
+\hypertarget{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a1462555aace96452d9b8fbb0831f004f}{\index{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}!knn\-Match\-Convert@{knn\-Match\-Convert}}
+\index{knn\-Match\-Convert@{knn\-Match\-Convert}!cv::ocl::BruteForceMatcher_OCL_base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}}
+\subsubsection[{knn\-Match\-Convert}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf void} cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base\-::knn\-Match\-Convert (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{train\-Idx, }
+\item[{const Mat \&}]{distance, }
+\item[{std\-::vector$<$ std\-::vector$<$ D\-Match $>$ $>$ \&}]{matches, }
+\item[{bool}]{compact\-Result = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a1462555aace96452d9b8fbb0831f004f}
+\hypertarget{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_abe09dce6c71a724c10ef9b8c36d6e16f}{\index{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}!knn\-Match\-Download@{knn\-Match\-Download}}
+\index{knn\-Match\-Download@{knn\-Match\-Download}!cv::ocl::BruteForceMatcher_OCL_base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}}
+\subsubsection[{knn\-Match\-Download}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf void} cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base\-::knn\-Match\-Download (
+\begin{DoxyParamCaption}
+\item[{const {\bf ocl\-Mat} \&}]{train\-Idx, }
+\item[{const {\bf ocl\-Mat} \&}]{distance, }
+\item[{std\-::vector$<$ std\-::vector$<$ D\-Match $>$ $>$ \&}]{matches, }
+\item[{bool}]{compact\-Result = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_abe09dce6c71a724c10ef9b8c36d6e16f}
+\hypertarget{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a41167c939c05786ec559c14ef45f2814}{\index{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}!knn\-Match\-Single@{knn\-Match\-Single}}
+\index{knn\-Match\-Single@{knn\-Match\-Single}!cv::ocl::BruteForceMatcher_OCL_base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}}
+\subsubsection[{knn\-Match\-Single}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base\-::knn\-Match\-Single (
+\begin{DoxyParamCaption}
+\item[{const {\bf ocl\-Mat} \&}]{query, }
+\item[{const {\bf ocl\-Mat} \&}]{train, }
+\item[{{\bf ocl\-Mat} \&}]{train\-Idx, }
+\item[{{\bf ocl\-Mat} \&}]{distance, }
+\item[{{\bf ocl\-Mat} \&}]{all\-Dist, }
+\item[{int}]{k, }
+\item[{const {\bf ocl\-Mat} \&}]{mask = {\ttfamily {\bf ocl\-Mat}()}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a41167c939c05786ec559c14ef45f2814}
+\hypertarget{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a7093dd7a7518585fca7058cdd812d347}{\index{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}!make\-Gpu\-Collection@{make\-Gpu\-Collection}}
+\index{make\-Gpu\-Collection@{make\-Gpu\-Collection}!cv::ocl::BruteForceMatcher_OCL_base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}}
+\subsubsection[{make\-Gpu\-Collection}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base\-::make\-Gpu\-Collection (
+\begin{DoxyParamCaption}
+\item[{{\bf ocl\-Mat} \&}]{train\-Collection, }
+\item[{{\bf ocl\-Mat} \&}]{mask\-Collection, }
+\item[{const std\-::vector$<$ {\bf ocl\-Mat} $>$ \&}]{masks = {\ttfamily std\-:\-:vector$<$~{\bf ocl\-Mat}~$>$()}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a7093dd7a7518585fca7058cdd812d347}
+\hypertarget{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_ae5966aaa82666edef2aaa842aa8cb8a4}{\index{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}!match@{match}}
+\index{match@{match}!cv::ocl::BruteForceMatcher_OCL_base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}}
+\subsubsection[{match}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base\-::match (
+\begin{DoxyParamCaption}
+\item[{const {\bf ocl\-Mat} \&}]{query, }
+\item[{const {\bf ocl\-Mat} \&}]{train, }
+\item[{std\-::vector$<$ D\-Match $>$ \&}]{matches, }
+\item[{const {\bf ocl\-Mat} \&}]{mask = {\ttfamily {\bf ocl\-Mat}()}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_ae5966aaa82666edef2aaa842aa8cb8a4}
+\hypertarget{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a8a42378671aff0139207cfff72022151}{\index{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}!match@{match}}
+\index{match@{match}!cv::ocl::BruteForceMatcher_OCL_base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}}
+\subsubsection[{match}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base\-::match (
+\begin{DoxyParamCaption}
+\item[{const {\bf ocl\-Mat} \&}]{query, }
+\item[{std\-::vector$<$ D\-Match $>$ \&}]{matches, }
+\item[{const std\-::vector$<$ {\bf ocl\-Mat} $>$ \&}]{masks = {\ttfamily std\-:\-:vector$<$~{\bf ocl\-Mat}~$>$()}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a8a42378671aff0139207cfff72022151}
+\hypertarget{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_ad203d9c1a6c759596ee835373e9e4296}{\index{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}!match\-Collection@{match\-Collection}}
+\index{match\-Collection@{match\-Collection}!cv::ocl::BruteForceMatcher_OCL_base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}}
+\subsubsection[{match\-Collection}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base\-::match\-Collection (
+\begin{DoxyParamCaption}
+\item[{const {\bf ocl\-Mat} \&}]{query, }
+\item[{const {\bf ocl\-Mat} \&}]{train\-Collection, }
+\item[{{\bf ocl\-Mat} \&}]{train\-Idx, }
+\item[{{\bf ocl\-Mat} \&}]{img\-Idx, }
+\item[{{\bf ocl\-Mat} \&}]{distance, }
+\item[{const {\bf ocl\-Mat} \&}]{masks = {\ttfamily {\bf ocl\-Mat}()}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_ad203d9c1a6c759596ee835373e9e4296}
+\hypertarget{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a0b140f6266bcfd8279db5a01f7fc2d57}{\index{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}!match\-Convert@{match\-Convert}}
+\index{match\-Convert@{match\-Convert}!cv::ocl::BruteForceMatcher_OCL_base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}}
+\subsubsection[{match\-Convert}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf void} cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base\-::match\-Convert (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{train\-Idx, }
+\item[{const Mat \&}]{distance, }
+\item[{std\-::vector$<$ D\-Match $>$ \&}]{matches}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a0b140f6266bcfd8279db5a01f7fc2d57}
+\hypertarget{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a007afa9401fcceacea7b07124383fc18}{\index{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}!match\-Convert@{match\-Convert}}
+\index{match\-Convert@{match\-Convert}!cv::ocl::BruteForceMatcher_OCL_base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}}
+\subsubsection[{match\-Convert}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf void} cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base\-::match\-Convert (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{train\-Idx, }
+\item[{const Mat \&}]{img\-Idx, }
+\item[{const Mat \&}]{distance, }
+\item[{std\-::vector$<$ D\-Match $>$ \&}]{matches}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a007afa9401fcceacea7b07124383fc18}
+\hypertarget{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_af70393abadc1bf8c3f3857050e79f531}{\index{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}!match\-Download@{match\-Download}}
+\index{match\-Download@{match\-Download}!cv::ocl::BruteForceMatcher_OCL_base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}}
+\subsubsection[{match\-Download}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf void} cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base\-::match\-Download (
+\begin{DoxyParamCaption}
+\item[{const {\bf ocl\-Mat} \&}]{train\-Idx, }
+\item[{const {\bf ocl\-Mat} \&}]{distance, }
+\item[{std\-::vector$<$ D\-Match $>$ \&}]{matches}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_af70393abadc1bf8c3f3857050e79f531}
+\hypertarget{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_af50434a072371e695988aa63eb7d70ee}{\index{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}!match\-Download@{match\-Download}}
+\index{match\-Download@{match\-Download}!cv::ocl::BruteForceMatcher_OCL_base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}}
+\subsubsection[{match\-Download}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf void} cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base\-::match\-Download (
+\begin{DoxyParamCaption}
+\item[{const {\bf ocl\-Mat} \&}]{train\-Idx, }
+\item[{const {\bf ocl\-Mat} \&}]{img\-Idx, }
+\item[{const {\bf ocl\-Mat} \&}]{distance, }
+\item[{std\-::vector$<$ D\-Match $>$ \&}]{matches}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_af50434a072371e695988aa63eb7d70ee}
+\hypertarget{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_aa4fcdb9ce44d9b021ce4582489e3fa1a}{\index{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}!match\-Single@{match\-Single}}
+\index{match\-Single@{match\-Single}!cv::ocl::BruteForceMatcher_OCL_base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}}
+\subsubsection[{match\-Single}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base\-::match\-Single (
+\begin{DoxyParamCaption}
+\item[{const {\bf ocl\-Mat} \&}]{query, }
+\item[{const {\bf ocl\-Mat} \&}]{train, }
+\item[{{\bf ocl\-Mat} \&}]{train\-Idx, }
+\item[{{\bf ocl\-Mat} \&}]{distance, }
+\item[{const {\bf ocl\-Mat} \&}]{mask = {\ttfamily {\bf ocl\-Mat}()}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_aa4fcdb9ce44d9b021ce4582489e3fa1a}
+\hypertarget{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a33241541cdc10d736ff4e9b80b6d59e8}{\index{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}!radius\-Match@{radius\-Match}}
+\index{radius\-Match@{radius\-Match}!cv::ocl::BruteForceMatcher_OCL_base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}}
+\subsubsection[{radius\-Match}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base\-::radius\-Match (
+\begin{DoxyParamCaption}
+\item[{const {\bf ocl\-Mat} \&}]{query, }
+\item[{const {\bf ocl\-Mat} \&}]{train, }
+\item[{std\-::vector$<$ std\-::vector$<$ D\-Match $>$ $>$ \&}]{matches, }
+\item[{float}]{max\-Distance, }
+\item[{const {\bf ocl\-Mat} \&}]{mask = {\ttfamily {\bf ocl\-Mat}()}, }
+\item[{bool}]{compact\-Result = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a33241541cdc10d736ff4e9b80b6d59e8}
+\hypertarget{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_aba5ff7d6c54310d241452f4cc96af40a}{\index{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}!radius\-Match@{radius\-Match}}
+\index{radius\-Match@{radius\-Match}!cv::ocl::BruteForceMatcher_OCL_base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}}
+\subsubsection[{radius\-Match}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base\-::radius\-Match (
+\begin{DoxyParamCaption}
+\item[{const {\bf ocl\-Mat} \&}]{query, }
+\item[{std\-::vector$<$ std\-::vector$<$ D\-Match $>$ $>$ \&}]{matches, }
+\item[{float}]{max\-Distance, }
+\item[{const std\-::vector$<$ {\bf ocl\-Mat} $>$ \&}]{masks = {\ttfamily std\-:\-:vector$<$~{\bf ocl\-Mat}~$>$()}, }
+\item[{bool}]{compact\-Result = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_aba5ff7d6c54310d241452f4cc96af40a}
+\hypertarget{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a7f469948ba5afa5b039d8c1998e02ea4}{\index{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}!radius\-Match\-Collection@{radius\-Match\-Collection}}
+\index{radius\-Match\-Collection@{radius\-Match\-Collection}!cv::ocl::BruteForceMatcher_OCL_base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}}
+\subsubsection[{radius\-Match\-Collection}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base\-::radius\-Match\-Collection (
+\begin{DoxyParamCaption}
+\item[{const {\bf ocl\-Mat} \&}]{query, }
+\item[{{\bf ocl\-Mat} \&}]{train\-Idx, }
+\item[{{\bf ocl\-Mat} \&}]{img\-Idx, }
+\item[{{\bf ocl\-Mat} \&}]{distance, }
+\item[{{\bf ocl\-Mat} \&}]{n\-Matches, }
+\item[{float}]{max\-Distance, }
+\item[{const std\-::vector$<$ {\bf ocl\-Mat} $>$ \&}]{masks = {\ttfamily std\-:\-:vector$<$~{\bf ocl\-Mat}~$>$()}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a7f469948ba5afa5b039d8c1998e02ea4}
+\hypertarget{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a1e2186cf894984ac2062aba44603ce67}{\index{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}!radius\-Match\-Convert@{radius\-Match\-Convert}}
+\index{radius\-Match\-Convert@{radius\-Match\-Convert}!cv::ocl::BruteForceMatcher_OCL_base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}}
+\subsubsection[{radius\-Match\-Convert}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf void} cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base\-::radius\-Match\-Convert (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{train\-Idx, }
+\item[{const Mat \&}]{distance, }
+\item[{const Mat \&}]{n\-Matches, }
+\item[{std\-::vector$<$ std\-::vector$<$ D\-Match $>$ $>$ \&}]{matches, }
+\item[{bool}]{compact\-Result = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a1e2186cf894984ac2062aba44603ce67}
+\hypertarget{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a0efd3f02741641c94739ef41b63b2fcb}{\index{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}!radius\-Match\-Convert@{radius\-Match\-Convert}}
+\index{radius\-Match\-Convert@{radius\-Match\-Convert}!cv::ocl::BruteForceMatcher_OCL_base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}}
+\subsubsection[{radius\-Match\-Convert}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf void} cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base\-::radius\-Match\-Convert (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{train\-Idx, }
+\item[{const Mat \&}]{img\-Idx, }
+\item[{const Mat \&}]{distance, }
+\item[{const Mat \&}]{n\-Matches, }
+\item[{std\-::vector$<$ std\-::vector$<$ D\-Match $>$ $>$ \&}]{matches, }
+\item[{bool}]{compact\-Result = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a0efd3f02741641c94739ef41b63b2fcb}
+\hypertarget{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_ae0504c1717abce957cbcd18ded6a56b7}{\index{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}!radius\-Match\-Download@{radius\-Match\-Download}}
+\index{radius\-Match\-Download@{radius\-Match\-Download}!cv::ocl::BruteForceMatcher_OCL_base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}}
+\subsubsection[{radius\-Match\-Download}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf void} cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base\-::radius\-Match\-Download (
+\begin{DoxyParamCaption}
+\item[{const {\bf ocl\-Mat} \&}]{train\-Idx, }
+\item[{const {\bf ocl\-Mat} \&}]{distance, }
+\item[{const {\bf ocl\-Mat} \&}]{n\-Matches, }
+\item[{std\-::vector$<$ std\-::vector$<$ D\-Match $>$ $>$ \&}]{matches, }
+\item[{bool}]{compact\-Result = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_ae0504c1717abce957cbcd18ded6a56b7}
+\hypertarget{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_aa5dec2e6ed73f5afc684206532ca8831}{\index{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}!radius\-Match\-Download@{radius\-Match\-Download}}
+\index{radius\-Match\-Download@{radius\-Match\-Download}!cv::ocl::BruteForceMatcher_OCL_base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}}
+\subsubsection[{radius\-Match\-Download}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf void} cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base\-::radius\-Match\-Download (
+\begin{DoxyParamCaption}
+\item[{const {\bf ocl\-Mat} \&}]{train\-Idx, }
+\item[{const {\bf ocl\-Mat} \&}]{img\-Idx, }
+\item[{const {\bf ocl\-Mat} \&}]{distance, }
+\item[{const {\bf ocl\-Mat} \&}]{n\-Matches, }
+\item[{std\-::vector$<$ std\-::vector$<$ D\-Match $>$ $>$ \&}]{matches, }
+\item[{bool}]{compact\-Result = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_aa5dec2e6ed73f5afc684206532ca8831}
+\hypertarget{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_ab10fba086aeae3a04d6fa4dd5663ff7f}{\index{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}!radius\-Match\-Single@{radius\-Match\-Single}}
+\index{radius\-Match\-Single@{radius\-Match\-Single}!cv::ocl::BruteForceMatcher_OCL_base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}}
+\subsubsection[{radius\-Match\-Single}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base\-::radius\-Match\-Single (
+\begin{DoxyParamCaption}
+\item[{const {\bf ocl\-Mat} \&}]{query, }
+\item[{const {\bf ocl\-Mat} \&}]{train, }
+\item[{{\bf ocl\-Mat} \&}]{train\-Idx, }
+\item[{{\bf ocl\-Mat} \&}]{distance, }
+\item[{{\bf ocl\-Mat} \&}]{n\-Matches, }
+\item[{float}]{max\-Distance, }
+\item[{const {\bf ocl\-Mat} \&}]{mask = {\ttfamily {\bf ocl\-Mat}()}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_ab10fba086aeae3a04d6fa4dd5663ff7f}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a5f9e04f63994ff96aa4a6b17b11f6f8c}{\index{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}!dist\-Type@{dist\-Type}}
+\index{dist\-Type@{dist\-Type}!cv::ocl::BruteForceMatcher_OCL_base@{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}}
+\subsubsection[{dist\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Dist\-Type} cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base\-::dist\-Type}}\label{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base_a5f9e04f63994ff96aa4a6b17b11f6f8c}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/ocl/\hyperlink{ocl_2ocl_8hpp}{ocl.\-hpp}\end{DoxyCompactItemize}

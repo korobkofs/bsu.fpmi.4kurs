@@ -1,0 +1,139 @@
+\hypertarget{interfaceCvVideoCamera}{\section{Cv\-Video\-Camera Class Reference}
+\label{interfaceCvVideoCamera}\index{Cv\-Video\-Camera@{Cv\-Video\-Camera}}
+}
+
+
+{\ttfamily \#import $<$cap\-\_\-ios.\-h$>$}
+
+
+
+Inheritance diagram for Cv\-Video\-Camera\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{interfaceCvVideoCamera__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Cv\-Video\-Camera\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{interfaceCvVideoCamera__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void}) -\/ \hyperlink{interfaceCvVideoCamera_a19344be0c1823dd18dea70f5ae1c2f0d}{adjust\-Layout\-To\-Interface\-Orientation\-:}
+\item 
+(\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void}) -\/ \hyperlink{interfaceCvVideoCamera_a6f29071e9826552f1c450df2d5d0d756}{layout\-Preview\-Layer}
+\item 
+(\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void}) -\/ \hyperlink{interfaceCvVideoCamera_a11e364063fcfed60e82995cab3eb1a1b}{save\-Video}
+\item 
+(N\-S\-U\-R\-L $\ast$) -\/ \hyperlink{interfaceCvVideoCamera_a9f7b8533943deeb5fd6122a4900fb2aa}{video\-File\-U\-R\-L}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+A\-V\-Capture\-Video\-Data\-Output $\ast$ \hyperlink{interfaceCvVideoCamera_ab0f5857858359cba2580c21de5bc19dd}{video\-Data\-Output}
+\item 
+dispatch\-\_\-queue\-\_\-t \hyperlink{interfaceCvVideoCamera_a4b2bec06f6cd2ee1002dea79d95030df}{video\-Data\-Output\-Queue}
+\item 
+C\-A\-Layer $\ast$ \hyperlink{interfaceCvVideoCamera_a46d53b968c51c20e96ef8947444b726d}{custom\-Preview\-Layer}
+\item 
+C\-M\-Time \hyperlink{interfaceCvVideoCamera_a1730b56eb3f27f253fb609e368d11945}{last\-Sample\-Time}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+id$<$ \hyperlink{protocolCvVideoCameraDelegate-p}{Cv\-Video\-Camera\-Delegate} $>$ \hyperlink{interfaceCvVideoCamera_a34e036fdee24dcf4e0ca57e938b77cbd}{delegate}
+\item 
+B\-O\-O\-L \hyperlink{interfaceCvVideoCamera_a940a9a17e136c091351db1f63e9fcacd}{grayscale\-Mode}
+\item 
+B\-O\-O\-L \hyperlink{interfaceCvVideoCamera_a7a2d067e74a18cd9cc5ee7626ac27660}{record\-Video}
+\item 
+B\-O\-O\-L \hyperlink{interfaceCvVideoCamera_a506e54c016c4fccb68eed2fe088e3929}{rotate\-Video}
+\item 
+A\-V\-Asset\-Writer\-Input $\ast$ \hyperlink{interfaceCvVideoCamera_a5331ee5ef533abefa38a44580f6e45f2}{record\-Asset\-Writer\-Input}
+\item 
+A\-V\-Asset\-Writer\-Input\-Pixel\-Buffer\-Adaptor $\ast$ \hyperlink{interfaceCvVideoCamera_a9bf206f012ee17fbcb79b9f57ae27cb0}{record\-Pixel\-Buffer\-Adaptor}
+\item 
+A\-V\-Asset\-Writer $\ast$ \hyperlink{interfaceCvVideoCamera_a821ccd31c8a2260fe0292b9b4ae9cb3a}{record\-Asset\-Writer}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\hypertarget{interfaceCvVideoCamera_a19344be0c1823dd18dea70f5ae1c2f0d}{\index{Cv\-Video\-Camera@{Cv\-Video\-Camera}!adjust\-Layout\-To\-Interface\-Orientation\-:@{adjust\-Layout\-To\-Interface\-Orientation\-:}}
+\index{adjust\-Layout\-To\-Interface\-Orientation\-:@{adjust\-Layout\-To\-Interface\-Orientation\-:}!CvVideoCamera@{Cv\-Video\-Camera}}
+\subsubsection[{adjust\-Layout\-To\-Interface\-Orientation\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf void}) adjust\-Layout\-To\-Interface\-Orientation\-: 
+\begin{DoxyParamCaption}
+\item[{(U\-I\-Interface\-Orientation)}]{interface\-Orientation}
+\end{DoxyParamCaption}
+}}\label{interfaceCvVideoCamera_a19344be0c1823dd18dea70f5ae1c2f0d}
+\hypertarget{interfaceCvVideoCamera_a6f29071e9826552f1c450df2d5d0d756}{\index{Cv\-Video\-Camera@{Cv\-Video\-Camera}!layout\-Preview\-Layer@{layout\-Preview\-Layer}}
+\index{layout\-Preview\-Layer@{layout\-Preview\-Layer}!CvVideoCamera@{Cv\-Video\-Camera}}
+\subsubsection[{layout\-Preview\-Layer}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf void}) layout\-Preview\-Layer 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interfaceCvVideoCamera_a6f29071e9826552f1c450df2d5d0d756}
+\hypertarget{interfaceCvVideoCamera_a11e364063fcfed60e82995cab3eb1a1b}{\index{Cv\-Video\-Camera@{Cv\-Video\-Camera}!save\-Video@{save\-Video}}
+\index{save\-Video@{save\-Video}!CvVideoCamera@{Cv\-Video\-Camera}}
+\subsubsection[{save\-Video}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf void}) save\-Video 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interfaceCvVideoCamera_a11e364063fcfed60e82995cab3eb1a1b}
+\hypertarget{interfaceCvVideoCamera_a9f7b8533943deeb5fd6122a4900fb2aa}{\index{Cv\-Video\-Camera@{Cv\-Video\-Camera}!video\-File\-U\-R\-L@{video\-File\-U\-R\-L}}
+\index{video\-File\-U\-R\-L@{video\-File\-U\-R\-L}!CvVideoCamera@{Cv\-Video\-Camera}}
+\subsubsection[{video\-File\-U\-R\-L}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-U\-R\-L $\ast$) video\-File\-U\-R\-L 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interfaceCvVideoCamera_a9f7b8533943deeb5fd6122a4900fb2aa}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{interfaceCvVideoCamera_a46d53b968c51c20e96ef8947444b726d}{\index{Cv\-Video\-Camera@{Cv\-Video\-Camera}!custom\-Preview\-Layer@{custom\-Preview\-Layer}}
+\index{custom\-Preview\-Layer@{custom\-Preview\-Layer}!CvVideoCamera@{Cv\-Video\-Camera}}
+\subsubsection[{custom\-Preview\-Layer}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-A\-Layer$\ast$) custom\-Preview\-Layer\hspace{0.3cm}{\ttfamily [protected]}}}\label{interfaceCvVideoCamera_a46d53b968c51c20e96ef8947444b726d}
+\hypertarget{interfaceCvVideoCamera_a1730b56eb3f27f253fb609e368d11945}{\index{Cv\-Video\-Camera@{Cv\-Video\-Camera}!last\-Sample\-Time@{last\-Sample\-Time}}
+\index{last\-Sample\-Time@{last\-Sample\-Time}!CvVideoCamera@{Cv\-Video\-Camera}}
+\subsubsection[{last\-Sample\-Time}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (C\-M\-Time) last\-Sample\-Time\hspace{0.3cm}{\ttfamily [protected]}}}\label{interfaceCvVideoCamera_a1730b56eb3f27f253fb609e368d11945}
+\hypertarget{interfaceCvVideoCamera_ab0f5857858359cba2580c21de5bc19dd}{\index{Cv\-Video\-Camera@{Cv\-Video\-Camera}!video\-Data\-Output@{video\-Data\-Output}}
+\index{video\-Data\-Output@{video\-Data\-Output}!CvVideoCamera@{Cv\-Video\-Camera}}
+\subsubsection[{video\-Data\-Output}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (A\-V\-Capture\-Video\-Data\-Output$\ast$) video\-Data\-Output\hspace{0.3cm}{\ttfamily [protected]}}}\label{interfaceCvVideoCamera_ab0f5857858359cba2580c21de5bc19dd}
+\hypertarget{interfaceCvVideoCamera_a4b2bec06f6cd2ee1002dea79d95030df}{\index{Cv\-Video\-Camera@{Cv\-Video\-Camera}!video\-Data\-Output\-Queue@{video\-Data\-Output\-Queue}}
+\index{video\-Data\-Output\-Queue@{video\-Data\-Output\-Queue}!CvVideoCamera@{Cv\-Video\-Camera}}
+\subsubsection[{video\-Data\-Output\-Queue}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (dispatch\-\_\-queue\-\_\-t) video\-Data\-Output\-Queue\hspace{0.3cm}{\ttfamily [protected]}}}\label{interfaceCvVideoCamera_a4b2bec06f6cd2ee1002dea79d95030df}
+
+
+\subsection{Property Documentation}
+\hypertarget{interfaceCvVideoCamera_a34e036fdee24dcf4e0ca57e938b77cbd}{\index{Cv\-Video\-Camera@{Cv\-Video\-Camera}!delegate@{delegate}}
+\index{delegate@{delegate}!CvVideoCamera@{Cv\-Video\-Camera}}
+\subsubsection[{delegate}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id$<${\bf Cv\-Video\-Camera\-Delegate}$>$) delegate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}}\label{interfaceCvVideoCamera_a34e036fdee24dcf4e0ca57e938b77cbd}
+\hypertarget{interfaceCvVideoCamera_a940a9a17e136c091351db1f63e9fcacd}{\index{Cv\-Video\-Camera@{Cv\-Video\-Camera}!grayscale\-Mode@{grayscale\-Mode}}
+\index{grayscale\-Mode@{grayscale\-Mode}!CvVideoCamera@{Cv\-Video\-Camera}}
+\subsubsection[{grayscale\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) grayscale\-Mode\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}}\label{interfaceCvVideoCamera_a940a9a17e136c091351db1f63e9fcacd}
+\hypertarget{interfaceCvVideoCamera_a821ccd31c8a2260fe0292b9b4ae9cb3a}{\index{Cv\-Video\-Camera@{Cv\-Video\-Camera}!record\-Asset\-Writer@{record\-Asset\-Writer}}
+\index{record\-Asset\-Writer@{record\-Asset\-Writer}!CvVideoCamera@{Cv\-Video\-Camera}}
+\subsubsection[{record\-Asset\-Writer}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (A\-V\-Asset\-Writer $\ast$) record\-Asset\-Writer\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [retain]}}}\label{interfaceCvVideoCamera_a821ccd31c8a2260fe0292b9b4ae9cb3a}
+\hypertarget{interfaceCvVideoCamera_a5331ee5ef533abefa38a44580f6e45f2}{\index{Cv\-Video\-Camera@{Cv\-Video\-Camera}!record\-Asset\-Writer\-Input@{record\-Asset\-Writer\-Input}}
+\index{record\-Asset\-Writer\-Input@{record\-Asset\-Writer\-Input}!CvVideoCamera@{Cv\-Video\-Camera}}
+\subsubsection[{record\-Asset\-Writer\-Input}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (A\-V\-Asset\-Writer\-Input $\ast$) record\-Asset\-Writer\-Input\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [retain]}}}\label{interfaceCvVideoCamera_a5331ee5ef533abefa38a44580f6e45f2}
+\hypertarget{interfaceCvVideoCamera_a9bf206f012ee17fbcb79b9f57ae27cb0}{\index{Cv\-Video\-Camera@{Cv\-Video\-Camera}!record\-Pixel\-Buffer\-Adaptor@{record\-Pixel\-Buffer\-Adaptor}}
+\index{record\-Pixel\-Buffer\-Adaptor@{record\-Pixel\-Buffer\-Adaptor}!CvVideoCamera@{Cv\-Video\-Camera}}
+\subsubsection[{record\-Pixel\-Buffer\-Adaptor}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (A\-V\-Asset\-Writer\-Input\-Pixel\-Buffer\-Adaptor $\ast$) record\-Pixel\-Buffer\-Adaptor\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [retain]}}}\label{interfaceCvVideoCamera_a9bf206f012ee17fbcb79b9f57ae27cb0}
+\hypertarget{interfaceCvVideoCamera_a7a2d067e74a18cd9cc5ee7626ac27660}{\index{Cv\-Video\-Camera@{Cv\-Video\-Camera}!record\-Video@{record\-Video}}
+\index{record\-Video@{record\-Video}!CvVideoCamera@{Cv\-Video\-Camera}}
+\subsubsection[{record\-Video}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) record\-Video\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}}\label{interfaceCvVideoCamera_a7a2d067e74a18cd9cc5ee7626ac27660}
+\hypertarget{interfaceCvVideoCamera_a506e54c016c4fccb68eed2fe088e3929}{\index{Cv\-Video\-Camera@{Cv\-Video\-Camera}!rotate\-Video@{rotate\-Video}}
+\index{rotate\-Video@{rotate\-Video}!CvVideoCamera@{Cv\-Video\-Camera}}
+\subsubsection[{rotate\-Video}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) rotate\-Video\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}}\label{interfaceCvVideoCamera_a506e54c016c4fccb68eed2fe088e3929}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/highgui/\hyperlink{cap__ios_8h}{cap\-\_\-ios.\-h}\end{DoxyCompactItemize}

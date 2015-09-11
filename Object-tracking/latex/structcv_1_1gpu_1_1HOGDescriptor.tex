@@ -1,0 +1,419 @@
+\hypertarget{structcv_1_1gpu_1_1HOGDescriptor}{\section{cv\-:\-:gpu\-:\-:H\-O\-G\-Descriptor Struct Reference}
+\label{structcv_1_1gpu_1_1HOGDescriptor}\index{cv\-::gpu\-::\-H\-O\-G\-Descriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}}
+}
+
+
+{\ttfamily \#include $<$gpu.\-hpp$>$}
+
+
+
+Collaboration diagram for cv\-:\-:gpu\-:\-:H\-O\-G\-Descriptor\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{structcv_1_1gpu_1_1HOGDescriptor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{structcv_1_1gpu_1_1HOGDescriptor_adf9ce8dfaa7a56f91eaf329fd7eb2fc4a833f2a58ab55cf7a2cb49366d64d066b}{D\-E\-F\-A\-U\-L\-T\-\_\-\-W\-I\-N\-\_\-\-S\-I\-G\-M\-A} = -\/1
+ \}
+\item 
+enum \{ \hyperlink{structcv_1_1gpu_1_1HOGDescriptor_af4e544ecf8908d961b849f457c6db7a2ae00e31f310c33d88c6b1fe11f6146b16}{D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-L\-E\-V\-E\-L\-S} = 64
+ \}
+\item 
+enum \{ \hyperlink{structcv_1_1gpu_1_1HOGDescriptor_aec73725a02c7ce1aff7a0587391abecaad73e5878268db334a78ec62d779f5d7d}{D\-E\-S\-C\-R\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-R\-O\-W\-\_\-\-B\-Y\-\_\-\-R\-O\-W}, 
+\hyperlink{structcv_1_1gpu_1_1HOGDescriptor_aec73725a02c7ce1aff7a0587391abecaaf310a595ef7d638c2d05f405dc55817b}{D\-E\-S\-C\-R\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-C\-O\-L\-\_\-\-B\-Y\-\_\-\-C\-O\-L}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structcv_1_1gpu_1_1HOGDescriptor_a78e335ea0e5aaa2bffc1de2053dc01d7}{H\-O\-G\-Descriptor} (Size \hyperlink{structcv_1_1gpu_1_1HOGDescriptor_a81c175ea3b25ddf619d5a693c6b011b0}{win\-\_\-size}=Size(64, 128), Size \hyperlink{structcv_1_1gpu_1_1HOGDescriptor_a2ffce0472743334cd00683e3ebf1aee5}{block\-\_\-size}=Size(16, 16), Size \hyperlink{structcv_1_1gpu_1_1HOGDescriptor_a64bd53b911a4b5399cf015b409ba1e85}{block\-\_\-stride}=Size(8, 8), Size \hyperlink{structcv_1_1gpu_1_1HOGDescriptor_ae9f565c6b25defa6a52ddabfd61bccb1}{cell\-\_\-size}=Size(8, 8), int \hyperlink{structcv_1_1gpu_1_1HOGDescriptor_a40800ea71ba0552bb8af9189f2c5fdf6}{nbins}=9, double \hyperlink{structcv_1_1gpu_1_1HOGDescriptor_a54487b481e329b2dc0d8d018a988b5ff}{win\-\_\-sigma}=\hyperlink{structcv_1_1gpu_1_1HOGDescriptor_adf9ce8dfaa7a56f91eaf329fd7eb2fc4a833f2a58ab55cf7a2cb49366d64d066b}{D\-E\-F\-A\-U\-L\-T\-\_\-\-W\-I\-N\-\_\-\-S\-I\-G\-M\-A}, double \hyperlink{structcv_1_1gpu_1_1HOGDescriptor_a7b1bb51bd628992aa16a775209062def}{threshold\-\_\-\-L2hys}=0.\-2, bool \hyperlink{structcv_1_1gpu_1_1HOGDescriptor_ad98fee76f0f3f497065f38a9a52af09c}{gamma\-\_\-correction}=true, int \hyperlink{structcv_1_1gpu_1_1HOGDescriptor_a8d4190de991a722004da4a8e724dffd9}{nlevels}=\hyperlink{structcv_1_1gpu_1_1HOGDescriptor_af4e544ecf8908d961b849f457c6db7a2ae00e31f310c33d88c6b1fe11f6146b16}{D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-L\-E\-V\-E\-L\-S})
+\item 
+size\-\_\-t \hyperlink{structcv_1_1gpu_1_1HOGDescriptor_ae4f73a9a6ad1866c3ede2f9ef2d05623}{get\-Descriptor\-Size} () const 
+\item 
+size\-\_\-t \hyperlink{structcv_1_1gpu_1_1HOGDescriptor_ad1afa5615d0a43fdf0141c74f06effa9}{get\-Block\-Histogram\-Size} () const 
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{structcv_1_1gpu_1_1HOGDescriptor_a1ebf78116b1164d0f51fd87fc90823aa}{set\-S\-V\-M\-Detector} (const vector$<$ float $>$ \&\hyperlink{structcv_1_1gpu_1_1HOGDescriptor_a4d765f28f1af6854eda44e3406a0b122}{detector})
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{structcv_1_1gpu_1_1HOGDescriptor_a2bd4728715634b3ced2666cf0e24cbef}{detect} (const Gpu\-Mat \&\hyperlink{legacy_8hpp_a5349238b3772bed6eae0fda3117ccfef}{img}, vector$<$ Point $>$ \&found\-\_\-locations, double hit\-\_\-threshold=0, Size win\-\_\-stride=Size(), Size padding=Size())
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{structcv_1_1gpu_1_1HOGDescriptor_a528af2707b591a1bd7b32358c4773d03}{detect\-Multi\-Scale} (const Gpu\-Mat \&\hyperlink{legacy_8hpp_a5349238b3772bed6eae0fda3117ccfef}{img}, vector$<$ Rect $>$ \&found\-\_\-locations, double hit\-\_\-threshold=0, Size win\-\_\-stride=Size(), Size padding=Size(), double scale0=1.\-05, int group\-\_\-threshold=2)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{structcv_1_1gpu_1_1HOGDescriptor_a4ed8b4687f01ee15a1099d7d85d92419}{compute\-Confidence} (const Gpu\-Mat \&\hyperlink{legacy_8hpp_a5349238b3772bed6eae0fda3117ccfef}{img}, vector$<$ Point $>$ \&hits, double hit\-\_\-threshold, Size win\-\_\-stride, Size padding, vector$<$ Point $>$ \&locations, vector$<$ double $>$ \&confidences)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{structcv_1_1gpu_1_1HOGDescriptor_a2ecad1e6e00aa0ccde80c67f2d6f4aa6}{compute\-Confidence\-Multi\-Scale} (const Gpu\-Mat \&\hyperlink{legacy_8hpp_a5349238b3772bed6eae0fda3117ccfef}{img}, vector$<$ Rect $>$ \&found\-\_\-locations, double hit\-\_\-threshold, Size win\-\_\-stride, Size padding, vector$<$ \hyperlink{structcv_1_1gpu_1_1HOGConfidence}{H\-O\-G\-Confidence} $>$ \&conf\-\_\-out, int group\-\_\-threshold)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{structcv_1_1gpu_1_1HOGDescriptor_a1612ce43c80c7b8723ff3979bd602cd9}{get\-Descriptors} (const Gpu\-Mat \&\hyperlink{legacy_8hpp_a5349238b3772bed6eae0fda3117ccfef}{img}, Size win\-\_\-stride, Gpu\-Mat \&\hyperlink{compat_8hpp_a1e3702ddbca6258f57508c22eff26bf2}{descriptors}, int descr\-\_\-format=\hyperlink{structcv_1_1gpu_1_1HOGDescriptor_aec73725a02c7ce1aff7a0587391abecaaf310a595ef7d638c2d05f405dc55817b}{D\-E\-S\-C\-R\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-C\-O\-L\-\_\-\-B\-Y\-\_\-\-C\-O\-L})
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static vector$<$ float $>$ \hyperlink{structcv_1_1gpu_1_1HOGDescriptor_a251b35c2abb97413ee966d9d60ca0e47}{get\-Default\-People\-Detector} ()
+\item 
+static vector$<$ float $>$ \hyperlink{structcv_1_1gpu_1_1HOGDescriptor_a578d6ca0b50c5527cee6cdf5fc47c8b3}{get\-People\-Detector48x96} ()
+\item 
+static vector$<$ float $>$ \hyperlink{structcv_1_1gpu_1_1HOGDescriptor_a360ce2c70dc83c0d52cfdaddfab52926}{get\-People\-Detector64x128} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Size \hyperlink{structcv_1_1gpu_1_1HOGDescriptor_a81c175ea3b25ddf619d5a693c6b011b0}{win\-\_\-size}
+\item 
+Size \hyperlink{structcv_1_1gpu_1_1HOGDescriptor_a2ffce0472743334cd00683e3ebf1aee5}{block\-\_\-size}
+\item 
+Size \hyperlink{structcv_1_1gpu_1_1HOGDescriptor_a64bd53b911a4b5399cf015b409ba1e85}{block\-\_\-stride}
+\item 
+Size \hyperlink{structcv_1_1gpu_1_1HOGDescriptor_ae9f565c6b25defa6a52ddabfd61bccb1}{cell\-\_\-size}
+\item 
+int \hyperlink{structcv_1_1gpu_1_1HOGDescriptor_a40800ea71ba0552bb8af9189f2c5fdf6}{nbins}
+\item 
+double \hyperlink{structcv_1_1gpu_1_1HOGDescriptor_a54487b481e329b2dc0d8d018a988b5ff}{win\-\_\-sigma}
+\item 
+double \hyperlink{structcv_1_1gpu_1_1HOGDescriptor_a7b1bb51bd628992aa16a775209062def}{threshold\-\_\-\-L2hys}
+\item 
+bool \hyperlink{structcv_1_1gpu_1_1HOGDescriptor_ad98fee76f0f3f497065f38a9a52af09c}{gamma\-\_\-correction}
+\item 
+int \hyperlink{structcv_1_1gpu_1_1HOGDescriptor_a8d4190de991a722004da4a8e724dffd9}{nlevels}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{structcv_1_1gpu_1_1HOGDescriptor_a4d5526138980f1bb865f4ad3906234cb}{compute\-Block\-Histograms} (const Gpu\-Mat \&\hyperlink{legacy_8hpp_a5349238b3772bed6eae0fda3117ccfef}{img})
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{structcv_1_1gpu_1_1HOGDescriptor_af139db5389e67e216af266e48b256009}{compute\-Gradient} (const Gpu\-Mat \&\hyperlink{legacy_8hpp_a5349238b3772bed6eae0fda3117ccfef}{img}, Gpu\-Mat \&\hyperlink{structcv_1_1gpu_1_1HOGDescriptor_aa9cedc881b28b3835a546954c29f6fcc}{grad}, Gpu\-Mat \&\hyperlink{structcv_1_1gpu_1_1HOGDescriptor_a706ce2936996876619084fac54e61464}{qangle})
+\item 
+double \hyperlink{structcv_1_1gpu_1_1HOGDescriptor_a395df751b32284630c866324571c4a8b}{get\-Win\-Sigma} () const 
+\item 
+bool \hyperlink{structcv_1_1gpu_1_1HOGDescriptor_a720ba7d1673c0331444dae2b336d1c53}{check\-Detector\-Size} () const 
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{structcv_1_1gpu_1_1HOGDescriptor_a3d6587836c6abdda9ad172bfc47e471d}{num\-Parts\-Within} (int \hyperlink{legacy_8hpp_ae97003f8d5c64cdfb99f6f2606d121b6}{size}, int part\-\_\-size, int stride)
+\item 
+static Size \hyperlink{structcv_1_1gpu_1_1HOGDescriptor_a94cc2eb64e6c4a60b5e01e4d5f1a8329}{num\-Parts\-Within} (Size \hyperlink{legacy_8hpp_ae97003f8d5c64cdfb99f6f2606d121b6}{size}, Size part\-\_\-size, Size stride)
+\item 
+static Gpu\-Mat \hyperlink{structcv_1_1gpu_1_1HOGDescriptor_ae79786ec68824aa1886e919d9b0964c2}{get\-Buffer} (const Size \&sz, int \hyperlink{imgproc__c_8h_a84612d8738bf935200cf32a103d8efe1}{type}, Gpu\-Mat \&buf)
+\item 
+static Gpu\-Mat \hyperlink{structcv_1_1gpu_1_1HOGDescriptor_a3d9a7292007e5ddc64a540bce7b94c4e}{get\-Buffer} (int \hyperlink{imgproc__c_8h_a061459acc9e078fa4699e0e349887215}{rows}, int \hyperlink{core__c_8h_a4407a60bc4387adae24cee658711f2d9}{cols}, int \hyperlink{imgproc__c_8h_a84612d8738bf935200cf32a103d8efe1}{type}, Gpu\-Mat \&buf)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{structcv_1_1gpu_1_1HOGDescriptor_a490a998c5bccba208ab0684fdcc1bc2d}{free\-\_\-coef}
+\item 
+Gpu\-Mat \hyperlink{structcv_1_1gpu_1_1HOGDescriptor_a4d765f28f1af6854eda44e3406a0b122}{detector}
+\item 
+Gpu\-Mat \hyperlink{structcv_1_1gpu_1_1HOGDescriptor_acc8f6714bb5dd8ecded2225d434b4478}{labels}
+\item 
+Gpu\-Mat \hyperlink{structcv_1_1gpu_1_1HOGDescriptor_aa09819a63d77f1a819842634d0f894b3}{labels\-\_\-buf}
+\item 
+Mat \hyperlink{structcv_1_1gpu_1_1HOGDescriptor_a83a636e0dddd8480f2eea8f81b9ebcc5}{labels\-\_\-host}
+\item 
+Gpu\-Mat \hyperlink{structcv_1_1gpu_1_1HOGDescriptor_adf0a7d4b8342032b47c5be7255d597ed}{block\-\_\-hists}
+\item 
+Gpu\-Mat \hyperlink{structcv_1_1gpu_1_1HOGDescriptor_a050f2faf673931e2a6cb1c704497880e}{block\-\_\-hists\-\_\-buf}
+\item 
+Gpu\-Mat \hyperlink{structcv_1_1gpu_1_1HOGDescriptor_aa9cedc881b28b3835a546954c29f6fcc}{grad}
+\item 
+Gpu\-Mat \hyperlink{structcv_1_1gpu_1_1HOGDescriptor_a706ce2936996876619084fac54e61464}{qangle}
+\item 
+Gpu\-Mat \hyperlink{structcv_1_1gpu_1_1HOGDescriptor_a4254ff83858134f269b9527843b7b354}{grad\-\_\-buf}
+\item 
+Gpu\-Mat \hyperlink{structcv_1_1gpu_1_1HOGDescriptor_a23ecc6bada4c3f54dfc4e9d67caaf5ad}{qangle\-\_\-buf}
+\item 
+std\-::vector$<$ Gpu\-Mat $>$ \hyperlink{structcv_1_1gpu_1_1HOGDescriptor_a2301efeb64505e3cbf63f6f3b5a01bf7}{image\-\_\-scales}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{structcv_1_1gpu_1_1HOGDescriptor_adf9ce8dfaa7a56f91eaf329fd7eb2fc4}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{structcv_1_1gpu_1_1HOGDescriptor_adf9ce8dfaa7a56f91eaf329fd7eb2fc4}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{D\-E\-F\-A\-U\-L\-T\-\_\-\-W\-I\-N\-\_\-\-S\-I\-G\-M\-A@{D\-E\-F\-A\-U\-L\-T\-\_\-\-W\-I\-N\-\_\-\-S\-I\-G\-M\-A}!cv\-::gpu\-::\-H\-O\-G\-Descriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}}\index{cv\-::gpu\-::\-H\-O\-G\-Descriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}!D\-E\-F\-A\-U\-L\-T\-\_\-\-W\-I\-N\-\_\-\-S\-I\-G\-M\-A@{D\-E\-F\-A\-U\-L\-T\-\_\-\-W\-I\-N\-\_\-\-S\-I\-G\-M\-A}}\item[{\em 
+\hypertarget{structcv_1_1gpu_1_1HOGDescriptor_adf9ce8dfaa7a56f91eaf329fd7eb2fc4a833f2a58ab55cf7a2cb49366d64d066b}{D\-E\-F\-A\-U\-L\-T\-\_\-\-W\-I\-N\-\_\-\-S\-I\-G\-M\-A}\label{structcv_1_1gpu_1_1HOGDescriptor_adf9ce8dfaa7a56f91eaf329fd7eb2fc4a833f2a58ab55cf7a2cb49366d64d066b}
+}]\end{description}
+\end{Desc}
+\hypertarget{structcv_1_1gpu_1_1HOGDescriptor_af4e544ecf8908d961b849f457c6db7a2}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{structcv_1_1gpu_1_1HOGDescriptor_af4e544ecf8908d961b849f457c6db7a2}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-L\-E\-V\-E\-L\-S@{D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-L\-E\-V\-E\-L\-S}!cv\-::gpu\-::\-H\-O\-G\-Descriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}}\index{cv\-::gpu\-::\-H\-O\-G\-Descriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}!D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-L\-E\-V\-E\-L\-S@{D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-L\-E\-V\-E\-L\-S}}\item[{\em 
+\hypertarget{structcv_1_1gpu_1_1HOGDescriptor_af4e544ecf8908d961b849f457c6db7a2ae00e31f310c33d88c6b1fe11f6146b16}{D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-L\-E\-V\-E\-L\-S}\label{structcv_1_1gpu_1_1HOGDescriptor_af4e544ecf8908d961b849f457c6db7a2ae00e31f310c33d88c6b1fe11f6146b16}
+}]\end{description}
+\end{Desc}
+\hypertarget{structcv_1_1gpu_1_1HOGDescriptor_aec73725a02c7ce1aff7a0587391abeca}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{structcv_1_1gpu_1_1HOGDescriptor_aec73725a02c7ce1aff7a0587391abeca}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{D\-E\-S\-C\-R\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-R\-O\-W\-\_\-\-B\-Y\-\_\-\-R\-O\-W@{D\-E\-S\-C\-R\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-R\-O\-W\-\_\-\-B\-Y\-\_\-\-R\-O\-W}!cv\-::gpu\-::\-H\-O\-G\-Descriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}}\index{cv\-::gpu\-::\-H\-O\-G\-Descriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}!D\-E\-S\-C\-R\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-R\-O\-W\-\_\-\-B\-Y\-\_\-\-R\-O\-W@{D\-E\-S\-C\-R\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-R\-O\-W\-\_\-\-B\-Y\-\_\-\-R\-O\-W}}\item[{\em 
+\hypertarget{structcv_1_1gpu_1_1HOGDescriptor_aec73725a02c7ce1aff7a0587391abecaad73e5878268db334a78ec62d779f5d7d}{D\-E\-S\-C\-R\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-R\-O\-W\-\_\-\-B\-Y\-\_\-\-R\-O\-W}\label{structcv_1_1gpu_1_1HOGDescriptor_aec73725a02c7ce1aff7a0587391abecaad73e5878268db334a78ec62d779f5d7d}
+}]\index{D\-E\-S\-C\-R\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-C\-O\-L\-\_\-\-B\-Y\-\_\-\-C\-O\-L@{D\-E\-S\-C\-R\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-C\-O\-L\-\_\-\-B\-Y\-\_\-\-C\-O\-L}!cv\-::gpu\-::\-H\-O\-G\-Descriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}}\index{cv\-::gpu\-::\-H\-O\-G\-Descriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}!D\-E\-S\-C\-R\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-C\-O\-L\-\_\-\-B\-Y\-\_\-\-C\-O\-L@{D\-E\-S\-C\-R\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-C\-O\-L\-\_\-\-B\-Y\-\_\-\-C\-O\-L}}\item[{\em 
+\hypertarget{structcv_1_1gpu_1_1HOGDescriptor_aec73725a02c7ce1aff7a0587391abecaaf310a595ef7d638c2d05f405dc55817b}{D\-E\-S\-C\-R\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-C\-O\-L\-\_\-\-B\-Y\-\_\-\-C\-O\-L}\label{structcv_1_1gpu_1_1HOGDescriptor_aec73725a02c7ce1aff7a0587391abecaaf310a595ef7d638c2d05f405dc55817b}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structcv_1_1gpu_1_1HOGDescriptor_a78e335ea0e5aaa2bffc1de2053dc01d7}{\index{cv\-::gpu\-::\-H\-O\-G\-Descriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}!H\-O\-G\-Descriptor@{H\-O\-G\-Descriptor}}
+\index{H\-O\-G\-Descriptor@{H\-O\-G\-Descriptor}!cv::gpu::HOGDescriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{H\-O\-G\-Descriptor}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::gpu\-::\-H\-O\-G\-Descriptor\-::\-H\-O\-G\-Descriptor (
+\begin{DoxyParamCaption}
+\item[{Size}]{win\-\_\-size = {\ttfamily Size(64,~128)}, }
+\item[{Size}]{block\-\_\-size = {\ttfamily Size(16,~16)}, }
+\item[{Size}]{block\-\_\-stride = {\ttfamily Size(8,~8)}, }
+\item[{Size}]{cell\-\_\-size = {\ttfamily Size(8,~8)}, }
+\item[{int}]{nbins = {\ttfamily 9}, }
+\item[{double}]{win\-\_\-sigma = {\ttfamily {\bf D\-E\-F\-A\-U\-L\-T\-\_\-\-W\-I\-N\-\_\-\-S\-I\-G\-M\-A}}, }
+\item[{double}]{threshold\-\_\-\-L2hys = {\ttfamily 0.2}, }
+\item[{bool}]{gamma\-\_\-correction = {\ttfamily true}, }
+\item[{int}]{nlevels = {\ttfamily {\bf D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-L\-E\-V\-E\-L\-S}}}
+\end{DoxyParamCaption}
+)}}\label{structcv_1_1gpu_1_1HOGDescriptor_a78e335ea0e5aaa2bffc1de2053dc01d7}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structcv_1_1gpu_1_1HOGDescriptor_a720ba7d1673c0331444dae2b336d1c53}{\index{cv\-::gpu\-::\-H\-O\-G\-Descriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}!check\-Detector\-Size@{check\-Detector\-Size}}
+\index{check\-Detector\-Size@{check\-Detector\-Size}!cv::gpu::HOGDescriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{check\-Detector\-Size}]{\setlength{\rightskip}{0pt plus 5cm}bool cv\-::gpu\-::\-H\-O\-G\-Descriptor\-::check\-Detector\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}}\label{structcv_1_1gpu_1_1HOGDescriptor_a720ba7d1673c0331444dae2b336d1c53}
+\hypertarget{structcv_1_1gpu_1_1HOGDescriptor_a4d5526138980f1bb865f4ad3906234cb}{\index{cv\-::gpu\-::\-H\-O\-G\-Descriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}!compute\-Block\-Histograms@{compute\-Block\-Histograms}}
+\index{compute\-Block\-Histograms@{compute\-Block\-Histograms}!cv::gpu::HOGDescriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{compute\-Block\-Histograms}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-H\-O\-G\-Descriptor\-::compute\-Block\-Histograms (
+\begin{DoxyParamCaption}
+\item[{const Gpu\-Mat \&}]{img}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{structcv_1_1gpu_1_1HOGDescriptor_a4d5526138980f1bb865f4ad3906234cb}
+\hypertarget{structcv_1_1gpu_1_1HOGDescriptor_a4ed8b4687f01ee15a1099d7d85d92419}{\index{cv\-::gpu\-::\-H\-O\-G\-Descriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}!compute\-Confidence@{compute\-Confidence}}
+\index{compute\-Confidence@{compute\-Confidence}!cv::gpu::HOGDescriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{compute\-Confidence}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-H\-O\-G\-Descriptor\-::compute\-Confidence (
+\begin{DoxyParamCaption}
+\item[{const Gpu\-Mat \&}]{img, }
+\item[{vector$<$ Point $>$ \&}]{hits, }
+\item[{double}]{hit\-\_\-threshold, }
+\item[{Size}]{win\-\_\-stride, }
+\item[{Size}]{padding, }
+\item[{vector$<$ Point $>$ \&}]{locations, }
+\item[{vector$<$ double $>$ \&}]{confidences}
+\end{DoxyParamCaption}
+)}}\label{structcv_1_1gpu_1_1HOGDescriptor_a4ed8b4687f01ee15a1099d7d85d92419}
+\hypertarget{structcv_1_1gpu_1_1HOGDescriptor_a2ecad1e6e00aa0ccde80c67f2d6f4aa6}{\index{cv\-::gpu\-::\-H\-O\-G\-Descriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}!compute\-Confidence\-Multi\-Scale@{compute\-Confidence\-Multi\-Scale}}
+\index{compute\-Confidence\-Multi\-Scale@{compute\-Confidence\-Multi\-Scale}!cv::gpu::HOGDescriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{compute\-Confidence\-Multi\-Scale}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-H\-O\-G\-Descriptor\-::compute\-Confidence\-Multi\-Scale (
+\begin{DoxyParamCaption}
+\item[{const Gpu\-Mat \&}]{img, }
+\item[{vector$<$ Rect $>$ \&}]{found\-\_\-locations, }
+\item[{double}]{hit\-\_\-threshold, }
+\item[{Size}]{win\-\_\-stride, }
+\item[{Size}]{padding, }
+\item[{vector$<$ {\bf H\-O\-G\-Confidence} $>$ \&}]{conf\-\_\-out, }
+\item[{int}]{group\-\_\-threshold}
+\end{DoxyParamCaption}
+)}}\label{structcv_1_1gpu_1_1HOGDescriptor_a2ecad1e6e00aa0ccde80c67f2d6f4aa6}
+\hypertarget{structcv_1_1gpu_1_1HOGDescriptor_af139db5389e67e216af266e48b256009}{\index{cv\-::gpu\-::\-H\-O\-G\-Descriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}!compute\-Gradient@{compute\-Gradient}}
+\index{compute\-Gradient@{compute\-Gradient}!cv::gpu::HOGDescriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{compute\-Gradient}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-H\-O\-G\-Descriptor\-::compute\-Gradient (
+\begin{DoxyParamCaption}
+\item[{const Gpu\-Mat \&}]{img, }
+\item[{Gpu\-Mat \&}]{grad, }
+\item[{Gpu\-Mat \&}]{qangle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{structcv_1_1gpu_1_1HOGDescriptor_af139db5389e67e216af266e48b256009}
+\hypertarget{structcv_1_1gpu_1_1HOGDescriptor_a2bd4728715634b3ced2666cf0e24cbef}{\index{cv\-::gpu\-::\-H\-O\-G\-Descriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}!detect@{detect}}
+\index{detect@{detect}!cv::gpu::HOGDescriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{detect}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-H\-O\-G\-Descriptor\-::detect (
+\begin{DoxyParamCaption}
+\item[{const Gpu\-Mat \&}]{img, }
+\item[{vector$<$ Point $>$ \&}]{found\-\_\-locations, }
+\item[{double}]{hit\-\_\-threshold = {\ttfamily 0}, }
+\item[{Size}]{win\-\_\-stride = {\ttfamily Size()}, }
+\item[{Size}]{padding = {\ttfamily Size()}}
+\end{DoxyParamCaption}
+)}}\label{structcv_1_1gpu_1_1HOGDescriptor_a2bd4728715634b3ced2666cf0e24cbef}
+\hypertarget{structcv_1_1gpu_1_1HOGDescriptor_a528af2707b591a1bd7b32358c4773d03}{\index{cv\-::gpu\-::\-H\-O\-G\-Descriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}!detect\-Multi\-Scale@{detect\-Multi\-Scale}}
+\index{detect\-Multi\-Scale@{detect\-Multi\-Scale}!cv::gpu::HOGDescriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{detect\-Multi\-Scale}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-H\-O\-G\-Descriptor\-::detect\-Multi\-Scale (
+\begin{DoxyParamCaption}
+\item[{const Gpu\-Mat \&}]{img, }
+\item[{vector$<$ Rect $>$ \&}]{found\-\_\-locations, }
+\item[{double}]{hit\-\_\-threshold = {\ttfamily 0}, }
+\item[{Size}]{win\-\_\-stride = {\ttfamily Size()}, }
+\item[{Size}]{padding = {\ttfamily Size()}, }
+\item[{double}]{scale0 = {\ttfamily 1.05}, }
+\item[{int}]{group\-\_\-threshold = {\ttfamily 2}}
+\end{DoxyParamCaption}
+)}}\label{structcv_1_1gpu_1_1HOGDescriptor_a528af2707b591a1bd7b32358c4773d03}
+\hypertarget{structcv_1_1gpu_1_1HOGDescriptor_ad1afa5615d0a43fdf0141c74f06effa9}{\index{cv\-::gpu\-::\-H\-O\-G\-Descriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}!get\-Block\-Histogram\-Size@{get\-Block\-Histogram\-Size}}
+\index{get\-Block\-Histogram\-Size@{get\-Block\-Histogram\-Size}!cv::gpu::HOGDescriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{get\-Block\-Histogram\-Size}]{\setlength{\rightskip}{0pt plus 5cm}size\-\_\-t cv\-::gpu\-::\-H\-O\-G\-Descriptor\-::get\-Block\-Histogram\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{structcv_1_1gpu_1_1HOGDescriptor_ad1afa5615d0a43fdf0141c74f06effa9}
+\hypertarget{structcv_1_1gpu_1_1HOGDescriptor_ae79786ec68824aa1886e919d9b0964c2}{\index{cv\-::gpu\-::\-H\-O\-G\-Descriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}!get\-Buffer@{get\-Buffer}}
+\index{get\-Buffer@{get\-Buffer}!cv::gpu::HOGDescriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{get\-Buffer}]{\setlength{\rightskip}{0pt plus 5cm}static Gpu\-Mat cv\-::gpu\-::\-H\-O\-G\-Descriptor\-::get\-Buffer (
+\begin{DoxyParamCaption}
+\item[{const Size \&}]{sz, }
+\item[{int}]{type, }
+\item[{Gpu\-Mat \&}]{buf}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{structcv_1_1gpu_1_1HOGDescriptor_ae79786ec68824aa1886e919d9b0964c2}
+\hypertarget{structcv_1_1gpu_1_1HOGDescriptor_a3d9a7292007e5ddc64a540bce7b94c4e}{\index{cv\-::gpu\-::\-H\-O\-G\-Descriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}!get\-Buffer@{get\-Buffer}}
+\index{get\-Buffer@{get\-Buffer}!cv::gpu::HOGDescriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{get\-Buffer}]{\setlength{\rightskip}{0pt plus 5cm}static Gpu\-Mat cv\-::gpu\-::\-H\-O\-G\-Descriptor\-::get\-Buffer (
+\begin{DoxyParamCaption}
+\item[{int}]{rows, }
+\item[{int}]{cols, }
+\item[{int}]{type, }
+\item[{Gpu\-Mat \&}]{buf}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{structcv_1_1gpu_1_1HOGDescriptor_a3d9a7292007e5ddc64a540bce7b94c4e}
+\hypertarget{structcv_1_1gpu_1_1HOGDescriptor_a251b35c2abb97413ee966d9d60ca0e47}{\index{cv\-::gpu\-::\-H\-O\-G\-Descriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}!get\-Default\-People\-Detector@{get\-Default\-People\-Detector}}
+\index{get\-Default\-People\-Detector@{get\-Default\-People\-Detector}!cv::gpu::HOGDescriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{get\-Default\-People\-Detector}]{\setlength{\rightskip}{0pt plus 5cm}static vector$<$float$>$ cv\-::gpu\-::\-H\-O\-G\-Descriptor\-::get\-Default\-People\-Detector (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{structcv_1_1gpu_1_1HOGDescriptor_a251b35c2abb97413ee966d9d60ca0e47}
+\hypertarget{structcv_1_1gpu_1_1HOGDescriptor_a1612ce43c80c7b8723ff3979bd602cd9}{\index{cv\-::gpu\-::\-H\-O\-G\-Descriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}!get\-Descriptors@{get\-Descriptors}}
+\index{get\-Descriptors@{get\-Descriptors}!cv::gpu::HOGDescriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{get\-Descriptors}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-H\-O\-G\-Descriptor\-::get\-Descriptors (
+\begin{DoxyParamCaption}
+\item[{const Gpu\-Mat \&}]{img, }
+\item[{Size}]{win\-\_\-stride, }
+\item[{Gpu\-Mat \&}]{descriptors, }
+\item[{int}]{descr\-\_\-format = {\ttfamily {\bf D\-E\-S\-C\-R\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-C\-O\-L\-\_\-\-B\-Y\-\_\-\-C\-O\-L}}}
+\end{DoxyParamCaption}
+)}}\label{structcv_1_1gpu_1_1HOGDescriptor_a1612ce43c80c7b8723ff3979bd602cd9}
+\hypertarget{structcv_1_1gpu_1_1HOGDescriptor_ae4f73a9a6ad1866c3ede2f9ef2d05623}{\index{cv\-::gpu\-::\-H\-O\-G\-Descriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}!get\-Descriptor\-Size@{get\-Descriptor\-Size}}
+\index{get\-Descriptor\-Size@{get\-Descriptor\-Size}!cv::gpu::HOGDescriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{get\-Descriptor\-Size}]{\setlength{\rightskip}{0pt plus 5cm}size\-\_\-t cv\-::gpu\-::\-H\-O\-G\-Descriptor\-::get\-Descriptor\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{structcv_1_1gpu_1_1HOGDescriptor_ae4f73a9a6ad1866c3ede2f9ef2d05623}
+\hypertarget{structcv_1_1gpu_1_1HOGDescriptor_a578d6ca0b50c5527cee6cdf5fc47c8b3}{\index{cv\-::gpu\-::\-H\-O\-G\-Descriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}!get\-People\-Detector48x96@{get\-People\-Detector48x96}}
+\index{get\-People\-Detector48x96@{get\-People\-Detector48x96}!cv::gpu::HOGDescriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{get\-People\-Detector48x96}]{\setlength{\rightskip}{0pt plus 5cm}static vector$<$float$>$ cv\-::gpu\-::\-H\-O\-G\-Descriptor\-::get\-People\-Detector48x96 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{structcv_1_1gpu_1_1HOGDescriptor_a578d6ca0b50c5527cee6cdf5fc47c8b3}
+\hypertarget{structcv_1_1gpu_1_1HOGDescriptor_a360ce2c70dc83c0d52cfdaddfab52926}{\index{cv\-::gpu\-::\-H\-O\-G\-Descriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}!get\-People\-Detector64x128@{get\-People\-Detector64x128}}
+\index{get\-People\-Detector64x128@{get\-People\-Detector64x128}!cv::gpu::HOGDescriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{get\-People\-Detector64x128}]{\setlength{\rightskip}{0pt plus 5cm}static vector$<$float$>$ cv\-::gpu\-::\-H\-O\-G\-Descriptor\-::get\-People\-Detector64x128 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{structcv_1_1gpu_1_1HOGDescriptor_a360ce2c70dc83c0d52cfdaddfab52926}
+\hypertarget{structcv_1_1gpu_1_1HOGDescriptor_a395df751b32284630c866324571c4a8b}{\index{cv\-::gpu\-::\-H\-O\-G\-Descriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}!get\-Win\-Sigma@{get\-Win\-Sigma}}
+\index{get\-Win\-Sigma@{get\-Win\-Sigma}!cv::gpu::HOGDescriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{get\-Win\-Sigma}]{\setlength{\rightskip}{0pt plus 5cm}double cv\-::gpu\-::\-H\-O\-G\-Descriptor\-::get\-Win\-Sigma (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}}\label{structcv_1_1gpu_1_1HOGDescriptor_a395df751b32284630c866324571c4a8b}
+\hypertarget{structcv_1_1gpu_1_1HOGDescriptor_a3d6587836c6abdda9ad172bfc47e471d}{\index{cv\-::gpu\-::\-H\-O\-G\-Descriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}!num\-Parts\-Within@{num\-Parts\-Within}}
+\index{num\-Parts\-Within@{num\-Parts\-Within}!cv::gpu::HOGDescriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{num\-Parts\-Within}]{\setlength{\rightskip}{0pt plus 5cm}static int cv\-::gpu\-::\-H\-O\-G\-Descriptor\-::num\-Parts\-Within (
+\begin{DoxyParamCaption}
+\item[{int}]{size, }
+\item[{int}]{part\-\_\-size, }
+\item[{int}]{stride}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{structcv_1_1gpu_1_1HOGDescriptor_a3d6587836c6abdda9ad172bfc47e471d}
+\hypertarget{structcv_1_1gpu_1_1HOGDescriptor_a94cc2eb64e6c4a60b5e01e4d5f1a8329}{\index{cv\-::gpu\-::\-H\-O\-G\-Descriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}!num\-Parts\-Within@{num\-Parts\-Within}}
+\index{num\-Parts\-Within@{num\-Parts\-Within}!cv::gpu::HOGDescriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{num\-Parts\-Within}]{\setlength{\rightskip}{0pt plus 5cm}static Size cv\-::gpu\-::\-H\-O\-G\-Descriptor\-::num\-Parts\-Within (
+\begin{DoxyParamCaption}
+\item[{Size}]{size, }
+\item[{Size}]{part\-\_\-size, }
+\item[{Size}]{stride}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{structcv_1_1gpu_1_1HOGDescriptor_a94cc2eb64e6c4a60b5e01e4d5f1a8329}
+\hypertarget{structcv_1_1gpu_1_1HOGDescriptor_a1ebf78116b1164d0f51fd87fc90823aa}{\index{cv\-::gpu\-::\-H\-O\-G\-Descriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}!set\-S\-V\-M\-Detector@{set\-S\-V\-M\-Detector}}
+\index{set\-S\-V\-M\-Detector@{set\-S\-V\-M\-Detector}!cv::gpu::HOGDescriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{set\-S\-V\-M\-Detector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-H\-O\-G\-Descriptor\-::set\-S\-V\-M\-Detector (
+\begin{DoxyParamCaption}
+\item[{const vector$<$ float $>$ \&}]{detector}
+\end{DoxyParamCaption}
+)}}\label{structcv_1_1gpu_1_1HOGDescriptor_a1ebf78116b1164d0f51fd87fc90823aa}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structcv_1_1gpu_1_1HOGDescriptor_adf0a7d4b8342032b47c5be7255d597ed}{\index{cv\-::gpu\-::\-H\-O\-G\-Descriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}!block\-\_\-hists@{block\-\_\-hists}}
+\index{block\-\_\-hists@{block\-\_\-hists}!cv::gpu::HOGDescriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{block\-\_\-hists}]{\setlength{\rightskip}{0pt plus 5cm}Gpu\-Mat cv\-::gpu\-::\-H\-O\-G\-Descriptor\-::block\-\_\-hists\hspace{0.3cm}{\ttfamily [protected]}}}\label{structcv_1_1gpu_1_1HOGDescriptor_adf0a7d4b8342032b47c5be7255d597ed}
+\hypertarget{structcv_1_1gpu_1_1HOGDescriptor_a050f2faf673931e2a6cb1c704497880e}{\index{cv\-::gpu\-::\-H\-O\-G\-Descriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}!block\-\_\-hists\-\_\-buf@{block\-\_\-hists\-\_\-buf}}
+\index{block\-\_\-hists\-\_\-buf@{block\-\_\-hists\-\_\-buf}!cv::gpu::HOGDescriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{block\-\_\-hists\-\_\-buf}]{\setlength{\rightskip}{0pt plus 5cm}Gpu\-Mat cv\-::gpu\-::\-H\-O\-G\-Descriptor\-::block\-\_\-hists\-\_\-buf\hspace{0.3cm}{\ttfamily [protected]}}}\label{structcv_1_1gpu_1_1HOGDescriptor_a050f2faf673931e2a6cb1c704497880e}
+\hypertarget{structcv_1_1gpu_1_1HOGDescriptor_a2ffce0472743334cd00683e3ebf1aee5}{\index{cv\-::gpu\-::\-H\-O\-G\-Descriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}!block\-\_\-size@{block\-\_\-size}}
+\index{block\-\_\-size@{block\-\_\-size}!cv::gpu::HOGDescriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{block\-\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}Size cv\-::gpu\-::\-H\-O\-G\-Descriptor\-::block\-\_\-size}}\label{structcv_1_1gpu_1_1HOGDescriptor_a2ffce0472743334cd00683e3ebf1aee5}
+\hypertarget{structcv_1_1gpu_1_1HOGDescriptor_a64bd53b911a4b5399cf015b409ba1e85}{\index{cv\-::gpu\-::\-H\-O\-G\-Descriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}!block\-\_\-stride@{block\-\_\-stride}}
+\index{block\-\_\-stride@{block\-\_\-stride}!cv::gpu::HOGDescriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{block\-\_\-stride}]{\setlength{\rightskip}{0pt plus 5cm}Size cv\-::gpu\-::\-H\-O\-G\-Descriptor\-::block\-\_\-stride}}\label{structcv_1_1gpu_1_1HOGDescriptor_a64bd53b911a4b5399cf015b409ba1e85}
+\hypertarget{structcv_1_1gpu_1_1HOGDescriptor_ae9f565c6b25defa6a52ddabfd61bccb1}{\index{cv\-::gpu\-::\-H\-O\-G\-Descriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}!cell\-\_\-size@{cell\-\_\-size}}
+\index{cell\-\_\-size@{cell\-\_\-size}!cv::gpu::HOGDescriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{cell\-\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}Size cv\-::gpu\-::\-H\-O\-G\-Descriptor\-::cell\-\_\-size}}\label{structcv_1_1gpu_1_1HOGDescriptor_ae9f565c6b25defa6a52ddabfd61bccb1}
+\hypertarget{structcv_1_1gpu_1_1HOGDescriptor_a4d765f28f1af6854eda44e3406a0b122}{\index{cv\-::gpu\-::\-H\-O\-G\-Descriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}!detector@{detector}}
+\index{detector@{detector}!cv::gpu::HOGDescriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{detector}]{\setlength{\rightskip}{0pt plus 5cm}Gpu\-Mat cv\-::gpu\-::\-H\-O\-G\-Descriptor\-::detector\hspace{0.3cm}{\ttfamily [protected]}}}\label{structcv_1_1gpu_1_1HOGDescriptor_a4d765f28f1af6854eda44e3406a0b122}
+\hypertarget{structcv_1_1gpu_1_1HOGDescriptor_a490a998c5bccba208ab0684fdcc1bc2d}{\index{cv\-::gpu\-::\-H\-O\-G\-Descriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}!free\-\_\-coef@{free\-\_\-coef}}
+\index{free\-\_\-coef@{free\-\_\-coef}!cv::gpu::HOGDescriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{free\-\_\-coef}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::gpu\-::\-H\-O\-G\-Descriptor\-::free\-\_\-coef\hspace{0.3cm}{\ttfamily [protected]}}}\label{structcv_1_1gpu_1_1HOGDescriptor_a490a998c5bccba208ab0684fdcc1bc2d}
+\hypertarget{structcv_1_1gpu_1_1HOGDescriptor_ad98fee76f0f3f497065f38a9a52af09c}{\index{cv\-::gpu\-::\-H\-O\-G\-Descriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}!gamma\-\_\-correction@{gamma\-\_\-correction}}
+\index{gamma\-\_\-correction@{gamma\-\_\-correction}!cv::gpu::HOGDescriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{gamma\-\_\-correction}]{\setlength{\rightskip}{0pt plus 5cm}bool cv\-::gpu\-::\-H\-O\-G\-Descriptor\-::gamma\-\_\-correction}}\label{structcv_1_1gpu_1_1HOGDescriptor_ad98fee76f0f3f497065f38a9a52af09c}
+\hypertarget{structcv_1_1gpu_1_1HOGDescriptor_aa9cedc881b28b3835a546954c29f6fcc}{\index{cv\-::gpu\-::\-H\-O\-G\-Descriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}!grad@{grad}}
+\index{grad@{grad}!cv::gpu::HOGDescriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{grad}]{\setlength{\rightskip}{0pt plus 5cm}Gpu\-Mat cv\-::gpu\-::\-H\-O\-G\-Descriptor\-::grad\hspace{0.3cm}{\ttfamily [protected]}}}\label{structcv_1_1gpu_1_1HOGDescriptor_aa9cedc881b28b3835a546954c29f6fcc}
+\hypertarget{structcv_1_1gpu_1_1HOGDescriptor_a4254ff83858134f269b9527843b7b354}{\index{cv\-::gpu\-::\-H\-O\-G\-Descriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}!grad\-\_\-buf@{grad\-\_\-buf}}
+\index{grad\-\_\-buf@{grad\-\_\-buf}!cv::gpu::HOGDescriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{grad\-\_\-buf}]{\setlength{\rightskip}{0pt plus 5cm}Gpu\-Mat cv\-::gpu\-::\-H\-O\-G\-Descriptor\-::grad\-\_\-buf\hspace{0.3cm}{\ttfamily [protected]}}}\label{structcv_1_1gpu_1_1HOGDescriptor_a4254ff83858134f269b9527843b7b354}
+\hypertarget{structcv_1_1gpu_1_1HOGDescriptor_a2301efeb64505e3cbf63f6f3b5a01bf7}{\index{cv\-::gpu\-::\-H\-O\-G\-Descriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}!image\-\_\-scales@{image\-\_\-scales}}
+\index{image\-\_\-scales@{image\-\_\-scales}!cv::gpu::HOGDescriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{image\-\_\-scales}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$Gpu\-Mat$>$ cv\-::gpu\-::\-H\-O\-G\-Descriptor\-::image\-\_\-scales\hspace{0.3cm}{\ttfamily [protected]}}}\label{structcv_1_1gpu_1_1HOGDescriptor_a2301efeb64505e3cbf63f6f3b5a01bf7}
+\hypertarget{structcv_1_1gpu_1_1HOGDescriptor_acc8f6714bb5dd8ecded2225d434b4478}{\index{cv\-::gpu\-::\-H\-O\-G\-Descriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}!labels@{labels}}
+\index{labels@{labels}!cv::gpu::HOGDescriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{labels}]{\setlength{\rightskip}{0pt plus 5cm}Gpu\-Mat cv\-::gpu\-::\-H\-O\-G\-Descriptor\-::labels\hspace{0.3cm}{\ttfamily [protected]}}}\label{structcv_1_1gpu_1_1HOGDescriptor_acc8f6714bb5dd8ecded2225d434b4478}
+\hypertarget{structcv_1_1gpu_1_1HOGDescriptor_aa09819a63d77f1a819842634d0f894b3}{\index{cv\-::gpu\-::\-H\-O\-G\-Descriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}!labels\-\_\-buf@{labels\-\_\-buf}}
+\index{labels\-\_\-buf@{labels\-\_\-buf}!cv::gpu::HOGDescriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{labels\-\_\-buf}]{\setlength{\rightskip}{0pt plus 5cm}Gpu\-Mat cv\-::gpu\-::\-H\-O\-G\-Descriptor\-::labels\-\_\-buf\hspace{0.3cm}{\ttfamily [protected]}}}\label{structcv_1_1gpu_1_1HOGDescriptor_aa09819a63d77f1a819842634d0f894b3}
+\hypertarget{structcv_1_1gpu_1_1HOGDescriptor_a83a636e0dddd8480f2eea8f81b9ebcc5}{\index{cv\-::gpu\-::\-H\-O\-G\-Descriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}!labels\-\_\-host@{labels\-\_\-host}}
+\index{labels\-\_\-host@{labels\-\_\-host}!cv::gpu::HOGDescriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{labels\-\_\-host}]{\setlength{\rightskip}{0pt plus 5cm}Mat cv\-::gpu\-::\-H\-O\-G\-Descriptor\-::labels\-\_\-host\hspace{0.3cm}{\ttfamily [protected]}}}\label{structcv_1_1gpu_1_1HOGDescriptor_a83a636e0dddd8480f2eea8f81b9ebcc5}
+\hypertarget{structcv_1_1gpu_1_1HOGDescriptor_a40800ea71ba0552bb8af9189f2c5fdf6}{\index{cv\-::gpu\-::\-H\-O\-G\-Descriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}!nbins@{nbins}}
+\index{nbins@{nbins}!cv::gpu::HOGDescriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{nbins}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::gpu\-::\-H\-O\-G\-Descriptor\-::nbins}}\label{structcv_1_1gpu_1_1HOGDescriptor_a40800ea71ba0552bb8af9189f2c5fdf6}
+\hypertarget{structcv_1_1gpu_1_1HOGDescriptor_a8d4190de991a722004da4a8e724dffd9}{\index{cv\-::gpu\-::\-H\-O\-G\-Descriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}!nlevels@{nlevels}}
+\index{nlevels@{nlevels}!cv::gpu::HOGDescriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{nlevels}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::gpu\-::\-H\-O\-G\-Descriptor\-::nlevels}}\label{structcv_1_1gpu_1_1HOGDescriptor_a8d4190de991a722004da4a8e724dffd9}
+\hypertarget{structcv_1_1gpu_1_1HOGDescriptor_a706ce2936996876619084fac54e61464}{\index{cv\-::gpu\-::\-H\-O\-G\-Descriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}!qangle@{qangle}}
+\index{qangle@{qangle}!cv::gpu::HOGDescriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{qangle}]{\setlength{\rightskip}{0pt plus 5cm}Gpu\-Mat cv\-::gpu\-::\-H\-O\-G\-Descriptor\-::qangle\hspace{0.3cm}{\ttfamily [protected]}}}\label{structcv_1_1gpu_1_1HOGDescriptor_a706ce2936996876619084fac54e61464}
+\hypertarget{structcv_1_1gpu_1_1HOGDescriptor_a23ecc6bada4c3f54dfc4e9d67caaf5ad}{\index{cv\-::gpu\-::\-H\-O\-G\-Descriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}!qangle\-\_\-buf@{qangle\-\_\-buf}}
+\index{qangle\-\_\-buf@{qangle\-\_\-buf}!cv::gpu::HOGDescriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{qangle\-\_\-buf}]{\setlength{\rightskip}{0pt plus 5cm}Gpu\-Mat cv\-::gpu\-::\-H\-O\-G\-Descriptor\-::qangle\-\_\-buf\hspace{0.3cm}{\ttfamily [protected]}}}\label{structcv_1_1gpu_1_1HOGDescriptor_a23ecc6bada4c3f54dfc4e9d67caaf5ad}
+\hypertarget{structcv_1_1gpu_1_1HOGDescriptor_a7b1bb51bd628992aa16a775209062def}{\index{cv\-::gpu\-::\-H\-O\-G\-Descriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}!threshold\-\_\-\-L2hys@{threshold\-\_\-\-L2hys}}
+\index{threshold\-\_\-\-L2hys@{threshold\-\_\-\-L2hys}!cv::gpu::HOGDescriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{threshold\-\_\-\-L2hys}]{\setlength{\rightskip}{0pt plus 5cm}double cv\-::gpu\-::\-H\-O\-G\-Descriptor\-::threshold\-\_\-\-L2hys}}\label{structcv_1_1gpu_1_1HOGDescriptor_a7b1bb51bd628992aa16a775209062def}
+\hypertarget{structcv_1_1gpu_1_1HOGDescriptor_a54487b481e329b2dc0d8d018a988b5ff}{\index{cv\-::gpu\-::\-H\-O\-G\-Descriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}!win\-\_\-sigma@{win\-\_\-sigma}}
+\index{win\-\_\-sigma@{win\-\_\-sigma}!cv::gpu::HOGDescriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{win\-\_\-sigma}]{\setlength{\rightskip}{0pt plus 5cm}double cv\-::gpu\-::\-H\-O\-G\-Descriptor\-::win\-\_\-sigma}}\label{structcv_1_1gpu_1_1HOGDescriptor_a54487b481e329b2dc0d8d018a988b5ff}
+\hypertarget{structcv_1_1gpu_1_1HOGDescriptor_a81c175ea3b25ddf619d5a693c6b011b0}{\index{cv\-::gpu\-::\-H\-O\-G\-Descriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}!win\-\_\-size@{win\-\_\-size}}
+\index{win\-\_\-size@{win\-\_\-size}!cv::gpu::HOGDescriptor@{cv\-::gpu\-::\-H\-O\-G\-Descriptor}}
+\subsubsection[{win\-\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}Size cv\-::gpu\-::\-H\-O\-G\-Descriptor\-::win\-\_\-size}}\label{structcv_1_1gpu_1_1HOGDescriptor_a81c175ea3b25ddf619d5a693c6b011b0}
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/gpu/\hyperlink{gpu_2gpu_8hpp}{gpu.\-hpp}\end{DoxyCompactItemize}

@@ -1,0 +1,8 @@
+<map id="cvflann::NNIndex::findNeighbors" name="cvflann::NNIndex::findNeighbors">
+<area shape="rect" id="node2" href="$namespacecvflann.html#aff249b1a3cfbd449db4ee469a0cb2a62" title="cvflann::search_with\l_ground_truth" alt="" coords="293,70,435,111"/>
+<area shape="rect" id="node6" href="$classcvflann_1_1NNIndex.html#a8cf5c942430421358bf67d93565942db" title="Perform k&#45;nearest neighbor search. " alt="" coords="267,136,461,163"/>
+<area shape="rect" id="node7" href="$classcvflann_1_1NNIndex.html#a142da9423596dd59766d1dcbcac433e9" title="Perform radius search. " alt="" coords="281,187,447,229"/>
+<area shape="rect" id="node3" href="$namespacecvflann.html#a1d76012b7d0afeea6c4b43ec48cda7a4" title="cvflann::test_index\l_checks" alt="" coords="510,5,642,46"/>
+<area shape="rect" id="node4" href="$namespacecvflann.html#aff89fafb22b62a454cef8ce83960b89f" title="cvflann::test_index\l_precision" alt="" coords="510,70,642,111"/>
+<area shape="rect" id="node5" href="$namespacecvflann.html#aa27ca9a7a0e97f3b09f781421b5ffa05" title="cvflann::test_index\l_precisions" alt="" coords="510,135,642,177"/>
+</map>

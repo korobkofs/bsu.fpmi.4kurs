@@ -1,0 +1,6 @@
+<map id="cv::gpu::device::reduce_key_val_detail::copyValsShfl" name="cv::gpu::device::reduce_key_val_detail::copyValsShfl">
+<area shape="rect" id="node2" href="$namespacecv_1_1gpu_1_1device_1_1reduce__key__val__detail.html#aaef6abf3d0a904c43b8e28c4a8ca3c70" title="cv::gpu::device::reduce\l_key_val_detail::mergeShfl" alt="" coords="251,41,429,82"/>
+<area shape="rect" id="node3" href="$namespacecv_1_1gpu_1_1device_1_1reduce__key__val__detail.html#a7631b7354f0f0b05d103227a5c7e55be" title="cv::gpu::device::reduce\l_key_val_detail::mergeShfl" alt="" coords="477,5,656,46"/>
+<area shape="rect" id="node4" href="$structcv_1_1gpu_1_1device_1_1reduce__key__val__detail_1_1Unroll.html#a4b58709ed74d7cd37b467f397197a47e" title="cv::gpu::device::reduce\l_key_val_detail::Unroll\l::loopShfl" alt="" coords="487,69,646,125"/>
+<area shape="rect" id="node5" href="$structcv_1_1gpu_1_1device_1_1reduce__key__val__detail_1_1GenericOptimized32.html#ac61f56ddcc428c76eb2c4f59c0007320" title="cv::gpu::device::reduce\l_key_val_detail::GenericOptimized32\l::reduce" alt="" coords="705,69,943,125"/>
+</map>

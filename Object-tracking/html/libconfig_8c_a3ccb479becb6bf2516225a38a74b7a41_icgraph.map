@@ -1,0 +1,8 @@
+<map id="__config_setting_get_float" name="__config_setting_get_float">
+<area shape="rect" id="node2" href="$libconfig_8h.html#a4e90532d057c33bf959f5f182ed9bf00" title="config_setting_get\l_float" alt="" coords="208,70,336,111"/>
+<area shape="rect" id="node6" href="$libconfig_8h.html#a682292daf93fe30ae66dc8f1de0e1f8c" title="config_setting_lookup\l_float" alt="" coords="198,135,346,177"/>
+<area shape="rect" id="node7" href="$libconfig_8h.html#a7457b1644fca734204e8dda7f1d0e2a5" title="config_lookup_float" alt="" coords="205,201,339,228"/>
+<area shape="rect" id="node3" href="$libconfig_8h.html#ad1fe5d99342917db51580893343560f0" title="config_setting_get\l_float_elem" alt="" coords="395,5,523,46"/>
+<area shape="rect" id="node4" href="$classlibconfig_1_1Setting.html#a79a41bbda6c9cd9f50c5820032424874" title="libconfig::Setting\l::operator double" alt="" coords="399,70,518,111"/>
+<area shape="rect" id="node5" href="$classlibconfig_1_1Setting.html#afe1936d947131f08bc0b0e0824ada07a" title="libconfig::Setting\l::operator float" alt="" coords="399,135,518,177"/>
+</map>

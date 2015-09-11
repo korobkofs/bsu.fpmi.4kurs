@@ -1,0 +1,195 @@
+\hypertarget{classcv_1_1BackgroundSubtractorGMG}{\section{cv\-:\-:Background\-Subtractor\-G\-M\-G Class Reference}
+\label{classcv_1_1BackgroundSubtractorGMG}\index{cv\-::\-Background\-Subtractor\-G\-M\-G@{cv\-::\-Background\-Subtractor\-G\-M\-G}}
+}
+
+
+{\ttfamily \#include $<$background\-\_\-segm.\-hpp$>$}
+
+
+
+Inheritance diagram for cv\-:\-:Background\-Subtractor\-G\-M\-G\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{classcv_1_1BackgroundSubtractorGMG__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for cv\-:\-:Background\-Subtractor\-G\-M\-G\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{classcv_1_1BackgroundSubtractorGMG__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcv_1_1BackgroundSubtractorGMG_a6caec4b272e7b548fb105a03e3461ce0}{Background\-Subtractor\-G\-M\-G} ()
+\item 
+virtual \hyperlink{classcv_1_1BackgroundSubtractorGMG_ab04198d6ac332f4fce2e79cb01e73e60}{$\sim$\-Background\-Subtractor\-G\-M\-G} ()
+\item 
+virtual Algorithm\-Info $\ast$ \hyperlink{classcv_1_1BackgroundSubtractorGMG_ab964ae424066bf14960615ae903153a3}{info} () const 
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1BackgroundSubtractorGMG_a4e89d03c902993623d1138bbb2a5bced}{initialize} (cv\-::\-Size frame\-Size, double min, double max)
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1BackgroundSubtractorGMG_a4c7920883f20e3af2c2125b846a276f2}{operator()} (Input\-Array \hyperlink{legacy_8hpp_ad62b16ab219ae2483e8a3d921c44cc97}{image}, Output\-Array \hyperlink{classcv_1_1BackgroundSubtractor_a3a04333e20f88e6799f368d7abb2abd9}{fgmask}, double \hyperlink{classcv_1_1BackgroundSubtractorGMG_ab573842c1b123e8ad99fe84a03f877b7}{learning\-Rate}=-\/1.\-0)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1BackgroundSubtractorGMG_acb52ba29800dd9b5359718fcb0e7bd8d}{release} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classcv_1_1BackgroundSubtractorGMG_a76c047648867024272c6c63d9b47679b}{max\-Features}
+\begin{DoxyCompactList}\small\item\em Total number of distinct colors to maintain in histogram. \end{DoxyCompactList}\item 
+double \hyperlink{classcv_1_1BackgroundSubtractorGMG_ab573842c1b123e8ad99fe84a03f877b7}{learning\-Rate}
+\begin{DoxyCompactList}\small\item\em Set between 0.\-0 and 1.\-0, determines how quickly features are \char`\"{}forgotten\char`\"{} from histograms. \end{DoxyCompactList}\item 
+int \hyperlink{classcv_1_1BackgroundSubtractorGMG_a5378e398520be8ed6e696488d329b122}{num\-Initialization\-Frames}
+\begin{DoxyCompactList}\small\item\em Number of frames of video to use to initialize histograms. \end{DoxyCompactList}\item 
+int \hyperlink{classcv_1_1BackgroundSubtractorGMG_a224018fca5b296390d4c94943c19202a}{quantization\-Levels}
+\begin{DoxyCompactList}\small\item\em Number of discrete levels in each channel to be used in histograms. \end{DoxyCompactList}\item 
+double \hyperlink{classcv_1_1BackgroundSubtractorGMG_ac496a3272d5cc8b39b0b2a37f50a0686}{background\-Prior}
+\begin{DoxyCompactList}\small\item\em Prior probability that any given pixel is a background pixel. A sensitivity parameter. \end{DoxyCompactList}\item 
+double \hyperlink{classcv_1_1BackgroundSubtractorGMG_af160ea140a4bc9a24e784f94d06aebef}{decision\-Threshold}
+\begin{DoxyCompactList}\small\item\em Value above which pixel is determined to be F\-G. \end{DoxyCompactList}\item 
+int \hyperlink{classcv_1_1BackgroundSubtractorGMG_a243c4a842164e497af83707a5a1a9cf6}{smoothing\-Radius}
+\begin{DoxyCompactList}\small\item\em Smoothing radius, in pixels, for cleaning up F\-G image. \end{DoxyCompactList}\item 
+bool \hyperlink{classcv_1_1BackgroundSubtractorGMG_a8095e2a8182e87e02afdc4c3d30959d1}{update\-Background\-Model}
+\begin{DoxyCompactList}\small\item\em Perform background model update. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Background Subtractor module. Takes a series of images and returns a sequence of mask (8\-U\-C1) images of the same size, where 255 indicates Foreground and 0 represents Background. This class implements an algorithm described in \char`\"{}\-Visual Tracking of Human Visitors under
+\-Variable-\/\-Lighting Conditions for a Responsive Audio Art Installation,\char`\"{} A. Godbehere, A. Matsukawa, K. Goldberg, American Control Conference, Montreal, June 2012. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcv_1_1BackgroundSubtractorGMG_a6caec4b272e7b548fb105a03e3461ce0}{\index{cv\-::\-Background\-Subtractor\-G\-M\-G@{cv\-::\-Background\-Subtractor\-G\-M\-G}!Background\-Subtractor\-G\-M\-G@{Background\-Subtractor\-G\-M\-G}}
+\index{Background\-Subtractor\-G\-M\-G@{Background\-Subtractor\-G\-M\-G}!cv::BackgroundSubtractorGMG@{cv\-::\-Background\-Subtractor\-G\-M\-G}}
+\subsubsection[{Background\-Subtractor\-G\-M\-G}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::\-Background\-Subtractor\-G\-M\-G\-::\-Background\-Subtractor\-G\-M\-G (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1BackgroundSubtractorGMG_a6caec4b272e7b548fb105a03e3461ce0}
+\hypertarget{classcv_1_1BackgroundSubtractorGMG_ab04198d6ac332f4fce2e79cb01e73e60}{\index{cv\-::\-Background\-Subtractor\-G\-M\-G@{cv\-::\-Background\-Subtractor\-G\-M\-G}!$\sim$\-Background\-Subtractor\-G\-M\-G@{$\sim$\-Background\-Subtractor\-G\-M\-G}}
+\index{$\sim$\-Background\-Subtractor\-G\-M\-G@{$\sim$\-Background\-Subtractor\-G\-M\-G}!cv::BackgroundSubtractorGMG@{cv\-::\-Background\-Subtractor\-G\-M\-G}}
+\subsubsection[{$\sim$\-Background\-Subtractor\-G\-M\-G}]{\setlength{\rightskip}{0pt plus 5cm}virtual cv\-::\-Background\-Subtractor\-G\-M\-G\-::$\sim$\-Background\-Subtractor\-G\-M\-G (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcv_1_1BackgroundSubtractorGMG_ab04198d6ac332f4fce2e79cb01e73e60}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcv_1_1BackgroundSubtractorGMG_ab964ae424066bf14960615ae903153a3}{\index{cv\-::\-Background\-Subtractor\-G\-M\-G@{cv\-::\-Background\-Subtractor\-G\-M\-G}!info@{info}}
+\index{info@{info}!cv::BackgroundSubtractorGMG@{cv\-::\-Background\-Subtractor\-G\-M\-G}}
+\subsubsection[{info}]{\setlength{\rightskip}{0pt plus 5cm}virtual Algorithm\-Info$\ast$ cv\-::\-Background\-Subtractor\-G\-M\-G\-::info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcv_1_1BackgroundSubtractorGMG_ab964ae424066bf14960615ae903153a3}
+\hypertarget{classcv_1_1BackgroundSubtractorGMG_a4e89d03c902993623d1138bbb2a5bced}{\index{cv\-::\-Background\-Subtractor\-G\-M\-G@{cv\-::\-Background\-Subtractor\-G\-M\-G}!initialize@{initialize}}
+\index{initialize@{initialize}!cv::BackgroundSubtractorGMG@{cv\-::\-Background\-Subtractor\-G\-M\-G}}
+\subsubsection[{initialize}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::\-Background\-Subtractor\-G\-M\-G\-::initialize (
+\begin{DoxyParamCaption}
+\item[{cv\-::\-Size}]{frame\-Size, }
+\item[{double}]{min, }
+\item[{double}]{max}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1BackgroundSubtractorGMG_a4e89d03c902993623d1138bbb2a5bced}
+Validate parameters and set up data structures for appropriate image size. Must call before running on data. 
+\begin{DoxyParams}{Parameters}
+{\em frame\-Size} & input frame size \\
+\hline
+{\em min} & minimum value taken on by pixels in image sequence. Usually 0 \\
+\hline
+{\em max} & maximum value taken on by pixels in image sequence. e.\-g. 1.\-0 or 255 \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcv_1_1BackgroundSubtractorGMG_a4c7920883f20e3af2c2125b846a276f2}{\index{cv\-::\-Background\-Subtractor\-G\-M\-G@{cv\-::\-Background\-Subtractor\-G\-M\-G}!operator()@{operator()}}
+\index{operator()@{operator()}!cv::BackgroundSubtractorGMG@{cv\-::\-Background\-Subtractor\-G\-M\-G}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cv\-::\-Background\-Subtractor\-G\-M\-G\-::operator() (
+\begin{DoxyParamCaption}
+\item[{Input\-Array}]{image, }
+\item[{Output\-Array}]{fgmask, }
+\item[{double}]{learning\-Rate = {\ttfamily -\/1.0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcv_1_1BackgroundSubtractorGMG_a4c7920883f20e3af2c2125b846a276f2}
+Performs single-\/frame background subtraction and builds up a statistical background image model. 
+\begin{DoxyParams}{Parameters}
+{\em image} & Input image \\
+\hline
+{\em fgmask} & Output mask image representing foreground and background pixels \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcv_1_1BackgroundSubtractorGMG_acb52ba29800dd9b5359718fcb0e7bd8d}{\index{cv\-::\-Background\-Subtractor\-G\-M\-G@{cv\-::\-Background\-Subtractor\-G\-M\-G}!release@{release}}
+\index{release@{release}!cv::BackgroundSubtractorGMG@{cv\-::\-Background\-Subtractor\-G\-M\-G}}
+\subsubsection[{release}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::\-Background\-Subtractor\-G\-M\-G\-::release (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1BackgroundSubtractorGMG_acb52ba29800dd9b5359718fcb0e7bd8d}
+Releases all inner buffers. 
+
+\subsection{Member Data Documentation}
+\hypertarget{classcv_1_1BackgroundSubtractorGMG_ac496a3272d5cc8b39b0b2a37f50a0686}{\index{cv\-::\-Background\-Subtractor\-G\-M\-G@{cv\-::\-Background\-Subtractor\-G\-M\-G}!background\-Prior@{background\-Prior}}
+\index{background\-Prior@{background\-Prior}!cv::BackgroundSubtractorGMG@{cv\-::\-Background\-Subtractor\-G\-M\-G}}
+\subsubsection[{background\-Prior}]{\setlength{\rightskip}{0pt plus 5cm}double cv\-::\-Background\-Subtractor\-G\-M\-G\-::background\-Prior}}\label{classcv_1_1BackgroundSubtractorGMG_ac496a3272d5cc8b39b0b2a37f50a0686}
+
+
+Prior probability that any given pixel is a background pixel. A sensitivity parameter. 
+
+\hypertarget{classcv_1_1BackgroundSubtractorGMG_af160ea140a4bc9a24e784f94d06aebef}{\index{cv\-::\-Background\-Subtractor\-G\-M\-G@{cv\-::\-Background\-Subtractor\-G\-M\-G}!decision\-Threshold@{decision\-Threshold}}
+\index{decision\-Threshold@{decision\-Threshold}!cv::BackgroundSubtractorGMG@{cv\-::\-Background\-Subtractor\-G\-M\-G}}
+\subsubsection[{decision\-Threshold}]{\setlength{\rightskip}{0pt plus 5cm}double cv\-::\-Background\-Subtractor\-G\-M\-G\-::decision\-Threshold}}\label{classcv_1_1BackgroundSubtractorGMG_af160ea140a4bc9a24e784f94d06aebef}
+
+
+Value above which pixel is determined to be F\-G. 
+
+\hypertarget{classcv_1_1BackgroundSubtractorGMG_ab573842c1b123e8ad99fe84a03f877b7}{\index{cv\-::\-Background\-Subtractor\-G\-M\-G@{cv\-::\-Background\-Subtractor\-G\-M\-G}!learning\-Rate@{learning\-Rate}}
+\index{learning\-Rate@{learning\-Rate}!cv::BackgroundSubtractorGMG@{cv\-::\-Background\-Subtractor\-G\-M\-G}}
+\subsubsection[{learning\-Rate}]{\setlength{\rightskip}{0pt plus 5cm}double cv\-::\-Background\-Subtractor\-G\-M\-G\-::learning\-Rate}}\label{classcv_1_1BackgroundSubtractorGMG_ab573842c1b123e8ad99fe84a03f877b7}
+
+
+Set between 0.\-0 and 1.\-0, determines how quickly features are \char`\"{}forgotten\char`\"{} from histograms. 
+
+\hypertarget{classcv_1_1BackgroundSubtractorGMG_a76c047648867024272c6c63d9b47679b}{\index{cv\-::\-Background\-Subtractor\-G\-M\-G@{cv\-::\-Background\-Subtractor\-G\-M\-G}!max\-Features@{max\-Features}}
+\index{max\-Features@{max\-Features}!cv::BackgroundSubtractorGMG@{cv\-::\-Background\-Subtractor\-G\-M\-G}}
+\subsubsection[{max\-Features}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::\-Background\-Subtractor\-G\-M\-G\-::max\-Features}}\label{classcv_1_1BackgroundSubtractorGMG_a76c047648867024272c6c63d9b47679b}
+
+
+Total number of distinct colors to maintain in histogram. 
+
+\hypertarget{classcv_1_1BackgroundSubtractorGMG_a5378e398520be8ed6e696488d329b122}{\index{cv\-::\-Background\-Subtractor\-G\-M\-G@{cv\-::\-Background\-Subtractor\-G\-M\-G}!num\-Initialization\-Frames@{num\-Initialization\-Frames}}
+\index{num\-Initialization\-Frames@{num\-Initialization\-Frames}!cv::BackgroundSubtractorGMG@{cv\-::\-Background\-Subtractor\-G\-M\-G}}
+\subsubsection[{num\-Initialization\-Frames}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::\-Background\-Subtractor\-G\-M\-G\-::num\-Initialization\-Frames}}\label{classcv_1_1BackgroundSubtractorGMG_a5378e398520be8ed6e696488d329b122}
+
+
+Number of frames of video to use to initialize histograms. 
+
+\hypertarget{classcv_1_1BackgroundSubtractorGMG_a224018fca5b296390d4c94943c19202a}{\index{cv\-::\-Background\-Subtractor\-G\-M\-G@{cv\-::\-Background\-Subtractor\-G\-M\-G}!quantization\-Levels@{quantization\-Levels}}
+\index{quantization\-Levels@{quantization\-Levels}!cv::BackgroundSubtractorGMG@{cv\-::\-Background\-Subtractor\-G\-M\-G}}
+\subsubsection[{quantization\-Levels}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::\-Background\-Subtractor\-G\-M\-G\-::quantization\-Levels}}\label{classcv_1_1BackgroundSubtractorGMG_a224018fca5b296390d4c94943c19202a}
+
+
+Number of discrete levels in each channel to be used in histograms. 
+
+\hypertarget{classcv_1_1BackgroundSubtractorGMG_a243c4a842164e497af83707a5a1a9cf6}{\index{cv\-::\-Background\-Subtractor\-G\-M\-G@{cv\-::\-Background\-Subtractor\-G\-M\-G}!smoothing\-Radius@{smoothing\-Radius}}
+\index{smoothing\-Radius@{smoothing\-Radius}!cv::BackgroundSubtractorGMG@{cv\-::\-Background\-Subtractor\-G\-M\-G}}
+\subsubsection[{smoothing\-Radius}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::\-Background\-Subtractor\-G\-M\-G\-::smoothing\-Radius}}\label{classcv_1_1BackgroundSubtractorGMG_a243c4a842164e497af83707a5a1a9cf6}
+
+
+Smoothing radius, in pixels, for cleaning up F\-G image. 
+
+\hypertarget{classcv_1_1BackgroundSubtractorGMG_a8095e2a8182e87e02afdc4c3d30959d1}{\index{cv\-::\-Background\-Subtractor\-G\-M\-G@{cv\-::\-Background\-Subtractor\-G\-M\-G}!update\-Background\-Model@{update\-Background\-Model}}
+\index{update\-Background\-Model@{update\-Background\-Model}!cv::BackgroundSubtractorGMG@{cv\-::\-Background\-Subtractor\-G\-M\-G}}
+\subsubsection[{update\-Background\-Model}]{\setlength{\rightskip}{0pt plus 5cm}bool cv\-::\-Background\-Subtractor\-G\-M\-G\-::update\-Background\-Model}}\label{classcv_1_1BackgroundSubtractorGMG_a8095e2a8182e87e02afdc4c3d30959d1}
+
+
+Perform background model update. 
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/video/\hyperlink{background__segm_8hpp}{background\-\_\-segm.\-hpp}\end{DoxyCompactItemize}

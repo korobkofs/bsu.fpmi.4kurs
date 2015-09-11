@@ -1,0 +1,5 @@
+<map id="cv::gpu::device::transform_detail::TransformDispatcher&lt; true &gt;::call" name="cv::gpu::device::transform_detail::TransformDispatcher&lt; true &gt;::call">
+<area shape="rect" id="node2" href="$namespacecvtest.html#a8543a691c795c3f9bbfbb19cdb377790" title="cvtest::check" alt="" coords="259,5,360,32"/>
+<area shape="rect" id="node3" href="$namespacecv_1_1gpu.html#aa554e59e09e2e3a8f891b5b0a521b5ba" title="cv::gpu::isAligned" alt="" coords="246,56,373,83"/>
+<area shape="rect" id="node4" href="$namespacecv_1_1gpu.html#a7b80d0ece4df0b1f517b22422a3d272f" title="cv::gpu::divUp" alt="" coords="256,107,363,133"/>
+</map>

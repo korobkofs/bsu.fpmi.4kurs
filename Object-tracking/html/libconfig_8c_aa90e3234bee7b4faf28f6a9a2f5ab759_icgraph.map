@@ -1,0 +1,18 @@
+<map id="__config_setting_destroy" name="__config_setting_destroy">
+<area shape="rect" id="node2" href="$libconfig_8c.html#a1753aaaa9c2fd22b0dfae1e599833145" title="__config_list_destroy" alt="" coords="243,76,389,103"/>
+<area shape="rect" id="node3" href="$libconfig_8h.html#a6c7e766968945321babc7387cd42421b" title="config_destroy" alt="" coords="263,127,369,153"/>
+<area shape="rect" id="node14" href="$libconfig_8h.html#a8985087ce09c9cd2fafc3ef999255a76" title="config_setting_remove" alt="" coords="239,184,393,211"/>
+<area shape="rect" id="node16" href="$libconfig_8h.html#a1b9e9f12ebad863eecba7862ab33c774" title="config_setting_remove_elem" alt="" coords="222,241,410,268"/>
+<area shape="rect" id="node4" href="$libconfig_8c.html#a304fc54660c19cf654d0fdc4e44ec724" title="__config_read" alt="" coords="470,64,573,91"/>
+<area shape="rect" id="node13" href="$classlibconfig_1_1Config.html#a5d94e935833746061f33d58261365f55" title="libconfig::Config::\l~Config" alt="" coords="459,115,583,157"/>
+<area shape="rect" id="node5" href="$libconfig_8h.html#ade3e90a918cb62daf3f71ebdc785a9d5" title="config_read" alt="" coords="651,9,741,36"/>
+<area shape="rect" id="node7" href="$libconfig_8h.html#af949fcd25cd9adca27c78a49f62c2ebd" title="config_read_string" alt="" coords="632,64,760,91"/>
+<area shape="rect" id="node9" href="$libconfig_8h.html#a07dc4858f102ee91fafc17ed5932215e" title="config_read_file" alt="" coords="639,123,753,149"/>
+<area shape="rect" id="node6" href="$classlibconfig_1_1Config.html#a468e6ef4c2e36bdd57fc23708dee69a1" title="libconfig::Config::read" alt="" coords="808,5,957,32"/>
+<area shape="rect" id="node8" href="$classlibconfig_1_1Config.html#af3076c6839fa256bef1ad3fc33e17f98" title="libconfig::Config::\lreadString" alt="" coords="821,57,945,98"/>
+<area shape="rect" id="node10" href="$classlibconfig_1_1Config.html#a31bc78ca36d4081560de025cbb08c022" title="libconfig::Config::\lreadFile" alt="" coords="821,122,945,163"/>
+<area shape="rect" id="node11" href="$classtld_1_1Config.html#ab2f2fb863b08832e2b877e6f09073333" title="Initializes the Config. " alt="" coords="1005,129,1112,156"/>
+<area shape="rect" id="node12" href="$OpenTLD_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="1160,129,1211,156"/>
+<area shape="rect" id="node15" href="$classlibconfig_1_1Setting.html#a52f173e9d7abd9d3e8e0ba4151ed89d1" title="libconfig::Setting\l::remove" alt="" coords="462,181,581,222"/>
+<area shape="rect" id="node17" href="$classlibconfig_1_1Setting.html#abc80ebd07bbca2cc65b37b74a452104a" title="libconfig::Setting\l::remove" alt="" coords="462,246,581,287"/>
+</map>

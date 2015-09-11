@@ -1,0 +1,111 @@
+\hypertarget{classcv_1_1detail_1_1MultiBandBlender}{\section{cv\-:\-:detail\-:\-:Multi\-Band\-Blender Class Reference}
+\label{classcv_1_1detail_1_1MultiBandBlender}\index{cv\-::detail\-::\-Multi\-Band\-Blender@{cv\-::detail\-::\-Multi\-Band\-Blender}}
+}
+
+
+{\ttfamily \#include $<$blenders.\-hpp$>$}
+
+
+
+Inheritance diagram for cv\-:\-:detail\-:\-:Multi\-Band\-Blender\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{classcv_1_1detail_1_1MultiBandBlender__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for cv\-:\-:detail\-:\-:Multi\-Band\-Blender\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{classcv_1_1detail_1_1MultiBandBlender__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcv_1_1detail_1_1MultiBandBlender_a22b424c9587d07da189cd1f15c664424}{Multi\-Band\-Blender} (int try\-\_\-gpu=false, int num\-\_\-bands=5, int weight\-\_\-type=\hyperlink{core_2types__c_8h_a4a3def5d72b74bed31f5f8ab7676099c}{C\-V\-\_\-32\-F})
+\item 
+int \hyperlink{classcv_1_1detail_1_1MultiBandBlender_a842e50c7e69d769470d91661dccb71ae}{num\-Bands} () const 
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1detail_1_1MultiBandBlender_a2efd19181426ba017b23c24c88666188}{set\-Num\-Bands} (int val)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1detail_1_1MultiBandBlender_a40907c07723dce1ea47d23d529b74ae3}{prepare} (Rect dst\-\_\-roi)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1detail_1_1MultiBandBlender_a80820aaf651dfab3da39fa7198fbb6e2}{feed} (const Mat \&\hyperlink{legacy_8hpp_a5349238b3772bed6eae0fda3117ccfef}{img}, const Mat \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}, Point tl)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1detail_1_1MultiBandBlender_aca24a82107a4d76cd4cb0c75b80d09df}{blend} (Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, Mat \&dst\-\_\-mask)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcv_1_1detail_1_1MultiBandBlender_a22b424c9587d07da189cd1f15c664424}{\index{cv\-::detail\-::\-Multi\-Band\-Blender@{cv\-::detail\-::\-Multi\-Band\-Blender}!Multi\-Band\-Blender@{Multi\-Band\-Blender}}
+\index{Multi\-Band\-Blender@{Multi\-Band\-Blender}!cv::detail::MultiBandBlender@{cv\-::detail\-::\-Multi\-Band\-Blender}}
+\subsubsection[{Multi\-Band\-Blender}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::detail\-::\-Multi\-Band\-Blender\-::\-Multi\-Band\-Blender (
+\begin{DoxyParamCaption}
+\item[{int}]{try\-\_\-gpu = {\ttfamily false}, }
+\item[{int}]{num\-\_\-bands = {\ttfamily 5}, }
+\item[{int}]{weight\-\_\-type = {\ttfamily {\bf C\-V\-\_\-32\-F}}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1detail_1_1MultiBandBlender_a22b424c9587d07da189cd1f15c664424}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcv_1_1detail_1_1MultiBandBlender_aca24a82107a4d76cd4cb0c75b80d09df}{\index{cv\-::detail\-::\-Multi\-Band\-Blender@{cv\-::detail\-::\-Multi\-Band\-Blender}!blend@{blend}}
+\index{blend@{blend}!cv::detail::MultiBandBlender@{cv\-::detail\-::\-Multi\-Band\-Blender}}
+\subsubsection[{blend}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::detail\-::\-Multi\-Band\-Blender\-::blend (
+\begin{DoxyParamCaption}
+\item[{Mat \&}]{dst, }
+\item[{Mat \&}]{dst\-\_\-mask}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcv_1_1detail_1_1MultiBandBlender_aca24a82107a4d76cd4cb0c75b80d09df}
+
+
+Reimplemented from \hyperlink{classcv_1_1detail_1_1Blender_aa7f395032fff97cb5d058388568006a8}{cv\-::detail\-::\-Blender}.
+
+\hypertarget{classcv_1_1detail_1_1MultiBandBlender_a80820aaf651dfab3da39fa7198fbb6e2}{\index{cv\-::detail\-::\-Multi\-Band\-Blender@{cv\-::detail\-::\-Multi\-Band\-Blender}!feed@{feed}}
+\index{feed@{feed}!cv::detail::MultiBandBlender@{cv\-::detail\-::\-Multi\-Band\-Blender}}
+\subsubsection[{feed}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::detail\-::\-Multi\-Band\-Blender\-::feed (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{img, }
+\item[{const Mat \&}]{mask, }
+\item[{Point}]{tl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcv_1_1detail_1_1MultiBandBlender_a80820aaf651dfab3da39fa7198fbb6e2}
+
+
+Reimplemented from \hyperlink{classcv_1_1detail_1_1Blender_a48285084faa1686d8ddcf8faa0d53ad0}{cv\-::detail\-::\-Blender}.
+
+\hypertarget{classcv_1_1detail_1_1MultiBandBlender_a842e50c7e69d769470d91661dccb71ae}{\index{cv\-::detail\-::\-Multi\-Band\-Blender@{cv\-::detail\-::\-Multi\-Band\-Blender}!num\-Bands@{num\-Bands}}
+\index{num\-Bands@{num\-Bands}!cv::detail::MultiBandBlender@{cv\-::detail\-::\-Multi\-Band\-Blender}}
+\subsubsection[{num\-Bands}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::detail\-::\-Multi\-Band\-Blender\-::num\-Bands (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1detail_1_1MultiBandBlender_a842e50c7e69d769470d91661dccb71ae}
+\hypertarget{classcv_1_1detail_1_1MultiBandBlender_a40907c07723dce1ea47d23d529b74ae3}{\index{cv\-::detail\-::\-Multi\-Band\-Blender@{cv\-::detail\-::\-Multi\-Band\-Blender}!prepare@{prepare}}
+\index{prepare@{prepare}!cv::detail::MultiBandBlender@{cv\-::detail\-::\-Multi\-Band\-Blender}}
+\subsubsection[{prepare}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::detail\-::\-Multi\-Band\-Blender\-::prepare (
+\begin{DoxyParamCaption}
+\item[{Rect}]{dst\-\_\-roi}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcv_1_1detail_1_1MultiBandBlender_a40907c07723dce1ea47d23d529b74ae3}
+
+
+Reimplemented from \hyperlink{classcv_1_1detail_1_1Blender_a6d81cd6a0a2284de3ec7898409c7c0a8}{cv\-::detail\-::\-Blender}.
+
+\hypertarget{classcv_1_1detail_1_1MultiBandBlender_a2efd19181426ba017b23c24c88666188}{\index{cv\-::detail\-::\-Multi\-Band\-Blender@{cv\-::detail\-::\-Multi\-Band\-Blender}!set\-Num\-Bands@{set\-Num\-Bands}}
+\index{set\-Num\-Bands@{set\-Num\-Bands}!cv::detail::MultiBandBlender@{cv\-::detail\-::\-Multi\-Band\-Blender}}
+\subsubsection[{set\-Num\-Bands}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::detail\-::\-Multi\-Band\-Blender\-::set\-Num\-Bands (
+\begin{DoxyParamCaption}
+\item[{int}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1detail_1_1MultiBandBlender_a2efd19181426ba017b23c24c88666188}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/stitching/detail/\hyperlink{blenders_8hpp}{blenders.\-hpp}\end{DoxyCompactItemize}

@@ -1,0 +1,102 @@
+\hypertarget{structCvMSERParams}{\section{Cv\-M\-S\-E\-R\-Params Struct Reference}
+\label{structCvMSERParams}\index{Cv\-M\-S\-E\-R\-Params@{Cv\-M\-S\-E\-R\-Params}}
+}
+
+
+{\ttfamily \#include $<$compat.\-hpp$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{structCvMSERParams_a9a8574af934f1efe0aacb610fd273f04}{delta}
+\begin{DoxyCompactList}\small\item\em delta, in the code, it compares (size\-\_\-\{i\}-\/size\-\_\-\{i-\/delta\})/size\-\_\-\{i-\/delta\} \end{DoxyCompactList}\item 
+int \hyperlink{structCvMSERParams_a4f2be25b22dd08ebf741240d9b5a445e}{max\-Area}
+\begin{DoxyCompactList}\small\item\em prune the area which bigger than max\-Area \end{DoxyCompactList}\item 
+int \hyperlink{structCvMSERParams_aa05b341d994d1fd85e199f5c4fe41db0}{min\-Area}
+\begin{DoxyCompactList}\small\item\em prune the area which smaller than min\-Area \end{DoxyCompactList}\item 
+float \hyperlink{structCvMSERParams_acb769f970c8804c122db9c5dbbc9a37d}{max\-Variation}
+\begin{DoxyCompactList}\small\item\em prune the area have simliar size to its children \end{DoxyCompactList}\item 
+float \hyperlink{structCvMSERParams_addc1cf6caebd85fa2eee45be5cafe613}{min\-Diversity}
+\begin{DoxyCompactList}\small\item\em trace back to cut off mser with diversity $<$ min\-\_\-diversity \end{DoxyCompactList}\item 
+int \hyperlink{structCvMSERParams_ae2c65c573f5749809ae5cf426a4bd311}{max\-Evolution}
+\begin{DoxyCompactList}\small\item\em for color image, the evolution steps \end{DoxyCompactList}\item 
+double \hyperlink{structCvMSERParams_a2da123e24b459290065e7714bd7c1833}{area\-Threshold}
+\begin{DoxyCompactList}\small\item\em the area threshold to cause re-\/initialize \end{DoxyCompactList}\item 
+double \hyperlink{structCvMSERParams_ad06b0684eab5f764baf1ddcb9627dbe0}{min\-Margin}
+\begin{DoxyCompactList}\small\item\em ignore too small margin \end{DoxyCompactList}\item 
+int \hyperlink{structCvMSERParams_a968af0c998169f789c72f7c1320fd029}{edge\-Blur\-Size}
+\begin{DoxyCompactList}\small\item\em the aperture size for edge blur \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Maximal Stable Regions Parameters 
+
+\subsection{Member Data Documentation}
+\hypertarget{structCvMSERParams_a2da123e24b459290065e7714bd7c1833}{\index{Cv\-M\-S\-E\-R\-Params@{Cv\-M\-S\-E\-R\-Params}!area\-Threshold@{area\-Threshold}}
+\index{area\-Threshold@{area\-Threshold}!CvMSERParams@{Cv\-M\-S\-E\-R\-Params}}
+\subsubsection[{area\-Threshold}]{\setlength{\rightskip}{0pt plus 5cm}double Cv\-M\-S\-E\-R\-Params\-::area\-Threshold}}\label{structCvMSERParams_a2da123e24b459290065e7714bd7c1833}
+
+
+the area threshold to cause re-\/initialize 
+
+\hypertarget{structCvMSERParams_a9a8574af934f1efe0aacb610fd273f04}{\index{Cv\-M\-S\-E\-R\-Params@{Cv\-M\-S\-E\-R\-Params}!delta@{delta}}
+\index{delta@{delta}!CvMSERParams@{Cv\-M\-S\-E\-R\-Params}}
+\subsubsection[{delta}]{\setlength{\rightskip}{0pt plus 5cm}int Cv\-M\-S\-E\-R\-Params\-::delta}}\label{structCvMSERParams_a9a8574af934f1efe0aacb610fd273f04}
+
+
+delta, in the code, it compares (size\-\_\-\{i\}-\/size\-\_\-\{i-\/delta\})/size\-\_\-\{i-\/delta\} 
+
+\hypertarget{structCvMSERParams_a968af0c998169f789c72f7c1320fd029}{\index{Cv\-M\-S\-E\-R\-Params@{Cv\-M\-S\-E\-R\-Params}!edge\-Blur\-Size@{edge\-Blur\-Size}}
+\index{edge\-Blur\-Size@{edge\-Blur\-Size}!CvMSERParams@{Cv\-M\-S\-E\-R\-Params}}
+\subsubsection[{edge\-Blur\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int Cv\-M\-S\-E\-R\-Params\-::edge\-Blur\-Size}}\label{structCvMSERParams_a968af0c998169f789c72f7c1320fd029}
+
+
+the aperture size for edge blur 
+
+\hypertarget{structCvMSERParams_a4f2be25b22dd08ebf741240d9b5a445e}{\index{Cv\-M\-S\-E\-R\-Params@{Cv\-M\-S\-E\-R\-Params}!max\-Area@{max\-Area}}
+\index{max\-Area@{max\-Area}!CvMSERParams@{Cv\-M\-S\-E\-R\-Params}}
+\subsubsection[{max\-Area}]{\setlength{\rightskip}{0pt plus 5cm}int Cv\-M\-S\-E\-R\-Params\-::max\-Area}}\label{structCvMSERParams_a4f2be25b22dd08ebf741240d9b5a445e}
+
+
+prune the area which bigger than max\-Area 
+
+\hypertarget{structCvMSERParams_ae2c65c573f5749809ae5cf426a4bd311}{\index{Cv\-M\-S\-E\-R\-Params@{Cv\-M\-S\-E\-R\-Params}!max\-Evolution@{max\-Evolution}}
+\index{max\-Evolution@{max\-Evolution}!CvMSERParams@{Cv\-M\-S\-E\-R\-Params}}
+\subsubsection[{max\-Evolution}]{\setlength{\rightskip}{0pt plus 5cm}int Cv\-M\-S\-E\-R\-Params\-::max\-Evolution}}\label{structCvMSERParams_ae2c65c573f5749809ae5cf426a4bd311}
+
+
+for color image, the evolution steps 
+
+\hypertarget{structCvMSERParams_acb769f970c8804c122db9c5dbbc9a37d}{\index{Cv\-M\-S\-E\-R\-Params@{Cv\-M\-S\-E\-R\-Params}!max\-Variation@{max\-Variation}}
+\index{max\-Variation@{max\-Variation}!CvMSERParams@{Cv\-M\-S\-E\-R\-Params}}
+\subsubsection[{max\-Variation}]{\setlength{\rightskip}{0pt plus 5cm}float Cv\-M\-S\-E\-R\-Params\-::max\-Variation}}\label{structCvMSERParams_acb769f970c8804c122db9c5dbbc9a37d}
+
+
+prune the area have simliar size to its children 
+
+\hypertarget{structCvMSERParams_aa05b341d994d1fd85e199f5c4fe41db0}{\index{Cv\-M\-S\-E\-R\-Params@{Cv\-M\-S\-E\-R\-Params}!min\-Area@{min\-Area}}
+\index{min\-Area@{min\-Area}!CvMSERParams@{Cv\-M\-S\-E\-R\-Params}}
+\subsubsection[{min\-Area}]{\setlength{\rightskip}{0pt plus 5cm}int Cv\-M\-S\-E\-R\-Params\-::min\-Area}}\label{structCvMSERParams_aa05b341d994d1fd85e199f5c4fe41db0}
+
+
+prune the area which smaller than min\-Area 
+
+\hypertarget{structCvMSERParams_addc1cf6caebd85fa2eee45be5cafe613}{\index{Cv\-M\-S\-E\-R\-Params@{Cv\-M\-S\-E\-R\-Params}!min\-Diversity@{min\-Diversity}}
+\index{min\-Diversity@{min\-Diversity}!CvMSERParams@{Cv\-M\-S\-E\-R\-Params}}
+\subsubsection[{min\-Diversity}]{\setlength{\rightskip}{0pt plus 5cm}float Cv\-M\-S\-E\-R\-Params\-::min\-Diversity}}\label{structCvMSERParams_addc1cf6caebd85fa2eee45be5cafe613}
+
+
+trace back to cut off mser with diversity $<$ min\-\_\-diversity 
+
+\hypertarget{structCvMSERParams_ad06b0684eab5f764baf1ddcb9627dbe0}{\index{Cv\-M\-S\-E\-R\-Params@{Cv\-M\-S\-E\-R\-Params}!min\-Margin@{min\-Margin}}
+\index{min\-Margin@{min\-Margin}!CvMSERParams@{Cv\-M\-S\-E\-R\-Params}}
+\subsubsection[{min\-Margin}]{\setlength{\rightskip}{0pt plus 5cm}double Cv\-M\-S\-E\-R\-Params\-::min\-Margin}}\label{structCvMSERParams_ad06b0684eab5f764baf1ddcb9627dbe0}
+
+
+ignore too small margin 
+
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/legacy/\hyperlink{compat_8hpp}{compat.\-hpp}\end{DoxyCompactItemize}

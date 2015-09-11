@@ -1,0 +1,188 @@
+\hypertarget{classcv_1_1ocl_1_1KalmanFilter}{\section{cv\-:\-:ocl\-:\-:Kalman\-Filter Class Reference}
+\label{classcv_1_1ocl_1_1KalmanFilter}\index{cv\-::ocl\-::\-Kalman\-Filter@{cv\-::ocl\-::\-Kalman\-Filter}}
+}
+
+
+{\ttfamily \#include $<$ocl.\-hpp$>$}
+
+
+
+Collaboration diagram for cv\-:\-:ocl\-:\-:Kalman\-Filter\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{classcv_1_1ocl_1_1KalmanFilter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcv_1_1ocl_1_1KalmanFilter_a697082a6e3838778a9e28cbd1e309ffa}{Kalman\-Filter} ()
+\item 
+\hyperlink{classcv_1_1ocl_1_1KalmanFilter_aa3bb8b05ddc0f615a99028aaab7f4120}{Kalman\-Filter} (int dynam\-Params, int measure\-Params, int control\-Params=0, int \hyperlink{imgproc__c_8h_a84612d8738bf935200cf32a103d8efe1}{type}=\hyperlink{core_2types__c_8h_a4a3def5d72b74bed31f5f8ab7676099c}{C\-V\-\_\-32\-F})
+\begin{DoxyCompactList}\small\item\em the full constructor taking the dimensionality of the state, of the measurement and of the control vector \end{DoxyCompactList}\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1KalmanFilter_a219187c47f74eb4a08f00e9024bfc0bd}{init} (int dynam\-Params, int measure\-Params, int control\-Params=0, int \hyperlink{imgproc__c_8h_a84612d8738bf935200cf32a103d8efe1}{type}=\hyperlink{core_2types__c_8h_a4a3def5d72b74bed31f5f8ab7676099c}{C\-V\-\_\-32\-F})
+\begin{DoxyCompactList}\small\item\em re-\/initializes Kalman filter. The previous content is destroyed. \end{DoxyCompactList}\item 
+const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \& \hyperlink{classcv_1_1ocl_1_1KalmanFilter_ab43e949fa7ec874cf4f68820654a8636}{predict} (const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&control=\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat}())
+\item 
+const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \& \hyperlink{classcv_1_1ocl_1_1KalmanFilter_a866a13021cedf10b989e04fea963e273}{correct} (const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&\hyperlink{tracking_8hpp_a418553f0076326b269a34730ffa3890f}{measurement})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \hyperlink{classcv_1_1ocl_1_1KalmanFilter_ac9e06e20a8d043a4564b835d422977b9}{state\-Pre}
+\begin{DoxyCompactList}\small\item\em predicted state (x'(k))\-: x(k)=A$\ast$x(k-\/1)+\-B$\ast$u(k) \end{DoxyCompactList}\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \hyperlink{classcv_1_1ocl_1_1KalmanFilter_a7988dd038dc54b0a8506a4da0ddcf39b}{state\-Post}
+\begin{DoxyCompactList}\small\item\em corrected state (x(k))\-: x(k)=x'(k)+\-K(k)$\ast$(z(k)-\/\-H$\ast$x'(k)) \end{DoxyCompactList}\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \hyperlink{classcv_1_1ocl_1_1KalmanFilter_ac31e8bbbeeabf0132ad39d39996f1b0f}{transition\-Matrix}
+\begin{DoxyCompactList}\small\item\em state transition matrix (A) \end{DoxyCompactList}\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \hyperlink{classcv_1_1ocl_1_1KalmanFilter_a99831c353c2aacc9d9ff3c9ae58f669a}{control\-Matrix}
+\begin{DoxyCompactList}\small\item\em control matrix (B) (not used if there is no control) \end{DoxyCompactList}\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \hyperlink{classcv_1_1ocl_1_1KalmanFilter_ad3c86cdbe65d9efaf008f23eba39441c}{measurement\-Matrix}
+\begin{DoxyCompactList}\small\item\em measurement matrix (H) \end{DoxyCompactList}\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \hyperlink{classcv_1_1ocl_1_1KalmanFilter_ae76b58392465d7d5ac4df75ca67edf96}{process\-Noise\-Cov}
+\begin{DoxyCompactList}\small\item\em process noise covariance matrix (Q) \end{DoxyCompactList}\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \hyperlink{classcv_1_1ocl_1_1KalmanFilter_a492394c2d843a14f3e070808593a9c55}{measurement\-Noise\-Cov}
+\begin{DoxyCompactList}\small\item\em measurement noise covariance matrix (R) \end{DoxyCompactList}\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \hyperlink{classcv_1_1ocl_1_1KalmanFilter_a5079ae8f4c64f5a27ad65455d8b526c7}{error\-Cov\-Pre}
+\begin{DoxyCompactList}\small\item\em priori error estimate covariance matrix (P'(k))\-: P'(k)=A$\ast$\-P(k-\/1)$\ast$\-At + Q)$\ast$/ \end{DoxyCompactList}\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \hyperlink{classcv_1_1ocl_1_1KalmanFilter_a426dbaf80ff0c39347badfc47c2320a3}{gain}
+\begin{DoxyCompactList}\small\item\em Kalman gain matrix (K(k))\-: K(k)=P'(k)$\ast$\-Ht$\ast$inv(H$\ast$\-P'(k)$\ast$\-Ht+\-R) \end{DoxyCompactList}\item 
+\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \hyperlink{classcv_1_1ocl_1_1KalmanFilter_af6415a482e0905ee321a13c65865ec0b}{error\-Cov\-Post}
+\begin{DoxyCompactList}\small\item\em posteriori error estimate covariance matrix (P(k))\-: P(k)=(I-\/\-K(k)$\ast$\-H)$\ast$\-P'(k) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$\-Kalman Filter$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$! 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcv_1_1ocl_1_1KalmanFilter_a697082a6e3838778a9e28cbd1e309ffa}{\index{cv\-::ocl\-::\-Kalman\-Filter@{cv\-::ocl\-::\-Kalman\-Filter}!Kalman\-Filter@{Kalman\-Filter}}
+\index{Kalman\-Filter@{Kalman\-Filter}!cv::ocl::KalmanFilter@{cv\-::ocl\-::\-Kalman\-Filter}}
+\subsubsection[{Kalman\-Filter}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::ocl\-::\-Kalman\-Filter\-::\-Kalman\-Filter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1KalmanFilter_a697082a6e3838778a9e28cbd1e309ffa}
+\hypertarget{classcv_1_1ocl_1_1KalmanFilter_aa3bb8b05ddc0f615a99028aaab7f4120}{\index{cv\-::ocl\-::\-Kalman\-Filter@{cv\-::ocl\-::\-Kalman\-Filter}!Kalman\-Filter@{Kalman\-Filter}}
+\index{Kalman\-Filter@{Kalman\-Filter}!cv::ocl::KalmanFilter@{cv\-::ocl\-::\-Kalman\-Filter}}
+\subsubsection[{Kalman\-Filter}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::ocl\-::\-Kalman\-Filter\-::\-Kalman\-Filter (
+\begin{DoxyParamCaption}
+\item[{int}]{dynam\-Params, }
+\item[{int}]{measure\-Params, }
+\item[{int}]{control\-Params = {\ttfamily 0}, }
+\item[{int}]{type = {\ttfamily {\bf C\-V\-\_\-32\-F}}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1KalmanFilter_aa3bb8b05ddc0f615a99028aaab7f4120}
+
+
+the full constructor taking the dimensionality of the state, of the measurement and of the control vector 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcv_1_1ocl_1_1KalmanFilter_a866a13021cedf10b989e04fea963e273}{\index{cv\-::ocl\-::\-Kalman\-Filter@{cv\-::ocl\-::\-Kalman\-Filter}!correct@{correct}}
+\index{correct@{correct}!cv::ocl::KalmanFilter@{cv\-::ocl\-::\-Kalman\-Filter}}
+\subsubsection[{correct}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf ocl\-Mat}\& cv\-::ocl\-::\-Kalman\-Filter\-::correct (
+\begin{DoxyParamCaption}
+\item[{const {\bf ocl\-Mat} \&}]{measurement}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1KalmanFilter_a866a13021cedf10b989e04fea963e273}
+\hypertarget{classcv_1_1ocl_1_1KalmanFilter_a219187c47f74eb4a08f00e9024bfc0bd}{\index{cv\-::ocl\-::\-Kalman\-Filter@{cv\-::ocl\-::\-Kalman\-Filter}!init@{init}}
+\index{init@{init}!cv::ocl::KalmanFilter@{cv\-::ocl\-::\-Kalman\-Filter}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::\-Kalman\-Filter\-::init (
+\begin{DoxyParamCaption}
+\item[{int}]{dynam\-Params, }
+\item[{int}]{measure\-Params, }
+\item[{int}]{control\-Params = {\ttfamily 0}, }
+\item[{int}]{type = {\ttfamily {\bf C\-V\-\_\-32\-F}}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1KalmanFilter_a219187c47f74eb4a08f00e9024bfc0bd}
+
+
+re-\/initializes Kalman filter. The previous content is destroyed. 
+
+\hypertarget{classcv_1_1ocl_1_1KalmanFilter_ab43e949fa7ec874cf4f68820654a8636}{\index{cv\-::ocl\-::\-Kalman\-Filter@{cv\-::ocl\-::\-Kalman\-Filter}!predict@{predict}}
+\index{predict@{predict}!cv::ocl::KalmanFilter@{cv\-::ocl\-::\-Kalman\-Filter}}
+\subsubsection[{predict}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf ocl\-Mat}\& cv\-::ocl\-::\-Kalman\-Filter\-::predict (
+\begin{DoxyParamCaption}
+\item[{const {\bf ocl\-Mat} \&}]{control = {\ttfamily {\bf ocl\-Mat}()}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1KalmanFilter_ab43e949fa7ec874cf4f68820654a8636}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcv_1_1ocl_1_1KalmanFilter_a99831c353c2aacc9d9ff3c9ae58f669a}{\index{cv\-::ocl\-::\-Kalman\-Filter@{cv\-::ocl\-::\-Kalman\-Filter}!control\-Matrix@{control\-Matrix}}
+\index{control\-Matrix@{control\-Matrix}!cv::ocl::KalmanFilter@{cv\-::ocl\-::\-Kalman\-Filter}}
+\subsubsection[{control\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ocl\-Mat} cv\-::ocl\-::\-Kalman\-Filter\-::control\-Matrix}}\label{classcv_1_1ocl_1_1KalmanFilter_a99831c353c2aacc9d9ff3c9ae58f669a}
+
+
+control matrix (B) (not used if there is no control) 
+
+\hypertarget{classcv_1_1ocl_1_1KalmanFilter_af6415a482e0905ee321a13c65865ec0b}{\index{cv\-::ocl\-::\-Kalman\-Filter@{cv\-::ocl\-::\-Kalman\-Filter}!error\-Cov\-Post@{error\-Cov\-Post}}
+\index{error\-Cov\-Post@{error\-Cov\-Post}!cv::ocl::KalmanFilter@{cv\-::ocl\-::\-Kalman\-Filter}}
+\subsubsection[{error\-Cov\-Post}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ocl\-Mat} cv\-::ocl\-::\-Kalman\-Filter\-::error\-Cov\-Post}}\label{classcv_1_1ocl_1_1KalmanFilter_af6415a482e0905ee321a13c65865ec0b}
+
+
+posteriori error estimate covariance matrix (P(k))\-: P(k)=(I-\/\-K(k)$\ast$\-H)$\ast$\-P'(k) 
+
+\hypertarget{classcv_1_1ocl_1_1KalmanFilter_a5079ae8f4c64f5a27ad65455d8b526c7}{\index{cv\-::ocl\-::\-Kalman\-Filter@{cv\-::ocl\-::\-Kalman\-Filter}!error\-Cov\-Pre@{error\-Cov\-Pre}}
+\index{error\-Cov\-Pre@{error\-Cov\-Pre}!cv::ocl::KalmanFilter@{cv\-::ocl\-::\-Kalman\-Filter}}
+\subsubsection[{error\-Cov\-Pre}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ocl\-Mat} cv\-::ocl\-::\-Kalman\-Filter\-::error\-Cov\-Pre}}\label{classcv_1_1ocl_1_1KalmanFilter_a5079ae8f4c64f5a27ad65455d8b526c7}
+
+
+priori error estimate covariance matrix (P'(k))\-: P'(k)=A$\ast$\-P(k-\/1)$\ast$\-At + Q)$\ast$/ 
+
+\hypertarget{classcv_1_1ocl_1_1KalmanFilter_a426dbaf80ff0c39347badfc47c2320a3}{\index{cv\-::ocl\-::\-Kalman\-Filter@{cv\-::ocl\-::\-Kalman\-Filter}!gain@{gain}}
+\index{gain@{gain}!cv::ocl::KalmanFilter@{cv\-::ocl\-::\-Kalman\-Filter}}
+\subsubsection[{gain}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ocl\-Mat} cv\-::ocl\-::\-Kalman\-Filter\-::gain}}\label{classcv_1_1ocl_1_1KalmanFilter_a426dbaf80ff0c39347badfc47c2320a3}
+
+
+Kalman gain matrix (K(k))\-: K(k)=P'(k)$\ast$\-Ht$\ast$inv(H$\ast$\-P'(k)$\ast$\-Ht+\-R) 
+
+\hypertarget{classcv_1_1ocl_1_1KalmanFilter_ad3c86cdbe65d9efaf008f23eba39441c}{\index{cv\-::ocl\-::\-Kalman\-Filter@{cv\-::ocl\-::\-Kalman\-Filter}!measurement\-Matrix@{measurement\-Matrix}}
+\index{measurement\-Matrix@{measurement\-Matrix}!cv::ocl::KalmanFilter@{cv\-::ocl\-::\-Kalman\-Filter}}
+\subsubsection[{measurement\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ocl\-Mat} cv\-::ocl\-::\-Kalman\-Filter\-::measurement\-Matrix}}\label{classcv_1_1ocl_1_1KalmanFilter_ad3c86cdbe65d9efaf008f23eba39441c}
+
+
+measurement matrix (H) 
+
+\hypertarget{classcv_1_1ocl_1_1KalmanFilter_a492394c2d843a14f3e070808593a9c55}{\index{cv\-::ocl\-::\-Kalman\-Filter@{cv\-::ocl\-::\-Kalman\-Filter}!measurement\-Noise\-Cov@{measurement\-Noise\-Cov}}
+\index{measurement\-Noise\-Cov@{measurement\-Noise\-Cov}!cv::ocl::KalmanFilter@{cv\-::ocl\-::\-Kalman\-Filter}}
+\subsubsection[{measurement\-Noise\-Cov}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ocl\-Mat} cv\-::ocl\-::\-Kalman\-Filter\-::measurement\-Noise\-Cov}}\label{classcv_1_1ocl_1_1KalmanFilter_a492394c2d843a14f3e070808593a9c55}
+
+
+measurement noise covariance matrix (R) 
+
+\hypertarget{classcv_1_1ocl_1_1KalmanFilter_ae76b58392465d7d5ac4df75ca67edf96}{\index{cv\-::ocl\-::\-Kalman\-Filter@{cv\-::ocl\-::\-Kalman\-Filter}!process\-Noise\-Cov@{process\-Noise\-Cov}}
+\index{process\-Noise\-Cov@{process\-Noise\-Cov}!cv::ocl::KalmanFilter@{cv\-::ocl\-::\-Kalman\-Filter}}
+\subsubsection[{process\-Noise\-Cov}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ocl\-Mat} cv\-::ocl\-::\-Kalman\-Filter\-::process\-Noise\-Cov}}\label{classcv_1_1ocl_1_1KalmanFilter_ae76b58392465d7d5ac4df75ca67edf96}
+
+
+process noise covariance matrix (Q) 
+
+\hypertarget{classcv_1_1ocl_1_1KalmanFilter_a7988dd038dc54b0a8506a4da0ddcf39b}{\index{cv\-::ocl\-::\-Kalman\-Filter@{cv\-::ocl\-::\-Kalman\-Filter}!state\-Post@{state\-Post}}
+\index{state\-Post@{state\-Post}!cv::ocl::KalmanFilter@{cv\-::ocl\-::\-Kalman\-Filter}}
+\subsubsection[{state\-Post}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ocl\-Mat} cv\-::ocl\-::\-Kalman\-Filter\-::state\-Post}}\label{classcv_1_1ocl_1_1KalmanFilter_a7988dd038dc54b0a8506a4da0ddcf39b}
+
+
+corrected state (x(k))\-: x(k)=x'(k)+\-K(k)$\ast$(z(k)-\/\-H$\ast$x'(k)) 
+
+\hypertarget{classcv_1_1ocl_1_1KalmanFilter_ac9e06e20a8d043a4564b835d422977b9}{\index{cv\-::ocl\-::\-Kalman\-Filter@{cv\-::ocl\-::\-Kalman\-Filter}!state\-Pre@{state\-Pre}}
+\index{state\-Pre@{state\-Pre}!cv::ocl::KalmanFilter@{cv\-::ocl\-::\-Kalman\-Filter}}
+\subsubsection[{state\-Pre}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ocl\-Mat} cv\-::ocl\-::\-Kalman\-Filter\-::state\-Pre}}\label{classcv_1_1ocl_1_1KalmanFilter_ac9e06e20a8d043a4564b835d422977b9}
+
+
+predicted state (x'(k))\-: x(k)=A$\ast$x(k-\/1)+\-B$\ast$u(k) 
+
+\hypertarget{classcv_1_1ocl_1_1KalmanFilter_ac31e8bbbeeabf0132ad39d39996f1b0f}{\index{cv\-::ocl\-::\-Kalman\-Filter@{cv\-::ocl\-::\-Kalman\-Filter}!transition\-Matrix@{transition\-Matrix}}
+\index{transition\-Matrix@{transition\-Matrix}!cv::ocl::KalmanFilter@{cv\-::ocl\-::\-Kalman\-Filter}}
+\subsubsection[{transition\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ocl\-Mat} cv\-::ocl\-::\-Kalman\-Filter\-::transition\-Matrix}}\label{classcv_1_1ocl_1_1KalmanFilter_ac31e8bbbeeabf0132ad39d39996f1b0f}
+
+
+state transition matrix (A) 
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/ocl/\hyperlink{ocl_2ocl_8hpp}{ocl.\-hpp}\end{DoxyCompactItemize}

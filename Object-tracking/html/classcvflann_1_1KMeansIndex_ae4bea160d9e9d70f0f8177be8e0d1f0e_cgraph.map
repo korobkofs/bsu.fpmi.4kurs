@@ -1,0 +1,11 @@
+<map id="cvflann::KMeansIndex::KMeansIndex" name="cvflann::KMeansIndex::KMeansIndex">
+<area shape="rect" id="node2" href="$namespacecvflann.html#a6ea20e8aad20212544cb42368c1e5b5f" title="cvflann::get_param" alt="" coords="229,5,363,32"/>
+<area shape="rect" id="node3" href="$namespacecv_1_1gpu.html#a706c9def6816de566be2671b75ec5309" title="computes per&#45;element maximum of two arrays (dst = max(src1, src2)) " alt="" coords="247,56,345,83"/>
+<area shape="rect" id="node4" href="$classcvflann_1_1KMeansIndex.html#a2dd49d64f6cdc7751990ee1f1920609e" title="cvflann::KMeansIndex\l::chooseCentersRandom" alt="" coords="213,107,379,149"/>
+<area shape="rect" id="node6" href="$classcvflann_1_1KMeansIndex.html#a224fbbe5fdc60db9374ddbf499b0e9d3" title="cvflann::KMeansIndex\l::chooseCentersGonzales" alt="" coords="209,173,383,214"/>
+<area shape="rect" id="node8" href="$classcvflann_1_1KMeansIndex.html#a02bf5e31ac3996251fea5e2de6bd3fea" title="cvflann::KMeansIndex\l::chooseCentersKMeanspp" alt="" coords="206,238,386,279"/>
+<area shape="rect" id="node5" href="$classcvflann_1_1UniqueRandom.html#a95eb32308d0a5a2d99a03fe23d809c1f" title="cvflann::UniqueRandom\l::next" alt="" coords="435,107,597,149"/>
+<area shape="rect" id="node7" href="$namespacecvflann.html#a95bce8b3d90ee54a8a4454bdc74ead3b" title="cvflann::rand_int" alt="" coords="457,187,575,213"/>
+<area shape="rect" id="node9" href="$namespacecvflann.html#aa67f0a9c42ad900e10dfd3cf0f1e4355" title="cvflann::rand_double" alt="" coords="445,241,587,268"/>
+<area shape="rect" id="node10" href="$namespacecv_1_1gpu.html#a8d100341ab11a730a3c90b75d5890a8c" title="computes per&#45;element minimum of two arrays (dst = min(src1, src2)) " alt="" coords="469,292,563,319"/>
+</map>

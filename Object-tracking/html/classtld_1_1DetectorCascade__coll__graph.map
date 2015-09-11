@@ -1,0 +1,8 @@
+<map id="tld::DetectorCascade" name="tld::DetectorCascade">
+<area shape="rect" id="node2" href="$classtld_1_1DetectionResult.html" title="The detection result. " alt="" coords="5,124,144,151"/>
+<area shape="rect" id="node3" href="$classtld_1_1ForegroundDetector.html" title="The foreground detector. " alt="" coords="289,47,447,73"/>
+<area shape="rect" id="node4" href="$classtld_1_1Clustering.html" title="The clustering of detector cascade results. " alt="" coords="317,97,419,124"/>
+<area shape="rect" id="node5" href="$classtld_1_1EnsembleClassifier.html" title="The ensemble classifier. " alt="" coords="289,148,447,175"/>
+<area shape="rect" id="node6" href="$classtld_1_1VarianceFilter.html" title="The variance filter. " alt="" coords="306,199,430,225"/>
+<area shape="rect" id="node7" href="$classtld_1_1NNClassifier.html" title="The nearest neighbor classifier. " alt="" coords="309,249,427,276"/>
+</map>

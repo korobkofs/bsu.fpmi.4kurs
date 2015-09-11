@@ -1,0 +1,8 @@
+<map id="cv::gpu::device::Block::flattenedThreadId" name="cv::gpu::device::Block::flattenedThreadId">
+<area shape="rect" id="node2" href="$structcv_1_1gpu_1_1device_1_1Block.html#a5c027dfe2cc3280ac3e54c9b8e75e053" title="cv::gpu::device::Block\l::fill" alt="" coords="205,5,357,46"/>
+<area shape="rect" id="node3" href="$structcv_1_1gpu_1_1device_1_1Block.html#aa2f0873e622ee00fbf67fe84519abac6" title="cv::gpu::device::Block\l::yota" alt="" coords="205,70,357,111"/>
+<area shape="rect" id="node4" href="$structcv_1_1gpu_1_1device_1_1Block.html#a7f2a0d499f5b042f00d0c1d2c65a2702" title="cv::gpu::device::Block\l::copy" alt="" coords="205,135,357,177"/>
+<area shape="rect" id="node5" href="$structcv_1_1gpu_1_1device_1_1Block.html#ad8b2a8af26a13a0d5dfeff2e2cbdfb00" title="cv::gpu::device::Block\l::transfrom" alt="" coords="205,201,357,242"/>
+<area shape="rect" id="node6" href="$structcv_1_1gpu_1_1device_1_1Block.html#adfa6e86395d83c9f546609b0314c0ef2" title="cv::gpu::device::Block\l::reduce" alt="" coords="205,266,357,307"/>
+<area shape="rect" id="node7" href="$structcv_1_1gpu_1_1device_1_1Block.html#a9a926689899f140793c23261b6f537b5" title="cv::gpu::device::Block\l::reduce_n" alt="" coords="205,331,357,373"/>
+</map>

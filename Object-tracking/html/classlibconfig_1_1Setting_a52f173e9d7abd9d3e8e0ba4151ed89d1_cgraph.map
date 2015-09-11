@@ -1,0 +1,8 @@
+<map id="libconfig::Setting::remove" name="libconfig::Setting::remove">
+<area shape="rect" id="node2" href="$libconfig_8c.html#a325cf5713305d042849f55e65cc955d3" title="config_setting_remove" alt="" coords="174,56,327,83"/>
+<area shape="rect" id="node3" href="$libconfig_8c.html#a8b3b3fe8f3eb75216abe2a755d082c31" title="__config_list_search" alt="" coords="389,5,531,32"/>
+<area shape="rect" id="node5" href="$libconfig_8c.html#a75d07db5b7d56b206c8ad45a04cb3f7c" title="__config_list_remove" alt="" coords="387,56,533,83"/>
+<area shape="rect" id="node6" href="$libconfig_8c.html#aa90e3234bee7b4faf28f6a9a2f5ab759" title="__config_setting_destroy" alt="" coords="377,107,543,133"/>
+<area shape="rect" id="node4" href="$libconfig_8c.html#ac06b1f76965033ccc88ff4f81e1c1cc9" title="__config_name_compare" alt="" coords="593,5,759,32"/>
+<area shape="rect" id="node7" href="$libconfig_8c.html#a1753aaaa9c2fd22b0dfae1e599833145" title="__config_list_destroy" alt="" coords="603,107,749,133"/>
+</map>

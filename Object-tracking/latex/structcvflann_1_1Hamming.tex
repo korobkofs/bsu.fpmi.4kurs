@@ -1,0 +1,61 @@
+\hypertarget{structcvflann_1_1Hamming}{\section{cvflann\-:\-:Hamming$<$ T $>$ Struct Template Reference}
+\label{structcvflann_1_1Hamming}\index{cvflann\-::\-Hamming$<$ T $>$@{cvflann\-::\-Hamming$<$ T $>$}}
+}
+
+
+{\ttfamily \#include $<$dist.\-h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classcvflann_1_1False}{False} \hyperlink{structcvflann_1_1Hamming_a3b2a3e130d86c02b8cac98ae58645bad}{is\-\_\-kdtree\-\_\-distance}
+\item 
+typedef \hyperlink{classcvflann_1_1False}{False} \hyperlink{structcvflann_1_1Hamming_ac59dee15cce5d7a01bf8dc54ef30a305}{is\-\_\-vector\-\_\-space\-\_\-distance}
+\item 
+typedef \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \hyperlink{structcvflann_1_1Hamming_a2be434e23cf78b659dc72d6a0d5fa41e}{Element\-Type}
+\item 
+typedef int \hyperlink{structcvflann_1_1Hamming_a08d0b008dcd6bce54b0f305176478d29}{Result\-Type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Iterator1 , typename Iterator2 $>$ }\\\hyperlink{structcvflann_1_1Hamming_a08d0b008dcd6bce54b0f305176478d29}{Result\-Type} \hyperlink{structcvflann_1_1Hamming_a70f6160b6889e7e6546602b54b4408fe}{operator()} (Iterator1 \hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}, Iterator2 \hyperlink{legacy_8hpp_ac04272e8ca865b8fba18d36edae9fd2a}{b}, size\-\_\-t \hyperlink{legacy_8hpp_ae97003f8d5c64cdfb99f6f2606d121b6}{size}, \hyperlink{structcvflann_1_1Hamming_a08d0b008dcd6bce54b0f305176478d29}{Result\-Type}=-\/1) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$struct cvflann\-::\-Hamming$<$ T $>$}
+
+\hyperlink{structcvflann_1_1Hamming}{Hamming} distance functor (pop count between two binary vectors, i.\-e. xor them and count the number of bits set) That code was taken from brief.\-cpp in Open\-C\-V 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{structcvflann_1_1Hamming_a2be434e23cf78b659dc72d6a0d5fa41e}{\index{cvflann\-::\-Hamming@{cvflann\-::\-Hamming}!Element\-Type@{Element\-Type}}
+\index{Element\-Type@{Element\-Type}!cvflann::Hamming@{cvflann\-::\-Hamming}}
+\subsubsection[{Element\-Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ typedef {\bf T} {\bf cvflann\-::\-Hamming}$<$ {\bf T} $>$\-::{\bf Element\-Type}}}\label{structcvflann_1_1Hamming_a2be434e23cf78b659dc72d6a0d5fa41e}
+\hypertarget{structcvflann_1_1Hamming_a3b2a3e130d86c02b8cac98ae58645bad}{\index{cvflann\-::\-Hamming@{cvflann\-::\-Hamming}!is\-\_\-kdtree\-\_\-distance@{is\-\_\-kdtree\-\_\-distance}}
+\index{is\-\_\-kdtree\-\_\-distance@{is\-\_\-kdtree\-\_\-distance}!cvflann::Hamming@{cvflann\-::\-Hamming}}
+\subsubsection[{is\-\_\-kdtree\-\_\-distance}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ typedef {\bf False} {\bf cvflann\-::\-Hamming}$<$ {\bf T} $>$\-::{\bf is\-\_\-kdtree\-\_\-distance}}}\label{structcvflann_1_1Hamming_a3b2a3e130d86c02b8cac98ae58645bad}
+\hypertarget{structcvflann_1_1Hamming_ac59dee15cce5d7a01bf8dc54ef30a305}{\index{cvflann\-::\-Hamming@{cvflann\-::\-Hamming}!is\-\_\-vector\-\_\-space\-\_\-distance@{is\-\_\-vector\-\_\-space\-\_\-distance}}
+\index{is\-\_\-vector\-\_\-space\-\_\-distance@{is\-\_\-vector\-\_\-space\-\_\-distance}!cvflann::Hamming@{cvflann\-::\-Hamming}}
+\subsubsection[{is\-\_\-vector\-\_\-space\-\_\-distance}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ typedef {\bf False} {\bf cvflann\-::\-Hamming}$<$ {\bf T} $>$\-::{\bf is\-\_\-vector\-\_\-space\-\_\-distance}}}\label{structcvflann_1_1Hamming_ac59dee15cce5d7a01bf8dc54ef30a305}
+\hypertarget{structcvflann_1_1Hamming_a08d0b008dcd6bce54b0f305176478d29}{\index{cvflann\-::\-Hamming@{cvflann\-::\-Hamming}!Result\-Type@{Result\-Type}}
+\index{Result\-Type@{Result\-Type}!cvflann::Hamming@{cvflann\-::\-Hamming}}
+\subsubsection[{Result\-Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ typedef int {\bf cvflann\-::\-Hamming}$<$ {\bf T} $>$\-::{\bf Result\-Type}}}\label{structcvflann_1_1Hamming_a08d0b008dcd6bce54b0f305176478d29}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structcvflann_1_1Hamming_a70f6160b6889e7e6546602b54b4408fe}{\index{cvflann\-::\-Hamming@{cvflann\-::\-Hamming}!operator()@{operator()}}
+\index{operator()@{operator()}!cvflann::Hamming@{cvflann\-::\-Hamming}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ template$<$typename Iterator1 , typename Iterator2 $>$ {\bf Result\-Type} {\bf cvflann\-::\-Hamming}$<$ {\bf T} $>$\-::operator() (
+\begin{DoxyParamCaption}
+\item[{Iterator1}]{a, }
+\item[{Iterator2}]{b, }
+\item[{size\-\_\-t}]{size, }
+\item[{{\bf Result\-Type}}]{ = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{structcvflann_1_1Hamming_a70f6160b6889e7e6546602b54b4408fe}
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/flann/\hyperlink{dist_8h}{dist.\-h}\end{DoxyCompactItemize}

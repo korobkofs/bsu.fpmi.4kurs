@@ -1,0 +1,5 @@
+<map id="tld::EnsembleClassifier::calcFernFeature" name="tld::EnsembleClassifier::calcFernFeature">
+<area shape="rect" id="node2" href="$classtld_1_1EnsembleClassifier.html#abb535a84ebd8b15aa401a11d94e0a641" title="Calculates the vector of features (the indeces of branches for all trees). " alt="" coords="211,5,368,46"/>
+<area shape="rect" id="node3" href="$classtld_1_1EnsembleClassifier.html#abf7e915ff675720293502be0452cb6c2" title="Classifies the window (positive or negative). " alt="" coords="416,5,573,46"/>
+<area shape="rect" id="node4" href="$classtld_1_1EnsembleClassifier.html#a42f1f3606d14a7d274f5bb9f4fa5030f" title="Filtered the windows. " alt="" coords="621,5,779,46"/>
+</map>

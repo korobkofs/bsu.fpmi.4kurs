@@ -1,0 +1,11 @@
+<map id="cv::gpu::pow" name="cv::gpu::pow">
+<area shape="rect" id="node2" href="$BBPredict_8h.html#a0181c4b3c3e424d149a8d89a05c98de7" title="Calculates the new (moved and resized) Bounding box. Calculation based on all relative distance chang..." alt="" coords="208,12,283,39"/>
+<area shape="rect" id="node5" href="$classtld_1_1DetectorCascade.html#a0515043558291c0bfbd5d403315c0334" title="Returns number of bounding boxes, bounding boxes, number of scales, &#160;&#160;scales bounding boxes are store..." alt="" coords="163,63,327,105"/>
+<area shape="rect" id="node6" href="$classtld_1_1EnsembleClassifier.html#afb0e8ed03adef91257801bf0e3ca73f7" title="Initializes the all class variables. " alt="" coords="167,129,324,170"/>
+<area shape="rect" id="node7" href="$classtld_1_1TLD.html#aef7e6414e0334f8d4325360bd4ea3048" title="Write the tld model to file. " alt="" coords="175,195,316,221"/>
+<area shape="rect" id="node8" href="$classtld_1_1TLD.html#a8474094a32dc39751bac54f8998860c5" title="Reads the tld model from file. " alt="" coords="169,245,322,272"/>
+<area shape="rect" id="node9" href="$structcvflann_1_1MinkowskiDistance.html#ac9ebfdd3f6bbf978ef88d68510828b75" title="cvflann::MinkowskiDistance\l::operator()" alt="" coords="152,297,339,338"/>
+<area shape="rect" id="node10" href="$structcvflann_1_1MinkowskiDistance.html#a548c7c4e8edf95dd3484463fc675a8a9" title="cvflann::MinkowskiDistance\l::accum_dist" alt="" coords="152,362,339,403"/>
+<area shape="rect" id="node3" href="$FBTrack_8h.html#a2c818794e6fe6aa3f6efdc9c46ffd164" title="Calculate the bounding box of an Object in a following Image. Imgs aren&#39;t changed. " alt="" coords="387,12,450,39"/>
+<area shape="rect" id="node4" href="$classtld_1_1MedianFlowTracker.html#addcc103122a93f098583b8f9cf72e8ff" title="Calculate the bounding box of an Object in a following Image (with analyse of success and correctness..." alt="" coords="499,5,658,46"/>
+</map>

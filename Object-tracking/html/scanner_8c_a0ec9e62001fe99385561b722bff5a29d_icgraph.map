@@ -1,0 +1,15 @@
+<map id="libconfig_yy_switch_to_buffer" name="libconfig_yy_switch_to_buffer">
+<area shape="rect" id="node2" href="$scanner_8c.html#a8fdafe3be7e00ce3d4f0cb50a9a5eb39" title="while" alt="" coords="247,13,299,40"/>
+<area shape="rect" id="node3" href="$scanner_8h.html#a9e4fc60c40f4d1c4d9bd167073b99bde" title="libconfig_yy_scan_buffer" alt="" coords="190,64,357,91"/>
+<area shape="rect" id="node4" href="$scanner_8h.html#a1b98fc545d3576ed6daae52008a52368" title="libconfig_yy_scan_bytes" alt="" coords="405,64,571,91"/>
+<area shape="rect" id="node5" href="$scanner_8h.html#a6d85748250a6920c6bf48d8c2ba290b4" title="libconfig_yy_scan_string" alt="" coords="619,64,784,91"/>
+<area shape="rect" id="node6" href="$libconfig_8c.html#a304fc54660c19cf654d0fdc4e44ec724" title="__config_read" alt="" coords="833,64,935,91"/>
+<area shape="rect" id="node7" href="$libconfig_8h.html#ade3e90a918cb62daf3f71ebdc785a9d5" title="config_read" alt="" coords="1003,9,1093,36"/>
+<area shape="rect" id="node9" href="$libconfig_8h.html#af949fcd25cd9adca27c78a49f62c2ebd" title="config_read_string" alt="" coords="984,64,1112,91"/>
+<area shape="rect" id="node11" href="$libconfig_8h.html#a07dc4858f102ee91fafc17ed5932215e" title="config_read_file" alt="" coords="991,121,1105,148"/>
+<area shape="rect" id="node8" href="$classlibconfig_1_1Config.html#a468e6ef4c2e36bdd57fc23708dee69a1" title="libconfig::Config::read" alt="" coords="1160,5,1309,32"/>
+<area shape="rect" id="node10" href="$classlibconfig_1_1Config.html#af3076c6839fa256bef1ad3fc33e17f98" title="libconfig::Config::\lreadString" alt="" coords="1173,57,1297,98"/>
+<area shape="rect" id="node12" href="$classlibconfig_1_1Config.html#a31bc78ca36d4081560de025cbb08c022" title="libconfig::Config::\lreadFile" alt="" coords="1173,122,1297,163"/>
+<area shape="rect" id="node13" href="$classtld_1_1Config.html#ab2f2fb863b08832e2b877e6f09073333" title="Initializes the Config. " alt="" coords="1357,129,1464,156"/>
+<area shape="rect" id="node14" href="$OpenTLD_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="1512,129,1563,156"/>
+</map>

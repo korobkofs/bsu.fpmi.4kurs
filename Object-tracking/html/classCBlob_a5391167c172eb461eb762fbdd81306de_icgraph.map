@@ -1,0 +1,19 @@
+<map id="CBlob::GetBoundingBox" name="CBlob::GetBoundingBox">
+<area shape="rect" id="node2" href="$classCBlob.html#a1b12d25f8e470fdd808ac2e3bfe9bad4" title="Get mean grey color. " alt="" coords="256,56,355,83"/>
+<area shape="rect" id="node6" href="$classCBlob.html#aa3313af22e7f28d65ba245bc3b8a30bc" title="Minimun X. " alt="" coords="257,157,353,184"/>
+<area shape="rect" id="node9" href="$classCBlob.html#a44e2caf6c7fc6e8360d2576c18c9bc2b" title="Minimun Y. " alt="" coords="257,259,353,285"/>
+<area shape="rect" id="node12" href="$classCBlob.html#ab26a757fffc581df39620425de008cbc" title="Maximun X. " alt="" coords="255,208,355,235"/>
+<area shape="rect" id="node14" href="$classCBlob.html#a740a37afcd841bf719587d2f0128c555" title="Maximun Y. " alt="" coords="255,309,355,336"/>
+<area shape="rect" id="node16" href="$classCBlobGetDiffX.html#a0bf92752dbffa496a2551ad9622836ac" title="Aply operator to blob. " alt="" coords="219,360,391,387"/>
+<area shape="rect" id="node17" href="$classCBlobGetDiffY.html#aab9f6a96902b89dd9b8283db51a1b6f3" title="Aply operator to blob. " alt="" coords="219,411,391,437"/>
+<area shape="rect" id="node18" href="$classtld_1_1ForegroundDetector.html#a4f34509fa3a36529a39b911ed7693623" title="Finds regions of foreground in the image. " alt="" coords="226,462,385,503"/>
+<area shape="rect" id="node3" href="$classCBlob.html#a014b670bb748e6767ef070e1bc25be7a" title="Get standard deviation grey color. " alt="" coords="481,5,591,32"/>
+<area shape="rect" id="node5" href="$classCBlobGetMean.html#ad1aff39c601989402d096fb649b9703c" title="Aply operator to blob. " alt="" coords="449,56,623,83"/>
+<area shape="rect" id="node4" href="$classCBlobGetStdDev.html#a9a52512df47b9ff51ad0cb4cb48d3d1f" title="Aply operator to blob. " alt="" coords="680,5,867,32"/>
+<area shape="rect" id="node7" href="$classCBlobGetMinX.html#a4930f236b5afa5c987ce0b5062b79b09" title="Aply operator to blob. " alt="" coords="450,107,622,133"/>
+<area shape="rect" id="node8" href="$classCBlobGetXCenter.html#aaaae40df5c1c031658100b16015896f0" title="Aply operator to blob. " alt="" coords="441,157,631,184"/>
+<area shape="rect" id="node10" href="$classCBlobGetMinY.html#acf1b21431bc7cba83741b6ed8b3f1bd9" title="Aply operator to blob. " alt="" coords="450,259,622,285"/>
+<area shape="rect" id="node11" href="$classCBlobGetYCenter.html#a5cdb219c957adc1bf08c95e7823e407b" title="Aply operator to blob. " alt="" coords="441,309,631,336"/>
+<area shape="rect" id="node13" href="$classCBlobGetMaxX.html#a187bed7f1f1e467fc5170324f4434bc2" title="Aply operator to blob. " alt="" coords="448,208,624,235"/>
+<area shape="rect" id="node15" href="$classCBlobGetMaxY.html#abd3fc708b60aa0716a1f335f4313e46e" title="Aply operator to blob. " alt="" coords="448,360,624,387"/>
+</map>

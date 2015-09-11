@@ -1,0 +1,419 @@
+\hypertarget{classtld_1_1DetectorCascade}{\section{tld\-:\-:Detector\-Cascade Class Reference}
+\label{classtld_1_1DetectorCascade}\index{tld\-::\-Detector\-Cascade@{tld\-::\-Detector\-Cascade}}
+}
+
+
+The detector cascade.  
+
+
+
+
+{\ttfamily \#include $<$Detector\-Cascade.\-h$>$}
+
+
+
+Collaboration diagram for tld\-:\-:Detector\-Cascade\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtld_1_1DetectorCascade__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classtld_1_1DetectorCascade_a809e13a6c7fbc1c13dcb9b4bf9d22964}{propagate\-Members} ()
+\begin{DoxyCompactList}\small\item\em Propagates the data to every members of detector cascade. \end{DoxyCompactList}\item 
+\hyperlink{classtld_1_1DetectorCascade_a709b4d4802e4f8391fad8fd1b6f892eb}{Detector\-Cascade} ()
+\begin{DoxyCompactList}\small\item\em This constructor initialize by default. \end{DoxyCompactList}\item 
+\hyperlink{classtld_1_1DetectorCascade_a1154ee7d1fd731055af1f6b5b697d8ba}{$\sim$\-Detector\-Cascade} ()
+\begin{DoxyCompactList}\small\item\em This destructor releases the memory. \end{DoxyCompactList}\item 
+void \hyperlink{classtld_1_1DetectorCascade_a98d5393088a53188dcde7d530101534a}{init} ()
+\begin{DoxyCompactList}\small\item\em Creates offsets initialize by default. \end{DoxyCompactList}\item 
+void \hyperlink{classtld_1_1DetectorCascade_a39760d6c54ddb41785ffd05a7b881d8d}{init\-Window\-Offsets} ()
+\begin{DoxyCompactList}\small\item\em Creates offsets that can be added to bounding boxes \par
+ offsets are contained in the form delta11, delta12,... (combined index of dw and dh) \par
+ Order\-: scale-\/$>$tree-\/$>$feature \par
+ window\-Offsets\-: \par
+ x1-\/1,y1-\/1 \par
+ x1-\/1,y2 \par
+ x2,y1-\/1 \par
+ x2,y2 \par
+ pointer to features for this scale \par
+ area of bounding box. \end{DoxyCompactList}\item 
+void \hyperlink{classtld_1_1DetectorCascade_a0515043558291c0bfbd5d403315c0334}{init\-Windows\-And\-Scales} ()
+\begin{DoxyCompactList}\small\item\em Returns number of bounding boxes, bounding boxes, number of scales, \par
+ scales bounding boxes are stored in an array of size 5$\ast$num\-B\-Bs using the format $<$x y=\char`\"{}\char`\"{} w=\char`\"{}\char`\"{} h=\char`\"{}\char`\"{} scaleindex$>$=\char`\"{}\char`\"{}$>$ \par
+ scales are stored using the format $<$w h$>$=\char`\"{}\char`\"{}$>$ \end{DoxyCompactList}\item 
+void \hyperlink{classtld_1_1DetectorCascade_a4658f60cc03595d55920b4949ff26a69}{release} ()
+\begin{DoxyCompactList}\small\item\em Releases memory. \end{DoxyCompactList}\item 
+void \hyperlink{classtld_1_1DetectorCascade_a56b148b63e2c592624c90bc7f7f50d68}{clean\-Previous\-Data} ()
+\begin{DoxyCompactList}\small\item\em Cleans the previous detection result. \end{DoxyCompactList}\item 
+void \hyperlink{classtld_1_1DetectorCascade_a4ec511b5488bd1a1dc241e6dac191165}{detect} (const cv\-::\-Mat \&img)
+\begin{DoxyCompactList}\small\item\em Detects the Object in image. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classtld_1_1DetectorCascade_a24aed44c48fe4616465a556bd6642d5e}{min\-Scale}
+\begin{DoxyCompactList}\small\item\em the minimum scale \end{DoxyCompactList}\item 
+int \hyperlink{classtld_1_1DetectorCascade_aac2cd4b31c290d1eeba69591cbb65ce4}{max\-Scale}
+\begin{DoxyCompactList}\small\item\em the maximum scale \end{DoxyCompactList}\item 
+bool \hyperlink{classtld_1_1DetectorCascade_a2549b35ac099860f20a13ef830081bbb}{use\-Shift}
+\begin{DoxyCompactList}\small\item\em if true the shift of window is used \end{DoxyCompactList}\item 
+float \hyperlink{classtld_1_1DetectorCascade_a18b12b643d662cc9c8850c963079233c}{shift}
+\begin{DoxyCompactList}\small\item\em the shift of window \end{DoxyCompactList}\item 
+int \hyperlink{classtld_1_1DetectorCascade_add27e1ff17e2fda214d08f74d0c164e9}{min\-Size}
+\begin{DoxyCompactList}\small\item\em the minimum size of scan windows \end{DoxyCompactList}\item 
+int \hyperlink{classtld_1_1DetectorCascade_a63af0a8c55ac292b25f2f72b6e734280}{num\-Features}
+\begin{DoxyCompactList}\small\item\em the number of features \end{DoxyCompactList}\item 
+int \hyperlink{classtld_1_1DetectorCascade_a2d41ea56f304562878151ae09c34aa8f}{num\-Trees}
+\begin{DoxyCompactList}\small\item\em the number of trees \end{DoxyCompactList}\item 
+int \hyperlink{classtld_1_1DetectorCascade_a593db7c6ab225f17ac02cd9ef5faebd2}{img\-Width}
+\begin{DoxyCompactList}\small\item\em the width of image \end{DoxyCompactList}\item 
+int \hyperlink{classtld_1_1DetectorCascade_a4e9b954d0b95f6e91d479bba9ec6beac}{img\-Height}
+\begin{DoxyCompactList}\small\item\em the height of image \end{DoxyCompactList}\item 
+int \hyperlink{classtld_1_1DetectorCascade_aa47c6463f1ae23868551a4c82c555f24}{img\-Width\-Step}
+\begin{DoxyCompactList}\small\item\em the width step of image \end{DoxyCompactList}\item 
+int \hyperlink{classtld_1_1DetectorCascade_a1c7a7fddb085fca4577779110637c5c8}{obj\-Width}
+\begin{DoxyCompactList}\small\item\em the width of bounding box of object \end{DoxyCompactList}\item 
+int \hyperlink{classtld_1_1DetectorCascade_a1186ed695cf6e9f00d180ec92e4aa1ea}{obj\-Height}
+\begin{DoxyCompactList}\small\item\em the height of bounding box of object \end{DoxyCompactList}\item 
+int \hyperlink{classtld_1_1DetectorCascade_a700932efdadfdd218697b56aa7703b4b}{num\-Windows}
+\begin{DoxyCompactList}\small\item\em the number of windows \end{DoxyCompactList}\item 
+int $\ast$ \hyperlink{classtld_1_1DetectorCascade_a0acc3bf212228a7b3d47b2d795f1a5a4}{windows}
+\begin{DoxyCompactList}\small\item\em the windows \end{DoxyCompactList}\item 
+int $\ast$ \hyperlink{classtld_1_1DetectorCascade_a259b095591f3d09904277ff844d94b0b}{window\-Offsets}
+\begin{DoxyCompactList}\small\item\em the window offsets \end{DoxyCompactList}\item 
+bool \hyperlink{classtld_1_1DetectorCascade_a4a61cd265a92bce6f8f148db532a1789}{initialised}
+\begin{DoxyCompactList}\small\item\em true, if the initialize was done. \end{DoxyCompactList}\item 
+\hyperlink{classtld_1_1ForegroundDetector}{Foreground\-Detector} $\ast$ \hyperlink{classtld_1_1DetectorCascade_ad03faad5b05805f5edba330cccfee1f1}{foreground\-Detector}
+\begin{DoxyCompactList}\small\item\em the foreground detector \end{DoxyCompactList}\item 
+\hyperlink{classtld_1_1VarianceFilter}{Variance\-Filter} $\ast$ \hyperlink{classtld_1_1DetectorCascade_a5d2600fc22f6cc39ef1940457324c5eb}{variance\-Filter}
+\begin{DoxyCompactList}\small\item\em the variance filter \end{DoxyCompactList}\item 
+\hyperlink{classtld_1_1EnsembleClassifier}{Ensemble\-Classifier} $\ast$ \hyperlink{classtld_1_1DetectorCascade_a818a0be0ff9f76fb42534a056761c163}{ensemble\-Classifier}
+\begin{DoxyCompactList}\small\item\em the ensemble classifier \end{DoxyCompactList}\item 
+\hyperlink{classtld_1_1Clustering}{Clustering} $\ast$ \hyperlink{classtld_1_1DetectorCascade_a5a5c292573778fa38a462921c1928e40}{clustering}
+\begin{DoxyCompactList}\small\item\em the clustering \end{DoxyCompactList}\item 
+\hyperlink{classtld_1_1NNClassifier}{N\-N\-Classifier} $\ast$ \hyperlink{classtld_1_1DetectorCascade_abc9da459b6d66e5a2f2658f52b4dfdc6}{nn\-Classifier}
+\begin{DoxyCompactList}\small\item\em the nearest neighbor classifier \end{DoxyCompactList}\item 
+\hyperlink{classtld_1_1DetectionResult}{Detection\-Result} $\ast$ \hyperlink{classtld_1_1DetectorCascade_a14544e4e2e7ca365e49969a6937aec51}{detection\-Result}
+\begin{DoxyCompactList}\small\item\em the result of detection \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classtld_1_1DetectorCascade_a340c7a6c9aadf1d08af297c77e2ee857}{num\-Scales}
+\begin{DoxyCompactList}\small\item\em the number of scales \end{DoxyCompactList}\item 
+cv\-::\-Size $\ast$ \hyperlink{classtld_1_1DetectorCascade_a5a155eb168c826b143e8619e05a4e90d}{scales}
+\begin{DoxyCompactList}\small\item\em the array of scales \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The detector cascade. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classtld_1_1DetectorCascade_a709b4d4802e4f8391fad8fd1b6f892eb}{\index{tld\-::\-Detector\-Cascade@{tld\-::\-Detector\-Cascade}!Detector\-Cascade@{Detector\-Cascade}}
+\index{Detector\-Cascade@{Detector\-Cascade}!tld::DetectorCascade@{tld\-::\-Detector\-Cascade}}
+\subsubsection[{Detector\-Cascade}]{\setlength{\rightskip}{0pt plus 5cm}tld\-::\-Detector\-Cascade\-::\-Detector\-Cascade (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1DetectorCascade_a709b4d4802e4f8391fad8fd1b6f892eb}
+
+
+This constructor initialize by default. 
+
+\hypertarget{classtld_1_1DetectorCascade_a1154ee7d1fd731055af1f6b5b697d8ba}{\index{tld\-::\-Detector\-Cascade@{tld\-::\-Detector\-Cascade}!$\sim$\-Detector\-Cascade@{$\sim$\-Detector\-Cascade}}
+\index{$\sim$\-Detector\-Cascade@{$\sim$\-Detector\-Cascade}!tld::DetectorCascade@{tld\-::\-Detector\-Cascade}}
+\subsubsection[{$\sim$\-Detector\-Cascade}]{\setlength{\rightskip}{0pt plus 5cm}tld\-::\-Detector\-Cascade\-::$\sim$\-Detector\-Cascade (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1DetectorCascade_a1154ee7d1fd731055af1f6b5b697d8ba}
+
+
+This destructor releases the memory. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classtld_1_1DetectorCascade_a56b148b63e2c592624c90bc7f7f50d68}{\index{tld\-::\-Detector\-Cascade@{tld\-::\-Detector\-Cascade}!clean\-Previous\-Data@{clean\-Previous\-Data}}
+\index{clean\-Previous\-Data@{clean\-Previous\-Data}!tld::DetectorCascade@{tld\-::\-Detector\-Cascade}}
+\subsubsection[{clean\-Previous\-Data}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::\-Detector\-Cascade\-::clean\-Previous\-Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1DetectorCascade_a56b148b63e2c592624c90bc7f7f50d68}
+
+
+Cleans the previous detection result. 
+
+\hypertarget{classtld_1_1DetectorCascade_a4ec511b5488bd1a1dc241e6dac191165}{\index{tld\-::\-Detector\-Cascade@{tld\-::\-Detector\-Cascade}!detect@{detect}}
+\index{detect@{detect}!tld::DetectorCascade@{tld\-::\-Detector\-Cascade}}
+\subsubsection[{detect}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::\-Detector\-Cascade\-::detect (
+\begin{DoxyParamCaption}
+\item[{const cv\-::\-Mat \&}]{img}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1DetectorCascade_a4ec511b5488bd1a1dc241e6dac191165}
+
+
+Detects the Object in image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em img} & the image \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{classtld_1_1DetectorCascade_a4ec511b5488bd1a1dc241e6dac191165_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classtld_1_1DetectorCascade_a98d5393088a53188dcde7d530101534a}{\index{tld\-::\-Detector\-Cascade@{tld\-::\-Detector\-Cascade}!init@{init}}
+\index{init@{init}!tld::DetectorCascade@{tld\-::\-Detector\-Cascade}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::\-Detector\-Cascade\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1DetectorCascade_a98d5393088a53188dcde7d530101534a}
+
+
+Creates offsets initialize by default. 
+
+\hypertarget{classtld_1_1DetectorCascade_a39760d6c54ddb41785ffd05a7b881d8d}{\index{tld\-::\-Detector\-Cascade@{tld\-::\-Detector\-Cascade}!init\-Window\-Offsets@{init\-Window\-Offsets}}
+\index{init\-Window\-Offsets@{init\-Window\-Offsets}!tld::DetectorCascade@{tld\-::\-Detector\-Cascade}}
+\subsubsection[{init\-Window\-Offsets}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::\-Detector\-Cascade\-::init\-Window\-Offsets (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1DetectorCascade_a39760d6c54ddb41785ffd05a7b881d8d}
+
+
+Creates offsets that can be added to bounding boxes \par
+ offsets are contained in the form delta11, delta12,... (combined index of dw and dh) \par
+ Order\-: scale-\/$>$tree-\/$>$feature \par
+ window\-Offsets\-: \par
+ x1-\/1,y1-\/1 \par
+ x1-\/1,y2 \par
+ x2,y1-\/1 \par
+ x2,y2 \par
+ pointer to features for this scale \par
+ area of bounding box. 
+
+\hypertarget{classtld_1_1DetectorCascade_a0515043558291c0bfbd5d403315c0334}{\index{tld\-::\-Detector\-Cascade@{tld\-::\-Detector\-Cascade}!init\-Windows\-And\-Scales@{init\-Windows\-And\-Scales}}
+\index{init\-Windows\-And\-Scales@{init\-Windows\-And\-Scales}!tld::DetectorCascade@{tld\-::\-Detector\-Cascade}}
+\subsubsection[{init\-Windows\-And\-Scales}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::\-Detector\-Cascade\-::init\-Windows\-And\-Scales (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1DetectorCascade_a0515043558291c0bfbd5d403315c0334}
+
+
+Returns number of bounding boxes, bounding boxes, number of scales, \par
+ scales bounding boxes are stored in an array of size 5$\ast$num\-B\-Bs using the format $<$x y=\char`\"{}\char`\"{} w=\char`\"{}\char`\"{} h=\char`\"{}\char`\"{} scaleindex$>$=\char`\"{}\char`\"{}$>$ \par
+ scales are stored using the format $<$w h$>$=\char`\"{}\char`\"{}$>$ 
+
+\hypertarget{classtld_1_1DetectorCascade_a809e13a6c7fbc1c13dcb9b4bf9d22964}{\index{tld\-::\-Detector\-Cascade@{tld\-::\-Detector\-Cascade}!propagate\-Members@{propagate\-Members}}
+\index{propagate\-Members@{propagate\-Members}!tld::DetectorCascade@{tld\-::\-Detector\-Cascade}}
+\subsubsection[{propagate\-Members}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::\-Detector\-Cascade\-::propagate\-Members (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1DetectorCascade_a809e13a6c7fbc1c13dcb9b4bf9d22964}
+
+
+Propagates the data to every members of detector cascade. 
+
+\hypertarget{classtld_1_1DetectorCascade_a4658f60cc03595d55920b4949ff26a69}{\index{tld\-::\-Detector\-Cascade@{tld\-::\-Detector\-Cascade}!release@{release}}
+\index{release@{release}!tld::DetectorCascade@{tld\-::\-Detector\-Cascade}}
+\subsubsection[{release}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::\-Detector\-Cascade\-::release (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1DetectorCascade_a4658f60cc03595d55920b4949ff26a69}
+
+
+Releases memory. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classtld_1_1DetectorCascade_a5a5c292573778fa38a462921c1928e40}{\index{tld\-::\-Detector\-Cascade@{tld\-::\-Detector\-Cascade}!clustering@{clustering}}
+\index{clustering@{clustering}!tld::DetectorCascade@{tld\-::\-Detector\-Cascade}}
+\subsubsection[{clustering}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Clustering}$\ast$ tld\-::\-Detector\-Cascade\-::clustering}}\label{classtld_1_1DetectorCascade_a5a5c292573778fa38a462921c1928e40}
+
+
+the clustering 
+
+\hypertarget{classtld_1_1DetectorCascade_a14544e4e2e7ca365e49969a6937aec51}{\index{tld\-::\-Detector\-Cascade@{tld\-::\-Detector\-Cascade}!detection\-Result@{detection\-Result}}
+\index{detection\-Result@{detection\-Result}!tld::DetectorCascade@{tld\-::\-Detector\-Cascade}}
+\subsubsection[{detection\-Result}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Detection\-Result}$\ast$ tld\-::\-Detector\-Cascade\-::detection\-Result}}\label{classtld_1_1DetectorCascade_a14544e4e2e7ca365e49969a6937aec51}
+
+
+the result of detection 
+
+\hypertarget{classtld_1_1DetectorCascade_a818a0be0ff9f76fb42534a056761c163}{\index{tld\-::\-Detector\-Cascade@{tld\-::\-Detector\-Cascade}!ensemble\-Classifier@{ensemble\-Classifier}}
+\index{ensemble\-Classifier@{ensemble\-Classifier}!tld::DetectorCascade@{tld\-::\-Detector\-Cascade}}
+\subsubsection[{ensemble\-Classifier}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ensemble\-Classifier}$\ast$ tld\-::\-Detector\-Cascade\-::ensemble\-Classifier}}\label{classtld_1_1DetectorCascade_a818a0be0ff9f76fb42534a056761c163}
+
+
+the ensemble classifier 
+
+\hypertarget{classtld_1_1DetectorCascade_ad03faad5b05805f5edba330cccfee1f1}{\index{tld\-::\-Detector\-Cascade@{tld\-::\-Detector\-Cascade}!foreground\-Detector@{foreground\-Detector}}
+\index{foreground\-Detector@{foreground\-Detector}!tld::DetectorCascade@{tld\-::\-Detector\-Cascade}}
+\subsubsection[{foreground\-Detector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Foreground\-Detector}$\ast$ tld\-::\-Detector\-Cascade\-::foreground\-Detector}}\label{classtld_1_1DetectorCascade_ad03faad5b05805f5edba330cccfee1f1}
+
+
+the foreground detector 
+
+\hypertarget{classtld_1_1DetectorCascade_a4e9b954d0b95f6e91d479bba9ec6beac}{\index{tld\-::\-Detector\-Cascade@{tld\-::\-Detector\-Cascade}!img\-Height@{img\-Height}}
+\index{img\-Height@{img\-Height}!tld::DetectorCascade@{tld\-::\-Detector\-Cascade}}
+\subsubsection[{img\-Height}]{\setlength{\rightskip}{0pt plus 5cm}int tld\-::\-Detector\-Cascade\-::img\-Height}}\label{classtld_1_1DetectorCascade_a4e9b954d0b95f6e91d479bba9ec6beac}
+
+
+the height of image 
+
+\hypertarget{classtld_1_1DetectorCascade_a593db7c6ab225f17ac02cd9ef5faebd2}{\index{tld\-::\-Detector\-Cascade@{tld\-::\-Detector\-Cascade}!img\-Width@{img\-Width}}
+\index{img\-Width@{img\-Width}!tld::DetectorCascade@{tld\-::\-Detector\-Cascade}}
+\subsubsection[{img\-Width}]{\setlength{\rightskip}{0pt plus 5cm}int tld\-::\-Detector\-Cascade\-::img\-Width}}\label{classtld_1_1DetectorCascade_a593db7c6ab225f17ac02cd9ef5faebd2}
+
+
+the width of image 
+
+\hypertarget{classtld_1_1DetectorCascade_aa47c6463f1ae23868551a4c82c555f24}{\index{tld\-::\-Detector\-Cascade@{tld\-::\-Detector\-Cascade}!img\-Width\-Step@{img\-Width\-Step}}
+\index{img\-Width\-Step@{img\-Width\-Step}!tld::DetectorCascade@{tld\-::\-Detector\-Cascade}}
+\subsubsection[{img\-Width\-Step}]{\setlength{\rightskip}{0pt plus 5cm}int tld\-::\-Detector\-Cascade\-::img\-Width\-Step}}\label{classtld_1_1DetectorCascade_aa47c6463f1ae23868551a4c82c555f24}
+
+
+the width step of image 
+
+\hypertarget{classtld_1_1DetectorCascade_a4a61cd265a92bce6f8f148db532a1789}{\index{tld\-::\-Detector\-Cascade@{tld\-::\-Detector\-Cascade}!initialised@{initialised}}
+\index{initialised@{initialised}!tld::DetectorCascade@{tld\-::\-Detector\-Cascade}}
+\subsubsection[{initialised}]{\setlength{\rightskip}{0pt plus 5cm}bool tld\-::\-Detector\-Cascade\-::initialised}}\label{classtld_1_1DetectorCascade_a4a61cd265a92bce6f8f148db532a1789}
+
+
+true, if the initialize was done. 
+
+\hypertarget{classtld_1_1DetectorCascade_aac2cd4b31c290d1eeba69591cbb65ce4}{\index{tld\-::\-Detector\-Cascade@{tld\-::\-Detector\-Cascade}!max\-Scale@{max\-Scale}}
+\index{max\-Scale@{max\-Scale}!tld::DetectorCascade@{tld\-::\-Detector\-Cascade}}
+\subsubsection[{max\-Scale}]{\setlength{\rightskip}{0pt plus 5cm}int tld\-::\-Detector\-Cascade\-::max\-Scale}}\label{classtld_1_1DetectorCascade_aac2cd4b31c290d1eeba69591cbb65ce4}
+
+
+the maximum scale 
+
+\hypertarget{classtld_1_1DetectorCascade_a24aed44c48fe4616465a556bd6642d5e}{\index{tld\-::\-Detector\-Cascade@{tld\-::\-Detector\-Cascade}!min\-Scale@{min\-Scale}}
+\index{min\-Scale@{min\-Scale}!tld::DetectorCascade@{tld\-::\-Detector\-Cascade}}
+\subsubsection[{min\-Scale}]{\setlength{\rightskip}{0pt plus 5cm}int tld\-::\-Detector\-Cascade\-::min\-Scale}}\label{classtld_1_1DetectorCascade_a24aed44c48fe4616465a556bd6642d5e}
+
+
+the minimum scale 
+
+\hypertarget{classtld_1_1DetectorCascade_add27e1ff17e2fda214d08f74d0c164e9}{\index{tld\-::\-Detector\-Cascade@{tld\-::\-Detector\-Cascade}!min\-Size@{min\-Size}}
+\index{min\-Size@{min\-Size}!tld::DetectorCascade@{tld\-::\-Detector\-Cascade}}
+\subsubsection[{min\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int tld\-::\-Detector\-Cascade\-::min\-Size}}\label{classtld_1_1DetectorCascade_add27e1ff17e2fda214d08f74d0c164e9}
+
+
+the minimum size of scan windows 
+
+\hypertarget{classtld_1_1DetectorCascade_abc9da459b6d66e5a2f2658f52b4dfdc6}{\index{tld\-::\-Detector\-Cascade@{tld\-::\-Detector\-Cascade}!nn\-Classifier@{nn\-Classifier}}
+\index{nn\-Classifier@{nn\-Classifier}!tld::DetectorCascade@{tld\-::\-Detector\-Cascade}}
+\subsubsection[{nn\-Classifier}]{\setlength{\rightskip}{0pt plus 5cm}{\bf N\-N\-Classifier}$\ast$ tld\-::\-Detector\-Cascade\-::nn\-Classifier}}\label{classtld_1_1DetectorCascade_abc9da459b6d66e5a2f2658f52b4dfdc6}
+
+
+the nearest neighbor classifier 
+
+\hypertarget{classtld_1_1DetectorCascade_a63af0a8c55ac292b25f2f72b6e734280}{\index{tld\-::\-Detector\-Cascade@{tld\-::\-Detector\-Cascade}!num\-Features@{num\-Features}}
+\index{num\-Features@{num\-Features}!tld::DetectorCascade@{tld\-::\-Detector\-Cascade}}
+\subsubsection[{num\-Features}]{\setlength{\rightskip}{0pt plus 5cm}int tld\-::\-Detector\-Cascade\-::num\-Features}}\label{classtld_1_1DetectorCascade_a63af0a8c55ac292b25f2f72b6e734280}
+
+
+the number of features 
+
+\hypertarget{classtld_1_1DetectorCascade_a340c7a6c9aadf1d08af297c77e2ee857}{\index{tld\-::\-Detector\-Cascade@{tld\-::\-Detector\-Cascade}!num\-Scales@{num\-Scales}}
+\index{num\-Scales@{num\-Scales}!tld::DetectorCascade@{tld\-::\-Detector\-Cascade}}
+\subsubsection[{num\-Scales}]{\setlength{\rightskip}{0pt plus 5cm}int tld\-::\-Detector\-Cascade\-::num\-Scales\hspace{0.3cm}{\ttfamily [private]}}}\label{classtld_1_1DetectorCascade_a340c7a6c9aadf1d08af297c77e2ee857}
+
+
+the number of scales 
+
+\hypertarget{classtld_1_1DetectorCascade_a2d41ea56f304562878151ae09c34aa8f}{\index{tld\-::\-Detector\-Cascade@{tld\-::\-Detector\-Cascade}!num\-Trees@{num\-Trees}}
+\index{num\-Trees@{num\-Trees}!tld::DetectorCascade@{tld\-::\-Detector\-Cascade}}
+\subsubsection[{num\-Trees}]{\setlength{\rightskip}{0pt plus 5cm}int tld\-::\-Detector\-Cascade\-::num\-Trees}}\label{classtld_1_1DetectorCascade_a2d41ea56f304562878151ae09c34aa8f}
+
+
+the number of trees 
+
+\hypertarget{classtld_1_1DetectorCascade_a700932efdadfdd218697b56aa7703b4b}{\index{tld\-::\-Detector\-Cascade@{tld\-::\-Detector\-Cascade}!num\-Windows@{num\-Windows}}
+\index{num\-Windows@{num\-Windows}!tld::DetectorCascade@{tld\-::\-Detector\-Cascade}}
+\subsubsection[{num\-Windows}]{\setlength{\rightskip}{0pt plus 5cm}int tld\-::\-Detector\-Cascade\-::num\-Windows}}\label{classtld_1_1DetectorCascade_a700932efdadfdd218697b56aa7703b4b}
+
+
+the number of windows 
+
+\hypertarget{classtld_1_1DetectorCascade_a1186ed695cf6e9f00d180ec92e4aa1ea}{\index{tld\-::\-Detector\-Cascade@{tld\-::\-Detector\-Cascade}!obj\-Height@{obj\-Height}}
+\index{obj\-Height@{obj\-Height}!tld::DetectorCascade@{tld\-::\-Detector\-Cascade}}
+\subsubsection[{obj\-Height}]{\setlength{\rightskip}{0pt plus 5cm}int tld\-::\-Detector\-Cascade\-::obj\-Height}}\label{classtld_1_1DetectorCascade_a1186ed695cf6e9f00d180ec92e4aa1ea}
+
+
+the height of bounding box of object 
+
+\hypertarget{classtld_1_1DetectorCascade_a1c7a7fddb085fca4577779110637c5c8}{\index{tld\-::\-Detector\-Cascade@{tld\-::\-Detector\-Cascade}!obj\-Width@{obj\-Width}}
+\index{obj\-Width@{obj\-Width}!tld::DetectorCascade@{tld\-::\-Detector\-Cascade}}
+\subsubsection[{obj\-Width}]{\setlength{\rightskip}{0pt plus 5cm}int tld\-::\-Detector\-Cascade\-::obj\-Width}}\label{classtld_1_1DetectorCascade_a1c7a7fddb085fca4577779110637c5c8}
+
+
+the width of bounding box of object 
+
+\hypertarget{classtld_1_1DetectorCascade_a5a155eb168c826b143e8619e05a4e90d}{\index{tld\-::\-Detector\-Cascade@{tld\-::\-Detector\-Cascade}!scales@{scales}}
+\index{scales@{scales}!tld::DetectorCascade@{tld\-::\-Detector\-Cascade}}
+\subsubsection[{scales}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::\-Size$\ast$ tld\-::\-Detector\-Cascade\-::scales\hspace{0.3cm}{\ttfamily [private]}}}\label{classtld_1_1DetectorCascade_a5a155eb168c826b143e8619e05a4e90d}
+
+
+the array of scales 
+
+\hypertarget{classtld_1_1DetectorCascade_a18b12b643d662cc9c8850c963079233c}{\index{tld\-::\-Detector\-Cascade@{tld\-::\-Detector\-Cascade}!shift@{shift}}
+\index{shift@{shift}!tld::DetectorCascade@{tld\-::\-Detector\-Cascade}}
+\subsubsection[{shift}]{\setlength{\rightskip}{0pt plus 5cm}float tld\-::\-Detector\-Cascade\-::shift}}\label{classtld_1_1DetectorCascade_a18b12b643d662cc9c8850c963079233c}
+
+
+the shift of window 
+
+\hypertarget{classtld_1_1DetectorCascade_a2549b35ac099860f20a13ef830081bbb}{\index{tld\-::\-Detector\-Cascade@{tld\-::\-Detector\-Cascade}!use\-Shift@{use\-Shift}}
+\index{use\-Shift@{use\-Shift}!tld::DetectorCascade@{tld\-::\-Detector\-Cascade}}
+\subsubsection[{use\-Shift}]{\setlength{\rightskip}{0pt plus 5cm}bool tld\-::\-Detector\-Cascade\-::use\-Shift}}\label{classtld_1_1DetectorCascade_a2549b35ac099860f20a13ef830081bbb}
+
+
+if true the shift of window is used 
+
+\hypertarget{classtld_1_1DetectorCascade_a5d2600fc22f6cc39ef1940457324c5eb}{\index{tld\-::\-Detector\-Cascade@{tld\-::\-Detector\-Cascade}!variance\-Filter@{variance\-Filter}}
+\index{variance\-Filter@{variance\-Filter}!tld::DetectorCascade@{tld\-::\-Detector\-Cascade}}
+\subsubsection[{variance\-Filter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Variance\-Filter}$\ast$ tld\-::\-Detector\-Cascade\-::variance\-Filter}}\label{classtld_1_1DetectorCascade_a5d2600fc22f6cc39ef1940457324c5eb}
+
+
+the variance filter 
+
+\hypertarget{classtld_1_1DetectorCascade_a259b095591f3d09904277ff844d94b0b}{\index{tld\-::\-Detector\-Cascade@{tld\-::\-Detector\-Cascade}!window\-Offsets@{window\-Offsets}}
+\index{window\-Offsets@{window\-Offsets}!tld::DetectorCascade@{tld\-::\-Detector\-Cascade}}
+\subsubsection[{window\-Offsets}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ tld\-::\-Detector\-Cascade\-::window\-Offsets}}\label{classtld_1_1DetectorCascade_a259b095591f3d09904277ff844d94b0b}
+
+
+the window offsets 
+
+\hypertarget{classtld_1_1DetectorCascade_a0acc3bf212228a7b3d47b2d795f1a5a4}{\index{tld\-::\-Detector\-Cascade@{tld\-::\-Detector\-Cascade}!windows@{windows}}
+\index{windows@{windows}!tld::DetectorCascade@{tld\-::\-Detector\-Cascade}}
+\subsubsection[{windows}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ tld\-::\-Detector\-Cascade\-::windows}}\label{classtld_1_1DetectorCascade_a0acc3bf212228a7b3d47b2d795f1a5a4}
+
+
+the windows 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/libopentld/tld/\hyperlink{DetectorCascade_8h}{Detector\-Cascade.\-h}\item 
+src/libopentld/tld/\hyperlink{DetectorCascade_8cpp}{Detector\-Cascade.\-cpp}\end{DoxyCompactItemize}

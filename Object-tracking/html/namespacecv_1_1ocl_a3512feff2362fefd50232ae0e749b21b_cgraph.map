@@ -1,0 +1,5 @@
+<map id="cv::ocl::ensureSizeIsEnough" name="cv::ocl::ensureSizeIsEnough">
+<area shape="rect" id="node2" href="$namespacecv_1_1ocl.html#ac47692f18c81f5f4e0b2ce15e98fac8e" title="cv::ocl::ensureSizeIsEnough" alt="" coords="243,31,432,57"/>
+<area shape="rect" id="node3" href="$classcv_1_1ocl_1_1oclMat.html#acf6fe0735d1dac151e2c301f01470827" title="returns element type, similar to CV_MAT_TYPE(cvMat&#45;&gt;type) " alt="" coords="485,5,627,32"/>
+<area shape="rect" id="node4" href="$classcv_1_1ocl_1_1oclMat.html#aa230a306d044e659d535e9ecfca2ab31" title="allocates new oclMatrix data unless the oclMatrix already has specified size and type. " alt="" coords="480,56,632,83"/>
+</map>

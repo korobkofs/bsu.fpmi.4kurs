@@ -1,0 +1,40 @@
+\hypertarget{flann__base_8hpp}{\section{/usr/include/opencv2/flann/flann\-\_\-base.hpp File Reference}
+\label{flann__base_8hpp}\index{/usr/include/opencv2/flann/flann\-\_\-base.\-hpp@{/usr/include/opencv2/flann/flann\-\_\-base.\-hpp}}
+}
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$cassert$>$}\\*
+{\ttfamily \#include $<$cstdio$>$}\\*
+{\ttfamily \#include \char`\"{}general.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}matrix.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}params.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}saving.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}all\-\_\-indices.\-h\char`\"{}}\\*
+Include dependency graph for flann\-\_\-base.\-hpp\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{flann__base_8hpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structcvflann_1_1SavedIndexParams}{cvflann\-::\-Saved\-Index\-Params}
+\item 
+class \hyperlink{classcvflann_1_1Index}{cvflann\-::\-Index$<$ Distance $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacecvflann}{cvflann}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvflann_a18e2246e157b9d5de30894e1721c4154}{cvflann\-::log\-\_\-verbosity} (int \hyperlink{tracking_8hpp_ac693e272fb1883fe0343f55a14d72b22}{level})
+\item 
+{\footnotesize template$<$typename Distance $>$ }\\N\-N\-Index$<$ Distance $>$ $\ast$ \hyperlink{namespacecvflann_ad7e1b31108d64c74c249eae0ff3b5e4e}{cvflann\-::load\-\_\-saved\-\_\-index} (const Matrix$<$ typename Distance\-::\-Element\-Type $>$ \&dataset, const std\-::string \&\hyperlink{core__c_8h_acc427f35f3bd9f865d39012657cc42f8}{filename}, Distance distance)
+\item 
+{\footnotesize template$<$typename Distance $>$ }\\int \hyperlink{namespacecvflann_aa43d8d0d11bb830e96fe73c5984bf6d0}{cvflann\-::hierarchical\-Clustering} (const Matrix$<$ typename Distance\-::\-Element\-Type $>$ \&\hyperlink{legacy_8hpp_a8c4b676395bf614cc92b782d12f18847}{points}, Matrix$<$ typename Distance\-::\-Result\-Type $>$ \&centers, const K\-Means\-Index\-Params \&\hyperlink{compat_8hpp_a0480a03ecc41b20cde376602531d9270}{params}, Distance \hyperlink{legacy_8hpp_a6f364afbe132c4ecfea48bde1b0618ba}{d}=Distance())
+\end{DoxyCompactItemize}

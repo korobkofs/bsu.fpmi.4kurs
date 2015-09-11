@@ -1,0 +1,5 @@
+<map id="getBbWidth" name="getBbWidth">
+<area shape="rect" id="node2" href="$BBPredict_8h.html#a0181c4b3c3e424d149a8d89a05c98de7" title="Calculates the new (moved and resized) Bounding box. Calculation based on all relative distance chang..." alt="" coords="144,12,219,39"/>
+<area shape="rect" id="node3" href="$FBTrack_8h.html#a2c818794e6fe6aa3f6efdc9c46ffd164" title="Calculate the bounding box of an Object in a following Image. Imgs aren&#39;t changed. " alt="" coords="267,12,330,39"/>
+<area shape="rect" id="node4" href="$classtld_1_1MedianFlowTracker.html#addcc103122a93f098583b8f9cf72e8ff" title="Calculate the bounding box of an Object in a following Image (with analyse of success and correctness..." alt="" coords="379,5,538,46"/>
+</map>

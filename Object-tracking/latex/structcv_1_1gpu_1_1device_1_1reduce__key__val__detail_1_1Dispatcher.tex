@@ -1,0 +1,29 @@
+\hypertarget{structcv_1_1gpu_1_1device_1_1reduce__key__val__detail_1_1Dispatcher}{\section{cv\-:\-:gpu\-:\-:device\-:\-:reduce\-\_\-key\-\_\-val\-\_\-detail\-:\-:Dispatcher$<$ N $>$ Struct Template Reference}
+\label{structcv_1_1gpu_1_1device_1_1reduce__key__val__detail_1_1Dispatcher}\index{cv\-::gpu\-::device\-::reduce\-\_\-key\-\_\-val\-\_\-detail\-::\-Dispatcher$<$ N $>$@{cv\-::gpu\-::device\-::reduce\-\_\-key\-\_\-val\-\_\-detail\-::\-Dispatcher$<$ N $>$}}
+}
+
+
+{\ttfamily \#include $<$reduce\-\_\-key\-\_\-val.\-hpp$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{structcv_1_1gpu_1_1device_1_1reduce__key__val__detail_1_1StaticIf}{Static\-If}$<$ (N\\*
+$<$=32)\&\&\hyperlink{structcv_1_1gpu_1_1device_1_1reduce__key__val__detail_1_1IsPowerOf2}{Is\-Power\-Of2}$<$ N $>$\-::\hyperlink{highgui__c_8h_ad4670c92695d4327c21292905a803901}{value}, \\*
+\hyperlink{structcv_1_1gpu_1_1device_1_1reduce__key__val__detail_1_1WarpOptimized}{Warp\-Optimized}$<$ N $>$, typename \\*
+\hyperlink{structcv_1_1gpu_1_1device_1_1reduce__key__val__detail_1_1StaticIf}{Static\-If}$<$ (N\\*
+$<$=1024)\&\&\hyperlink{structcv_1_1gpu_1_1device_1_1reduce__key__val__detail_1_1IsPowerOf2}{Is\-Power\-Of2}$<$ N $>$\\*
+\-::\hyperlink{highgui__c_8h_ad4670c92695d4327c21292905a803901}{value}, \hyperlink{structcv_1_1gpu_1_1device_1_1reduce__key__val__detail_1_1GenericOptimized32}{Generic\-Optimized32}$<$ N $>$\\*
+, \hyperlink{structcv_1_1gpu_1_1device_1_1reduce__key__val__detail_1_1Generic}{Generic}$<$ N $>$ $>$\-::\hyperlink{imgproc__c_8h_a84612d8738bf935200cf32a103d8efe1}{type} $>$\-::\hyperlink{imgproc__c_8h_a84612d8738bf935200cf32a103d8efe1}{type} \hyperlink{structcv_1_1gpu_1_1device_1_1reduce__key__val__detail_1_1Dispatcher_abcfb41fcc1fbf4d0cc6d633b53d331f1}{reductor}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{structcv_1_1gpu_1_1device_1_1reduce__key__val__detail_1_1Dispatcher_abcfb41fcc1fbf4d0cc6d633b53d331f1}{\index{cv\-::gpu\-::device\-::reduce\-\_\-key\-\_\-val\-\_\-detail\-::\-Dispatcher@{cv\-::gpu\-::device\-::reduce\-\_\-key\-\_\-val\-\_\-detail\-::\-Dispatcher}!reductor@{reductor}}
+\index{reductor@{reductor}!cv::gpu::device::reduce_key_val_detail::Dispatcher@{cv\-::gpu\-::device\-::reduce\-\_\-key\-\_\-val\-\_\-detail\-::\-Dispatcher}}
+\subsubsection[{reductor}]{\setlength{\rightskip}{0pt plus 5cm}template$<$unsigned int N$>$ typedef {\bf Static\-If}$<$ (N $<$= 32) \&\& {\bf Is\-Power\-Of2}$<$N$>$\-::{\bf value}, {\bf Warp\-Optimized}$<$N$>$, typename {\bf Static\-If}$<$ (N $<$= 1024) \&\& {\bf Is\-Power\-Of2}$<$N$>$\-::{\bf value}, {\bf Generic\-Optimized32}$<$N$>$, {\bf Generic}$<$N$>$ $>$\-::{\bf type} $>$\-::{\bf type} {\bf cv\-::gpu\-::device\-::reduce\-\_\-key\-\_\-val\-\_\-detail\-::\-Dispatcher}$<$ N $>$\-::{\bf reductor}}}\label{structcv_1_1gpu_1_1device_1_1reduce__key__val__detail_1_1Dispatcher_abcfb41fcc1fbf4d0cc6d633b53d331f1}
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/gpu/device/detail/\hyperlink{reduce__key__val_8hpp}{reduce\-\_\-key\-\_\-val.\-hpp}\end{DoxyCompactItemize}

@@ -1,0 +1,26 @@
+<map id="/usr/include/opencv2/videostab/stabilizer.hpp" name="/usr/include/opencv2/videostab/stabilizer.hpp">
+<area shape="rect" id="node3" href="$core_8hpp.html" title="The Core Functionality. " alt="" coords="755,352,909,379"/>
+<area shape="rect" id="node15" href="$imgproc_8hpp.html" title="The Image Processing. " alt="" coords="1908,277,2103,304"/>
+<area shape="rect" id="node18" href="$global__motion_8hpp.html" title="opencv2/videostab/global\l_motion.hpp" alt="" coords="720,97,889,138"/>
+<area shape="rect" id="node23" href="$motion__stabilizing_8hpp.html" title="opencv2/videostab/motion\l_stabilizing.hpp" alt="" coords="469,97,643,138"/>
+<area shape="rect" id="node24" href="$frame__source_8hpp.html" title="opencv2/videostab/frame\l_source.hpp" alt="" coords="914,97,1082,138"/>
+<area shape="rect" id="node28" href="$log_8hpp.html" title="opencv2/videostab/log.hpp" alt="" coords="27,104,203,131"/>
+<area shape="rect" id="node29" href="$inpainting_8hpp.html" title="opencv2/videostab/inpainting.hpp" alt="" coords="1196,104,1410,131"/>
+<area shape="rect" id="node37" href="$deblurring_8hpp.html" title="opencv2/videostab/deblurring.hpp" alt="" coords="229,104,445,131"/>
+<area shape="rect" id="node4" href="$core_2types__c_8h.html" title="opencv2/core/types_c.h" alt="" coords="1160,501,1321,528"/>
+<area shape="rect" id="node11" href="$version_8hpp.html" title="opencv2/core/version.hpp" alt="" coords="747,427,918,453"/>
+<area shape="rect" id="node12" href="$operations_8hpp.html" title="opencv2/core/operations.hpp" alt="" coords="942,427,1131,453"/>
+<area shape="rect" id="node14" href="$mat_8hpp.html" title="opencv2/core/mat.hpp" alt="" coords="572,427,722,453"/>
+<area shape="rect" id="node16" href="$imgproc_2types__c_8h.html" title="opencv2/imgproc/types_c.h" alt="" coords="1824,352,2006,379"/>
+<area shape="rect" id="node17" href="$core__c_8h.html" title="opencv2/core/core_c.h" alt="" coords="1439,427,1593,453"/>
+<area shape="rect" id="node19" href="$features2d_2features2d_8hpp.html" title="opencv2/features2d\l/features2d.hpp" alt="" coords="523,187,658,229"/>
+<area shape="rect" id="node21" href="$videostab_2optical__flow_8hpp.html" title="opencv2/videostab/optical\l_flow.hpp" alt="" coords="797,187,970,229"/>
+<area shape="rect" id="node20" href="$miniflann_8hpp.html" title="opencv2/flann/miniflann.hpp" alt="" coords="475,277,659,304"/>
+<area shape="rect" id="node22" href="$opencv__modules_8hpp.html" title="opencv2/opencv_modules.hpp" alt="" coords="784,277,982,304"/>
+<area shape="rect" id="node26" href="$highgui_8hpp.html" title="opencv2/highgui/highgui.hpp" alt="" coords="1057,277,1243,304"/>
+<area shape="rect" id="node27" href="$highgui__c_8h.html" title="opencv2/highgui/highgui_c.h" alt="" coords="1081,352,1267,379"/>
+<area shape="rect" id="node30" href="$fast__marching_8hpp.html" title="opencv2/videostab/fast\l_marching.hpp" alt="" coords="1314,187,1471,229"/>
+<area shape="rect" id="node35" href="$photo_8hpp.html" title="opencv2/photo/photo.hpp" alt="" coords="1801,195,1969,221"/>
+<area shape="rect" id="node34" href="$fast__marching__inl_8hpp.html" title="fast_marching_inl.hpp" alt="" coords="1318,277,1466,304"/>
+<area shape="rect" id="node36" href="$photo__c_8h.html" title="opencv2/photo/photo_c.h" alt="" coords="1518,352,1686,379"/>
+</map>

@@ -1,0 +1,58 @@
+\hypertarget{structcv_1_1gpu_1_1device_1_1VecDiffCachedRegister}{\section{cv\-:\-:gpu\-:\-:device\-:\-:Vec\-Diff\-Cached\-Register$<$ T\-H\-R\-E\-A\-D\-\_\-\-D\-I\-M, M\-A\-X\-\_\-\-L\-E\-N, L\-E\-N\-\_\-\-E\-Q\-\_\-\-M\-A\-X\-\_\-\-L\-E\-N, U $>$ Struct Template Reference}
+\label{structcv_1_1gpu_1_1device_1_1VecDiffCachedRegister}\index{cv\-::gpu\-::device\-::\-Vec\-Diff\-Cached\-Register$<$ T\-H\-R\-E\-A\-D\-\_\-\-D\-I\-M, M\-A\-X\-\_\-\-L\-E\-N, L\-E\-N\-\_\-\-E\-Q\-\_\-\-M\-A\-X\-\_\-\-L\-E\-N, U $>$@{cv\-::gpu\-::device\-::\-Vec\-Diff\-Cached\-Register$<$ T\-H\-R\-E\-A\-D\-\_\-\-D\-I\-M, M\-A\-X\-\_\-\-L\-E\-N, L\-E\-N\-\_\-\-E\-Q\-\_\-\-M\-A\-X\-\_\-\-L\-E\-N, U $>$}}
+}
+
+
+{\ttfamily \#include $<$vec\-\_\-distance.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T1 $>$ }\\\-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{structcv_1_1gpu_1_1device_1_1VecDiffCachedRegister_a22320e5f7c15b951bc65521fa230cd89}{Vec\-Diff\-Cached\-Register} (const T1 $\ast$vec1, int \hyperlink{core__c_8h_accb79be93f4fbcaa15b5a7670569c9f8}{len}, \hyperlink{core__c_8h_aa9c521f41af9a5191e5e4b6ffbae211a}{U} $\ast$smem, int glob\-\_\-tid, int tid)
+\item 
+{\footnotesize template$<$typename T2 , typename Dist $>$ }\\\-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{structcv_1_1gpu_1_1device_1_1VecDiffCachedRegister_a3b373ae301a083770fba9d42111dbd12}{calc} (const T2 $\ast$\hyperlink{core__c_8h_aa709adb546262d915d3c98aacf3bb71a}{vec2}, int \hyperlink{core__c_8h_accb79be93f4fbcaa15b5a7670569c9f8}{len}, Dist \&\hyperlink{legacy_8hpp_ae895c2003a87eda49126845b7ac3688e}{dist}, typename Dist\-::result\-\_\-type $\ast$smem, int tid) const 
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{core__c_8h_aa9c521f41af9a5191e5e4b6ffbae211a}{U} \hyperlink{structcv_1_1gpu_1_1device_1_1VecDiffCachedRegister_aa98de18f95416e41be4fc95ba49502bc}{vec1\-Vals} \mbox{[}M\-A\-X\-\_\-\-L\-E\-N/T\-H\-R\-E\-A\-D\-\_\-\-D\-I\-M\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structcv_1_1gpu_1_1device_1_1VecDiffCachedRegister_a22320e5f7c15b951bc65521fa230cd89}{\index{cv\-::gpu\-::device\-::\-Vec\-Diff\-Cached\-Register@{cv\-::gpu\-::device\-::\-Vec\-Diff\-Cached\-Register}!Vec\-Diff\-Cached\-Register@{Vec\-Diff\-Cached\-Register}}
+\index{Vec\-Diff\-Cached\-Register@{Vec\-Diff\-Cached\-Register}!cv::gpu::device::VecDiffCachedRegister@{cv\-::gpu\-::device\-::\-Vec\-Diff\-Cached\-Register}}
+\subsubsection[{Vec\-Diff\-Cached\-Register}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int T\-H\-R\-E\-A\-D\-\_\-\-D\-I\-M, int M\-A\-X\-\_\-\-L\-E\-N, bool L\-E\-N\-\_\-\-E\-Q\-\_\-\-M\-A\-X\-\_\-\-L\-E\-N, typename U $>$ template$<$typename T1 $>$ \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- {\bf cv\-::gpu\-::device\-::\-Vec\-Diff\-Cached\-Register}$<$ T\-H\-R\-E\-A\-D\-\_\-\-D\-I\-M, M\-A\-X\-\_\-\-L\-E\-N, L\-E\-N\-\_\-\-E\-Q\-\_\-\-M\-A\-X\-\_\-\-L\-E\-N, {\bf U} $>$\-::{\bf Vec\-Diff\-Cached\-Register} (
+\begin{DoxyParamCaption}
+\item[{const T1 $\ast$}]{vec1, }
+\item[{int}]{len, }
+\item[{{\bf U} $\ast$}]{smem, }
+\item[{int}]{glob\-\_\-tid, }
+\item[{int}]{tid}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{structcv_1_1gpu_1_1device_1_1VecDiffCachedRegister_a22320e5f7c15b951bc65521fa230cd89}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structcv_1_1gpu_1_1device_1_1VecDiffCachedRegister_a3b373ae301a083770fba9d42111dbd12}{\index{cv\-::gpu\-::device\-::\-Vec\-Diff\-Cached\-Register@{cv\-::gpu\-::device\-::\-Vec\-Diff\-Cached\-Register}!calc@{calc}}
+\index{calc@{calc}!cv::gpu::device::VecDiffCachedRegister@{cv\-::gpu\-::device\-::\-Vec\-Diff\-Cached\-Register}}
+\subsubsection[{calc}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int T\-H\-R\-E\-A\-D\-\_\-\-D\-I\-M, int M\-A\-X\-\_\-\-L\-E\-N, bool L\-E\-N\-\_\-\-E\-Q\-\_\-\-M\-A\-X\-\_\-\-L\-E\-N, typename U $>$ template$<$typename T2 , typename Dist $>$ \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- {\bf void} {\bf cv\-::gpu\-::device\-::\-Vec\-Diff\-Cached\-Register}$<$ T\-H\-R\-E\-A\-D\-\_\-\-D\-I\-M, M\-A\-X\-\_\-\-L\-E\-N, L\-E\-N\-\_\-\-E\-Q\-\_\-\-M\-A\-X\-\_\-\-L\-E\-N, {\bf U} $>$\-::calc (
+\begin{DoxyParamCaption}
+\item[{const T2 $\ast$}]{vec2, }
+\item[{int}]{len, }
+\item[{Dist \&}]{dist, }
+\item[{typename Dist\-::result\-\_\-type $\ast$}]{smem, }
+\item[{int}]{tid}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{structcv_1_1gpu_1_1device_1_1VecDiffCachedRegister_a3b373ae301a083770fba9d42111dbd12}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structcv_1_1gpu_1_1device_1_1VecDiffCachedRegister_aa98de18f95416e41be4fc95ba49502bc}{\index{cv\-::gpu\-::device\-::\-Vec\-Diff\-Cached\-Register@{cv\-::gpu\-::device\-::\-Vec\-Diff\-Cached\-Register}!vec1\-Vals@{vec1\-Vals}}
+\index{vec1\-Vals@{vec1\-Vals}!cv::gpu::device::VecDiffCachedRegister@{cv\-::gpu\-::device\-::\-Vec\-Diff\-Cached\-Register}}
+\subsubsection[{vec1\-Vals}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int T\-H\-R\-E\-A\-D\-\_\-\-D\-I\-M, int M\-A\-X\-\_\-\-L\-E\-N, bool L\-E\-N\-\_\-\-E\-Q\-\_\-\-M\-A\-X\-\_\-\-L\-E\-N, typename U $>$ {\bf U} {\bf cv\-::gpu\-::device\-::\-Vec\-Diff\-Cached\-Register}$<$ T\-H\-R\-E\-A\-D\-\_\-\-D\-I\-M, M\-A\-X\-\_\-\-L\-E\-N, L\-E\-N\-\_\-\-E\-Q\-\_\-\-M\-A\-X\-\_\-\-L\-E\-N, {\bf U} $>$\-::vec1\-Vals\mbox{[}M\-A\-X\-\_\-\-L\-E\-N/T\-H\-R\-E\-A\-D\-\_\-\-D\-I\-M\mbox{]}}}\label{structcv_1_1gpu_1_1device_1_1VecDiffCachedRegister_aa98de18f95416e41be4fc95ba49502bc}
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/gpu/device/\hyperlink{vec__distance_8hpp}{vec\-\_\-distance.\-hpp}\end{DoxyCompactItemize}

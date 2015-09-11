@@ -1,0 +1,7 @@
+<map id="cv::ocl::oclMat::oclMat" name="cv::ocl::oclMat::oclMat">
+<area shape="rect" id="node2" href="$classcv_1_1ocl_1_1oclMat.html#a5e927c1ab9729772df69829e29467fd7" title="returns a new oclMatrix header for the specified row " alt="" coords="227,5,365,32"/>
+<area shape="rect" id="node3" href="$classcv_1_1ocl_1_1oclMat.html#a761d9493dc8d989b0bec105e832e8fb6" title="returns a new oclMatrix header for the specified column " alt="" coords="229,56,363,83"/>
+<area shape="rect" id="node4" href="$classcv_1_1ocl_1_1oclMat.html#a60bd94d8a6110a2e50bf9fbcfc2db0d2" title="... for the specified row span " alt="" coords="209,107,383,133"/>
+<area shape="rect" id="node5" href="$classcv_1_1ocl_1_1oclMat.html#a8d61c3d2a4c840c9f785ea1e319e1981" title="... for the specified column span " alt="" coords="211,157,381,184"/>
+<area shape="rect" id="node6" href="$classcv_1_1ocl_1_1oclMat.html#a6d603d156ac2e731adff478dd03a0d9b" title="extracts a rectangular sub&#45;oclMatrix " alt="" coords="211,208,381,235"/>
+</map>

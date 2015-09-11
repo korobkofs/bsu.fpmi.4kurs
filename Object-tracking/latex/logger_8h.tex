@@ -1,0 +1,57 @@
+\hypertarget{logger_8h}{\section{/usr/include/opencv2/flann/logger.h File Reference}
+\label{logger_8h}\index{/usr/include/opencv2/flann/logger.\-h@{/usr/include/opencv2/flann/logger.\-h}}
+}
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$stdarg.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}defines.\-h\char`\"{}}\\*
+Include dependency graph for logger.\-h\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{logger_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{logger_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classcvflann_1_1Logger}{cvflann\-::\-Logger}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacecvflann}{cvflann}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{logger_8h_a8e8019afc1eb5047de9252c6e1768d52}{L\-O\-G\-\_\-\-M\-E\-T\-H\-O\-D}(N\-A\-M\-E, L\-E\-V\-E\-L)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{logger_8h_a8e8019afc1eb5047de9252c6e1768d52}{\index{logger.\-h@{logger.\-h}!L\-O\-G\-\_\-\-M\-E\-T\-H\-O\-D@{L\-O\-G\-\_\-\-M\-E\-T\-H\-O\-D}}
+\index{L\-O\-G\-\_\-\-M\-E\-T\-H\-O\-D@{L\-O\-G\-\_\-\-M\-E\-T\-H\-O\-D}!logger.h@{logger.\-h}}
+\subsubsection[{L\-O\-G\-\_\-\-M\-E\-T\-H\-O\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-O\-G\-\_\-\-M\-E\-T\-H\-O\-D(
+\begin{DoxyParamCaption}
+\item[{}]{N\-A\-M\-E, }
+\item[{}]{L\-E\-V\-E\-L}
+\end{DoxyParamCaption}
+)}}\label{logger_8h_a8e8019afc1eb5047de9252c6e1768d52}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{keyword}{static} \textcolor{keywordtype}{int} NAME(\textcolor{keyword}{const} \textcolor{keywordtype}{char}* fmt, ...) \(\backslash\)
+    \{ \(\backslash\)
+        va\_list ap; \(\backslash\)
+        va\_start(ap, fmt); \(\backslash\)
+        int ret = instance().\_log(LEVEL, fmt, ap); \(\backslash\)
+        va\_end(ap); \(\backslash\)
+        return ret; \(\backslash\)
+    \}
+\end{DoxyCode}

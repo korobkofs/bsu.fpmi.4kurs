@@ -1,0 +1,196 @@
+\hypertarget{classcv_1_1gpu_1_1StereoConstantSpaceBP}{\section{cv\-:\-:gpu\-:\-:Stereo\-Constant\-Space\-B\-P Class Reference}
+\label{classcv_1_1gpu_1_1StereoConstantSpaceBP}\index{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P@{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P}}
+}
+
+
+{\ttfamily \#include $<$gpu.\-hpp$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{classcv_1_1gpu_1_1StereoConstantSpaceBP_a7bf57e9c04e48d598bd46cbeab61c082a6eb05da7034cd7d04a243a0bb7bf8588}{D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-D\-I\-S\-P} = 128
+ \}
+\item 
+enum \{ \hyperlink{classcv_1_1gpu_1_1StereoConstantSpaceBP_a2c56e0cd0c3b1796ba961e3c40ec7245ab9cddd75bf692fe83077b95498a930dd}{D\-E\-F\-A\-U\-L\-T\-\_\-\-I\-T\-E\-R\-S} = 8
+ \}
+\item 
+enum \{ \hyperlink{classcv_1_1gpu_1_1StereoConstantSpaceBP_a3801d564151082f91f75cff48fa971d5adcc1c66dd82e68f97a02244894c932d8}{D\-E\-F\-A\-U\-L\-T\-\_\-\-L\-E\-V\-E\-L\-S} = 4
+ \}
+\item 
+enum \{ \hyperlink{classcv_1_1gpu_1_1StereoConstantSpaceBP_a74b20af251e9607f410cdc6d7597c0dba22afcf495d8900e5bf3eb4d519643ade}{D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-R\-\_\-\-P\-L\-A\-N\-E} = 4
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcv_1_1gpu_1_1StereoConstantSpaceBP_af5060781d7e11011a76b00fb1b49a63c}{Stereo\-Constant\-Space\-B\-P} (int \hyperlink{classcv_1_1gpu_1_1StereoConstantSpaceBP_ad581f8f942bce3c65131ef5db9051dd3}{ndisp}=\hyperlink{classcv_1_1gpu_1_1StereoConstantSpaceBP_a7bf57e9c04e48d598bd46cbeab61c082a6eb05da7034cd7d04a243a0bb7bf8588}{D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-D\-I\-S\-P}, int \hyperlink{classcv_1_1gpu_1_1StereoConstantSpaceBP_a259939bb24dd2f1de48e718e9b7d4f5e}{iters}=\hyperlink{classcv_1_1gpu_1_1StereoConstantSpaceBP_a2c56e0cd0c3b1796ba961e3c40ec7245ab9cddd75bf692fe83077b95498a930dd}{D\-E\-F\-A\-U\-L\-T\-\_\-\-I\-T\-E\-R\-S}, int \hyperlink{classcv_1_1gpu_1_1StereoConstantSpaceBP_a343113cd7fac638c7bbdb0e8854e4416}{levels}=\hyperlink{classcv_1_1gpu_1_1StereoConstantSpaceBP_a3801d564151082f91f75cff48fa971d5adcc1c66dd82e68f97a02244894c932d8}{D\-E\-F\-A\-U\-L\-T\-\_\-\-L\-E\-V\-E\-L\-S}, int \hyperlink{classcv_1_1gpu_1_1StereoConstantSpaceBP_a75c85050ba1c024997ff44dcd05593e4}{nr\-\_\-plane}=\hyperlink{classcv_1_1gpu_1_1StereoConstantSpaceBP_a74b20af251e9607f410cdc6d7597c0dba22afcf495d8900e5bf3eb4d519643ade}{D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-R\-\_\-\-P\-L\-A\-N\-E}, int \hyperlink{classcv_1_1gpu_1_1StereoConstantSpaceBP_aeba70bf4f20c6e7cbcaae764d7c30b24}{msg\-\_\-type}=\hyperlink{core_2types__c_8h_a4a3def5d72b74bed31f5f8ab7676099c}{C\-V\-\_\-32\-F})
+\begin{DoxyCompactList}\small\item\em the default constructor \end{DoxyCompactList}\item 
+\hyperlink{classcv_1_1gpu_1_1StereoConstantSpaceBP_a90c0a4f080441f3c6000865ac1638710}{Stereo\-Constant\-Space\-B\-P} (int \hyperlink{classcv_1_1gpu_1_1StereoConstantSpaceBP_ad581f8f942bce3c65131ef5db9051dd3}{ndisp}, int \hyperlink{classcv_1_1gpu_1_1StereoConstantSpaceBP_a259939bb24dd2f1de48e718e9b7d4f5e}{iters}, int \hyperlink{classcv_1_1gpu_1_1StereoConstantSpaceBP_a343113cd7fac638c7bbdb0e8854e4416}{levels}, int \hyperlink{classcv_1_1gpu_1_1StereoConstantSpaceBP_a75c85050ba1c024997ff44dcd05593e4}{nr\-\_\-plane}, float \hyperlink{classcv_1_1gpu_1_1StereoConstantSpaceBP_a57d8b29ef9d9f496fdcfdbb82f27b2e9}{max\-\_\-data\-\_\-term}, float \hyperlink{classcv_1_1gpu_1_1StereoConstantSpaceBP_aa6a65a63755315c42fc9f3db17c04fc7}{data\-\_\-weight}, float \hyperlink{classcv_1_1gpu_1_1StereoConstantSpaceBP_af39f878f966eace5a27b54ae518b17ec}{max\-\_\-disc\-\_\-term}, float \hyperlink{classcv_1_1gpu_1_1StereoConstantSpaceBP_a98d239cda5f01d67be1086318f8a37ce}{disc\-\_\-single\-\_\-jump}, int \hyperlink{classcv_1_1gpu_1_1StereoConstantSpaceBP_ada95c36baf3e7f59ecbadcb34ef3f609}{min\-\_\-disp\-\_\-th}=0, int \hyperlink{classcv_1_1gpu_1_1StereoConstantSpaceBP_aeba70bf4f20c6e7cbcaae764d7c30b24}{msg\-\_\-type}=\hyperlink{core_2types__c_8h_a4a3def5d72b74bed31f5f8ab7676099c}{C\-V\-\_\-32\-F})
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1StereoConstantSpaceBP_a91fa63e9b4deac076a0fa96be86a46a9}{operator()} (const Gpu\-Mat \&left, const Gpu\-Mat \&\hyperlink{legacy_8hpp_a6b04b878081bf724144b73c75dfd1894}{right}, Gpu\-Mat \&\hyperlink{calib3d_8hpp_acd2ef073a3a4984e0a0ebac5c7e179fd}{disparity}, \hyperlink{classcv_1_1gpu_1_1Stream}{Stream} \&stream=\hyperlink{classcv_1_1gpu_1_1Stream_af96c23564834f88333dcb8997df553f1}{Stream\-::\-Null}())
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1StereoConstantSpaceBP_a7cffa16a7b6acc15ba1ae35ef39533f9}{estimate\-Recommended\-Params} (int \hyperlink{highgui__c_8h_a2474a5474cbff19523a51eb1de01cda4}{width}, int \hyperlink{highgui__c_8h_adc7b4b8a6ef510e136071efbc9cd9a58}{height}, int \&\hyperlink{classcv_1_1gpu_1_1StereoConstantSpaceBP_ad581f8f942bce3c65131ef5db9051dd3}{ndisp}, int \&\hyperlink{classcv_1_1gpu_1_1StereoConstantSpaceBP_a259939bb24dd2f1de48e718e9b7d4f5e}{iters}, int \&\hyperlink{classcv_1_1gpu_1_1StereoConstantSpaceBP_a343113cd7fac638c7bbdb0e8854e4416}{levels}, int \&\hyperlink{classcv_1_1gpu_1_1StereoConstantSpaceBP_a75c85050ba1c024997ff44dcd05593e4}{nr\-\_\-plane})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classcv_1_1gpu_1_1StereoConstantSpaceBP_ad581f8f942bce3c65131ef5db9051dd3}{ndisp}
+\item 
+int \hyperlink{classcv_1_1gpu_1_1StereoConstantSpaceBP_a259939bb24dd2f1de48e718e9b7d4f5e}{iters}
+\item 
+int \hyperlink{classcv_1_1gpu_1_1StereoConstantSpaceBP_a343113cd7fac638c7bbdb0e8854e4416}{levels}
+\item 
+int \hyperlink{classcv_1_1gpu_1_1StereoConstantSpaceBP_a75c85050ba1c024997ff44dcd05593e4}{nr\-\_\-plane}
+\item 
+float \hyperlink{classcv_1_1gpu_1_1StereoConstantSpaceBP_a57d8b29ef9d9f496fdcfdbb82f27b2e9}{max\-\_\-data\-\_\-term}
+\item 
+float \hyperlink{classcv_1_1gpu_1_1StereoConstantSpaceBP_aa6a65a63755315c42fc9f3db17c04fc7}{data\-\_\-weight}
+\item 
+float \hyperlink{classcv_1_1gpu_1_1StereoConstantSpaceBP_af39f878f966eace5a27b54ae518b17ec}{max\-\_\-disc\-\_\-term}
+\item 
+float \hyperlink{classcv_1_1gpu_1_1StereoConstantSpaceBP_a98d239cda5f01d67be1086318f8a37ce}{disc\-\_\-single\-\_\-jump}
+\item 
+int \hyperlink{classcv_1_1gpu_1_1StereoConstantSpaceBP_ada95c36baf3e7f59ecbadcb34ef3f609}{min\-\_\-disp\-\_\-th}
+\item 
+int \hyperlink{classcv_1_1gpu_1_1StereoConstantSpaceBP_aeba70bf4f20c6e7cbcaae764d7c30b24}{msg\-\_\-type}
+\item 
+bool \hyperlink{classcv_1_1gpu_1_1StereoConstantSpaceBP_adb71b7b7cdc36ff4ee1535dc0abd4d73}{use\-\_\-local\-\_\-init\-\_\-data\-\_\-cost}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classcv_1_1gpu_1_1StereoConstantSpaceBP_a7bf57e9c04e48d598bd46cbeab61c082}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{classcv_1_1gpu_1_1StereoConstantSpaceBP_a7bf57e9c04e48d598bd46cbeab61c082}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-D\-I\-S\-P@{D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-D\-I\-S\-P}!cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P@{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P}}\index{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P@{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P}!D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-D\-I\-S\-P@{D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-D\-I\-S\-P}}\item[{\em 
+\hypertarget{classcv_1_1gpu_1_1StereoConstantSpaceBP_a7bf57e9c04e48d598bd46cbeab61c082a6eb05da7034cd7d04a243a0bb7bf8588}{D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-D\-I\-S\-P}\label{classcv_1_1gpu_1_1StereoConstantSpaceBP_a7bf57e9c04e48d598bd46cbeab61c082a6eb05da7034cd7d04a243a0bb7bf8588}
+}]\end{description}
+\end{Desc}
+\hypertarget{classcv_1_1gpu_1_1StereoConstantSpaceBP_a2c56e0cd0c3b1796ba961e3c40ec7245}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{classcv_1_1gpu_1_1StereoConstantSpaceBP_a2c56e0cd0c3b1796ba961e3c40ec7245}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{D\-E\-F\-A\-U\-L\-T\-\_\-\-I\-T\-E\-R\-S@{D\-E\-F\-A\-U\-L\-T\-\_\-\-I\-T\-E\-R\-S}!cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P@{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P}}\index{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P@{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P}!D\-E\-F\-A\-U\-L\-T\-\_\-\-I\-T\-E\-R\-S@{D\-E\-F\-A\-U\-L\-T\-\_\-\-I\-T\-E\-R\-S}}\item[{\em 
+\hypertarget{classcv_1_1gpu_1_1StereoConstantSpaceBP_a2c56e0cd0c3b1796ba961e3c40ec7245ab9cddd75bf692fe83077b95498a930dd}{D\-E\-F\-A\-U\-L\-T\-\_\-\-I\-T\-E\-R\-S}\label{classcv_1_1gpu_1_1StereoConstantSpaceBP_a2c56e0cd0c3b1796ba961e3c40ec7245ab9cddd75bf692fe83077b95498a930dd}
+}]\end{description}
+\end{Desc}
+\hypertarget{classcv_1_1gpu_1_1StereoConstantSpaceBP_a3801d564151082f91f75cff48fa971d5}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{classcv_1_1gpu_1_1StereoConstantSpaceBP_a3801d564151082f91f75cff48fa971d5}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{D\-E\-F\-A\-U\-L\-T\-\_\-\-L\-E\-V\-E\-L\-S@{D\-E\-F\-A\-U\-L\-T\-\_\-\-L\-E\-V\-E\-L\-S}!cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P@{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P}}\index{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P@{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P}!D\-E\-F\-A\-U\-L\-T\-\_\-\-L\-E\-V\-E\-L\-S@{D\-E\-F\-A\-U\-L\-T\-\_\-\-L\-E\-V\-E\-L\-S}}\item[{\em 
+\hypertarget{classcv_1_1gpu_1_1StereoConstantSpaceBP_a3801d564151082f91f75cff48fa971d5adcc1c66dd82e68f97a02244894c932d8}{D\-E\-F\-A\-U\-L\-T\-\_\-\-L\-E\-V\-E\-L\-S}\label{classcv_1_1gpu_1_1StereoConstantSpaceBP_a3801d564151082f91f75cff48fa971d5adcc1c66dd82e68f97a02244894c932d8}
+}]\end{description}
+\end{Desc}
+\hypertarget{classcv_1_1gpu_1_1StereoConstantSpaceBP_a74b20af251e9607f410cdc6d7597c0db}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{classcv_1_1gpu_1_1StereoConstantSpaceBP_a74b20af251e9607f410cdc6d7597c0db}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-R\-\_\-\-P\-L\-A\-N\-E@{D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-R\-\_\-\-P\-L\-A\-N\-E}!cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P@{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P}}\index{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P@{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P}!D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-R\-\_\-\-P\-L\-A\-N\-E@{D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-R\-\_\-\-P\-L\-A\-N\-E}}\item[{\em 
+\hypertarget{classcv_1_1gpu_1_1StereoConstantSpaceBP_a74b20af251e9607f410cdc6d7597c0dba22afcf495d8900e5bf3eb4d519643ade}{D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-R\-\_\-\-P\-L\-A\-N\-E}\label{classcv_1_1gpu_1_1StereoConstantSpaceBP_a74b20af251e9607f410cdc6d7597c0dba22afcf495d8900e5bf3eb4d519643ade}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcv_1_1gpu_1_1StereoConstantSpaceBP_af5060781d7e11011a76b00fb1b49a63c}{\index{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P@{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P}!Stereo\-Constant\-Space\-B\-P@{Stereo\-Constant\-Space\-B\-P}}
+\index{Stereo\-Constant\-Space\-B\-P@{Stereo\-Constant\-Space\-B\-P}!cv::gpu::StereoConstantSpaceBP@{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P}}
+\subsubsection[{Stereo\-Constant\-Space\-B\-P}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P\-::\-Stereo\-Constant\-Space\-B\-P (
+\begin{DoxyParamCaption}
+\item[{int}]{ndisp = {\ttfamily {\bf D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-D\-I\-S\-P}}, }
+\item[{int}]{iters = {\ttfamily {\bf D\-E\-F\-A\-U\-L\-T\-\_\-\-I\-T\-E\-R\-S}}, }
+\item[{int}]{levels = {\ttfamily {\bf D\-E\-F\-A\-U\-L\-T\-\_\-\-L\-E\-V\-E\-L\-S}}, }
+\item[{int}]{nr\-\_\-plane = {\ttfamily {\bf D\-E\-F\-A\-U\-L\-T\-\_\-\-N\-R\-\_\-\-P\-L\-A\-N\-E}}, }
+\item[{int}]{msg\-\_\-type = {\ttfamily {\bf C\-V\-\_\-32\-F}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{classcv_1_1gpu_1_1StereoConstantSpaceBP_af5060781d7e11011a76b00fb1b49a63c}
+
+
+the default constructor 
+
+\hypertarget{classcv_1_1gpu_1_1StereoConstantSpaceBP_a90c0a4f080441f3c6000865ac1638710}{\index{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P@{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P}!Stereo\-Constant\-Space\-B\-P@{Stereo\-Constant\-Space\-B\-P}}
+\index{Stereo\-Constant\-Space\-B\-P@{Stereo\-Constant\-Space\-B\-P}!cv::gpu::StereoConstantSpaceBP@{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P}}
+\subsubsection[{Stereo\-Constant\-Space\-B\-P}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P\-::\-Stereo\-Constant\-Space\-B\-P (
+\begin{DoxyParamCaption}
+\item[{int}]{ndisp, }
+\item[{int}]{iters, }
+\item[{int}]{levels, }
+\item[{int}]{nr\-\_\-plane, }
+\item[{float}]{max\-\_\-data\-\_\-term, }
+\item[{float}]{data\-\_\-weight, }
+\item[{float}]{max\-\_\-disc\-\_\-term, }
+\item[{float}]{disc\-\_\-single\-\_\-jump, }
+\item[{int}]{min\-\_\-disp\-\_\-th = {\ttfamily 0}, }
+\item[{int}]{msg\-\_\-type = {\ttfamily {\bf C\-V\-\_\-32\-F}}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1StereoConstantSpaceBP_a90c0a4f080441f3c6000865ac1638710}
+the full constructor taking the number of disparities, number of B\-P iterations on each level, number of levels, number of active disparity on the first level, truncation of data cost, data weight, truncation of discontinuity cost, discontinuity single jump and minimum disparity threshold 
+
+\subsection{Member Function Documentation}
+\hypertarget{classcv_1_1gpu_1_1StereoConstantSpaceBP_a7cffa16a7b6acc15ba1ae35ef39533f9}{\index{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P@{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P}!estimate\-Recommended\-Params@{estimate\-Recommended\-Params}}
+\index{estimate\-Recommended\-Params@{estimate\-Recommended\-Params}!cv::gpu::StereoConstantSpaceBP@{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P}}
+\subsubsection[{estimate\-Recommended\-Params}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf void} cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P\-::estimate\-Recommended\-Params (
+\begin{DoxyParamCaption}
+\item[{int}]{width, }
+\item[{int}]{height, }
+\item[{int \&}]{ndisp, }
+\item[{int \&}]{iters, }
+\item[{int \&}]{levels, }
+\item[{int \&}]{nr\-\_\-plane}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcv_1_1gpu_1_1StereoConstantSpaceBP_a7cffa16a7b6acc15ba1ae35ef39533f9}
+\hypertarget{classcv_1_1gpu_1_1StereoConstantSpaceBP_a91fa63e9b4deac076a0fa96be86a46a9}{\index{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P@{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P}!operator()@{operator()}}
+\index{operator()@{operator()}!cv::gpu::StereoConstantSpaceBP@{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P\-::operator() (
+\begin{DoxyParamCaption}
+\item[{const Gpu\-Mat \&}]{left, }
+\item[{const Gpu\-Mat \&}]{right, }
+\item[{Gpu\-Mat \&}]{disparity, }
+\item[{{\bf Stream} \&}]{stream = {\ttfamily {\bf Stream\-::\-Null}()}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1StereoConstantSpaceBP_a91fa63e9b4deac076a0fa96be86a46a9}
+the stereo correspondence operator. Finds the disparity for the specified rectified stereo pair, if disparity is empty output type will be C\-V\-\_\-16\-S else output type will be disparity.\-type(). 
+
+\subsection{Member Data Documentation}
+\hypertarget{classcv_1_1gpu_1_1StereoConstantSpaceBP_aa6a65a63755315c42fc9f3db17c04fc7}{\index{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P@{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P}!data\-\_\-weight@{data\-\_\-weight}}
+\index{data\-\_\-weight@{data\-\_\-weight}!cv::gpu::StereoConstantSpaceBP@{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P}}
+\subsubsection[{data\-\_\-weight}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P\-::data\-\_\-weight}}\label{classcv_1_1gpu_1_1StereoConstantSpaceBP_aa6a65a63755315c42fc9f3db17c04fc7}
+\hypertarget{classcv_1_1gpu_1_1StereoConstantSpaceBP_a98d239cda5f01d67be1086318f8a37ce}{\index{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P@{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P}!disc\-\_\-single\-\_\-jump@{disc\-\_\-single\-\_\-jump}}
+\index{disc\-\_\-single\-\_\-jump@{disc\-\_\-single\-\_\-jump}!cv::gpu::StereoConstantSpaceBP@{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P}}
+\subsubsection[{disc\-\_\-single\-\_\-jump}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P\-::disc\-\_\-single\-\_\-jump}}\label{classcv_1_1gpu_1_1StereoConstantSpaceBP_a98d239cda5f01d67be1086318f8a37ce}
+\hypertarget{classcv_1_1gpu_1_1StereoConstantSpaceBP_a259939bb24dd2f1de48e718e9b7d4f5e}{\index{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P@{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P}!iters@{iters}}
+\index{iters@{iters}!cv::gpu::StereoConstantSpaceBP@{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P}}
+\subsubsection[{iters}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P\-::iters}}\label{classcv_1_1gpu_1_1StereoConstantSpaceBP_a259939bb24dd2f1de48e718e9b7d4f5e}
+\hypertarget{classcv_1_1gpu_1_1StereoConstantSpaceBP_a343113cd7fac638c7bbdb0e8854e4416}{\index{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P@{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P}!levels@{levels}}
+\index{levels@{levels}!cv::gpu::StereoConstantSpaceBP@{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P}}
+\subsubsection[{levels}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P\-::levels}}\label{classcv_1_1gpu_1_1StereoConstantSpaceBP_a343113cd7fac638c7bbdb0e8854e4416}
+\hypertarget{classcv_1_1gpu_1_1StereoConstantSpaceBP_a57d8b29ef9d9f496fdcfdbb82f27b2e9}{\index{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P@{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P}!max\-\_\-data\-\_\-term@{max\-\_\-data\-\_\-term}}
+\index{max\-\_\-data\-\_\-term@{max\-\_\-data\-\_\-term}!cv::gpu::StereoConstantSpaceBP@{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P}}
+\subsubsection[{max\-\_\-data\-\_\-term}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P\-::max\-\_\-data\-\_\-term}}\label{classcv_1_1gpu_1_1StereoConstantSpaceBP_a57d8b29ef9d9f496fdcfdbb82f27b2e9}
+\hypertarget{classcv_1_1gpu_1_1StereoConstantSpaceBP_af39f878f966eace5a27b54ae518b17ec}{\index{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P@{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P}!max\-\_\-disc\-\_\-term@{max\-\_\-disc\-\_\-term}}
+\index{max\-\_\-disc\-\_\-term@{max\-\_\-disc\-\_\-term}!cv::gpu::StereoConstantSpaceBP@{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P}}
+\subsubsection[{max\-\_\-disc\-\_\-term}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P\-::max\-\_\-disc\-\_\-term}}\label{classcv_1_1gpu_1_1StereoConstantSpaceBP_af39f878f966eace5a27b54ae518b17ec}
+\hypertarget{classcv_1_1gpu_1_1StereoConstantSpaceBP_ada95c36baf3e7f59ecbadcb34ef3f609}{\index{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P@{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P}!min\-\_\-disp\-\_\-th@{min\-\_\-disp\-\_\-th}}
+\index{min\-\_\-disp\-\_\-th@{min\-\_\-disp\-\_\-th}!cv::gpu::StereoConstantSpaceBP@{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P}}
+\subsubsection[{min\-\_\-disp\-\_\-th}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P\-::min\-\_\-disp\-\_\-th}}\label{classcv_1_1gpu_1_1StereoConstantSpaceBP_ada95c36baf3e7f59ecbadcb34ef3f609}
+\hypertarget{classcv_1_1gpu_1_1StereoConstantSpaceBP_aeba70bf4f20c6e7cbcaae764d7c30b24}{\index{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P@{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P}!msg\-\_\-type@{msg\-\_\-type}}
+\index{msg\-\_\-type@{msg\-\_\-type}!cv::gpu::StereoConstantSpaceBP@{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P}}
+\subsubsection[{msg\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P\-::msg\-\_\-type}}\label{classcv_1_1gpu_1_1StereoConstantSpaceBP_aeba70bf4f20c6e7cbcaae764d7c30b24}
+\hypertarget{classcv_1_1gpu_1_1StereoConstantSpaceBP_ad581f8f942bce3c65131ef5db9051dd3}{\index{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P@{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P}!ndisp@{ndisp}}
+\index{ndisp@{ndisp}!cv::gpu::StereoConstantSpaceBP@{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P}}
+\subsubsection[{ndisp}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P\-::ndisp}}\label{classcv_1_1gpu_1_1StereoConstantSpaceBP_ad581f8f942bce3c65131ef5db9051dd3}
+\hypertarget{classcv_1_1gpu_1_1StereoConstantSpaceBP_a75c85050ba1c024997ff44dcd05593e4}{\index{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P@{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P}!nr\-\_\-plane@{nr\-\_\-plane}}
+\index{nr\-\_\-plane@{nr\-\_\-plane}!cv::gpu::StereoConstantSpaceBP@{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P}}
+\subsubsection[{nr\-\_\-plane}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P\-::nr\-\_\-plane}}\label{classcv_1_1gpu_1_1StereoConstantSpaceBP_a75c85050ba1c024997ff44dcd05593e4}
+\hypertarget{classcv_1_1gpu_1_1StereoConstantSpaceBP_adb71b7b7cdc36ff4ee1535dc0abd4d73}{\index{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P@{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P}!use\-\_\-local\-\_\-init\-\_\-data\-\_\-cost@{use\-\_\-local\-\_\-init\-\_\-data\-\_\-cost}}
+\index{use\-\_\-local\-\_\-init\-\_\-data\-\_\-cost@{use\-\_\-local\-\_\-init\-\_\-data\-\_\-cost}!cv::gpu::StereoConstantSpaceBP@{cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P}}
+\subsubsection[{use\-\_\-local\-\_\-init\-\_\-data\-\_\-cost}]{\setlength{\rightskip}{0pt plus 5cm}bool cv\-::gpu\-::\-Stereo\-Constant\-Space\-B\-P\-::use\-\_\-local\-\_\-init\-\_\-data\-\_\-cost}}\label{classcv_1_1gpu_1_1StereoConstantSpaceBP_adb71b7b7cdc36ff4ee1535dc0abd4d73}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/gpu/\hyperlink{gpu_2gpu_8hpp}{gpu.\-hpp}\end{DoxyCompactItemize}

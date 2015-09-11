@@ -1,0 +1,6 @@
+<map id="cv::gpu::device::color_detail::RGB2YCrCbConvert" name="cv::gpu::device::color_detail::RGB2YCrCbConvert">
+<area shape="rect" id="node2" href="$structcv_1_1gpu_1_1device_1_1color__detail_1_1ColorChannel.html#ad020f174d41d85e13cac35a75582b7ee" title="cv::gpu::device::color\l_detail::ColorChannel::half" alt="" coords="257,5,433,46"/>
+<area shape="rect" id="node5" href="$namespacecv_1_1gpu_1_1device.html#aad5e6b794784ec0e90cdcca7d8d8a7de" title="cv::gpu::device::saturate_cast" alt="" coords="246,71,445,97"/>
+<area shape="rect" id="node3" href="$structcv_1_1gpu_1_1device_1_1color__detail_1_1ColorChannel.html#aedd738fa8d5f922cb3dffcb3fe005b7d" title="cv::gpu::device::color\l_detail::ColorChannel::max" alt="" coords="494,5,674,46"/>
+<area shape="rect" id="node4" href="$namespacecv_1_1gpu.html#a706c9def6816de566be2671b75ec5309" title="computes per&#45;element maximum of two arrays (dst = max(src1, src2)) " alt="" coords="723,12,821,39"/>
+</map>

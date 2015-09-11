@@ -1,0 +1,14 @@
+<map id="/usr/include/opencv2/stitching/detail/motion_estimators.hpp" name="/usr/include/opencv2/stitching/detail/motion_estimators.hpp">
+<area shape="rect" id="node2" href="$core_8hpp.html" title="The Core Functionality. " alt="" coords="423,275,576,301"/>
+<area shape="rect" id="node14" href="$matchers_8hpp.html" title="matchers.hpp" alt="" coords="212,109,313,136"/>
+<area shape="rect" id="node18" href="$util_8hpp.html" title="util.hpp" alt="" coords="624,109,688,136"/>
+<area shape="rect" id="node22" href="$camera_8hpp.html" title="camera.hpp" alt="" coords="397,109,488,136"/>
+<area shape="rect" id="node3" href="$core_2types__c_8h.html" title="opencv2/core/types_c.h" alt="" coords="510,349,671,376"/>
+<area shape="rect" id="node10" href="$version_8hpp.html" title="opencv2/core/version.hpp" alt="" coords="696,349,867,376"/>
+<area shape="rect" id="node11" href="$operations_8hpp.html" title="opencv2/core/operations.hpp" alt="" coords="121,349,311,376"/>
+<area shape="rect" id="node13" href="$mat_8hpp.html" title="opencv2/core/mat.hpp" alt="" coords="335,349,485,376"/>
+<area shape="rect" id="node15" href="$features2d_2features2d_8hpp.html" title="opencv2/features2d\l/features2d.hpp" alt="" coords="29,185,164,226"/>
+<area shape="rect" id="node17" href="$opencv__modules_8hpp.html" title="opencv2/opencv_modules.hpp" alt="" coords="239,192,437,219"/>
+<area shape="rect" id="node16" href="$miniflann_8hpp.html" title="opencv2/flann/miniflann.hpp" alt="" coords="5,275,189,301"/>
+<area shape="rect" id="node20" href="$util__inl_8hpp.html" title="util_inl.hpp" alt="" coords="614,192,697,219"/>
+</map>

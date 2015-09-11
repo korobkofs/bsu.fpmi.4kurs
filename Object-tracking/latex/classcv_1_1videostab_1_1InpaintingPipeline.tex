@@ -1,0 +1,148 @@
+\hypertarget{classcv_1_1videostab_1_1InpaintingPipeline}{\section{cv\-:\-:videostab\-:\-:Inpainting\-Pipeline Class Reference}
+\label{classcv_1_1videostab_1_1InpaintingPipeline}\index{cv\-::videostab\-::\-Inpainting\-Pipeline@{cv\-::videostab\-::\-Inpainting\-Pipeline}}
+}
+
+
+{\ttfamily \#include $<$inpainting.\-hpp$>$}
+
+
+
+Inheritance diagram for cv\-:\-:videostab\-:\-:Inpainting\-Pipeline\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{classcv_1_1videostab_1_1InpaintingPipeline__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for cv\-:\-:videostab\-:\-:Inpainting\-Pipeline\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{classcv_1_1videostab_1_1InpaintingPipeline__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1videostab_1_1InpaintingPipeline_a81161c1f209a241259f22714334f0bd1}{push\-Back} (Ptr$<$ \hyperlink{classcv_1_1videostab_1_1InpainterBase}{Inpainter\-Base} $>$ inpainter)
+\item 
+bool \hyperlink{classcv_1_1videostab_1_1InpaintingPipeline_a616c66d103cd73e98a987c28e81038f6}{empty} () const 
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1videostab_1_1InpaintingPipeline_add4eb7a0b5f437182625554c02be100a}{set\-Radius} (int val)
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1videostab_1_1InpaintingPipeline_ace39edc315891bea316f38b0edcd452a}{set\-Frames} (const std\-::vector$<$ Mat $>$ \&val)
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1videostab_1_1InpaintingPipeline_a160c3280de21b06e28a3fe28367287c3}{set\-Motions} (const std\-::vector$<$ Mat $>$ \&val)
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1videostab_1_1InpaintingPipeline_a176535738bdb9e521518b604aef4d0cd}{set\-Stabilized\-Frames} (const std\-::vector$<$ Mat $>$ \&val)
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1videostab_1_1InpaintingPipeline_a9257bb136cdfe2db89e362d8c5a697b8}{set\-Stabilization\-Motions} (const std\-::vector$<$ Mat $>$ \&val)
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1videostab_1_1InpaintingPipeline_ab8d0f36e30af37565ae460475aeed918}{update} ()
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1videostab_1_1InpaintingPipeline_a1c44071cc26f46e6959641cb170e472c}{inpaint} (int \hyperlink{core__c_8h_a5c7c842f447336aa2f10826df65a28b3}{idx}, Mat \&\hyperlink{core__c_8h_a0430deaafd9043e478f306e33961299d}{frame}, Mat \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask})
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcv_1_1videostab_1_1InpaintingPipeline_a616c66d103cd73e98a987c28e81038f6}{\index{cv\-::videostab\-::\-Inpainting\-Pipeline@{cv\-::videostab\-::\-Inpainting\-Pipeline}!empty@{empty}}
+\index{empty@{empty}!cv::videostab::InpaintingPipeline@{cv\-::videostab\-::\-Inpainting\-Pipeline}}
+\subsubsection[{empty}]{\setlength{\rightskip}{0pt plus 5cm}bool cv\-::videostab\-::\-Inpainting\-Pipeline\-::empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1videostab_1_1InpaintingPipeline_a616c66d103cd73e98a987c28e81038f6}
+\hypertarget{classcv_1_1videostab_1_1InpaintingPipeline_a1c44071cc26f46e6959641cb170e472c}{\index{cv\-::videostab\-::\-Inpainting\-Pipeline@{cv\-::videostab\-::\-Inpainting\-Pipeline}!inpaint@{inpaint}}
+\index{inpaint@{inpaint}!cv::videostab::InpaintingPipeline@{cv\-::videostab\-::\-Inpainting\-Pipeline}}
+\subsubsection[{inpaint}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cv\-::videostab\-::\-Inpainting\-Pipeline\-::inpaint (
+\begin{DoxyParamCaption}
+\item[{int}]{idx, }
+\item[{Mat \&}]{frame, }
+\item[{Mat \&}]{mask}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcv_1_1videostab_1_1InpaintingPipeline_a1c44071cc26f46e6959641cb170e472c}
+
+
+Implements \hyperlink{classcv_1_1videostab_1_1InpainterBase_aa3a1cba9518b2afbad928859b073ad93}{cv\-::videostab\-::\-Inpainter\-Base}.
+
+\hypertarget{classcv_1_1videostab_1_1InpaintingPipeline_a81161c1f209a241259f22714334f0bd1}{\index{cv\-::videostab\-::\-Inpainting\-Pipeline@{cv\-::videostab\-::\-Inpainting\-Pipeline}!push\-Back@{push\-Back}}
+\index{push\-Back@{push\-Back}!cv::videostab::InpaintingPipeline@{cv\-::videostab\-::\-Inpainting\-Pipeline}}
+\subsubsection[{push\-Back}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::videostab\-::\-Inpainting\-Pipeline\-::push\-Back (
+\begin{DoxyParamCaption}
+\item[{Ptr$<$ {\bf Inpainter\-Base} $>$}]{inpainter}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1videostab_1_1InpaintingPipeline_a81161c1f209a241259f22714334f0bd1}
+\hypertarget{classcv_1_1videostab_1_1InpaintingPipeline_ace39edc315891bea316f38b0edcd452a}{\index{cv\-::videostab\-::\-Inpainting\-Pipeline@{cv\-::videostab\-::\-Inpainting\-Pipeline}!set\-Frames@{set\-Frames}}
+\index{set\-Frames@{set\-Frames}!cv::videostab::InpaintingPipeline@{cv\-::videostab\-::\-Inpainting\-Pipeline}}
+\subsubsection[{set\-Frames}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cv\-::videostab\-::\-Inpainting\-Pipeline\-::set\-Frames (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ Mat $>$ \&}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcv_1_1videostab_1_1InpaintingPipeline_ace39edc315891bea316f38b0edcd452a}
+
+
+Reimplemented from \hyperlink{classcv_1_1videostab_1_1InpainterBase_a9c9c42ea041ec6e67db0041df4e022c8}{cv\-::videostab\-::\-Inpainter\-Base}.
+
+\hypertarget{classcv_1_1videostab_1_1InpaintingPipeline_a160c3280de21b06e28a3fe28367287c3}{\index{cv\-::videostab\-::\-Inpainting\-Pipeline@{cv\-::videostab\-::\-Inpainting\-Pipeline}!set\-Motions@{set\-Motions}}
+\index{set\-Motions@{set\-Motions}!cv::videostab::InpaintingPipeline@{cv\-::videostab\-::\-Inpainting\-Pipeline}}
+\subsubsection[{set\-Motions}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cv\-::videostab\-::\-Inpainting\-Pipeline\-::set\-Motions (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ Mat $>$ \&}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcv_1_1videostab_1_1InpaintingPipeline_a160c3280de21b06e28a3fe28367287c3}
+
+
+Reimplemented from \hyperlink{classcv_1_1videostab_1_1InpainterBase_a91ea73b4944c3f852ae48dff5cc48557}{cv\-::videostab\-::\-Inpainter\-Base}.
+
+\hypertarget{classcv_1_1videostab_1_1InpaintingPipeline_add4eb7a0b5f437182625554c02be100a}{\index{cv\-::videostab\-::\-Inpainting\-Pipeline@{cv\-::videostab\-::\-Inpainting\-Pipeline}!set\-Radius@{set\-Radius}}
+\index{set\-Radius@{set\-Radius}!cv::videostab::InpaintingPipeline@{cv\-::videostab\-::\-Inpainting\-Pipeline}}
+\subsubsection[{set\-Radius}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cv\-::videostab\-::\-Inpainting\-Pipeline\-::set\-Radius (
+\begin{DoxyParamCaption}
+\item[{int}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcv_1_1videostab_1_1InpaintingPipeline_add4eb7a0b5f437182625554c02be100a}
+
+
+Reimplemented from \hyperlink{classcv_1_1videostab_1_1InpainterBase_ae2bfdae38decac0507ae942294b686b8}{cv\-::videostab\-::\-Inpainter\-Base}.
+
+\hypertarget{classcv_1_1videostab_1_1InpaintingPipeline_a9257bb136cdfe2db89e362d8c5a697b8}{\index{cv\-::videostab\-::\-Inpainting\-Pipeline@{cv\-::videostab\-::\-Inpainting\-Pipeline}!set\-Stabilization\-Motions@{set\-Stabilization\-Motions}}
+\index{set\-Stabilization\-Motions@{set\-Stabilization\-Motions}!cv::videostab::InpaintingPipeline@{cv\-::videostab\-::\-Inpainting\-Pipeline}}
+\subsubsection[{set\-Stabilization\-Motions}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cv\-::videostab\-::\-Inpainting\-Pipeline\-::set\-Stabilization\-Motions (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ Mat $>$ \&}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcv_1_1videostab_1_1InpaintingPipeline_a9257bb136cdfe2db89e362d8c5a697b8}
+
+
+Reimplemented from \hyperlink{classcv_1_1videostab_1_1InpainterBase_a68bc03d322d17c9de5bf443b288070e7}{cv\-::videostab\-::\-Inpainter\-Base}.
+
+\hypertarget{classcv_1_1videostab_1_1InpaintingPipeline_a176535738bdb9e521518b604aef4d0cd}{\index{cv\-::videostab\-::\-Inpainting\-Pipeline@{cv\-::videostab\-::\-Inpainting\-Pipeline}!set\-Stabilized\-Frames@{set\-Stabilized\-Frames}}
+\index{set\-Stabilized\-Frames@{set\-Stabilized\-Frames}!cv::videostab::InpaintingPipeline@{cv\-::videostab\-::\-Inpainting\-Pipeline}}
+\subsubsection[{set\-Stabilized\-Frames}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cv\-::videostab\-::\-Inpainting\-Pipeline\-::set\-Stabilized\-Frames (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ Mat $>$ \&}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcv_1_1videostab_1_1InpaintingPipeline_a176535738bdb9e521518b604aef4d0cd}
+
+
+Reimplemented from \hyperlink{classcv_1_1videostab_1_1InpainterBase_af358007841909b089eb568ac9eb76a79}{cv\-::videostab\-::\-Inpainter\-Base}.
+
+\hypertarget{classcv_1_1videostab_1_1InpaintingPipeline_ab8d0f36e30af37565ae460475aeed918}{\index{cv\-::videostab\-::\-Inpainting\-Pipeline@{cv\-::videostab\-::\-Inpainting\-Pipeline}!update@{update}}
+\index{update@{update}!cv::videostab::InpaintingPipeline@{cv\-::videostab\-::\-Inpainting\-Pipeline}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cv\-::videostab\-::\-Inpainting\-Pipeline\-::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcv_1_1videostab_1_1InpaintingPipeline_ab8d0f36e30af37565ae460475aeed918}
+
+
+Reimplemented from \hyperlink{classcv_1_1videostab_1_1InpainterBase_ace5d3eca0056f883e5d6aafb92ef0db4}{cv\-::videostab\-::\-Inpainter\-Base}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/videostab/\hyperlink{inpainting_8hpp}{inpainting.\-hpp}\end{DoxyCompactItemize}

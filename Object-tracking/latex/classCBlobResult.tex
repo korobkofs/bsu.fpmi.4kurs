@@ -1,0 +1,892 @@
+\hypertarget{classCBlobResult}{\section{C\-Blob\-Result Class Reference}
+\label{classCBlobResult}\index{C\-Blob\-Result@{C\-Blob\-Result}}
+}
+
+
+{\ttfamily \#include $<$Blob\-Result.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCBlobResult_aa32d5d4037eff124d5f75084299e3d7a}{C\-Blob\-Result} ()
+\begin{DoxyCompactList}\small\item\em Show errors functions\-: only works for windows releases. \end{DoxyCompactList}\item 
+\hyperlink{classCBlobResult_ac811b6c04870c5a96b14ca0a7f1e2897}{C\-Blob\-Result} (Ipl\-Image $\ast$source, Ipl\-Image $\ast$mask, uchar background\-Color)
+\item 
+\hyperlink{classCBlobResult_a231c31a05f42508968da3b9e3df755ce}{C\-Blob\-Result} (const \hyperlink{classCBlobResult}{C\-Blob\-Result} \&source)
+\item 
+virtual \hyperlink{classCBlobResult_aaaf8d7cc9de99ea8284d7be1ddb1e712}{$\sim$\-C\-Blob\-Result} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hyperlink{classCBlobResult}{C\-Blob\-Result} \& \hyperlink{classCBlobResult_aa833c008cc7056576a7cbd260d09f10c}{operator=} (const \hyperlink{classCBlobResult}{C\-Blob\-Result} \&source)
+\item 
+\hyperlink{classCBlobResult}{C\-Blob\-Result} \hyperlink{classCBlobResult_a5873edfefb2d083c0d309bba7ff68a7c}{operator+} (const \hyperlink{classCBlobResult}{C\-Blob\-Result} \&source) const 
+\item 
+void \hyperlink{classCBlobResult_ac9da5db13defb3e905532a0f34ea2d58}{Add\-Blob} (\hyperlink{classCBlob}{C\-Blob} $\ast$blob)
+\item 
+\hyperlink{BlobResult_8h_a433bfa94af76fd8229079790bdeb9d00}{double\-\_\-stl\-\_\-vector} \hyperlink{classCBlobResult_a2ed86772b35ed96eadae0080f27b923b}{Get\-S\-T\-L\-Result} (\hyperlink{BlobOperators_8h_aad4566d263bf0b053617d18aea50ef8f}{funcio\-\_\-calcul\-Blob} $\ast$evaluador) const 
+\item 
+double \hyperlink{classCBlobResult_a7f80058f8726468c0d074b8985c09d80}{Get\-Number} (int indexblob, \hyperlink{BlobOperators_8h_aad4566d263bf0b053617d18aea50ef8f}{funcio\-\_\-calcul\-Blob} $\ast$evaluador) const 
+\item 
+void \hyperlink{classCBlobResult_a0240474a3c6f1885753a4d95bd441605}{Filter} (\hyperlink{classCBlobResult}{C\-Blob\-Result} \&dst, int filter\-Action, \hyperlink{BlobOperators_8h_aad4566d263bf0b053617d18aea50ef8f}{funcio\-\_\-calcul\-Blob} $\ast$evaluador, int condition, double low\-Limit, double high\-Limit=0)
+\item 
+void \hyperlink{classCBlobResult_ac4ca8d8c9ad0a00ba4b28c7884645968}{Filter} (\hyperlink{classCBlobResult}{C\-Blob\-Result} \&dst, int filter\-Action, \hyperlink{BlobOperators_8h_aad4566d263bf0b053617d18aea50ef8f}{funcio\-\_\-calcul\-Blob} $\ast$evaluador, int condition, double low\-Limit, double high\-Limit=0) const 
+\item 
+void \hyperlink{classCBlobResult_a7e7929a4ae93967c14eeb958ed64d848}{Get\-Nth\-Blob} (\hyperlink{BlobOperators_8h_aad4566d263bf0b053617d18aea50ef8f}{funcio\-\_\-calcul\-Blob} $\ast$criteri, int n\-Blob, \hyperlink{classCBlob}{C\-Blob} \&dst) const 
+\item 
+\hyperlink{classCBlob}{C\-Blob} \hyperlink{classCBlobResult_a1c9b86a3d2a6ec175bdf3f6f7c211521}{Get\-Blob} (int indexblob) const 
+\item 
+\hyperlink{classCBlob}{C\-Blob} $\ast$ \hyperlink{classCBlobResult_a6e11d8120572fe14262fe419747c3084}{Get\-Blob} (int indexblob)
+\item 
+void \hyperlink{classCBlobResult_aa926243bae6148e765f8a4055ef42ce0}{Clear\-Blobs} ()
+\item 
+void \hyperlink{classCBlobResult_a39df81e0a49e4859c9b963e23f9f55df}{Print\-Blobs} (char $\ast$nom\-\_\-fitxer) const 
+\item 
+int \hyperlink{classCBlobResult_a74229c68beb6f5c0b8701a35aafe45d0}{Get\-Num\-Blobs} () const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ComponentLabeling_8h_a9b2ee33d26a482072b82620e6709e66e}{Blob\-\_\-vector} \hyperlink{classCBlobResult_a3f363e03c43fb01738541b2427577b63}{m\-\_\-blobs}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classCBlobResult_a00b104a1bd3adc81191dd9e6c2ef493c}{Raise\-Error} (const int error\-Code) const 
+\item 
+void \hyperlink{classCBlobResult_ace24ea06757b4538a058a2b275670ed2}{Do\-Filter} (\hyperlink{classCBlobResult}{C\-Blob\-Result} \&dst, int filter\-Action, \hyperlink{BlobOperators_8h_aad4566d263bf0b053617d18aea50ef8f}{funcio\-\_\-calcul\-Blob} $\ast$evaluador, int condition, double low\-Limit, double high\-Limit=0) const 
+\begin{DoxyCompactList}\small\item\em Does the Filter method job. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe que contï¿½ un conjunt de blobs i permet extreure'n propietats o filtrar-\/los segons determinats criteris. Class to calculate the blobs of an image and calculate some properties on them. Also, the class provides functions to filter the blobs using some criteria. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCBlobResult_aa32d5d4037eff124d5f75084299e3d7a}{\index{C\-Blob\-Result@{C\-Blob\-Result}!C\-Blob\-Result@{C\-Blob\-Result}}
+\index{C\-Blob\-Result@{C\-Blob\-Result}!CBlobResult@{C\-Blob\-Result}}
+\subsubsection[{C\-Blob\-Result}]{\setlength{\rightskip}{0pt plus 5cm}C\-Blob\-Result\-::\-C\-Blob\-Result (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCBlobResult_aa32d5d4037eff124d5f75084299e3d7a}
+
+
+Show errors functions\-: only works for windows releases. 
+
+constructor estandard, crea un conjunt buit de blobs Standard constructor, it creates an empty set of blobs
+
+
+\begin{DoxyItemize}
+\item F\-U\-N\-C\-IÓ\-: \hyperlink{classCBlobResult}{C\-Blob\-Result}
+\item F\-U\-N\-C\-I\-O\-N\-A\-L\-I\-T\-A\-T\-: Constructor estandard.
+\item P\-A\-RÀ\-M\-E\-T\-R\-E\-S\-:
+\item R\-E\-S\-U\-L\-T\-A\-T\-:
+\item Crea un \hyperlink{classCBlobResult}{C\-Blob\-Result} sense cap blob
+\item R\-E\-S\-T\-R\-I\-C\-C\-I\-O\-N\-S\-:
+\item A\-U\-T\-O\-R\-: Ricard Borràs
+\item D\-A\-T\-A D\-E C\-R\-E\-A\-C\-IÓ\-: 20-\/07-\/2004.
+\item M\-O\-D\-I\-F\-I\-C\-A\-C\-IÓ\-: Data. Autor. Descripció.
+\item F\-U\-N\-C\-T\-I\-O\-N\-: \hyperlink{classCBlobResult}{C\-Blob\-Result}
+\item F\-U\-N\-C\-T\-I\-O\-N\-A\-L\-I\-T\-Y\-: Standard constructor
+\item P\-A\-R\-A\-M\-E\-T\-E\-R\-S\-:
+\item R\-E\-S\-U\-L\-T\-:
+\begin{DoxyItemize}
+\item creates an empty set of blobs
+\end{DoxyItemize}
+\item R\-E\-S\-T\-R\-I\-C\-T\-I\-O\-N\-S\-:
+\item A\-U\-T\-H\-O\-R\-: Ricard Borràs
+\item C\-R\-E\-A\-T\-I\-O\-N D\-A\-T\-E\-: 25-\/05-\/2005.
+\item M\-O\-D\-I\-F\-I\-C\-A\-T\-I\-O\-N\-: Date. Author. Description. 
+\end{DoxyItemize}\hypertarget{classCBlobResult_ac811b6c04870c5a96b14ca0a7f1e2897}{\index{C\-Blob\-Result@{C\-Blob\-Result}!C\-Blob\-Result@{C\-Blob\-Result}}
+\index{C\-Blob\-Result@{C\-Blob\-Result}!CBlobResult@{C\-Blob\-Result}}
+\subsubsection[{C\-Blob\-Result}]{\setlength{\rightskip}{0pt plus 5cm}C\-Blob\-Result\-::\-C\-Blob\-Result (
+\begin{DoxyParamCaption}
+\item[{Ipl\-Image $\ast$}]{source, }
+\item[{Ipl\-Image $\ast$}]{mask, }
+\item[{uchar}]{background\-Color}
+\end{DoxyParamCaption}
+)}}\label{classCBlobResult_ac811b6c04870c5a96b14ca0a7f1e2897}
+constructor a partir d'una imatge Image constructor, it creates an object with the blobs of the image
+
+
+\begin{DoxyItemize}
+\item F\-U\-N\-C\-IÓ\-: \hyperlink{classCBlobResult}{C\-Blob\-Result}
+\item F\-U\-N\-C\-I\-O\-N\-A\-L\-I\-T\-A\-T\-: Constructor a partir d'una imatge. Inicialitza la seqüència de blobs amb els blobs resultants de l'anàlisi de blobs de la imatge.
+\item P\-A\-RÀ\-M\-E\-T\-R\-E\-S\-:
+\begin{DoxyItemize}
+\item source\-: imatge d'on s'extreuran els blobs
+\item mask\-: màscara a aplicar. Només es calcularan els blobs on la màscara sigui diferent de 0. Els blobs que toquin a un pixel 0 de la màscara seran considerats exteriors.
+\item threshold\-: llindar que s'aplicarà a la imatge source abans de calcular els blobs
+\item findmoments\-: indica si s'han de calcular els moments de cada blob
+\item black\-Blobs\-: true per buscar blobs negres a la binaritzazió (it will join all extern white blobs). false per buscar blobs negres a la binaritzazió (it will join all extern black blobs).
+\end{DoxyItemize}
+\item R\-E\-S\-U\-L\-T\-A\-T\-:
+\begin{DoxyItemize}
+\item objecte \hyperlink{classCBlobResult}{C\-Blob\-Result} amb els blobs de la imatge source
+\end{DoxyItemize}
+\item R\-E\-S\-T\-R\-I\-C\-C\-I\-O\-N\-S\-:
+\item A\-U\-T\-O\-R\-: Ricard Borràs
+\item D\-A\-T\-A D\-E C\-R\-E\-A\-C\-IÓ\-: 25-\/05-\/2005.
+\item M\-O\-D\-I\-F\-I\-C\-A\-C\-IÓ\-: Data. Autor. Descripció.
+\item F\-U\-N\-C\-T\-I\-O\-N\-: \hyperlink{classCBlob}{C\-Blob}
+\item F\-U\-N\-C\-T\-I\-O\-N\-A\-L\-I\-T\-Y\-: Constructor from an image. Fills an object with all the blobs in the image
+\item P\-A\-R\-A\-M\-E\-T\-E\-R\-S\-:
+\begin{DoxyItemize}
+\item source\-: image to extract the blobs from
+\item mask\-: optional mask to apply. The blobs will be extracted where the mask is not 0. All the neighbouring blobs where the mask is 0 will be extern blobs
+\item threshold\-: threshold level to apply to the image before computing blobs
+\item findmoments\-: true to calculate the blob moments (slower) (needed to calculate elipses!)
+\item black\-Blobs\-: true to search for black blobs in the binarization (it will join all extern white blobs). false to search for white blobs in the binarization (it will join all extern black blobs).
+\end{DoxyItemize}
+\item R\-E\-S\-U\-L\-T\-:
+\begin{DoxyItemize}
+\item object with all the blobs in the image. It throws an E\-X\-C\-E\-P\-C\-I\-O\-\_\-\-C\-A\-L\-C\-U\-L\-\_\-\-B\-L\-O\-B\-S if some error appears in the Blob\-Analysis function
+\end{DoxyItemize}
+\item R\-E\-S\-T\-R\-I\-C\-T\-I\-O\-N\-S\-:
+\item A\-U\-T\-H\-O\-R\-: Ricard Borràs
+\item C\-R\-E\-A\-T\-I\-O\-N D\-A\-T\-E\-: 25-\/05-\/2005.
+\item M\-O\-D\-I\-F\-I\-C\-A\-T\-I\-O\-N\-: Date. Author. Description. 
+\end{DoxyItemize}
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCBlobResult_ac811b6c04870c5a96b14ca0a7f1e2897_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classCBlobResult_a231c31a05f42508968da3b9e3df755ce}{\index{C\-Blob\-Result@{C\-Blob\-Result}!C\-Blob\-Result@{C\-Blob\-Result}}
+\index{C\-Blob\-Result@{C\-Blob\-Result}!CBlobResult@{C\-Blob\-Result}}
+\subsubsection[{C\-Blob\-Result}]{\setlength{\rightskip}{0pt plus 5cm}C\-Blob\-Result\-::\-C\-Blob\-Result (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Blob\-Result} \&}]{source}
+\end{DoxyParamCaption}
+)}}\label{classCBlobResult_a231c31a05f42508968da3b9e3df755ce}
+constructor de cï¿½pia Copy constructor
+
+
+\begin{DoxyItemize}
+\item F\-U\-N\-C\-IÓ\-: \hyperlink{classCBlobResult}{C\-Blob\-Result}
+\item F\-U\-N\-C\-I\-O\-N\-A\-L\-I\-T\-A\-T\-: Constructor de còpia. Inicialitza la seqüència de blobs amb els blobs del paràmetre.
+\item P\-A\-RÀ\-M\-E\-T\-R\-E\-S\-:
+\begin{DoxyItemize}
+\item source\-: objecte que es copiarà
+\end{DoxyItemize}
+\item R\-E\-S\-U\-L\-T\-A\-T\-:
+\begin{DoxyItemize}
+\item objecte \hyperlink{classCBlobResult}{C\-Blob\-Result} amb els blobs de l'objecte source
+\end{DoxyItemize}
+\item R\-E\-S\-T\-R\-I\-C\-C\-I\-O\-N\-S\-:
+\item A\-U\-T\-O\-R\-: Ricard Borràs
+\item D\-A\-T\-A D\-E C\-R\-E\-A\-C\-IÓ\-: 25-\/05-\/2005.
+\item M\-O\-D\-I\-F\-I\-C\-A\-C\-IÓ\-: Data. Autor. Descripció.
+\item F\-U\-N\-C\-T\-I\-O\-N\-: \hyperlink{classCBlobResult}{C\-Blob\-Result}
+\item F\-U\-N\-C\-T\-I\-O\-N\-A\-L\-I\-T\-Y\-: Copy constructor
+\item P\-A\-R\-A\-M\-E\-T\-E\-R\-S\-:
+\begin{DoxyItemize}
+\item source\-: object to copy
+\end{DoxyItemize}
+\item R\-E\-S\-U\-L\-T\-:
+\item R\-E\-S\-T\-R\-I\-C\-T\-I\-O\-N\-S\-:
+\item A\-U\-T\-H\-O\-R\-: Ricard Borràs
+\item C\-R\-E\-A\-T\-I\-O\-N D\-A\-T\-E\-: 25-\/05-\/2005.
+\item M\-O\-D\-I\-F\-I\-C\-A\-T\-I\-O\-N\-: Date. Author. Description. 
+\end{DoxyItemize}
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCBlobResult_a231c31a05f42508968da3b9e3df755ce_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classCBlobResult_aaaf8d7cc9de99ea8284d7be1ddb1e712}{\index{C\-Blob\-Result@{C\-Blob\-Result}!$\sim$\-C\-Blob\-Result@{$\sim$\-C\-Blob\-Result}}
+\index{$\sim$\-C\-Blob\-Result@{$\sim$\-C\-Blob\-Result}!CBlobResult@{C\-Blob\-Result}}
+\subsubsection[{$\sim$\-C\-Blob\-Result}]{\setlength{\rightskip}{0pt plus 5cm}C\-Blob\-Result\-::$\sim$\-C\-Blob\-Result (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCBlobResult_aaaf8d7cc9de99ea8284d7be1ddb1e712}
+
+
+Destructor. 
+
+
+\begin{DoxyItemize}
+\item F\-U\-N\-C\-IÓ\-: $\sim$\-C\-Blob\-Result
+\item F\-U\-N\-C\-I\-O\-N\-A\-L\-I\-T\-A\-T\-: Destructor estandard.
+\item P\-A\-RÀ\-M\-E\-T\-R\-E\-S\-:
+\item R\-E\-S\-U\-L\-T\-A\-T\-:
+\begin{DoxyItemize}
+\item Allibera la memòria reservada de cadascun dels blobs de la classe
+\end{DoxyItemize}
+\item R\-E\-S\-T\-R\-I\-C\-C\-I\-O\-N\-S\-:
+\item A\-U\-T\-O\-R\-: Ricard Borràs
+\item D\-A\-T\-A D\-E C\-R\-E\-A\-C\-IÓ\-: 25-\/05-\/2005.
+\item M\-O\-D\-I\-F\-I\-C\-A\-C\-IÓ\-: Data. Autor. Descripció.
+\item F\-U\-N\-C\-T\-I\-O\-N\-: $\sim$\-C\-Blob\-Result
+\item F\-U\-N\-C\-T\-I\-O\-N\-A\-L\-I\-T\-Y\-: Destructor
+\item P\-A\-R\-A\-M\-E\-T\-E\-R\-S\-:
+\item R\-E\-S\-U\-L\-T\-:
+\item R\-E\-S\-T\-R\-I\-C\-T\-I\-O\-N\-S\-:
+\item A\-U\-T\-H\-O\-R\-: Ricard Borràs
+\item C\-R\-E\-A\-T\-I\-O\-N D\-A\-T\-E\-: 25-\/05-\/2005.
+\item M\-O\-D\-I\-F\-I\-C\-A\-T\-I\-O\-N\-: Date. Author. Description. 
+\end{DoxyItemize}
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCBlobResult_aaaf8d7cc9de99ea8284d7be1ddb1e712_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classCBlobResult_ac9da5db13defb3e905532a0f34ea2d58}{\index{C\-Blob\-Result@{C\-Blob\-Result}!Add\-Blob@{Add\-Blob}}
+\index{Add\-Blob@{Add\-Blob}!CBlobResult@{C\-Blob\-Result}}
+\subsubsection[{Add\-Blob}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Blob\-Result\-::\-Add\-Blob (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Blob} $\ast$}]{blob}
+\end{DoxyParamCaption}
+)}}\label{classCBlobResult_ac9da5db13defb3e905532a0f34ea2d58}
+Afegeix un blob al conjunt Adds a blob to the set of blobs
+
+
+\begin{DoxyItemize}
+\item F\-U\-N\-C\-IÓ\-: Add\-Blob
+\item F\-U\-N\-C\-I\-O\-N\-A\-L\-I\-T\-A\-T\-: Afegeix un blob al conjunt
+\item P\-A\-RÀ\-M\-E\-T\-R\-E\-S\-:
+\begin{DoxyItemize}
+\item blob\-: blob a afegir
+\end{DoxyItemize}
+\item R\-E\-S\-U\-L\-T\-A\-T\-:
+\begin{DoxyItemize}
+\item modifica el conjunt de blobs actual
+\end{DoxyItemize}
+\item R\-E\-S\-T\-R\-I\-C\-C\-I\-O\-N\-S\-:
+\item A\-U\-T\-O\-R\-: Ricard Borràs
+\item D\-A\-T\-A D\-E C\-R\-E\-A\-C\-IÓ\-: 2006/03/01
+\item M\-O\-D\-I\-F\-I\-C\-A\-C\-IÓ\-: Data. Autor. Descripció. 
+\end{DoxyItemize}\hypertarget{classCBlobResult_aa926243bae6148e765f8a4055ef42ce0}{\index{C\-Blob\-Result@{C\-Blob\-Result}!Clear\-Blobs@{Clear\-Blobs}}
+\index{Clear\-Blobs@{Clear\-Blobs}!CBlobResult@{C\-Blob\-Result}}
+\subsubsection[{Clear\-Blobs}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Blob\-Result\-::\-Clear\-Blobs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCBlobResult_aa926243bae6148e765f8a4055ef42ce0}
+Elimina tots els blobs de l'objecte Clears all the blobs of the class
+
+
+\begin{DoxyItemize}
+\item F\-U\-N\-C\-IÓ\-: Clear\-Blobs
+\item F\-U\-N\-C\-I\-O\-N\-A\-L\-I\-T\-A\-T\-: Elimina tots els blobs de l'objecte
+\item P\-A\-RÀ\-M\-E\-T\-R\-E\-S\-:
+\item R\-E\-S\-U\-L\-T\-A\-T\-:
+\begin{DoxyItemize}
+\item Allibera tota la memòria dels blobs
+\end{DoxyItemize}
+\item R\-E\-S\-T\-R\-I\-C\-C\-I\-O\-N\-S\-:
+\item A\-U\-T\-O\-R\-: Ricard Borràs Navarra
+\item D\-A\-T\-A D\-E C\-R\-E\-A\-C\-IÓ\-: 25-\/05-\/2005.
+\item M\-O\-D\-I\-F\-I\-C\-A\-C\-IÓ\-: Data. Autor. Descripció. 
+\end{DoxyItemize}
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCBlobResult_aa926243bae6148e765f8a4055ef42ce0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classCBlobResult_ace24ea06757b4538a058a2b275670ed2}{\index{C\-Blob\-Result@{C\-Blob\-Result}!Do\-Filter@{Do\-Filter}}
+\index{Do\-Filter@{Do\-Filter}!CBlobResult@{C\-Blob\-Result}}
+\subsubsection[{Do\-Filter}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Blob\-Result\-::\-Do\-Filter (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Blob\-Result} \&}]{dst, }
+\item[{int}]{filter\-Action, }
+\item[{{\bf funcio\-\_\-calcul\-Blob} $\ast$}]{evaluador, }
+\item[{int}]{condition, }
+\item[{double}]{low\-Limit, }
+\item[{double}]{high\-Limit = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [private]}}}\label{classCBlobResult_ace24ea06757b4538a058a2b275670ed2}
+
+
+Does the Filter method job. 
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCBlobResult_ace24ea06757b4538a058a2b275670ed2_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{classCBlobResult_ace24ea06757b4538a058a2b275670ed2_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classCBlobResult_a0240474a3c6f1885753a4d95bd441605}{\index{C\-Blob\-Result@{C\-Blob\-Result}!Filter@{Filter}}
+\index{Filter@{Filter}!CBlobResult@{C\-Blob\-Result}}
+\subsubsection[{Filter}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Blob\-Result\-::\-Filter (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Blob\-Result} \&}]{dst, }
+\item[{int}]{filter\-Action, }
+\item[{{\bf funcio\-\_\-calcul\-Blob} $\ast$}]{evaluador, }
+\item[{int}]{condition, }
+\item[{double}]{low\-Limit, }
+\item[{double}]{high\-Limit = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classCBlobResult_a0240474a3c6f1885753a4d95bd441605}
+Retorna aquells blobs que compleixen les condicions del filtre en el destination Filters the blobs of the class using some property
+
+
+\begin{DoxyItemize}
+\item F\-U\-N\-C\-IÓ\-: Filter (const version)
+\item F\-U\-N\-C\-I\-O\-N\-A\-L\-I\-T\-A\-T\-: Filtra els blobs de la classe i deixa el resultat amb només els blobs que han passat el filtre. El filtrat es basa en especificar condicions sobre un resultat dels blobs i seleccionar (o excloure) aquells blobs que no compleixen una determinada condicio
+\item P\-A\-RÀ\-M\-E\-T\-R\-E\-S\-:
+\begin{DoxyItemize}
+\item dst\-: variable per deixar els blobs filtrats
+\item filter\-Action\-: acció de filtrat. Incloure els blobs trobats (B\-\_\-\-I\-N\-C\-L\-U\-D\-E), o excloure els blobs trobats (B\-\_\-\-E\-X\-C\-L\-U\-D\-E)
+\item evaluador\-: Funció per evaluar els blobs (qualsevol objecte derivat de \hyperlink{classCOperadorBlob}{C\-Operador\-Blob}
+\item Condition\-: tipus de condició que ha de superar la mesura (Filter\-Type) sobre cada blob per a ser considerat. B\-\_\-\-E\-Q\-U\-A\-L,B\-\_\-\-N\-O\-T\-\_\-\-E\-Q\-U\-A\-L,B\-\_\-\-G\-R\-E\-A\-T\-E\-R,B\-\_\-\-L\-E\-S\-S,B\-\_\-\-G\-R\-E\-A\-T\-E\-R\-\_\-\-O\-R\-\_\-\-E\-Q\-U\-A\-L, B\-\_\-\-L\-E\-S\-S\-\_\-\-O\-R\-\_\-\-E\-Q\-U\-A\-L,B\-\_\-\-I\-N\-S\-I\-D\-E,B\-\_\-\-O\-U\-T\-S\-I\-D\-E
+\item Low\-Limit\-: valor numèric per a la comparació (Condition) de la mesura (Filter\-Type)
+\item High\-Limit\-: valor numèric per a la comparació (Condition) de la mesura (Filter\-Type) (només té sentit per a aquelles condicions que tenen dos valors (B\-\_\-\-I\-N\-S\-I\-D\-E, per exemple).
+\end{DoxyItemize}
+\item R\-E\-S\-U\-L\-T\-A\-T\-:
+\begin{DoxyItemize}
+\item Deixa els blobs resultants del filtrat a destination
+\end{DoxyItemize}
+\item R\-E\-S\-T\-R\-I\-C\-C\-I\-O\-N\-S\-:
+\item A\-U\-T\-O\-R\-: Ricard Borràs
+\item D\-A\-T\-A D\-E C\-R\-E\-A\-C\-IÓ\-: 25-\/05-\/2005.
+\item M\-O\-D\-I\-F\-I\-C\-A\-C\-IÓ\-: Data. Autor. Descripció.
+\item F\-U\-N\-C\-T\-I\-O\-N\-: Filter (const version)
+\item F\-U\-N\-C\-T\-I\-O\-N\-A\-L\-I\-T\-Y\-: Get some blobs from the class based on conditions on measures of the blobs.
+\item P\-A\-R\-A\-M\-E\-T\-E\-R\-S\-:
+\begin{DoxyItemize}
+\item dst\-: where to store the selected blobs
+\item filter\-Action\-: B\-\_\-\-I\-N\-C\-L\-U\-D\-E\-: include the blobs which pass the filter in the result B\-\_\-\-E\-X\-C\-L\-U\-D\-E\-: exclude the blobs which pass the filter in the result
+\item evaluador\-: Object to evaluate the blob
+\item Condition\-: How to decide if the result returned by evaluador on each blob is included or not. It can be\-: B\-\_\-\-E\-Q\-U\-A\-L,B\-\_\-\-N\-O\-T\-\_\-\-E\-Q\-U\-A\-L,B\-\_\-\-G\-R\-E\-A\-T\-E\-R,B\-\_\-\-L\-E\-S\-S,B\-\_\-\-G\-R\-E\-A\-T\-E\-R\-\_\-\-O\-R\-\_\-\-E\-Q\-U\-A\-L, B\-\_\-\-L\-E\-S\-S\-\_\-\-O\-R\-\_\-\-E\-Q\-U\-A\-L,B\-\_\-\-I\-N\-S\-I\-D\-E,B\-\_\-\-O\-U\-T\-S\-I\-D\-E
+\item Low\-Limit\-: numerical value to evaluate the Condition on evaluador(blob)
+\item High\-Limit\-: numerical value to evaluate the Condition on evaluador(blob). Only useful for B\-\_\-\-I\-N\-S\-I\-D\-E and B\-\_\-\-O\-U\-T\-S\-I\-D\-E
+\end{DoxyItemize}
+\item R\-E\-S\-U\-L\-T\-:
+\begin{DoxyItemize}
+\item It returns on dst the blobs that accomplish (B\-\_\-\-I\-N\-C\-L\-U\-D\-E) or discards (B\-\_\-\-E\-X\-C\-L\-U\-D\-E) the Condition on the result returned by evaluador on each blob
+\end{DoxyItemize}
+\item R\-E\-S\-T\-R\-I\-C\-T\-I\-O\-N\-S\-:
+\item A\-U\-T\-H\-O\-R\-: Ricard Borràs
+\item C\-R\-E\-A\-T\-I\-O\-N D\-A\-T\-E\-: 25-\/05-\/2005.
+\item M\-O\-D\-I\-F\-I\-C\-A\-T\-I\-O\-N\-: Date. Author. Description. 
+\end{DoxyItemize}
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCBlobResult_a0240474a3c6f1885753a4d95bd441605_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{classCBlobResult_a0240474a3c6f1885753a4d95bd441605_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classCBlobResult_ac4ca8d8c9ad0a00ba4b28c7884645968}{\index{C\-Blob\-Result@{C\-Blob\-Result}!Filter@{Filter}}
+\index{Filter@{Filter}!CBlobResult@{C\-Blob\-Result}}
+\subsubsection[{Filter}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Blob\-Result\-::\-Filter (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Blob\-Result} \&}]{dst, }
+\item[{int}]{filter\-Action, }
+\item[{{\bf funcio\-\_\-calcul\-Blob} $\ast$}]{evaluador, }
+\item[{int}]{condition, }
+\item[{double}]{low\-Limit, }
+\item[{double}]{high\-Limit = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const}}\label{classCBlobResult_ac4ca8d8c9ad0a00ba4b28c7884645968}
+
+\begin{DoxyItemize}
+\item F\-U\-N\-C\-IÓ\-: Filter
+\item F\-U\-N\-C\-I\-O\-N\-A\-L\-I\-T\-A\-T\-: Filtra els blobs de la classe i deixa el resultat amb només els blobs que han passat el filtre. El filtrat es basa en especificar condicions sobre un resultat dels blobs i seleccionar (o excloure) aquells blobs que no compleixen una determinada condicio
+\item P\-A\-RÀ\-M\-E\-T\-R\-E\-S\-:
+\begin{DoxyItemize}
+\item dst\-: variable per deixar els blobs filtrats
+\item filter\-Action\-: acció de filtrat. Incloure els blobs trobats (B\-\_\-\-I\-N\-C\-L\-U\-D\-E), o excloure els blobs trobats (B\-\_\-\-E\-X\-C\-L\-U\-D\-E)
+\item evaluador\-: Funció per evaluar els blobs (qualsevol objecte derivat de \hyperlink{classCOperadorBlob}{C\-Operador\-Blob}
+\item Condition\-: tipus de condició que ha de superar la mesura (Filter\-Type) sobre cada blob per a ser considerat. B\-\_\-\-E\-Q\-U\-A\-L,B\-\_\-\-N\-O\-T\-\_\-\-E\-Q\-U\-A\-L,B\-\_\-\-G\-R\-E\-A\-T\-E\-R,B\-\_\-\-L\-E\-S\-S,B\-\_\-\-G\-R\-E\-A\-T\-E\-R\-\_\-\-O\-R\-\_\-\-E\-Q\-U\-A\-L, B\-\_\-\-L\-E\-S\-S\-\_\-\-O\-R\-\_\-\-E\-Q\-U\-A\-L,B\-\_\-\-I\-N\-S\-I\-D\-E,B\-\_\-\-O\-U\-T\-S\-I\-D\-E
+\item Low\-Limit\-: valor numèric per a la comparació (Condition) de la mesura (Filter\-Type)
+\item High\-Limit\-: valor numèric per a la comparació (Condition) de la mesura (Filter\-Type) (només té sentit per a aquelles condicions que tenen dos valors (B\-\_\-\-I\-N\-S\-I\-D\-E, per exemple).
+\end{DoxyItemize}
+\item R\-E\-S\-U\-L\-T\-A\-T\-:
+\begin{DoxyItemize}
+\item Deixa els blobs resultants del filtrat a destination
+\end{DoxyItemize}
+\item R\-E\-S\-T\-R\-I\-C\-C\-I\-O\-N\-S\-:
+\item A\-U\-T\-O\-R\-: Ricard Borràs
+\item D\-A\-T\-A D\-E C\-R\-E\-A\-C\-IÓ\-: 25-\/05-\/2005.
+\item M\-O\-D\-I\-F\-I\-C\-A\-C\-IÓ\-: Data. Autor. Descripció.
+\item F\-U\-N\-C\-T\-I\-O\-N\-: Filter
+\item F\-U\-N\-C\-T\-I\-O\-N\-A\-L\-I\-T\-Y\-: Get some blobs from the class based on conditions on measures of the blobs.
+\item P\-A\-R\-A\-M\-E\-T\-E\-R\-S\-:
+\begin{DoxyItemize}
+\item dst\-: where to store the selected blobs
+\item filter\-Action\-: B\-\_\-\-I\-N\-C\-L\-U\-D\-E\-: include the blobs which pass the filter in the result B\-\_\-\-E\-X\-C\-L\-U\-D\-E\-: exclude the blobs which pass the filter in the result
+\item evaluador\-: Object to evaluate the blob
+\item Condition\-: How to decide if the result returned by evaluador on each blob is included or not. It can be\-: B\-\_\-\-E\-Q\-U\-A\-L,B\-\_\-\-N\-O\-T\-\_\-\-E\-Q\-U\-A\-L,B\-\_\-\-G\-R\-E\-A\-T\-E\-R,B\-\_\-\-L\-E\-S\-S,B\-\_\-\-G\-R\-E\-A\-T\-E\-R\-\_\-\-O\-R\-\_\-\-E\-Q\-U\-A\-L, B\-\_\-\-L\-E\-S\-S\-\_\-\-O\-R\-\_\-\-E\-Q\-U\-A\-L,B\-\_\-\-I\-N\-S\-I\-D\-E,B\-\_\-\-O\-U\-T\-S\-I\-D\-E
+\item Low\-Limit\-: numerical value to evaluate the Condition on evaluador(blob)
+\item High\-Limit\-: numerical value to evaluate the Condition on evaluador(blob). Only useful for B\-\_\-\-I\-N\-S\-I\-D\-E and B\-\_\-\-O\-U\-T\-S\-I\-D\-E
+\end{DoxyItemize}
+\item R\-E\-S\-U\-L\-T\-:
+\begin{DoxyItemize}
+\item It returns on dst the blobs that accomplish (B\-\_\-\-I\-N\-C\-L\-U\-D\-E) or discards (B\-\_\-\-E\-X\-C\-L\-U\-D\-E) the Condition on the result returned by evaluador on each blob
+\end{DoxyItemize}
+\item R\-E\-S\-T\-R\-I\-C\-T\-I\-O\-N\-S\-:
+\item A\-U\-T\-H\-O\-R\-: Ricard Borràs
+\item C\-R\-E\-A\-T\-I\-O\-N D\-A\-T\-E\-: 25-\/05-\/2005.
+\item M\-O\-D\-I\-F\-I\-C\-A\-T\-I\-O\-N\-: Date. Author. Description. 
+\end{DoxyItemize}
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCBlobResult_ac4ca8d8c9ad0a00ba4b28c7884645968_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classCBlobResult_a1c9b86a3d2a6ec175bdf3f6f7c211521}{\index{C\-Blob\-Result@{C\-Blob\-Result}!Get\-Blob@{Get\-Blob}}
+\index{Get\-Blob@{Get\-Blob}!CBlobResult@{C\-Blob\-Result}}
+\subsubsection[{Get\-Blob}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Blob} C\-Blob\-Result\-::\-Get\-Blob (
+\begin{DoxyParamCaption}
+\item[{int}]{indexblob}
+\end{DoxyParamCaption}
+) const}}\label{classCBlobResult_a1c9b86a3d2a6ec175bdf3f6f7c211521}
+Retorna el blob enï¿½ssim Gets the n-\/th blob of the class ( without sorting )
+
+
+\begin{DoxyItemize}
+\item F\-U\-N\-C\-IÓ\-: Get\-Blob
+\item F\-U\-N\-C\-I\-O\-N\-A\-L\-I\-T\-A\-T\-: Retorna un blob si aquest existeix (index != -\/1)
+\item P\-A\-RÀ\-M\-E\-T\-R\-E\-S\-:
+\begin{DoxyItemize}
+\item indexblob\-: index del blob a retornar
+\end{DoxyItemize}
+\item R\-E\-S\-U\-L\-T\-A\-T\-:
+\item R\-E\-S\-T\-R\-I\-C\-C\-I\-O\-N\-S\-:
+\item A\-U\-T\-O\-R\-: Ricard Borràs
+\item D\-A\-T\-A D\-E C\-R\-E\-A\-C\-IÓ\-: 25-\/05-\/2005.
+\item M\-O\-D\-I\-F\-I\-C\-A\-C\-IÓ\-: Data. Autor. Descripció. 
+\end{DoxyItemize}
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCBlobResult_a1c9b86a3d2a6ec175bdf3f6f7c211521_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCBlobResult_a1c9b86a3d2a6ec175bdf3f6f7c211521_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classCBlobResult_a6e11d8120572fe14262fe419747c3084}{\index{C\-Blob\-Result@{C\-Blob\-Result}!Get\-Blob@{Get\-Blob}}
+\index{Get\-Blob@{Get\-Blob}!CBlobResult@{C\-Blob\-Result}}
+\subsubsection[{Get\-Blob}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Blob} $\ast$ C\-Blob\-Result\-::\-Get\-Blob (
+\begin{DoxyParamCaption}
+\item[{int}]{indexblob}
+\end{DoxyParamCaption}
+)}}\label{classCBlobResult_a6e11d8120572fe14262fe419747c3084}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCBlobResult_a6e11d8120572fe14262fe419747c3084_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classCBlobResult_a7e7929a4ae93967c14eeb958ed64d848}{\index{C\-Blob\-Result@{C\-Blob\-Result}!Get\-Nth\-Blob@{Get\-Nth\-Blob}}
+\index{Get\-Nth\-Blob@{Get\-Nth\-Blob}!CBlobResult@{C\-Blob\-Result}}
+\subsubsection[{Get\-Nth\-Blob}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Blob\-Result\-::\-Get\-Nth\-Blob (
+\begin{DoxyParamCaption}
+\item[{{\bf funcio\-\_\-calcul\-Blob} $\ast$}]{criteri, }
+\item[{int}]{n\-Blob, }
+\item[{{\bf C\-Blob} \&}]{dst}
+\end{DoxyParamCaption}
+) const}}\label{classCBlobResult_a7e7929a4ae93967c14eeb958ed64d848}
+Retorna l'enï¿½ssim blob segons un determinat criteri Sorts the blobs of the class acording to some criteria and returns the n-\/th blob
+
+
+\begin{DoxyItemize}
+\item F\-U\-N\-C\-IÓ\-: Get\-Nth\-Blob
+\item F\-U\-N\-C\-I\-O\-N\-A\-L\-I\-T\-A\-T\-: Retorna l'enèssim blob segons un determinat criteri
+\item P\-A\-RÀ\-M\-E\-T\-R\-E\-S\-:
+\begin{DoxyItemize}
+\item criteri\-: criteri per ordenar els blobs (objectes derivats de \hyperlink{classCOperadorBlob}{C\-Operador\-Blob})
+\item n\-Blob\-: index del blob a retornar
+\item dst\-: on es retorna el resultat
+\end{DoxyItemize}
+\item R\-E\-S\-U\-L\-T\-A\-T\-:
+\begin{DoxyItemize}
+\item retorna el blob n\-Blob a dst ordenant els blobs de la classe segons el criteri en ordre D\-E\-S\-C\-E\-N\-D\-E\-N\-T. Per exemple, per obtenir el blob major\-: Get\-Nth\-Blob( C\-Blob\-Get\-Area(), 0, blob\-Major ); Get\-Nth\-Blob( C\-Blob\-Get\-Area(), 1, blob\-Major ); (segon blob més gran)
+\end{DoxyItemize}
+\item R\-E\-S\-T\-R\-I\-C\-C\-I\-O\-N\-S\-:
+\item A\-U\-T\-O\-R\-: Ricard Borràs
+\item D\-A\-T\-A D\-E C\-R\-E\-A\-C\-IÓ\-: 25-\/05-\/2005.
+\item M\-O\-D\-I\-F\-I\-C\-A\-C\-IÓ\-: Data. Autor. Descripció. 
+\end{DoxyItemize}
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCBlobResult_a7e7929a4ae93967c14eeb958ed64d848_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classCBlobResult_a7f80058f8726468c0d074b8985c09d80}{\index{C\-Blob\-Result@{C\-Blob\-Result}!Get\-Number@{Get\-Number}}
+\index{Get\-Number@{Get\-Number}!CBlobResult@{C\-Blob\-Result}}
+\subsubsection[{Get\-Number}]{\setlength{\rightskip}{0pt plus 5cm}double C\-Blob\-Result\-::\-Get\-Number (
+\begin{DoxyParamCaption}
+\item[{int}]{index\-Blob, }
+\item[{{\bf funcio\-\_\-calcul\-Blob} $\ast$}]{evaluador}
+\end{DoxyParamCaption}
+) const}}\label{classCBlobResult_a7f80058f8726468c0d074b8985c09d80}
+Calcula un valor sobre un blob de la classe Computes some property on one blob of the class
+
+
+\begin{DoxyItemize}
+\item F\-U\-N\-C\-IÓ\-: Get\-Number
+\item F\-U\-N\-C\-I\-O\-N\-A\-L\-I\-T\-A\-T\-: Calcula el resultat especificat sobre un únic blob de la classe
+\item P\-A\-RÀ\-M\-E\-T\-R\-E\-S\-:
+\begin{DoxyItemize}
+\item evaluador\-: Qualsevol objecte derivat de \hyperlink{classCOperadorBlob}{C\-Operador\-Blob}
+\item indexblob\-: número de blob del que volem calcular el resultat.
+\end{DoxyItemize}
+\item R\-E\-S\-U\-L\-T\-A\-T\-:
+\begin{DoxyItemize}
+\item Retorna un double amb el resultat
+\end{DoxyItemize}
+\item R\-E\-S\-T\-R\-I\-C\-C\-I\-O\-N\-S\-:
+\item A\-U\-T\-O\-R\-: Ricard Borràs
+\item D\-A\-T\-A D\-E C\-R\-E\-A\-C\-IÓ\-: 25-\/05-\/2005.
+\item M\-O\-D\-I\-F\-I\-C\-A\-C\-IÓ\-: Data. Autor. Descripció.
+\item F\-U\-N\-C\-T\-I\-O\-N\-: Get\-Number
+\item F\-U\-N\-C\-T\-I\-O\-N\-A\-L\-I\-T\-Y\-: Computes the function evaluador on a blob of the class
+\item P\-A\-R\-A\-M\-E\-T\-E\-R\-S\-:
+\begin{DoxyItemize}
+\item index\-Blob\-: index of the blob to compute the function
+\item evaluador\-: function to apply to each blob (any object derived from the \hyperlink{classCOperadorBlob}{C\-Operador\-Blob} class )
+\end{DoxyItemize}
+\item R\-E\-S\-U\-L\-T\-:
+\item R\-E\-S\-T\-R\-I\-C\-T\-I\-O\-N\-S\-:
+\item A\-U\-T\-H\-O\-R\-: Ricard Borràs
+\item C\-R\-E\-A\-T\-I\-O\-N D\-A\-T\-E\-: 25-\/05-\/2005.
+\item M\-O\-D\-I\-F\-I\-C\-A\-T\-I\-O\-N\-: Date. Author. Description. 
+\end{DoxyItemize}
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCBlobResult_a7f80058f8726468c0d074b8985c09d80_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classCBlobResult_a74229c68beb6f5c0b8701a35aafe45d0}{\index{C\-Blob\-Result@{C\-Blob\-Result}!Get\-Num\-Blobs@{Get\-Num\-Blobs}}
+\index{Get\-Num\-Blobs@{Get\-Num\-Blobs}!CBlobResult@{C\-Blob\-Result}}
+\subsubsection[{Get\-Num\-Blobs}]{\setlength{\rightskip}{0pt plus 5cm}int C\-Blob\-Result\-::\-Get\-Num\-Blobs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classCBlobResult_a74229c68beb6f5c0b8701a35aafe45d0}
+Retorna el total de blobs Gets the total number of blobs 
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCBlobResult_a74229c68beb6f5c0b8701a35aafe45d0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classCBlobResult_a2ed86772b35ed96eadae0080f27b923b}{\index{C\-Blob\-Result@{C\-Blob\-Result}!Get\-S\-T\-L\-Result@{Get\-S\-T\-L\-Result}}
+\index{Get\-S\-T\-L\-Result@{Get\-S\-T\-L\-Result}!CBlobResult@{C\-Blob\-Result}}
+\subsubsection[{Get\-S\-T\-L\-Result}]{\setlength{\rightskip}{0pt plus 5cm}{\bf double\-\_\-stl\-\_\-vector} C\-Blob\-Result\-::\-Get\-S\-T\-L\-Result (
+\begin{DoxyParamCaption}
+\item[{{\bf funcio\-\_\-calcul\-Blob} $\ast$}]{evaluador}
+\end{DoxyParamCaption}
+) const}}\label{classCBlobResult_a2ed86772b35ed96eadae0080f27b923b}
+Calcula un valor sobre tots els blobs de la classe retornant un std\-::vector$<$double$>$ Computes some property on all the blobs of the class
+
+
+\begin{DoxyItemize}
+\item F\-U\-N\-C\-IÓ\-: Get\-S\-T\-L\-Result
+\item F\-U\-N\-C\-I\-O\-N\-A\-L\-I\-T\-A\-T\-: Calcula el resultat especificat sobre tots els blobs de la classe
+\item P\-A\-RÀ\-M\-E\-T\-R\-E\-S\-:
+\begin{DoxyItemize}
+\item evaluador\-: Qualsevol objecte derivat de \hyperlink{classCOperadorBlob}{C\-Operador\-Blob}
+\end{DoxyItemize}
+\item R\-E\-S\-U\-L\-T\-A\-T\-:
+\begin{DoxyItemize}
+\item Retorna un array de double's S\-T\-L amb el resultat per cada blob
+\end{DoxyItemize}
+\item R\-E\-S\-T\-R\-I\-C\-C\-I\-O\-N\-S\-:
+\item A\-U\-T\-O\-R\-: Ricard Borràs
+\item D\-A\-T\-A D\-E C\-R\-E\-A\-C\-IÓ\-: 25-\/05-\/2005.
+\item M\-O\-D\-I\-F\-I\-C\-A\-C\-IÓ\-: Data. Autor. Descripció.
+\item F\-U\-N\-C\-T\-I\-O\-N\-: Get\-Result
+\item F\-U\-N\-C\-T\-I\-O\-N\-A\-L\-I\-T\-Y\-: Computes the function evaluador on all the blobs of the class and returns a vector with the result
+\item P\-A\-R\-A\-M\-E\-T\-E\-R\-S\-:
+\begin{DoxyItemize}
+\item evaluador\-: function to apply to each blob (any object derived from the \hyperlink{classCOperadorBlob}{C\-Operador\-Blob} class )
+\end{DoxyItemize}
+\item R\-E\-S\-U\-L\-T\-:
+\begin{DoxyItemize}
+\item vector with all the results in the same order as the blobs
+\end{DoxyItemize}
+\item R\-E\-S\-T\-R\-I\-C\-T\-I\-O\-N\-S\-:
+\item A\-U\-T\-H\-O\-R\-: Ricard Borràs
+\item C\-R\-E\-A\-T\-I\-O\-N D\-A\-T\-E\-: 25-\/05-\/2005.
+\item M\-O\-D\-I\-F\-I\-C\-A\-T\-I\-O\-N\-: Date. Author. Description. 
+\end{DoxyItemize}
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCBlobResult_a2ed86772b35ed96eadae0080f27b923b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCBlobResult_a2ed86772b35ed96eadae0080f27b923b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classCBlobResult_a5873edfefb2d083c0d309bba7ff68a7c}{\index{C\-Blob\-Result@{C\-Blob\-Result}!operator+@{operator+}}
+\index{operator+@{operator+}!CBlobResult@{C\-Blob\-Result}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Blob\-Result} C\-Blob\-Result\-::operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Blob\-Result} \&}]{source}
+\end{DoxyParamCaption}
+) const}}\label{classCBlobResult_a5873edfefb2d083c0d309bba7ff68a7c}
+operador + per concatenar dos \hyperlink{classCBlobResult}{C\-Blob\-Result} Addition operator to concatenate two sets of blobs
+
+
+\begin{DoxyItemize}
+\item F\-U\-N\-C\-IÓ\-: operador +
+\item F\-U\-N\-C\-I\-O\-N\-A\-L\-I\-T\-A\-T\-: Concatena els blobs de dos \hyperlink{classCBlobResult}{C\-Blob\-Result}
+\item P\-A\-RÀ\-M\-E\-T\-R\-E\-S\-:
+\begin{DoxyItemize}
+\item source\-: d'on s'agafaran els blobs afegits a l'actual
+\end{DoxyItemize}
+\item R\-E\-S\-U\-L\-T\-A\-T\-:
+\begin{DoxyItemize}
+\item retorna un nou \hyperlink{classCBlobResult}{C\-Blob\-Result} amb els dos \hyperlink{classCBlobResult}{C\-Blob\-Result} concatenats
+\end{DoxyItemize}
+\item R\-E\-S\-T\-R\-I\-C\-C\-I\-O\-N\-S\-:
+\item A\-U\-T\-O\-R\-: Ricard Borràs
+\item D\-A\-T\-A D\-E C\-R\-E\-A\-C\-IÓ\-: 25-\/05-\/2005.
+\item N\-O\-T\-A\-: per la implementació, els blobs del paràmetre es posen en ordre invers
+\item M\-O\-D\-I\-F\-I\-C\-A\-C\-IÓ\-: Data. Autor. Descripció.
+\item F\-U\-N\-C\-T\-I\-O\-N\-: + operator
+\item F\-U\-N\-C\-T\-I\-O\-N\-A\-L\-I\-T\-Y\-: Joins the blobs in source with the current ones
+\item P\-A\-R\-A\-M\-E\-T\-E\-R\-S\-:
+\begin{DoxyItemize}
+\item source\-: object to copy the blobs
+\end{DoxyItemize}
+\item R\-E\-S\-U\-L\-T\-:
+\begin{DoxyItemize}
+\item object with the actual blobs and the source blobs
+\end{DoxyItemize}
+\item R\-E\-S\-T\-R\-I\-C\-T\-I\-O\-N\-S\-:
+\item A\-U\-T\-H\-O\-R\-: Ricard Borràs
+\item C\-R\-E\-A\-T\-I\-O\-N D\-A\-T\-E\-: 25-\/05-\/2005.
+\item M\-O\-D\-I\-F\-I\-C\-A\-T\-I\-O\-N\-: Date. Author. Description. 
+\end{DoxyItemize}
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCBlobResult_a5873edfefb2d083c0d309bba7ff68a7c_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classCBlobResult_aa833c008cc7056576a7cbd260d09f10c}{\index{C\-Blob\-Result@{C\-Blob\-Result}!operator=@{operator=}}
+\index{operator=@{operator=}!CBlobResult@{C\-Blob\-Result}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Blob\-Result} \& C\-Blob\-Result\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Blob\-Result} \&}]{source}
+\end{DoxyParamCaption}
+)}}\label{classCBlobResult_aa833c008cc7056576a7cbd260d09f10c}
+operador = per a fer assignacions entre \hyperlink{classCBlobResult}{C\-Blob\-Result} Assigment operator
+
+
+\begin{DoxyItemize}
+\item F\-U\-N\-C\-IÓ\-: operador =
+\item F\-U\-N\-C\-I\-O\-N\-A\-L\-I\-T\-A\-T\-: Assigna un objecte source a l'actual
+\item P\-A\-RÀ\-M\-E\-T\-R\-E\-S\-:
+\begin{DoxyItemize}
+\item source\-: objecte a assignar
+\end{DoxyItemize}
+\item R\-E\-S\-U\-L\-T\-A\-T\-:
+\begin{DoxyItemize}
+\item Substitueix els blobs actuals per els de l'objecte source
+\end{DoxyItemize}
+\item R\-E\-S\-T\-R\-I\-C\-C\-I\-O\-N\-S\-:
+\item A\-U\-T\-O\-R\-: Ricard Borràs
+\item D\-A\-T\-A D\-E C\-R\-E\-A\-C\-IÓ\-: 25-\/05-\/2005.
+\item M\-O\-D\-I\-F\-I\-C\-A\-C\-IÓ\-: Data. Autor. Descripció.
+\item F\-U\-N\-C\-T\-I\-O\-N\-: Assigment operator
+\item F\-U\-N\-C\-T\-I\-O\-N\-A\-L\-I\-T\-Y\-:
+\item P\-A\-R\-A\-M\-E\-T\-E\-R\-S\-:
+\item R\-E\-S\-U\-L\-T\-:
+\item R\-E\-S\-T\-R\-I\-C\-T\-I\-O\-N\-S\-:
+\item A\-U\-T\-H\-O\-R\-: Ricard Borràs
+\item C\-R\-E\-A\-T\-I\-O\-N D\-A\-T\-E\-: 25-\/05-\/2005.
+\item M\-O\-D\-I\-F\-I\-C\-A\-T\-I\-O\-N\-: Date. Author. Description. 
+\end{DoxyItemize}
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCBlobResult_aa833c008cc7056576a7cbd260d09f10c_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classCBlobResult_a39df81e0a49e4859c9b963e23f9f55df}{\index{C\-Blob\-Result@{C\-Blob\-Result}!Print\-Blobs@{Print\-Blobs}}
+\index{Print\-Blobs@{Print\-Blobs}!CBlobResult@{C\-Blob\-Result}}
+\subsubsection[{Print\-Blobs}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Blob\-Result\-::\-Print\-Blobs (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{nom\-\_\-fitxer}
+\end{DoxyParamCaption}
+) const}}\label{classCBlobResult_a39df81e0a49e4859c9b963e23f9f55df}
+Escriu els blobs a un fitxer Prints some features of all the blobs in a file
+
+
+\begin{DoxyItemize}
+\item F\-U\-N\-C\-IÓ\-: Print\-Blobs
+\item F\-U\-N\-C\-I\-O\-N\-A\-L\-I\-T\-A\-T\-: Escriu els paràmetres (àrea, perímetre, exterior, mitjana) de tots els blobs a un fitxer.
+\item P\-A\-RÀ\-M\-E\-T\-R\-E\-S\-:
+\begin{DoxyItemize}
+\item nom\-\_\-fitxer\-: path complet del fitxer amb el resultat
+\end{DoxyItemize}
+\item R\-E\-S\-U\-L\-T\-A\-T\-:
+\item R\-E\-S\-T\-R\-I\-C\-C\-I\-O\-N\-S\-:
+\item A\-U\-T\-O\-R\-: Ricard Borràs
+\item D\-A\-T\-A D\-E C\-R\-E\-A\-C\-IÓ\-: 25-\/05-\/2005.
+\item M\-O\-D\-I\-F\-I\-C\-A\-C\-IÓ\-: Data. Autor. Descripció. 
+\end{DoxyItemize}
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCBlobResult_a39df81e0a49e4859c9b963e23f9f55df_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classCBlobResult_a00b104a1bd3adc81191dd9e6c2ef493c}{\index{C\-Blob\-Result@{C\-Blob\-Result}!Raise\-Error@{Raise\-Error}}
+\index{Raise\-Error@{Raise\-Error}!CBlobResult@{C\-Blob\-Result}}
+\subsubsection[{Raise\-Error}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Blob\-Result\-::\-Raise\-Error (
+\begin{DoxyParamCaption}
+\item[{const int}]{error\-Code}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [private]}}}\label{classCBlobResult_a00b104a1bd3adc81191dd9e6c2ef493c}
+Funciï¿½ per gestionar els errors Function to manage the errors
+
+
+\begin{DoxyItemize}
+\item F\-U\-N\-C\-IÓ\-: Raise\-Error
+\item F\-U\-N\-C\-I\-O\-N\-A\-L\-I\-T\-A\-T\-: Funció per a notificar errors al l'usuari (en debug) i llença les excepcions
+\item P\-A\-RÀ\-M\-E\-T\-R\-E\-S\-:
+\begin{DoxyItemize}
+\item error\-Code\-: codi d'error
+\end{DoxyItemize}
+\item R\-E\-S\-U\-L\-T\-A\-T\-:
+\begin{DoxyItemize}
+\item Ensenya un missatge a l'usuari (en debug) i llença una excepció
+\end{DoxyItemize}
+\item R\-E\-S\-T\-R\-I\-C\-C\-I\-O\-N\-S\-:
+\item A\-U\-T\-O\-R\-: Ricard Borràs Navarra
+\item D\-A\-T\-A D\-E C\-R\-E\-A\-C\-IÓ\-: 25-\/05-\/2005.
+\item M\-O\-D\-I\-F\-I\-C\-A\-C\-IÓ\-: Data. Autor. Descripció. 
+\end{DoxyItemize}Do we need to show errors? 
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCBlobResult_a00b104a1bd3adc81191dd9e6c2ef493c_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classCBlobResult_a3f363e03c43fb01738541b2427577b63}{\index{C\-Blob\-Result@{C\-Blob\-Result}!m\-\_\-blobs@{m\-\_\-blobs}}
+\index{m\-\_\-blobs@{m\-\_\-blobs}!CBlobResult@{C\-Blob\-Result}}
+\subsubsection[{m\-\_\-blobs}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Blob\-\_\-vector} C\-Blob\-Result\-::m\-\_\-blobs\hspace{0.3cm}{\ttfamily [protected]}}}\label{classCBlobResult_a3f363e03c43fb01738541b2427577b63}
+Vector amb els blobs Vector with all the blobs 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/3rdparty/cvblobs/\hyperlink{BlobResult_8h}{Blob\-Result.\-h}\item 
+src/3rdparty/cvblobs/\hyperlink{BlobResult_8cpp}{Blob\-Result.\-cpp}\end{DoxyCompactItemize}

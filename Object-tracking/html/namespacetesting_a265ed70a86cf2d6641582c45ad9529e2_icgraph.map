@@ -1,0 +1,6 @@
+<map id="testing::Range" name="testing::Range">
+<area shape="rect" id="node2" href="$classcv_1_1ocl_1_1oclMat.html#a5e927c1ab9729772df69829e29467fd7" title="returns a new oclMatrix header for the specified row " alt="" coords="179,5,317,32"/>
+<area shape="rect" id="node3" href="$classcv_1_1ocl_1_1oclMat.html#a761d9493dc8d989b0bec105e832e8fb6" title="returns a new oclMatrix header for the specified column " alt="" coords="181,56,315,83"/>
+<area shape="rect" id="node4" href="$classcv_1_1ocl_1_1oclMat.html#a60bd94d8a6110a2e50bf9fbcfc2db0d2" title="... for the specified row span " alt="" coords="161,107,335,133"/>
+<area shape="rect" id="node5" href="$classcv_1_1ocl_1_1oclMat.html#a8d61c3d2a4c840c9f785ea1e319e1981" title="... for the specified column span " alt="" coords="163,157,333,184"/>
+</map>

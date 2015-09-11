@@ -1,0 +1,7 @@
+<map id="imAcqGetImg" name="imAcqGetImg">
+<area shape="rect" id="node2" href="$ImAcq_8h.html#a27af836aebabd5889947aef0e21bcaee" title="Gets image by the frame number. " alt="" coords="168,5,323,32"/>
+<area shape="rect" id="node3" href="$ImAcq_8h.html#a68cde69f4260cd2493e3fecf2ec3ebfb" title="Gets the next image with twice increase the count of frames. " alt="" coords="157,56,333,83"/>
+<area shape="rect" id="node4" href="$classMain.html#a5effa58c6ae671f8ce4ff31cb6e07aa5" title="Begins the work. " alt="" coords="382,132,485,159"/>
+<area shape="rect" id="node6" href="$classMain.html#a1eb1fa4005a0235d28035ec4c02ebd80" title="Determines a maximun of the moving regions. " alt="" coords="162,157,329,184"/>
+<area shape="rect" id="node5" href="$OpenTLD_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="533,132,584,159"/>
+</map>

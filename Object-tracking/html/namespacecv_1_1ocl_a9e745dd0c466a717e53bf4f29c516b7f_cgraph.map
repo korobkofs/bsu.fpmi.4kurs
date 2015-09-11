@@ -1,0 +1,4 @@
+<map id="cv::ocl::getClContextPtr" name="cv::ocl::getClContextPtr">
+<area shape="rect" id="node2" href="$classcv_1_1ocl_1_1Context.html#a8d5b2af02b94e41137d958f448492eb9" title="cv::ocl::Context::getContext" alt="" coords="216,5,403,32"/>
+<area shape="rect" id="node3" href="$classcv_1_1ocl_1_1Context.html#a0b6f4bd12a68ab357846012a08ebbd23" title="cv::ocl::Context::getOpen\lCLContextPtr" alt="" coords="223,57,395,98"/>
+</map>

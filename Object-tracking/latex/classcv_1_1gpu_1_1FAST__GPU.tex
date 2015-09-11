@@ -1,0 +1,170 @@
+\hypertarget{classcv_1_1gpu_1_1FAST__GPU}{\section{cv\-:\-:gpu\-:\-:F\-A\-S\-T\-\_\-\-G\-P\-U Class Reference}
+\label{classcv_1_1gpu_1_1FAST__GPU}\index{cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U}}
+}
+
+
+{\ttfamily \#include $<$gpu.\-hpp$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{classcv_1_1gpu_1_1FAST__GPU_ae6594d8f3d725ddda6e2f9422f452876aa7d22ccbcd65a72e7c981c92515293f9}{L\-O\-C\-A\-T\-I\-O\-N\-\_\-\-R\-O\-W} = 0, 
+\hyperlink{classcv_1_1gpu_1_1FAST__GPU_ae6594d8f3d725ddda6e2f9422f452876a2df36c0c99dfc29326822c3739eac1d0}{R\-E\-S\-P\-O\-N\-S\-E\-\_\-\-R\-O\-W}, 
+\hyperlink{classcv_1_1gpu_1_1FAST__GPU_ae6594d8f3d725ddda6e2f9422f452876a07c32b647113fa5892988c7b27d188df}{R\-O\-W\-S\-\_\-\-C\-O\-U\-N\-T}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcv_1_1gpu_1_1FAST__GPU_ad5907710e0b1b235b78a0296a75c3f91}{F\-A\-S\-T\-\_\-\-G\-P\-U} (int \hyperlink{classcv_1_1gpu_1_1FAST__GPU_a28b49bef52f11f2c366bf9167c52d985}{threshold}, bool \hyperlink{classcv_1_1gpu_1_1FAST__GPU_a73b328bc50cd60cec18f85bea59dff1c}{nonmax\-Supression}=true, double \hyperlink{classcv_1_1gpu_1_1FAST__GPU_a82f6122d0207b098068279d6fd75b973}{keypoints\-Ratio}=0.\-05)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1FAST__GPU_ac5e6d94500f5ed888ec5f04fae878d02}{operator()} (const Gpu\-Mat \&\hyperlink{legacy_8hpp_ad62b16ab219ae2483e8a3d921c44cc97}{image}, const Gpu\-Mat \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}, Gpu\-Mat \&\hyperlink{compat_8hpp_af95b6678bbbdd664ed15fe6d4190d355}{keypoints})
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1FAST__GPU_acb06758e5e302eb7fd7c86c7e4013231}{operator()} (const Gpu\-Mat \&\hyperlink{legacy_8hpp_ad62b16ab219ae2483e8a3d921c44cc97}{image}, const Gpu\-Mat \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}, std\-::vector$<$ Key\-Point $>$ \&\hyperlink{compat_8hpp_af95b6678bbbdd664ed15fe6d4190d355}{keypoints})
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1FAST__GPU_abeed037b263638de3586c346208166cf}{download\-Keypoints} (const Gpu\-Mat \&d\-\_\-keypoints, std\-::vector$<$ Key\-Point $>$ \&\hyperlink{compat_8hpp_af95b6678bbbdd664ed15fe6d4190d355}{keypoints})
+\begin{DoxyCompactList}\small\item\em download keypoints from device to host memory \end{DoxyCompactList}\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1FAST__GPU_a4add5048b7d1909796ba6c91ac0e4045}{convert\-Keypoints} (const Mat \&h\-\_\-keypoints, std\-::vector$<$ Key\-Point $>$ \&\hyperlink{compat_8hpp_af95b6678bbbdd664ed15fe6d4190d355}{keypoints})
+\begin{DoxyCompactList}\small\item\em convert keypoints to Key\-Point vector \end{DoxyCompactList}\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1FAST__GPU_a917e84e4f007779c70be297304cdb13e}{release} ()
+\begin{DoxyCompactList}\small\item\em release temporary buffer's memory \end{DoxyCompactList}\item 
+int \hyperlink{classcv_1_1gpu_1_1FAST__GPU_a03ff70a004c7e7b9b1a49363d39f2023}{calc\-Key\-Points\-Location} (const Gpu\-Mat \&\hyperlink{legacy_8hpp_ad62b16ab219ae2483e8a3d921c44cc97}{image}, const Gpu\-Mat \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask})
+\item 
+int \hyperlink{classcv_1_1gpu_1_1FAST__GPU_a8570b1287cd018abb17bb304e369c833}{get\-Key\-Points} (Gpu\-Mat \&\hyperlink{compat_8hpp_af95b6678bbbdd664ed15fe6d4190d355}{keypoints})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classcv_1_1gpu_1_1FAST__GPU_a73b328bc50cd60cec18f85bea59dff1c}{nonmax\-Supression}
+\item 
+int \hyperlink{classcv_1_1gpu_1_1FAST__GPU_a28b49bef52f11f2c366bf9167c52d985}{threshold}
+\item 
+double \hyperlink{classcv_1_1gpu_1_1FAST__GPU_a82f6122d0207b098068279d6fd75b973}{keypoints\-Ratio}
+\begin{DoxyCompactList}\small\item\em max keypoints = keypoints\-Ratio $\ast$ img.\-size().area() \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int \hyperlink{classcv_1_1gpu_1_1FAST__GPU_ae2e204176ed9664ca078b5bd1891176f}{F\-E\-A\-T\-U\-R\-E\-\_\-\-S\-I\-Z\-E} = 7
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classcv_1_1gpu_1_1FAST__GPU_ae6594d8f3d725ddda6e2f9422f452876}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{classcv_1_1gpu_1_1FAST__GPU_ae6594d8f3d725ddda6e2f9422f452876}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{L\-O\-C\-A\-T\-I\-O\-N\-\_\-\-R\-O\-W@{L\-O\-C\-A\-T\-I\-O\-N\-\_\-\-R\-O\-W}!cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U}}\index{cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U}!L\-O\-C\-A\-T\-I\-O\-N\-\_\-\-R\-O\-W@{L\-O\-C\-A\-T\-I\-O\-N\-\_\-\-R\-O\-W}}\item[{\em 
+\hypertarget{classcv_1_1gpu_1_1FAST__GPU_ae6594d8f3d725ddda6e2f9422f452876aa7d22ccbcd65a72e7c981c92515293f9}{L\-O\-C\-A\-T\-I\-O\-N\-\_\-\-R\-O\-W}\label{classcv_1_1gpu_1_1FAST__GPU_ae6594d8f3d725ddda6e2f9422f452876aa7d22ccbcd65a72e7c981c92515293f9}
+}]\index{R\-E\-S\-P\-O\-N\-S\-E\-\_\-\-R\-O\-W@{R\-E\-S\-P\-O\-N\-S\-E\-\_\-\-R\-O\-W}!cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U}}\index{cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U}!R\-E\-S\-P\-O\-N\-S\-E\-\_\-\-R\-O\-W@{R\-E\-S\-P\-O\-N\-S\-E\-\_\-\-R\-O\-W}}\item[{\em 
+\hypertarget{classcv_1_1gpu_1_1FAST__GPU_ae6594d8f3d725ddda6e2f9422f452876a2df36c0c99dfc29326822c3739eac1d0}{R\-E\-S\-P\-O\-N\-S\-E\-\_\-\-R\-O\-W}\label{classcv_1_1gpu_1_1FAST__GPU_ae6594d8f3d725ddda6e2f9422f452876a2df36c0c99dfc29326822c3739eac1d0}
+}]\index{R\-O\-W\-S\-\_\-\-C\-O\-U\-N\-T@{R\-O\-W\-S\-\_\-\-C\-O\-U\-N\-T}!cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U}}\index{cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U}!R\-O\-W\-S\-\_\-\-C\-O\-U\-N\-T@{R\-O\-W\-S\-\_\-\-C\-O\-U\-N\-T}}\item[{\em 
+\hypertarget{classcv_1_1gpu_1_1FAST__GPU_ae6594d8f3d725ddda6e2f9422f452876a07c32b647113fa5892988c7b27d188df}{R\-O\-W\-S\-\_\-\-C\-O\-U\-N\-T}\label{classcv_1_1gpu_1_1FAST__GPU_ae6594d8f3d725ddda6e2f9422f452876a07c32b647113fa5892988c7b27d188df}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcv_1_1gpu_1_1FAST__GPU_ad5907710e0b1b235b78a0296a75c3f91}{\index{cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U}!F\-A\-S\-T\-\_\-\-G\-P\-U@{F\-A\-S\-T\-\_\-\-G\-P\-U}}
+\index{F\-A\-S\-T\-\_\-\-G\-P\-U@{F\-A\-S\-T\-\_\-\-G\-P\-U}!cv::gpu::FAST_GPU@{cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U}}
+\subsubsection[{F\-A\-S\-T\-\_\-\-G\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U (
+\begin{DoxyParamCaption}
+\item[{int}]{threshold, }
+\item[{bool}]{nonmax\-Supression = {\ttfamily true}, }
+\item[{double}]{keypoints\-Ratio = {\ttfamily 0.05}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{classcv_1_1gpu_1_1FAST__GPU_ad5907710e0b1b235b78a0296a75c3f91}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcv_1_1gpu_1_1FAST__GPU_a03ff70a004c7e7b9b1a49363d39f2023}{\index{cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U}!calc\-Key\-Points\-Location@{calc\-Key\-Points\-Location}}
+\index{calc\-Key\-Points\-Location@{calc\-Key\-Points\-Location}!cv::gpu::FAST_GPU@{cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U}}
+\subsubsection[{calc\-Key\-Points\-Location}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U\-::calc\-Key\-Points\-Location (
+\begin{DoxyParamCaption}
+\item[{const Gpu\-Mat \&}]{image, }
+\item[{const Gpu\-Mat \&}]{mask}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1FAST__GPU_a03ff70a004c7e7b9b1a49363d39f2023}
+find keypoints and compute it's response if nonmax\-Supression is true return count of detected keypoints \hypertarget{classcv_1_1gpu_1_1FAST__GPU_a4add5048b7d1909796ba6c91ac0e4045}{\index{cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U}!convert\-Keypoints@{convert\-Keypoints}}
+\index{convert\-Keypoints@{convert\-Keypoints}!cv::gpu::FAST_GPU@{cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U}}
+\subsubsection[{convert\-Keypoints}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U\-::convert\-Keypoints (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{h\-\_\-keypoints, }
+\item[{std\-::vector$<$ Key\-Point $>$ \&}]{keypoints}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1FAST__GPU_a4add5048b7d1909796ba6c91ac0e4045}
+
+
+convert keypoints to Key\-Point vector 
+
+\hypertarget{classcv_1_1gpu_1_1FAST__GPU_abeed037b263638de3586c346208166cf}{\index{cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U}!download\-Keypoints@{download\-Keypoints}}
+\index{download\-Keypoints@{download\-Keypoints}!cv::gpu::FAST_GPU@{cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U}}
+\subsubsection[{download\-Keypoints}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U\-::download\-Keypoints (
+\begin{DoxyParamCaption}
+\item[{const Gpu\-Mat \&}]{d\-\_\-keypoints, }
+\item[{std\-::vector$<$ Key\-Point $>$ \&}]{keypoints}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1FAST__GPU_abeed037b263638de3586c346208166cf}
+
+
+download keypoints from device to host memory 
+
+\hypertarget{classcv_1_1gpu_1_1FAST__GPU_a8570b1287cd018abb17bb304e369c833}{\index{cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U}!get\-Key\-Points@{get\-Key\-Points}}
+\index{get\-Key\-Points@{get\-Key\-Points}!cv::gpu::FAST_GPU@{cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U}}
+\subsubsection[{get\-Key\-Points}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U\-::get\-Key\-Points (
+\begin{DoxyParamCaption}
+\item[{Gpu\-Mat \&}]{keypoints}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1FAST__GPU_a8570b1287cd018abb17bb304e369c833}
+get final array of keypoints performs nonmax supression if needed return final count of keypoints \hypertarget{classcv_1_1gpu_1_1FAST__GPU_ac5e6d94500f5ed888ec5f04fae878d02}{\index{cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U}!operator()@{operator()}}
+\index{operator()@{operator()}!cv::gpu::FAST_GPU@{cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U\-::operator() (
+\begin{DoxyParamCaption}
+\item[{const Gpu\-Mat \&}]{image, }
+\item[{const Gpu\-Mat \&}]{mask, }
+\item[{Gpu\-Mat \&}]{keypoints}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1FAST__GPU_ac5e6d94500f5ed888ec5f04fae878d02}
+finds the keypoints using F\-A\-S\-T detector supports only C\-V\-\_\-8\-U\-C1 images \hypertarget{classcv_1_1gpu_1_1FAST__GPU_acb06758e5e302eb7fd7c86c7e4013231}{\index{cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U}!operator()@{operator()}}
+\index{operator()@{operator()}!cv::gpu::FAST_GPU@{cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U\-::operator() (
+\begin{DoxyParamCaption}
+\item[{const Gpu\-Mat \&}]{image, }
+\item[{const Gpu\-Mat \&}]{mask, }
+\item[{std\-::vector$<$ Key\-Point $>$ \&}]{keypoints}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1FAST__GPU_acb06758e5e302eb7fd7c86c7e4013231}
+\hypertarget{classcv_1_1gpu_1_1FAST__GPU_a917e84e4f007779c70be297304cdb13e}{\index{cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U}!release@{release}}
+\index{release@{release}!cv::gpu::FAST_GPU@{cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U}}
+\subsubsection[{release}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U\-::release (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1FAST__GPU_a917e84e4f007779c70be297304cdb13e}
+
+
+release temporary buffer's memory 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcv_1_1gpu_1_1FAST__GPU_ae2e204176ed9664ca078b5bd1891176f}{\index{cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U}!F\-E\-A\-T\-U\-R\-E\-\_\-\-S\-I\-Z\-E@{F\-E\-A\-T\-U\-R\-E\-\_\-\-S\-I\-Z\-E}}
+\index{F\-E\-A\-T\-U\-R\-E\-\_\-\-S\-I\-Z\-E@{F\-E\-A\-T\-U\-R\-E\-\_\-\-S\-I\-Z\-E}!cv::gpu::FAST_GPU@{cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U}}
+\subsubsection[{F\-E\-A\-T\-U\-R\-E\-\_\-\-S\-I\-Z\-E}]{\setlength{\rightskip}{0pt plus 5cm}const int cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U\-::\-F\-E\-A\-T\-U\-R\-E\-\_\-\-S\-I\-Z\-E = 7\hspace{0.3cm}{\ttfamily [static]}}}\label{classcv_1_1gpu_1_1FAST__GPU_ae2e204176ed9664ca078b5bd1891176f}
+\hypertarget{classcv_1_1gpu_1_1FAST__GPU_a82f6122d0207b098068279d6fd75b973}{\index{cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U}!keypoints\-Ratio@{keypoints\-Ratio}}
+\index{keypoints\-Ratio@{keypoints\-Ratio}!cv::gpu::FAST_GPU@{cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U}}
+\subsubsection[{keypoints\-Ratio}]{\setlength{\rightskip}{0pt plus 5cm}double cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U\-::keypoints\-Ratio}}\label{classcv_1_1gpu_1_1FAST__GPU_a82f6122d0207b098068279d6fd75b973}
+
+
+max keypoints = keypoints\-Ratio $\ast$ img.\-size().area() 
+
+\hypertarget{classcv_1_1gpu_1_1FAST__GPU_a73b328bc50cd60cec18f85bea59dff1c}{\index{cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U}!nonmax\-Supression@{nonmax\-Supression}}
+\index{nonmax\-Supression@{nonmax\-Supression}!cv::gpu::FAST_GPU@{cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U}}
+\subsubsection[{nonmax\-Supression}]{\setlength{\rightskip}{0pt plus 5cm}bool cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U\-::nonmax\-Supression}}\label{classcv_1_1gpu_1_1FAST__GPU_a73b328bc50cd60cec18f85bea59dff1c}
+\hypertarget{classcv_1_1gpu_1_1FAST__GPU_a28b49bef52f11f2c366bf9167c52d985}{\index{cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U}!threshold@{threshold}}
+\index{threshold@{threshold}!cv::gpu::FAST_GPU@{cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U}}
+\subsubsection[{threshold}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::gpu\-::\-F\-A\-S\-T\-\_\-\-G\-P\-U\-::threshold}}\label{classcv_1_1gpu_1_1FAST__GPU_a28b49bef52f11f2c366bf9167c52d985}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/gpu/\hyperlink{gpu_2gpu_8hpp}{gpu.\-hpp}\end{DoxyCompactItemize}

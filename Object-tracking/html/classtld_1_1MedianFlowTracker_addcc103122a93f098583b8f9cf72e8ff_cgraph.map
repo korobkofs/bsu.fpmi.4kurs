@@ -1,0 +1,14 @@
+<map id="tld::MedianFlowTracker::track" name="tld::MedianFlowTracker::track">
+<area shape="rect" id="node2" href="$FBTrack_8cpp.html#a2c818794e6fe6aa3f6efdc9c46ffd164" title="Calculate the bounding box of an Object in a following Image. Imgs aren&#39;t changed. " alt="" coords="214,107,277,133"/>
+<area shape="rect" id="node3" href="$BB_8cpp.html#a2ef4a63d6f593c4477ece315fe7d1ae4" title="Creates numM x numN points grid on BBox. Points ordered in 1 dimensional array (x1, y1, x2, y2). " alt="" coords="326,5,453,32"/>
+<area shape="rect" id="node5" href="$Lk_8cpp.html#a72f8af92e33c2f2c05d9d0b1ecbbc3c6" title="Needed before start of trackLK and at the end of the program for cleanup. Handles PYR(Pyramid cache) ..." alt="" coords="355,56,423,83"/>
+<area shape="rect" id="node6" href="$Lk_8cpp.html#acaf626622b93b98f39c91967ccc26588" title="Tracks Points from 1.Image to 2.Image. Need initImgs before start and at the end of the program for c..." alt="" coords="356,107,423,133"/>
+<area shape="rect" id="node9" href="$Median_8cpp.html#a6c78c19fafa7ef19523fb62d09086f30" title="Calculates the median of the array. Don&#39;t change array(makes copy). " alt="" coords="348,157,431,184"/>
+<area shape="rect" id="node11" href="$BBPredict_8cpp.html#a0181c4b3c3e424d149a8d89a05c98de7" title="Calculates the new (moved and resized) Bounding box. Calculation based on all relative distance chang..." alt="" coords="352,208,427,235"/>
+<area shape="rect" id="node4" href="$BB_8cpp.html#acf54357bbf511d049e50a99f0ee28121" title="Calculates center of a Rectangle/Boundingbox. " alt="" coords="512,5,643,32"/>
+<area shape="rect" id="node7" href="$Lk_8cpp.html#aecd9b4dead7bfe263a7a068dfb577839" title="Calculates normalized cross correlation for every point. " alt="" coords="503,56,652,83"/>
+<area shape="rect" id="node8" href="$Lk_8cpp.html#a6b1f0fbd52a55b99409b426f14d1b05a" title="Calculates euclidean distance between the point pairs. " alt="" coords="513,107,642,133"/>
+<area shape="rect" id="node10" href="$Median_8cpp.html#a90a27fb293134af27d1615ff29dd1417" title="Calculates the median of the array. Changes array! This Quickselect routine is based on the algorithm..." alt="" coords="501,157,653,184"/>
+<area shape="rect" id="node12" href="$BBPredict_8cpp.html#a4b3e30827072c6282b201b96074c2bc8" title="Calculates width of the bounding box. " alt="" coords="532,208,623,235"/>
+<area shape="rect" id="node13" href="$BBPredict_8cpp.html#afa8fbca51344161ecb831f11b5b2c70f" title="Calculates height of the bounding box. " alt="" coords="530,259,625,285"/>
+</map>

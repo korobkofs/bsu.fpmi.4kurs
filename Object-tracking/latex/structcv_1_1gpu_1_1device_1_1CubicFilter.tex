@@ -1,0 +1,122 @@
+\hypertarget{structcv_1_1gpu_1_1device_1_1CubicFilter}{\section{cv\-:\-:gpu\-:\-:device\-:\-:Cubic\-Filter$<$ Ptr2\-D $>$ Struct Template Reference}
+\label{structcv_1_1gpu_1_1device_1_1CubicFilter}\index{cv\-::gpu\-::device\-::\-Cubic\-Filter$<$ Ptr2\-D $>$@{cv\-::gpu\-::device\-::\-Cubic\-Filter$<$ Ptr2\-D $>$}}
+}
+
+
+{\ttfamily \#include $<$filters.\-hpp$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Ptr2\-D\-::elem\-\_\-type \hyperlink{structcv_1_1gpu_1_1device_1_1CubicFilter_aa110373ae66f3624d67541afc41264ef}{elem\-\_\-type}
+\item 
+typedef float \hyperlink{structcv_1_1gpu_1_1device_1_1CubicFilter_ad5a5d76f07537ca8cc64ec366ac691c4}{index\-\_\-type}
+\item 
+typedef \hyperlink{structcv_1_1gpu_1_1device_1_1TypeVec}{Type\-Vec}$<$ float, \\*
+\hyperlink{structcv_1_1gpu_1_1device_1_1VecTraits}{Vec\-Traits}$<$ \hyperlink{structcv_1_1gpu_1_1device_1_1CubicFilter_aa110373ae66f3624d67541afc41264ef}{elem\-\_\-type} $>$\-::cn $>$\\*
+\-::vec\-\_\-type \hyperlink{structcv_1_1gpu_1_1device_1_1CubicFilter_a2e4c3b9d18f4f3f2e002d8f66144e655}{work\-\_\-type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\-\_\-\-\_\-host\-\_\-\-\_\- \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{structcv_1_1gpu_1_1device_1_1CubicFilter_a70c9dd79d6251ef2a0dd14a58e601279}{Cubic\-Filter} (const Ptr2\-D \&src\-\_\-, float fx=0.f, float fy=0.f)
+\item 
+\-\_\-\-\_\-device\-\_\-\-\_\- \hyperlink{structcv_1_1gpu_1_1device_1_1CubicFilter_aa110373ae66f3624d67541afc41264ef}{elem\-\_\-type} \hyperlink{structcv_1_1gpu_1_1device_1_1CubicFilter_a5294b55c0f0108f36ff83ebe73aad1a3}{operator()} (float \hyperlink{highgui__c_8h_af1202c02b14870c18fb3a1da73e9e7c7}{y}, float \hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x}) const 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \-\_\-\-\_\-device\-\_\-\-\_\- \\*
+\-\_\-\-\_\-forceinline\-\_\-\-\_\- float \hyperlink{structcv_1_1gpu_1_1device_1_1CubicFilter_a61b84b1e8dbe679eac074b0e5aa6bf5f}{bicubic\-Coeff} (float x\-\_\-)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const Ptr2\-D \hyperlink{structcv_1_1gpu_1_1device_1_1CubicFilter_a174b1388cc09fe57c4ffb92836b53638}{src}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{structcv_1_1gpu_1_1device_1_1CubicFilter_aa110373ae66f3624d67541afc41264ef}{\index{cv\-::gpu\-::device\-::\-Cubic\-Filter@{cv\-::gpu\-::device\-::\-Cubic\-Filter}!elem\-\_\-type@{elem\-\_\-type}}
+\index{elem\-\_\-type@{elem\-\_\-type}!cv::gpu::device::CubicFilter@{cv\-::gpu\-::device\-::\-Cubic\-Filter}}
+\subsubsection[{elem\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Ptr2\-D $>$ typedef Ptr2\-D\-::elem\-\_\-type {\bf cv\-::gpu\-::device\-::\-Cubic\-Filter}$<$ Ptr2\-D $>$\-::{\bf elem\-\_\-type}}}\label{structcv_1_1gpu_1_1device_1_1CubicFilter_aa110373ae66f3624d67541afc41264ef}
+\hypertarget{structcv_1_1gpu_1_1device_1_1CubicFilter_ad5a5d76f07537ca8cc64ec366ac691c4}{\index{cv\-::gpu\-::device\-::\-Cubic\-Filter@{cv\-::gpu\-::device\-::\-Cubic\-Filter}!index\-\_\-type@{index\-\_\-type}}
+\index{index\-\_\-type@{index\-\_\-type}!cv::gpu::device::CubicFilter@{cv\-::gpu\-::device\-::\-Cubic\-Filter}}
+\subsubsection[{index\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Ptr2\-D $>$ typedef float {\bf cv\-::gpu\-::device\-::\-Cubic\-Filter}$<$ Ptr2\-D $>$\-::{\bf index\-\_\-type}}}\label{structcv_1_1gpu_1_1device_1_1CubicFilter_ad5a5d76f07537ca8cc64ec366ac691c4}
+\hypertarget{structcv_1_1gpu_1_1device_1_1CubicFilter_a2e4c3b9d18f4f3f2e002d8f66144e655}{\index{cv\-::gpu\-::device\-::\-Cubic\-Filter@{cv\-::gpu\-::device\-::\-Cubic\-Filter}!work\-\_\-type@{work\-\_\-type}}
+\index{work\-\_\-type@{work\-\_\-type}!cv::gpu::device::CubicFilter@{cv\-::gpu\-::device\-::\-Cubic\-Filter}}
+\subsubsection[{work\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Ptr2\-D $>$ typedef {\bf Type\-Vec}$<$float, {\bf Vec\-Traits}$<${\bf elem\-\_\-type}$>$\-::cn$>$\-::vec\-\_\-type {\bf cv\-::gpu\-::device\-::\-Cubic\-Filter}$<$ Ptr2\-D $>$\-::{\bf work\-\_\-type}}}\label{structcv_1_1gpu_1_1device_1_1CubicFilter_a2e4c3b9d18f4f3f2e002d8f66144e655}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structcv_1_1gpu_1_1device_1_1CubicFilter_a70c9dd79d6251ef2a0dd14a58e601279}{\index{cv\-::gpu\-::device\-::\-Cubic\-Filter@{cv\-::gpu\-::device\-::\-Cubic\-Filter}!Cubic\-Filter@{Cubic\-Filter}}
+\index{Cubic\-Filter@{Cubic\-Filter}!cv::gpu::device::CubicFilter@{cv\-::gpu\-::device\-::\-Cubic\-Filter}}
+\subsubsection[{Cubic\-Filter}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Ptr2\-D $>$ \-\_\-\-\_\-host\-\_\-\-\_\- \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- {\bf cv\-::gpu\-::device\-::\-Cubic\-Filter}$<$ Ptr2\-D $>$\-::{\bf Cubic\-Filter} (
+\begin{DoxyParamCaption}
+\item[{const Ptr2\-D \&}]{src\-\_\-, }
+\item[{float}]{fx = {\ttfamily 0.f}, }
+\item[{float}]{fy = {\ttfamily 0.f}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{structcv_1_1gpu_1_1device_1_1CubicFilter_a70c9dd79d6251ef2a0dd14a58e601279}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{structcv_1_1gpu_1_1device_1_1CubicFilter_a70c9dd79d6251ef2a0dd14a58e601279_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structcv_1_1gpu_1_1device_1_1CubicFilter_a61b84b1e8dbe679eac074b0e5aa6bf5f}{\index{cv\-::gpu\-::device\-::\-Cubic\-Filter@{cv\-::gpu\-::device\-::\-Cubic\-Filter}!bicubic\-Coeff@{bicubic\-Coeff}}
+\index{bicubic\-Coeff@{bicubic\-Coeff}!cv::gpu::device::CubicFilter@{cv\-::gpu\-::device\-::\-Cubic\-Filter}}
+\subsubsection[{bicubic\-Coeff}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Ptr2\-D $>$ static \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- float {\bf cv\-::gpu\-::device\-::\-Cubic\-Filter}$<$ Ptr2\-D $>$\-::bicubic\-Coeff (
+\begin{DoxyParamCaption}
+\item[{float}]{x\-\_\-}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{structcv_1_1gpu_1_1device_1_1CubicFilter_a61b84b1e8dbe679eac074b0e5aa6bf5f}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structcv_1_1gpu_1_1device_1_1CubicFilter_a61b84b1e8dbe679eac074b0e5aa6bf5f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{structcv_1_1gpu_1_1device_1_1CubicFilter_a5294b55c0f0108f36ff83ebe73aad1a3}{\index{cv\-::gpu\-::device\-::\-Cubic\-Filter@{cv\-::gpu\-::device\-::\-Cubic\-Filter}!operator()@{operator()}}
+\index{operator()@{operator()}!cv::gpu::device::CubicFilter@{cv\-::gpu\-::device\-::\-Cubic\-Filter}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Ptr2\-D $>$ \-\_\-\-\_\-device\-\_\-\-\_\- {\bf elem\-\_\-type} {\bf cv\-::gpu\-::device\-::\-Cubic\-Filter}$<$ Ptr2\-D $>$\-::operator() (
+\begin{DoxyParamCaption}
+\item[{float}]{y, }
+\item[{float}]{x}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{structcv_1_1gpu_1_1device_1_1CubicFilter_a5294b55c0f0108f36ff83ebe73aad1a3}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structcv_1_1gpu_1_1device_1_1CubicFilter_a5294b55c0f0108f36ff83ebe73aad1a3_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structcv_1_1gpu_1_1device_1_1CubicFilter_a174b1388cc09fe57c4ffb92836b53638}{\index{cv\-::gpu\-::device\-::\-Cubic\-Filter@{cv\-::gpu\-::device\-::\-Cubic\-Filter}!src@{src}}
+\index{src@{src}!cv::gpu::device::CubicFilter@{cv\-::gpu\-::device\-::\-Cubic\-Filter}}
+\subsubsection[{src}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Ptr2\-D $>$ const Ptr2\-D {\bf cv\-::gpu\-::device\-::\-Cubic\-Filter}$<$ Ptr2\-D $>$\-::src}}\label{structcv_1_1gpu_1_1device_1_1CubicFilter_a174b1388cc09fe57c4ffb92836b53638}
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/gpu/device/\hyperlink{filters_8hpp}{filters.\-hpp}\end{DoxyCompactItemize}

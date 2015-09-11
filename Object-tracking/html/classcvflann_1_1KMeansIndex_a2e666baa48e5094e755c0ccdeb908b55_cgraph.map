@@ -1,0 +1,5 @@
+<map id="cvflann::KMeansIndex::findNeighbors" name="cvflann::KMeansIndex::findNeighbors">
+<area shape="rect" id="node2" href="$namespacecvflann.html#a6ea20e8aad20212544cb42368c1e5b5f" title="cvflann::get_param" alt="" coords="216,5,349,32"/>
+<area shape="rect" id="node3" href="$classcvflann_1_1Heap.html#a6c6d2fd6b7522e13049389ab4ae0e0ab" title="cvflann::Heap::popMin" alt="" coords="206,56,359,83"/>
+<area shape="rect" id="node4" href="$classcvflann_1_1ResultSet.html#a8e29e42b9f3eb9c636f19927f46c8db4" title="cvflann::ResultSet\l::full" alt="" coords="217,107,348,149"/>
+</map>

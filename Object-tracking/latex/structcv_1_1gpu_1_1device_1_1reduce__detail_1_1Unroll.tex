@@ -1,0 +1,85 @@
+\hypertarget{structcv_1_1gpu_1_1device_1_1reduce__detail_1_1Unroll}{\section{cv\-:\-:gpu\-:\-:device\-:\-:reduce\-\_\-detail\-:\-:Unroll$<$ I, Pointer, Reference, Op $>$ Struct Template Reference}
+\label{structcv_1_1gpu_1_1device_1_1reduce__detail_1_1Unroll}\index{cv\-::gpu\-::device\-::reduce\-\_\-detail\-::\-Unroll$<$ I, Pointer, Reference, Op $>$@{cv\-::gpu\-::device\-::reduce\-\_\-detail\-::\-Unroll$<$ I, Pointer, Reference, Op $>$}}
+}
+
+
+{\ttfamily \#include $<$reduce.\-hpp$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \-\_\-\-\_\-device\-\_\-\-\_\- \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{structcv_1_1gpu_1_1device_1_1reduce__detail_1_1Unroll_aa22f16c42584d64c4f2089ccac393f7d}{loop\-Shfl} (Reference val, Op op, unsigned int N)
+\item 
+static \-\_\-\-\_\-device\-\_\-\-\_\- \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{structcv_1_1gpu_1_1device_1_1reduce__detail_1_1Unroll_a00c7372deefa36fb586952f6fe08c6a3}{loop} (Pointer smem, Reference val, unsigned int tid, Op op)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structcv_1_1gpu_1_1device_1_1reduce__detail_1_1Unroll_a00c7372deefa36fb586952f6fe08c6a3}{\index{cv\-::gpu\-::device\-::reduce\-\_\-detail\-::\-Unroll@{cv\-::gpu\-::device\-::reduce\-\_\-detail\-::\-Unroll}!loop@{loop}}
+\index{loop@{loop}!cv::gpu::device::reduce_detail::Unroll@{cv\-::gpu\-::device\-::reduce\-\_\-detail\-::\-Unroll}}
+\subsubsection[{loop}]{\setlength{\rightskip}{0pt plus 5cm}template$<$unsigned int I, typename Pointer , typename Reference , class Op $>$ static \-\_\-\-\_\-device\-\_\-\-\_\- {\bf void} {\bf cv\-::gpu\-::device\-::reduce\-\_\-detail\-::\-Unroll}$<$ I, Pointer, Reference, Op $>$\-::loop (
+\begin{DoxyParamCaption}
+\item[{Pointer}]{smem, }
+\item[{Reference}]{val, }
+\item[{unsigned int}]{tid, }
+\item[{Op}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{structcv_1_1gpu_1_1device_1_1reduce__detail_1_1Unroll_a00c7372deefa36fb586952f6fe08c6a3}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structcv_1_1gpu_1_1device_1_1reduce__detail_1_1Unroll_a00c7372deefa36fb586952f6fe08c6a3_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structcv_1_1gpu_1_1device_1_1reduce__detail_1_1Unroll_a00c7372deefa36fb586952f6fe08c6a3_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{structcv_1_1gpu_1_1device_1_1reduce__detail_1_1Unroll_aa22f16c42584d64c4f2089ccac393f7d}{\index{cv\-::gpu\-::device\-::reduce\-\_\-detail\-::\-Unroll@{cv\-::gpu\-::device\-::reduce\-\_\-detail\-::\-Unroll}!loop\-Shfl@{loop\-Shfl}}
+\index{loop\-Shfl@{loop\-Shfl}!cv::gpu::device::reduce_detail::Unroll@{cv\-::gpu\-::device\-::reduce\-\_\-detail\-::\-Unroll}}
+\subsubsection[{loop\-Shfl}]{\setlength{\rightskip}{0pt plus 5cm}template$<$unsigned int I, typename Pointer , typename Reference , class Op $>$ static \-\_\-\-\_\-device\-\_\-\-\_\- {\bf void} {\bf cv\-::gpu\-::device\-::reduce\-\_\-detail\-::\-Unroll}$<$ I, Pointer, Reference, Op $>$\-::loop\-Shfl (
+\begin{DoxyParamCaption}
+\item[{Reference}]{val, }
+\item[{Op}]{op, }
+\item[{unsigned int}]{N}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{structcv_1_1gpu_1_1device_1_1reduce__detail_1_1Unroll_aa22f16c42584d64c4f2089ccac393f7d}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structcv_1_1gpu_1_1device_1_1reduce__detail_1_1Unroll_aa22f16c42584d64c4f2089ccac393f7d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structcv_1_1gpu_1_1device_1_1reduce__detail_1_1Unroll_aa22f16c42584d64c4f2089ccac393f7d_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/gpu/device/detail/\hyperlink{detail_2reduce_8hpp}{reduce.\-hpp}\end{DoxyCompactItemize}

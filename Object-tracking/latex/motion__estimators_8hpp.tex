@@ -1,0 +1,59 @@
+\hypertarget{motion__estimators_8hpp}{\section{/usr/include/opencv2/stitching/detail/motion\-\_\-estimators.hpp File Reference}
+\label{motion__estimators_8hpp}\index{/usr/include/opencv2/stitching/detail/motion\-\_\-estimators.\-hpp@{/usr/include/opencv2/stitching/detail/motion\-\_\-estimators.\-hpp}}
+}
+{\ttfamily \#include \char`\"{}opencv2/core/core.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}matchers.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}util.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}camera.\-hpp\char`\"{}}\\*
+Include dependency graph for motion\-\_\-estimators.\-hpp\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{motion__estimators_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{motion__estimators_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classcv_1_1detail_1_1Estimator}{cv\-::detail\-::\-Estimator}
+\item 
+class \hyperlink{classcv_1_1detail_1_1HomographyBasedEstimator}{cv\-::detail\-::\-Homography\-Based\-Estimator}
+\item 
+class \hyperlink{classcv_1_1detail_1_1BundleAdjusterBase}{cv\-::detail\-::\-Bundle\-Adjuster\-Base}
+\item 
+class \hyperlink{classcv_1_1detail_1_1BundleAdjusterReproj}{cv\-::detail\-::\-Bundle\-Adjuster\-Reproj}
+\item 
+class \hyperlink{classcv_1_1detail_1_1BundleAdjusterRay}{cv\-::detail\-::\-Bundle\-Adjuster\-Ray}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacecv}{cv}
+\item 
+\hyperlink{namespacecv_1_1detail}{cv\-::detail}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespacecv_1_1detail_a83b24d4c3e93584986a56d9e43b9cf7f}{cv\-::detail\-::\-Wave\-Correct\-Kind} \{ \hyperlink{namespacecv_1_1detail_a83b24d4c3e93584986a56d9e43b9cf7faa9e3a58207a58e3245aab95af18b68a9}{cv\-::detail\-::\-W\-A\-V\-E\-\_\-\-C\-O\-R\-R\-E\-C\-T\-\_\-\-H\-O\-R\-I\-Z}, 
+\hyperlink{namespacecv_1_1detail_a83b24d4c3e93584986a56d9e43b9cf7fa3d3661394e07da0c7c51ddeb84851212}{cv\-::detail\-::\-W\-A\-V\-E\-\_\-\-C\-O\-R\-R\-E\-C\-T\-\_\-\-V\-E\-R\-T}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{namespacecv_1_1detail_ac583c4f246034e2323519c4af6da4b90}{cv\-::detail\-::wave\-Correct} (std\-::vector$<$ Mat $>$ \&rmats, Wave\-Correct\-Kind kind)
+\item 
+std\-::string \hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{namespacecv_1_1detail_a2b91adde40886380da4ad9c966c70373}{cv\-::detail\-::matches\-Graph\-As\-String} (std\-::vector$<$ std\-::string $>$ \&pathes, std\-::vector$<$ Matches\-Info $>$ \&pairwise\-\_\-matches, float conf\-\_\-threshold)
+\item 
+std\-::vector$<$ int $>$ \hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{namespacecv_1_1detail_afba361771da1902ccebe2655d1c705e7}{cv\-::detail\-::leave\-Biggest\-Component} (std\-::vector$<$ Image\-Features $>$ \&features, std\-::vector$<$ Matches\-Info $>$ \&pairwise\-\_\-matches, float conf\-\_\-threshold)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{namespacecv_1_1detail_aba0b4a98942144a2cfb7a82a39e2fdc1}{cv\-::detail\-::find\-Max\-Spanning\-Tree} (int num\-\_\-images, const std\-::vector$<$ Matches\-Info $>$ \&pairwise\-\_\-matches, Graph \&span\-\_\-tree, std\-::vector$<$ int $>$ \&centers)
+\end{DoxyCompactItemize}

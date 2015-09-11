@@ -1,0 +1,7 @@
+<map id="cv::ocl::oclMat::oclchannels" name="cv::ocl::oclMat::oclchannels">
+<area shape="rect" id="node2" href="$classcv_1_1ocl_1_1oclMat.html#a1de55188d5af96a1a022d3133552ffd9" title="returns element size in bytes, " alt="" coords="240,56,411,83"/>
+<area shape="rect" id="node6" href="$classcv_1_1ocl_1_1oclMat.html#a0a9f2229824edf123947d5cb54d828fe" title="cv::ocl::oclMat::ocltype" alt="" coords="246,107,405,133"/>
+<area shape="rect" id="node3" href="$classcv_1_1ocl_1_1oclMat.html#a23929ec8c2874a22b575524e50c073e6" title="creates a matrix header for a part of the bigger matrix " alt="" coords="469,5,624,32"/>
+<area shape="rect" id="node4" href="$classcv_1_1ocl_1_1oclMat.html#ac5162869d68bd8a82339b2287136c079" title="locates oclMatrix header within a parent oclMatrix. See below " alt="" coords="459,56,634,83"/>
+<area shape="rect" id="node5" href="$classcv_1_1ocl_1_1oclMat.html#a6303d07326fb07501d21153c2c5d6a2a" title="moves/resizes the current oclMatrix ROI inside the parent oclMatrix. " alt="" coords="683,81,858,108"/>
+</map>

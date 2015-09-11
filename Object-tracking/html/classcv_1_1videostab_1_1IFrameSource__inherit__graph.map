@@ -1,0 +1,6 @@
+<map id="cv::videostab::IFrameSource" name="cv::videostab::IFrameSource">
+<area shape="rect" id="node2" href="$classcv_1_1videostab_1_1NullFrameSource.html" title="cv::videostab::NullFrame\lSource" alt="" coords="271,5,439,46"/>
+<area shape="rect" id="node3" href="$classcv_1_1videostab_1_1OnePassStabilizer.html" title="cv::videostab::OnePassStabilizer" alt="" coords="247,71,463,97"/>
+<area shape="rect" id="node4" href="$classcv_1_1videostab_1_1TwoPassStabilizer.html" title="cv::videostab::TwoPassStabilizer" alt="" coords="246,121,463,148"/>
+<area shape="rect" id="node5" href="$classcv_1_1videostab_1_1VideoFileSource.html" title="cv::videostab::VideoFile\lSource" alt="" coords="273,173,436,214"/>
+</map>

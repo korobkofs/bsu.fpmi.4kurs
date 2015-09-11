@@ -1,0 +1,113 @@
+\hypertarget{classcv_1_1gpu_1_1BroxOpticalFlow}{\section{cv\-:\-:gpu\-:\-:Brox\-Optical\-Flow Class Reference}
+\label{classcv_1_1gpu_1_1BroxOpticalFlow}\index{cv\-::gpu\-::\-Brox\-Optical\-Flow@{cv\-::gpu\-::\-Brox\-Optical\-Flow}}
+}
+
+
+{\ttfamily \#include $<$gpu.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcv_1_1gpu_1_1BroxOpticalFlow_a21c7bb316c354657ed6272c791c2754f}{Brox\-Optical\-Flow} (float alpha\-\_\-, float gamma\-\_\-, float scale\-\_\-factor\-\_\-, int inner\-\_\-iterations\-\_\-, int outer\-\_\-iterations\-\_\-, int solver\-\_\-iterations\-\_\-)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1BroxOpticalFlow_a517ca89c79866cfb39f7606b7ac7ab4f}{operator()} (const Gpu\-Mat \&frame0, const Gpu\-Mat \&frame1, Gpu\-Mat \&u, Gpu\-Mat \&v, \hyperlink{classcv_1_1gpu_1_1Stream}{Stream} \&stream=\hyperlink{classcv_1_1gpu_1_1Stream_af96c23564834f88333dcb8997df553f1}{Stream\-::\-Null}())
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{classcv_1_1gpu_1_1BroxOpticalFlow_a3cde47ad49aa16be21b776479d76e2a9}{alpha}
+\begin{DoxyCompactList}\small\item\em flow smoothness \end{DoxyCompactList}\item 
+float \hyperlink{classcv_1_1gpu_1_1BroxOpticalFlow_a38340441419110e891bbe148be6ca6ab}{gamma}
+\begin{DoxyCompactList}\small\item\em gradient constancy importance \end{DoxyCompactList}\item 
+float \hyperlink{classcv_1_1gpu_1_1BroxOpticalFlow_add237683953a02e7da3757aa555b7a9f}{scale\-\_\-factor}
+\begin{DoxyCompactList}\small\item\em pyramid scale factor \end{DoxyCompactList}\item 
+int \hyperlink{classcv_1_1gpu_1_1BroxOpticalFlow_ae6cd22cc2991f12a092a5887d769b5d7}{inner\-\_\-iterations}
+\begin{DoxyCompactList}\small\item\em number of lagged non-\/linearity iterations (inner loop) \end{DoxyCompactList}\item 
+int \hyperlink{classcv_1_1gpu_1_1BroxOpticalFlow_a93127c77d03b809ec869f3651162efc0}{outer\-\_\-iterations}
+\begin{DoxyCompactList}\small\item\em number of warping iterations (number of pyramid levels) \end{DoxyCompactList}\item 
+int \hyperlink{classcv_1_1gpu_1_1BroxOpticalFlow_a2d987464ab9a0919409047db591b64ad}{solver\-\_\-iterations}
+\begin{DoxyCompactList}\small\item\em number of linear system solver iterations \end{DoxyCompactList}\item 
+Gpu\-Mat \hyperlink{classcv_1_1gpu_1_1BroxOpticalFlow_a8966537234dabe1808b1b66d1dc8ab04}{buf}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcv_1_1gpu_1_1BroxOpticalFlow_a21c7bb316c354657ed6272c791c2754f}{\index{cv\-::gpu\-::\-Brox\-Optical\-Flow@{cv\-::gpu\-::\-Brox\-Optical\-Flow}!Brox\-Optical\-Flow@{Brox\-Optical\-Flow}}
+\index{Brox\-Optical\-Flow@{Brox\-Optical\-Flow}!cv::gpu::BroxOpticalFlow@{cv\-::gpu\-::\-Brox\-Optical\-Flow}}
+\subsubsection[{Brox\-Optical\-Flow}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::gpu\-::\-Brox\-Optical\-Flow\-::\-Brox\-Optical\-Flow (
+\begin{DoxyParamCaption}
+\item[{float}]{alpha\-\_\-, }
+\item[{float}]{gamma\-\_\-, }
+\item[{float}]{scale\-\_\-factor\-\_\-, }
+\item[{int}]{inner\-\_\-iterations\-\_\-, }
+\item[{int}]{outer\-\_\-iterations\-\_\-, }
+\item[{int}]{solver\-\_\-iterations\-\_\-}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1gpu_1_1BroxOpticalFlow_a21c7bb316c354657ed6272c791c2754f}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcv_1_1gpu_1_1BroxOpticalFlow_a517ca89c79866cfb39f7606b7ac7ab4f}{\index{cv\-::gpu\-::\-Brox\-Optical\-Flow@{cv\-::gpu\-::\-Brox\-Optical\-Flow}!operator()@{operator()}}
+\index{operator()@{operator()}!cv::gpu::BroxOpticalFlow@{cv\-::gpu\-::\-Brox\-Optical\-Flow}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-Brox\-Optical\-Flow\-::operator() (
+\begin{DoxyParamCaption}
+\item[{const Gpu\-Mat \&}]{frame0, }
+\item[{const Gpu\-Mat \&}]{frame1, }
+\item[{Gpu\-Mat \&}]{u, }
+\item[{Gpu\-Mat \&}]{v, }
+\item[{{\bf Stream} \&}]{stream = {\ttfamily {\bf Stream\-::\-Null}()}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1BroxOpticalFlow_a517ca89c79866cfb39f7606b7ac7ab4f}
+Compute optical flow frame0 -\/ source frame (supports only C\-V\-\_\-32\-F\-C1 type) frame1 -\/ frame to track (with the same size and type as frame0) u -\/ flow horizontal component (along x axis) v -\/ flow vertical component (along y axis) 
+
+\subsection{Member Data Documentation}
+\hypertarget{classcv_1_1gpu_1_1BroxOpticalFlow_a3cde47ad49aa16be21b776479d76e2a9}{\index{cv\-::gpu\-::\-Brox\-Optical\-Flow@{cv\-::gpu\-::\-Brox\-Optical\-Flow}!alpha@{alpha}}
+\index{alpha@{alpha}!cv::gpu::BroxOpticalFlow@{cv\-::gpu\-::\-Brox\-Optical\-Flow}}
+\subsubsection[{alpha}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::gpu\-::\-Brox\-Optical\-Flow\-::alpha}}\label{classcv_1_1gpu_1_1BroxOpticalFlow_a3cde47ad49aa16be21b776479d76e2a9}
+
+
+flow smoothness 
+
+\hypertarget{classcv_1_1gpu_1_1BroxOpticalFlow_a8966537234dabe1808b1b66d1dc8ab04}{\index{cv\-::gpu\-::\-Brox\-Optical\-Flow@{cv\-::gpu\-::\-Brox\-Optical\-Flow}!buf@{buf}}
+\index{buf@{buf}!cv::gpu::BroxOpticalFlow@{cv\-::gpu\-::\-Brox\-Optical\-Flow}}
+\subsubsection[{buf}]{\setlength{\rightskip}{0pt plus 5cm}Gpu\-Mat cv\-::gpu\-::\-Brox\-Optical\-Flow\-::buf}}\label{classcv_1_1gpu_1_1BroxOpticalFlow_a8966537234dabe1808b1b66d1dc8ab04}
+\hypertarget{classcv_1_1gpu_1_1BroxOpticalFlow_a38340441419110e891bbe148be6ca6ab}{\index{cv\-::gpu\-::\-Brox\-Optical\-Flow@{cv\-::gpu\-::\-Brox\-Optical\-Flow}!gamma@{gamma}}
+\index{gamma@{gamma}!cv::gpu::BroxOpticalFlow@{cv\-::gpu\-::\-Brox\-Optical\-Flow}}
+\subsubsection[{gamma}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::gpu\-::\-Brox\-Optical\-Flow\-::gamma}}\label{classcv_1_1gpu_1_1BroxOpticalFlow_a38340441419110e891bbe148be6ca6ab}
+
+
+gradient constancy importance 
+
+\hypertarget{classcv_1_1gpu_1_1BroxOpticalFlow_ae6cd22cc2991f12a092a5887d769b5d7}{\index{cv\-::gpu\-::\-Brox\-Optical\-Flow@{cv\-::gpu\-::\-Brox\-Optical\-Flow}!inner\-\_\-iterations@{inner\-\_\-iterations}}
+\index{inner\-\_\-iterations@{inner\-\_\-iterations}!cv::gpu::BroxOpticalFlow@{cv\-::gpu\-::\-Brox\-Optical\-Flow}}
+\subsubsection[{inner\-\_\-iterations}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::gpu\-::\-Brox\-Optical\-Flow\-::inner\-\_\-iterations}}\label{classcv_1_1gpu_1_1BroxOpticalFlow_ae6cd22cc2991f12a092a5887d769b5d7}
+
+
+number of lagged non-\/linearity iterations (inner loop) 
+
+\hypertarget{classcv_1_1gpu_1_1BroxOpticalFlow_a93127c77d03b809ec869f3651162efc0}{\index{cv\-::gpu\-::\-Brox\-Optical\-Flow@{cv\-::gpu\-::\-Brox\-Optical\-Flow}!outer\-\_\-iterations@{outer\-\_\-iterations}}
+\index{outer\-\_\-iterations@{outer\-\_\-iterations}!cv::gpu::BroxOpticalFlow@{cv\-::gpu\-::\-Brox\-Optical\-Flow}}
+\subsubsection[{outer\-\_\-iterations}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::gpu\-::\-Brox\-Optical\-Flow\-::outer\-\_\-iterations}}\label{classcv_1_1gpu_1_1BroxOpticalFlow_a93127c77d03b809ec869f3651162efc0}
+
+
+number of warping iterations (number of pyramid levels) 
+
+\hypertarget{classcv_1_1gpu_1_1BroxOpticalFlow_add237683953a02e7da3757aa555b7a9f}{\index{cv\-::gpu\-::\-Brox\-Optical\-Flow@{cv\-::gpu\-::\-Brox\-Optical\-Flow}!scale\-\_\-factor@{scale\-\_\-factor}}
+\index{scale\-\_\-factor@{scale\-\_\-factor}!cv::gpu::BroxOpticalFlow@{cv\-::gpu\-::\-Brox\-Optical\-Flow}}
+\subsubsection[{scale\-\_\-factor}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::gpu\-::\-Brox\-Optical\-Flow\-::scale\-\_\-factor}}\label{classcv_1_1gpu_1_1BroxOpticalFlow_add237683953a02e7da3757aa555b7a9f}
+
+
+pyramid scale factor 
+
+\hypertarget{classcv_1_1gpu_1_1BroxOpticalFlow_a2d987464ab9a0919409047db591b64ad}{\index{cv\-::gpu\-::\-Brox\-Optical\-Flow@{cv\-::gpu\-::\-Brox\-Optical\-Flow}!solver\-\_\-iterations@{solver\-\_\-iterations}}
+\index{solver\-\_\-iterations@{solver\-\_\-iterations}!cv::gpu::BroxOpticalFlow@{cv\-::gpu\-::\-Brox\-Optical\-Flow}}
+\subsubsection[{solver\-\_\-iterations}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::gpu\-::\-Brox\-Optical\-Flow\-::solver\-\_\-iterations}}\label{classcv_1_1gpu_1_1BroxOpticalFlow_a2d987464ab9a0919409047db591b64ad}
+
+
+number of linear system solver iterations 
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/gpu/\hyperlink{gpu_2gpu_8hpp}{gpu.\-hpp}\end{DoxyCompactItemize}

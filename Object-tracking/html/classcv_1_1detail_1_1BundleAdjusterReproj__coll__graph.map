@@ -1,0 +1,7 @@
+<map id="cv::detail::BundleAdjusterReproj" name="cv::detail::BundleAdjusterReproj">
+<area shape="rect" id="node2" href="$classcv_1_1detail_1_1BundleAdjusterBase.html" title="cv::detail::BundleAdjusterBase" alt="" coords="507,123,709,149"/>
+<area shape="rect" id="node3" href="$classcv_1_1detail_1_1Estimator.html" title="cv::detail::Estimator" alt="" coords="187,5,325,32"/>
+<area shape="rect" id="node4" href="$structcv_1_1detail_1_1ImageFeatures.html" title="cv::detail::ImageFeatures" alt="" coords="171,56,341,83"/>
+<area shape="rect" id="node8" href="$structcv_1_1detail_1_1MatchesInfo.html" title="cv::detail::MatchesInfo" alt="" coords="179,184,333,211"/>
+<area shape="rect" id="node7" href="$structCvTermCriteria.html" title="CvTermCriteria" alt="" coords="201,235,311,261"/>
+</map>

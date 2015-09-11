@@ -1,0 +1,5 @@
+<map id="cv::gpu::device::reduce_key_val_detail::Generic::reduce" name="cv::gpu::device::reduce_key_val_detail::Generic::reduce">
+<area shape="rect" id="node2" href="$namespacecv_1_1gpu_1_1device_1_1reduce__key__val__detail.html#a93640799801039059c028a536a7262c2" title="cv::gpu::device::reduce\l_key_val_detail::loadToSmem" alt="" coords="219,5,416,46"/>
+<area shape="rect" id="node3" href="$namespacecv_1_1gpu_1_1device_1_1reduce__key__val__detail.html#a1348c5a366b58a8f0331c2379f05cbb0" title="cv::gpu::device::reduce\l_key_val_detail::merge" alt="" coords="238,70,397,111"/>
+<area shape="rect" id="node4" href="$namespacecv_1_1gpu_1_1device_1_1reduce__key__val__detail.html#a473a4c406d4a535ae7c751b382f3c844" title="cv::gpu::device::reduce\l_key_val_detail::copyVals" alt="" coords="465,70,639,111"/>
+</map>

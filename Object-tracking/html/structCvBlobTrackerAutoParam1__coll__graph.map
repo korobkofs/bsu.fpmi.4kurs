@@ -1,0 +1,9 @@
+<map id="CvBlobTrackerAutoParam1" name="CvBlobTrackerAutoParam1">
+<area shape="rect" id="node2" href="$classCvBlobDetector.html" title="CvBlobDetector" alt="" coords="173,5,288,32"/>
+<area shape="rect" id="node3" href="$classCvVSModule.html" title="CvVSModule" alt="" coords="5,133,104,160"/>
+<area shape="rect" id="node4" href="$classCvFGDetector.html" title="CvFGDetector" alt="" coords="177,56,284,83"/>
+<area shape="rect" id="node5" href="$classCvBlobTrackAnalysis.html" title="CvBlobTrackAnalysis" alt="" coords="157,107,305,133"/>
+<area shape="rect" id="node6" href="$classCvBlobTrackGen.html" title="CvBlobTrackGen" alt="" coords="169,157,292,184"/>
+<area shape="rect" id="node7" href="$classCvBlobTrackPostProc.html" title="CvBlobTrackPostProc" alt="" coords="155,208,307,235"/>
+<area shape="rect" id="node8" href="$classCvBlobTracker.html" title="CvBlobTracker" alt="" coords="176,259,285,285"/>
+</map>

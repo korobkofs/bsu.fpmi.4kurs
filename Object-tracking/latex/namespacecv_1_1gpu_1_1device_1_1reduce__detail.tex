@@ -1,0 +1,237 @@
+\hypertarget{namespacecv_1_1gpu_1_1device_1_1reduce__detail}{\section{cv\-:\-:gpu\-:\-:device\-:\-:reduce\-\_\-detail Namespace Reference}
+\label{namespacecv_1_1gpu_1_1device_1_1reduce__detail}\index{cv\-::gpu\-::device\-::reduce\-\_\-detail@{cv\-::gpu\-::device\-::reduce\-\_\-detail}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1reduce__detail_1_1GetType}{Get\-Type}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1reduce__detail_1_1GetType_3_01T_01_5_01_4}{Get\-Type$<$ T $\ast$ $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1reduce__detail_1_1GetType_3_01volatile_01T_01_5_01_4}{Get\-Type$<$ volatile T $\ast$ $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1reduce__detail_1_1GetType_3_01T_01_6_01_4}{Get\-Type$<$ T \& $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1reduce__detail_1_1For}{For}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1reduce__detail_1_1For_3_01N_00_01N_01_4}{For$<$ N, N $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1reduce__detail_1_1Generic}{Generic}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1reduce__detail_1_1Unroll}{Unroll}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1reduce__detail_1_1Unroll_3_010_00_01Pointer_00_01Reference_00_01Op_01_4}{Unroll$<$ 0, Pointer, Reference, Op $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1reduce__detail_1_1WarpOptimized}{Warp\-Optimized}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1reduce__detail_1_1GenericOptimized32}{Generic\-Optimized32}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1reduce__detail_1_1StaticIf}{Static\-If}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1reduce__detail_1_1StaticIf_3_01true_00_01T1_00_01T2_01_4}{Static\-If$<$ true, T1, T2 $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1reduce__detail_1_1StaticIf_3_01false_00_01T1_00_01T2_01_4}{Static\-If$<$ false, T1, T2 $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1reduce__detail_1_1IsPowerOf2}{Is\-Power\-Of2}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1reduce__detail_1_1Dispatcher}{Dispatcher}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\\-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1gpu_1_1device_1_1reduce__detail_a53d8fc2c40797c06caca8f9ea93d33d2}{load\-To\-Smem} (volatile \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} $\ast$smem, \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \&val, unsigned int tid)
+\item 
+{\footnotesize template$<$typename T $>$ }\\\-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1gpu_1_1device_1_1reduce__detail_a261236c3c0cccd9f4c73c8683f25e731}{load\-From\-Smem} (volatile \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} $\ast$smem, \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \&val, unsigned int tid)
+\item 
+{\footnotesize template$<$typename P0 , typename P1 , typename P2 , typename P3 , typename P4 , typename P5 , typename P6 , typename P7 , typename P8 , typename P9 , typename R0 , typename R1 , typename R2 , typename R3 , typename R4 , typename R5 , typename R6 , typename R7 , typename R8 , typename R9 $>$ }\\\-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1gpu_1_1device_1_1reduce__detail_a442c9f9e45bb0f1e400baaa9dbf897b6}{load\-To\-Smem} (const thrust\-::tuple$<$ P0, \hyperlink{calib3d_8hpp_a81046431a4ff9a0e8b93536f19efac38}{P1}, \hyperlink{calib3d_8hpp_a704ac1a3954b1c810117417a050e7f76}{P2}, P3, P4, P5, P6, P7, P8, P9 $>$ \&smem, const thrust\-::tuple$<$ R0, \hyperlink{calib3d_8hpp_ab4d5cbb79188a091449ea6430cd5ec59}{R1}, \hyperlink{calib3d_8hpp_a08847b11703596b1db049ef98d450eaa}{R2}, R3, R4, R5, R6, R7, R8, R9 $>$ \&val, unsigned int tid)
+\item 
+{\footnotesize template$<$typename P0 , typename P1 , typename P2 , typename P3 , typename P4 , typename P5 , typename P6 , typename P7 , typename P8 , typename P9 , typename R0 , typename R1 , typename R2 , typename R3 , typename R4 , typename R5 , typename R6 , typename R7 , typename R8 , typename R9 $>$ }\\\-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1gpu_1_1device_1_1reduce__detail_a5480136de68a47e7f32ac4a53571682b}{load\-From\-Smem} (const thrust\-::tuple$<$ P0, \hyperlink{calib3d_8hpp_a81046431a4ff9a0e8b93536f19efac38}{P1}, \hyperlink{calib3d_8hpp_a704ac1a3954b1c810117417a050e7f76}{P2}, P3, P4, P5, P6, P7, P8, P9 $>$ \&smem, const thrust\-::tuple$<$ R0, \hyperlink{calib3d_8hpp_ab4d5cbb79188a091449ea6430cd5ec59}{R1}, \hyperlink{calib3d_8hpp_a08847b11703596b1db049ef98d450eaa}{R2}, R3, R4, R5, R6, R7, R8, R9 $>$ \&val, unsigned int tid)
+\item 
+{\footnotesize template$<$typename T , class Op $>$ }\\\-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1gpu_1_1device_1_1reduce__detail_a5da421bdac170cb8c318e91e77c31fe6}{merge} (volatile \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} $\ast$smem, \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \&val, unsigned int tid, unsigned int \hyperlink{legacy_8hpp_ac867054f00f4be8b1f3ebce6fba31982}{delta}, const Op \&op)
+\item 
+{\footnotesize template$<$typename T , class Op $>$ }\\\-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1gpu_1_1device_1_1reduce__detail_a161a9b41c39044b65c1ba8839611a6e4}{merge\-Shfl} (\hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \&val, unsigned int \hyperlink{legacy_8hpp_ac867054f00f4be8b1f3ebce6fba31982}{delta}, unsigned int \hyperlink{highgui__c_8h_a2474a5474cbff19523a51eb1de01cda4}{width}, const Op \&op)
+\item 
+{\footnotesize template$<$typename P0 , typename P1 , typename P2 , typename P3 , typename P4 , typename P5 , typename P6 , typename P7 , typename P8 , typename P9 , typename R0 , typename R1 , typename R2 , typename R3 , typename R4 , typename R5 , typename R6 , typename R7 , typename R8 , typename R9 , class Op0 , class Op1 , class Op2 , class Op3 , class Op4 , class Op5 , class Op6 , class Op7 , class Op8 , class Op9 $>$ }\\\-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1gpu_1_1device_1_1reduce__detail_a9f5d57fdb71bfb0d167fb47832a7a197}{merge} (const thrust\-::tuple$<$ P0, \hyperlink{calib3d_8hpp_a81046431a4ff9a0e8b93536f19efac38}{P1}, \hyperlink{calib3d_8hpp_a704ac1a3954b1c810117417a050e7f76}{P2}, P3, P4, P5, P6, P7, P8, P9 $>$ \&smem, const thrust\-::tuple$<$ R0, \hyperlink{calib3d_8hpp_ab4d5cbb79188a091449ea6430cd5ec59}{R1}, \hyperlink{calib3d_8hpp_a08847b11703596b1db049ef98d450eaa}{R2}, R3, R4, R5, R6, R7, R8, R9 $>$ \&val, unsigned int tid, unsigned int \hyperlink{legacy_8hpp_ac867054f00f4be8b1f3ebce6fba31982}{delta}, const thrust\-::tuple$<$ Op0, Op1, Op2, Op3, Op4, Op5, Op6, Op7, Op8, Op9 $>$ \&op)
+\item 
+{\footnotesize template$<$typename R0 , typename R1 , typename R2 , typename R3 , typename R4 , typename R5 , typename R6 , typename R7 , typename R8 , typename R9 , class Op0 , class Op1 , class Op2 , class Op3 , class Op4 , class Op5 , class Op6 , class Op7 , class Op8 , class Op9 $>$ }\\\-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1gpu_1_1device_1_1reduce__detail_a65e87aab1cfdbf709ae09e949d52714d}{merge\-Shfl} (const thrust\-::tuple$<$ R0, \hyperlink{calib3d_8hpp_ab4d5cbb79188a091449ea6430cd5ec59}{R1}, \hyperlink{calib3d_8hpp_a08847b11703596b1db049ef98d450eaa}{R2}, R3, R4, R5, R6, R7, R8, R9 $>$ \&val, unsigned int \hyperlink{legacy_8hpp_ac867054f00f4be8b1f3ebce6fba31982}{delta}, unsigned int \hyperlink{highgui__c_8h_a2474a5474cbff19523a51eb1de01cda4}{width}, const thrust\-::tuple$<$ Op0, Op1, Op2, Op3, Op4, Op5, Op6, Op7, Op8, Op9 $>$ \&op)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespacecv_1_1gpu_1_1device_1_1reduce__detail_a261236c3c0cccd9f4c73c8683f25e731}{\index{cv\-::gpu\-::device\-::reduce\-\_\-detail@{cv\-::gpu\-::device\-::reduce\-\_\-detail}!load\-From\-Smem@{load\-From\-Smem}}
+\index{load\-From\-Smem@{load\-From\-Smem}!cv::gpu::device::reduce_detail@{cv\-::gpu\-::device\-::reduce\-\_\-detail}}
+\subsubsection[{load\-From\-Smem}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- {\bf void} cv\-::gpu\-::device\-::reduce\-\_\-detail\-::load\-From\-Smem (
+\begin{DoxyParamCaption}
+\item[{volatile {\bf T} $\ast$}]{smem, }
+\item[{{\bf T} \&}]{val, }
+\item[{unsigned int}]{tid}
+\end{DoxyParamCaption}
+)}}\label{namespacecv_1_1gpu_1_1device_1_1reduce__detail_a261236c3c0cccd9f4c73c8683f25e731}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecv_1_1gpu_1_1device_1_1reduce__detail_a261236c3c0cccd9f4c73c8683f25e731_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespacecv_1_1gpu_1_1device_1_1reduce__detail_a5480136de68a47e7f32ac4a53571682b}{\index{cv\-::gpu\-::device\-::reduce\-\_\-detail@{cv\-::gpu\-::device\-::reduce\-\_\-detail}!load\-From\-Smem@{load\-From\-Smem}}
+\index{load\-From\-Smem@{load\-From\-Smem}!cv::gpu::device::reduce_detail@{cv\-::gpu\-::device\-::reduce\-\_\-detail}}
+\subsubsection[{load\-From\-Smem}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename P0 , typename P1 , typename P2 , typename P3 , typename P4 , typename P5 , typename P6 , typename P7 , typename P8 , typename P9 , typename R0 , typename R1 , typename R2 , typename R3 , typename R4 , typename R5 , typename R6 , typename R7 , typename R8 , typename R9 $>$ \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- {\bf void} cv\-::gpu\-::device\-::reduce\-\_\-detail\-::load\-From\-Smem (
+\begin{DoxyParamCaption}
+\item[{const thrust\-::tuple$<$ P0, {\bf P1}, {\bf P2}, P3, P4, P5, P6, P7, P8, P9 $>$ \&}]{smem, }
+\item[{const thrust\-::tuple$<$ R0, {\bf R1}, {\bf R2}, R3, R4, R5, R6, R7, R8, R9 $>$ \&}]{val, }
+\item[{unsigned int}]{tid}
+\end{DoxyParamCaption}
+)}}\label{namespacecv_1_1gpu_1_1device_1_1reduce__detail_a5480136de68a47e7f32ac4a53571682b}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecv_1_1gpu_1_1device_1_1reduce__detail_a5480136de68a47e7f32ac4a53571682b_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespacecv_1_1gpu_1_1device_1_1reduce__detail_a53d8fc2c40797c06caca8f9ea93d33d2}{\index{cv\-::gpu\-::device\-::reduce\-\_\-detail@{cv\-::gpu\-::device\-::reduce\-\_\-detail}!load\-To\-Smem@{load\-To\-Smem}}
+\index{load\-To\-Smem@{load\-To\-Smem}!cv::gpu::device::reduce_detail@{cv\-::gpu\-::device\-::reduce\-\_\-detail}}
+\subsubsection[{load\-To\-Smem}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- {\bf void} cv\-::gpu\-::device\-::reduce\-\_\-detail\-::load\-To\-Smem (
+\begin{DoxyParamCaption}
+\item[{volatile {\bf T} $\ast$}]{smem, }
+\item[{{\bf T} \&}]{val, }
+\item[{unsigned int}]{tid}
+\end{DoxyParamCaption}
+)}}\label{namespacecv_1_1gpu_1_1device_1_1reduce__detail_a53d8fc2c40797c06caca8f9ea93d33d2}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecv_1_1gpu_1_1device_1_1reduce__detail_a53d8fc2c40797c06caca8f9ea93d33d2_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespacecv_1_1gpu_1_1device_1_1reduce__detail_a442c9f9e45bb0f1e400baaa9dbf897b6}{\index{cv\-::gpu\-::device\-::reduce\-\_\-detail@{cv\-::gpu\-::device\-::reduce\-\_\-detail}!load\-To\-Smem@{load\-To\-Smem}}
+\index{load\-To\-Smem@{load\-To\-Smem}!cv::gpu::device::reduce_detail@{cv\-::gpu\-::device\-::reduce\-\_\-detail}}
+\subsubsection[{load\-To\-Smem}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename P0 , typename P1 , typename P2 , typename P3 , typename P4 , typename P5 , typename P6 , typename P7 , typename P8 , typename P9 , typename R0 , typename R1 , typename R2 , typename R3 , typename R4 , typename R5 , typename R6 , typename R7 , typename R8 , typename R9 $>$ \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- {\bf void} cv\-::gpu\-::device\-::reduce\-\_\-detail\-::load\-To\-Smem (
+\begin{DoxyParamCaption}
+\item[{const thrust\-::tuple$<$ P0, {\bf P1}, {\bf P2}, P3, P4, P5, P6, P7, P8, P9 $>$ \&}]{smem, }
+\item[{const thrust\-::tuple$<$ R0, {\bf R1}, {\bf R2}, R3, R4, R5, R6, R7, R8, R9 $>$ \&}]{val, }
+\item[{unsigned int}]{tid}
+\end{DoxyParamCaption}
+)}}\label{namespacecv_1_1gpu_1_1device_1_1reduce__detail_a442c9f9e45bb0f1e400baaa9dbf897b6}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecv_1_1gpu_1_1device_1_1reduce__detail_a442c9f9e45bb0f1e400baaa9dbf897b6_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespacecv_1_1gpu_1_1device_1_1reduce__detail_a5da421bdac170cb8c318e91e77c31fe6}{\index{cv\-::gpu\-::device\-::reduce\-\_\-detail@{cv\-::gpu\-::device\-::reduce\-\_\-detail}!merge@{merge}}
+\index{merge@{merge}!cv::gpu::device::reduce_detail@{cv\-::gpu\-::device\-::reduce\-\_\-detail}}
+\subsubsection[{merge}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T , class Op $>$ \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- {\bf void} cv\-::gpu\-::device\-::reduce\-\_\-detail\-::merge (
+\begin{DoxyParamCaption}
+\item[{volatile {\bf T} $\ast$}]{smem, }
+\item[{{\bf T} \&}]{val, }
+\item[{unsigned int}]{tid, }
+\item[{unsigned int}]{delta, }
+\item[{const Op \&}]{op}
+\end{DoxyParamCaption}
+)}}\label{namespacecv_1_1gpu_1_1device_1_1reduce__detail_a5da421bdac170cb8c318e91e77c31fe6}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecv_1_1gpu_1_1device_1_1reduce__detail_a5da421bdac170cb8c318e91e77c31fe6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespacecv_1_1gpu_1_1device_1_1reduce__detail_a9f5d57fdb71bfb0d167fb47832a7a197}{\index{cv\-::gpu\-::device\-::reduce\-\_\-detail@{cv\-::gpu\-::device\-::reduce\-\_\-detail}!merge@{merge}}
+\index{merge@{merge}!cv::gpu::device::reduce_detail@{cv\-::gpu\-::device\-::reduce\-\_\-detail}}
+\subsubsection[{merge}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename P0 , typename P1 , typename P2 , typename P3 , typename P4 , typename P5 , typename P6 , typename P7 , typename P8 , typename P9 , typename R0 , typename R1 , typename R2 , typename R3 , typename R4 , typename R5 , typename R6 , typename R7 , typename R8 , typename R9 , class Op0 , class Op1 , class Op2 , class Op3 , class Op4 , class Op5 , class Op6 , class Op7 , class Op8 , class Op9 $>$ \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- {\bf void} cv\-::gpu\-::device\-::reduce\-\_\-detail\-::merge (
+\begin{DoxyParamCaption}
+\item[{const thrust\-::tuple$<$ P0, {\bf P1}, {\bf P2}, P3, P4, P5, P6, P7, P8, P9 $>$ \&}]{smem, }
+\item[{const thrust\-::tuple$<$ R0, {\bf R1}, {\bf R2}, R3, R4, R5, R6, R7, R8, R9 $>$ \&}]{val, }
+\item[{unsigned int}]{tid, }
+\item[{unsigned int}]{delta, }
+\item[{const thrust\-::tuple$<$ Op0, Op1, Op2, Op3, Op4, Op5, Op6, Op7, Op8, Op9 $>$ \&}]{op}
+\end{DoxyParamCaption}
+)}}\label{namespacecv_1_1gpu_1_1device_1_1reduce__detail_a9f5d57fdb71bfb0d167fb47832a7a197}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecv_1_1gpu_1_1device_1_1reduce__detail_a9f5d57fdb71bfb0d167fb47832a7a197_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespacecv_1_1gpu_1_1device_1_1reduce__detail_a161a9b41c39044b65c1ba8839611a6e4}{\index{cv\-::gpu\-::device\-::reduce\-\_\-detail@{cv\-::gpu\-::device\-::reduce\-\_\-detail}!merge\-Shfl@{merge\-Shfl}}
+\index{merge\-Shfl@{merge\-Shfl}!cv::gpu::device::reduce_detail@{cv\-::gpu\-::device\-::reduce\-\_\-detail}}
+\subsubsection[{merge\-Shfl}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T , class Op $>$ \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- {\bf void} cv\-::gpu\-::device\-::reduce\-\_\-detail\-::merge\-Shfl (
+\begin{DoxyParamCaption}
+\item[{{\bf T} \&}]{val, }
+\item[{unsigned int}]{delta, }
+\item[{unsigned int}]{width, }
+\item[{const Op \&}]{op}
+\end{DoxyParamCaption}
+)}}\label{namespacecv_1_1gpu_1_1device_1_1reduce__detail_a161a9b41c39044b65c1ba8839611a6e4}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecv_1_1gpu_1_1device_1_1reduce__detail_a161a9b41c39044b65c1ba8839611a6e4_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecv_1_1gpu_1_1device_1_1reduce__detail_a161a9b41c39044b65c1ba8839611a6e4_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespacecv_1_1gpu_1_1device_1_1reduce__detail_a65e87aab1cfdbf709ae09e949d52714d}{\index{cv\-::gpu\-::device\-::reduce\-\_\-detail@{cv\-::gpu\-::device\-::reduce\-\_\-detail}!merge\-Shfl@{merge\-Shfl}}
+\index{merge\-Shfl@{merge\-Shfl}!cv::gpu::device::reduce_detail@{cv\-::gpu\-::device\-::reduce\-\_\-detail}}
+\subsubsection[{merge\-Shfl}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R0 , typename R1 , typename R2 , typename R3 , typename R4 , typename R5 , typename R6 , typename R7 , typename R8 , typename R9 , class Op0 , class Op1 , class Op2 , class Op3 , class Op4 , class Op5 , class Op6 , class Op7 , class Op8 , class Op9 $>$ \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- {\bf void} cv\-::gpu\-::device\-::reduce\-\_\-detail\-::merge\-Shfl (
+\begin{DoxyParamCaption}
+\item[{const thrust\-::tuple$<$ R0, {\bf R1}, {\bf R2}, R3, R4, R5, R6, R7, R8, R9 $>$ \&}]{val, }
+\item[{unsigned int}]{delta, }
+\item[{unsigned int}]{width, }
+\item[{const thrust\-::tuple$<$ Op0, Op1, Op2, Op3, Op4, Op5, Op6, Op7, Op8, Op9 $>$ \&}]{op}
+\end{DoxyParamCaption}
+)}}\label{namespacecv_1_1gpu_1_1device_1_1reduce__detail_a65e87aab1cfdbf709ae09e949d52714d}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecv_1_1gpu_1_1device_1_1reduce__detail_a65e87aab1cfdbf709ae09e949d52714d_cgraph}
+\end{center}
+\end{figure}
+
+

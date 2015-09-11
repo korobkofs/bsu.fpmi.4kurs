@@ -1,0 +1,12 @@
+<map id="Main::maxMovingRegion" name="Main::maxMovingRegion">
+<area shape="rect" id="node2" href="$ImAcq_8cpp.html#a864124578948857087e2ba9021351e80" title="Determines if there are more frame. " alt="" coords="222,7,378,33"/>
+<area shape="rect" id="node3" href="$ImAcq_8cpp.html#aa2d578629cc485cf191adede101d032f" title="Gets the next image with increase the count of frames. " alt="" coords="249,57,351,84"/>
+<area shape="rect" id="node10" href="$classMain.html#a1be636e85ee5221937fca1d29f344842" title="Determines whether there is motion in the box. " alt="" coords="229,108,371,135"/>
+<area shape="rect" id="node11" href="$classMain.html#a5d36ac4bd55c63eae9b37d194a6017ce" title="Unites the overlapping rectangles. " alt="" coords="226,159,374,185"/>
+<area shape="rect" id="node4" href="$ImAcq_8cpp.html#affd4242000946f8dcf68beed336cb540" title="Grabs the image (for IMACQ_CAM, IMACQ_VID, IMACQ_STREAM). " alt="" coords="686,7,773,33"/>
+<area shape="rect" id="node6" href="$ImAcq_8cpp.html#a302e2a11dfe69f3925807ae0ff9cb2ec" title="Loads the current frame. " alt="" coords="439,83,606,109"/>
+<area shape="rect" id="node8" href="$ImAcq_8cpp.html#adad11684c86a1fcdbb6f736878bba8cc" title="Gets image by current time. " alt="" coords="427,32,618,59"/>
+<area shape="rect" id="node9" href="$ImAcq_8cpp.html#a8f0d4ea2207021c8b2f9884edcb50fee" title="Increases the count of frames. " alt="" coords="467,133,578,160"/>
+<area shape="rect" id="node5" href="$ImAcq_8cpp.html#a2fb18ba9075695bd7dc0a2811ae441cc" title="msleep" alt="" coords="840,7,904,33"/>
+<area shape="rect" id="node7" href="$ImAcq_8cpp.html#ad7a472fe90064b4c9292c879ecea82fe" title="Loads the frame by number. " alt="" coords="667,69,791,96"/>
+</map>

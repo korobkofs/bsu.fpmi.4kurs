@@ -1,0 +1,95 @@
+\hypertarget{classcv_1_1gpu_1_1GoodFeaturesToTrackDetector__GPU}{\section{cv\-:\-:gpu\-:\-:Good\-Features\-To\-Track\-Detector\-\_\-\-G\-P\-U Class Reference}
+\label{classcv_1_1gpu_1_1GoodFeaturesToTrackDetector__GPU}\index{cv\-::gpu\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-G\-P\-U}}
+}
+
+
+{\ttfamily \#include $<$gpu.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcv_1_1gpu_1_1GoodFeaturesToTrackDetector__GPU_a592765f1969b419cbd15e7c6f852dad6}{Good\-Features\-To\-Track\-Detector\-\_\-\-G\-P\-U} (int \hyperlink{classcv_1_1gpu_1_1GoodFeaturesToTrackDetector__GPU_ac1e628216d9e0cef86e53f3804660ea3}{max\-Corners}=1000, double \hyperlink{classcv_1_1gpu_1_1GoodFeaturesToTrackDetector__GPU_a9f5f8a99c745336967c83605ab01adf4}{quality\-Level}=0.\-01, double \hyperlink{classcv_1_1gpu_1_1GoodFeaturesToTrackDetector__GPU_af0ea46c4aec5a06aece948dba21b17c3}{min\-Distance}=0.\-0, int \hyperlink{classcv_1_1gpu_1_1GoodFeaturesToTrackDetector__GPU_a06b3fe45e1f30303c8f50fd9d9d0fe04}{block\-Size}=3, bool \hyperlink{classcv_1_1gpu_1_1GoodFeaturesToTrackDetector__GPU_a5ae93a396eeb8eb0978026d57b14acea}{use\-Harris\-Detector}=false, double \hyperlink{classcv_1_1gpu_1_1GoodFeaturesToTrackDetector__GPU_a17f5ed8317c8f07eac81568971b07bc9}{harris\-K}=0.\-04)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1GoodFeaturesToTrackDetector__GPU_a7c670c51a9f29009aadf1538e133f52d}{operator()} (const Gpu\-Mat \&\hyperlink{legacy_8hpp_ad62b16ab219ae2483e8a3d921c44cc97}{image}, Gpu\-Mat \&\hyperlink{imgproc__c_8h_a223e965e192c7025d6c6be77305f515b}{corners}, const Gpu\-Mat \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}=Gpu\-Mat())
+\begin{DoxyCompactList}\small\item\em return 1 rows matrix with C\-V\-\_\-32\-F\-C2 type \end{DoxyCompactList}\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1GoodFeaturesToTrackDetector__GPU_a202411eb7d3aad5b9233321921b0aada}{release\-Memory} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classcv_1_1gpu_1_1GoodFeaturesToTrackDetector__GPU_ac1e628216d9e0cef86e53f3804660ea3}{max\-Corners}
+\item 
+double \hyperlink{classcv_1_1gpu_1_1GoodFeaturesToTrackDetector__GPU_a9f5f8a99c745336967c83605ab01adf4}{quality\-Level}
+\item 
+double \hyperlink{classcv_1_1gpu_1_1GoodFeaturesToTrackDetector__GPU_af0ea46c4aec5a06aece948dba21b17c3}{min\-Distance}
+\item 
+int \hyperlink{classcv_1_1gpu_1_1GoodFeaturesToTrackDetector__GPU_a06b3fe45e1f30303c8f50fd9d9d0fe04}{block\-Size}
+\item 
+bool \hyperlink{classcv_1_1gpu_1_1GoodFeaturesToTrackDetector__GPU_a5ae93a396eeb8eb0978026d57b14acea}{use\-Harris\-Detector}
+\item 
+double \hyperlink{classcv_1_1gpu_1_1GoodFeaturesToTrackDetector__GPU_a17f5ed8317c8f07eac81568971b07bc9}{harris\-K}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcv_1_1gpu_1_1GoodFeaturesToTrackDetector__GPU_a592765f1969b419cbd15e7c6f852dad6}{\index{cv\-::gpu\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-G\-P\-U}!Good\-Features\-To\-Track\-Detector\-\_\-\-G\-P\-U@{Good\-Features\-To\-Track\-Detector\-\_\-\-G\-P\-U}}
+\index{Good\-Features\-To\-Track\-Detector\-\_\-\-G\-P\-U@{Good\-Features\-To\-Track\-Detector\-\_\-\-G\-P\-U}!cv::gpu::GoodFeaturesToTrackDetector_GPU@{cv\-::gpu\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-G\-P\-U}}
+\subsubsection[{Good\-Features\-To\-Track\-Detector\-\_\-\-G\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::gpu\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-G\-P\-U\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-G\-P\-U (
+\begin{DoxyParamCaption}
+\item[{int}]{max\-Corners = {\ttfamily 1000}, }
+\item[{double}]{quality\-Level = {\ttfamily 0.01}, }
+\item[{double}]{min\-Distance = {\ttfamily 0.0}, }
+\item[{int}]{block\-Size = {\ttfamily 3}, }
+\item[{bool}]{use\-Harris\-Detector = {\ttfamily false}, }
+\item[{double}]{harris\-K = {\ttfamily 0.04}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classcv_1_1gpu_1_1GoodFeaturesToTrackDetector__GPU_a592765f1969b419cbd15e7c6f852dad6}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcv_1_1gpu_1_1GoodFeaturesToTrackDetector__GPU_a7c670c51a9f29009aadf1538e133f52d}{\index{cv\-::gpu\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-G\-P\-U}!operator()@{operator()}}
+\index{operator()@{operator()}!cv::gpu::GoodFeaturesToTrackDetector_GPU@{cv\-::gpu\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-G\-P\-U}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-G\-P\-U\-::operator() (
+\begin{DoxyParamCaption}
+\item[{const Gpu\-Mat \&}]{image, }
+\item[{Gpu\-Mat \&}]{corners, }
+\item[{const Gpu\-Mat \&}]{mask = {\ttfamily GpuMat()}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1GoodFeaturesToTrackDetector__GPU_a7c670c51a9f29009aadf1538e133f52d}
+
+
+return 1 rows matrix with C\-V\-\_\-32\-F\-C2 type 
+
+\hypertarget{classcv_1_1gpu_1_1GoodFeaturesToTrackDetector__GPU_a202411eb7d3aad5b9233321921b0aada}{\index{cv\-::gpu\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-G\-P\-U}!release\-Memory@{release\-Memory}}
+\index{release\-Memory@{release\-Memory}!cv::gpu::GoodFeaturesToTrackDetector_GPU@{cv\-::gpu\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-G\-P\-U}}
+\subsubsection[{release\-Memory}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-G\-P\-U\-::release\-Memory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1gpu_1_1GoodFeaturesToTrackDetector__GPU_a202411eb7d3aad5b9233321921b0aada}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcv_1_1gpu_1_1GoodFeaturesToTrackDetector__GPU_a06b3fe45e1f30303c8f50fd9d9d0fe04}{\index{cv\-::gpu\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-G\-P\-U}!block\-Size@{block\-Size}}
+\index{block\-Size@{block\-Size}!cv::gpu::GoodFeaturesToTrackDetector_GPU@{cv\-::gpu\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-G\-P\-U}}
+\subsubsection[{block\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::gpu\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-G\-P\-U\-::block\-Size}}\label{classcv_1_1gpu_1_1GoodFeaturesToTrackDetector__GPU_a06b3fe45e1f30303c8f50fd9d9d0fe04}
+\hypertarget{classcv_1_1gpu_1_1GoodFeaturesToTrackDetector__GPU_a17f5ed8317c8f07eac81568971b07bc9}{\index{cv\-::gpu\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-G\-P\-U}!harris\-K@{harris\-K}}
+\index{harris\-K@{harris\-K}!cv::gpu::GoodFeaturesToTrackDetector_GPU@{cv\-::gpu\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-G\-P\-U}}
+\subsubsection[{harris\-K}]{\setlength{\rightskip}{0pt plus 5cm}double cv\-::gpu\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-G\-P\-U\-::harris\-K}}\label{classcv_1_1gpu_1_1GoodFeaturesToTrackDetector__GPU_a17f5ed8317c8f07eac81568971b07bc9}
+\hypertarget{classcv_1_1gpu_1_1GoodFeaturesToTrackDetector__GPU_ac1e628216d9e0cef86e53f3804660ea3}{\index{cv\-::gpu\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-G\-P\-U}!max\-Corners@{max\-Corners}}
+\index{max\-Corners@{max\-Corners}!cv::gpu::GoodFeaturesToTrackDetector_GPU@{cv\-::gpu\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-G\-P\-U}}
+\subsubsection[{max\-Corners}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::gpu\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-G\-P\-U\-::max\-Corners}}\label{classcv_1_1gpu_1_1GoodFeaturesToTrackDetector__GPU_ac1e628216d9e0cef86e53f3804660ea3}
+\hypertarget{classcv_1_1gpu_1_1GoodFeaturesToTrackDetector__GPU_af0ea46c4aec5a06aece948dba21b17c3}{\index{cv\-::gpu\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-G\-P\-U}!min\-Distance@{min\-Distance}}
+\index{min\-Distance@{min\-Distance}!cv::gpu::GoodFeaturesToTrackDetector_GPU@{cv\-::gpu\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-G\-P\-U}}
+\subsubsection[{min\-Distance}]{\setlength{\rightskip}{0pt plus 5cm}double cv\-::gpu\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-G\-P\-U\-::min\-Distance}}\label{classcv_1_1gpu_1_1GoodFeaturesToTrackDetector__GPU_af0ea46c4aec5a06aece948dba21b17c3}
+\hypertarget{classcv_1_1gpu_1_1GoodFeaturesToTrackDetector__GPU_a9f5f8a99c745336967c83605ab01adf4}{\index{cv\-::gpu\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-G\-P\-U}!quality\-Level@{quality\-Level}}
+\index{quality\-Level@{quality\-Level}!cv::gpu::GoodFeaturesToTrackDetector_GPU@{cv\-::gpu\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-G\-P\-U}}
+\subsubsection[{quality\-Level}]{\setlength{\rightskip}{0pt plus 5cm}double cv\-::gpu\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-G\-P\-U\-::quality\-Level}}\label{classcv_1_1gpu_1_1GoodFeaturesToTrackDetector__GPU_a9f5f8a99c745336967c83605ab01adf4}
+\hypertarget{classcv_1_1gpu_1_1GoodFeaturesToTrackDetector__GPU_a5ae93a396eeb8eb0978026d57b14acea}{\index{cv\-::gpu\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-G\-P\-U}!use\-Harris\-Detector@{use\-Harris\-Detector}}
+\index{use\-Harris\-Detector@{use\-Harris\-Detector}!cv::gpu::GoodFeaturesToTrackDetector_GPU@{cv\-::gpu\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-G\-P\-U}}
+\subsubsection[{use\-Harris\-Detector}]{\setlength{\rightskip}{0pt plus 5cm}bool cv\-::gpu\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-G\-P\-U\-::use\-Harris\-Detector}}\label{classcv_1_1gpu_1_1GoodFeaturesToTrackDetector__GPU_a5ae93a396eeb8eb0978026d57b14acea}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/gpu/\hyperlink{gpu_2gpu_8hpp}{gpu.\-hpp}\end{DoxyCompactItemize}

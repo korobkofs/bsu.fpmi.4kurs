@@ -1,0 +1,4 @@
+<map id="CvAbstractCamera" name="CvAbstractCamera">
+<area shape="rect" id="node3" href="$interfaceCvPhotoCamera.html" title="CvPhotoCamera" alt="" coords="5,155,123,181"/>
+<area shape="rect" id="node4" href="$interfaceCvVideoCamera.html" title="CvVideoCamera" alt="" coords="147,155,265,181"/>
+</map>

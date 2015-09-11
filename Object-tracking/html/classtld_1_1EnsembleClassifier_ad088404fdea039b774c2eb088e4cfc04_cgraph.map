@@ -1,0 +1,5 @@
+<map id="tld::EnsembleClassifier::learn" name="tld::EnsembleClassifier::learn">
+<area shape="rect" id="node2" href="$classtld_1_1EnsembleClassifier.html#a61bfb5ac45a8ab7f3c36c9c30dc7f927" title="Calculates the verdict of trees (0 to 1). " alt="" coords="211,5,368,46"/>
+<area shape="rect" id="node3" href="$classtld_1_1EnsembleClassifier.html#a0d7853e4cee2e0220c218f43ae78b5a9" title="Updates positive or negative branches and posteriors for all tree. " alt="" coords="211,70,368,111"/>
+<area shape="rect" id="node4" href="$classtld_1_1EnsembleClassifier.html#acfc0c9d71c16dfed9750b6aa409afb0c" title="Updates positive or negative branches and posteriors for one tree. " alt="" coords="416,70,573,111"/>
+</map>

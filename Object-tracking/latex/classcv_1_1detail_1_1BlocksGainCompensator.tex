@@ -1,0 +1,81 @@
+\hypertarget{classcv_1_1detail_1_1BlocksGainCompensator}{\section{cv\-:\-:detail\-:\-:Blocks\-Gain\-Compensator Class Reference}
+\label{classcv_1_1detail_1_1BlocksGainCompensator}\index{cv\-::detail\-::\-Blocks\-Gain\-Compensator@{cv\-::detail\-::\-Blocks\-Gain\-Compensator}}
+}
+
+
+{\ttfamily \#include $<$exposure\-\_\-compensate.\-hpp$>$}
+
+
+
+Inheritance diagram for cv\-:\-:detail\-:\-:Blocks\-Gain\-Compensator\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{classcv_1_1detail_1_1BlocksGainCompensator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for cv\-:\-:detail\-:\-:Blocks\-Gain\-Compensator\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{classcv_1_1detail_1_1BlocksGainCompensator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcv_1_1detail_1_1BlocksGainCompensator_a51f8b3895b04b90a79457b7b552db220}{Blocks\-Gain\-Compensator} (int bl\-\_\-width=32, int bl\-\_\-height=32)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1detail_1_1BlocksGainCompensator_ae9b080a3ba1d6147e48cde4197575081}{feed} (const std\-::vector$<$ Point $>$ \&\hyperlink{imgproc__c_8h_a223e965e192c7025d6c6be77305f515b}{corners}, const std\-::vector$<$ Mat $>$ \&images, const std\-::vector$<$ std\-::pair$<$ Mat, \hyperlink{core_2types__c_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar} $>$ $>$ \&masks)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1detail_1_1BlocksGainCompensator_a5cd77a324b1113a8446b1d290562c0b7}{apply} (int \hyperlink{core__c_8h_a750b5d744c39a06bfb13e6eb010e35d0}{index}, Point corner, Mat \&\hyperlink{legacy_8hpp_ad62b16ab219ae2483e8a3d921c44cc97}{image}, const Mat \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask})
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcv_1_1detail_1_1BlocksGainCompensator_a51f8b3895b04b90a79457b7b552db220}{\index{cv\-::detail\-::\-Blocks\-Gain\-Compensator@{cv\-::detail\-::\-Blocks\-Gain\-Compensator}!Blocks\-Gain\-Compensator@{Blocks\-Gain\-Compensator}}
+\index{Blocks\-Gain\-Compensator@{Blocks\-Gain\-Compensator}!cv::detail::BlocksGainCompensator@{cv\-::detail\-::\-Blocks\-Gain\-Compensator}}
+\subsubsection[{Blocks\-Gain\-Compensator}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::detail\-::\-Blocks\-Gain\-Compensator\-::\-Blocks\-Gain\-Compensator (
+\begin{DoxyParamCaption}
+\item[{int}]{bl\-\_\-width = {\ttfamily 32}, }
+\item[{int}]{bl\-\_\-height = {\ttfamily 32}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1detail_1_1BlocksGainCompensator_a51f8b3895b04b90a79457b7b552db220}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcv_1_1detail_1_1BlocksGainCompensator_a5cd77a324b1113a8446b1d290562c0b7}{\index{cv\-::detail\-::\-Blocks\-Gain\-Compensator@{cv\-::detail\-::\-Blocks\-Gain\-Compensator}!apply@{apply}}
+\index{apply@{apply}!cv::detail::BlocksGainCompensator@{cv\-::detail\-::\-Blocks\-Gain\-Compensator}}
+\subsubsection[{apply}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::detail\-::\-Blocks\-Gain\-Compensator\-::apply (
+\begin{DoxyParamCaption}
+\item[{int}]{index, }
+\item[{Point}]{corner, }
+\item[{Mat \&}]{image, }
+\item[{const Mat \&}]{mask}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcv_1_1detail_1_1BlocksGainCompensator_a5cd77a324b1113a8446b1d290562c0b7}
+
+
+Implements \hyperlink{classcv_1_1detail_1_1ExposureCompensator_acf91d7a60240d057c461c0db3774b73a}{cv\-::detail\-::\-Exposure\-Compensator}.
+
+\hypertarget{classcv_1_1detail_1_1BlocksGainCompensator_ae9b080a3ba1d6147e48cde4197575081}{\index{cv\-::detail\-::\-Blocks\-Gain\-Compensator@{cv\-::detail\-::\-Blocks\-Gain\-Compensator}!feed@{feed}}
+\index{feed@{feed}!cv::detail::BlocksGainCompensator@{cv\-::detail\-::\-Blocks\-Gain\-Compensator}}
+\subsubsection[{feed}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::detail\-::\-Blocks\-Gain\-Compensator\-::feed (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ Point $>$ \&}]{corners, }
+\item[{const std\-::vector$<$ Mat $>$ \&}]{images, }
+\item[{const std\-::vector$<$ std\-::pair$<$ Mat, {\bf uchar} $>$ $>$ \&}]{masks}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcv_1_1detail_1_1BlocksGainCompensator_ae9b080a3ba1d6147e48cde4197575081}
+
+
+Implements \hyperlink{classcv_1_1detail_1_1ExposureCompensator_aaf1fadcb2a10d618b7fea16930a43546}{cv\-::detail\-::\-Exposure\-Compensator}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/stitching/detail/\hyperlink{exposure__compensate_8hpp}{exposure\-\_\-compensate.\-hpp}\end{DoxyCompactItemize}

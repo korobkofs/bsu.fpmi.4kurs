@@ -1,0 +1,82 @@
+\hypertarget{BBPredict_8h}{\section{src/libopentld/mftracker/\-B\-B\-Predict.h File Reference}
+\label{BBPredict_8h}\index{src/libopentld/mftracker/\-B\-B\-Predict.\-h@{src/libopentld/mftracker/\-B\-B\-Predict.\-h}}
+}
+{\ttfamily \#include $<$opencv/cv.\-h$>$}\\*
+Include dependency graph for B\-B\-Predict.\-h\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{BBPredict_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{BBPredict_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{BBPredict_8h_a0181c4b3c3e424d149a8d89a05c98de7}{predictbb} (float $\ast$bb0, Cv\-Point2\-D32f $\ast$pt0, Cv\-Point2\-D32f $\ast$pt1, int n\-Pts, float $\ast$bb1, float $\ast$shift)
+\begin{DoxyCompactList}\small\item\em Calculates the new (moved and resized) Bounding box. Calculation based on all relative distance changes of all points to every point. Then the Median of the relative Values is used. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{BBPredict_8h_a0181c4b3c3e424d149a8d89a05c98de7}{\index{B\-B\-Predict.\-h@{B\-B\-Predict.\-h}!predictbb@{predictbb}}
+\index{predictbb@{predictbb}!BBPredict.h@{B\-B\-Predict.\-h}}
+\subsubsection[{predictbb}]{\setlength{\rightskip}{0pt plus 5cm}int predictbb (
+\begin{DoxyParamCaption}
+\item[{float $\ast$}]{bb0, }
+\item[{Cv\-Point2\-D32f $\ast$}]{pt0, }
+\item[{Cv\-Point2\-D32f $\ast$}]{pt1, }
+\item[{int}]{n\-Pts, }
+\item[{float $\ast$}]{bb1, }
+\item[{float $\ast$}]{shift}
+\end{DoxyParamCaption}
+)}}\label{BBPredict_8h_a0181c4b3c3e424d149a8d89a05c98de7}
+
+
+Calculates the new (moved and resized) Bounding box. Calculation based on all relative distance changes of all points to every point. Then the Median of the relative Values is used. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bb0} & The previous Bounding\-Box. \\
+\hline
+{\em pt0} & Feature points in the previous Bounding\-Box. \\
+\hline
+{\em pt1} & Feature points of the new Bounding\-Box. \\
+\hline
+{\em n\-Pts} & Length of pt0/pt1. \\
+\hline
+{\em bb1} & Output, contains predicted Bounding\-Box. \\
+\hline
+{\em shift} & Output, contains relative scale change. 1 == no scalechange, experience\-: if shift == 0 Bounding\-Box moved completely out of picture (not validated) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{BBPredict_8h_a0181c4b3c3e424d149a8d89a05c98de7_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{BBPredict_8h_a0181c4b3c3e424d149a8d89a05c98de7_icgraph}
+\end{center}
+\end{figure}
+
+

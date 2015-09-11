@@ -1,0 +1,109 @@
+\hypertarget{classcv_1_1ocl_1_1GoodFeaturesToTrackDetector__OCL}{\section{cv\-:\-:ocl\-:\-:Good\-Features\-To\-Track\-Detector\-\_\-\-O\-C\-L Class Reference}
+\label{classcv_1_1ocl_1_1GoodFeaturesToTrackDetector__OCL}\index{cv\-::ocl\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-O\-C\-L}}
+}
+
+
+{\ttfamily \#include $<$ocl.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcv_1_1ocl_1_1GoodFeaturesToTrackDetector__OCL_ac8eece5d2c570d394318a145c43a8705}{Good\-Features\-To\-Track\-Detector\-\_\-\-O\-C\-L} (int \hyperlink{classcv_1_1ocl_1_1GoodFeaturesToTrackDetector__OCL_ac8311ca2527c02b94d0e05d6b345e9ac}{max\-Corners}=1000, double \hyperlink{classcv_1_1ocl_1_1GoodFeaturesToTrackDetector__OCL_a19ac1b83bc6602c6a1a966e904ca215f}{quality\-Level}=0.\-01, double \hyperlink{classcv_1_1ocl_1_1GoodFeaturesToTrackDetector__OCL_a984603138318d1a9a1ebc5a42461c7e4}{min\-Distance}=0.\-0, int \hyperlink{classcv_1_1ocl_1_1GoodFeaturesToTrackDetector__OCL_a0a0cd73b830a541bc601822474288439}{block\-Size}=3, bool \hyperlink{classcv_1_1ocl_1_1GoodFeaturesToTrackDetector__OCL_abf60ed728142b02145b86ad2c68f06c6}{use\-Harris\-Detector}=false, double \hyperlink{classcv_1_1ocl_1_1GoodFeaturesToTrackDetector__OCL_af5c1120be137bb1253838cb0c7e0d35e}{harris\-K}=0.\-04)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1GoodFeaturesToTrackDetector__OCL_a7f55661fabe4b4b2b0de9fb8c1da98b9}{operator()} (const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&\hyperlink{legacy_8hpp_ad62b16ab219ae2483e8a3d921c44cc97}{image}, \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&\hyperlink{imgproc__c_8h_a223e965e192c7025d6c6be77305f515b}{corners}, const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}=\hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat}())
+\begin{DoxyCompactList}\small\item\em return 1 rows matrix with C\-V\-\_\-32\-F\-C2 type \end{DoxyCompactList}\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1GoodFeaturesToTrackDetector__OCL_a24ffac046f1074473447b2318339494d}{download\-Points} (const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&\hyperlink{legacy_8hpp_a8c4b676395bf614cc92b782d12f18847}{points}, vector$<$ Point2f $>$ \&points\-\_\-v)
+\begin{DoxyCompactList}\small\item\em download points of type Point2f to a vector. the vector's content will be erased \end{DoxyCompactList}\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1GoodFeaturesToTrackDetector__OCL_ab1f0e4d0f1ff78bf927b1ba9eda4b134}{release\-Memory} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classcv_1_1ocl_1_1GoodFeaturesToTrackDetector__OCL_ac8311ca2527c02b94d0e05d6b345e9ac}{max\-Corners}
+\item 
+double \hyperlink{classcv_1_1ocl_1_1GoodFeaturesToTrackDetector__OCL_a19ac1b83bc6602c6a1a966e904ca215f}{quality\-Level}
+\item 
+double \hyperlink{classcv_1_1ocl_1_1GoodFeaturesToTrackDetector__OCL_a984603138318d1a9a1ebc5a42461c7e4}{min\-Distance}
+\item 
+int \hyperlink{classcv_1_1ocl_1_1GoodFeaturesToTrackDetector__OCL_a0a0cd73b830a541bc601822474288439}{block\-Size}
+\item 
+bool \hyperlink{classcv_1_1ocl_1_1GoodFeaturesToTrackDetector__OCL_abf60ed728142b02145b86ad2c68f06c6}{use\-Harris\-Detector}
+\item 
+double \hyperlink{classcv_1_1ocl_1_1GoodFeaturesToTrackDetector__OCL_af5c1120be137bb1253838cb0c7e0d35e}{harris\-K}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcv_1_1ocl_1_1GoodFeaturesToTrackDetector__OCL_ac8eece5d2c570d394318a145c43a8705}{\index{cv\-::ocl\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-O\-C\-L}!Good\-Features\-To\-Track\-Detector\-\_\-\-O\-C\-L@{Good\-Features\-To\-Track\-Detector\-\_\-\-O\-C\-L}}
+\index{Good\-Features\-To\-Track\-Detector\-\_\-\-O\-C\-L@{Good\-Features\-To\-Track\-Detector\-\_\-\-O\-C\-L}!cv::ocl::GoodFeaturesToTrackDetector_OCL@{cv\-::ocl\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-O\-C\-L}}
+\subsubsection[{Good\-Features\-To\-Track\-Detector\-\_\-\-O\-C\-L}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::ocl\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-O\-C\-L\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-O\-C\-L (
+\begin{DoxyParamCaption}
+\item[{int}]{max\-Corners = {\ttfamily 1000}, }
+\item[{double}]{quality\-Level = {\ttfamily 0.01}, }
+\item[{double}]{min\-Distance = {\ttfamily 0.0}, }
+\item[{int}]{block\-Size = {\ttfamily 3}, }
+\item[{bool}]{use\-Harris\-Detector = {\ttfamily false}, }
+\item[{double}]{harris\-K = {\ttfamily 0.04}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classcv_1_1ocl_1_1GoodFeaturesToTrackDetector__OCL_ac8eece5d2c570d394318a145c43a8705}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcv_1_1ocl_1_1GoodFeaturesToTrackDetector__OCL_a24ffac046f1074473447b2318339494d}{\index{cv\-::ocl\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-O\-C\-L}!download\-Points@{download\-Points}}
+\index{download\-Points@{download\-Points}!cv::ocl::GoodFeaturesToTrackDetector_OCL@{cv\-::ocl\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-O\-C\-L}}
+\subsubsection[{download\-Points}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-O\-C\-L\-::download\-Points (
+\begin{DoxyParamCaption}
+\item[{const {\bf ocl\-Mat} \&}]{points, }
+\item[{vector$<$ Point2f $>$ \&}]{points\-\_\-v}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1GoodFeaturesToTrackDetector__OCL_a24ffac046f1074473447b2318339494d}
+
+
+download points of type Point2f to a vector. the vector's content will be erased 
+
+\hypertarget{classcv_1_1ocl_1_1GoodFeaturesToTrackDetector__OCL_a7f55661fabe4b4b2b0de9fb8c1da98b9}{\index{cv\-::ocl\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-O\-C\-L}!operator()@{operator()}}
+\index{operator()@{operator()}!cv::ocl::GoodFeaturesToTrackDetector_OCL@{cv\-::ocl\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-O\-C\-L}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-O\-C\-L\-::operator() (
+\begin{DoxyParamCaption}
+\item[{const {\bf ocl\-Mat} \&}]{image, }
+\item[{{\bf ocl\-Mat} \&}]{corners, }
+\item[{const {\bf ocl\-Mat} \&}]{mask = {\ttfamily {\bf ocl\-Mat}()}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1GoodFeaturesToTrackDetector__OCL_a7f55661fabe4b4b2b0de9fb8c1da98b9}
+
+
+return 1 rows matrix with C\-V\-\_\-32\-F\-C2 type 
+
+\hypertarget{classcv_1_1ocl_1_1GoodFeaturesToTrackDetector__OCL_ab1f0e4d0f1ff78bf927b1ba9eda4b134}{\index{cv\-::ocl\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-O\-C\-L}!release\-Memory@{release\-Memory}}
+\index{release\-Memory@{release\-Memory}!cv::ocl::GoodFeaturesToTrackDetector_OCL@{cv\-::ocl\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-O\-C\-L}}
+\subsubsection[{release\-Memory}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-O\-C\-L\-::release\-Memory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1ocl_1_1GoodFeaturesToTrackDetector__OCL_ab1f0e4d0f1ff78bf927b1ba9eda4b134}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcv_1_1ocl_1_1GoodFeaturesToTrackDetector__OCL_a0a0cd73b830a541bc601822474288439}{\index{cv\-::ocl\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-O\-C\-L}!block\-Size@{block\-Size}}
+\index{block\-Size@{block\-Size}!cv::ocl::GoodFeaturesToTrackDetector_OCL@{cv\-::ocl\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-O\-C\-L}}
+\subsubsection[{block\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::ocl\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-O\-C\-L\-::block\-Size}}\label{classcv_1_1ocl_1_1GoodFeaturesToTrackDetector__OCL_a0a0cd73b830a541bc601822474288439}
+\hypertarget{classcv_1_1ocl_1_1GoodFeaturesToTrackDetector__OCL_af5c1120be137bb1253838cb0c7e0d35e}{\index{cv\-::ocl\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-O\-C\-L}!harris\-K@{harris\-K}}
+\index{harris\-K@{harris\-K}!cv::ocl::GoodFeaturesToTrackDetector_OCL@{cv\-::ocl\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-O\-C\-L}}
+\subsubsection[{harris\-K}]{\setlength{\rightskip}{0pt plus 5cm}double cv\-::ocl\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-O\-C\-L\-::harris\-K}}\label{classcv_1_1ocl_1_1GoodFeaturesToTrackDetector__OCL_af5c1120be137bb1253838cb0c7e0d35e}
+\hypertarget{classcv_1_1ocl_1_1GoodFeaturesToTrackDetector__OCL_ac8311ca2527c02b94d0e05d6b345e9ac}{\index{cv\-::ocl\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-O\-C\-L}!max\-Corners@{max\-Corners}}
+\index{max\-Corners@{max\-Corners}!cv::ocl::GoodFeaturesToTrackDetector_OCL@{cv\-::ocl\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-O\-C\-L}}
+\subsubsection[{max\-Corners}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::ocl\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-O\-C\-L\-::max\-Corners}}\label{classcv_1_1ocl_1_1GoodFeaturesToTrackDetector__OCL_ac8311ca2527c02b94d0e05d6b345e9ac}
+\hypertarget{classcv_1_1ocl_1_1GoodFeaturesToTrackDetector__OCL_a984603138318d1a9a1ebc5a42461c7e4}{\index{cv\-::ocl\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-O\-C\-L}!min\-Distance@{min\-Distance}}
+\index{min\-Distance@{min\-Distance}!cv::ocl::GoodFeaturesToTrackDetector_OCL@{cv\-::ocl\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-O\-C\-L}}
+\subsubsection[{min\-Distance}]{\setlength{\rightskip}{0pt plus 5cm}double cv\-::ocl\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-O\-C\-L\-::min\-Distance}}\label{classcv_1_1ocl_1_1GoodFeaturesToTrackDetector__OCL_a984603138318d1a9a1ebc5a42461c7e4}
+\hypertarget{classcv_1_1ocl_1_1GoodFeaturesToTrackDetector__OCL_a19ac1b83bc6602c6a1a966e904ca215f}{\index{cv\-::ocl\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-O\-C\-L}!quality\-Level@{quality\-Level}}
+\index{quality\-Level@{quality\-Level}!cv::ocl::GoodFeaturesToTrackDetector_OCL@{cv\-::ocl\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-O\-C\-L}}
+\subsubsection[{quality\-Level}]{\setlength{\rightskip}{0pt plus 5cm}double cv\-::ocl\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-O\-C\-L\-::quality\-Level}}\label{classcv_1_1ocl_1_1GoodFeaturesToTrackDetector__OCL_a19ac1b83bc6602c6a1a966e904ca215f}
+\hypertarget{classcv_1_1ocl_1_1GoodFeaturesToTrackDetector__OCL_abf60ed728142b02145b86ad2c68f06c6}{\index{cv\-::ocl\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-O\-C\-L@{cv\-::ocl\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-O\-C\-L}!use\-Harris\-Detector@{use\-Harris\-Detector}}
+\index{use\-Harris\-Detector@{use\-Harris\-Detector}!cv::ocl::GoodFeaturesToTrackDetector_OCL@{cv\-::ocl\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-O\-C\-L}}
+\subsubsection[{use\-Harris\-Detector}]{\setlength{\rightskip}{0pt plus 5cm}bool cv\-::ocl\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-O\-C\-L\-::use\-Harris\-Detector}}\label{classcv_1_1ocl_1_1GoodFeaturesToTrackDetector__OCL_abf60ed728142b02145b86ad2c68f06c6}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/ocl/\hyperlink{ocl_2ocl_8hpp}{ocl.\-hpp}\end{DoxyCompactItemize}

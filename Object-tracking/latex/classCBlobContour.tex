@@ -1,0 +1,480 @@
+\hypertarget{classCBlobContour}{\section{C\-Blob\-Contour Class Reference}
+\label{classCBlobContour}\index{C\-Blob\-Contour@{C\-Blob\-Contour}}
+}
+
+
+Blob contour class (in crack code)  
+
+
+
+
+{\ttfamily \#include $<$Blob\-Contour.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCBlobContour_a4cfb475c4e55945fe13618768bef57c7}{C\-Blob\-Contour} ()
+\begin{DoxyCompactList}\small\item\em Constructors. \end{DoxyCompactList}\item 
+\hyperlink{classCBlobContour_a66a78de7519f1e8ae7b92bdc30a726cc}{C\-Blob\-Contour} (Cv\-Point start\-Point, Cv\-Mem\-Storage $\ast$storage)
+\item 
+\hyperlink{classCBlobContour_a24b82910c8cfb9b0a31a3fb55fd29e28}{C\-Blob\-Contour} (\hyperlink{classCBlobContour}{C\-Blob\-Contour} $\ast$source)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\hyperlink{classCBlobContour_a24c825e7c0fab7e98237a2db60a7fc7a}{$\sim$\-C\-Blob\-Contour} ()
+\item 
+\hyperlink{classCBlobContour}{C\-Blob\-Contour} \& \hyperlink{classCBlobContour_a9ed6e0471a8d1b7d6c9a1465e539bbd4}{operator=} (const \hyperlink{classCBlobContour}{C\-Blob\-Contour} \&source)
+\begin{DoxyCompactList}\small\item\em Assigment operator. \end{DoxyCompactList}\item 
+void \hyperlink{classCBlobContour_a5a10813d71e48c52e099001e6581366c}{Add\-Chain\-Code} (\hyperlink{BlobContour_8h_a0ccb8765a7971147eaf6cafef4bd3c0e}{t\-\_\-chain\-Code} code)
+\begin{DoxyCompactList}\small\item\em Add chain code to contour. \end{DoxyCompactList}\item 
+\hyperlink{BlobContour_8h_af4605a71deb8fb5bf67011c89418c970}{t\-\_\-chain\-Code\-List} \hyperlink{classCBlobContour_ae783c063f2d89f4d06396b552c92f9a6}{Get\-Chain\-Code} ()
+\begin{DoxyCompactList}\small\item\em Return freeman chain coded contour. \end{DoxyCompactList}\item 
+bool \hyperlink{classCBlobContour_af4e715a94924d5dc1a0e67cf75818bb5}{Is\-Empty} ()
+\item 
+\hyperlink{BlobContour_8h_af4605a71deb8fb5bf67011c89418c970}{t\-\_\-chain\-Code\-List} \hyperlink{classCBlobContour_a245d5e59180619aa9ae4ec14acc18744}{Get\-Contour\-Points} ()
+\begin{DoxyCompactList}\small\item\em Return all contour points. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Cv\-Point \hyperlink{classCBlobContour_ac8f0fbdce452ede583013e010ce0c8e3}{Get\-Start\-Point} () const 
+\item 
+void \hyperlink{classCBlobContour_a9a9ea170c2100586ca7bdb4227589fe9}{Reset\-Chain\-Code} ()
+\begin{DoxyCompactList}\small\item\em Clears chain code contour. \end{DoxyCompactList}\item 
+double \hyperlink{classCBlobContour_a2c68f462fc31a0e7add9a85b007fa42a}{Get\-Area} ()
+\begin{DoxyCompactList}\small\item\em Computes area from contour. \end{DoxyCompactList}\item 
+double \hyperlink{classCBlobContour_a893d57d625bb8f26f4a31ff0b66b8406}{Get\-Perimeter} ()
+\begin{DoxyCompactList}\small\item\em Computes perimeter from contour. \end{DoxyCompactList}\item 
+double \hyperlink{classCBlobContour_a301727633680b38714302593945b748f}{Get\-Moment} (int p, int q)
+\begin{DoxyCompactList}\small\item\em Get contour moment (p,q up to M\-A\-X\-\_\-\-C\-A\-L\-C\-U\-L\-A\-T\-E\-D\-\_\-\-M\-O\-M\-E\-N\-T\-S) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{BlobContour_8h_af4605a71deb8fb5bf67011c89418c970}{t\-\_\-chain\-Code\-List} \hyperlink{classCBlobContour_a98c36d7be8524da3976fad97b611123e}{m\-\_\-contour}
+\begin{DoxyCompactList}\small\item\em Crack code list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Cv\-Point \hyperlink{classCBlobContour_afe5180a7ce89174ef095d37455c5cab7}{m\-\_\-start\-Point}
+\begin{DoxyCompactList}\small\item\em Starting point of the contour. \end{DoxyCompactList}\item 
+\hyperlink{BlobContour_8h_abf72b29b2c653dd623e9b39a447809c0}{t\-\_\-\-Point\-List} \hyperlink{classCBlobContour_a828a1556bfe21818a83dd9e7ce0f15c8}{m\-\_\-contour\-Points}
+\begin{DoxyCompactList}\small\item\em All points from the contour. \end{DoxyCompactList}\item 
+double \hyperlink{classCBlobContour_abb127d27a1cf1b9a670165506ed32c7a}{m\-\_\-area}
+\begin{DoxyCompactList}\small\item\em Computed area from contour. \end{DoxyCompactList}\item 
+double \hyperlink{classCBlobContour_a23523e72cfb2f442e3afdc91b6021578}{m\-\_\-perimeter}
+\begin{DoxyCompactList}\small\item\em Computed perimeter from contour. \end{DoxyCompactList}\item 
+Cv\-Moments \hyperlink{classCBlobContour_acf0822fad2d18208d34b44e507d9ea6f}{m\-\_\-moments}
+\begin{DoxyCompactList}\small\item\em Computed moments from contour. \end{DoxyCompactList}\item 
+Cv\-Mem\-Storage $\ast$ \hyperlink{classCBlobContour_ac08cef4325eeecfa0b3d7cdab634156a}{m\-\_\-parent\-Storage}
+\begin{DoxyCompactList}\small\item\em Pointer to storage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classCBlobContour_ae1a0519c97d58c87882ff9a1462ae464}{C\-Blob}
+\item 
+class \hyperlink{classCBlobContour_a107dcb6bc234839a49f6a53dde777713}{C\-Blob\-Properties}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Blob contour class (in crack code) 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCBlobContour_a4cfb475c4e55945fe13618768bef57c7}{\index{C\-Blob\-Contour@{C\-Blob\-Contour}!C\-Blob\-Contour@{C\-Blob\-Contour}}
+\index{C\-Blob\-Contour@{C\-Blob\-Contour}!CBlobContour@{C\-Blob\-Contour}}
+\subsubsection[{C\-Blob\-Contour}]{\setlength{\rightskip}{0pt plus 5cm}C\-Blob\-Contour\-::\-C\-Blob\-Contour (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCBlobContour_a4cfb475c4e55945fe13618768bef57c7}
+
+
+Constructors. 
+
+\hypertarget{classCBlobContour_a66a78de7519f1e8ae7b92bdc30a726cc}{\index{C\-Blob\-Contour@{C\-Blob\-Contour}!C\-Blob\-Contour@{C\-Blob\-Contour}}
+\index{C\-Blob\-Contour@{C\-Blob\-Contour}!CBlobContour@{C\-Blob\-Contour}}
+\subsubsection[{C\-Blob\-Contour}]{\setlength{\rightskip}{0pt plus 5cm}C\-Blob\-Contour\-::\-C\-Blob\-Contour (
+\begin{DoxyParamCaption}
+\item[{Cv\-Point}]{start\-Point, }
+\item[{Cv\-Mem\-Storage $\ast$}]{storage}
+\end{DoxyParamCaption}
+)}}\label{classCBlobContour_a66a78de7519f1e8ae7b92bdc30a726cc}
+\hypertarget{classCBlobContour_a24b82910c8cfb9b0a31a3fb55fd29e28}{\index{C\-Blob\-Contour@{C\-Blob\-Contour}!C\-Blob\-Contour@{C\-Blob\-Contour}}
+\index{C\-Blob\-Contour@{C\-Blob\-Contour}!CBlobContour@{C\-Blob\-Contour}}
+\subsubsection[{C\-Blob\-Contour}]{\setlength{\rightskip}{0pt plus 5cm}C\-Blob\-Contour\-::\-C\-Blob\-Contour (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Blob\-Contour} $\ast$}]{source}
+\end{DoxyParamCaption}
+)}}\label{classCBlobContour_a24b82910c8cfb9b0a31a3fb55fd29e28}
+
+
+Copy constructor. 
+
+\hypertarget{classCBlobContour_a24c825e7c0fab7e98237a2db60a7fc7a}{\index{C\-Blob\-Contour@{C\-Blob\-Contour}!$\sim$\-C\-Blob\-Contour@{$\sim$\-C\-Blob\-Contour}}
+\index{$\sim$\-C\-Blob\-Contour@{$\sim$\-C\-Blob\-Contour}!CBlobContour@{C\-Blob\-Contour}}
+\subsubsection[{$\sim$\-C\-Blob\-Contour}]{\setlength{\rightskip}{0pt plus 5cm}C\-Blob\-Contour\-::$\sim$\-C\-Blob\-Contour (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCBlobContour_a24c825e7c0fab7e98237a2db60a7fc7a}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classCBlobContour_a5a10813d71e48c52e099001e6581366c}{\index{C\-Blob\-Contour@{C\-Blob\-Contour}!Add\-Chain\-Code@{Add\-Chain\-Code}}
+\index{Add\-Chain\-Code@{Add\-Chain\-Code}!CBlobContour@{C\-Blob\-Contour}}
+\subsubsection[{Add\-Chain\-Code}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Blob\-Contour\-::\-Add\-Chain\-Code (
+\begin{DoxyParamCaption}
+\item[{{\bf t\-\_\-chain\-Code}}]{chaincode}
+\end{DoxyParamCaption}
+)}}\label{classCBlobContour_a5a10813d71e48c52e099001e6581366c}
+
+
+Add chain code to contour. 
+
+
+\begin{DoxyItemize}
+\item F\-U\-N\-C\-IÓ\-: Add\-Chain\-Code
+\item F\-U\-N\-C\-I\-O\-N\-A\-L\-I\-T\-A\-T\-: Add chain code to contour
+\item P\-A\-RÀ\-M\-E\-T\-R\-E\-S\-:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item R\-E\-S\-U\-L\-T\-A\-T\-:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item R\-E\-S\-T\-R\-I\-C\-C\-I\-O\-N\-S\-:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item A\-U\-T\-O\-R\-: rborras
+\item D\-A\-T\-A D\-E C\-R\-E\-A\-C\-IÓ\-: 2008/05/06
+\item M\-O\-D\-I\-F\-I\-C\-A\-C\-IÓ\-: Data. Autor. Descripció. 
+\end{DoxyItemize}
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCBlobContour_a5a10813d71e48c52e099001e6581366c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classCBlobContour_a2c68f462fc31a0e7add9a85b007fa42a}{\index{C\-Blob\-Contour@{C\-Blob\-Contour}!Get\-Area@{Get\-Area}}
+\index{Get\-Area@{Get\-Area}!CBlobContour@{C\-Blob\-Contour}}
+\subsubsection[{Get\-Area}]{\setlength{\rightskip}{0pt plus 5cm}double C\-Blob\-Contour\-::\-Get\-Area (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classCBlobContour_a2c68f462fc31a0e7add9a85b007fa42a}
+
+
+Computes area from contour. 
+
+
+\begin{DoxyItemize}
+\item F\-U\-N\-C\-IÓ\-: Get\-Area
+\item F\-U\-N\-C\-I\-O\-N\-A\-L\-I\-T\-A\-T\-: Computes area from chain code
+\item P\-A\-RÀ\-M\-E\-T\-R\-E\-S\-:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item R\-E\-S\-U\-L\-T\-A\-T\-:
+\begin{DoxyItemize}
+\item May give negative areas for clock wise contours
+\end{DoxyItemize}
+\item R\-E\-S\-T\-R\-I\-C\-C\-I\-O\-N\-S\-:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item A\-U\-T\-O\-R\-: rborras
+\item D\-A\-T\-A D\-E C\-R\-E\-A\-C\-IÓ\-: 2008/04/30
+\item M\-O\-D\-I\-F\-I\-C\-A\-C\-IÓ\-: Data. Autor. Descripció.
+\item N\-O\-T\-A\-: Algorithm derived from \char`\"{}\-Properties of contour codes\char`\"{}, G.\-R. Wilson 
+\end{DoxyItemize}
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCBlobContour_a2c68f462fc31a0e7add9a85b007fa42a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCBlobContour_a2c68f462fc31a0e7add9a85b007fa42a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classCBlobContour_ae783c063f2d89f4d06396b552c92f9a6}{\index{C\-Blob\-Contour@{C\-Blob\-Contour}!Get\-Chain\-Code@{Get\-Chain\-Code}}
+\index{Get\-Chain\-Code@{Get\-Chain\-Code}!CBlobContour@{C\-Blob\-Contour}}
+\subsubsection[{Get\-Chain\-Code}]{\setlength{\rightskip}{0pt plus 5cm}{\bf t\-\_\-chain\-Code\-List} C\-Blob\-Contour\-::\-Get\-Chain\-Code (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classCBlobContour_ae783c063f2d89f4d06396b552c92f9a6}
+
+
+Return freeman chain coded contour. 
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCBlobContour_ae783c063f2d89f4d06396b552c92f9a6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classCBlobContour_a245d5e59180619aa9ae4ec14acc18744}{\index{C\-Blob\-Contour@{C\-Blob\-Contour}!Get\-Contour\-Points@{Get\-Contour\-Points}}
+\index{Get\-Contour\-Points@{Get\-Contour\-Points}!CBlobContour@{C\-Blob\-Contour}}
+\subsubsection[{Get\-Contour\-Points}]{\setlength{\rightskip}{0pt plus 5cm}{\bf t\-\_\-\-Point\-List} C\-Blob\-Contour\-::\-Get\-Contour\-Points (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCBlobContour_a245d5e59180619aa9ae4ec14acc18744}
+
+
+Return all contour points. 
+
+Calculate contour points from crack codes. 
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCBlobContour_a245d5e59180619aa9ae4ec14acc18744_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classCBlobContour_a301727633680b38714302593945b748f}{\index{C\-Blob\-Contour@{C\-Blob\-Contour}!Get\-Moment@{Get\-Moment}}
+\index{Get\-Moment@{Get\-Moment}!CBlobContour@{C\-Blob\-Contour}}
+\subsubsection[{Get\-Moment}]{\setlength{\rightskip}{0pt plus 5cm}double C\-Blob\-Contour\-::\-Get\-Moment (
+\begin{DoxyParamCaption}
+\item[{int}]{p, }
+\item[{int}]{q}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classCBlobContour_a301727633680b38714302593945b748f}
+
+
+Get contour moment (p,q up to M\-A\-X\-\_\-\-C\-A\-L\-C\-U\-L\-A\-T\-E\-D\-\_\-\-M\-O\-M\-E\-N\-T\-S) 
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCBlobContour_a301727633680b38714302593945b748f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCBlobContour_a301727633680b38714302593945b748f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classCBlobContour_a893d57d625bb8f26f4a31ff0b66b8406}{\index{C\-Blob\-Contour@{C\-Blob\-Contour}!Get\-Perimeter@{Get\-Perimeter}}
+\index{Get\-Perimeter@{Get\-Perimeter}!CBlobContour@{C\-Blob\-Contour}}
+\subsubsection[{Get\-Perimeter}]{\setlength{\rightskip}{0pt plus 5cm}double C\-Blob\-Contour\-::\-Get\-Perimeter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classCBlobContour_a893d57d625bb8f26f4a31ff0b66b8406}
+
+
+Computes perimeter from contour. 
+
+
+\begin{DoxyItemize}
+\item F\-U\-N\-C\-IÓ\-: Get\-Perimeter
+\item F\-U\-N\-C\-I\-O\-N\-A\-L\-I\-T\-A\-T\-: Get perimeter from chain code. Diagonals sum sqrt(2) and horizontal and vertical codes 1
+\item P\-A\-RÀ\-M\-E\-T\-R\-E\-S\-:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item R\-E\-S\-U\-L\-T\-A\-T\-:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item R\-E\-S\-T\-R\-I\-C\-C\-I\-O\-N\-S\-:
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+\item A\-U\-T\-O\-R\-: rborras
+\item D\-A\-T\-A D\-E C\-R\-E\-A\-C\-IÓ\-: 2008/04/30
+\item M\-O\-D\-I\-F\-I\-C\-A\-C\-IÓ\-: Data. Autor. Descripció.
+\item N\-O\-T\-A\-: Algorithm derived from \char`\"{}\-Methods to estimate area and perimeters of blob-\/like objects\-: A comparison\char`\"{}, L.\-Yang 
+\end{DoxyItemize}
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCBlobContour_a893d57d625bb8f26f4a31ff0b66b8406_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCBlobContour_a893d57d625bb8f26f4a31ff0b66b8406_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classCBlobContour_ac8f0fbdce452ede583013e010ce0c8e3}{\index{C\-Blob\-Contour@{C\-Blob\-Contour}!Get\-Start\-Point@{Get\-Start\-Point}}
+\index{Get\-Start\-Point@{Get\-Start\-Point}!CBlobContour@{C\-Blob\-Contour}}
+\subsubsection[{Get\-Start\-Point}]{\setlength{\rightskip}{0pt plus 5cm}Cv\-Point C\-Blob\-Contour\-::\-Get\-Start\-Point (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classCBlobContour_ac8f0fbdce452ede583013e010ce0c8e3}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCBlobContour_ac8f0fbdce452ede583013e010ce0c8e3_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classCBlobContour_af4e715a94924d5dc1a0e67cf75818bb5}{\index{C\-Blob\-Contour@{C\-Blob\-Contour}!Is\-Empty@{Is\-Empty}}
+\index{Is\-Empty@{Is\-Empty}!CBlobContour@{C\-Blob\-Contour}}
+\subsubsection[{Is\-Empty}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-Blob\-Contour\-::\-Is\-Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classCBlobContour_af4e715a94924d5dc1a0e67cf75818bb5}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCBlobContour_af4e715a94924d5dc1a0e67cf75818bb5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classCBlobContour_a9ed6e0471a8d1b7d6c9a1465e539bbd4}{\index{C\-Blob\-Contour@{C\-Blob\-Contour}!operator=@{operator=}}
+\index{operator=@{operator=}!CBlobContour@{C\-Blob\-Contour}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Blob\-Contour} \& C\-Blob\-Contour\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Blob\-Contour} \&}]{source}
+\end{DoxyParamCaption}
+)}}\label{classCBlobContour_a9ed6e0471a8d1b7d6c9a1465e539bbd4}
+
+
+Assigment operator. 
+
+Copy operator. \hypertarget{classCBlobContour_a9a9ea170c2100586ca7bdb4227589fe9}{\index{C\-Blob\-Contour@{C\-Blob\-Contour}!Reset\-Chain\-Code@{Reset\-Chain\-Code}}
+\index{Reset\-Chain\-Code@{Reset\-Chain\-Code}!CBlobContour@{C\-Blob\-Contour}}
+\subsubsection[{Reset\-Chain\-Code}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Blob\-Contour\-::\-Reset\-Chain\-Code (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classCBlobContour_a9a9ea170c2100586ca7bdb4227589fe9}
+
+
+Clears chain code contour. 
+
+Clears chain code contour and points. 
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCBlobContour_a9a9ea170c2100586ca7bdb4227589fe9_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classCBlobContour_ae1a0519c97d58c87882ff9a1462ae464}{\index{C\-Blob\-Contour@{C\-Blob\-Contour}!C\-Blob@{C\-Blob}}
+\index{C\-Blob@{C\-Blob}!CBlobContour@{C\-Blob\-Contour}}
+\subsubsection[{C\-Blob}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf C\-Blob}\hspace{0.3cm}{\ttfamily [friend]}}}\label{classCBlobContour_ae1a0519c97d58c87882ff9a1462ae464}
+\hypertarget{classCBlobContour_a107dcb6bc234839a49f6a53dde777713}{\index{C\-Blob\-Contour@{C\-Blob\-Contour}!C\-Blob\-Properties@{C\-Blob\-Properties}}
+\index{C\-Blob\-Properties@{C\-Blob\-Properties}!CBlobContour@{C\-Blob\-Contour}}
+\subsubsection[{C\-Blob\-Properties}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf C\-Blob\-Properties}\hspace{0.3cm}{\ttfamily [friend]}}}\label{classCBlobContour_a107dcb6bc234839a49f6a53dde777713}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classCBlobContour_abb127d27a1cf1b9a670165506ed32c7a}{\index{C\-Blob\-Contour@{C\-Blob\-Contour}!m\-\_\-area@{m\-\_\-area}}
+\index{m\-\_\-area@{m\-\_\-area}!CBlobContour@{C\-Blob\-Contour}}
+\subsubsection[{m\-\_\-area}]{\setlength{\rightskip}{0pt plus 5cm}double C\-Blob\-Contour\-::m\-\_\-area\hspace{0.3cm}{\ttfamily [private]}}}\label{classCBlobContour_abb127d27a1cf1b9a670165506ed32c7a}
+
+
+Computed area from contour. 
+
+\hypertarget{classCBlobContour_a98c36d7be8524da3976fad97b611123e}{\index{C\-Blob\-Contour@{C\-Blob\-Contour}!m\-\_\-contour@{m\-\_\-contour}}
+\index{m\-\_\-contour@{m\-\_\-contour}!CBlobContour@{C\-Blob\-Contour}}
+\subsubsection[{m\-\_\-contour}]{\setlength{\rightskip}{0pt plus 5cm}{\bf t\-\_\-chain\-Code\-List} C\-Blob\-Contour\-::m\-\_\-contour\hspace{0.3cm}{\ttfamily [protected]}}}\label{classCBlobContour_a98c36d7be8524da3976fad97b611123e}
+
+
+Crack code list. 
+
+\hypertarget{classCBlobContour_a828a1556bfe21818a83dd9e7ce0f15c8}{\index{C\-Blob\-Contour@{C\-Blob\-Contour}!m\-\_\-contour\-Points@{m\-\_\-contour\-Points}}
+\index{m\-\_\-contour\-Points@{m\-\_\-contour\-Points}!CBlobContour@{C\-Blob\-Contour}}
+\subsubsection[{m\-\_\-contour\-Points}]{\setlength{\rightskip}{0pt plus 5cm}{\bf t\-\_\-\-Point\-List} C\-Blob\-Contour\-::m\-\_\-contour\-Points\hspace{0.3cm}{\ttfamily [private]}}}\label{classCBlobContour_a828a1556bfe21818a83dd9e7ce0f15c8}
+
+
+All points from the contour. 
+
+\hypertarget{classCBlobContour_acf0822fad2d18208d34b44e507d9ea6f}{\index{C\-Blob\-Contour@{C\-Blob\-Contour}!m\-\_\-moments@{m\-\_\-moments}}
+\index{m\-\_\-moments@{m\-\_\-moments}!CBlobContour@{C\-Blob\-Contour}}
+\subsubsection[{m\-\_\-moments}]{\setlength{\rightskip}{0pt plus 5cm}Cv\-Moments C\-Blob\-Contour\-::m\-\_\-moments\hspace{0.3cm}{\ttfamily [private]}}}\label{classCBlobContour_acf0822fad2d18208d34b44e507d9ea6f}
+
+
+Computed moments from contour. 
+
+\hypertarget{classCBlobContour_ac08cef4325eeecfa0b3d7cdab634156a}{\index{C\-Blob\-Contour@{C\-Blob\-Contour}!m\-\_\-parent\-Storage@{m\-\_\-parent\-Storage}}
+\index{m\-\_\-parent\-Storage@{m\-\_\-parent\-Storage}!CBlobContour@{C\-Blob\-Contour}}
+\subsubsection[{m\-\_\-parent\-Storage}]{\setlength{\rightskip}{0pt plus 5cm}Cv\-Mem\-Storage$\ast$ C\-Blob\-Contour\-::m\-\_\-parent\-Storage\hspace{0.3cm}{\ttfamily [private]}}}\label{classCBlobContour_ac08cef4325eeecfa0b3d7cdab634156a}
+
+
+Pointer to storage. 
+
+\hypertarget{classCBlobContour_a23523e72cfb2f442e3afdc91b6021578}{\index{C\-Blob\-Contour@{C\-Blob\-Contour}!m\-\_\-perimeter@{m\-\_\-perimeter}}
+\index{m\-\_\-perimeter@{m\-\_\-perimeter}!CBlobContour@{C\-Blob\-Contour}}
+\subsubsection[{m\-\_\-perimeter}]{\setlength{\rightskip}{0pt plus 5cm}double C\-Blob\-Contour\-::m\-\_\-perimeter\hspace{0.3cm}{\ttfamily [private]}}}\label{classCBlobContour_a23523e72cfb2f442e3afdc91b6021578}
+
+
+Computed perimeter from contour. 
+
+\hypertarget{classCBlobContour_afe5180a7ce89174ef095d37455c5cab7}{\index{C\-Blob\-Contour@{C\-Blob\-Contour}!m\-\_\-start\-Point@{m\-\_\-start\-Point}}
+\index{m\-\_\-start\-Point@{m\-\_\-start\-Point}!CBlobContour@{C\-Blob\-Contour}}
+\subsubsection[{m\-\_\-start\-Point}]{\setlength{\rightskip}{0pt plus 5cm}Cv\-Point C\-Blob\-Contour\-::m\-\_\-start\-Point\hspace{0.3cm}{\ttfamily [private]}}}\label{classCBlobContour_afe5180a7ce89174ef095d37455c5cab7}
+
+
+Starting point of the contour. 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/3rdparty/cvblobs/\hyperlink{BlobContour_8h}{Blob\-Contour.\-h}\item 
+src/3rdparty/cvblobs/\hyperlink{BlobContour_8cpp}{Blob\-Contour.\-cpp}\end{DoxyCompactItemize}

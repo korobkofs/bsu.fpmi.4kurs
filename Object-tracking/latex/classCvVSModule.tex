@@ -1,0 +1,339 @@
+\hypertarget{classCvVSModule}{\section{Cv\-V\-S\-Module Class Reference}
+\label{classCvVSModule}\index{Cv\-V\-S\-Module@{Cv\-V\-S\-Module}}
+}
+
+
+{\ttfamily \#include $<$blobtrack.\-hpp$>$}
+
+
+
+Inheritance diagram for Cv\-V\-S\-Module\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCvVSModule__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCvVSModule_a88f0590dcb1de5445900720d63cd6a7f}{Cv\-V\-S\-Module} ()
+\item 
+virtual \hyperlink{classCvVSModule_a9d31398df5a4438513ccf832a478e77a}{$\sim$\-Cv\-V\-S\-Module} ()
+\item 
+const char $\ast$ \hyperlink{classCvVSModule_a77191dbaaee4762699f58bf640a1172e}{Get\-Param\-Name} (int \hyperlink{core__c_8h_a750b5d744c39a06bfb13e6eb010e35d0}{index})
+\item 
+const char $\ast$ \hyperlink{classCvVSModule_a4cde5c64e09263fb4f6e6837062e644c}{Get\-Param\-Comment} (const char $\ast$\hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name})
+\item 
+double \hyperlink{classCvVSModule_a32b0d2c05a86470bc74bbb905dd9549f}{Get\-Param} (const char $\ast$\hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name})
+\item 
+const char $\ast$ \hyperlink{classCvVSModule_ac537ab02459c7d2598e3bbeacf9f89d2}{Get\-Param\-Str} (const char $\ast$\hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name})
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classCvVSModule_a07b733641608273c0f58f856dba5fe09}{Set\-Param} (const char $\ast$\hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name}, double val)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classCvVSModule_ad27446e3c04458895524d4c58172b288}{Set\-Param\-Str} (const char $\ast$\hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name}, const char $\ast$\hyperlink{core__c_8h_a5f3a65d240411b0018990ff992b348c0}{str})
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classCvVSModule_a241881c14ea04a9b6074035dd20f8b3f}{Transfer\-Params\-From\-Child} (\hyperlink{classCvVSModule}{Cv\-V\-S\-Module} $\ast$p\-M, const char $\ast$prefix=\hyperlink{Config_8cpp_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\-U\-L\-L})
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classCvVSModule_a32b8440de94ed66902f47be6cc309d19}{Transfer\-Params\-To\-Child} (\hyperlink{classCvVSModule}{Cv\-V\-S\-Module} $\ast$p\-M, char $\ast$prefix=\hyperlink{Config_8cpp_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\-U\-L\-L})
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classCvVSModule_acc31eb995390002f298d4b1d6034940f}{Param\-Update} ()
+\item 
+const char $\ast$ \hyperlink{classCvVSModule_a1afb3cb19efba9321b97c936602a791a}{Get\-Type\-Name} ()
+\item 
+int \hyperlink{classCvVSModule_af8ae3ee7888294c15c88724c24c840a8}{Is\-Module\-Type\-Name} (const char $\ast$\hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name})
+\item 
+char $\ast$ \hyperlink{classCvVSModule_ae1dbbeeeeb254c30b99f046c0801c742}{Get\-Module\-Name} ()
+\item 
+int \hyperlink{classCvVSModule_a0e40cc3ef7c00076f1454ae96c3cf52d}{Is\-Module\-Name} (const char $\ast$\hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name})
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classCvVSModule_a195a0ac70890721ed74366963b025e40}{Set\-Nick\-Name} (const char $\ast$p\-Str)
+\item 
+const char $\ast$ \hyperlink{classCvVSModule_a4e88432ebff5ba68026f0ca5062343c9}{Get\-Nick\-Name} ()
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classCvVSModule_a32e569ec1fbbc58d93bbd6a2113fb54f}{Save\-State} (\hyperlink{core_2types__c_8h_a84556d1bb6f1b8b02c04c60246747a7e}{Cv\-File\-Storage} $\ast$)
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classCvVSModule_ad0d046d9844e3582759614fb0ea780f2}{Load\-State} (\hyperlink{core_2types__c_8h_a84556d1bb6f1b8b02c04c60246747a7e}{Cv\-File\-Storage} $\ast$, \hyperlink{structCvFileNode}{Cv\-File\-Node} $\ast$)
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classCvVSModule_a5501dc4749ea61dfa6a44621ecc41824}{Release} ()=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classCvVSModule_a9c64a77cbd94425554b378af23124714}{Is\-Param} (const char $\ast$\hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name})
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classCvVSModule_a7df55f7cb3e1c7019da879549d02e77b}{Add\-Param} (const char $\ast$\hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name}, double $\ast$p\-Addr)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classCvVSModule_a611eabcbd6cbd5c7d726fb7b8222cba9}{Add\-Param} (const char $\ast$\hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name}, float $\ast$p\-Addr)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classCvVSModule_ac54ec3ecbfd4e73a89ff7770bfe10d37}{Add\-Param} (const char $\ast$\hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name}, int $\ast$p\-Addr)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classCvVSModule_aaf14a1b94407d41877b2b75dfd7c6960}{Add\-Param} (const char $\ast$\hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name}, const char $\ast$$\ast$p\-Addr)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classCvVSModule_a5a29f3e6883f0e2641843e521c64dbdd}{Add\-Param} (const char $\ast$\hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name})
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classCvVSModule_a8c43f6b8a0ba700bbe161ad65dc509af}{Comment\-Param} (const char $\ast$\hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name}, const char $\ast$p\-Comment)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classCvVSModule_aab1496a6cc6f3c46a9c617acd54db5e2}{Set\-Type\-Name} (const char $\ast$\hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name})
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classCvVSModule_aef3ad6bfa0f1e35c2c643c1372c19af3}{Set\-Module\-Name} (const char $\ast$\hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name})
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classCvVSModule_a07f7ad89ec605ed0fd5aec7f7527e7da}{Del\-Param} (const char $\ast$\hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name})
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classCvVSModule_abda6e4d4196fc17af0427ac95b9e5cca}{m\-\_\-\-Wnd}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCvVSModule_a88f0590dcb1de5445900720d63cd6a7f}{\index{Cv\-V\-S\-Module@{Cv\-V\-S\-Module}!Cv\-V\-S\-Module@{Cv\-V\-S\-Module}}
+\index{Cv\-V\-S\-Module@{Cv\-V\-S\-Module}!CvVSModule@{Cv\-V\-S\-Module}}
+\subsubsection[{Cv\-V\-S\-Module}]{\setlength{\rightskip}{0pt plus 5cm}Cv\-V\-S\-Module\-::\-Cv\-V\-S\-Module (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCvVSModule_a88f0590dcb1de5445900720d63cd6a7f}
+\hypertarget{classCvVSModule_a9d31398df5a4438513ccf832a478e77a}{\index{Cv\-V\-S\-Module@{Cv\-V\-S\-Module}!$\sim$\-Cv\-V\-S\-Module@{$\sim$\-Cv\-V\-S\-Module}}
+\index{$\sim$\-Cv\-V\-S\-Module@{$\sim$\-Cv\-V\-S\-Module}!CvVSModule@{Cv\-V\-S\-Module}}
+\subsubsection[{$\sim$\-Cv\-V\-S\-Module}]{\setlength{\rightskip}{0pt plus 5cm}virtual Cv\-V\-S\-Module\-::$\sim$\-Cv\-V\-S\-Module (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCvVSModule_a9d31398df5a4438513ccf832a478e77a}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classCvVSModule_a7df55f7cb3e1c7019da879549d02e77b}{\index{Cv\-V\-S\-Module@{Cv\-V\-S\-Module}!Add\-Param@{Add\-Param}}
+\index{Add\-Param@{Add\-Param}!CvVSModule@{Cv\-V\-S\-Module}}
+\subsubsection[{Add\-Param}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Cv\-V\-S\-Module\-::\-Add\-Param (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name, }
+\item[{double $\ast$}]{p\-Addr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classCvVSModule_a7df55f7cb3e1c7019da879549d02e77b}
+\hypertarget{classCvVSModule_a611eabcbd6cbd5c7d726fb7b8222cba9}{\index{Cv\-V\-S\-Module@{Cv\-V\-S\-Module}!Add\-Param@{Add\-Param}}
+\index{Add\-Param@{Add\-Param}!CvVSModule@{Cv\-V\-S\-Module}}
+\subsubsection[{Add\-Param}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Cv\-V\-S\-Module\-::\-Add\-Param (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name, }
+\item[{float $\ast$}]{p\-Addr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classCvVSModule_a611eabcbd6cbd5c7d726fb7b8222cba9}
+\hypertarget{classCvVSModule_ac54ec3ecbfd4e73a89ff7770bfe10d37}{\index{Cv\-V\-S\-Module@{Cv\-V\-S\-Module}!Add\-Param@{Add\-Param}}
+\index{Add\-Param@{Add\-Param}!CvVSModule@{Cv\-V\-S\-Module}}
+\subsubsection[{Add\-Param}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Cv\-V\-S\-Module\-::\-Add\-Param (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name, }
+\item[{int $\ast$}]{p\-Addr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classCvVSModule_ac54ec3ecbfd4e73a89ff7770bfe10d37}
+\hypertarget{classCvVSModule_aaf14a1b94407d41877b2b75dfd7c6960}{\index{Cv\-V\-S\-Module@{Cv\-V\-S\-Module}!Add\-Param@{Add\-Param}}
+\index{Add\-Param@{Add\-Param}!CvVSModule@{Cv\-V\-S\-Module}}
+\subsubsection[{Add\-Param}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Cv\-V\-S\-Module\-::\-Add\-Param (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name, }
+\item[{const char $\ast$$\ast$}]{p\-Addr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classCvVSModule_aaf14a1b94407d41877b2b75dfd7c6960}
+\hypertarget{classCvVSModule_a5a29f3e6883f0e2641843e521c64dbdd}{\index{Cv\-V\-S\-Module@{Cv\-V\-S\-Module}!Add\-Param@{Add\-Param}}
+\index{Add\-Param@{Add\-Param}!CvVSModule@{Cv\-V\-S\-Module}}
+\subsubsection[{Add\-Param}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Cv\-V\-S\-Module\-::\-Add\-Param (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classCvVSModule_a5a29f3e6883f0e2641843e521c64dbdd}
+\hypertarget{classCvVSModule_a8c43f6b8a0ba700bbe161ad65dc509af}{\index{Cv\-V\-S\-Module@{Cv\-V\-S\-Module}!Comment\-Param@{Comment\-Param}}
+\index{Comment\-Param@{Comment\-Param}!CvVSModule@{Cv\-V\-S\-Module}}
+\subsubsection[{Comment\-Param}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Cv\-V\-S\-Module\-::\-Comment\-Param (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name, }
+\item[{const char $\ast$}]{p\-Comment}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classCvVSModule_a8c43f6b8a0ba700bbe161ad65dc509af}
+\hypertarget{classCvVSModule_a07f7ad89ec605ed0fd5aec7f7527e7da}{\index{Cv\-V\-S\-Module@{Cv\-V\-S\-Module}!Del\-Param@{Del\-Param}}
+\index{Del\-Param@{Del\-Param}!CvVSModule@{Cv\-V\-S\-Module}}
+\subsubsection[{Del\-Param}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Cv\-V\-S\-Module\-::\-Del\-Param (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classCvVSModule_a07f7ad89ec605ed0fd5aec7f7527e7da}
+\hypertarget{classCvVSModule_ae1dbbeeeeb254c30b99f046c0801c742}{\index{Cv\-V\-S\-Module@{Cv\-V\-S\-Module}!Get\-Module\-Name@{Get\-Module\-Name}}
+\index{Get\-Module\-Name@{Get\-Module\-Name}!CvVSModule@{Cv\-V\-S\-Module}}
+\subsubsection[{Get\-Module\-Name}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ Cv\-V\-S\-Module\-::\-Get\-Module\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCvVSModule_ae1dbbeeeeb254c30b99f046c0801c742}
+\hypertarget{classCvVSModule_a4e88432ebff5ba68026f0ca5062343c9}{\index{Cv\-V\-S\-Module@{Cv\-V\-S\-Module}!Get\-Nick\-Name@{Get\-Nick\-Name}}
+\index{Get\-Nick\-Name@{Get\-Nick\-Name}!CvVSModule@{Cv\-V\-S\-Module}}
+\subsubsection[{Get\-Nick\-Name}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Cv\-V\-S\-Module\-::\-Get\-Nick\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCvVSModule_a4e88432ebff5ba68026f0ca5062343c9}
+\hypertarget{classCvVSModule_a32b0d2c05a86470bc74bbb905dd9549f}{\index{Cv\-V\-S\-Module@{Cv\-V\-S\-Module}!Get\-Param@{Get\-Param}}
+\index{Get\-Param@{Get\-Param}!CvVSModule@{Cv\-V\-S\-Module}}
+\subsubsection[{Get\-Param}]{\setlength{\rightskip}{0pt plus 5cm}double Cv\-V\-S\-Module\-::\-Get\-Param (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+)}}\label{classCvVSModule_a32b0d2c05a86470bc74bbb905dd9549f}
+\hypertarget{classCvVSModule_a4cde5c64e09263fb4f6e6837062e644c}{\index{Cv\-V\-S\-Module@{Cv\-V\-S\-Module}!Get\-Param\-Comment@{Get\-Param\-Comment}}
+\index{Get\-Param\-Comment@{Get\-Param\-Comment}!CvVSModule@{Cv\-V\-S\-Module}}
+\subsubsection[{Get\-Param\-Comment}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Cv\-V\-S\-Module\-::\-Get\-Param\-Comment (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+)}}\label{classCvVSModule_a4cde5c64e09263fb4f6e6837062e644c}
+\hypertarget{classCvVSModule_a77191dbaaee4762699f58bf640a1172e}{\index{Cv\-V\-S\-Module@{Cv\-V\-S\-Module}!Get\-Param\-Name@{Get\-Param\-Name}}
+\index{Get\-Param\-Name@{Get\-Param\-Name}!CvVSModule@{Cv\-V\-S\-Module}}
+\subsubsection[{Get\-Param\-Name}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Cv\-V\-S\-Module\-::\-Get\-Param\-Name (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}}\label{classCvVSModule_a77191dbaaee4762699f58bf640a1172e}
+\hypertarget{classCvVSModule_ac537ab02459c7d2598e3bbeacf9f89d2}{\index{Cv\-V\-S\-Module@{Cv\-V\-S\-Module}!Get\-Param\-Str@{Get\-Param\-Str}}
+\index{Get\-Param\-Str@{Get\-Param\-Str}!CvVSModule@{Cv\-V\-S\-Module}}
+\subsubsection[{Get\-Param\-Str}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Cv\-V\-S\-Module\-::\-Get\-Param\-Str (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+)}}\label{classCvVSModule_ac537ab02459c7d2598e3bbeacf9f89d2}
+\hypertarget{classCvVSModule_a1afb3cb19efba9321b97c936602a791a}{\index{Cv\-V\-S\-Module@{Cv\-V\-S\-Module}!Get\-Type\-Name@{Get\-Type\-Name}}
+\index{Get\-Type\-Name@{Get\-Type\-Name}!CvVSModule@{Cv\-V\-S\-Module}}
+\subsubsection[{Get\-Type\-Name}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Cv\-V\-S\-Module\-::\-Get\-Type\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCvVSModule_a1afb3cb19efba9321b97c936602a791a}
+\hypertarget{classCvVSModule_a0e40cc3ef7c00076f1454ae96c3cf52d}{\index{Cv\-V\-S\-Module@{Cv\-V\-S\-Module}!Is\-Module\-Name@{Is\-Module\-Name}}
+\index{Is\-Module\-Name@{Is\-Module\-Name}!CvVSModule@{Cv\-V\-S\-Module}}
+\subsubsection[{Is\-Module\-Name}]{\setlength{\rightskip}{0pt plus 5cm}int Cv\-V\-S\-Module\-::\-Is\-Module\-Name (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+)}}\label{classCvVSModule_a0e40cc3ef7c00076f1454ae96c3cf52d}
+\hypertarget{classCvVSModule_af8ae3ee7888294c15c88724c24c840a8}{\index{Cv\-V\-S\-Module@{Cv\-V\-S\-Module}!Is\-Module\-Type\-Name@{Is\-Module\-Type\-Name}}
+\index{Is\-Module\-Type\-Name@{Is\-Module\-Type\-Name}!CvVSModule@{Cv\-V\-S\-Module}}
+\subsubsection[{Is\-Module\-Type\-Name}]{\setlength{\rightskip}{0pt plus 5cm}int Cv\-V\-S\-Module\-::\-Is\-Module\-Type\-Name (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+)}}\label{classCvVSModule_af8ae3ee7888294c15c88724c24c840a8}
+\hypertarget{classCvVSModule_a9c64a77cbd94425554b378af23124714}{\index{Cv\-V\-S\-Module@{Cv\-V\-S\-Module}!Is\-Param@{Is\-Param}}
+\index{Is\-Param@{Is\-Param}!CvVSModule@{Cv\-V\-S\-Module}}
+\subsubsection[{Is\-Param}]{\setlength{\rightskip}{0pt plus 5cm}int Cv\-V\-S\-Module\-::\-Is\-Param (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classCvVSModule_a9c64a77cbd94425554b378af23124714}
+\hypertarget{classCvVSModule_ad0d046d9844e3582759614fb0ea780f2}{\index{Cv\-V\-S\-Module@{Cv\-V\-S\-Module}!Load\-State@{Load\-State}}
+\index{Load\-State@{Load\-State}!CvVSModule@{Cv\-V\-S\-Module}}
+\subsubsection[{Load\-State}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Cv\-V\-S\-Module\-::\-Load\-State (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-File\-Storage} $\ast$}]{, }
+\item[{{\bf Cv\-File\-Node} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCvVSModule_ad0d046d9844e3582759614fb0ea780f2}
+\hypertarget{classCvVSModule_acc31eb995390002f298d4b1d6034940f}{\index{Cv\-V\-S\-Module@{Cv\-V\-S\-Module}!Param\-Update@{Param\-Update}}
+\index{Param\-Update@{Param\-Update}!CvVSModule@{Cv\-V\-S\-Module}}
+\subsubsection[{Param\-Update}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Cv\-V\-S\-Module\-::\-Param\-Update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCvVSModule_acc31eb995390002f298d4b1d6034940f}
+\hypertarget{classCvVSModule_a5501dc4749ea61dfa6a44621ecc41824}{\index{Cv\-V\-S\-Module@{Cv\-V\-S\-Module}!Release@{Release}}
+\index{Release@{Release}!CvVSModule@{Cv\-V\-S\-Module}}
+\subsubsection[{Release}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Cv\-V\-S\-Module\-::\-Release (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classCvVSModule_a5501dc4749ea61dfa6a44621ecc41824}
+
+
+Implemented in \hyperlink{classCvBlobTrackerAuto_ac2c6d43e08b54d2a7b58d7cf799d6e6a}{Cv\-Blob\-Tracker\-Auto}, \hyperlink{classCvBlobTrackFVGen_ae3e0e535d8ac4c4bc2b3eb637b51b891}{Cv\-Blob\-Track\-F\-V\-Gen}, \hyperlink{classCvBlobTrackAnalysis_a4619d3b6d358b1bfdc185c0509fb0733}{Cv\-Blob\-Track\-Analysis}, \hyperlink{classCvBlobTrackPredictor_ace554f365c0ce963ef0a3f317df6c4a3}{Cv\-Blob\-Track\-Predictor}, \hyperlink{classCvBlobTrackPostProcOne_a7c7e573c6b0f4ea73651f4f1bb5c8df6}{Cv\-Blob\-Track\-Post\-Proc\-One}, \hyperlink{classCvBlobTrackPostProc_a0dc51bb80a3acba8ffd0a168192638bb}{Cv\-Blob\-Track\-Post\-Proc}, \hyperlink{classCvBlobTrackerOne_a69c53482de6e9f24e755be90dda027cb}{Cv\-Blob\-Tracker\-One}, \hyperlink{classCvBlobTracker_a9bb9997ccde71910386f99b52f166a40}{Cv\-Blob\-Tracker}, \hyperlink{classCvBlobTrackGen_ad9bd82b7a039d3d615a4a08dfade1308}{Cv\-Blob\-Track\-Gen}, \hyperlink{classCvBlobDetector_aa7e38c7f2f9e42a96b2372175c6197bf}{Cv\-Blob\-Detector}, and \hyperlink{classCvFGDetector_a27d6313a9b0126e06a3eb545a6c1b196}{Cv\-F\-G\-Detector}.
+
+\hypertarget{classCvVSModule_a32e569ec1fbbc58d93bbd6a2113fb54f}{\index{Cv\-V\-S\-Module@{Cv\-V\-S\-Module}!Save\-State@{Save\-State}}
+\index{Save\-State@{Save\-State}!CvVSModule@{Cv\-V\-S\-Module}}
+\subsubsection[{Save\-State}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Cv\-V\-S\-Module\-::\-Save\-State (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-File\-Storage} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCvVSModule_a32e569ec1fbbc58d93bbd6a2113fb54f}
+\hypertarget{classCvVSModule_aef3ad6bfa0f1e35c2c643c1372c19af3}{\index{Cv\-V\-S\-Module@{Cv\-V\-S\-Module}!Set\-Module\-Name@{Set\-Module\-Name}}
+\index{Set\-Module\-Name@{Set\-Module\-Name}!CvVSModule@{Cv\-V\-S\-Module}}
+\subsubsection[{Set\-Module\-Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Cv\-V\-S\-Module\-::\-Set\-Module\-Name (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classCvVSModule_aef3ad6bfa0f1e35c2c643c1372c19af3}
+\hypertarget{classCvVSModule_a195a0ac70890721ed74366963b025e40}{\index{Cv\-V\-S\-Module@{Cv\-V\-S\-Module}!Set\-Nick\-Name@{Set\-Nick\-Name}}
+\index{Set\-Nick\-Name@{Set\-Nick\-Name}!CvVSModule@{Cv\-V\-S\-Module}}
+\subsubsection[{Set\-Nick\-Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Cv\-V\-S\-Module\-::\-Set\-Nick\-Name (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{p\-Str}
+\end{DoxyParamCaption}
+)}}\label{classCvVSModule_a195a0ac70890721ed74366963b025e40}
+\hypertarget{classCvVSModule_a07b733641608273c0f58f856dba5fe09}{\index{Cv\-V\-S\-Module@{Cv\-V\-S\-Module}!Set\-Param@{Set\-Param}}
+\index{Set\-Param@{Set\-Param}!CvVSModule@{Cv\-V\-S\-Module}}
+\subsubsection[{Set\-Param}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Cv\-V\-S\-Module\-::\-Set\-Param (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name, }
+\item[{double}]{val}
+\end{DoxyParamCaption}
+)}}\label{classCvVSModule_a07b733641608273c0f58f856dba5fe09}
+\hypertarget{classCvVSModule_ad27446e3c04458895524d4c58172b288}{\index{Cv\-V\-S\-Module@{Cv\-V\-S\-Module}!Set\-Param\-Str@{Set\-Param\-Str}}
+\index{Set\-Param\-Str@{Set\-Param\-Str}!CvVSModule@{Cv\-V\-S\-Module}}
+\subsubsection[{Set\-Param\-Str}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Cv\-V\-S\-Module\-::\-Set\-Param\-Str (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name, }
+\item[{const char $\ast$}]{str}
+\end{DoxyParamCaption}
+)}}\label{classCvVSModule_ad27446e3c04458895524d4c58172b288}
+\hypertarget{classCvVSModule_aab1496a6cc6f3c46a9c617acd54db5e2}{\index{Cv\-V\-S\-Module@{Cv\-V\-S\-Module}!Set\-Type\-Name@{Set\-Type\-Name}}
+\index{Set\-Type\-Name@{Set\-Type\-Name}!CvVSModule@{Cv\-V\-S\-Module}}
+\subsubsection[{Set\-Type\-Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Cv\-V\-S\-Module\-::\-Set\-Type\-Name (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classCvVSModule_aab1496a6cc6f3c46a9c617acd54db5e2}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCvVSModule_aab1496a6cc6f3c46a9c617acd54db5e2_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classCvVSModule_a241881c14ea04a9b6074035dd20f8b3f}{\index{Cv\-V\-S\-Module@{Cv\-V\-S\-Module}!Transfer\-Params\-From\-Child@{Transfer\-Params\-From\-Child}}
+\index{Transfer\-Params\-From\-Child@{Transfer\-Params\-From\-Child}!CvVSModule@{Cv\-V\-S\-Module}}
+\subsubsection[{Transfer\-Params\-From\-Child}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Cv\-V\-S\-Module\-::\-Transfer\-Params\-From\-Child (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-V\-S\-Module} $\ast$}]{p\-M, }
+\item[{const char $\ast$}]{prefix = {\ttfamily {\bf N\-U\-L\-L}}}
+\end{DoxyParamCaption}
+)}}\label{classCvVSModule_a241881c14ea04a9b6074035dd20f8b3f}
+\hypertarget{classCvVSModule_a32b8440de94ed66902f47be6cc309d19}{\index{Cv\-V\-S\-Module@{Cv\-V\-S\-Module}!Transfer\-Params\-To\-Child@{Transfer\-Params\-To\-Child}}
+\index{Transfer\-Params\-To\-Child@{Transfer\-Params\-To\-Child}!CvVSModule@{Cv\-V\-S\-Module}}
+\subsubsection[{Transfer\-Params\-To\-Child}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} Cv\-V\-S\-Module\-::\-Transfer\-Params\-To\-Child (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-V\-S\-Module} $\ast$}]{p\-M, }
+\item[{char $\ast$}]{prefix = {\ttfamily {\bf N\-U\-L\-L}}}
+\end{DoxyParamCaption}
+)}}\label{classCvVSModule_a32b8440de94ed66902f47be6cc309d19}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classCvVSModule_abda6e4d4196fc17af0427ac95b9e5cca}{\index{Cv\-V\-S\-Module@{Cv\-V\-S\-Module}!m\-\_\-\-Wnd@{m\-\_\-\-Wnd}}
+\index{m\-\_\-\-Wnd@{m\-\_\-\-Wnd}!CvVSModule@{Cv\-V\-S\-Module}}
+\subsubsection[{m\-\_\-\-Wnd}]{\setlength{\rightskip}{0pt plus 5cm}int Cv\-V\-S\-Module\-::m\-\_\-\-Wnd\hspace{0.3cm}{\ttfamily [protected]}}}\label{classCvVSModule_abda6e4d4196fc17af0427ac95b9e5cca}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/legacy/\hyperlink{blobtrack_8hpp}{blobtrack.\-hpp}\end{DoxyCompactItemize}

@@ -1,0 +1,115 @@
+\hypertarget{classCBlobGetMoment}{\section{C\-Blob\-Get\-Moment Class Reference}
+\label{classCBlobGetMoment}\index{C\-Blob\-Get\-Moment@{C\-Blob\-Get\-Moment}}
+}
+
+
+{\ttfamily \#include $<$Blob\-Operators.\-h$>$}
+
+
+
+Inheritance diagram for C\-Blob\-Get\-Moment\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=174pt]{classCBlobGetMoment__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C\-Blob\-Get\-Moment\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=174pt]{classCBlobGetMoment__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCBlobGetMoment_aca11a36f54e0e9a81937e8aa708d5b35}{C\-Blob\-Get\-Moment} ()
+\item 
+\hyperlink{classCBlobGetMoment_ac37d370c0a3f1a8190e4a3221df1ae7c}{C\-Blob\-Get\-Moment} (int p, int q)
+\item 
+double \hyperlink{classCBlobGetMoment_aefebc825f026670fab8517bc0ea052ca}{operator()} (\hyperlink{classCBlob}{C\-Blob} \&blob)
+\begin{DoxyCompactList}\small\item\em Aply operator to blob. \end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{classCBlobGetMoment_a44e020df4120067b870455a6fe6262e6}{Get\-Nom} ()
+\begin{DoxyCompactList}\small\item\em Get operator name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classCBlobGetMoment_aba7216db53d88dad0ea841cd21235b8a}{m\-\_\-p}
+\begin{DoxyCompactList}\small\item\em moment que volem calcular \end{DoxyCompactList}\item 
+int \hyperlink{classCBlobGetMoment_a35781fb08a15bdcb708a8607744abd4e}{m\-\_\-q}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe per calcular el moment P\-Q del blob Class to calculate the P,Q moment of a blob 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCBlobGetMoment_aca11a36f54e0e9a81937e8aa708d5b35}{\index{C\-Blob\-Get\-Moment@{C\-Blob\-Get\-Moment}!C\-Blob\-Get\-Moment@{C\-Blob\-Get\-Moment}}
+\index{C\-Blob\-Get\-Moment@{C\-Blob\-Get\-Moment}!CBlobGetMoment@{C\-Blob\-Get\-Moment}}
+\subsubsection[{C\-Blob\-Get\-Moment}]{\setlength{\rightskip}{0pt plus 5cm}C\-Blob\-Get\-Moment\-::\-C\-Blob\-Get\-Moment (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classCBlobGetMoment_aca11a36f54e0e9a81937e8aa708d5b35}
+Constructor estàndard Standard constructor (gets the 00 moment) \hypertarget{classCBlobGetMoment_ac37d370c0a3f1a8190e4a3221df1ae7c}{\index{C\-Blob\-Get\-Moment@{C\-Blob\-Get\-Moment}!C\-Blob\-Get\-Moment@{C\-Blob\-Get\-Moment}}
+\index{C\-Blob\-Get\-Moment@{C\-Blob\-Get\-Moment}!CBlobGetMoment@{C\-Blob\-Get\-Moment}}
+\subsubsection[{C\-Blob\-Get\-Moment}]{\setlength{\rightskip}{0pt plus 5cm}C\-Blob\-Get\-Moment\-::\-C\-Blob\-Get\-Moment (
+\begin{DoxyParamCaption}
+\item[{int}]{p, }
+\item[{int}]{q}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classCBlobGetMoment_ac37d370c0a3f1a8190e4a3221df1ae7c}
+Constructor\-: indiquem el moment p,q a calcular Constructor\-: gets the P\-Q moment 
+
+\subsection{Member Function Documentation}
+\hypertarget{classCBlobGetMoment_a44e020df4120067b870455a6fe6262e6}{\index{C\-Blob\-Get\-Moment@{C\-Blob\-Get\-Moment}!Get\-Nom@{Get\-Nom}}
+\index{Get\-Nom@{Get\-Nom}!CBlobGetMoment@{C\-Blob\-Get\-Moment}}
+\subsubsection[{Get\-Nom}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ C\-Blob\-Get\-Moment\-::\-Get\-Nom (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classCBlobGetMoment_a44e020df4120067b870455a6fe6262e6}
+
+
+Get operator name. 
+
+
+
+Implements \hyperlink{classCOperadorBlob_a717a19c163a26b45081a2231be24c008}{C\-Operador\-Blob}.
+
+\hypertarget{classCBlobGetMoment_aefebc825f026670fab8517bc0ea052ca}{\index{C\-Blob\-Get\-Moment@{C\-Blob\-Get\-Moment}!operator()@{operator()}}
+\index{operator()@{operator()}!CBlobGetMoment@{C\-Blob\-Get\-Moment}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}double C\-Blob\-Get\-Moment\-::operator() (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Blob} \&}]{blob}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCBlobGetMoment_aefebc825f026670fab8517bc0ea052ca}
+
+
+Aply operator to blob. 
+
+
+
+Implements \hyperlink{classCOperadorBlob_a303c4189cc94cafbcbee116bf014e623}{C\-Operador\-Blob}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classCBlobGetMoment_aba7216db53d88dad0ea841cd21235b8a}{\index{C\-Blob\-Get\-Moment@{C\-Blob\-Get\-Moment}!m\-\_\-p@{m\-\_\-p}}
+\index{m\-\_\-p@{m\-\_\-p}!CBlobGetMoment@{C\-Blob\-Get\-Moment}}
+\subsubsection[{m\-\_\-p}]{\setlength{\rightskip}{0pt plus 5cm}int C\-Blob\-Get\-Moment\-::m\-\_\-p\hspace{0.3cm}{\ttfamily [private]}}}\label{classCBlobGetMoment_aba7216db53d88dad0ea841cd21235b8a}
+
+
+moment que volem calcular 
+
+\hypertarget{classCBlobGetMoment_a35781fb08a15bdcb708a8607744abd4e}{\index{C\-Blob\-Get\-Moment@{C\-Blob\-Get\-Moment}!m\-\_\-q@{m\-\_\-q}}
+\index{m\-\_\-q@{m\-\_\-q}!CBlobGetMoment@{C\-Blob\-Get\-Moment}}
+\subsubsection[{m\-\_\-q}]{\setlength{\rightskip}{0pt plus 5cm}int C\-Blob\-Get\-Moment\-::m\-\_\-q\hspace{0.3cm}{\ttfamily [private]}}}\label{classCBlobGetMoment_a35781fb08a15bdcb708a8607744abd4e}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/3rdparty/cvblobs/\hyperlink{BlobOperators_8h}{Blob\-Operators.\-h}\end{DoxyCompactItemize}

@@ -1,0 +1,44 @@
+\hypertarget{vec__distance_8hpp}{\section{/usr/include/opencv2/gpu/device/vec\-\_\-distance.hpp File Reference}
+\label{vec__distance_8hpp}\index{/usr/include/opencv2/gpu/device/vec\-\_\-distance.\-hpp@{/usr/include/opencv2/gpu/device/vec\-\_\-distance.\-hpp}}
+}
+{\ttfamily \#include \char`\"{}reduce.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}functional.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}detail/vec\-\_\-distance\-\_\-detail.\-hpp\char`\"{}}\\*
+Include dependency graph for vec\-\_\-distance.\-hpp\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{vec__distance_8hpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1L1Dist}{cv\-::gpu\-::device\-::\-L1\-Dist$<$ T $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1L1Dist_3_01float_01_4}{cv\-::gpu\-::device\-::\-L1\-Dist$<$ float $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1L2Dist}{cv\-::gpu\-::device\-::\-L2\-Dist}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1HammingDist}{cv\-::gpu\-::device\-::\-Hamming\-Dist}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1VecDiffGlobal}{cv\-::gpu\-::device\-::\-Vec\-Diff\-Global$<$ T\-H\-R\-E\-A\-D\-\_\-\-D\-I\-M, T1 $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1VecDiffCachedRegister}{cv\-::gpu\-::device\-::\-Vec\-Diff\-Cached\-Register$<$ T\-H\-R\-E\-A\-D\-\_\-\-D\-I\-M, M\-A\-X\-\_\-\-L\-E\-N, L\-E\-N\-\_\-\-E\-Q\-\_\-\-M\-A\-X\-\_\-\-L\-E\-N, U $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacecv}{cv}
+\item 
+\hyperlink{namespacecv_1_1gpu}{cv\-::gpu}
+\item 
+\hyperlink{namespacecv_1_1gpu_1_1device}{cv\-::gpu\-::device}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$int T\-H\-R\-E\-A\-D\-\_\-\-D\-I\-M, typename Dist , typename T1 , typename T2 $>$ }\\\-\_\-\-\_\-device\-\_\-\-\_\- \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1gpu_1_1device_af80d88a6c643e38c5b2087b600cfa236}{cv\-::gpu\-::device\-::calc\-Vec\-Diff\-Global} (const T1 $\ast$vec1, const T2 $\ast$\hyperlink{core__c_8h_aa709adb546262d915d3c98aacf3bb71a}{vec2}, int \hyperlink{core__c_8h_accb79be93f4fbcaa15b5a7670569c9f8}{len}, Dist \&\hyperlink{legacy_8hpp_ae895c2003a87eda49126845b7ac3688e}{dist}, typename Dist\-::result\-\_\-type $\ast$smem, int tid)
+\item 
+{\footnotesize template$<$int T\-H\-R\-E\-A\-D\-\_\-\-D\-I\-M, int M\-A\-X\-\_\-\-L\-E\-N, bool L\-E\-N\-\_\-\-E\-Q\-\_\-\-M\-A\-X\-\_\-\-L\-E\-N, typename Dist , typename T1 , typename T2 $>$ }\\\-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1gpu_1_1device_aa65ed7257421dae386ffd02f9dbd9de5}{cv\-::gpu\-::device\-::calc\-Vec\-Diff\-Cached} (const T1 $\ast$vec\-Cached, const T2 $\ast$vec\-Glob, int \hyperlink{core__c_8h_accb79be93f4fbcaa15b5a7670569c9f8}{len}, Dist \&\hyperlink{legacy_8hpp_ae895c2003a87eda49126845b7ac3688e}{dist}, typename Dist\-::result\-\_\-type $\ast$smem, int tid)
+\end{DoxyCompactItemize}

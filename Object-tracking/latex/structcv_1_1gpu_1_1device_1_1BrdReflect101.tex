@@ -1,0 +1,300 @@
+\hypertarget{structcv_1_1gpu_1_1device_1_1BrdReflect101}{\section{cv\-:\-:gpu\-:\-:device\-:\-:Brd\-Reflect101$<$ D $>$ Struct Template Reference}
+\label{structcv_1_1gpu_1_1device_1_1BrdReflect101}\index{cv\-::gpu\-::device\-::\-Brd\-Reflect101$<$ D $>$@{cv\-::gpu\-::device\-::\-Brd\-Reflect101$<$ D $>$}}
+}
+
+
+{\ttfamily \#include $<$border\-\_\-interpolate.\-hpp$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef D \hyperlink{structcv_1_1gpu_1_1device_1_1BrdReflect101_a243eb00a5855f0a100f67fd427e1b192}{result\-\_\-type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\-\_\-\-\_\-host\-\_\-\-\_\- \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{structcv_1_1gpu_1_1device_1_1BrdReflect101_a1f92854b46d4cdd849286c4bdfc81863}{Brd\-Reflect101} (int \hyperlink{highgui__c_8h_adc7b4b8a6ef510e136071efbc9cd9a58}{height}, int \hyperlink{highgui__c_8h_a2474a5474cbff19523a51eb1de01cda4}{width})
+\item 
+{\footnotesize template$<$typename U $>$ }\\\-\_\-\-\_\-host\-\_\-\-\_\- \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{structcv_1_1gpu_1_1device_1_1BrdReflect101_aeb3301c4b866ed3c6b9df994432fcb40}{Brd\-Reflect101} (int \hyperlink{highgui__c_8h_adc7b4b8a6ef510e136071efbc9cd9a58}{height}, int \hyperlink{highgui__c_8h_a2474a5474cbff19523a51eb1de01cda4}{width}, \hyperlink{core__c_8h_aa9c521f41af9a5191e5e4b6ffbae211a}{U})
+\item 
+\-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- int \hyperlink{structcv_1_1gpu_1_1device_1_1BrdReflect101_ae1bd65c3c88e3fef0299e1a7bd6291a2}{idx\-\_\-row\-\_\-low} (int \hyperlink{highgui__c_8h_af1202c02b14870c18fb3a1da73e9e7c7}{y}) const 
+\item 
+\-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- int \hyperlink{structcv_1_1gpu_1_1device_1_1BrdReflect101_a1bf5db9830a47f6ecf5c4078c53ee528}{idx\-\_\-row\-\_\-high} (int \hyperlink{highgui__c_8h_af1202c02b14870c18fb3a1da73e9e7c7}{y}) const 
+\item 
+\-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- int \hyperlink{structcv_1_1gpu_1_1device_1_1BrdReflect101_a6e3bdd562ada6683b52eec47fb62cda2}{idx\-\_\-row} (int \hyperlink{highgui__c_8h_af1202c02b14870c18fb3a1da73e9e7c7}{y}) const 
+\item 
+\-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- int \hyperlink{structcv_1_1gpu_1_1device_1_1BrdReflect101_a91cc3b6c8509fcd1bca14da218293c5e}{idx\-\_\-col\-\_\-low} (int \hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x}) const 
+\item 
+\-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- int \hyperlink{structcv_1_1gpu_1_1device_1_1BrdReflect101_ace0d2c1ac4bf76633a04a204ef6d0814}{idx\-\_\-col\-\_\-high} (int \hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x}) const 
+\item 
+\-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- int \hyperlink{structcv_1_1gpu_1_1device_1_1BrdReflect101_ac005888ec6d3744a5f8b7d7d6566389c}{idx\-\_\-col} (int \hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x}) const 
+\item 
+{\footnotesize template$<$typename T $>$ }\\\-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- D \hyperlink{structcv_1_1gpu_1_1device_1_1BrdReflect101_a83ae51106002c2b7f8aa2cc2c905764a}{at} (int \hyperlink{highgui__c_8h_af1202c02b14870c18fb3a1da73e9e7c7}{y}, int \hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x}, const \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} $\ast$\hyperlink{legacy_8hpp_ab9fe6c09e6d02865a953fffc12fe6ca0}{data}, size\-\_\-t \hyperlink{legacy_8hpp_abc16e65f240ed0c8f3e876e8732c0a33}{step}) const 
+\item 
+{\footnotesize template$<$typename Ptr2\-D $>$ }\\\-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- D \hyperlink{structcv_1_1gpu_1_1device_1_1BrdReflect101_a9416a54a669a86313569e838faf9f3ee}{at} (typename Ptr2\-D\-::index\-\_\-type \hyperlink{highgui__c_8h_af1202c02b14870c18fb3a1da73e9e7c7}{y}, typename Ptr2\-D\-::index\-\_\-type \hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x}, const Ptr2\-D \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}) const 
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const int \hyperlink{structcv_1_1gpu_1_1device_1_1BrdReflect101_a84c09f5cd2cdefae21bbde8e0dec32ec}{last\-\_\-row}
+\item 
+const int \hyperlink{structcv_1_1gpu_1_1device_1_1BrdReflect101_abbb6905ce1697878e411d7ede5d4c5e9}{last\-\_\-col}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{structcv_1_1gpu_1_1device_1_1BrdReflect101_a243eb00a5855f0a100f67fd427e1b192}{\index{cv\-::gpu\-::device\-::\-Brd\-Reflect101@{cv\-::gpu\-::device\-::\-Brd\-Reflect101}!result\-\_\-type@{result\-\_\-type}}
+\index{result\-\_\-type@{result\-\_\-type}!cv::gpu::device::BrdReflect101@{cv\-::gpu\-::device\-::\-Brd\-Reflect101}}
+\subsubsection[{result\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename D $>$ typedef D {\bf cv\-::gpu\-::device\-::\-Brd\-Reflect101}$<$ D $>$\-::{\bf result\-\_\-type}}}\label{structcv_1_1gpu_1_1device_1_1BrdReflect101_a243eb00a5855f0a100f67fd427e1b192}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structcv_1_1gpu_1_1device_1_1BrdReflect101_a1f92854b46d4cdd849286c4bdfc81863}{\index{cv\-::gpu\-::device\-::\-Brd\-Reflect101@{cv\-::gpu\-::device\-::\-Brd\-Reflect101}!Brd\-Reflect101@{Brd\-Reflect101}}
+\index{Brd\-Reflect101@{Brd\-Reflect101}!cv::gpu::device::BrdReflect101@{cv\-::gpu\-::device\-::\-Brd\-Reflect101}}
+\subsubsection[{Brd\-Reflect101}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename D $>$ \-\_\-\-\_\-host\-\_\-\-\_\- \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- {\bf cv\-::gpu\-::device\-::\-Brd\-Reflect101}$<$ D $>$\-::{\bf Brd\-Reflect101} (
+\begin{DoxyParamCaption}
+\item[{int}]{height, }
+\item[{int}]{width}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{structcv_1_1gpu_1_1device_1_1BrdReflect101_a1f92854b46d4cdd849286c4bdfc81863}
+\hypertarget{structcv_1_1gpu_1_1device_1_1BrdReflect101_aeb3301c4b866ed3c6b9df994432fcb40}{\index{cv\-::gpu\-::device\-::\-Brd\-Reflect101@{cv\-::gpu\-::device\-::\-Brd\-Reflect101}!Brd\-Reflect101@{Brd\-Reflect101}}
+\index{Brd\-Reflect101@{Brd\-Reflect101}!cv::gpu::device::BrdReflect101@{cv\-::gpu\-::device\-::\-Brd\-Reflect101}}
+\subsubsection[{Brd\-Reflect101}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename D $>$ template$<$typename U $>$ \-\_\-\-\_\-host\-\_\-\-\_\- \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- {\bf cv\-::gpu\-::device\-::\-Brd\-Reflect101}$<$ D $>$\-::{\bf Brd\-Reflect101} (
+\begin{DoxyParamCaption}
+\item[{int}]{height, }
+\item[{int}]{width, }
+\item[{{\bf U}}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{structcv_1_1gpu_1_1device_1_1BrdReflect101_aeb3301c4b866ed3c6b9df994432fcb40}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structcv_1_1gpu_1_1device_1_1BrdReflect101_a83ae51106002c2b7f8aa2cc2c905764a}{\index{cv\-::gpu\-::device\-::\-Brd\-Reflect101@{cv\-::gpu\-::device\-::\-Brd\-Reflect101}!at@{at}}
+\index{at@{at}!cv::gpu::device::BrdReflect101@{cv\-::gpu\-::device\-::\-Brd\-Reflect101}}
+\subsubsection[{at}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename D $>$ template$<$typename T $>$ \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- D {\bf cv\-::gpu\-::device\-::\-Brd\-Reflect101}$<$ D $>$\-::at (
+\begin{DoxyParamCaption}
+\item[{int}]{y, }
+\item[{int}]{x, }
+\item[{const {\bf T} $\ast$}]{data, }
+\item[{size\-\_\-t}]{step}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{structcv_1_1gpu_1_1device_1_1BrdReflect101_a83ae51106002c2b7f8aa2cc2c905764a}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structcv_1_1gpu_1_1device_1_1BrdReflect101_a83ae51106002c2b7f8aa2cc2c905764a_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{structcv_1_1gpu_1_1device_1_1BrdReflect101_a9416a54a669a86313569e838faf9f3ee}{\index{cv\-::gpu\-::device\-::\-Brd\-Reflect101@{cv\-::gpu\-::device\-::\-Brd\-Reflect101}!at@{at}}
+\index{at@{at}!cv::gpu::device::BrdReflect101@{cv\-::gpu\-::device\-::\-Brd\-Reflect101}}
+\subsubsection[{at}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename D $>$ template$<$typename Ptr2\-D $>$ \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- D {\bf cv\-::gpu\-::device\-::\-Brd\-Reflect101}$<$ D $>$\-::at (
+\begin{DoxyParamCaption}
+\item[{typename Ptr2\-D\-::index\-\_\-type}]{y, }
+\item[{typename Ptr2\-D\-::index\-\_\-type}]{x, }
+\item[{const Ptr2\-D \&}]{src}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{structcv_1_1gpu_1_1device_1_1BrdReflect101_a9416a54a669a86313569e838faf9f3ee}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structcv_1_1gpu_1_1device_1_1BrdReflect101_a9416a54a669a86313569e838faf9f3ee_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{structcv_1_1gpu_1_1device_1_1BrdReflect101_ac005888ec6d3744a5f8b7d7d6566389c}{\index{cv\-::gpu\-::device\-::\-Brd\-Reflect101@{cv\-::gpu\-::device\-::\-Brd\-Reflect101}!idx\-\_\-col@{idx\-\_\-col}}
+\index{idx\-\_\-col@{idx\-\_\-col}!cv::gpu::device::BrdReflect101@{cv\-::gpu\-::device\-::\-Brd\-Reflect101}}
+\subsubsection[{idx\-\_\-col}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename D $>$ \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- int {\bf cv\-::gpu\-::device\-::\-Brd\-Reflect101}$<$ D $>$\-::idx\-\_\-col (
+\begin{DoxyParamCaption}
+\item[{int}]{x}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{structcv_1_1gpu_1_1device_1_1BrdReflect101_ac005888ec6d3744a5f8b7d7d6566389c}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structcv_1_1gpu_1_1device_1_1BrdReflect101_ac005888ec6d3744a5f8b7d7d6566389c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structcv_1_1gpu_1_1device_1_1BrdReflect101_ac005888ec6d3744a5f8b7d7d6566389c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{structcv_1_1gpu_1_1device_1_1BrdReflect101_ace0d2c1ac4bf76633a04a204ef6d0814}{\index{cv\-::gpu\-::device\-::\-Brd\-Reflect101@{cv\-::gpu\-::device\-::\-Brd\-Reflect101}!idx\-\_\-col\-\_\-high@{idx\-\_\-col\-\_\-high}}
+\index{idx\-\_\-col\-\_\-high@{idx\-\_\-col\-\_\-high}!cv::gpu::device::BrdReflect101@{cv\-::gpu\-::device\-::\-Brd\-Reflect101}}
+\subsubsection[{idx\-\_\-col\-\_\-high}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename D $>$ \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- int {\bf cv\-::gpu\-::device\-::\-Brd\-Reflect101}$<$ D $>$\-::idx\-\_\-col\-\_\-high (
+\begin{DoxyParamCaption}
+\item[{int}]{x}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{structcv_1_1gpu_1_1device_1_1BrdReflect101_ace0d2c1ac4bf76633a04a204ef6d0814}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{structcv_1_1gpu_1_1device_1_1BrdReflect101_ace0d2c1ac4bf76633a04a204ef6d0814_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structcv_1_1gpu_1_1device_1_1BrdReflect101_ace0d2c1ac4bf76633a04a204ef6d0814_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{structcv_1_1gpu_1_1device_1_1BrdReflect101_a91cc3b6c8509fcd1bca14da218293c5e}{\index{cv\-::gpu\-::device\-::\-Brd\-Reflect101@{cv\-::gpu\-::device\-::\-Brd\-Reflect101}!idx\-\_\-col\-\_\-low@{idx\-\_\-col\-\_\-low}}
+\index{idx\-\_\-col\-\_\-low@{idx\-\_\-col\-\_\-low}!cv::gpu::device::BrdReflect101@{cv\-::gpu\-::device\-::\-Brd\-Reflect101}}
+\subsubsection[{idx\-\_\-col\-\_\-low}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename D $>$ \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- int {\bf cv\-::gpu\-::device\-::\-Brd\-Reflect101}$<$ D $>$\-::idx\-\_\-col\-\_\-low (
+\begin{DoxyParamCaption}
+\item[{int}]{x}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{structcv_1_1gpu_1_1device_1_1BrdReflect101_a91cc3b6c8509fcd1bca14da218293c5e}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{structcv_1_1gpu_1_1device_1_1BrdReflect101_a91cc3b6c8509fcd1bca14da218293c5e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structcv_1_1gpu_1_1device_1_1BrdReflect101_a91cc3b6c8509fcd1bca14da218293c5e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{structcv_1_1gpu_1_1device_1_1BrdReflect101_a6e3bdd562ada6683b52eec47fb62cda2}{\index{cv\-::gpu\-::device\-::\-Brd\-Reflect101@{cv\-::gpu\-::device\-::\-Brd\-Reflect101}!idx\-\_\-row@{idx\-\_\-row}}
+\index{idx\-\_\-row@{idx\-\_\-row}!cv::gpu::device::BrdReflect101@{cv\-::gpu\-::device\-::\-Brd\-Reflect101}}
+\subsubsection[{idx\-\_\-row}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename D $>$ \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- int {\bf cv\-::gpu\-::device\-::\-Brd\-Reflect101}$<$ D $>$\-::idx\-\_\-row (
+\begin{DoxyParamCaption}
+\item[{int}]{y}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{structcv_1_1gpu_1_1device_1_1BrdReflect101_a6e3bdd562ada6683b52eec47fb62cda2}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structcv_1_1gpu_1_1device_1_1BrdReflect101_a6e3bdd562ada6683b52eec47fb62cda2_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structcv_1_1gpu_1_1device_1_1BrdReflect101_a6e3bdd562ada6683b52eec47fb62cda2_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{structcv_1_1gpu_1_1device_1_1BrdReflect101_a1bf5db9830a47f6ecf5c4078c53ee528}{\index{cv\-::gpu\-::device\-::\-Brd\-Reflect101@{cv\-::gpu\-::device\-::\-Brd\-Reflect101}!idx\-\_\-row\-\_\-high@{idx\-\_\-row\-\_\-high}}
+\index{idx\-\_\-row\-\_\-high@{idx\-\_\-row\-\_\-high}!cv::gpu::device::BrdReflect101@{cv\-::gpu\-::device\-::\-Brd\-Reflect101}}
+\subsubsection[{idx\-\_\-row\-\_\-high}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename D $>$ \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- int {\bf cv\-::gpu\-::device\-::\-Brd\-Reflect101}$<$ D $>$\-::idx\-\_\-row\-\_\-high (
+\begin{DoxyParamCaption}
+\item[{int}]{y}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{structcv_1_1gpu_1_1device_1_1BrdReflect101_a1bf5db9830a47f6ecf5c4078c53ee528}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{structcv_1_1gpu_1_1device_1_1BrdReflect101_a1bf5db9830a47f6ecf5c4078c53ee528_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structcv_1_1gpu_1_1device_1_1BrdReflect101_a1bf5db9830a47f6ecf5c4078c53ee528_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{structcv_1_1gpu_1_1device_1_1BrdReflect101_ae1bd65c3c88e3fef0299e1a7bd6291a2}{\index{cv\-::gpu\-::device\-::\-Brd\-Reflect101@{cv\-::gpu\-::device\-::\-Brd\-Reflect101}!idx\-\_\-row\-\_\-low@{idx\-\_\-row\-\_\-low}}
+\index{idx\-\_\-row\-\_\-low@{idx\-\_\-row\-\_\-low}!cv::gpu::device::BrdReflect101@{cv\-::gpu\-::device\-::\-Brd\-Reflect101}}
+\subsubsection[{idx\-\_\-row\-\_\-low}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename D $>$ \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- int {\bf cv\-::gpu\-::device\-::\-Brd\-Reflect101}$<$ D $>$\-::idx\-\_\-row\-\_\-low (
+\begin{DoxyParamCaption}
+\item[{int}]{y}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{structcv_1_1gpu_1_1device_1_1BrdReflect101_ae1bd65c3c88e3fef0299e1a7bd6291a2}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{structcv_1_1gpu_1_1device_1_1BrdReflect101_ae1bd65c3c88e3fef0299e1a7bd6291a2_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structcv_1_1gpu_1_1device_1_1BrdReflect101_ae1bd65c3c88e3fef0299e1a7bd6291a2_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structcv_1_1gpu_1_1device_1_1BrdReflect101_abbb6905ce1697878e411d7ede5d4c5e9}{\index{cv\-::gpu\-::device\-::\-Brd\-Reflect101@{cv\-::gpu\-::device\-::\-Brd\-Reflect101}!last\-\_\-col@{last\-\_\-col}}
+\index{last\-\_\-col@{last\-\_\-col}!cv::gpu::device::BrdReflect101@{cv\-::gpu\-::device\-::\-Brd\-Reflect101}}
+\subsubsection[{last\-\_\-col}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename D $>$ const int {\bf cv\-::gpu\-::device\-::\-Brd\-Reflect101}$<$ D $>$\-::last\-\_\-col}}\label{structcv_1_1gpu_1_1device_1_1BrdReflect101_abbb6905ce1697878e411d7ede5d4c5e9}
+\hypertarget{structcv_1_1gpu_1_1device_1_1BrdReflect101_a84c09f5cd2cdefae21bbde8e0dec32ec}{\index{cv\-::gpu\-::device\-::\-Brd\-Reflect101@{cv\-::gpu\-::device\-::\-Brd\-Reflect101}!last\-\_\-row@{last\-\_\-row}}
+\index{last\-\_\-row@{last\-\_\-row}!cv::gpu::device::BrdReflect101@{cv\-::gpu\-::device\-::\-Brd\-Reflect101}}
+\subsubsection[{last\-\_\-row}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename D $>$ const int {\bf cv\-::gpu\-::device\-::\-Brd\-Reflect101}$<$ D $>$\-::last\-\_\-row}}\label{structcv_1_1gpu_1_1device_1_1BrdReflect101_a84c09f5cd2cdefae21bbde8e0dec32ec}
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/gpu/device/\hyperlink{border__interpolate_8hpp}{border\-\_\-interpolate.\-hpp}\end{DoxyCompactItemize}

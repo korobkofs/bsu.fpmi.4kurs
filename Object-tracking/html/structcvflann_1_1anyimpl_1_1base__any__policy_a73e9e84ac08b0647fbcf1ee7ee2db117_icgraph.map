@@ -1,0 +1,7 @@
+<map id="cvflann::anyimpl::base_any_policy::type" name="cvflann::anyimpl::base_any_policy::type">
+<area shape="rect" id="node2" href="$structcvflann_1_1any.html#a6434473fb7b9ef53e4bcbfd066d3435d" title="Cast operator. You can only cast to the original type. " alt="" coords="227,5,354,32"/>
+<area shape="rect" id="node3" href="$structcvflann_1_1any.html#a2f9c16a22aca2a6e6053d5bfedac9901" title="Returns true if the any contains no value. " alt="" coords="222,56,359,83"/>
+<area shape="rect" id="node4" href="$structcvflann_1_1any.html#a755b50cc51c7c37162d7b39d1010f117" title="Returns true if the two types are the same. " alt="" coords="209,107,373,133"/>
+<area shape="rect" id="node5" href="$structcvflann_1_1any.html#a4ef5cda72c6a25e1f0ddd926966e639c" title="Returns if the type is compatible with the policy. " alt="" coords="213,157,368,184"/>
+<area shape="rect" id="node6" href="$structcvflann_1_1any.html#af841fa57af8b0ad38106f833d31a84dc" title="cvflann::any::type" alt="" coords="227,208,354,235"/>
+</map>

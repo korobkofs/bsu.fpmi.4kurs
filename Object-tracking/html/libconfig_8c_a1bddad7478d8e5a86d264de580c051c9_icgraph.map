@@ -1,0 +1,18 @@
+<map id="config_get_auto_convert" name="config_get_auto_convert">
+<area shape="rect" id="node2" href="$libconfig_8c.html#a3ccb479becb6bf2516225a38a74b7a41" title="__config_setting_get\l_float" alt="" coords="222,165,365,206"/>
+<area shape="rect" id="node9" href="$libconfig_8h.html#a10c2f141b32bcca44df4c60bf04c4a2d" title="config_setting_set_int" alt="" coords="219,343,368,369"/>
+<area shape="rect" id="node13" href="$libconfig_8h.html#a4161c3f83fe35355a477667cc28e344d" title="config_setting_set\l_int64" alt="" coords="229,427,357,469"/>
+<area shape="rect" id="node16" href="$classlibconfig_1_1Config.html#a4986e712dd553c3b9f511a98ada42817" title="libconfig::Config::\lgetAutoConvert" alt="" coords="231,493,355,534"/>
+<area shape="rect" id="node17" href="$classlibconfig_1_1Setting.html#a07507216298487ce69cf77f56a77df41" title="libconfig::Setting\l::assertType" alt="" coords="234,558,353,599"/>
+<area shape="rect" id="node3" href="$libconfig_8h.html#a4e90532d057c33bf959f5f182ed9bf00" title="config_setting_get\l_float" alt="" coords="427,70,555,111"/>
+<area shape="rect" id="node7" href="$libconfig_8h.html#a682292daf93fe30ae66dc8f1de0e1f8c" title="config_setting_lookup\l_float" alt="" coords="417,135,565,177"/>
+<area shape="rect" id="node8" href="$libconfig_8h.html#a7457b1644fca734204e8dda7f1d0e2a5" title="config_lookup_float" alt="" coords="423,201,558,228"/>
+<area shape="rect" id="node4" href="$libconfig_8h.html#ad1fe5d99342917db51580893343560f0" title="config_setting_get\l_float_elem" alt="" coords="613,5,741,46"/>
+<area shape="rect" id="node5" href="$classlibconfig_1_1Setting.html#a79a41bbda6c9cd9f50c5820032424874" title="libconfig::Setting\l::operator double" alt="" coords="618,70,737,111"/>
+<area shape="rect" id="node6" href="$classlibconfig_1_1Setting.html#afe1936d947131f08bc0b0e0824ada07a" title="libconfig::Setting\l::operator float" alt="" coords="618,135,737,177"/>
+<area shape="rect" id="node10" href="$grammar_8c.html#aa95461e463ec8927a2b16e55683cfcaf" title="yyparse" alt="" coords="643,373,711,400"/>
+<area shape="rect" id="node11" href="$libconfig_8h.html#aedf57606b3ff02ca7f524d62a6094e83" title="config_setting_set\l_int_elem" alt="" coords="427,303,555,345"/>
+<area shape="rect" id="node12" href="$classlibconfig_1_1Setting.html#ad466b44815dfe9ae2177765d2242911a" title="libconfig::Setting\l::operator=" alt="" coords="431,369,550,410"/>
+<area shape="rect" id="node14" href="$libconfig_8h.html#aa3a474db0c9ebe27c549f5c2be69053d" title="config_setting_set\l_int64_elem" alt="" coords="427,486,555,527"/>
+<area shape="rect" id="node15" href="$classlibconfig_1_1Setting.html#a25baf662804c2847b00d9e1f7ca5cde5" title="libconfig::Setting\l::operator=" alt="" coords="431,551,550,593"/>
+</map>

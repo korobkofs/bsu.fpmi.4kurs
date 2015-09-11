@@ -1,0 +1,79 @@
+\hypertarget{saving_8h}{\section{/usr/include/opencv2/flann/saving.h File Reference}
+\label{saving_8h}\index{/usr/include/opencv2/flann/saving.\-h@{/usr/include/opencv2/flann/saving.\-h}}
+}
+{\ttfamily \#include $<$cstring$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include \char`\"{}general.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}nn\-\_\-index.\-h\char`\"{}}\\*
+Include dependency graph for saving.\-h\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{saving_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{saving_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structcvflann_1_1Datatype}{cvflann\-::\-Datatype$<$ T $>$}
+\item 
+struct \hyperlink{structcvflann_1_1Datatype_3_01char_01_4}{cvflann\-::\-Datatype$<$ char $>$}
+\item 
+struct \hyperlink{structcvflann_1_1Datatype_3_01short_01_4}{cvflann\-::\-Datatype$<$ short $>$}
+\item 
+struct \hyperlink{structcvflann_1_1Datatype_3_01int_01_4}{cvflann\-::\-Datatype$<$ int $>$}
+\item 
+struct \hyperlink{structcvflann_1_1Datatype_3_01unsigned_01char_01_4}{cvflann\-::\-Datatype$<$ unsigned char $>$}
+\item 
+struct \hyperlink{structcvflann_1_1Datatype_3_01unsigned_01short_01_4}{cvflann\-::\-Datatype$<$ unsigned short $>$}
+\item 
+struct \hyperlink{structcvflann_1_1Datatype_3_01unsigned_01int_01_4}{cvflann\-::\-Datatype$<$ unsigned int $>$}
+\item 
+struct \hyperlink{structcvflann_1_1Datatype_3_01float_01_4}{cvflann\-::\-Datatype$<$ float $>$}
+\item 
+struct \hyperlink{structcvflann_1_1Datatype_3_01double_01_4}{cvflann\-::\-Datatype$<$ double $>$}
+\item 
+struct \hyperlink{structcvflann_1_1IndexHeader}{cvflann\-::\-Index\-Header}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacecvflann}{cvflann}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{saving_8h_a3b786687c7c814cdeb5a81f4ce01928c}{F\-L\-A\-N\-N\-\_\-\-S\-I\-G\-N\-A\-T\-U\-R\-E\-\_\-}~\char`\"{}F\-L\-A\-N\-N\-\_\-\-I\-N\-D\-E\-X\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Distance $>$ }\\\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvflann_a7982bbe71fa4c72c311baf11f84a3816}{cvflann\-::save\-\_\-header} (F\-I\-L\-E $\ast$stream, const N\-N\-Index$<$ Distance $>$ \&\hyperlink{core__c_8h_a750b5d744c39a06bfb13e6eb010e35d0}{index})
+\item 
+Index\-Header \hyperlink{namespacecvflann_a4dd93d5ecc84d4679ada8a7f404d458f}{cvflann\-::load\-\_\-header} (F\-I\-L\-E $\ast$stream)
+\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvflann_af21cc31d343e3e1132f34e11094d49a1}{cvflann\-::save\-\_\-value} (F\-I\-L\-E $\ast$stream, const \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \&\hyperlink{highgui__c_8h_ad4670c92695d4327c21292905a803901}{value}, size\-\_\-t \hyperlink{tracking_8hpp_a88d78b1935cd8bdee70a44eaaf326b1e}{count}=1)
+\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvflann_af6016a4a330406ac3ad8b5fe38de0389}{cvflann\-::save\-\_\-value} (F\-I\-L\-E $\ast$stream, const \hyperlink{classcvflann_1_1Matrix}{cvflann\-::\-Matrix}$<$ \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} $>$ \&\hyperlink{highgui__c_8h_ad4670c92695d4327c21292905a803901}{value})
+\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvflann_a1fa3d0150adc438dda4eea1830d5a58b}{cvflann\-::save\-\_\-value} (F\-I\-L\-E $\ast$stream, const std\-::vector$<$ \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} $>$ \&\hyperlink{highgui__c_8h_ad4670c92695d4327c21292905a803901}{value})
+\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvflann_ac76450e068ff8d95e2e5736141201faf}{cvflann\-::load\-\_\-value} (F\-I\-L\-E $\ast$stream, \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \&\hyperlink{highgui__c_8h_ad4670c92695d4327c21292905a803901}{value}, size\-\_\-t \hyperlink{tracking_8hpp_a88d78b1935cd8bdee70a44eaaf326b1e}{count}=1)
+\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvflann_a9d6bc8c23ad3007c207081c354b243cf}{cvflann\-::load\-\_\-value} (F\-I\-L\-E $\ast$stream, \hyperlink{classcvflann_1_1Matrix}{cvflann\-::\-Matrix}$<$ \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} $>$ \&\hyperlink{highgui__c_8h_ad4670c92695d4327c21292905a803901}{value})
+\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvflann_a47ddd76b27249b834fbcd10e20cd0874}{cvflann\-::load\-\_\-value} (F\-I\-L\-E $\ast$stream, std\-::vector$<$ \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} $>$ \&\hyperlink{highgui__c_8h_ad4670c92695d4327c21292905a803901}{value})
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{saving_8h_a3b786687c7c814cdeb5a81f4ce01928c}{\index{saving.\-h@{saving.\-h}!F\-L\-A\-N\-N\-\_\-\-S\-I\-G\-N\-A\-T\-U\-R\-E\-\_\-@{F\-L\-A\-N\-N\-\_\-\-S\-I\-G\-N\-A\-T\-U\-R\-E\-\_\-}}
+\index{F\-L\-A\-N\-N\-\_\-\-S\-I\-G\-N\-A\-T\-U\-R\-E\-\_\-@{F\-L\-A\-N\-N\-\_\-\-S\-I\-G\-N\-A\-T\-U\-R\-E\-\_\-}!saving.h@{saving.\-h}}
+\subsubsection[{F\-L\-A\-N\-N\-\_\-\-S\-I\-G\-N\-A\-T\-U\-R\-E\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-L\-A\-N\-N\-\_\-\-S\-I\-G\-N\-A\-T\-U\-R\-E\-\_\-~\char`\"{}F\-L\-A\-N\-N\-\_\-\-I\-N\-D\-E\-X\char`\"{}}}\label{saving_8h_a3b786687c7c814cdeb5a81f4ce01928c}

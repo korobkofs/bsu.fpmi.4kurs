@@ -1,0 +1,369 @@
+\hypertarget{classcvflann_1_1KDTreeSingleIndex}{\section{cvflann\-:\-:K\-D\-Tree\-Single\-Index$<$ Distance $>$ Class Template Reference}
+\label{classcvflann_1_1KDTreeSingleIndex}\index{cvflann\-::\-K\-D\-Tree\-Single\-Index$<$ Distance $>$@{cvflann\-::\-K\-D\-Tree\-Single\-Index$<$ Distance $>$}}
+}
+
+
+{\ttfamily \#include $<$kdtree\-\_\-single\-\_\-index.\-h$>$}
+
+
+
+Inheritance diagram for cvflann\-:\-:K\-D\-Tree\-Single\-Index$<$ Distance $>$\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{classcvflann_1_1KDTreeSingleIndex__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for cvflann\-:\-:K\-D\-Tree\-Single\-Index$<$ Distance $>$\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{classcvflann_1_1KDTreeSingleIndex__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Distance\-::\-Element\-Type \hyperlink{classcvflann_1_1KDTreeSingleIndex_a3b7bf5e05057a76d1b7eee693062784e}{Element\-Type}
+\item 
+typedef Distance\-::\-Result\-Type \hyperlink{classcvflann_1_1KDTreeSingleIndex_ab32f2e8496ef780c2538576b8a330029}{Distance\-Type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcvflann_1_1KDTreeSingleIndex_a08512e3697cf135110f190b376e40cd3}{K\-D\-Tree\-Single\-Index} (const \hyperlink{classcvflann_1_1Matrix}{Matrix}$<$ \hyperlink{classcvflann_1_1KDTreeSingleIndex_a3b7bf5e05057a76d1b7eee693062784e}{Element\-Type} $>$ \&input\-Data, const \hyperlink{namespacecvflann_a742b4c7076c21012054af74a9ee48289}{Index\-Params} \&\hyperlink{compat_8hpp_a0480a03ecc41b20cde376602531d9270}{params}=\hyperlink{structcvflann_1_1KDTreeSingleIndexParams}{K\-D\-Tree\-Single\-Index\-Params}(), Distance \hyperlink{legacy_8hpp_a6f364afbe132c4ecfea48bde1b0618ba}{d}=Distance())
+\item 
+\hyperlink{classcvflann_1_1KDTreeSingleIndex_a8c1fa6af816722e07977bf3acf0a1107}{K\-D\-Tree\-Single\-Index} (const \hyperlink{classcvflann_1_1KDTreeSingleIndex}{K\-D\-Tree\-Single\-Index} \&)
+\item 
+\hyperlink{classcvflann_1_1KDTreeSingleIndex}{K\-D\-Tree\-Single\-Index} \& \hyperlink{classcvflann_1_1KDTreeSingleIndex_ad36b97f782f485ae991a01816839073b}{operator=} (const \hyperlink{classcvflann_1_1KDTreeSingleIndex}{K\-D\-Tree\-Single\-Index} \&)
+\item 
+\hyperlink{classcvflann_1_1KDTreeSingleIndex_a9f4c82ef64eb57eff3d03d0d5c08bac6}{$\sim$\-K\-D\-Tree\-Single\-Index} ()
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcvflann_1_1KDTreeSingleIndex_ab3f54bfaa6c99b1e5116b35d5f370227}{build\-Index} ()
+\item 
+\hyperlink{namespacecvflann_a4e3e6c98d774ea77fd7f0045c9bc7817}{flann\-\_\-algorithm\-\_\-t} \hyperlink{classcvflann_1_1KDTreeSingleIndex_a562c049eeaf138b5bc9ead6129ff41e9}{get\-Type} () const 
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcvflann_1_1KDTreeSingleIndex_adacba07ebbd7ed471f2645b64bb883e5}{save\-Index} (F\-I\-L\-E $\ast$stream)
+\begin{DoxyCompactList}\small\item\em Saves the index to a stream. \end{DoxyCompactList}\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcvflann_1_1KDTreeSingleIndex_ab895fb2728fdd040790b8278e18a2fb7}{load\-Index} (F\-I\-L\-E $\ast$stream)
+\begin{DoxyCompactList}\small\item\em Loads the index from a stream. \end{DoxyCompactList}\item 
+size\-\_\-t \hyperlink{classcvflann_1_1KDTreeSingleIndex_af9db9baa7fc203e002f1e0e5c7f4e3de}{size} () const 
+\item 
+size\-\_\-t \hyperlink{classcvflann_1_1KDTreeSingleIndex_a4f9c5a8847c6b86b715606635669098e}{veclen} () const 
+\item 
+int \hyperlink{classcvflann_1_1KDTreeSingleIndex_adb37afd1fc827ca1ad640abec4396a75}{used\-Memory} () const 
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcvflann_1_1KDTreeSingleIndex_a5f53f54a2b04a25a370cb7f03a5317df}{knn\-Search} (const \hyperlink{classcvflann_1_1Matrix}{Matrix}$<$ \hyperlink{classcvflann_1_1KDTreeSingleIndex_a3b7bf5e05057a76d1b7eee693062784e}{Element\-Type} $>$ \&queries, \hyperlink{classcvflann_1_1Matrix}{Matrix}$<$ int $>$ \&\hyperlink{legacy_8hpp_a3e3b9b48bcbc7f460efbcfe4399ad24a}{indices}, \hyperlink{classcvflann_1_1Matrix}{Matrix}$<$ \hyperlink{classcvflann_1_1KDTreeSingleIndex_ab32f2e8496ef780c2538576b8a330029}{Distance\-Type} $>$ \&dists, int knn, const \hyperlink{structcvflann_1_1SearchParams}{Search\-Params} \&\hyperlink{compat_8hpp_a0480a03ecc41b20cde376602531d9270}{params})
+\begin{DoxyCompactList}\small\item\em Perform k-\/nearest neighbor search. \end{DoxyCompactList}\item 
+\hyperlink{namespacecvflann_a742b4c7076c21012054af74a9ee48289}{Index\-Params} \hyperlink{classcvflann_1_1KDTreeSingleIndex_aee3e3322dd956e234f17146fc220229a}{get\-Parameters} () const 
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcvflann_1_1KDTreeSingleIndex_aedd8818914111a3ef3740ee72c1b8477}{find\-Neighbors} (\hyperlink{classcvflann_1_1ResultSet}{Result\-Set}$<$ \hyperlink{classcvflann_1_1KDTreeSingleIndex_ab32f2e8496ef780c2538576b8a330029}{Distance\-Type} $>$ \&\hyperlink{legacy_8hpp_a0bb77d54f6769867cfdf389897bd8e43}{result}, const \hyperlink{classcvflann_1_1KDTreeSingleIndex_a3b7bf5e05057a76d1b7eee693062784e}{Element\-Type} $\ast$vec, const \hyperlink{structcvflann_1_1SearchParams}{Search\-Params} \&search\-Params)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Distance$>$class cvflann\-::\-K\-D\-Tree\-Single\-Index$<$ Distance $>$}
+
+Randomized kd-\/tree index
+
+Contains the k-\/d trees and other information for indexing a set of points for nearest-\/neighbor matching. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classcvflann_1_1KDTreeSingleIndex_ab32f2e8496ef780c2538576b8a330029}{\index{cvflann\-::\-K\-D\-Tree\-Single\-Index@{cvflann\-::\-K\-D\-Tree\-Single\-Index}!Distance\-Type@{Distance\-Type}}
+\index{Distance\-Type@{Distance\-Type}!cvflann::KDTreeSingleIndex@{cvflann\-::\-K\-D\-Tree\-Single\-Index}}
+\subsubsection[{Distance\-Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ typedef Distance\-::\-Result\-Type {\bf cvflann\-::\-K\-D\-Tree\-Single\-Index}$<$ Distance $>$\-::{\bf Distance\-Type}}}\label{classcvflann_1_1KDTreeSingleIndex_ab32f2e8496ef780c2538576b8a330029}
+\hypertarget{classcvflann_1_1KDTreeSingleIndex_a3b7bf5e05057a76d1b7eee693062784e}{\index{cvflann\-::\-K\-D\-Tree\-Single\-Index@{cvflann\-::\-K\-D\-Tree\-Single\-Index}!Element\-Type@{Element\-Type}}
+\index{Element\-Type@{Element\-Type}!cvflann::KDTreeSingleIndex@{cvflann\-::\-K\-D\-Tree\-Single\-Index}}
+\subsubsection[{Element\-Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ typedef Distance\-::\-Element\-Type {\bf cvflann\-::\-K\-D\-Tree\-Single\-Index}$<$ Distance $>$\-::{\bf Element\-Type}}}\label{classcvflann_1_1KDTreeSingleIndex_a3b7bf5e05057a76d1b7eee693062784e}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcvflann_1_1KDTreeSingleIndex_a08512e3697cf135110f190b376e40cd3}{\index{cvflann\-::\-K\-D\-Tree\-Single\-Index@{cvflann\-::\-K\-D\-Tree\-Single\-Index}!K\-D\-Tree\-Single\-Index@{K\-D\-Tree\-Single\-Index}}
+\index{K\-D\-Tree\-Single\-Index@{K\-D\-Tree\-Single\-Index}!cvflann::KDTreeSingleIndex@{cvflann\-::\-K\-D\-Tree\-Single\-Index}}
+\subsubsection[{K\-D\-Tree\-Single\-Index}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ {\bf cvflann\-::\-K\-D\-Tree\-Single\-Index}$<$ Distance $>$\-::{\bf K\-D\-Tree\-Single\-Index} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ {\bf Element\-Type} $>$ \&}]{input\-Data, }
+\item[{const {\bf Index\-Params} \&}]{params = {\ttfamily {\bf K\-D\-Tree\-Single\-Index\-Params}()}, }
+\item[{Distance}]{d = {\ttfamily Distance()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcvflann_1_1KDTreeSingleIndex_a08512e3697cf135110f190b376e40cd3}
+K\-D\-Tree constructor
+
+Params\-: input\-Data = dataset with the input features params = parameters passed to the kdtree algorithm 
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcvflann_1_1KDTreeSingleIndex_a08512e3697cf135110f190b376e40cd3_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcvflann_1_1KDTreeSingleIndex_a8c1fa6af816722e07977bf3acf0a1107}{\index{cvflann\-::\-K\-D\-Tree\-Single\-Index@{cvflann\-::\-K\-D\-Tree\-Single\-Index}!K\-D\-Tree\-Single\-Index@{K\-D\-Tree\-Single\-Index}}
+\index{K\-D\-Tree\-Single\-Index@{K\-D\-Tree\-Single\-Index}!cvflann::KDTreeSingleIndex@{cvflann\-::\-K\-D\-Tree\-Single\-Index}}
+\subsubsection[{K\-D\-Tree\-Single\-Index}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ {\bf cvflann\-::\-K\-D\-Tree\-Single\-Index}$<$ Distance $>$\-::{\bf K\-D\-Tree\-Single\-Index} (
+\begin{DoxyParamCaption}
+\item[{const {\bf K\-D\-Tree\-Single\-Index}$<$ Distance $>$ \&}]{}
+\end{DoxyParamCaption}
+)}}\label{classcvflann_1_1KDTreeSingleIndex_a8c1fa6af816722e07977bf3acf0a1107}
+\hypertarget{classcvflann_1_1KDTreeSingleIndex_a9f4c82ef64eb57eff3d03d0d5c08bac6}{\index{cvflann\-::\-K\-D\-Tree\-Single\-Index@{cvflann\-::\-K\-D\-Tree\-Single\-Index}!$\sim$\-K\-D\-Tree\-Single\-Index@{$\sim$\-K\-D\-Tree\-Single\-Index}}
+\index{$\sim$\-K\-D\-Tree\-Single\-Index@{$\sim$\-K\-D\-Tree\-Single\-Index}!cvflann::KDTreeSingleIndex@{cvflann\-::\-K\-D\-Tree\-Single\-Index}}
+\subsubsection[{$\sim$\-K\-D\-Tree\-Single\-Index}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ {\bf cvflann\-::\-K\-D\-Tree\-Single\-Index}$<$ Distance $>$\-::$\sim${\bf K\-D\-Tree\-Single\-Index} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcvflann_1_1KDTreeSingleIndex_a9f4c82ef64eb57eff3d03d0d5c08bac6}
+Standard destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classcvflann_1_1KDTreeSingleIndex_ab3f54bfaa6c99b1e5116b35d5f370227}{\index{cvflann\-::\-K\-D\-Tree\-Single\-Index@{cvflann\-::\-K\-D\-Tree\-Single\-Index}!build\-Index@{build\-Index}}
+\index{build\-Index@{build\-Index}!cvflann::KDTreeSingleIndex@{cvflann\-::\-K\-D\-Tree\-Single\-Index}}
+\subsubsection[{build\-Index}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ {\bf void} {\bf cvflann\-::\-K\-D\-Tree\-Single\-Index}$<$ Distance $>$\-::build\-Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1KDTreeSingleIndex_ab3f54bfaa6c99b1e5116b35d5f370227}
+Builds the index 
+
+Implements \hyperlink{classcvflann_1_1NNIndex_aaa8811509bb2f30e91570cefe4dc71e2}{cvflann\-::\-N\-N\-Index$<$ Distance $>$}.
+
+\hypertarget{classcvflann_1_1KDTreeSingleIndex_aedd8818914111a3ef3740ee72c1b8477}{\index{cvflann\-::\-K\-D\-Tree\-Single\-Index@{cvflann\-::\-K\-D\-Tree\-Single\-Index}!find\-Neighbors@{find\-Neighbors}}
+\index{find\-Neighbors@{find\-Neighbors}!cvflann::KDTreeSingleIndex@{cvflann\-::\-K\-D\-Tree\-Single\-Index}}
+\subsubsection[{find\-Neighbors}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ {\bf void} {\bf cvflann\-::\-K\-D\-Tree\-Single\-Index}$<$ Distance $>$\-::find\-Neighbors (
+\begin{DoxyParamCaption}
+\item[{{\bf Result\-Set}$<$ {\bf Distance\-Type} $>$ \&}]{result, }
+\item[{const {\bf Element\-Type} $\ast$}]{vec, }
+\item[{const {\bf Search\-Params} \&}]{search\-Params}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1KDTreeSingleIndex_aedd8818914111a3ef3740ee72c1b8477}
+Find set of nearest neighbors to vec. Their indices are stored inside the result object.
+
+Params\-: result = the result object in which the indices of the nearest-\/neighbors are stored vec = the vector for which to search the nearest neighbors max\-Check = the maximum number of restarts (in a best-\/bin-\/first manner) 
+
+Implements \hyperlink{classcvflann_1_1NNIndex_ac038c51dc941c7c1a55b08c17e213e41}{cvflann\-::\-N\-N\-Index$<$ Distance $>$}.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcvflann_1_1KDTreeSingleIndex_aedd8818914111a3ef3740ee72c1b8477_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcvflann_1_1KDTreeSingleIndex_aedd8818914111a3ef3740ee72c1b8477_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcvflann_1_1KDTreeSingleIndex_aee3e3322dd956e234f17146fc220229a}{\index{cvflann\-::\-K\-D\-Tree\-Single\-Index@{cvflann\-::\-K\-D\-Tree\-Single\-Index}!get\-Parameters@{get\-Parameters}}
+\index{get\-Parameters@{get\-Parameters}!cvflann::KDTreeSingleIndex@{cvflann\-::\-K\-D\-Tree\-Single\-Index}}
+\subsubsection[{get\-Parameters}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ {\bf Index\-Params} {\bf cvflann\-::\-K\-D\-Tree\-Single\-Index}$<$ Distance $>$\-::get\-Parameters (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1KDTreeSingleIndex_aee3e3322dd956e234f17146fc220229a}
+\begin{DoxyReturn}{Returns}
+The index parameters 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classcvflann_1_1NNIndex_afbc22ebf77f4f376d9e7922727d0abfe}{cvflann\-::\-N\-N\-Index$<$ Distance $>$}.
+
+\hypertarget{classcvflann_1_1KDTreeSingleIndex_a562c049eeaf138b5bc9ead6129ff41e9}{\index{cvflann\-::\-K\-D\-Tree\-Single\-Index@{cvflann\-::\-K\-D\-Tree\-Single\-Index}!get\-Type@{get\-Type}}
+\index{get\-Type@{get\-Type}!cvflann::KDTreeSingleIndex@{cvflann\-::\-K\-D\-Tree\-Single\-Index}}
+\subsubsection[{get\-Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ {\bf flann\-\_\-algorithm\-\_\-t} {\bf cvflann\-::\-K\-D\-Tree\-Single\-Index}$<$ Distance $>$\-::get\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1KDTreeSingleIndex_a562c049eeaf138b5bc9ead6129ff41e9}
+\begin{DoxyReturn}{Returns}
+The index type (kdtree, kmeans,...) 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classcvflann_1_1NNIndex_ac40469dbc16bcb0fb4b0c9912c5f8acb}{cvflann\-::\-N\-N\-Index$<$ Distance $>$}.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcvflann_1_1KDTreeSingleIndex_a562c049eeaf138b5bc9ead6129ff41e9_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcvflann_1_1KDTreeSingleIndex_a5f53f54a2b04a25a370cb7f03a5317df}{\index{cvflann\-::\-K\-D\-Tree\-Single\-Index@{cvflann\-::\-K\-D\-Tree\-Single\-Index}!knn\-Search@{knn\-Search}}
+\index{knn\-Search@{knn\-Search}!cvflann::KDTreeSingleIndex@{cvflann\-::\-K\-D\-Tree\-Single\-Index}}
+\subsubsection[{knn\-Search}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ {\bf void} {\bf cvflann\-::\-K\-D\-Tree\-Single\-Index}$<$ Distance $>$\-::knn\-Search (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ {\bf Element\-Type} $>$ \&}]{queries, }
+\item[{{\bf Matrix}$<$ int $>$ \&}]{indices, }
+\item[{{\bf Matrix}$<$ {\bf Distance\-Type} $>$ \&}]{dists, }
+\item[{int}]{knn, }
+\item[{const {\bf Search\-Params} \&}]{params}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1KDTreeSingleIndex_a5f53f54a2b04a25a370cb7f03a5317df}
+
+
+Perform k-\/nearest neighbor search. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em queries} & The query points for which to find the nearest neighbors \\
+\hline
+\mbox{\tt out}  & {\em indices} & The indices of the nearest neighbors found \\
+\hline
+\mbox{\tt out}  & {\em dists} & Distances to the nearest neighbors found \\
+\hline
+\mbox{\tt in}  & {\em knn} & Number of nearest neighbors to return \\
+\hline
+\mbox{\tt in}  & {\em params} & Search parameters \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classcvflann_1_1NNIndex_a8cf5c942430421358bf67d93565942db}{cvflann\-::\-N\-N\-Index$<$ Distance $>$}.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcvflann_1_1KDTreeSingleIndex_a5f53f54a2b04a25a370cb7f03a5317df_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcvflann_1_1KDTreeSingleIndex_ab895fb2728fdd040790b8278e18a2fb7}{\index{cvflann\-::\-K\-D\-Tree\-Single\-Index@{cvflann\-::\-K\-D\-Tree\-Single\-Index}!load\-Index@{load\-Index}}
+\index{load\-Index@{load\-Index}!cvflann::KDTreeSingleIndex@{cvflann\-::\-K\-D\-Tree\-Single\-Index}}
+\subsubsection[{load\-Index}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ {\bf void} {\bf cvflann\-::\-K\-D\-Tree\-Single\-Index}$<$ Distance $>$\-::load\-Index (
+\begin{DoxyParamCaption}
+\item[{F\-I\-L\-E $\ast$}]{stream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1KDTreeSingleIndex_ab895fb2728fdd040790b8278e18a2fb7}
+
+
+Loads the index from a stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & The stream from which the index is loaded \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classcvflann_1_1NNIndex_a4bcaf48ee2ac65a1b3cebea99d021611}{cvflann\-::\-N\-N\-Index$<$ Distance $>$}.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcvflann_1_1KDTreeSingleIndex_ab895fb2728fdd040790b8278e18a2fb7_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcvflann_1_1KDTreeSingleIndex_ad36b97f782f485ae991a01816839073b}{\index{cvflann\-::\-K\-D\-Tree\-Single\-Index@{cvflann\-::\-K\-D\-Tree\-Single\-Index}!operator=@{operator=}}
+\index{operator=@{operator=}!cvflann::KDTreeSingleIndex@{cvflann\-::\-K\-D\-Tree\-Single\-Index}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ {\bf K\-D\-Tree\-Single\-Index}\& {\bf cvflann\-::\-K\-D\-Tree\-Single\-Index}$<$ Distance $>$\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf K\-D\-Tree\-Single\-Index}$<$ Distance $>$ \&}]{}
+\end{DoxyParamCaption}
+)}}\label{classcvflann_1_1KDTreeSingleIndex_ad36b97f782f485ae991a01816839073b}
+\hypertarget{classcvflann_1_1KDTreeSingleIndex_adacba07ebbd7ed471f2645b64bb883e5}{\index{cvflann\-::\-K\-D\-Tree\-Single\-Index@{cvflann\-::\-K\-D\-Tree\-Single\-Index}!save\-Index@{save\-Index}}
+\index{save\-Index@{save\-Index}!cvflann::KDTreeSingleIndex@{cvflann\-::\-K\-D\-Tree\-Single\-Index}}
+\subsubsection[{save\-Index}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ {\bf void} {\bf cvflann\-::\-K\-D\-Tree\-Single\-Index}$<$ Distance $>$\-::save\-Index (
+\begin{DoxyParamCaption}
+\item[{F\-I\-L\-E $\ast$}]{stream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1KDTreeSingleIndex_adacba07ebbd7ed471f2645b64bb883e5}
+
+
+Saves the index to a stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & The stream to save the index to \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classcvflann_1_1NNIndex_aad5c63116e3dbeccc96de7c70f0a8db7}{cvflann\-::\-N\-N\-Index$<$ Distance $>$}.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcvflann_1_1KDTreeSingleIndex_adacba07ebbd7ed471f2645b64bb883e5_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcvflann_1_1KDTreeSingleIndex_af9db9baa7fc203e002f1e0e5c7f4e3de}{\index{cvflann\-::\-K\-D\-Tree\-Single\-Index@{cvflann\-::\-K\-D\-Tree\-Single\-Index}!size@{size}}
+\index{size@{size}!cvflann::KDTreeSingleIndex@{cvflann\-::\-K\-D\-Tree\-Single\-Index}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ size\-\_\-t {\bf cvflann\-::\-K\-D\-Tree\-Single\-Index}$<$ Distance $>$\-::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1KDTreeSingleIndex_af9db9baa7fc203e002f1e0e5c7f4e3de}
+Returns size of index. 
+
+Implements \hyperlink{classcvflann_1_1NNIndex_ae75fd979d25a239b4aba751114493fe0}{cvflann\-::\-N\-N\-Index$<$ Distance $>$}.
+
+\hypertarget{classcvflann_1_1KDTreeSingleIndex_adb37afd1fc827ca1ad640abec4396a75}{\index{cvflann\-::\-K\-D\-Tree\-Single\-Index@{cvflann\-::\-K\-D\-Tree\-Single\-Index}!used\-Memory@{used\-Memory}}
+\index{used\-Memory@{used\-Memory}!cvflann::KDTreeSingleIndex@{cvflann\-::\-K\-D\-Tree\-Single\-Index}}
+\subsubsection[{used\-Memory}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ int {\bf cvflann\-::\-K\-D\-Tree\-Single\-Index}$<$ Distance $>$\-::used\-Memory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1KDTreeSingleIndex_adb37afd1fc827ca1ad640abec4396a75}
+Computes the inde memory usage Returns\-: memory used by the index 
+
+Implements \hyperlink{classcvflann_1_1NNIndex_ac172cb3774f8ae39ff1107bee4fadbf9}{cvflann\-::\-N\-N\-Index$<$ Distance $>$}.
+
+\hypertarget{classcvflann_1_1KDTreeSingleIndex_a4f9c5a8847c6b86b715606635669098e}{\index{cvflann\-::\-K\-D\-Tree\-Single\-Index@{cvflann\-::\-K\-D\-Tree\-Single\-Index}!veclen@{veclen}}
+\index{veclen@{veclen}!cvflann::KDTreeSingleIndex@{cvflann\-::\-K\-D\-Tree\-Single\-Index}}
+\subsubsection[{veclen}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ size\-\_\-t {\bf cvflann\-::\-K\-D\-Tree\-Single\-Index}$<$ Distance $>$\-::veclen (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1KDTreeSingleIndex_a4f9c5a8847c6b86b715606635669098e}
+Returns the length of an index feature. 
+
+Implements \hyperlink{classcvflann_1_1NNIndex_acdcc255d1b67d5636a0f76b68809e6be}{cvflann\-::\-N\-N\-Index$<$ Distance $>$}.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcvflann_1_1KDTreeSingleIndex_a4f9c5a8847c6b86b715606635669098e_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/flann/\hyperlink{kdtree__single__index_8h}{kdtree\-\_\-single\-\_\-index.\-h}\end{DoxyCompactItemize}

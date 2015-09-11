@@ -1,0 +1,325 @@
+\hypertarget{ts_8hpp}{\section{/usr/include/opencv2/ts/ts.hpp File Reference}
+\label{ts_8hpp}\index{/usr/include/opencv2/ts/ts.\-hpp@{/usr/include/opencv2/ts/ts.\-hpp}}
+}
+{\ttfamily \#include $<$stdarg.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}opencv2/ts/ts\-\_\-gtest.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}opencv2/core/core.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}ts\-\_\-perf.\-hpp\char`\"{}}\\*
+Include dependency graph for ts.\-hpp\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ts_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{ts_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structcvtest_1_1MatInfo}{cvtest\-::\-Mat\-Info}
+\item 
+struct \hyperlink{structcvtest_1_1MatComparator}{cvtest\-::\-Mat\-Comparator}
+\item 
+class \hyperlink{classcvtest_1_1BaseTest}{cvtest\-::\-Base\-Test}
+\item 
+struct \hyperlink{structcvtest_1_1TestInfo}{cvtest\-::\-Test\-Info}
+\item 
+struct \hyperlink{structcvtest_1_1TSParams}{cvtest\-::\-T\-S\-Params}
+\item 
+class \hyperlink{classcvtest_1_1TS}{cvtest\-::\-T\-S}
+\item 
+class \hyperlink{classcvtest_1_1ArrayTest}{cvtest\-::\-Array\-Test}
+\item 
+class \hyperlink{classcvtest_1_1BadArgTest}{cvtest\-::\-Bad\-Arg\-Test}
+\item 
+struct \hyperlink{structcvtest_1_1DefaultRngAuto}{cvtest\-::\-Default\-Rng\-Auto}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacecvtest}{cvtest}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{ts_8hpp_afb7213dad6681dc01ba2bc1ffb8950cb}{G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-F\-A\-I\-L}~0
+\item 
+\#define \hyperlink{ts_8hpp_a859f81085fc5ae171ac08cfc9e25d4dd}{G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-U\-C\-C\-E\-E\-D}~0
+\item 
+\#define \hyperlink{ts_8hpp_a3b821ca2dd4beb8ce0eaf901da54d4a6}{G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-E\-Q}~0
+\item 
+\#define \hyperlink{ts_8hpp_aa21e244a146385d867b3ce8fb2737bc2}{G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-N\-E}~0
+\item 
+\#define \hyperlink{ts_8hpp_a8912db342e0e998e3a2aef245aab05ce}{G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-L\-E}~0
+\item 
+\#define \hyperlink{ts_8hpp_aba361ff4c77b981aed5e1618d7446a42}{G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-L\-T}~0
+\item 
+\#define \hyperlink{ts_8hpp_a4691e210099243a4ca708d029dac034c}{G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-G\-E}~0
+\item 
+\#define \hyperlink{ts_8hpp_a1a0683b0a66ca0a396a18fea04ca2dd5}{G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-G\-T}~0
+\item 
+\#define \hyperlink{ts_8hpp_a9a2e12e6f5b04ab8e4272df36cfbe4c0}{G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-T\-E\-S\-T}~0
+\item 
+\#define \hyperlink{ts_8hpp_aa3efaf3b4de4a9acfad6a61fdf387ea6}{G\-T\-E\-S\-T\-\_\-\-U\-S\-E\-S\-\_\-\-S\-I\-M\-P\-L\-E\-\_\-\-R\-E}~0
+\item 
+\#define \hyperlink{ts_8hpp_acecef794eeb09598cd47da764271cb18}{G\-T\-E\-S\-T\-\_\-\-U\-S\-E\-S\-\_\-\-P\-O\-S\-I\-X\-\_\-\-R\-E}~0
+\item 
+\#define \hyperlink{ts_8hpp_aa72bf3baf0676034972c106336337bbe}{\-\_\-\-\_\-\-C\-V\-\_\-\-T\-E\-S\-T\-\_\-\-E\-X\-E\-C\-\_\-\-A\-R\-G\-S}(...)~\-\_\-\-\_\-\-V\-A\-\_\-\-A\-R\-G\-S\-\_\-\-\_\-;
+\item 
+\#define \hyperlink{ts_8hpp_aa6ccfe338ba8a86ffa2fc5b2de449a12}{C\-V\-\_\-\-T\-E\-S\-T\-\_\-\-M\-A\-I\-N}(resourcesubdir,...)
+\item 
+\#define \hyperlink{ts_8hpp_a55fafe0af273c61ad8e7db1e3c1c4900}{C\-V\-\_\-\-T\-E\-S\-T\-\_\-\-F\-A\-I\-L\-\_\-\-N\-O\-\_\-\-I\-M\-P\-L}()
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{core_2types__c_8h_a7cde0074dfd288f2d70c0e035dacb28a}{int64} \hyperlink{namespacecvtest_ab0222728fa931142fef72ae0074fa864}{cvtest\-::read\-Seed} (const char $\ast$\hyperlink{core__c_8h_a5f3a65d240411b0018990ff992b348c0}{str})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_a0808ba0b7eb71c9714343795cc8f4a73}{cvtest\-::rand\-Uni} (R\-N\-G \&\hyperlink{core__c_8h_a8d3f239dca9d5c72c8a66d7a1c142efd}{rng}, Mat \&\hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}, const Scalar \&\hyperlink{core__c_8h_a4a138cebb3d1124bb552aa80cc860eea}{param1}, const Scalar \&\hyperlink{core__c_8h_a31355e809c125347b49af078e58da79e}{param2})
+\item 
+unsigned \hyperlink{namespacecvtest_a26cc57bf4a8d91168ad8e371644506bc}{cvtest\-::rand\-Int} (R\-N\-G \&\hyperlink{core__c_8h_a8d3f239dca9d5c72c8a66d7a1c142efd}{rng})
+\item 
+double \hyperlink{namespacecvtest_a9639bfa71aa22e5763f66cd4c0bb1533}{cvtest\-::rand\-Real} (R\-N\-G \&\hyperlink{core__c_8h_a8d3f239dca9d5c72c8a66d7a1c142efd}{rng})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} const char $\ast$ \hyperlink{namespacecvtest_a6976036fa96fda433ab30aac85585c1e}{cvtest\-::get\-Type\-Name} (int \hyperlink{imgproc__c_8h_a84612d8738bf935200cf32a103d8efe1}{type})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} int \hyperlink{namespacecvtest_aa761fe30295aeb4e1a0a836301200319}{cvtest\-::type\-By\-Name} (const char $\ast$type\-\_\-name)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} string \hyperlink{namespacecvtest_acd977ea496ae0145582b4ca2172dd46f}{cvtest\-::vec2str} (const string \&sep, const int $\ast$v, size\-\_\-t nelems)
+\item 
+int \hyperlink{namespacecvtest_a58f2a5f3a78076f6b287adf539c08a35}{cvtest\-::clip\-Int} (int val, int \hyperlink{core__c_8h_a2c60d4e453921f07a407a647c96e8316}{min\-\_\-val}, int \hyperlink{core__c_8h_a928495205a5ca34548c11042d48d733b}{max\-\_\-val})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} double \hyperlink{namespacecvtest_aae60ea3df2f2a5880f0b37d58e09054c}{cvtest\-::get\-Min\-Val} (int \hyperlink{core__c_8h_acb5ba97551079e0b072c62c21d784ac5}{depth})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} double \hyperlink{namespacecvtest_aef7feb873a9078fa8343822014120dfd}{cvtest\-::get\-Max\-Val} (int \hyperlink{core__c_8h_acb5ba97551079e0b072c62c21d784ac5}{depth})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} Size \hyperlink{namespacecvtest_a6bc34c509892c3ba1adba15ee9f3992f}{cvtest\-::random\-Size} (R\-N\-G \&\hyperlink{core__c_8h_a8d3f239dca9d5c72c8a66d7a1c142efd}{rng}, double max\-Size\-Log)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_a219e0cb0744cd51b22891584f17e026d}{cvtest\-::random\-Size} (R\-N\-G \&\hyperlink{core__c_8h_a8d3f239dca9d5c72c8a66d7a1c142efd}{rng}, int min\-Dims, int max\-Dims, double max\-Size\-Log, vector$<$ int $>$ \&sz)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} int \hyperlink{namespacecvtest_a8ccb9ed0c011023ef7e4b43cea5ed124}{cvtest\-::random\-Type} (R\-N\-G \&\hyperlink{core__c_8h_a8d3f239dca9d5c72c8a66d7a1c142efd}{rng}, int type\-Mask, int min\-Channels, int max\-Channels)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} Mat \hyperlink{namespacecvtest_aa4b4d920a2fb2eb67490e58953e8f0f3}{cvtest\-::random\-Mat} (R\-N\-G \&\hyperlink{core__c_8h_a8d3f239dca9d5c72c8a66d7a1c142efd}{rng}, Size \hyperlink{legacy_8hpp_ae97003f8d5c64cdfb99f6f2606d121b6}{size}, int \hyperlink{imgproc__c_8h_a84612d8738bf935200cf32a103d8efe1}{type}, double min\-Val, double max\-Val, bool use\-Roi)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} Mat \hyperlink{namespacecvtest_a0aa43772f6987882cc98332627f4c21a}{cvtest\-::random\-Mat} (R\-N\-G \&\hyperlink{core__c_8h_a8d3f239dca9d5c72c8a66d7a1c142efd}{rng}, const vector$<$ int $>$ \&\hyperlink{legacy_8hpp_ae97003f8d5c64cdfb99f6f2606d121b6}{size}, int \hyperlink{imgproc__c_8h_a84612d8738bf935200cf32a103d8efe1}{type}, double min\-Val, double max\-Val, bool use\-Roi)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_a9ec05f98099c0ae2c5ac12e842e12e86}{cvtest\-::add} (const Mat \&\hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}, double \hyperlink{legacy_8hpp_a95fc8341ca418bc06b36160632af6d47}{alpha}, const Mat \&\hyperlink{legacy_8hpp_ac04272e8ca865b8fba18d36edae9fd2a}{b}, double \hyperlink{legacy_8hpp_af8b31eb489dfbd87f3b1a1925cca3589}{beta}, Scalar \hyperlink{legacy_8hpp_a977df9847c7e455667f9fdaa49fbaa11}{gamma}, Mat \&\hyperlink{legacy_8hpp_a1971420173e06f45845eed2ab4e3d5d0}{c}, int ctype, bool calc\-Abs=false)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_a5ccf7637727de44a3f68f53b3abf4b07}{cvtest\-::multiply} (const Mat \&\hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}, const Mat \&\hyperlink{legacy_8hpp_ac04272e8ca865b8fba18d36edae9fd2a}{b}, Mat \&\hyperlink{legacy_8hpp_a1971420173e06f45845eed2ab4e3d5d0}{c}, double \hyperlink{legacy_8hpp_a95fc8341ca418bc06b36160632af6d47}{alpha}=1)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_a801eea4b4b3c00fe00d9640456ebd275}{cvtest\-::divide} (const Mat \&\hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}, const Mat \&\hyperlink{legacy_8hpp_ac04272e8ca865b8fba18d36edae9fd2a}{b}, Mat \&\hyperlink{legacy_8hpp_a1971420173e06f45845eed2ab4e3d5d0}{c}, double \hyperlink{legacy_8hpp_a95fc8341ca418bc06b36160632af6d47}{alpha}=1)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_a0c5ec616590629900e1e7178a05701dd}{cvtest\-::convert} (const Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, int dtype, double \hyperlink{legacy_8hpp_a95fc8341ca418bc06b36160632af6d47}{alpha}=1, double \hyperlink{legacy_8hpp_af8b31eb489dfbd87f3b1a1925cca3589}{beta}=0)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_aa0fc2ccf37b3852803f075fd741e536f}{cvtest\-::copy} (const Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, const Mat \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}=Mat(), bool invert\-Mask=false)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_a3ea16e468a830d72142a851c48efe630}{cvtest\-::set} (Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, const Scalar \&\hyperlink{legacy_8hpp_a977df9847c7e455667f9fdaa49fbaa11}{gamma}, const Mat \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}=Mat())
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_ac7b8597cdafba6cbe9c627e415fd199a}{cvtest\-::extract} (const Mat \&\hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}, Mat \&plane, int \hyperlink{core__c_8h_a77674fb914cf2e14c0ddff790b225dbe}{coi})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_a9c6ea7d8b339c0ec8385154ad331ee0f}{cvtest\-::insert} (const Mat \&plane, Mat \&\hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}, int \hyperlink{core__c_8h_a77674fb914cf2e14c0ddff790b225dbe}{coi})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} int \hyperlink{namespacecvtest_a8543a691c795c3f9bbfbb19cdb377790}{cvtest\-::check} (const Mat \&\hyperlink{legacy_8hpp_ab9fe6c09e6d02865a953fffc12fe6ca0}{data}, double \hyperlink{core__c_8h_a2c60d4e453921f07a407a647c96e8316}{min\-\_\-val}, double \hyperlink{core__c_8h_a928495205a5ca34548c11042d48d733b}{max\-\_\-val}, vector$<$ int $>$ $\ast$\hyperlink{core__c_8h_a5c7c842f447336aa2f10826df65a28b3}{idx})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_a875892bf4b05664246e17498fe6f9065}{cvtest\-::patch\-Zeros} (Mat \&\hyperlink{imgproc__c_8h_ad9325e85114e7b9ab738a23b62ea10a0}{mat}, double \hyperlink{tracking_8hpp_ac693e272fb1883fe0343f55a14d72b22}{level})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_a5afd7dc69b9f9e91a7ff2615d29dcd52}{cvtest\-::transpose} (const Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_aeb152e6a82e24d8019ff81fe96af3314}{cvtest\-::erode} (const Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, const Mat \&\-\_\-kernel, Point anchor=Point(-\/1,-\/1), int border\-Type=\hyperlink{core_2types__c_8h_a3775e9c53907519fd716c628c3af8c3b}{I\-P\-L\-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-C\-O\-N\-S\-T\-A\-N\-T}, const Scalar \&border\-Value=Scalar())
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_abcb992a5f861df28d90c71272a3689f9}{cvtest\-::dilate} (const Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, const Mat \&\-\_\-kernel, Point anchor=Point(-\/1,-\/1), int border\-Type=\hyperlink{core_2types__c_8h_a3775e9c53907519fd716c628c3af8c3b}{I\-P\-L\-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-C\-O\-N\-S\-T\-A\-N\-T}, const Scalar \&border\-Value=Scalar())
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_aa48e1cd9d730d55e3d89a5932da6139b}{cvtest\-::filter2\-D} (const Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, int ddepth, const Mat \&\hyperlink{imgproc__c_8h_a863a75780ba6c5de552f5361cb0d2c89}{kernel}, Point anchor, double \hyperlink{legacy_8hpp_ac867054f00f4be8b1f3ebce6fba31982}{delta}, int border\-Type, const Scalar \&border\-Value=Scalar())
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_afdeafc9424ce61318e29085a27622816}{cvtest\-::copy\-Make\-Border} (const Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, int top, int bottom, int left, int \hyperlink{legacy_8hpp_a6b04b878081bf724144b73c75dfd1894}{right}, int border\-Type, const Scalar \&border\-Value=Scalar())
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} Mat \hyperlink{namespacecvtest_a7d10f1488683810d8954900653e3996d}{cvtest\-::calc\-Sobel\-Kernel2\-D} (int dx, int dy, int aperture\-Size, int origin=0)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} Mat \hyperlink{namespacecvtest_a95a6a03cbf86d721168e03fe6096f649}{cvtest\-::calc\-Laplace\-Kernel2\-D} (int aperture\-\_\-size)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_aa74e3cb54c90fa2d263fe3ff81a0c9fe}{cvtest\-::init\-Undistort\-Map} (const Mat \&\hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}, const Mat \&\hyperlink{legacy_8hpp_a7be9b6436e5ea72ff5d5a66779b4bd38}{k}, Size sz, Mat \&\hyperlink{imgproc__c_8h_a81ed33f30ee89704887ae4e4dbb20d46}{mapx}, Mat \&\hyperlink{imgproc__c_8h_a934abd37467ed645178fbe201add061e}{mapy})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_a99c63c88a0832d8e71bfe2779dc28af4}{cvtest\-::min\-Max\-Loc} (const Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, double $\ast$minval, double $\ast$maxval, vector$<$ int $>$ $\ast$minloc, vector$<$ int $>$ $\ast$maxloc, const Mat \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}=Mat())
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} double \hyperlink{namespacecvtest_afe0b69beddeea94657c1b36b104acaa4}{cvtest\-::norm} (const Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, int norm\-Type, const Mat \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}=Mat())
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} double \hyperlink{namespacecvtest_a1779e0c4158a2ffa0d6fa249327f3ee2}{cvtest\-::norm} (const Mat \&\hyperlink{core__c_8h_a897de4702c922f4cccda0d57ccdcafb3}{src1}, const Mat \&\hyperlink{core__c_8h_a7561a36d48069d54a6c8ac4e4750edfd}{src2}, int norm\-Type, const Mat \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}=Mat())
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} Scalar \hyperlink{namespacecvtest_afd1b0e1dfbfdaea885e52c2a75bd9d81}{cvtest\-::mean} (const Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, const Mat \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}=Mat())
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} bool \hyperlink{namespacecvtest_a67cfdf3f5efcf71a6783b0995546f20f}{cvtest\-::cmp\-Ulps} (const Mat \&\hyperlink{legacy_8hpp_ab9fe6c09e6d02865a953fffc12fe6ca0}{data}, const Mat \&refdata, int exp\-Max\-Diff, double $\ast$real\-Max\-Diff, vector$<$ int $>$ $\ast$\hyperlink{core__c_8h_a5c7c842f447336aa2f10826df65a28b3}{idx})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} int \hyperlink{namespacecvtest_a2ddc262232f5485daac0e20b1b31037c}{cvtest\-::cmp\-Eps} (const Mat \&\hyperlink{legacy_8hpp_ab9fe6c09e6d02865a953fffc12fe6ca0}{data}, const Mat \&refdata, double $\ast$max\-\_\-diff, double success\-\_\-err\-\_\-level, vector$<$ int $>$ $\ast$\hyperlink{core__c_8h_a5c7c842f447336aa2f10826df65a28b3}{idx}, bool element\-\_\-wise\-\_\-relative\-\_\-error)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} int \hyperlink{namespacecvtest_acb38dbcf89cbc383085ba144365fab07}{cvtest\-::cmp\-Eps2} (T\-S $\ast$ts, const Mat \&\hyperlink{legacy_8hpp_ab9fe6c09e6d02865a953fffc12fe6ca0}{data}, const Mat \&refdata, double success\-\_\-err\-\_\-level, bool element\-\_\-wise\-\_\-relative\-\_\-error, const char $\ast$desc)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} int \hyperlink{namespacecvtest_a42478f500d29b3eea5568931673acdde}{cvtest\-::cmp\-Eps2\-\_\-64f} (T\-S $\ast$ts, const double $\ast$val, const double $\ast$refval, int \hyperlink{core__c_8h_accb79be93f4fbcaa15b5a7670569c9f8}{len}, double \hyperlink{imgproc__c_8h_aabece9d4af1ab09d2f85ade473757e32}{eps}, const char $\ast$param\-\_\-name)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_a89ff58bf012784160a2b902cd831baf1}{cvtest\-::logic\-Op} (const Mat \&\hyperlink{core__c_8h_a897de4702c922f4cccda0d57ccdcafb3}{src1}, const Mat \&\hyperlink{core__c_8h_a7561a36d48069d54a6c8ac4e4750edfd}{src2}, Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, char \hyperlink{legacy_8hpp_a1971420173e06f45845eed2ab4e3d5d0}{c})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_a47a0d01f72edb496d4b84ee033031201}{cvtest\-::logic\-Op} (const Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, const Scalar \&s, Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, char \hyperlink{legacy_8hpp_a1971420173e06f45845eed2ab4e3d5d0}{c})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_a4ea963c34f3a83d0fd1927124ec5354a}{cvtest\-::min} (const Mat \&\hyperlink{core__c_8h_a897de4702c922f4cccda0d57ccdcafb3}{src1}, const Mat \&\hyperlink{core__c_8h_a7561a36d48069d54a6c8ac4e4750edfd}{src2}, Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_ad3ec55e5c78f842a29788a63d6b4ba14}{cvtest\-::min} (const Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, double s, Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_a86aca546545a31151753fe45ebc4221a}{cvtest\-::max} (const Mat \&\hyperlink{core__c_8h_a897de4702c922f4cccda0d57ccdcafb3}{src1}, const Mat \&\hyperlink{core__c_8h_a7561a36d48069d54a6c8ac4e4750edfd}{src2}, Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_a9d50f67da7a85c16200a106fe264ad07}{cvtest\-::max} (const Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, double s, Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_aaabd659b14b333a35e5b3bada3c3b2f7}{cvtest\-::compare} (const Mat \&\hyperlink{core__c_8h_a897de4702c922f4cccda0d57ccdcafb3}{src1}, const Mat \&\hyperlink{core__c_8h_a7561a36d48069d54a6c8ac4e4750edfd}{src2}, Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, int cmpop)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_a45c91e1858e8d71aac6b394243aa08e6}{cvtest\-::compare} (const Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, double s, Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, int cmpop)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_ad8bf206bdedaebaef04492c219c80265}{cvtest\-::gemm} (const Mat \&\hyperlink{core__c_8h_a897de4702c922f4cccda0d57ccdcafb3}{src1}, const Mat \&\hyperlink{core__c_8h_a7561a36d48069d54a6c8ac4e4750edfd}{src2}, double \hyperlink{legacy_8hpp_a95fc8341ca418bc06b36160632af6d47}{alpha}, const Mat \&\hyperlink{core__c_8h_a311f39c2d5ee53342a493cbed3d77de3}{src3}, double \hyperlink{legacy_8hpp_af8b31eb489dfbd87f3b1a1925cca3589}{beta}, Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, int \hyperlink{highgui__c_8h_ae51e3a2d4365e85db9630dd3ce9508db}{flags})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_a2bfa2b9373551f8fd748ab1f9ba79606}{cvtest\-::transform} (const Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, const Mat \&\hyperlink{core__c_8h_afc335fd0c8a1c8db35bdfbdcb4ef30d7}{transmat}, const Mat \&shift)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} double \hyperlink{namespacecvtest_a7dbcf42c2486a0fde93ca14400d9a63e}{cvtest\-::cross\-Corr} (const Mat \&\hyperlink{core__c_8h_a897de4702c922f4cccda0d57ccdcafb3}{src1}, const Mat \&\hyperlink{core__c_8h_a7561a36d48069d54a6c8ac4e4750edfd}{src2})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} std\-::ostream \& \hyperlink{namespacecvtest_a26d3e3d171c7188f1930582ad5942eeb}{cvtest\-::operator$<$$<$} (std\-::ostream \&out, const Mat\-Info \&m)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_a05033377cd913b17c1c21235981e1c3e}{cvtest\-::fill\-Gradient} (Mat \&\hyperlink{legacy_8hpp_a5349238b3772bed6eae0fda3117ccfef}{img}, int \hyperlink{legacy_8hpp_ac867054f00f4be8b1f3ebce6fba31982}{delta}=5)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_ad269b0afda8fae3f66b52812be976146}{cvtest\-::smooth\-Border} (Mat \&\hyperlink{legacy_8hpp_a5349238b3772bed6eae0fda3117ccfef}{img}, const Scalar \&\hyperlink{core__c_8h_a4ea898fa4dd23d613d19923509d8e249}{color}, int \hyperlink{legacy_8hpp_ac867054f00f4be8b1f3ebce6fba31982}{delta}=3)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecvtest_ae4cdd987333c3910e7b991b32f14bf7a}{cvtest\-::print\-Version\-Info} (bool use\-Std\-Out=true)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{ts_8hpp_a533b496c36e73bae0217ec4fd3ea55c9}{cv\-Ts\-Zero} (\hyperlink{structCvMat}{Cv\-Mat} $\ast$\hyperlink{legacy_8hpp_a1971420173e06f45845eed2ab4e3d5d0}{c}, const \hyperlink{structCvMat}{Cv\-Mat} $\ast$\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}=0)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{ts_8hpp_a95d8f5afc72d8bf3caaa7ff098962ead}{cv\-Ts\-Copy} (const \hyperlink{structCvMat}{Cv\-Mat} $\ast$\hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}, \hyperlink{structCvMat}{Cv\-Mat} $\ast$\hyperlink{legacy_8hpp_ac04272e8ca865b8fba18d36edae9fd2a}{b}, const \hyperlink{structCvMat}{Cv\-Mat} $\ast$\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}=0)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{ts_8hpp_a08ad84129504337c7b65b7766e604dde}{cv\-Ts\-Convert} (const \hyperlink{structCvMat}{Cv\-Mat} $\ast$\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, \hyperlink{structCvMat}{Cv\-Mat} $\ast$\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{ts_8hpp_a7f4a3d2784c98f392214105622439ef1}{cv\-Ts\-G\-E\-M\-M} (const \hyperlink{structCvMat}{Cv\-Mat} $\ast$\hyperlink{legacy_8hpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}, const \hyperlink{structCvMat}{Cv\-Mat} $\ast$\hyperlink{legacy_8hpp_ac04272e8ca865b8fba18d36edae9fd2a}{b}, double \hyperlink{legacy_8hpp_a95fc8341ca418bc06b36160632af6d47}{alpha}, const \hyperlink{structCvMat}{Cv\-Mat} $\ast$\hyperlink{legacy_8hpp_a1971420173e06f45845eed2ab4e3d5d0}{c}, double \hyperlink{legacy_8hpp_af8b31eb489dfbd87f3b1a1925cca3589}{beta}, \hyperlink{structCvMat}{Cv\-Mat} $\ast$\hyperlink{legacy_8hpp_a6f364afbe132c4ecfea48bde1b0618ba}{d}, int \hyperlink{highgui__c_8h_ae51e3a2d4365e85db9630dd3ce9508db}{flags})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{namespacecvtest_a61d75b2d1c52a63797c1516e029b9cb0}{cvtest\-::\-T\-S}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{ts_8hpp_aa72bf3baf0676034972c106336337bbe}{\index{ts.\-hpp@{ts.\-hpp}!\-\_\-\-\_\-\-C\-V\-\_\-\-T\-E\-S\-T\-\_\-\-E\-X\-E\-C\-\_\-\-A\-R\-G\-S@{\-\_\-\-\_\-\-C\-V\-\_\-\-T\-E\-S\-T\-\_\-\-E\-X\-E\-C\-\_\-\-A\-R\-G\-S}}
+\index{\-\_\-\-\_\-\-C\-V\-\_\-\-T\-E\-S\-T\-\_\-\-E\-X\-E\-C\-\_\-\-A\-R\-G\-S@{\-\_\-\-\_\-\-C\-V\-\_\-\-T\-E\-S\-T\-\_\-\-E\-X\-E\-C\-\_\-\-A\-R\-G\-S}!ts.hpp@{ts.\-hpp}}
+\subsubsection[{\-\_\-\-\_\-\-C\-V\-\_\-\-T\-E\-S\-T\-\_\-\-E\-X\-E\-C\-\_\-\-A\-R\-G\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-\_\-\-\_\-\-C\-V\-\_\-\-T\-E\-S\-T\-\_\-\-E\-X\-E\-C\-\_\-\-A\-R\-G\-S(
+\begin{DoxyParamCaption}
+\item[{}]{...}
+\end{DoxyParamCaption}
+)~\-\_\-\-\_\-\-V\-A\-\_\-\-A\-R\-G\-S\-\_\-\-\_\-;}}\label{ts_8hpp_aa72bf3baf0676034972c106336337bbe}
+\hypertarget{ts_8hpp_a55fafe0af273c61ad8e7db1e3c1c4900}{\index{ts.\-hpp@{ts.\-hpp}!C\-V\-\_\-\-T\-E\-S\-T\-\_\-\-F\-A\-I\-L\-\_\-\-N\-O\-\_\-\-I\-M\-P\-L@{C\-V\-\_\-\-T\-E\-S\-T\-\_\-\-F\-A\-I\-L\-\_\-\-N\-O\-\_\-\-I\-M\-P\-L}}
+\index{C\-V\-\_\-\-T\-E\-S\-T\-\_\-\-F\-A\-I\-L\-\_\-\-N\-O\-\_\-\-I\-M\-P\-L@{C\-V\-\_\-\-T\-E\-S\-T\-\_\-\-F\-A\-I\-L\-\_\-\-N\-O\-\_\-\-I\-M\-P\-L}!ts.hpp@{ts.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-T\-E\-S\-T\-\_\-\-F\-A\-I\-L\-\_\-\-N\-O\-\_\-\-I\-M\-P\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-T\-E\-S\-T\-\_\-\-F\-A\-I\-L\-\_\-\-N\-O\-\_\-\-I\-M\-P\-L(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{ts_8hpp_a55fafe0af273c61ad8e7db1e3c1c4900}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \hyperlink{classtesting_1_1Test_ae0448aec9e389fab70f6a75a59ff6aa2}{\(\backslash\)}
+\hyperlink{classtesting_1_1Test_ae0448aec9e389fab70f6a75a59ff6aa2}{    ::testing::Test::RecordProperty}(\textcolor{stringliteral}{"custom\_status"}, \textcolor{stringliteral}{"noimpl"}); 
+      \hyperlink{ts__gtest_8h_a3e26a8d27caa386ed0ea7ce9d5b7c4ed}{\(\backslash\)}
+\hyperlink{ts__gtest_8h_a3e26a8d27caa386ed0ea7ce9d5b7c4ed}{    FAIL}() << \textcolor{stringliteral}{"No equivalent implementation."}; \(\backslash\)
+\} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+\hypertarget{ts_8hpp_aa6ccfe338ba8a86ffa2fc5b2de449a12}{\index{ts.\-hpp@{ts.\-hpp}!C\-V\-\_\-\-T\-E\-S\-T\-\_\-\-M\-A\-I\-N@{C\-V\-\_\-\-T\-E\-S\-T\-\_\-\-M\-A\-I\-N}}
+\index{C\-V\-\_\-\-T\-E\-S\-T\-\_\-\-M\-A\-I\-N@{C\-V\-\_\-\-T\-E\-S\-T\-\_\-\-M\-A\-I\-N}!ts.hpp@{ts.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-T\-E\-S\-T\-\_\-\-M\-A\-I\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-T\-E\-S\-T\-\_\-\-M\-A\-I\-N(
+\begin{DoxyParamCaption}
+\item[{}]{resourcesubdir, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}}\label{ts_8hpp_aa6ccfe338ba8a86ffa2fc5b2de449a12}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{keywordtype}{int} \hyperlink{3rdparty_2cvblobs_2build_2CMakeFiles_2CompilerIdC_2CMakeCCompilerId_8c_a0ddf1224851353fc92bfbff6f499fa97}{main}(\textcolor{keywordtype}{int} \hyperlink{highgui__c_8h_a4ee2a7de047a0a236fe118a35e8f76a4}{argc}, \textcolor{keywordtype}{char} **\hyperlink{highgui__c_8h_a1b5d2a82062528707ab3855772528912}{argv}) \(\backslash\)
+\{ \hyperlink{classcvtest_1_1TS_a627cd5c81db94ccae75c6f04af396497}{\(\backslash\)}
+\hyperlink{classcvtest_1_1TS_a627cd5c81db94ccae75c6f04af396497}{    cvtest::TS::ptr}()->\hyperlink{classcvtest_1_1TS_afd42fc157b2f38b0b8445697dda8a7ef}{init}(resourcesubdir); \hyperlink{namespacetesting_aee3f6f99df893f576f705f66c0559482}{\(\backslash\)}
+\hyperlink{namespacetesting_aee3f6f99df893f576f705f66c0559482}{    ::testing::InitGoogleTest}(&\hyperlink{highgui__c_8h_a4ee2a7de047a0a236fe118a35e8f76a4}{argc}, \hyperlink{highgui__c_8h_a1b5d2a82062528707ab3855772528912}{argv}); 
+      \hyperlink{namespacecvtest_ae4cdd987333c3910e7b991b32f14bf7a}{\(\backslash\)}
+\hyperlink{namespacecvtest_ae4cdd987333c3910e7b991b32f14bf7a}{    cvtest::printVersionInfo}(); \hyperlink{ts_8hpp_aa72bf3baf0676034972c106336337bbe}{\(\backslash\)}
+\hyperlink{ts_8hpp_aa72bf3baf0676034972c106336337bbe}{    \_\_CV\_TEST\_EXEC\_ARGS}(\_\_VA\_ARGS\_\_) \(\backslash\)
+    return \hyperlink{ts__gtest_8h_a853a3792807489591d3d4a2f2ff9359f}{RUN\_ALL\_TESTS}(); \(\backslash\)
+\}
+\end{DoxyCode}
+\hypertarget{ts_8hpp_a3b821ca2dd4beb8ce0eaf901da54d4a6}{\index{ts.\-hpp@{ts.\-hpp}!G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-E\-Q@{G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-E\-Q}}
+\index{G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-E\-Q@{G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-E\-Q}!ts.hpp@{ts.\-hpp}}
+\subsubsection[{G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-E\-Q}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-E\-Q~0}}\label{ts_8hpp_a3b821ca2dd4beb8ce0eaf901da54d4a6}
+\hypertarget{ts_8hpp_a4691e210099243a4ca708d029dac034c}{\index{ts.\-hpp@{ts.\-hpp}!G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-G\-E@{G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-G\-E}}
+\index{G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-G\-E@{G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-G\-E}!ts.hpp@{ts.\-hpp}}
+\subsubsection[{G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-G\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-G\-E~0}}\label{ts_8hpp_a4691e210099243a4ca708d029dac034c}
+\hypertarget{ts_8hpp_a1a0683b0a66ca0a396a18fea04ca2dd5}{\index{ts.\-hpp@{ts.\-hpp}!G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-G\-T@{G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-G\-T}}
+\index{G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-G\-T@{G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-G\-T}!ts.hpp@{ts.\-hpp}}
+\subsubsection[{G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-G\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-G\-T~0}}\label{ts_8hpp_a1a0683b0a66ca0a396a18fea04ca2dd5}
+\hypertarget{ts_8hpp_a8912db342e0e998e3a2aef245aab05ce}{\index{ts.\-hpp@{ts.\-hpp}!G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-L\-E@{G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-L\-E}}
+\index{G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-L\-E@{G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-L\-E}!ts.hpp@{ts.\-hpp}}
+\subsubsection[{G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-L\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-L\-E~0}}\label{ts_8hpp_a8912db342e0e998e3a2aef245aab05ce}
+\hypertarget{ts_8hpp_aba361ff4c77b981aed5e1618d7446a42}{\index{ts.\-hpp@{ts.\-hpp}!G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-L\-T@{G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-L\-T}}
+\index{G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-L\-T@{G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-L\-T}!ts.hpp@{ts.\-hpp}}
+\subsubsection[{G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-L\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-L\-T~0}}\label{ts_8hpp_aba361ff4c77b981aed5e1618d7446a42}
+\hypertarget{ts_8hpp_aa21e244a146385d867b3ce8fb2737bc2}{\index{ts.\-hpp@{ts.\-hpp}!G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-N\-E@{G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-N\-E}}
+\index{G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-N\-E@{G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-N\-E}!ts.hpp@{ts.\-hpp}}
+\subsubsection[{G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-N\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-A\-S\-S\-E\-R\-T\-\_\-\-N\-E~0}}\label{ts_8hpp_aa21e244a146385d867b3ce8fb2737bc2}
+\hypertarget{ts_8hpp_afb7213dad6681dc01ba2bc1ffb8950cb}{\index{ts.\-hpp@{ts.\-hpp}!G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-F\-A\-I\-L@{G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-F\-A\-I\-L}}
+\index{G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-F\-A\-I\-L@{G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-F\-A\-I\-L}!ts.hpp@{ts.\-hpp}}
+\subsubsection[{G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-F\-A\-I\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-F\-A\-I\-L~0}}\label{ts_8hpp_afb7213dad6681dc01ba2bc1ffb8950cb}
+\hypertarget{ts_8hpp_a859f81085fc5ae171ac08cfc9e25d4dd}{\index{ts.\-hpp@{ts.\-hpp}!G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-U\-C\-C\-E\-E\-D@{G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-U\-C\-C\-E\-E\-D}}
+\index{G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-U\-C\-C\-E\-E\-D@{G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-U\-C\-C\-E\-E\-D}!ts.hpp@{ts.\-hpp}}
+\subsubsection[{G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-U\-C\-C\-E\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-S\-U\-C\-C\-E\-E\-D~0}}\label{ts_8hpp_a859f81085fc5ae171ac08cfc9e25d4dd}
+\hypertarget{ts_8hpp_a9a2e12e6f5b04ab8e4272df36cfbe4c0}{\index{ts.\-hpp@{ts.\-hpp}!G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-T\-E\-S\-T@{G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-T\-E\-S\-T}}
+\index{G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-T\-E\-S\-T@{G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-T\-E\-S\-T}!ts.hpp@{ts.\-hpp}}
+\subsubsection[{G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-T\-E\-S\-T\-\_\-\-D\-O\-N\-T\-\_\-\-D\-E\-F\-I\-N\-E\-\_\-\-T\-E\-S\-T~0}}\label{ts_8hpp_a9a2e12e6f5b04ab8e4272df36cfbe4c0}
+\hypertarget{ts_8hpp_acecef794eeb09598cd47da764271cb18}{\index{ts.\-hpp@{ts.\-hpp}!G\-T\-E\-S\-T\-\_\-\-U\-S\-E\-S\-\_\-\-P\-O\-S\-I\-X\-\_\-\-R\-E@{G\-T\-E\-S\-T\-\_\-\-U\-S\-E\-S\-\_\-\-P\-O\-S\-I\-X\-\_\-\-R\-E}}
+\index{G\-T\-E\-S\-T\-\_\-\-U\-S\-E\-S\-\_\-\-P\-O\-S\-I\-X\-\_\-\-R\-E@{G\-T\-E\-S\-T\-\_\-\-U\-S\-E\-S\-\_\-\-P\-O\-S\-I\-X\-\_\-\-R\-E}!ts.hpp@{ts.\-hpp}}
+\subsubsection[{G\-T\-E\-S\-T\-\_\-\-U\-S\-E\-S\-\_\-\-P\-O\-S\-I\-X\-\_\-\-R\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-T\-E\-S\-T\-\_\-\-U\-S\-E\-S\-\_\-\-P\-O\-S\-I\-X\-\_\-\-R\-E~0}}\label{ts_8hpp_acecef794eeb09598cd47da764271cb18}
+\hypertarget{ts_8hpp_aa3efaf3b4de4a9acfad6a61fdf387ea6}{\index{ts.\-hpp@{ts.\-hpp}!G\-T\-E\-S\-T\-\_\-\-U\-S\-E\-S\-\_\-\-S\-I\-M\-P\-L\-E\-\_\-\-R\-E@{G\-T\-E\-S\-T\-\_\-\-U\-S\-E\-S\-\_\-\-S\-I\-M\-P\-L\-E\-\_\-\-R\-E}}
+\index{G\-T\-E\-S\-T\-\_\-\-U\-S\-E\-S\-\_\-\-S\-I\-M\-P\-L\-E\-\_\-\-R\-E@{G\-T\-E\-S\-T\-\_\-\-U\-S\-E\-S\-\_\-\-S\-I\-M\-P\-L\-E\-\_\-\-R\-E}!ts.hpp@{ts.\-hpp}}
+\subsubsection[{G\-T\-E\-S\-T\-\_\-\-U\-S\-E\-S\-\_\-\-S\-I\-M\-P\-L\-E\-\_\-\-R\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-T\-E\-S\-T\-\_\-\-U\-S\-E\-S\-\_\-\-S\-I\-M\-P\-L\-E\-\_\-\-R\-E~0}}\label{ts_8hpp_aa3efaf3b4de4a9acfad6a61fdf387ea6}
+
+
+\subsection{Function Documentation}
+\hypertarget{ts_8hpp_a08ad84129504337c7b65b7766e604dde}{\index{ts.\-hpp@{ts.\-hpp}!cv\-Ts\-Convert@{cv\-Ts\-Convert}}
+\index{cv\-Ts\-Convert@{cv\-Ts\-Convert}!ts.hpp@{ts.\-hpp}}
+\subsubsection[{cv\-Ts\-Convert}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cv\-Ts\-Convert (
+\begin{DoxyParamCaption}
+\item[{const {\bf Cv\-Mat} $\ast$}]{src, }
+\item[{{\bf Cv\-Mat} $\ast$}]{dst}
+\end{DoxyParamCaption}
+)}}\label{ts_8hpp_a08ad84129504337c7b65b7766e604dde}
+\hypertarget{ts_8hpp_a95d8f5afc72d8bf3caaa7ff098962ead}{\index{ts.\-hpp@{ts.\-hpp}!cv\-Ts\-Copy@{cv\-Ts\-Copy}}
+\index{cv\-Ts\-Copy@{cv\-Ts\-Copy}!ts.hpp@{ts.\-hpp}}
+\subsubsection[{cv\-Ts\-Copy}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cv\-Ts\-Copy (
+\begin{DoxyParamCaption}
+\item[{const {\bf Cv\-Mat} $\ast$}]{a, }
+\item[{{\bf Cv\-Mat} $\ast$}]{b, }
+\item[{const {\bf Cv\-Mat} $\ast$}]{mask = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{ts_8hpp_a95d8f5afc72d8bf3caaa7ff098962ead}
+\hypertarget{ts_8hpp_a7f4a3d2784c98f392214105622439ef1}{\index{ts.\-hpp@{ts.\-hpp}!cv\-Ts\-G\-E\-M\-M@{cv\-Ts\-G\-E\-M\-M}}
+\index{cv\-Ts\-G\-E\-M\-M@{cv\-Ts\-G\-E\-M\-M}!ts.hpp@{ts.\-hpp}}
+\subsubsection[{cv\-Ts\-G\-E\-M\-M}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cv\-Ts\-G\-E\-M\-M (
+\begin{DoxyParamCaption}
+\item[{const {\bf Cv\-Mat} $\ast$}]{a, }
+\item[{const {\bf Cv\-Mat} $\ast$}]{b, }
+\item[{double}]{alpha, }
+\item[{const {\bf Cv\-Mat} $\ast$}]{c, }
+\item[{double}]{beta, }
+\item[{{\bf Cv\-Mat} $\ast$}]{d, }
+\item[{int}]{flags}
+\end{DoxyParamCaption}
+)}}\label{ts_8hpp_a7f4a3d2784c98f392214105622439ef1}
+\hypertarget{ts_8hpp_a533b496c36e73bae0217ec4fd3ea55c9}{\index{ts.\-hpp@{ts.\-hpp}!cv\-Ts\-Zero@{cv\-Ts\-Zero}}
+\index{cv\-Ts\-Zero@{cv\-Ts\-Zero}!ts.hpp@{ts.\-hpp}}
+\subsubsection[{cv\-Ts\-Zero}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} {\bf void} cv\-Ts\-Zero (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Mat} $\ast$}]{c, }
+\item[{const {\bf Cv\-Mat} $\ast$}]{mask = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{ts_8hpp_a533b496c36e73bae0217ec4fd3ea55c9}

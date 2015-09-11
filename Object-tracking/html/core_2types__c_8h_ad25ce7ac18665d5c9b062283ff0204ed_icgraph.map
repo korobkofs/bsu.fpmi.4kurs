@@ -1,0 +1,20 @@
+<map id="cvSize" name="cvSize">
+<area shape="rect" id="node2" href="$classCBlob.html#a1b12d25f8e470fdd808ac2e3bfe9bad4" title="Get mean grey color. " alt="" coords="143,56,241,83"/>
+<area shape="rect" id="node6" href="$ComponentLabeling_8h.html#a05b80d9c559310ac95461bd523d888f6" title="ComponentLabeling" alt="" coords="123,107,261,133"/>
+<area shape="rect" id="node8" href="$Lk_8cpp.html#aecd9b4dead7bfe263a7a068dfb577839" title="Calculates normalized cross correlation for every point. " alt="" coords="117,157,267,184"/>
+<area shape="rect" id="node9" href="$Lk_8h.html#aeb798560b2c1eda165af271062b840ab" title="Tracks Points from 1.Image to 2.Image. Need initImgs before start and at the end of the program for c..." alt="" coords="371,157,437,184"/>
+<area shape="rect" id="node12" href="$namespacetld.html#a7facbe495da1f0e058c78b9b7dea412a" title="Returns mean&#45;normalized patch, the image must be greyscale. " alt="" coords="123,259,261,285"/>
+<area shape="rect" id="node18" href="$classtld_1_1Gui.html#aed1a0c246dfc3795560422ae762d58b3" title="Creates the output window. " alt="" coords="147,311,237,337"/>
+<area shape="rect" id="node3" href="$classCBlob.html#a014b670bb748e6767ef070e1bc25be7a" title="Get standard deviation grey color. " alt="" coords="349,5,459,32"/>
+<area shape="rect" id="node5" href="$classCBlobGetMean.html#ad1aff39c601989402d096fb649b9703c" title="Aply operator to blob. " alt="" coords="317,56,491,83"/>
+<area shape="rect" id="node4" href="$classCBlobGetStdDev.html#a9a52512df47b9ff51ad0cb4cb48d3d1f" title="Aply operator to blob. " alt="" coords="541,5,728,32"/>
+<area shape="rect" id="node7" href="$classCBlobResult.html#ac811b6c04870c5a96b14ca0a7f1e2897" title="CBlobResult::CBlobResult" alt="" coords="315,107,493,133"/>
+<area shape="rect" id="node10" href="$FBTrack_8h.html#a2c818794e6fe6aa3f6efdc9c46ffd164" title="Calculate the bounding box of an Object in a following Image. Imgs aren&#39;t changed. " alt="" coords="603,157,666,184"/>
+<area shape="rect" id="node11" href="$classtld_1_1MedianFlowTracker.html#addcc103122a93f098583b8f9cf72e8ff" title="Calculate the bounding box of an Object in a following Image (with analyse of success and correctness..." alt="" coords="777,150,935,191"/>
+<area shape="rect" id="node13" href="$namespacetld.html#ac965be65b1eae7ec666c3bfbe9da065e" title="Extracts normalized patch from the image by rectangle. " alt="" coords="321,247,487,289"/>
+<area shape="rect" id="node14" href="$namespacetld.html#a44b5f4d4d087d3369129bdc92e2a555a" title="Extracts normalized patch from the image by boundary (array). " alt="" coords="551,231,718,273"/>
+<area shape="rect" id="node16" href="$namespacetld.html#aa6c803037b38609e1fceadbb2ad8a75c" title="Extracts normalized patch from the image by reactangle. " alt="" coords="551,297,718,338"/>
+<area shape="rect" id="node15" href="$classtld_1_1NNClassifier.html#a88fe1649014e887a12a5a57a552819f2" title="Compares patch (obtain from the image and the index of window) to positive and negative patches..." alt="" coords="793,231,919,273"/>
+<area shape="rect" id="node17" href="$classtld_1_1NNClassifier.html#a4b926da10ab0ce0d05fdb19b7e90bf8b" title="Compares patch (obtain from the image and the bounding box) to positive and negative patches..." alt="" coords="793,297,919,338"/>
+<area shape="rect" id="node19" href="$OpenTLD_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="379,313,429,340"/>
+</map>

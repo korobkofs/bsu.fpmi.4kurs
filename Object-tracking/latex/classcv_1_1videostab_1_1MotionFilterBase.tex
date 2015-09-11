@@ -1,0 +1,129 @@
+\hypertarget{classcv_1_1videostab_1_1MotionFilterBase}{\section{cv\-:\-:videostab\-:\-:Motion\-Filter\-Base Class Reference}
+\label{classcv_1_1videostab_1_1MotionFilterBase}\index{cv\-::videostab\-::\-Motion\-Filter\-Base@{cv\-::videostab\-::\-Motion\-Filter\-Base}}
+}
+
+
+{\ttfamily \#include $<$motion\-\_\-stabilizing.\-hpp$>$}
+
+
+
+Inheritance diagram for cv\-:\-:videostab\-:\-:Motion\-Filter\-Base\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{classcv_1_1videostab_1_1MotionFilterBase__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for cv\-:\-:videostab\-:\-:Motion\-Filter\-Base\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{classcv_1_1videostab_1_1MotionFilterBase__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcv_1_1videostab_1_1MotionFilterBase_a0f9ca0ee3ae1de73f996887a5d221deb}{Motion\-Filter\-Base} ()
+\item 
+virtual \hyperlink{classcv_1_1videostab_1_1MotionFilterBase_aedd4d50e0905daab4e66ec55d28797ae}{$\sim$\-Motion\-Filter\-Base} ()
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1videostab_1_1MotionFilterBase_acac4889a8ba708e073c6ab7a6ad26250}{set\-Radius} (int val)
+\item 
+virtual int \hyperlink{classcv_1_1videostab_1_1MotionFilterBase_ad063a73ae8476143494b0dffbd81845f}{radius} () const 
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1videostab_1_1MotionFilterBase_a3d79ee83d55691988ec7be91e4828ad6}{update} ()
+\item 
+virtual Mat \hyperlink{classcv_1_1videostab_1_1MotionFilterBase_ac1e438a7905fafca7d94ce48ef6666dd}{stabilize} (int \hyperlink{core__c_8h_a750b5d744c39a06bfb13e6eb010e35d0}{index}, const Mat $\ast$motions, int \hyperlink{legacy_8hpp_ae97003f8d5c64cdfb99f6f2606d121b6}{size}) const =0
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1videostab_1_1MotionFilterBase_a1ef0354c34e8e25b2f5ddd8c80a10912}{stabilize} (const Mat $\ast$motions, int \hyperlink{legacy_8hpp_ae97003f8d5c64cdfb99f6f2606d121b6}{size}, Mat $\ast$stabilization\-Motions) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classcv_1_1videostab_1_1MotionFilterBase_a7e72f16acda126a8a01e1b734b826834}{radius\-\_\-}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcv_1_1videostab_1_1MotionFilterBase_a0f9ca0ee3ae1de73f996887a5d221deb}{\index{cv\-::videostab\-::\-Motion\-Filter\-Base@{cv\-::videostab\-::\-Motion\-Filter\-Base}!Motion\-Filter\-Base@{Motion\-Filter\-Base}}
+\index{Motion\-Filter\-Base@{Motion\-Filter\-Base}!cv::videostab::MotionFilterBase@{cv\-::videostab\-::\-Motion\-Filter\-Base}}
+\subsubsection[{Motion\-Filter\-Base}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::videostab\-::\-Motion\-Filter\-Base\-::\-Motion\-Filter\-Base (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1videostab_1_1MotionFilterBase_a0f9ca0ee3ae1de73f996887a5d221deb}
+\hypertarget{classcv_1_1videostab_1_1MotionFilterBase_aedd4d50e0905daab4e66ec55d28797ae}{\index{cv\-::videostab\-::\-Motion\-Filter\-Base@{cv\-::videostab\-::\-Motion\-Filter\-Base}!$\sim$\-Motion\-Filter\-Base@{$\sim$\-Motion\-Filter\-Base}}
+\index{$\sim$\-Motion\-Filter\-Base@{$\sim$\-Motion\-Filter\-Base}!cv::videostab::MotionFilterBase@{cv\-::videostab\-::\-Motion\-Filter\-Base}}
+\subsubsection[{$\sim$\-Motion\-Filter\-Base}]{\setlength{\rightskip}{0pt plus 5cm}virtual cv\-::videostab\-::\-Motion\-Filter\-Base\-::$\sim$\-Motion\-Filter\-Base (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcv_1_1videostab_1_1MotionFilterBase_aedd4d50e0905daab4e66ec55d28797ae}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcv_1_1videostab_1_1MotionFilterBase_ad063a73ae8476143494b0dffbd81845f}{\index{cv\-::videostab\-::\-Motion\-Filter\-Base@{cv\-::videostab\-::\-Motion\-Filter\-Base}!radius@{radius}}
+\index{radius@{radius}!cv::videostab::MotionFilterBase@{cv\-::videostab\-::\-Motion\-Filter\-Base}}
+\subsubsection[{radius}]{\setlength{\rightskip}{0pt plus 5cm}virtual int cv\-::videostab\-::\-Motion\-Filter\-Base\-::radius (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcv_1_1videostab_1_1MotionFilterBase_ad063a73ae8476143494b0dffbd81845f}
+\hypertarget{classcv_1_1videostab_1_1MotionFilterBase_acac4889a8ba708e073c6ab7a6ad26250}{\index{cv\-::videostab\-::\-Motion\-Filter\-Base@{cv\-::videostab\-::\-Motion\-Filter\-Base}!set\-Radius@{set\-Radius}}
+\index{set\-Radius@{set\-Radius}!cv::videostab::MotionFilterBase@{cv\-::videostab\-::\-Motion\-Filter\-Base}}
+\subsubsection[{set\-Radius}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cv\-::videostab\-::\-Motion\-Filter\-Base\-::set\-Radius (
+\begin{DoxyParamCaption}
+\item[{int}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcv_1_1videostab_1_1MotionFilterBase_acac4889a8ba708e073c6ab7a6ad26250}
+\hypertarget{classcv_1_1videostab_1_1MotionFilterBase_ac1e438a7905fafca7d94ce48ef6666dd}{\index{cv\-::videostab\-::\-Motion\-Filter\-Base@{cv\-::videostab\-::\-Motion\-Filter\-Base}!stabilize@{stabilize}}
+\index{stabilize@{stabilize}!cv::videostab::MotionFilterBase@{cv\-::videostab\-::\-Motion\-Filter\-Base}}
+\subsubsection[{stabilize}]{\setlength{\rightskip}{0pt plus 5cm}virtual Mat cv\-::videostab\-::\-Motion\-Filter\-Base\-::stabilize (
+\begin{DoxyParamCaption}
+\item[{int}]{index, }
+\item[{const Mat $\ast$}]{motions, }
+\item[{int}]{size}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classcv_1_1videostab_1_1MotionFilterBase_ac1e438a7905fafca7d94ce48ef6666dd}
+
+
+Implemented in \hyperlink{classcv_1_1videostab_1_1GaussianMotionFilter_ac952c5b4b1b394f69f0f2893534deb7b}{cv\-::videostab\-::\-Gaussian\-Motion\-Filter}.
+
+\hypertarget{classcv_1_1videostab_1_1MotionFilterBase_a1ef0354c34e8e25b2f5ddd8c80a10912}{\index{cv\-::videostab\-::\-Motion\-Filter\-Base@{cv\-::videostab\-::\-Motion\-Filter\-Base}!stabilize@{stabilize}}
+\index{stabilize@{stabilize}!cv::videostab::MotionFilterBase@{cv\-::videostab\-::\-Motion\-Filter\-Base}}
+\subsubsection[{stabilize}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cv\-::videostab\-::\-Motion\-Filter\-Base\-::stabilize (
+\begin{DoxyParamCaption}
+\item[{const Mat $\ast$}]{motions, }
+\item[{int}]{size, }
+\item[{Mat $\ast$}]{stabilization\-Motions}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcv_1_1videostab_1_1MotionFilterBase_a1ef0354c34e8e25b2f5ddd8c80a10912}
+
+
+Implements \hyperlink{classcv_1_1videostab_1_1IMotionStabilizer_a2094b1b0a3f53a2afc06f5691f562080}{cv\-::videostab\-::\-I\-Motion\-Stabilizer}.
+
+\hypertarget{classcv_1_1videostab_1_1MotionFilterBase_a3d79ee83d55691988ec7be91e4828ad6}{\index{cv\-::videostab\-::\-Motion\-Filter\-Base@{cv\-::videostab\-::\-Motion\-Filter\-Base}!update@{update}}
+\index{update@{update}!cv::videostab::MotionFilterBase@{cv\-::videostab\-::\-Motion\-Filter\-Base}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cv\-::videostab\-::\-Motion\-Filter\-Base\-::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcv_1_1videostab_1_1MotionFilterBase_a3d79ee83d55691988ec7be91e4828ad6}
+
+
+Reimplemented in \hyperlink{classcv_1_1videostab_1_1GaussianMotionFilter_ad52434d1a6fa3517195f92eb66240e52}{cv\-::videostab\-::\-Gaussian\-Motion\-Filter}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcv_1_1videostab_1_1MotionFilterBase_a7e72f16acda126a8a01e1b734b826834}{\index{cv\-::videostab\-::\-Motion\-Filter\-Base@{cv\-::videostab\-::\-Motion\-Filter\-Base}!radius\-\_\-@{radius\-\_\-}}
+\index{radius\-\_\-@{radius\-\_\-}!cv::videostab::MotionFilterBase@{cv\-::videostab\-::\-Motion\-Filter\-Base}}
+\subsubsection[{radius\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::videostab\-::\-Motion\-Filter\-Base\-::radius\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1videostab_1_1MotionFilterBase_a7e72f16acda126a8a01e1b734b826834}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/videostab/\hyperlink{motion__stabilizing_8hpp}{motion\-\_\-stabilizing.\-hpp}\end{DoxyCompactItemize}

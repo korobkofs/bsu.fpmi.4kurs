@@ -1,0 +1,170 @@
+\hypertarget{classcv_1_1videostab_1_1PyrLkRobustMotionEstimator}{\section{cv\-:\-:videostab\-:\-:Pyr\-Lk\-Robust\-Motion\-Estimator Class Reference}
+\label{classcv_1_1videostab_1_1PyrLkRobustMotionEstimator}\index{cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator@{cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator}}
+}
+
+
+{\ttfamily \#include $<$global\-\_\-motion.\-hpp$>$}
+
+
+
+Inheritance diagram for cv\-:\-:videostab\-:\-:Pyr\-Lk\-Robust\-Motion\-Estimator\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{classcv_1_1videostab_1_1PyrLkRobustMotionEstimator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for cv\-:\-:videostab\-:\-:Pyr\-Lk\-Robust\-Motion\-Estimator\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{classcv_1_1videostab_1_1PyrLkRobustMotionEstimator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcv_1_1videostab_1_1PyrLkRobustMotionEstimator_a3a0c9637ff7bc34dd869e8f2b0652a98}{Pyr\-Lk\-Robust\-Motion\-Estimator} ()
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1videostab_1_1PyrLkRobustMotionEstimator_a5de2c42678cc8fc435823ab0b8fe2030}{set\-Detector} (Ptr$<$ Feature\-Detector $>$ val)
+\item 
+Ptr$<$ Feature\-Detector $>$ \hyperlink{classcv_1_1videostab_1_1PyrLkRobustMotionEstimator_a2babf73c3b95186f381800796d4175d3}{detector} () const 
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1videostab_1_1PyrLkRobustMotionEstimator_a9dfb81700e479acd391751004321b79b}{set\-Opt\-Flow\-Estimator} (Ptr$<$ \hyperlink{classcv_1_1videostab_1_1ISparseOptFlowEstimator}{I\-Sparse\-Opt\-Flow\-Estimator} $>$ val)
+\item 
+Ptr$<$ \hyperlink{classcv_1_1videostab_1_1ISparseOptFlowEstimator}{I\-Sparse\-Opt\-Flow\-Estimator} $>$ \hyperlink{classcv_1_1videostab_1_1PyrLkRobustMotionEstimator_abb0f4888ac7f1bdbf7b0c66d3130ad94}{opt\-Flow\-Estimator} () const 
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1videostab_1_1PyrLkRobustMotionEstimator_ac206563521fea9b0db5af1a326beabc1}{set\-Motion\-Model} (\hyperlink{namespacecv_1_1videostab_ac61e59db30b7d13983885d3ad3116ce1}{Motion\-Model} val)
+\item 
+\hyperlink{namespacecv_1_1videostab_ac61e59db30b7d13983885d3ad3116ce1}{Motion\-Model} \hyperlink{classcv_1_1videostab_1_1PyrLkRobustMotionEstimator_a148a7b51d7a7786d1b1b65d6f8471dbb}{motion\-Model} () const 
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1videostab_1_1PyrLkRobustMotionEstimator_a1a66e831a6ce17a4acd3326e9d7908f0}{set\-Ransac\-Params} (const \hyperlink{structcv_1_1videostab_1_1RansacParams}{Ransac\-Params} \&val)
+\item 
+\hyperlink{structcv_1_1videostab_1_1RansacParams}{Ransac\-Params} \hyperlink{classcv_1_1videostab_1_1PyrLkRobustMotionEstimator_afea00515a0e1cd5b9e2780e17d9b59f1}{ransac\-Params} () const 
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1videostab_1_1PyrLkRobustMotionEstimator_ac9f8df2d10b8fb432e1d98d8c7b32649}{set\-Max\-Rmse} (float val)
+\item 
+float \hyperlink{classcv_1_1videostab_1_1PyrLkRobustMotionEstimator_a9746264be3c9fce7736a6150c7788dea}{max\-Rmse} () const 
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1videostab_1_1PyrLkRobustMotionEstimator_a82d80ab33f0285947b1c3063a676dde5}{set\-Min\-Inlier\-Ratio} (float val)
+\item 
+float \hyperlink{classcv_1_1videostab_1_1PyrLkRobustMotionEstimator_aa6b1d3653fd658b2983e9f89793c8d51}{min\-Inlier\-Ratio} () const 
+\item 
+virtual Mat \hyperlink{classcv_1_1videostab_1_1PyrLkRobustMotionEstimator_af5d4d03c91ad44af8cbf980c8ceef357}{estimate} (const Mat \&frame0, const Mat \&frame1)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcv_1_1videostab_1_1PyrLkRobustMotionEstimator_a3a0c9637ff7bc34dd869e8f2b0652a98}{\index{cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator@{cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator}!Pyr\-Lk\-Robust\-Motion\-Estimator@{Pyr\-Lk\-Robust\-Motion\-Estimator}}
+\index{Pyr\-Lk\-Robust\-Motion\-Estimator@{Pyr\-Lk\-Robust\-Motion\-Estimator}!cv::videostab::PyrLkRobustMotionEstimator@{cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator}}
+\subsubsection[{Pyr\-Lk\-Robust\-Motion\-Estimator}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1videostab_1_1PyrLkRobustMotionEstimator_a3a0c9637ff7bc34dd869e8f2b0652a98}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcv_1_1videostab_1_1PyrLkRobustMotionEstimator_a2babf73c3b95186f381800796d4175d3}{\index{cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator@{cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator}!detector@{detector}}
+\index{detector@{detector}!cv::videostab::PyrLkRobustMotionEstimator@{cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator}}
+\subsubsection[{detector}]{\setlength{\rightskip}{0pt plus 5cm}Ptr$<$Feature\-Detector$>$ cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator\-::detector (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1videostab_1_1PyrLkRobustMotionEstimator_a2babf73c3b95186f381800796d4175d3}
+\hypertarget{classcv_1_1videostab_1_1PyrLkRobustMotionEstimator_af5d4d03c91ad44af8cbf980c8ceef357}{\index{cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator@{cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator}!estimate@{estimate}}
+\index{estimate@{estimate}!cv::videostab::PyrLkRobustMotionEstimator@{cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator}}
+\subsubsection[{estimate}]{\setlength{\rightskip}{0pt plus 5cm}virtual Mat cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator\-::estimate (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{frame0, }
+\item[{const Mat \&}]{frame1}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcv_1_1videostab_1_1PyrLkRobustMotionEstimator_af5d4d03c91ad44af8cbf980c8ceef357}
+
+
+Implements \hyperlink{classcv_1_1videostab_1_1IGlobalMotionEstimator_aaee0ab2d6cfaee5ae3c529209b7fd8c8}{cv\-::videostab\-::\-I\-Global\-Motion\-Estimator}.
+
+\hypertarget{classcv_1_1videostab_1_1PyrLkRobustMotionEstimator_a9746264be3c9fce7736a6150c7788dea}{\index{cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator@{cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator}!max\-Rmse@{max\-Rmse}}
+\index{max\-Rmse@{max\-Rmse}!cv::videostab::PyrLkRobustMotionEstimator@{cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator}}
+\subsubsection[{max\-Rmse}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator\-::max\-Rmse (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1videostab_1_1PyrLkRobustMotionEstimator_a9746264be3c9fce7736a6150c7788dea}
+\hypertarget{classcv_1_1videostab_1_1PyrLkRobustMotionEstimator_aa6b1d3653fd658b2983e9f89793c8d51}{\index{cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator@{cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator}!min\-Inlier\-Ratio@{min\-Inlier\-Ratio}}
+\index{min\-Inlier\-Ratio@{min\-Inlier\-Ratio}!cv::videostab::PyrLkRobustMotionEstimator@{cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator}}
+\subsubsection[{min\-Inlier\-Ratio}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator\-::min\-Inlier\-Ratio (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1videostab_1_1PyrLkRobustMotionEstimator_aa6b1d3653fd658b2983e9f89793c8d51}
+\hypertarget{classcv_1_1videostab_1_1PyrLkRobustMotionEstimator_a148a7b51d7a7786d1b1b65d6f8471dbb}{\index{cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator@{cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator}!motion\-Model@{motion\-Model}}
+\index{motion\-Model@{motion\-Model}!cv::videostab::PyrLkRobustMotionEstimator@{cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator}}
+\subsubsection[{motion\-Model}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Motion\-Model} cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator\-::motion\-Model (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1videostab_1_1PyrLkRobustMotionEstimator_a148a7b51d7a7786d1b1b65d6f8471dbb}
+\hypertarget{classcv_1_1videostab_1_1PyrLkRobustMotionEstimator_abb0f4888ac7f1bdbf7b0c66d3130ad94}{\index{cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator@{cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator}!opt\-Flow\-Estimator@{opt\-Flow\-Estimator}}
+\index{opt\-Flow\-Estimator@{opt\-Flow\-Estimator}!cv::videostab::PyrLkRobustMotionEstimator@{cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator}}
+\subsubsection[{opt\-Flow\-Estimator}]{\setlength{\rightskip}{0pt plus 5cm}Ptr$<${\bf I\-Sparse\-Opt\-Flow\-Estimator}$>$ cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator\-::opt\-Flow\-Estimator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1videostab_1_1PyrLkRobustMotionEstimator_abb0f4888ac7f1bdbf7b0c66d3130ad94}
+\hypertarget{classcv_1_1videostab_1_1PyrLkRobustMotionEstimator_afea00515a0e1cd5b9e2780e17d9b59f1}{\index{cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator@{cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator}!ransac\-Params@{ransac\-Params}}
+\index{ransac\-Params@{ransac\-Params}!cv::videostab::PyrLkRobustMotionEstimator@{cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator}}
+\subsubsection[{ransac\-Params}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ransac\-Params} cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator\-::ransac\-Params (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1videostab_1_1PyrLkRobustMotionEstimator_afea00515a0e1cd5b9e2780e17d9b59f1}
+\hypertarget{classcv_1_1videostab_1_1PyrLkRobustMotionEstimator_a5de2c42678cc8fc435823ab0b8fe2030}{\index{cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator@{cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator}!set\-Detector@{set\-Detector}}
+\index{set\-Detector@{set\-Detector}!cv::videostab::PyrLkRobustMotionEstimator@{cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator}}
+\subsubsection[{set\-Detector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator\-::set\-Detector (
+\begin{DoxyParamCaption}
+\item[{Ptr$<$ Feature\-Detector $>$}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1videostab_1_1PyrLkRobustMotionEstimator_a5de2c42678cc8fc435823ab0b8fe2030}
+\hypertarget{classcv_1_1videostab_1_1PyrLkRobustMotionEstimator_ac9f8df2d10b8fb432e1d98d8c7b32649}{\index{cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator@{cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator}!set\-Max\-Rmse@{set\-Max\-Rmse}}
+\index{set\-Max\-Rmse@{set\-Max\-Rmse}!cv::videostab::PyrLkRobustMotionEstimator@{cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator}}
+\subsubsection[{set\-Max\-Rmse}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator\-::set\-Max\-Rmse (
+\begin{DoxyParamCaption}
+\item[{float}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1videostab_1_1PyrLkRobustMotionEstimator_ac9f8df2d10b8fb432e1d98d8c7b32649}
+\hypertarget{classcv_1_1videostab_1_1PyrLkRobustMotionEstimator_a82d80ab33f0285947b1c3063a676dde5}{\index{cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator@{cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator}!set\-Min\-Inlier\-Ratio@{set\-Min\-Inlier\-Ratio}}
+\index{set\-Min\-Inlier\-Ratio@{set\-Min\-Inlier\-Ratio}!cv::videostab::PyrLkRobustMotionEstimator@{cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator}}
+\subsubsection[{set\-Min\-Inlier\-Ratio}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator\-::set\-Min\-Inlier\-Ratio (
+\begin{DoxyParamCaption}
+\item[{float}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1videostab_1_1PyrLkRobustMotionEstimator_a82d80ab33f0285947b1c3063a676dde5}
+\hypertarget{classcv_1_1videostab_1_1PyrLkRobustMotionEstimator_ac206563521fea9b0db5af1a326beabc1}{\index{cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator@{cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator}!set\-Motion\-Model@{set\-Motion\-Model}}
+\index{set\-Motion\-Model@{set\-Motion\-Model}!cv::videostab::PyrLkRobustMotionEstimator@{cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator}}
+\subsubsection[{set\-Motion\-Model}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator\-::set\-Motion\-Model (
+\begin{DoxyParamCaption}
+\item[{{\bf Motion\-Model}}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1videostab_1_1PyrLkRobustMotionEstimator_ac206563521fea9b0db5af1a326beabc1}
+\hypertarget{classcv_1_1videostab_1_1PyrLkRobustMotionEstimator_a9dfb81700e479acd391751004321b79b}{\index{cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator@{cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator}!set\-Opt\-Flow\-Estimator@{set\-Opt\-Flow\-Estimator}}
+\index{set\-Opt\-Flow\-Estimator@{set\-Opt\-Flow\-Estimator}!cv::videostab::PyrLkRobustMotionEstimator@{cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator}}
+\subsubsection[{set\-Opt\-Flow\-Estimator}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator\-::set\-Opt\-Flow\-Estimator (
+\begin{DoxyParamCaption}
+\item[{Ptr$<$ {\bf I\-Sparse\-Opt\-Flow\-Estimator} $>$}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1videostab_1_1PyrLkRobustMotionEstimator_a9dfb81700e479acd391751004321b79b}
+\hypertarget{classcv_1_1videostab_1_1PyrLkRobustMotionEstimator_a1a66e831a6ce17a4acd3326e9d7908f0}{\index{cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator@{cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator}!set\-Ransac\-Params@{set\-Ransac\-Params}}
+\index{set\-Ransac\-Params@{set\-Ransac\-Params}!cv::videostab::PyrLkRobustMotionEstimator@{cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator}}
+\subsubsection[{set\-Ransac\-Params}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::videostab\-::\-Pyr\-Lk\-Robust\-Motion\-Estimator\-::set\-Ransac\-Params (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ransac\-Params} \&}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1videostab_1_1PyrLkRobustMotionEstimator_a1a66e831a6ce17a4acd3326e9d7908f0}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/videostab/\hyperlink{global__motion_8hpp}{global\-\_\-motion.\-hpp}\end{DoxyCompactItemize}

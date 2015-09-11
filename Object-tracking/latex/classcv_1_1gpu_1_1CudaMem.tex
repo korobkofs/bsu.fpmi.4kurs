@@ -1,0 +1,358 @@
+\hypertarget{classcv_1_1gpu_1_1CudaMem}{\section{cv\-:\-:gpu\-:\-:Cuda\-Mem Class Reference}
+\label{classcv_1_1gpu_1_1CudaMem}\index{cv\-::gpu\-::\-Cuda\-Mem@{cv\-::gpu\-::\-Cuda\-Mem}}
+}
+
+
+{\ttfamily \#include $<$gpu.\-hpp$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{classcv_1_1gpu_1_1CudaMem_a1bb680556fac1e3a41bd00e1c8cf6818a766dff008ee80639564c9ceaa7b2936b}{A\-L\-L\-O\-C\-\_\-\-P\-A\-G\-E\-\_\-\-L\-O\-C\-K\-E\-D} = 1, 
+\hyperlink{classcv_1_1gpu_1_1CudaMem_a1bb680556fac1e3a41bd00e1c8cf6818ad0e759094c5bec9f8e2712a77c04316c}{A\-L\-L\-O\-C\-\_\-\-Z\-E\-R\-O\-C\-O\-P\-Y} = 2, 
+\hyperlink{classcv_1_1gpu_1_1CudaMem_a1bb680556fac1e3a41bd00e1c8cf6818a4234a593504d7fc26e7cfe4c28d0172d}{A\-L\-L\-O\-C\-\_\-\-W\-R\-I\-T\-E\-\_\-\-C\-O\-M\-B\-I\-N\-E\-D} = 4
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcv_1_1gpu_1_1CudaMem_af64b7183b037a8bc2f5288233e57e393}{Cuda\-Mem} ()
+\item 
+\hyperlink{classcv_1_1gpu_1_1CudaMem_abc79c3adc057862e870265929d535483}{Cuda\-Mem} (const \hyperlink{classcv_1_1gpu_1_1CudaMem}{Cuda\-Mem} \&m)
+\item 
+\hyperlink{classcv_1_1gpu_1_1CudaMem_aff2e897c97fe518dae437944fc893234}{Cuda\-Mem} (int \hyperlink{classcv_1_1gpu_1_1CudaMem_a7a9d3e9cac593f025c71e86a4e855f15}{rows}, int \hyperlink{classcv_1_1gpu_1_1CudaMem_ac0ebd6815d262974d6fb1b6fa79fe360}{cols}, int \hyperlink{classcv_1_1gpu_1_1CudaMem_a9c4563cc629d2ccbe8397f85015db109}{type}, int \-\_\-alloc\-\_\-type=\hyperlink{classcv_1_1gpu_1_1CudaMem_a1bb680556fac1e3a41bd00e1c8cf6818a766dff008ee80639564c9ceaa7b2936b}{A\-L\-L\-O\-C\-\_\-\-P\-A\-G\-E\-\_\-\-L\-O\-C\-K\-E\-D})
+\item 
+\hyperlink{classcv_1_1gpu_1_1CudaMem_a764c3628090fd50efa6dcf425bd77139}{Cuda\-Mem} (Size \hyperlink{classcv_1_1gpu_1_1CudaMem_a5d79b4ec776ed1de0053ecd30b7b8b73}{size}, int \hyperlink{classcv_1_1gpu_1_1CudaMem_a9c4563cc629d2ccbe8397f85015db109}{type}, int \hyperlink{classcv_1_1gpu_1_1CudaMem_a253dcb37318ea0b109dca064678b88e0}{alloc\-\_\-type}=\hyperlink{classcv_1_1gpu_1_1CudaMem_a1bb680556fac1e3a41bd00e1c8cf6818a766dff008ee80639564c9ceaa7b2936b}{A\-L\-L\-O\-C\-\_\-\-P\-A\-G\-E\-\_\-\-L\-O\-C\-K\-E\-D})
+\item 
+\hyperlink{classcv_1_1gpu_1_1CudaMem_abe1d6aa0602f94c466e8962503cc47ed}{Cuda\-Mem} (const Mat \&m, int \hyperlink{classcv_1_1gpu_1_1CudaMem_a253dcb37318ea0b109dca064678b88e0}{alloc\-\_\-type}=\hyperlink{classcv_1_1gpu_1_1CudaMem_a1bb680556fac1e3a41bd00e1c8cf6818a766dff008ee80639564c9ceaa7b2936b}{A\-L\-L\-O\-C\-\_\-\-P\-A\-G\-E\-\_\-\-L\-O\-C\-K\-E\-D})
+\begin{DoxyCompactList}\small\item\em creates from cv\-::\-Mat with coping data \end{DoxyCompactList}\item 
+\hyperlink{classcv_1_1gpu_1_1CudaMem_a68a8120604fc76aa0dac9ce6aa8eb8ed}{$\sim$\-Cuda\-Mem} ()
+\item 
+\hyperlink{classcv_1_1gpu_1_1CudaMem}{Cuda\-Mem} \& \hyperlink{classcv_1_1gpu_1_1CudaMem_ac5027a560f7ca05a50320348584713b2}{operator=} (const \hyperlink{classcv_1_1gpu_1_1CudaMem}{Cuda\-Mem} \&m)
+\item 
+\hyperlink{classcv_1_1gpu_1_1CudaMem}{Cuda\-Mem} \hyperlink{classcv_1_1gpu_1_1CudaMem_af36c83182073fff8e1ef61ac7cfcf027}{clone} () const 
+\begin{DoxyCompactList}\small\item\em returns deep copy of the matrix, i.\-e. the data is copied \end{DoxyCompactList}\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1CudaMem_a5a8445ccfa3608701e8a04ecc69cbf6c}{create} (int \hyperlink{classcv_1_1gpu_1_1CudaMem_a7a9d3e9cac593f025c71e86a4e855f15}{rows}, int \hyperlink{classcv_1_1gpu_1_1CudaMem_ac0ebd6815d262974d6fb1b6fa79fe360}{cols}, int \hyperlink{classcv_1_1gpu_1_1CudaMem_a9c4563cc629d2ccbe8397f85015db109}{type}, int \hyperlink{classcv_1_1gpu_1_1CudaMem_a253dcb37318ea0b109dca064678b88e0}{alloc\-\_\-type}=\hyperlink{classcv_1_1gpu_1_1CudaMem_a1bb680556fac1e3a41bd00e1c8cf6818a766dff008ee80639564c9ceaa7b2936b}{A\-L\-L\-O\-C\-\_\-\-P\-A\-G\-E\-\_\-\-L\-O\-C\-K\-E\-D})
+\begin{DoxyCompactList}\small\item\em allocates new matrix data unless the matrix already has specified size and type. \end{DoxyCompactList}\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1CudaMem_a83eda64ed12d04789d62e8842a607482}{create} (Size \hyperlink{classcv_1_1gpu_1_1CudaMem_a5d79b4ec776ed1de0053ecd30b7b8b73}{size}, int \hyperlink{classcv_1_1gpu_1_1CudaMem_a9c4563cc629d2ccbe8397f85015db109}{type}, int \hyperlink{classcv_1_1gpu_1_1CudaMem_a253dcb37318ea0b109dca064678b88e0}{alloc\-\_\-type}=\hyperlink{classcv_1_1gpu_1_1CudaMem_a1bb680556fac1e3a41bd00e1c8cf6818a766dff008ee80639564c9ceaa7b2936b}{A\-L\-L\-O\-C\-\_\-\-P\-A\-G\-E\-\_\-\-L\-O\-C\-K\-E\-D})
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1CudaMem_a45fb03b3ba66cb4a784a44d777ae1e25}{release} ()
+\begin{DoxyCompactList}\small\item\em decrements reference counter and released memory if needed. \end{DoxyCompactList}\item 
+Mat \hyperlink{classcv_1_1gpu_1_1CudaMem_a588489fa2732303f4e21f851d7784d7d}{create\-Mat\-Header} () const 
+\begin{DoxyCompactList}\small\item\em returns matrix header with disabled reference counting for \hyperlink{classcv_1_1gpu_1_1CudaMem}{Cuda\-Mem} data. \end{DoxyCompactList}\item 
+\hyperlink{classcv_1_1gpu_1_1CudaMem_a03e7a78bbe48f7b4ee41885489e9bc28}{operator Mat} () const 
+\item 
+Gpu\-Mat \hyperlink{classcv_1_1gpu_1_1CudaMem_add035cf3265ca95214f8784b0cf18b64}{create\-Gpu\-Mat\-Header} () const 
+\begin{DoxyCompactList}\small\item\em maps host memory into device address space and returns Gpu\-Mat header for it. Throws exception if not supported by hardware. \end{DoxyCompactList}\item 
+\hyperlink{classcv_1_1gpu_1_1CudaMem_aef3e4de037efe4cea7e10f38c0875ae7}{operator Gpu\-Mat} () const 
+\item 
+bool \hyperlink{classcv_1_1gpu_1_1CudaMem_a334ec54e5b1086d7a154f5c7da2f6556}{is\-Continuous} () const 
+\item 
+size\-\_\-t \hyperlink{classcv_1_1gpu_1_1CudaMem_ad84c57ca42ee1f6c9196769e1e724d32}{elem\-Size} () const 
+\item 
+size\-\_\-t \hyperlink{classcv_1_1gpu_1_1CudaMem_a729ac09e04d65f3ed37ec500c410d144}{elem\-Size1} () const 
+\item 
+int \hyperlink{classcv_1_1gpu_1_1CudaMem_a9c4563cc629d2ccbe8397f85015db109}{type} () const 
+\item 
+int \hyperlink{classcv_1_1gpu_1_1CudaMem_a8544f4ffa4910783ad7eba1ac5be76ea}{depth} () const 
+\item 
+int \hyperlink{classcv_1_1gpu_1_1CudaMem_a2e0940d9e494481a3b068a8ab0863c9c}{channels} () const 
+\item 
+size\-\_\-t \hyperlink{classcv_1_1gpu_1_1CudaMem_a02b95d643869c246ca8d266843257004}{step1} () const 
+\item 
+Size \hyperlink{classcv_1_1gpu_1_1CudaMem_a5d79b4ec776ed1de0053ecd30b7b8b73}{size} () const 
+\item 
+bool \hyperlink{classcv_1_1gpu_1_1CudaMem_a42cbd174010cadc5da96cc2550c4e69b}{empty} () const 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{classcv_1_1gpu_1_1CudaMem_ab89a9c3682470cebc9d165b698919b48}{can\-Map\-Host\-Memory} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classcv_1_1gpu_1_1CudaMem_a312c10159c12ed29880b32bf32fedebc}{flags}
+\item 
+int \hyperlink{classcv_1_1gpu_1_1CudaMem_a7a9d3e9cac593f025c71e86a4e855f15}{rows}
+\item 
+int \hyperlink{classcv_1_1gpu_1_1CudaMem_ac0ebd6815d262974d6fb1b6fa79fe360}{cols}
+\item 
+size\-\_\-t \hyperlink{classcv_1_1gpu_1_1CudaMem_aeac8b2b4d5cc098a8045902083df1ae2}{step}
+\item 
+\hyperlink{core_2types__c_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar} $\ast$ \hyperlink{classcv_1_1gpu_1_1CudaMem_aa354a703e72b23a67c266e53b7a55f26}{data}
+\item 
+int $\ast$ \hyperlink{classcv_1_1gpu_1_1CudaMem_a6ade5baf301830405c01394c322087d2}{refcount}
+\item 
+\hyperlink{core_2types__c_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar} $\ast$ \hyperlink{classcv_1_1gpu_1_1CudaMem_a95693b049c55edf60c57733b80387ea9}{datastart}
+\item 
+\hyperlink{core_2types__c_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar} $\ast$ \hyperlink{classcv_1_1gpu_1_1CudaMem_a9daa5a5b4a9c028444f3b45bde90ad63}{dataend}
+\item 
+int \hyperlink{classcv_1_1gpu_1_1CudaMem_a253dcb37318ea0b109dca064678b88e0}{alloc\-\_\-type}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classcv_1_1gpu_1_1CudaMem_a1bb680556fac1e3a41bd00e1c8cf6818}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{classcv_1_1gpu_1_1CudaMem_a1bb680556fac1e3a41bd00e1c8cf6818}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{A\-L\-L\-O\-C\-\_\-\-P\-A\-G\-E\-\_\-\-L\-O\-C\-K\-E\-D@{A\-L\-L\-O\-C\-\_\-\-P\-A\-G\-E\-\_\-\-L\-O\-C\-K\-E\-D}!cv\-::gpu\-::\-Cuda\-Mem@{cv\-::gpu\-::\-Cuda\-Mem}}\index{cv\-::gpu\-::\-Cuda\-Mem@{cv\-::gpu\-::\-Cuda\-Mem}!A\-L\-L\-O\-C\-\_\-\-P\-A\-G\-E\-\_\-\-L\-O\-C\-K\-E\-D@{A\-L\-L\-O\-C\-\_\-\-P\-A\-G\-E\-\_\-\-L\-O\-C\-K\-E\-D}}\item[{\em 
+\hypertarget{classcv_1_1gpu_1_1CudaMem_a1bb680556fac1e3a41bd00e1c8cf6818a766dff008ee80639564c9ceaa7b2936b}{A\-L\-L\-O\-C\-\_\-\-P\-A\-G\-E\-\_\-\-L\-O\-C\-K\-E\-D}\label{classcv_1_1gpu_1_1CudaMem_a1bb680556fac1e3a41bd00e1c8cf6818a766dff008ee80639564c9ceaa7b2936b}
+}]\index{A\-L\-L\-O\-C\-\_\-\-Z\-E\-R\-O\-C\-O\-P\-Y@{A\-L\-L\-O\-C\-\_\-\-Z\-E\-R\-O\-C\-O\-P\-Y}!cv\-::gpu\-::\-Cuda\-Mem@{cv\-::gpu\-::\-Cuda\-Mem}}\index{cv\-::gpu\-::\-Cuda\-Mem@{cv\-::gpu\-::\-Cuda\-Mem}!A\-L\-L\-O\-C\-\_\-\-Z\-E\-R\-O\-C\-O\-P\-Y@{A\-L\-L\-O\-C\-\_\-\-Z\-E\-R\-O\-C\-O\-P\-Y}}\item[{\em 
+\hypertarget{classcv_1_1gpu_1_1CudaMem_a1bb680556fac1e3a41bd00e1c8cf6818ad0e759094c5bec9f8e2712a77c04316c}{A\-L\-L\-O\-C\-\_\-\-Z\-E\-R\-O\-C\-O\-P\-Y}\label{classcv_1_1gpu_1_1CudaMem_a1bb680556fac1e3a41bd00e1c8cf6818ad0e759094c5bec9f8e2712a77c04316c}
+}]\index{A\-L\-L\-O\-C\-\_\-\-W\-R\-I\-T\-E\-\_\-\-C\-O\-M\-B\-I\-N\-E\-D@{A\-L\-L\-O\-C\-\_\-\-W\-R\-I\-T\-E\-\_\-\-C\-O\-M\-B\-I\-N\-E\-D}!cv\-::gpu\-::\-Cuda\-Mem@{cv\-::gpu\-::\-Cuda\-Mem}}\index{cv\-::gpu\-::\-Cuda\-Mem@{cv\-::gpu\-::\-Cuda\-Mem}!A\-L\-L\-O\-C\-\_\-\-W\-R\-I\-T\-E\-\_\-\-C\-O\-M\-B\-I\-N\-E\-D@{A\-L\-L\-O\-C\-\_\-\-W\-R\-I\-T\-E\-\_\-\-C\-O\-M\-B\-I\-N\-E\-D}}\item[{\em 
+\hypertarget{classcv_1_1gpu_1_1CudaMem_a1bb680556fac1e3a41bd00e1c8cf6818a4234a593504d7fc26e7cfe4c28d0172d}{A\-L\-L\-O\-C\-\_\-\-W\-R\-I\-T\-E\-\_\-\-C\-O\-M\-B\-I\-N\-E\-D}\label{classcv_1_1gpu_1_1CudaMem_a1bb680556fac1e3a41bd00e1c8cf6818a4234a593504d7fc26e7cfe4c28d0172d}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcv_1_1gpu_1_1CudaMem_af64b7183b037a8bc2f5288233e57e393}{\index{cv\-::gpu\-::\-Cuda\-Mem@{cv\-::gpu\-::\-Cuda\-Mem}!Cuda\-Mem@{Cuda\-Mem}}
+\index{Cuda\-Mem@{Cuda\-Mem}!cv::gpu::CudaMem@{cv\-::gpu\-::\-Cuda\-Mem}}
+\subsubsection[{Cuda\-Mem}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::gpu\-::\-Cuda\-Mem\-::\-Cuda\-Mem (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1CudaMem_af64b7183b037a8bc2f5288233e57e393}
+\hypertarget{classcv_1_1gpu_1_1CudaMem_abc79c3adc057862e870265929d535483}{\index{cv\-::gpu\-::\-Cuda\-Mem@{cv\-::gpu\-::\-Cuda\-Mem}!Cuda\-Mem@{Cuda\-Mem}}
+\index{Cuda\-Mem@{Cuda\-Mem}!cv::gpu::CudaMem@{cv\-::gpu\-::\-Cuda\-Mem}}
+\subsubsection[{Cuda\-Mem}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::gpu\-::\-Cuda\-Mem\-::\-Cuda\-Mem (
+\begin{DoxyParamCaption}
+\item[{const {\bf Cuda\-Mem} \&}]{m}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1CudaMem_abc79c3adc057862e870265929d535483}
+\hypertarget{classcv_1_1gpu_1_1CudaMem_aff2e897c97fe518dae437944fc893234}{\index{cv\-::gpu\-::\-Cuda\-Mem@{cv\-::gpu\-::\-Cuda\-Mem}!Cuda\-Mem@{Cuda\-Mem}}
+\index{Cuda\-Mem@{Cuda\-Mem}!cv::gpu::CudaMem@{cv\-::gpu\-::\-Cuda\-Mem}}
+\subsubsection[{Cuda\-Mem}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::gpu\-::\-Cuda\-Mem\-::\-Cuda\-Mem (
+\begin{DoxyParamCaption}
+\item[{int}]{rows, }
+\item[{int}]{cols, }
+\item[{int}]{type, }
+\item[{int}]{\-\_\-alloc\-\_\-type = {\ttfamily {\bf A\-L\-L\-O\-C\-\_\-\-P\-A\-G\-E\-\_\-\-L\-O\-C\-K\-E\-D}}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1CudaMem_aff2e897c97fe518dae437944fc893234}
+\hypertarget{classcv_1_1gpu_1_1CudaMem_a764c3628090fd50efa6dcf425bd77139}{\index{cv\-::gpu\-::\-Cuda\-Mem@{cv\-::gpu\-::\-Cuda\-Mem}!Cuda\-Mem@{Cuda\-Mem}}
+\index{Cuda\-Mem@{Cuda\-Mem}!cv::gpu::CudaMem@{cv\-::gpu\-::\-Cuda\-Mem}}
+\subsubsection[{Cuda\-Mem}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::gpu\-::\-Cuda\-Mem\-::\-Cuda\-Mem (
+\begin{DoxyParamCaption}
+\item[{Size}]{size, }
+\item[{int}]{type, }
+\item[{int}]{alloc\-\_\-type = {\ttfamily {\bf A\-L\-L\-O\-C\-\_\-\-P\-A\-G\-E\-\_\-\-L\-O\-C\-K\-E\-D}}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1CudaMem_a764c3628090fd50efa6dcf425bd77139}
+\hypertarget{classcv_1_1gpu_1_1CudaMem_abe1d6aa0602f94c466e8962503cc47ed}{\index{cv\-::gpu\-::\-Cuda\-Mem@{cv\-::gpu\-::\-Cuda\-Mem}!Cuda\-Mem@{Cuda\-Mem}}
+\index{Cuda\-Mem@{Cuda\-Mem}!cv::gpu::CudaMem@{cv\-::gpu\-::\-Cuda\-Mem}}
+\subsubsection[{Cuda\-Mem}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::gpu\-::\-Cuda\-Mem\-::\-Cuda\-Mem (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{m, }
+\item[{int}]{alloc\-\_\-type = {\ttfamily {\bf A\-L\-L\-O\-C\-\_\-\-P\-A\-G\-E\-\_\-\-L\-O\-C\-K\-E\-D}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{classcv_1_1gpu_1_1CudaMem_abe1d6aa0602f94c466e8962503cc47ed}
+
+
+creates from cv\-::\-Mat with coping data 
+
+\hypertarget{classcv_1_1gpu_1_1CudaMem_a68a8120604fc76aa0dac9ce6aa8eb8ed}{\index{cv\-::gpu\-::\-Cuda\-Mem@{cv\-::gpu\-::\-Cuda\-Mem}!$\sim$\-Cuda\-Mem@{$\sim$\-Cuda\-Mem}}
+\index{$\sim$\-Cuda\-Mem@{$\sim$\-Cuda\-Mem}!cv::gpu::CudaMem@{cv\-::gpu\-::\-Cuda\-Mem}}
+\subsubsection[{$\sim$\-Cuda\-Mem}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::gpu\-::\-Cuda\-Mem\-::$\sim$\-Cuda\-Mem (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1CudaMem_a68a8120604fc76aa0dac9ce6aa8eb8ed}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcv_1_1gpu_1_1CudaMem_ab89a9c3682470cebc9d165b698919b48}{\index{cv\-::gpu\-::\-Cuda\-Mem@{cv\-::gpu\-::\-Cuda\-Mem}!can\-Map\-Host\-Memory@{can\-Map\-Host\-Memory}}
+\index{can\-Map\-Host\-Memory@{can\-Map\-Host\-Memory}!cv::gpu::CudaMem@{cv\-::gpu\-::\-Cuda\-Mem}}
+\subsubsection[{can\-Map\-Host\-Memory}]{\setlength{\rightskip}{0pt plus 5cm}static bool cv\-::gpu\-::\-Cuda\-Mem\-::can\-Map\-Host\-Memory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcv_1_1gpu_1_1CudaMem_ab89a9c3682470cebc9d165b698919b48}
+\hypertarget{classcv_1_1gpu_1_1CudaMem_a2e0940d9e494481a3b068a8ab0863c9c}{\index{cv\-::gpu\-::\-Cuda\-Mem@{cv\-::gpu\-::\-Cuda\-Mem}!channels@{channels}}
+\index{channels@{channels}!cv::gpu::CudaMem@{cv\-::gpu\-::\-Cuda\-Mem}}
+\subsubsection[{channels}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::gpu\-::\-Cuda\-Mem\-::channels (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcv_1_1gpu_1_1CudaMem_a2e0940d9e494481a3b068a8ab0863c9c}
+\hypertarget{classcv_1_1gpu_1_1CudaMem_af36c83182073fff8e1ef61ac7cfcf027}{\index{cv\-::gpu\-::\-Cuda\-Mem@{cv\-::gpu\-::\-Cuda\-Mem}!clone@{clone}}
+\index{clone@{clone}!cv::gpu::CudaMem@{cv\-::gpu\-::\-Cuda\-Mem}}
+\subsubsection[{clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cuda\-Mem} cv\-::gpu\-::\-Cuda\-Mem\-::clone (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcv_1_1gpu_1_1CudaMem_af36c83182073fff8e1ef61ac7cfcf027}
+
+
+returns deep copy of the matrix, i.\-e. the data is copied 
+
+\hypertarget{classcv_1_1gpu_1_1CudaMem_a5a8445ccfa3608701e8a04ecc69cbf6c}{\index{cv\-::gpu\-::\-Cuda\-Mem@{cv\-::gpu\-::\-Cuda\-Mem}!create@{create}}
+\index{create@{create}!cv::gpu::CudaMem@{cv\-::gpu\-::\-Cuda\-Mem}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-Cuda\-Mem\-::create (
+\begin{DoxyParamCaption}
+\item[{int}]{rows, }
+\item[{int}]{cols, }
+\item[{int}]{type, }
+\item[{int}]{alloc\-\_\-type = {\ttfamily {\bf A\-L\-L\-O\-C\-\_\-\-P\-A\-G\-E\-\_\-\-L\-O\-C\-K\-E\-D}}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1CudaMem_a5a8445ccfa3608701e8a04ecc69cbf6c}
+
+
+allocates new matrix data unless the matrix already has specified size and type. 
+
+\hypertarget{classcv_1_1gpu_1_1CudaMem_a83eda64ed12d04789d62e8842a607482}{\index{cv\-::gpu\-::\-Cuda\-Mem@{cv\-::gpu\-::\-Cuda\-Mem}!create@{create}}
+\index{create@{create}!cv::gpu::CudaMem@{cv\-::gpu\-::\-Cuda\-Mem}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-Cuda\-Mem\-::create (
+\begin{DoxyParamCaption}
+\item[{Size}]{size, }
+\item[{int}]{type, }
+\item[{int}]{alloc\-\_\-type = {\ttfamily {\bf A\-L\-L\-O\-C\-\_\-\-P\-A\-G\-E\-\_\-\-L\-O\-C\-K\-E\-D}}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1CudaMem_a83eda64ed12d04789d62e8842a607482}
+\hypertarget{classcv_1_1gpu_1_1CudaMem_add035cf3265ca95214f8784b0cf18b64}{\index{cv\-::gpu\-::\-Cuda\-Mem@{cv\-::gpu\-::\-Cuda\-Mem}!create\-Gpu\-Mat\-Header@{create\-Gpu\-Mat\-Header}}
+\index{create\-Gpu\-Mat\-Header@{create\-Gpu\-Mat\-Header}!cv::gpu::CudaMem@{cv\-::gpu\-::\-Cuda\-Mem}}
+\subsubsection[{create\-Gpu\-Mat\-Header}]{\setlength{\rightskip}{0pt plus 5cm}Gpu\-Mat cv\-::gpu\-::\-Cuda\-Mem\-::create\-Gpu\-Mat\-Header (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcv_1_1gpu_1_1CudaMem_add035cf3265ca95214f8784b0cf18b64}
+
+
+maps host memory into device address space and returns Gpu\-Mat header for it. Throws exception if not supported by hardware. 
+
+\hypertarget{classcv_1_1gpu_1_1CudaMem_a588489fa2732303f4e21f851d7784d7d}{\index{cv\-::gpu\-::\-Cuda\-Mem@{cv\-::gpu\-::\-Cuda\-Mem}!create\-Mat\-Header@{create\-Mat\-Header}}
+\index{create\-Mat\-Header@{create\-Mat\-Header}!cv::gpu::CudaMem@{cv\-::gpu\-::\-Cuda\-Mem}}
+\subsubsection[{create\-Mat\-Header}]{\setlength{\rightskip}{0pt plus 5cm}Mat cv\-::gpu\-::\-Cuda\-Mem\-::create\-Mat\-Header (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcv_1_1gpu_1_1CudaMem_a588489fa2732303f4e21f851d7784d7d}
+
+
+returns matrix header with disabled reference counting for \hyperlink{classcv_1_1gpu_1_1CudaMem}{Cuda\-Mem} data. 
+
+\hypertarget{classcv_1_1gpu_1_1CudaMem_a8544f4ffa4910783ad7eba1ac5be76ea}{\index{cv\-::gpu\-::\-Cuda\-Mem@{cv\-::gpu\-::\-Cuda\-Mem}!depth@{depth}}
+\index{depth@{depth}!cv::gpu::CudaMem@{cv\-::gpu\-::\-Cuda\-Mem}}
+\subsubsection[{depth}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::gpu\-::\-Cuda\-Mem\-::depth (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcv_1_1gpu_1_1CudaMem_a8544f4ffa4910783ad7eba1ac5be76ea}
+\hypertarget{classcv_1_1gpu_1_1CudaMem_ad84c57ca42ee1f6c9196769e1e724d32}{\index{cv\-::gpu\-::\-Cuda\-Mem@{cv\-::gpu\-::\-Cuda\-Mem}!elem\-Size@{elem\-Size}}
+\index{elem\-Size@{elem\-Size}!cv::gpu::CudaMem@{cv\-::gpu\-::\-Cuda\-Mem}}
+\subsubsection[{elem\-Size}]{\setlength{\rightskip}{0pt plus 5cm}size\-\_\-t cv\-::gpu\-::\-Cuda\-Mem\-::elem\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcv_1_1gpu_1_1CudaMem_ad84c57ca42ee1f6c9196769e1e724d32}
+\hypertarget{classcv_1_1gpu_1_1CudaMem_a729ac09e04d65f3ed37ec500c410d144}{\index{cv\-::gpu\-::\-Cuda\-Mem@{cv\-::gpu\-::\-Cuda\-Mem}!elem\-Size1@{elem\-Size1}}
+\index{elem\-Size1@{elem\-Size1}!cv::gpu::CudaMem@{cv\-::gpu\-::\-Cuda\-Mem}}
+\subsubsection[{elem\-Size1}]{\setlength{\rightskip}{0pt plus 5cm}size\-\_\-t cv\-::gpu\-::\-Cuda\-Mem\-::elem\-Size1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcv_1_1gpu_1_1CudaMem_a729ac09e04d65f3ed37ec500c410d144}
+\hypertarget{classcv_1_1gpu_1_1CudaMem_a42cbd174010cadc5da96cc2550c4e69b}{\index{cv\-::gpu\-::\-Cuda\-Mem@{cv\-::gpu\-::\-Cuda\-Mem}!empty@{empty}}
+\index{empty@{empty}!cv::gpu::CudaMem@{cv\-::gpu\-::\-Cuda\-Mem}}
+\subsubsection[{empty}]{\setlength{\rightskip}{0pt plus 5cm}bool cv\-::gpu\-::\-Cuda\-Mem\-::empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcv_1_1gpu_1_1CudaMem_a42cbd174010cadc5da96cc2550c4e69b}
+\hypertarget{classcv_1_1gpu_1_1CudaMem_a334ec54e5b1086d7a154f5c7da2f6556}{\index{cv\-::gpu\-::\-Cuda\-Mem@{cv\-::gpu\-::\-Cuda\-Mem}!is\-Continuous@{is\-Continuous}}
+\index{is\-Continuous@{is\-Continuous}!cv::gpu::CudaMem@{cv\-::gpu\-::\-Cuda\-Mem}}
+\subsubsection[{is\-Continuous}]{\setlength{\rightskip}{0pt plus 5cm}bool cv\-::gpu\-::\-Cuda\-Mem\-::is\-Continuous (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcv_1_1gpu_1_1CudaMem_a334ec54e5b1086d7a154f5c7da2f6556}
+\hypertarget{classcv_1_1gpu_1_1CudaMem_aef3e4de037efe4cea7e10f38c0875ae7}{\index{cv\-::gpu\-::\-Cuda\-Mem@{cv\-::gpu\-::\-Cuda\-Mem}!operator Gpu\-Mat@{operator Gpu\-Mat}}
+\index{operator Gpu\-Mat@{operator Gpu\-Mat}!cv::gpu::CudaMem@{cv\-::gpu\-::\-Cuda\-Mem}}
+\subsubsection[{operator Gpu\-Mat}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::gpu\-::\-Cuda\-Mem\-::operator Gpu\-Mat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcv_1_1gpu_1_1CudaMem_aef3e4de037efe4cea7e10f38c0875ae7}
+\hypertarget{classcv_1_1gpu_1_1CudaMem_a03e7a78bbe48f7b4ee41885489e9bc28}{\index{cv\-::gpu\-::\-Cuda\-Mem@{cv\-::gpu\-::\-Cuda\-Mem}!operator Mat@{operator Mat}}
+\index{operator Mat@{operator Mat}!cv::gpu::CudaMem@{cv\-::gpu\-::\-Cuda\-Mem}}
+\subsubsection[{operator Mat}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::gpu\-::\-Cuda\-Mem\-::operator Mat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcv_1_1gpu_1_1CudaMem_a03e7a78bbe48f7b4ee41885489e9bc28}
+\hypertarget{classcv_1_1gpu_1_1CudaMem_ac5027a560f7ca05a50320348584713b2}{\index{cv\-::gpu\-::\-Cuda\-Mem@{cv\-::gpu\-::\-Cuda\-Mem}!operator=@{operator=}}
+\index{operator=@{operator=}!cv::gpu::CudaMem@{cv\-::gpu\-::\-Cuda\-Mem}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cuda\-Mem}\& cv\-::gpu\-::\-Cuda\-Mem\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Cuda\-Mem} \&}]{m}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1CudaMem_ac5027a560f7ca05a50320348584713b2}
+\hypertarget{classcv_1_1gpu_1_1CudaMem_a45fb03b3ba66cb4a784a44d777ae1e25}{\index{cv\-::gpu\-::\-Cuda\-Mem@{cv\-::gpu\-::\-Cuda\-Mem}!release@{release}}
+\index{release@{release}!cv::gpu::CudaMem@{cv\-::gpu\-::\-Cuda\-Mem}}
+\subsubsection[{release}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-Cuda\-Mem\-::release (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1CudaMem_a45fb03b3ba66cb4a784a44d777ae1e25}
+
+
+decrements reference counter and released memory if needed. 
+
+\hypertarget{classcv_1_1gpu_1_1CudaMem_a5d79b4ec776ed1de0053ecd30b7b8b73}{\index{cv\-::gpu\-::\-Cuda\-Mem@{cv\-::gpu\-::\-Cuda\-Mem}!size@{size}}
+\index{size@{size}!cv::gpu::CudaMem@{cv\-::gpu\-::\-Cuda\-Mem}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}Size cv\-::gpu\-::\-Cuda\-Mem\-::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcv_1_1gpu_1_1CudaMem_a5d79b4ec776ed1de0053ecd30b7b8b73}
+\hypertarget{classcv_1_1gpu_1_1CudaMem_a02b95d643869c246ca8d266843257004}{\index{cv\-::gpu\-::\-Cuda\-Mem@{cv\-::gpu\-::\-Cuda\-Mem}!step1@{step1}}
+\index{step1@{step1}!cv::gpu::CudaMem@{cv\-::gpu\-::\-Cuda\-Mem}}
+\subsubsection[{step1}]{\setlength{\rightskip}{0pt plus 5cm}size\-\_\-t cv\-::gpu\-::\-Cuda\-Mem\-::step1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcv_1_1gpu_1_1CudaMem_a02b95d643869c246ca8d266843257004}
+\hypertarget{classcv_1_1gpu_1_1CudaMem_a9c4563cc629d2ccbe8397f85015db109}{\index{cv\-::gpu\-::\-Cuda\-Mem@{cv\-::gpu\-::\-Cuda\-Mem}!type@{type}}
+\index{type@{type}!cv::gpu::CudaMem@{cv\-::gpu\-::\-Cuda\-Mem}}
+\subsubsection[{type}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::gpu\-::\-Cuda\-Mem\-::type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcv_1_1gpu_1_1CudaMem_a9c4563cc629d2ccbe8397f85015db109}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcv_1_1gpu_1_1CudaMem_a253dcb37318ea0b109dca064678b88e0}{\index{cv\-::gpu\-::\-Cuda\-Mem@{cv\-::gpu\-::\-Cuda\-Mem}!alloc\-\_\-type@{alloc\-\_\-type}}
+\index{alloc\-\_\-type@{alloc\-\_\-type}!cv::gpu::CudaMem@{cv\-::gpu\-::\-Cuda\-Mem}}
+\subsubsection[{alloc\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::gpu\-::\-Cuda\-Mem\-::alloc\-\_\-type}}\label{classcv_1_1gpu_1_1CudaMem_a253dcb37318ea0b109dca064678b88e0}
+\hypertarget{classcv_1_1gpu_1_1CudaMem_ac0ebd6815d262974d6fb1b6fa79fe360}{\index{cv\-::gpu\-::\-Cuda\-Mem@{cv\-::gpu\-::\-Cuda\-Mem}!cols@{cols}}
+\index{cols@{cols}!cv::gpu::CudaMem@{cv\-::gpu\-::\-Cuda\-Mem}}
+\subsubsection[{cols}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::gpu\-::\-Cuda\-Mem\-::cols}}\label{classcv_1_1gpu_1_1CudaMem_ac0ebd6815d262974d6fb1b6fa79fe360}
+\hypertarget{classcv_1_1gpu_1_1CudaMem_aa354a703e72b23a67c266e53b7a55f26}{\index{cv\-::gpu\-::\-Cuda\-Mem@{cv\-::gpu\-::\-Cuda\-Mem}!data@{data}}
+\index{data@{data}!cv::gpu::CudaMem@{cv\-::gpu\-::\-Cuda\-Mem}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uchar}$\ast$ cv\-::gpu\-::\-Cuda\-Mem\-::data}}\label{classcv_1_1gpu_1_1CudaMem_aa354a703e72b23a67c266e53b7a55f26}
+\hypertarget{classcv_1_1gpu_1_1CudaMem_a9daa5a5b4a9c028444f3b45bde90ad63}{\index{cv\-::gpu\-::\-Cuda\-Mem@{cv\-::gpu\-::\-Cuda\-Mem}!dataend@{dataend}}
+\index{dataend@{dataend}!cv::gpu::CudaMem@{cv\-::gpu\-::\-Cuda\-Mem}}
+\subsubsection[{dataend}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uchar}$\ast$ cv\-::gpu\-::\-Cuda\-Mem\-::dataend}}\label{classcv_1_1gpu_1_1CudaMem_a9daa5a5b4a9c028444f3b45bde90ad63}
+\hypertarget{classcv_1_1gpu_1_1CudaMem_a95693b049c55edf60c57733b80387ea9}{\index{cv\-::gpu\-::\-Cuda\-Mem@{cv\-::gpu\-::\-Cuda\-Mem}!datastart@{datastart}}
+\index{datastart@{datastart}!cv::gpu::CudaMem@{cv\-::gpu\-::\-Cuda\-Mem}}
+\subsubsection[{datastart}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uchar}$\ast$ cv\-::gpu\-::\-Cuda\-Mem\-::datastart}}\label{classcv_1_1gpu_1_1CudaMem_a95693b049c55edf60c57733b80387ea9}
+\hypertarget{classcv_1_1gpu_1_1CudaMem_a312c10159c12ed29880b32bf32fedebc}{\index{cv\-::gpu\-::\-Cuda\-Mem@{cv\-::gpu\-::\-Cuda\-Mem}!flags@{flags}}
+\index{flags@{flags}!cv::gpu::CudaMem@{cv\-::gpu\-::\-Cuda\-Mem}}
+\subsubsection[{flags}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::gpu\-::\-Cuda\-Mem\-::flags}}\label{classcv_1_1gpu_1_1CudaMem_a312c10159c12ed29880b32bf32fedebc}
+\hypertarget{classcv_1_1gpu_1_1CudaMem_a6ade5baf301830405c01394c322087d2}{\index{cv\-::gpu\-::\-Cuda\-Mem@{cv\-::gpu\-::\-Cuda\-Mem}!refcount@{refcount}}
+\index{refcount@{refcount}!cv::gpu::CudaMem@{cv\-::gpu\-::\-Cuda\-Mem}}
+\subsubsection[{refcount}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ cv\-::gpu\-::\-Cuda\-Mem\-::refcount}}\label{classcv_1_1gpu_1_1CudaMem_a6ade5baf301830405c01394c322087d2}
+\hypertarget{classcv_1_1gpu_1_1CudaMem_a7a9d3e9cac593f025c71e86a4e855f15}{\index{cv\-::gpu\-::\-Cuda\-Mem@{cv\-::gpu\-::\-Cuda\-Mem}!rows@{rows}}
+\index{rows@{rows}!cv::gpu::CudaMem@{cv\-::gpu\-::\-Cuda\-Mem}}
+\subsubsection[{rows}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::gpu\-::\-Cuda\-Mem\-::rows}}\label{classcv_1_1gpu_1_1CudaMem_a7a9d3e9cac593f025c71e86a4e855f15}
+\hypertarget{classcv_1_1gpu_1_1CudaMem_aeac8b2b4d5cc098a8045902083df1ae2}{\index{cv\-::gpu\-::\-Cuda\-Mem@{cv\-::gpu\-::\-Cuda\-Mem}!step@{step}}
+\index{step@{step}!cv::gpu::CudaMem@{cv\-::gpu\-::\-Cuda\-Mem}}
+\subsubsection[{step}]{\setlength{\rightskip}{0pt plus 5cm}size\-\_\-t cv\-::gpu\-::\-Cuda\-Mem\-::step}}\label{classcv_1_1gpu_1_1CudaMem_aeac8b2b4d5cc098a8045902083df1ae2}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/gpu/\hyperlink{gpu_2gpu_8hpp}{gpu.\-hpp}\end{DoxyCompactItemize}

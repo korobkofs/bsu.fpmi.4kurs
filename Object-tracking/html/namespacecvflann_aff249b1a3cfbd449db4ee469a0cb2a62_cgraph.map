@@ -1,0 +1,8 @@
+<map id="cvflann::search_with_ground_truth" name="cvflann::search_with_ground_truth">
+<area shape="rect" id="node2" href="$classcvflann_1_1StartStopTimer.html#abef9e74190be725316f45a082a384f61" title="cvflann::StartStopTimer\l::start" alt="" coords="224,5,384,46"/>
+<area shape="rect" id="node3" href="$classcvflann_1_1KNNResultSet.html#ae9eab3480d859a6bc93d3c8ca963b41b" title="cvflann::KNNResultSet\l::init" alt="" coords="225,70,383,111"/>
+<area shape="rect" id="node5" href="$classcvflann_1_1NNIndex.html#ac038c51dc941c7c1a55b08c17e213e41" title="Method that searches for nearest&#45;neighbours. " alt="" coords="198,136,410,163"/>
+<area shape="rect" id="node6" href="$namespacecvflann.html#acf6c205af1874107b827a6d73fc0d8e4" title="cvflann::countCorrectMatches" alt="" coords="205,187,403,213"/>
+<area shape="rect" id="node7" href="$classcvflann_1_1StartStopTimer.html#a57063682a9b200f92069d29ddc329190" title="cvflann::StartStopTimer\l::stop" alt="" coords="224,238,384,279"/>
+<area shape="rect" id="node4" href="$namespacecv_1_1gpu.html#a706c9def6816de566be2671b75ec5309" title="computes per&#45;element maximum of two arrays (dst = max(src1, src2)) " alt="" coords="459,77,557,104"/>
+</map>

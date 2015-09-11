@@ -1,0 +1,166 @@
+\hypertarget{classtesting_1_1TestResult}{\section{testing\-:\-:Test\-Result Class Reference}
+\label{classtesting_1_1TestResult}\index{testing\-::\-Test\-Result@{testing\-::\-Test\-Result}}
+}
+
+
+{\ttfamily \#include $<$ts\-\_\-gtest.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtesting_1_1TestResult_a5cf5dd6f416b7334ea601aab21a2fda5}{Test\-Result} ()
+\item 
+\hyperlink{classtesting_1_1TestResult_a41f407680b725b75d7eadc3230bc3315}{$\sim$\-Test\-Result} ()
+\item 
+int \hyperlink{classtesting_1_1TestResult_ae6a378ec743edfbed55890c955d0adc8}{total\-\_\-part\-\_\-count} () const 
+\item 
+int \hyperlink{classtesting_1_1TestResult_a5075f9d595d51c7cc2f5c0921e622831}{test\-\_\-property\-\_\-count} () const 
+\item 
+bool \hyperlink{classtesting_1_1TestResult_aa46a04342f02ec297357f47288da3ef3}{Passed} () const 
+\item 
+bool \hyperlink{classtesting_1_1TestResult_abb5d051bf958071c14020132a4d6cc07}{Failed} () const 
+\item 
+bool \hyperlink{classtesting_1_1TestResult_ace61ce992083a9124f9ff0e99a2041cc}{Has\-Fatal\-Failure} () const 
+\item 
+bool \hyperlink{classtesting_1_1TestResult_a34e6901b9772f51ce4f17a5517c26607}{Has\-Nonfatal\-Failure} () const 
+\item 
+\hyperlink{namespacetesting_a992de1d091ce660f451d1e8b3ce30fd6}{Time\-In\-Millis} \hyperlink{classtesting_1_1TestResult_a582f6383265d0619df812b75499d0616}{elapsed\-\_\-time} () const 
+\item 
+const \hyperlink{classtesting_1_1TestPartResult}{Test\-Part\-Result} \& \hyperlink{classtesting_1_1TestResult_a5ea65e4a7c4fc9c9dc9578223a599a7c}{Get\-Test\-Part\-Result} (int i) const 
+\item 
+const \hyperlink{classtesting_1_1TestProperty}{Test\-Property} \& \hyperlink{classtesting_1_1TestResult_a89a4f580a5d969b36e016cd309b235bd}{Get\-Test\-Property} (int i) const 
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classtesting_1_1TestResult_a4c49c2cdb6c328e6b709b4542f23de3c}{Test\-Info}
+\item 
+class \hyperlink{classtesting_1_1TestResult_aff779e55b06adfa7c0088bd10253f0f0}{Test\-Case}
+\item 
+class \hyperlink{classtesting_1_1TestResult_a832b4d233efee1a32feb0f4190b30d39}{Unit\-Test}
+\item 
+class \hyperlink{classtesting_1_1TestResult_abae39633da9932847b41cb80efd62115}{internal\-::\-Default\-Global\-Test\-Part\-Result\-Reporter}
+\item 
+class \hyperlink{classtesting_1_1TestResult_adf5553cae6aea6f8648d47e299237e34}{internal\-::\-Exec\-Death\-Test}
+\item 
+class \hyperlink{classtesting_1_1TestResult_ae762da04e74a0d3b0daded3c5bd4a8e8}{internal\-::\-Test\-Result\-Accessor}
+\item 
+class \hyperlink{classtesting_1_1TestResult_acc0a5e7573fd6ae7ad1878613bb86853}{internal\-::\-Unit\-Test\-Impl}
+\item 
+class \hyperlink{classtesting_1_1TestResult_a6aeedc04a0590fcc1b3c5f687dbb0f9f}{internal\-::\-Windows\-Death\-Test}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classtesting_1_1TestResult_a5cf5dd6f416b7334ea601aab21a2fda5}{\index{testing\-::\-Test\-Result@{testing\-::\-Test\-Result}!Test\-Result@{Test\-Result}}
+\index{Test\-Result@{Test\-Result}!testing::TestResult@{testing\-::\-Test\-Result}}
+\subsubsection[{Test\-Result}]{\setlength{\rightskip}{0pt plus 5cm}testing\-::\-Test\-Result\-::\-Test\-Result (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtesting_1_1TestResult_a5cf5dd6f416b7334ea601aab21a2fda5}
+\hypertarget{classtesting_1_1TestResult_a41f407680b725b75d7eadc3230bc3315}{\index{testing\-::\-Test\-Result@{testing\-::\-Test\-Result}!$\sim$\-Test\-Result@{$\sim$\-Test\-Result}}
+\index{$\sim$\-Test\-Result@{$\sim$\-Test\-Result}!testing::TestResult@{testing\-::\-Test\-Result}}
+\subsubsection[{$\sim$\-Test\-Result}]{\setlength{\rightskip}{0pt plus 5cm}testing\-::\-Test\-Result\-::$\sim$\-Test\-Result (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtesting_1_1TestResult_a41f407680b725b75d7eadc3230bc3315}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classtesting_1_1TestResult_a582f6383265d0619df812b75499d0616}{\index{testing\-::\-Test\-Result@{testing\-::\-Test\-Result}!elapsed\-\_\-time@{elapsed\-\_\-time}}
+\index{elapsed\-\_\-time@{elapsed\-\_\-time}!testing::TestResult@{testing\-::\-Test\-Result}}
+\subsubsection[{elapsed\-\_\-time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Time\-In\-Millis} testing\-::\-Test\-Result\-::elapsed\-\_\-time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classtesting_1_1TestResult_a582f6383265d0619df812b75499d0616}
+\hypertarget{classtesting_1_1TestResult_abb5d051bf958071c14020132a4d6cc07}{\index{testing\-::\-Test\-Result@{testing\-::\-Test\-Result}!Failed@{Failed}}
+\index{Failed@{Failed}!testing::TestResult@{testing\-::\-Test\-Result}}
+\subsubsection[{Failed}]{\setlength{\rightskip}{0pt plus 5cm}bool testing\-::\-Test\-Result\-::\-Failed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classtesting_1_1TestResult_abb5d051bf958071c14020132a4d6cc07}
+\hypertarget{classtesting_1_1TestResult_a5ea65e4a7c4fc9c9dc9578223a599a7c}{\index{testing\-::\-Test\-Result@{testing\-::\-Test\-Result}!Get\-Test\-Part\-Result@{Get\-Test\-Part\-Result}}
+\index{Get\-Test\-Part\-Result@{Get\-Test\-Part\-Result}!testing::TestResult@{testing\-::\-Test\-Result}}
+\subsubsection[{Get\-Test\-Part\-Result}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Test\-Part\-Result}\& testing\-::\-Test\-Result\-::\-Get\-Test\-Part\-Result (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+) const}}\label{classtesting_1_1TestResult_a5ea65e4a7c4fc9c9dc9578223a599a7c}
+\hypertarget{classtesting_1_1TestResult_a89a4f580a5d969b36e016cd309b235bd}{\index{testing\-::\-Test\-Result@{testing\-::\-Test\-Result}!Get\-Test\-Property@{Get\-Test\-Property}}
+\index{Get\-Test\-Property@{Get\-Test\-Property}!testing::TestResult@{testing\-::\-Test\-Result}}
+\subsubsection[{Get\-Test\-Property}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Test\-Property}\& testing\-::\-Test\-Result\-::\-Get\-Test\-Property (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+) const}}\label{classtesting_1_1TestResult_a89a4f580a5d969b36e016cd309b235bd}
+\hypertarget{classtesting_1_1TestResult_ace61ce992083a9124f9ff0e99a2041cc}{\index{testing\-::\-Test\-Result@{testing\-::\-Test\-Result}!Has\-Fatal\-Failure@{Has\-Fatal\-Failure}}
+\index{Has\-Fatal\-Failure@{Has\-Fatal\-Failure}!testing::TestResult@{testing\-::\-Test\-Result}}
+\subsubsection[{Has\-Fatal\-Failure}]{\setlength{\rightskip}{0pt plus 5cm}bool testing\-::\-Test\-Result\-::\-Has\-Fatal\-Failure (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classtesting_1_1TestResult_ace61ce992083a9124f9ff0e99a2041cc}
+\hypertarget{classtesting_1_1TestResult_a34e6901b9772f51ce4f17a5517c26607}{\index{testing\-::\-Test\-Result@{testing\-::\-Test\-Result}!Has\-Nonfatal\-Failure@{Has\-Nonfatal\-Failure}}
+\index{Has\-Nonfatal\-Failure@{Has\-Nonfatal\-Failure}!testing::TestResult@{testing\-::\-Test\-Result}}
+\subsubsection[{Has\-Nonfatal\-Failure}]{\setlength{\rightskip}{0pt plus 5cm}bool testing\-::\-Test\-Result\-::\-Has\-Nonfatal\-Failure (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classtesting_1_1TestResult_a34e6901b9772f51ce4f17a5517c26607}
+\hypertarget{classtesting_1_1TestResult_aa46a04342f02ec297357f47288da3ef3}{\index{testing\-::\-Test\-Result@{testing\-::\-Test\-Result}!Passed@{Passed}}
+\index{Passed@{Passed}!testing::TestResult@{testing\-::\-Test\-Result}}
+\subsubsection[{Passed}]{\setlength{\rightskip}{0pt plus 5cm}bool testing\-::\-Test\-Result\-::\-Passed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classtesting_1_1TestResult_aa46a04342f02ec297357f47288da3ef3}
+\hypertarget{classtesting_1_1TestResult_a5075f9d595d51c7cc2f5c0921e622831}{\index{testing\-::\-Test\-Result@{testing\-::\-Test\-Result}!test\-\_\-property\-\_\-count@{test\-\_\-property\-\_\-count}}
+\index{test\-\_\-property\-\_\-count@{test\-\_\-property\-\_\-count}!testing::TestResult@{testing\-::\-Test\-Result}}
+\subsubsection[{test\-\_\-property\-\_\-count}]{\setlength{\rightskip}{0pt plus 5cm}int testing\-::\-Test\-Result\-::test\-\_\-property\-\_\-count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classtesting_1_1TestResult_a5075f9d595d51c7cc2f5c0921e622831}
+\hypertarget{classtesting_1_1TestResult_ae6a378ec743edfbed55890c955d0adc8}{\index{testing\-::\-Test\-Result@{testing\-::\-Test\-Result}!total\-\_\-part\-\_\-count@{total\-\_\-part\-\_\-count}}
+\index{total\-\_\-part\-\_\-count@{total\-\_\-part\-\_\-count}!testing::TestResult@{testing\-::\-Test\-Result}}
+\subsubsection[{total\-\_\-part\-\_\-count}]{\setlength{\rightskip}{0pt plus 5cm}int testing\-::\-Test\-Result\-::total\-\_\-part\-\_\-count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classtesting_1_1TestResult_ae6a378ec743edfbed55890c955d0adc8}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classtesting_1_1TestResult_abae39633da9932847b41cb80efd62115}{\index{testing\-::\-Test\-Result@{testing\-::\-Test\-Result}!internal\-::\-Default\-Global\-Test\-Part\-Result\-Reporter@{internal\-::\-Default\-Global\-Test\-Part\-Result\-Reporter}}
+\index{internal\-::\-Default\-Global\-Test\-Part\-Result\-Reporter@{internal\-::\-Default\-Global\-Test\-Part\-Result\-Reporter}!testing::TestResult@{testing\-::\-Test\-Result}}
+\subsubsection[{internal\-::\-Default\-Global\-Test\-Part\-Result\-Reporter}]{\setlength{\rightskip}{0pt plus 5cm}friend class internal\-::\-Default\-Global\-Test\-Part\-Result\-Reporter\hspace{0.3cm}{\ttfamily [friend]}}}\label{classtesting_1_1TestResult_abae39633da9932847b41cb80efd62115}
+\hypertarget{classtesting_1_1TestResult_adf5553cae6aea6f8648d47e299237e34}{\index{testing\-::\-Test\-Result@{testing\-::\-Test\-Result}!internal\-::\-Exec\-Death\-Test@{internal\-::\-Exec\-Death\-Test}}
+\index{internal\-::\-Exec\-Death\-Test@{internal\-::\-Exec\-Death\-Test}!testing::TestResult@{testing\-::\-Test\-Result}}
+\subsubsection[{internal\-::\-Exec\-Death\-Test}]{\setlength{\rightskip}{0pt plus 5cm}friend class internal\-::\-Exec\-Death\-Test\hspace{0.3cm}{\ttfamily [friend]}}}\label{classtesting_1_1TestResult_adf5553cae6aea6f8648d47e299237e34}
+\hypertarget{classtesting_1_1TestResult_ae762da04e74a0d3b0daded3c5bd4a8e8}{\index{testing\-::\-Test\-Result@{testing\-::\-Test\-Result}!internal\-::\-Test\-Result\-Accessor@{internal\-::\-Test\-Result\-Accessor}}
+\index{internal\-::\-Test\-Result\-Accessor@{internal\-::\-Test\-Result\-Accessor}!testing::TestResult@{testing\-::\-Test\-Result}}
+\subsubsection[{internal\-::\-Test\-Result\-Accessor}]{\setlength{\rightskip}{0pt plus 5cm}friend class internal\-::\-Test\-Result\-Accessor\hspace{0.3cm}{\ttfamily [friend]}}}\label{classtesting_1_1TestResult_ae762da04e74a0d3b0daded3c5bd4a8e8}
+\hypertarget{classtesting_1_1TestResult_acc0a5e7573fd6ae7ad1878613bb86853}{\index{testing\-::\-Test\-Result@{testing\-::\-Test\-Result}!internal\-::\-Unit\-Test\-Impl@{internal\-::\-Unit\-Test\-Impl}}
+\index{internal\-::\-Unit\-Test\-Impl@{internal\-::\-Unit\-Test\-Impl}!testing::TestResult@{testing\-::\-Test\-Result}}
+\subsubsection[{internal\-::\-Unit\-Test\-Impl}]{\setlength{\rightskip}{0pt plus 5cm}friend class internal\-::\-Unit\-Test\-Impl\hspace{0.3cm}{\ttfamily [friend]}}}\label{classtesting_1_1TestResult_acc0a5e7573fd6ae7ad1878613bb86853}
+\hypertarget{classtesting_1_1TestResult_a6aeedc04a0590fcc1b3c5f687dbb0f9f}{\index{testing\-::\-Test\-Result@{testing\-::\-Test\-Result}!internal\-::\-Windows\-Death\-Test@{internal\-::\-Windows\-Death\-Test}}
+\index{internal\-::\-Windows\-Death\-Test@{internal\-::\-Windows\-Death\-Test}!testing::TestResult@{testing\-::\-Test\-Result}}
+\subsubsection[{internal\-::\-Windows\-Death\-Test}]{\setlength{\rightskip}{0pt plus 5cm}friend class internal\-::\-Windows\-Death\-Test\hspace{0.3cm}{\ttfamily [friend]}}}\label{classtesting_1_1TestResult_a6aeedc04a0590fcc1b3c5f687dbb0f9f}
+\hypertarget{classtesting_1_1TestResult_aff779e55b06adfa7c0088bd10253f0f0}{\index{testing\-::\-Test\-Result@{testing\-::\-Test\-Result}!Test\-Case@{Test\-Case}}
+\index{Test\-Case@{Test\-Case}!testing::TestResult@{testing\-::\-Test\-Result}}
+\subsubsection[{Test\-Case}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Test\-Case}\hspace{0.3cm}{\ttfamily [friend]}}}\label{classtesting_1_1TestResult_aff779e55b06adfa7c0088bd10253f0f0}
+\hypertarget{classtesting_1_1TestResult_a4c49c2cdb6c328e6b709b4542f23de3c}{\index{testing\-::\-Test\-Result@{testing\-::\-Test\-Result}!Test\-Info@{Test\-Info}}
+\index{Test\-Info@{Test\-Info}!testing::TestResult@{testing\-::\-Test\-Result}}
+\subsubsection[{Test\-Info}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Test\-Info}\hspace{0.3cm}{\ttfamily [friend]}}}\label{classtesting_1_1TestResult_a4c49c2cdb6c328e6b709b4542f23de3c}
+\hypertarget{classtesting_1_1TestResult_a832b4d233efee1a32feb0f4190b30d39}{\index{testing\-::\-Test\-Result@{testing\-::\-Test\-Result}!Unit\-Test@{Unit\-Test}}
+\index{Unit\-Test@{Unit\-Test}!testing::TestResult@{testing\-::\-Test\-Result}}
+\subsubsection[{Unit\-Test}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Unit\-Test}\hspace{0.3cm}{\ttfamily [friend]}}}\label{classtesting_1_1TestResult_a832b4d233efee1a32feb0f4190b30d39}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/ts/\hyperlink{ts__gtest_8h}{ts\-\_\-gtest.\-h}\end{DoxyCompactItemize}

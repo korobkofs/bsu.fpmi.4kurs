@@ -1,0 +1,234 @@
+\hypertarget{classcv_1_1detail_1_1RotationWarperBase}{\section{cv\-:\-:detail\-:\-:Rotation\-Warper\-Base$<$ P $>$ Class Template Reference}
+\label{classcv_1_1detail_1_1RotationWarperBase}\index{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ P $>$@{cv\-::detail\-::\-Rotation\-Warper\-Base$<$ P $>$}}
+}
+
+
+{\ttfamily \#include $<$warpers.\-hpp$>$}
+
+
+
+Inheritance diagram for cv\-:\-:detail\-:\-:Rotation\-Warper\-Base$<$ P $>$\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{classcv_1_1detail_1_1RotationWarperBase__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for cv\-:\-:detail\-:\-:Rotation\-Warper\-Base$<$ P $>$\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{classcv_1_1detail_1_1RotationWarperBase__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Point2f \hyperlink{classcv_1_1detail_1_1RotationWarperBase_ac77b06752bf8edee12a281d85c497a1b}{warp\-Point} (const Point2f \&\hyperlink{objdetect_8hpp_a69c6090aa56793ec8ef2457bc6d45b45}{pt}, const Mat \&K, const Mat \&\hyperlink{imgproc__c_8h_a51837f120208319f026dc8c4a71e56e0}{R})
+\item 
+Rect \hyperlink{classcv_1_1detail_1_1RotationWarperBase_a1fb8153656f3ae144be520245dae071c}{build\-Maps} (Size src\-\_\-size, const Mat \&K, const Mat \&\hyperlink{imgproc__c_8h_a51837f120208319f026dc8c4a71e56e0}{R}, Mat \&xmap, Mat \&ymap)
+\item 
+Point \hyperlink{classcv_1_1detail_1_1RotationWarperBase_adec180b584eed3586018998f68308072}{warp} (const Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, const Mat \&K, const Mat \&\hyperlink{imgproc__c_8h_a51837f120208319f026dc8c4a71e56e0}{R}, int interp\-\_\-mode, int border\-\_\-mode, Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst})
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1detail_1_1RotationWarperBase_a17379efef91b209a58f09e89003db687}{warp\-Backward} (const Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, const Mat \&K, const Mat \&\hyperlink{imgproc__c_8h_a51837f120208319f026dc8c4a71e56e0}{R}, int interp\-\_\-mode, int border\-\_\-mode, Size dst\-\_\-size, Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst})
+\item 
+Rect \hyperlink{classcv_1_1detail_1_1RotationWarperBase_a6d1e3fa225896a69be90272f699648ba}{warp\-Roi} (Size src\-\_\-size, const Mat \&K, const Mat \&\hyperlink{imgproc__c_8h_a51837f120208319f026dc8c4a71e56e0}{R})
+\item 
+float \hyperlink{classcv_1_1detail_1_1RotationWarperBase_abc5f9a4609d4da834d5b79480bf10971}{get\-Scale} () const 
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1detail_1_1RotationWarperBase_a4cea69682df1181b26ef9dc0691d66e0}{set\-Scale} (float val)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1detail_1_1RotationWarperBase_a53f78bba27757e5a137e2e49e65b75ac}{detect\-Result\-Roi} (Size src\-\_\-size, Point \&dst\-\_\-tl, Point \&dst\-\_\-br)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1detail_1_1RotationWarperBase_a24fcba5b61bb28bde8c68439755e5dbe}{detect\-Result\-Roi\-By\-Border} (Size src\-\_\-size, Point \&dst\-\_\-tl, Point \&dst\-\_\-br)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+P \hyperlink{classcv_1_1detail_1_1RotationWarperBase_a45db95bc22592f2aaef5e311ea23124c}{projector\-\_\-}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcv_1_1detail_1_1RotationWarperBase_a1fb8153656f3ae144be520245dae071c}{\index{cv\-::detail\-::\-Rotation\-Warper\-Base@{cv\-::detail\-::\-Rotation\-Warper\-Base}!build\-Maps@{build\-Maps}}
+\index{build\-Maps@{build\-Maps}!cv::detail::RotationWarperBase@{cv\-::detail\-::\-Rotation\-Warper\-Base}}
+\subsubsection[{build\-Maps}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P $>$ Rect {\bf cv\-::detail\-::\-Rotation\-Warper\-Base}$<$ P $>$\-::build\-Maps (
+\begin{DoxyParamCaption}
+\item[{Size}]{src\-\_\-size, }
+\item[{const Mat \&}]{K, }
+\item[{const Mat \&}]{R, }
+\item[{Mat \&}]{xmap, }
+\item[{Mat \&}]{ymap}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcv_1_1detail_1_1RotationWarperBase_a1fb8153656f3ae144be520245dae071c}
+
+
+Implements \hyperlink{classcv_1_1detail_1_1RotationWarper_a802ed92a1db4035b9bc33f38f4e96673}{cv\-::detail\-::\-Rotation\-Warper}.
+
+\hypertarget{classcv_1_1detail_1_1RotationWarperBase_a53f78bba27757e5a137e2e49e65b75ac}{\index{cv\-::detail\-::\-Rotation\-Warper\-Base@{cv\-::detail\-::\-Rotation\-Warper\-Base}!detect\-Result\-Roi@{detect\-Result\-Roi}}
+\index{detect\-Result\-Roi@{detect\-Result\-Roi}!cv::detail::RotationWarperBase@{cv\-::detail\-::\-Rotation\-Warper\-Base}}
+\subsubsection[{detect\-Result\-Roi}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P $>$ {\bf void} {\bf cv\-::detail\-::\-Rotation\-Warper\-Base}$<$ P $>$\-::detect\-Result\-Roi (
+\begin{DoxyParamCaption}
+\item[{Size}]{src\-\_\-size, }
+\item[{Point \&}]{dst\-\_\-tl, }
+\item[{Point \&}]{dst\-\_\-br}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classcv_1_1detail_1_1RotationWarperBase_a53f78bba27757e5a137e2e49e65b75ac}
+
+
+Reimplemented in \hyperlink{classcv_1_1detail_1_1PlanePortraitWarper_a16a880cf787d451086cc4b85926b9c91}{cv\-::detail\-::\-Plane\-Portrait\-Warper}, \hyperlink{classcv_1_1detail_1_1CylindricalPortraitWarper_a36ea19ffcc170d565e6377ed5d46cf38}{cv\-::detail\-::\-Cylindrical\-Portrait\-Warper}, \hyperlink{classcv_1_1detail_1_1SphericalPortraitWarper_a8b2c95fa6e0be5a709b6a62b8adbee05}{cv\-::detail\-::\-Spherical\-Portrait\-Warper}, \hyperlink{classcv_1_1detail_1_1CylindricalWarper_a432518ff1e88b3f96970384ab44d78b4}{cv\-::detail\-::\-Cylindrical\-Warper}, \hyperlink{classcv_1_1detail_1_1SphericalWarper_ab79fa504becd919078b2c9f7713bad9d}{cv\-::detail\-::\-Spherical\-Warper}, and \hyperlink{classcv_1_1detail_1_1PlaneWarper_a79ea75cda359ffa5ac5ef16bc4d7ab63}{cv\-::detail\-::\-Plane\-Warper}.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{classcv_1_1detail_1_1RotationWarperBase_a53f78bba27757e5a137e2e49e65b75ac_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcv_1_1detail_1_1RotationWarperBase_a24fcba5b61bb28bde8c68439755e5dbe}{\index{cv\-::detail\-::\-Rotation\-Warper\-Base@{cv\-::detail\-::\-Rotation\-Warper\-Base}!detect\-Result\-Roi\-By\-Border@{detect\-Result\-Roi\-By\-Border}}
+\index{detect\-Result\-Roi\-By\-Border@{detect\-Result\-Roi\-By\-Border}!cv::detail::RotationWarperBase@{cv\-::detail\-::\-Rotation\-Warper\-Base}}
+\subsubsection[{detect\-Result\-Roi\-By\-Border}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P $>$ {\bf void} {\bf cv\-::detail\-::\-Rotation\-Warper\-Base}$<$ P $>$\-::detect\-Result\-Roi\-By\-Border (
+\begin{DoxyParamCaption}
+\item[{Size}]{src\-\_\-size, }
+\item[{Point \&}]{dst\-\_\-tl, }
+\item[{Point \&}]{dst\-\_\-br}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1detail_1_1RotationWarperBase_a24fcba5b61bb28bde8c68439755e5dbe}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{classcv_1_1detail_1_1RotationWarperBase_a24fcba5b61bb28bde8c68439755e5dbe_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcv_1_1detail_1_1RotationWarperBase_a24fcba5b61bb28bde8c68439755e5dbe_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcv_1_1detail_1_1RotationWarperBase_abc5f9a4609d4da834d5b79480bf10971}{\index{cv\-::detail\-::\-Rotation\-Warper\-Base@{cv\-::detail\-::\-Rotation\-Warper\-Base}!get\-Scale@{get\-Scale}}
+\index{get\-Scale@{get\-Scale}!cv::detail::RotationWarperBase@{cv\-::detail\-::\-Rotation\-Warper\-Base}}
+\subsubsection[{get\-Scale}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P$>$ float {\bf cv\-::detail\-::\-Rotation\-Warper\-Base}$<$ P $>$\-::get\-Scale (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1detail_1_1RotationWarperBase_abc5f9a4609d4da834d5b79480bf10971}
+\hypertarget{classcv_1_1detail_1_1RotationWarperBase_a4cea69682df1181b26ef9dc0691d66e0}{\index{cv\-::detail\-::\-Rotation\-Warper\-Base@{cv\-::detail\-::\-Rotation\-Warper\-Base}!set\-Scale@{set\-Scale}}
+\index{set\-Scale@{set\-Scale}!cv::detail::RotationWarperBase@{cv\-::detail\-::\-Rotation\-Warper\-Base}}
+\subsubsection[{set\-Scale}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P$>$ {\bf void} {\bf cv\-::detail\-::\-Rotation\-Warper\-Base}$<$ P $>$\-::set\-Scale (
+\begin{DoxyParamCaption}
+\item[{float}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcv_1_1detail_1_1RotationWarperBase_a4cea69682df1181b26ef9dc0691d66e0}
+\hypertarget{classcv_1_1detail_1_1RotationWarperBase_adec180b584eed3586018998f68308072}{\index{cv\-::detail\-::\-Rotation\-Warper\-Base@{cv\-::detail\-::\-Rotation\-Warper\-Base}!warp@{warp}}
+\index{warp@{warp}!cv::detail::RotationWarperBase@{cv\-::detail\-::\-Rotation\-Warper\-Base}}
+\subsubsection[{warp}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P $>$ Point {\bf cv\-::detail\-::\-Rotation\-Warper\-Base}$<$ P $>$\-::warp (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{src, }
+\item[{const Mat \&}]{K, }
+\item[{const Mat \&}]{R, }
+\item[{int}]{interp\-\_\-mode, }
+\item[{int}]{border\-\_\-mode, }
+\item[{Mat \&}]{dst}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcv_1_1detail_1_1RotationWarperBase_adec180b584eed3586018998f68308072}
+
+
+Implements \hyperlink{classcv_1_1detail_1_1RotationWarper_a2c80c045287f1f4c5a903bdaa209f468}{cv\-::detail\-::\-Rotation\-Warper}.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{classcv_1_1detail_1_1RotationWarperBase_adec180b584eed3586018998f68308072_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcv_1_1detail_1_1RotationWarperBase_a17379efef91b209a58f09e89003db687}{\index{cv\-::detail\-::\-Rotation\-Warper\-Base@{cv\-::detail\-::\-Rotation\-Warper\-Base}!warp\-Backward@{warp\-Backward}}
+\index{warp\-Backward@{warp\-Backward}!cv::detail::RotationWarperBase@{cv\-::detail\-::\-Rotation\-Warper\-Base}}
+\subsubsection[{warp\-Backward}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P $>$ {\bf void} {\bf cv\-::detail\-::\-Rotation\-Warper\-Base}$<$ P $>$\-::warp\-Backward (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{src, }
+\item[{const Mat \&}]{K, }
+\item[{const Mat \&}]{R, }
+\item[{int}]{interp\-\_\-mode, }
+\item[{int}]{border\-\_\-mode, }
+\item[{Size}]{dst\-\_\-size, }
+\item[{Mat \&}]{dst}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcv_1_1detail_1_1RotationWarperBase_a17379efef91b209a58f09e89003db687}
+
+
+Implements \hyperlink{classcv_1_1detail_1_1RotationWarper_a37992e25622931e33bc402aa42e8f8de}{cv\-::detail\-::\-Rotation\-Warper}.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{classcv_1_1detail_1_1RotationWarperBase_a17379efef91b209a58f09e89003db687_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcv_1_1detail_1_1RotationWarperBase_ac77b06752bf8edee12a281d85c497a1b}{\index{cv\-::detail\-::\-Rotation\-Warper\-Base@{cv\-::detail\-::\-Rotation\-Warper\-Base}!warp\-Point@{warp\-Point}}
+\index{warp\-Point@{warp\-Point}!cv::detail::RotationWarperBase@{cv\-::detail\-::\-Rotation\-Warper\-Base}}
+\subsubsection[{warp\-Point}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P $>$ Point2f {\bf cv\-::detail\-::\-Rotation\-Warper\-Base}$<$ P $>$\-::warp\-Point (
+\begin{DoxyParamCaption}
+\item[{const Point2f \&}]{pt, }
+\item[{const Mat \&}]{K, }
+\item[{const Mat \&}]{R}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcv_1_1detail_1_1RotationWarperBase_ac77b06752bf8edee12a281d85c497a1b}
+
+
+Implements \hyperlink{classcv_1_1detail_1_1RotationWarper_a0ef604efd67eea8821209fd6f28b0f91}{cv\-::detail\-::\-Rotation\-Warper}.
+
+\hypertarget{classcv_1_1detail_1_1RotationWarperBase_a6d1e3fa225896a69be90272f699648ba}{\index{cv\-::detail\-::\-Rotation\-Warper\-Base@{cv\-::detail\-::\-Rotation\-Warper\-Base}!warp\-Roi@{warp\-Roi}}
+\index{warp\-Roi@{warp\-Roi}!cv::detail::RotationWarperBase@{cv\-::detail\-::\-Rotation\-Warper\-Base}}
+\subsubsection[{warp\-Roi}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P $>$ Rect {\bf cv\-::detail\-::\-Rotation\-Warper\-Base}$<$ P $>$\-::warp\-Roi (
+\begin{DoxyParamCaption}
+\item[{Size}]{src\-\_\-size, }
+\item[{const Mat \&}]{K, }
+\item[{const Mat \&}]{R}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcv_1_1detail_1_1RotationWarperBase_a6d1e3fa225896a69be90272f699648ba}
+
+
+Implements \hyperlink{classcv_1_1detail_1_1RotationWarper_a10e953cc9d9a5b88e736f3b68de91f0d}{cv\-::detail\-::\-Rotation\-Warper}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcv_1_1detail_1_1RotationWarperBase_a45db95bc22592f2aaef5e311ea23124c}{\index{cv\-::detail\-::\-Rotation\-Warper\-Base@{cv\-::detail\-::\-Rotation\-Warper\-Base}!projector\-\_\-@{projector\-\_\-}}
+\index{projector\-\_\-@{projector\-\_\-}!cv::detail::RotationWarperBase@{cv\-::detail\-::\-Rotation\-Warper\-Base}}
+\subsubsection[{projector\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class P$>$ P {\bf cv\-::detail\-::\-Rotation\-Warper\-Base}$<$ P $>$\-::projector\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1detail_1_1RotationWarperBase_a45db95bc22592f2aaef5e311ea23124c}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/stitching/detail/\hyperlink{detail_2warpers_8hpp}{warpers.\-hpp}\item 
+/usr/include/opencv2/stitching/detail/\hyperlink{warpers__inl_8hpp}{warpers\-\_\-inl.\-hpp}\end{DoxyCompactItemize}

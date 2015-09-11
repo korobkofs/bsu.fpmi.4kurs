@@ -1,0 +1,201 @@
+\hypertarget{classtld_1_1VarianceFilter}{\section{tld\-:\-:Variance\-Filter Class Reference}
+\label{classtld_1_1VarianceFilter}\index{tld\-::\-Variance\-Filter@{tld\-::\-Variance\-Filter}}
+}
+
+
+The variance filter.  
+
+
+
+
+{\ttfamily \#include $<$Variance\-Filter.\-h$>$}
+
+
+
+Collaboration diagram for tld\-:\-:Variance\-Filter\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{classtld_1_1VarianceFilter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtld_1_1VarianceFilter_a0b8e9189907c3c5e9729b63d9beb8c04}{Variance\-Filter} ()
+\begin{DoxyCompactList}\small\item\em This constructor initializes the class variables. \end{DoxyCompactList}\item 
+virtual \hyperlink{classtld_1_1VarianceFilter_a8dfeb485fdad9b19ab1e37a91b7736f9}{$\sim$\-Variance\-Filter} ()
+\begin{DoxyCompactList}\small\item\em This destructor releases the memory. \end{DoxyCompactList}\item 
+void \hyperlink{classtld_1_1VarianceFilter_aa5ec15d4b3670db357b1c7372f5ba25a}{release} ()
+\begin{DoxyCompactList}\small\item\em Releases the memory. \end{DoxyCompactList}\item 
+void \hyperlink{classtld_1_1VarianceFilter_a29da4524e7ca1e02a4229fa004e20d75}{next\-Iteration} (const cv\-::\-Mat \&\hyperlink{namespacetld_ac832a3e8122e594c1c5321935cbc2639}{img1})
+\begin{DoxyCompactList}\small\item\em Reallocates and calculates the standart integral image and the integral image for square pixel values. \end{DoxyCompactList}\item 
+bool \hyperlink{classtld_1_1VarianceFilter_af1c369cc5338fae5cea4ad997fb1b642}{filter} (int idx)
+\begin{DoxyCompactList}\small\item\em Calculates the variance in window offsets and checks if this variance is more or equal minimum value (min\-Var). \end{DoxyCompactList}\item 
+float \hyperlink{classtld_1_1VarianceFilter_a3afefcc863a70e718a022731f7256d91}{calc\-Variance} (int $\ast$off)
+\begin{DoxyCompactList}\small\item\em Calculates the variance in region. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classtld_1_1VarianceFilter_a07f3cd680554508eb6effc4c4b92c322}{enabled}
+\begin{DoxyCompactList}\small\item\em enables variance filter \end{DoxyCompactList}\item 
+int $\ast$ \hyperlink{classtld_1_1VarianceFilter_a2c8913adc5862adf9eb3034b81c1f02b}{window\-Offsets}
+\begin{DoxyCompactList}\small\item\em the window offsets \end{DoxyCompactList}\item 
+\hyperlink{classtld_1_1DetectionResult}{Detection\-Result} $\ast$ \hyperlink{classtld_1_1VarianceFilter_a21c300c5f491726705f82429e919ccd9}{detection\-Result}
+\begin{DoxyCompactList}\small\item\em the result of detection \end{DoxyCompactList}\item 
+float \hyperlink{classtld_1_1VarianceFilter_ad5fd1b805c1cb461a31f61dd6fdb8f07}{min\-Var}
+\begin{DoxyCompactList}\small\item\em minimum value for filtering the variance in window offsets. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Ipl\-Image $\ast$ \hyperlink{classtld_1_1VarianceFilter_acec215a321ba79cb9489f49e9e358d9a}{integral\-Img}
+\begin{DoxyCompactList}\small\item\em the standart integral image \end{DoxyCompactList}\item 
+Ipl\-Image $\ast$ \hyperlink{classtld_1_1VarianceFilter_af03a14687ee0595c0d145f1856e302ef}{integral\-Img\-\_\-squared}
+\begin{DoxyCompactList}\small\item\em the integral image for square pixel values \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The variance filter. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classtld_1_1VarianceFilter_a0b8e9189907c3c5e9729b63d9beb8c04}{\index{tld\-::\-Variance\-Filter@{tld\-::\-Variance\-Filter}!Variance\-Filter@{Variance\-Filter}}
+\index{Variance\-Filter@{Variance\-Filter}!tld::VarianceFilter@{tld\-::\-Variance\-Filter}}
+\subsubsection[{Variance\-Filter}]{\setlength{\rightskip}{0pt plus 5cm}tld\-::\-Variance\-Filter\-::\-Variance\-Filter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1VarianceFilter_a0b8e9189907c3c5e9729b63d9beb8c04}
+
+
+This constructor initializes the class variables. 
+
+\hypertarget{classtld_1_1VarianceFilter_a8dfeb485fdad9b19ab1e37a91b7736f9}{\index{tld\-::\-Variance\-Filter@{tld\-::\-Variance\-Filter}!$\sim$\-Variance\-Filter@{$\sim$\-Variance\-Filter}}
+\index{$\sim$\-Variance\-Filter@{$\sim$\-Variance\-Filter}!tld::VarianceFilter@{tld\-::\-Variance\-Filter}}
+\subsubsection[{$\sim$\-Variance\-Filter}]{\setlength{\rightskip}{0pt plus 5cm}tld\-::\-Variance\-Filter\-::$\sim$\-Variance\-Filter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classtld_1_1VarianceFilter_a8dfeb485fdad9b19ab1e37a91b7736f9}
+
+
+This destructor releases the memory. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classtld_1_1VarianceFilter_a3afefcc863a70e718a022731f7256d91}{\index{tld\-::\-Variance\-Filter@{tld\-::\-Variance\-Filter}!calc\-Variance@{calc\-Variance}}
+\index{calc\-Variance@{calc\-Variance}!tld::VarianceFilter@{tld\-::\-Variance\-Filter}}
+\subsubsection[{calc\-Variance}]{\setlength{\rightskip}{0pt plus 5cm}float tld\-::\-Variance\-Filter\-::calc\-Variance (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{off}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1VarianceFilter_a3afefcc863a70e718a022731f7256d91}
+
+
+Calculates the variance in region. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em off} & the region of intrest (array -\/ x1, y1, x2, y2, none, area) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the variance 
+\end{DoxyReturn}
+\hypertarget{classtld_1_1VarianceFilter_af1c369cc5338fae5cea4ad997fb1b642}{\index{tld\-::\-Variance\-Filter@{tld\-::\-Variance\-Filter}!filter@{filter}}
+\index{filter@{filter}!tld::VarianceFilter@{tld\-::\-Variance\-Filter}}
+\subsubsection[{filter}]{\setlength{\rightskip}{0pt plus 5cm}bool tld\-::\-Variance\-Filter\-::filter (
+\begin{DoxyParamCaption}
+\item[{int}]{idx}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1VarianceFilter_af1c369cc5338fae5cea4ad997fb1b642}
+
+
+Calculates the variance in window offsets and checks if this variance is more or equal minimum value (min\-Var). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em idx} & the index of window offset. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true, if the variance is more or equal minimum value; false, otherwise 
+\end{DoxyReturn}
+\hypertarget{classtld_1_1VarianceFilter_a29da4524e7ca1e02a4229fa004e20d75}{\index{tld\-::\-Variance\-Filter@{tld\-::\-Variance\-Filter}!next\-Iteration@{next\-Iteration}}
+\index{next\-Iteration@{next\-Iteration}!tld::VarianceFilter@{tld\-::\-Variance\-Filter}}
+\subsubsection[{next\-Iteration}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::\-Variance\-Filter\-::next\-Iteration (
+\begin{DoxyParamCaption}
+\item[{const cv\-::\-Mat \&}]{img1}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1VarianceFilter_a29da4524e7ca1e02a4229fa004e20d75}
+
+
+Reallocates and calculates the standart integral image and the integral image for square pixel values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em img} & the source image \\
+\hline
+\end{DoxyParams}
+\hypertarget{classtld_1_1VarianceFilter_aa5ec15d4b3670db357b1c7372f5ba25a}{\index{tld\-::\-Variance\-Filter@{tld\-::\-Variance\-Filter}!release@{release}}
+\index{release@{release}!tld::VarianceFilter@{tld\-::\-Variance\-Filter}}
+\subsubsection[{release}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::\-Variance\-Filter\-::release (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1VarianceFilter_aa5ec15d4b3670db357b1c7372f5ba25a}
+
+
+Releases the memory. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classtld_1_1VarianceFilter_a21c300c5f491726705f82429e919ccd9}{\index{tld\-::\-Variance\-Filter@{tld\-::\-Variance\-Filter}!detection\-Result@{detection\-Result}}
+\index{detection\-Result@{detection\-Result}!tld::VarianceFilter@{tld\-::\-Variance\-Filter}}
+\subsubsection[{detection\-Result}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Detection\-Result}$\ast$ tld\-::\-Variance\-Filter\-::detection\-Result}}\label{classtld_1_1VarianceFilter_a21c300c5f491726705f82429e919ccd9}
+
+
+the result of detection 
+
+\hypertarget{classtld_1_1VarianceFilter_a07f3cd680554508eb6effc4c4b92c322}{\index{tld\-::\-Variance\-Filter@{tld\-::\-Variance\-Filter}!enabled@{enabled}}
+\index{enabled@{enabled}!tld::VarianceFilter@{tld\-::\-Variance\-Filter}}
+\subsubsection[{enabled}]{\setlength{\rightskip}{0pt plus 5cm}bool tld\-::\-Variance\-Filter\-::enabled}}\label{classtld_1_1VarianceFilter_a07f3cd680554508eb6effc4c4b92c322}
+
+
+enables variance filter 
+
+\hypertarget{classtld_1_1VarianceFilter_acec215a321ba79cb9489f49e9e358d9a}{\index{tld\-::\-Variance\-Filter@{tld\-::\-Variance\-Filter}!integral\-Img@{integral\-Img}}
+\index{integral\-Img@{integral\-Img}!tld::VarianceFilter@{tld\-::\-Variance\-Filter}}
+\subsubsection[{integral\-Img}]{\setlength{\rightskip}{0pt plus 5cm}Ipl\-Image$\ast$ tld\-::\-Variance\-Filter\-::integral\-Img\hspace{0.3cm}{\ttfamily [private]}}}\label{classtld_1_1VarianceFilter_acec215a321ba79cb9489f49e9e358d9a}
+
+
+the standart integral image 
+
+\hypertarget{classtld_1_1VarianceFilter_af03a14687ee0595c0d145f1856e302ef}{\index{tld\-::\-Variance\-Filter@{tld\-::\-Variance\-Filter}!integral\-Img\-\_\-squared@{integral\-Img\-\_\-squared}}
+\index{integral\-Img\-\_\-squared@{integral\-Img\-\_\-squared}!tld::VarianceFilter@{tld\-::\-Variance\-Filter}}
+\subsubsection[{integral\-Img\-\_\-squared}]{\setlength{\rightskip}{0pt plus 5cm}Ipl\-Image$\ast$ tld\-::\-Variance\-Filter\-::integral\-Img\-\_\-squared\hspace{0.3cm}{\ttfamily [private]}}}\label{classtld_1_1VarianceFilter_af03a14687ee0595c0d145f1856e302ef}
+
+
+the integral image for square pixel values 
+
+\hypertarget{classtld_1_1VarianceFilter_ad5fd1b805c1cb461a31f61dd6fdb8f07}{\index{tld\-::\-Variance\-Filter@{tld\-::\-Variance\-Filter}!min\-Var@{min\-Var}}
+\index{min\-Var@{min\-Var}!tld::VarianceFilter@{tld\-::\-Variance\-Filter}}
+\subsubsection[{min\-Var}]{\setlength{\rightskip}{0pt plus 5cm}float tld\-::\-Variance\-Filter\-::min\-Var}}\label{classtld_1_1VarianceFilter_ad5fd1b805c1cb461a31f61dd6fdb8f07}
+
+
+minimum value for filtering the variance in window offsets. 
+
+\hypertarget{classtld_1_1VarianceFilter_a2c8913adc5862adf9eb3034b81c1f02b}{\index{tld\-::\-Variance\-Filter@{tld\-::\-Variance\-Filter}!window\-Offsets@{window\-Offsets}}
+\index{window\-Offsets@{window\-Offsets}!tld::VarianceFilter@{tld\-::\-Variance\-Filter}}
+\subsubsection[{window\-Offsets}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ tld\-::\-Variance\-Filter\-::window\-Offsets}}\label{classtld_1_1VarianceFilter_a2c8913adc5862adf9eb3034b81c1f02b}
+
+
+the window offsets 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/libopentld/tld/\hyperlink{VarianceFilter_8h}{Variance\-Filter.\-h}\item 
+src/libopentld/tld/\hyperlink{VarianceFilter_8cpp}{Variance\-Filter.\-cpp}\end{DoxyCompactItemize}

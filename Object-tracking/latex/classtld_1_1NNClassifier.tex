@@ -1,0 +1,307 @@
+\hypertarget{classtld_1_1NNClassifier}{\section{tld\-:\-:N\-N\-Classifier Class Reference}
+\label{classtld_1_1NNClassifier}\index{tld\-::\-N\-N\-Classifier@{tld\-::\-N\-N\-Classifier}}
+}
+
+
+The nearest neighbor classifier.  
+
+
+
+
+{\ttfamily \#include $<$N\-N\-Classifier.\-h$>$}
+
+
+
+Collaboration diagram for tld\-:\-:N\-N\-Classifier\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{classtld_1_1NNClassifier__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtld_1_1NNClassifier_a5a71057c2aacdd4935247976e6f49b46}{N\-N\-Classifier} ()
+\begin{DoxyCompactList}\small\item\em This constructor initialize thresholds and vectors. \end{DoxyCompactList}\item 
+virtual \hyperlink{classtld_1_1NNClassifier_a475f200dea8dc71cf0f273c57d837242}{$\sim$\-N\-N\-Classifier} ()
+\begin{DoxyCompactList}\small\item\em Clears and releases the vectors. \end{DoxyCompactList}\item 
+void \hyperlink{classtld_1_1NNClassifier_aabb548e7b9535ad8040fe65d344b3142}{release} ()
+\begin{DoxyCompactList}\small\item\em Clears the vectors. \end{DoxyCompactList}\item 
+float \hyperlink{classtld_1_1NNClassifier_aa59628d72a448c3ee686d9fd78d3e62a}{classify\-Patch} (\hyperlink{classtld_1_1NormalizedPatch}{Normalized\-Patch} $\ast$patch)
+\begin{DoxyCompactList}\small\item\em Compares patch to positive and negative patches. \end{DoxyCompactList}\item 
+float \hyperlink{classtld_1_1NNClassifier_a4b926da10ab0ce0d05fdb19b7e90bf8b}{classify\-B\-B} (const cv\-::\-Mat \&img, cv\-::\-Rect $\ast$\hyperlink{namespacetld_aa5e13bbb9a53d3e9103d430b6113b08b}{bb})
+\begin{DoxyCompactList}\small\item\em Compares patch (obtain from the image and the bounding box) to positive and negative patches. \end{DoxyCompactList}\item 
+float \hyperlink{classtld_1_1NNClassifier_a88fe1649014e887a12a5a57a552819f2}{classify\-Window} (const cv\-::\-Mat \&img, int window\-Idx)
+\begin{DoxyCompactList}\small\item\em Compares patch (obtain from the image and the index of window) to positive and negative patches. \end{DoxyCompactList}\item 
+void \hyperlink{classtld_1_1NNClassifier_aa6a34e43628807018da166897063ea02}{learn} (std\-::vector$<$ \hyperlink{classtld_1_1NormalizedPatch}{Normalized\-Patch} $>$ patches)
+\begin{DoxyCompactList}\small\item\em Learns the nearest neighbor classifier. Distributes pathes to negative or positives patches or not. \end{DoxyCompactList}\item 
+bool \hyperlink{classtld_1_1NNClassifier_a173e8f32e073d88c93203ff6ec3352ab}{filter} (const cv\-::\-Mat \&img, int window\-Idx)
+\begin{DoxyCompactList}\small\item\em Checks if the patche is the potential positive patch. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classtld_1_1NNClassifier_a7a86c7c4d1bf5664540f476f455dad21}{enabled}
+\begin{DoxyCompactList}\small\item\em enables nearest neighbor сlassifier \end{DoxyCompactList}\item 
+int $\ast$ \hyperlink{classtld_1_1NNClassifier_a6a4aab5ed014405c9dbd9162af1b1d7c}{windows}
+\begin{DoxyCompactList}\small\item\em the array of windows \end{DoxyCompactList}\item 
+float \hyperlink{classtld_1_1NNClassifier_a5cddbd7f4a38e95a7f00cb1013962b9e}{theta\-F\-P}
+\begin{DoxyCompactList}\small\item\em lower threshold for confidence in lerning of \hyperlink{classtld_1_1NNClassifier}{N\-N\-Classifier} \end{DoxyCompactList}\item 
+float \hyperlink{classtld_1_1NNClassifier_aada6ca01c7b5224439e375444947cd16}{theta\-T\-P}
+\begin{DoxyCompactList}\small\item\em upper threshold for confidence in lerning and filter of \hyperlink{classtld_1_1NNClassifier}{N\-N\-Classifier} \end{DoxyCompactList}\item 
+\hyperlink{classtld_1_1DetectionResult}{Detection\-Result} $\ast$ \hyperlink{classtld_1_1NNClassifier_a5320e517bb5ad4ed524701df5cc200aa}{detection\-Result}
+\begin{DoxyCompactList}\small\item\em the result of detection \end{DoxyCompactList}\item 
+std\-::vector$<$ \hyperlink{classtld_1_1NormalizedPatch}{Normalized\-Patch} $>$ $\ast$ \hyperlink{classtld_1_1NNClassifier_abc088471e8f9e259cc07cbb9a704fb28}{false\-Positives}
+\begin{DoxyCompactList}\small\item\em the vector of negative patches \end{DoxyCompactList}\item 
+std\-::vector$<$ \hyperlink{classtld_1_1NormalizedPatch}{Normalized\-Patch} $>$ $\ast$ \hyperlink{classtld_1_1NNClassifier_ac17849309a8aed1fdc3e3247f22b5fa2}{true\-Positives}
+\begin{DoxyCompactList}\small\item\em the vector of positives patches \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{classtld_1_1NNClassifier_a8529758da913080fc08ac24dd09c09a9}{ncc} (float $\ast$f1, float $\ast$f2)
+\begin{DoxyCompactList}\small\item\em Calculates normalazed cross-\/correlaton of two patches. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The nearest neighbor classifier. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classtld_1_1NNClassifier_a5a71057c2aacdd4935247976e6f49b46}{\index{tld\-::\-N\-N\-Classifier@{tld\-::\-N\-N\-Classifier}!N\-N\-Classifier@{N\-N\-Classifier}}
+\index{N\-N\-Classifier@{N\-N\-Classifier}!tld::NNClassifier@{tld\-::\-N\-N\-Classifier}}
+\subsubsection[{N\-N\-Classifier}]{\setlength{\rightskip}{0pt plus 5cm}tld\-::\-N\-N\-Classifier\-::\-N\-N\-Classifier (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1NNClassifier_a5a71057c2aacdd4935247976e6f49b46}
+
+
+This constructor initialize thresholds and vectors. 
+
+\hypertarget{classtld_1_1NNClassifier_a475f200dea8dc71cf0f273c57d837242}{\index{tld\-::\-N\-N\-Classifier@{tld\-::\-N\-N\-Classifier}!$\sim$\-N\-N\-Classifier@{$\sim$\-N\-N\-Classifier}}
+\index{$\sim$\-N\-N\-Classifier@{$\sim$\-N\-N\-Classifier}!tld::NNClassifier@{tld\-::\-N\-N\-Classifier}}
+\subsubsection[{$\sim$\-N\-N\-Classifier}]{\setlength{\rightskip}{0pt plus 5cm}tld\-::\-N\-N\-Classifier\-::$\sim$\-N\-N\-Classifier (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classtld_1_1NNClassifier_a475f200dea8dc71cf0f273c57d837242}
+
+
+Clears and releases the vectors. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classtld_1_1NNClassifier_a4b926da10ab0ce0d05fdb19b7e90bf8b}{\index{tld\-::\-N\-N\-Classifier@{tld\-::\-N\-N\-Classifier}!classify\-B\-B@{classify\-B\-B}}
+\index{classify\-B\-B@{classify\-B\-B}!tld::NNClassifier@{tld\-::\-N\-N\-Classifier}}
+\subsubsection[{classify\-B\-B}]{\setlength{\rightskip}{0pt plus 5cm}float tld\-::\-N\-N\-Classifier\-::classify\-B\-B (
+\begin{DoxyParamCaption}
+\item[{const cv\-::\-Mat \&}]{img, }
+\item[{cv\-::\-Rect $\ast$}]{bb}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1NNClassifier_a4b926da10ab0ce0d05fdb19b7e90bf8b}
+
+
+Compares patch (obtain from the image and the bounding box) to positive and negative patches. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em img} & the image \\
+\hline
+{\em bb} & the bounding box \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the distance 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtld_1_1NNClassifier_a4b926da10ab0ce0d05fdb19b7e90bf8b_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classtld_1_1NNClassifier_aa59628d72a448c3ee686d9fd78d3e62a}{\index{tld\-::\-N\-N\-Classifier@{tld\-::\-N\-N\-Classifier}!classify\-Patch@{classify\-Patch}}
+\index{classify\-Patch@{classify\-Patch}!tld::NNClassifier@{tld\-::\-N\-N\-Classifier}}
+\subsubsection[{classify\-Patch}]{\setlength{\rightskip}{0pt plus 5cm}float tld\-::\-N\-N\-Classifier\-::classify\-Patch (
+\begin{DoxyParamCaption}
+\item[{{\bf Normalized\-Patch} $\ast$}]{patch}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1NNClassifier_aa59628d72a448c3ee686d9fd78d3e62a}
+
+
+Compares patch to positive and negative patches. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em patch} & the patch \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the distance 
+\end{DoxyReturn}
+\hypertarget{classtld_1_1NNClassifier_a88fe1649014e887a12a5a57a552819f2}{\index{tld\-::\-N\-N\-Classifier@{tld\-::\-N\-N\-Classifier}!classify\-Window@{classify\-Window}}
+\index{classify\-Window@{classify\-Window}!tld::NNClassifier@{tld\-::\-N\-N\-Classifier}}
+\subsubsection[{classify\-Window}]{\setlength{\rightskip}{0pt plus 5cm}float tld\-::\-N\-N\-Classifier\-::classify\-Window (
+\begin{DoxyParamCaption}
+\item[{const cv\-::\-Mat \&}]{img, }
+\item[{int}]{window\-Idx}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1NNClassifier_a88fe1649014e887a12a5a57a552819f2}
+
+
+Compares patch (obtain from the image and the index of window) to positive and negative patches. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em img} & the image \\
+\hline
+{\em window\-Idx} & the index of window \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the distance 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtld_1_1NNClassifier_a88fe1649014e887a12a5a57a552819f2_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classtld_1_1NNClassifier_a173e8f32e073d88c93203ff6ec3352ab}{\index{tld\-::\-N\-N\-Classifier@{tld\-::\-N\-N\-Classifier}!filter@{filter}}
+\index{filter@{filter}!tld::NNClassifier@{tld\-::\-N\-N\-Classifier}}
+\subsubsection[{filter}]{\setlength{\rightskip}{0pt plus 5cm}bool tld\-::\-N\-N\-Classifier\-::filter (
+\begin{DoxyParamCaption}
+\item[{const cv\-::\-Mat \&}]{img, }
+\item[{int}]{window\-Idx}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1NNClassifier_a173e8f32e073d88c93203ff6ec3352ab}
+
+
+Checks if the patche is the potential positive patch. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em img} & the image \\
+\hline
+{\em window\-Idx} & the index of window \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true, if the patch is filtered; false, otherwise 
+\end{DoxyReturn}
+\hypertarget{classtld_1_1NNClassifier_aa6a34e43628807018da166897063ea02}{\index{tld\-::\-N\-N\-Classifier@{tld\-::\-N\-N\-Classifier}!learn@{learn}}
+\index{learn@{learn}!tld::NNClassifier@{tld\-::\-N\-N\-Classifier}}
+\subsubsection[{learn}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::\-N\-N\-Classifier\-::learn (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ {\bf Normalized\-Patch} $>$}]{patches}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1NNClassifier_aa6a34e43628807018da166897063ea02}
+
+
+Learns the nearest neighbor classifier. Distributes pathes to negative or positives patches or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em patches} & the vector of patches \\
+\hline
+\end{DoxyParams}
+\hypertarget{classtld_1_1NNClassifier_a8529758da913080fc08ac24dd09c09a9}{\index{tld\-::\-N\-N\-Classifier@{tld\-::\-N\-N\-Classifier}!ncc@{ncc}}
+\index{ncc@{ncc}!tld::NNClassifier@{tld\-::\-N\-N\-Classifier}}
+\subsubsection[{ncc}]{\setlength{\rightskip}{0pt plus 5cm}float tld\-::\-N\-N\-Classifier\-::ncc (
+\begin{DoxyParamCaption}
+\item[{float $\ast$}]{f1, }
+\item[{float $\ast$}]{f2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classtld_1_1NNClassifier_a8529758da913080fc08ac24dd09c09a9}
+
+
+Calculates normalazed cross-\/correlaton of two patches. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f1} & the first patch (array) \\
+\hline
+{\em f2} & the second patch (array) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the normalazed cross-\/correlaton 
+\end{DoxyReturn}
+\hypertarget{classtld_1_1NNClassifier_aabb548e7b9535ad8040fe65d344b3142}{\index{tld\-::\-N\-N\-Classifier@{tld\-::\-N\-N\-Classifier}!release@{release}}
+\index{release@{release}!tld::NNClassifier@{tld\-::\-N\-N\-Classifier}}
+\subsubsection[{release}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::\-N\-N\-Classifier\-::release (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1NNClassifier_aabb548e7b9535ad8040fe65d344b3142}
+
+
+Clears the vectors. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classtld_1_1NNClassifier_a5320e517bb5ad4ed524701df5cc200aa}{\index{tld\-::\-N\-N\-Classifier@{tld\-::\-N\-N\-Classifier}!detection\-Result@{detection\-Result}}
+\index{detection\-Result@{detection\-Result}!tld::NNClassifier@{tld\-::\-N\-N\-Classifier}}
+\subsubsection[{detection\-Result}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Detection\-Result}$\ast$ tld\-::\-N\-N\-Classifier\-::detection\-Result}}\label{classtld_1_1NNClassifier_a5320e517bb5ad4ed524701df5cc200aa}
+
+
+the result of detection 
+
+\hypertarget{classtld_1_1NNClassifier_a7a86c7c4d1bf5664540f476f455dad21}{\index{tld\-::\-N\-N\-Classifier@{tld\-::\-N\-N\-Classifier}!enabled@{enabled}}
+\index{enabled@{enabled}!tld::NNClassifier@{tld\-::\-N\-N\-Classifier}}
+\subsubsection[{enabled}]{\setlength{\rightskip}{0pt plus 5cm}bool tld\-::\-N\-N\-Classifier\-::enabled}}\label{classtld_1_1NNClassifier_a7a86c7c4d1bf5664540f476f455dad21}
+
+
+enables nearest neighbor сlassifier 
+
+\hypertarget{classtld_1_1NNClassifier_abc088471e8f9e259cc07cbb9a704fb28}{\index{tld\-::\-N\-N\-Classifier@{tld\-::\-N\-N\-Classifier}!false\-Positives@{false\-Positives}}
+\index{false\-Positives@{false\-Positives}!tld::NNClassifier@{tld\-::\-N\-N\-Classifier}}
+\subsubsection[{false\-Positives}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf Normalized\-Patch}$>$$\ast$ tld\-::\-N\-N\-Classifier\-::false\-Positives}}\label{classtld_1_1NNClassifier_abc088471e8f9e259cc07cbb9a704fb28}
+
+
+the vector of negative patches 
+
+\hypertarget{classtld_1_1NNClassifier_a5cddbd7f4a38e95a7f00cb1013962b9e}{\index{tld\-::\-N\-N\-Classifier@{tld\-::\-N\-N\-Classifier}!theta\-F\-P@{theta\-F\-P}}
+\index{theta\-F\-P@{theta\-F\-P}!tld::NNClassifier@{tld\-::\-N\-N\-Classifier}}
+\subsubsection[{theta\-F\-P}]{\setlength{\rightskip}{0pt plus 5cm}float tld\-::\-N\-N\-Classifier\-::theta\-F\-P}}\label{classtld_1_1NNClassifier_a5cddbd7f4a38e95a7f00cb1013962b9e}
+
+
+lower threshold for confidence in lerning of \hyperlink{classtld_1_1NNClassifier}{N\-N\-Classifier} 
+
+\hypertarget{classtld_1_1NNClassifier_aada6ca01c7b5224439e375444947cd16}{\index{tld\-::\-N\-N\-Classifier@{tld\-::\-N\-N\-Classifier}!theta\-T\-P@{theta\-T\-P}}
+\index{theta\-T\-P@{theta\-T\-P}!tld::NNClassifier@{tld\-::\-N\-N\-Classifier}}
+\subsubsection[{theta\-T\-P}]{\setlength{\rightskip}{0pt plus 5cm}float tld\-::\-N\-N\-Classifier\-::theta\-T\-P}}\label{classtld_1_1NNClassifier_aada6ca01c7b5224439e375444947cd16}
+
+
+upper threshold for confidence in lerning and filter of \hyperlink{classtld_1_1NNClassifier}{N\-N\-Classifier} 
+
+\hypertarget{classtld_1_1NNClassifier_ac17849309a8aed1fdc3e3247f22b5fa2}{\index{tld\-::\-N\-N\-Classifier@{tld\-::\-N\-N\-Classifier}!true\-Positives@{true\-Positives}}
+\index{true\-Positives@{true\-Positives}!tld::NNClassifier@{tld\-::\-N\-N\-Classifier}}
+\subsubsection[{true\-Positives}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf Normalized\-Patch}$>$$\ast$ tld\-::\-N\-N\-Classifier\-::true\-Positives}}\label{classtld_1_1NNClassifier_ac17849309a8aed1fdc3e3247f22b5fa2}
+
+
+the vector of positives patches 
+
+\hypertarget{classtld_1_1NNClassifier_a6a4aab5ed014405c9dbd9162af1b1d7c}{\index{tld\-::\-N\-N\-Classifier@{tld\-::\-N\-N\-Classifier}!windows@{windows}}
+\index{windows@{windows}!tld::NNClassifier@{tld\-::\-N\-N\-Classifier}}
+\subsubsection[{windows}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ tld\-::\-N\-N\-Classifier\-::windows}}\label{classtld_1_1NNClassifier_a6a4aab5ed014405c9dbd9162af1b1d7c}
+
+
+the array of windows 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/libopentld/tld/\hyperlink{NNClassifier_8h}{N\-N\-Classifier.\-h}\item 
+src/libopentld/tld/\hyperlink{NNClassifier_8cpp}{N\-N\-Classifier.\-cpp}\end{DoxyCompactItemize}

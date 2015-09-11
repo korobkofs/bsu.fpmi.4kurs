@@ -1,0 +1,6 @@
+<map id="cv::gpu::device::vavg2" name="cv::gpu::device::vavg2">
+<area shape="rect" id="node2" href="$namespacecv_1_1gpu_1_1device.html#a3f2868709c68a9022619880874e6ab23" title="cv::gpu::device::vsetgt2" alt="" coords="208,5,371,32"/>
+<area shape="rect" id="node3" href="$namespacecv_1_1gpu_1_1device.html#a485f033d91240200825ce6cf602a678e" title="cv::gpu::device::vcmpgt2" alt="" coords="419,44,589,71"/>
+<area shape="rect" id="node4" href="$namespacecv_1_1gpu_1_1device.html#ab767ec87f48e2d4f16c70bc3760521ae" title="cv::gpu::device::vsetlt2" alt="" coords="210,107,369,133"/>
+<area shape="rect" id="node5" href="$namespacecv_1_1gpu_1_1device.html#a5a8543b580704435cb501163e52745e4" title="cv::gpu::device::vcmplt2" alt="" coords="421,120,587,147"/>
+</map>

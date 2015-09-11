@@ -1,0 +1,1133 @@
+\hypertarget{grammar_8c}{\section{src/3rdparty/libconfig/grammar.c File Reference}
+\label{grammar_8c}\index{src/3rdparty/libconfig/grammar.\-c@{src/3rdparty/libconfig/grammar.\-c}}
+}
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}libconfig.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}parsectx.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}scanctx.\-h\char`\"{}}\\*
+Include dependency graph for grammar.\-c\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grammar_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+union \hyperlink{unionYYSTYPE}{Y\-Y\-S\-T\-Y\-P\-E}
+\item 
+union \hyperlink{unionyyalloc}{yyalloc}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{grammar_8c_a9f092f5b1dca6a6249fb2c7c8065b031}{Y\-Y\-B\-I\-S\-O\-N}~1
+\item 
+\#define \hyperlink{grammar_8c_a72ebd0ca5807efcc6a5ae4fb72dd1553}{Y\-Y\-B\-I\-S\-O\-N\-\_\-\-V\-E\-R\-S\-I\-O\-N}~\char`\"{}2.\-4.\-1\char`\"{}
+\item 
+\#define \hyperlink{grammar_8c_a50db5aef8c2b6f13961b2480b37f84c0}{Y\-Y\-S\-K\-E\-L\-E\-T\-O\-N\-\_\-\-N\-A\-M\-E}~\char`\"{}yacc.\-c\char`\"{}
+\item 
+\#define \hyperlink{grammar_8c_a9fa797a1f3c4fc9b12d1e4d569612767}{Y\-Y\-P\-U\-R\-E}~1
+\item 
+\#define \hyperlink{grammar_8c_a3aa6e4af11755f8cf8e5ddb26833e918}{Y\-Y\-P\-U\-S\-H}~0
+\item 
+\#define \hyperlink{grammar_8c_a90f059b8a9d6c30a1e44e1b80d3fd6c8}{Y\-Y\-P\-U\-L\-L}~1
+\item 
+\#define \hyperlink{grammar_8c_abb3943553c2b5e911c89a3ea973d3079}{Y\-Y\-L\-S\-P\-\_\-\-N\-E\-E\-D\-E\-D}~0
+\item 
+\#define \hyperlink{grammar_8c_a7482716c0f7d5bc8387ad56daa3a9fde}{yyparse}~\hyperlink{libconfig_8c_a8ea043923cee044f92acb84d6c94a92a}{libconfig\-\_\-yyparse}
+\item 
+\#define \hyperlink{grammar_8c_a5611300548b2030d86b6ab9168132b88}{yylex}~\hyperlink{scanner_8h_a92ac4af6351ef15ac9d68c4ab29f037d}{libconfig\-\_\-yylex}
+\item 
+\#define \hyperlink{grammar_8c_afd2adb2274e61b81cf475d1ebea69d50}{yyerror}~\hyperlink{grammar_8c_aed5cee83fa537a585f1bd2a1799db48f}{libconfig\-\_\-yyerror}
+\item 
+\#define \hyperlink{grammar_8c_a75acfb3798e577ebd296e604e422e86b}{yylval}~libconfig\-\_\-yylval
+\item 
+\#define \hyperlink{grammar_8c_a34af3aa88645c2f95bbb4d573f8713cb}{yychar}~libconfig\-\_\-yychar
+\item 
+\#define \hyperlink{grammar_8c_a7fde6236fcb0f6e5d1d20ce98d9f0d01}{yydebug}~libconfig\-\_\-yydebug
+\item 
+\#define \hyperlink{grammar_8c_a956a31a9c729bfe871bb770d99e1942d}{yynerrs}~libconfig\-\_\-yynerrs
+\item 
+\#define \hyperlink{grammar_8c_ae75d2f04c29571a14dc66528697efe32}{\-\_\-delete}(P)~free((void $\ast$)(P))
+\item 
+\#define \hyperlink{grammar_8c_a8d59f7370b518ab03025dc6e3fbc52ef}{I\-N\-\_\-\-A\-R\-R\-A\-Y}()~(ctx-\/$>$parent \&\& (ctx-\/$>$parent-\/$>$type == \hyperlink{libconfig_8h_a3709531ea3123627a7f1f5131efdb102}{C\-O\-N\-F\-I\-G\-\_\-\-T\-Y\-P\-E\-\_\-\-A\-R\-R\-A\-Y}))
+\item 
+\#define \hyperlink{grammar_8c_adb192a467809ffee7532369d7ca17f1c}{I\-N\-\_\-\-L\-I\-S\-T}()~(ctx-\/$>$parent \&\& (ctx-\/$>$parent-\/$>$type == \hyperlink{libconfig_8h_a1926c451e695309907e40c8800774e38}{C\-O\-N\-F\-I\-G\-\_\-\-T\-Y\-P\-E\-\_\-\-L\-I\-S\-T}))
+\item 
+\#define \hyperlink{grammar_8c_a9fb1c745cfc3d1942313cebbbae51673}{C\-A\-P\-T\-U\-R\-E\-\_\-\-P\-A\-R\-S\-E\-\_\-\-P\-O\-S}(S)~\hyperlink{grammar_8c_abddd15915aa746f8e4fb3a5376623384}{capture\-\_\-parse\-\_\-pos}(scanner, scan\-\_\-ctx, (S))
+\item 
+\#define \hyperlink{grammar_8c_a853b3bfad6d2b2ff693dce81182e0c2e}{Y\-Y\-D\-E\-B\-U\-G}~0
+\item 
+\#define \hyperlink{grammar_8c_a0943f558a560b9b5fa0593d7e36496c1}{Y\-Y\-E\-R\-R\-O\-R\-\_\-\-V\-E\-R\-B\-O\-S\-E}~0
+\item 
+\#define \hyperlink{grammar_8c_a3499e31aa832edc82b632ae811286a4b}{Y\-Y\-T\-O\-K\-E\-N\-\_\-\-T\-A\-B\-L\-E}~0
+\item 
+\#define \hyperlink{grammar_8c_a69ca0fbcc6d7aa5e8f47b11fc0048208}{Y\-Y\-T\-O\-K\-E\-N\-T\-Y\-P\-E}
+\item 
+\#define \hyperlink{grammar_8c_a57e5660f647aa60e11ca9782e158949d}{T\-O\-K\-\_\-\-B\-O\-O\-L\-E\-A\-N}~258
+\item 
+\#define \hyperlink{grammar_8c_afe8234318c40d23aa0ef8d7c6c3bb613}{T\-O\-K\-\_\-\-I\-N\-T\-E\-G\-E\-R}~259
+\item 
+\#define \hyperlink{grammar_8c_abbb8340fa8257a75865a060cb4f492d5}{T\-O\-K\-\_\-\-H\-E\-X}~260
+\item 
+\#define \hyperlink{grammar_8c_a88bad54911209df594dc18cf5a862d77}{T\-O\-K\-\_\-\-I\-N\-T\-E\-G\-E\-R64}~261
+\item 
+\#define \hyperlink{grammar_8c_ad9c1282beda9a0fcb200efcaf95a2702}{T\-O\-K\-\_\-\-H\-E\-X64}~262
+\item 
+\#define \hyperlink{grammar_8c_a3867e462c2d373a53251ca0b835aada5}{T\-O\-K\-\_\-\-F\-L\-O\-A\-T}~263
+\item 
+\#define \hyperlink{grammar_8c_a438ebcf2bfac5fd8af5356f3c0305839}{T\-O\-K\-\_\-\-S\-T\-R\-I\-N\-G}~264
+\item 
+\#define \hyperlink{grammar_8c_ad988fa86b948db0ed4e4093dea41c9d4}{T\-O\-K\-\_\-\-N\-A\-M\-E}~265
+\item 
+\#define \hyperlink{grammar_8c_a2aee9f170594b125ed4275759d0f01f6}{T\-O\-K\-\_\-\-E\-Q\-U\-A\-L\-S}~266
+\item 
+\#define \hyperlink{grammar_8c_a6d75325443212b60baee084ea24ccc62}{T\-O\-K\-\_\-\-N\-E\-W\-L\-I\-N\-E}~267
+\item 
+\#define \hyperlink{grammar_8c_a937ba1cd996133cb5532011c310d8bdc}{T\-O\-K\-\_\-\-A\-R\-R\-A\-Y\-\_\-\-S\-T\-A\-R\-T}~268
+\item 
+\#define \hyperlink{grammar_8c_a2e7af18fe1642f5eb00831393339400b}{T\-O\-K\-\_\-\-A\-R\-R\-A\-Y\-\_\-\-E\-N\-D}~269
+\item 
+\#define \hyperlink{grammar_8c_a59dead6373ce8a009c37c2acc6bb03de}{T\-O\-K\-\_\-\-L\-I\-S\-T\-\_\-\-S\-T\-A\-R\-T}~270
+\item 
+\#define \hyperlink{grammar_8c_a8856a703899dd9d15e7e4eb179aa473f}{T\-O\-K\-\_\-\-L\-I\-S\-T\-\_\-\-E\-N\-D}~271
+\item 
+\#define \hyperlink{grammar_8c_ae83b5d27d87a650e964b21698da02fda}{T\-O\-K\-\_\-\-C\-O\-M\-M\-A}~272
+\item 
+\#define \hyperlink{grammar_8c_a063013921856046cbea18e57736dc1e6}{T\-O\-K\-\_\-\-G\-R\-O\-U\-P\-\_\-\-S\-T\-A\-R\-T}~273
+\item 
+\#define \hyperlink{grammar_8c_a1a07150c25e16b69bc8b8f1a2dd4a068}{T\-O\-K\-\_\-\-G\-R\-O\-U\-P\-\_\-\-E\-N\-D}~274
+\item 
+\#define \hyperlink{grammar_8c_aeed3603d6bcfa2873994098d2bffe4be}{T\-O\-K\-\_\-\-S\-E\-M\-I\-C\-O\-L\-O\-N}~275
+\item 
+\#define \hyperlink{grammar_8c_aecad1fed21ec8638deecc2c2679b65e1}{T\-O\-K\-\_\-\-G\-A\-R\-B\-A\-G\-E}~276
+\item 
+\#define \hyperlink{grammar_8c_a5d0d20b374e87f59d2aa1df79daf060b}{T\-O\-K\-\_\-\-E\-R\-R\-O\-R}~277
+\item 
+\#define \hyperlink{grammar_8c_a2e3dbf169c5ee24cf6af37c61cf3995d}{Y\-Y\-S\-T\-Y\-P\-E\-\_\-\-I\-S\-\_\-\-T\-R\-I\-V\-I\-A\-L}~1
+\item 
+\#define \hyperlink{grammar_8c_a4ccf5315e8f5c1cec48ec67ca1771e3a}{yystype}~\hyperlink{unionYYSTYPE}{Y\-Y\-S\-T\-Y\-P\-E} /$\ast$ obsolescent; will be withdrawn $\ast$/
+\item 
+\#define \hyperlink{grammar_8c_af0232d21120b2cfc5e5f82f0fbadab3c}{Y\-Y\-S\-T\-Y\-P\-E\-\_\-\-I\-S\-\_\-\-D\-E\-C\-L\-A\-R\-E\-D}~1
+\item 
+\#define \hyperlink{grammar_8c_a7d535939e93253736c6eeda569d24de5}{Y\-Y\-S\-I\-Z\-E\-\_\-\-T}~unsigned int
+\item 
+\#define \hyperlink{grammar_8c_ab4bb7ad82d4a7e2df49ff6a8fb484109}{Y\-Y\-S\-I\-Z\-E\-\_\-\-M\-A\-X\-I\-M\-U\-M}~((\hyperlink{grammar_8c_a7d535939e93253736c6eeda569d24de5}{Y\-Y\-S\-I\-Z\-E\-\_\-\-T}) -\/1)
+\item 
+\#define \hyperlink{grammar_8c_a86f079016f11f0600f4259f3f03f8d43}{Y\-Y\-\_\-}(msgid)~msgid
+\item 
+\#define \hyperlink{grammar_8c_ad7d1ef1bbc6adfe69894bc8221f557e1}{Y\-Y\-U\-S\-E}(e)~((void) (e))
+\item 
+\#define \hyperlink{grammar_8c_a0a6ff515042340dd341cf6ca8dd05f2d}{Y\-Y\-I\-D}(n)~(n)
+\item 
+\#define \hyperlink{grammar_8c_af45042ce56e04d634420d76caeb2ee73}{Y\-Y\-S\-T\-A\-C\-K\-\_\-\-A\-L\-L\-O\-C}~\hyperlink{grammar_8c_a573b05852d8f080c907dfba725773d7a}{Y\-Y\-M\-A\-L\-L\-O\-C}
+\item 
+\#define \hyperlink{grammar_8c_a1a9dc526fd390d4808252bd631c4c2f7}{Y\-Y\-S\-T\-A\-C\-K\-\_\-\-F\-R\-E\-E}~\hyperlink{grammar_8c_ac8adfd73c006c1926f387feb1eced3ca}{Y\-Y\-F\-R\-E\-E}
+\item 
+\#define \hyperlink{grammar_8c_a7e55d995c7458f2f4af94a426d0adde8}{Y\-Y\-S\-T\-A\-C\-K\-\_\-\-A\-L\-L\-O\-C\-\_\-\-M\-A\-X\-I\-M\-U\-M}~\hyperlink{grammar_8c_ab4bb7ad82d4a7e2df49ff6a8fb484109}{Y\-Y\-S\-I\-Z\-E\-\_\-\-M\-A\-X\-I\-M\-U\-M}
+\item 
+\#define \hyperlink{grammar_8c_a573b05852d8f080c907dfba725773d7a}{Y\-Y\-M\-A\-L\-L\-O\-C}~malloc
+\item 
+\#define \hyperlink{grammar_8c_ac8adfd73c006c1926f387feb1eced3ca}{Y\-Y\-F\-R\-E\-E}~free
+\item 
+\#define \hyperlink{grammar_8c_afcd15dd0fa87ffba0371c6d6a0cc9631}{Y\-Y\-S\-T\-A\-C\-K\-\_\-\-G\-A\-P\-\_\-\-M\-A\-X\-I\-M\-U\-M}~(sizeof (union \hyperlink{unionyyalloc}{yyalloc}) -\/ 1)
+\item 
+\#define \hyperlink{grammar_8c_a40beb355f2cf230a99e2e2bb54909a5a}{Y\-Y\-S\-T\-A\-C\-K\-\_\-\-B\-Y\-T\-E\-S}(N)
+\item 
+\#define \hyperlink{grammar_8c_ad6586b145b5cddce4eec46f35d59b1dd}{Y\-Y\-C\-O\-P\-Y}(To, From, Count)
+\item 
+\#define \hyperlink{grammar_8c_ae780b90b638f37309f20dc07f94e8221}{Y\-Y\-S\-T\-A\-C\-K\-\_\-\-R\-E\-L\-O\-C\-A\-T\-E}(Stack\-\_\-alloc, Stack)
+\item 
+\#define \hyperlink{grammar_8c_a6419f3fd69ecb6b7e063410fd4e73b2f}{Y\-Y\-F\-I\-N\-A\-L}~6
+\item 
+\#define \hyperlink{grammar_8c_ae67923760a28e3b7ed3aa2cfaef7f9a2}{Y\-Y\-L\-A\-S\-T}~35
+\item 
+\#define \hyperlink{grammar_8c_a75d260730a6c379a94ea28f63a7b9275}{Y\-Y\-N\-T\-O\-K\-E\-N\-S}~23
+\item 
+\#define \hyperlink{grammar_8c_af54ae9e588f0ecc32eabbfdf1959df10}{Y\-Y\-N\-N\-T\-S}~20
+\item 
+\#define \hyperlink{grammar_8c_aceaba8997dc3867478ae3b816647eb7c}{Y\-Y\-N\-R\-U\-L\-E\-S}~39
+\item 
+\#define \hyperlink{grammar_8c_a2c387ba2caaade8bf8f78ed30023f79f}{Y\-Y\-N\-S\-T\-A\-T\-E\-S}~47
+\item 
+\#define \hyperlink{grammar_8c_a926181abd06b6d1df27b6133971c24ce}{Y\-Y\-U\-N\-D\-E\-F\-T\-O\-K}~2
+\item 
+\#define \hyperlink{grammar_8c_af3f5ed4bc4517eff0ef1b17541192a58}{Y\-Y\-M\-A\-X\-U\-T\-O\-K}~277
+\item 
+\#define \hyperlink{grammar_8c_aad19ee88e33c02c4e720b28f78249bd7}{Y\-Y\-T\-R\-A\-N\-S\-L\-A\-T\-E}(Y\-Y\-X)~((unsigned int) (Y\-Y\-X) $<$= \hyperlink{grammar_8c_af3f5ed4bc4517eff0ef1b17541192a58}{Y\-Y\-M\-A\-X\-U\-T\-O\-K} ? \hyperlink{grammar_8c_a384fb3797a340a5415c03719ebab9c67}{yytranslate}\mbox{[}Y\-Y\-X\mbox{]} \-: \hyperlink{grammar_8c_a926181abd06b6d1df27b6133971c24ce}{Y\-Y\-U\-N\-D\-E\-F\-T\-O\-K})
+\item 
+\#define \hyperlink{grammar_8c_a62bf0ed0c4360b077071b5cf3177823b}{Y\-Y\-P\-A\-C\-T\-\_\-\-N\-I\-N\-F}~-\/26
+\item 
+\#define \hyperlink{grammar_8c_a504faa93b92f37fcc147f68e8d111a1d}{Y\-Y\-T\-A\-B\-L\-E\-\_\-\-N\-I\-N\-F}~-\/1
+\item 
+\#define \hyperlink{grammar_8c_a20bf055e53dc4fd5afddfd752a4d1adb}{yyerrok}~(yyerrstatus = 0)
+\item 
+\#define \hyperlink{grammar_8c_a5035d59933b3f5388c44f596145db047}{yyclearin}~(\hyperlink{grammar_8c_a34af3aa88645c2f95bbb4d573f8713cb}{yychar} = \hyperlink{grammar_8c_ae59196b3765411a06cf234cf9bcae2e7}{Y\-Y\-E\-M\-P\-T\-Y})
+\item 
+\#define \hyperlink{grammar_8c_ae59196b3765411a06cf234cf9bcae2e7}{Y\-Y\-E\-M\-P\-T\-Y}~(-\/2)
+\item 
+\#define \hyperlink{grammar_8c_a3b1e3628411fabac03abe0a337322016}{Y\-Y\-E\-O\-F}~0
+\item 
+\#define \hyperlink{grammar_8c_aa6c7a65b580c214b2ea832fd7bdd472e}{Y\-Y\-A\-C\-C\-E\-P\-T}~goto yyacceptlab
+\item 
+\#define \hyperlink{grammar_8c_a3bcde0b05b9aa4ec5169092d9d211dbd}{Y\-Y\-A\-B\-O\-R\-T}~goto yyabortlab
+\item 
+\#define \hyperlink{grammar_8c_af1eef6197be78122699013d0784acc80}{Y\-Y\-E\-R\-R\-O\-R}~goto yyerrorlab
+\item 
+\#define \hyperlink{grammar_8c_a383d9671b1abd97e4c6f3708d1ca32f3}{Y\-Y\-F\-A\-I\-L}~goto yyerrlab
+\item 
+\#define \hyperlink{grammar_8c_ad860e18ca4b79fc589895b531bdb7948}{Y\-Y\-R\-E\-C\-O\-V\-E\-R\-I\-N\-G}()~(!!yyerrstatus)
+\item 
+\#define \hyperlink{grammar_8c_adfcaf974b837e3efc130377e9837b4fd}{Y\-Y\-B\-A\-C\-K\-U\-P}(Token, Value)
+\item 
+\#define \hyperlink{grammar_8c_ad2b58b1851184ddb3b60fede50bc7946}{Y\-Y\-T\-E\-R\-R\-O\-R}~1
+\item 
+\#define \hyperlink{grammar_8c_a552f295255821fa7dea11b0237e1d61a}{Y\-Y\-E\-R\-R\-C\-O\-D\-E}~256
+\item 
+\#define \hyperlink{grammar_8c_ab2b4f027a2b092ac14ca4464e7b3db60}{Y\-Y\-R\-H\-S\-L\-O\-C}(Rhs, K)~((Rhs)\mbox{[}K\mbox{]})
+\item 
+\#define \hyperlink{grammar_8c_a485d38f93de30679900c9cad6e7f3446}{Y\-Y\-L\-L\-O\-C\-\_\-\-D\-E\-F\-A\-U\-L\-T}(Current, Rhs, N)
+\item 
+\#define \hyperlink{grammar_8c_a52c7d936ca7e6c34687ff71f29b8cfd1}{Y\-Y\-\_\-\-L\-O\-C\-A\-T\-I\-O\-N\-\_\-\-P\-R\-I\-N\-T}(File, Loc)~((void) 0)
+\item 
+\#define \hyperlink{grammar_8c_a0ea34e09602d1ede033f16ba669ef24b}{Y\-Y\-L\-E\-X}~\hyperlink{grammar_8c_a5611300548b2030d86b6ab9168132b88}{yylex} (\&\hyperlink{scanner_8c_af8702f09f01285d3777507e641f94463}{yylval}, scanner)
+\item 
+\#define \hyperlink{grammar_8c_af6d6ca80e87922f90264f1a4a802ea04}{Y\-Y\-D\-P\-R\-I\-N\-T\-F}(Args)
+\item 
+\#define \hyperlink{grammar_8c_a1c510d33cb388afc9411141ba3076a36}{Y\-Y\-\_\-\-S\-Y\-M\-B\-O\-L\-\_\-\-P\-R\-I\-N\-T}(Title, Type, Value, Location)
+\item 
+\#define \hyperlink{grammar_8c_a7a52157fbe194e3a347afc4ef750af77}{Y\-Y\-\_\-\-S\-T\-A\-C\-K\-\_\-\-P\-R\-I\-N\-T}(Bottom, Top)
+\item 
+\#define \hyperlink{grammar_8c_a49ad456240785266cadae498ddae9310}{Y\-Y\-\_\-\-R\-E\-D\-U\-C\-E\-\_\-\-P\-R\-I\-N\-T}(Rule)
+\item 
+\#define \hyperlink{grammar_8c_aeb1508a3a38ec5d64c27e8eca25330b5}{Y\-Y\-I\-N\-I\-T\-D\-E\-P\-T\-H}~200
+\item 
+\#define \hyperlink{grammar_8c_a14ba2b263c446ffed1c888c4b42ae40c}{Y\-Y\-M\-A\-X\-D\-E\-P\-T\-H}~10000
+\item 
+\#define \hyperlink{grammar_8c_ad2f9773cd9c031026b2ef4c1ee7be1be}{Y\-Y\-P\-O\-P\-S\-T\-A\-C\-K}(N)~(yyvsp -\/= (N), yyssp -\/= (N))
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef union \hyperlink{unionYYSTYPE}{Y\-Y\-S\-T\-Y\-P\-E} \hyperlink{grammar_8c_a09fb1f7c65e10ed0f0c1aa8ef7ce16b5}{Y\-Y\-S\-T\-Y\-P\-E}
+\item 
+typedef unsigned char \hyperlink{grammar_8c_a79c09f9dcfd0f7a32f598ea3910d2206}{yytype\-\_\-uint8}
+\item 
+typedef short int \hyperlink{grammar_8c_afd56a33ef7e59189deccc83706e0becd}{yytype\-\_\-int8}
+\item 
+typedef unsigned short int \hyperlink{grammar_8c_a00c27c9da5ed06a830b216c8934e6b28}{yytype\-\_\-uint16}
+\item 
+typedef short int \hyperlink{grammar_8c_ade5b97f0021a4f6c5922ead3744ab297}{yytype\-\_\-int16}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9}{yytokentype} \{ \\*
+\hyperlink{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a86e6652aa292c8e978b68ace2b0f1300}{T\-O\-K\-\_\-\-B\-O\-O\-L\-E\-A\-N} = 258, 
+\hyperlink{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a7a97eb6460bcde5f66faca2e51730a82}{T\-O\-K\-\_\-\-I\-N\-T\-E\-G\-E\-R} = 259, 
+\hyperlink{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a1f511c1ba767bf05c44dacfa8eeefc2d}{T\-O\-K\-\_\-\-H\-E\-X} = 260, 
+\hyperlink{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a4c4ffb217c20c46d7d35faeac7b2ada2}{T\-O\-K\-\_\-\-I\-N\-T\-E\-G\-E\-R64} = 261, 
+\\*
+\hyperlink{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a446a605af769360d9c5b511e02be998c}{T\-O\-K\-\_\-\-H\-E\-X64} = 262, 
+\hyperlink{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9add470148bc49b9406cab8014f1a05e1a}{T\-O\-K\-\_\-\-F\-L\-O\-A\-T} = 263, 
+\hyperlink{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a6aed8afdbbec5110277334eba1c8d1ef}{T\-O\-K\-\_\-\-S\-T\-R\-I\-N\-G} = 264, 
+\hyperlink{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a2521ed04c163bb1cbdd6af6a3674cb8f}{T\-O\-K\-\_\-\-N\-A\-M\-E} = 265, 
+\\*
+\hyperlink{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a738fab9f730a0fb766fa02328739b7c3}{T\-O\-K\-\_\-\-E\-Q\-U\-A\-L\-S} = 266, 
+\hyperlink{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9af95d944540ec4759be1efca8422b1db7}{T\-O\-K\-\_\-\-N\-E\-W\-L\-I\-N\-E} = 267, 
+\hyperlink{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a6b912e59d3b01ff97b3cdc99e34886e8}{T\-O\-K\-\_\-\-A\-R\-R\-A\-Y\-\_\-\-S\-T\-A\-R\-T} = 268, 
+\hyperlink{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a32d61fe2e7d849bcd1e50d909c26eb83}{T\-O\-K\-\_\-\-A\-R\-R\-A\-Y\-\_\-\-E\-N\-D} = 269, 
+\\*
+\hyperlink{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9ac508a95b48de48b3afb83ffc60156165}{T\-O\-K\-\_\-\-L\-I\-S\-T\-\_\-\-S\-T\-A\-R\-T} = 270, 
+\hyperlink{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a10da87e4de3f19460926990feb2b8eea}{T\-O\-K\-\_\-\-L\-I\-S\-T\-\_\-\-E\-N\-D} = 271, 
+\hyperlink{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a62cdeef3d4613afb658caae912e99272}{T\-O\-K\-\_\-\-C\-O\-M\-M\-A} = 272, 
+\hyperlink{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a37a6f71fb6a5c296e1fb86c95216a317}{T\-O\-K\-\_\-\-G\-R\-O\-U\-P\-\_\-\-S\-T\-A\-R\-T} = 273, 
+\\*
+\hyperlink{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a125079fe82e20957e1cab0f5eb29e655}{T\-O\-K\-\_\-\-G\-R\-O\-U\-P\-\_\-\-E\-N\-D} = 274, 
+\hyperlink{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9aea2ea79171e8d0363830add7169ff88f}{T\-O\-K\-\_\-\-S\-E\-M\-I\-C\-O\-L\-O\-N} = 275, 
+\hyperlink{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a47ab3580bbebe6fe293dda08d328dec0}{T\-O\-K\-\_\-\-G\-A\-R\-B\-A\-G\-E} = 276, 
+\hyperlink{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a1e45d4c51261381ea32625e93e1c6ea0}{T\-O\-K\-\_\-\-E\-R\-R\-O\-R} = 277, 
+\\*
+\hyperlink{grammar_8h_a15c9f7bd2f0e9686df5d9df4f3314aa9a86e6652aa292c8e978b68ace2b0f1300}{T\-O\-K\-\_\-\-B\-O\-O\-L\-E\-A\-N} = 258, 
+\hyperlink{grammar_8h_a15c9f7bd2f0e9686df5d9df4f3314aa9a7a97eb6460bcde5f66faca2e51730a82}{T\-O\-K\-\_\-\-I\-N\-T\-E\-G\-E\-R} = 259, 
+\hyperlink{grammar_8h_a15c9f7bd2f0e9686df5d9df4f3314aa9a1f511c1ba767bf05c44dacfa8eeefc2d}{T\-O\-K\-\_\-\-H\-E\-X} = 260, 
+\hyperlink{grammar_8h_a15c9f7bd2f0e9686df5d9df4f3314aa9a4c4ffb217c20c46d7d35faeac7b2ada2}{T\-O\-K\-\_\-\-I\-N\-T\-E\-G\-E\-R64} = 261, 
+\\*
+\hyperlink{grammar_8h_a15c9f7bd2f0e9686df5d9df4f3314aa9a446a605af769360d9c5b511e02be998c}{T\-O\-K\-\_\-\-H\-E\-X64} = 262, 
+\hyperlink{grammar_8h_a15c9f7bd2f0e9686df5d9df4f3314aa9add470148bc49b9406cab8014f1a05e1a}{T\-O\-K\-\_\-\-F\-L\-O\-A\-T} = 263, 
+\hyperlink{grammar_8h_a15c9f7bd2f0e9686df5d9df4f3314aa9a6aed8afdbbec5110277334eba1c8d1ef}{T\-O\-K\-\_\-\-S\-T\-R\-I\-N\-G} = 264, 
+\hyperlink{grammar_8h_a15c9f7bd2f0e9686df5d9df4f3314aa9a2521ed04c163bb1cbdd6af6a3674cb8f}{T\-O\-K\-\_\-\-N\-A\-M\-E} = 265, 
+\\*
+\hyperlink{grammar_8h_a15c9f7bd2f0e9686df5d9df4f3314aa9a738fab9f730a0fb766fa02328739b7c3}{T\-O\-K\-\_\-\-E\-Q\-U\-A\-L\-S} = 266, 
+\hyperlink{grammar_8h_a15c9f7bd2f0e9686df5d9df4f3314aa9af95d944540ec4759be1efca8422b1db7}{T\-O\-K\-\_\-\-N\-E\-W\-L\-I\-N\-E} = 267, 
+\hyperlink{grammar_8h_a15c9f7bd2f0e9686df5d9df4f3314aa9a6b912e59d3b01ff97b3cdc99e34886e8}{T\-O\-K\-\_\-\-A\-R\-R\-A\-Y\-\_\-\-S\-T\-A\-R\-T} = 268, 
+\hyperlink{grammar_8h_a15c9f7bd2f0e9686df5d9df4f3314aa9a32d61fe2e7d849bcd1e50d909c26eb83}{T\-O\-K\-\_\-\-A\-R\-R\-A\-Y\-\_\-\-E\-N\-D} = 269, 
+\\*
+\hyperlink{grammar_8h_a15c9f7bd2f0e9686df5d9df4f3314aa9ac508a95b48de48b3afb83ffc60156165}{T\-O\-K\-\_\-\-L\-I\-S\-T\-\_\-\-S\-T\-A\-R\-T} = 270, 
+\hyperlink{grammar_8h_a15c9f7bd2f0e9686df5d9df4f3314aa9a10da87e4de3f19460926990feb2b8eea}{T\-O\-K\-\_\-\-L\-I\-S\-T\-\_\-\-E\-N\-D} = 271, 
+\hyperlink{grammar_8h_a15c9f7bd2f0e9686df5d9df4f3314aa9a62cdeef3d4613afb658caae912e99272}{T\-O\-K\-\_\-\-C\-O\-M\-M\-A} = 272, 
+\hyperlink{grammar_8h_a15c9f7bd2f0e9686df5d9df4f3314aa9a37a6f71fb6a5c296e1fb86c95216a317}{T\-O\-K\-\_\-\-G\-R\-O\-U\-P\-\_\-\-S\-T\-A\-R\-T} = 273, 
+\\*
+\hyperlink{grammar_8h_a15c9f7bd2f0e9686df5d9df4f3314aa9a125079fe82e20957e1cab0f5eb29e655}{T\-O\-K\-\_\-\-G\-R\-O\-U\-P\-\_\-\-E\-N\-D} = 274, 
+\hyperlink{grammar_8h_a15c9f7bd2f0e9686df5d9df4f3314aa9aea2ea79171e8d0363830add7169ff88f}{T\-O\-K\-\_\-\-S\-E\-M\-I\-C\-O\-L\-O\-N} = 275, 
+\hyperlink{grammar_8h_a15c9f7bd2f0e9686df5d9df4f3314aa9a47ab3580bbebe6fe293dda08d328dec0}{T\-O\-K\-\_\-\-G\-A\-R\-B\-A\-G\-E} = 276, 
+\hyperlink{grammar_8h_a15c9f7bd2f0e9686df5d9df4f3314aa9a1e45d4c51261381ea32625e93e1c6ea0}{T\-O\-K\-\_\-\-E\-R\-R\-O\-R} = 277
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{grammar_8c_ac18f7233e786481972ad879c051492d0}{libconfig\-\_\-yylex} ()
+\item 
+int \hyperlink{grammar_8c_a8b9e5cf0670f0bc7132836fd8f89a497}{libconfig\-\_\-yyget\-\_\-lineno} ()
+\item 
+static void \hyperlink{grammar_8c_abddd15915aa746f8e4fb3a5376623384}{capture\-\_\-parse\-\_\-pos} (void $\ast$scanner, struct \hyperlink{structscan__context}{scan\-\_\-context} $\ast$scan\-\_\-ctx, \hyperlink{structconfig__setting__t}{config\-\_\-setting\-\_\-t} $\ast$setting)
+\item 
+void \hyperlink{grammar_8c_aed5cee83fa537a585f1bd2a1799db48f}{libconfig\-\_\-yyerror} (void $\ast$scanner, struct \hyperlink{structparse__context}{parse\-\_\-context} $\ast$ctx, struct \hyperlink{structscan__context}{scan\-\_\-context} $\ast$scan\-\_\-ctx, char const $\ast$s)
+\item 
+static void \hyperlink{grammar_8c_a772a60ab70c07e5a2ff4d3c4a5b3280b}{yydestruct} (char $\ast$yymsg, int yytype, \hyperlink{unionYYSTYPE}{Y\-Y\-S\-T\-Y\-P\-E} $\ast$yyvaluep, void $\ast$scanner, struct \hyperlink{structparse__context}{parse\-\_\-context} $\ast$ctx, struct \hyperlink{structscan__context}{scan\-\_\-context} $\ast$scan\-\_\-ctx) const
+\item 
+int \hyperlink{grammar_8c_acd8617a8f2ac0de8bc1cc032cf449e19}{yyparse} ()
+\item 
+int \hyperlink{grammar_8c_aa95461e463ec8927a2b16e55683cfcaf}{yyparse} (void $\ast$scanner, struct \hyperlink{structparse__context}{parse\-\_\-context} $\ast$ctx, struct \hyperlink{structscan__context}{scan\-\_\-context} $\ast$scan\-\_\-ctx)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static const char $\ast$ \hyperlink{grammar_8c_a2b36faa3075f535045fd3f3bc7ede55a}{err\-\_\-array\-\_\-elem\-\_\-type} = \char`\"{}mismatched element type in array\char`\"{}
+\item 
+static const char $\ast$ \hyperlink{grammar_8c_ae4a9bd4903733c60d2bf4ea94e0731d5}{err\-\_\-duplicate\-\_\-setting} = \char`\"{}duplicate setting name\char`\"{}
+\item 
+static const \hyperlink{grammar_8c_a79c09f9dcfd0f7a32f598ea3910d2206}{yytype\-\_\-uint8} \hyperlink{grammar_8c_a384fb3797a340a5415c03719ebab9c67}{yytranslate} \mbox{[}$\,$\mbox{]}
+\item 
+static const \hyperlink{grammar_8c_a79c09f9dcfd0f7a32f598ea3910d2206}{yytype\-\_\-uint8} \hyperlink{grammar_8c_a0c34e3be3d497abf630697f406f3cc62}{yyr1} \mbox{[}$\,$\mbox{]}
+\item 
+static const \hyperlink{grammar_8c_a79c09f9dcfd0f7a32f598ea3910d2206}{yytype\-\_\-uint8} \hyperlink{grammar_8c_aa6be1bc256e649b3e922410e291bc7a5}{yyr2} \mbox{[}$\,$\mbox{]}
+\item 
+static const \hyperlink{grammar_8c_a79c09f9dcfd0f7a32f598ea3910d2206}{yytype\-\_\-uint8} \hyperlink{grammar_8c_af80f4a4ea9a69eb19837849cc7083c77}{yydefact} \mbox{[}$\,$\mbox{]}
+\item 
+static const \hyperlink{grammar_8c_afd56a33ef7e59189deccc83706e0becd}{yytype\-\_\-int8} \hyperlink{grammar_8c_add50b39c93bd000e59c735788074a427}{yydefgoto} \mbox{[}$\,$\mbox{]}
+\item 
+static const \hyperlink{grammar_8c_afd56a33ef7e59189deccc83706e0becd}{yytype\-\_\-int8} \hyperlink{grammar_8c_a5d5f1a7a5182e57a2589f4753bfaddc9}{yypact} \mbox{[}$\,$\mbox{]}
+\item 
+static const \hyperlink{grammar_8c_afd56a33ef7e59189deccc83706e0becd}{yytype\-\_\-int8} \hyperlink{grammar_8c_abb1d1e685ef953f65410be5d32544cfe}{yypgoto} \mbox{[}$\,$\mbox{]}
+\item 
+static const \hyperlink{grammar_8c_a79c09f9dcfd0f7a32f598ea3910d2206}{yytype\-\_\-uint8} \hyperlink{grammar_8c_aebb94255a7d4c72e6f9eea0a8e755c56}{yytable} \mbox{[}$\,$\mbox{]}
+\item 
+static const \hyperlink{grammar_8c_afd56a33ef7e59189deccc83706e0becd}{yytype\-\_\-int8} \hyperlink{grammar_8c_a40faef92d80fc0e07e3d399311c5ec88}{yycheck} \mbox{[}$\,$\mbox{]}
+\item 
+static const \hyperlink{grammar_8c_a79c09f9dcfd0f7a32f598ea3910d2206}{yytype\-\_\-uint8} \hyperlink{grammar_8c_abc7e1225b6a8ee7619f19504cbefd97b}{yystos} \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{grammar_8c_ae75d2f04c29571a14dc66528697efe32}{\index{grammar.\-c@{grammar.\-c}!\-\_\-delete@{\-\_\-delete}}
+\index{\-\_\-delete@{\-\_\-delete}!grammar.c@{grammar.\-c}}
+\subsubsection[{\-\_\-delete}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-\_\-delete(
+\begin{DoxyParamCaption}
+\item[{}]{P}
+\end{DoxyParamCaption}
+)~free((void $\ast$)(P))}}\label{grammar_8c_ae75d2f04c29571a14dc66528697efe32}
+\hypertarget{grammar_8c_a9fb1c745cfc3d1942313cebbbae51673}{\index{grammar.\-c@{grammar.\-c}!C\-A\-P\-T\-U\-R\-E\-\_\-\-P\-A\-R\-S\-E\-\_\-\-P\-O\-S@{C\-A\-P\-T\-U\-R\-E\-\_\-\-P\-A\-R\-S\-E\-\_\-\-P\-O\-S}}
+\index{C\-A\-P\-T\-U\-R\-E\-\_\-\-P\-A\-R\-S\-E\-\_\-\-P\-O\-S@{C\-A\-P\-T\-U\-R\-E\-\_\-\-P\-A\-R\-S\-E\-\_\-\-P\-O\-S}!grammar.c@{grammar.\-c}}
+\subsubsection[{C\-A\-P\-T\-U\-R\-E\-\_\-\-P\-A\-R\-S\-E\-\_\-\-P\-O\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-A\-P\-T\-U\-R\-E\-\_\-\-P\-A\-R\-S\-E\-\_\-\-P\-O\-S(
+\begin{DoxyParamCaption}
+\item[{}]{S}
+\end{DoxyParamCaption}
+)~{\bf capture\-\_\-parse\-\_\-pos}(scanner, scan\-\_\-ctx, (S))}}\label{grammar_8c_a9fb1c745cfc3d1942313cebbbae51673}
+\hypertarget{grammar_8c_a8d59f7370b518ab03025dc6e3fbc52ef}{\index{grammar.\-c@{grammar.\-c}!I\-N\-\_\-\-A\-R\-R\-A\-Y@{I\-N\-\_\-\-A\-R\-R\-A\-Y}}
+\index{I\-N\-\_\-\-A\-R\-R\-A\-Y@{I\-N\-\_\-\-A\-R\-R\-A\-Y}!grammar.c@{grammar.\-c}}
+\subsubsection[{I\-N\-\_\-\-A\-R\-R\-A\-Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-N\-\_\-\-A\-R\-R\-A\-Y(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~(ctx-\/$>$parent \&\& (ctx-\/$>$parent-\/$>$type == {\bf C\-O\-N\-F\-I\-G\-\_\-\-T\-Y\-P\-E\-\_\-\-A\-R\-R\-A\-Y}))}}\label{grammar_8c_a8d59f7370b518ab03025dc6e3fbc52ef}
+\hypertarget{grammar_8c_adb192a467809ffee7532369d7ca17f1c}{\index{grammar.\-c@{grammar.\-c}!I\-N\-\_\-\-L\-I\-S\-T@{I\-N\-\_\-\-L\-I\-S\-T}}
+\index{I\-N\-\_\-\-L\-I\-S\-T@{I\-N\-\_\-\-L\-I\-S\-T}!grammar.c@{grammar.\-c}}
+\subsubsection[{I\-N\-\_\-\-L\-I\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-N\-\_\-\-L\-I\-S\-T(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~(ctx-\/$>$parent \&\& (ctx-\/$>$parent-\/$>$type == {\bf C\-O\-N\-F\-I\-G\-\_\-\-T\-Y\-P\-E\-\_\-\-L\-I\-S\-T}))}}\label{grammar_8c_adb192a467809ffee7532369d7ca17f1c}
+\hypertarget{grammar_8c_a2e7af18fe1642f5eb00831393339400b}{\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-A\-R\-R\-A\-Y\-\_\-\-E\-N\-D@{T\-O\-K\-\_\-\-A\-R\-R\-A\-Y\-\_\-\-E\-N\-D}}
+\index{T\-O\-K\-\_\-\-A\-R\-R\-A\-Y\-\_\-\-E\-N\-D@{T\-O\-K\-\_\-\-A\-R\-R\-A\-Y\-\_\-\-E\-N\-D}!grammar.c@{grammar.\-c}}
+\subsubsection[{T\-O\-K\-\_\-\-A\-R\-R\-A\-Y\-\_\-\-E\-N\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-O\-K\-\_\-\-A\-R\-R\-A\-Y\-\_\-\-E\-N\-D~269}}\label{grammar_8c_a2e7af18fe1642f5eb00831393339400b}
+\hypertarget{grammar_8c_a937ba1cd996133cb5532011c310d8bdc}{\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-A\-R\-R\-A\-Y\-\_\-\-S\-T\-A\-R\-T@{T\-O\-K\-\_\-\-A\-R\-R\-A\-Y\-\_\-\-S\-T\-A\-R\-T}}
+\index{T\-O\-K\-\_\-\-A\-R\-R\-A\-Y\-\_\-\-S\-T\-A\-R\-T@{T\-O\-K\-\_\-\-A\-R\-R\-A\-Y\-\_\-\-S\-T\-A\-R\-T}!grammar.c@{grammar.\-c}}
+\subsubsection[{T\-O\-K\-\_\-\-A\-R\-R\-A\-Y\-\_\-\-S\-T\-A\-R\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-O\-K\-\_\-\-A\-R\-R\-A\-Y\-\_\-\-S\-T\-A\-R\-T~268}}\label{grammar_8c_a937ba1cd996133cb5532011c310d8bdc}
+\hypertarget{grammar_8c_a57e5660f647aa60e11ca9782e158949d}{\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-B\-O\-O\-L\-E\-A\-N@{T\-O\-K\-\_\-\-B\-O\-O\-L\-E\-A\-N}}
+\index{T\-O\-K\-\_\-\-B\-O\-O\-L\-E\-A\-N@{T\-O\-K\-\_\-\-B\-O\-O\-L\-E\-A\-N}!grammar.c@{grammar.\-c}}
+\subsubsection[{T\-O\-K\-\_\-\-B\-O\-O\-L\-E\-A\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-O\-K\-\_\-\-B\-O\-O\-L\-E\-A\-N~258}}\label{grammar_8c_a57e5660f647aa60e11ca9782e158949d}
+\hypertarget{grammar_8c_ae83b5d27d87a650e964b21698da02fda}{\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-C\-O\-M\-M\-A@{T\-O\-K\-\_\-\-C\-O\-M\-M\-A}}
+\index{T\-O\-K\-\_\-\-C\-O\-M\-M\-A@{T\-O\-K\-\_\-\-C\-O\-M\-M\-A}!grammar.c@{grammar.\-c}}
+\subsubsection[{T\-O\-K\-\_\-\-C\-O\-M\-M\-A}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-O\-K\-\_\-\-C\-O\-M\-M\-A~272}}\label{grammar_8c_ae83b5d27d87a650e964b21698da02fda}
+\hypertarget{grammar_8c_a2aee9f170594b125ed4275759d0f01f6}{\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-E\-Q\-U\-A\-L\-S@{T\-O\-K\-\_\-\-E\-Q\-U\-A\-L\-S}}
+\index{T\-O\-K\-\_\-\-E\-Q\-U\-A\-L\-S@{T\-O\-K\-\_\-\-E\-Q\-U\-A\-L\-S}!grammar.c@{grammar.\-c}}
+\subsubsection[{T\-O\-K\-\_\-\-E\-Q\-U\-A\-L\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-O\-K\-\_\-\-E\-Q\-U\-A\-L\-S~266}}\label{grammar_8c_a2aee9f170594b125ed4275759d0f01f6}
+\hypertarget{grammar_8c_a5d0d20b374e87f59d2aa1df79daf060b}{\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-E\-R\-R\-O\-R@{T\-O\-K\-\_\-\-E\-R\-R\-O\-R}}
+\index{T\-O\-K\-\_\-\-E\-R\-R\-O\-R@{T\-O\-K\-\_\-\-E\-R\-R\-O\-R}!grammar.c@{grammar.\-c}}
+\subsubsection[{T\-O\-K\-\_\-\-E\-R\-R\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-O\-K\-\_\-\-E\-R\-R\-O\-R~277}}\label{grammar_8c_a5d0d20b374e87f59d2aa1df79daf060b}
+\hypertarget{grammar_8c_a3867e462c2d373a53251ca0b835aada5}{\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-F\-L\-O\-A\-T@{T\-O\-K\-\_\-\-F\-L\-O\-A\-T}}
+\index{T\-O\-K\-\_\-\-F\-L\-O\-A\-T@{T\-O\-K\-\_\-\-F\-L\-O\-A\-T}!grammar.c@{grammar.\-c}}
+\subsubsection[{T\-O\-K\-\_\-\-F\-L\-O\-A\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-O\-K\-\_\-\-F\-L\-O\-A\-T~263}}\label{grammar_8c_a3867e462c2d373a53251ca0b835aada5}
+\hypertarget{grammar_8c_aecad1fed21ec8638deecc2c2679b65e1}{\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-G\-A\-R\-B\-A\-G\-E@{T\-O\-K\-\_\-\-G\-A\-R\-B\-A\-G\-E}}
+\index{T\-O\-K\-\_\-\-G\-A\-R\-B\-A\-G\-E@{T\-O\-K\-\_\-\-G\-A\-R\-B\-A\-G\-E}!grammar.c@{grammar.\-c}}
+\subsubsection[{T\-O\-K\-\_\-\-G\-A\-R\-B\-A\-G\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-O\-K\-\_\-\-G\-A\-R\-B\-A\-G\-E~276}}\label{grammar_8c_aecad1fed21ec8638deecc2c2679b65e1}
+\hypertarget{grammar_8c_a1a07150c25e16b69bc8b8f1a2dd4a068}{\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-G\-R\-O\-U\-P\-\_\-\-E\-N\-D@{T\-O\-K\-\_\-\-G\-R\-O\-U\-P\-\_\-\-E\-N\-D}}
+\index{T\-O\-K\-\_\-\-G\-R\-O\-U\-P\-\_\-\-E\-N\-D@{T\-O\-K\-\_\-\-G\-R\-O\-U\-P\-\_\-\-E\-N\-D}!grammar.c@{grammar.\-c}}
+\subsubsection[{T\-O\-K\-\_\-\-G\-R\-O\-U\-P\-\_\-\-E\-N\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-O\-K\-\_\-\-G\-R\-O\-U\-P\-\_\-\-E\-N\-D~274}}\label{grammar_8c_a1a07150c25e16b69bc8b8f1a2dd4a068}
+\hypertarget{grammar_8c_a063013921856046cbea18e57736dc1e6}{\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-G\-R\-O\-U\-P\-\_\-\-S\-T\-A\-R\-T@{T\-O\-K\-\_\-\-G\-R\-O\-U\-P\-\_\-\-S\-T\-A\-R\-T}}
+\index{T\-O\-K\-\_\-\-G\-R\-O\-U\-P\-\_\-\-S\-T\-A\-R\-T@{T\-O\-K\-\_\-\-G\-R\-O\-U\-P\-\_\-\-S\-T\-A\-R\-T}!grammar.c@{grammar.\-c}}
+\subsubsection[{T\-O\-K\-\_\-\-G\-R\-O\-U\-P\-\_\-\-S\-T\-A\-R\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-O\-K\-\_\-\-G\-R\-O\-U\-P\-\_\-\-S\-T\-A\-R\-T~273}}\label{grammar_8c_a063013921856046cbea18e57736dc1e6}
+\hypertarget{grammar_8c_abbb8340fa8257a75865a060cb4f492d5}{\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-H\-E\-X@{T\-O\-K\-\_\-\-H\-E\-X}}
+\index{T\-O\-K\-\_\-\-H\-E\-X@{T\-O\-K\-\_\-\-H\-E\-X}!grammar.c@{grammar.\-c}}
+\subsubsection[{T\-O\-K\-\_\-\-H\-E\-X}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-O\-K\-\_\-\-H\-E\-X~260}}\label{grammar_8c_abbb8340fa8257a75865a060cb4f492d5}
+\hypertarget{grammar_8c_ad9c1282beda9a0fcb200efcaf95a2702}{\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-H\-E\-X64@{T\-O\-K\-\_\-\-H\-E\-X64}}
+\index{T\-O\-K\-\_\-\-H\-E\-X64@{T\-O\-K\-\_\-\-H\-E\-X64}!grammar.c@{grammar.\-c}}
+\subsubsection[{T\-O\-K\-\_\-\-H\-E\-X64}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-O\-K\-\_\-\-H\-E\-X64~262}}\label{grammar_8c_ad9c1282beda9a0fcb200efcaf95a2702}
+\hypertarget{grammar_8c_afe8234318c40d23aa0ef8d7c6c3bb613}{\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-I\-N\-T\-E\-G\-E\-R@{T\-O\-K\-\_\-\-I\-N\-T\-E\-G\-E\-R}}
+\index{T\-O\-K\-\_\-\-I\-N\-T\-E\-G\-E\-R@{T\-O\-K\-\_\-\-I\-N\-T\-E\-G\-E\-R}!grammar.c@{grammar.\-c}}
+\subsubsection[{T\-O\-K\-\_\-\-I\-N\-T\-E\-G\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-O\-K\-\_\-\-I\-N\-T\-E\-G\-E\-R~259}}\label{grammar_8c_afe8234318c40d23aa0ef8d7c6c3bb613}
+\hypertarget{grammar_8c_a88bad54911209df594dc18cf5a862d77}{\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-I\-N\-T\-E\-G\-E\-R64@{T\-O\-K\-\_\-\-I\-N\-T\-E\-G\-E\-R64}}
+\index{T\-O\-K\-\_\-\-I\-N\-T\-E\-G\-E\-R64@{T\-O\-K\-\_\-\-I\-N\-T\-E\-G\-E\-R64}!grammar.c@{grammar.\-c}}
+\subsubsection[{T\-O\-K\-\_\-\-I\-N\-T\-E\-G\-E\-R64}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-O\-K\-\_\-\-I\-N\-T\-E\-G\-E\-R64~261}}\label{grammar_8c_a88bad54911209df594dc18cf5a862d77}
+\hypertarget{grammar_8c_a8856a703899dd9d15e7e4eb179aa473f}{\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-L\-I\-S\-T\-\_\-\-E\-N\-D@{T\-O\-K\-\_\-\-L\-I\-S\-T\-\_\-\-E\-N\-D}}
+\index{T\-O\-K\-\_\-\-L\-I\-S\-T\-\_\-\-E\-N\-D@{T\-O\-K\-\_\-\-L\-I\-S\-T\-\_\-\-E\-N\-D}!grammar.c@{grammar.\-c}}
+\subsubsection[{T\-O\-K\-\_\-\-L\-I\-S\-T\-\_\-\-E\-N\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-O\-K\-\_\-\-L\-I\-S\-T\-\_\-\-E\-N\-D~271}}\label{grammar_8c_a8856a703899dd9d15e7e4eb179aa473f}
+\hypertarget{grammar_8c_a59dead6373ce8a009c37c2acc6bb03de}{\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-L\-I\-S\-T\-\_\-\-S\-T\-A\-R\-T@{T\-O\-K\-\_\-\-L\-I\-S\-T\-\_\-\-S\-T\-A\-R\-T}}
+\index{T\-O\-K\-\_\-\-L\-I\-S\-T\-\_\-\-S\-T\-A\-R\-T@{T\-O\-K\-\_\-\-L\-I\-S\-T\-\_\-\-S\-T\-A\-R\-T}!grammar.c@{grammar.\-c}}
+\subsubsection[{T\-O\-K\-\_\-\-L\-I\-S\-T\-\_\-\-S\-T\-A\-R\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-O\-K\-\_\-\-L\-I\-S\-T\-\_\-\-S\-T\-A\-R\-T~270}}\label{grammar_8c_a59dead6373ce8a009c37c2acc6bb03de}
+\hypertarget{grammar_8c_ad988fa86b948db0ed4e4093dea41c9d4}{\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-N\-A\-M\-E@{T\-O\-K\-\_\-\-N\-A\-M\-E}}
+\index{T\-O\-K\-\_\-\-N\-A\-M\-E@{T\-O\-K\-\_\-\-N\-A\-M\-E}!grammar.c@{grammar.\-c}}
+\subsubsection[{T\-O\-K\-\_\-\-N\-A\-M\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-O\-K\-\_\-\-N\-A\-M\-E~265}}\label{grammar_8c_ad988fa86b948db0ed4e4093dea41c9d4}
+\hypertarget{grammar_8c_a6d75325443212b60baee084ea24ccc62}{\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-N\-E\-W\-L\-I\-N\-E@{T\-O\-K\-\_\-\-N\-E\-W\-L\-I\-N\-E}}
+\index{T\-O\-K\-\_\-\-N\-E\-W\-L\-I\-N\-E@{T\-O\-K\-\_\-\-N\-E\-W\-L\-I\-N\-E}!grammar.c@{grammar.\-c}}
+\subsubsection[{T\-O\-K\-\_\-\-N\-E\-W\-L\-I\-N\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-O\-K\-\_\-\-N\-E\-W\-L\-I\-N\-E~267}}\label{grammar_8c_a6d75325443212b60baee084ea24ccc62}
+\hypertarget{grammar_8c_aeed3603d6bcfa2873994098d2bffe4be}{\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-S\-E\-M\-I\-C\-O\-L\-O\-N@{T\-O\-K\-\_\-\-S\-E\-M\-I\-C\-O\-L\-O\-N}}
+\index{T\-O\-K\-\_\-\-S\-E\-M\-I\-C\-O\-L\-O\-N@{T\-O\-K\-\_\-\-S\-E\-M\-I\-C\-O\-L\-O\-N}!grammar.c@{grammar.\-c}}
+\subsubsection[{T\-O\-K\-\_\-\-S\-E\-M\-I\-C\-O\-L\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-O\-K\-\_\-\-S\-E\-M\-I\-C\-O\-L\-O\-N~275}}\label{grammar_8c_aeed3603d6bcfa2873994098d2bffe4be}
+\hypertarget{grammar_8c_a438ebcf2bfac5fd8af5356f3c0305839}{\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-S\-T\-R\-I\-N\-G@{T\-O\-K\-\_\-\-S\-T\-R\-I\-N\-G}}
+\index{T\-O\-K\-\_\-\-S\-T\-R\-I\-N\-G@{T\-O\-K\-\_\-\-S\-T\-R\-I\-N\-G}!grammar.c@{grammar.\-c}}
+\subsubsection[{T\-O\-K\-\_\-\-S\-T\-R\-I\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-O\-K\-\_\-\-S\-T\-R\-I\-N\-G~264}}\label{grammar_8c_a438ebcf2bfac5fd8af5356f3c0305839}
+\hypertarget{grammar_8c_a86f079016f11f0600f4259f3f03f8d43}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-\_\-@{Y\-Y\-\_\-}}
+\index{Y\-Y\-\_\-@{Y\-Y\-\_\-}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-\_\-(
+\begin{DoxyParamCaption}
+\item[{}]{msgid}
+\end{DoxyParamCaption}
+)~msgid}}\label{grammar_8c_a86f079016f11f0600f4259f3f03f8d43}
+\hypertarget{grammar_8c_a52c7d936ca7e6c34687ff71f29b8cfd1}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-\_\-\-L\-O\-C\-A\-T\-I\-O\-N\-\_\-\-P\-R\-I\-N\-T@{Y\-Y\-\_\-\-L\-O\-C\-A\-T\-I\-O\-N\-\_\-\-P\-R\-I\-N\-T}}
+\index{Y\-Y\-\_\-\-L\-O\-C\-A\-T\-I\-O\-N\-\_\-\-P\-R\-I\-N\-T@{Y\-Y\-\_\-\-L\-O\-C\-A\-T\-I\-O\-N\-\_\-\-P\-R\-I\-N\-T}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-\_\-\-L\-O\-C\-A\-T\-I\-O\-N\-\_\-\-P\-R\-I\-N\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-\_\-\-L\-O\-C\-A\-T\-I\-O\-N\-\_\-\-P\-R\-I\-N\-T(
+\begin{DoxyParamCaption}
+\item[{}]{File, }
+\item[{}]{Loc}
+\end{DoxyParamCaption}
+)~((void) 0)}}\label{grammar_8c_a52c7d936ca7e6c34687ff71f29b8cfd1}
+\hypertarget{grammar_8c_a49ad456240785266cadae498ddae9310}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-\_\-\-R\-E\-D\-U\-C\-E\-\_\-\-P\-R\-I\-N\-T@{Y\-Y\-\_\-\-R\-E\-D\-U\-C\-E\-\_\-\-P\-R\-I\-N\-T}}
+\index{Y\-Y\-\_\-\-R\-E\-D\-U\-C\-E\-\_\-\-P\-R\-I\-N\-T@{Y\-Y\-\_\-\-R\-E\-D\-U\-C\-E\-\_\-\-P\-R\-I\-N\-T}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-\_\-\-R\-E\-D\-U\-C\-E\-\_\-\-P\-R\-I\-N\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-\_\-\-R\-E\-D\-U\-C\-E\-\_\-\-P\-R\-I\-N\-T(
+\begin{DoxyParamCaption}
+\item[{}]{Rule}
+\end{DoxyParamCaption}
+)}}\label{grammar_8c_a49ad456240785266cadae498ddae9310}
+\hypertarget{grammar_8c_a7a52157fbe194e3a347afc4ef750af77}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-\_\-\-S\-T\-A\-C\-K\-\_\-\-P\-R\-I\-N\-T@{Y\-Y\-\_\-\-S\-T\-A\-C\-K\-\_\-\-P\-R\-I\-N\-T}}
+\index{Y\-Y\-\_\-\-S\-T\-A\-C\-K\-\_\-\-P\-R\-I\-N\-T@{Y\-Y\-\_\-\-S\-T\-A\-C\-K\-\_\-\-P\-R\-I\-N\-T}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-\_\-\-S\-T\-A\-C\-K\-\_\-\-P\-R\-I\-N\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-\_\-\-S\-T\-A\-C\-K\-\_\-\-P\-R\-I\-N\-T(
+\begin{DoxyParamCaption}
+\item[{}]{Bottom, }
+\item[{}]{Top}
+\end{DoxyParamCaption}
+)}}\label{grammar_8c_a7a52157fbe194e3a347afc4ef750af77}
+\hypertarget{grammar_8c_a1c510d33cb388afc9411141ba3076a36}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-\_\-\-S\-Y\-M\-B\-O\-L\-\_\-\-P\-R\-I\-N\-T@{Y\-Y\-\_\-\-S\-Y\-M\-B\-O\-L\-\_\-\-P\-R\-I\-N\-T}}
+\index{Y\-Y\-\_\-\-S\-Y\-M\-B\-O\-L\-\_\-\-P\-R\-I\-N\-T@{Y\-Y\-\_\-\-S\-Y\-M\-B\-O\-L\-\_\-\-P\-R\-I\-N\-T}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-\_\-\-S\-Y\-M\-B\-O\-L\-\_\-\-P\-R\-I\-N\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-\_\-\-S\-Y\-M\-B\-O\-L\-\_\-\-P\-R\-I\-N\-T(
+\begin{DoxyParamCaption}
+\item[{}]{Title, }
+\item[{}]{Type, }
+\item[{}]{Value, }
+\item[{}]{Location}
+\end{DoxyParamCaption}
+)}}\label{grammar_8c_a1c510d33cb388afc9411141ba3076a36}
+\hypertarget{grammar_8c_a3bcde0b05b9aa4ec5169092d9d211dbd}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-A\-B\-O\-R\-T@{Y\-Y\-A\-B\-O\-R\-T}}
+\index{Y\-Y\-A\-B\-O\-R\-T@{Y\-Y\-A\-B\-O\-R\-T}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-A\-B\-O\-R\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-A\-B\-O\-R\-T~goto yyabortlab}}\label{grammar_8c_a3bcde0b05b9aa4ec5169092d9d211dbd}
+\hypertarget{grammar_8c_aa6c7a65b580c214b2ea832fd7bdd472e}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-A\-C\-C\-E\-P\-T@{Y\-Y\-A\-C\-C\-E\-P\-T}}
+\index{Y\-Y\-A\-C\-C\-E\-P\-T@{Y\-Y\-A\-C\-C\-E\-P\-T}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-A\-C\-C\-E\-P\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-A\-C\-C\-E\-P\-T~goto yyacceptlab}}\label{grammar_8c_aa6c7a65b580c214b2ea832fd7bdd472e}
+\hypertarget{grammar_8c_adfcaf974b837e3efc130377e9837b4fd}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-B\-A\-C\-K\-U\-P@{Y\-Y\-B\-A\-C\-K\-U\-P}}
+\index{Y\-Y\-B\-A\-C\-K\-U\-P@{Y\-Y\-B\-A\-C\-K\-U\-P}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-B\-A\-C\-K\-U\-P}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-B\-A\-C\-K\-U\-P(
+\begin{DoxyParamCaption}
+\item[{}]{Token, }
+\item[{}]{Value}
+\end{DoxyParamCaption}
+)}}\label{grammar_8c_adfcaf974b837e3efc130377e9837b4fd}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\hyperlink{scanner_8c_a33e91cd0cef6786e9e3a27ac67707207}{do                              \(\backslash\)}
+\hyperlink{scanner_8c_a33e91cd0cef6786e9e3a27ac67707207}{  if} (\hyperlink{grammar_8c_a34af3aa88645c2f95bbb4d573f8713cb}{yychar} == \hyperlink{grammar_8c_ae59196b3765411a06cf234cf9bcae2e7}{YYEMPTY} && yylen == 1)             \(\backslash\)
+    \{                               \hyperlink{grammar_8c_a34af3aa88645c2f95bbb4d573f8713cb}{\(\backslash\)}
+\hyperlink{grammar_8c_a34af3aa88645c2f95bbb4d573f8713cb}{      yychar} = (Token);                     \hyperlink{grammar_8c_a75acfb3798e577ebd296e604e422e86b}{\(\backslash\)}
+\hyperlink{grammar_8c_a75acfb3798e577ebd296e604e422e86b}{      yylval} = (Value);                     \(\backslash\)
+      yytoken = \hyperlink{grammar_8c_aad19ee88e33c02c4e720b28f78249bd7}{YYTRANSLATE} (\hyperlink{grammar_8c_a34af3aa88645c2f95bbb4d573f8713cb}{yychar});              \hyperlink{grammar_8c_ad2f9773cd9c031026b2ef4c1ee7be1be}{\(\backslash\)}
+\hyperlink{grammar_8c_ad2f9773cd9c031026b2ef4c1ee7be1be}{      YYPOPSTACK} (1);                       \(\backslash\)
+      goto yybackup;                        \(\backslash\)
+    \}                               \(\backslash\)
+  else                              \(\backslash\)
+    \{                               \hyperlink{grammar_8c_afd2adb2274e61b81cf475d1ebea69d50}{\(\backslash\)}
+\hyperlink{grammar_8c_afd2adb2274e61b81cf475d1ebea69d50}{      yyerror} (scanner, ctx, scan\_ctx, \hyperlink{grammar_8c_a86f079016f11f0600f4259f3f03f8d43}{YY\_}(\textcolor{stringliteral}{"syntax error: cannot back up"})); 
+      \hyperlink{grammar_8c_af1eef6197be78122699013d0784acc80}{\(\backslash\)}
+\hyperlink{grammar_8c_af1eef6197be78122699013d0784acc80}{      YYERROR};                         \(\backslash\)
+    \}                               \hyperlink{scanner_8c_a8fdafe3be7e00ce3d4f0cb50a9a5eb39}{\(\backslash\)}
+\hyperlink{scanner_8c_a8fdafe3be7e00ce3d4f0cb50a9a5eb39}{while} (\hyperlink{grammar_8c_a0a6ff515042340dd341cf6ca8dd05f2d}{YYID} (0))
+\end{DoxyCode}
+\hypertarget{grammar_8c_a9f092f5b1dca6a6249fb2c7c8065b031}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-B\-I\-S\-O\-N@{Y\-Y\-B\-I\-S\-O\-N}}
+\index{Y\-Y\-B\-I\-S\-O\-N@{Y\-Y\-B\-I\-S\-O\-N}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-B\-I\-S\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-B\-I\-S\-O\-N~1}}\label{grammar_8c_a9f092f5b1dca6a6249fb2c7c8065b031}
+\hypertarget{grammar_8c_a72ebd0ca5807efcc6a5ae4fb72dd1553}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-B\-I\-S\-O\-N\-\_\-\-V\-E\-R\-S\-I\-O\-N@{Y\-Y\-B\-I\-S\-O\-N\-\_\-\-V\-E\-R\-S\-I\-O\-N}}
+\index{Y\-Y\-B\-I\-S\-O\-N\-\_\-\-V\-E\-R\-S\-I\-O\-N@{Y\-Y\-B\-I\-S\-O\-N\-\_\-\-V\-E\-R\-S\-I\-O\-N}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-B\-I\-S\-O\-N\-\_\-\-V\-E\-R\-S\-I\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-B\-I\-S\-O\-N\-\_\-\-V\-E\-R\-S\-I\-O\-N~\char`\"{}2.\-4.\-1\char`\"{}}}\label{grammar_8c_a72ebd0ca5807efcc6a5ae4fb72dd1553}
+\hypertarget{grammar_8c_a34af3aa88645c2f95bbb4d573f8713cb}{\index{grammar.\-c@{grammar.\-c}!yychar@{yychar}}
+\index{yychar@{yychar}!grammar.c@{grammar.\-c}}
+\subsubsection[{yychar}]{\setlength{\rightskip}{0pt plus 5cm}\#define yychar~libconfig\-\_\-yychar}}\label{grammar_8c_a34af3aa88645c2f95bbb4d573f8713cb}
+\hypertarget{grammar_8c_a5035d59933b3f5388c44f596145db047}{\index{grammar.\-c@{grammar.\-c}!yyclearin@{yyclearin}}
+\index{yyclearin@{yyclearin}!grammar.c@{grammar.\-c}}
+\subsubsection[{yyclearin}]{\setlength{\rightskip}{0pt plus 5cm}\#define yyclearin~({\bf yychar} = {\bf Y\-Y\-E\-M\-P\-T\-Y})}}\label{grammar_8c_a5035d59933b3f5388c44f596145db047}
+\hypertarget{grammar_8c_ad6586b145b5cddce4eec46f35d59b1dd}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-C\-O\-P\-Y@{Y\-Y\-C\-O\-P\-Y}}
+\index{Y\-Y\-C\-O\-P\-Y@{Y\-Y\-C\-O\-P\-Y}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-C\-O\-P\-Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-C\-O\-P\-Y(
+\begin{DoxyParamCaption}
+\item[{}]{To, }
+\item[{}]{From, }
+\item[{}]{Count}
+\end{DoxyParamCaption}
+)}}\label{grammar_8c_ad6586b145b5cddce4eec46f35d59b1dd}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do}                  \(\backslash\)
+    \{                   \hyperlink{grammar_8c_a7d535939e93253736c6eeda569d24de5}{\(\backslash\)}
+\hyperlink{grammar_8c_a7d535939e93253736c6eeda569d24de5}{      YYSIZE\_T} yyi;              \(\backslash\)
+      for (yyi = 0; yyi < (Count); yyi++)   \(\backslash\)
+        (To)[yyi] = (From)[yyi];        \(\backslash\)
+    \}                   \hyperlink{scanner_8c_a8fdafe3be7e00ce3d4f0cb50a9a5eb39}{\(\backslash\)}
+\hyperlink{scanner_8c_a8fdafe3be7e00ce3d4f0cb50a9a5eb39}{      while} (\hyperlink{grammar_8c_a0a6ff515042340dd341cf6ca8dd05f2d}{YYID} (0))
+\end{DoxyCode}
+\hypertarget{grammar_8c_a7fde6236fcb0f6e5d1d20ce98d9f0d01}{\index{grammar.\-c@{grammar.\-c}!yydebug@{yydebug}}
+\index{yydebug@{yydebug}!grammar.c@{grammar.\-c}}
+\subsubsection[{yydebug}]{\setlength{\rightskip}{0pt plus 5cm}\#define yydebug~libconfig\-\_\-yydebug}}\label{grammar_8c_a7fde6236fcb0f6e5d1d20ce98d9f0d01}
+\hypertarget{grammar_8c_a853b3bfad6d2b2ff693dce81182e0c2e}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-D\-E\-B\-U\-G@{Y\-Y\-D\-E\-B\-U\-G}}
+\index{Y\-Y\-D\-E\-B\-U\-G@{Y\-Y\-D\-E\-B\-U\-G}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-D\-E\-B\-U\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-D\-E\-B\-U\-G~0}}\label{grammar_8c_a853b3bfad6d2b2ff693dce81182e0c2e}
+\hypertarget{grammar_8c_af6d6ca80e87922f90264f1a4a802ea04}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-D\-P\-R\-I\-N\-T\-F@{Y\-Y\-D\-P\-R\-I\-N\-T\-F}}
+\index{Y\-Y\-D\-P\-R\-I\-N\-T\-F@{Y\-Y\-D\-P\-R\-I\-N\-T\-F}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-D\-P\-R\-I\-N\-T\-F}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-D\-P\-R\-I\-N\-T\-F(
+\begin{DoxyParamCaption}
+\item[{}]{Args}
+\end{DoxyParamCaption}
+)}}\label{grammar_8c_af6d6ca80e87922f90264f1a4a802ea04}
+\hypertarget{grammar_8c_ae59196b3765411a06cf234cf9bcae2e7}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-E\-M\-P\-T\-Y@{Y\-Y\-E\-M\-P\-T\-Y}}
+\index{Y\-Y\-E\-M\-P\-T\-Y@{Y\-Y\-E\-M\-P\-T\-Y}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-E\-M\-P\-T\-Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-E\-M\-P\-T\-Y~(-\/2)}}\label{grammar_8c_ae59196b3765411a06cf234cf9bcae2e7}
+\hypertarget{grammar_8c_a3b1e3628411fabac03abe0a337322016}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-E\-O\-F@{Y\-Y\-E\-O\-F}}
+\index{Y\-Y\-E\-O\-F@{Y\-Y\-E\-O\-F}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-E\-O\-F}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-E\-O\-F~0}}\label{grammar_8c_a3b1e3628411fabac03abe0a337322016}
+\hypertarget{grammar_8c_a552f295255821fa7dea11b0237e1d61a}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-E\-R\-R\-C\-O\-D\-E@{Y\-Y\-E\-R\-R\-C\-O\-D\-E}}
+\index{Y\-Y\-E\-R\-R\-C\-O\-D\-E@{Y\-Y\-E\-R\-R\-C\-O\-D\-E}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-E\-R\-R\-C\-O\-D\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-E\-R\-R\-C\-O\-D\-E~256}}\label{grammar_8c_a552f295255821fa7dea11b0237e1d61a}
+\hypertarget{grammar_8c_a20bf055e53dc4fd5afddfd752a4d1adb}{\index{grammar.\-c@{grammar.\-c}!yyerrok@{yyerrok}}
+\index{yyerrok@{yyerrok}!grammar.c@{grammar.\-c}}
+\subsubsection[{yyerrok}]{\setlength{\rightskip}{0pt plus 5cm}\#define yyerrok~(yyerrstatus = 0)}}\label{grammar_8c_a20bf055e53dc4fd5afddfd752a4d1adb}
+\hypertarget{grammar_8c_afd2adb2274e61b81cf475d1ebea69d50}{\index{grammar.\-c@{grammar.\-c}!yyerror@{yyerror}}
+\index{yyerror@{yyerror}!grammar.c@{grammar.\-c}}
+\subsubsection[{yyerror}]{\setlength{\rightskip}{0pt plus 5cm}\#define yyerror~{\bf libconfig\-\_\-yyerror}}}\label{grammar_8c_afd2adb2274e61b81cf475d1ebea69d50}
+\hypertarget{grammar_8c_af1eef6197be78122699013d0784acc80}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-E\-R\-R\-O\-R@{Y\-Y\-E\-R\-R\-O\-R}}
+\index{Y\-Y\-E\-R\-R\-O\-R@{Y\-Y\-E\-R\-R\-O\-R}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-E\-R\-R\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-E\-R\-R\-O\-R~goto yyerrorlab}}\label{grammar_8c_af1eef6197be78122699013d0784acc80}
+\hypertarget{grammar_8c_a0943f558a560b9b5fa0593d7e36496c1}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-E\-R\-R\-O\-R\-\_\-\-V\-E\-R\-B\-O\-S\-E@{Y\-Y\-E\-R\-R\-O\-R\-\_\-\-V\-E\-R\-B\-O\-S\-E}}
+\index{Y\-Y\-E\-R\-R\-O\-R\-\_\-\-V\-E\-R\-B\-O\-S\-E@{Y\-Y\-E\-R\-R\-O\-R\-\_\-\-V\-E\-R\-B\-O\-S\-E}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-E\-R\-R\-O\-R\-\_\-\-V\-E\-R\-B\-O\-S\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-E\-R\-R\-O\-R\-\_\-\-V\-E\-R\-B\-O\-S\-E~0}}\label{grammar_8c_a0943f558a560b9b5fa0593d7e36496c1}
+\hypertarget{grammar_8c_a383d9671b1abd97e4c6f3708d1ca32f3}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-F\-A\-I\-L@{Y\-Y\-F\-A\-I\-L}}
+\index{Y\-Y\-F\-A\-I\-L@{Y\-Y\-F\-A\-I\-L}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-F\-A\-I\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-F\-A\-I\-L~goto yyerrlab}}\label{grammar_8c_a383d9671b1abd97e4c6f3708d1ca32f3}
+\hypertarget{grammar_8c_a6419f3fd69ecb6b7e063410fd4e73b2f}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-F\-I\-N\-A\-L@{Y\-Y\-F\-I\-N\-A\-L}}
+\index{Y\-Y\-F\-I\-N\-A\-L@{Y\-Y\-F\-I\-N\-A\-L}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-F\-I\-N\-A\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-F\-I\-N\-A\-L~6}}\label{grammar_8c_a6419f3fd69ecb6b7e063410fd4e73b2f}
+\hypertarget{grammar_8c_ac8adfd73c006c1926f387feb1eced3ca}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-F\-R\-E\-E@{Y\-Y\-F\-R\-E\-E}}
+\index{Y\-Y\-F\-R\-E\-E@{Y\-Y\-F\-R\-E\-E}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-F\-R\-E\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-F\-R\-E\-E~free}}\label{grammar_8c_ac8adfd73c006c1926f387feb1eced3ca}
+\hypertarget{grammar_8c_a0a6ff515042340dd341cf6ca8dd05f2d}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-I\-D@{Y\-Y\-I\-D}}
+\index{Y\-Y\-I\-D@{Y\-Y\-I\-D}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-I\-D(
+\begin{DoxyParamCaption}
+\item[{}]{n}
+\end{DoxyParamCaption}
+)~(n)}}\label{grammar_8c_a0a6ff515042340dd341cf6ca8dd05f2d}
+\hypertarget{grammar_8c_aeb1508a3a38ec5d64c27e8eca25330b5}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-I\-N\-I\-T\-D\-E\-P\-T\-H@{Y\-Y\-I\-N\-I\-T\-D\-E\-P\-T\-H}}
+\index{Y\-Y\-I\-N\-I\-T\-D\-E\-P\-T\-H@{Y\-Y\-I\-N\-I\-T\-D\-E\-P\-T\-H}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-I\-N\-I\-T\-D\-E\-P\-T\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-I\-N\-I\-T\-D\-E\-P\-T\-H~200}}\label{grammar_8c_aeb1508a3a38ec5d64c27e8eca25330b5}
+\hypertarget{grammar_8c_ae67923760a28e3b7ed3aa2cfaef7f9a2}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-L\-A\-S\-T@{Y\-Y\-L\-A\-S\-T}}
+\index{Y\-Y\-L\-A\-S\-T@{Y\-Y\-L\-A\-S\-T}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-L\-A\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-L\-A\-S\-T~35}}\label{grammar_8c_ae67923760a28e3b7ed3aa2cfaef7f9a2}
+\hypertarget{grammar_8c_a5611300548b2030d86b6ab9168132b88}{\index{grammar.\-c@{grammar.\-c}!yylex@{yylex}}
+\index{yylex@{yylex}!grammar.c@{grammar.\-c}}
+\subsubsection[{yylex}]{\setlength{\rightskip}{0pt plus 5cm}\#define yylex~{\bf libconfig\-\_\-yylex}}}\label{grammar_8c_a5611300548b2030d86b6ab9168132b88}
+\hypertarget{grammar_8c_a0ea34e09602d1ede033f16ba669ef24b}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-L\-E\-X@{Y\-Y\-L\-E\-X}}
+\index{Y\-Y\-L\-E\-X@{Y\-Y\-L\-E\-X}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-L\-E\-X}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-L\-E\-X~{\bf yylex} (\&{\bf yylval}, scanner)}}\label{grammar_8c_a0ea34e09602d1ede033f16ba669ef24b}
+\hypertarget{grammar_8c_a485d38f93de30679900c9cad6e7f3446}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-L\-L\-O\-C\-\_\-\-D\-E\-F\-A\-U\-L\-T@{Y\-Y\-L\-L\-O\-C\-\_\-\-D\-E\-F\-A\-U\-L\-T}}
+\index{Y\-Y\-L\-L\-O\-C\-\_\-\-D\-E\-F\-A\-U\-L\-T@{Y\-Y\-L\-L\-O\-C\-\_\-\-D\-E\-F\-A\-U\-L\-T}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-L\-L\-O\-C\-\_\-\-D\-E\-F\-A\-U\-L\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-L\-L\-O\-C\-\_\-\-D\-E\-F\-A\-U\-L\-T(
+\begin{DoxyParamCaption}
+\item[{}]{Current, }
+\item[{}]{Rhs, }
+\item[{}]{N}
+\end{DoxyParamCaption}
+)}}\label{grammar_8c_a485d38f93de30679900c9cad6e7f3446}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\hyperlink{scanner_8c_a33e91cd0cef6786e9e3a27ac67707207}{do                                  \(\backslash\)}
+\hyperlink{scanner_8c_a33e91cd0cef6786e9e3a27ac67707207}{      if} (\hyperlink{grammar_8c_a0a6ff515042340dd341cf6ca8dd05f2d}{YYID} (N))                                                    \(\backslash\)
+    \{                               \(\backslash\)
+      (Current).first\_line   = \hyperlink{grammar_8c_ab2b4f027a2b092ac14ca4464e7b3db60}{YYRHSLOC} (Rhs, 1).first\_line;    \(\backslash\)
+      (Current).first\_column = \hyperlink{grammar_8c_ab2b4f027a2b092ac14ca4464e7b3db60}{YYRHSLOC} (Rhs, 1).first\_column;  \(\backslash\)
+      (Current).last\_line    = \hyperlink{grammar_8c_ab2b4f027a2b092ac14ca4464e7b3db60}{YYRHSLOC} (Rhs, N).last\_line;     \(\backslash\)
+      (Current).last\_column  = \hyperlink{grammar_8c_ab2b4f027a2b092ac14ca4464e7b3db60}{YYRHSLOC} (Rhs, N).last\_column;   \(\backslash\)
+    \}                               \(\backslash\)
+      else                              \(\backslash\)
+    \{                               \(\backslash\)
+      (Current).first\_line   = (Current).last\_line   =      \hyperlink{grammar_8c_ab2b4f027a2b092ac14ca4464e7b3db60}{\(\backslash\)}
+\hyperlink{grammar_8c_ab2b4f027a2b092ac14ca4464e7b3db60}{        YYRHSLOC} (Rhs, 0).last\_line;               \(\backslash\)
+      (Current).first\_column = (Current).last\_column =      \hyperlink{grammar_8c_ab2b4f027a2b092ac14ca4464e7b3db60}{\(\backslash\)}
+\hyperlink{grammar_8c_ab2b4f027a2b092ac14ca4464e7b3db60}{        YYRHSLOC} (Rhs, 0).last\_column;             \(\backslash\)
+    \}                               \hyperlink{scanner_8c_a8fdafe3be7e00ce3d4f0cb50a9a5eb39}{\(\backslash\)}
+\hyperlink{scanner_8c_a8fdafe3be7e00ce3d4f0cb50a9a5eb39}{    while} (\hyperlink{grammar_8c_a0a6ff515042340dd341cf6ca8dd05f2d}{YYID} (0))
+\end{DoxyCode}
+\hypertarget{grammar_8c_abb3943553c2b5e911c89a3ea973d3079}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-L\-S\-P\-\_\-\-N\-E\-E\-D\-E\-D@{Y\-Y\-L\-S\-P\-\_\-\-N\-E\-E\-D\-E\-D}}
+\index{Y\-Y\-L\-S\-P\-\_\-\-N\-E\-E\-D\-E\-D@{Y\-Y\-L\-S\-P\-\_\-\-N\-E\-E\-D\-E\-D}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-L\-S\-P\-\_\-\-N\-E\-E\-D\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-L\-S\-P\-\_\-\-N\-E\-E\-D\-E\-D~0}}\label{grammar_8c_abb3943553c2b5e911c89a3ea973d3079}
+\hypertarget{grammar_8c_a75acfb3798e577ebd296e604e422e86b}{\index{grammar.\-c@{grammar.\-c}!yylval@{yylval}}
+\index{yylval@{yylval}!grammar.c@{grammar.\-c}}
+\subsubsection[{yylval}]{\setlength{\rightskip}{0pt plus 5cm}\#define yylval~libconfig\-\_\-yylval}}\label{grammar_8c_a75acfb3798e577ebd296e604e422e86b}
+\hypertarget{grammar_8c_a573b05852d8f080c907dfba725773d7a}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-M\-A\-L\-L\-O\-C@{Y\-Y\-M\-A\-L\-L\-O\-C}}
+\index{Y\-Y\-M\-A\-L\-L\-O\-C@{Y\-Y\-M\-A\-L\-L\-O\-C}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-M\-A\-L\-L\-O\-C}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-M\-A\-L\-L\-O\-C~malloc}}\label{grammar_8c_a573b05852d8f080c907dfba725773d7a}
+\hypertarget{grammar_8c_a14ba2b263c446ffed1c888c4b42ae40c}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-M\-A\-X\-D\-E\-P\-T\-H@{Y\-Y\-M\-A\-X\-D\-E\-P\-T\-H}}
+\index{Y\-Y\-M\-A\-X\-D\-E\-P\-T\-H@{Y\-Y\-M\-A\-X\-D\-E\-P\-T\-H}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-M\-A\-X\-D\-E\-P\-T\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-M\-A\-X\-D\-E\-P\-T\-H~10000}}\label{grammar_8c_a14ba2b263c446ffed1c888c4b42ae40c}
+\hypertarget{grammar_8c_af3f5ed4bc4517eff0ef1b17541192a58}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-M\-A\-X\-U\-T\-O\-K@{Y\-Y\-M\-A\-X\-U\-T\-O\-K}}
+\index{Y\-Y\-M\-A\-X\-U\-T\-O\-K@{Y\-Y\-M\-A\-X\-U\-T\-O\-K}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-M\-A\-X\-U\-T\-O\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-M\-A\-X\-U\-T\-O\-K~277}}\label{grammar_8c_af3f5ed4bc4517eff0ef1b17541192a58}
+\hypertarget{grammar_8c_a956a31a9c729bfe871bb770d99e1942d}{\index{grammar.\-c@{grammar.\-c}!yynerrs@{yynerrs}}
+\index{yynerrs@{yynerrs}!grammar.c@{grammar.\-c}}
+\subsubsection[{yynerrs}]{\setlength{\rightskip}{0pt plus 5cm}\#define yynerrs~libconfig\-\_\-yynerrs}}\label{grammar_8c_a956a31a9c729bfe871bb770d99e1942d}
+\hypertarget{grammar_8c_af54ae9e588f0ecc32eabbfdf1959df10}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-N\-N\-T\-S@{Y\-Y\-N\-N\-T\-S}}
+\index{Y\-Y\-N\-N\-T\-S@{Y\-Y\-N\-N\-T\-S}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-N\-N\-T\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-N\-N\-T\-S~20}}\label{grammar_8c_af54ae9e588f0ecc32eabbfdf1959df10}
+\hypertarget{grammar_8c_aceaba8997dc3867478ae3b816647eb7c}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-N\-R\-U\-L\-E\-S@{Y\-Y\-N\-R\-U\-L\-E\-S}}
+\index{Y\-Y\-N\-R\-U\-L\-E\-S@{Y\-Y\-N\-R\-U\-L\-E\-S}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-N\-R\-U\-L\-E\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-N\-R\-U\-L\-E\-S~39}}\label{grammar_8c_aceaba8997dc3867478ae3b816647eb7c}
+\hypertarget{grammar_8c_a2c387ba2caaade8bf8f78ed30023f79f}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-N\-S\-T\-A\-T\-E\-S@{Y\-Y\-N\-S\-T\-A\-T\-E\-S}}
+\index{Y\-Y\-N\-S\-T\-A\-T\-E\-S@{Y\-Y\-N\-S\-T\-A\-T\-E\-S}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-N\-S\-T\-A\-T\-E\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-N\-S\-T\-A\-T\-E\-S~47}}\label{grammar_8c_a2c387ba2caaade8bf8f78ed30023f79f}
+\hypertarget{grammar_8c_a75d260730a6c379a94ea28f63a7b9275}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-N\-T\-O\-K\-E\-N\-S@{Y\-Y\-N\-T\-O\-K\-E\-N\-S}}
+\index{Y\-Y\-N\-T\-O\-K\-E\-N\-S@{Y\-Y\-N\-T\-O\-K\-E\-N\-S}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-N\-T\-O\-K\-E\-N\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-N\-T\-O\-K\-E\-N\-S~23}}\label{grammar_8c_a75d260730a6c379a94ea28f63a7b9275}
+\hypertarget{grammar_8c_a62bf0ed0c4360b077071b5cf3177823b}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-P\-A\-C\-T\-\_\-\-N\-I\-N\-F@{Y\-Y\-P\-A\-C\-T\-\_\-\-N\-I\-N\-F}}
+\index{Y\-Y\-P\-A\-C\-T\-\_\-\-N\-I\-N\-F@{Y\-Y\-P\-A\-C\-T\-\_\-\-N\-I\-N\-F}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-P\-A\-C\-T\-\_\-\-N\-I\-N\-F}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-P\-A\-C\-T\-\_\-\-N\-I\-N\-F~-\/26}}\label{grammar_8c_a62bf0ed0c4360b077071b5cf3177823b}
+\hypertarget{grammar_8c_a7482716c0f7d5bc8387ad56daa3a9fde}{\index{grammar.\-c@{grammar.\-c}!yyparse@{yyparse}}
+\index{yyparse@{yyparse}!grammar.c@{grammar.\-c}}
+\subsubsection[{yyparse}]{\setlength{\rightskip}{0pt plus 5cm}\#define yyparse~{\bf libconfig\-\_\-yyparse}}}\label{grammar_8c_a7482716c0f7d5bc8387ad56daa3a9fde}
+\hypertarget{grammar_8c_ad2f9773cd9c031026b2ef4c1ee7be1be}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-P\-O\-P\-S\-T\-A\-C\-K@{Y\-Y\-P\-O\-P\-S\-T\-A\-C\-K}}
+\index{Y\-Y\-P\-O\-P\-S\-T\-A\-C\-K@{Y\-Y\-P\-O\-P\-S\-T\-A\-C\-K}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-P\-O\-P\-S\-T\-A\-C\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-P\-O\-P\-S\-T\-A\-C\-K(
+\begin{DoxyParamCaption}
+\item[{}]{N}
+\end{DoxyParamCaption}
+)~(yyvsp -\/= (N), yyssp -\/= (N))}}\label{grammar_8c_ad2f9773cd9c031026b2ef4c1ee7be1be}
+\hypertarget{grammar_8c_a90f059b8a9d6c30a1e44e1b80d3fd6c8}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-P\-U\-L\-L@{Y\-Y\-P\-U\-L\-L}}
+\index{Y\-Y\-P\-U\-L\-L@{Y\-Y\-P\-U\-L\-L}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-P\-U\-L\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-P\-U\-L\-L~1}}\label{grammar_8c_a90f059b8a9d6c30a1e44e1b80d3fd6c8}
+\hypertarget{grammar_8c_a9fa797a1f3c4fc9b12d1e4d569612767}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-P\-U\-R\-E@{Y\-Y\-P\-U\-R\-E}}
+\index{Y\-Y\-P\-U\-R\-E@{Y\-Y\-P\-U\-R\-E}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-P\-U\-R\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-P\-U\-R\-E~1}}\label{grammar_8c_a9fa797a1f3c4fc9b12d1e4d569612767}
+\hypertarget{grammar_8c_a3aa6e4af11755f8cf8e5ddb26833e918}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-P\-U\-S\-H@{Y\-Y\-P\-U\-S\-H}}
+\index{Y\-Y\-P\-U\-S\-H@{Y\-Y\-P\-U\-S\-H}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-P\-U\-S\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-P\-U\-S\-H~0}}\label{grammar_8c_a3aa6e4af11755f8cf8e5ddb26833e918}
+\hypertarget{grammar_8c_ad860e18ca4b79fc589895b531bdb7948}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-R\-E\-C\-O\-V\-E\-R\-I\-N\-G@{Y\-Y\-R\-E\-C\-O\-V\-E\-R\-I\-N\-G}}
+\index{Y\-Y\-R\-E\-C\-O\-V\-E\-R\-I\-N\-G@{Y\-Y\-R\-E\-C\-O\-V\-E\-R\-I\-N\-G}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-R\-E\-C\-O\-V\-E\-R\-I\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-R\-E\-C\-O\-V\-E\-R\-I\-N\-G(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~(!!yyerrstatus)}}\label{grammar_8c_ad860e18ca4b79fc589895b531bdb7948}
+\hypertarget{grammar_8c_ab2b4f027a2b092ac14ca4464e7b3db60}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-R\-H\-S\-L\-O\-C@{Y\-Y\-R\-H\-S\-L\-O\-C}}
+\index{Y\-Y\-R\-H\-S\-L\-O\-C@{Y\-Y\-R\-H\-S\-L\-O\-C}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-R\-H\-S\-L\-O\-C}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-R\-H\-S\-L\-O\-C(
+\begin{DoxyParamCaption}
+\item[{}]{Rhs, }
+\item[{}]{K}
+\end{DoxyParamCaption}
+)~((Rhs)\mbox{[}K\mbox{]})}}\label{grammar_8c_ab2b4f027a2b092ac14ca4464e7b3db60}
+\hypertarget{grammar_8c_ab4bb7ad82d4a7e2df49ff6a8fb484109}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-S\-I\-Z\-E\-\_\-\-M\-A\-X\-I\-M\-U\-M@{Y\-Y\-S\-I\-Z\-E\-\_\-\-M\-A\-X\-I\-M\-U\-M}}
+\index{Y\-Y\-S\-I\-Z\-E\-\_\-\-M\-A\-X\-I\-M\-U\-M@{Y\-Y\-S\-I\-Z\-E\-\_\-\-M\-A\-X\-I\-M\-U\-M}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-S\-I\-Z\-E\-\_\-\-M\-A\-X\-I\-M\-U\-M}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-S\-I\-Z\-E\-\_\-\-M\-A\-X\-I\-M\-U\-M~(({\bf Y\-Y\-S\-I\-Z\-E\-\_\-\-T}) -\/1)}}\label{grammar_8c_ab4bb7ad82d4a7e2df49ff6a8fb484109}
+\hypertarget{grammar_8c_a7d535939e93253736c6eeda569d24de5}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-S\-I\-Z\-E\-\_\-\-T@{Y\-Y\-S\-I\-Z\-E\-\_\-\-T}}
+\index{Y\-Y\-S\-I\-Z\-E\-\_\-\-T@{Y\-Y\-S\-I\-Z\-E\-\_\-\-T}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-S\-I\-Z\-E\-\_\-\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-S\-I\-Z\-E\-\_\-\-T~unsigned int}}\label{grammar_8c_a7d535939e93253736c6eeda569d24de5}
+\hypertarget{grammar_8c_a50db5aef8c2b6f13961b2480b37f84c0}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-S\-K\-E\-L\-E\-T\-O\-N\-\_\-\-N\-A\-M\-E@{Y\-Y\-S\-K\-E\-L\-E\-T\-O\-N\-\_\-\-N\-A\-M\-E}}
+\index{Y\-Y\-S\-K\-E\-L\-E\-T\-O\-N\-\_\-\-N\-A\-M\-E@{Y\-Y\-S\-K\-E\-L\-E\-T\-O\-N\-\_\-\-N\-A\-M\-E}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-S\-K\-E\-L\-E\-T\-O\-N\-\_\-\-N\-A\-M\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-S\-K\-E\-L\-E\-T\-O\-N\-\_\-\-N\-A\-M\-E~\char`\"{}yacc.\-c\char`\"{}}}\label{grammar_8c_a50db5aef8c2b6f13961b2480b37f84c0}
+\hypertarget{grammar_8c_af45042ce56e04d634420d76caeb2ee73}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-S\-T\-A\-C\-K\-\_\-\-A\-L\-L\-O\-C@{Y\-Y\-S\-T\-A\-C\-K\-\_\-\-A\-L\-L\-O\-C}}
+\index{Y\-Y\-S\-T\-A\-C\-K\-\_\-\-A\-L\-L\-O\-C@{Y\-Y\-S\-T\-A\-C\-K\-\_\-\-A\-L\-L\-O\-C}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-S\-T\-A\-C\-K\-\_\-\-A\-L\-L\-O\-C}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-S\-T\-A\-C\-K\-\_\-\-A\-L\-L\-O\-C~{\bf Y\-Y\-M\-A\-L\-L\-O\-C}}}\label{grammar_8c_af45042ce56e04d634420d76caeb2ee73}
+\hypertarget{grammar_8c_a7e55d995c7458f2f4af94a426d0adde8}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-S\-T\-A\-C\-K\-\_\-\-A\-L\-L\-O\-C\-\_\-\-M\-A\-X\-I\-M\-U\-M@{Y\-Y\-S\-T\-A\-C\-K\-\_\-\-A\-L\-L\-O\-C\-\_\-\-M\-A\-X\-I\-M\-U\-M}}
+\index{Y\-Y\-S\-T\-A\-C\-K\-\_\-\-A\-L\-L\-O\-C\-\_\-\-M\-A\-X\-I\-M\-U\-M@{Y\-Y\-S\-T\-A\-C\-K\-\_\-\-A\-L\-L\-O\-C\-\_\-\-M\-A\-X\-I\-M\-U\-M}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-S\-T\-A\-C\-K\-\_\-\-A\-L\-L\-O\-C\-\_\-\-M\-A\-X\-I\-M\-U\-M}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-S\-T\-A\-C\-K\-\_\-\-A\-L\-L\-O\-C\-\_\-\-M\-A\-X\-I\-M\-U\-M~{\bf Y\-Y\-S\-I\-Z\-E\-\_\-\-M\-A\-X\-I\-M\-U\-M}}}\label{grammar_8c_a7e55d995c7458f2f4af94a426d0adde8}
+\hypertarget{grammar_8c_a40beb355f2cf230a99e2e2bb54909a5a}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-S\-T\-A\-C\-K\-\_\-\-B\-Y\-T\-E\-S@{Y\-Y\-S\-T\-A\-C\-K\-\_\-\-B\-Y\-T\-E\-S}}
+\index{Y\-Y\-S\-T\-A\-C\-K\-\_\-\-B\-Y\-T\-E\-S@{Y\-Y\-S\-T\-A\-C\-K\-\_\-\-B\-Y\-T\-E\-S}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-S\-T\-A\-C\-K\-\_\-\-B\-Y\-T\-E\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-S\-T\-A\-C\-K\-\_\-\-B\-Y\-T\-E\-S(
+\begin{DoxyParamCaption}
+\item[{}]{N}
+\end{DoxyParamCaption}
+)}}\label{grammar_8c_a40beb355f2cf230a99e2e2bb54909a5a}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+((N) * (\textcolor{keyword}{sizeof} (\hyperlink{grammar_8c_ade5b97f0021a4f6c5922ead3744ab297}{yytype\_int16}) + \textcolor{keyword}{sizeof} (\hyperlink{grammar_8c_a09fb1f7c65e10ed0f0c1aa8ef7ce16b5}{YYSTYPE})) \(\backslash\)
+      + \hyperlink{grammar_8c_afcd15dd0fa87ffba0371c6d6a0cc9631}{YYSTACK\_GAP\_MAXIMUM})
+\end{DoxyCode}
+\hypertarget{grammar_8c_a1a9dc526fd390d4808252bd631c4c2f7}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-S\-T\-A\-C\-K\-\_\-\-F\-R\-E\-E@{Y\-Y\-S\-T\-A\-C\-K\-\_\-\-F\-R\-E\-E}}
+\index{Y\-Y\-S\-T\-A\-C\-K\-\_\-\-F\-R\-E\-E@{Y\-Y\-S\-T\-A\-C\-K\-\_\-\-F\-R\-E\-E}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-S\-T\-A\-C\-K\-\_\-\-F\-R\-E\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-S\-T\-A\-C\-K\-\_\-\-F\-R\-E\-E~{\bf Y\-Y\-F\-R\-E\-E}}}\label{grammar_8c_a1a9dc526fd390d4808252bd631c4c2f7}
+\hypertarget{grammar_8c_afcd15dd0fa87ffba0371c6d6a0cc9631}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-S\-T\-A\-C\-K\-\_\-\-G\-A\-P\-\_\-\-M\-A\-X\-I\-M\-U\-M@{Y\-Y\-S\-T\-A\-C\-K\-\_\-\-G\-A\-P\-\_\-\-M\-A\-X\-I\-M\-U\-M}}
+\index{Y\-Y\-S\-T\-A\-C\-K\-\_\-\-G\-A\-P\-\_\-\-M\-A\-X\-I\-M\-U\-M@{Y\-Y\-S\-T\-A\-C\-K\-\_\-\-G\-A\-P\-\_\-\-M\-A\-X\-I\-M\-U\-M}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-S\-T\-A\-C\-K\-\_\-\-G\-A\-P\-\_\-\-M\-A\-X\-I\-M\-U\-M}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-S\-T\-A\-C\-K\-\_\-\-G\-A\-P\-\_\-\-M\-A\-X\-I\-M\-U\-M~(sizeof (union {\bf yyalloc}) -\/ 1)}}\label{grammar_8c_afcd15dd0fa87ffba0371c6d6a0cc9631}
+\hypertarget{grammar_8c_ae780b90b638f37309f20dc07f94e8221}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-S\-T\-A\-C\-K\-\_\-\-R\-E\-L\-O\-C\-A\-T\-E@{Y\-Y\-S\-T\-A\-C\-K\-\_\-\-R\-E\-L\-O\-C\-A\-T\-E}}
+\index{Y\-Y\-S\-T\-A\-C\-K\-\_\-\-R\-E\-L\-O\-C\-A\-T\-E@{Y\-Y\-S\-T\-A\-C\-K\-\_\-\-R\-E\-L\-O\-C\-A\-T\-E}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-S\-T\-A\-C\-K\-\_\-\-R\-E\-L\-O\-C\-A\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-S\-T\-A\-C\-K\-\_\-\-R\-E\-L\-O\-C\-A\-T\-E(
+\begin{DoxyParamCaption}
+\item[{}]{Stack\-\_\-alloc, }
+\item[{}]{Stack}
+\end{DoxyParamCaption}
+)}}\label{grammar_8c_ae780b90b638f37309f20dc07f94e8221}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do}                                  \(\backslash\)
+      \{                                 \hyperlink{grammar_8c_a7d535939e93253736c6eeda569d24de5}{\(\backslash\)}
+\hyperlink{grammar_8c_a7d535939e93253736c6eeda569d24de5}{    YYSIZE\_T} yynewbytes;                       \hyperlink{grammar_8c_ad6586b145b5cddce4eec46f35d59b1dd}{\(\backslash\)}
+\hyperlink{grammar_8c_ad6586b145b5cddce4eec46f35d59b1dd}{    YYCOPY} (&yyptr->Stack\_alloc, Stack, yysize);         \(\backslash\)
+    Stack = &yyptr->Stack\_alloc;                    \(\backslash\)
+    yynewbytes = yystacksize * \textcolor{keyword}{sizeof} (*Stack) + \hyperlink{grammar_8c_afcd15dd0fa87ffba0371c6d6a0cc9631}{YYSTACK\_GAP\_MAXIMUM}; \(\backslash\)
+    yyptr += yynewbytes / \textcolor{keyword}{sizeof} (*yyptr);              \(\backslash\)
+      \}                                 \hyperlink{scanner_8c_a8fdafe3be7e00ce3d4f0cb50a9a5eb39}{\(\backslash\)}
+\hyperlink{scanner_8c_a8fdafe3be7e00ce3d4f0cb50a9a5eb39}{    while} (\hyperlink{grammar_8c_a0a6ff515042340dd341cf6ca8dd05f2d}{YYID} (0))
+\end{DoxyCode}
+\hypertarget{grammar_8c_a4ccf5315e8f5c1cec48ec67ca1771e3a}{\index{grammar.\-c@{grammar.\-c}!yystype@{yystype}}
+\index{yystype@{yystype}!grammar.c@{grammar.\-c}}
+\subsubsection[{yystype}]{\setlength{\rightskip}{0pt plus 5cm}\#define yystype~{\bf Y\-Y\-S\-T\-Y\-P\-E} /$\ast$ obsolescent; will be withdrawn $\ast$/}}\label{grammar_8c_a4ccf5315e8f5c1cec48ec67ca1771e3a}
+\hypertarget{grammar_8c_af0232d21120b2cfc5e5f82f0fbadab3c}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-S\-T\-Y\-P\-E\-\_\-\-I\-S\-\_\-\-D\-E\-C\-L\-A\-R\-E\-D@{Y\-Y\-S\-T\-Y\-P\-E\-\_\-\-I\-S\-\_\-\-D\-E\-C\-L\-A\-R\-E\-D}}
+\index{Y\-Y\-S\-T\-Y\-P\-E\-\_\-\-I\-S\-\_\-\-D\-E\-C\-L\-A\-R\-E\-D@{Y\-Y\-S\-T\-Y\-P\-E\-\_\-\-I\-S\-\_\-\-D\-E\-C\-L\-A\-R\-E\-D}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-S\-T\-Y\-P\-E\-\_\-\-I\-S\-\_\-\-D\-E\-C\-L\-A\-R\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-S\-T\-Y\-P\-E\-\_\-\-I\-S\-\_\-\-D\-E\-C\-L\-A\-R\-E\-D~1}}\label{grammar_8c_af0232d21120b2cfc5e5f82f0fbadab3c}
+\hypertarget{grammar_8c_a2e3dbf169c5ee24cf6af37c61cf3995d}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-S\-T\-Y\-P\-E\-\_\-\-I\-S\-\_\-\-T\-R\-I\-V\-I\-A\-L@{Y\-Y\-S\-T\-Y\-P\-E\-\_\-\-I\-S\-\_\-\-T\-R\-I\-V\-I\-A\-L}}
+\index{Y\-Y\-S\-T\-Y\-P\-E\-\_\-\-I\-S\-\_\-\-T\-R\-I\-V\-I\-A\-L@{Y\-Y\-S\-T\-Y\-P\-E\-\_\-\-I\-S\-\_\-\-T\-R\-I\-V\-I\-A\-L}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-S\-T\-Y\-P\-E\-\_\-\-I\-S\-\_\-\-T\-R\-I\-V\-I\-A\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-S\-T\-Y\-P\-E\-\_\-\-I\-S\-\_\-\-T\-R\-I\-V\-I\-A\-L~1}}\label{grammar_8c_a2e3dbf169c5ee24cf6af37c61cf3995d}
+\hypertarget{grammar_8c_a504faa93b92f37fcc147f68e8d111a1d}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-T\-A\-B\-L\-E\-\_\-\-N\-I\-N\-F@{Y\-Y\-T\-A\-B\-L\-E\-\_\-\-N\-I\-N\-F}}
+\index{Y\-Y\-T\-A\-B\-L\-E\-\_\-\-N\-I\-N\-F@{Y\-Y\-T\-A\-B\-L\-E\-\_\-\-N\-I\-N\-F}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-T\-A\-B\-L\-E\-\_\-\-N\-I\-N\-F}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-T\-A\-B\-L\-E\-\_\-\-N\-I\-N\-F~-\/1}}\label{grammar_8c_a504faa93b92f37fcc147f68e8d111a1d}
+\hypertarget{grammar_8c_ad2b58b1851184ddb3b60fede50bc7946}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-T\-E\-R\-R\-O\-R@{Y\-Y\-T\-E\-R\-R\-O\-R}}
+\index{Y\-Y\-T\-E\-R\-R\-O\-R@{Y\-Y\-T\-E\-R\-R\-O\-R}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-T\-E\-R\-R\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-T\-E\-R\-R\-O\-R~1}}\label{grammar_8c_ad2b58b1851184ddb3b60fede50bc7946}
+\hypertarget{grammar_8c_a3499e31aa832edc82b632ae811286a4b}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-T\-O\-K\-E\-N\-\_\-\-T\-A\-B\-L\-E@{Y\-Y\-T\-O\-K\-E\-N\-\_\-\-T\-A\-B\-L\-E}}
+\index{Y\-Y\-T\-O\-K\-E\-N\-\_\-\-T\-A\-B\-L\-E@{Y\-Y\-T\-O\-K\-E\-N\-\_\-\-T\-A\-B\-L\-E}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-T\-O\-K\-E\-N\-\_\-\-T\-A\-B\-L\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-T\-O\-K\-E\-N\-\_\-\-T\-A\-B\-L\-E~0}}\label{grammar_8c_a3499e31aa832edc82b632ae811286a4b}
+\hypertarget{grammar_8c_a69ca0fbcc6d7aa5e8f47b11fc0048208}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-T\-O\-K\-E\-N\-T\-Y\-P\-E@{Y\-Y\-T\-O\-K\-E\-N\-T\-Y\-P\-E}}
+\index{Y\-Y\-T\-O\-K\-E\-N\-T\-Y\-P\-E@{Y\-Y\-T\-O\-K\-E\-N\-T\-Y\-P\-E}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-T\-O\-K\-E\-N\-T\-Y\-P\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-T\-O\-K\-E\-N\-T\-Y\-P\-E}}\label{grammar_8c_a69ca0fbcc6d7aa5e8f47b11fc0048208}
+\hypertarget{grammar_8c_aad19ee88e33c02c4e720b28f78249bd7}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-T\-R\-A\-N\-S\-L\-A\-T\-E@{Y\-Y\-T\-R\-A\-N\-S\-L\-A\-T\-E}}
+\index{Y\-Y\-T\-R\-A\-N\-S\-L\-A\-T\-E@{Y\-Y\-T\-R\-A\-N\-S\-L\-A\-T\-E}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-T\-R\-A\-N\-S\-L\-A\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-T\-R\-A\-N\-S\-L\-A\-T\-E(
+\begin{DoxyParamCaption}
+\item[{}]{Y\-Y\-X}
+\end{DoxyParamCaption}
+)~((unsigned int) (Y\-Y\-X) $<$= {\bf Y\-Y\-M\-A\-X\-U\-T\-O\-K} ? {\bf yytranslate}\mbox{[}Y\-Y\-X\mbox{]} \-: {\bf Y\-Y\-U\-N\-D\-E\-F\-T\-O\-K})}}\label{grammar_8c_aad19ee88e33c02c4e720b28f78249bd7}
+\hypertarget{grammar_8c_a926181abd06b6d1df27b6133971c24ce}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-U\-N\-D\-E\-F\-T\-O\-K@{Y\-Y\-U\-N\-D\-E\-F\-T\-O\-K}}
+\index{Y\-Y\-U\-N\-D\-E\-F\-T\-O\-K@{Y\-Y\-U\-N\-D\-E\-F\-T\-O\-K}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-U\-N\-D\-E\-F\-T\-O\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-U\-N\-D\-E\-F\-T\-O\-K~2}}\label{grammar_8c_a926181abd06b6d1df27b6133971c24ce}
+\hypertarget{grammar_8c_ad7d1ef1bbc6adfe69894bc8221f557e1}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-U\-S\-E@{Y\-Y\-U\-S\-E}}
+\index{Y\-Y\-U\-S\-E@{Y\-Y\-U\-S\-E}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-U\-S\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\-Y\-U\-S\-E(
+\begin{DoxyParamCaption}
+\item[{}]{e}
+\end{DoxyParamCaption}
+)~((void) (e))}}\label{grammar_8c_ad7d1ef1bbc6adfe69894bc8221f557e1}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{grammar_8c_a09fb1f7c65e10ed0f0c1aa8ef7ce16b5}{\index{grammar.\-c@{grammar.\-c}!Y\-Y\-S\-T\-Y\-P\-E@{Y\-Y\-S\-T\-Y\-P\-E}}
+\index{Y\-Y\-S\-T\-Y\-P\-E@{Y\-Y\-S\-T\-Y\-P\-E}!grammar.c@{grammar.\-c}}
+\subsubsection[{Y\-Y\-S\-T\-Y\-P\-E}]{\setlength{\rightskip}{0pt plus 5cm}typedef union {\bf Y\-Y\-S\-T\-Y\-P\-E}  {\bf Y\-Y\-S\-T\-Y\-P\-E}}}\label{grammar_8c_a09fb1f7c65e10ed0f0c1aa8ef7ce16b5}
+\hypertarget{grammar_8c_ade5b97f0021a4f6c5922ead3744ab297}{\index{grammar.\-c@{grammar.\-c}!yytype\-\_\-int16@{yytype\-\_\-int16}}
+\index{yytype\-\_\-int16@{yytype\-\_\-int16}!grammar.c@{grammar.\-c}}
+\subsubsection[{yytype\-\_\-int16}]{\setlength{\rightskip}{0pt plus 5cm}typedef short int {\bf yytype\-\_\-int16}}}\label{grammar_8c_ade5b97f0021a4f6c5922ead3744ab297}
+\hypertarget{grammar_8c_afd56a33ef7e59189deccc83706e0becd}{\index{grammar.\-c@{grammar.\-c}!yytype\-\_\-int8@{yytype\-\_\-int8}}
+\index{yytype\-\_\-int8@{yytype\-\_\-int8}!grammar.c@{grammar.\-c}}
+\subsubsection[{yytype\-\_\-int8}]{\setlength{\rightskip}{0pt plus 5cm}typedef short int {\bf yytype\-\_\-int8}}}\label{grammar_8c_afd56a33ef7e59189deccc83706e0becd}
+\hypertarget{grammar_8c_a00c27c9da5ed06a830b216c8934e6b28}{\index{grammar.\-c@{grammar.\-c}!yytype\-\_\-uint16@{yytype\-\_\-uint16}}
+\index{yytype\-\_\-uint16@{yytype\-\_\-uint16}!grammar.c@{grammar.\-c}}
+\subsubsection[{yytype\-\_\-uint16}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned short int {\bf yytype\-\_\-uint16}}}\label{grammar_8c_a00c27c9da5ed06a830b216c8934e6b28}
+\hypertarget{grammar_8c_a79c09f9dcfd0f7a32f598ea3910d2206}{\index{grammar.\-c@{grammar.\-c}!yytype\-\_\-uint8@{yytype\-\_\-uint8}}
+\index{yytype\-\_\-uint8@{yytype\-\_\-uint8}!grammar.c@{grammar.\-c}}
+\subsubsection[{yytype\-\_\-uint8}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned char {\bf yytype\-\_\-uint8}}}\label{grammar_8c_a79c09f9dcfd0f7a32f598ea3910d2206}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9}{\index{grammar.\-c@{grammar.\-c}!yytokentype@{yytokentype}}
+\index{yytokentype@{yytokentype}!grammar.c@{grammar.\-c}}
+\subsubsection[{yytokentype}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf yytokentype}}}\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{T\-O\-K\-\_\-\-B\-O\-O\-L\-E\-A\-N@{T\-O\-K\-\_\-\-B\-O\-O\-L\-E\-A\-N}!grammar.\-c@{grammar.\-c}}\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-B\-O\-O\-L\-E\-A\-N@{T\-O\-K\-\_\-\-B\-O\-O\-L\-E\-A\-N}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a86e6652aa292c8e978b68ace2b0f1300}{T\-O\-K\-\_\-\-B\-O\-O\-L\-E\-A\-N}\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a86e6652aa292c8e978b68ace2b0f1300}
+}]\index{T\-O\-K\-\_\-\-I\-N\-T\-E\-G\-E\-R@{T\-O\-K\-\_\-\-I\-N\-T\-E\-G\-E\-R}!grammar.\-c@{grammar.\-c}}\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-I\-N\-T\-E\-G\-E\-R@{T\-O\-K\-\_\-\-I\-N\-T\-E\-G\-E\-R}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a7a97eb6460bcde5f66faca2e51730a82}{T\-O\-K\-\_\-\-I\-N\-T\-E\-G\-E\-R}\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a7a97eb6460bcde5f66faca2e51730a82}
+}]\index{T\-O\-K\-\_\-\-H\-E\-X@{T\-O\-K\-\_\-\-H\-E\-X}!grammar.\-c@{grammar.\-c}}\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-H\-E\-X@{T\-O\-K\-\_\-\-H\-E\-X}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a1f511c1ba767bf05c44dacfa8eeefc2d}{T\-O\-K\-\_\-\-H\-E\-X}\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a1f511c1ba767bf05c44dacfa8eeefc2d}
+}]\index{T\-O\-K\-\_\-\-I\-N\-T\-E\-G\-E\-R64@{T\-O\-K\-\_\-\-I\-N\-T\-E\-G\-E\-R64}!grammar.\-c@{grammar.\-c}}\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-I\-N\-T\-E\-G\-E\-R64@{T\-O\-K\-\_\-\-I\-N\-T\-E\-G\-E\-R64}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a4c4ffb217c20c46d7d35faeac7b2ada2}{T\-O\-K\-\_\-\-I\-N\-T\-E\-G\-E\-R64}\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a4c4ffb217c20c46d7d35faeac7b2ada2}
+}]\index{T\-O\-K\-\_\-\-H\-E\-X64@{T\-O\-K\-\_\-\-H\-E\-X64}!grammar.\-c@{grammar.\-c}}\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-H\-E\-X64@{T\-O\-K\-\_\-\-H\-E\-X64}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a446a605af769360d9c5b511e02be998c}{T\-O\-K\-\_\-\-H\-E\-X64}\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a446a605af769360d9c5b511e02be998c}
+}]\index{T\-O\-K\-\_\-\-F\-L\-O\-A\-T@{T\-O\-K\-\_\-\-F\-L\-O\-A\-T}!grammar.\-c@{grammar.\-c}}\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-F\-L\-O\-A\-T@{T\-O\-K\-\_\-\-F\-L\-O\-A\-T}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9add470148bc49b9406cab8014f1a05e1a}{T\-O\-K\-\_\-\-F\-L\-O\-A\-T}\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9add470148bc49b9406cab8014f1a05e1a}
+}]\index{T\-O\-K\-\_\-\-S\-T\-R\-I\-N\-G@{T\-O\-K\-\_\-\-S\-T\-R\-I\-N\-G}!grammar.\-c@{grammar.\-c}}\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-S\-T\-R\-I\-N\-G@{T\-O\-K\-\_\-\-S\-T\-R\-I\-N\-G}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a6aed8afdbbec5110277334eba1c8d1ef}{T\-O\-K\-\_\-\-S\-T\-R\-I\-N\-G}\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a6aed8afdbbec5110277334eba1c8d1ef}
+}]\index{T\-O\-K\-\_\-\-N\-A\-M\-E@{T\-O\-K\-\_\-\-N\-A\-M\-E}!grammar.\-c@{grammar.\-c}}\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-N\-A\-M\-E@{T\-O\-K\-\_\-\-N\-A\-M\-E}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a2521ed04c163bb1cbdd6af6a3674cb8f}{T\-O\-K\-\_\-\-N\-A\-M\-E}\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a2521ed04c163bb1cbdd6af6a3674cb8f}
+}]\index{T\-O\-K\-\_\-\-E\-Q\-U\-A\-L\-S@{T\-O\-K\-\_\-\-E\-Q\-U\-A\-L\-S}!grammar.\-c@{grammar.\-c}}\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-E\-Q\-U\-A\-L\-S@{T\-O\-K\-\_\-\-E\-Q\-U\-A\-L\-S}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a738fab9f730a0fb766fa02328739b7c3}{T\-O\-K\-\_\-\-E\-Q\-U\-A\-L\-S}\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a738fab9f730a0fb766fa02328739b7c3}
+}]\index{T\-O\-K\-\_\-\-N\-E\-W\-L\-I\-N\-E@{T\-O\-K\-\_\-\-N\-E\-W\-L\-I\-N\-E}!grammar.\-c@{grammar.\-c}}\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-N\-E\-W\-L\-I\-N\-E@{T\-O\-K\-\_\-\-N\-E\-W\-L\-I\-N\-E}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9af95d944540ec4759be1efca8422b1db7}{T\-O\-K\-\_\-\-N\-E\-W\-L\-I\-N\-E}\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9af95d944540ec4759be1efca8422b1db7}
+}]\index{T\-O\-K\-\_\-\-A\-R\-R\-A\-Y\-\_\-\-S\-T\-A\-R\-T@{T\-O\-K\-\_\-\-A\-R\-R\-A\-Y\-\_\-\-S\-T\-A\-R\-T}!grammar.\-c@{grammar.\-c}}\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-A\-R\-R\-A\-Y\-\_\-\-S\-T\-A\-R\-T@{T\-O\-K\-\_\-\-A\-R\-R\-A\-Y\-\_\-\-S\-T\-A\-R\-T}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a6b912e59d3b01ff97b3cdc99e34886e8}{T\-O\-K\-\_\-\-A\-R\-R\-A\-Y\-\_\-\-S\-T\-A\-R\-T}\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a6b912e59d3b01ff97b3cdc99e34886e8}
+}]\index{T\-O\-K\-\_\-\-A\-R\-R\-A\-Y\-\_\-\-E\-N\-D@{T\-O\-K\-\_\-\-A\-R\-R\-A\-Y\-\_\-\-E\-N\-D}!grammar.\-c@{grammar.\-c}}\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-A\-R\-R\-A\-Y\-\_\-\-E\-N\-D@{T\-O\-K\-\_\-\-A\-R\-R\-A\-Y\-\_\-\-E\-N\-D}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a32d61fe2e7d849bcd1e50d909c26eb83}{T\-O\-K\-\_\-\-A\-R\-R\-A\-Y\-\_\-\-E\-N\-D}\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a32d61fe2e7d849bcd1e50d909c26eb83}
+}]\index{T\-O\-K\-\_\-\-L\-I\-S\-T\-\_\-\-S\-T\-A\-R\-T@{T\-O\-K\-\_\-\-L\-I\-S\-T\-\_\-\-S\-T\-A\-R\-T}!grammar.\-c@{grammar.\-c}}\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-L\-I\-S\-T\-\_\-\-S\-T\-A\-R\-T@{T\-O\-K\-\_\-\-L\-I\-S\-T\-\_\-\-S\-T\-A\-R\-T}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9ac508a95b48de48b3afb83ffc60156165}{T\-O\-K\-\_\-\-L\-I\-S\-T\-\_\-\-S\-T\-A\-R\-T}\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9ac508a95b48de48b3afb83ffc60156165}
+}]\index{T\-O\-K\-\_\-\-L\-I\-S\-T\-\_\-\-E\-N\-D@{T\-O\-K\-\_\-\-L\-I\-S\-T\-\_\-\-E\-N\-D}!grammar.\-c@{grammar.\-c}}\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-L\-I\-S\-T\-\_\-\-E\-N\-D@{T\-O\-K\-\_\-\-L\-I\-S\-T\-\_\-\-E\-N\-D}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a10da87e4de3f19460926990feb2b8eea}{T\-O\-K\-\_\-\-L\-I\-S\-T\-\_\-\-E\-N\-D}\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a10da87e4de3f19460926990feb2b8eea}
+}]\index{T\-O\-K\-\_\-\-C\-O\-M\-M\-A@{T\-O\-K\-\_\-\-C\-O\-M\-M\-A}!grammar.\-c@{grammar.\-c}}\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-C\-O\-M\-M\-A@{T\-O\-K\-\_\-\-C\-O\-M\-M\-A}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a62cdeef3d4613afb658caae912e99272}{T\-O\-K\-\_\-\-C\-O\-M\-M\-A}\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a62cdeef3d4613afb658caae912e99272}
+}]\index{T\-O\-K\-\_\-\-G\-R\-O\-U\-P\-\_\-\-S\-T\-A\-R\-T@{T\-O\-K\-\_\-\-G\-R\-O\-U\-P\-\_\-\-S\-T\-A\-R\-T}!grammar.\-c@{grammar.\-c}}\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-G\-R\-O\-U\-P\-\_\-\-S\-T\-A\-R\-T@{T\-O\-K\-\_\-\-G\-R\-O\-U\-P\-\_\-\-S\-T\-A\-R\-T}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a37a6f71fb6a5c296e1fb86c95216a317}{T\-O\-K\-\_\-\-G\-R\-O\-U\-P\-\_\-\-S\-T\-A\-R\-T}\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a37a6f71fb6a5c296e1fb86c95216a317}
+}]\index{T\-O\-K\-\_\-\-G\-R\-O\-U\-P\-\_\-\-E\-N\-D@{T\-O\-K\-\_\-\-G\-R\-O\-U\-P\-\_\-\-E\-N\-D}!grammar.\-c@{grammar.\-c}}\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-G\-R\-O\-U\-P\-\_\-\-E\-N\-D@{T\-O\-K\-\_\-\-G\-R\-O\-U\-P\-\_\-\-E\-N\-D}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a125079fe82e20957e1cab0f5eb29e655}{T\-O\-K\-\_\-\-G\-R\-O\-U\-P\-\_\-\-E\-N\-D}\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a125079fe82e20957e1cab0f5eb29e655}
+}]\index{T\-O\-K\-\_\-\-S\-E\-M\-I\-C\-O\-L\-O\-N@{T\-O\-K\-\_\-\-S\-E\-M\-I\-C\-O\-L\-O\-N}!grammar.\-c@{grammar.\-c}}\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-S\-E\-M\-I\-C\-O\-L\-O\-N@{T\-O\-K\-\_\-\-S\-E\-M\-I\-C\-O\-L\-O\-N}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9aea2ea79171e8d0363830add7169ff88f}{T\-O\-K\-\_\-\-S\-E\-M\-I\-C\-O\-L\-O\-N}\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9aea2ea79171e8d0363830add7169ff88f}
+}]\index{T\-O\-K\-\_\-\-G\-A\-R\-B\-A\-G\-E@{T\-O\-K\-\_\-\-G\-A\-R\-B\-A\-G\-E}!grammar.\-c@{grammar.\-c}}\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-G\-A\-R\-B\-A\-G\-E@{T\-O\-K\-\_\-\-G\-A\-R\-B\-A\-G\-E}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a47ab3580bbebe6fe293dda08d328dec0}{T\-O\-K\-\_\-\-G\-A\-R\-B\-A\-G\-E}\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a47ab3580bbebe6fe293dda08d328dec0}
+}]\index{T\-O\-K\-\_\-\-E\-R\-R\-O\-R@{T\-O\-K\-\_\-\-E\-R\-R\-O\-R}!grammar.\-c@{grammar.\-c}}\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-E\-R\-R\-O\-R@{T\-O\-K\-\_\-\-E\-R\-R\-O\-R}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a1e45d4c51261381ea32625e93e1c6ea0}{T\-O\-K\-\_\-\-E\-R\-R\-O\-R}\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a1e45d4c51261381ea32625e93e1c6ea0}
+}]\index{T\-O\-K\-\_\-\-B\-O\-O\-L\-E\-A\-N@{T\-O\-K\-\_\-\-B\-O\-O\-L\-E\-A\-N}!grammar.\-c@{grammar.\-c}}\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-B\-O\-O\-L\-E\-A\-N@{T\-O\-K\-\_\-\-B\-O\-O\-L\-E\-A\-N}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a86e6652aa292c8e978b68ace2b0f1300}{T\-O\-K\-\_\-\-B\-O\-O\-L\-E\-A\-N}\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a86e6652aa292c8e978b68ace2b0f1300}
+}]\index{T\-O\-K\-\_\-\-I\-N\-T\-E\-G\-E\-R@{T\-O\-K\-\_\-\-I\-N\-T\-E\-G\-E\-R}!grammar.\-c@{grammar.\-c}}\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-I\-N\-T\-E\-G\-E\-R@{T\-O\-K\-\_\-\-I\-N\-T\-E\-G\-E\-R}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a7a97eb6460bcde5f66faca2e51730a82}{T\-O\-K\-\_\-\-I\-N\-T\-E\-G\-E\-R}\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a7a97eb6460bcde5f66faca2e51730a82}
+}]\index{T\-O\-K\-\_\-\-H\-E\-X@{T\-O\-K\-\_\-\-H\-E\-X}!grammar.\-c@{grammar.\-c}}\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-H\-E\-X@{T\-O\-K\-\_\-\-H\-E\-X}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a1f511c1ba767bf05c44dacfa8eeefc2d}{T\-O\-K\-\_\-\-H\-E\-X}\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a1f511c1ba767bf05c44dacfa8eeefc2d}
+}]\index{T\-O\-K\-\_\-\-I\-N\-T\-E\-G\-E\-R64@{T\-O\-K\-\_\-\-I\-N\-T\-E\-G\-E\-R64}!grammar.\-c@{grammar.\-c}}\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-I\-N\-T\-E\-G\-E\-R64@{T\-O\-K\-\_\-\-I\-N\-T\-E\-G\-E\-R64}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a4c4ffb217c20c46d7d35faeac7b2ada2}{T\-O\-K\-\_\-\-I\-N\-T\-E\-G\-E\-R64}\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a4c4ffb217c20c46d7d35faeac7b2ada2}
+}]\index{T\-O\-K\-\_\-\-H\-E\-X64@{T\-O\-K\-\_\-\-H\-E\-X64}!grammar.\-c@{grammar.\-c}}\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-H\-E\-X64@{T\-O\-K\-\_\-\-H\-E\-X64}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a446a605af769360d9c5b511e02be998c}{T\-O\-K\-\_\-\-H\-E\-X64}\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a446a605af769360d9c5b511e02be998c}
+}]\index{T\-O\-K\-\_\-\-F\-L\-O\-A\-T@{T\-O\-K\-\_\-\-F\-L\-O\-A\-T}!grammar.\-c@{grammar.\-c}}\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-F\-L\-O\-A\-T@{T\-O\-K\-\_\-\-F\-L\-O\-A\-T}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9add470148bc49b9406cab8014f1a05e1a}{T\-O\-K\-\_\-\-F\-L\-O\-A\-T}\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9add470148bc49b9406cab8014f1a05e1a}
+}]\index{T\-O\-K\-\_\-\-S\-T\-R\-I\-N\-G@{T\-O\-K\-\_\-\-S\-T\-R\-I\-N\-G}!grammar.\-c@{grammar.\-c}}\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-S\-T\-R\-I\-N\-G@{T\-O\-K\-\_\-\-S\-T\-R\-I\-N\-G}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a6aed8afdbbec5110277334eba1c8d1ef}{T\-O\-K\-\_\-\-S\-T\-R\-I\-N\-G}\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a6aed8afdbbec5110277334eba1c8d1ef}
+}]\index{T\-O\-K\-\_\-\-N\-A\-M\-E@{T\-O\-K\-\_\-\-N\-A\-M\-E}!grammar.\-c@{grammar.\-c}}\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-N\-A\-M\-E@{T\-O\-K\-\_\-\-N\-A\-M\-E}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a2521ed04c163bb1cbdd6af6a3674cb8f}{T\-O\-K\-\_\-\-N\-A\-M\-E}\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a2521ed04c163bb1cbdd6af6a3674cb8f}
+}]\index{T\-O\-K\-\_\-\-E\-Q\-U\-A\-L\-S@{T\-O\-K\-\_\-\-E\-Q\-U\-A\-L\-S}!grammar.\-c@{grammar.\-c}}\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-E\-Q\-U\-A\-L\-S@{T\-O\-K\-\_\-\-E\-Q\-U\-A\-L\-S}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a738fab9f730a0fb766fa02328739b7c3}{T\-O\-K\-\_\-\-E\-Q\-U\-A\-L\-S}\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a738fab9f730a0fb766fa02328739b7c3}
+}]\index{T\-O\-K\-\_\-\-N\-E\-W\-L\-I\-N\-E@{T\-O\-K\-\_\-\-N\-E\-W\-L\-I\-N\-E}!grammar.\-c@{grammar.\-c}}\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-N\-E\-W\-L\-I\-N\-E@{T\-O\-K\-\_\-\-N\-E\-W\-L\-I\-N\-E}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9af95d944540ec4759be1efca8422b1db7}{T\-O\-K\-\_\-\-N\-E\-W\-L\-I\-N\-E}\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9af95d944540ec4759be1efca8422b1db7}
+}]\index{T\-O\-K\-\_\-\-A\-R\-R\-A\-Y\-\_\-\-S\-T\-A\-R\-T@{T\-O\-K\-\_\-\-A\-R\-R\-A\-Y\-\_\-\-S\-T\-A\-R\-T}!grammar.\-c@{grammar.\-c}}\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-A\-R\-R\-A\-Y\-\_\-\-S\-T\-A\-R\-T@{T\-O\-K\-\_\-\-A\-R\-R\-A\-Y\-\_\-\-S\-T\-A\-R\-T}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a6b912e59d3b01ff97b3cdc99e34886e8}{T\-O\-K\-\_\-\-A\-R\-R\-A\-Y\-\_\-\-S\-T\-A\-R\-T}\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a6b912e59d3b01ff97b3cdc99e34886e8}
+}]\index{T\-O\-K\-\_\-\-A\-R\-R\-A\-Y\-\_\-\-E\-N\-D@{T\-O\-K\-\_\-\-A\-R\-R\-A\-Y\-\_\-\-E\-N\-D}!grammar.\-c@{grammar.\-c}}\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-A\-R\-R\-A\-Y\-\_\-\-E\-N\-D@{T\-O\-K\-\_\-\-A\-R\-R\-A\-Y\-\_\-\-E\-N\-D}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a32d61fe2e7d849bcd1e50d909c26eb83}{T\-O\-K\-\_\-\-A\-R\-R\-A\-Y\-\_\-\-E\-N\-D}\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a32d61fe2e7d849bcd1e50d909c26eb83}
+}]\index{T\-O\-K\-\_\-\-L\-I\-S\-T\-\_\-\-S\-T\-A\-R\-T@{T\-O\-K\-\_\-\-L\-I\-S\-T\-\_\-\-S\-T\-A\-R\-T}!grammar.\-c@{grammar.\-c}}\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-L\-I\-S\-T\-\_\-\-S\-T\-A\-R\-T@{T\-O\-K\-\_\-\-L\-I\-S\-T\-\_\-\-S\-T\-A\-R\-T}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9ac508a95b48de48b3afb83ffc60156165}{T\-O\-K\-\_\-\-L\-I\-S\-T\-\_\-\-S\-T\-A\-R\-T}\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9ac508a95b48de48b3afb83ffc60156165}
+}]\index{T\-O\-K\-\_\-\-L\-I\-S\-T\-\_\-\-E\-N\-D@{T\-O\-K\-\_\-\-L\-I\-S\-T\-\_\-\-E\-N\-D}!grammar.\-c@{grammar.\-c}}\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-L\-I\-S\-T\-\_\-\-E\-N\-D@{T\-O\-K\-\_\-\-L\-I\-S\-T\-\_\-\-E\-N\-D}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a10da87e4de3f19460926990feb2b8eea}{T\-O\-K\-\_\-\-L\-I\-S\-T\-\_\-\-E\-N\-D}\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a10da87e4de3f19460926990feb2b8eea}
+}]\index{T\-O\-K\-\_\-\-C\-O\-M\-M\-A@{T\-O\-K\-\_\-\-C\-O\-M\-M\-A}!grammar.\-c@{grammar.\-c}}\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-C\-O\-M\-M\-A@{T\-O\-K\-\_\-\-C\-O\-M\-M\-A}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a62cdeef3d4613afb658caae912e99272}{T\-O\-K\-\_\-\-C\-O\-M\-M\-A}\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a62cdeef3d4613afb658caae912e99272}
+}]\index{T\-O\-K\-\_\-\-G\-R\-O\-U\-P\-\_\-\-S\-T\-A\-R\-T@{T\-O\-K\-\_\-\-G\-R\-O\-U\-P\-\_\-\-S\-T\-A\-R\-T}!grammar.\-c@{grammar.\-c}}\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-G\-R\-O\-U\-P\-\_\-\-S\-T\-A\-R\-T@{T\-O\-K\-\_\-\-G\-R\-O\-U\-P\-\_\-\-S\-T\-A\-R\-T}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a37a6f71fb6a5c296e1fb86c95216a317}{T\-O\-K\-\_\-\-G\-R\-O\-U\-P\-\_\-\-S\-T\-A\-R\-T}\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a37a6f71fb6a5c296e1fb86c95216a317}
+}]\index{T\-O\-K\-\_\-\-G\-R\-O\-U\-P\-\_\-\-E\-N\-D@{T\-O\-K\-\_\-\-G\-R\-O\-U\-P\-\_\-\-E\-N\-D}!grammar.\-c@{grammar.\-c}}\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-G\-R\-O\-U\-P\-\_\-\-E\-N\-D@{T\-O\-K\-\_\-\-G\-R\-O\-U\-P\-\_\-\-E\-N\-D}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a125079fe82e20957e1cab0f5eb29e655}{T\-O\-K\-\_\-\-G\-R\-O\-U\-P\-\_\-\-E\-N\-D}\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a125079fe82e20957e1cab0f5eb29e655}
+}]\index{T\-O\-K\-\_\-\-S\-E\-M\-I\-C\-O\-L\-O\-N@{T\-O\-K\-\_\-\-S\-E\-M\-I\-C\-O\-L\-O\-N}!grammar.\-c@{grammar.\-c}}\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-S\-E\-M\-I\-C\-O\-L\-O\-N@{T\-O\-K\-\_\-\-S\-E\-M\-I\-C\-O\-L\-O\-N}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9aea2ea79171e8d0363830add7169ff88f}{T\-O\-K\-\_\-\-S\-E\-M\-I\-C\-O\-L\-O\-N}\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9aea2ea79171e8d0363830add7169ff88f}
+}]\index{T\-O\-K\-\_\-\-G\-A\-R\-B\-A\-G\-E@{T\-O\-K\-\_\-\-G\-A\-R\-B\-A\-G\-E}!grammar.\-c@{grammar.\-c}}\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-G\-A\-R\-B\-A\-G\-E@{T\-O\-K\-\_\-\-G\-A\-R\-B\-A\-G\-E}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a47ab3580bbebe6fe293dda08d328dec0}{T\-O\-K\-\_\-\-G\-A\-R\-B\-A\-G\-E}\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a47ab3580bbebe6fe293dda08d328dec0}
+}]\index{T\-O\-K\-\_\-\-E\-R\-R\-O\-R@{T\-O\-K\-\_\-\-E\-R\-R\-O\-R}!grammar.\-c@{grammar.\-c}}\index{grammar.\-c@{grammar.\-c}!T\-O\-K\-\_\-\-E\-R\-R\-O\-R@{T\-O\-K\-\_\-\-E\-R\-R\-O\-R}}\item[{\em 
+\hypertarget{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a1e45d4c51261381ea32625e93e1c6ea0}{T\-O\-K\-\_\-\-E\-R\-R\-O\-R}\label{grammar_8c_a15c9f7bd2f0e9686df5d9df4f3314aa9a1e45d4c51261381ea32625e93e1c6ea0}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\hypertarget{grammar_8c_abddd15915aa746f8e4fb3a5376623384}{\index{grammar.\-c@{grammar.\-c}!capture\-\_\-parse\-\_\-pos@{capture\-\_\-parse\-\_\-pos}}
+\index{capture\-\_\-parse\-\_\-pos@{capture\-\_\-parse\-\_\-pos}!grammar.c@{grammar.\-c}}
+\subsubsection[{capture\-\_\-parse\-\_\-pos}]{\setlength{\rightskip}{0pt plus 5cm}static void capture\-\_\-parse\-\_\-pos (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{scanner, }
+\item[{struct {\bf scan\-\_\-context} $\ast$}]{scan\-\_\-ctx, }
+\item[{{\bf config\-\_\-setting\-\_\-t} $\ast$}]{setting}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{grammar_8c_abddd15915aa746f8e4fb3a5376623384}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{grammar_8c_abddd15915aa746f8e4fb3a5376623384_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{grammar_8c_aed5cee83fa537a585f1bd2a1799db48f}{\index{grammar.\-c@{grammar.\-c}!libconfig\-\_\-yyerror@{libconfig\-\_\-yyerror}}
+\index{libconfig\-\_\-yyerror@{libconfig\-\_\-yyerror}!grammar.c@{grammar.\-c}}
+\subsubsection[{libconfig\-\_\-yyerror}]{\setlength{\rightskip}{0pt plus 5cm}void libconfig\-\_\-yyerror (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{scanner, }
+\item[{struct {\bf parse\-\_\-context} $\ast$}]{ctx, }
+\item[{struct {\bf scan\-\_\-context} $\ast$}]{scan\-\_\-ctx, }
+\item[{char const $\ast$}]{s}
+\end{DoxyParamCaption}
+)}}\label{grammar_8c_aed5cee83fa537a585f1bd2a1799db48f}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{grammar_8c_aed5cee83fa537a585f1bd2a1799db48f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{grammar_8c_aed5cee83fa537a585f1bd2a1799db48f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{grammar_8c_a8b9e5cf0670f0bc7132836fd8f89a497}{\index{grammar.\-c@{grammar.\-c}!libconfig\-\_\-yyget\-\_\-lineno@{libconfig\-\_\-yyget\-\_\-lineno}}
+\index{libconfig\-\_\-yyget\-\_\-lineno@{libconfig\-\_\-yyget\-\_\-lineno}!grammar.c@{grammar.\-c}}
+\subsubsection[{libconfig\-\_\-yyget\-\_\-lineno}]{\setlength{\rightskip}{0pt plus 5cm}int libconfig\-\_\-yyget\-\_\-lineno (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{grammar_8c_a8b9e5cf0670f0bc7132836fd8f89a497}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grammar_8c_a8b9e5cf0670f0bc7132836fd8f89a497_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{grammar_8c_ac18f7233e786481972ad879c051492d0}{\index{grammar.\-c@{grammar.\-c}!libconfig\-\_\-yylex@{libconfig\-\_\-yylex}}
+\index{libconfig\-\_\-yylex@{libconfig\-\_\-yylex}!grammar.c@{grammar.\-c}}
+\subsubsection[{libconfig\-\_\-yylex}]{\setlength{\rightskip}{0pt plus 5cm}int libconfig\-\_\-yylex (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{grammar_8c_ac18f7233e786481972ad879c051492d0}
+\hypertarget{grammar_8c_a772a60ab70c07e5a2ff4d3c4a5b3280b}{\index{grammar.\-c@{grammar.\-c}!yydestruct@{yydestruct}}
+\index{yydestruct@{yydestruct}!grammar.c@{grammar.\-c}}
+\subsubsection[{yydestruct}]{\setlength{\rightskip}{0pt plus 5cm}static void yydestruct (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{yymsg, }
+\item[{int}]{yytype, }
+\item[{{\bf Y\-Y\-S\-T\-Y\-P\-E} $\ast$}]{yyvaluep, }
+\item[{void $\ast$}]{scanner, }
+\item[{struct {\bf parse\-\_\-context} $\ast$}]{ctx, }
+\item[{struct {\bf scan\-\_\-context} $\ast$}]{scan\-\_\-ctx}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [static]}}}\label{grammar_8c_a772a60ab70c07e5a2ff4d3c4a5b3280b}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{grammar_8c_a772a60ab70c07e5a2ff4d3c4a5b3280b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{grammar_8c_acd8617a8f2ac0de8bc1cc032cf449e19}{\index{grammar.\-c@{grammar.\-c}!yyparse@{yyparse}}
+\index{yyparse@{yyparse}!grammar.c@{grammar.\-c}}
+\subsubsection[{yyparse}]{\setlength{\rightskip}{0pt plus 5cm}int yyparse (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{grammar_8c_acd8617a8f2ac0de8bc1cc032cf449e19}
+\hypertarget{grammar_8c_aa95461e463ec8927a2b16e55683cfcaf}{\index{grammar.\-c@{grammar.\-c}!yyparse@{yyparse}}
+\index{yyparse@{yyparse}!grammar.c@{grammar.\-c}}
+\subsubsection[{yyparse}]{\setlength{\rightskip}{0pt plus 5cm}int yyparse (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{scanner, }
+\item[{struct {\bf parse\-\_\-context} $\ast$}]{ctx, }
+\item[{struct {\bf scan\-\_\-context} $\ast$}]{scan\-\_\-ctx}
+\end{DoxyParamCaption}
+)}}\label{grammar_8c_aa95461e463ec8927a2b16e55683cfcaf}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grammar_8c_aa95461e463ec8927a2b16e55683cfcaf_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{grammar_8c_a2b36faa3075f535045fd3f3bc7ede55a}{\index{grammar.\-c@{grammar.\-c}!err\-\_\-array\-\_\-elem\-\_\-type@{err\-\_\-array\-\_\-elem\-\_\-type}}
+\index{err\-\_\-array\-\_\-elem\-\_\-type@{err\-\_\-array\-\_\-elem\-\_\-type}!grammar.c@{grammar.\-c}}
+\subsubsection[{err\-\_\-array\-\_\-elem\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ err\-\_\-array\-\_\-elem\-\_\-type = \char`\"{}mismatched element type in array\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}}\label{grammar_8c_a2b36faa3075f535045fd3f3bc7ede55a}
+\hypertarget{grammar_8c_ae4a9bd4903733c60d2bf4ea94e0731d5}{\index{grammar.\-c@{grammar.\-c}!err\-\_\-duplicate\-\_\-setting@{err\-\_\-duplicate\-\_\-setting}}
+\index{err\-\_\-duplicate\-\_\-setting@{err\-\_\-duplicate\-\_\-setting}!grammar.c@{grammar.\-c}}
+\subsubsection[{err\-\_\-duplicate\-\_\-setting}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ err\-\_\-duplicate\-\_\-setting = \char`\"{}duplicate setting name\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}}\label{grammar_8c_ae4a9bd4903733c60d2bf4ea94e0731d5}
+\hypertarget{grammar_8c_a40faef92d80fc0e07e3d399311c5ec88}{\index{grammar.\-c@{grammar.\-c}!yycheck@{yycheck}}
+\index{yycheck@{yycheck}!grammar.c@{grammar.\-c}}
+\subsubsection[{yycheck}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf yytype\-\_\-int8} yycheck\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}}\label{grammar_8c_a40faef92d80fc0e07e3d399311c5ec88}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+=
+\{
+       3,    26,    10,     3,     4,     5,     6,     7,     8,     9,
+      25,    17,     0,    13,    20,    15,    11,    42,    18,     9,
+      17,    14,    27,    17,    16,    40,     3,     4,     5,     6,
+       7,     8,     9,    19,    -1,    38
+\}
+\end{DoxyCode}
+\hypertarget{grammar_8c_af80f4a4ea9a69eb19837849cc7083c77}{\index{grammar.\-c@{grammar.\-c}!yydefact@{yydefact}}
+\index{yydefact@{yydefact}!grammar.c@{grammar.\-c}}
+\subsubsection[{yydefact}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf yytype\-\_\-uint8} yydefact\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}}\label{grammar_8c_af80f4a4ea9a69eb19837849cc7083c77}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+=
+\{
+       2,    11,     0,     3,     4,     0,     1,     5,     0,    23,
+      24,    26,    25,    27,    28,    21,    13,    15,    38,    18,
+      19,     8,    29,    17,    20,    36,    32,     6,    10,     9,
+      12,    22,    34,    37,     0,    30,    33,     0,     7,     0,
+       0,    14,     0,    16,    39,    35,    31
+\}
+\end{DoxyCode}
+\hypertarget{grammar_8c_add50b39c93bd000e59c735788074a427}{\index{grammar.\-c@{grammar.\-c}!yydefgoto@{yydefgoto}}
+\index{yydefgoto@{yydefgoto}!grammar.c@{grammar.\-c}}
+\subsubsection[{yydefgoto}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf yytype\-\_\-int8} yydefgoto\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}}\label{grammar_8c_add50b39c93bd000e59c735788074a427}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+=
+\{
+      -1,     2,     3,    39,    30,     4,     5,    19,    25,    20,
+      26,    21,    22,    23,    36,    37,    33,    34,    24,    27
+\}
+\end{DoxyCode}
+\hypertarget{grammar_8c_a5d5f1a7a5182e57a2589f4753bfaddc9}{\index{grammar.\-c@{grammar.\-c}!yypact@{yypact}}
+\index{yypact@{yypact}!grammar.c@{grammar.\-c}}
+\subsubsection[{yypact}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf yytype\-\_\-int8} yypact\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}}\label{grammar_8c_a5d5f1a7a5182e57a2589f4753bfaddc9}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+=
+\{
+      -8,   -26,    12,    -8,   -26,     5,   -26,   -26,     0,   -26,
+     -26,   -26,   -26,   -26,   -26,   -26,   -26,   -26,   -26,   -26,
+     -26,    -6,    10,   -26,   -26,    23,     0,    -8,   -26,   -26,
+     -26,   -26,   -26,     3,     7,   -26,     6,     8,    -8,    14,
+      23,   -26,     0,   -26,   -26,   -26,   -26
+\}
+\end{DoxyCode}
+\hypertarget{grammar_8c_abb1d1e685ef953f65410be5d32544cfe}{\index{grammar.\-c@{grammar.\-c}!yypgoto@{yypgoto}}
+\index{yypgoto@{yypgoto}!grammar.c@{grammar.\-c}}
+\subsubsection[{yypgoto}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf yytype\-\_\-int8} yypgoto\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}}\label{grammar_8c_abb1d1e685ef953f65410be5d32544cfe}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+=
+\{
+     -26,   -26,    -5,   -26,   -26,    -3,   -26,   -26,   -26,   -26,
+     -26,   -25,   -26,   -15,   -26,   -26,   -26,   -26,   -26,   -26
+\}
+\end{DoxyCode}
+\hypertarget{grammar_8c_a0c34e3be3d497abf630697f406f3cc62}{\index{grammar.\-c@{grammar.\-c}!yyr1@{yyr1}}
+\index{yyr1@{yyr1}!grammar.c@{grammar.\-c}}
+\subsubsection[{yyr1}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf yytype\-\_\-uint8} yyr1\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}}\label{grammar_8c_a0c34e3be3d497abf630697f406f3cc62}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+=
+\{
+       0,    23,    24,    24,    25,    25,    26,    26,    27,    27,
+      27,    29,    28,    31,    30,    33,    32,    34,    34,    34,
+      34,    35,    35,    36,    36,    36,    36,    36,    36,    36,
+      37,    37,    38,    38,    39,    39,    40,    40,    42,    41
+\}
+\end{DoxyCode}
+\hypertarget{grammar_8c_aa6be1bc256e649b3e922410e291bc7a5}{\index{grammar.\-c@{grammar.\-c}!yyr2@{yyr2}}
+\index{yyr2@{yyr2}!grammar.c@{grammar.\-c}}
+\subsubsection[{yyr2}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf yytype\-\_\-uint8} yyr2\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}}\label{grammar_8c_aa6be1bc256e649b3e922410e291bc7a5}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+=
+\{
+       0,     2,     0,     1,     1,     2,     0,     1,     0,     1,
+       1,     0,     5,     0,     4,     0,     4,     1,     1,     1,
+       1,     1,     2,     1,     1,     1,     1,     1,     1,     1,
+       1,     3,     0,     1,     1,     3,     0,     1,     0,     4
+\}
+\end{DoxyCode}
+\hypertarget{grammar_8c_abc7e1225b6a8ee7619f19504cbefd97b}{\index{grammar.\-c@{grammar.\-c}!yystos@{yystos}}
+\index{yystos@{yystos}!grammar.c@{grammar.\-c}}
+\subsubsection[{yystos}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf yytype\-\_\-uint8} yystos\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}}\label{grammar_8c_abc7e1225b6a8ee7619f19504cbefd97b}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+=
+\{
+       0,    10,    24,    25,    28,    29,     0,    28,    11,     3,
+       4,     5,     6,     7,     8,     9,    13,    15,    18,    30,
+      32,    34,    35,    36,    41,    31,    33,    42,    17,    20,
+      27,     9,    36,    39,    40,    34,    37,    38,    25,    26,
+      17,    14,    17,    16,    19,    36,    34
+\}
+\end{DoxyCode}
+\hypertarget{grammar_8c_aebb94255a7d4c72e6f9eea0a8e755c56}{\index{grammar.\-c@{grammar.\-c}!yytable@{yytable}}
+\index{yytable@{yytable}!grammar.c@{grammar.\-c}}
+\subsubsection[{yytable}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf yytype\-\_\-uint8} yytable\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}}\label{grammar_8c_aebb94255a7d4c72e6f9eea0a8e755c56}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+=
+\{
+       7,    35,     1,     9,    10,    11,    12,    13,    14,    15,
+      32,    28,     6,    16,    29,    17,     8,    46,    18,    31,
+      40,    41,    38,    42,    43,    45,     9,    10,    11,    12,
+      13,    14,    15,    44,     0,     7
+\}
+\end{DoxyCode}
+\hypertarget{grammar_8c_a384fb3797a340a5415c03719ebab9c67}{\index{grammar.\-c@{grammar.\-c}!yytranslate@{yytranslate}}
+\index{yytranslate@{yytranslate}!grammar.c@{grammar.\-c}}
+\subsubsection[{yytranslate}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf yytype\-\_\-uint8} yytranslate\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}}\label{grammar_8c_a384fb3797a340a5415c03719ebab9c67}

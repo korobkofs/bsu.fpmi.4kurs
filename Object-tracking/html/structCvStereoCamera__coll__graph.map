@@ -1,0 +1,7 @@
+<map id="CvStereoCamera" name="CvStereoCamera">
+<area shape="rect" id="node2" href="$structCvSize.html" title="CvSize" alt="" coords="5,5,69,32"/>
+<area shape="rect" id="node3" href="$structCvStereoLineCoeff.html" title="CvStereoLineCoeff" alt="" coords="95,5,228,32"/>
+<area shape="rect" id="node4" href="$structCvCamera.html" title="CvCamera" alt="" coords="252,5,337,32"/>
+<area shape="rect" id="node5" href="$structCvPoint3D32f.html" title="CvPoint3D32f" alt="" coords="361,5,465,32"/>
+<area shape="rect" id="node6" href="$structCvPoint2D32f.html" title="CvPoint2D32f" alt="" coords="489,5,593,32"/>
+</map>

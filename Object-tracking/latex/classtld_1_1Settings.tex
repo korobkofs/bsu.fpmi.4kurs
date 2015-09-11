@@ -1,0 +1,419 @@
+\hypertarget{classtld_1_1Settings}{\section{tld\-:\-:Settings Class Reference}
+\label{classtld_1_1Settings}\index{tld\-::\-Settings@{tld\-::\-Settings}}
+}
+
+
+In this class all settings are stored.  
+
+
+
+
+{\ttfamily \#include $<$Settings.\-h$>$}
+
+
+
+Collaboration diagram for tld\-:\-:Settings\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{classtld_1_1Settings__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtld_1_1Settings_a1a1d6373d0e350ef0f2697ea2a42894e}{Settings} ()
+\begin{DoxyCompactList}\small\item\em This constructor sets the settings by default. \end{DoxyCompactList}\item 
+\hyperlink{classtld_1_1Settings_a96eee0f4e98b706b8b5f8ec973c24dbc}{$\sim$\-Settings} ()
+\begin{DoxyCompactList}\small\item\em Empty destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classtld_1_1Settings_a54a14f7a08a919ee6ff19514205c6b47}{m\-\_\-tracker\-Enabled}
+\begin{DoxyCompactList}\small\item\em enables tracker (Lucas-\/\-Kanade) \end{DoxyCompactList}\item 
+bool \hyperlink{classtld_1_1Settings_ab3100039fb52ee1a41813812320a6ca3}{m\-\_\-variance\-Filter\-Enabled}
+\begin{DoxyCompactList}\small\item\em enables variance filter \end{DoxyCompactList}\item 
+bool \hyperlink{classtld_1_1Settings_af184f95560d875d91951dbbc368ba04d}{m\-\_\-ensemble\-Classifier\-Enabled}
+\begin{DoxyCompactList}\small\item\em enables ensemble classifier \end{DoxyCompactList}\item 
+bool \hyperlink{classtld_1_1Settings_a8ec793b6668a626308d8ee8d697d9f67}{m\-\_\-nn\-Classifier\-Enabled}
+\begin{DoxyCompactList}\small\item\em enables nearest neighbor сlassifier \end{DoxyCompactList}\item 
+bool \hyperlink{classtld_1_1Settings_afd89a9d1a0a8dec5ce524eeed5b0f5e0}{m\-\_\-use\-Proportional\-Shift}
+\begin{DoxyCompactList}\small\item\em sets scanwindows off by a percentage value of the window dimensions (specified in proportional\-Shift) rather than 1px. \end{DoxyCompactList}\item 
+bool \hyperlink{classtld_1_1Settings_a6c06df5b2a9028a1c9a77269601f4a36}{m\-\_\-load\-Model}
+\begin{DoxyCompactList}\small\item\em if true, model specified by \char`\"{}model\-Path\char`\"{} is loaded at startup \end{DoxyCompactList}\item 
+bool \hyperlink{classtld_1_1Settings_afadc64d205d5386d94088e87dba72519}{m\-\_\-select\-Manually}
+\begin{DoxyCompactList}\small\item\em if true, user can select initial bounding box (which then overrides the setting \char`\"{}initial\-Bounding\-Box\char`\"{}) \end{DoxyCompactList}\item 
+bool \hyperlink{classtld_1_1Settings_abd4a98a18a910313cf3590f507f1ceef}{m\-\_\-learning\-Enabled}
+\begin{DoxyCompactList}\small\item\em enables learning while processing \end{DoxyCompactList}\item 
+bool \hyperlink{classtld_1_1Settings_abce1f9678efba0511db88545d97bb535}{m\-\_\-show\-Output}
+\begin{DoxyCompactList}\small\item\em creates a window displaying results \end{DoxyCompactList}\item 
+bool \hyperlink{classtld_1_1Settings_acd69b3d8edc2fe3a05bb763dfd17b30b}{m\-\_\-show\-Not\-Confident}
+\begin{DoxyCompactList}\small\item\em show bounding box also if confidence is low \end{DoxyCompactList}\item 
+bool \hyperlink{classtld_1_1Settings_a495b2aba7d0c9ec5fb914ab04b6d42cf}{m\-\_\-show\-Color\-Image}
+\begin{DoxyCompactList}\small\item\em shows color images instead of greyscale \end{DoxyCompactList}\item 
+bool \hyperlink{classtld_1_1Settings_abcc93dd632486081ba14ebfaaaecd392}{m\-\_\-show\-Detections}
+\begin{DoxyCompactList}\small\item\em shows detections \end{DoxyCompactList}\item 
+bool \hyperlink{classtld_1_1Settings_ab2398d08ccb9bab01c3240651d07f8c3}{m\-\_\-show\-Foreground}
+\begin{DoxyCompactList}\small\item\em shows foreground \end{DoxyCompactList}\item 
+bool \hyperlink{classtld_1_1Settings_a46de5897c9f1bc410c0f44f459181e05}{m\-\_\-save\-Output}
+\begin{DoxyCompactList}\small\item\em specifies whether to save visual output \end{DoxyCompactList}\item 
+bool \hyperlink{classtld_1_1Settings_ae4a5b3fb575a1a49823f8305f3aefded}{m\-\_\-alternating}
+\begin{DoxyCompactList}\small\item\em if set to true, detector is disabled while tracker is running. \end{DoxyCompactList}\item 
+bool \hyperlink{classtld_1_1Settings_a5d0b425a526e5f7f78c758bfde3d9ee9}{m\-\_\-export\-Model\-After\-Run}
+\begin{DoxyCompactList}\small\item\em if set to true, model is exported after run. \end{DoxyCompactList}\item 
+int \hyperlink{classtld_1_1Settings_a56281480120f9cb2dbf69022cf97a30a}{m\-\_\-trajectory}
+\begin{DoxyCompactList}\small\item\em specifies the number of the last frames which are considered by the trajectory; 0 disables the trajectory \end{DoxyCompactList}\item 
+int \hyperlink{classtld_1_1Settings_a2438efb226c38f806bf1b3e023aa3760}{m\-\_\-method}
+\begin{DoxyCompactList}\small\item\em method of capturing\-: I\-M\-A\-C\-Q\-\_\-\-C\-A\-M, I\-M\-A\-C\-Q\-\_\-\-I\-M\-G\-S or I\-M\-A\-C\-Q\-\_\-\-V\-I\-D \end{DoxyCompactList}\item 
+int \hyperlink{classtld_1_1Settings_ac63c6dfae7c0be1fc167608dd52e1d7f}{m\-\_\-start\-Frame}
+\begin{DoxyCompactList}\small\item\em first frame of capturing \end{DoxyCompactList}\item 
+int \hyperlink{classtld_1_1Settings_a4935fe002dd6358506813d7c48ec5322}{m\-\_\-last\-Frame}
+\begin{DoxyCompactList}\small\item\em last frame of caputing; 0 means take all frames \end{DoxyCompactList}\item 
+int \hyperlink{classtld_1_1Settings_a46e4d9f59b1f87508cf0ad9a154fdc21}{m\-\_\-min\-Scale}
+\begin{DoxyCompactList}\small\item\em number of scales smaller than initial object size \end{DoxyCompactList}\item 
+int \hyperlink{classtld_1_1Settings_a548c317f8242ea8513d13573acdaaa4c}{m\-\_\-max\-Scale}
+\begin{DoxyCompactList}\small\item\em number of scales larger than initial object size \end{DoxyCompactList}\item 
+int \hyperlink{classtld_1_1Settings_af15afe9f4ffb32e89686c8e90026e2bc}{m\-\_\-num\-Features}
+\begin{DoxyCompactList}\small\item\em number of features \end{DoxyCompactList}\item 
+int \hyperlink{classtld_1_1Settings_a959d793b002e13f6758fc84765b7d33d}{m\-\_\-num\-Trees}
+\begin{DoxyCompactList}\small\item\em number of trees \end{DoxyCompactList}\item 
+float \hyperlink{classtld_1_1Settings_adade7d3269f34113e92abdb3816058f7}{m\-\_\-theta\-P}
+\begin{DoxyCompactList}\small\item\em upper threshold for confidence in lerning and filter of \hyperlink{classtld_1_1NNClassifier}{N\-N\-Classifier} \end{DoxyCompactList}\item 
+float \hyperlink{classtld_1_1Settings_aef49627d1ffac7dda7cc83c7ba6a25bd}{m\-\_\-theta\-N}
+\begin{DoxyCompactList}\small\item\em lower threshold for confidence in filter of \hyperlink{classtld_1_1NNClassifier}{N\-N\-Classifier} \end{DoxyCompactList}\item 
+int \hyperlink{classtld_1_1Settings_a07dc62407c3373e7fa3906c145593b69}{m\-\_\-seed}
+\begin{DoxyCompactList}\small\item\em the seed for pseudo-\/random number generator \end{DoxyCompactList}\item 
+int \hyperlink{classtld_1_1Settings_aa08ffe8f36cb983224fadfd3d3b28391}{m\-\_\-min\-Size}
+\begin{DoxyCompactList}\small\item\em minimum size of scan\-Windows \end{DoxyCompactList}\item 
+int \hyperlink{classtld_1_1Settings_a01db1115a98b15abdab2c03cdacadfdd}{m\-\_\-cam\-No}
+\begin{DoxyCompactList}\small\item\em Which camera to use. \end{DoxyCompactList}\item 
+float \hyperlink{classtld_1_1Settings_aaa119898fb2f14ce2eed7fc861733eac}{m\-\_\-fps}
+\begin{DoxyCompactList}\small\item\em Frames per second. \end{DoxyCompactList}\item 
+float \hyperlink{classtld_1_1Settings_afc2357da344888ad2158cbb51f8eb377}{m\-\_\-threshold}
+\begin{DoxyCompactList}\small\item\em threshold for determining positive results \end{DoxyCompactList}\item 
+float \hyperlink{classtld_1_1Settings_afcb52ecca38e4e236a66c3f36ec7cdbf}{m\-\_\-proportional\-Shift}
+\begin{DoxyCompactList}\small\item\em proportional shift \end{DoxyCompactList}\item 
+std\-::string \hyperlink{classtld_1_1Settings_abfd40dee05d0005e6cdaab2e0a84a4a9}{m\-\_\-image\-Path}
+\begin{DoxyCompactList}\small\item\em path to the images or the video if m\-\_\-method is I\-M\-A\-C\-Q\-\_\-\-V\-I\-D or I\-M\-A\-C\-Q\-\_\-\-I\-M\-G\-S \end{DoxyCompactList}\item 
+std\-::string \hyperlink{classtld_1_1Settings_ac09a844a6ee9727f04e2de086f4fa9ce}{m\-\_\-model\-Path}
+\begin{DoxyCompactList}\small\item\em if model\-Path is not set then either an initial\-Bounding\-Box must be specified or select\-Manually must be true. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{classtld_1_1Settings_a2fb70f5b39e773b64d62f902009827fc}{m\-\_\-model\-Export\-File}
+\begin{DoxyCompactList}\small\item\em Path where model is saved on export. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{classtld_1_1Settings_a8893600d99c4d096e384e4aeff2155f7}{m\-\_\-output\-Dir}
+\begin{DoxyCompactList}\small\item\em required if save\-Output = true, no default \end{DoxyCompactList}\item 
+std\-::string \hyperlink{classtld_1_1Settings_a214e9008680cab432e095e5d07372dd1}{m\-\_\-print\-Results}
+\begin{DoxyCompactList}\small\item\em path to the file where the results should be printed; N\-U\-L\-L -\/$>$ results will not be printed \end{DoxyCompactList}\item 
+std\-::string \hyperlink{classtld_1_1Settings_af986bcadbc3f34693dd13191bbf65947}{m\-\_\-print\-Timing}
+\begin{DoxyCompactList}\small\item\em path to the file were the timings should be printed; N\-U\-L\-L -\/$>$ results will not be printed \end{DoxyCompactList}\item 
+std\-::vector$<$ int $>$ \hyperlink{classtld_1_1Settings_a42d73d86dc15625a1394e7491ebaf0e4}{m\-\_\-initial\-Bounding\-Box}
+\begin{DoxyCompactList}\small\item\em Initial Bounding Box can be specified here. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+In this class all settings are stored. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classtld_1_1Settings_a1a1d6373d0e350ef0f2697ea2a42894e}{\index{tld\-::\-Settings@{tld\-::\-Settings}!Settings@{Settings}}
+\index{Settings@{Settings}!tld::Settings@{tld\-::\-Settings}}
+\subsubsection[{Settings}]{\setlength{\rightskip}{0pt plus 5cm}tld\-::\-Settings\-::\-Settings (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1Settings_a1a1d6373d0e350ef0f2697ea2a42894e}
+
+
+This constructor sets the settings by default. 
+
+\hypertarget{classtld_1_1Settings_a96eee0f4e98b706b8b5f8ec973c24dbc}{\index{tld\-::\-Settings@{tld\-::\-Settings}!$\sim$\-Settings@{$\sim$\-Settings}}
+\index{$\sim$\-Settings@{$\sim$\-Settings}!tld::Settings@{tld\-::\-Settings}}
+\subsubsection[{$\sim$\-Settings}]{\setlength{\rightskip}{0pt plus 5cm}tld\-::\-Settings\-::$\sim$\-Settings (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1Settings_a96eee0f4e98b706b8b5f8ec973c24dbc}
+
+
+Empty destructor. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classtld_1_1Settings_ae4a5b3fb575a1a49823f8305f3aefded}{\index{tld\-::\-Settings@{tld\-::\-Settings}!m\-\_\-alternating@{m\-\_\-alternating}}
+\index{m\-\_\-alternating@{m\-\_\-alternating}!tld::Settings@{tld\-::\-Settings}}
+\subsubsection[{m\-\_\-alternating}]{\setlength{\rightskip}{0pt plus 5cm}bool tld\-::\-Settings\-::m\-\_\-alternating}}\label{classtld_1_1Settings_ae4a5b3fb575a1a49823f8305f3aefded}
+
+
+if set to true, detector is disabled while tracker is running. 
+
+\hypertarget{classtld_1_1Settings_a01db1115a98b15abdab2c03cdacadfdd}{\index{tld\-::\-Settings@{tld\-::\-Settings}!m\-\_\-cam\-No@{m\-\_\-cam\-No}}
+\index{m\-\_\-cam\-No@{m\-\_\-cam\-No}!tld::Settings@{tld\-::\-Settings}}
+\subsubsection[{m\-\_\-cam\-No}]{\setlength{\rightskip}{0pt plus 5cm}int tld\-::\-Settings\-::m\-\_\-cam\-No}}\label{classtld_1_1Settings_a01db1115a98b15abdab2c03cdacadfdd}
+
+
+Which camera to use. 
+
+\hypertarget{classtld_1_1Settings_af184f95560d875d91951dbbc368ba04d}{\index{tld\-::\-Settings@{tld\-::\-Settings}!m\-\_\-ensemble\-Classifier\-Enabled@{m\-\_\-ensemble\-Classifier\-Enabled}}
+\index{m\-\_\-ensemble\-Classifier\-Enabled@{m\-\_\-ensemble\-Classifier\-Enabled}!tld::Settings@{tld\-::\-Settings}}
+\subsubsection[{m\-\_\-ensemble\-Classifier\-Enabled}]{\setlength{\rightskip}{0pt plus 5cm}bool tld\-::\-Settings\-::m\-\_\-ensemble\-Classifier\-Enabled}}\label{classtld_1_1Settings_af184f95560d875d91951dbbc368ba04d}
+
+
+enables ensemble classifier 
+
+\hypertarget{classtld_1_1Settings_a5d0b425a526e5f7f78c758bfde3d9ee9}{\index{tld\-::\-Settings@{tld\-::\-Settings}!m\-\_\-export\-Model\-After\-Run@{m\-\_\-export\-Model\-After\-Run}}
+\index{m\-\_\-export\-Model\-After\-Run@{m\-\_\-export\-Model\-After\-Run}!tld::Settings@{tld\-::\-Settings}}
+\subsubsection[{m\-\_\-export\-Model\-After\-Run}]{\setlength{\rightskip}{0pt plus 5cm}bool tld\-::\-Settings\-::m\-\_\-export\-Model\-After\-Run}}\label{classtld_1_1Settings_a5d0b425a526e5f7f78c758bfde3d9ee9}
+
+
+if set to true, model is exported after run. 
+
+\hypertarget{classtld_1_1Settings_aaa119898fb2f14ce2eed7fc861733eac}{\index{tld\-::\-Settings@{tld\-::\-Settings}!m\-\_\-fps@{m\-\_\-fps}}
+\index{m\-\_\-fps@{m\-\_\-fps}!tld::Settings@{tld\-::\-Settings}}
+\subsubsection[{m\-\_\-fps}]{\setlength{\rightskip}{0pt plus 5cm}float tld\-::\-Settings\-::m\-\_\-fps}}\label{classtld_1_1Settings_aaa119898fb2f14ce2eed7fc861733eac}
+
+
+Frames per second. 
+
+\hypertarget{classtld_1_1Settings_abfd40dee05d0005e6cdaab2e0a84a4a9}{\index{tld\-::\-Settings@{tld\-::\-Settings}!m\-\_\-image\-Path@{m\-\_\-image\-Path}}
+\index{m\-\_\-image\-Path@{m\-\_\-image\-Path}!tld::Settings@{tld\-::\-Settings}}
+\subsubsection[{m\-\_\-image\-Path}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string tld\-::\-Settings\-::m\-\_\-image\-Path}}\label{classtld_1_1Settings_abfd40dee05d0005e6cdaab2e0a84a4a9}
+
+
+path to the images or the video if m\-\_\-method is I\-M\-A\-C\-Q\-\_\-\-V\-I\-D or I\-M\-A\-C\-Q\-\_\-\-I\-M\-G\-S 
+
+\hypertarget{classtld_1_1Settings_a42d73d86dc15625a1394e7491ebaf0e4}{\index{tld\-::\-Settings@{tld\-::\-Settings}!m\-\_\-initial\-Bounding\-Box@{m\-\_\-initial\-Bounding\-Box}}
+\index{m\-\_\-initial\-Bounding\-Box@{m\-\_\-initial\-Bounding\-Box}!tld::Settings@{tld\-::\-Settings}}
+\subsubsection[{m\-\_\-initial\-Bounding\-Box}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$int$>$ tld\-::\-Settings\-::m\-\_\-initial\-Bounding\-Box}}\label{classtld_1_1Settings_a42d73d86dc15625a1394e7491ebaf0e4}
+
+
+Initial Bounding Box can be specified here. 
+
+\hypertarget{classtld_1_1Settings_a4935fe002dd6358506813d7c48ec5322}{\index{tld\-::\-Settings@{tld\-::\-Settings}!m\-\_\-last\-Frame@{m\-\_\-last\-Frame}}
+\index{m\-\_\-last\-Frame@{m\-\_\-last\-Frame}!tld::Settings@{tld\-::\-Settings}}
+\subsubsection[{m\-\_\-last\-Frame}]{\setlength{\rightskip}{0pt plus 5cm}int tld\-::\-Settings\-::m\-\_\-last\-Frame}}\label{classtld_1_1Settings_a4935fe002dd6358506813d7c48ec5322}
+
+
+last frame of caputing; 0 means take all frames 
+
+\hypertarget{classtld_1_1Settings_abd4a98a18a910313cf3590f507f1ceef}{\index{tld\-::\-Settings@{tld\-::\-Settings}!m\-\_\-learning\-Enabled@{m\-\_\-learning\-Enabled}}
+\index{m\-\_\-learning\-Enabled@{m\-\_\-learning\-Enabled}!tld::Settings@{tld\-::\-Settings}}
+\subsubsection[{m\-\_\-learning\-Enabled}]{\setlength{\rightskip}{0pt plus 5cm}bool tld\-::\-Settings\-::m\-\_\-learning\-Enabled}}\label{classtld_1_1Settings_abd4a98a18a910313cf3590f507f1ceef}
+
+
+enables learning while processing 
+
+\hypertarget{classtld_1_1Settings_a6c06df5b2a9028a1c9a77269601f4a36}{\index{tld\-::\-Settings@{tld\-::\-Settings}!m\-\_\-load\-Model@{m\-\_\-load\-Model}}
+\index{m\-\_\-load\-Model@{m\-\_\-load\-Model}!tld::Settings@{tld\-::\-Settings}}
+\subsubsection[{m\-\_\-load\-Model}]{\setlength{\rightskip}{0pt plus 5cm}bool tld\-::\-Settings\-::m\-\_\-load\-Model}}\label{classtld_1_1Settings_a6c06df5b2a9028a1c9a77269601f4a36}
+
+
+if true, model specified by \char`\"{}model\-Path\char`\"{} is loaded at startup 
+
+\hypertarget{classtld_1_1Settings_a548c317f8242ea8513d13573acdaaa4c}{\index{tld\-::\-Settings@{tld\-::\-Settings}!m\-\_\-max\-Scale@{m\-\_\-max\-Scale}}
+\index{m\-\_\-max\-Scale@{m\-\_\-max\-Scale}!tld::Settings@{tld\-::\-Settings}}
+\subsubsection[{m\-\_\-max\-Scale}]{\setlength{\rightskip}{0pt plus 5cm}int tld\-::\-Settings\-::m\-\_\-max\-Scale}}\label{classtld_1_1Settings_a548c317f8242ea8513d13573acdaaa4c}
+
+
+number of scales larger than initial object size 
+
+\hypertarget{classtld_1_1Settings_a2438efb226c38f806bf1b3e023aa3760}{\index{tld\-::\-Settings@{tld\-::\-Settings}!m\-\_\-method@{m\-\_\-method}}
+\index{m\-\_\-method@{m\-\_\-method}!tld::Settings@{tld\-::\-Settings}}
+\subsubsection[{m\-\_\-method}]{\setlength{\rightskip}{0pt plus 5cm}int tld\-::\-Settings\-::m\-\_\-method}}\label{classtld_1_1Settings_a2438efb226c38f806bf1b3e023aa3760}
+
+
+method of capturing\-: I\-M\-A\-C\-Q\-\_\-\-C\-A\-M, I\-M\-A\-C\-Q\-\_\-\-I\-M\-G\-S or I\-M\-A\-C\-Q\-\_\-\-V\-I\-D 
+
+\hypertarget{classtld_1_1Settings_a46e4d9f59b1f87508cf0ad9a154fdc21}{\index{tld\-::\-Settings@{tld\-::\-Settings}!m\-\_\-min\-Scale@{m\-\_\-min\-Scale}}
+\index{m\-\_\-min\-Scale@{m\-\_\-min\-Scale}!tld::Settings@{tld\-::\-Settings}}
+\subsubsection[{m\-\_\-min\-Scale}]{\setlength{\rightskip}{0pt plus 5cm}int tld\-::\-Settings\-::m\-\_\-min\-Scale}}\label{classtld_1_1Settings_a46e4d9f59b1f87508cf0ad9a154fdc21}
+
+
+number of scales smaller than initial object size 
+
+\hypertarget{classtld_1_1Settings_aa08ffe8f36cb983224fadfd3d3b28391}{\index{tld\-::\-Settings@{tld\-::\-Settings}!m\-\_\-min\-Size@{m\-\_\-min\-Size}}
+\index{m\-\_\-min\-Size@{m\-\_\-min\-Size}!tld::Settings@{tld\-::\-Settings}}
+\subsubsection[{m\-\_\-min\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int tld\-::\-Settings\-::m\-\_\-min\-Size}}\label{classtld_1_1Settings_aa08ffe8f36cb983224fadfd3d3b28391}
+
+
+minimum size of scan\-Windows 
+
+\hypertarget{classtld_1_1Settings_a2fb70f5b39e773b64d62f902009827fc}{\index{tld\-::\-Settings@{tld\-::\-Settings}!m\-\_\-model\-Export\-File@{m\-\_\-model\-Export\-File}}
+\index{m\-\_\-model\-Export\-File@{m\-\_\-model\-Export\-File}!tld::Settings@{tld\-::\-Settings}}
+\subsubsection[{m\-\_\-model\-Export\-File}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string tld\-::\-Settings\-::m\-\_\-model\-Export\-File}}\label{classtld_1_1Settings_a2fb70f5b39e773b64d62f902009827fc}
+
+
+Path where model is saved on export. 
+
+\hypertarget{classtld_1_1Settings_ac09a844a6ee9727f04e2de086f4fa9ce}{\index{tld\-::\-Settings@{tld\-::\-Settings}!m\-\_\-model\-Path@{m\-\_\-model\-Path}}
+\index{m\-\_\-model\-Path@{m\-\_\-model\-Path}!tld::Settings@{tld\-::\-Settings}}
+\subsubsection[{m\-\_\-model\-Path}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string tld\-::\-Settings\-::m\-\_\-model\-Path}}\label{classtld_1_1Settings_ac09a844a6ee9727f04e2de086f4fa9ce}
+
+
+if model\-Path is not set then either an initial\-Bounding\-Box must be specified or select\-Manually must be true. 
+
+\hypertarget{classtld_1_1Settings_a8ec793b6668a626308d8ee8d697d9f67}{\index{tld\-::\-Settings@{tld\-::\-Settings}!m\-\_\-nn\-Classifier\-Enabled@{m\-\_\-nn\-Classifier\-Enabled}}
+\index{m\-\_\-nn\-Classifier\-Enabled@{m\-\_\-nn\-Classifier\-Enabled}!tld::Settings@{tld\-::\-Settings}}
+\subsubsection[{m\-\_\-nn\-Classifier\-Enabled}]{\setlength{\rightskip}{0pt plus 5cm}bool tld\-::\-Settings\-::m\-\_\-nn\-Classifier\-Enabled}}\label{classtld_1_1Settings_a8ec793b6668a626308d8ee8d697d9f67}
+
+
+enables nearest neighbor сlassifier 
+
+\hypertarget{classtld_1_1Settings_af15afe9f4ffb32e89686c8e90026e2bc}{\index{tld\-::\-Settings@{tld\-::\-Settings}!m\-\_\-num\-Features@{m\-\_\-num\-Features}}
+\index{m\-\_\-num\-Features@{m\-\_\-num\-Features}!tld::Settings@{tld\-::\-Settings}}
+\subsubsection[{m\-\_\-num\-Features}]{\setlength{\rightskip}{0pt plus 5cm}int tld\-::\-Settings\-::m\-\_\-num\-Features}}\label{classtld_1_1Settings_af15afe9f4ffb32e89686c8e90026e2bc}
+
+
+number of features 
+
+\hypertarget{classtld_1_1Settings_a959d793b002e13f6758fc84765b7d33d}{\index{tld\-::\-Settings@{tld\-::\-Settings}!m\-\_\-num\-Trees@{m\-\_\-num\-Trees}}
+\index{m\-\_\-num\-Trees@{m\-\_\-num\-Trees}!tld::Settings@{tld\-::\-Settings}}
+\subsubsection[{m\-\_\-num\-Trees}]{\setlength{\rightskip}{0pt plus 5cm}int tld\-::\-Settings\-::m\-\_\-num\-Trees}}\label{classtld_1_1Settings_a959d793b002e13f6758fc84765b7d33d}
+
+
+number of trees 
+
+\hypertarget{classtld_1_1Settings_a8893600d99c4d096e384e4aeff2155f7}{\index{tld\-::\-Settings@{tld\-::\-Settings}!m\-\_\-output\-Dir@{m\-\_\-output\-Dir}}
+\index{m\-\_\-output\-Dir@{m\-\_\-output\-Dir}!tld::Settings@{tld\-::\-Settings}}
+\subsubsection[{m\-\_\-output\-Dir}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string tld\-::\-Settings\-::m\-\_\-output\-Dir}}\label{classtld_1_1Settings_a8893600d99c4d096e384e4aeff2155f7}
+
+
+required if save\-Output = true, no default 
+
+\hypertarget{classtld_1_1Settings_a214e9008680cab432e095e5d07372dd1}{\index{tld\-::\-Settings@{tld\-::\-Settings}!m\-\_\-print\-Results@{m\-\_\-print\-Results}}
+\index{m\-\_\-print\-Results@{m\-\_\-print\-Results}!tld::Settings@{tld\-::\-Settings}}
+\subsubsection[{m\-\_\-print\-Results}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string tld\-::\-Settings\-::m\-\_\-print\-Results}}\label{classtld_1_1Settings_a214e9008680cab432e095e5d07372dd1}
+
+
+path to the file where the results should be printed; N\-U\-L\-L -\/$>$ results will not be printed 
+
+\hypertarget{classtld_1_1Settings_af986bcadbc3f34693dd13191bbf65947}{\index{tld\-::\-Settings@{tld\-::\-Settings}!m\-\_\-print\-Timing@{m\-\_\-print\-Timing}}
+\index{m\-\_\-print\-Timing@{m\-\_\-print\-Timing}!tld::Settings@{tld\-::\-Settings}}
+\subsubsection[{m\-\_\-print\-Timing}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string tld\-::\-Settings\-::m\-\_\-print\-Timing}}\label{classtld_1_1Settings_af986bcadbc3f34693dd13191bbf65947}
+
+
+path to the file were the timings should be printed; N\-U\-L\-L -\/$>$ results will not be printed 
+
+\hypertarget{classtld_1_1Settings_afcb52ecca38e4e236a66c3f36ec7cdbf}{\index{tld\-::\-Settings@{tld\-::\-Settings}!m\-\_\-proportional\-Shift@{m\-\_\-proportional\-Shift}}
+\index{m\-\_\-proportional\-Shift@{m\-\_\-proportional\-Shift}!tld::Settings@{tld\-::\-Settings}}
+\subsubsection[{m\-\_\-proportional\-Shift}]{\setlength{\rightskip}{0pt plus 5cm}float tld\-::\-Settings\-::m\-\_\-proportional\-Shift}}\label{classtld_1_1Settings_afcb52ecca38e4e236a66c3f36ec7cdbf}
+
+
+proportional shift 
+
+\hypertarget{classtld_1_1Settings_a46de5897c9f1bc410c0f44f459181e05}{\index{tld\-::\-Settings@{tld\-::\-Settings}!m\-\_\-save\-Output@{m\-\_\-save\-Output}}
+\index{m\-\_\-save\-Output@{m\-\_\-save\-Output}!tld::Settings@{tld\-::\-Settings}}
+\subsubsection[{m\-\_\-save\-Output}]{\setlength{\rightskip}{0pt plus 5cm}bool tld\-::\-Settings\-::m\-\_\-save\-Output}}\label{classtld_1_1Settings_a46de5897c9f1bc410c0f44f459181e05}
+
+
+specifies whether to save visual output 
+
+\hypertarget{classtld_1_1Settings_a07dc62407c3373e7fa3906c145593b69}{\index{tld\-::\-Settings@{tld\-::\-Settings}!m\-\_\-seed@{m\-\_\-seed}}
+\index{m\-\_\-seed@{m\-\_\-seed}!tld::Settings@{tld\-::\-Settings}}
+\subsubsection[{m\-\_\-seed}]{\setlength{\rightskip}{0pt plus 5cm}int tld\-::\-Settings\-::m\-\_\-seed}}\label{classtld_1_1Settings_a07dc62407c3373e7fa3906c145593b69}
+
+
+the seed for pseudo-\/random number generator 
+
+\hypertarget{classtld_1_1Settings_afadc64d205d5386d94088e87dba72519}{\index{tld\-::\-Settings@{tld\-::\-Settings}!m\-\_\-select\-Manually@{m\-\_\-select\-Manually}}
+\index{m\-\_\-select\-Manually@{m\-\_\-select\-Manually}!tld::Settings@{tld\-::\-Settings}}
+\subsubsection[{m\-\_\-select\-Manually}]{\setlength{\rightskip}{0pt plus 5cm}bool tld\-::\-Settings\-::m\-\_\-select\-Manually}}\label{classtld_1_1Settings_afadc64d205d5386d94088e87dba72519}
+
+
+if true, user can select initial bounding box (which then overrides the setting \char`\"{}initial\-Bounding\-Box\char`\"{}) 
+
+\hypertarget{classtld_1_1Settings_a495b2aba7d0c9ec5fb914ab04b6d42cf}{\index{tld\-::\-Settings@{tld\-::\-Settings}!m\-\_\-show\-Color\-Image@{m\-\_\-show\-Color\-Image}}
+\index{m\-\_\-show\-Color\-Image@{m\-\_\-show\-Color\-Image}!tld::Settings@{tld\-::\-Settings}}
+\subsubsection[{m\-\_\-show\-Color\-Image}]{\setlength{\rightskip}{0pt plus 5cm}bool tld\-::\-Settings\-::m\-\_\-show\-Color\-Image}}\label{classtld_1_1Settings_a495b2aba7d0c9ec5fb914ab04b6d42cf}
+
+
+shows color images instead of greyscale 
+
+\hypertarget{classtld_1_1Settings_abcc93dd632486081ba14ebfaaaecd392}{\index{tld\-::\-Settings@{tld\-::\-Settings}!m\-\_\-show\-Detections@{m\-\_\-show\-Detections}}
+\index{m\-\_\-show\-Detections@{m\-\_\-show\-Detections}!tld::Settings@{tld\-::\-Settings}}
+\subsubsection[{m\-\_\-show\-Detections}]{\setlength{\rightskip}{0pt plus 5cm}bool tld\-::\-Settings\-::m\-\_\-show\-Detections}}\label{classtld_1_1Settings_abcc93dd632486081ba14ebfaaaecd392}
+
+
+shows detections 
+
+\hypertarget{classtld_1_1Settings_ab2398d08ccb9bab01c3240651d07f8c3}{\index{tld\-::\-Settings@{tld\-::\-Settings}!m\-\_\-show\-Foreground@{m\-\_\-show\-Foreground}}
+\index{m\-\_\-show\-Foreground@{m\-\_\-show\-Foreground}!tld::Settings@{tld\-::\-Settings}}
+\subsubsection[{m\-\_\-show\-Foreground}]{\setlength{\rightskip}{0pt plus 5cm}bool tld\-::\-Settings\-::m\-\_\-show\-Foreground}}\label{classtld_1_1Settings_ab2398d08ccb9bab01c3240651d07f8c3}
+
+
+shows foreground 
+
+\hypertarget{classtld_1_1Settings_acd69b3d8edc2fe3a05bb763dfd17b30b}{\index{tld\-::\-Settings@{tld\-::\-Settings}!m\-\_\-show\-Not\-Confident@{m\-\_\-show\-Not\-Confident}}
+\index{m\-\_\-show\-Not\-Confident@{m\-\_\-show\-Not\-Confident}!tld::Settings@{tld\-::\-Settings}}
+\subsubsection[{m\-\_\-show\-Not\-Confident}]{\setlength{\rightskip}{0pt plus 5cm}bool tld\-::\-Settings\-::m\-\_\-show\-Not\-Confident}}\label{classtld_1_1Settings_acd69b3d8edc2fe3a05bb763dfd17b30b}
+
+
+show bounding box also if confidence is low 
+
+\hypertarget{classtld_1_1Settings_abce1f9678efba0511db88545d97bb535}{\index{tld\-::\-Settings@{tld\-::\-Settings}!m\-\_\-show\-Output@{m\-\_\-show\-Output}}
+\index{m\-\_\-show\-Output@{m\-\_\-show\-Output}!tld::Settings@{tld\-::\-Settings}}
+\subsubsection[{m\-\_\-show\-Output}]{\setlength{\rightskip}{0pt plus 5cm}bool tld\-::\-Settings\-::m\-\_\-show\-Output}}\label{classtld_1_1Settings_abce1f9678efba0511db88545d97bb535}
+
+
+creates a window displaying results 
+
+\hypertarget{classtld_1_1Settings_ac63c6dfae7c0be1fc167608dd52e1d7f}{\index{tld\-::\-Settings@{tld\-::\-Settings}!m\-\_\-start\-Frame@{m\-\_\-start\-Frame}}
+\index{m\-\_\-start\-Frame@{m\-\_\-start\-Frame}!tld::Settings@{tld\-::\-Settings}}
+\subsubsection[{m\-\_\-start\-Frame}]{\setlength{\rightskip}{0pt plus 5cm}int tld\-::\-Settings\-::m\-\_\-start\-Frame}}\label{classtld_1_1Settings_ac63c6dfae7c0be1fc167608dd52e1d7f}
+
+
+first frame of capturing 
+
+\hypertarget{classtld_1_1Settings_aef49627d1ffac7dda7cc83c7ba6a25bd}{\index{tld\-::\-Settings@{tld\-::\-Settings}!m\-\_\-theta\-N@{m\-\_\-theta\-N}}
+\index{m\-\_\-theta\-N@{m\-\_\-theta\-N}!tld::Settings@{tld\-::\-Settings}}
+\subsubsection[{m\-\_\-theta\-N}]{\setlength{\rightskip}{0pt plus 5cm}float tld\-::\-Settings\-::m\-\_\-theta\-N}}\label{classtld_1_1Settings_aef49627d1ffac7dda7cc83c7ba6a25bd}
+
+
+lower threshold for confidence in filter of \hyperlink{classtld_1_1NNClassifier}{N\-N\-Classifier} 
+
+\hypertarget{classtld_1_1Settings_adade7d3269f34113e92abdb3816058f7}{\index{tld\-::\-Settings@{tld\-::\-Settings}!m\-\_\-theta\-P@{m\-\_\-theta\-P}}
+\index{m\-\_\-theta\-P@{m\-\_\-theta\-P}!tld::Settings@{tld\-::\-Settings}}
+\subsubsection[{m\-\_\-theta\-P}]{\setlength{\rightskip}{0pt plus 5cm}float tld\-::\-Settings\-::m\-\_\-theta\-P}}\label{classtld_1_1Settings_adade7d3269f34113e92abdb3816058f7}
+
+
+upper threshold for confidence in lerning and filter of \hyperlink{classtld_1_1NNClassifier}{N\-N\-Classifier} 
+
+\hypertarget{classtld_1_1Settings_afc2357da344888ad2158cbb51f8eb377}{\index{tld\-::\-Settings@{tld\-::\-Settings}!m\-\_\-threshold@{m\-\_\-threshold}}
+\index{m\-\_\-threshold@{m\-\_\-threshold}!tld::Settings@{tld\-::\-Settings}}
+\subsubsection[{m\-\_\-threshold}]{\setlength{\rightskip}{0pt plus 5cm}float tld\-::\-Settings\-::m\-\_\-threshold}}\label{classtld_1_1Settings_afc2357da344888ad2158cbb51f8eb377}
+
+
+threshold for determining positive results 
+
+\hypertarget{classtld_1_1Settings_a54a14f7a08a919ee6ff19514205c6b47}{\index{tld\-::\-Settings@{tld\-::\-Settings}!m\-\_\-tracker\-Enabled@{m\-\_\-tracker\-Enabled}}
+\index{m\-\_\-tracker\-Enabled@{m\-\_\-tracker\-Enabled}!tld::Settings@{tld\-::\-Settings}}
+\subsubsection[{m\-\_\-tracker\-Enabled}]{\setlength{\rightskip}{0pt plus 5cm}bool tld\-::\-Settings\-::m\-\_\-tracker\-Enabled}}\label{classtld_1_1Settings_a54a14f7a08a919ee6ff19514205c6b47}
+
+
+enables tracker (Lucas-\/\-Kanade) 
+
+\hypertarget{classtld_1_1Settings_a56281480120f9cb2dbf69022cf97a30a}{\index{tld\-::\-Settings@{tld\-::\-Settings}!m\-\_\-trajectory@{m\-\_\-trajectory}}
+\index{m\-\_\-trajectory@{m\-\_\-trajectory}!tld::Settings@{tld\-::\-Settings}}
+\subsubsection[{m\-\_\-trajectory}]{\setlength{\rightskip}{0pt plus 5cm}int tld\-::\-Settings\-::m\-\_\-trajectory}}\label{classtld_1_1Settings_a56281480120f9cb2dbf69022cf97a30a}
+
+
+specifies the number of the last frames which are considered by the trajectory; 0 disables the trajectory 
+
+\hypertarget{classtld_1_1Settings_afd89a9d1a0a8dec5ce524eeed5b0f5e0}{\index{tld\-::\-Settings@{tld\-::\-Settings}!m\-\_\-use\-Proportional\-Shift@{m\-\_\-use\-Proportional\-Shift}}
+\index{m\-\_\-use\-Proportional\-Shift@{m\-\_\-use\-Proportional\-Shift}!tld::Settings@{tld\-::\-Settings}}
+\subsubsection[{m\-\_\-use\-Proportional\-Shift}]{\setlength{\rightskip}{0pt plus 5cm}bool tld\-::\-Settings\-::m\-\_\-use\-Proportional\-Shift}}\label{classtld_1_1Settings_afd89a9d1a0a8dec5ce524eeed5b0f5e0}
+
+
+sets scanwindows off by a percentage value of the window dimensions (specified in proportional\-Shift) rather than 1px. 
+
+\hypertarget{classtld_1_1Settings_ab3100039fb52ee1a41813812320a6ca3}{\index{tld\-::\-Settings@{tld\-::\-Settings}!m\-\_\-variance\-Filter\-Enabled@{m\-\_\-variance\-Filter\-Enabled}}
+\index{m\-\_\-variance\-Filter\-Enabled@{m\-\_\-variance\-Filter\-Enabled}!tld::Settings@{tld\-::\-Settings}}
+\subsubsection[{m\-\_\-variance\-Filter\-Enabled}]{\setlength{\rightskip}{0pt plus 5cm}bool tld\-::\-Settings\-::m\-\_\-variance\-Filter\-Enabled}}\label{classtld_1_1Settings_ab3100039fb52ee1a41813812320a6ca3}
+
+
+enables variance filter 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/opentld/main/\hyperlink{Settings_8h}{Settings.\-h}\item 
+src/opentld/main/\hyperlink{Settings_8cpp}{Settings.\-cpp}\end{DoxyCompactItemize}

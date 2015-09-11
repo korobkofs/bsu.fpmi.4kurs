@@ -1,0 +1,4 @@
+<map id="cv::gpu::device::reduce_key_val_detail::loadFromSmem" name="cv::gpu::device::reduce_key_val_detail::loadFromSmem">
+<area shape="rect" id="node2" href="$namespacecv_1_1gpu_1_1device_1_1reduce__key__val__detail.html#a6bac7fcf29b3b1d0dab2d20a4b5eb5ec" title="cv::gpu::device::reduce\l_key_val_detail::loadFromSmem" alt="" coords="281,5,493,46"/>
+<area shape="rect" id="node3" href="$structcv_1_1gpu_1_1device_1_1reduce__key__val__detail_1_1GenericOptimized32.html#ac61f56ddcc428c76eb2c4f59c0007320" title="cv::gpu::device::reduce\l_key_val_detail::GenericOptimized32\l::reduce" alt="" coords="267,69,506,125"/>
+</map>

@@ -1,0 +1,213 @@
+\hypertarget{classcvtest_1_1BaseTest}{\section{cvtest\-:\-:Base\-Test Class Reference}
+\label{classcvtest_1_1BaseTest}\index{cvtest\-::\-Base\-Test@{cvtest\-::\-Base\-Test}}
+}
+
+
+{\ttfamily \#include $<$ts.\-hpp$>$}
+
+
+
+Inheritance diagram for cvtest\-:\-:Base\-Test\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=291pt]{classcvtest_1_1BaseTest__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for cvtest\-:\-:Base\-Test\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcvtest_1_1BaseTest__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcvtest_1_1BaseTest_aebc1f33e648108257281029d9aba8a29}{Base\-Test} ()
+\item 
+virtual \hyperlink{classcvtest_1_1BaseTest_a90466c592d3bd9afd17abd160805bcf8}{$\sim$\-Base\-Test} ()
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcvtest_1_1BaseTest_ac9bc6415ef6fba128f5deeabcfa39c0c}{run} (int start\-\_\-from)
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcvtest_1_1BaseTest_ab5628e0021952f2358701fa4c9c147e0}{safe\-\_\-run} (int start\-\_\-from=0)
+\item 
+const string \& \hyperlink{classcvtest_1_1BaseTest_ac21dca0ee0ad92d06e5bf22c6f244af3}{get\-\_\-name} () const 
+\item 
+virtual bool \hyperlink{classcvtest_1_1BaseTest_a32f393d8cfed1ae62e2d06f8ba7ca148}{can\-\_\-do\-\_\-fast\-\_\-forward} ()
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcvtest_1_1BaseTest_aacea157b2977c8aab837fd5c9d4c1315}{clear} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \hyperlink{classcvtest_1_1BaseTest_ae8e9fedae8c63b59ffed6d8f059830cc}{read\-\_\-params} (\hyperlink{core_2types__c_8h_a84556d1bb6f1b8b02c04c60246747a7e}{Cv\-File\-Storage} $\ast$fs)
+\item 
+virtual int \hyperlink{classcvtest_1_1BaseTest_ab2230540aef6b4cc90e05329b80fb0d6}{get\-\_\-test\-\_\-case\-\_\-count} ()
+\item 
+virtual int \hyperlink{classcvtest_1_1BaseTest_a5f4916a8244afb316ec2515af50db366}{prepare\-\_\-test\-\_\-case} (int test\-\_\-case\-\_\-idx)
+\item 
+virtual int \hyperlink{classcvtest_1_1BaseTest_a965e3adf864fd002c11a64f1190c5781}{validate\-\_\-test\-\_\-results} (int test\-\_\-case\-\_\-idx)
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcvtest_1_1BaseTest_a6f33a9e024184d3e3561c67d0a131656}{run\-\_\-func} ()
+\item 
+virtual int \hyperlink{classcvtest_1_1BaseTest_a93307e3353a3b5ad254d546578230d88}{update\-\_\-progress} (int progress, int test\-\_\-case\-\_\-idx, int \hyperlink{tracking_8hpp_a88d78b1935cd8bdee70a44eaaf326b1e}{count}, double \hyperlink{core__c_8h_a6349a5196c8b4904789d908389b91671}{dt})
+\item 
+const \hyperlink{structCvFileNode}{Cv\-File\-Node} $\ast$ \hyperlink{classcvtest_1_1BaseTest_a980c8ef108496cb87691950ba9649d60}{find\-\_\-param} (\hyperlink{core_2types__c_8h_a84556d1bb6f1b8b02c04c60246747a7e}{Cv\-File\-Storage} $\ast$fs, const char $\ast$param\-\_\-name)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classcvtest_1_1BaseTest_a20ef42b44b55838ddb61c399c9c8407b}{test\-\_\-case\-\_\-count}
+\item 
+string \hyperlink{classcvtest_1_1BaseTest_aa5dd881caa5023490a723976fe9bcdd8}{name}
+\item 
+\hyperlink{classcvtest_1_1TS}{T\-S} $\ast$ \hyperlink{classcvtest_1_1BaseTest_ab30930fd0e1878ddc54f335410eef7e5}{ts}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcvtest_1_1BaseTest_aebc1f33e648108257281029d9aba8a29}{\index{cvtest\-::\-Base\-Test@{cvtest\-::\-Base\-Test}!Base\-Test@{Base\-Test}}
+\index{Base\-Test@{Base\-Test}!cvtest::BaseTest@{cvtest\-::\-Base\-Test}}
+\subsubsection[{Base\-Test}]{\setlength{\rightskip}{0pt plus 5cm}cvtest\-::\-Base\-Test\-::\-Base\-Test (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcvtest_1_1BaseTest_aebc1f33e648108257281029d9aba8a29}
+\hypertarget{classcvtest_1_1BaseTest_a90466c592d3bd9afd17abd160805bcf8}{\index{cvtest\-::\-Base\-Test@{cvtest\-::\-Base\-Test}!$\sim$\-Base\-Test@{$\sim$\-Base\-Test}}
+\index{$\sim$\-Base\-Test@{$\sim$\-Base\-Test}!cvtest::BaseTest@{cvtest\-::\-Base\-Test}}
+\subsubsection[{$\sim$\-Base\-Test}]{\setlength{\rightskip}{0pt plus 5cm}virtual cvtest\-::\-Base\-Test\-::$\sim$\-Base\-Test (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcvtest_1_1BaseTest_a90466c592d3bd9afd17abd160805bcf8}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcvtest_1_1BaseTest_a32f393d8cfed1ae62e2d06f8ba7ca148}{\index{cvtest\-::\-Base\-Test@{cvtest\-::\-Base\-Test}!can\-\_\-do\-\_\-fast\-\_\-forward@{can\-\_\-do\-\_\-fast\-\_\-forward}}
+\index{can\-\_\-do\-\_\-fast\-\_\-forward@{can\-\_\-do\-\_\-fast\-\_\-forward}!cvtest::BaseTest@{cvtest\-::\-Base\-Test}}
+\subsubsection[{can\-\_\-do\-\_\-fast\-\_\-forward}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool cvtest\-::\-Base\-Test\-::can\-\_\-do\-\_\-fast\-\_\-forward (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcvtest_1_1BaseTest_a32f393d8cfed1ae62e2d06f8ba7ca148}
+\hypertarget{classcvtest_1_1BaseTest_aacea157b2977c8aab837fd5c9d4c1315}{\index{cvtest\-::\-Base\-Test@{cvtest\-::\-Base\-Test}!clear@{clear}}
+\index{clear@{clear}!cvtest::BaseTest@{cvtest\-::\-Base\-Test}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cvtest\-::\-Base\-Test\-::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcvtest_1_1BaseTest_aacea157b2977c8aab837fd5c9d4c1315}
+
+
+Reimplemented in \hyperlink{classcvtest_1_1ArrayTest_aad13acbabc4319d516e01382e277dfae}{cvtest\-::\-Array\-Test}.
+
+\hypertarget{classcvtest_1_1BaseTest_a980c8ef108496cb87691950ba9649d60}{\index{cvtest\-::\-Base\-Test@{cvtest\-::\-Base\-Test}!find\-\_\-param@{find\-\_\-param}}
+\index{find\-\_\-param@{find\-\_\-param}!cvtest::BaseTest@{cvtest\-::\-Base\-Test}}
+\subsubsection[{find\-\_\-param}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cv\-File\-Node}$\ast$ cvtest\-::\-Base\-Test\-::find\-\_\-param (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-File\-Storage} $\ast$}]{fs, }
+\item[{const char $\ast$}]{param\-\_\-name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcvtest_1_1BaseTest_a980c8ef108496cb87691950ba9649d60}
+\hypertarget{classcvtest_1_1BaseTest_ac21dca0ee0ad92d06e5bf22c6f244af3}{\index{cvtest\-::\-Base\-Test@{cvtest\-::\-Base\-Test}!get\-\_\-name@{get\-\_\-name}}
+\index{get\-\_\-name@{get\-\_\-name}!cvtest::BaseTest@{cvtest\-::\-Base\-Test}}
+\subsubsection[{get\-\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}const string\& cvtest\-::\-Base\-Test\-::get\-\_\-name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcvtest_1_1BaseTest_ac21dca0ee0ad92d06e5bf22c6f244af3}
+\hypertarget{classcvtest_1_1BaseTest_ab2230540aef6b4cc90e05329b80fb0d6}{\index{cvtest\-::\-Base\-Test@{cvtest\-::\-Base\-Test}!get\-\_\-test\-\_\-case\-\_\-count@{get\-\_\-test\-\_\-case\-\_\-count}}
+\index{get\-\_\-test\-\_\-case\-\_\-count@{get\-\_\-test\-\_\-case\-\_\-count}!cvtest::BaseTest@{cvtest\-::\-Base\-Test}}
+\subsubsection[{get\-\_\-test\-\_\-case\-\_\-count}]{\setlength{\rightskip}{0pt plus 5cm}virtual int cvtest\-::\-Base\-Test\-::get\-\_\-test\-\_\-case\-\_\-count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classcvtest_1_1BaseTest_ab2230540aef6b4cc90e05329b80fb0d6}
+\hypertarget{classcvtest_1_1BaseTest_a5f4916a8244afb316ec2515af50db366}{\index{cvtest\-::\-Base\-Test@{cvtest\-::\-Base\-Test}!prepare\-\_\-test\-\_\-case@{prepare\-\_\-test\-\_\-case}}
+\index{prepare\-\_\-test\-\_\-case@{prepare\-\_\-test\-\_\-case}!cvtest::BaseTest@{cvtest\-::\-Base\-Test}}
+\subsubsection[{prepare\-\_\-test\-\_\-case}]{\setlength{\rightskip}{0pt plus 5cm}virtual int cvtest\-::\-Base\-Test\-::prepare\-\_\-test\-\_\-case (
+\begin{DoxyParamCaption}
+\item[{int}]{test\-\_\-case\-\_\-idx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classcvtest_1_1BaseTest_a5f4916a8244afb316ec2515af50db366}
+
+
+Reimplemented in \hyperlink{classcvtest_1_1ArrayTest_a9c776e6fa32960566d5cea93577bcc98}{cvtest\-::\-Array\-Test}.
+
+\hypertarget{classcvtest_1_1BaseTest_ae8e9fedae8c63b59ffed6d8f059830cc}{\index{cvtest\-::\-Base\-Test@{cvtest\-::\-Base\-Test}!read\-\_\-params@{read\-\_\-params}}
+\index{read\-\_\-params@{read\-\_\-params}!cvtest::BaseTest@{cvtest\-::\-Base\-Test}}
+\subsubsection[{read\-\_\-params}]{\setlength{\rightskip}{0pt plus 5cm}virtual int cvtest\-::\-Base\-Test\-::read\-\_\-params (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-File\-Storage} $\ast$}]{fs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classcvtest_1_1BaseTest_ae8e9fedae8c63b59ffed6d8f059830cc}
+
+
+Reimplemented in \hyperlink{classcvtest_1_1ArrayTest_a844ed0c2aac19d299d0841777023d399}{cvtest\-::\-Array\-Test}.
+
+\hypertarget{classcvtest_1_1BaseTest_ac9bc6415ef6fba128f5deeabcfa39c0c}{\index{cvtest\-::\-Base\-Test@{cvtest\-::\-Base\-Test}!run@{run}}
+\index{run@{run}!cvtest::BaseTest@{cvtest\-::\-Base\-Test}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cvtest\-::\-Base\-Test\-::run (
+\begin{DoxyParamCaption}
+\item[{int}]{start\-\_\-from}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcvtest_1_1BaseTest_ac9bc6415ef6fba128f5deeabcfa39c0c}
+\hypertarget{classcvtest_1_1BaseTest_a6f33a9e024184d3e3561c67d0a131656}{\index{cvtest\-::\-Base\-Test@{cvtest\-::\-Base\-Test}!run\-\_\-func@{run\-\_\-func}}
+\index{run\-\_\-func@{run\-\_\-func}!cvtest::BaseTest@{cvtest\-::\-Base\-Test}}
+\subsubsection[{run\-\_\-func}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cvtest\-::\-Base\-Test\-::run\-\_\-func (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classcvtest_1_1BaseTest_a6f33a9e024184d3e3561c67d0a131656}
+
+
+Reimplemented in \hyperlink{classcvtest_1_1BadArgTest_afa8d8a3d02a05a64282130e872e769ef}{cvtest\-::\-Bad\-Arg\-Test}.
+
+\hypertarget{classcvtest_1_1BaseTest_ab5628e0021952f2358701fa4c9c147e0}{\index{cvtest\-::\-Base\-Test@{cvtest\-::\-Base\-Test}!safe\-\_\-run@{safe\-\_\-run}}
+\index{safe\-\_\-run@{safe\-\_\-run}!cvtest::BaseTest@{cvtest\-::\-Base\-Test}}
+\subsubsection[{safe\-\_\-run}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cvtest\-::\-Base\-Test\-::safe\-\_\-run (
+\begin{DoxyParamCaption}
+\item[{int}]{start\-\_\-from = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcvtest_1_1BaseTest_ab5628e0021952f2358701fa4c9c147e0}
+\hypertarget{classcvtest_1_1BaseTest_a93307e3353a3b5ad254d546578230d88}{\index{cvtest\-::\-Base\-Test@{cvtest\-::\-Base\-Test}!update\-\_\-progress@{update\-\_\-progress}}
+\index{update\-\_\-progress@{update\-\_\-progress}!cvtest::BaseTest@{cvtest\-::\-Base\-Test}}
+\subsubsection[{update\-\_\-progress}]{\setlength{\rightskip}{0pt plus 5cm}virtual int cvtest\-::\-Base\-Test\-::update\-\_\-progress (
+\begin{DoxyParamCaption}
+\item[{int}]{progress, }
+\item[{int}]{test\-\_\-case\-\_\-idx, }
+\item[{int}]{count, }
+\item[{double}]{dt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classcvtest_1_1BaseTest_a93307e3353a3b5ad254d546578230d88}
+\hypertarget{classcvtest_1_1BaseTest_a965e3adf864fd002c11a64f1190c5781}{\index{cvtest\-::\-Base\-Test@{cvtest\-::\-Base\-Test}!validate\-\_\-test\-\_\-results@{validate\-\_\-test\-\_\-results}}
+\index{validate\-\_\-test\-\_\-results@{validate\-\_\-test\-\_\-results}!cvtest::BaseTest@{cvtest\-::\-Base\-Test}}
+\subsubsection[{validate\-\_\-test\-\_\-results}]{\setlength{\rightskip}{0pt plus 5cm}virtual int cvtest\-::\-Base\-Test\-::validate\-\_\-test\-\_\-results (
+\begin{DoxyParamCaption}
+\item[{int}]{test\-\_\-case\-\_\-idx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classcvtest_1_1BaseTest_a965e3adf864fd002c11a64f1190c5781}
+
+
+Reimplemented in \hyperlink{classcvtest_1_1ArrayTest_ad8a2e0184f77ca42ed3b3aa7229c217e}{cvtest\-::\-Array\-Test}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcvtest_1_1BaseTest_aa5dd881caa5023490a723976fe9bcdd8}{\index{cvtest\-::\-Base\-Test@{cvtest\-::\-Base\-Test}!name@{name}}
+\index{name@{name}!cvtest::BaseTest@{cvtest\-::\-Base\-Test}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}string cvtest\-::\-Base\-Test\-::name\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcvtest_1_1BaseTest_aa5dd881caa5023490a723976fe9bcdd8}
+\hypertarget{classcvtest_1_1BaseTest_a20ef42b44b55838ddb61c399c9c8407b}{\index{cvtest\-::\-Base\-Test@{cvtest\-::\-Base\-Test}!test\-\_\-case\-\_\-count@{test\-\_\-case\-\_\-count}}
+\index{test\-\_\-case\-\_\-count@{test\-\_\-case\-\_\-count}!cvtest::BaseTest@{cvtest\-::\-Base\-Test}}
+\subsubsection[{test\-\_\-case\-\_\-count}]{\setlength{\rightskip}{0pt plus 5cm}int cvtest\-::\-Base\-Test\-::test\-\_\-case\-\_\-count\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcvtest_1_1BaseTest_a20ef42b44b55838ddb61c399c9c8407b}
+\hypertarget{classcvtest_1_1BaseTest_ab30930fd0e1878ddc54f335410eef7e5}{\index{cvtest\-::\-Base\-Test@{cvtest\-::\-Base\-Test}!ts@{ts}}
+\index{ts@{ts}!cvtest::BaseTest@{cvtest\-::\-Base\-Test}}
+\subsubsection[{ts}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\-S}$\ast$ cvtest\-::\-Base\-Test\-::ts\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcvtest_1_1BaseTest_ab30930fd0e1878ddc54f335410eef7e5}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/ts/\hyperlink{ts_8hpp}{ts.\-hpp}\end{DoxyCompactItemize}

@@ -1,0 +1,570 @@
+\hypertarget{ts__perf_8hpp}{\section{/usr/include/opencv2/ts/ts\-\_\-perf.hpp File Reference}
+\label{ts__perf_8hpp}\index{/usr/include/opencv2/ts/ts\-\_\-perf.\-hpp@{/usr/include/opencv2/ts/ts\-\_\-perf.\-hpp}}
+}
+{\ttfamily \#include \char`\"{}opencv2/core/core.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}opencv2/imgproc/imgproc.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}opencv2/features2d/features2d.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}ts\-\_\-gtest.\-h\char`\"{}}\\*
+Include dependency graph for ts\-\_\-perf.\-hpp\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ts__perf_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ts__perf_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classperf_1_1MatType}{perf\-::\-Mat\-Type}
+\item 
+class \hyperlink{classperf_1_1Regression}{perf\-::\-Regression}
+\item 
+class \hyperlink{classperf_1_1GpuPerf}{perf\-::\-Gpu\-Perf}
+\item 
+struct \hyperlink{structperf_1_1performance__metrics}{perf\-::performance\-\_\-metrics}
+\item 
+class \hyperlink{classperf_1_1TestBase}{perf\-::\-Test\-Base}
+\item 
+class \hyperlink{classperf_1_1TestBase_1_1PerfSkipTestException}{perf\-::\-Test\-Base\-::\-Perf\-Skip\-Test\-Exception}
+\item 
+class \hyperlink{classperf_1_1TestBaseWithParam}{perf\-::\-Test\-Base\-With\-Param$<$ T $>$}
+\item 
+struct \hyperlink{structperf_1_1comparators_1_1RectLess__}{perf\-::comparators\-::\-Rect\-Less\-\_\-$<$ T $>$}
+\item 
+struct \hyperlink{structperf_1_1comparators_1_1KeypointGreater}{perf\-::comparators\-::\-Keypoint\-Greater}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacecv}{cv}
+\item 
+\hyperlink{namespacecv_1_1gpu}{cv\-::gpu}
+\item 
+\hyperlink{namespacecv_1_1ocl}{cv\-::ocl}
+\item 
+\hyperlink{namespaceperf}{perf}
+\item 
+\hyperlink{namespaceperf_1_1comparators}{perf\-::comparators}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{ts__perf_8hpp_ae0686fe2d003a0bf365233acacf2ad0f}{L\-O\-G\-D}(\-\_\-str,...)~do\{printf(\-\_\-str , \#\# \-\_\-\-\_\-\-V\-A\-\_\-\-A\-R\-G\-S\-\_\-\-\_\-); printf(\char`\"{}\textbackslash{}n\char`\"{});fflush(stdout);\} \hyperlink{scanner_8c_a8fdafe3be7e00ce3d4f0cb50a9a5eb39}{while}(0)
+\item 
+\#define \hyperlink{ts__perf_8hpp_aa4be740af89c6d18ac0f1c8fc0fc5f1a}{L\-O\-G\-I}(\-\_\-str,...)~do\{printf(\-\_\-str , \#\# \-\_\-\-\_\-\-V\-A\-\_\-\-A\-R\-G\-S\-\_\-\-\_\-); printf(\char`\"{}\textbackslash{}n\char`\"{});fflush(stdout);\} \hyperlink{scanner_8c_a8fdafe3be7e00ce3d4f0cb50a9a5eb39}{while}(0)
+\item 
+\#define \hyperlink{ts__perf_8hpp_ad3a9d43e59b3b5b2dca7851edc2a762c}{L\-O\-G\-W}(\-\_\-str,...)~do\{printf(\-\_\-str , \#\# \-\_\-\-\_\-\-V\-A\-\_\-\-A\-R\-G\-S\-\_\-\-\_\-); printf(\char`\"{}\textbackslash{}n\char`\"{});fflush(stdout);\} \hyperlink{scanner_8c_a8fdafe3be7e00ce3d4f0cb50a9a5eb39}{while}(0)
+\item 
+\#define \hyperlink{ts__perf_8hpp_adb313dff3938acc16bfd09200b1e8ca9}{L\-O\-G\-E}(\-\_\-str,...)~do\{printf(\-\_\-str , \#\# \-\_\-\-\_\-\-V\-A\-\_\-\-A\-R\-G\-S\-\_\-\-\_\-); printf(\char`\"{}\textbackslash{}n\char`\"{});fflush(stdout);\} \hyperlink{scanner_8c_a8fdafe3be7e00ce3d4f0cb50a9a5eb39}{while}(0)
+\item 
+\#define \hyperlink{ts__perf_8hpp_aa524997830de7aebe77050a0cd565b58}{S\-Z\-\_\-\-A\-L\-L\-\_\-\-V\-G\-A}~\-::\hyperlink{namespacetesting_a8209ef59db08b8ad4beed30d8d6e6a88}{testing\-::\-Values}(\-::\hyperlink{namespaceperf_a8d3d0bf3b89981e67bc30a3bd2befde1}{perf\-::sz\-Q\-V\-G\-A}, \-::\hyperlink{namespaceperf_a198109adcb948fd8823f5fd653ae4813}{perf\-::sz\-V\-G\-A}, \-::\hyperlink{namespaceperf_a8188190bc9ebd429fb46c05c671009c6}{perf\-::sz\-S\-V\-G\-A})
+\item 
+\#define \hyperlink{ts__perf_8hpp_a01994f8c1789eeccac25df51925a3661}{S\-Z\-\_\-\-A\-L\-L\-\_\-\-G\-A}~\-::\hyperlink{namespacetesting_a8209ef59db08b8ad4beed30d8d6e6a88}{testing\-::\-Values}(\-::\hyperlink{namespaceperf_a8d3d0bf3b89981e67bc30a3bd2befde1}{perf\-::sz\-Q\-V\-G\-A}, \-::\hyperlink{namespaceperf_a198109adcb948fd8823f5fd653ae4813}{perf\-::sz\-V\-G\-A}, \-::\hyperlink{namespaceperf_a8188190bc9ebd429fb46c05c671009c6}{perf\-::sz\-S\-V\-G\-A}, \-::\hyperlink{namespaceperf_a5e19cb1374414c082b73208f4893bb90}{perf\-::sz\-X\-G\-A}, \-::\hyperlink{namespaceperf_af0980e07fe76ff27e882ecd10f34be75}{perf\-::sz\-S\-X\-G\-A})
+\item 
+\#define \hyperlink{ts__perf_8hpp_a7f35a426bfd9bfcce5f125f9b6f7f3fa}{S\-Z\-\_\-\-A\-L\-L\-\_\-\-H\-D}~\-::\hyperlink{namespacetesting_a8209ef59db08b8ad4beed30d8d6e6a88}{testing\-::\-Values}(\-::\hyperlink{namespaceperf_af94d4bf8af282e3aa46c9d1f85630225}{perf\-::szn\-H\-D}, \-::\hyperlink{namespaceperf_a2aec1a98d3dfcd2d7f5546d61eb4e24c}{perf\-::szq\-H\-D}, \-::\hyperlink{namespaceperf_a6ede89be4112c563e5f2c046f3cee64f}{perf\-::sz720p}, \-::\hyperlink{namespaceperf_ad795e18c34cc44bf1f2d59896d6e9d4d}{perf\-::sz1080p})
+\item 
+\#define \hyperlink{ts__perf_8hpp_a0aa5324e840420879bb622856d6d1047}{S\-Z\-\_\-\-A\-L\-L\-\_\-\-S\-M\-A\-L\-L}~\-::\hyperlink{namespacetesting_a8209ef59db08b8ad4beed30d8d6e6a88}{testing\-::\-Values}(\-::\hyperlink{namespaceperf_a7d5bf0103f9ee3afc0be30535b9c63d2}{perf\-::sz\-Small24}, \-::\hyperlink{namespaceperf_a00d601232dc9acbbd7ac710d2f0f0070}{perf\-::sz\-Small32}, \-::\hyperlink{namespaceperf_a814dfec6d0d13f821a164e3c562cc1ec}{perf\-::sz\-Small64}, \-::\hyperlink{namespaceperf_af5e22599b492125ccaba714aa0a729f4}{perf\-::sz\-Small128})
+\item 
+\#define \hyperlink{ts__perf_8hpp_ab6d5bc9408480f6bf75b7154514e1f1d}{S\-Z\-\_\-\-A\-L\-L}~\-::\hyperlink{namespacetesting_a8209ef59db08b8ad4beed30d8d6e6a88}{testing\-::\-Values}(\-::\hyperlink{namespaceperf_a8d3d0bf3b89981e67bc30a3bd2befde1}{perf\-::sz\-Q\-V\-G\-A}, \-::\hyperlink{namespaceperf_a198109adcb948fd8823f5fd653ae4813}{perf\-::sz\-V\-G\-A}, \-::\hyperlink{namespaceperf_a8188190bc9ebd429fb46c05c671009c6}{perf\-::sz\-S\-V\-G\-A}, \-::\hyperlink{namespaceperf_a5e19cb1374414c082b73208f4893bb90}{perf\-::sz\-X\-G\-A}, \-::\hyperlink{namespaceperf_af0980e07fe76ff27e882ecd10f34be75}{perf\-::sz\-S\-X\-G\-A}, \-::\hyperlink{namespaceperf_af94d4bf8af282e3aa46c9d1f85630225}{perf\-::szn\-H\-D}, \-::\hyperlink{namespaceperf_a2aec1a98d3dfcd2d7f5546d61eb4e24c}{perf\-::szq\-H\-D}, \-::\hyperlink{namespaceperf_a6ede89be4112c563e5f2c046f3cee64f}{perf\-::sz720p}, \-::\hyperlink{namespaceperf_ad795e18c34cc44bf1f2d59896d6e9d4d}{perf\-::sz1080p})
+\item 
+\#define \hyperlink{ts__perf_8hpp_afcbb8b462813d27b05060eab9a0f644e}{S\-Z\-\_\-\-T\-Y\-P\-I\-C\-A\-L}~\-::\hyperlink{namespacetesting_a8209ef59db08b8ad4beed30d8d6e6a88}{testing\-::\-Values}(\-::\hyperlink{namespaceperf_a198109adcb948fd8823f5fd653ae4813}{perf\-::sz\-V\-G\-A}, \-::\hyperlink{namespaceperf_a2aec1a98d3dfcd2d7f5546d61eb4e24c}{perf\-::szq\-H\-D}, \-::\hyperlink{namespaceperf_a6ede89be4112c563e5f2c046f3cee64f}{perf\-::sz720p}, \-::\hyperlink{namespaceperf_af52e6b9008d035b07afca749a825b143}{perf\-::sz\-O\-D\-D})
+\item 
+\#define \hyperlink{ts__perf_8hpp_ae0f3a4889c8ea669bb90f3708a891079}{T\-Y\-P\-I\-C\-A\-L\-\_\-\-M\-A\-T\-\_\-\-S\-I\-Z\-E\-S}~\-::\hyperlink{namespaceperf_a198109adcb948fd8823f5fd653ae4813}{perf\-::sz\-V\-G\-A}, \-::\hyperlink{namespaceperf_a6ede89be4112c563e5f2c046f3cee64f}{perf\-::sz720p}, \-::\hyperlink{namespaceperf_ad795e18c34cc44bf1f2d59896d6e9d4d}{perf\-::sz1080p}, \-::\hyperlink{namespaceperf_af52e6b9008d035b07afca749a825b143}{perf\-::sz\-O\-D\-D}
+\item 
+\#define \hyperlink{ts__perf_8hpp_ab1cb0bf5cf859148e818fc86e3df239a}{T\-Y\-P\-I\-C\-A\-L\-\_\-\-M\-A\-T\-\_\-\-T\-Y\-P\-E\-S}~\hyperlink{core_2types__c_8h_a81df635441b21f532fdace401e04f588}{C\-V\-\_\-8\-U\-C1}, \hyperlink{core_2types__c_8h_a4519ad2827f771db8260c61207b782df}{C\-V\-\_\-8\-U\-C4}, \hyperlink{core_2types__c_8h_a32ec76240e43e4c9c7b2e2785180a7e6}{C\-V\-\_\-32\-F\-C1}
+\item 
+\#define \hyperlink{ts__perf_8hpp_a65d75f4ace1460cf0a9fb039cf36b6b3}{T\-Y\-P\-I\-C\-A\-L\-\_\-\-M\-A\-T\-S}~\hyperlink{namespacetesting_a4917922963bacef3e301e67366c41df3}{testing\-::\-Combine}( \hyperlink{namespacetesting_a8209ef59db08b8ad4beed30d8d6e6a88}{testing\-::\-Values}( \hyperlink{ts__perf_8hpp_ae0f3a4889c8ea669bb90f3708a891079}{T\-Y\-P\-I\-C\-A\-L\-\_\-\-M\-A\-T\-\_\-\-S\-I\-Z\-E\-S} ), \hyperlink{namespacetesting_a8209ef59db08b8ad4beed30d8d6e6a88}{testing\-::\-Values}( \hyperlink{ts__perf_8hpp_ab1cb0bf5cf859148e818fc86e3df239a}{T\-Y\-P\-I\-C\-A\-L\-\_\-\-M\-A\-T\-\_\-\-T\-Y\-P\-E\-S} ) )
+\item 
+\#define \hyperlink{ts__perf_8hpp_aa98df59178cd92dcc1f47f198e1ebafb}{T\-Y\-P\-I\-C\-A\-L\-\_\-\-M\-A\-T\-S\-\_\-\-C1}~\hyperlink{namespacetesting_a4917922963bacef3e301e67366c41df3}{testing\-::\-Combine}( \hyperlink{namespacetesting_a8209ef59db08b8ad4beed30d8d6e6a88}{testing\-::\-Values}( \hyperlink{ts__perf_8hpp_ae0f3a4889c8ea669bb90f3708a891079}{T\-Y\-P\-I\-C\-A\-L\-\_\-\-M\-A\-T\-\_\-\-S\-I\-Z\-E\-S} ), \hyperlink{namespacetesting_a8209ef59db08b8ad4beed30d8d6e6a88}{testing\-::\-Values}( \hyperlink{core_2types__c_8h_a81df635441b21f532fdace401e04f588}{C\-V\-\_\-8\-U\-C1}, \hyperlink{core_2types__c_8h_a32ec76240e43e4c9c7b2e2785180a7e6}{C\-V\-\_\-32\-F\-C1} ) )
+\item 
+\#define \hyperlink{ts__perf_8hpp_abb4b64218882ae2bf2be85b0e86333cb}{T\-Y\-P\-I\-C\-A\-L\-\_\-\-M\-A\-T\-S\-\_\-\-C4}~\hyperlink{namespacetesting_a4917922963bacef3e301e67366c41df3}{testing\-::\-Combine}( \hyperlink{namespacetesting_a8209ef59db08b8ad4beed30d8d6e6a88}{testing\-::\-Values}( \hyperlink{ts__perf_8hpp_ae0f3a4889c8ea669bb90f3708a891079}{T\-Y\-P\-I\-C\-A\-L\-\_\-\-M\-A\-T\-\_\-\-S\-I\-Z\-E\-S} ), \hyperlink{namespacetesting_a8209ef59db08b8ad4beed30d8d6e6a88}{testing\-::\-Values}( \hyperlink{core_2types__c_8h_a4519ad2827f771db8260c61207b782df}{C\-V\-\_\-8\-U\-C4} ) )
+\item 
+\#define \hyperlink{ts__perf_8hpp_aa2843eb53003e0148b8834b599056efa}{C\-V\-\_\-\-E\-N\-U\-M}(class\-\_\-name,...)
+\item 
+\#define \hyperlink{ts__perf_8hpp_a41f40a47b192e091d601fb9e44ffed4f}{C\-V\-\_\-\-F\-L\-A\-G\-S}(class\-\_\-name,...)
+\item 
+\#define \hyperlink{ts__perf_8hpp_a34dc92159af1d943e424100edf16cf1d}{S\-A\-N\-I\-T\-Y\-\_\-\-C\-H\-E\-C\-K}(array,...)~\-::\hyperlink{classperf_1_1Regression_ac1319e939b68d59c61083584cec3611c}{perf\-::\-Regression\-::add}(this, \#array, array , \#\# \-\_\-\-\_\-\-V\-A\-\_\-\-A\-R\-G\-S\-\_\-\-\_\-)
+\item 
+\#define \hyperlink{ts__perf_8hpp_a8cd56cc66f9739ff35c2c9cf095d5a39}{S\-A\-N\-I\-T\-Y\-\_\-\-C\-H\-E\-C\-K\-\_\-\-K\-E\-Y\-P\-O\-I\-N\-T\-S}(array,...)~\-::\hyperlink{classperf_1_1Regression_afdc2eaa5169bd86bb826ad5758b9359b}{perf\-::\-Regression\-::add\-Keypoints}(this, \#array, array , \#\# \-\_\-\-\_\-\-V\-A\-\_\-\-A\-R\-G\-S\-\_\-\-\_\-)
+\item 
+\#define \hyperlink{ts__perf_8hpp_ad33b1b40712b3fa5c82124009cbb23d7}{S\-A\-N\-I\-T\-Y\-\_\-\-C\-H\-E\-C\-K\-\_\-\-M\-A\-T\-C\-H\-E\-S}(array,...)~\-::\hyperlink{classperf_1_1Regression_a93cd18c06bc63569dc9e3e98356a2db9}{perf\-::\-Regression\-::add\-Matches}(this, \#array, array , \#\# \-\_\-\-\_\-\-V\-A\-\_\-\-A\-R\-G\-S\-\_\-\-\_\-)
+\item 
+\#define \hyperlink{ts__perf_8hpp_ab00d6ea828e49d632ba3b6f7134fda2e}{S\-A\-N\-I\-T\-Y\-\_\-\-C\-H\-E\-C\-K\-\_\-\-N\-O\-T\-H\-I\-N\-G}()~this-\/$>$set\-Verified();
+\item 
+\#define \hyperlink{ts__perf_8hpp_ab6a9a4768f056bce35dc6da20c9a7c0c}{P\-E\-R\-F\-\_\-\-R\-U\-N\-\_\-\-G\-P\-U}()~\-::\hyperlink{classperf_1_1GpuPerf_a769d140accb268ac6a240ceb6eff2dc4}{perf\-::\-Gpu\-Perf\-::target\-Device}()
+\item 
+\#define \hyperlink{ts__perf_8hpp_afea3af9aa12b7dd479c245d355e876e1}{P\-E\-R\-F\-\_\-\-P\-R\-O\-X\-Y\-\_\-\-N\-A\-M\-E\-S\-P\-A\-C\-E\-\_\-\-N\-A\-M\-E\-\_\-}(test\-\_\-case\-\_\-name, test\-\_\-name)~test\-\_\-case\-\_\-name\#\#\-\_\-\#\#test\-\_\-name\#\#\-\_\-perf\-\_\-namespace\-\_\-proxy
+\item 
+\#define \hyperlink{ts__perf_8hpp_aa25ea4f9d745170a7c9e7eb245e7f488}{P\-E\-R\-F\-\_\-\-T\-E\-S\-T}(test\-\_\-case\-\_\-name, test\-\_\-name)
+\item 
+\#define \hyperlink{ts__perf_8hpp_ae50ea3ca0a9fe4281f193575277f621f}{P\-E\-R\-F\-\_\-\-T\-E\-S\-T\-\_\-\-F}(fixture, testname)
+\item 
+\#define \hyperlink{ts__perf_8hpp_a60fe7d98870e988d83b6214b309037c1}{P\-E\-R\-F\-\_\-\-T\-E\-S\-T\-\_\-\-P}(fixture, \hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name}, \hyperlink{compat_8hpp_a0480a03ecc41b20cde376602531d9270}{params})
+\item 
+\#define \hyperlink{ts__perf_8hpp_aa72bf3baf0676034972c106336337bbe}{\-\_\-\-\_\-\-C\-V\-\_\-\-T\-E\-S\-T\-\_\-\-E\-X\-E\-C\-\_\-\-A\-R\-G\-S}(...)~\-\_\-\-\_\-\-V\-A\-\_\-\-A\-R\-G\-S\-\_\-\-\_\-;
+\item 
+\#define \hyperlink{ts__perf_8hpp_abd42cf18fc02a829ea3945dd5f1de91c}{C\-V\-\_\-\-P\-E\-R\-F\-\_\-\-T\-E\-S\-T\-\_\-\-M\-A\-I\-N\-\_\-\-I\-N\-T\-E\-R\-N\-A\-L\-S}(modulename, impls,...)
+\item 
+\#define \hyperlink{ts__perf_8hpp_a43934bff648bc99012c0a1b703ea4698}{C\-V\-\_\-\-P\-E\-R\-F\-\_\-\-T\-E\-S\-T\-\_\-\-M\-A\-I\-N\-\_\-\-W\-I\-T\-H\-\_\-\-I\-M\-P\-L\-S}(modulename, impls,...)
+\item 
+\#define \hyperlink{ts__perf_8hpp_a6df42b41944f3d1b7cfcb76c46e58085}{C\-V\-\_\-\-P\-E\-R\-F\-\_\-\-T\-E\-S\-T\-\_\-\-M\-A\-I\-N}(modulename,...)
+\item 
+\#define \hyperlink{ts__perf_8hpp_ac23e50c884dc7b58a8f6c853d4474d61}{T\-E\-S\-T\-\_\-\-C\-Y\-C\-L\-E\-\_\-\-N}(\hyperlink{legacy_8hpp_a76f11d9a0a47b94f72c2d0e77fb32240}{n})~for(\hyperlink{tracking_8hpp_a17372ac3c8ba01bc6cfc265b2824992e}{declare.\-iterations}(\hyperlink{legacy_8hpp_a76f11d9a0a47b94f72c2d0e77fb32240}{n}); start\-Timer(), \hyperlink{tracking_8hpp_a271d716db1f200e7bc0483683c5c7fa7}{next}(); stop\-Timer())
+\item 
+\#define \hyperlink{ts__perf_8hpp_a0dc0c8bb73c31058078d83134b4a117f}{T\-E\-S\-T\-\_\-\-C\-Y\-C\-L\-E}()~for(; start\-Timer(), \hyperlink{tracking_8hpp_a271d716db1f200e7bc0483683c5c7fa7}{next}(); stop\-Timer())
+\item 
+\#define \hyperlink{ts__perf_8hpp_a59a99c039e4bf7b5bf01d1d7e301b5e0}{T\-E\-S\-T\-\_\-\-C\-Y\-C\-L\-E\-\_\-\-M\-U\-L\-T\-I\-R\-U\-N}(runs\-Num)~for(declare.\-runs(runs\-Num); start\-Timer(), \hyperlink{tracking_8hpp_a271d716db1f200e7bc0483683c5c7fa7}{next}(); stop\-Timer()) for(int \hyperlink{core__c_8h_a54709f3b06b33b66763f1613cc7fb571}{r} = 0; \hyperlink{core__c_8h_a54709f3b06b33b66763f1613cc7fb571}{r} $<$ runs\-Num; ++\hyperlink{core__c_8h_a54709f3b06b33b66763f1613cc7fb571}{r})
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \\*
+\hyperlink{structperf_1_1performance__metrics}{perf\-::performance\-\_\-metrics} \hyperlink{namespaceperf_a822f7e10ad2c9baf40c200904e0b65b5}{perf\-::performance\-\_\-metrics}
+\item 
+typedef \hyperlink{classstd_1_1tr1_1_1tuple}{std\-::tr1\-::tuple}\\*
+$<$ cv\-::\-Size, Mat\-Type $>$ \hyperlink{namespaceperf_ac1950eaa74f7a24dcfb4fe4f6fbc6cc9}{perf\-::\-Size\-\_\-\-Mat\-Type\-\_\-t}
+\item 
+typedef Test\-Base\-With\-Param\\*
+$<$ Size\-\_\-\-Mat\-Type\-\_\-t $>$ \hyperlink{namespaceperf_a5592072ff8cfeb1c5501095c7d4b2059}{perf\-::\-Size\-\_\-\-Mat\-Type}
+\item 
+typedef Rect\-Less\-\_\-$<$ int $>$ \hyperlink{namespaceperf_1_1comparators_a9cfc2ea4244df9925a86eeec857f9aac}{perf\-::comparators\-::\-Rect\-Less}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespaceperf_afd1ef30dd7868637f168926100ed2ba8}{perf\-::\-E\-R\-R\-O\-R\-\_\-\-T\-Y\-P\-E} \{ \hyperlink{namespaceperf_afd1ef30dd7868637f168926100ed2ba8a1f890b566341b120aa632095d9a8259f}{perf\-::\-E\-R\-R\-O\-R\-\_\-\-A\-B\-S\-O\-L\-U\-T\-E} = 0, 
+\hyperlink{namespaceperf_afd1ef30dd7868637f168926100ed2ba8a9de46d4034be5105a101d8c45da33508}{perf\-::\-E\-R\-R\-O\-R\-\_\-\-R\-E\-L\-A\-T\-I\-V\-E} = 1
+ \}
+\item 
+enum \hyperlink{namespaceperf_ae0c38b71955bcc6424ad4de8b5284d57}{perf\-::\-P\-E\-R\-F\-\_\-\-S\-T\-R\-A\-T\-E\-G\-Y} \{ \hyperlink{namespaceperf_ae0c38b71955bcc6424ad4de8b5284d57ad61de15dddca486cec1670452cb1da02}{perf\-::\-P\-E\-R\-F\-\_\-\-S\-T\-R\-A\-T\-E\-G\-Y\-\_\-\-B\-A\-S\-E} = 0, 
+\hyperlink{namespaceperf_ae0c38b71955bcc6424ad4de8b5284d57ad3f0680bd61cfe3c63b46af00269e8ad}{perf\-::\-P\-E\-R\-F\-\_\-\-S\-T\-R\-A\-T\-E\-G\-Y\-\_\-\-S\-I\-M\-P\-L\-E} = 1
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespaceperf_a5af9ada3b18517950993017cdde078ee}{perf\-::\-Print\-To} (const Mat\-Type \&t, std\-::ostream $\ast$os)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_a7ef2863dc6f9734c87da94fbc097e086}{cv\-::\-Print\-To} (const Size \&sz,\-::std\-::ostream $\ast$os)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{namespaceperf_ab13b16a0f5e3f27a0f51aa412796276a}{perf\-::sort} (std\-::vector$<$ cv\-::\-Key\-Point $>$ \&\hyperlink{core__c_8h_ab62b1919fa12a68dd1196a0d42f7937e}{pts}, cv\-::\-Input\-Output\-Array \hyperlink{compat_8hpp_a1e3702ddbca6258f57508c22eff26bf2}{descriptors})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const cv\-::\-Size \hyperlink{namespaceperf_a8d3d0bf3b89981e67bc30a3bd2befde1}{perf\-::sz\-Q\-V\-G\-A} = cv\-::\-Size(320, 240)
+\item 
+const cv\-::\-Size \hyperlink{namespaceperf_a198109adcb948fd8823f5fd653ae4813}{perf\-::sz\-V\-G\-A} = cv\-::\-Size(640, 480)
+\item 
+const cv\-::\-Size \hyperlink{namespaceperf_a8188190bc9ebd429fb46c05c671009c6}{perf\-::sz\-S\-V\-G\-A} = cv\-::\-Size(800, 600)
+\item 
+const cv\-::\-Size \hyperlink{namespaceperf_a5e19cb1374414c082b73208f4893bb90}{perf\-::sz\-X\-G\-A} = cv\-::\-Size(1024, 768)
+\item 
+const cv\-::\-Size \hyperlink{namespaceperf_af0980e07fe76ff27e882ecd10f34be75}{perf\-::sz\-S\-X\-G\-A} = cv\-::\-Size(1280, 1024)
+\item 
+const cv\-::\-Size \hyperlink{namespaceperf_a7d5416da78b41a2c9c541594c7168464}{perf\-::sz\-W\-Q\-H\-D} = cv\-::\-Size(2560, 1440)
+\item 
+const cv\-::\-Size \hyperlink{namespaceperf_af94d4bf8af282e3aa46c9d1f85630225}{perf\-::szn\-H\-D} = cv\-::\-Size(640, 360)
+\item 
+const cv\-::\-Size \hyperlink{namespaceperf_a2aec1a98d3dfcd2d7f5546d61eb4e24c}{perf\-::szq\-H\-D} = cv\-::\-Size(960, 540)
+\item 
+const cv\-::\-Size \hyperlink{namespaceperf_a92903038b656ae2b6620911dd2097efd}{perf\-::sz240p} = sz\-Q\-V\-G\-A
+\item 
+const cv\-::\-Size \hyperlink{namespaceperf_a6ede89be4112c563e5f2c046f3cee64f}{perf\-::sz720p} = cv\-::\-Size(1280, 720)
+\item 
+const cv\-::\-Size \hyperlink{namespaceperf_ad795e18c34cc44bf1f2d59896d6e9d4d}{perf\-::sz1080p} = cv\-::\-Size(1920, 1080)
+\item 
+const cv\-::\-Size \hyperlink{namespaceperf_a07606d46d2938bf6d9769ef87c6ddf11}{perf\-::sz1440p} = sz\-W\-Q\-H\-D
+\item 
+const cv\-::\-Size \hyperlink{namespaceperf_af269eb69cb3ed2ca1ced688349d96118}{perf\-::sz2160p} = cv\-::\-Size(3840, 2160)
+\item 
+const cv\-::\-Size \hyperlink{namespaceperf_a0abef7f9f2f4c44b279ef47a55c91bbd}{perf\-::sz4320p} = cv\-::\-Size(7680, 4320)
+\item 
+const cv\-::\-Size \hyperlink{namespaceperf_ae3bee08aa583b875fcbc11a757da3ef3}{perf\-::sz3\-M\-P} = cv\-::\-Size(2048, 1536)
+\item 
+const cv\-::\-Size \hyperlink{namespaceperf_a6a094d73abcea734bcf1f546ff1abba6}{perf\-::sz5\-M\-P} = cv\-::\-Size(2592, 1944)
+\item 
+const cv\-::\-Size \hyperlink{namespaceperf_ae7f6275505429ec52cb19523c5db333a}{perf\-::sz2\-K} = cv\-::\-Size(2048, 2048)
+\item 
+const cv\-::\-Size \hyperlink{namespaceperf_af52e6b9008d035b07afca749a825b143}{perf\-::sz\-O\-D\-D} = cv\-::\-Size(127, 61)
+\item 
+const cv\-::\-Size \hyperlink{namespaceperf_a7d5bf0103f9ee3afc0be30535b9c63d2}{perf\-::sz\-Small24} = cv\-::\-Size(24, 24)
+\item 
+const cv\-::\-Size \hyperlink{namespaceperf_a00d601232dc9acbbd7ac710d2f0f0070}{perf\-::sz\-Small32} = cv\-::\-Size(32, 32)
+\item 
+const cv\-::\-Size \hyperlink{namespaceperf_a814dfec6d0d13f821a164e3c562cc1ec}{perf\-::sz\-Small64} = cv\-::\-Size(64, 64)
+\item 
+const cv\-::\-Size \hyperlink{namespaceperf_af5e22599b492125ccaba714aa0a729f4}{perf\-::sz\-Small128} = cv\-::\-Size(128, 128)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{ts__perf_8hpp_aa72bf3baf0676034972c106336337bbe}{\index{ts\-\_\-perf.\-hpp@{ts\-\_\-perf.\-hpp}!\-\_\-\-\_\-\-C\-V\-\_\-\-T\-E\-S\-T\-\_\-\-E\-X\-E\-C\-\_\-\-A\-R\-G\-S@{\-\_\-\-\_\-\-C\-V\-\_\-\-T\-E\-S\-T\-\_\-\-E\-X\-E\-C\-\_\-\-A\-R\-G\-S}}
+\index{\-\_\-\-\_\-\-C\-V\-\_\-\-T\-E\-S\-T\-\_\-\-E\-X\-E\-C\-\_\-\-A\-R\-G\-S@{\-\_\-\-\_\-\-C\-V\-\_\-\-T\-E\-S\-T\-\_\-\-E\-X\-E\-C\-\_\-\-A\-R\-G\-S}!ts_perf.hpp@{ts\-\_\-perf.\-hpp}}
+\subsubsection[{\-\_\-\-\_\-\-C\-V\-\_\-\-T\-E\-S\-T\-\_\-\-E\-X\-E\-C\-\_\-\-A\-R\-G\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-\_\-\-\_\-\-C\-V\-\_\-\-T\-E\-S\-T\-\_\-\-E\-X\-E\-C\-\_\-\-A\-R\-G\-S(
+\begin{DoxyParamCaption}
+\item[{}]{...}
+\end{DoxyParamCaption}
+)~\-\_\-\-\_\-\-V\-A\-\_\-\-A\-R\-G\-S\-\_\-\-\_\-;}}\label{ts__perf_8hpp_aa72bf3baf0676034972c106336337bbe}
+\hypertarget{ts__perf_8hpp_aa2843eb53003e0148b8834b599056efa}{\index{ts\-\_\-perf.\-hpp@{ts\-\_\-perf.\-hpp}!C\-V\-\_\-\-E\-N\-U\-M@{C\-V\-\_\-\-E\-N\-U\-M}}
+\index{C\-V\-\_\-\-E\-N\-U\-M@{C\-V\-\_\-\-E\-N\-U\-M}!ts_perf.hpp@{ts\-\_\-perf.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-E\-N\-U\-M}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-E\-N\-U\-M(
+\begin{DoxyParamCaption}
+\item[{}]{class\-\_\-name, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}}\label{ts__perf_8hpp_aa2843eb53003e0148b8834b599056efa}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{keyword}{namespace }\{                                                                         \(\backslash\)
+    struct class\_name \{                                                                 \(\backslash\)
+        class\_name(\textcolor{keywordtype}{int} val = 0) : val\_(val) \{\}                                          \(\backslash\)
+        operator int()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} val\_; \}                                           
+      \hyperlink{highgui__c_8h_ad1f9461adaad33556b3a01c7f2c6ceab}{\(\backslash\)}
+\hyperlink{highgui__c_8h_ad1f9461adaad33556b3a01c7f2c6ceab}{        void} \hyperlink{namespacecv_a7ef2863dc6f9734c87da94fbc097e086}{PrintTo}(std::ostream* os)\textcolor{keyword}{ const }\{                                          
+      \(\backslash\)
+            using \textcolor{keyword}{namespace }cv;\textcolor{keyword}{using namespace }cv::gpu; \textcolor{keyword}{using namespace }cv::ocl;        \(\backslash\)
+            const \textcolor{keywordtype}{int} vals[] = \{ \_\_VA\_ARGS\_\_ \};                                         \(\backslash\)
+            const \textcolor{keywordtype}{char}* svals = #\_\_VA\_ARGS\_\_;                                           \(\backslash\)
+            for(\textcolor{keywordtype}{int} i = 0, \hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos} = 0; i < (int)(\textcolor{keyword}{sizeof}(vals)/\textcolor{keyword}{sizeof}(\textcolor{keywordtype}{int})); ++i) \{         
+      \hyperlink{scanner_8c_a8fdafe3be7e00ce3d4f0cb50a9a5eb39}{\(\backslash\)}
+\hyperlink{scanner_8c_a8fdafe3be7e00ce3d4f0cb50a9a5eb39}{                while}(isspace(svals[\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}]) || svals[pos] == \textcolor{charliteral}{','}) ++
+      \hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos};                  \(\backslash\)
+                int \hyperlink{core__c_8h_a45314566a84a31f43e6435d1eb24d4ec}{start} = \hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos};                                                        
+      \hyperlink{scanner_8c_a8fdafe3be7e00ce3d4f0cb50a9a5eb39}{\(\backslash\)}
+\hyperlink{scanner_8c_a8fdafe3be7e00ce3d4f0cb50a9a5eb39}{                while}(!(isspace(svals[\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}]) || svals[pos] == \textcolor{charliteral}{','} || svals[pos] == 0
+      ))   \(\backslash\)
+                    ++\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos};                                                              
+      \hyperlink{scanner_8c_a33e91cd0cef6786e9e3a27ac67707207}{\(\backslash\)}
+\hyperlink{scanner_8c_a33e91cd0cef6786e9e3a27ac67707207}{                if} (val\_ == vals[i]) \{                                                  \(\backslash\)
+                    *os << \hyperlink{namespacetesting_1_1internal_a8e8ff5b11e64078831112677156cb111}{std::string}(svals + start, svals + \hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos});                     \(\backslash\)
+                    return;                                                             \(\backslash\)
+                \}                                                                       \(\backslash\)
+            \}                                                                           \(\backslash\)
+            *os << \textcolor{stringliteral}{"UNKNOWN"};                                                           \(\backslash\)
+        \}                                                                               \(\backslash\)
+        static ::testing::internal::ParamGenerator<class\_name> all() \{                  \(\backslash\)
+            using \textcolor{keyword}{namespace }cv;\textcolor{keyword}{using namespace }cv::gpu; \textcolor{keyword}{using namespace }cv::ocl;        \(\backslash\)
+            static class\_name vals[] = \{ \_\_VA\_ARGS\_\_ \};                                 
+      \hyperlink{namespacetesting_a5f8e1eb074d24671d679f6ccda6710bc}{\(\backslash\)}
+\hyperlink{namespacetesting_a5f8e1eb074d24671d679f6ccda6710bc}{            return ::testing::ValuesIn}(vals);                        
+                         \(\backslash\)
+        \}                                                                               \(\backslash\)
+    private: \textcolor{keywordtype}{int} val\_;                                                                  \(\backslash\)
+    \};                                                                                  \(\backslash\)
+    inline \textcolor{keywordtype}{void} \hyperlink{namespacecv_1_1gpu_a1cf93194b02d6a71eb65bcbb028c41f1}{PrintTo}(\textcolor{keyword}{const} class\_name& t, std::ostream* os) \{ t.PrintTo(os); \} \}
+\end{DoxyCode}
+\hypertarget{ts__perf_8hpp_a41f40a47b192e091d601fb9e44ffed4f}{\index{ts\-\_\-perf.\-hpp@{ts\-\_\-perf.\-hpp}!C\-V\-\_\-\-F\-L\-A\-G\-S@{C\-V\-\_\-\-F\-L\-A\-G\-S}}
+\index{C\-V\-\_\-\-F\-L\-A\-G\-S@{C\-V\-\_\-\-F\-L\-A\-G\-S}!ts_perf.hpp@{ts\-\_\-perf.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-F\-L\-A\-G\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-F\-L\-A\-G\-S(
+\begin{DoxyParamCaption}
+\item[{}]{class\-\_\-name, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}}\label{ts__perf_8hpp_a41f40a47b192e091d601fb9e44ffed4f}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{keyword}{namespace }\{                                                                         \(\backslash\)
+    struct class\_name \{                                                                 \(\backslash\)
+        class\_name(\textcolor{keywordtype}{int} val = 0) : val\_(val) \{\}                                          \(\backslash\)
+        operator int()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} val\_; \}                                           
+      \hyperlink{highgui__c_8h_ad1f9461adaad33556b3a01c7f2c6ceab}{\(\backslash\)}
+\hyperlink{highgui__c_8h_ad1f9461adaad33556b3a01c7f2c6ceab}{        void} \hyperlink{namespacecv_a7ef2863dc6f9734c87da94fbc097e086}{PrintTo}(std::ostream* os)\textcolor{keyword}{ const }\{                                          
+      \(\backslash\)
+            using \textcolor{keyword}{namespace }cv;\textcolor{keyword}{using namespace }cv::gpu; \textcolor{keyword}{using namespace }cv::ocl;        \(\backslash\)
+            const \textcolor{keywordtype}{int} vals[] = \{ \_\_VA\_ARGS\_\_ \};                                         \(\backslash\)
+            const \textcolor{keywordtype}{char}* svals = #\_\_VA\_ARGS\_\_;                                           \(\backslash\)
+            int \hyperlink{core__c_8h_ad4670c92695d4327c21292905a803901}{value} = val\_;                                                           \(\backslash\)
+            bool \hyperlink{core__c_8h_a1f883233876ef3ed7b1b69454c26c2af}{first} = \textcolor{keyword}{true};                                                          \(\backslash\)
+            for(\textcolor{keywordtype}{int} i = 0, \hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos} = 0; i < (int)(\textcolor{keyword}{sizeof}(vals)/\textcolor{keyword}{sizeof}(\textcolor{keywordtype}{int})); ++i) \{         
+      \hyperlink{scanner_8c_a8fdafe3be7e00ce3d4f0cb50a9a5eb39}{\(\backslash\)}
+\hyperlink{scanner_8c_a8fdafe3be7e00ce3d4f0cb50a9a5eb39}{                while}(isspace(svals[\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}]) || svals[pos] == \textcolor{charliteral}{','}) ++
+      \hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos};                  \(\backslash\)
+                int \hyperlink{core__c_8h_a45314566a84a31f43e6435d1eb24d4ec}{start} = \hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos};                                                        
+      \hyperlink{scanner_8c_a8fdafe3be7e00ce3d4f0cb50a9a5eb39}{\(\backslash\)}
+\hyperlink{scanner_8c_a8fdafe3be7e00ce3d4f0cb50a9a5eb39}{                while}(!(isspace(svals[\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos}]) || svals[pos] == \textcolor{charliteral}{','} || svals[pos] == 0
+      ))   \(\backslash\)
+                    ++\hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos};                                                              
+      \hyperlink{scanner_8c_a33e91cd0cef6786e9e3a27ac67707207}{\(\backslash\)}
+\hyperlink{scanner_8c_a33e91cd0cef6786e9e3a27ac67707207}{                if} ((\hyperlink{core__c_8h_ad4670c92695d4327c21292905a803901}{value} & vals[i]) == vals[i]) \{                                 
+          \hyperlink{core__c_8h_ad4670c92695d4327c21292905a803901}{\(\backslash\)}
+\hyperlink{core__c_8h_ad4670c92695d4327c21292905a803901}{                    value} &= ~vals[i];                                            
+            \hyperlink{scanner_8c_a33e91cd0cef6786e9e3a27ac67707207}{\(\backslash\)}
+\hyperlink{scanner_8c_a33e91cd0cef6786e9e3a27ac67707207}{                    if} (\hyperlink{core__c_8h_a1f883233876ef3ed7b1b69454c26c2af}{first}) \hyperlink{core__c_8h_a1f883233876ef3ed7b1b69454c26c2af}{first} = \hyperlink{namespacecv_1_1gpu_1_1device_af8d6418be1712e83b4f398e7e7273026}{false}; else *os << "|";        
+                        \(\backslash\)
+                    *os << std::\textcolor{keywordtype}{string}(svals + start, svals + \hyperlink{core__c_8h_a6492959798ef439146ab2816fe754d81}{pos});                     \(\backslash\)
+                    \hyperlink{scanner_8c_a33e91cd0cef6786e9e3a27ac67707207}{if} (!\hyperlink{core__c_8h_ad4670c92695d4327c21292905a803901}{value}) return;                                                 \(\backslash\)
+                \}                                                                       \(\backslash\)
+            \}                                                                           \(\backslash\)
+            \hyperlink{scanner_8c_a33e91cd0cef6786e9e3a27ac67707207}{if} (\hyperlink{core__c_8h_a1f883233876ef3ed7b1b69454c26c2af}{first}) *os << "UNKNOWN";                                                \(\backslash\)
+        \}                                                                               \(\backslash\)
+    private: \textcolor{keywordtype}{int} val\_;                                                                  \(\backslash\)
+    \};                                                                                  \(\backslash\)
+    inline \textcolor{keywordtype}{void} \hyperlink{namespacecv_1_1gpu_a1cf93194b02d6a71eb65bcbb028c41f1}{PrintTo}(const class\_name& t, std::ostream* os) \{ t.PrintTo(os); \} \}
+\end{DoxyCode}
+\hypertarget{ts__perf_8hpp_a6df42b41944f3d1b7cfcb76c46e58085}{\index{ts\-\_\-perf.\-hpp@{ts\-\_\-perf.\-hpp}!C\-V\-\_\-\-P\-E\-R\-F\-\_\-\-T\-E\-S\-T\-\_\-\-M\-A\-I\-N@{C\-V\-\_\-\-P\-E\-R\-F\-\_\-\-T\-E\-S\-T\-\_\-\-M\-A\-I\-N}}
+\index{C\-V\-\_\-\-P\-E\-R\-F\-\_\-\-T\-E\-S\-T\-\_\-\-M\-A\-I\-N@{C\-V\-\_\-\-P\-E\-R\-F\-\_\-\-T\-E\-S\-T\-\_\-\-M\-A\-I\-N}!ts_perf.hpp@{ts\-\_\-perf.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-P\-E\-R\-F\-\_\-\-T\-E\-S\-T\-\_\-\-M\-A\-I\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-P\-E\-R\-F\-\_\-\-T\-E\-S\-T\-\_\-\-M\-A\-I\-N(
+\begin{DoxyParamCaption}
+\item[{}]{modulename, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}}\label{ts__perf_8hpp_a6df42b41944f3d1b7cfcb76c46e58085}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{keywordtype}{int} \hyperlink{3rdparty_2cvblobs_2build_2CMakeFiles_2CompilerIdC_2CMakeCCompilerId_8c_a0ddf1224851353fc92bfbff6f499fa97}{main}(\textcolor{keywordtype}{int} \hyperlink{highgui__c_8h_a4ee2a7de047a0a236fe118a35e8f76a4}{argc}, \textcolor{keywordtype}{char} **\hyperlink{highgui__c_8h_a1b5d2a82062528707ab3855772528912}{argv})\(\backslash\)
+\{\(\backslash\)
+    const \textcolor{keywordtype}{char} * plain\_only[] = \{ \textcolor{stringliteral}{"plain"} \};\hyperlink{ts__perf_8hpp_abd42cf18fc02a829ea3945dd5f1de91c}{\(\backslash\)}
+\hyperlink{ts__perf_8hpp_abd42cf18fc02a829ea3945dd5f1de91c}{    CV\_PERF\_TEST\_MAIN\_INTERNALS}(modulename, plain\_only, \_\_VA\_ARGS\_\_)\(\backslash\)
+\}
+\end{DoxyCode}
+\hypertarget{ts__perf_8hpp_abd42cf18fc02a829ea3945dd5f1de91c}{\index{ts\-\_\-perf.\-hpp@{ts\-\_\-perf.\-hpp}!C\-V\-\_\-\-P\-E\-R\-F\-\_\-\-T\-E\-S\-T\-\_\-\-M\-A\-I\-N\-\_\-\-I\-N\-T\-E\-R\-N\-A\-L\-S@{C\-V\-\_\-\-P\-E\-R\-F\-\_\-\-T\-E\-S\-T\-\_\-\-M\-A\-I\-N\-\_\-\-I\-N\-T\-E\-R\-N\-A\-L\-S}}
+\index{C\-V\-\_\-\-P\-E\-R\-F\-\_\-\-T\-E\-S\-T\-\_\-\-M\-A\-I\-N\-\_\-\-I\-N\-T\-E\-R\-N\-A\-L\-S@{C\-V\-\_\-\-P\-E\-R\-F\-\_\-\-T\-E\-S\-T\-\_\-\-M\-A\-I\-N\-\_\-\-I\-N\-T\-E\-R\-N\-A\-L\-S}!ts_perf.hpp@{ts\-\_\-perf.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-P\-E\-R\-F\-\_\-\-T\-E\-S\-T\-\_\-\-M\-A\-I\-N\-\_\-\-I\-N\-T\-E\-R\-N\-A\-L\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-P\-E\-R\-F\-\_\-\-T\-E\-S\-T\-\_\-\-M\-A\-I\-N\-\_\-\-I\-N\-T\-E\-R\-N\-A\-L\-S(
+\begin{DoxyParamCaption}
+\item[{}]{modulename, }
+\item[{}]{impls, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}}\label{ts__perf_8hpp_abd42cf18fc02a829ea3945dd5f1de91c}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\hyperlink{classperf_1_1Regression_a34d86f52b801bbbfc19bf83bbed267e8}{::perf::Regression::Init}(#modulename); \hyperlink{classperf_1_1TestBase_ad9b11a9d2427b3ac8e01bc66086b8a0f}{\(\backslash\)}
+\hyperlink{classperf_1_1TestBase_ad9b11a9d2427b3ac8e01bc66086b8a0f}{    ::perf::TestBase::Init}(std::vector<std::string>(impls, impls + \textcolor{keyword}{sizeof} impls /
+       \textcolor{keyword}{sizeof} *impls), \(\backslash\)
+                           \hyperlink{highgui__c_8h_a4ee2a7de047a0a236fe118a35e8f76a4}{argc}, \hyperlink{highgui__c_8h_a1b5d2a82062528707ab3855772528912}{argv}); \hyperlink{namespacetesting_aee3f6f99df893f576f705f66c0559482}{\(\backslash\)}
+\hyperlink{namespacetesting_aee3f6f99df893f576f705f66c0559482}{    ::testing::InitGoogleTest}(&\hyperlink{highgui__c_8h_a4ee2a7de047a0a236fe118a35e8f76a4}{argc}, \hyperlink{highgui__c_8h_a1b5d2a82062528707ab3855772528912}{argv}); 
+      \hyperlink{namespacecvtest_ae4cdd987333c3910e7b991b32f14bf7a}{\(\backslash\)}
+\hyperlink{namespacecvtest_ae4cdd987333c3910e7b991b32f14bf7a}{    cvtest::printVersionInfo}(); \hyperlink{classtesting_1_1Test_ae0448aec9e389fab70f6a75a59ff6aa2}{\(\backslash\)}
+\hyperlink{classtesting_1_1Test_ae0448aec9e389fab70f6a75a59ff6aa2}{    ::testing::Test::RecordProperty}(\textcolor{stringliteral}{"cv\_module\_name"}, #modulename); 
+      \hyperlink{classperf_1_1TestBase_ac1d7dfef0343b4f6b6318199796a3b57}{\(\backslash\)}
+\hyperlink{classperf_1_1TestBase_ac1d7dfef0343b4f6b6318199796a3b57}{    ::perf::TestBase::RecordRunParameters}(); 
+      \hyperlink{ts__perf_8hpp_aa72bf3baf0676034972c106336337bbe}{\(\backslash\)}
+\hyperlink{ts__perf_8hpp_aa72bf3baf0676034972c106336337bbe}{    \_\_CV\_TEST\_EXEC\_ARGS}(\_\_VA\_ARGS\_\_) \(\backslash\)
+    return \hyperlink{ts__gtest_8h_a853a3792807489591d3d4a2f2ff9359f}{RUN\_ALL\_TESTS}();
+\end{DoxyCode}
+\hypertarget{ts__perf_8hpp_a43934bff648bc99012c0a1b703ea4698}{\index{ts\-\_\-perf.\-hpp@{ts\-\_\-perf.\-hpp}!C\-V\-\_\-\-P\-E\-R\-F\-\_\-\-T\-E\-S\-T\-\_\-\-M\-A\-I\-N\-\_\-\-W\-I\-T\-H\-\_\-\-I\-M\-P\-L\-S@{C\-V\-\_\-\-P\-E\-R\-F\-\_\-\-T\-E\-S\-T\-\_\-\-M\-A\-I\-N\-\_\-\-W\-I\-T\-H\-\_\-\-I\-M\-P\-L\-S}}
+\index{C\-V\-\_\-\-P\-E\-R\-F\-\_\-\-T\-E\-S\-T\-\_\-\-M\-A\-I\-N\-\_\-\-W\-I\-T\-H\-\_\-\-I\-M\-P\-L\-S@{C\-V\-\_\-\-P\-E\-R\-F\-\_\-\-T\-E\-S\-T\-\_\-\-M\-A\-I\-N\-\_\-\-W\-I\-T\-H\-\_\-\-I\-M\-P\-L\-S}!ts_perf.hpp@{ts\-\_\-perf.\-hpp}}
+\subsubsection[{C\-V\-\_\-\-P\-E\-R\-F\-\_\-\-T\-E\-S\-T\-\_\-\-M\-A\-I\-N\-\_\-\-W\-I\-T\-H\-\_\-\-I\-M\-P\-L\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-V\-\_\-\-P\-E\-R\-F\-\_\-\-T\-E\-S\-T\-\_\-\-M\-A\-I\-N\-\_\-\-W\-I\-T\-H\-\_\-\-I\-M\-P\-L\-S(
+\begin{DoxyParamCaption}
+\item[{}]{modulename, }
+\item[{}]{impls, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}}\label{ts__perf_8hpp_a43934bff648bc99012c0a1b703ea4698}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{keywordtype}{int} \hyperlink{3rdparty_2cvblobs_2build_2CMakeFiles_2CompilerIdC_2CMakeCCompilerId_8c_a0ddf1224851353fc92bfbff6f499fa97}{main}(\textcolor{keywordtype}{int} \hyperlink{highgui__c_8h_a4ee2a7de047a0a236fe118a35e8f76a4}{argc}, \textcolor{keywordtype}{char} **\hyperlink{highgui__c_8h_a1b5d2a82062528707ab3855772528912}{argv})\(\backslash\)
+\{\hyperlink{ts__perf_8hpp_abd42cf18fc02a829ea3945dd5f1de91c}{\(\backslash\)}
+\hyperlink{ts__perf_8hpp_abd42cf18fc02a829ea3945dd5f1de91c}{    CV\_PERF\_TEST\_MAIN\_INTERNALS}(modulename, impls, \_\_VA\_ARGS\_\_)\(\backslash\)
+\}
+\end{DoxyCode}
+\hypertarget{ts__perf_8hpp_ae0686fe2d003a0bf365233acacf2ad0f}{\index{ts\-\_\-perf.\-hpp@{ts\-\_\-perf.\-hpp}!L\-O\-G\-D@{L\-O\-G\-D}}
+\index{L\-O\-G\-D@{L\-O\-G\-D}!ts_perf.hpp@{ts\-\_\-perf.\-hpp}}
+\subsubsection[{L\-O\-G\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-O\-G\-D(
+\begin{DoxyParamCaption}
+\item[{}]{\-\_\-str, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)~do\{printf(\-\_\-str , \#\# \-\_\-\-\_\-\-V\-A\-\_\-\-A\-R\-G\-S\-\_\-\-\_\-); printf(\char`\"{}\textbackslash{}n\char`\"{});fflush(stdout);\} {\bf while}(0)}}\label{ts__perf_8hpp_ae0686fe2d003a0bf365233acacf2ad0f}
+\hypertarget{ts__perf_8hpp_adb313dff3938acc16bfd09200b1e8ca9}{\index{ts\-\_\-perf.\-hpp@{ts\-\_\-perf.\-hpp}!L\-O\-G\-E@{L\-O\-G\-E}}
+\index{L\-O\-G\-E@{L\-O\-G\-E}!ts_perf.hpp@{ts\-\_\-perf.\-hpp}}
+\subsubsection[{L\-O\-G\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-O\-G\-E(
+\begin{DoxyParamCaption}
+\item[{}]{\-\_\-str, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)~do\{printf(\-\_\-str , \#\# \-\_\-\-\_\-\-V\-A\-\_\-\-A\-R\-G\-S\-\_\-\-\_\-); printf(\char`\"{}\textbackslash{}n\char`\"{});fflush(stdout);\} {\bf while}(0)}}\label{ts__perf_8hpp_adb313dff3938acc16bfd09200b1e8ca9}
+\hypertarget{ts__perf_8hpp_aa4be740af89c6d18ac0f1c8fc0fc5f1a}{\index{ts\-\_\-perf.\-hpp@{ts\-\_\-perf.\-hpp}!L\-O\-G\-I@{L\-O\-G\-I}}
+\index{L\-O\-G\-I@{L\-O\-G\-I}!ts_perf.hpp@{ts\-\_\-perf.\-hpp}}
+\subsubsection[{L\-O\-G\-I}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-O\-G\-I(
+\begin{DoxyParamCaption}
+\item[{}]{\-\_\-str, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)~do\{printf(\-\_\-str , \#\# \-\_\-\-\_\-\-V\-A\-\_\-\-A\-R\-G\-S\-\_\-\-\_\-); printf(\char`\"{}\textbackslash{}n\char`\"{});fflush(stdout);\} {\bf while}(0)}}\label{ts__perf_8hpp_aa4be740af89c6d18ac0f1c8fc0fc5f1a}
+\hypertarget{ts__perf_8hpp_ad3a9d43e59b3b5b2dca7851edc2a762c}{\index{ts\-\_\-perf.\-hpp@{ts\-\_\-perf.\-hpp}!L\-O\-G\-W@{L\-O\-G\-W}}
+\index{L\-O\-G\-W@{L\-O\-G\-W}!ts_perf.hpp@{ts\-\_\-perf.\-hpp}}
+\subsubsection[{L\-O\-G\-W}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-O\-G\-W(
+\begin{DoxyParamCaption}
+\item[{}]{\-\_\-str, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)~do\{printf(\-\_\-str , \#\# \-\_\-\-\_\-\-V\-A\-\_\-\-A\-R\-G\-S\-\_\-\-\_\-); printf(\char`\"{}\textbackslash{}n\char`\"{});fflush(stdout);\} {\bf while}(0)}}\label{ts__perf_8hpp_ad3a9d43e59b3b5b2dca7851edc2a762c}
+\hypertarget{ts__perf_8hpp_afea3af9aa12b7dd479c245d355e876e1}{\index{ts\-\_\-perf.\-hpp@{ts\-\_\-perf.\-hpp}!P\-E\-R\-F\-\_\-\-P\-R\-O\-X\-Y\-\_\-\-N\-A\-M\-E\-S\-P\-A\-C\-E\-\_\-\-N\-A\-M\-E\-\_\-@{P\-E\-R\-F\-\_\-\-P\-R\-O\-X\-Y\-\_\-\-N\-A\-M\-E\-S\-P\-A\-C\-E\-\_\-\-N\-A\-M\-E\-\_\-}}
+\index{P\-E\-R\-F\-\_\-\-P\-R\-O\-X\-Y\-\_\-\-N\-A\-M\-E\-S\-P\-A\-C\-E\-\_\-\-N\-A\-M\-E\-\_\-@{P\-E\-R\-F\-\_\-\-P\-R\-O\-X\-Y\-\_\-\-N\-A\-M\-E\-S\-P\-A\-C\-E\-\_\-\-N\-A\-M\-E\-\_\-}!ts_perf.hpp@{ts\-\_\-perf.\-hpp}}
+\subsubsection[{P\-E\-R\-F\-\_\-\-P\-R\-O\-X\-Y\-\_\-\-N\-A\-M\-E\-S\-P\-A\-C\-E\-\_\-\-N\-A\-M\-E\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-E\-R\-F\-\_\-\-P\-R\-O\-X\-Y\-\_\-\-N\-A\-M\-E\-S\-P\-A\-C\-E\-\_\-\-N\-A\-M\-E\-\_\-(
+\begin{DoxyParamCaption}
+\item[{}]{test\-\_\-case\-\_\-name, }
+\item[{}]{test\-\_\-name}
+\end{DoxyParamCaption}
+)~test\-\_\-case\-\_\-name\#\#\-\_\-\#\#test\-\_\-name\#\#\-\_\-perf\-\_\-namespace\-\_\-proxy}}\label{ts__perf_8hpp_afea3af9aa12b7dd479c245d355e876e1}
+\hypertarget{ts__perf_8hpp_ab6a9a4768f056bce35dc6da20c9a7c0c}{\index{ts\-\_\-perf.\-hpp@{ts\-\_\-perf.\-hpp}!P\-E\-R\-F\-\_\-\-R\-U\-N\-\_\-\-G\-P\-U@{P\-E\-R\-F\-\_\-\-R\-U\-N\-\_\-\-G\-P\-U}}
+\index{P\-E\-R\-F\-\_\-\-R\-U\-N\-\_\-\-G\-P\-U@{P\-E\-R\-F\-\_\-\-R\-U\-N\-\_\-\-G\-P\-U}!ts_perf.hpp@{ts\-\_\-perf.\-hpp}}
+\subsubsection[{P\-E\-R\-F\-\_\-\-R\-U\-N\-\_\-\-G\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-E\-R\-F\-\_\-\-R\-U\-N\-\_\-\-G\-P\-U(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~\-::{\bf perf\-::\-Gpu\-Perf\-::target\-Device}()}}\label{ts__perf_8hpp_ab6a9a4768f056bce35dc6da20c9a7c0c}
+\hypertarget{ts__perf_8hpp_aa25ea4f9d745170a7c9e7eb245e7f488}{\index{ts\-\_\-perf.\-hpp@{ts\-\_\-perf.\-hpp}!P\-E\-R\-F\-\_\-\-T\-E\-S\-T@{P\-E\-R\-F\-\_\-\-T\-E\-S\-T}}
+\index{P\-E\-R\-F\-\_\-\-T\-E\-S\-T@{P\-E\-R\-F\-\_\-\-T\-E\-S\-T}!ts_perf.hpp@{ts\-\_\-perf.\-hpp}}
+\subsubsection[{P\-E\-R\-F\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-E\-R\-F\-\_\-\-T\-E\-S\-T(
+\begin{DoxyParamCaption}
+\item[{}]{test\-\_\-case\-\_\-name, }
+\item[{}]{test\-\_\-name}
+\end{DoxyParamCaption}
+)}}\label{ts__perf_8hpp_aa25ea4f9d745170a7c9e7eb245e7f488}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{keyword}{namespace }\hyperlink{ts__perf_8hpp_afea3af9aa12b7dd479c245d355e876e1}{PERF\_PROXY\_NAMESPACE\_NAME\_}(test\_case\_name, test\_name) \{\(\backslash\)
+     class TestBase \{\textcolor{comment}{/*compile error for this class means that you are trying to use perf::TestBase as a
+       fixture*/}\};\(\backslash\)
+     class test\_case\_name : public ::perf::TestBase \{\(\backslash\)
+      public:\(\backslash\)
+       test\_case\_name() \{\}\(\backslash\)
+      protected:\(\backslash\)
+       virtual \textcolor{keywordtype}{void} PerfTestBody();\(\backslash\)
+     \};\hyperlink{ts__gtest_8h_a0ee66d464d1a06c20c1929cae09d8758}{\(\backslash\)}
+\hyperlink{ts__gtest_8h_a0ee66d464d1a06c20c1929cae09d8758}{     TEST\_F}(test\_case\_name, test\_name)\{ RunPerfTestBody(); \}\(\backslash\)
+    \}\hyperlink{highgui__c_8h_ad1f9461adaad33556b3a01c7f2c6ceab}{\(\backslash\)}
+\hyperlink{highgui__c_8h_ad1f9461adaad33556b3a01c7f2c6ceab}{    void} \hyperlink{ts__perf_8hpp_afea3af9aa12b7dd479c245d355e876e1}{PERF\_PROXY\_NAMESPACE\_NAME\_}(test\_case\_name, test\_name)::
+      test\_case\_name::PerfTestBody()
+\end{DoxyCode}
+\hypertarget{ts__perf_8hpp_ae50ea3ca0a9fe4281f193575277f621f}{\index{ts\-\_\-perf.\-hpp@{ts\-\_\-perf.\-hpp}!P\-E\-R\-F\-\_\-\-T\-E\-S\-T\-\_\-\-F@{P\-E\-R\-F\-\_\-\-T\-E\-S\-T\-\_\-\-F}}
+\index{P\-E\-R\-F\-\_\-\-T\-E\-S\-T\-\_\-\-F@{P\-E\-R\-F\-\_\-\-T\-E\-S\-T\-\_\-\-F}!ts_perf.hpp@{ts\-\_\-perf.\-hpp}}
+\subsubsection[{P\-E\-R\-F\-\_\-\-T\-E\-S\-T\-\_\-\-F}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-E\-R\-F\-\_\-\-T\-E\-S\-T\-\_\-\-F(
+\begin{DoxyParamCaption}
+\item[{}]{fixture, }
+\item[{}]{testname}
+\end{DoxyParamCaption}
+)}}\label{ts__perf_8hpp_ae50ea3ca0a9fe4281f193575277f621f}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{keyword}{namespace }\hyperlink{ts__perf_8hpp_afea3af9aa12b7dd479c245d355e876e1}{PERF\_PROXY\_NAMESPACE\_NAME\_}(fixture, testname) \{\(\backslash\)
+     class TestBase \{\textcolor{comment}{/*compile error for this class means that you are trying to use perf::TestBase as a
+       fixture*/}\};\(\backslash\)
+     class fixture : public ::fixture \{\(\backslash\)
+      public:\(\backslash\)
+       fixture() \{\}\(\backslash\)
+      protected:\(\backslash\)
+       virtual \textcolor{keywordtype}{void} PerfTestBody();\(\backslash\)
+     \};\hyperlink{ts__gtest_8h_a0ee66d464d1a06c20c1929cae09d8758}{\(\backslash\)}
+\hyperlink{ts__gtest_8h_a0ee66d464d1a06c20c1929cae09d8758}{     TEST\_F}(fixture, testname)\{ RunPerfTestBody(); \}\(\backslash\)
+    \}\hyperlink{highgui__c_8h_ad1f9461adaad33556b3a01c7f2c6ceab}{\(\backslash\)}
+\hyperlink{highgui__c_8h_ad1f9461adaad33556b3a01c7f2c6ceab}{    void} \hyperlink{ts__perf_8hpp_afea3af9aa12b7dd479c245d355e876e1}{PERF\_PROXY\_NAMESPACE\_NAME\_}(fixture, testname)::fixture::
+      PerfTestBody()
+\end{DoxyCode}
+\hypertarget{ts__perf_8hpp_a60fe7d98870e988d83b6214b309037c1}{\index{ts\-\_\-perf.\-hpp@{ts\-\_\-perf.\-hpp}!P\-E\-R\-F\-\_\-\-T\-E\-S\-T\-\_\-\-P@{P\-E\-R\-F\-\_\-\-T\-E\-S\-T\-\_\-\-P}}
+\index{P\-E\-R\-F\-\_\-\-T\-E\-S\-T\-\_\-\-P@{P\-E\-R\-F\-\_\-\-T\-E\-S\-T\-\_\-\-P}!ts_perf.hpp@{ts\-\_\-perf.\-hpp}}
+\subsubsection[{P\-E\-R\-F\-\_\-\-T\-E\-S\-T\-\_\-\-P}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-E\-R\-F\-\_\-\-T\-E\-S\-T\-\_\-\-P(
+\begin{DoxyParamCaption}
+\item[{}]{fixture, }
+\item[{}]{{\bf name}, }
+\item[{}]{{\bf params}}
+\end{DoxyParamCaption}
+)}}\label{ts__perf_8hpp_a60fe7d98870e988d83b6214b309037c1}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{keyword}{class }fixture##\_##\hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name} : \textcolor{keyword}{public} fixture \{\(\backslash\)
+     public:\(\backslash\)
+      fixture##\_##\hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name}() \{\}\(\backslash\)
+     protected:\(\backslash\)
+      virtual \textcolor{keywordtype}{void} PerfTestBody();\(\backslash\)
+    \};\hyperlink{ts__gtest_8h_abd3bb216dafbffa36044a6030216ecda}{\(\backslash\)}
+\hyperlink{ts__gtest_8h_abd3bb216dafbffa36044a6030216ecda}{    TEST\_P}(fixture##\_##\hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name}, name \textcolor{comment}{/*perf*/})\{ RunPerfTestBody(); \}\hyperlink{ts__gtest_8h_ae54c460d07e5e2020484a83764d5111b}{\(\backslash\)}
+\hyperlink{ts__gtest_8h_ae54c460d07e5e2020484a83764d5111b}{    INSTANTIATE\_TEST\_CASE\_P}(\textcolor{comment}{/*none*/}, fixture##\_##
+      \hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name}, \hyperlink{compat_8hpp_a0480a03ecc41b20cde376602531d9270}{params});\hyperlink{highgui__c_8h_ad1f9461adaad33556b3a01c7f2c6ceab}{\(\backslash\)}
+\hyperlink{highgui__c_8h_ad1f9461adaad33556b3a01c7f2c6ceab}{    void} fixture##\_##name::PerfTestBody()
+\end{DoxyCode}
+\hypertarget{ts__perf_8hpp_a34dc92159af1d943e424100edf16cf1d}{\index{ts\-\_\-perf.\-hpp@{ts\-\_\-perf.\-hpp}!S\-A\-N\-I\-T\-Y\-\_\-\-C\-H\-E\-C\-K@{S\-A\-N\-I\-T\-Y\-\_\-\-C\-H\-E\-C\-K}}
+\index{S\-A\-N\-I\-T\-Y\-\_\-\-C\-H\-E\-C\-K@{S\-A\-N\-I\-T\-Y\-\_\-\-C\-H\-E\-C\-K}!ts_perf.hpp@{ts\-\_\-perf.\-hpp}}
+\subsubsection[{S\-A\-N\-I\-T\-Y\-\_\-\-C\-H\-E\-C\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-A\-N\-I\-T\-Y\-\_\-\-C\-H\-E\-C\-K(
+\begin{DoxyParamCaption}
+\item[{}]{array, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)~\-::{\bf perf\-::\-Regression\-::add}(this, \#array, array , \#\# \-\_\-\-\_\-\-V\-A\-\_\-\-A\-R\-G\-S\-\_\-\-\_\-)}}\label{ts__perf_8hpp_a34dc92159af1d943e424100edf16cf1d}
+\hypertarget{ts__perf_8hpp_a8cd56cc66f9739ff35c2c9cf095d5a39}{\index{ts\-\_\-perf.\-hpp@{ts\-\_\-perf.\-hpp}!S\-A\-N\-I\-T\-Y\-\_\-\-C\-H\-E\-C\-K\-\_\-\-K\-E\-Y\-P\-O\-I\-N\-T\-S@{S\-A\-N\-I\-T\-Y\-\_\-\-C\-H\-E\-C\-K\-\_\-\-K\-E\-Y\-P\-O\-I\-N\-T\-S}}
+\index{S\-A\-N\-I\-T\-Y\-\_\-\-C\-H\-E\-C\-K\-\_\-\-K\-E\-Y\-P\-O\-I\-N\-T\-S@{S\-A\-N\-I\-T\-Y\-\_\-\-C\-H\-E\-C\-K\-\_\-\-K\-E\-Y\-P\-O\-I\-N\-T\-S}!ts_perf.hpp@{ts\-\_\-perf.\-hpp}}
+\subsubsection[{S\-A\-N\-I\-T\-Y\-\_\-\-C\-H\-E\-C\-K\-\_\-\-K\-E\-Y\-P\-O\-I\-N\-T\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-A\-N\-I\-T\-Y\-\_\-\-C\-H\-E\-C\-K\-\_\-\-K\-E\-Y\-P\-O\-I\-N\-T\-S(
+\begin{DoxyParamCaption}
+\item[{}]{array, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)~\-::{\bf perf\-::\-Regression\-::add\-Keypoints}(this, \#array, array , \#\# \-\_\-\-\_\-\-V\-A\-\_\-\-A\-R\-G\-S\-\_\-\-\_\-)}}\label{ts__perf_8hpp_a8cd56cc66f9739ff35c2c9cf095d5a39}
+\hypertarget{ts__perf_8hpp_ad33b1b40712b3fa5c82124009cbb23d7}{\index{ts\-\_\-perf.\-hpp@{ts\-\_\-perf.\-hpp}!S\-A\-N\-I\-T\-Y\-\_\-\-C\-H\-E\-C\-K\-\_\-\-M\-A\-T\-C\-H\-E\-S@{S\-A\-N\-I\-T\-Y\-\_\-\-C\-H\-E\-C\-K\-\_\-\-M\-A\-T\-C\-H\-E\-S}}
+\index{S\-A\-N\-I\-T\-Y\-\_\-\-C\-H\-E\-C\-K\-\_\-\-M\-A\-T\-C\-H\-E\-S@{S\-A\-N\-I\-T\-Y\-\_\-\-C\-H\-E\-C\-K\-\_\-\-M\-A\-T\-C\-H\-E\-S}!ts_perf.hpp@{ts\-\_\-perf.\-hpp}}
+\subsubsection[{S\-A\-N\-I\-T\-Y\-\_\-\-C\-H\-E\-C\-K\-\_\-\-M\-A\-T\-C\-H\-E\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-A\-N\-I\-T\-Y\-\_\-\-C\-H\-E\-C\-K\-\_\-\-M\-A\-T\-C\-H\-E\-S(
+\begin{DoxyParamCaption}
+\item[{}]{array, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)~\-::{\bf perf\-::\-Regression\-::add\-Matches}(this, \#array, array , \#\# \-\_\-\-\_\-\-V\-A\-\_\-\-A\-R\-G\-S\-\_\-\-\_\-)}}\label{ts__perf_8hpp_ad33b1b40712b3fa5c82124009cbb23d7}
+\hypertarget{ts__perf_8hpp_ab00d6ea828e49d632ba3b6f7134fda2e}{\index{ts\-\_\-perf.\-hpp@{ts\-\_\-perf.\-hpp}!S\-A\-N\-I\-T\-Y\-\_\-\-C\-H\-E\-C\-K\-\_\-\-N\-O\-T\-H\-I\-N\-G@{S\-A\-N\-I\-T\-Y\-\_\-\-C\-H\-E\-C\-K\-\_\-\-N\-O\-T\-H\-I\-N\-G}}
+\index{S\-A\-N\-I\-T\-Y\-\_\-\-C\-H\-E\-C\-K\-\_\-\-N\-O\-T\-H\-I\-N\-G@{S\-A\-N\-I\-T\-Y\-\_\-\-C\-H\-E\-C\-K\-\_\-\-N\-O\-T\-H\-I\-N\-G}!ts_perf.hpp@{ts\-\_\-perf.\-hpp}}
+\subsubsection[{S\-A\-N\-I\-T\-Y\-\_\-\-C\-H\-E\-C\-K\-\_\-\-N\-O\-T\-H\-I\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-A\-N\-I\-T\-Y\-\_\-\-C\-H\-E\-C\-K\-\_\-\-N\-O\-T\-H\-I\-N\-G(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~this-\/$>$set\-Verified();}}\label{ts__perf_8hpp_ab00d6ea828e49d632ba3b6f7134fda2e}
+\hypertarget{ts__perf_8hpp_ab6d5bc9408480f6bf75b7154514e1f1d}{\index{ts\-\_\-perf.\-hpp@{ts\-\_\-perf.\-hpp}!S\-Z\-\_\-\-A\-L\-L@{S\-Z\-\_\-\-A\-L\-L}}
+\index{S\-Z\-\_\-\-A\-L\-L@{S\-Z\-\_\-\-A\-L\-L}!ts_perf.hpp@{ts\-\_\-perf.\-hpp}}
+\subsubsection[{S\-Z\-\_\-\-A\-L\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-Z\-\_\-\-A\-L\-L~\-::{\bf testing\-::\-Values}(\-::{\bf perf\-::sz\-Q\-V\-G\-A}, \-::{\bf perf\-::sz\-V\-G\-A}, \-::{\bf perf\-::sz\-S\-V\-G\-A}, \-::{\bf perf\-::sz\-X\-G\-A}, \-::{\bf perf\-::sz\-S\-X\-G\-A}, \-::{\bf perf\-::szn\-H\-D}, \-::{\bf perf\-::szq\-H\-D}, \-::{\bf perf\-::sz720p}, \-::{\bf perf\-::sz1080p})}}\label{ts__perf_8hpp_ab6d5bc9408480f6bf75b7154514e1f1d}
+\hypertarget{ts__perf_8hpp_a01994f8c1789eeccac25df51925a3661}{\index{ts\-\_\-perf.\-hpp@{ts\-\_\-perf.\-hpp}!S\-Z\-\_\-\-A\-L\-L\-\_\-\-G\-A@{S\-Z\-\_\-\-A\-L\-L\-\_\-\-G\-A}}
+\index{S\-Z\-\_\-\-A\-L\-L\-\_\-\-G\-A@{S\-Z\-\_\-\-A\-L\-L\-\_\-\-G\-A}!ts_perf.hpp@{ts\-\_\-perf.\-hpp}}
+\subsubsection[{S\-Z\-\_\-\-A\-L\-L\-\_\-\-G\-A}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-Z\-\_\-\-A\-L\-L\-\_\-\-G\-A~\-::{\bf testing\-::\-Values}(\-::{\bf perf\-::sz\-Q\-V\-G\-A}, \-::{\bf perf\-::sz\-V\-G\-A}, \-::{\bf perf\-::sz\-S\-V\-G\-A}, \-::{\bf perf\-::sz\-X\-G\-A}, \-::{\bf perf\-::sz\-S\-X\-G\-A})}}\label{ts__perf_8hpp_a01994f8c1789eeccac25df51925a3661}
+\hypertarget{ts__perf_8hpp_a7f35a426bfd9bfcce5f125f9b6f7f3fa}{\index{ts\-\_\-perf.\-hpp@{ts\-\_\-perf.\-hpp}!S\-Z\-\_\-\-A\-L\-L\-\_\-\-H\-D@{S\-Z\-\_\-\-A\-L\-L\-\_\-\-H\-D}}
+\index{S\-Z\-\_\-\-A\-L\-L\-\_\-\-H\-D@{S\-Z\-\_\-\-A\-L\-L\-\_\-\-H\-D}!ts_perf.hpp@{ts\-\_\-perf.\-hpp}}
+\subsubsection[{S\-Z\-\_\-\-A\-L\-L\-\_\-\-H\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-Z\-\_\-\-A\-L\-L\-\_\-\-H\-D~\-::{\bf testing\-::\-Values}(\-::{\bf perf\-::szn\-H\-D}, \-::{\bf perf\-::szq\-H\-D}, \-::{\bf perf\-::sz720p}, \-::{\bf perf\-::sz1080p})}}\label{ts__perf_8hpp_a7f35a426bfd9bfcce5f125f9b6f7f3fa}
+\hypertarget{ts__perf_8hpp_a0aa5324e840420879bb622856d6d1047}{\index{ts\-\_\-perf.\-hpp@{ts\-\_\-perf.\-hpp}!S\-Z\-\_\-\-A\-L\-L\-\_\-\-S\-M\-A\-L\-L@{S\-Z\-\_\-\-A\-L\-L\-\_\-\-S\-M\-A\-L\-L}}
+\index{S\-Z\-\_\-\-A\-L\-L\-\_\-\-S\-M\-A\-L\-L@{S\-Z\-\_\-\-A\-L\-L\-\_\-\-S\-M\-A\-L\-L}!ts_perf.hpp@{ts\-\_\-perf.\-hpp}}
+\subsubsection[{S\-Z\-\_\-\-A\-L\-L\-\_\-\-S\-M\-A\-L\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-Z\-\_\-\-A\-L\-L\-\_\-\-S\-M\-A\-L\-L~\-::{\bf testing\-::\-Values}(\-::{\bf perf\-::sz\-Small24}, \-::{\bf perf\-::sz\-Small32}, \-::{\bf perf\-::sz\-Small64}, \-::{\bf perf\-::sz\-Small128})}}\label{ts__perf_8hpp_a0aa5324e840420879bb622856d6d1047}
+\hypertarget{ts__perf_8hpp_aa524997830de7aebe77050a0cd565b58}{\index{ts\-\_\-perf.\-hpp@{ts\-\_\-perf.\-hpp}!S\-Z\-\_\-\-A\-L\-L\-\_\-\-V\-G\-A@{S\-Z\-\_\-\-A\-L\-L\-\_\-\-V\-G\-A}}
+\index{S\-Z\-\_\-\-A\-L\-L\-\_\-\-V\-G\-A@{S\-Z\-\_\-\-A\-L\-L\-\_\-\-V\-G\-A}!ts_perf.hpp@{ts\-\_\-perf.\-hpp}}
+\subsubsection[{S\-Z\-\_\-\-A\-L\-L\-\_\-\-V\-G\-A}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-Z\-\_\-\-A\-L\-L\-\_\-\-V\-G\-A~\-::{\bf testing\-::\-Values}(\-::{\bf perf\-::sz\-Q\-V\-G\-A}, \-::{\bf perf\-::sz\-V\-G\-A}, \-::{\bf perf\-::sz\-S\-V\-G\-A})}}\label{ts__perf_8hpp_aa524997830de7aebe77050a0cd565b58}
+\hypertarget{ts__perf_8hpp_afcbb8b462813d27b05060eab9a0f644e}{\index{ts\-\_\-perf.\-hpp@{ts\-\_\-perf.\-hpp}!S\-Z\-\_\-\-T\-Y\-P\-I\-C\-A\-L@{S\-Z\-\_\-\-T\-Y\-P\-I\-C\-A\-L}}
+\index{S\-Z\-\_\-\-T\-Y\-P\-I\-C\-A\-L@{S\-Z\-\_\-\-T\-Y\-P\-I\-C\-A\-L}!ts_perf.hpp@{ts\-\_\-perf.\-hpp}}
+\subsubsection[{S\-Z\-\_\-\-T\-Y\-P\-I\-C\-A\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-Z\-\_\-\-T\-Y\-P\-I\-C\-A\-L~\-::{\bf testing\-::\-Values}(\-::{\bf perf\-::sz\-V\-G\-A}, \-::{\bf perf\-::szq\-H\-D}, \-::{\bf perf\-::sz720p}, \-::{\bf perf\-::sz\-O\-D\-D})}}\label{ts__perf_8hpp_afcbb8b462813d27b05060eab9a0f644e}
+\hypertarget{ts__perf_8hpp_a0dc0c8bb73c31058078d83134b4a117f}{\index{ts\-\_\-perf.\-hpp@{ts\-\_\-perf.\-hpp}!T\-E\-S\-T\-\_\-\-C\-Y\-C\-L\-E@{T\-E\-S\-T\-\_\-\-C\-Y\-C\-L\-E}}
+\index{T\-E\-S\-T\-\_\-\-C\-Y\-C\-L\-E@{T\-E\-S\-T\-\_\-\-C\-Y\-C\-L\-E}!ts_perf.hpp@{ts\-\_\-perf.\-hpp}}
+\subsubsection[{T\-E\-S\-T\-\_\-\-C\-Y\-C\-L\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-E\-S\-T\-\_\-\-C\-Y\-C\-L\-E(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)~for(; start\-Timer(), {\bf next}(); stop\-Timer())}}\label{ts__perf_8hpp_a0dc0c8bb73c31058078d83134b4a117f}
+\hypertarget{ts__perf_8hpp_a59a99c039e4bf7b5bf01d1d7e301b5e0}{\index{ts\-\_\-perf.\-hpp@{ts\-\_\-perf.\-hpp}!T\-E\-S\-T\-\_\-\-C\-Y\-C\-L\-E\-\_\-\-M\-U\-L\-T\-I\-R\-U\-N@{T\-E\-S\-T\-\_\-\-C\-Y\-C\-L\-E\-\_\-\-M\-U\-L\-T\-I\-R\-U\-N}}
+\index{T\-E\-S\-T\-\_\-\-C\-Y\-C\-L\-E\-\_\-\-M\-U\-L\-T\-I\-R\-U\-N@{T\-E\-S\-T\-\_\-\-C\-Y\-C\-L\-E\-\_\-\-M\-U\-L\-T\-I\-R\-U\-N}!ts_perf.hpp@{ts\-\_\-perf.\-hpp}}
+\subsubsection[{T\-E\-S\-T\-\_\-\-C\-Y\-C\-L\-E\-\_\-\-M\-U\-L\-T\-I\-R\-U\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-E\-S\-T\-\_\-\-C\-Y\-C\-L\-E\-\_\-\-M\-U\-L\-T\-I\-R\-U\-N(
+\begin{DoxyParamCaption}
+\item[{}]{runs\-Num}
+\end{DoxyParamCaption}
+)~for(declare.\-runs(runs\-Num); start\-Timer(), {\bf next}(); stop\-Timer()) for(int {\bf r} = 0; {\bf r} $<$ runs\-Num; ++{\bf r})}}\label{ts__perf_8hpp_a59a99c039e4bf7b5bf01d1d7e301b5e0}
+\hypertarget{ts__perf_8hpp_ac23e50c884dc7b58a8f6c853d4474d61}{\index{ts\-\_\-perf.\-hpp@{ts\-\_\-perf.\-hpp}!T\-E\-S\-T\-\_\-\-C\-Y\-C\-L\-E\-\_\-\-N@{T\-E\-S\-T\-\_\-\-C\-Y\-C\-L\-E\-\_\-\-N}}
+\index{T\-E\-S\-T\-\_\-\-C\-Y\-C\-L\-E\-\_\-\-N@{T\-E\-S\-T\-\_\-\-C\-Y\-C\-L\-E\-\_\-\-N}!ts_perf.hpp@{ts\-\_\-perf.\-hpp}}
+\subsubsection[{T\-E\-S\-T\-\_\-\-C\-Y\-C\-L\-E\-\_\-\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-E\-S\-T\-\_\-\-C\-Y\-C\-L\-E\-\_\-\-N(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf n}}
+\end{DoxyParamCaption}
+)~for({\bf declare.\-iterations}({\bf n}); start\-Timer(), {\bf next}(); stop\-Timer())}}\label{ts__perf_8hpp_ac23e50c884dc7b58a8f6c853d4474d61}
+\hypertarget{ts__perf_8hpp_ae0f3a4889c8ea669bb90f3708a891079}{\index{ts\-\_\-perf.\-hpp@{ts\-\_\-perf.\-hpp}!T\-Y\-P\-I\-C\-A\-L\-\_\-\-M\-A\-T\-\_\-\-S\-I\-Z\-E\-S@{T\-Y\-P\-I\-C\-A\-L\-\_\-\-M\-A\-T\-\_\-\-S\-I\-Z\-E\-S}}
+\index{T\-Y\-P\-I\-C\-A\-L\-\_\-\-M\-A\-T\-\_\-\-S\-I\-Z\-E\-S@{T\-Y\-P\-I\-C\-A\-L\-\_\-\-M\-A\-T\-\_\-\-S\-I\-Z\-E\-S}!ts_perf.hpp@{ts\-\_\-perf.\-hpp}}
+\subsubsection[{T\-Y\-P\-I\-C\-A\-L\-\_\-\-M\-A\-T\-\_\-\-S\-I\-Z\-E\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-Y\-P\-I\-C\-A\-L\-\_\-\-M\-A\-T\-\_\-\-S\-I\-Z\-E\-S~\-::{\bf perf\-::sz\-V\-G\-A}, \-::{\bf perf\-::sz720p}, \-::{\bf perf\-::sz1080p}, \-::{\bf perf\-::sz\-O\-D\-D}}}\label{ts__perf_8hpp_ae0f3a4889c8ea669bb90f3708a891079}
+\hypertarget{ts__perf_8hpp_ab1cb0bf5cf859148e818fc86e3df239a}{\index{ts\-\_\-perf.\-hpp@{ts\-\_\-perf.\-hpp}!T\-Y\-P\-I\-C\-A\-L\-\_\-\-M\-A\-T\-\_\-\-T\-Y\-P\-E\-S@{T\-Y\-P\-I\-C\-A\-L\-\_\-\-M\-A\-T\-\_\-\-T\-Y\-P\-E\-S}}
+\index{T\-Y\-P\-I\-C\-A\-L\-\_\-\-M\-A\-T\-\_\-\-T\-Y\-P\-E\-S@{T\-Y\-P\-I\-C\-A\-L\-\_\-\-M\-A\-T\-\_\-\-T\-Y\-P\-E\-S}!ts_perf.hpp@{ts\-\_\-perf.\-hpp}}
+\subsubsection[{T\-Y\-P\-I\-C\-A\-L\-\_\-\-M\-A\-T\-\_\-\-T\-Y\-P\-E\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-Y\-P\-I\-C\-A\-L\-\_\-\-M\-A\-T\-\_\-\-T\-Y\-P\-E\-S~{\bf C\-V\-\_\-8\-U\-C1}, {\bf C\-V\-\_\-8\-U\-C4}, {\bf C\-V\-\_\-32\-F\-C1}}}\label{ts__perf_8hpp_ab1cb0bf5cf859148e818fc86e3df239a}
+\hypertarget{ts__perf_8hpp_a65d75f4ace1460cf0a9fb039cf36b6b3}{\index{ts\-\_\-perf.\-hpp@{ts\-\_\-perf.\-hpp}!T\-Y\-P\-I\-C\-A\-L\-\_\-\-M\-A\-T\-S@{T\-Y\-P\-I\-C\-A\-L\-\_\-\-M\-A\-T\-S}}
+\index{T\-Y\-P\-I\-C\-A\-L\-\_\-\-M\-A\-T\-S@{T\-Y\-P\-I\-C\-A\-L\-\_\-\-M\-A\-T\-S}!ts_perf.hpp@{ts\-\_\-perf.\-hpp}}
+\subsubsection[{T\-Y\-P\-I\-C\-A\-L\-\_\-\-M\-A\-T\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-Y\-P\-I\-C\-A\-L\-\_\-\-M\-A\-T\-S~{\bf testing\-::\-Combine}( {\bf testing\-::\-Values}( {\bf T\-Y\-P\-I\-C\-A\-L\-\_\-\-M\-A\-T\-\_\-\-S\-I\-Z\-E\-S} ), {\bf testing\-::\-Values}( {\bf T\-Y\-P\-I\-C\-A\-L\-\_\-\-M\-A\-T\-\_\-\-T\-Y\-P\-E\-S} ) )}}\label{ts__perf_8hpp_a65d75f4ace1460cf0a9fb039cf36b6b3}
+\hypertarget{ts__perf_8hpp_aa98df59178cd92dcc1f47f198e1ebafb}{\index{ts\-\_\-perf.\-hpp@{ts\-\_\-perf.\-hpp}!T\-Y\-P\-I\-C\-A\-L\-\_\-\-M\-A\-T\-S\-\_\-\-C1@{T\-Y\-P\-I\-C\-A\-L\-\_\-\-M\-A\-T\-S\-\_\-\-C1}}
+\index{T\-Y\-P\-I\-C\-A\-L\-\_\-\-M\-A\-T\-S\-\_\-\-C1@{T\-Y\-P\-I\-C\-A\-L\-\_\-\-M\-A\-T\-S\-\_\-\-C1}!ts_perf.hpp@{ts\-\_\-perf.\-hpp}}
+\subsubsection[{T\-Y\-P\-I\-C\-A\-L\-\_\-\-M\-A\-T\-S\-\_\-\-C1}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-Y\-P\-I\-C\-A\-L\-\_\-\-M\-A\-T\-S\-\_\-\-C1~{\bf testing\-::\-Combine}( {\bf testing\-::\-Values}( {\bf T\-Y\-P\-I\-C\-A\-L\-\_\-\-M\-A\-T\-\_\-\-S\-I\-Z\-E\-S} ), {\bf testing\-::\-Values}( {\bf C\-V\-\_\-8\-U\-C1}, {\bf C\-V\-\_\-32\-F\-C1} ) )}}\label{ts__perf_8hpp_aa98df59178cd92dcc1f47f198e1ebafb}
+\hypertarget{ts__perf_8hpp_abb4b64218882ae2bf2be85b0e86333cb}{\index{ts\-\_\-perf.\-hpp@{ts\-\_\-perf.\-hpp}!T\-Y\-P\-I\-C\-A\-L\-\_\-\-M\-A\-T\-S\-\_\-\-C4@{T\-Y\-P\-I\-C\-A\-L\-\_\-\-M\-A\-T\-S\-\_\-\-C4}}
+\index{T\-Y\-P\-I\-C\-A\-L\-\_\-\-M\-A\-T\-S\-\_\-\-C4@{T\-Y\-P\-I\-C\-A\-L\-\_\-\-M\-A\-T\-S\-\_\-\-C4}!ts_perf.hpp@{ts\-\_\-perf.\-hpp}}
+\subsubsection[{T\-Y\-P\-I\-C\-A\-L\-\_\-\-M\-A\-T\-S\-\_\-\-C4}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-Y\-P\-I\-C\-A\-L\-\_\-\-M\-A\-T\-S\-\_\-\-C4~{\bf testing\-::\-Combine}( {\bf testing\-::\-Values}( {\bf T\-Y\-P\-I\-C\-A\-L\-\_\-\-M\-A\-T\-\_\-\-S\-I\-Z\-E\-S} ), {\bf testing\-::\-Values}( {\bf C\-V\-\_\-8\-U\-C4} ) )}}\label{ts__perf_8hpp_abb4b64218882ae2bf2be85b0e86333cb}

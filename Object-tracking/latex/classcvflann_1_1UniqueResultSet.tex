@@ -1,0 +1,228 @@
+\hypertarget{classcvflann_1_1UniqueResultSet}{\section{cvflann\-:\-:Unique\-Result\-Set$<$ Distance\-Type $>$ Class Template Reference}
+\label{classcvflann_1_1UniqueResultSet}\index{cvflann\-::\-Unique\-Result\-Set$<$ Distance\-Type $>$@{cvflann\-::\-Unique\-Result\-Set$<$ Distance\-Type $>$}}
+}
+
+
+{\ttfamily \#include $<$result\-\_\-set.\-h$>$}
+
+
+
+Inheritance diagram for cvflann\-:\-:Unique\-Result\-Set$<$ Distance\-Type $>$\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcvflann_1_1UniqueResultSet__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for cvflann\-:\-:Unique\-Result\-Set$<$ Distance\-Type $>$\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classcvflann_1_1UniqueResultSet__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structcvflann_1_1UniqueResultSet_1_1DistIndex}{Dist\-Index}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcvflann_1_1UniqueResultSet_a593b507d0e36a01562b3b501ccb3e846}{Unique\-Result\-Set} ()
+\item 
+bool \hyperlink{classcvflann_1_1UniqueResultSet_a6be2e327fabb1e4e62f08f9f746fd6ba}{full} () const 
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcvflann_1_1UniqueResultSet_ad0f6df2b89548ce26bbdfa398436a3e7}{clear} ()=0
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcvflann_1_1UniqueResultSet_a0d41e712bb5dff2dcf139f028df7d0f5}{copy} (int $\ast$\hyperlink{legacy_8hpp_a3e3b9b48bcbc7f460efbcfe4399ad24a}{indices}, Distance\-Type $\ast$\hyperlink{legacy_8hpp_ae895c2003a87eda49126845b7ac3688e}{dist}, int n\-\_\-neighbors=-\/1) const 
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcvflann_1_1UniqueResultSet_afe9a25c34986cfa96a8e0032eab8c817}{sort\-And\-Copy} (int $\ast$\hyperlink{legacy_8hpp_a3e3b9b48bcbc7f460efbcfe4399ad24a}{indices}, Distance\-Type $\ast$\hyperlink{legacy_8hpp_ae895c2003a87eda49126845b7ac3688e}{dist}, int n\-\_\-neighbors=-\/1) const 
+\item 
+size\-\_\-t \hyperlink{classcvflann_1_1UniqueResultSet_a0acead6bdc4edc8847d9b809ff433cb4}{size} () const 
+\item 
+Distance\-Type \hyperlink{classcvflann_1_1UniqueResultSet_af626aa35c3c2821b769ecec88d7c249f}{worst\-Dist} () const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classcvflann_1_1UniqueResultSet_af71a1c29b71e041b32dd1007db3418ff}{is\-\_\-full\-\_\-}
+\item 
+Distance\-Type \hyperlink{classcvflann_1_1UniqueResultSet_ae4aeffc73377b192786837dd7a3360ab}{worst\-\_\-distance\-\_\-}
+\item 
+std\-::set$<$ \hyperlink{structcvflann_1_1UniqueResultSet_1_1DistIndex}{Dist\-Index} $>$ \hyperlink{classcvflann_1_1UniqueResultSet_a72cd438bad9e7924742ba2b7437a199b}{dist\-\_\-indices\-\_\-}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Distance\-Type$>$class cvflann\-::\-Unique\-Result\-Set$<$ Distance\-Type $>$}
+
+Class that holds the k N\-N neighbors Faster than \hyperlink{classcvflann_1_1KNNResultSet}{K\-N\-N\-Result\-Set} as it uses a binary heap and does not maintain two arrays 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcvflann_1_1UniqueResultSet_a593b507d0e36a01562b3b501ccb3e846}{\index{cvflann\-::\-Unique\-Result\-Set@{cvflann\-::\-Unique\-Result\-Set}!Unique\-Result\-Set@{Unique\-Result\-Set}}
+\index{Unique\-Result\-Set@{Unique\-Result\-Set}!cvflann::UniqueResultSet@{cvflann\-::\-Unique\-Result\-Set}}
+\subsubsection[{Unique\-Result\-Set}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance\-Type $>$ {\bf cvflann\-::\-Unique\-Result\-Set}$<$ Distance\-Type $>$\-::{\bf Unique\-Result\-Set} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcvflann_1_1UniqueResultSet_a593b507d0e36a01562b3b501ccb3e846}
+Default cosntructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classcvflann_1_1UniqueResultSet_ad0f6df2b89548ce26bbdfa398436a3e7}{\index{cvflann\-::\-Unique\-Result\-Set@{cvflann\-::\-Unique\-Result\-Set}!clear@{clear}}
+\index{clear@{clear}!cvflann::UniqueResultSet@{cvflann\-::\-Unique\-Result\-Set}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance\-Type $>$ virtual {\bf void} {\bf cvflann\-::\-Unique\-Result\-Set}$<$ Distance\-Type $>$\-::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classcvflann_1_1UniqueResultSet_ad0f6df2b89548ce26bbdfa398436a3e7}
+Remove all elements in the set 
+
+Implemented in \hyperlink{classcvflann_1_1KNNRadiusUniqueResultSet_a27dc9cb92948546e04ecad20682f06c0}{cvflann\-::\-K\-N\-N\-Radius\-Unique\-Result\-Set$<$ Distance\-Type $>$}, \hyperlink{classcvflann_1_1RadiusUniqueResultSet_ae9b39884adddbb060d6661ec4e7c0b0d}{cvflann\-::\-Radius\-Unique\-Result\-Set$<$ Distance\-Type $>$}, and \hyperlink{classcvflann_1_1KNNUniqueResultSet_afcf19c6a201b4580983b6baaae0a8383}{cvflann\-::\-K\-N\-N\-Unique\-Result\-Set$<$ Distance\-Type $>$}.
+
+\hypertarget{classcvflann_1_1UniqueResultSet_a0d41e712bb5dff2dcf139f028df7d0f5}{\index{cvflann\-::\-Unique\-Result\-Set@{cvflann\-::\-Unique\-Result\-Set}!copy@{copy}}
+\index{copy@{copy}!cvflann::UniqueResultSet@{cvflann\-::\-Unique\-Result\-Set}}
+\subsubsection[{copy}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance\-Type $>$ virtual {\bf void} {\bf cvflann\-::\-Unique\-Result\-Set}$<$ Distance\-Type $>$\-::copy (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{indices, }
+\item[{Distance\-Type $\ast$}]{dist, }
+\item[{int}]{n\-\_\-neighbors = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1UniqueResultSet_a0d41e712bb5dff2dcf139f028df7d0f5}
+Copy the set to two C arrays 
+\begin{DoxyParams}{Parameters}
+{\em indices} & pointer to a C array of indices \\
+\hline
+{\em dist} & pointer to a C array of distances \\
+\hline
+{\em n\-\_\-neighbors} & the number of neighbors to copy \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcvflann_1_1UniqueResultSet_a0d41e712bb5dff2dcf139f028df7d0f5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcvflann_1_1UniqueResultSet_a6be2e327fabb1e4e62f08f9f746fd6ba}{\index{cvflann\-::\-Unique\-Result\-Set@{cvflann\-::\-Unique\-Result\-Set}!full@{full}}
+\index{full@{full}!cvflann::UniqueResultSet@{cvflann\-::\-Unique\-Result\-Set}}
+\subsubsection[{full}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance\-Type $>$ bool {\bf cvflann\-::\-Unique\-Result\-Set}$<$ Distance\-Type $>$\-::full (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1UniqueResultSet_a6be2e327fabb1e4e62f08f9f746fd6ba}
+Check the status of the set \begin{DoxyReturn}{Returns}
+true if we have k N\-N 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classcvflann_1_1ResultSet_a8e29e42b9f3eb9c636f19927f46c8db4}{cvflann\-::\-Result\-Set$<$ Distance\-Type $>$}.
+
+
+
+Reimplemented in \hyperlink{classcvflann_1_1RadiusUniqueResultSet_a74a655e91b339927b458609a1d4e1eb4}{cvflann\-::\-Radius\-Unique\-Result\-Set$<$ Distance\-Type $>$}.
+
+\hypertarget{classcvflann_1_1UniqueResultSet_a0acead6bdc4edc8847d9b809ff433cb4}{\index{cvflann\-::\-Unique\-Result\-Set@{cvflann\-::\-Unique\-Result\-Set}!size@{size}}
+\index{size@{size}!cvflann::UniqueResultSet@{cvflann\-::\-Unique\-Result\-Set}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance\-Type $>$ size\-\_\-t {\bf cvflann\-::\-Unique\-Result\-Set}$<$ Distance\-Type $>$\-::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcvflann_1_1UniqueResultSet_a0acead6bdc4edc8847d9b809ff433cb4}
+The number of neighbors in the set \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcvflann_1_1UniqueResultSet_a0acead6bdc4edc8847d9b809ff433cb4_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcvflann_1_1UniqueResultSet_afe9a25c34986cfa96a8e0032eab8c817}{\index{cvflann\-::\-Unique\-Result\-Set@{cvflann\-::\-Unique\-Result\-Set}!sort\-And\-Copy@{sort\-And\-Copy}}
+\index{sort\-And\-Copy@{sort\-And\-Copy}!cvflann::UniqueResultSet@{cvflann\-::\-Unique\-Result\-Set}}
+\subsubsection[{sort\-And\-Copy}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance\-Type $>$ virtual {\bf void} {\bf cvflann\-::\-Unique\-Result\-Set}$<$ Distance\-Type $>$\-::sort\-And\-Copy (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{indices, }
+\item[{Distance\-Type $\ast$}]{dist, }
+\item[{int}]{n\-\_\-neighbors = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1UniqueResultSet_afe9a25c34986cfa96a8e0032eab8c817}
+Copy the set to two C arrays but sort it according to the distance first 
+\begin{DoxyParams}{Parameters}
+{\em indices} & pointer to a C array of indices \\
+\hline
+{\em dist} & pointer to a C array of distances \\
+\hline
+{\em n\-\_\-neighbors} & the number of neighbors to copy \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcvflann_1_1UniqueResultSet_afe9a25c34986cfa96a8e0032eab8c817_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcvflann_1_1UniqueResultSet_afe9a25c34986cfa96a8e0032eab8c817_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcvflann_1_1UniqueResultSet_af626aa35c3c2821b769ecec88d7c249f}{\index{cvflann\-::\-Unique\-Result\-Set@{cvflann\-::\-Unique\-Result\-Set}!worst\-Dist@{worst\-Dist}}
+\index{worst\-Dist@{worst\-Dist}!cvflann::UniqueResultSet@{cvflann\-::\-Unique\-Result\-Set}}
+\subsubsection[{worst\-Dist}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance\-Type $>$ Distance\-Type {\bf cvflann\-::\-Unique\-Result\-Set}$<$ Distance\-Type $>$\-::worst\-Dist (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1UniqueResultSet_af626aa35c3c2821b769ecec88d7c249f}
+The distance of the furthest neighbor If we don't have enough neighbors, it returns the max possible value \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classcvflann_1_1ResultSet_a7d0240d65865aace32c1422095ed1094}{cvflann\-::\-Result\-Set$<$ Distance\-Type $>$}.
+
+
+
+Reimplemented in \hyperlink{classcvflann_1_1RadiusUniqueResultSet_a07cc3d2c8825a1ff9c56b6d050fc4c50}{cvflann\-::\-Radius\-Unique\-Result\-Set$<$ Distance\-Type $>$}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcvflann_1_1UniqueResultSet_a72cd438bad9e7924742ba2b7437a199b}{\index{cvflann\-::\-Unique\-Result\-Set@{cvflann\-::\-Unique\-Result\-Set}!dist\-\_\-indices\-\_\-@{dist\-\_\-indices\-\_\-}}
+\index{dist\-\_\-indices\-\_\-@{dist\-\_\-indices\-\_\-}!cvflann::UniqueResultSet@{cvflann\-::\-Unique\-Result\-Set}}
+\subsubsection[{dist\-\_\-indices\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance\-Type $>$ std\-::set$<${\bf Dist\-Index}$>$ {\bf cvflann\-::\-Unique\-Result\-Set}$<$ Distance\-Type $>$\-::dist\-\_\-indices\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcvflann_1_1UniqueResultSet_a72cd438bad9e7924742ba2b7437a199b}
+The best candidates so far \hypertarget{classcvflann_1_1UniqueResultSet_af71a1c29b71e041b32dd1007db3418ff}{\index{cvflann\-::\-Unique\-Result\-Set@{cvflann\-::\-Unique\-Result\-Set}!is\-\_\-full\-\_\-@{is\-\_\-full\-\_\-}}
+\index{is\-\_\-full\-\_\-@{is\-\_\-full\-\_\-}!cvflann::UniqueResultSet@{cvflann\-::\-Unique\-Result\-Set}}
+\subsubsection[{is\-\_\-full\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance\-Type $>$ bool {\bf cvflann\-::\-Unique\-Result\-Set}$<$ Distance\-Type $>$\-::is\-\_\-full\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcvflann_1_1UniqueResultSet_af71a1c29b71e041b32dd1007db3418ff}
+Flag to say if the set is full \hypertarget{classcvflann_1_1UniqueResultSet_ae4aeffc73377b192786837dd7a3360ab}{\index{cvflann\-::\-Unique\-Result\-Set@{cvflann\-::\-Unique\-Result\-Set}!worst\-\_\-distance\-\_\-@{worst\-\_\-distance\-\_\-}}
+\index{worst\-\_\-distance\-\_\-@{worst\-\_\-distance\-\_\-}!cvflann::UniqueResultSet@{cvflann\-::\-Unique\-Result\-Set}}
+\subsubsection[{worst\-\_\-distance\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance\-Type $>$ Distance\-Type {\bf cvflann\-::\-Unique\-Result\-Set}$<$ Distance\-Type $>$\-::worst\-\_\-distance\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcvflann_1_1UniqueResultSet_ae4aeffc73377b192786837dd7a3360ab}
+The worst distance found so far 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/flann/\hyperlink{result__set_8h}{result\-\_\-set.\-h}\end{DoxyCompactItemize}

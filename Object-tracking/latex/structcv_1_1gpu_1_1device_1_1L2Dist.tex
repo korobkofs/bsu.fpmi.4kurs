@@ -1,0 +1,86 @@
+\hypertarget{structcv_1_1gpu_1_1device_1_1L2Dist}{\section{cv\-:\-:gpu\-:\-:device\-:\-:L2\-Dist Struct Reference}
+\label{structcv_1_1gpu_1_1device_1_1L2Dist}\index{cv\-::gpu\-::device\-::\-L2\-Dist@{cv\-::gpu\-::device\-::\-L2\-Dist}}
+}
+
+
+{\ttfamily \#include $<$vec\-\_\-distance.\-hpp$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef float \hyperlink{structcv_1_1gpu_1_1device_1_1L2Dist_a6a5a3749b1920972553cb24a994d0b92}{value\-\_\-type}
+\item 
+typedef float \hyperlink{structcv_1_1gpu_1_1device_1_1L2Dist_ac20ae62819b88997b7239f4b7de8a033}{result\-\_\-type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{structcv_1_1gpu_1_1device_1_1L2Dist_a2e7e6ad9954f42ba30cce8c602ee1fca}{L2\-Dist} ()
+\item 
+\-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{structcv_1_1gpu_1_1device_1_1L2Dist_a70fd7af2c5bc5697a673c87bb3eaba2f}{reduce\-Iter} (float val1, float val2)
+\item 
+{\footnotesize template$<$int T\-H\-R\-E\-A\-D\-\_\-\-D\-I\-M$>$ }\\\-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{structcv_1_1gpu_1_1device_1_1L2Dist_a2b3f860d74c9a6a523f2a60371f3f837}{reduce\-All} (float $\ast$smem, int tid)
+\item 
+\-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{structcv_1_1gpu_1_1device_1_1L2Dist_ac9cb58f66c1cacc23f93e276ccded47e}{operator float} () const 
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{structcv_1_1gpu_1_1device_1_1L2Dist_ac6728e638a010ee25a36eceb55b51743}{my\-Sum}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{structcv_1_1gpu_1_1device_1_1L2Dist_ac20ae62819b88997b7239f4b7de8a033}{\index{cv\-::gpu\-::device\-::\-L2\-Dist@{cv\-::gpu\-::device\-::\-L2\-Dist}!result\-\_\-type@{result\-\_\-type}}
+\index{result\-\_\-type@{result\-\_\-type}!cv::gpu::device::L2Dist@{cv\-::gpu\-::device\-::\-L2\-Dist}}
+\subsubsection[{result\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}typedef float {\bf cv\-::gpu\-::device\-::\-L2\-Dist\-::result\-\_\-type}}}\label{structcv_1_1gpu_1_1device_1_1L2Dist_ac20ae62819b88997b7239f4b7de8a033}
+\hypertarget{structcv_1_1gpu_1_1device_1_1L2Dist_a6a5a3749b1920972553cb24a994d0b92}{\index{cv\-::gpu\-::device\-::\-L2\-Dist@{cv\-::gpu\-::device\-::\-L2\-Dist}!value\-\_\-type@{value\-\_\-type}}
+\index{value\-\_\-type@{value\-\_\-type}!cv::gpu::device::L2Dist@{cv\-::gpu\-::device\-::\-L2\-Dist}}
+\subsubsection[{value\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}typedef float {\bf cv\-::gpu\-::device\-::\-L2\-Dist\-::value\-\_\-type}}}\label{structcv_1_1gpu_1_1device_1_1L2Dist_a6a5a3749b1920972553cb24a994d0b92}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structcv_1_1gpu_1_1device_1_1L2Dist_a2e7e6ad9954f42ba30cce8c602ee1fca}{\index{cv\-::gpu\-::device\-::\-L2\-Dist@{cv\-::gpu\-::device\-::\-L2\-Dist}!L2\-Dist@{L2\-Dist}}
+\index{L2\-Dist@{L2\-Dist}!cv::gpu::device::L2Dist@{cv\-::gpu\-::device\-::\-L2\-Dist}}
+\subsubsection[{L2\-Dist}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- cv\-::gpu\-::device\-::\-L2\-Dist\-::\-L2\-Dist (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{structcv_1_1gpu_1_1device_1_1L2Dist_a2e7e6ad9954f42ba30cce8c602ee1fca}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structcv_1_1gpu_1_1device_1_1L2Dist_ac9cb58f66c1cacc23f93e276ccded47e}{\index{cv\-::gpu\-::device\-::\-L2\-Dist@{cv\-::gpu\-::device\-::\-L2\-Dist}!operator float@{operator float}}
+\index{operator float@{operator float}!cv::gpu::device::L2Dist@{cv\-::gpu\-::device\-::\-L2\-Dist}}
+\subsubsection[{operator float}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- cv\-::gpu\-::device\-::\-L2\-Dist\-::operator float (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{structcv_1_1gpu_1_1device_1_1L2Dist_ac9cb58f66c1cacc23f93e276ccded47e}
+\hypertarget{structcv_1_1gpu_1_1device_1_1L2Dist_a2b3f860d74c9a6a523f2a60371f3f837}{\index{cv\-::gpu\-::device\-::\-L2\-Dist@{cv\-::gpu\-::device\-::\-L2\-Dist}!reduce\-All@{reduce\-All}}
+\index{reduce\-All@{reduce\-All}!cv::gpu::device::L2Dist@{cv\-::gpu\-::device\-::\-L2\-Dist}}
+\subsubsection[{reduce\-All}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int T\-H\-R\-E\-A\-D\-\_\-\-D\-I\-M$>$ \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- {\bf void} cv\-::gpu\-::device\-::\-L2\-Dist\-::reduce\-All (
+\begin{DoxyParamCaption}
+\item[{float $\ast$}]{smem, }
+\item[{int}]{tid}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{structcv_1_1gpu_1_1device_1_1L2Dist_a2b3f860d74c9a6a523f2a60371f3f837}
+\hypertarget{structcv_1_1gpu_1_1device_1_1L2Dist_a70fd7af2c5bc5697a673c87bb3eaba2f}{\index{cv\-::gpu\-::device\-::\-L2\-Dist@{cv\-::gpu\-::device\-::\-L2\-Dist}!reduce\-Iter@{reduce\-Iter}}
+\index{reduce\-Iter@{reduce\-Iter}!cv::gpu::device::L2Dist@{cv\-::gpu\-::device\-::\-L2\-Dist}}
+\subsubsection[{reduce\-Iter}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- {\bf void} cv\-::gpu\-::device\-::\-L2\-Dist\-::reduce\-Iter (
+\begin{DoxyParamCaption}
+\item[{float}]{val1, }
+\item[{float}]{val2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{structcv_1_1gpu_1_1device_1_1L2Dist_a70fd7af2c5bc5697a673c87bb3eaba2f}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structcv_1_1gpu_1_1device_1_1L2Dist_ac6728e638a010ee25a36eceb55b51743}{\index{cv\-::gpu\-::device\-::\-L2\-Dist@{cv\-::gpu\-::device\-::\-L2\-Dist}!my\-Sum@{my\-Sum}}
+\index{my\-Sum@{my\-Sum}!cv::gpu::device::L2Dist@{cv\-::gpu\-::device\-::\-L2\-Dist}}
+\subsubsection[{my\-Sum}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::gpu\-::device\-::\-L2\-Dist\-::my\-Sum}}\label{structcv_1_1gpu_1_1device_1_1L2Dist_ac6728e638a010ee25a36eceb55b51743}
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/gpu/device/\hyperlink{vec__distance_8hpp}{vec\-\_\-distance.\-hpp}\end{DoxyCompactItemize}

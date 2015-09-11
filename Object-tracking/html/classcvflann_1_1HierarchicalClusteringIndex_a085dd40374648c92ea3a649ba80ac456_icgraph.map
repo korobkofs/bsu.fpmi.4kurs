@@ -1,0 +1,5 @@
+<map id="cvflann::HierarchicalClusteringIndex::free_elements" name="cvflann::HierarchicalClusteringIndex::free_elements">
+<area shape="rect" id="node2" href="$classcvflann_1_1HierarchicalClusteringIndex.html#a51bd5c842b324a0d1f2869e20102be90" title="cvflann::HierarchicalClustering\lIndex::~HierarchicalClusteringIndex" alt="" coords="254,5,485,46"/>
+<area shape="rect" id="node3" href="$classcvflann_1_1HierarchicalClusteringIndex.html#ad306898d16cd94b44e0a4a678e9bdca6" title="cvflann::HierarchicalClustering\lIndex::buildIndex" alt="" coords="269,70,469,111"/>
+<area shape="rect" id="node4" href="$classcvflann_1_1HierarchicalClusteringIndex.html#a549a094e4701380f027e288095c0741e" title="Loads the index from a stream. " alt="" coords="269,135,469,177"/>
+</map>

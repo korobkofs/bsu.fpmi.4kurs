@@ -1,0 +1,166 @@
+\hypertarget{classcv_1_1gpu_1_1GMG__GPU}{\section{cv\-:\-:gpu\-:\-:G\-M\-G\-\_\-\-G\-P\-U Class Reference}
+\label{classcv_1_1gpu_1_1GMG__GPU}\index{cv\-::gpu\-::\-G\-M\-G\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-G\-M\-G\-\_\-\-G\-P\-U}}
+}
+
+
+{\ttfamily \#include $<$gpu.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcv_1_1gpu_1_1GMG__GPU_ad82da60216a396d784e00e9b26f34a11}{G\-M\-G\-\_\-\-G\-P\-U} ()
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1GMG__GPU_a2e1c627dfcea6f7a896eb00a207aad74}{initialize} (Size frame\-Size, float \hyperlink{namespacecv_1_1gpu_a8d100341ab11a730a3c90b75d5890a8c}{min}=0.\-0f, float max=255.\-0f)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1GMG__GPU_a2268e960d6273ce783224552eca213b6}{operator()} (const Gpu\-Mat \&\hyperlink{core__c_8h_a0430deaafd9043e478f306e33961299d}{frame}, Gpu\-Mat \&\hyperlink{legacy_8hpp_a7ff9edf5eaa300d3c1cea7de20631fd8}{fgmask}, float \hyperlink{classcv_1_1gpu_1_1GMG__GPU_a05dad91a91ad2a893a79f0b95920e24c}{learning\-Rate}=-\/1.\-0f, Stream \&stream=\-Stream\-::\-Null())
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1GMG__GPU_aece33d6bceadab91fa10934820c1105b}{release} ()
+\begin{DoxyCompactList}\small\item\em Releases all inner buffers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classcv_1_1gpu_1_1GMG__GPU_aef13a3000e96aea8f8599e933e0b0492}{max\-Features}
+\begin{DoxyCompactList}\small\item\em Total number of distinct colors to maintain in histogram. \end{DoxyCompactList}\item 
+float \hyperlink{classcv_1_1gpu_1_1GMG__GPU_a05dad91a91ad2a893a79f0b95920e24c}{learning\-Rate}
+\begin{DoxyCompactList}\small\item\em Set between 0.\-0 and 1.\-0, determines how quickly features are \char`\"{}forgotten\char`\"{} from histograms. \end{DoxyCompactList}\item 
+int \hyperlink{classcv_1_1gpu_1_1GMG__GPU_ab4796b2f60da0a859dd242ec5681ea43}{num\-Initialization\-Frames}
+\begin{DoxyCompactList}\small\item\em Number of frames of video to use to initialize histograms. \end{DoxyCompactList}\item 
+int \hyperlink{classcv_1_1gpu_1_1GMG__GPU_a562b4ad84c3c15f6c952e26304a854f1}{quantization\-Levels}
+\begin{DoxyCompactList}\small\item\em Number of discrete levels in each channel to be used in histograms. \end{DoxyCompactList}\item 
+float \hyperlink{classcv_1_1gpu_1_1GMG__GPU_a6377c73b49c025ba5ff12cbe6cf9f96d}{background\-Prior}
+\begin{DoxyCompactList}\small\item\em Prior probability that any given pixel is a background pixel. A sensitivity parameter. \end{DoxyCompactList}\item 
+float \hyperlink{classcv_1_1gpu_1_1GMG__GPU_a5ce273fb8c841b45377fa0111f71c8cc}{decision\-Threshold}
+\begin{DoxyCompactList}\small\item\em Value above which pixel is determined to be F\-G. \end{DoxyCompactList}\item 
+int \hyperlink{classcv_1_1gpu_1_1GMG__GPU_a5e2cb2fbb20a7a83ac0ae19c0ba3a8a8}{smoothing\-Radius}
+\begin{DoxyCompactList}\small\item\em Smoothing radius, in pixels, for cleaning up F\-G image. \end{DoxyCompactList}\item 
+bool \hyperlink{classcv_1_1gpu_1_1GMG__GPU_a2c756a5e5ec6c2160d6a440642d0909f}{update\-Background\-Model}
+\begin{DoxyCompactList}\small\item\em Perform background model update. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Background Subtractor module. Takes a series of images and returns a sequence of mask (8\-U\-C1) images of the same size, where 255 indicates Foreground and 0 represents Background. This class implements an algorithm described in \char`\"{}\-Visual Tracking of Human Visitors under
+\-Variable-\/\-Lighting Conditions for a Responsive Audio Art Installation,\char`\"{} A. Godbehere, A. Matsukawa, K. Goldberg, American Control Conference, Montreal, June 2012. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcv_1_1gpu_1_1GMG__GPU_ad82da60216a396d784e00e9b26f34a11}{\index{cv\-::gpu\-::\-G\-M\-G\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-G\-M\-G\-\_\-\-G\-P\-U}!G\-M\-G\-\_\-\-G\-P\-U@{G\-M\-G\-\_\-\-G\-P\-U}}
+\index{G\-M\-G\-\_\-\-G\-P\-U@{G\-M\-G\-\_\-\-G\-P\-U}!cv::gpu::GMG_GPU@{cv\-::gpu\-::\-G\-M\-G\-\_\-\-G\-P\-U}}
+\subsubsection[{G\-M\-G\-\_\-\-G\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::gpu\-::\-G\-M\-G\-\_\-\-G\-P\-U\-::\-G\-M\-G\-\_\-\-G\-P\-U (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1GMG__GPU_ad82da60216a396d784e00e9b26f34a11}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcv_1_1gpu_1_1GMG__GPU_a2e1c627dfcea6f7a896eb00a207aad74}{\index{cv\-::gpu\-::\-G\-M\-G\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-G\-M\-G\-\_\-\-G\-P\-U}!initialize@{initialize}}
+\index{initialize@{initialize}!cv::gpu::GMG_GPU@{cv\-::gpu\-::\-G\-M\-G\-\_\-\-G\-P\-U}}
+\subsubsection[{initialize}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-G\-M\-G\-\_\-\-G\-P\-U\-::initialize (
+\begin{DoxyParamCaption}
+\item[{Size}]{frame\-Size, }
+\item[{float}]{min = {\ttfamily 0.0f}, }
+\item[{float}]{max = {\ttfamily 255.0f}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1GMG__GPU_a2e1c627dfcea6f7a896eb00a207aad74}
+Validate parameters and set up data structures for appropriate frame size. 
+\begin{DoxyParams}{Parameters}
+{\em frame\-Size} & Input frame size \\
+\hline
+{\em min} & Minimum value taken on by pixels in image sequence. Usually 0 \\
+\hline
+{\em max} & Maximum value taken on by pixels in image sequence. e.\-g. 1.\-0 or 255 \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcv_1_1gpu_1_1GMG__GPU_a2268e960d6273ce783224552eca213b6}{\index{cv\-::gpu\-::\-G\-M\-G\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-G\-M\-G\-\_\-\-G\-P\-U}!operator()@{operator()}}
+\index{operator()@{operator()}!cv::gpu::GMG_GPU@{cv\-::gpu\-::\-G\-M\-G\-\_\-\-G\-P\-U}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-G\-M\-G\-\_\-\-G\-P\-U\-::operator() (
+\begin{DoxyParamCaption}
+\item[{const Gpu\-Mat \&}]{frame, }
+\item[{Gpu\-Mat \&}]{fgmask, }
+\item[{float}]{learning\-Rate = {\ttfamily -\/1.0f}, }
+\item[{{\bf Stream} \&}]{stream = {\ttfamily {\bf Stream\-::\-Null}()}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1GMG__GPU_a2268e960d6273ce783224552eca213b6}
+Performs single-\/frame background subtraction and builds up a statistical background image model. 
+\begin{DoxyParams}{Parameters}
+{\em frame} & Input frame \\
+\hline
+{\em fgmask} & Output mask image representing foreground and background pixels \\
+\hline
+{\em stream} & \hyperlink{classcv_1_1gpu_1_1Stream}{Stream} for the asynchronous version \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcv_1_1gpu_1_1GMG__GPU_aece33d6bceadab91fa10934820c1105b}{\index{cv\-::gpu\-::\-G\-M\-G\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-G\-M\-G\-\_\-\-G\-P\-U}!release@{release}}
+\index{release@{release}!cv::gpu::GMG_GPU@{cv\-::gpu\-::\-G\-M\-G\-\_\-\-G\-P\-U}}
+\subsubsection[{release}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-G\-M\-G\-\_\-\-G\-P\-U\-::release (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1GMG__GPU_aece33d6bceadab91fa10934820c1105b}
+
+
+Releases all inner buffers. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcv_1_1gpu_1_1GMG__GPU_a6377c73b49c025ba5ff12cbe6cf9f96d}{\index{cv\-::gpu\-::\-G\-M\-G\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-G\-M\-G\-\_\-\-G\-P\-U}!background\-Prior@{background\-Prior}}
+\index{background\-Prior@{background\-Prior}!cv::gpu::GMG_GPU@{cv\-::gpu\-::\-G\-M\-G\-\_\-\-G\-P\-U}}
+\subsubsection[{background\-Prior}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::gpu\-::\-G\-M\-G\-\_\-\-G\-P\-U\-::background\-Prior}}\label{classcv_1_1gpu_1_1GMG__GPU_a6377c73b49c025ba5ff12cbe6cf9f96d}
+
+
+Prior probability that any given pixel is a background pixel. A sensitivity parameter. 
+
+\hypertarget{classcv_1_1gpu_1_1GMG__GPU_a5ce273fb8c841b45377fa0111f71c8cc}{\index{cv\-::gpu\-::\-G\-M\-G\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-G\-M\-G\-\_\-\-G\-P\-U}!decision\-Threshold@{decision\-Threshold}}
+\index{decision\-Threshold@{decision\-Threshold}!cv::gpu::GMG_GPU@{cv\-::gpu\-::\-G\-M\-G\-\_\-\-G\-P\-U}}
+\subsubsection[{decision\-Threshold}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::gpu\-::\-G\-M\-G\-\_\-\-G\-P\-U\-::decision\-Threshold}}\label{classcv_1_1gpu_1_1GMG__GPU_a5ce273fb8c841b45377fa0111f71c8cc}
+
+
+Value above which pixel is determined to be F\-G. 
+
+\hypertarget{classcv_1_1gpu_1_1GMG__GPU_a05dad91a91ad2a893a79f0b95920e24c}{\index{cv\-::gpu\-::\-G\-M\-G\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-G\-M\-G\-\_\-\-G\-P\-U}!learning\-Rate@{learning\-Rate}}
+\index{learning\-Rate@{learning\-Rate}!cv::gpu::GMG_GPU@{cv\-::gpu\-::\-G\-M\-G\-\_\-\-G\-P\-U}}
+\subsubsection[{learning\-Rate}]{\setlength{\rightskip}{0pt plus 5cm}float cv\-::gpu\-::\-G\-M\-G\-\_\-\-G\-P\-U\-::learning\-Rate}}\label{classcv_1_1gpu_1_1GMG__GPU_a05dad91a91ad2a893a79f0b95920e24c}
+
+
+Set between 0.\-0 and 1.\-0, determines how quickly features are \char`\"{}forgotten\char`\"{} from histograms. 
+
+\hypertarget{classcv_1_1gpu_1_1GMG__GPU_aef13a3000e96aea8f8599e933e0b0492}{\index{cv\-::gpu\-::\-G\-M\-G\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-G\-M\-G\-\_\-\-G\-P\-U}!max\-Features@{max\-Features}}
+\index{max\-Features@{max\-Features}!cv::gpu::GMG_GPU@{cv\-::gpu\-::\-G\-M\-G\-\_\-\-G\-P\-U}}
+\subsubsection[{max\-Features}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::gpu\-::\-G\-M\-G\-\_\-\-G\-P\-U\-::max\-Features}}\label{classcv_1_1gpu_1_1GMG__GPU_aef13a3000e96aea8f8599e933e0b0492}
+
+
+Total number of distinct colors to maintain in histogram. 
+
+\hypertarget{classcv_1_1gpu_1_1GMG__GPU_ab4796b2f60da0a859dd242ec5681ea43}{\index{cv\-::gpu\-::\-G\-M\-G\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-G\-M\-G\-\_\-\-G\-P\-U}!num\-Initialization\-Frames@{num\-Initialization\-Frames}}
+\index{num\-Initialization\-Frames@{num\-Initialization\-Frames}!cv::gpu::GMG_GPU@{cv\-::gpu\-::\-G\-M\-G\-\_\-\-G\-P\-U}}
+\subsubsection[{num\-Initialization\-Frames}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::gpu\-::\-G\-M\-G\-\_\-\-G\-P\-U\-::num\-Initialization\-Frames}}\label{classcv_1_1gpu_1_1GMG__GPU_ab4796b2f60da0a859dd242ec5681ea43}
+
+
+Number of frames of video to use to initialize histograms. 
+
+\hypertarget{classcv_1_1gpu_1_1GMG__GPU_a562b4ad84c3c15f6c952e26304a854f1}{\index{cv\-::gpu\-::\-G\-M\-G\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-G\-M\-G\-\_\-\-G\-P\-U}!quantization\-Levels@{quantization\-Levels}}
+\index{quantization\-Levels@{quantization\-Levels}!cv::gpu::GMG_GPU@{cv\-::gpu\-::\-G\-M\-G\-\_\-\-G\-P\-U}}
+\subsubsection[{quantization\-Levels}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::gpu\-::\-G\-M\-G\-\_\-\-G\-P\-U\-::quantization\-Levels}}\label{classcv_1_1gpu_1_1GMG__GPU_a562b4ad84c3c15f6c952e26304a854f1}
+
+
+Number of discrete levels in each channel to be used in histograms. 
+
+\hypertarget{classcv_1_1gpu_1_1GMG__GPU_a5e2cb2fbb20a7a83ac0ae19c0ba3a8a8}{\index{cv\-::gpu\-::\-G\-M\-G\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-G\-M\-G\-\_\-\-G\-P\-U}!smoothing\-Radius@{smoothing\-Radius}}
+\index{smoothing\-Radius@{smoothing\-Radius}!cv::gpu::GMG_GPU@{cv\-::gpu\-::\-G\-M\-G\-\_\-\-G\-P\-U}}
+\subsubsection[{smoothing\-Radius}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::gpu\-::\-G\-M\-G\-\_\-\-G\-P\-U\-::smoothing\-Radius}}\label{classcv_1_1gpu_1_1GMG__GPU_a5e2cb2fbb20a7a83ac0ae19c0ba3a8a8}
+
+
+Smoothing radius, in pixels, for cleaning up F\-G image. 
+
+\hypertarget{classcv_1_1gpu_1_1GMG__GPU_a2c756a5e5ec6c2160d6a440642d0909f}{\index{cv\-::gpu\-::\-G\-M\-G\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-G\-M\-G\-\_\-\-G\-P\-U}!update\-Background\-Model@{update\-Background\-Model}}
+\index{update\-Background\-Model@{update\-Background\-Model}!cv::gpu::GMG_GPU@{cv\-::gpu\-::\-G\-M\-G\-\_\-\-G\-P\-U}}
+\subsubsection[{update\-Background\-Model}]{\setlength{\rightskip}{0pt plus 5cm}bool cv\-::gpu\-::\-G\-M\-G\-\_\-\-G\-P\-U\-::update\-Background\-Model}}\label{classcv_1_1gpu_1_1GMG__GPU_a2c756a5e5ec6c2160d6a440642d0909f}
+
+
+Perform background model update. 
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/gpu/\hyperlink{gpu_2gpu_8hpp}{gpu.\-hpp}\end{DoxyCompactItemize}

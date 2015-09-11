@@ -1,0 +1,139 @@
+\hypertarget{structperf_1_1performance__metrics}{\section{perf\-:\-:performance\-\_\-metrics Struct Reference}
+\label{structperf_1_1performance__metrics}\index{perf\-::performance\-\_\-metrics@{perf\-::performance\-\_\-metrics}}
+}
+
+
+{\ttfamily \#include $<$ts\-\_\-perf.\-hpp$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \\*
+\hyperlink{structperf_1_1performance__metrics_a8e5b59009171fdb5d126a5a1050ba573ad660d78c688eb727d2c733bfca09c681}{T\-E\-R\-M\-\_\-\-I\-T\-E\-R\-A\-T\-I\-O\-N\-S} = 0, 
+\hyperlink{structperf_1_1performance__metrics_a8e5b59009171fdb5d126a5a1050ba573a5a6caeeb25ffda8e716fd7ce5c9646eb}{T\-E\-R\-M\-\_\-\-T\-I\-M\-E} = 1, 
+\hyperlink{structperf_1_1performance__metrics_a8e5b59009171fdb5d126a5a1050ba573ac27d7fec15c6462885c8c316b6b33038}{T\-E\-R\-M\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T} = 2, 
+\hyperlink{structperf_1_1performance__metrics_a8e5b59009171fdb5d126a5a1050ba573a8300e0c7213502848912fdee65c31c2c}{T\-E\-R\-M\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N} = 3, 
+\\*
+\hyperlink{structperf_1_1performance__metrics_a8e5b59009171fdb5d126a5a1050ba573acfaecc692fc0f054e6f7e522b376fc6c}{T\-E\-R\-M\-\_\-\-S\-K\-I\-P\-\_\-\-T\-E\-S\-T} = 4, 
+\hyperlink{structperf_1_1performance__metrics_a8e5b59009171fdb5d126a5a1050ba573a4c97742fbd6a1fe57d1a3d9b30f8ed26}{T\-E\-R\-M\-\_\-\-U\-N\-K\-N\-O\-W\-N} = -\/1
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structperf_1_1performance__metrics_aec9c0d13f9fcd817419117df79ad881a}{performance\-\_\-metrics} ()
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{structperf_1_1performance__metrics_a83d35e43043d4b52c39b9fa62ea8272a}{clear} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+size\-\_\-t \hyperlink{structperf_1_1performance__metrics_acc80b054d809b0b27fe98cb38ef41644}{bytes\-In}
+\item 
+size\-\_\-t \hyperlink{structperf_1_1performance__metrics_ae8105f19c84eedcba76269840dcdd6f4}{bytes\-Out}
+\item 
+unsigned int \hyperlink{structperf_1_1performance__metrics_acd73bcfd4dfec164085aaf9a7ad51277}{samples}
+\item 
+unsigned int \hyperlink{structperf_1_1performance__metrics_a3e8d2309ef014908443b2afc6d507495}{outliers}
+\item 
+double \hyperlink{structperf_1_1performance__metrics_aa9a6325145d8889de82f0093b0ff4461}{gmean}
+\item 
+double \hyperlink{structperf_1_1performance__metrics_a4ab0c3f1eb0a4c49b03583f26437fa74}{gstddev}
+\item 
+double \hyperlink{structperf_1_1performance__metrics_ae0393a0923fd1bc56ab29b74983daaf8}{mean}
+\item 
+double \hyperlink{structperf_1_1performance__metrics_a16a37f9f8ce16c12fa74706d4ebad44c}{stddev}
+\item 
+double \hyperlink{structperf_1_1performance__metrics_a2d5301f33545149ead1c377869914c8d}{median}
+\item 
+double \hyperlink{structperf_1_1performance__metrics_aad64808c4b1630ca869549f0b7fd08eb}{min}
+\item 
+double \hyperlink{structperf_1_1performance__metrics_ac15e72fc4e77cc73bc105229175fd786}{frequency}
+\item 
+int \hyperlink{structperf_1_1performance__metrics_aa09eac74a010795924bfe8d82bd3509a}{termination\-Reason}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{structperf_1_1performance__metrics_a8e5b59009171fdb5d126a5a1050ba573}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{structperf_1_1performance__metrics_a8e5b59009171fdb5d126a5a1050ba573}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{T\-E\-R\-M\-\_\-\-I\-T\-E\-R\-A\-T\-I\-O\-N\-S@{T\-E\-R\-M\-\_\-\-I\-T\-E\-R\-A\-T\-I\-O\-N\-S}!perf\-::performance\-\_\-metrics@{perf\-::performance\-\_\-metrics}}\index{perf\-::performance\-\_\-metrics@{perf\-::performance\-\_\-metrics}!T\-E\-R\-M\-\_\-\-I\-T\-E\-R\-A\-T\-I\-O\-N\-S@{T\-E\-R\-M\-\_\-\-I\-T\-E\-R\-A\-T\-I\-O\-N\-S}}\item[{\em 
+\hypertarget{structperf_1_1performance__metrics_a8e5b59009171fdb5d126a5a1050ba573ad660d78c688eb727d2c733bfca09c681}{T\-E\-R\-M\-\_\-\-I\-T\-E\-R\-A\-T\-I\-O\-N\-S}\label{structperf_1_1performance__metrics_a8e5b59009171fdb5d126a5a1050ba573ad660d78c688eb727d2c733bfca09c681}
+}]\index{T\-E\-R\-M\-\_\-\-T\-I\-M\-E@{T\-E\-R\-M\-\_\-\-T\-I\-M\-E}!perf\-::performance\-\_\-metrics@{perf\-::performance\-\_\-metrics}}\index{perf\-::performance\-\_\-metrics@{perf\-::performance\-\_\-metrics}!T\-E\-R\-M\-\_\-\-T\-I\-M\-E@{T\-E\-R\-M\-\_\-\-T\-I\-M\-E}}\item[{\em 
+\hypertarget{structperf_1_1performance__metrics_a8e5b59009171fdb5d126a5a1050ba573a5a6caeeb25ffda8e716fd7ce5c9646eb}{T\-E\-R\-M\-\_\-\-T\-I\-M\-E}\label{structperf_1_1performance__metrics_a8e5b59009171fdb5d126a5a1050ba573a5a6caeeb25ffda8e716fd7ce5c9646eb}
+}]\index{T\-E\-R\-M\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T@{T\-E\-R\-M\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T}!perf\-::performance\-\_\-metrics@{perf\-::performance\-\_\-metrics}}\index{perf\-::performance\-\_\-metrics@{perf\-::performance\-\_\-metrics}!T\-E\-R\-M\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T@{T\-E\-R\-M\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T}}\item[{\em 
+\hypertarget{structperf_1_1performance__metrics_a8e5b59009171fdb5d126a5a1050ba573ac27d7fec15c6462885c8c316b6b33038}{T\-E\-R\-M\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T}\label{structperf_1_1performance__metrics_a8e5b59009171fdb5d126a5a1050ba573ac27d7fec15c6462885c8c316b6b33038}
+}]\index{T\-E\-R\-M\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N@{T\-E\-R\-M\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N}!perf\-::performance\-\_\-metrics@{perf\-::performance\-\_\-metrics}}\index{perf\-::performance\-\_\-metrics@{perf\-::performance\-\_\-metrics}!T\-E\-R\-M\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N@{T\-E\-R\-M\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N}}\item[{\em 
+\hypertarget{structperf_1_1performance__metrics_a8e5b59009171fdb5d126a5a1050ba573a8300e0c7213502848912fdee65c31c2c}{T\-E\-R\-M\-\_\-\-E\-X\-C\-E\-P\-T\-I\-O\-N}\label{structperf_1_1performance__metrics_a8e5b59009171fdb5d126a5a1050ba573a8300e0c7213502848912fdee65c31c2c}
+}]\index{T\-E\-R\-M\-\_\-\-S\-K\-I\-P\-\_\-\-T\-E\-S\-T@{T\-E\-R\-M\-\_\-\-S\-K\-I\-P\-\_\-\-T\-E\-S\-T}!perf\-::performance\-\_\-metrics@{perf\-::performance\-\_\-metrics}}\index{perf\-::performance\-\_\-metrics@{perf\-::performance\-\_\-metrics}!T\-E\-R\-M\-\_\-\-S\-K\-I\-P\-\_\-\-T\-E\-S\-T@{T\-E\-R\-M\-\_\-\-S\-K\-I\-P\-\_\-\-T\-E\-S\-T}}\item[{\em 
+\hypertarget{structperf_1_1performance__metrics_a8e5b59009171fdb5d126a5a1050ba573acfaecc692fc0f054e6f7e522b376fc6c}{T\-E\-R\-M\-\_\-\-S\-K\-I\-P\-\_\-\-T\-E\-S\-T}\label{structperf_1_1performance__metrics_a8e5b59009171fdb5d126a5a1050ba573acfaecc692fc0f054e6f7e522b376fc6c}
+}]\index{T\-E\-R\-M\-\_\-\-U\-N\-K\-N\-O\-W\-N@{T\-E\-R\-M\-\_\-\-U\-N\-K\-N\-O\-W\-N}!perf\-::performance\-\_\-metrics@{perf\-::performance\-\_\-metrics}}\index{perf\-::performance\-\_\-metrics@{perf\-::performance\-\_\-metrics}!T\-E\-R\-M\-\_\-\-U\-N\-K\-N\-O\-W\-N@{T\-E\-R\-M\-\_\-\-U\-N\-K\-N\-O\-W\-N}}\item[{\em 
+\hypertarget{structperf_1_1performance__metrics_a8e5b59009171fdb5d126a5a1050ba573a4c97742fbd6a1fe57d1a3d9b30f8ed26}{T\-E\-R\-M\-\_\-\-U\-N\-K\-N\-O\-W\-N}\label{structperf_1_1performance__metrics_a8e5b59009171fdb5d126a5a1050ba573a4c97742fbd6a1fe57d1a3d9b30f8ed26}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structperf_1_1performance__metrics_aec9c0d13f9fcd817419117df79ad881a}{\index{perf\-::performance\-\_\-metrics@{perf\-::performance\-\_\-metrics}!performance\-\_\-metrics@{performance\-\_\-metrics}}
+\index{performance\-\_\-metrics@{performance\-\_\-metrics}!perf::performance_metrics@{perf\-::performance\-\_\-metrics}}
+\subsubsection[{performance\-\_\-metrics}]{\setlength{\rightskip}{0pt plus 5cm}perf\-::performance\-\_\-metrics\-::performance\-\_\-metrics (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{structperf_1_1performance__metrics_aec9c0d13f9fcd817419117df79ad881a}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structperf_1_1performance__metrics_a83d35e43043d4b52c39b9fa62ea8272a}{\index{perf\-::performance\-\_\-metrics@{perf\-::performance\-\_\-metrics}!clear@{clear}}
+\index{clear@{clear}!perf::performance_metrics@{perf\-::performance\-\_\-metrics}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} perf\-::performance\-\_\-metrics\-::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{structperf_1_1performance__metrics_a83d35e43043d4b52c39b9fa62ea8272a}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structperf_1_1performance__metrics_acc80b054d809b0b27fe98cb38ef41644}{\index{perf\-::performance\-\_\-metrics@{perf\-::performance\-\_\-metrics}!bytes\-In@{bytes\-In}}
+\index{bytes\-In@{bytes\-In}!perf::performance_metrics@{perf\-::performance\-\_\-metrics}}
+\subsubsection[{bytes\-In}]{\setlength{\rightskip}{0pt plus 5cm}size\-\_\-t perf\-::performance\-\_\-metrics\-::bytes\-In}}\label{structperf_1_1performance__metrics_acc80b054d809b0b27fe98cb38ef41644}
+\hypertarget{structperf_1_1performance__metrics_ae8105f19c84eedcba76269840dcdd6f4}{\index{perf\-::performance\-\_\-metrics@{perf\-::performance\-\_\-metrics}!bytes\-Out@{bytes\-Out}}
+\index{bytes\-Out@{bytes\-Out}!perf::performance_metrics@{perf\-::performance\-\_\-metrics}}
+\subsubsection[{bytes\-Out}]{\setlength{\rightskip}{0pt plus 5cm}size\-\_\-t perf\-::performance\-\_\-metrics\-::bytes\-Out}}\label{structperf_1_1performance__metrics_ae8105f19c84eedcba76269840dcdd6f4}
+\hypertarget{structperf_1_1performance__metrics_ac15e72fc4e77cc73bc105229175fd786}{\index{perf\-::performance\-\_\-metrics@{perf\-::performance\-\_\-metrics}!frequency@{frequency}}
+\index{frequency@{frequency}!perf::performance_metrics@{perf\-::performance\-\_\-metrics}}
+\subsubsection[{frequency}]{\setlength{\rightskip}{0pt plus 5cm}double perf\-::performance\-\_\-metrics\-::frequency}}\label{structperf_1_1performance__metrics_ac15e72fc4e77cc73bc105229175fd786}
+\hypertarget{structperf_1_1performance__metrics_aa9a6325145d8889de82f0093b0ff4461}{\index{perf\-::performance\-\_\-metrics@{perf\-::performance\-\_\-metrics}!gmean@{gmean}}
+\index{gmean@{gmean}!perf::performance_metrics@{perf\-::performance\-\_\-metrics}}
+\subsubsection[{gmean}]{\setlength{\rightskip}{0pt plus 5cm}double perf\-::performance\-\_\-metrics\-::gmean}}\label{structperf_1_1performance__metrics_aa9a6325145d8889de82f0093b0ff4461}
+\hypertarget{structperf_1_1performance__metrics_a4ab0c3f1eb0a4c49b03583f26437fa74}{\index{perf\-::performance\-\_\-metrics@{perf\-::performance\-\_\-metrics}!gstddev@{gstddev}}
+\index{gstddev@{gstddev}!perf::performance_metrics@{perf\-::performance\-\_\-metrics}}
+\subsubsection[{gstddev}]{\setlength{\rightskip}{0pt plus 5cm}double perf\-::performance\-\_\-metrics\-::gstddev}}\label{structperf_1_1performance__metrics_a4ab0c3f1eb0a4c49b03583f26437fa74}
+\hypertarget{structperf_1_1performance__metrics_ae0393a0923fd1bc56ab29b74983daaf8}{\index{perf\-::performance\-\_\-metrics@{perf\-::performance\-\_\-metrics}!mean@{mean}}
+\index{mean@{mean}!perf::performance_metrics@{perf\-::performance\-\_\-metrics}}
+\subsubsection[{mean}]{\setlength{\rightskip}{0pt plus 5cm}double perf\-::performance\-\_\-metrics\-::mean}}\label{structperf_1_1performance__metrics_ae0393a0923fd1bc56ab29b74983daaf8}
+\hypertarget{structperf_1_1performance__metrics_a2d5301f33545149ead1c377869914c8d}{\index{perf\-::performance\-\_\-metrics@{perf\-::performance\-\_\-metrics}!median@{median}}
+\index{median@{median}!perf::performance_metrics@{perf\-::performance\-\_\-metrics}}
+\subsubsection[{median}]{\setlength{\rightskip}{0pt plus 5cm}double perf\-::performance\-\_\-metrics\-::median}}\label{structperf_1_1performance__metrics_a2d5301f33545149ead1c377869914c8d}
+\hypertarget{structperf_1_1performance__metrics_aad64808c4b1630ca869549f0b7fd08eb}{\index{perf\-::performance\-\_\-metrics@{perf\-::performance\-\_\-metrics}!min@{min}}
+\index{min@{min}!perf::performance_metrics@{perf\-::performance\-\_\-metrics}}
+\subsubsection[{min}]{\setlength{\rightskip}{0pt plus 5cm}double perf\-::performance\-\_\-metrics\-::min}}\label{structperf_1_1performance__metrics_aad64808c4b1630ca869549f0b7fd08eb}
+\hypertarget{structperf_1_1performance__metrics_a3e8d2309ef014908443b2afc6d507495}{\index{perf\-::performance\-\_\-metrics@{perf\-::performance\-\_\-metrics}!outliers@{outliers}}
+\index{outliers@{outliers}!perf::performance_metrics@{perf\-::performance\-\_\-metrics}}
+\subsubsection[{outliers}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int perf\-::performance\-\_\-metrics\-::outliers}}\label{structperf_1_1performance__metrics_a3e8d2309ef014908443b2afc6d507495}
+\hypertarget{structperf_1_1performance__metrics_acd73bcfd4dfec164085aaf9a7ad51277}{\index{perf\-::performance\-\_\-metrics@{perf\-::performance\-\_\-metrics}!samples@{samples}}
+\index{samples@{samples}!perf::performance_metrics@{perf\-::performance\-\_\-metrics}}
+\subsubsection[{samples}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int perf\-::performance\-\_\-metrics\-::samples}}\label{structperf_1_1performance__metrics_acd73bcfd4dfec164085aaf9a7ad51277}
+\hypertarget{structperf_1_1performance__metrics_a16a37f9f8ce16c12fa74706d4ebad44c}{\index{perf\-::performance\-\_\-metrics@{perf\-::performance\-\_\-metrics}!stddev@{stddev}}
+\index{stddev@{stddev}!perf::performance_metrics@{perf\-::performance\-\_\-metrics}}
+\subsubsection[{stddev}]{\setlength{\rightskip}{0pt plus 5cm}double perf\-::performance\-\_\-metrics\-::stddev}}\label{structperf_1_1performance__metrics_a16a37f9f8ce16c12fa74706d4ebad44c}
+\hypertarget{structperf_1_1performance__metrics_aa09eac74a010795924bfe8d82bd3509a}{\index{perf\-::performance\-\_\-metrics@{perf\-::performance\-\_\-metrics}!termination\-Reason@{termination\-Reason}}
+\index{termination\-Reason@{termination\-Reason}!perf::performance_metrics@{perf\-::performance\-\_\-metrics}}
+\subsubsection[{termination\-Reason}]{\setlength{\rightskip}{0pt plus 5cm}int perf\-::performance\-\_\-metrics\-::termination\-Reason}}\label{structperf_1_1performance__metrics_aa09eac74a010795924bfe8d82bd3509a}
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/ts/\hyperlink{ts__perf_8hpp}{ts\-\_\-perf.\-hpp}\end{DoxyCompactItemize}

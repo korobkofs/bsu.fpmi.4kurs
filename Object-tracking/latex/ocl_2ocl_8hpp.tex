@@ -1,0 +1,459 @@
+\hypertarget{ocl_2ocl_8hpp}{\section{/usr/include/opencv2/ocl/ocl.hpp File Reference}
+\label{ocl_2ocl_8hpp}\index{/usr/include/opencv2/ocl/ocl.\-hpp@{/usr/include/opencv2/ocl/ocl.\-hpp}}
+}
+{\ttfamily \#include $<$memory$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include \char`\"{}opencv2/core/core.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}opencv2/imgproc/imgproc.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}opencv2/objdetect/objdetect.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}opencv2/features2d/features2d.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}opencv2/ml/ml.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}opencv2/ocl/matrix\-\_\-operations.\-hpp\char`\"{}}\\*
+Include dependency graph for ocl.\-hpp\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ocl_2ocl_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{ocl_2ocl_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structcv_1_1ocl_1_1DeviceInfo}{cv\-::ocl\-::\-Device\-Info}
+\item 
+struct \hyperlink{structcv_1_1ocl_1_1PlatformInfo}{cv\-::ocl\-::\-Platform\-Info}
+\item 
+class \hyperlink{classcv_1_1ocl_1_1Context}{cv\-::ocl\-::\-Context}
+\item 
+struct \hyperlink{structcv_1_1ocl_1_1ProgramSource}{cv\-::ocl\-::\-Program\-Source}
+\item 
+class \hyperlink{classcv_1_1ocl_1_1oclMat}{cv\-::ocl\-::ocl\-Mat}
+\item 
+class \hyperlink{classcv_1_1ocl_1_1BaseRowFilter__GPU}{cv\-::ocl\-::\-Base\-Row\-Filter\-\_\-\-G\-P\-U}
+\item 
+class \hyperlink{classcv_1_1ocl_1_1BaseColumnFilter__GPU}{cv\-::ocl\-::\-Base\-Column\-Filter\-\_\-\-G\-P\-U}
+\item 
+class \hyperlink{classcv_1_1ocl_1_1BaseFilter__GPU}{cv\-::ocl\-::\-Base\-Filter\-\_\-\-G\-P\-U}
+\item 
+class \hyperlink{classcv_1_1ocl_1_1FilterEngine__GPU}{cv\-::ocl\-::\-Filter\-Engine\-\_\-\-G\-P\-U}
+\item 
+class \hyperlink{classcv_1_1ocl_1_1OclCascadeClassifier}{cv\-::ocl\-::\-Ocl\-Cascade\-Classifier}
+\item 
+class \hyperlink{classcv_1_1ocl_1_1OclCascadeClassifierBuf}{cv\-::ocl\-::\-Ocl\-Cascade\-Classifier\-Buf}
+\item 
+struct \hyperlink{structcv_1_1ocl_1_1MatchTemplateBuf}{cv\-::ocl\-::\-Match\-Template\-Buf}
+\item 
+struct \hyperlink{structcv_1_1ocl_1_1CannyBuf}{cv\-::ocl\-::\-Canny\-Buf}
+\item 
+struct \hyperlink{structcv_1_1ocl_1_1HOGDescriptor}{cv\-::ocl\-::\-H\-O\-G\-Descriptor}
+\item 
+struct \hyperlink{structcv_1_1ocl_1_1Accumulator}{cv\-::ocl\-::\-Accumulator$<$ T $>$}
+\item 
+struct \hyperlink{structcv_1_1ocl_1_1Accumulator_3_01unsigned_01char_01_4}{cv\-::ocl\-::\-Accumulator$<$ unsigned char $>$}
+\item 
+struct \hyperlink{structcv_1_1ocl_1_1Accumulator_3_01unsigned_01short_01_4}{cv\-::ocl\-::\-Accumulator$<$ unsigned short $>$}
+\item 
+struct \hyperlink{structcv_1_1ocl_1_1Accumulator_3_01char_01_4}{cv\-::ocl\-::\-Accumulator$<$ char $>$}
+\item 
+struct \hyperlink{structcv_1_1ocl_1_1Accumulator_3_01short_01_4}{cv\-::ocl\-::\-Accumulator$<$ short $>$}
+\item 
+struct \hyperlink{structcv_1_1ocl_1_1L1}{cv\-::ocl\-::\-L1$<$ T $>$}
+\item 
+struct \hyperlink{structcv_1_1ocl_1_1L2}{cv\-::ocl\-::\-L2$<$ T $>$}
+\item 
+struct \hyperlink{structcv_1_1ocl_1_1Hamming}{cv\-::ocl\-::\-Hamming}
+\item 
+class \hyperlink{classcv_1_1ocl_1_1BruteForceMatcher__OCL__base}{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L\-\_\-base}
+\item 
+class \hyperlink{classcv_1_1ocl_1_1BruteForceMatcher__OCL_3_01L1_3_01T_01_4_01_4}{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L$<$ L1$<$ T $>$ $>$}
+\item 
+class \hyperlink{classcv_1_1ocl_1_1BruteForceMatcher__OCL_3_01L2_3_01T_01_4_01_4}{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L$<$ L2$<$ T $>$ $>$}
+\item 
+class \hyperlink{classcv_1_1ocl_1_1BruteForceMatcher__OCL_3_01Hamming_01_4}{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L$<$ Hamming $>$}
+\item 
+class \hyperlink{classcv_1_1ocl_1_1BFMatcher__OCL}{cv\-::ocl\-::\-B\-F\-Matcher\-\_\-\-O\-C\-L}
+\item 
+class \hyperlink{classcv_1_1ocl_1_1GoodFeaturesToTrackDetector__OCL}{cv\-::ocl\-::\-Good\-Features\-To\-Track\-Detector\-\_\-\-O\-C\-L}
+\item 
+class \hyperlink{classcv_1_1ocl_1_1PyrLKOpticalFlow}{cv\-::ocl\-::\-Pyr\-L\-K\-Optical\-Flow}
+\item 
+class \hyperlink{classcv_1_1ocl_1_1FarnebackOpticalFlow}{cv\-::ocl\-::\-Farneback\-Optical\-Flow}
+\item 
+class \hyperlink{classcv_1_1ocl_1_1StereoBM__OCL}{cv\-::ocl\-::\-Stereo\-B\-M\-\_\-\-O\-C\-L}
+\item 
+class \hyperlink{classcv_1_1ocl_1_1StereoBeliefPropagation}{cv\-::ocl\-::\-Stereo\-Belief\-Propagation}
+\item 
+class \hyperlink{classcv_1_1ocl_1_1StereoConstantSpaceBP}{cv\-::ocl\-::\-Stereo\-Constant\-Space\-B\-P}
+\item 
+class \hyperlink{classcv_1_1ocl_1_1OpticalFlowDual__TVL1__OCL}{cv\-::ocl\-::\-Optical\-Flow\-Dual\-\_\-\-T\-V\-L1\-\_\-\-O\-C\-L}
+\item 
+class \hyperlink{classcv_1_1ocl_1_1BackgroundSubtractor}{cv\-::ocl\-::\-Background\-Subtractor}
+\item 
+class \hyperlink{classcv_1_1ocl_1_1MOG}{cv\-::ocl\-::\-M\-O\-G}
+\item 
+class \hyperlink{classcv_1_1ocl_1_1MOG2}{cv\-::ocl\-::\-M\-O\-G2}
+\item 
+class \hyperlink{classcv_1_1ocl_1_1KalmanFilter}{cv\-::ocl\-::\-Kalman\-Filter}
+\item 
+class \hyperlink{classcv_1_1ocl_1_1KNearestNeighbour}{cv\-::ocl\-::\-K\-Nearest\-Neighbour}
+\item 
+class \hyperlink{classcv_1_1ocl_1_1CvSVM__OCL}{cv\-::ocl\-::\-Cv\-S\-V\-M\-\_\-\-O\-C\-L}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacecv}{cv}
+\item 
+\hyperlink{namespacecv_1_1ocl}{cv\-::ocl}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\-::vector$<$ const \\*
+Platform\-Info $\ast$ $>$ \hyperlink{namespacecv_1_1ocl_a023858a053cfb1cbf0545e54dcc8c798}{cv\-::ocl\-::\-Platforms\-Info}
+\item 
+typedef std\-::vector$<$ const \\*
+Device\-Info $\ast$ $>$ \hyperlink{namespacecv_1_1ocl_a0ce4074167f6aee3ebee6861ad51cffd}{cv\-::ocl\-::\-Devices\-Info}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespacecv_1_1ocl_ab965d48273d9ddc69bcb0fbd2d7de77e}{cv\-::ocl\-::\-Device\-Type} \{ \\*
+\hyperlink{namespacecv_1_1ocl_ab965d48273d9ddc69bcb0fbd2d7de77ea7a6a0f00a88c859c196a894845e43064}{cv\-::ocl\-::\-C\-V\-C\-L\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-T\-Y\-P\-E\-\_\-\-D\-E\-F\-A\-U\-L\-T} = (1 $<$$<$ 0), 
+\hyperlink{namespacecv_1_1ocl_ab965d48273d9ddc69bcb0fbd2d7de77eaa58b014698260ccf131b67d5f6af1e21}{cv\-::ocl\-::\-C\-V\-C\-L\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-T\-Y\-P\-E\-\_\-\-C\-P\-U} = (1 $<$$<$ 1), 
+\hyperlink{namespacecv_1_1ocl_ab965d48273d9ddc69bcb0fbd2d7de77ea889ff1d8474cb5a5239958bf70d901bc}{cv\-::ocl\-::\-C\-V\-C\-L\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-T\-Y\-P\-E\-\_\-\-G\-P\-U} = (1 $<$$<$ 2), 
+\hyperlink{namespacecv_1_1ocl_ab965d48273d9ddc69bcb0fbd2d7de77ea80cd2682fbcb1a5f1b8d4b114f1944f8}{cv\-::ocl\-::\-C\-V\-C\-L\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-T\-Y\-P\-E\-\_\-\-A\-C\-C\-E\-L\-E\-R\-A\-T\-O\-R} = (1 $<$$<$ 3), 
+\\*
+\hyperlink{namespacecv_1_1ocl_ab965d48273d9ddc69bcb0fbd2d7de77eaf647dc0ad67fa19d96fc37c480333da7}{cv\-::ocl\-::\-C\-V\-C\-L\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-T\-Y\-P\-E\-\_\-\-A\-L\-L} = 0x\-F\-F\-F\-F\-F\-F\-F\-F
+ \}
+\item 
+enum \hyperlink{namespacecv_1_1ocl_a80a07717be48231d1ad6002ecd66729c}{cv\-::ocl\-::\-Dev\-Mem\-R\-W} \{ \hyperlink{namespacecv_1_1ocl_a80a07717be48231d1ad6002ecd66729ca6c6fbe35e37d6f67dee260c4553eb688}{cv\-::ocl\-::\-D\-E\-V\-I\-C\-E\-\_\-\-M\-E\-M\-\_\-\-R\-\_\-\-W} = 0, 
+\hyperlink{namespacecv_1_1ocl_a80a07717be48231d1ad6002ecd66729cac2b38a0e9137d9548ccb823f861f1ce3}{cv\-::ocl\-::\-D\-E\-V\-I\-C\-E\-\_\-\-M\-E\-M\-\_\-\-R\-\_\-\-O\-N\-L\-Y}, 
+\hyperlink{namespacecv_1_1ocl_a80a07717be48231d1ad6002ecd66729cac8abbc051bcf2b03d219f88b68882cb8}{cv\-::ocl\-::\-D\-E\-V\-I\-C\-E\-\_\-\-M\-E\-M\-\_\-\-W\-\_\-\-O\-N\-L\-Y}
+ \}
+\item 
+enum \hyperlink{namespacecv_1_1ocl_a06a87c6cbc228b6ee12b32dd5c27c52c}{cv\-::ocl\-::\-Dev\-Mem\-Type} \{ \\*
+\hyperlink{namespacecv_1_1ocl_a06a87c6cbc228b6ee12b32dd5c27c52caa564c6a51d2452f7844510e5553556e4}{cv\-::ocl\-::\-D\-E\-V\-I\-C\-E\-\_\-\-M\-E\-M\-\_\-\-D\-E\-F\-A\-U\-L\-T} = 0, 
+\hyperlink{namespacecv_1_1ocl_a06a87c6cbc228b6ee12b32dd5c27c52caa9b9f1ca699e270de737c3e71f936140}{cv\-::ocl\-::\-D\-E\-V\-I\-C\-E\-\_\-\-M\-E\-M\-\_\-\-A\-H\-P}, 
+\hyperlink{namespacecv_1_1ocl_a06a87c6cbc228b6ee12b32dd5c27c52cab1fcaa54d601c6b852ecc18e005ea7ac}{cv\-::ocl\-::\-D\-E\-V\-I\-C\-E\-\_\-\-M\-E\-M\-\_\-\-U\-H\-P}, 
+\hyperlink{namespacecv_1_1ocl_a06a87c6cbc228b6ee12b32dd5c27c52ca3223562a0048930e01b235674ec6008f}{cv\-::ocl\-::\-D\-E\-V\-I\-C\-E\-\_\-\-M\-E\-M\-\_\-\-C\-H\-P}, 
+\\*
+\hyperlink{namespacecv_1_1ocl_a06a87c6cbc228b6ee12b32dd5c27c52ca0ff977105fac2909086330d2b6ce7e59}{cv\-::ocl\-::\-D\-E\-V\-I\-C\-E\-\_\-\-M\-E\-M\-\_\-\-P\-M}
+ \}
+\item 
+enum \hyperlink{namespacecv_1_1ocl_ae54de1c75af5695402df00cf3baa7be0}{cv\-::ocl\-::\-F\-E\-A\-T\-U\-R\-E\-\_\-\-T\-Y\-P\-E} \{ \hyperlink{namespacecv_1_1ocl_ae54de1c75af5695402df00cf3baa7be0a17eb0fce3f66ee71bca3f8b6d3f924ae}{cv\-::ocl\-::\-F\-E\-A\-T\-U\-R\-E\-\_\-\-C\-L\-\_\-\-D\-O\-U\-B\-L\-E} = 1, 
+\hyperlink{namespacecv_1_1ocl_ae54de1c75af5695402df00cf3baa7be0aa154c50d5670a1ade65b196822d7bb62}{cv\-::ocl\-::\-F\-E\-A\-T\-U\-R\-E\-\_\-\-C\-L\-\_\-\-U\-N\-I\-F\-I\-E\-D\-\_\-\-M\-E\-M}, 
+\hyperlink{namespacecv_1_1ocl_ae54de1c75af5695402df00cf3baa7be0ab625be6acc8e9dd6b96a219bbc67dbae}{cv\-::ocl\-::\-F\-E\-A\-T\-U\-R\-E\-\_\-\-C\-L\-\_\-\-V\-E\-R\-\_\-1\-\_\-2}, 
+\hyperlink{namespacecv_1_1ocl_ae54de1c75af5695402df00cf3baa7be0af05316b2b84ba9e8d3a457762ead5e27}{cv\-::ocl\-::\-F\-E\-A\-T\-U\-R\-E\-\_\-\-C\-L\-\_\-\-I\-N\-T\-E\-L\-\_\-\-D\-E\-V\-I\-C\-E}
+ \}
+\item 
+enum \hyperlink{namespacecv_1_1ocl_a8a8603e6d315c14038f473a015bff967}{cv\-::ocl\-::\-B\-I\-N\-A\-R\-Y\-\_\-\-C\-A\-C\-H\-E\-\_\-\-M\-O\-D\-E} \{ \hyperlink{namespacecv_1_1ocl_a8a8603e6d315c14038f473a015bff967ae26307e8e09d1f2fb3974203b9646e20}{cv\-::ocl\-::\-C\-A\-C\-H\-E\-\_\-\-N\-O\-N\-E} = 0, 
+\hyperlink{namespacecv_1_1ocl_a8a8603e6d315c14038f473a015bff967a9e814581f244d602cdb70d760b3c57d6}{cv\-::ocl\-::\-C\-A\-C\-H\-E\-\_\-\-D\-E\-B\-U\-G} = 0x1 $<$$<$ 0, 
+\hyperlink{namespacecv_1_1ocl_a8a8603e6d315c14038f473a015bff967a836bc39d206dcd9c6387ce6bdff8eaf1}{cv\-::ocl\-::\-C\-A\-C\-H\-E\-\_\-\-R\-E\-L\-E\-A\-S\-E} = 0x1 $<$$<$ 1, 
+\hyperlink{namespacecv_1_1ocl_a8a8603e6d315c14038f473a015bff967a606d3c9be8a08967450a1e2c5665faa8}{cv\-::ocl\-::\-C\-A\-C\-H\-E\-\_\-\-A\-L\-L} = C\-A\-C\-H\-E\-\_\-\-D\-E\-B\-U\-G $\vert$ C\-A\-C\-H\-E\-\_\-\-R\-E\-L\-E\-A\-S\-E
+ \}
+\item 
+enum \{ \hyperlink{namespacecv_1_1ocl_abcd1d8304552ecf0a39e430fee2dcf1ea4388f2a618de7c73225fdb819e42d114}{cv\-::ocl\-::\-S\-O\-R\-T\-\_\-\-B\-I\-T\-O\-N\-I\-C}, 
+\hyperlink{namespacecv_1_1ocl_abcd1d8304552ecf0a39e430fee2dcf1ea28b342c76eadc736e1e3abe10d7befbb}{cv\-::ocl\-::\-S\-O\-R\-T\-\_\-\-S\-E\-L\-E\-C\-T\-I\-O\-N}, 
+\hyperlink{namespacecv_1_1ocl_abcd1d8304552ecf0a39e430fee2dcf1ea07ba688ac5ce8863e873d0fd0177e142}{cv\-::ocl\-::\-S\-O\-R\-T\-\_\-\-M\-E\-R\-G\-E}, 
+\hyperlink{namespacecv_1_1ocl_abcd1d8304552ecf0a39e430fee2dcf1eaa5983fe40934359af75b4414f0305e06}{cv\-::ocl\-::\-S\-O\-R\-T\-\_\-\-R\-A\-D\-I\-X}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} int \hyperlink{namespacecv_1_1ocl_ad3a47cbafcaa94b21505101571e6c1ef}{cv\-::ocl\-::get\-Open\-C\-L\-Platforms} (Platforms\-Info \&platforms)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} int \hyperlink{namespacecv_1_1ocl_a89fbf3df584389aa3aa2f46a5ccce3d6}{cv\-::ocl\-::get\-Open\-C\-L\-Devices} (Devices\-Info \&devices, int device\-Type=C\-V\-C\-L\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-T\-Y\-P\-E\-\_\-\-G\-P\-U, const Platform\-Info $\ast$platform=\hyperlink{Config_8cpp_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\-U\-L\-L})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_ace26d91db2b36f8eb4f5e8430b7cedd0}{cv\-::ocl\-::set\-Device} (const Device\-Info $\ast$info)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a760368b228756437a473cd206f930e59}{cv\-::ocl\-::initialize\-Context} (\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} $\ast$p\-Cl\-Platform, \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} $\ast$p\-Cl\-Context, \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} $\ast$p\-Cl\-Device)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a09f9c4420edc6ed8f7cf6c142d829f4e}{cv\-::ocl\-::error} (const char $\ast$error\-\_\-string, const char $\ast$file, const int \hyperlink{legacy_8hpp_a5a869825573cfaf8861a6ec0fe0f262f}{line}, const char $\ast$\hyperlink{core__c_8h_a120677ac732b3c9bfecab149fc978afa}{func})
+\item 
+const \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} $\ast$ \hyperlink{namespacecv_1_1ocl_a9e745dd0c466a717e53bf4f29c516b7f}{cv\-::ocl\-::get\-Cl\-Context\-Ptr} ()
+\item 
+const \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} $\ast$ \hyperlink{namespacecv_1_1ocl_a55a48c61889cd39be08a5d1f0c0c979c}{cv\-::ocl\-::get\-Cl\-Command\-Queue\-Ptr} ()
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} bool \hyperlink{namespacecv_1_1ocl_a7beca753ca1d63370154af38d36e04b6}{cv\-::ocl\-::supports\-Feature} (F\-E\-A\-T\-U\-R\-E\-\_\-\-T\-Y\-P\-E feature\-Type)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_accf9de7cb84f6c65fadab6eed95f7e5d}{cv\-::ocl\-::finish} ()
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a3982700e535361a5385e859f2f07d62d}{cv\-::ocl\-::set\-Binary\-Disk\-Cache} (int mode=C\-A\-C\-H\-E\-\_\-\-R\-E\-L\-E\-A\-S\-E, cv\-::\-String path=\char`\"{}./\char`\"{})
+\begin{DoxyCompactList}\small\item\em Enable or disable Open\-C\-L program binary caching onto local disk. \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a6d1c465ce7981e02fe8a1aa523343110}{cv\-::ocl\-::set\-Binary\-Path} (const char $\ast$path)
+\begin{DoxyCompactList}\small\item\em set where binary cache to be saved to \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_ae62988b5cb1675bae759627cf3999ce2}{cv\-::ocl\-::open\-C\-L\-Execute\-Kernel\-Interop} (Context $\ast$cl\-Cxt, const \hyperlink{structcv_1_1ocl_1_1ProgramSource}{cv\-::ocl\-::\-Program\-Source} \&source, string kernel\-Name, size\-\_\-t global\-Threads\mbox{[}3\mbox{]}, size\-\_\-t local\-Threads\mbox{[}3\mbox{]}, std\-::vector$<$ std\-::pair$<$ size\-\_\-t, const \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} $\ast$ $>$ $>$ \&args, int \hyperlink{core__c_8h_a2876852c6a9947679c3003692de5aa83}{channels}, int \hyperlink{core__c_8h_acb5ba97551079e0b072c62c21d784ac5}{depth}, const char $\ast$build\-\_\-options)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} ocl\-Mat \& \hyperlink{namespacecv_1_1ocl_ac1d97606634e326448ad31f9f490ce2b}{cv\-::ocl\-::get\-Ocl\-Mat\-Ref} (Input\-Array \hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} ocl\-Mat \& \hyperlink{namespacecv_1_1ocl_a14784d8a5c9ea0a7a5aa2fcdf56eb349}{cv\-::ocl\-::get\-Ocl\-Mat\-Ref} (Output\-Array \hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a1348da00bbcb04fae549674506dbdde1}{cv\-::ocl\-::merge} (const ocl\-Mat $\ast$\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, size\-\_\-t \hyperlink{legacy_8hpp_a76f11d9a0a47b94f72c2d0e77fb32240}{n}, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a6bca8d5f44c88d7ddede596839fd8ce2}{cv\-::ocl\-::merge} (const vector$<$ ocl\-Mat $>$ \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_ae1822e6f8c2bee77dfe0c06714e482ad}{cv\-::ocl\-::split} (const ocl\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, ocl\-Mat $\ast$\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst})
+\begin{DoxyCompactList}\small\item\em Divides multi-\/channel array into several single-\/channel arrays. \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a88426822395ada0275a84d98e0f8a805}{cv\-::ocl\-::split} (const ocl\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, vector$<$ ocl\-Mat $>$ \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_ad2f8aca2fbf14bb50d95e1fae96eb3e2}{cv\-::ocl\-::add\-Weighted} (const ocl\-Mat \&\hyperlink{core__c_8h_a897de4702c922f4cccda0d57ccdcafb3}{src1}, double \hyperlink{legacy_8hpp_a95fc8341ca418bc06b36160632af6d47}{alpha}, const ocl\-Mat \&\hyperlink{core__c_8h_a7561a36d48069d54a6c8ac4e4750edfd}{src2}, double \hyperlink{legacy_8hpp_af8b31eb489dfbd87f3b1a1925cca3589}{beta}, double gama, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst})
+\begin{DoxyCompactList}\small\item\em adds one matrix to another with scale (dst = src1 $\ast$ alpha + src2 $\ast$ beta + gama) \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_adc36ffcff35e49ef3e175cfb6fafb9e0}{cv\-::ocl\-::add} (const ocl\-Mat \&\hyperlink{core__c_8h_a897de4702c922f4cccda0d57ccdcafb3}{src1}, const ocl\-Mat \&\hyperlink{core__c_8h_a7561a36d48069d54a6c8ac4e4750edfd}{src2}, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, const ocl\-Mat \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}=ocl\-Mat())
+\begin{DoxyCompactList}\small\item\em adds one matrix to another (dst = src1 + src2) \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_aac798b029b9dcebc5266bf2dac26febf}{cv\-::ocl\-::add} (const ocl\-Mat \&\hyperlink{core__c_8h_a897de4702c922f4cccda0d57ccdcafb3}{src1}, const Scalar \&s, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, const ocl\-Mat \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}=ocl\-Mat())
+\begin{DoxyCompactList}\small\item\em adds scalar to a matrix (dst = src1 + s) \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a4b852b8b39561a6970865d65c6c0e5a8}{cv\-::ocl\-::subtract} (const ocl\-Mat \&\hyperlink{core__c_8h_a897de4702c922f4cccda0d57ccdcafb3}{src1}, const ocl\-Mat \&\hyperlink{core__c_8h_a7561a36d48069d54a6c8ac4e4750edfd}{src2}, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, const ocl\-Mat \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}=ocl\-Mat())
+\begin{DoxyCompactList}\small\item\em subtracts one matrix from another (dst = src1 -\/ src2) \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a9c8d18c24595126f5dc09b6b877a606f}{cv\-::ocl\-::subtract} (const ocl\-Mat \&\hyperlink{core__c_8h_a897de4702c922f4cccda0d57ccdcafb3}{src1}, const Scalar \&s, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, const ocl\-Mat \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}=ocl\-Mat())
+\begin{DoxyCompactList}\small\item\em subtracts scalar from a matrix (dst = src1 -\/ s) \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a19ac46587e0a270ce8bc37cbbbbefa07}{cv\-::ocl\-::multiply} (const ocl\-Mat \&\hyperlink{core__c_8h_a897de4702c922f4cccda0d57ccdcafb3}{src1}, const ocl\-Mat \&\hyperlink{core__c_8h_a7561a36d48069d54a6c8ac4e4750edfd}{src2}, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, double \hyperlink{objdetect_8hpp_a1f622eb9b9e06b30862ca90cdf2c078b}{scale}=1)
+\begin{DoxyCompactList}\small\item\em computes element-\/wise product of the two arrays (dst = src1 $\ast$ scale $\ast$ src2) \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a5cab53001d1a6e1903ba3d160b4f3947}{cv\-::ocl\-::multiply} (double \hyperlink{core__c_8h_a7f559b13437c36e86baab8e221384f96}{scalar}, const ocl\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst})
+\begin{DoxyCompactList}\small\item\em multiplies matrix to a number (dst = scalar $\ast$ src) \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a2302a10291d7fe7c6d878d2b7410e86b}{cv\-::ocl\-::divide} (const ocl\-Mat \&\hyperlink{core__c_8h_a897de4702c922f4cccda0d57ccdcafb3}{src1}, const ocl\-Mat \&\hyperlink{core__c_8h_a7561a36d48069d54a6c8ac4e4750edfd}{src2}, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, double \hyperlink{objdetect_8hpp_a1f622eb9b9e06b30862ca90cdf2c078b}{scale}=1)
+\begin{DoxyCompactList}\small\item\em computes element-\/wise quotient of the two arrays (dst = src1 $\ast$ scale / src2) \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a6b22a49fbd2f693786673cf96498cd67}{cv\-::ocl\-::divide} (double \hyperlink{objdetect_8hpp_a1f622eb9b9e06b30862ca90cdf2c078b}{scale}, const ocl\-Mat \&\hyperlink{core__c_8h_a897de4702c922f4cccda0d57ccdcafb3}{src1}, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst})
+\begin{DoxyCompactList}\small\item\em computes element-\/wise quotient of the two arrays (dst = scale / src) \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_affc06ffa469d8b5079b7b96c62cae2f5}{cv\-::ocl\-::min} (const ocl\-Mat \&\hyperlink{core__c_8h_a897de4702c922f4cccda0d57ccdcafb3}{src1}, const ocl\-Mat \&\hyperlink{core__c_8h_a7561a36d48069d54a6c8ac4e4750edfd}{src2}, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst})
+\begin{DoxyCompactList}\small\item\em computes element-\/wise minimum of the two arrays (dst = min(src1, src2)) \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_ad433812b5d92f66aa0e97d7a07982e48}{cv\-::ocl\-::max} (const ocl\-Mat \&\hyperlink{core__c_8h_a897de4702c922f4cccda0d57ccdcafb3}{src1}, const ocl\-Mat \&\hyperlink{core__c_8h_a7561a36d48069d54a6c8ac4e4750edfd}{src2}, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst})
+\begin{DoxyCompactList}\small\item\em computes element-\/wise maximum of the two arrays (dst = max(src1, src2)) \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a88248f8b1ff163246566807d620159c3}{cv\-::ocl\-::compare} (const ocl\-Mat \&\hyperlink{core__c_8h_a897de4702c922f4cccda0d57ccdcafb3}{src1}, const ocl\-Mat \&\hyperlink{core__c_8h_a7561a36d48069d54a6c8ac4e4750edfd}{src2}, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, int cmpop)
+\begin{DoxyCompactList}\small\item\em compares elements of two arrays (dst = src1 $<$cmpop$>$ src2) \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_ad2c13b57eae9da928057e73fdc25b9d6}{cv\-::ocl\-::transpose} (const ocl\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst})
+\begin{DoxyCompactList}\small\item\em transposes the matrix \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a24971c8a492e4fd222c913dbe4b2786f}{cv\-::ocl\-::abs} (const ocl\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst})
+\begin{DoxyCompactList}\small\item\em computes element-\/wise absolute values of an array (dst = abs(src)) \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_ae5f7cef64564bce4c917c8c909d2d121}{cv\-::ocl\-::absdiff} (const ocl\-Mat \&\hyperlink{core__c_8h_a897de4702c922f4cccda0d57ccdcafb3}{src1}, const ocl\-Mat \&\hyperlink{core__c_8h_a7561a36d48069d54a6c8ac4e4750edfd}{src2}, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst})
+\begin{DoxyCompactList}\small\item\em computes element-\/wise absolute difference of two arrays (dst = abs(src1 -\/ src2)) \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a918e2b9cd83c3763bc703365532696c9}{cv\-::ocl\-::absdiff} (const ocl\-Mat \&\hyperlink{core__c_8h_a897de4702c922f4cccda0d57ccdcafb3}{src1}, const Scalar \&s, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst})
+\begin{DoxyCompactList}\small\item\em computes element-\/wise absolute difference of array and scalar (dst = abs(src1 -\/ s)) \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a1d6e2b48880a5bc337225257269b2d92}{cv\-::ocl\-::mean\-Std\-Dev} (const ocl\-Mat \&mtx, Scalar \&\hyperlink{core__c_8h_ad090d0faa53f44e0377c8d63dab3fa20}{mean}, Scalar \&stddev)
+\begin{DoxyCompactList}\small\item\em computes mean value and standard deviation of all or selected array elements \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} double \hyperlink{namespacecv_1_1ocl_a3f4937f7257ac5ebce3feff0dffcbde1}{cv\-::ocl\-::norm} (const ocl\-Mat \&\hyperlink{core__c_8h_a897de4702c922f4cccda0d57ccdcafb3}{src1}, int norm\-Type=N\-O\-R\-M\-\_\-\-L2)
+\begin{DoxyCompactList}\small\item\em computes norm of array \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} double \hyperlink{namespacecv_1_1ocl_ace172a8ffe8d232a5dcdffbd2fb89d10}{cv\-::ocl\-::norm} (const ocl\-Mat \&\hyperlink{core__c_8h_a897de4702c922f4cccda0d57ccdcafb3}{src1}, const ocl\-Mat \&\hyperlink{core__c_8h_a7561a36d48069d54a6c8ac4e4750edfd}{src2}, int norm\-Type=N\-O\-R\-M\-\_\-\-L2)
+\begin{DoxyCompactList}\small\item\em computes norm of the difference between two arrays \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_af80a71478552821694576cb68947aa56}{cv\-::ocl\-::flip} (const ocl\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, int flip\-Code)
+\begin{DoxyCompactList}\small\item\em reverses the order of the rows, columns or both in a matrix \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} Scalar \hyperlink{namespacecv_1_1ocl_ac67634e76808649b1d6d569a1f2ef0ed}{cv\-::ocl\-::sum} (const ocl\-Mat \&m)
+\begin{DoxyCompactList}\small\item\em computes sum of array elements \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} Scalar \hyperlink{namespacecv_1_1ocl_a9c91116d0e0cdeccd62b3a12b93da261}{cv\-::ocl\-::abs\-Sum} (const ocl\-Mat \&m)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} Scalar \hyperlink{namespacecv_1_1ocl_a1b46d5af15cde4b2e63e3bd181a11b0b}{cv\-::ocl\-::sqr\-Sum} (const ocl\-Mat \&m)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a5d9893ba4f46df16e328d811f849bf63}{cv\-::ocl\-::min\-Max} (const ocl\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, double $\ast$min\-Val, double $\ast$max\-Val=0, const ocl\-Mat \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}=ocl\-Mat())
+\begin{DoxyCompactList}\small\item\em finds global minimum and maximum array elements and returns their values \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a7d38c60687e8f01f38323e4f9954e5cd}{cv\-::ocl\-::min\-Max\-Loc} (const ocl\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, double $\ast$min\-Val, double $\ast$max\-Val=0, Point $\ast$min\-Loc=0, Point $\ast$max\-Loc=0, const ocl\-Mat \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}=ocl\-Mat())
+\begin{DoxyCompactList}\small\item\em finds global minimum and maximum array elements and returns their values with locations \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} int \hyperlink{namespacecv_1_1ocl_af3fad3d02e878726c973656dd63cba5b}{cv\-::ocl\-::count\-Non\-Zero} (const ocl\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src})
+\begin{DoxyCompactList}\small\item\em counts non-\/zero array elements \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a93bad34668dd9b2a59e5a3d35951208b}{cv\-::ocl\-::\-L\-U\-T} (const ocl\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, const ocl\-Mat \&\hyperlink{core__c_8h_ac0182572699c7759eba7ba1d6b8e32d6}{lut}, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst})
+\begin{DoxyCompactList}\small\item\em transforms 8-\/bit unsigned integers using lookup table\-: dst(i)=lut(src(i)) \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a4d96ecf2e2b14752771842da58348af0}{cv\-::ocl\-::calc\-Hist} (const ocl\-Mat \&mat\-\_\-src, ocl\-Mat \&mat\-\_\-hist)
+\begin{DoxyCompactList}\small\item\em only 8\-U\-C1 and 256 bins is supported now \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_ada349777e957d821d3614cf2add4084e}{cv\-::ocl\-::equalize\-Hist} (const ocl\-Mat \&mat\-\_\-src, ocl\-Mat \&mat\-\_\-dst)
+\begin{DoxyCompactList}\small\item\em only 8\-U\-C1 and 256 bins is supported now \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} Ptr$<$ cv\-::\-C\-L\-A\-H\-E $>$ \hyperlink{namespacecv_1_1ocl_a205dedc13b6de1b6093d236f4c9eb742}{cv\-::ocl\-::create\-C\-L\-A\-H\-E} (double clip\-Limit=40.\-0, Size tile\-Grid\-Size=Size(8, 8))
+\begin{DoxyCompactList}\small\item\em only 8\-U\-C1 is supported now \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a8b539f344eaa7ef0d27682506483b058}{cv\-::ocl\-::bilateral\-Filter} (const ocl\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, int \hyperlink{legacy_8hpp_a6f364afbe132c4ecfea48bde1b0618ba}{d}, double sigma\-Color, double sigma\-Space, int border\-Type=B\-O\-R\-D\-E\-R\-\_\-\-D\-E\-F\-A\-U\-L\-T)
+\begin{DoxyCompactList}\small\item\em bilateral\-Filter \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a0f2569822a62943048f7c7675c7109ae}{cv\-::ocl\-::adaptive\-Bilateral\-Filter} (const ocl\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, Size ksize, double sigma\-Space, double max\-Sigma\-Color=20.\-0, Point anchor=Point(-\/1,-\/1), int border\-Type=B\-O\-R\-D\-E\-R\-\_\-\-D\-E\-F\-A\-U\-L\-T)
+\begin{DoxyCompactList}\small\item\em Applies an adaptive bilateral filter to the input image. \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_ae4fd648ef3b70e433fc273d33ed22c79}{cv\-::ocl\-::exp} (const ocl\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst})
+\begin{DoxyCompactList}\small\item\em computes exponent of each matrix element (dst = e$\ast$$\ast$src) \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a312573b27e6021489b806033fac0a387}{cv\-::ocl\-::log} (const ocl\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst})
+\begin{DoxyCompactList}\small\item\em computes natural logarithm of absolute value of each matrix element\-: dst = log(abs(src)) \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a4145176dccaeb025289e5ede5c21756c}{cv\-::ocl\-::magnitude} (const ocl\-Mat \&\hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x}, const ocl\-Mat \&\hyperlink{highgui__c_8h_af1202c02b14870c18fb3a1da73e9e7c7}{y}, ocl\-Mat \&magnitude)
+\begin{DoxyCompactList}\small\item\em computes magnitude of each (x(i), y(i)) vector \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_acb0c88237e6d30538732bd6ddc42d273}{cv\-::ocl\-::phase} (const ocl\-Mat \&\hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x}, const ocl\-Mat \&\hyperlink{highgui__c_8h_af1202c02b14870c18fb3a1da73e9e7c7}{y}, ocl\-Mat \&\hyperlink{imgproc__c_8h_a79dea7ed146af26ff4a0ba4bf5c83eee}{angle}, bool angle\-In\-Degrees=false)
+\begin{DoxyCompactList}\small\item\em computes angle (angle(i)) of each (x(i), y(i)) vector \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a828b03bad48224ea0a2f03e1d25ffcf4}{cv\-::ocl\-::pow} (const ocl\-Mat \&\hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x}, double p, ocl\-Mat \&\hyperlink{highgui__c_8h_af1202c02b14870c18fb3a1da73e9e7c7}{y})
+\begin{DoxyCompactList}\small\item\em the function raises every element of tne input array to p \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_adee14eb40dbbba050761af31b7f16ff7}{cv\-::ocl\-::cart\-To\-Polar} (const ocl\-Mat \&\hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x}, const ocl\-Mat \&\hyperlink{highgui__c_8h_af1202c02b14870c18fb3a1da73e9e7c7}{y}, ocl\-Mat \&\hyperlink{core__c_8h_ae0d0185d64d9ebdd6549c80dd9268f2c}{magnitude}, ocl\-Mat \&\hyperlink{imgproc__c_8h_a79dea7ed146af26ff4a0ba4bf5c83eee}{angle}, bool angle\-In\-Degrees=false)
+\begin{DoxyCompactList}\small\item\em converts Cartesian coordinates to polar \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a8881bdbddc23c05001c00dcca9c93404}{cv\-::ocl\-::polar\-To\-Cart} (const ocl\-Mat \&\hyperlink{core__c_8h_ae0d0185d64d9ebdd6549c80dd9268f2c}{magnitude}, const ocl\-Mat \&\hyperlink{imgproc__c_8h_a79dea7ed146af26ff4a0ba4bf5c83eee}{angle}, ocl\-Mat \&\hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x}, ocl\-Mat \&\hyperlink{highgui__c_8h_af1202c02b14870c18fb3a1da73e9e7c7}{y}, bool angle\-In\-Degrees=false)
+\begin{DoxyCompactList}\small\item\em converts polar coordinates to Cartesian \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a847f1280a2634f05532494d435c89b3a}{cv\-::ocl\-::bitwise\-\_\-not} (const ocl\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst})
+\begin{DoxyCompactList}\small\item\em perfroms per-\/elements bit-\/wise inversion \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a76165ce78624f91ab4bc13e05db263ab}{cv\-::ocl\-::bitwise\-\_\-or} (const ocl\-Mat \&\hyperlink{core__c_8h_a897de4702c922f4cccda0d57ccdcafb3}{src1}, const ocl\-Mat \&\hyperlink{core__c_8h_a7561a36d48069d54a6c8ac4e4750edfd}{src2}, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, const ocl\-Mat \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}=ocl\-Mat())
+\begin{DoxyCompactList}\small\item\em calculates per-\/element bit-\/wise disjunction of two arrays \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a203a7914ec303fb390a4b6fe75fb02ff}{cv\-::ocl\-::bitwise\-\_\-or} (const ocl\-Mat \&\hyperlink{core__c_8h_a897de4702c922f4cccda0d57ccdcafb3}{src1}, const Scalar \&s, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, const ocl\-Mat \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}=ocl\-Mat())
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a7c7d1c76bb49f76892481acb21f5198d}{cv\-::ocl\-::bitwise\-\_\-and} (const ocl\-Mat \&\hyperlink{core__c_8h_a897de4702c922f4cccda0d57ccdcafb3}{src1}, const ocl\-Mat \&\hyperlink{core__c_8h_a7561a36d48069d54a6c8ac4e4750edfd}{src2}, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, const ocl\-Mat \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}=ocl\-Mat())
+\begin{DoxyCompactList}\small\item\em calculates per-\/element bit-\/wise conjunction of two arrays \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a99a3efb2f7e3c3fb0f895ff1ed845174}{cv\-::ocl\-::bitwise\-\_\-and} (const ocl\-Mat \&\hyperlink{core__c_8h_a897de4702c922f4cccda0d57ccdcafb3}{src1}, const Scalar \&s, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, const ocl\-Mat \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}=ocl\-Mat())
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a7fe19c709f8c2d9e05f593bead53e6ec}{cv\-::ocl\-::bitwise\-\_\-xor} (const ocl\-Mat \&\hyperlink{core__c_8h_a897de4702c922f4cccda0d57ccdcafb3}{src1}, const ocl\-Mat \&\hyperlink{core__c_8h_a7561a36d48069d54a6c8ac4e4750edfd}{src2}, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, const ocl\-Mat \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}=ocl\-Mat())
+\begin{DoxyCompactList}\small\item\em calculates per-\/element bit-\/wise \char`\"{}exclusive or\char`\"{} operation \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a5de1d3875e0d963f8f6f1017851eb603}{cv\-::ocl\-::bitwise\-\_\-xor} (const ocl\-Mat \&\hyperlink{core__c_8h_a897de4702c922f4cccda0d57ccdcafb3}{src1}, const Scalar \&s, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, const ocl\-Mat \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}=ocl\-Mat())
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} ocl\-Mat \hyperlink{namespacecv_1_1ocl_a64e69bbcf64fd849a37aab7f9152b0b8}{cv\-::ocl\-::operator$\sim$} (const ocl\-Mat \&)
+\begin{DoxyCompactList}\small\item\em Logical operators. \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} ocl\-Mat \hyperlink{namespacecv_1_1ocl_a01078a3a68c5fd5cc88c4af492c56502}{cv\-::ocl\-::operator$\vert$} (const ocl\-Mat \&, const ocl\-Mat \&)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} ocl\-Mat \hyperlink{namespacecv_1_1ocl_ab74f187f01fdee3bb700cb3c98de5d02}{cv\-::ocl\-::operator\&} (const ocl\-Mat \&, const ocl\-Mat \&)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} ocl\-Mat \hyperlink{namespacecv_1_1ocl_aabb88d4a2bda0304858e6562a2a437b0}{cv\-::ocl\-::operator$^\wedge$} (const ocl\-Mat \&, const ocl\-Mat \&)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} ocl\-Mat\-Expr \hyperlink{namespacecv_1_1ocl_ab4cb207bbc2c2221a8a254ca0c166698}{cv\-::ocl\-::operator+} (const ocl\-Mat \&\hyperlink{core__c_8h_a897de4702c922f4cccda0d57ccdcafb3}{src1}, const ocl\-Mat \&\hyperlink{core__c_8h_a7561a36d48069d54a6c8ac4e4750edfd}{src2})
+\begin{DoxyCompactList}\small\item\em Mathematics operators. \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} ocl\-Mat\-Expr \hyperlink{namespacecv_1_1ocl_a4f617e55c0660e64083568c9d26689fb}{cv\-::ocl\-::operator-\/} (const ocl\-Mat \&\hyperlink{core__c_8h_a897de4702c922f4cccda0d57ccdcafb3}{src1}, const ocl\-Mat \&\hyperlink{core__c_8h_a7561a36d48069d54a6c8ac4e4750edfd}{src2})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} ocl\-Mat\-Expr \hyperlink{namespacecv_1_1ocl_ade4d7506a91f3ff715c76a21d3494ae2}{cv\-::ocl\-::operator$\ast$} (const ocl\-Mat \&\hyperlink{core__c_8h_a897de4702c922f4cccda0d57ccdcafb3}{src1}, const ocl\-Mat \&\hyperlink{core__c_8h_a7561a36d48069d54a6c8ac4e4750edfd}{src2})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} ocl\-Mat\-Expr \hyperlink{namespacecv_1_1ocl_ad840963c1adf790de32d175654f60cba}{cv\-::ocl\-::operator/} (const ocl\-Mat \&\hyperlink{core__c_8h_a897de4702c922f4cccda0d57ccdcafb3}{src1}, const ocl\-Mat \&\hyperlink{core__c_8h_a7561a36d48069d54a6c8ac4e4750edfd}{src2})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a00d984485deb1f19c7713a00f3e411ac}{cv\-::ocl\-::convolve} (const ocl\-Mat \&\hyperlink{legacy_8hpp_ad62b16ab219ae2483e8a3d921c44cc97}{image}, const ocl\-Mat \&temp1, ocl\-Mat \&\hyperlink{legacy_8hpp_a0bb77d54f6769867cfdf389897bd8e43}{result})
+\begin{DoxyCompactList}\small\item\em computes convolution of two images \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a6e34f06a89c67d6149ca572957614cec}{cv\-::ocl\-::cvt\-Color} (const ocl\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, int \hyperlink{imgproc__c_8h_a9a9fd13fa1f888f8baeda154bb1a3691}{code}, int dcn=0)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_ab2d8430b4d3388056b6ac588d3d5cc67}{cv\-::ocl\-::set\-Identity} (ocl\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, const Scalar \&val=Scalar(1))
+\begin{DoxyCompactList}\small\item\em initializes a scaled identity matrix \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_afce581f6a344e7521da32cf2cd911486}{cv\-::ocl\-::repeat} (const ocl\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, int ny, int nx, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst})
+\begin{DoxyCompactList}\small\item\em fills the output array with repeated copies of the input array \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} Ptr$<$ Filter\-Engine\-\_\-\-G\-P\-U $>$ \hyperlink{namespacecv_1_1ocl_a27be17b6220852350822b0541df40e78}{cv\-::ocl\-::create\-Filter2\-D\-\_\-\-G\-P\-U} (const Ptr$<$ Base\-Filter\-\_\-\-G\-P\-U $>$ filter2\-D)
+\begin{DoxyCompactList}\small\item\em returns the non-\/separable filter engine with the specified filter \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} Ptr$<$ Base\-Row\-Filter\-\_\-\-G\-P\-U $>$ \hyperlink{namespacecv_1_1ocl_aa26c0f02626f31ade4768915e388a2d7}{cv\-::ocl\-::get\-Linear\-Row\-Filter\-\_\-\-G\-P\-U} (int src\-Type, int buf\-Type, const Mat \&row\-Kernel, int anchor=-\/1, int \hyperlink{imgproc__c_8h_a217d51a46c1bcfec1157d02663e6e499}{bordertype}=B\-O\-R\-D\-E\-R\-\_\-\-D\-E\-F\-A\-U\-L\-T)
+\begin{DoxyCompactList}\small\item\em returns the primitive row filter with the specified kernel \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} Ptr\\*
+$<$ Base\-Column\-Filter\-\_\-\-G\-P\-U $>$ \hyperlink{namespacecv_1_1ocl_a93d0c4c54658687facea7b5c37c33b9a}{cv\-::ocl\-::get\-Linear\-Column\-Filter\-\_\-\-G\-P\-U} (int buf\-Type, int dst\-Type, const Mat \&column\-Kernel, int anchor=-\/1, int \hyperlink{imgproc__c_8h_a217d51a46c1bcfec1157d02663e6e499}{bordertype}=B\-O\-R\-D\-E\-R\-\_\-\-D\-E\-F\-A\-U\-L\-T, double \hyperlink{legacy_8hpp_ac867054f00f4be8b1f3ebce6fba31982}{delta}=0.\-0)
+\begin{DoxyCompactList}\small\item\em returns the primitive column filter with the specified kernel \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} Ptr$<$ Filter\-Engine\-\_\-\-G\-P\-U $>$ \hyperlink{namespacecv_1_1ocl_a8d7fb531b1444914a5d1398ae9211b55}{cv\-::ocl\-::create\-Separable\-Linear\-Filter\-\_\-\-G\-P\-U} (int src\-Type, int dst\-Type, const Mat \&row\-Kernel, const Mat \&column\-Kernel, const Point \&anchor=Point(-\/1,-\/1), double \hyperlink{legacy_8hpp_ac867054f00f4be8b1f3ebce6fba31982}{delta}=0.\-0, int \hyperlink{imgproc__c_8h_a217d51a46c1bcfec1157d02663e6e499}{bordertype}=B\-O\-R\-D\-E\-R\-\_\-\-D\-E\-F\-A\-U\-L\-T, Size img\-Size=Size(-\/1,-\/1))
+\begin{DoxyCompactList}\small\item\em returns the separable linear filter engine \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} Ptr$<$ Filter\-Engine\-\_\-\-G\-P\-U $>$ \hyperlink{namespacecv_1_1ocl_a2d0129d77a7dc68af771d87919b9717c}{cv\-::ocl\-::create\-Separable\-Filter\-\_\-\-G\-P\-U} (const Ptr$<$ Base\-Row\-Filter\-\_\-\-G\-P\-U $>$ \&row\-Filter, const Ptr$<$ Base\-Column\-Filter\-\_\-\-G\-P\-U $>$ \&column\-Filter)
+\begin{DoxyCompactList}\small\item\em returns the separable filter engine with the specified filters \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} Ptr$<$ Filter\-Engine\-\_\-\-G\-P\-U $>$ \hyperlink{namespacecv_1_1ocl_a1849e8130c0dace1be579e8841c7c5e1}{cv\-::ocl\-::create\-Gaussian\-Filter\-\_\-\-G\-P\-U} (int \hyperlink{imgproc__c_8h_a84612d8738bf935200cf32a103d8efe1}{type}, Size ksize, double sigma1, double sigma2=0, int \hyperlink{imgproc__c_8h_a217d51a46c1bcfec1157d02663e6e499}{bordertype}=B\-O\-R\-D\-E\-R\-\_\-\-D\-E\-F\-A\-U\-L\-T, Size img\-Size=Size(-\/1,-\/1))
+\begin{DoxyCompactList}\small\item\em returns the Gaussian filter engine \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} Ptr$<$ Filter\-Engine\-\_\-\-G\-P\-U $>$ \hyperlink{namespacecv_1_1ocl_a339729650f2176f02488d03fe07f7bd7}{cv\-::ocl\-::create\-Deriv\-Filter\-\_\-\-G\-P\-U} (int src\-Type, int dst\-Type, int dx, int dy, int ksize, int border\-Type=B\-O\-R\-D\-E\-R\-\_\-\-D\-E\-F\-A\-U\-L\-T, Size img\-Size=Size(-\/1,-\/1))
+\begin{DoxyCompactList}\small\item\em returns filter engine for the generalized Sobel operator \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_aa31e00f70d70d7836c29aad7409a4ea1}{cv\-::ocl\-::\-Laplacian} (const ocl\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, int ddepth, int ksize=1, double \hyperlink{objdetect_8hpp_a1f622eb9b9e06b30862ca90cdf2c078b}{scale}=1, double \hyperlink{legacy_8hpp_ac867054f00f4be8b1f3ebce6fba31982}{delta}=0, int border\-Type=B\-O\-R\-D\-E\-R\-\_\-\-D\-E\-F\-A\-U\-L\-T)
+\begin{DoxyCompactList}\small\item\em applies Laplacian operator to the image \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} Ptr$<$ Base\-Filter\-\_\-\-G\-P\-U $>$ \hyperlink{namespacecv_1_1ocl_a3eb24df962062d934fefed994c45ca48}{cv\-::ocl\-::get\-Box\-Filter\-\_\-\-G\-P\-U} (int src\-Type, int dst\-Type, const Size \&ksize, Point anchor=Point(-\/1,-\/1), int border\-Type=B\-O\-R\-D\-E\-R\-\_\-\-D\-E\-F\-A\-U\-L\-T)
+\begin{DoxyCompactList}\small\item\em returns 2\-D box filter \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} Ptr$<$ Filter\-Engine\-\_\-\-G\-P\-U $>$ \hyperlink{namespacecv_1_1ocl_ae0595ad5aa4d058188de180100e31247}{cv\-::ocl\-::create\-Box\-Filter\-\_\-\-G\-P\-U} (int src\-Type, int dst\-Type, const Size \&ksize, const Point \&anchor=Point(-\/1,-\/1), int border\-Type=B\-O\-R\-D\-E\-R\-\_\-\-D\-E\-F\-A\-U\-L\-T)
+\begin{DoxyCompactList}\small\item\em returns box filter engine \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} Ptr$<$ Base\-Filter\-\_\-\-G\-P\-U $>$ \hyperlink{namespacecv_1_1ocl_ae5abd76196756e5ea018b1ee8e58b26a}{cv\-::ocl\-::get\-Linear\-Filter\-\_\-\-G\-P\-U} (int src\-Type, int dst\-Type, const Mat \&\hyperlink{imgproc__c_8h_a863a75780ba6c5de552f5361cb0d2c89}{kernel}, const Size \&ksize, const Point \&anchor=Point(-\/1,-\/1), int border\-Type=B\-O\-R\-D\-E\-R\-\_\-\-D\-E\-F\-A\-U\-L\-T)
+\begin{DoxyCompactList}\small\item\em returns 2\-D filter with the specified kernel \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} Ptr$<$ Filter\-Engine\-\_\-\-G\-P\-U $>$ \hyperlink{namespacecv_1_1ocl_a0917c2fe8aa524c1007628da879049d4}{cv\-::ocl\-::create\-Linear\-Filter\-\_\-\-G\-P\-U} (int src\-Type, int dst\-Type, const Mat \&\hyperlink{imgproc__c_8h_a863a75780ba6c5de552f5361cb0d2c89}{kernel}, const Point \&anchor=Point(-\/1,-\/1), int border\-Type=B\-O\-R\-D\-E\-R\-\_\-\-D\-E\-F\-A\-U\-L\-T)
+\begin{DoxyCompactList}\small\item\em returns the non-\/separable linear filter engine \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_ac2af4e1942d697b9ffae93531d74af13}{cv\-::ocl\-::box\-Filter} (const ocl\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, int ddepth, Size ksize, Point anchor=Point(-\/1,-\/1), int border\-Type=B\-O\-R\-D\-E\-R\-\_\-\-D\-E\-F\-A\-U\-L\-T)
+\begin{DoxyCompactList}\small\item\em smooths the image using the normalized box filter \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} Ptr$<$ Base\-Filter\-\_\-\-G\-P\-U $>$ \hyperlink{namespacecv_1_1ocl_adfe9f99e6bc59974d466c04fd7a145da}{cv\-::ocl\-::get\-Morphology\-Filter\-\_\-\-G\-P\-U} (int op, int \hyperlink{imgproc__c_8h_a84612d8738bf935200cf32a103d8efe1}{type}, const Mat \&\hyperlink{imgproc__c_8h_a863a75780ba6c5de552f5361cb0d2c89}{kernel}, const Size \&ksize, Point anchor=Point(-\/1,-\/1))
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} Ptr$<$ Filter\-Engine\-\_\-\-G\-P\-U $>$ \hyperlink{namespacecv_1_1ocl_ad98f46696779f35ff98cbbeea7594198}{cv\-::ocl\-::create\-Morphology\-Filter\-\_\-\-G\-P\-U} (int op, int \hyperlink{imgproc__c_8h_a84612d8738bf935200cf32a103d8efe1}{type}, const Mat \&\hyperlink{imgproc__c_8h_a863a75780ba6c5de552f5361cb0d2c89}{kernel}, const Point \&anchor=Point(-\/1,-\/1), int \hyperlink{tracking_8hpp_a17372ac3c8ba01bc6cfc265b2824992e}{iterations}=1)
+\begin{DoxyCompactList}\small\item\em returns morphological filter engine. Only M\-O\-R\-P\-H\-\_\-\-E\-R\-O\-D\-E and M\-O\-R\-P\-H\-\_\-\-D\-I\-L\-A\-T\-E are supported. \end{DoxyCompactList}\item 
+static \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a21e16a92506cc0f832c305adcf33cfd3}{cv\-::ocl\-::blur} (const ocl\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, Size ksize, Point anchor=Point(-\/1,-\/1), int border\-Type=B\-O\-R\-D\-E\-R\-\_\-\-C\-O\-N\-S\-T\-A\-N\-T)
+\begin{DoxyCompactList}\small\item\em a synonym for normalized box filter \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a01ec95bb7d227f90684f8cd7d168f03c}{cv\-::ocl\-::filter2\-D} (const ocl\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, int ddepth, const Mat \&\hyperlink{imgproc__c_8h_a863a75780ba6c5de552f5361cb0d2c89}{kernel}, Point anchor=Point(-\/1,-\/1), double \hyperlink{legacy_8hpp_ac867054f00f4be8b1f3ebce6fba31982}{delta}=0.\-0, int border\-Type=B\-O\-R\-D\-E\-R\-\_\-\-D\-E\-F\-A\-U\-L\-T)
+\begin{DoxyCompactList}\small\item\em applies non-\/separable 2\-D linear filter to the image \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_ad677288a2e5360be6be0b17fd31dd518}{cv\-::ocl\-::sep\-Filter2\-D} (const ocl\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, int ddepth, const Mat \&kernel\-X, const Mat \&kernel\-Y, Point anchor=Point(-\/1,-\/1), double \hyperlink{legacy_8hpp_ac867054f00f4be8b1f3ebce6fba31982}{delta}=0.\-0, int \hyperlink{imgproc__c_8h_a217d51a46c1bcfec1157d02663e6e499}{bordertype}=B\-O\-R\-D\-E\-R\-\_\-\-D\-E\-F\-A\-U\-L\-T)
+\begin{DoxyCompactList}\small\item\em applies separable 2\-D linear filter to the image \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a1db81282a1f78b000281e06bc0adaad7}{cv\-::ocl\-::\-Sobel} (const ocl\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, int ddepth, int dx, int dy, int ksize=3, double \hyperlink{objdetect_8hpp_a1f622eb9b9e06b30862ca90cdf2c078b}{scale}=1, double \hyperlink{legacy_8hpp_ac867054f00f4be8b1f3ebce6fba31982}{delta}=0.\-0, int \hyperlink{imgproc__c_8h_a217d51a46c1bcfec1157d02663e6e499}{bordertype}=B\-O\-R\-D\-E\-R\-\_\-\-D\-E\-F\-A\-U\-L\-T)
+\begin{DoxyCompactList}\small\item\em applies generalized Sobel operator to the image \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_ace28b9cef90e9ff0175af7252014b744}{cv\-::ocl\-::\-Scharr} (const ocl\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, int ddepth, int dx, int dy, double \hyperlink{objdetect_8hpp_a1f622eb9b9e06b30862ca90cdf2c078b}{scale}=1, double \hyperlink{legacy_8hpp_ac867054f00f4be8b1f3ebce6fba31982}{delta}=0.\-0, int \hyperlink{imgproc__c_8h_a217d51a46c1bcfec1157d02663e6e499}{bordertype}=B\-O\-R\-D\-E\-R\-\_\-\-D\-E\-F\-A\-U\-L\-T)
+\begin{DoxyCompactList}\small\item\em applies the vertical or horizontal Scharr operator to the image \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_aae7628c77a5b3d11e626f3ddbe5e9336}{cv\-::ocl\-::\-Gaussian\-Blur} (const ocl\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, Size ksize, double sigma1, double sigma2=0, int \hyperlink{imgproc__c_8h_a217d51a46c1bcfec1157d02663e6e499}{bordertype}=B\-O\-R\-D\-E\-R\-\_\-\-D\-E\-F\-A\-U\-L\-T)
+\begin{DoxyCompactList}\small\item\em smooths the image using Gaussian filter. \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_af0372dac18c8f3c360968acfdac2dfc4}{cv\-::ocl\-::erode} (const ocl\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, const Mat \&\hyperlink{imgproc__c_8h_a863a75780ba6c5de552f5361cb0d2c89}{kernel}, Point anchor=Point(-\/1,-\/1), int \hyperlink{tracking_8hpp_a17372ac3c8ba01bc6cfc265b2824992e}{iterations}=1, int border\-Type=B\-O\-R\-D\-E\-R\-\_\-\-C\-O\-N\-S\-T\-A\-N\-T, const Scalar \&border\-Value=morphology\-Default\-Border\-Value())
+\begin{DoxyCompactList}\small\item\em erodes the image (applies the local minimum operator) \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_ab8992ada35217191cf4c6e9ebd93fe1f}{cv\-::ocl\-::dilate} (const ocl\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, const Mat \&\hyperlink{imgproc__c_8h_a863a75780ba6c5de552f5361cb0d2c89}{kernel}, Point anchor=Point(-\/1,-\/1), int \hyperlink{tracking_8hpp_a17372ac3c8ba01bc6cfc265b2824992e}{iterations}=1, int border\-Type=B\-O\-R\-D\-E\-R\-\_\-\-C\-O\-N\-S\-T\-A\-N\-T, const Scalar \&border\-Value=morphology\-Default\-Border\-Value())
+\begin{DoxyCompactList}\small\item\em dilates the image (applies the local maximum operator) \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_ac64e244fb0cfcb6c7ae81ef92b073a45}{cv\-::ocl\-::morphology\-Ex} (const ocl\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, int op, const Mat \&\hyperlink{imgproc__c_8h_a863a75780ba6c5de552f5361cb0d2c89}{kernel}, Point anchor=Point(-\/1,-\/1), int \hyperlink{tracking_8hpp_a17372ac3c8ba01bc6cfc265b2824992e}{iterations}=1, int border\-Type=B\-O\-R\-D\-E\-R\-\_\-\-C\-O\-N\-S\-T\-A\-N\-T, const Scalar \&border\-Value=morphology\-Default\-Border\-Value())
+\begin{DoxyCompactList}\small\item\em applies an advanced morphological operation to the image \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a3691c016a2527556643b93d1412476e5}{cv\-::ocl\-::mean\-Shift\-Filtering} (const ocl\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, int \hyperlink{imgproc__c_8h_ac14bc2e984efdff6b1fa7e106f3ac14a}{sp}, int \hyperlink{imgproc__c_8h_acecaf9a0f96f944ff768b10358b45839}{sr}, Term\-Criteria \hyperlink{tracking_8hpp_ac10fcea99ab081e745366c6f5bbc8eb5}{criteria}=Term\-Criteria(Term\-Criteria\-::\-M\-A\-X\-\_\-\-I\-T\-E\-R+Term\-Criteria\-::\-E\-P\-S, 5, 1))
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a79f96731f6eb0f4e99d450ed96919d9e}{cv\-::ocl\-::mean\-Shift\-Proc} (const ocl\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, ocl\-Mat \&dstr, ocl\-Mat \&dstsp, int \hyperlink{imgproc__c_8h_ac14bc2e984efdff6b1fa7e106f3ac14a}{sp}, int \hyperlink{imgproc__c_8h_acecaf9a0f96f944ff768b10358b45839}{sr}, Term\-Criteria \hyperlink{tracking_8hpp_ac10fcea99ab081e745366c6f5bbc8eb5}{criteria}=Term\-Criteria(Term\-Criteria\-::\-M\-A\-X\-\_\-\-I\-T\-E\-R+Term\-Criteria\-::\-E\-P\-S, 5, 1))
+\begin{DoxyCompactList}\small\item\em Does mean shift procedure on G\-P\-U. \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_ae45d9074fec046e0f36335d0cd1b95ff}{cv\-::ocl\-::mean\-Shift\-Segmentation} (const ocl\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, int \hyperlink{imgproc__c_8h_ac14bc2e984efdff6b1fa7e106f3ac14a}{sp}, int \hyperlink{imgproc__c_8h_acecaf9a0f96f944ff768b10358b45839}{sr}, int minsize, Term\-Criteria \hyperlink{tracking_8hpp_ac10fcea99ab081e745366c6f5bbc8eb5}{criteria}=Term\-Criteria(Term\-Criteria\-::\-M\-A\-X\-\_\-\-I\-T\-E\-R+Term\-Criteria\-::\-E\-P\-S, 5, 1))
+\begin{DoxyCompactList}\small\item\em Does mean shift segmentation with elimiation of small regions. \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} double \hyperlink{namespacecv_1_1ocl_a91ad85261d1cc9212bd7a3e83eacb2c3}{cv\-::ocl\-::threshold} (const ocl\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, double thresh, double max\-Val, int \hyperlink{imgproc__c_8h_a84612d8738bf935200cf32a103d8efe1}{type}=T\-H\-R\-E\-S\-H\-\_\-\-T\-R\-U\-N\-C)
+\begin{DoxyCompactList}\small\item\em applies fixed threshold to the image. \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a377076c1a2ba95a4dfc9c9954b13a219}{cv\-::ocl\-::resize} (const ocl\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, Size dsize, double fx=0, double fy=0, int interpolation=I\-N\-T\-E\-R\-\_\-\-L\-I\-N\-E\-A\-R)
+\begin{DoxyCompactList}\small\item\em resizes the image \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a73979487a156c1956946b7d586c12541}{cv\-::ocl\-::remap} (const ocl\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, ocl\-Mat \&map1, ocl\-Mat \&map2, int interpolation, int \hyperlink{imgproc__c_8h_a217d51a46c1bcfec1157d02663e6e499}{bordertype}, const Scalar \&\hyperlink{highgui__c_8h_ad4670c92695d4327c21292905a803901}{value}=Scalar())
+\begin{DoxyCompactList}\small\item\em Applies a generic geometrical transformation to an image. \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_ab19fdfce62f7e73530477c39de358eb0}{cv\-::ocl\-::copy\-Make\-Border} (const ocl\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, int top, int bottom, int left, int \hyperlink{legacy_8hpp_a6b04b878081bf724144b73c75dfd1894}{right}, int boardtype, const Scalar \&\hyperlink{highgui__c_8h_ad4670c92695d4327c21292905a803901}{value}=Scalar())
+\begin{DoxyCompactList}\small\item\em copies 2\-D array to a larger destination array and pads borders with user-\/specifiable constant \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a1ca125c926952cc9d822c0f6cd542351}{cv\-::ocl\-::median\-Filter} (const ocl\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, int m)
+\begin{DoxyCompactList}\small\item\em Smoothes image using median filter. \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a7cc85c5db9a22327e51c9e13d869ce5f}{cv\-::ocl\-::warp\-Affine} (const ocl\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, const Mat \&\hyperlink{tracking_8hpp_aa81fa9fd378ecf463757e9274a136e70}{M}, Size dsize, int \hyperlink{highgui__c_8h_ae51e3a2d4365e85db9630dd3ce9508db}{flags}=I\-N\-T\-E\-R\-\_\-\-L\-I\-N\-E\-A\-R)
+\begin{DoxyCompactList}\small\item\em warps the image using affine transformation \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a4314969aaeea7cbaeaafb2c459aa2a7a}{cv\-::ocl\-::warp\-Perspective} (const ocl\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, const Mat \&\hyperlink{tracking_8hpp_aa81fa9fd378ecf463757e9274a136e70}{M}, Size dsize, int \hyperlink{highgui__c_8h_ae51e3a2d4365e85db9630dd3ce9508db}{flags}=I\-N\-T\-E\-R\-\_\-\-L\-I\-N\-E\-A\-R)
+\begin{DoxyCompactList}\small\item\em warps the image using perspective transformation \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a9b93be77bebdc28ef1161ce54396748f}{cv\-::ocl\-::integral} (const ocl\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, ocl\-Mat \&\hyperlink{objdetect_8hpp_a1302ba7f918063962cf751adcebad452}{sum}, ocl\-Mat \&\hyperlink{objdetect_8hpp_a9933dc7f409c9e987d15e1527589d3ae}{sqsum}, int sdepth=-\/1)
+\begin{DoxyCompactList}\small\item\em computes the integral image and integral for the squared image \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_ac0e4494af46ac3a284e2ea34864d3bc6}{cv\-::ocl\-::integral} (const ocl\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, ocl\-Mat \&\hyperlink{objdetect_8hpp_a1302ba7f918063962cf751adcebad452}{sum}, int sdepth=-\/1)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a5d86126f70f88d2e2232588f35121e8f}{cv\-::ocl\-::corner\-Harris} (const ocl\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, int block\-Size, int ksize, double \hyperlink{legacy_8hpp_a7be9b6436e5ea72ff5d5a66779b4bd38}{k}, int \hyperlink{imgproc__c_8h_a217d51a46c1bcfec1157d02663e6e499}{bordertype}=cv\-::\-B\-O\-R\-D\-E\-R\-\_\-\-D\-E\-F\-A\-U\-L\-T)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a8b0b2eb1b7b97a178d171b7d4016f81f}{cv\-::ocl\-::corner\-Harris\-\_\-dxdy} (const ocl\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, ocl\-Mat \&Dx, ocl\-Mat \&Dy, int block\-Size, int ksize, double \hyperlink{legacy_8hpp_a7be9b6436e5ea72ff5d5a66779b4bd38}{k}, int \hyperlink{imgproc__c_8h_a217d51a46c1bcfec1157d02663e6e499}{bordertype}=cv\-::\-B\-O\-R\-D\-E\-R\-\_\-\-D\-E\-F\-A\-U\-L\-T)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a1b8cabf72219c1b0504ad10f6f50a26d}{cv\-::ocl\-::corner\-Min\-Eigen\-Val} (const ocl\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, int block\-Size, int ksize, int \hyperlink{imgproc__c_8h_a217d51a46c1bcfec1157d02663e6e499}{bordertype}=cv\-::\-B\-O\-R\-D\-E\-R\-\_\-\-D\-E\-F\-A\-U\-L\-T)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a5ac3ef8d16ac447ccc312387eeea8e5a}{cv\-::ocl\-::corner\-Min\-Eigen\-Val\-\_\-dxdy} (const ocl\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, ocl\-Mat \&Dx, ocl\-Mat \&Dy, int block\-Size, int ksize, int \hyperlink{imgproc__c_8h_a217d51a46c1bcfec1157d02663e6e499}{bordertype}=cv\-::\-B\-O\-R\-D\-E\-R\-\_\-\-D\-E\-F\-A\-U\-L\-T)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a99c6f8e997b47f5fb91571ad5415ef12}{cv\-::ocl\-::distance\-To\-Centers} (const ocl\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, const ocl\-Mat \&centers, Mat \&dists, Mat \&\hyperlink{core__c_8h_a1342f74a0f7dd7c20ab7e79b2e6e5af5}{labels}, int dist\-Type=N\-O\-R\-M\-\_\-\-L2\-S\-Q\-R)
+\begin{DoxyCompactList}\small\item\em Compute closest centers for each lines in source and lable it after center's index. \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} double \hyperlink{namespacecv_1_1ocl_a224f93ff761508287c4c19f580f13c8b}{cv\-::ocl\-::kmeans} (const ocl\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, int K, ocl\-Mat \&best\-Labels, Term\-Criteria \hyperlink{tracking_8hpp_ac10fcea99ab081e745366c6f5bbc8eb5}{criteria}, int attemps, int \hyperlink{highgui__c_8h_ae51e3a2d4365e85db9630dd3ce9508db}{flags}, ocl\-Mat \&centers)
+\begin{DoxyCompactList}\small\item\em Does k-\/means procedure on G\-P\-U. \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a36ac96c689c49f93d7f77cc3a7996c8e}{cv\-::ocl\-::pyr\-Down} (const ocl\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a7f14c5654f7484fb2253c4df2cadf4c6}{cv\-::ocl\-::pyr\-Up} (const ocl\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst})
+\begin{DoxyCompactList}\small\item\em upsamples the source image and then smoothes it \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_ae05330a7f344942b37536e5cfe5c4049}{cv\-::ocl\-::blend\-Linear} (const ocl\-Mat \&img1, const ocl\-Mat \&img2, const ocl\-Mat \&weights1, const ocl\-Mat \&weights2, ocl\-Mat \&\hyperlink{legacy_8hpp_a0bb77d54f6769867cfdf389897bd8e43}{result})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a72ce9f5aab643d1b970638b689843e31}{cv\-::ocl\-::column\-Sum} (const ocl\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, ocl\-Mat \&\hyperlink{objdetect_8hpp_a1302ba7f918063962cf751adcebad452}{sum})
+\begin{DoxyCompactList}\small\item\em computes vertical sum, supports only C\-V\-\_\-32\-F\-C1 images \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a1bf7b83a5d1139cfedfbae9fbce5528d}{cv\-::ocl\-::match\-Template} (const ocl\-Mat \&\hyperlink{legacy_8hpp_ad62b16ab219ae2483e8a3d921c44cc97}{image}, const ocl\-Mat \&\hyperlink{imgproc__c_8h_a3dda0ce9b269462404396ce3e9eedf00}{templ}, ocl\-Mat \&\hyperlink{legacy_8hpp_a0bb77d54f6769867cfdf389897bd8e43}{result}, int \hyperlink{legacy_8hpp_adc6d8f8df4f2d0df2ece83c432e2681f}{method})
+\begin{DoxyCompactList}\small\item\em computes the proximity map for the raster template and the image where the template is searched for \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a054ab8431764af79b09116226745ddc8}{cv\-::ocl\-::match\-Template} (const ocl\-Mat \&\hyperlink{legacy_8hpp_ad62b16ab219ae2483e8a3d921c44cc97}{image}, const ocl\-Mat \&\hyperlink{imgproc__c_8h_a3dda0ce9b269462404396ce3e9eedf00}{templ}, ocl\-Mat \&\hyperlink{legacy_8hpp_a0bb77d54f6769867cfdf389897bd8e43}{result}, int \hyperlink{legacy_8hpp_adc6d8f8df4f2d0df2ece83c432e2681f}{method}, Match\-Template\-Buf \&buf)
+\begin{DoxyCompactList}\small\item\em computes the proximity map for the raster template and the image where the template is searched for \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_adc5711369ecabcc42ecd9093688285e7}{cv\-::ocl\-::\-Canny} (const ocl\-Mat \&\hyperlink{legacy_8hpp_ad62b16ab219ae2483e8a3d921c44cc97}{image}, ocl\-Mat \&\hyperlink{imgproc__c_8h_a0934986249e7ba69309a154af3260f89}{edges}, double low\-\_\-thresh, double high\-\_\-thresh, int apperture\-\_\-size=3, bool L2gradient=false)
+\begin{DoxyCompactList}\small\item\em compute edges of the input image using Canny operator \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_ac4589c9cfa532ca0bf8bd6b9a012f69a}{cv\-::ocl\-::\-Canny} (const ocl\-Mat \&\hyperlink{legacy_8hpp_ad62b16ab219ae2483e8a3d921c44cc97}{image}, Canny\-Buf \&buf, ocl\-Mat \&\hyperlink{imgproc__c_8h_a0934986249e7ba69309a154af3260f89}{edges}, double low\-\_\-thresh, double high\-\_\-thresh, int apperture\-\_\-size=3, bool L2gradient=false)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a2765ec699a3e93dc8cea886e9aaf454e}{cv\-::ocl\-::\-Canny} (const ocl\-Mat \&dx, const ocl\-Mat \&dy, ocl\-Mat \&\hyperlink{imgproc__c_8h_a0934986249e7ba69309a154af3260f89}{edges}, double low\-\_\-thresh, double high\-\_\-thresh, bool L2gradient=false)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a240d233c772dd431fb28f4d64f1851b0}{cv\-::ocl\-::\-Canny} (const ocl\-Mat \&dx, const ocl\-Mat \&dy, Canny\-Buf \&buf, ocl\-Mat \&\hyperlink{imgproc__c_8h_a0934986249e7ba69309a154af3260f89}{edges}, double low\-\_\-thresh, double high\-\_\-thresh, bool L2gradient=false)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_aa44e99be005055aa94fe354cb7c7f71b}{cv\-::ocl\-::dft} (const ocl\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, Size dft\-\_\-size=Size(), int \hyperlink{highgui__c_8h_ae51e3a2d4365e85db9630dd3ce9508db}{flags}=0)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a52d9bf93ea8e0d932694bbad993ab0c5}{cv\-::ocl\-::gemm} (const ocl\-Mat \&\hyperlink{core__c_8h_a897de4702c922f4cccda0d57ccdcafb3}{src1}, const ocl\-Mat \&\hyperlink{core__c_8h_a7561a36d48069d54a6c8ac4e4750edfd}{src2}, double \hyperlink{legacy_8hpp_a95fc8341ca418bc06b36160632af6d47}{alpha}, const ocl\-Mat \&\hyperlink{core__c_8h_a311f39c2d5ee53342a493cbed3d77de3}{src3}, double \hyperlink{legacy_8hpp_af8b31eb489dfbd87f3b1a1925cca3589}{beta}, ocl\-Mat \&\hyperlink{photo__c_8h_aed13e2a25279b24dc954073233fef7a5}{dst}, int \hyperlink{highgui__c_8h_ae51e3a2d4365e85db9630dd3ce9508db}{flags}=0)
+\begin{DoxyCompactList}\small\item\em implements generalized matrix product algorithm G\-E\-M\-M from B\-L\-A\-S \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a35690467e329fb4e8a985ed6f37155e3}{cv\-::ocl\-::build\-Warp\-Plane\-Maps} (Size src\-\_\-size, Rect dst\-\_\-roi, const Mat \&K, const Mat \&\hyperlink{imgproc__c_8h_a51837f120208319f026dc8c4a71e56e0}{R}, const Mat \&\hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T}, float \hyperlink{objdetect_8hpp_a1f622eb9b9e06b30862ca90cdf2c078b}{scale}, ocl\-Mat \&map\-\_\-x, ocl\-Mat \&map\-\_\-y)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_af75bd6b3c4c5afed0f296068fa84598b}{cv\-::ocl\-::build\-Warp\-Cylindrical\-Maps} (Size src\-\_\-size, Rect dst\-\_\-roi, const Mat \&K, const Mat \&\hyperlink{imgproc__c_8h_a51837f120208319f026dc8c4a71e56e0}{R}, float \hyperlink{objdetect_8hpp_a1f622eb9b9e06b30862ca90cdf2c078b}{scale}, ocl\-Mat \&map\-\_\-x, ocl\-Mat \&map\-\_\-y)
+\begin{DoxyCompactList}\small\item\em builds cylindrical warping maps \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a1bfb06ce0432bde41356000d90260fd0}{cv\-::ocl\-::build\-Warp\-Spherical\-Maps} (Size src\-\_\-size, Rect dst\-\_\-roi, const Mat \&K, const Mat \&\hyperlink{imgproc__c_8h_a51837f120208319f026dc8c4a71e56e0}{R}, float \hyperlink{objdetect_8hpp_a1f622eb9b9e06b30862ca90cdf2c078b}{scale}, ocl\-Mat \&map\-\_\-x, ocl\-Mat \&map\-\_\-y)
+\begin{DoxyCompactList}\small\item\em builds spherical warping maps \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a53b08ee331f9b22d410e3f7a1f154081}{cv\-::ocl\-::build\-Warp\-Affine\-Maps} (const Mat \&\hyperlink{tracking_8hpp_aa81fa9fd378ecf463757e9274a136e70}{M}, bool inverse, Size dsize, ocl\-Mat \&xmap, ocl\-Mat \&ymap)
+\begin{DoxyCompactList}\small\item\em builds Affine warping maps \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a833d8278ce3cc3a2f3bacd900b29a329}{cv\-::ocl\-::build\-Warp\-Perspective\-Maps} (const Mat \&\hyperlink{tracking_8hpp_aa81fa9fd378ecf463757e9274a136e70}{M}, bool inverse, Size dsize, ocl\-Mat \&xmap, ocl\-Mat \&ymap)
+\begin{DoxyCompactList}\small\item\em builds Perspective warping maps \end{DoxyCompactList}\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a648325408f99a52fe9382683e5b1b095}{cv\-::ocl\-::interpolate\-Frames} (const ocl\-Mat \&frame0, const ocl\-Mat \&frame1, const ocl\-Mat \&fu, const ocl\-Mat \&fv, const ocl\-Mat \&bu, const ocl\-Mat \&bv, float \hyperlink{highgui__c_8h_a2eaacae6060d194f31eafce8ca3c09dd}{pos}, ocl\-Mat \&new\-Frame, ocl\-Mat \&buf)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} Moments \hyperlink{namespacecv_1_1ocl_a1f995dac86f142ed7c41a0553c29779f}{cv\-::ocl\-::ocl\-\_\-moments} (Input\-Array \hyperlink{core__c_8h_adbc53f0a2ae231f4fb30fb213be65a50}{contour})
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} Moments \hyperlink{namespacecv_1_1ocl_a91b319a70bb4fb86200e8752ba629b8e}{cv\-::ocl\-::ocl\-\_\-moments} (ocl\-Mat \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, bool binary)
+\item 
+\hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{namespacecv_1_1ocl_a0b0d27f279107e7191ee14b515daca63}{cv\-::ocl\-::sort\-By\-Key} (ocl\-Mat \&keys, ocl\-Mat \&values, int \hyperlink{legacy_8hpp_adc6d8f8df4f2d0df2ece83c432e2681f}{method}, bool is\-Greater\-Than=false)
+\begin{DoxyCompactList}\small\item\em Returns the sorted result of all the elements in input based on equivalent keys. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{namespacecv_1_1ocl_a5ba5f4fa9f494c17c0d0abe8b85b61af}{cv\-::ocl\-::ocl\-Mat\-Expr}
+\item 
+struct \hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{namespacecv_1_1ocl_a3294ac7c1a42025e2a763b8b4432fa5d}{cv\-::ocl\-::\-Canny\-Buf}
+\item 
+{\footnotesize template$<$class Distance $>$ }\\class \hyperlink{core_2types__c_8h_a1bf9f0e121b54272da02379cfccd0a2b}{C\-V\-\_\-\-E\-X\-P\-O\-R\-T\-S} \hyperlink{namespacecv_1_1ocl_a3d60e5da2cd087e0a39c626535b8e07b}{cv\-::ocl\-::\-Brute\-Force\-Matcher\-\_\-\-O\-C\-L}
+\end{DoxyCompactItemize}

@@ -1,0 +1,103 @@
+\hypertarget{classcv_1_1BackgroundSubtractor}{\section{cv\-:\-:Background\-Subtractor Class Reference}
+\label{classcv_1_1BackgroundSubtractor}\index{cv\-::\-Background\-Subtractor@{cv\-::\-Background\-Subtractor}}
+}
+
+
+{\ttfamily \#include $<$background\-\_\-segm.\-hpp$>$}
+
+
+
+Inheritance diagram for cv\-:\-:Background\-Subtractor\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcv_1_1BackgroundSubtractor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for cv\-:\-:Background\-Subtractor\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{classcv_1_1BackgroundSubtractor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classcv_1_1BackgroundSubtractor_ada02552c48d2e535741711c14396efdc}{$\sim$\-Background\-Subtractor} ()
+\begin{DoxyCompactList}\small\item\em the virtual destructor \end{DoxyCompactList}\item 
+\hyperlink{classcv_1_1BackgroundSubtractor_ab880cbcaa3cbacf1a7e65193b18df76b}{C\-V\-\_\-\-W\-R\-A\-P\-\_\-\-A\-S} (apply) virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} operator()(Input\-Array \hyperlink{legacy_8hpp_ad62b16ab219ae2483e8a3d921c44cc97}{image}
+\begin{DoxyCompactList}\small\item\em the update operator that takes the next video frame and returns the current foreground mask as 8-\/bit binary image. \end{DoxyCompactList}\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1BackgroundSubtractor_ad6bbeb733a9cb258a7c9a69442fd0bda}{get\-Background\-Image} (Output\-Array background\-Image) const 
+\begin{DoxyCompactList}\small\item\em computes a background image \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Output\-Array \hyperlink{classcv_1_1BackgroundSubtractor_a3a04333e20f88e6799f368d7abb2abd9}{fgmask}
+\item 
+Output\-Array double \hyperlink{classcv_1_1BackgroundSubtractor_a98797ef02141e31b050f1ed6259fd229}{learning\-Rate} =0)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The Base Class for Background/\-Foreground Segmentation
+
+The class is only used to define the common interface for the whole family of background/foreground segmentation algorithms. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcv_1_1BackgroundSubtractor_ada02552c48d2e535741711c14396efdc}{\index{cv\-::\-Background\-Subtractor@{cv\-::\-Background\-Subtractor}!$\sim$\-Background\-Subtractor@{$\sim$\-Background\-Subtractor}}
+\index{$\sim$\-Background\-Subtractor@{$\sim$\-Background\-Subtractor}!cv::BackgroundSubtractor@{cv\-::\-Background\-Subtractor}}
+\subsubsection[{$\sim$\-Background\-Subtractor}]{\setlength{\rightskip}{0pt plus 5cm}virtual cv\-::\-Background\-Subtractor\-::$\sim$\-Background\-Subtractor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcv_1_1BackgroundSubtractor_ada02552c48d2e535741711c14396efdc}
+
+
+the virtual destructor 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcv_1_1BackgroundSubtractor_ab880cbcaa3cbacf1a7e65193b18df76b}{\index{cv\-::\-Background\-Subtractor@{cv\-::\-Background\-Subtractor}!C\-V\-\_\-\-W\-R\-A\-P\-\_\-\-A\-S@{C\-V\-\_\-\-W\-R\-A\-P\-\_\-\-A\-S}}
+\index{C\-V\-\_\-\-W\-R\-A\-P\-\_\-\-A\-S@{C\-V\-\_\-\-W\-R\-A\-P\-\_\-\-A\-S}!cv::BackgroundSubtractor@{cv\-::\-Background\-Subtractor}}
+\subsubsection[{C\-V\-\_\-\-W\-R\-A\-P\-\_\-\-A\-S}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::\-Background\-Subtractor\-::\-C\-V\-\_\-\-W\-R\-A\-P\-\_\-\-A\-S (
+\begin{DoxyParamCaption}
+\item[{apply}]{}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1BackgroundSubtractor_ab880cbcaa3cbacf1a7e65193b18df76b}
+
+
+the update operator that takes the next video frame and returns the current foreground mask as 8-\/bit binary image. 
+
+\hypertarget{classcv_1_1BackgroundSubtractor_ad6bbeb733a9cb258a7c9a69442fd0bda}{\index{cv\-::\-Background\-Subtractor@{cv\-::\-Background\-Subtractor}!get\-Background\-Image@{get\-Background\-Image}}
+\index{get\-Background\-Image@{get\-Background\-Image}!cv::BackgroundSubtractor@{cv\-::\-Background\-Subtractor}}
+\subsubsection[{get\-Background\-Image}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cv\-::\-Background\-Subtractor\-::get\-Background\-Image (
+\begin{DoxyParamCaption}
+\item[{Output\-Array}]{background\-Image}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcv_1_1BackgroundSubtractor_ad6bbeb733a9cb258a7c9a69442fd0bda}
+
+
+computes a background image 
+
+
+
+Reimplemented in \hyperlink{classcv_1_1BackgroundSubtractorMOG2_a0106eb2e0a1c7e3b409bb73ec2958438}{cv\-::\-Background\-Subtractor\-M\-O\-G2}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcv_1_1BackgroundSubtractor_a3a04333e20f88e6799f368d7abb2abd9}{\index{cv\-::\-Background\-Subtractor@{cv\-::\-Background\-Subtractor}!fgmask@{fgmask}}
+\index{fgmask@{fgmask}!cv::BackgroundSubtractor@{cv\-::\-Background\-Subtractor}}
+\subsubsection[{fgmask}]{\setlength{\rightskip}{0pt plus 5cm}Output\-Array cv\-::\-Background\-Subtractor\-::fgmask}}\label{classcv_1_1BackgroundSubtractor_a3a04333e20f88e6799f368d7abb2abd9}
+\hypertarget{classcv_1_1BackgroundSubtractor_a98797ef02141e31b050f1ed6259fd229}{\index{cv\-::\-Background\-Subtractor@{cv\-::\-Background\-Subtractor}!learning\-Rate@{learning\-Rate}}
+\index{learning\-Rate@{learning\-Rate}!cv::BackgroundSubtractor@{cv\-::\-Background\-Subtractor}}
+\subsubsection[{learning\-Rate}]{\setlength{\rightskip}{0pt plus 5cm}Output\-Array double cv\-::\-Background\-Subtractor\-::learning\-Rate =0)}}\label{classcv_1_1BackgroundSubtractor_a98797ef02141e31b050f1ed6259fd229}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/video/\hyperlink{background__segm_8hpp}{background\-\_\-segm.\-hpp}\end{DoxyCompactItemize}

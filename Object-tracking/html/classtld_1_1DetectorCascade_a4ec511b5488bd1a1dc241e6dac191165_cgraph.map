@@ -1,0 +1,4 @@
+<map id="tld::DetectorCascade::detect" name="tld::DetectorCascade::detect">
+<area shape="rect" id="node2" href="$namespacetld.html#a18975268ebbf3daf5eaf46d30fd782e9" title="Converts the rectangle to array (size 4). " alt="" coords="201,5,333,32"/>
+<area shape="rect" id="node3" href="$namespacetld.html#a8b28e6d4868ad30e826a6248dd2ae7a0" title="Checks whether the one bouning box is completely inside the other. " alt="" coords="215,56,319,83"/>
+</map>

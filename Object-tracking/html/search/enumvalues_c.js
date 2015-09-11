@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['m',['M',['../structcv_1_1gpu_1_1device_1_1reduce__detail_1_1GenericOptimized32.html#ac9408140985cf02e615ebdd2d253ba87ac798bbe5212878ee4110d97cad1cf710',1,'cv::gpu::device::reduce_detail::GenericOptimized32::M()'],['../structcv_1_1gpu_1_1device_1_1reduce__key__val__detail_1_1GenericOptimized32.html#a82fef71796e3b0cbae81fd2cb137751aa3d61d1be03bb945fc790c320a314b2bf',1,'cv::gpu::device::reduce_key_val_detail::GenericOptimized32::M()']]],
+  ['manhattan',['MANHATTAN',['../namespacecvflann.html#aaf5ebd053bd32f6b924e6e59868a1ee1af7c29971f527df6f3b9279a7608c3862',1,'cvflann']]],
+  ['mask',['MASK',['../classcvtest_1_1ArrayTest.html#aca27cd0b8751007bfa3accb2e787de6cad3ebf35d551ad8a0829bbc7edda0951c',1,'cvtest::ArrayTest']]],
+  ['mat_5fadd',['MAT_ADD',['../namespacecv_1_1ocl.html#af9c7cf8b90187058d71aa9b954dda9d1a68be6d29df28739a6064939a22219ac9',1,'cv::ocl']]],
+  ['mat_5fand',['MAT_AND',['../namespacecv_1_1ocl.html#af9c7cf8b90187058d71aa9b954dda9d1a78cd693484c3d34654961d6e4e12d899',1,'cv::ocl']]],
+  ['mat_5fdiv',['MAT_DIV',['../namespacecv_1_1ocl.html#af9c7cf8b90187058d71aa9b954dda9d1a8aa740358b4ce1cb8f1f93dea471e468',1,'cv::ocl']]],
+  ['mat_5fmul',['MAT_MUL',['../namespacecv_1_1ocl.html#af9c7cf8b90187058d71aa9b954dda9d1abf5aae9431212563651b804e6617caf0',1,'cv::ocl']]],
+  ['mat_5fnot',['MAT_NOT',['../namespacecv_1_1ocl.html#af9c7cf8b90187058d71aa9b954dda9d1a0d5f602f435513ff971dc811017d7090',1,'cv::ocl']]],
+  ['mat_5for',['MAT_OR',['../namespacecv_1_1ocl.html#af9c7cf8b90187058d71aa9b954dda9d1a864b2351c5e08702682e0327e768dc94',1,'cv::ocl']]],
+  ['mat_5fsub',['MAT_SUB',['../namespacecv_1_1ocl.html#af9c7cf8b90187058d71aa9b954dda9d1a55bce0ca4238b5dd4e257631826cea91',1,'cv::ocl']]],
+  ['mat_5fxor',['MAT_XOR',['../namespacecv_1_1ocl.html#af9c7cf8b90187058d71aa9b954dda9d1a43ba69bce0942a5a58ec926e392ffc01',1,'cv::ocl']]],
+  ['max_5farr',['MAX_ARR',['../classcvtest_1_1ArrayTest.html#aca27cd0b8751007bfa3accb2e787de6caa52526c05a4dddbdd3a0e52b60d15ee3',1,'cvtest::ArrayTest']]],
+  ['max_5fdist',['MAX_DIST',['../namespacecvflann.html#aaf5ebd053bd32f6b924e6e59868a1ee1a5e71dcdc1803389b9725c736bac4db70',1,'cvflann']]],
+  ['max_5fidx',['MAX_IDX',['../classcvtest_1_1TS.html#a4d6d5cf94c1f5e8cdaddf2a2efe1be0aa223feca68f6657aca9967e4f4e405612',1,'cvtest::TS']]],
+  ['mean_5ffield',['MEAN_FIELD',['../classcv_1_1of2_1_1FabMap.html#a843cc3739cda5d9154a3e2a3065e2036a64c5971672631f4b886c04ee6c93e2e1',1,'cv::of2::FabMap']]],
+  ['minkowski',['MINKOWSKI',['../namespacecvflann.html#aaf5ebd053bd32f6b924e6e59868a1ee1aeaf8417a4e1389212df9e73f8af46227',1,'cvflann']]],
+  ['monochrome',['Monochrome',['../classcv_1_1gpu_1_1VideoReader__GPU.html#a7fc7968ff0961cdaa050b3845799b440a30354dcfc16f690550d4e32269586d4c',1,'cv::gpu::VideoReader_GPU']]],
+  ['motion_5fmodel',['MOTION_MODEL',['../classcv_1_1of2_1_1FabMap.html#a843cc3739cda5d9154a3e2a3065e2036a908017fabb1fca82ec69654033ee46c8',1,'cv::of2::FabMap']]],
+  ['mpeg1',['MPEG1',['../classcv_1_1gpu_1_1VideoReader__GPU.html#afdb33778111ce0c50a8de381ad562b16ae45d3a13e8afae6ca1be2960f8013e64',1,'cv::gpu::VideoReader_GPU']]],
+  ['mpeg2',['MPEG2',['../classcv_1_1gpu_1_1VideoReader__GPU.html#afdb33778111ce0c50a8de381ad562b16a1682f11e5b0a752c50e794b2898eded5',1,'cv::gpu::VideoReader_GPU']]],
+  ['mpeg4',['MPEG4',['../classcv_1_1gpu_1_1VideoReader__GPU.html#afdb33778111ce0c50a8de381ad562b16a86efa48f165eaa2a5d355911df0c65d4',1,'cv::gpu::VideoReader_GPU']]],
+  ['multi_5fband',['MULTI_BAND',['../classcv_1_1detail_1_1Blender.html#a862700b452ca7a88d29b365e35e453e9a2561f45ebefa078e121969723c3d2753',1,'cv::detail::Blender']]]
+];

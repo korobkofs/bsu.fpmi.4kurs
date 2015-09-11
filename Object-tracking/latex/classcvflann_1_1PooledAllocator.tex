@@ -1,0 +1,108 @@
+\hypertarget{classcvflann_1_1PooledAllocator}{\section{cvflann\-:\-:Pooled\-Allocator Class Reference}
+\label{classcvflann_1_1PooledAllocator}\index{cvflann\-::\-Pooled\-Allocator@{cvflann\-::\-Pooled\-Allocator}}
+}
+
+
+{\ttfamily \#include $<$allocator.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcvflann_1_1PooledAllocator_a1e83a3e496a4c8dbb75a914e15aec3e7}{Pooled\-Allocator} (int block\-Size=\hyperlink{namespacecvflann_af6813d97f5ad15bea15d4c914d406e24}{B\-L\-O\-C\-K\-S\-I\-Z\-E})
+\item 
+\hyperlink{classcvflann_1_1PooledAllocator_a42f5f1dd670ee793ea352234f8a3ec80}{$\sim$\-Pooled\-Allocator} ()
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} $\ast$ \hyperlink{classcvflann_1_1PooledAllocator_add19ffd7aeb8146c7951071c51398c1b}{allocate\-Memory} (int \hyperlink{legacy_8hpp_ae97003f8d5c64cdfb99f6f2606d121b6}{size})
+\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} $\ast$ \hyperlink{classcvflann_1_1PooledAllocator_aaf127cab57cd0e0f4d3b335efd8d3a67}{allocate} (size\-\_\-t \hyperlink{tracking_8hpp_a88d78b1935cd8bdee70a44eaaf326b1e}{count}=1)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classcvflann_1_1PooledAllocator_a6e5510ec11212e0bb1b109b3af09e172}{used\-Memory}
+\item 
+int \hyperlink{classcvflann_1_1PooledAllocator_af69edd6191138a563f9205d1db7bdd18}{wasted\-Memory}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcvflann_1_1PooledAllocator_a1e83a3e496a4c8dbb75a914e15aec3e7}{\index{cvflann\-::\-Pooled\-Allocator@{cvflann\-::\-Pooled\-Allocator}!Pooled\-Allocator@{Pooled\-Allocator}}
+\index{Pooled\-Allocator@{Pooled\-Allocator}!cvflann::PooledAllocator@{cvflann\-::\-Pooled\-Allocator}}
+\subsubsection[{Pooled\-Allocator}]{\setlength{\rightskip}{0pt plus 5cm}cvflann\-::\-Pooled\-Allocator\-::\-Pooled\-Allocator (
+\begin{DoxyParamCaption}
+\item[{int}]{block\-Size = {\ttfamily {\bf B\-L\-O\-C\-K\-S\-I\-Z\-E}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcvflann_1_1PooledAllocator_a1e83a3e496a4c8dbb75a914e15aec3e7}
+Default constructor. Initializes a new pool. \hypertarget{classcvflann_1_1PooledAllocator_a42f5f1dd670ee793ea352234f8a3ec80}{\index{cvflann\-::\-Pooled\-Allocator@{cvflann\-::\-Pooled\-Allocator}!$\sim$\-Pooled\-Allocator@{$\sim$\-Pooled\-Allocator}}
+\index{$\sim$\-Pooled\-Allocator@{$\sim$\-Pooled\-Allocator}!cvflann::PooledAllocator@{cvflann\-::\-Pooled\-Allocator}}
+\subsubsection[{$\sim$\-Pooled\-Allocator}]{\setlength{\rightskip}{0pt plus 5cm}cvflann\-::\-Pooled\-Allocator\-::$\sim$\-Pooled\-Allocator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcvflann_1_1PooledAllocator_a42f5f1dd670ee793ea352234f8a3ec80}
+Destructor. Frees all the memory allocated in this pool. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classcvflann_1_1PooledAllocator_aaf127cab57cd0e0f4d3b335efd8d3a67}{\index{cvflann\-::\-Pooled\-Allocator@{cvflann\-::\-Pooled\-Allocator}!allocate@{allocate}}
+\index{allocate@{allocate}!cvflann::PooledAllocator@{cvflann\-::\-Pooled\-Allocator}}
+\subsubsection[{allocate}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf T}$\ast$ cvflann\-::\-Pooled\-Allocator\-::allocate (
+\begin{DoxyParamCaption}
+\item[{size\-\_\-t}]{count = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcvflann_1_1PooledAllocator_aaf127cab57cd0e0f4d3b335efd8d3a67}
+Allocates (using this pool) a generic type T.
+
+Params\-: count = number of instances to allocate. Returns\-: pointer (of type T$\ast$) to memory buffer 
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcvflann_1_1PooledAllocator_aaf127cab57cd0e0f4d3b335efd8d3a67_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcvflann_1_1PooledAllocator_aaf127cab57cd0e0f4d3b335efd8d3a67_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcvflann_1_1PooledAllocator_add19ffd7aeb8146c7951071c51398c1b}{\index{cvflann\-::\-Pooled\-Allocator@{cvflann\-::\-Pooled\-Allocator}!allocate\-Memory@{allocate\-Memory}}
+\index{allocate\-Memory@{allocate\-Memory}!cvflann::PooledAllocator@{cvflann\-::\-Pooled\-Allocator}}
+\subsubsection[{allocate\-Memory}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void}$\ast$ cvflann\-::\-Pooled\-Allocator\-::allocate\-Memory (
+\begin{DoxyParamCaption}
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcvflann_1_1PooledAllocator_add19ffd7aeb8146c7951071c51398c1b}
+Returns a pointer to a piece of new memory of the given size in bytes allocated from the pool. 
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcvflann_1_1PooledAllocator_add19ffd7aeb8146c7951071c51398c1b_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcvflann_1_1PooledAllocator_a6e5510ec11212e0bb1b109b3af09e172}{\index{cvflann\-::\-Pooled\-Allocator@{cvflann\-::\-Pooled\-Allocator}!used\-Memory@{used\-Memory}}
+\index{used\-Memory@{used\-Memory}!cvflann::PooledAllocator@{cvflann\-::\-Pooled\-Allocator}}
+\subsubsection[{used\-Memory}]{\setlength{\rightskip}{0pt plus 5cm}int cvflann\-::\-Pooled\-Allocator\-::used\-Memory}}\label{classcvflann_1_1PooledAllocator_a6e5510ec11212e0bb1b109b3af09e172}
+\hypertarget{classcvflann_1_1PooledAllocator_af69edd6191138a563f9205d1db7bdd18}{\index{cvflann\-::\-Pooled\-Allocator@{cvflann\-::\-Pooled\-Allocator}!wasted\-Memory@{wasted\-Memory}}
+\index{wasted\-Memory@{wasted\-Memory}!cvflann::PooledAllocator@{cvflann\-::\-Pooled\-Allocator}}
+\subsubsection[{wasted\-Memory}]{\setlength{\rightskip}{0pt plus 5cm}int cvflann\-::\-Pooled\-Allocator\-::wasted\-Memory}}\label{classcvflann_1_1PooledAllocator_af69edd6191138a563f9205d1db7bdd18}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/flann/\hyperlink{allocator_8h}{allocator.\-h}\end{DoxyCompactItemize}

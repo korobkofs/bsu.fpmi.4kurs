@@ -1,0 +1,5 @@
+<map id="cv::gpu::device::color_detail::RGB2HSVConvert" name="cv::gpu::device::color_detail::RGB2HSVConvert">
+<area shape="rect" id="node2" href="$namespacecv_1_1gpu.html#a706c9def6816de566be2671b75ec5309" title="computes per&#45;element maximum of two arrays (dst = max(src1, src2)) " alt="" coords="283,5,381,32"/>
+<area shape="rect" id="node3" href="$namespacecv_1_1gpu.html#a8d100341ab11a730a3c90b75d5890a8c" title="computes per&#45;element minimum of two arrays (dst = min(src1, src2)) " alt="" coords="285,56,379,83"/>
+<area shape="rect" id="node4" href="$namespacecv_1_1gpu_1_1device.html#aad5e6b794784ec0e90cdcca7d8d8a7de" title="cv::gpu::device::saturate_cast" alt="" coords="233,107,431,133"/>
+</map>

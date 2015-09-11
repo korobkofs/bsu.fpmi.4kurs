@@ -1,0 +1,94 @@
+\hypertarget{classcv_1_1gpu_1_1VideoWriter__GPU_1_1EncoderCallBack}{\section{cv\-:\-:gpu\-:\-:Video\-Writer\-\_\-\-G\-P\-U\-:\-:Encoder\-Call\-Back Class Reference}
+\label{classcv_1_1gpu_1_1VideoWriter__GPU_1_1EncoderCallBack}\index{cv\-::gpu\-::\-Video\-Writer\-\_\-\-G\-P\-U\-::\-Encoder\-Call\-Back@{cv\-::gpu\-::\-Video\-Writer\-\_\-\-G\-P\-U\-::\-Encoder\-Call\-Back}}
+}
+
+
+{\ttfamily \#include $<$gpu.\-hpp$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classcv_1_1gpu_1_1VideoWriter__GPU_1_1EncoderCallBack_aa8c69464d7b00114cd7b058a2738be0e}{Pic\-Type} \{ \hyperlink{classcv_1_1gpu_1_1VideoWriter__GPU_1_1EncoderCallBack_aa8c69464d7b00114cd7b058a2738be0ead0da42fdb1d4fdeef7363a0b07b1994a}{I\-F\-R\-A\-M\-E} = 1, 
+\hyperlink{classcv_1_1gpu_1_1VideoWriter__GPU_1_1EncoderCallBack_aa8c69464d7b00114cd7b058a2738be0ea8067620fa9d0cc29606b84f8e0df8987}{P\-F\-R\-A\-M\-E} = 2, 
+\hyperlink{classcv_1_1gpu_1_1VideoWriter__GPU_1_1EncoderCallBack_aa8c69464d7b00114cd7b058a2738be0eab2f9cfe19797bcbc8c147100a8c147fd}{B\-F\-R\-A\-M\-E} = 3
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classcv_1_1gpu_1_1VideoWriter__GPU_1_1EncoderCallBack_a97bcc1078b3fd45fe71cacaf1b0fb84c}{$\sim$\-Encoder\-Call\-Back} ()
+\item 
+virtual \hyperlink{core_2types__c_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar} $\ast$ \hyperlink{classcv_1_1gpu_1_1VideoWriter__GPU_1_1EncoderCallBack_a6ed27569690142b968dc2c0c594d5c26}{acquire\-Bit\-Stream} (int $\ast$buffer\-Size)=0
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1VideoWriter__GPU_1_1EncoderCallBack_a60b69466cc4228ec4396a9ac3c65c73e}{release\-Bit\-Stream} (unsigned char $\ast$\hyperlink{legacy_8hpp_ab9fe6c09e6d02865a953fffc12fe6ca0}{data}, int \hyperlink{legacy_8hpp_ae97003f8d5c64cdfb99f6f2606d121b6}{size})=0
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1VideoWriter__GPU_1_1EncoderCallBack_ae4e7ca1b509fb4277deecdb6b3d3ceef}{on\-Begin\-Frame} (int frame\-Number, \hyperlink{classcv_1_1gpu_1_1VideoWriter__GPU_1_1EncoderCallBack_aa8c69464d7b00114cd7b058a2738be0e}{Pic\-Type} pic\-Type)=0
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1VideoWriter__GPU_1_1EncoderCallBack_a74d338c940bb0dd5070fbc622a6392b3}{on\-End\-Frame} (int frame\-Number, \hyperlink{classcv_1_1gpu_1_1VideoWriter__GPU_1_1EncoderCallBack_aa8c69464d7b00114cd7b058a2738be0e}{Pic\-Type} pic\-Type)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classcv_1_1gpu_1_1VideoWriter__GPU_1_1EncoderCallBack_aa8c69464d7b00114cd7b058a2738be0e}{\index{cv\-::gpu\-::\-Video\-Writer\-\_\-\-G\-P\-U\-::\-Encoder\-Call\-Back@{cv\-::gpu\-::\-Video\-Writer\-\_\-\-G\-P\-U\-::\-Encoder\-Call\-Back}!Pic\-Type@{Pic\-Type}}
+\index{Pic\-Type@{Pic\-Type}!cv::gpu::VideoWriter_GPU::EncoderCallBack@{cv\-::gpu\-::\-Video\-Writer\-\_\-\-G\-P\-U\-::\-Encoder\-Call\-Back}}
+\subsubsection[{Pic\-Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf cv\-::gpu\-::\-Video\-Writer\-\_\-\-G\-P\-U\-::\-Encoder\-Call\-Back\-::\-Pic\-Type}}}\label{classcv_1_1gpu_1_1VideoWriter__GPU_1_1EncoderCallBack_aa8c69464d7b00114cd7b058a2738be0e}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{I\-F\-R\-A\-M\-E@{I\-F\-R\-A\-M\-E}!cv\-::gpu\-::\-Video\-Writer\-\_\-\-G\-P\-U\-::\-Encoder\-Call\-Back@{cv\-::gpu\-::\-Video\-Writer\-\_\-\-G\-P\-U\-::\-Encoder\-Call\-Back}}\index{cv\-::gpu\-::\-Video\-Writer\-\_\-\-G\-P\-U\-::\-Encoder\-Call\-Back@{cv\-::gpu\-::\-Video\-Writer\-\_\-\-G\-P\-U\-::\-Encoder\-Call\-Back}!I\-F\-R\-A\-M\-E@{I\-F\-R\-A\-M\-E}}\item[{\em 
+\hypertarget{classcv_1_1gpu_1_1VideoWriter__GPU_1_1EncoderCallBack_aa8c69464d7b00114cd7b058a2738be0ead0da42fdb1d4fdeef7363a0b07b1994a}{I\-F\-R\-A\-M\-E}\label{classcv_1_1gpu_1_1VideoWriter__GPU_1_1EncoderCallBack_aa8c69464d7b00114cd7b058a2738be0ead0da42fdb1d4fdeef7363a0b07b1994a}
+}]\index{P\-F\-R\-A\-M\-E@{P\-F\-R\-A\-M\-E}!cv\-::gpu\-::\-Video\-Writer\-\_\-\-G\-P\-U\-::\-Encoder\-Call\-Back@{cv\-::gpu\-::\-Video\-Writer\-\_\-\-G\-P\-U\-::\-Encoder\-Call\-Back}}\index{cv\-::gpu\-::\-Video\-Writer\-\_\-\-G\-P\-U\-::\-Encoder\-Call\-Back@{cv\-::gpu\-::\-Video\-Writer\-\_\-\-G\-P\-U\-::\-Encoder\-Call\-Back}!P\-F\-R\-A\-M\-E@{P\-F\-R\-A\-M\-E}}\item[{\em 
+\hypertarget{classcv_1_1gpu_1_1VideoWriter__GPU_1_1EncoderCallBack_aa8c69464d7b00114cd7b058a2738be0ea8067620fa9d0cc29606b84f8e0df8987}{P\-F\-R\-A\-M\-E}\label{classcv_1_1gpu_1_1VideoWriter__GPU_1_1EncoderCallBack_aa8c69464d7b00114cd7b058a2738be0ea8067620fa9d0cc29606b84f8e0df8987}
+}]\index{B\-F\-R\-A\-M\-E@{B\-F\-R\-A\-M\-E}!cv\-::gpu\-::\-Video\-Writer\-\_\-\-G\-P\-U\-::\-Encoder\-Call\-Back@{cv\-::gpu\-::\-Video\-Writer\-\_\-\-G\-P\-U\-::\-Encoder\-Call\-Back}}\index{cv\-::gpu\-::\-Video\-Writer\-\_\-\-G\-P\-U\-::\-Encoder\-Call\-Back@{cv\-::gpu\-::\-Video\-Writer\-\_\-\-G\-P\-U\-::\-Encoder\-Call\-Back}!B\-F\-R\-A\-M\-E@{B\-F\-R\-A\-M\-E}}\item[{\em 
+\hypertarget{classcv_1_1gpu_1_1VideoWriter__GPU_1_1EncoderCallBack_aa8c69464d7b00114cd7b058a2738be0eab2f9cfe19797bcbc8c147100a8c147fd}{B\-F\-R\-A\-M\-E}\label{classcv_1_1gpu_1_1VideoWriter__GPU_1_1EncoderCallBack_aa8c69464d7b00114cd7b058a2738be0eab2f9cfe19797bcbc8c147100a8c147fd}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcv_1_1gpu_1_1VideoWriter__GPU_1_1EncoderCallBack_a97bcc1078b3fd45fe71cacaf1b0fb84c}{\index{cv\-::gpu\-::\-Video\-Writer\-\_\-\-G\-P\-U\-::\-Encoder\-Call\-Back@{cv\-::gpu\-::\-Video\-Writer\-\_\-\-G\-P\-U\-::\-Encoder\-Call\-Back}!$\sim$\-Encoder\-Call\-Back@{$\sim$\-Encoder\-Call\-Back}}
+\index{$\sim$\-Encoder\-Call\-Back@{$\sim$\-Encoder\-Call\-Back}!cv::gpu::VideoWriter_GPU::EncoderCallBack@{cv\-::gpu\-::\-Video\-Writer\-\_\-\-G\-P\-U\-::\-Encoder\-Call\-Back}}
+\subsubsection[{$\sim$\-Encoder\-Call\-Back}]{\setlength{\rightskip}{0pt plus 5cm}virtual cv\-::gpu\-::\-Video\-Writer\-\_\-\-G\-P\-U\-::\-Encoder\-Call\-Back\-::$\sim$\-Encoder\-Call\-Back (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcv_1_1gpu_1_1VideoWriter__GPU_1_1EncoderCallBack_a97bcc1078b3fd45fe71cacaf1b0fb84c}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcv_1_1gpu_1_1VideoWriter__GPU_1_1EncoderCallBack_a6ed27569690142b968dc2c0c594d5c26}{\index{cv\-::gpu\-::\-Video\-Writer\-\_\-\-G\-P\-U\-::\-Encoder\-Call\-Back@{cv\-::gpu\-::\-Video\-Writer\-\_\-\-G\-P\-U\-::\-Encoder\-Call\-Back}!acquire\-Bit\-Stream@{acquire\-Bit\-Stream}}
+\index{acquire\-Bit\-Stream@{acquire\-Bit\-Stream}!cv::gpu::VideoWriter_GPU::EncoderCallBack@{cv\-::gpu\-::\-Video\-Writer\-\_\-\-G\-P\-U\-::\-Encoder\-Call\-Back}}
+\subsubsection[{acquire\-Bit\-Stream}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf uchar}$\ast$ cv\-::gpu\-::\-Video\-Writer\-\_\-\-G\-P\-U\-::\-Encoder\-Call\-Back\-::acquire\-Bit\-Stream (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{buffer\-Size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classcv_1_1gpu_1_1VideoWriter__GPU_1_1EncoderCallBack_a6ed27569690142b968dc2c0c594d5c26}
+\hypertarget{classcv_1_1gpu_1_1VideoWriter__GPU_1_1EncoderCallBack_ae4e7ca1b509fb4277deecdb6b3d3ceef}{\index{cv\-::gpu\-::\-Video\-Writer\-\_\-\-G\-P\-U\-::\-Encoder\-Call\-Back@{cv\-::gpu\-::\-Video\-Writer\-\_\-\-G\-P\-U\-::\-Encoder\-Call\-Back}!on\-Begin\-Frame@{on\-Begin\-Frame}}
+\index{on\-Begin\-Frame@{on\-Begin\-Frame}!cv::gpu::VideoWriter_GPU::EncoderCallBack@{cv\-::gpu\-::\-Video\-Writer\-\_\-\-G\-P\-U\-::\-Encoder\-Call\-Back}}
+\subsubsection[{on\-Begin\-Frame}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cv\-::gpu\-::\-Video\-Writer\-\_\-\-G\-P\-U\-::\-Encoder\-Call\-Back\-::on\-Begin\-Frame (
+\begin{DoxyParamCaption}
+\item[{int}]{frame\-Number, }
+\item[{{\bf Pic\-Type}}]{pic\-Type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classcv_1_1gpu_1_1VideoWriter__GPU_1_1EncoderCallBack_ae4e7ca1b509fb4277deecdb6b3d3ceef}
+\hypertarget{classcv_1_1gpu_1_1VideoWriter__GPU_1_1EncoderCallBack_a74d338c940bb0dd5070fbc622a6392b3}{\index{cv\-::gpu\-::\-Video\-Writer\-\_\-\-G\-P\-U\-::\-Encoder\-Call\-Back@{cv\-::gpu\-::\-Video\-Writer\-\_\-\-G\-P\-U\-::\-Encoder\-Call\-Back}!on\-End\-Frame@{on\-End\-Frame}}
+\index{on\-End\-Frame@{on\-End\-Frame}!cv::gpu::VideoWriter_GPU::EncoderCallBack@{cv\-::gpu\-::\-Video\-Writer\-\_\-\-G\-P\-U\-::\-Encoder\-Call\-Back}}
+\subsubsection[{on\-End\-Frame}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cv\-::gpu\-::\-Video\-Writer\-\_\-\-G\-P\-U\-::\-Encoder\-Call\-Back\-::on\-End\-Frame (
+\begin{DoxyParamCaption}
+\item[{int}]{frame\-Number, }
+\item[{{\bf Pic\-Type}}]{pic\-Type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classcv_1_1gpu_1_1VideoWriter__GPU_1_1EncoderCallBack_a74d338c940bb0dd5070fbc622a6392b3}
+\hypertarget{classcv_1_1gpu_1_1VideoWriter__GPU_1_1EncoderCallBack_a60b69466cc4228ec4396a9ac3c65c73e}{\index{cv\-::gpu\-::\-Video\-Writer\-\_\-\-G\-P\-U\-::\-Encoder\-Call\-Back@{cv\-::gpu\-::\-Video\-Writer\-\_\-\-G\-P\-U\-::\-Encoder\-Call\-Back}!release\-Bit\-Stream@{release\-Bit\-Stream}}
+\index{release\-Bit\-Stream@{release\-Bit\-Stream}!cv::gpu::VideoWriter_GPU::EncoderCallBack@{cv\-::gpu\-::\-Video\-Writer\-\_\-\-G\-P\-U\-::\-Encoder\-Call\-Back}}
+\subsubsection[{release\-Bit\-Stream}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cv\-::gpu\-::\-Video\-Writer\-\_\-\-G\-P\-U\-::\-Encoder\-Call\-Back\-::release\-Bit\-Stream (
+\begin{DoxyParamCaption}
+\item[{unsigned char $\ast$}]{data, }
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classcv_1_1gpu_1_1VideoWriter__GPU_1_1EncoderCallBack_a60b69466cc4228ec4396a9ac3c65c73e}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/gpu/\hyperlink{gpu_2gpu_8hpp}{gpu.\-hpp}\end{DoxyCompactItemize}

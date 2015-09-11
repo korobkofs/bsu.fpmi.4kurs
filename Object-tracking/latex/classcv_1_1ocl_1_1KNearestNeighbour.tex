@@ -1,0 +1,94 @@
+\hypertarget{classcv_1_1ocl_1_1KNearestNeighbour}{\section{cv\-:\-:ocl\-:\-:K\-Nearest\-Neighbour Class Reference}
+\label{classcv_1_1ocl_1_1KNearestNeighbour}\index{cv\-::ocl\-::\-K\-Nearest\-Neighbour@{cv\-::ocl\-::\-K\-Nearest\-Neighbour}}
+}
+
+
+{\ttfamily \#include $<$ocl.\-hpp$>$}
+
+
+
+Inheritance diagram for cv\-:\-:ocl\-:\-:K\-Nearest\-Neighbour\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{classcv_1_1ocl_1_1KNearestNeighbour__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for cv\-:\-:ocl\-:\-:K\-Nearest\-Neighbour\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{classcv_1_1ocl_1_1KNearestNeighbour__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcv_1_1ocl_1_1KNearestNeighbour_aecf5ba0c37ebf92994c93c677b7b11fb}{K\-Nearest\-Neighbour} ()
+\item 
+\hyperlink{classcv_1_1ocl_1_1KNearestNeighbour_a45437f394b684ff3dad52d764f876882}{$\sim$\-K\-Nearest\-Neighbour} ()
+\item 
+bool \hyperlink{classcv_1_1ocl_1_1KNearestNeighbour_aeb476170f55d73c1643c33924bf07179}{train} (const Mat \&train\-Data, Mat \&\hyperlink{core__c_8h_a1342f74a0f7dd7c20ab7e79b2e6e5af5}{labels}, Mat \&sample\-Idx=Mat().set\-To(Scalar\-::all(0)), bool is\-Regression=false, int max\-\_\-k=32, bool update\-Base=false)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1KNearestNeighbour_a022faf1f863b7b2587f24e68e5157e0f}{clear} ()
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1ocl_1_1KNearestNeighbour_ac0dc886091ffcb106a7f89c5be34d8af}{find\-\_\-nearest} (const \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&\hyperlink{legacy_8hpp_a4fd80ec44eadba9c1fc910f5132046b6}{samples}, int \hyperlink{legacy_8hpp_a7be9b6436e5ea72ff5d5a66779b4bd38}{k}, \hyperlink{classcv_1_1ocl_1_1oclMat}{ocl\-Mat} \&lables)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$\-K Nearest Neighbour$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$! 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcv_1_1ocl_1_1KNearestNeighbour_aecf5ba0c37ebf92994c93c677b7b11fb}{\index{cv\-::ocl\-::\-K\-Nearest\-Neighbour@{cv\-::ocl\-::\-K\-Nearest\-Neighbour}!K\-Nearest\-Neighbour@{K\-Nearest\-Neighbour}}
+\index{K\-Nearest\-Neighbour@{K\-Nearest\-Neighbour}!cv::ocl::KNearestNeighbour@{cv\-::ocl\-::\-K\-Nearest\-Neighbour}}
+\subsubsection[{K\-Nearest\-Neighbour}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::ocl\-::\-K\-Nearest\-Neighbour\-::\-K\-Nearest\-Neighbour (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1KNearestNeighbour_aecf5ba0c37ebf92994c93c677b7b11fb}
+\hypertarget{classcv_1_1ocl_1_1KNearestNeighbour_a45437f394b684ff3dad52d764f876882}{\index{cv\-::ocl\-::\-K\-Nearest\-Neighbour@{cv\-::ocl\-::\-K\-Nearest\-Neighbour}!$\sim$\-K\-Nearest\-Neighbour@{$\sim$\-K\-Nearest\-Neighbour}}
+\index{$\sim$\-K\-Nearest\-Neighbour@{$\sim$\-K\-Nearest\-Neighbour}!cv::ocl::KNearestNeighbour@{cv\-::ocl\-::\-K\-Nearest\-Neighbour}}
+\subsubsection[{$\sim$\-K\-Nearest\-Neighbour}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::ocl\-::\-K\-Nearest\-Neighbour\-::$\sim$\-K\-Nearest\-Neighbour (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1KNearestNeighbour_a45437f394b684ff3dad52d764f876882}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcv_1_1ocl_1_1KNearestNeighbour_a022faf1f863b7b2587f24e68e5157e0f}{\index{cv\-::ocl\-::\-K\-Nearest\-Neighbour@{cv\-::ocl\-::\-K\-Nearest\-Neighbour}!clear@{clear}}
+\index{clear@{clear}!cv::ocl::KNearestNeighbour@{cv\-::ocl\-::\-K\-Nearest\-Neighbour}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::\-K\-Nearest\-Neighbour\-::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1KNearestNeighbour_a022faf1f863b7b2587f24e68e5157e0f}
+\hypertarget{classcv_1_1ocl_1_1KNearestNeighbour_ac0dc886091ffcb106a7f89c5be34d8af}{\index{cv\-::ocl\-::\-K\-Nearest\-Neighbour@{cv\-::ocl\-::\-K\-Nearest\-Neighbour}!find\-\_\-nearest@{find\-\_\-nearest}}
+\index{find\-\_\-nearest@{find\-\_\-nearest}!cv::ocl::KNearestNeighbour@{cv\-::ocl\-::\-K\-Nearest\-Neighbour}}
+\subsubsection[{find\-\_\-nearest}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::ocl\-::\-K\-Nearest\-Neighbour\-::find\-\_\-nearest (
+\begin{DoxyParamCaption}
+\item[{const {\bf ocl\-Mat} \&}]{samples, }
+\item[{int}]{k, }
+\item[{{\bf ocl\-Mat} \&}]{lables}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1KNearestNeighbour_ac0dc886091ffcb106a7f89c5be34d8af}
+\hypertarget{classcv_1_1ocl_1_1KNearestNeighbour_aeb476170f55d73c1643c33924bf07179}{\index{cv\-::ocl\-::\-K\-Nearest\-Neighbour@{cv\-::ocl\-::\-K\-Nearest\-Neighbour}!train@{train}}
+\index{train@{train}!cv::ocl::KNearestNeighbour@{cv\-::ocl\-::\-K\-Nearest\-Neighbour}}
+\subsubsection[{train}]{\setlength{\rightskip}{0pt plus 5cm}bool cv\-::ocl\-::\-K\-Nearest\-Neighbour\-::train (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{train\-Data, }
+\item[{Mat \&}]{labels, }
+\item[{Mat \&}]{sample\-Idx = {\ttfamily Mat().setTo(Scalar\-:\-:all(0))}, }
+\item[{bool}]{is\-Regression = {\ttfamily false}, }
+\item[{int}]{max\-\_\-k = {\ttfamily 32}, }
+\item[{bool}]{update\-Base = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1ocl_1_1KNearestNeighbour_aeb476170f55d73c1643c33924bf07179}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/ocl/\hyperlink{ocl_2ocl_8hpp}{ocl.\-hpp}\end{DoxyCompactItemize}

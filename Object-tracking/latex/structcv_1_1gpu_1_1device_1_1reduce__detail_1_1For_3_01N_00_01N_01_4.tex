@@ -1,0 +1,65 @@
+\hypertarget{structcv_1_1gpu_1_1device_1_1reduce__detail_1_1For_3_01N_00_01N_01_4}{\section{cv\-:\-:gpu\-:\-:device\-:\-:reduce\-\_\-detail\-:\-:For$<$ N, N $>$ Struct Template Reference}
+\label{structcv_1_1gpu_1_1device_1_1reduce__detail_1_1For_3_01N_00_01N_01_4}\index{cv\-::gpu\-::device\-::reduce\-\_\-detail\-::\-For$<$ N, N $>$@{cv\-::gpu\-::device\-::reduce\-\_\-detail\-::\-For$<$ N, N $>$}}
+}
+
+
+{\ttfamily \#include $<$reduce.\-hpp$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Pointer\-Tuple , class Val\-Tuple $>$ }\\static \-\_\-\-\_\-device\-\_\-\-\_\- \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{structcv_1_1gpu_1_1device_1_1reduce__detail_1_1For_3_01N_00_01N_01_4_af26844a54909f74347ee65ee4c482e1b}{load\-To\-Smem} (const Pointer\-Tuple \&, const Val\-Tuple \&, unsigned int)
+\item 
+{\footnotesize template$<$class Pointer\-Tuple , class Val\-Tuple $>$ }\\static \-\_\-\-\_\-device\-\_\-\-\_\- \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{structcv_1_1gpu_1_1device_1_1reduce__detail_1_1For_3_01N_00_01N_01_4_ab761a022f5281a6f49b9886d47bb461b}{load\-From\-Smem} (const Pointer\-Tuple \&, const Val\-Tuple \&, unsigned int)
+\item 
+{\footnotesize template$<$class Pointer\-Tuple , class Val\-Tuple , class Op\-Tuple $>$ }\\static \-\_\-\-\_\-device\-\_\-\-\_\- \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{structcv_1_1gpu_1_1device_1_1reduce__detail_1_1For_3_01N_00_01N_01_4_a697efa9a43a1a49b1bc74f34e3acfb5c}{merge} (const Pointer\-Tuple \&, const Val\-Tuple \&, unsigned int, unsigned int, const Op\-Tuple \&)
+\item 
+{\footnotesize template$<$class Val\-Tuple , class Op\-Tuple $>$ }\\static \-\_\-\-\_\-device\-\_\-\-\_\- \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{structcv_1_1gpu_1_1device_1_1reduce__detail_1_1For_3_01N_00_01N_01_4_a0c2958238c42707afb3a6f6fc134cf0c}{merge\-Shfl} (const Val\-Tuple \&, unsigned int, unsigned int, const Op\-Tuple \&)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structcv_1_1gpu_1_1device_1_1reduce__detail_1_1For_3_01N_00_01N_01_4_ab761a022f5281a6f49b9886d47bb461b}{\index{cv\-::gpu\-::device\-::reduce\-\_\-detail\-::\-For$<$ N, N $>$@{cv\-::gpu\-::device\-::reduce\-\_\-detail\-::\-For$<$ N, N $>$}!load\-From\-Smem@{load\-From\-Smem}}
+\index{load\-From\-Smem@{load\-From\-Smem}!cv::gpu::device::reduce_detail::For< N, N >@{cv\-::gpu\-::device\-::reduce\-\_\-detail\-::\-For$<$ N, N $>$}}
+\subsubsection[{load\-From\-Smem}]{\setlength{\rightskip}{0pt plus 5cm}template$<$unsigned int N$>$ template$<$class Pointer\-Tuple , class Val\-Tuple $>$ static \-\_\-\-\_\-device\-\_\-\-\_\- {\bf void} {\bf cv\-::gpu\-::device\-::reduce\-\_\-detail\-::\-For}$<$ N, N $>$\-::load\-From\-Smem (
+\begin{DoxyParamCaption}
+\item[{const Pointer\-Tuple \&}]{, }
+\item[{const Val\-Tuple \&}]{, }
+\item[{unsigned}]{int}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{structcv_1_1gpu_1_1device_1_1reduce__detail_1_1For_3_01N_00_01N_01_4_ab761a022f5281a6f49b9886d47bb461b}
+\hypertarget{structcv_1_1gpu_1_1device_1_1reduce__detail_1_1For_3_01N_00_01N_01_4_af26844a54909f74347ee65ee4c482e1b}{\index{cv\-::gpu\-::device\-::reduce\-\_\-detail\-::\-For$<$ N, N $>$@{cv\-::gpu\-::device\-::reduce\-\_\-detail\-::\-For$<$ N, N $>$}!load\-To\-Smem@{load\-To\-Smem}}
+\index{load\-To\-Smem@{load\-To\-Smem}!cv::gpu::device::reduce_detail::For< N, N >@{cv\-::gpu\-::device\-::reduce\-\_\-detail\-::\-For$<$ N, N $>$}}
+\subsubsection[{load\-To\-Smem}]{\setlength{\rightskip}{0pt plus 5cm}template$<$unsigned int N$>$ template$<$class Pointer\-Tuple , class Val\-Tuple $>$ static \-\_\-\-\_\-device\-\_\-\-\_\- {\bf void} {\bf cv\-::gpu\-::device\-::reduce\-\_\-detail\-::\-For}$<$ N, N $>$\-::load\-To\-Smem (
+\begin{DoxyParamCaption}
+\item[{const Pointer\-Tuple \&}]{, }
+\item[{const Val\-Tuple \&}]{, }
+\item[{unsigned}]{int}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{structcv_1_1gpu_1_1device_1_1reduce__detail_1_1For_3_01N_00_01N_01_4_af26844a54909f74347ee65ee4c482e1b}
+\hypertarget{structcv_1_1gpu_1_1device_1_1reduce__detail_1_1For_3_01N_00_01N_01_4_a697efa9a43a1a49b1bc74f34e3acfb5c}{\index{cv\-::gpu\-::device\-::reduce\-\_\-detail\-::\-For$<$ N, N $>$@{cv\-::gpu\-::device\-::reduce\-\_\-detail\-::\-For$<$ N, N $>$}!merge@{merge}}
+\index{merge@{merge}!cv::gpu::device::reduce_detail::For< N, N >@{cv\-::gpu\-::device\-::reduce\-\_\-detail\-::\-For$<$ N, N $>$}}
+\subsubsection[{merge}]{\setlength{\rightskip}{0pt plus 5cm}template$<$unsigned int N$>$ template$<$class Pointer\-Tuple , class Val\-Tuple , class Op\-Tuple $>$ static \-\_\-\-\_\-device\-\_\-\-\_\- {\bf void} {\bf cv\-::gpu\-::device\-::reduce\-\_\-detail\-::\-For}$<$ N, N $>$\-::merge (
+\begin{DoxyParamCaption}
+\item[{const Pointer\-Tuple \&}]{, }
+\item[{const Val\-Tuple \&}]{, }
+\item[{unsigned}]{int, }
+\item[{unsigned}]{int, }
+\item[{const Op\-Tuple \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{structcv_1_1gpu_1_1device_1_1reduce__detail_1_1For_3_01N_00_01N_01_4_a697efa9a43a1a49b1bc74f34e3acfb5c}
+\hypertarget{structcv_1_1gpu_1_1device_1_1reduce__detail_1_1For_3_01N_00_01N_01_4_a0c2958238c42707afb3a6f6fc134cf0c}{\index{cv\-::gpu\-::device\-::reduce\-\_\-detail\-::\-For$<$ N, N $>$@{cv\-::gpu\-::device\-::reduce\-\_\-detail\-::\-For$<$ N, N $>$}!merge\-Shfl@{merge\-Shfl}}
+\index{merge\-Shfl@{merge\-Shfl}!cv::gpu::device::reduce_detail::For< N, N >@{cv\-::gpu\-::device\-::reduce\-\_\-detail\-::\-For$<$ N, N $>$}}
+\subsubsection[{merge\-Shfl}]{\setlength{\rightskip}{0pt plus 5cm}template$<$unsigned int N$>$ template$<$class Val\-Tuple , class Op\-Tuple $>$ static \-\_\-\-\_\-device\-\_\-\-\_\- {\bf void} {\bf cv\-::gpu\-::device\-::reduce\-\_\-detail\-::\-For}$<$ N, N $>$\-::merge\-Shfl (
+\begin{DoxyParamCaption}
+\item[{const Val\-Tuple \&}]{, }
+\item[{unsigned}]{int, }
+\item[{unsigned}]{int, }
+\item[{const Op\-Tuple \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{structcv_1_1gpu_1_1device_1_1reduce__detail_1_1For_3_01N_00_01N_01_4_a0c2958238c42707afb3a6f6fc134cf0c}
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/gpu/device/detail/\hyperlink{detail_2reduce_8hpp}{reduce.\-hpp}\end{DoxyCompactItemize}

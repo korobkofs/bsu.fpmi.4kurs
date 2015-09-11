@@ -1,0 +1,8 @@
+<map id="cvRound" name="cvRound">
+<area shape="rect" id="node2" href="$core__c_8h.html#ad870859764211611926d13a0cead740f" title="cvEllipseBox" alt="" coords="308,132,407,159"/>
+<area shape="rect" id="node3" href="$core__c_8h.html#a9350ad52c844519dc8042d86b1848883" title="cvReadInt" alt="" coords="144,5,227,32"/>
+<area shape="rect" id="node5" href="$core_2types__c_8h.html#ac256388af71f1c918aeb1a787c1d0371" title="cvFloor" alt="" coords="153,107,218,133"/>
+<area shape="rect" id="node6" href="$core_2types__c_8h.html#a621995052d1748ccac9481ec7ca6136a" title="cvCeil" alt="" coords="156,157,215,184"/>
+<area shape="rect" id="node7" href="$core_2types__c_8h.html#a94ef665f47823a9d6197282cf89f8d73" title="cvPointFrom32f" alt="" coords="128,208,243,235"/>
+<area shape="rect" id="node4" href="$core__c_8h.html#a6d39a237d6989394b51526e83f75119f" title="cvReadIntByName" alt="" coords="291,5,424,32"/>
+</map>

@@ -1,0 +1,79 @@
+\hypertarget{FBTrack_8h}{\section{src/libopentld/mftracker/\-F\-B\-Track.h File Reference}
+\label{FBTrack_8h}\index{src/libopentld/mftracker/\-F\-B\-Track.\-h@{src/libopentld/mftracker/\-F\-B\-Track.\-h}}
+}
+{\ttfamily \#include $<$opencv/cv.\-h$>$}\\*
+Include dependency graph for F\-B\-Track.\-h\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{FBTrack_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{FBTrack_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{FBTrack_8h_a2c818794e6fe6aa3f6efdc9c46ffd164}{fbtrack} (Ipl\-Image $\ast$img\-I, Ipl\-Image $\ast$img\-J, float $\ast$bb, float $\ast$bbnew, float $\ast$scaleshift)
+\begin{DoxyCompactList}\small\item\em Calculate the bounding box of an Object in a following Image. Imgs aren't changed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{FBTrack_8h_a2c818794e6fe6aa3f6efdc9c46ffd164}{\index{F\-B\-Track.\-h@{F\-B\-Track.\-h}!fbtrack@{fbtrack}}
+\index{fbtrack@{fbtrack}!FBTrack.h@{F\-B\-Track.\-h}}
+\subsubsection[{fbtrack}]{\setlength{\rightskip}{0pt plus 5cm}int fbtrack (
+\begin{DoxyParamCaption}
+\item[{Ipl\-Image $\ast$}]{img\-I, }
+\item[{Ipl\-Image $\ast$}]{img\-J, }
+\item[{float $\ast$}]{bb, }
+\item[{float $\ast$}]{bbnew, }
+\item[{float $\ast$}]{scaleshift}
+\end{DoxyParamCaption}
+)}}\label{FBTrack_8h_a2c818794e6fe6aa3f6efdc9c46ffd164}
+
+
+Calculate the bounding box of an Object in a following Image. Imgs aren't changed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em img\-I} & Image contain Object with known Bounding\-Box \\
+\hline
+{\em img\-J} & Following Image. \\
+\hline
+{\em bb} & Bounding box of object to track in img\-I. Format x1,y1,x2,y2 \\
+\hline
+{\em bbnew} & Output, contains predicted Bounding\-Box. \\
+\hline
+{\em scaleshift} & returns relative scale change of bb \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0, if shift of an Object far (med\-Fb $>$ 10); 1, otherwise 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{FBTrack_8h_a2c818794e6fe6aa3f6efdc9c46ffd164_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{FBTrack_8h_a2c818794e6fe6aa3f6efdc9c46ffd164_icgraph}
+\end{center}
+\end{figure}
+
+

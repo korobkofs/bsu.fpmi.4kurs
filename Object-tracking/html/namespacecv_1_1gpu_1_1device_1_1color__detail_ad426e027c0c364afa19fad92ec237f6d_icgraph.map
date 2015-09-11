@@ -1,0 +1,6 @@
+<map id="cv::gpu::device::color_detail::splineInterpolate" name="cv::gpu::device::color_detail::splineInterpolate">
+<area shape="rect" id="node2" href="$namespacecv_1_1gpu_1_1device_1_1color__detail.html#a47e6db9ce003f19e852caabc7c651798" title="cv::gpu::device::color\l_detail::RGB2LabConvert_f" alt="" coords="217,5,399,46"/>
+<area shape="rect" id="node3" href="$namespacecv_1_1gpu_1_1device_1_1color__detail.html#a1021bc1a42a68722a129367c6a333d7b" title="cv::gpu::device::color\l_detail::Lab2RGBConvert_f" alt="" coords="217,70,399,111"/>
+<area shape="rect" id="node4" href="$namespacecv_1_1gpu_1_1device_1_1color__detail.html#aace7150463a11bee146c2cf36fdebd8b" title="cv::gpu::device::color\l_detail::RGB2LuvConvert_f" alt="" coords="217,135,399,177"/>
+<area shape="rect" id="node5" href="$namespacecv_1_1gpu_1_1device_1_1color__detail.html#aab1c4297ad9db320e720b1882b6f7708" title="cv::gpu::device::color\l_detail::Luv2RGBConvert_f" alt="" coords="217,201,399,242"/>
+</map>

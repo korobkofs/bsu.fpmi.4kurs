@@ -1,0 +1,12 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classcvflann_1_1NNIndex.html" title="cvflann::NNIndex\&lt; Distance \&gt;" alt="" coords="5,260,205,287"/>
+<area shape="rect" id="node2" href="$classcvflann_1_1AutotunedIndex.html" title="cvflann::AutotunedIndex\l\&lt; Distance \&gt;" alt="" coords="272,5,435,46"/>
+<area shape="rect" id="node3" href="$classcvflann_1_1CompositeIndex.html" title="cvflann::CompositeIndex\l\&lt; Distance \&gt;" alt="" coords="270,70,437,111"/>
+<area shape="rect" id="node4" href="$classcvflann_1_1HierarchicalClusteringIndex.html" title="cvflann::HierarchicalClustering\lIndex\&lt; Distance \&gt;" alt="" coords="253,135,453,177"/>
+<area shape="rect" id="node5" href="$classcvflann_1_1Index.html" title="cvflann::Index\&lt; Distance \&gt;" alt="" coords="263,201,443,228"/>
+<area shape="rect" id="node6" href="$classcvflann_1_1KDTreeIndex.html" title="cvflann::KDTreeIndex\l\&lt; Distance \&gt;" alt="" coords="279,253,428,294"/>
+<area shape="rect" id="node7" href="$classcvflann_1_1KDTreeSingleIndex.html" title="cvflann::KDTreeSingleIndex\l\&lt; Distance \&gt;" alt="" coords="261,318,446,359"/>
+<area shape="rect" id="node8" href="$classcvflann_1_1KMeansIndex.html" title="cvflann::KMeansIndex\l\&lt; Distance \&gt;" alt="" coords="277,383,429,425"/>
+<area shape="rect" id="node9" href="$classcvflann_1_1LinearIndex.html" title="cvflann::LinearIndex\l\&lt; Distance \&gt;" alt="" coords="284,449,423,490"/>
+<area shape="rect" id="node10" href="$classcvflann_1_1LshIndex.html" title="cvflann::LshIndex\&lt;\l Distance \&gt;" alt="" coords="287,514,420,555"/>
+</map>

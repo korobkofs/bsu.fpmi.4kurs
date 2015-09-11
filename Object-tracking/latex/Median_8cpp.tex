@@ -1,0 +1,116 @@
+\hypertarget{Median_8cpp}{\section{src/libopentld/mftracker/\-Median.cpp File Reference}
+\label{Median_8cpp}\index{src/libopentld/mftracker/\-Median.\-cpp@{src/libopentld/mftracker/\-Median.\-cpp}}
+}
+{\ttfamily \#include \char`\"{}Median.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$cstdlib$>$}\\*
+{\ttfamily \#include $<$cstring$>$}\\*
+Include dependency graph for Median.\-cpp\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{Median_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{Median_8cpp_a85a69dd703a28a51142294036a464907}{E\-L\-E\-M\-\_\-\-S\-W\-A\-P}(a, b)~\{ register float t=(a);(a)=(b);(b)=t; \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{Median_8cpp_a90a27fb293134af27d1615ff29dd1417}{get\-Median\-Unmanaged} (float arr\mbox{[}$\,$\mbox{]}, int n)
+\begin{DoxyCompactList}\small\item\em Calculates the median of the array. Changes array! This Quickselect routine is based on the algorithm described in \char`\"{}\-Numerical recipes in C\char`\"{}, Second Edition, Cambridge University Press, 1992, Section 8.\-5, I\-S\-B\-N 0-\/521-\/43108-\/5 This code by Nicolas Devillard -\/ 1998. Public domain. \end{DoxyCompactList}\item 
+float \hyperlink{Median_8cpp_a6c78c19fafa7ef19523fb62d09086f30}{get\-Median} (float arr\mbox{[}$\,$\mbox{]}, int n)
+\begin{DoxyCompactList}\small\item\em Calculates the median of the array. Don't change array(makes copy). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{Median_8cpp_a85a69dd703a28a51142294036a464907}{\index{Median.\-cpp@{Median.\-cpp}!E\-L\-E\-M\-\_\-\-S\-W\-A\-P@{E\-L\-E\-M\-\_\-\-S\-W\-A\-P}}
+\index{E\-L\-E\-M\-\_\-\-S\-W\-A\-P@{E\-L\-E\-M\-\_\-\-S\-W\-A\-P}!Median.cpp@{Median.\-cpp}}
+\subsubsection[{E\-L\-E\-M\-\_\-\-S\-W\-A\-P}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\-L\-E\-M\-\_\-\-S\-W\-A\-P(
+\begin{DoxyParamCaption}
+\item[{}]{a, }
+\item[{}]{b}
+\end{DoxyParamCaption}
+)~\{ register float t=(a);(a)=(b);(b)=t; \}}}\label{Median_8cpp_a85a69dd703a28a51142294036a464907}
+
+
+\subsection{Function Documentation}
+\hypertarget{Median_8cpp_a6c78c19fafa7ef19523fb62d09086f30}{\index{Median.\-cpp@{Median.\-cpp}!get\-Median@{get\-Median}}
+\index{get\-Median@{get\-Median}!Median.cpp@{Median.\-cpp}}
+\subsubsection[{get\-Median}]{\setlength{\rightskip}{0pt plus 5cm}float get\-Median (
+\begin{DoxyParamCaption}
+\item[{float}]{arr\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}}\label{Median_8cpp_a6c78c19fafa7ef19523fb62d09086f30}
+
+
+Calculates the median of the array. Don't change array(makes copy). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arr} & the array \\
+\hline
+{\em n} & the length of array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the median 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{Median_8cpp_a6c78c19fafa7ef19523fb62d09086f30_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Median_8cpp_a6c78c19fafa7ef19523fb62d09086f30_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{Median_8cpp_a90a27fb293134af27d1615ff29dd1417}{\index{Median.\-cpp@{Median.\-cpp}!get\-Median\-Unmanaged@{get\-Median\-Unmanaged}}
+\index{get\-Median\-Unmanaged@{get\-Median\-Unmanaged}!Median.cpp@{Median.\-cpp}}
+\subsubsection[{get\-Median\-Unmanaged}]{\setlength{\rightskip}{0pt plus 5cm}float get\-Median\-Unmanaged (
+\begin{DoxyParamCaption}
+\item[{float}]{arr\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}}\label{Median_8cpp_a90a27fb293134af27d1615ff29dd1417}
+
+
+Calculates the median of the array. Changes array! This Quickselect routine is based on the algorithm described in \char`\"{}\-Numerical recipes in C\char`\"{}, Second Edition, Cambridge University Press, 1992, Section 8.\-5, I\-S\-B\-N 0-\/521-\/43108-\/5 This code by Nicolas Devillard -\/ 1998. Public domain. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arr} & the array \\
+\hline
+{\em n} & the length of array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the median 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Median_8cpp_a90a27fb293134af27d1615ff29dd1417_icgraph}
+\end{center}
+\end{figure}
+
+

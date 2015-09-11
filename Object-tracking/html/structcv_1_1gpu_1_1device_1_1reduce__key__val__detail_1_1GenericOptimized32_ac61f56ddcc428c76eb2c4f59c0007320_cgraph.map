@@ -1,0 +1,12 @@
+<map id="cv::gpu::device::reduce_key_val_detail::GenericOptimized32::reduce" name="cv::gpu::device::reduce_key_val_detail::GenericOptimized32::reduce">
+<area shape="rect" id="node2" href="$structcv_1_1gpu_1_1device_1_1Warp.html#aa48f497ab15265f89f508468d9c12074" title="Returns the warp lane ID of the calling thread. " alt="" coords="325,5,475,46"/>
+<area shape="rect" id="node3" href="$structcv_1_1gpu_1_1device_1_1reduce__key__val__detail_1_1Unroll.html#a4b58709ed74d7cd37b467f397197a47e" title="cv::gpu::device::reduce\l_key_val_detail::Unroll\l::loopShfl" alt="" coords="321,69,479,125"/>
+<area shape="rect" id="node7" href="$namespacecv_1_1gpu_1_1device_1_1reduce__key__val__detail.html#a93640799801039059c028a536a7262c2" title="cv::gpu::device::reduce\l_key_val_detail::loadToSmem" alt="" coords="301,149,499,190"/>
+<area shape="rect" id="node8" href="$structcv_1_1gpu_1_1device_1_1reduce__key__val__detail_1_1Unroll.html#ae22828b2fbe22a37e5b1c3e24449a691" title="cv::gpu::device::reduce\l_key_val_detail::Unroll::loop" alt="" coords="307,214,493,255"/>
+<area shape="rect" id="node11" href="$namespacecv_1_1gpu_1_1device_1_1reduce__key__val__detail.html#a27958ea2d44bafd5005beccd84c376ab" title="cv::gpu::device::reduce\l_key_val_detail::loadFromSmem" alt="" coords="294,279,506,321"/>
+<area shape="rect" id="node4" href="$namespacecv_1_1gpu_1_1device_1_1reduce__key__val__detail.html#aaef6abf3d0a904c43b8e28c4a8ca3c70" title="cv::gpu::device::reduce\l_key_val_detail::mergeShfl" alt="" coords="555,77,733,118"/>
+<area shape="rect" id="node5" href="$namespacecv_1_1gpu_1_1device.html#a9036877715cb1db89bf387b835582333" title="cv::gpu::device::shfl_down" alt="" coords="1027,84,1205,111"/>
+<area shape="rect" id="node6" href="$namespacecv_1_1gpu_1_1device_1_1reduce__key__val__detail.html#aed43794ec9cbb892e897b2ea7f650107" title="cv::gpu::device::reduce\l_key_val_detail::copyValsShfl" alt="" coords="781,106,979,147"/>
+<area shape="rect" id="node9" href="$namespacecv_1_1gpu_1_1device_1_1reduce__key__val__detail.html#a1348c5a366b58a8f0331c2379f05cbb0" title="cv::gpu::device::reduce\l_key_val_detail::merge" alt="" coords="565,214,723,255"/>
+<area shape="rect" id="node10" href="$namespacecv_1_1gpu_1_1device_1_1reduce__key__val__detail.html#a473a4c406d4a535ae7c751b382f3c844" title="cv::gpu::device::reduce\l_key_val_detail::copyVals" alt="" coords="793,214,967,255"/>
+</map>

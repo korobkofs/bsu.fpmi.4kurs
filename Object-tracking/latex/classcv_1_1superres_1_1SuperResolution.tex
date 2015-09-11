@@ -1,0 +1,114 @@
+\hypertarget{classcv_1_1superres_1_1SuperResolution}{\section{cv\-:\-:superres\-:\-:Super\-Resolution Class Reference}
+\label{classcv_1_1superres_1_1SuperResolution}\index{cv\-::superres\-::\-Super\-Resolution@{cv\-::superres\-::\-Super\-Resolution}}
+}
+
+
+{\ttfamily \#include $<$superres.\-hpp$>$}
+
+
+
+Inheritance diagram for cv\-:\-:superres\-:\-:Super\-Resolution\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{classcv_1_1superres_1_1SuperResolution__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for cv\-:\-:superres\-:\-:Super\-Resolution\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{classcv_1_1superres_1_1SuperResolution__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1superres_1_1SuperResolution_ac925acc676cb1141c801fa99eed66373}{set\-Input} (const Ptr$<$ \hyperlink{classcv_1_1superres_1_1FrameSource}{Frame\-Source} $>$ \&frame\-Source)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1superres_1_1SuperResolution_adf3e4f77d454b28001c1844f93a97818}{next\-Frame} (Output\-Array \hyperlink{core__c_8h_a0430deaafd9043e478f306e33961299d}{frame})
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1superres_1_1SuperResolution_a3b3b05ea8f9520e98c4a7f5c7a649392}{reset} ()
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1superres_1_1SuperResolution_ac37de1a8bab83e86b3a540612dc2db1d}{collect\-Garbage} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcv_1_1superres_1_1SuperResolution_a6b6da407515d5def4552cf513ae9e98a}{Super\-Resolution} ()
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1superres_1_1SuperResolution_ace2f85404fb03491e9a36bc6ba595e97}{init\-Impl} (Ptr$<$ \hyperlink{classcv_1_1superres_1_1FrameSource}{Frame\-Source} $>$ \&frame\-Source)=0
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1superres_1_1SuperResolution_ab891ad01fa46db6bdb8f6b3277390b75}{process\-Impl} (Ptr$<$ \hyperlink{classcv_1_1superres_1_1FrameSource}{Frame\-Source} $>$ \&frame\-Source, Output\-Array \hyperlink{legacy_8hpp_ad2a91d797896d7d86e0c03dc705a4abc}{output})=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcv_1_1superres_1_1SuperResolution_a6b6da407515d5def4552cf513ae9e98a}{\index{cv\-::superres\-::\-Super\-Resolution@{cv\-::superres\-::\-Super\-Resolution}!Super\-Resolution@{Super\-Resolution}}
+\index{Super\-Resolution@{Super\-Resolution}!cv::superres::SuperResolution@{cv\-::superres\-::\-Super\-Resolution}}
+\subsubsection[{Super\-Resolution}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::superres\-::\-Super\-Resolution\-::\-Super\-Resolution (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1superres_1_1SuperResolution_a6b6da407515d5def4552cf513ae9e98a}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcv_1_1superres_1_1SuperResolution_ac37de1a8bab83e86b3a540612dc2db1d}{\index{cv\-::superres\-::\-Super\-Resolution@{cv\-::superres\-::\-Super\-Resolution}!collect\-Garbage@{collect\-Garbage}}
+\index{collect\-Garbage@{collect\-Garbage}!cv::superres::SuperResolution@{cv\-::superres\-::\-Super\-Resolution}}
+\subsubsection[{collect\-Garbage}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cv\-::superres\-::\-Super\-Resolution\-::collect\-Garbage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcv_1_1superres_1_1SuperResolution_ac37de1a8bab83e86b3a540612dc2db1d}
+\hypertarget{classcv_1_1superres_1_1SuperResolution_ace2f85404fb03491e9a36bc6ba595e97}{\index{cv\-::superres\-::\-Super\-Resolution@{cv\-::superres\-::\-Super\-Resolution}!init\-Impl@{init\-Impl}}
+\index{init\-Impl@{init\-Impl}!cv::superres::SuperResolution@{cv\-::superres\-::\-Super\-Resolution}}
+\subsubsection[{init\-Impl}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cv\-::superres\-::\-Super\-Resolution\-::init\-Impl (
+\begin{DoxyParamCaption}
+\item[{Ptr$<$ {\bf Frame\-Source} $>$ \&}]{frame\-Source}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{classcv_1_1superres_1_1SuperResolution_ace2f85404fb03491e9a36bc6ba595e97}
+\hypertarget{classcv_1_1superres_1_1SuperResolution_adf3e4f77d454b28001c1844f93a97818}{\index{cv\-::superres\-::\-Super\-Resolution@{cv\-::superres\-::\-Super\-Resolution}!next\-Frame@{next\-Frame}}
+\index{next\-Frame@{next\-Frame}!cv::superres::SuperResolution@{cv\-::superres\-::\-Super\-Resolution}}
+\subsubsection[{next\-Frame}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::superres\-::\-Super\-Resolution\-::next\-Frame (
+\begin{DoxyParamCaption}
+\item[{Output\-Array}]{frame}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcv_1_1superres_1_1SuperResolution_adf3e4f77d454b28001c1844f93a97818}
+
+
+Implements \hyperlink{classcv_1_1superres_1_1FrameSource_a36e3abad95511fdfaf261f6bb974947c}{cv\-::superres\-::\-Frame\-Source}.
+
+\hypertarget{classcv_1_1superres_1_1SuperResolution_ab891ad01fa46db6bdb8f6b3277390b75}{\index{cv\-::superres\-::\-Super\-Resolution@{cv\-::superres\-::\-Super\-Resolution}!process\-Impl@{process\-Impl}}
+\index{process\-Impl@{process\-Impl}!cv::superres::SuperResolution@{cv\-::superres\-::\-Super\-Resolution}}
+\subsubsection[{process\-Impl}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cv\-::superres\-::\-Super\-Resolution\-::process\-Impl (
+\begin{DoxyParamCaption}
+\item[{Ptr$<$ {\bf Frame\-Source} $>$ \&}]{frame\-Source, }
+\item[{Output\-Array}]{output}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{classcv_1_1superres_1_1SuperResolution_ab891ad01fa46db6bdb8f6b3277390b75}
+\hypertarget{classcv_1_1superres_1_1SuperResolution_a3b3b05ea8f9520e98c4a7f5c7a649392}{\index{cv\-::superres\-::\-Super\-Resolution@{cv\-::superres\-::\-Super\-Resolution}!reset@{reset}}
+\index{reset@{reset}!cv::superres::SuperResolution@{cv\-::superres\-::\-Super\-Resolution}}
+\subsubsection[{reset}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::superres\-::\-Super\-Resolution\-::reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcv_1_1superres_1_1SuperResolution_a3b3b05ea8f9520e98c4a7f5c7a649392}
+
+
+Implements \hyperlink{classcv_1_1superres_1_1FrameSource_a87870160d68199b12b89e827f1af6fc6}{cv\-::superres\-::\-Frame\-Source}.
+
+\hypertarget{classcv_1_1superres_1_1SuperResolution_ac925acc676cb1141c801fa99eed66373}{\index{cv\-::superres\-::\-Super\-Resolution@{cv\-::superres\-::\-Super\-Resolution}!set\-Input@{set\-Input}}
+\index{set\-Input@{set\-Input}!cv::superres::SuperResolution@{cv\-::superres\-::\-Super\-Resolution}}
+\subsubsection[{set\-Input}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::superres\-::\-Super\-Resolution\-::set\-Input (
+\begin{DoxyParamCaption}
+\item[{const Ptr$<$ {\bf Frame\-Source} $>$ \&}]{frame\-Source}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1superres_1_1SuperResolution_ac925acc676cb1141c801fa99eed66373}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/superres/\hyperlink{superres_8hpp}{superres.\-hpp}\end{DoxyCompactItemize}

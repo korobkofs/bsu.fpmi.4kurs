@@ -1,0 +1,8 @@
+<map id="cv::gpu::device::color_detail::ColorChannel::max" name="cv::gpu::device::color_detail::ColorChannel::max">
+<area shape="rect" id="node2" href="$structcv_1_1gpu_1_1device_1_1color__detail_1_1ColorChannel.html#ad020f174d41d85e13cac35a75582b7ee" title="cv::gpu::device::color\l_detail::ColorChannel::half" alt="" coords="235,103,411,145"/>
+<area shape="rect" id="node7" href="$namespacecv_1_1gpu_1_1device_1_1color__detail.html#a6a2dae8f593965d0cae8c83e5b26a0c5" title="cv::gpu::device::color\l_detail::getAlpha" alt="" coords="249,169,396,210"/>
+<area shape="rect" id="node3" href="$namespacecv_1_1gpu_1_1device_1_1color__detail.html#af433ed4738c243b56146f0495b40596d" title="cv::gpu::device::color\l_detail::RGB2YUVConvert" alt="" coords="465,5,644,46"/>
+<area shape="rect" id="node4" href="$namespacecv_1_1gpu_1_1device_1_1color__detail.html#a2394dced2f560842991071f0bf1d6be0" title="cv::gpu::device::color\l_detail::YUV2RGBConvert" alt="" coords="465,70,644,111"/>
+<area shape="rect" id="node5" href="$namespacecv_1_1gpu_1_1device_1_1color__detail.html#ad7a48f57ab89ba955b86b672b967ee13" title="cv::gpu::device::color\l_detail::RGB2YCrCbConvert" alt="" coords="459,135,650,177"/>
+<area shape="rect" id="node6" href="$namespacecv_1_1gpu_1_1device_1_1color__detail.html#ab80a65f0957796a662eecdad97af8bee" title="cv::gpu::device::color\l_detail::YCrCb2RGBConvert" alt="" coords="459,201,650,242"/>
+</map>

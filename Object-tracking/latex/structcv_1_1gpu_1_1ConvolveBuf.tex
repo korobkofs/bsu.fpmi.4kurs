@@ -1,0 +1,111 @@
+\hypertarget{structcv_1_1gpu_1_1ConvolveBuf}{\section{cv\-:\-:gpu\-:\-:Convolve\-Buf Struct Reference}
+\label{structcv_1_1gpu_1_1ConvolveBuf}\index{cv\-::gpu\-::\-Convolve\-Buf@{cv\-::gpu\-::\-Convolve\-Buf}}
+}
+
+
+{\ttfamily \#include $<$gpu.\-hpp$>$}
+
+
+
+Collaboration diagram for cv\-:\-:gpu\-:\-:Convolve\-Buf\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{structcv_1_1gpu_1_1ConvolveBuf__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{structcv_1_1gpu_1_1ConvolveBuf_a02c57cff9953d432a0e7f54ed03198a7}{create} (Size \hyperlink{calib3d_8hpp_a3c5695da25794e723582c8b5ccff544c}{image\-\_\-size}, Size templ\-\_\-size)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Size \hyperlink{structcv_1_1gpu_1_1ConvolveBuf_add5e4e8a64c63eaa3053c38112ba80a8}{estimate\-Block\-Size} (Size \hyperlink{structcv_1_1gpu_1_1ConvolveBuf_a1fcc3ca5bfa580528118ce922b3692b7}{result\-\_\-size}, Size templ\-\_\-size)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Size \hyperlink{structcv_1_1gpu_1_1ConvolveBuf_a1fcc3ca5bfa580528118ce922b3692b7}{result\-\_\-size}
+\item 
+Size \hyperlink{structcv_1_1gpu_1_1ConvolveBuf_a6aef44d6f244fddaf0af4200872deacc}{block\-\_\-size}
+\item 
+Size \hyperlink{structcv_1_1gpu_1_1ConvolveBuf_ade057847a290ec2248bd3b2cfca3d917}{user\-\_\-block\-\_\-size}
+\item 
+Size \hyperlink{structcv_1_1gpu_1_1ConvolveBuf_a5593bfd0e5bd9eb4f72a3c97a77a2c63}{dft\-\_\-size}
+\item 
+int \hyperlink{structcv_1_1gpu_1_1ConvolveBuf_a300e36466a351f57ac879152dc38b7e0}{spect\-\_\-len}
+\item 
+Gpu\-Mat \hyperlink{structcv_1_1gpu_1_1ConvolveBuf_a08ae7b923567201abe7738707784961c}{image\-\_\-spect}
+\item 
+Gpu\-Mat \hyperlink{structcv_1_1gpu_1_1ConvolveBuf_a35ceeee1b84fbde044e518ea5237ad97}{templ\-\_\-spect}
+\item 
+Gpu\-Mat \hyperlink{structcv_1_1gpu_1_1ConvolveBuf_a0b81e80891c9833a4f41a62e0fff62c2}{result\-\_\-spect}
+\item 
+Gpu\-Mat \hyperlink{structcv_1_1gpu_1_1ConvolveBuf_a633f154c0c1bbab45bd85ec46a4ca853}{image\-\_\-block}
+\item 
+Gpu\-Mat \hyperlink{structcv_1_1gpu_1_1ConvolveBuf_ae6c09a39fbd299368b18a7f95de072d8}{templ\-\_\-block}
+\item 
+Gpu\-Mat \hyperlink{structcv_1_1gpu_1_1ConvolveBuf_aca6b0a1e8778b7b55303f5d98a2cc7e9}{result\-\_\-data}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structcv_1_1gpu_1_1ConvolveBuf_a02c57cff9953d432a0e7f54ed03198a7}{\index{cv\-::gpu\-::\-Convolve\-Buf@{cv\-::gpu\-::\-Convolve\-Buf}!create@{create}}
+\index{create@{create}!cv::gpu::ConvolveBuf@{cv\-::gpu\-::\-Convolve\-Buf}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-Convolve\-Buf\-::create (
+\begin{DoxyParamCaption}
+\item[{Size}]{image\-\_\-size, }
+\item[{Size}]{templ\-\_\-size}
+\end{DoxyParamCaption}
+)}}\label{structcv_1_1gpu_1_1ConvolveBuf_a02c57cff9953d432a0e7f54ed03198a7}
+\hypertarget{structcv_1_1gpu_1_1ConvolveBuf_add5e4e8a64c63eaa3053c38112ba80a8}{\index{cv\-::gpu\-::\-Convolve\-Buf@{cv\-::gpu\-::\-Convolve\-Buf}!estimate\-Block\-Size@{estimate\-Block\-Size}}
+\index{estimate\-Block\-Size@{estimate\-Block\-Size}!cv::gpu::ConvolveBuf@{cv\-::gpu\-::\-Convolve\-Buf}}
+\subsubsection[{estimate\-Block\-Size}]{\setlength{\rightskip}{0pt plus 5cm}static Size cv\-::gpu\-::\-Convolve\-Buf\-::estimate\-Block\-Size (
+\begin{DoxyParamCaption}
+\item[{Size}]{result\-\_\-size, }
+\item[{Size}]{templ\-\_\-size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{structcv_1_1gpu_1_1ConvolveBuf_add5e4e8a64c63eaa3053c38112ba80a8}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structcv_1_1gpu_1_1ConvolveBuf_a6aef44d6f244fddaf0af4200872deacc}{\index{cv\-::gpu\-::\-Convolve\-Buf@{cv\-::gpu\-::\-Convolve\-Buf}!block\-\_\-size@{block\-\_\-size}}
+\index{block\-\_\-size@{block\-\_\-size}!cv::gpu::ConvolveBuf@{cv\-::gpu\-::\-Convolve\-Buf}}
+\subsubsection[{block\-\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}Size cv\-::gpu\-::\-Convolve\-Buf\-::block\-\_\-size}}\label{structcv_1_1gpu_1_1ConvolveBuf_a6aef44d6f244fddaf0af4200872deacc}
+\hypertarget{structcv_1_1gpu_1_1ConvolveBuf_a5593bfd0e5bd9eb4f72a3c97a77a2c63}{\index{cv\-::gpu\-::\-Convolve\-Buf@{cv\-::gpu\-::\-Convolve\-Buf}!dft\-\_\-size@{dft\-\_\-size}}
+\index{dft\-\_\-size@{dft\-\_\-size}!cv::gpu::ConvolveBuf@{cv\-::gpu\-::\-Convolve\-Buf}}
+\subsubsection[{dft\-\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}Size cv\-::gpu\-::\-Convolve\-Buf\-::dft\-\_\-size}}\label{structcv_1_1gpu_1_1ConvolveBuf_a5593bfd0e5bd9eb4f72a3c97a77a2c63}
+\hypertarget{structcv_1_1gpu_1_1ConvolveBuf_a633f154c0c1bbab45bd85ec46a4ca853}{\index{cv\-::gpu\-::\-Convolve\-Buf@{cv\-::gpu\-::\-Convolve\-Buf}!image\-\_\-block@{image\-\_\-block}}
+\index{image\-\_\-block@{image\-\_\-block}!cv::gpu::ConvolveBuf@{cv\-::gpu\-::\-Convolve\-Buf}}
+\subsubsection[{image\-\_\-block}]{\setlength{\rightskip}{0pt plus 5cm}Gpu\-Mat cv\-::gpu\-::\-Convolve\-Buf\-::image\-\_\-block}}\label{structcv_1_1gpu_1_1ConvolveBuf_a633f154c0c1bbab45bd85ec46a4ca853}
+\hypertarget{structcv_1_1gpu_1_1ConvolveBuf_a08ae7b923567201abe7738707784961c}{\index{cv\-::gpu\-::\-Convolve\-Buf@{cv\-::gpu\-::\-Convolve\-Buf}!image\-\_\-spect@{image\-\_\-spect}}
+\index{image\-\_\-spect@{image\-\_\-spect}!cv::gpu::ConvolveBuf@{cv\-::gpu\-::\-Convolve\-Buf}}
+\subsubsection[{image\-\_\-spect}]{\setlength{\rightskip}{0pt plus 5cm}Gpu\-Mat cv\-::gpu\-::\-Convolve\-Buf\-::image\-\_\-spect}}\label{structcv_1_1gpu_1_1ConvolveBuf_a08ae7b923567201abe7738707784961c}
+\hypertarget{structcv_1_1gpu_1_1ConvolveBuf_aca6b0a1e8778b7b55303f5d98a2cc7e9}{\index{cv\-::gpu\-::\-Convolve\-Buf@{cv\-::gpu\-::\-Convolve\-Buf}!result\-\_\-data@{result\-\_\-data}}
+\index{result\-\_\-data@{result\-\_\-data}!cv::gpu::ConvolveBuf@{cv\-::gpu\-::\-Convolve\-Buf}}
+\subsubsection[{result\-\_\-data}]{\setlength{\rightskip}{0pt plus 5cm}Gpu\-Mat cv\-::gpu\-::\-Convolve\-Buf\-::result\-\_\-data}}\label{structcv_1_1gpu_1_1ConvolveBuf_aca6b0a1e8778b7b55303f5d98a2cc7e9}
+\hypertarget{structcv_1_1gpu_1_1ConvolveBuf_a1fcc3ca5bfa580528118ce922b3692b7}{\index{cv\-::gpu\-::\-Convolve\-Buf@{cv\-::gpu\-::\-Convolve\-Buf}!result\-\_\-size@{result\-\_\-size}}
+\index{result\-\_\-size@{result\-\_\-size}!cv::gpu::ConvolveBuf@{cv\-::gpu\-::\-Convolve\-Buf}}
+\subsubsection[{result\-\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}Size cv\-::gpu\-::\-Convolve\-Buf\-::result\-\_\-size}}\label{structcv_1_1gpu_1_1ConvolveBuf_a1fcc3ca5bfa580528118ce922b3692b7}
+\hypertarget{structcv_1_1gpu_1_1ConvolveBuf_a0b81e80891c9833a4f41a62e0fff62c2}{\index{cv\-::gpu\-::\-Convolve\-Buf@{cv\-::gpu\-::\-Convolve\-Buf}!result\-\_\-spect@{result\-\_\-spect}}
+\index{result\-\_\-spect@{result\-\_\-spect}!cv::gpu::ConvolveBuf@{cv\-::gpu\-::\-Convolve\-Buf}}
+\subsubsection[{result\-\_\-spect}]{\setlength{\rightskip}{0pt plus 5cm}Gpu\-Mat cv\-::gpu\-::\-Convolve\-Buf\-::result\-\_\-spect}}\label{structcv_1_1gpu_1_1ConvolveBuf_a0b81e80891c9833a4f41a62e0fff62c2}
+\hypertarget{structcv_1_1gpu_1_1ConvolveBuf_a300e36466a351f57ac879152dc38b7e0}{\index{cv\-::gpu\-::\-Convolve\-Buf@{cv\-::gpu\-::\-Convolve\-Buf}!spect\-\_\-len@{spect\-\_\-len}}
+\index{spect\-\_\-len@{spect\-\_\-len}!cv::gpu::ConvolveBuf@{cv\-::gpu\-::\-Convolve\-Buf}}
+\subsubsection[{spect\-\_\-len}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::gpu\-::\-Convolve\-Buf\-::spect\-\_\-len}}\label{structcv_1_1gpu_1_1ConvolveBuf_a300e36466a351f57ac879152dc38b7e0}
+\hypertarget{structcv_1_1gpu_1_1ConvolveBuf_ae6c09a39fbd299368b18a7f95de072d8}{\index{cv\-::gpu\-::\-Convolve\-Buf@{cv\-::gpu\-::\-Convolve\-Buf}!templ\-\_\-block@{templ\-\_\-block}}
+\index{templ\-\_\-block@{templ\-\_\-block}!cv::gpu::ConvolveBuf@{cv\-::gpu\-::\-Convolve\-Buf}}
+\subsubsection[{templ\-\_\-block}]{\setlength{\rightskip}{0pt plus 5cm}Gpu\-Mat cv\-::gpu\-::\-Convolve\-Buf\-::templ\-\_\-block}}\label{structcv_1_1gpu_1_1ConvolveBuf_ae6c09a39fbd299368b18a7f95de072d8}
+\hypertarget{structcv_1_1gpu_1_1ConvolveBuf_a35ceeee1b84fbde044e518ea5237ad97}{\index{cv\-::gpu\-::\-Convolve\-Buf@{cv\-::gpu\-::\-Convolve\-Buf}!templ\-\_\-spect@{templ\-\_\-spect}}
+\index{templ\-\_\-spect@{templ\-\_\-spect}!cv::gpu::ConvolveBuf@{cv\-::gpu\-::\-Convolve\-Buf}}
+\subsubsection[{templ\-\_\-spect}]{\setlength{\rightskip}{0pt plus 5cm}Gpu\-Mat cv\-::gpu\-::\-Convolve\-Buf\-::templ\-\_\-spect}}\label{structcv_1_1gpu_1_1ConvolveBuf_a35ceeee1b84fbde044e518ea5237ad97}
+\hypertarget{structcv_1_1gpu_1_1ConvolveBuf_ade057847a290ec2248bd3b2cfca3d917}{\index{cv\-::gpu\-::\-Convolve\-Buf@{cv\-::gpu\-::\-Convolve\-Buf}!user\-\_\-block\-\_\-size@{user\-\_\-block\-\_\-size}}
+\index{user\-\_\-block\-\_\-size@{user\-\_\-block\-\_\-size}!cv::gpu::ConvolveBuf@{cv\-::gpu\-::\-Convolve\-Buf}}
+\subsubsection[{user\-\_\-block\-\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}Size cv\-::gpu\-::\-Convolve\-Buf\-::user\-\_\-block\-\_\-size}}\label{structcv_1_1gpu_1_1ConvolveBuf_ade057847a290ec2248bd3b2cfca3d917}
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/gpu/\hyperlink{gpu_2gpu_8hpp}{gpu.\-hpp}\end{DoxyCompactItemize}

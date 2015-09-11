@@ -1,0 +1,453 @@
+\hypertarget{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base}{\section{cv\-:\-:gpu\-:\-:Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base Class Reference}
+\label{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base}\index{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}}
+}
+
+
+{\ttfamily \#include $<$gpu.\-hpp$>$}
+
+
+
+Inheritance diagram for cv\-:\-:gpu\-:\-:Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_aed33fcc2dc26fe578648b63d1726b825}{Dist\-Type} \{ \hyperlink{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_aed33fcc2dc26fe578648b63d1726b825aa93171fa5f8b55702f03e82d1a87980f}{L1\-Dist} = 0, 
+\hyperlink{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_aed33fcc2dc26fe578648b63d1726b825a3a3b09b7d87b4c338bff7807249a14cd}{L2\-Dist}, 
+\hyperlink{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_aed33fcc2dc26fe578648b63d1726b825a6009d1af7f9c424ab7518a8724dbe3ad}{Hamming\-Dist}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a090cdbbb2a908aa78e85ed5b539c1c9e}{Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base} (\hyperlink{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_aed33fcc2dc26fe578648b63d1726b825}{Dist\-Type} \hyperlink{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_ab7c62ac82124e7910cd3f8529053ecdb}{dist\-Type}=\hyperlink{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_aed33fcc2dc26fe578648b63d1726b825a3a3b09b7d87b4c338bff7807249a14cd}{L2\-Dist})
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a5f5eebaf4031c34b08b933ea5a3fbdfb}{add} (const std\-::vector$<$ Gpu\-Mat $>$ \&desc\-Collection)
+\item 
+const std\-::vector$<$ Gpu\-Mat $>$ \& \hyperlink{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a7e55227f9056f521b79171716931cc24}{get\-Train\-Descriptors} () const 
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_ae22a84c3b0c034cbb980492ab8de7eef}{clear} ()
+\item 
+bool \hyperlink{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a093b71d478d8dbafce4ab712f970a411}{empty} () const 
+\item 
+bool \hyperlink{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a80a8fbe9b885a44f29922a91d8ff8836}{is\-Mask\-Supported} () const 
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a23d6c5abda4481cec1eea097c07551b4}{match\-Single} (const Gpu\-Mat \&query, const Gpu\-Mat \&train, Gpu\-Mat \&train\-Idx, Gpu\-Mat \&distance, const Gpu\-Mat \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}=Gpu\-Mat(), \hyperlink{classcv_1_1gpu_1_1Stream}{Stream} \&stream=\hyperlink{classcv_1_1gpu_1_1Stream_af96c23564834f88333dcb8997df553f1}{Stream\-::\-Null}())
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a0847f149672701196de9665096150ab3}{match} (const Gpu\-Mat \&query, const Gpu\-Mat \&train, std\-::vector$<$ D\-Match $>$ \&matches, const Gpu\-Mat \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}=Gpu\-Mat())
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a035729ea228ce8d8e620455b829dc03c}{make\-Gpu\-Collection} (Gpu\-Mat \&train\-Collection, Gpu\-Mat \&mask\-Collection, const std\-::vector$<$ Gpu\-Mat $>$ \&masks=std\-::vector$<$ Gpu\-Mat $>$())
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_ab48929d300a9ab4947712d4066c9f7fb}{match\-Collection} (const Gpu\-Mat \&query, const Gpu\-Mat \&train\-Collection, Gpu\-Mat \&train\-Idx, Gpu\-Mat \&img\-Idx, Gpu\-Mat \&distance, const Gpu\-Mat \&masks=Gpu\-Mat(), \hyperlink{classcv_1_1gpu_1_1Stream}{Stream} \&stream=\hyperlink{classcv_1_1gpu_1_1Stream_af96c23564834f88333dcb8997df553f1}{Stream\-::\-Null}())
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a30f1bef48b425a91b2530561bc8646ba}{match} (const Gpu\-Mat \&query, std\-::vector$<$ D\-Match $>$ \&matches, const std\-::vector$<$ Gpu\-Mat $>$ \&masks=std\-::vector$<$ Gpu\-Mat $>$())
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a1d88958855940436281245bb3aa677d6}{knn\-Match\-Single} (const Gpu\-Mat \&query, const Gpu\-Mat \&train, Gpu\-Mat \&train\-Idx, Gpu\-Mat \&distance, Gpu\-Mat \&all\-Dist, int \hyperlink{legacy_8hpp_a7be9b6436e5ea72ff5d5a66779b4bd38}{k}, const Gpu\-Mat \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}=Gpu\-Mat(), \hyperlink{classcv_1_1gpu_1_1Stream}{Stream} \&stream=\hyperlink{classcv_1_1gpu_1_1Stream_af96c23564834f88333dcb8997df553f1}{Stream\-::\-Null}())
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a3e21f04227d4b8fe358ca3b337bde8bb}{knn\-Match} (const Gpu\-Mat \&query, const Gpu\-Mat \&train, std\-::vector$<$ std\-::vector$<$ D\-Match $>$ $>$ \&matches, int \hyperlink{legacy_8hpp_a7be9b6436e5ea72ff5d5a66779b4bd38}{k}, const Gpu\-Mat \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}=Gpu\-Mat(), bool compact\-Result=false)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a35b2dff5081dc07b33e630e796bb4130}{knn\-Match2\-Collection} (const Gpu\-Mat \&query, const Gpu\-Mat \&train\-Collection, Gpu\-Mat \&train\-Idx, Gpu\-Mat \&img\-Idx, Gpu\-Mat \&distance, const Gpu\-Mat \&mask\-Collection=Gpu\-Mat(), \hyperlink{classcv_1_1gpu_1_1Stream}{Stream} \&stream=\hyperlink{classcv_1_1gpu_1_1Stream_af96c23564834f88333dcb8997df553f1}{Stream\-::\-Null}())
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a4283326677c0f0c28dc97896cac75022}{knn\-Match} (const Gpu\-Mat \&query, std\-::vector$<$ std\-::vector$<$ D\-Match $>$ $>$ \&matches, int \hyperlink{legacy_8hpp_a7be9b6436e5ea72ff5d5a66779b4bd38}{k}, const std\-::vector$<$ Gpu\-Mat $>$ \&masks=std\-::vector$<$ Gpu\-Mat $>$(), bool compact\-Result=false)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a65941a980da13a3a2e3d63feb45269f0}{radius\-Match\-Single} (const Gpu\-Mat \&query, const Gpu\-Mat \&train, Gpu\-Mat \&train\-Idx, Gpu\-Mat \&distance, Gpu\-Mat \&n\-Matches, float max\-Distance, const Gpu\-Mat \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}=Gpu\-Mat(), \hyperlink{classcv_1_1gpu_1_1Stream}{Stream} \&stream=\hyperlink{classcv_1_1gpu_1_1Stream_af96c23564834f88333dcb8997df553f1}{Stream\-::\-Null}())
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a2d00aa7938bc2828fb95232824da3a2a}{radius\-Match} (const Gpu\-Mat \&query, const Gpu\-Mat \&train, std\-::vector$<$ std\-::vector$<$ D\-Match $>$ $>$ \&matches, float max\-Distance, const Gpu\-Mat \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}=Gpu\-Mat(), bool compact\-Result=false)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a6f0eaaf02db76c4f76007cc0fa0f7c47}{radius\-Match\-Collection} (const Gpu\-Mat \&query, Gpu\-Mat \&train\-Idx, Gpu\-Mat \&img\-Idx, Gpu\-Mat \&distance, Gpu\-Mat \&n\-Matches, float max\-Distance, const std\-::vector$<$ Gpu\-Mat $>$ \&masks=std\-::vector$<$ Gpu\-Mat $>$(), \hyperlink{classcv_1_1gpu_1_1Stream}{Stream} \&stream=\hyperlink{classcv_1_1gpu_1_1Stream_af96c23564834f88333dcb8997df553f1}{Stream\-::\-Null}())
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a51717fe5cf552db4fb6310a072779be0}{radius\-Match} (const Gpu\-Mat \&query, std\-::vector$<$ std\-::vector$<$ D\-Match $>$ $>$ \&matches, float max\-Distance, const std\-::vector$<$ Gpu\-Mat $>$ \&masks=std\-::vector$<$ Gpu\-Mat $>$(), bool compact\-Result=false)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_aba00d772ae49c1f4269ae6d2745e5107}{match\-Download} (const Gpu\-Mat \&train\-Idx, const Gpu\-Mat \&distance, std\-::vector$<$ D\-Match $>$ \&matches)
+\item 
+static \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a291bc46d6d94f3a607804107fe701835}{match\-Convert} (const Mat \&train\-Idx, const Mat \&distance, std\-::vector$<$ D\-Match $>$ \&matches)
+\item 
+static \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a163396c466f0f4f35ded0ba070411408}{match\-Download} (const Gpu\-Mat \&train\-Idx, const Gpu\-Mat \&img\-Idx, const Gpu\-Mat \&distance, std\-::vector$<$ D\-Match $>$ \&matches)
+\item 
+static \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a33f4e5a6242153dd053654ae0b3219bf}{match\-Convert} (const Mat \&train\-Idx, const Mat \&img\-Idx, const Mat \&distance, std\-::vector$<$ D\-Match $>$ \&matches)
+\item 
+static \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a4fc7fe582f8c8c4664ab655ef4252826}{knn\-Match\-Download} (const Gpu\-Mat \&train\-Idx, const Gpu\-Mat \&distance, std\-::vector$<$ std\-::vector$<$ D\-Match $>$ $>$ \&matches, bool compact\-Result=false)
+\item 
+static \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_ac3aab299c395e49daf2a147c440311cc}{knn\-Match\-Convert} (const Mat \&train\-Idx, const Mat \&distance, std\-::vector$<$ std\-::vector$<$ D\-Match $>$ $>$ \&matches, bool compact\-Result=false)
+\item 
+static \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a9479cddd36693e7f4108e28c03d8c3b7}{knn\-Match2\-Download} (const Gpu\-Mat \&train\-Idx, const Gpu\-Mat \&img\-Idx, const Gpu\-Mat \&distance, std\-::vector$<$ std\-::vector$<$ D\-Match $>$ $>$ \&matches, bool compact\-Result=false)
+\item 
+static \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a64c5cf092af3a54d1377e88e315db390}{knn\-Match2\-Convert} (const Mat \&train\-Idx, const Mat \&img\-Idx, const Mat \&distance, std\-::vector$<$ std\-::vector$<$ D\-Match $>$ $>$ \&matches, bool compact\-Result=false)
+\item 
+static \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_abcac467f36d216580a9d361bc37ba175}{radius\-Match\-Download} (const Gpu\-Mat \&train\-Idx, const Gpu\-Mat \&distance, const Gpu\-Mat \&n\-Matches, std\-::vector$<$ std\-::vector$<$ D\-Match $>$ $>$ \&matches, bool compact\-Result=false)
+\item 
+static \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_aecea7deddb3792f0b11417d6453b1b20}{radius\-Match\-Convert} (const Mat \&train\-Idx, const Mat \&distance, const Mat \&n\-Matches, std\-::vector$<$ std\-::vector$<$ D\-Match $>$ $>$ \&matches, bool compact\-Result=false)
+\item 
+static \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a8b38a1b2aa263b764cb14bd287234f09}{radius\-Match\-Download} (const Gpu\-Mat \&train\-Idx, const Gpu\-Mat \&img\-Idx, const Gpu\-Mat \&distance, const Gpu\-Mat \&n\-Matches, std\-::vector$<$ std\-::vector$<$ D\-Match $>$ $>$ \&matches, bool compact\-Result=false)
+\item 
+static \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_af2824e11a9e6119b0e313d07aef3e603}{radius\-Match\-Convert} (const Mat \&train\-Idx, const Mat \&img\-Idx, const Mat \&distance, const Mat \&n\-Matches, std\-::vector$<$ std\-::vector$<$ D\-Match $>$ $>$ \&matches, bool compact\-Result=false)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_aed33fcc2dc26fe578648b63d1726b825}{Dist\-Type} \hyperlink{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_ab7c62ac82124e7910cd3f8529053ecdb}{dist\-Type}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_aed33fcc2dc26fe578648b63d1726b825}{\index{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}!Dist\-Type@{Dist\-Type}}
+\index{Dist\-Type@{Dist\-Type}!cv::gpu::BruteForceMatcher_GPU_base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}}
+\subsubsection[{Dist\-Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base\-::\-Dist\-Type}}}\label{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_aed33fcc2dc26fe578648b63d1726b825}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{L1\-Dist@{L1\-Dist}!cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}}\index{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}!L1\-Dist@{L1\-Dist}}\item[{\em 
+\hypertarget{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_aed33fcc2dc26fe578648b63d1726b825aa93171fa5f8b55702f03e82d1a87980f}{L1\-Dist}\label{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_aed33fcc2dc26fe578648b63d1726b825aa93171fa5f8b55702f03e82d1a87980f}
+}]\index{L2\-Dist@{L2\-Dist}!cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}}\index{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}!L2\-Dist@{L2\-Dist}}\item[{\em 
+\hypertarget{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_aed33fcc2dc26fe578648b63d1726b825a3a3b09b7d87b4c338bff7807249a14cd}{L2\-Dist}\label{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_aed33fcc2dc26fe578648b63d1726b825a3a3b09b7d87b4c338bff7807249a14cd}
+}]\index{Hamming\-Dist@{Hamming\-Dist}!cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}}\index{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}!Hamming\-Dist@{Hamming\-Dist}}\item[{\em 
+\hypertarget{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_aed33fcc2dc26fe578648b63d1726b825a6009d1af7f9c424ab7518a8724dbe3ad}{Hamming\-Dist}\label{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_aed33fcc2dc26fe578648b63d1726b825a6009d1af7f9c424ab7518a8724dbe3ad}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a090cdbbb2a908aa78e85ed5b539c1c9e}{\index{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}!Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base@{Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}}
+\index{Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base@{Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}!cv::gpu::BruteForceMatcher_GPU_base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}}
+\subsubsection[{Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base (
+\begin{DoxyParamCaption}
+\item[{{\bf Dist\-Type}}]{dist\-Type = {\ttfamily {\bf L2\-Dist}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a090cdbbb2a908aa78e85ed5b539c1c9e}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a5f5eebaf4031c34b08b933ea5a3fbdfb}{\index{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}!add@{add}}
+\index{add@{add}!cv::gpu::BruteForceMatcher_GPU_base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base\-::add (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ Gpu\-Mat $>$ \&}]{desc\-Collection}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a5f5eebaf4031c34b08b933ea5a3fbdfb}
+\hypertarget{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_ae22a84c3b0c034cbb980492ab8de7eef}{\index{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}!clear@{clear}}
+\index{clear@{clear}!cv::gpu::BruteForceMatcher_GPU_base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base\-::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_ae22a84c3b0c034cbb980492ab8de7eef}
+\hypertarget{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a093b71d478d8dbafce4ab712f970a411}{\index{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}!empty@{empty}}
+\index{empty@{empty}!cv::gpu::BruteForceMatcher_GPU_base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}}
+\subsubsection[{empty}]{\setlength{\rightskip}{0pt plus 5cm}bool cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base\-::empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a093b71d478d8dbafce4ab712f970a411}
+\hypertarget{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a7e55227f9056f521b79171716931cc24}{\index{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}!get\-Train\-Descriptors@{get\-Train\-Descriptors}}
+\index{get\-Train\-Descriptors@{get\-Train\-Descriptors}!cv::gpu::BruteForceMatcher_GPU_base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}}
+\subsubsection[{get\-Train\-Descriptors}]{\setlength{\rightskip}{0pt plus 5cm}const std\-::vector$<$Gpu\-Mat$>$\& cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base\-::get\-Train\-Descriptors (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a7e55227f9056f521b79171716931cc24}
+\hypertarget{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a80a8fbe9b885a44f29922a91d8ff8836}{\index{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}!is\-Mask\-Supported@{is\-Mask\-Supported}}
+\index{is\-Mask\-Supported@{is\-Mask\-Supported}!cv::gpu::BruteForceMatcher_GPU_base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}}
+\subsubsection[{is\-Mask\-Supported}]{\setlength{\rightskip}{0pt plus 5cm}bool cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base\-::is\-Mask\-Supported (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a80a8fbe9b885a44f29922a91d8ff8836}
+\hypertarget{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a3e21f04227d4b8fe358ca3b337bde8bb}{\index{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}!knn\-Match@{knn\-Match}}
+\index{knn\-Match@{knn\-Match}!cv::gpu::BruteForceMatcher_GPU_base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}}
+\subsubsection[{knn\-Match}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base\-::knn\-Match (
+\begin{DoxyParamCaption}
+\item[{const Gpu\-Mat \&}]{query, }
+\item[{const Gpu\-Mat \&}]{train, }
+\item[{std\-::vector$<$ std\-::vector$<$ D\-Match $>$ $>$ \&}]{matches, }
+\item[{int}]{k, }
+\item[{const Gpu\-Mat \&}]{mask = {\ttfamily GpuMat()}, }
+\item[{bool}]{compact\-Result = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a3e21f04227d4b8fe358ca3b337bde8bb}
+\hypertarget{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a4283326677c0f0c28dc97896cac75022}{\index{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}!knn\-Match@{knn\-Match}}
+\index{knn\-Match@{knn\-Match}!cv::gpu::BruteForceMatcher_GPU_base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}}
+\subsubsection[{knn\-Match}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base\-::knn\-Match (
+\begin{DoxyParamCaption}
+\item[{const Gpu\-Mat \&}]{query, }
+\item[{std\-::vector$<$ std\-::vector$<$ D\-Match $>$ $>$ \&}]{matches, }
+\item[{int}]{k, }
+\item[{const std\-::vector$<$ Gpu\-Mat $>$ \&}]{masks = {\ttfamily std\-:\-:vector$<$~GpuMat~$>$()}, }
+\item[{bool}]{compact\-Result = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a4283326677c0f0c28dc97896cac75022}
+\hypertarget{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a35b2dff5081dc07b33e630e796bb4130}{\index{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}!knn\-Match2\-Collection@{knn\-Match2\-Collection}}
+\index{knn\-Match2\-Collection@{knn\-Match2\-Collection}!cv::gpu::BruteForceMatcher_GPU_base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}}
+\subsubsection[{knn\-Match2\-Collection}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base\-::knn\-Match2\-Collection (
+\begin{DoxyParamCaption}
+\item[{const Gpu\-Mat \&}]{query, }
+\item[{const Gpu\-Mat \&}]{train\-Collection, }
+\item[{Gpu\-Mat \&}]{train\-Idx, }
+\item[{Gpu\-Mat \&}]{img\-Idx, }
+\item[{Gpu\-Mat \&}]{distance, }
+\item[{const Gpu\-Mat \&}]{mask\-Collection = {\ttfamily GpuMat()}, }
+\item[{{\bf Stream} \&}]{stream = {\ttfamily {\bf Stream\-::\-Null}()}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a35b2dff5081dc07b33e630e796bb4130}
+\hypertarget{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a64c5cf092af3a54d1377e88e315db390}{\index{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}!knn\-Match2\-Convert@{knn\-Match2\-Convert}}
+\index{knn\-Match2\-Convert@{knn\-Match2\-Convert}!cv::gpu::BruteForceMatcher_GPU_base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}}
+\subsubsection[{knn\-Match2\-Convert}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf void} cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base\-::knn\-Match2\-Convert (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{train\-Idx, }
+\item[{const Mat \&}]{img\-Idx, }
+\item[{const Mat \&}]{distance, }
+\item[{std\-::vector$<$ std\-::vector$<$ D\-Match $>$ $>$ \&}]{matches, }
+\item[{bool}]{compact\-Result = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a64c5cf092af3a54d1377e88e315db390}
+\hypertarget{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a9479cddd36693e7f4108e28c03d8c3b7}{\index{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}!knn\-Match2\-Download@{knn\-Match2\-Download}}
+\index{knn\-Match2\-Download@{knn\-Match2\-Download}!cv::gpu::BruteForceMatcher_GPU_base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}}
+\subsubsection[{knn\-Match2\-Download}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf void} cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base\-::knn\-Match2\-Download (
+\begin{DoxyParamCaption}
+\item[{const Gpu\-Mat \&}]{train\-Idx, }
+\item[{const Gpu\-Mat \&}]{img\-Idx, }
+\item[{const Gpu\-Mat \&}]{distance, }
+\item[{std\-::vector$<$ std\-::vector$<$ D\-Match $>$ $>$ \&}]{matches, }
+\item[{bool}]{compact\-Result = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a9479cddd36693e7f4108e28c03d8c3b7}
+\hypertarget{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_ac3aab299c395e49daf2a147c440311cc}{\index{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}!knn\-Match\-Convert@{knn\-Match\-Convert}}
+\index{knn\-Match\-Convert@{knn\-Match\-Convert}!cv::gpu::BruteForceMatcher_GPU_base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}}
+\subsubsection[{knn\-Match\-Convert}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf void} cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base\-::knn\-Match\-Convert (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{train\-Idx, }
+\item[{const Mat \&}]{distance, }
+\item[{std\-::vector$<$ std\-::vector$<$ D\-Match $>$ $>$ \&}]{matches, }
+\item[{bool}]{compact\-Result = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_ac3aab299c395e49daf2a147c440311cc}
+\hypertarget{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a4fc7fe582f8c8c4664ab655ef4252826}{\index{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}!knn\-Match\-Download@{knn\-Match\-Download}}
+\index{knn\-Match\-Download@{knn\-Match\-Download}!cv::gpu::BruteForceMatcher_GPU_base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}}
+\subsubsection[{knn\-Match\-Download}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf void} cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base\-::knn\-Match\-Download (
+\begin{DoxyParamCaption}
+\item[{const Gpu\-Mat \&}]{train\-Idx, }
+\item[{const Gpu\-Mat \&}]{distance, }
+\item[{std\-::vector$<$ std\-::vector$<$ D\-Match $>$ $>$ \&}]{matches, }
+\item[{bool}]{compact\-Result = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a4fc7fe582f8c8c4664ab655ef4252826}
+\hypertarget{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a1d88958855940436281245bb3aa677d6}{\index{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}!knn\-Match\-Single@{knn\-Match\-Single}}
+\index{knn\-Match\-Single@{knn\-Match\-Single}!cv::gpu::BruteForceMatcher_GPU_base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}}
+\subsubsection[{knn\-Match\-Single}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base\-::knn\-Match\-Single (
+\begin{DoxyParamCaption}
+\item[{const Gpu\-Mat \&}]{query, }
+\item[{const Gpu\-Mat \&}]{train, }
+\item[{Gpu\-Mat \&}]{train\-Idx, }
+\item[{Gpu\-Mat \&}]{distance, }
+\item[{Gpu\-Mat \&}]{all\-Dist, }
+\item[{int}]{k, }
+\item[{const Gpu\-Mat \&}]{mask = {\ttfamily GpuMat()}, }
+\item[{{\bf Stream} \&}]{stream = {\ttfamily {\bf Stream\-::\-Null}()}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a1d88958855940436281245bb3aa677d6}
+\hypertarget{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a035729ea228ce8d8e620455b829dc03c}{\index{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}!make\-Gpu\-Collection@{make\-Gpu\-Collection}}
+\index{make\-Gpu\-Collection@{make\-Gpu\-Collection}!cv::gpu::BruteForceMatcher_GPU_base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}}
+\subsubsection[{make\-Gpu\-Collection}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base\-::make\-Gpu\-Collection (
+\begin{DoxyParamCaption}
+\item[{Gpu\-Mat \&}]{train\-Collection, }
+\item[{Gpu\-Mat \&}]{mask\-Collection, }
+\item[{const std\-::vector$<$ Gpu\-Mat $>$ \&}]{masks = {\ttfamily std\-:\-:vector$<$~GpuMat~$>$()}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a035729ea228ce8d8e620455b829dc03c}
+\hypertarget{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a0847f149672701196de9665096150ab3}{\index{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}!match@{match}}
+\index{match@{match}!cv::gpu::BruteForceMatcher_GPU_base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}}
+\subsubsection[{match}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base\-::match (
+\begin{DoxyParamCaption}
+\item[{const Gpu\-Mat \&}]{query, }
+\item[{const Gpu\-Mat \&}]{train, }
+\item[{std\-::vector$<$ D\-Match $>$ \&}]{matches, }
+\item[{const Gpu\-Mat \&}]{mask = {\ttfamily GpuMat()}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a0847f149672701196de9665096150ab3}
+\hypertarget{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a30f1bef48b425a91b2530561bc8646ba}{\index{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}!match@{match}}
+\index{match@{match}!cv::gpu::BruteForceMatcher_GPU_base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}}
+\subsubsection[{match}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base\-::match (
+\begin{DoxyParamCaption}
+\item[{const Gpu\-Mat \&}]{query, }
+\item[{std\-::vector$<$ D\-Match $>$ \&}]{matches, }
+\item[{const std\-::vector$<$ Gpu\-Mat $>$ \&}]{masks = {\ttfamily std\-:\-:vector$<$~GpuMat~$>$()}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a30f1bef48b425a91b2530561bc8646ba}
+\hypertarget{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_ab48929d300a9ab4947712d4066c9f7fb}{\index{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}!match\-Collection@{match\-Collection}}
+\index{match\-Collection@{match\-Collection}!cv::gpu::BruteForceMatcher_GPU_base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}}
+\subsubsection[{match\-Collection}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base\-::match\-Collection (
+\begin{DoxyParamCaption}
+\item[{const Gpu\-Mat \&}]{query, }
+\item[{const Gpu\-Mat \&}]{train\-Collection, }
+\item[{Gpu\-Mat \&}]{train\-Idx, }
+\item[{Gpu\-Mat \&}]{img\-Idx, }
+\item[{Gpu\-Mat \&}]{distance, }
+\item[{const Gpu\-Mat \&}]{masks = {\ttfamily GpuMat()}, }
+\item[{{\bf Stream} \&}]{stream = {\ttfamily {\bf Stream\-::\-Null}()}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_ab48929d300a9ab4947712d4066c9f7fb}
+\hypertarget{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a291bc46d6d94f3a607804107fe701835}{\index{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}!match\-Convert@{match\-Convert}}
+\index{match\-Convert@{match\-Convert}!cv::gpu::BruteForceMatcher_GPU_base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}}
+\subsubsection[{match\-Convert}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf void} cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base\-::match\-Convert (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{train\-Idx, }
+\item[{const Mat \&}]{distance, }
+\item[{std\-::vector$<$ D\-Match $>$ \&}]{matches}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a291bc46d6d94f3a607804107fe701835}
+\hypertarget{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a33f4e5a6242153dd053654ae0b3219bf}{\index{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}!match\-Convert@{match\-Convert}}
+\index{match\-Convert@{match\-Convert}!cv::gpu::BruteForceMatcher_GPU_base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}}
+\subsubsection[{match\-Convert}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf void} cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base\-::match\-Convert (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{train\-Idx, }
+\item[{const Mat \&}]{img\-Idx, }
+\item[{const Mat \&}]{distance, }
+\item[{std\-::vector$<$ D\-Match $>$ \&}]{matches}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a33f4e5a6242153dd053654ae0b3219bf}
+\hypertarget{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_aba00d772ae49c1f4269ae6d2745e5107}{\index{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}!match\-Download@{match\-Download}}
+\index{match\-Download@{match\-Download}!cv::gpu::BruteForceMatcher_GPU_base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}}
+\subsubsection[{match\-Download}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf void} cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base\-::match\-Download (
+\begin{DoxyParamCaption}
+\item[{const Gpu\-Mat \&}]{train\-Idx, }
+\item[{const Gpu\-Mat \&}]{distance, }
+\item[{std\-::vector$<$ D\-Match $>$ \&}]{matches}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_aba00d772ae49c1f4269ae6d2745e5107}
+\hypertarget{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a163396c466f0f4f35ded0ba070411408}{\index{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}!match\-Download@{match\-Download}}
+\index{match\-Download@{match\-Download}!cv::gpu::BruteForceMatcher_GPU_base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}}
+\subsubsection[{match\-Download}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf void} cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base\-::match\-Download (
+\begin{DoxyParamCaption}
+\item[{const Gpu\-Mat \&}]{train\-Idx, }
+\item[{const Gpu\-Mat \&}]{img\-Idx, }
+\item[{const Gpu\-Mat \&}]{distance, }
+\item[{std\-::vector$<$ D\-Match $>$ \&}]{matches}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a163396c466f0f4f35ded0ba070411408}
+\hypertarget{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a23d6c5abda4481cec1eea097c07551b4}{\index{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}!match\-Single@{match\-Single}}
+\index{match\-Single@{match\-Single}!cv::gpu::BruteForceMatcher_GPU_base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}}
+\subsubsection[{match\-Single}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base\-::match\-Single (
+\begin{DoxyParamCaption}
+\item[{const Gpu\-Mat \&}]{query, }
+\item[{const Gpu\-Mat \&}]{train, }
+\item[{Gpu\-Mat \&}]{train\-Idx, }
+\item[{Gpu\-Mat \&}]{distance, }
+\item[{const Gpu\-Mat \&}]{mask = {\ttfamily GpuMat()}, }
+\item[{{\bf Stream} \&}]{stream = {\ttfamily {\bf Stream\-::\-Null}()}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a23d6c5abda4481cec1eea097c07551b4}
+\hypertarget{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a2d00aa7938bc2828fb95232824da3a2a}{\index{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}!radius\-Match@{radius\-Match}}
+\index{radius\-Match@{radius\-Match}!cv::gpu::BruteForceMatcher_GPU_base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}}
+\subsubsection[{radius\-Match}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base\-::radius\-Match (
+\begin{DoxyParamCaption}
+\item[{const Gpu\-Mat \&}]{query, }
+\item[{const Gpu\-Mat \&}]{train, }
+\item[{std\-::vector$<$ std\-::vector$<$ D\-Match $>$ $>$ \&}]{matches, }
+\item[{float}]{max\-Distance, }
+\item[{const Gpu\-Mat \&}]{mask = {\ttfamily GpuMat()}, }
+\item[{bool}]{compact\-Result = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a2d00aa7938bc2828fb95232824da3a2a}
+\hypertarget{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a51717fe5cf552db4fb6310a072779be0}{\index{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}!radius\-Match@{radius\-Match}}
+\index{radius\-Match@{radius\-Match}!cv::gpu::BruteForceMatcher_GPU_base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}}
+\subsubsection[{radius\-Match}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base\-::radius\-Match (
+\begin{DoxyParamCaption}
+\item[{const Gpu\-Mat \&}]{query, }
+\item[{std\-::vector$<$ std\-::vector$<$ D\-Match $>$ $>$ \&}]{matches, }
+\item[{float}]{max\-Distance, }
+\item[{const std\-::vector$<$ Gpu\-Mat $>$ \&}]{masks = {\ttfamily std\-:\-:vector$<$~GpuMat~$>$()}, }
+\item[{bool}]{compact\-Result = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a51717fe5cf552db4fb6310a072779be0}
+\hypertarget{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a6f0eaaf02db76c4f76007cc0fa0f7c47}{\index{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}!radius\-Match\-Collection@{radius\-Match\-Collection}}
+\index{radius\-Match\-Collection@{radius\-Match\-Collection}!cv::gpu::BruteForceMatcher_GPU_base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}}
+\subsubsection[{radius\-Match\-Collection}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base\-::radius\-Match\-Collection (
+\begin{DoxyParamCaption}
+\item[{const Gpu\-Mat \&}]{query, }
+\item[{Gpu\-Mat \&}]{train\-Idx, }
+\item[{Gpu\-Mat \&}]{img\-Idx, }
+\item[{Gpu\-Mat \&}]{distance, }
+\item[{Gpu\-Mat \&}]{n\-Matches, }
+\item[{float}]{max\-Distance, }
+\item[{const std\-::vector$<$ Gpu\-Mat $>$ \&}]{masks = {\ttfamily std\-:\-:vector$<$~GpuMat~$>$()}, }
+\item[{{\bf Stream} \&}]{stream = {\ttfamily {\bf Stream\-::\-Null}()}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a6f0eaaf02db76c4f76007cc0fa0f7c47}
+\hypertarget{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_aecea7deddb3792f0b11417d6453b1b20}{\index{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}!radius\-Match\-Convert@{radius\-Match\-Convert}}
+\index{radius\-Match\-Convert@{radius\-Match\-Convert}!cv::gpu::BruteForceMatcher_GPU_base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}}
+\subsubsection[{radius\-Match\-Convert}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf void} cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base\-::radius\-Match\-Convert (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{train\-Idx, }
+\item[{const Mat \&}]{distance, }
+\item[{const Mat \&}]{n\-Matches, }
+\item[{std\-::vector$<$ std\-::vector$<$ D\-Match $>$ $>$ \&}]{matches, }
+\item[{bool}]{compact\-Result = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_aecea7deddb3792f0b11417d6453b1b20}
+\hypertarget{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_af2824e11a9e6119b0e313d07aef3e603}{\index{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}!radius\-Match\-Convert@{radius\-Match\-Convert}}
+\index{radius\-Match\-Convert@{radius\-Match\-Convert}!cv::gpu::BruteForceMatcher_GPU_base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}}
+\subsubsection[{radius\-Match\-Convert}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf void} cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base\-::radius\-Match\-Convert (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{train\-Idx, }
+\item[{const Mat \&}]{img\-Idx, }
+\item[{const Mat \&}]{distance, }
+\item[{const Mat \&}]{n\-Matches, }
+\item[{std\-::vector$<$ std\-::vector$<$ D\-Match $>$ $>$ \&}]{matches, }
+\item[{bool}]{compact\-Result = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_af2824e11a9e6119b0e313d07aef3e603}
+\hypertarget{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_abcac467f36d216580a9d361bc37ba175}{\index{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}!radius\-Match\-Download@{radius\-Match\-Download}}
+\index{radius\-Match\-Download@{radius\-Match\-Download}!cv::gpu::BruteForceMatcher_GPU_base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}}
+\subsubsection[{radius\-Match\-Download}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf void} cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base\-::radius\-Match\-Download (
+\begin{DoxyParamCaption}
+\item[{const Gpu\-Mat \&}]{train\-Idx, }
+\item[{const Gpu\-Mat \&}]{distance, }
+\item[{const Gpu\-Mat \&}]{n\-Matches, }
+\item[{std\-::vector$<$ std\-::vector$<$ D\-Match $>$ $>$ \&}]{matches, }
+\item[{bool}]{compact\-Result = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_abcac467f36d216580a9d361bc37ba175}
+\hypertarget{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a8b38a1b2aa263b764cb14bd287234f09}{\index{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}!radius\-Match\-Download@{radius\-Match\-Download}}
+\index{radius\-Match\-Download@{radius\-Match\-Download}!cv::gpu::BruteForceMatcher_GPU_base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}}
+\subsubsection[{radius\-Match\-Download}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf void} cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base\-::radius\-Match\-Download (
+\begin{DoxyParamCaption}
+\item[{const Gpu\-Mat \&}]{train\-Idx, }
+\item[{const Gpu\-Mat \&}]{img\-Idx, }
+\item[{const Gpu\-Mat \&}]{distance, }
+\item[{const Gpu\-Mat \&}]{n\-Matches, }
+\item[{std\-::vector$<$ std\-::vector$<$ D\-Match $>$ $>$ \&}]{matches, }
+\item[{bool}]{compact\-Result = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a8b38a1b2aa263b764cb14bd287234f09}
+\hypertarget{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a65941a980da13a3a2e3d63feb45269f0}{\index{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}!radius\-Match\-Single@{radius\-Match\-Single}}
+\index{radius\-Match\-Single@{radius\-Match\-Single}!cv::gpu::BruteForceMatcher_GPU_base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}}
+\subsubsection[{radius\-Match\-Single}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base\-::radius\-Match\-Single (
+\begin{DoxyParamCaption}
+\item[{const Gpu\-Mat \&}]{query, }
+\item[{const Gpu\-Mat \&}]{train, }
+\item[{Gpu\-Mat \&}]{train\-Idx, }
+\item[{Gpu\-Mat \&}]{distance, }
+\item[{Gpu\-Mat \&}]{n\-Matches, }
+\item[{float}]{max\-Distance, }
+\item[{const Gpu\-Mat \&}]{mask = {\ttfamily GpuMat()}, }
+\item[{{\bf Stream} \&}]{stream = {\ttfamily {\bf Stream\-::\-Null}()}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_a65941a980da13a3a2e3d63feb45269f0}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_ab7c62ac82124e7910cd3f8529053ecdb}{\index{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}!dist\-Type@{dist\-Type}}
+\index{dist\-Type@{dist\-Type}!cv::gpu::BruteForceMatcher_GPU_base@{cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base}}
+\subsubsection[{dist\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Dist\-Type} cv\-::gpu\-::\-Brute\-Force\-Matcher\-\_\-\-G\-P\-U\-\_\-base\-::dist\-Type}}\label{classcv_1_1gpu_1_1BruteForceMatcher__GPU__base_ab7c62ac82124e7910cd3f8529053ecdb}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/gpu/\hyperlink{gpu_2gpu_8hpp}{gpu.\-hpp}\end{DoxyCompactItemize}

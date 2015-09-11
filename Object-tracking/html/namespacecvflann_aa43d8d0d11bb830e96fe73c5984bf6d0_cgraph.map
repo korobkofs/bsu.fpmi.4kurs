@@ -1,0 +1,7 @@
+<map id="cvflann::hierarchicalClustering" name="cvflann::hierarchicalClustering">
+<area shape="rect" id="node2" href="$namespacecv_1_1ocl.html#a224f93ff761508287c4c19f580f13c8b" title="Does k&#45;means procedure on GPU. " alt="" coords="269,5,384,32"/>
+<area shape="rect" id="node3" href="$classcvflann_1_1KMeansIndex.html#a8018b120cc79371b02e58b50f8992634" title="cvflann::KMeansIndex\l::buildIndex" alt="" coords="251,57,403,98"/>
+<area shape="rect" id="node6" href="$classcvflann_1_1KMeansIndex.html#a773a603be17320c0d106662548407336" title="cvflann::KMeansIndex\l::getClusterCenters" alt="" coords="251,122,403,163"/>
+<area shape="rect" id="node4" href="$classcvflann_1_1PooledAllocator.html#aaf127cab57cd0e0f4d3b335efd8d3a67" title="cvflann::PooledAllocator\l::allocate" alt="" coords="451,57,613,98"/>
+<area shape="rect" id="node5" href="$classcvflann_1_1PooledAllocator.html#add19ffd7aeb8146c7951071c51398c1b" title="cvflann::PooledAllocator\l::allocateMemory" alt="" coords="661,57,824,98"/>
+</map>

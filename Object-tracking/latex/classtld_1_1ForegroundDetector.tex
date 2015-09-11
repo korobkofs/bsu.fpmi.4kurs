@@ -1,0 +1,165 @@
+\hypertarget{classtld_1_1ForegroundDetector}{\section{tld\-:\-:Foreground\-Detector Class Reference}
+\label{classtld_1_1ForegroundDetector}\index{tld\-::\-Foreground\-Detector@{tld\-::\-Foreground\-Detector}}
+}
+
+
+The foreground detector.  
+
+
+
+
+{\ttfamily \#include $<$Foreground\-Detector.\-h$>$}
+
+
+
+Collaboration diagram for tld\-:\-:Foreground\-Detector\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{classtld_1_1ForegroundDetector__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtld_1_1ForegroundDetector_afb086f8195e7358d8afb7c24194fc131}{Foreground\-Detector} ()
+\begin{DoxyCompactList}\small\item\em This constructor initialize some class variables by default. \end{DoxyCompactList}\item 
+virtual \hyperlink{classtld_1_1ForegroundDetector_ade0fb08c42a39ce8a2482b2bacea8c02}{$\sim$\-Foreground\-Detector} ()
+\begin{DoxyCompactList}\small\item\em Empty destructor. \end{DoxyCompactList}\item 
+void \hyperlink{classtld_1_1ForegroundDetector_a0bf609b2ba46774804a929253c225aac}{release} ()
+\begin{DoxyCompactList}\small\item\em Empty method. \end{DoxyCompactList}\item 
+void \hyperlink{classtld_1_1ForegroundDetector_a4f34509fa3a36529a39b911ed7693623}{next\-Iteration} (const cv\-::\-Mat \&img)
+\begin{DoxyCompactList}\small\item\em Finds regions of foreground in the image. \end{DoxyCompactList}\item 
+bool \hyperlink{classtld_1_1ForegroundDetector_abe107144cdd28271253a431cc6a22392}{is\-Active} ()
+\begin{DoxyCompactList}\small\item\em Check presence the background image. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classtld_1_1ForegroundDetector_a317e60e1eb84270f60e818c0cb896416}{fg\-Threshold}
+\begin{DoxyCompactList}\small\item\em the threshold for diffference two images \end{DoxyCompactList}\item 
+int \hyperlink{classtld_1_1ForegroundDetector_ac274f17680c4551c9b3198e88b5bcd42}{min\-Blob\-Size}
+\begin{DoxyCompactList}\small\item\em the minimum size of blob \end{DoxyCompactList}\item 
+cv\-::\-Mat \hyperlink{classtld_1_1ForegroundDetector_a03accab9e786b8dcb6c332424ed5dee0}{bg\-Img}
+\begin{DoxyCompactList}\small\item\em the background image \end{DoxyCompactList}\item 
+\hyperlink{classtld_1_1DetectionResult}{Detection\-Result} $\ast$ \hyperlink{classtld_1_1ForegroundDetector_a01d0c37f4019847febbea0f9a121b49b}{detection\-Result}
+\begin{DoxyCompactList}\small\item\em the result of detection \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The foreground detector. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classtld_1_1ForegroundDetector_afb086f8195e7358d8afb7c24194fc131}{\index{tld\-::\-Foreground\-Detector@{tld\-::\-Foreground\-Detector}!Foreground\-Detector@{Foreground\-Detector}}
+\index{Foreground\-Detector@{Foreground\-Detector}!tld::ForegroundDetector@{tld\-::\-Foreground\-Detector}}
+\subsubsection[{Foreground\-Detector}]{\setlength{\rightskip}{0pt plus 5cm}tld\-::\-Foreground\-Detector\-::\-Foreground\-Detector (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1ForegroundDetector_afb086f8195e7358d8afb7c24194fc131}
+
+
+This constructor initialize some class variables by default. 
+
+\hypertarget{classtld_1_1ForegroundDetector_ade0fb08c42a39ce8a2482b2bacea8c02}{\index{tld\-::\-Foreground\-Detector@{tld\-::\-Foreground\-Detector}!$\sim$\-Foreground\-Detector@{$\sim$\-Foreground\-Detector}}
+\index{$\sim$\-Foreground\-Detector@{$\sim$\-Foreground\-Detector}!tld::ForegroundDetector@{tld\-::\-Foreground\-Detector}}
+\subsubsection[{$\sim$\-Foreground\-Detector}]{\setlength{\rightskip}{0pt plus 5cm}tld\-::\-Foreground\-Detector\-::$\sim$\-Foreground\-Detector (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classtld_1_1ForegroundDetector_ade0fb08c42a39ce8a2482b2bacea8c02}
+
+
+Empty destructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classtld_1_1ForegroundDetector_abe107144cdd28271253a431cc6a22392}{\index{tld\-::\-Foreground\-Detector@{tld\-::\-Foreground\-Detector}!is\-Active@{is\-Active}}
+\index{is\-Active@{is\-Active}!tld::ForegroundDetector@{tld\-::\-Foreground\-Detector}}
+\subsubsection[{is\-Active}]{\setlength{\rightskip}{0pt plus 5cm}bool tld\-::\-Foreground\-Detector\-::is\-Active (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1ForegroundDetector_abe107144cdd28271253a431cc6a22392}
+
+
+Check presence the background image. 
+
+\begin{DoxyReturn}{Returns}
+true, if the background image present; false, otherwise 
+\end{DoxyReturn}
+\hypertarget{classtld_1_1ForegroundDetector_a4f34509fa3a36529a39b911ed7693623}{\index{tld\-::\-Foreground\-Detector@{tld\-::\-Foreground\-Detector}!next\-Iteration@{next\-Iteration}}
+\index{next\-Iteration@{next\-Iteration}!tld::ForegroundDetector@{tld\-::\-Foreground\-Detector}}
+\subsubsection[{next\-Iteration}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::\-Foreground\-Detector\-::next\-Iteration (
+\begin{DoxyParamCaption}
+\item[{const cv\-::\-Mat \&}]{img}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1ForegroundDetector_a4f34509fa3a36529a39b911ed7693623}
+
+
+Finds regions of foreground in the image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em img} & the image \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtld_1_1ForegroundDetector_a4f34509fa3a36529a39b911ed7693623_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classtld_1_1ForegroundDetector_a0bf609b2ba46774804a929253c225aac}{\index{tld\-::\-Foreground\-Detector@{tld\-::\-Foreground\-Detector}!release@{release}}
+\index{release@{release}!tld::ForegroundDetector@{tld\-::\-Foreground\-Detector}}
+\subsubsection[{release}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::\-Foreground\-Detector\-::release (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1ForegroundDetector_a0bf609b2ba46774804a929253c225aac}
+
+
+Empty method. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classtld_1_1ForegroundDetector_a03accab9e786b8dcb6c332424ed5dee0}{\index{tld\-::\-Foreground\-Detector@{tld\-::\-Foreground\-Detector}!bg\-Img@{bg\-Img}}
+\index{bg\-Img@{bg\-Img}!tld::ForegroundDetector@{tld\-::\-Foreground\-Detector}}
+\subsubsection[{bg\-Img}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::\-Mat tld\-::\-Foreground\-Detector\-::bg\-Img}}\label{classtld_1_1ForegroundDetector_a03accab9e786b8dcb6c332424ed5dee0}
+
+
+the background image 
+
+\hypertarget{classtld_1_1ForegroundDetector_a01d0c37f4019847febbea0f9a121b49b}{\index{tld\-::\-Foreground\-Detector@{tld\-::\-Foreground\-Detector}!detection\-Result@{detection\-Result}}
+\index{detection\-Result@{detection\-Result}!tld::ForegroundDetector@{tld\-::\-Foreground\-Detector}}
+\subsubsection[{detection\-Result}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Detection\-Result}$\ast$ tld\-::\-Foreground\-Detector\-::detection\-Result}}\label{classtld_1_1ForegroundDetector_a01d0c37f4019847febbea0f9a121b49b}
+
+
+the result of detection 
+
+\hypertarget{classtld_1_1ForegroundDetector_a317e60e1eb84270f60e818c0cb896416}{\index{tld\-::\-Foreground\-Detector@{tld\-::\-Foreground\-Detector}!fg\-Threshold@{fg\-Threshold}}
+\index{fg\-Threshold@{fg\-Threshold}!tld::ForegroundDetector@{tld\-::\-Foreground\-Detector}}
+\subsubsection[{fg\-Threshold}]{\setlength{\rightskip}{0pt plus 5cm}int tld\-::\-Foreground\-Detector\-::fg\-Threshold}}\label{classtld_1_1ForegroundDetector_a317e60e1eb84270f60e818c0cb896416}
+
+
+the threshold for diffference two images 
+
+\hypertarget{classtld_1_1ForegroundDetector_ac274f17680c4551c9b3198e88b5bcd42}{\index{tld\-::\-Foreground\-Detector@{tld\-::\-Foreground\-Detector}!min\-Blob\-Size@{min\-Blob\-Size}}
+\index{min\-Blob\-Size@{min\-Blob\-Size}!tld::ForegroundDetector@{tld\-::\-Foreground\-Detector}}
+\subsubsection[{min\-Blob\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int tld\-::\-Foreground\-Detector\-::min\-Blob\-Size}}\label{classtld_1_1ForegroundDetector_ac274f17680c4551c9b3198e88b5bcd42}
+
+
+the minimum size of blob 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/libopentld/tld/\hyperlink{ForegroundDetector_8h}{Foreground\-Detector.\-h}\item 
+src/libopentld/tld/\hyperlink{ForegroundDetector_8cpp}{Foreground\-Detector.\-cpp}\end{DoxyCompactItemize}

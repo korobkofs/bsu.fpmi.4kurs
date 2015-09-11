@@ -1,0 +1,6 @@
+<map id="isMotionInBox" name="isMotionInBox">
+<area shape="rect" id="node2" href="$namespacecv_1_1gpu.html#ab079e73b27591b4df3f87c8417a62139" title="smooths the image using Gaussian filter. " alt="" coords="163,5,314,32"/>
+<area shape="rect" id="node3" href="$namespacecv_1_1gpu.html#ac9278c63dd1bd27f4ebe5e965b361cb4" title="computes element&#45;wise absolute difference of two arrays (c = abs(a &#45; b)) " alt="" coords="183,56,295,83"/>
+<area shape="rect" id="node4" href="$namespacecv_1_1gpu.html#a0e97dc3a449eb0d70b9f832b06e0a0b4" title="applies an advanced morphological operation to the image " alt="" coords="161,107,317,133"/>
+<area shape="rect" id="node5" href="$namespacecv_1_1gpu.html#aec527594d46c5b49dbe82fd9c1ed72da" title="counts non&#45;zero array elements " alt="" coords="161,157,316,184"/>
+</map>

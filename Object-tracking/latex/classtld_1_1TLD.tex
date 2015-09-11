@@ -1,0 +1,404 @@
+\hypertarget{classtld_1_1TLD}{\section{tld\-:\-:T\-L\-D Class Reference}
+\label{classtld_1_1TLD}\index{tld\-::\-T\-L\-D@{tld\-::\-T\-L\-D}}
+}
+
+
+The tracking lerning detector.  
+
+
+
+
+{\ttfamily \#include $<$T\-L\-D.\-h$>$}
+
+
+
+Collaboration diagram for tld\-:\-:T\-L\-D\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtld_1_1TLD__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtld_1_1TLD_a7dd24a107de7e84f9b0459c3bfa078aa}{T\-L\-D} ()
+\begin{DoxyCompactList}\small\item\em This constructor initializes the class variables. \end{DoxyCompactList}\item 
+virtual \hyperlink{classtld_1_1TLD_a0bd3497a3d97108b74a107ead3b716f5}{$\sim$\-T\-L\-D} ()
+\begin{DoxyCompactList}\small\item\em This destructor releases memory. \end{DoxyCompactList}\item 
+void \hyperlink{classtld_1_1TLD_a42636c4a6fef7de9b71af987151a7f9e}{release} ()
+\begin{DoxyCompactList}\small\item\em Cleans memory for reinitialization. \end{DoxyCompactList}\item 
+void \hyperlink{classtld_1_1TLD_a6a1b9edb0ae0f79d4447c2ff7ab983be}{select\-Object} (const cv\-::\-Mat \&img, cv\-::\-Rect $\ast$\hyperlink{namespacetld_aa5e13bbb9a53d3e9103d430b6113b08b}{bb})
+\begin{DoxyCompactList}\small\item\em Selects the object of intrest. \end{DoxyCompactList}\item 
+void \hyperlink{classtld_1_1TLD_a8161e09603dc40c43d314cfec9e0746b}{process\-Image} (const cv\-::\-Mat \&img)
+\begin{DoxyCompactList}\small\item\em Processes the image. \end{DoxyCompactList}\item 
+void \hyperlink{classtld_1_1TLD_aef7e6414e0334f8d4325360bd4ea3048}{write\-To\-File} (const char $\ast$path)
+\begin{DoxyCompactList}\small\item\em Write the tld model to file. \end{DoxyCompactList}\item 
+void \hyperlink{classtld_1_1TLD_a8474094a32dc39751bac54f8998860c5}{read\-From\-File} (const char $\ast$path)
+\begin{DoxyCompactList}\small\item\em Reads the tld model from file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classtld_1_1TLD_ab94fab1f55f6ef122c9e3fcf4747ac50}{tracker\-Enabled}
+\begin{DoxyCompactList}\small\item\em enables tracker (Lucas-\/\-Kanade) \end{DoxyCompactList}\item 
+bool \hyperlink{classtld_1_1TLD_a925a0be8c0b83bcb8c2c91a046c7db1b}{detector\-Enabled}
+\begin{DoxyCompactList}\small\item\em enables detector (detects the object with using patterns) \end{DoxyCompactList}\item 
+bool \hyperlink{classtld_1_1TLD_a86422799478881dd711d0a78444be245}{learning\-Enabled}
+\begin{DoxyCompactList}\small\item\em enables learning \end{DoxyCompactList}\item 
+bool \hyperlink{classtld_1_1TLD_a873bb61492173098b134d94239ef0ba4}{alternating}
+\begin{DoxyCompactList}\small\item\em if set to true, detector is disabled while tracker is running. \end{DoxyCompactList}\item 
+\hyperlink{classtld_1_1MedianFlowTracker}{Median\-Flow\-Tracker} $\ast$ \hyperlink{classtld_1_1TLD_a8b523afaefa5fbd9bc86fd656b87e1c0}{median\-Flow\-Tracker}
+\begin{DoxyCompactList}\small\item\em the tracker (Lucas-\/\-Kanade) \end{DoxyCompactList}\item 
+\hyperlink{classtld_1_1DetectorCascade}{Detector\-Cascade} $\ast$ \hyperlink{classtld_1_1TLD_abe59bf99d46b55f6ef402cb48f9d290b}{detector\-Cascade}
+\begin{DoxyCompactList}\small\item\em the detector (detects the object with using patterns) \end{DoxyCompactList}\item 
+\hyperlink{classtld_1_1NNClassifier}{N\-N\-Classifier} $\ast$ \hyperlink{classtld_1_1TLD_a98a1be08a4b630d85e5e60dc4bb78b13}{nn\-Classifier}
+\begin{DoxyCompactList}\small\item\em the nearest neighbor сlassifier \end{DoxyCompactList}\item 
+bool \hyperlink{classtld_1_1TLD_a2a238338a62dac450b2759f99d5ae304}{valid}
+\begin{DoxyCompactList}\small\item\em the current result is valid \end{DoxyCompactList}\item 
+bool \hyperlink{classtld_1_1TLD_a26e0c624178eb37a57cd0146efa6d262}{was\-Valid}
+\begin{DoxyCompactList}\small\item\em the previous result is valid \end{DoxyCompactList}\item 
+cv\-::\-Mat \hyperlink{classtld_1_1TLD_a7b402ff7a0260f00b8d3dbcea5c87efa}{prev\-Img}
+\begin{DoxyCompactList}\small\item\em the previous image \end{DoxyCompactList}\item 
+cv\-::\-Mat \hyperlink{classtld_1_1TLD_a7bb2c3271567719afb2f97e5953c31d5}{curr\-Img}
+\begin{DoxyCompactList}\small\item\em the current image \end{DoxyCompactList}\item 
+cv\-::\-Rect $\ast$ \hyperlink{classtld_1_1TLD_adc7a217f04d600daffe8d025f424677f}{prev\-B\-B}
+\begin{DoxyCompactList}\small\item\em the previous bounding box \end{DoxyCompactList}\item 
+cv\-::\-Rect $\ast$ \hyperlink{classtld_1_1TLD_a5af4bc9d8fa64c4423b294f727c4ba55}{curr\-B\-B}
+\begin{DoxyCompactList}\small\item\em the current bounding box \end{DoxyCompactList}\item 
+float \hyperlink{classtld_1_1TLD_ab2e815db72cb2f40a7864c4d4457eb34}{curr\-Conf}
+\begin{DoxyCompactList}\small\item\em the current confident \end{DoxyCompactList}\item 
+bool \hyperlink{classtld_1_1TLD_a0f108af012bc9b7d004bed33cf8e4d90}{learning}
+\begin{DoxyCompactList}\small\item\em the learning happened or not \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classtld_1_1TLD_aa8aac5ead8b421b76f78c8a49bef50ff}{store\-Current\-Data} ()
+\begin{DoxyCompactList}\small\item\em Stores the current data as previous. \end{DoxyCompactList}\item 
+void \hyperlink{classtld_1_1TLD_a9c7cca98a9fb1d94f8bda3553c83ad7c}{fuse\-Hypotheses} ()
+\begin{DoxyCompactList}\small\item\em Fuses (integrates) the results of tracker (Lucas-\/\-Kanade) and detector (detects the object with using patterns). \end{DoxyCompactList}\item 
+void \hyperlink{classtld_1_1TLD_a40742c77216ac9b06a4141db6184ac85}{learn} ()
+\begin{DoxyCompactList}\small\item\em Learns the tld. \end{DoxyCompactList}\item 
+void \hyperlink{classtld_1_1TLD_afbdde1733ec8944d0ec6224a10881d41}{initial\-Learning} ()
+\begin{DoxyCompactList}\small\item\em Initializes the learning. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The tracking lerning detector. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classtld_1_1TLD_a7dd24a107de7e84f9b0459c3bfa078aa}{\index{tld\-::\-T\-L\-D@{tld\-::\-T\-L\-D}!T\-L\-D@{T\-L\-D}}
+\index{T\-L\-D@{T\-L\-D}!tld::TLD@{tld\-::\-T\-L\-D}}
+\subsubsection[{T\-L\-D}]{\setlength{\rightskip}{0pt plus 5cm}tld\-::\-T\-L\-D\-::\-T\-L\-D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1TLD_a7dd24a107de7e84f9b0459c3bfa078aa}
+
+
+This constructor initializes the class variables. 
+
+\hypertarget{classtld_1_1TLD_a0bd3497a3d97108b74a107ead3b716f5}{\index{tld\-::\-T\-L\-D@{tld\-::\-T\-L\-D}!$\sim$\-T\-L\-D@{$\sim$\-T\-L\-D}}
+\index{$\sim$\-T\-L\-D@{$\sim$\-T\-L\-D}!tld::TLD@{tld\-::\-T\-L\-D}}
+\subsubsection[{$\sim$\-T\-L\-D}]{\setlength{\rightskip}{0pt plus 5cm}tld\-::\-T\-L\-D\-::$\sim$\-T\-L\-D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classtld_1_1TLD_a0bd3497a3d97108b74a107ead3b716f5}
+
+
+This destructor releases memory. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classtld_1_1TLD_a9c7cca98a9fb1d94f8bda3553c83ad7c}{\index{tld\-::\-T\-L\-D@{tld\-::\-T\-L\-D}!fuse\-Hypotheses@{fuse\-Hypotheses}}
+\index{fuse\-Hypotheses@{fuse\-Hypotheses}!tld::TLD@{tld\-::\-T\-L\-D}}
+\subsubsection[{fuse\-Hypotheses}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::\-T\-L\-D\-::fuse\-Hypotheses (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classtld_1_1TLD_a9c7cca98a9fb1d94f8bda3553c83ad7c}
+
+
+Fuses (integrates) the results of tracker (Lucas-\/\-Kanade) and detector (detects the object with using patterns). 
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtld_1_1TLD_a9c7cca98a9fb1d94f8bda3553c83ad7c_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classtld_1_1TLD_afbdde1733ec8944d0ec6224a10881d41}{\index{tld\-::\-T\-L\-D@{tld\-::\-T\-L\-D}!initial\-Learning@{initial\-Learning}}
+\index{initial\-Learning@{initial\-Learning}!tld::TLD@{tld\-::\-T\-L\-D}}
+\subsubsection[{initial\-Learning}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::\-T\-L\-D\-::initial\-Learning (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classtld_1_1TLD_afbdde1733ec8944d0ec6224a10881d41}
+
+
+Initializes the learning. 
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtld_1_1TLD_afbdde1733ec8944d0ec6224a10881d41_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classtld_1_1TLD_a40742c77216ac9b06a4141db6184ac85}{\index{tld\-::\-T\-L\-D@{tld\-::\-T\-L\-D}!learn@{learn}}
+\index{learn@{learn}!tld::TLD@{tld\-::\-T\-L\-D}}
+\subsubsection[{learn}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::\-T\-L\-D\-::learn (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classtld_1_1TLD_a40742c77216ac9b06a4141db6184ac85}
+
+
+Learns the tld. 
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtld_1_1TLD_a40742c77216ac9b06a4141db6184ac85_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classtld_1_1TLD_a8161e09603dc40c43d314cfec9e0746b}{\index{tld\-::\-T\-L\-D@{tld\-::\-T\-L\-D}!process\-Image@{process\-Image}}
+\index{process\-Image@{process\-Image}!tld::TLD@{tld\-::\-T\-L\-D}}
+\subsubsection[{process\-Image}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::\-T\-L\-D\-::process\-Image (
+\begin{DoxyParamCaption}
+\item[{const cv\-::\-Mat \&}]{img}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1TLD_a8161e09603dc40c43d314cfec9e0746b}
+
+
+Processes the image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em img} & the image \\
+\hline
+\end{DoxyParams}
+\hypertarget{classtld_1_1TLD_a8474094a32dc39751bac54f8998860c5}{\index{tld\-::\-T\-L\-D@{tld\-::\-T\-L\-D}!read\-From\-File@{read\-From\-File}}
+\index{read\-From\-File@{read\-From\-File}!tld::TLD@{tld\-::\-T\-L\-D}}
+\subsubsection[{read\-From\-File}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::\-T\-L\-D\-::read\-From\-File (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{path}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1TLD_a8474094a32dc39751bac54f8998860c5}
+
+
+Reads the tld model from file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & the path to source file \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtld_1_1TLD_a8474094a32dc39751bac54f8998860c5_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classtld_1_1TLD_a42636c4a6fef7de9b71af987151a7f9e}{\index{tld\-::\-T\-L\-D@{tld\-::\-T\-L\-D}!release@{release}}
+\index{release@{release}!tld::TLD@{tld\-::\-T\-L\-D}}
+\subsubsection[{release}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::\-T\-L\-D\-::release (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1TLD_a42636c4a6fef7de9b71af987151a7f9e}
+
+
+Cleans memory for reinitialization. 
+
+\hypertarget{classtld_1_1TLD_a6a1b9edb0ae0f79d4447c2ff7ab983be}{\index{tld\-::\-T\-L\-D@{tld\-::\-T\-L\-D}!select\-Object@{select\-Object}}
+\index{select\-Object@{select\-Object}!tld::TLD@{tld\-::\-T\-L\-D}}
+\subsubsection[{select\-Object}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::\-T\-L\-D\-::select\-Object (
+\begin{DoxyParamCaption}
+\item[{const cv\-::\-Mat \&}]{img, }
+\item[{cv\-::\-Rect $\ast$}]{bb}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1TLD_a6a1b9edb0ae0f79d4447c2ff7ab983be}
+
+
+Selects the object of intrest. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em img} & the image \\
+\hline
+{\em bb} & the bounding box \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{classtld_1_1TLD_a6a1b9edb0ae0f79d4447c2ff7ab983be_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classtld_1_1TLD_aa8aac5ead8b421b76f78c8a49bef50ff}{\index{tld\-::\-T\-L\-D@{tld\-::\-T\-L\-D}!store\-Current\-Data@{store\-Current\-Data}}
+\index{store\-Current\-Data@{store\-Current\-Data}!tld::TLD@{tld\-::\-T\-L\-D}}
+\subsubsection[{store\-Current\-Data}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::\-T\-L\-D\-::store\-Current\-Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classtld_1_1TLD_aa8aac5ead8b421b76f78c8a49bef50ff}
+
+
+Stores the current data as previous. 
+
+\hypertarget{classtld_1_1TLD_aef7e6414e0334f8d4325360bd4ea3048}{\index{tld\-::\-T\-L\-D@{tld\-::\-T\-L\-D}!write\-To\-File@{write\-To\-File}}
+\index{write\-To\-File@{write\-To\-File}!tld::TLD@{tld\-::\-T\-L\-D}}
+\subsubsection[{write\-To\-File}]{\setlength{\rightskip}{0pt plus 5cm}void tld\-::\-T\-L\-D\-::write\-To\-File (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{path}
+\end{DoxyParamCaption}
+)}}\label{classtld_1_1TLD_aef7e6414e0334f8d4325360bd4ea3048}
+
+
+Write the tld model to file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & the path to new file \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classtld_1_1TLD_a873bb61492173098b134d94239ef0ba4}{\index{tld\-::\-T\-L\-D@{tld\-::\-T\-L\-D}!alternating@{alternating}}
+\index{alternating@{alternating}!tld::TLD@{tld\-::\-T\-L\-D}}
+\subsubsection[{alternating}]{\setlength{\rightskip}{0pt plus 5cm}bool tld\-::\-T\-L\-D\-::alternating}}\label{classtld_1_1TLD_a873bb61492173098b134d94239ef0ba4}
+
+
+if set to true, detector is disabled while tracker is running. 
+
+\hypertarget{classtld_1_1TLD_a5af4bc9d8fa64c4423b294f727c4ba55}{\index{tld\-::\-T\-L\-D@{tld\-::\-T\-L\-D}!curr\-B\-B@{curr\-B\-B}}
+\index{curr\-B\-B@{curr\-B\-B}!tld::TLD@{tld\-::\-T\-L\-D}}
+\subsubsection[{curr\-B\-B}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::\-Rect$\ast$ tld\-::\-T\-L\-D\-::curr\-B\-B}}\label{classtld_1_1TLD_a5af4bc9d8fa64c4423b294f727c4ba55}
+
+
+the current bounding box 
+
+\hypertarget{classtld_1_1TLD_ab2e815db72cb2f40a7864c4d4457eb34}{\index{tld\-::\-T\-L\-D@{tld\-::\-T\-L\-D}!curr\-Conf@{curr\-Conf}}
+\index{curr\-Conf@{curr\-Conf}!tld::TLD@{tld\-::\-T\-L\-D}}
+\subsubsection[{curr\-Conf}]{\setlength{\rightskip}{0pt plus 5cm}float tld\-::\-T\-L\-D\-::curr\-Conf}}\label{classtld_1_1TLD_ab2e815db72cb2f40a7864c4d4457eb34}
+
+
+the current confident 
+
+\hypertarget{classtld_1_1TLD_a7bb2c3271567719afb2f97e5953c31d5}{\index{tld\-::\-T\-L\-D@{tld\-::\-T\-L\-D}!curr\-Img@{curr\-Img}}
+\index{curr\-Img@{curr\-Img}!tld::TLD@{tld\-::\-T\-L\-D}}
+\subsubsection[{curr\-Img}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::\-Mat tld\-::\-T\-L\-D\-::curr\-Img}}\label{classtld_1_1TLD_a7bb2c3271567719afb2f97e5953c31d5}
+
+
+the current image 
+
+\hypertarget{classtld_1_1TLD_abe59bf99d46b55f6ef402cb48f9d290b}{\index{tld\-::\-T\-L\-D@{tld\-::\-T\-L\-D}!detector\-Cascade@{detector\-Cascade}}
+\index{detector\-Cascade@{detector\-Cascade}!tld::TLD@{tld\-::\-T\-L\-D}}
+\subsubsection[{detector\-Cascade}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Detector\-Cascade}$\ast$ tld\-::\-T\-L\-D\-::detector\-Cascade}}\label{classtld_1_1TLD_abe59bf99d46b55f6ef402cb48f9d290b}
+
+
+the detector (detects the object with using patterns) 
+
+\hypertarget{classtld_1_1TLD_a925a0be8c0b83bcb8c2c91a046c7db1b}{\index{tld\-::\-T\-L\-D@{tld\-::\-T\-L\-D}!detector\-Enabled@{detector\-Enabled}}
+\index{detector\-Enabled@{detector\-Enabled}!tld::TLD@{tld\-::\-T\-L\-D}}
+\subsubsection[{detector\-Enabled}]{\setlength{\rightskip}{0pt plus 5cm}bool tld\-::\-T\-L\-D\-::detector\-Enabled}}\label{classtld_1_1TLD_a925a0be8c0b83bcb8c2c91a046c7db1b}
+
+
+enables detector (detects the object with using patterns) 
+
+\hypertarget{classtld_1_1TLD_a0f108af012bc9b7d004bed33cf8e4d90}{\index{tld\-::\-T\-L\-D@{tld\-::\-T\-L\-D}!learning@{learning}}
+\index{learning@{learning}!tld::TLD@{tld\-::\-T\-L\-D}}
+\subsubsection[{learning}]{\setlength{\rightskip}{0pt plus 5cm}bool tld\-::\-T\-L\-D\-::learning}}\label{classtld_1_1TLD_a0f108af012bc9b7d004bed33cf8e4d90}
+
+
+the learning happened or not 
+
+\hypertarget{classtld_1_1TLD_a86422799478881dd711d0a78444be245}{\index{tld\-::\-T\-L\-D@{tld\-::\-T\-L\-D}!learning\-Enabled@{learning\-Enabled}}
+\index{learning\-Enabled@{learning\-Enabled}!tld::TLD@{tld\-::\-T\-L\-D}}
+\subsubsection[{learning\-Enabled}]{\setlength{\rightskip}{0pt plus 5cm}bool tld\-::\-T\-L\-D\-::learning\-Enabled}}\label{classtld_1_1TLD_a86422799478881dd711d0a78444be245}
+
+
+enables learning 
+
+\hypertarget{classtld_1_1TLD_a8b523afaefa5fbd9bc86fd656b87e1c0}{\index{tld\-::\-T\-L\-D@{tld\-::\-T\-L\-D}!median\-Flow\-Tracker@{median\-Flow\-Tracker}}
+\index{median\-Flow\-Tracker@{median\-Flow\-Tracker}!tld::TLD@{tld\-::\-T\-L\-D}}
+\subsubsection[{median\-Flow\-Tracker}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Median\-Flow\-Tracker}$\ast$ tld\-::\-T\-L\-D\-::median\-Flow\-Tracker}}\label{classtld_1_1TLD_a8b523afaefa5fbd9bc86fd656b87e1c0}
+
+
+the tracker (Lucas-\/\-Kanade) 
+
+\hypertarget{classtld_1_1TLD_a98a1be08a4b630d85e5e60dc4bb78b13}{\index{tld\-::\-T\-L\-D@{tld\-::\-T\-L\-D}!nn\-Classifier@{nn\-Classifier}}
+\index{nn\-Classifier@{nn\-Classifier}!tld::TLD@{tld\-::\-T\-L\-D}}
+\subsubsection[{nn\-Classifier}]{\setlength{\rightskip}{0pt plus 5cm}{\bf N\-N\-Classifier}$\ast$ tld\-::\-T\-L\-D\-::nn\-Classifier}}\label{classtld_1_1TLD_a98a1be08a4b630d85e5e60dc4bb78b13}
+
+
+the nearest neighbor сlassifier 
+
+\hypertarget{classtld_1_1TLD_adc7a217f04d600daffe8d025f424677f}{\index{tld\-::\-T\-L\-D@{tld\-::\-T\-L\-D}!prev\-B\-B@{prev\-B\-B}}
+\index{prev\-B\-B@{prev\-B\-B}!tld::TLD@{tld\-::\-T\-L\-D}}
+\subsubsection[{prev\-B\-B}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::\-Rect$\ast$ tld\-::\-T\-L\-D\-::prev\-B\-B}}\label{classtld_1_1TLD_adc7a217f04d600daffe8d025f424677f}
+
+
+the previous bounding box 
+
+\hypertarget{classtld_1_1TLD_a7b402ff7a0260f00b8d3dbcea5c87efa}{\index{tld\-::\-T\-L\-D@{tld\-::\-T\-L\-D}!prev\-Img@{prev\-Img}}
+\index{prev\-Img@{prev\-Img}!tld::TLD@{tld\-::\-T\-L\-D}}
+\subsubsection[{prev\-Img}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::\-Mat tld\-::\-T\-L\-D\-::prev\-Img}}\label{classtld_1_1TLD_a7b402ff7a0260f00b8d3dbcea5c87efa}
+
+
+the previous image 
+
+\hypertarget{classtld_1_1TLD_ab94fab1f55f6ef122c9e3fcf4747ac50}{\index{tld\-::\-T\-L\-D@{tld\-::\-T\-L\-D}!tracker\-Enabled@{tracker\-Enabled}}
+\index{tracker\-Enabled@{tracker\-Enabled}!tld::TLD@{tld\-::\-T\-L\-D}}
+\subsubsection[{tracker\-Enabled}]{\setlength{\rightskip}{0pt plus 5cm}bool tld\-::\-T\-L\-D\-::tracker\-Enabled}}\label{classtld_1_1TLD_ab94fab1f55f6ef122c9e3fcf4747ac50}
+
+
+enables tracker (Lucas-\/\-Kanade) 
+
+\hypertarget{classtld_1_1TLD_a2a238338a62dac450b2759f99d5ae304}{\index{tld\-::\-T\-L\-D@{tld\-::\-T\-L\-D}!valid@{valid}}
+\index{valid@{valid}!tld::TLD@{tld\-::\-T\-L\-D}}
+\subsubsection[{valid}]{\setlength{\rightskip}{0pt plus 5cm}bool tld\-::\-T\-L\-D\-::valid}}\label{classtld_1_1TLD_a2a238338a62dac450b2759f99d5ae304}
+
+
+the current result is valid 
+
+\hypertarget{classtld_1_1TLD_a26e0c624178eb37a57cd0146efa6d262}{\index{tld\-::\-T\-L\-D@{tld\-::\-T\-L\-D}!was\-Valid@{was\-Valid}}
+\index{was\-Valid@{was\-Valid}!tld::TLD@{tld\-::\-T\-L\-D}}
+\subsubsection[{was\-Valid}]{\setlength{\rightskip}{0pt plus 5cm}bool tld\-::\-T\-L\-D\-::was\-Valid}}\label{classtld_1_1TLD_a26e0c624178eb37a57cd0146efa6d262}
+
+
+the previous result is valid 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/libopentld/tld/\hyperlink{TLD_8h}{T\-L\-D.\-h}\item 
+src/libopentld/tld/\hyperlink{TLD_8cpp}{T\-L\-D.\-cpp}\end{DoxyCompactItemize}

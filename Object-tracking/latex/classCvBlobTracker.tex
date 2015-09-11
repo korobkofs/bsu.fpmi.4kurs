@@ -1,0 +1,243 @@
+\hypertarget{classCvBlobTracker}{\section{Cv\-Blob\-Tracker Class Reference}
+\label{classCvBlobTracker}\index{Cv\-Blob\-Tracker@{Cv\-Blob\-Tracker}}
+}
+
+
+{\ttfamily \#include $<$blobtrack.\-hpp$>$}
+
+
+
+Inheritance diagram for Cv\-Blob\-Tracker\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=162pt]{classCvBlobTracker__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Cv\-Blob\-Tracker\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=162pt]{classCvBlobTracker__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCvBlobTracker_a98c55cd2e9c733e2de69e3055b0f0785}{Cv\-Blob\-Tracker} ()
+\item 
+virtual \hyperlink{structCvBlob}{Cv\-Blob} $\ast$ \hyperlink{classCvBlobTracker_ae6e9e1625419a492e98fd9a68079d1b4}{Add\-Blob} (\hyperlink{structCvBlob}{Cv\-Blob} $\ast$p\-Blob, \hyperlink{core_2types__c_8h_a249298f383f3b430b476542076320c57}{Ipl\-Image} $\ast$p\-Img, \hyperlink{core_2types__c_8h_a249298f383f3b430b476542076320c57}{Ipl\-Image} $\ast$p\-Img\-F\-G=\hyperlink{Config_8cpp_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\-U\-L\-L})=0
+\item 
+virtual int \hyperlink{classCvBlobTracker_a9c1bec9e250b3581e6913422a6c4e262}{Get\-Blob\-Num} ()=0
+\item 
+virtual \hyperlink{structCvBlob}{Cv\-Blob} $\ast$ \hyperlink{classCvBlobTracker_aba635bf14a257549d644dc5353981c49}{Get\-Blob} (int Blob\-Index)=0
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classCvBlobTracker_a231ed3f4715461353a38d071c0ef6ba8}{Del\-Blob} (int Blob\-Index)=0
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classCvBlobTracker_a7f4f77190046dc8519d34682a90bb47e}{Process} (\hyperlink{core_2types__c_8h_a249298f383f3b430b476542076320c57}{Ipl\-Image} $\ast$p\-Img, \hyperlink{core_2types__c_8h_a249298f383f3b430b476542076320c57}{Ipl\-Image} $\ast$p\-Img\-F\-G=\hyperlink{Config_8cpp_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\-U\-L\-L})=0
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classCvBlobTracker_a9bb9997ccde71910386f99b52f166a40}{Release} ()=0
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classCvBlobTracker_ace6cefee2f1ad1b569aec1e8fbc2ea82}{Process\-Blob} (int Blob\-Index, \hyperlink{structCvBlob}{Cv\-Blob} $\ast$p\-Blob, \hyperlink{core_2types__c_8h_a249298f383f3b430b476542076320c57}{Ipl\-Image} $\ast$, \hyperlink{core_2types__c_8h_a249298f383f3b430b476542076320c57}{Ipl\-Image} $\ast$=\hyperlink{Config_8cpp_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\-U\-L\-L})
+\item 
+virtual double \hyperlink{classCvBlobTracker_abc4868e6c7d29b7ad41f2a7113ea681e}{Get\-Confidence} (int, \hyperlink{structCvBlob}{Cv\-Blob} $\ast$, \hyperlink{core_2types__c_8h_a249298f383f3b430b476542076320c57}{Ipl\-Image} $\ast$, \hyperlink{core_2types__c_8h_a249298f383f3b430b476542076320c57}{Ipl\-Image} $\ast$=\hyperlink{Config_8cpp_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\-U\-L\-L})
+\item 
+virtual double \hyperlink{classCvBlobTracker_af953af7064962504024a958621d02b75}{Get\-Confidence\-List} (\hyperlink{classCvBlobSeq}{Cv\-Blob\-Seq} $\ast$p\-Blob\-List, \hyperlink{core_2types__c_8h_a249298f383f3b430b476542076320c57}{Ipl\-Image} $\ast$p\-Img, \hyperlink{core_2types__c_8h_a249298f383f3b430b476542076320c57}{Ipl\-Image} $\ast$p\-Img\-F\-G=\hyperlink{Config_8cpp_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\-U\-L\-L})
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classCvBlobTracker_aced0d90a7e6ea823a63354ec30371505}{Update\-Blob} (int, \hyperlink{structCvBlob}{Cv\-Blob} $\ast$, \hyperlink{core_2types__c_8h_a249298f383f3b430b476542076320c57}{Ipl\-Image} $\ast$, \hyperlink{core_2types__c_8h_a249298f383f3b430b476542076320c57}{Ipl\-Image} $\ast$=\hyperlink{Config_8cpp_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\-U\-L\-L})
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classCvBlobTracker_a4cf0d94eefb310825912e5dd49d42e49}{Update} (\hyperlink{core_2types__c_8h_a249298f383f3b430b476542076320c57}{Ipl\-Image} $\ast$p\-Img, \hyperlink{core_2types__c_8h_a249298f383f3b430b476542076320c57}{Ipl\-Image} $\ast$p\-Img\-F\-G=\hyperlink{Config_8cpp_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\-U\-L\-L})
+\item 
+virtual int \hyperlink{classCvBlobTracker_ac6433eb3c68329dd01d09219477e4dd1}{Get\-Blob\-Index\-By\-I\-D} (int Blob\-I\-D)
+\item 
+virtual \hyperlink{structCvBlob}{Cv\-Blob} $\ast$ \hyperlink{classCvBlobTracker_a387ed099a6fa47941feed6e433b635e1}{Get\-Blob\-By\-I\-D} (int Blob\-I\-D)
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classCvBlobTracker_a0f4a42c75e109ce6782086be87cf9862}{Del\-Blob\-By\-I\-D} (int Blob\-I\-D)
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classCvBlobTracker_ae376282fcc824bcb5338f96917d83c51}{Set\-Blob} (int, \hyperlink{structCvBlob}{Cv\-Blob} $\ast$)
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classCvBlobTracker_a6771fb0b3b6f822e7383bfbbada44010}{Set\-Blob\-By\-I\-D} (int Blob\-I\-D, \hyperlink{structCvBlob}{Cv\-Blob} $\ast$p\-Blob)
+\item 
+virtual int \hyperlink{classCvBlobTracker_afacd455f1306a512f03067d2427db333}{Get\-Blob\-Hyp\-Num} (int)
+\item 
+virtual \hyperlink{structCvBlob}{Cv\-Blob} $\ast$ \hyperlink{classCvBlobTracker_a0e21fa83abc4e0d733fc89a55ba4d89a}{Get\-Blob\-Hyp} (int Blob\-Index, int)
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classCvBlobTracker_a4a1e31c2509eb76a03c2baf3b34b0255}{Set\-Blob\-Hyp} (int, \hyperlink{structCvBlob}{Cv\-Blob} $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCvBlobTracker_a98c55cd2e9c733e2de69e3055b0f0785}{\index{Cv\-Blob\-Tracker@{Cv\-Blob\-Tracker}!Cv\-Blob\-Tracker@{Cv\-Blob\-Tracker}}
+\index{Cv\-Blob\-Tracker@{Cv\-Blob\-Tracker}!CvBlobTracker@{Cv\-Blob\-Tracker}}
+\subsubsection[{Cv\-Blob\-Tracker}]{\setlength{\rightskip}{0pt plus 5cm}Cv\-Blob\-Tracker\-::\-Cv\-Blob\-Tracker (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCvBlobTracker_a98c55cd2e9c733e2de69e3055b0f0785}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classCvBlobTracker_ae6e9e1625419a492e98fd9a68079d1b4}{\index{Cv\-Blob\-Tracker@{Cv\-Blob\-Tracker}!Add\-Blob@{Add\-Blob}}
+\index{Add\-Blob@{Add\-Blob}!CvBlobTracker@{Cv\-Blob\-Tracker}}
+\subsubsection[{Add\-Blob}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Cv\-Blob}$\ast$ Cv\-Blob\-Tracker\-::\-Add\-Blob (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Blob} $\ast$}]{p\-Blob, }
+\item[{{\bf Ipl\-Image} $\ast$}]{p\-Img, }
+\item[{{\bf Ipl\-Image} $\ast$}]{p\-Img\-F\-G = {\ttfamily {\bf N\-U\-L\-L}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classCvBlobTracker_ae6e9e1625419a492e98fd9a68079d1b4}
+\hypertarget{classCvBlobTracker_a231ed3f4715461353a38d071c0ef6ba8}{\index{Cv\-Blob\-Tracker@{Cv\-Blob\-Tracker}!Del\-Blob@{Del\-Blob}}
+\index{Del\-Blob@{Del\-Blob}!CvBlobTracker@{Cv\-Blob\-Tracker}}
+\subsubsection[{Del\-Blob}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Cv\-Blob\-Tracker\-::\-Del\-Blob (
+\begin{DoxyParamCaption}
+\item[{int}]{Blob\-Index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classCvBlobTracker_a231ed3f4715461353a38d071c0ef6ba8}
+\hypertarget{classCvBlobTracker_a0f4a42c75e109ce6782086be87cf9862}{\index{Cv\-Blob\-Tracker@{Cv\-Blob\-Tracker}!Del\-Blob\-By\-I\-D@{Del\-Blob\-By\-I\-D}}
+\index{Del\-Blob\-By\-I\-D@{Del\-Blob\-By\-I\-D}!CvBlobTracker@{Cv\-Blob\-Tracker}}
+\subsubsection[{Del\-Blob\-By\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Cv\-Blob\-Tracker\-::\-Del\-Blob\-By\-I\-D (
+\begin{DoxyParamCaption}
+\item[{int}]{Blob\-I\-D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCvBlobTracker_a0f4a42c75e109ce6782086be87cf9862}
+\hypertarget{classCvBlobTracker_aba635bf14a257549d644dc5353981c49}{\index{Cv\-Blob\-Tracker@{Cv\-Blob\-Tracker}!Get\-Blob@{Get\-Blob}}
+\index{Get\-Blob@{Get\-Blob}!CvBlobTracker@{Cv\-Blob\-Tracker}}
+\subsubsection[{Get\-Blob}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Cv\-Blob}$\ast$ Cv\-Blob\-Tracker\-::\-Get\-Blob (
+\begin{DoxyParamCaption}
+\item[{int}]{Blob\-Index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classCvBlobTracker_aba635bf14a257549d644dc5353981c49}
+\hypertarget{classCvBlobTracker_a387ed099a6fa47941feed6e433b635e1}{\index{Cv\-Blob\-Tracker@{Cv\-Blob\-Tracker}!Get\-Blob\-By\-I\-D@{Get\-Blob\-By\-I\-D}}
+\index{Get\-Blob\-By\-I\-D@{Get\-Blob\-By\-I\-D}!CvBlobTracker@{Cv\-Blob\-Tracker}}
+\subsubsection[{Get\-Blob\-By\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Cv\-Blob}$\ast$ Cv\-Blob\-Tracker\-::\-Get\-Blob\-By\-I\-D (
+\begin{DoxyParamCaption}
+\item[{int}]{Blob\-I\-D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCvBlobTracker_a387ed099a6fa47941feed6e433b635e1}
+\hypertarget{classCvBlobTracker_a0e21fa83abc4e0d733fc89a55ba4d89a}{\index{Cv\-Blob\-Tracker@{Cv\-Blob\-Tracker}!Get\-Blob\-Hyp@{Get\-Blob\-Hyp}}
+\index{Get\-Blob\-Hyp@{Get\-Blob\-Hyp}!CvBlobTracker@{Cv\-Blob\-Tracker}}
+\subsubsection[{Get\-Blob\-Hyp}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Cv\-Blob}$\ast$ Cv\-Blob\-Tracker\-::\-Get\-Blob\-Hyp (
+\begin{DoxyParamCaption}
+\item[{int}]{Blob\-Index, }
+\item[{int}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCvBlobTracker_a0e21fa83abc4e0d733fc89a55ba4d89a}
+\hypertarget{classCvBlobTracker_afacd455f1306a512f03067d2427db333}{\index{Cv\-Blob\-Tracker@{Cv\-Blob\-Tracker}!Get\-Blob\-Hyp\-Num@{Get\-Blob\-Hyp\-Num}}
+\index{Get\-Blob\-Hyp\-Num@{Get\-Blob\-Hyp\-Num}!CvBlobTracker@{Cv\-Blob\-Tracker}}
+\subsubsection[{Get\-Blob\-Hyp\-Num}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Cv\-Blob\-Tracker\-::\-Get\-Blob\-Hyp\-Num (
+\begin{DoxyParamCaption}
+\item[{int}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCvBlobTracker_afacd455f1306a512f03067d2427db333}
+\hypertarget{classCvBlobTracker_ac6433eb3c68329dd01d09219477e4dd1}{\index{Cv\-Blob\-Tracker@{Cv\-Blob\-Tracker}!Get\-Blob\-Index\-By\-I\-D@{Get\-Blob\-Index\-By\-I\-D}}
+\index{Get\-Blob\-Index\-By\-I\-D@{Get\-Blob\-Index\-By\-I\-D}!CvBlobTracker@{Cv\-Blob\-Tracker}}
+\subsubsection[{Get\-Blob\-Index\-By\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Cv\-Blob\-Tracker\-::\-Get\-Blob\-Index\-By\-I\-D (
+\begin{DoxyParamCaption}
+\item[{int}]{Blob\-I\-D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCvBlobTracker_ac6433eb3c68329dd01d09219477e4dd1}
+\hypertarget{classCvBlobTracker_a9c1bec9e250b3581e6913422a6c4e262}{\index{Cv\-Blob\-Tracker@{Cv\-Blob\-Tracker}!Get\-Blob\-Num@{Get\-Blob\-Num}}
+\index{Get\-Blob\-Num@{Get\-Blob\-Num}!CvBlobTracker@{Cv\-Blob\-Tracker}}
+\subsubsection[{Get\-Blob\-Num}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Cv\-Blob\-Tracker\-::\-Get\-Blob\-Num (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classCvBlobTracker_a9c1bec9e250b3581e6913422a6c4e262}
+\hypertarget{classCvBlobTracker_abc4868e6c7d29b7ad41f2a7113ea681e}{\index{Cv\-Blob\-Tracker@{Cv\-Blob\-Tracker}!Get\-Confidence@{Get\-Confidence}}
+\index{Get\-Confidence@{Get\-Confidence}!CvBlobTracker@{Cv\-Blob\-Tracker}}
+\subsubsection[{Get\-Confidence}]{\setlength{\rightskip}{0pt plus 5cm}virtual double Cv\-Blob\-Tracker\-::\-Get\-Confidence (
+\begin{DoxyParamCaption}
+\item[{int}]{, }
+\item[{{\bf Cv\-Blob} $\ast$}]{, }
+\item[{{\bf Ipl\-Image} $\ast$}]{, }
+\item[{{\bf Ipl\-Image} $\ast$}]{ = {\ttfamily {\bf N\-U\-L\-L}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCvBlobTracker_abc4868e6c7d29b7ad41f2a7113ea681e}
+\hypertarget{classCvBlobTracker_af953af7064962504024a958621d02b75}{\index{Cv\-Blob\-Tracker@{Cv\-Blob\-Tracker}!Get\-Confidence\-List@{Get\-Confidence\-List}}
+\index{Get\-Confidence\-List@{Get\-Confidence\-List}!CvBlobTracker@{Cv\-Blob\-Tracker}}
+\subsubsection[{Get\-Confidence\-List}]{\setlength{\rightskip}{0pt plus 5cm}virtual double Cv\-Blob\-Tracker\-::\-Get\-Confidence\-List (
+\begin{DoxyParamCaption}
+\item[{{\bf Cv\-Blob\-Seq} $\ast$}]{p\-Blob\-List, }
+\item[{{\bf Ipl\-Image} $\ast$}]{p\-Img, }
+\item[{{\bf Ipl\-Image} $\ast$}]{p\-Img\-F\-G = {\ttfamily {\bf N\-U\-L\-L}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCvBlobTracker_af953af7064962504024a958621d02b75}
+\hypertarget{classCvBlobTracker_a7f4f77190046dc8519d34682a90bb47e}{\index{Cv\-Blob\-Tracker@{Cv\-Blob\-Tracker}!Process@{Process}}
+\index{Process@{Process}!CvBlobTracker@{Cv\-Blob\-Tracker}}
+\subsubsection[{Process}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Cv\-Blob\-Tracker\-::\-Process (
+\begin{DoxyParamCaption}
+\item[{{\bf Ipl\-Image} $\ast$}]{p\-Img, }
+\item[{{\bf Ipl\-Image} $\ast$}]{p\-Img\-F\-G = {\ttfamily {\bf N\-U\-L\-L}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classCvBlobTracker_a7f4f77190046dc8519d34682a90bb47e}
+\hypertarget{classCvBlobTracker_ace6cefee2f1ad1b569aec1e8fbc2ea82}{\index{Cv\-Blob\-Tracker@{Cv\-Blob\-Tracker}!Process\-Blob@{Process\-Blob}}
+\index{Process\-Blob@{Process\-Blob}!CvBlobTracker@{Cv\-Blob\-Tracker}}
+\subsubsection[{Process\-Blob}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Cv\-Blob\-Tracker\-::\-Process\-Blob (
+\begin{DoxyParamCaption}
+\item[{int}]{Blob\-Index, }
+\item[{{\bf Cv\-Blob} $\ast$}]{p\-Blob, }
+\item[{{\bf Ipl\-Image} $\ast$}]{, }
+\item[{{\bf Ipl\-Image} $\ast$}]{ = {\ttfamily {\bf N\-U\-L\-L}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCvBlobTracker_ace6cefee2f1ad1b569aec1e8fbc2ea82}
+\hypertarget{classCvBlobTracker_a9bb9997ccde71910386f99b52f166a40}{\index{Cv\-Blob\-Tracker@{Cv\-Blob\-Tracker}!Release@{Release}}
+\index{Release@{Release}!CvBlobTracker@{Cv\-Blob\-Tracker}}
+\subsubsection[{Release}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Cv\-Blob\-Tracker\-::\-Release (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classCvBlobTracker_a9bb9997ccde71910386f99b52f166a40}
+
+
+Implements \hyperlink{classCvVSModule_a5501dc4749ea61dfa6a44621ecc41824}{Cv\-V\-S\-Module}.
+
+\hypertarget{classCvBlobTracker_ae376282fcc824bcb5338f96917d83c51}{\index{Cv\-Blob\-Tracker@{Cv\-Blob\-Tracker}!Set\-Blob@{Set\-Blob}}
+\index{Set\-Blob@{Set\-Blob}!CvBlobTracker@{Cv\-Blob\-Tracker}}
+\subsubsection[{Set\-Blob}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Cv\-Blob\-Tracker\-::\-Set\-Blob (
+\begin{DoxyParamCaption}
+\item[{int}]{, }
+\item[{{\bf Cv\-Blob} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCvBlobTracker_ae376282fcc824bcb5338f96917d83c51}
+\hypertarget{classCvBlobTracker_a6771fb0b3b6f822e7383bfbbada44010}{\index{Cv\-Blob\-Tracker@{Cv\-Blob\-Tracker}!Set\-Blob\-By\-I\-D@{Set\-Blob\-By\-I\-D}}
+\index{Set\-Blob\-By\-I\-D@{Set\-Blob\-By\-I\-D}!CvBlobTracker@{Cv\-Blob\-Tracker}}
+\subsubsection[{Set\-Blob\-By\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Cv\-Blob\-Tracker\-::\-Set\-Blob\-By\-I\-D (
+\begin{DoxyParamCaption}
+\item[{int}]{Blob\-I\-D, }
+\item[{{\bf Cv\-Blob} $\ast$}]{p\-Blob}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCvBlobTracker_a6771fb0b3b6f822e7383bfbbada44010}
+\hypertarget{classCvBlobTracker_a4a1e31c2509eb76a03c2baf3b34b0255}{\index{Cv\-Blob\-Tracker@{Cv\-Blob\-Tracker}!Set\-Blob\-Hyp@{Set\-Blob\-Hyp}}
+\index{Set\-Blob\-Hyp@{Set\-Blob\-Hyp}!CvBlobTracker@{Cv\-Blob\-Tracker}}
+\subsubsection[{Set\-Blob\-Hyp}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Cv\-Blob\-Tracker\-::\-Set\-Blob\-Hyp (
+\begin{DoxyParamCaption}
+\item[{int}]{, }
+\item[{{\bf Cv\-Blob} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCvBlobTracker_a4a1e31c2509eb76a03c2baf3b34b0255}
+\hypertarget{classCvBlobTracker_a4cf0d94eefb310825912e5dd49d42e49}{\index{Cv\-Blob\-Tracker@{Cv\-Blob\-Tracker}!Update@{Update}}
+\index{Update@{Update}!CvBlobTracker@{Cv\-Blob\-Tracker}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Cv\-Blob\-Tracker\-::\-Update (
+\begin{DoxyParamCaption}
+\item[{{\bf Ipl\-Image} $\ast$}]{p\-Img, }
+\item[{{\bf Ipl\-Image} $\ast$}]{p\-Img\-F\-G = {\ttfamily {\bf N\-U\-L\-L}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCvBlobTracker_a4cf0d94eefb310825912e5dd49d42e49}
+\hypertarget{classCvBlobTracker_aced0d90a7e6ea823a63354ec30371505}{\index{Cv\-Blob\-Tracker@{Cv\-Blob\-Tracker}!Update\-Blob@{Update\-Blob}}
+\index{Update\-Blob@{Update\-Blob}!CvBlobTracker@{Cv\-Blob\-Tracker}}
+\subsubsection[{Update\-Blob}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} Cv\-Blob\-Tracker\-::\-Update\-Blob (
+\begin{DoxyParamCaption}
+\item[{int}]{, }
+\item[{{\bf Cv\-Blob} $\ast$}]{, }
+\item[{{\bf Ipl\-Image} $\ast$}]{, }
+\item[{{\bf Ipl\-Image} $\ast$}]{ = {\ttfamily {\bf N\-U\-L\-L}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCvBlobTracker_aced0d90a7e6ea823a63354ec30371505}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/legacy/\hyperlink{blobtrack_8hpp}{blobtrack.\-hpp}\end{DoxyCompactItemize}

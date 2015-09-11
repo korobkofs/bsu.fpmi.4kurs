@@ -1,0 +1,5 @@
+<map id="config_setting_get_int" name="config_setting_get_int">
+<area shape="rect" id="node2" href="$libconfig_8h.html#ad7819d9af7d06c3e6e252359256d7380" title="config_setting_get\l_int_elem" alt="" coords="215,5,343,46"/>
+<area shape="rect" id="node3" href="$classlibconfig_1_1Setting.html#abc59b9a6df51024d52970f0ee10d4f1f" title="libconfig::Setting\l::operator int" alt="" coords="219,70,338,111"/>
+<area shape="rect" id="node4" href="$classlibconfig_1_1Setting.html#a9cc112e6bfab4902355fafe9ae8babac" title="libconfig::Setting\l::operator unsigned int" alt="" coords="203,135,354,177"/>
+</map>

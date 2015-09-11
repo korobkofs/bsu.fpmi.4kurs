@@ -1,0 +1,85 @@
+\hypertarget{structCvMatND}{\section{Cv\-Mat\-N\-D Struct Reference}
+\label{structCvMatND}\index{Cv\-Mat\-N\-D@{Cv\-Mat\-N\-D}}
+}
+
+
+{\ttfamily \#include $<$types\-\_\-c.\-h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{structCvMatND_ae555c16ced9ddfb8cb3fbd867cadece9}{type}
+\item 
+int \hyperlink{structCvMatND_afb407ea1679e188af57c7c1301de70d2}{dims}
+\item 
+int $\ast$ \hyperlink{structCvMatND_a7841f93b088acc0c064fa26a1b0571fc}{refcount}
+\item 
+int \hyperlink{structCvMatND_a72e2864dc5e48f873cd6e34b99491ceb}{hdr\-\_\-refcount}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\hyperlink{core_2types__c_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar} $\ast$ \hyperlink{structCvMatND_ad1e711b18cfc94d53ec060d15b6639ef}{ptr}\\
+\>float $\ast$ \hyperlink{structCvMatND_a7402a379321e1bcfe94a476ed33afefd}{fl}\\
+\>double $\ast$ \hyperlink{structCvMatND_a448a65a38d34e2a2781dd631ec97d416}{db}\\
+\>int $\ast$ \hyperlink{structCvMatND_a080d27a015fe6e2013b06074f20bc2f5}{i}\\
+\>short $\ast$ \hyperlink{structCvMatND_a52c677f77f43b7d472c92a3e99199dd3}{s}\\
+\} \hyperlink{structCvMatND_aa1110d922b276d42b59e68d6dae25fd6}{data}\\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>int \hyperlink{structCvMatND_a26c11a958cc01cc2afce53049f4dac87}{size}\\
+\>int \hyperlink{structCvMatND_ae94dea9c705fa9beab9505cdb92f38b2}{step}\\
+\} \hyperlink{structCvMatND_a932f641733ae7f515415b06b6b36a7e8}{dim} \mbox{[}\hyperlink{core_2types__c_8h_a931cb1f0da753cc1f8a3f838390616c2}{CV\_MAX\_DIM}\mbox{]}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structCvMatND_aa1110d922b276d42b59e68d6dae25fd6}{\index{Cv\-Mat\-N\-D@{Cv\-Mat\-N\-D}!data@{data}}
+\index{data@{data}!CvMatND@{Cv\-Mat\-N\-D}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}union \{ ... \}   Cv\-Mat\-N\-D\-::data}}\label{structCvMatND_aa1110d922b276d42b59e68d6dae25fd6}
+\hypertarget{structCvMatND_a448a65a38d34e2a2781dd631ec97d416}{\index{Cv\-Mat\-N\-D@{Cv\-Mat\-N\-D}!db@{db}}
+\index{db@{db}!CvMatND@{Cv\-Mat\-N\-D}}
+\subsubsection[{db}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ Cv\-Mat\-N\-D\-::db}}\label{structCvMatND_a448a65a38d34e2a2781dd631ec97d416}
+\hypertarget{structCvMatND_a932f641733ae7f515415b06b6b36a7e8}{\index{Cv\-Mat\-N\-D@{Cv\-Mat\-N\-D}!dim@{dim}}
+\index{dim@{dim}!CvMatND@{Cv\-Mat\-N\-D}}
+\subsubsection[{dim}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \} 
+     Cv\-Mat\-N\-D\-::dim\mbox{[}{\bf C\-V\-\_\-\-M\-A\-X\-\_\-\-D\-I\-M}\mbox{]}}}\label{structCvMatND_a932f641733ae7f515415b06b6b36a7e8}
+\hypertarget{structCvMatND_afb407ea1679e188af57c7c1301de70d2}{\index{Cv\-Mat\-N\-D@{Cv\-Mat\-N\-D}!dims@{dims}}
+\index{dims@{dims}!CvMatND@{Cv\-Mat\-N\-D}}
+\subsubsection[{dims}]{\setlength{\rightskip}{0pt plus 5cm}int Cv\-Mat\-N\-D\-::dims}}\label{structCvMatND_afb407ea1679e188af57c7c1301de70d2}
+\hypertarget{structCvMatND_a7402a379321e1bcfe94a476ed33afefd}{\index{Cv\-Mat\-N\-D@{Cv\-Mat\-N\-D}!fl@{fl}}
+\index{fl@{fl}!CvMatND@{Cv\-Mat\-N\-D}}
+\subsubsection[{fl}]{\setlength{\rightskip}{0pt plus 5cm}float$\ast$ Cv\-Mat\-N\-D\-::fl}}\label{structCvMatND_a7402a379321e1bcfe94a476ed33afefd}
+\hypertarget{structCvMatND_a72e2864dc5e48f873cd6e34b99491ceb}{\index{Cv\-Mat\-N\-D@{Cv\-Mat\-N\-D}!hdr\-\_\-refcount@{hdr\-\_\-refcount}}
+\index{hdr\-\_\-refcount@{hdr\-\_\-refcount}!CvMatND@{Cv\-Mat\-N\-D}}
+\subsubsection[{hdr\-\_\-refcount}]{\setlength{\rightskip}{0pt plus 5cm}int Cv\-Mat\-N\-D\-::hdr\-\_\-refcount}}\label{structCvMatND_a72e2864dc5e48f873cd6e34b99491ceb}
+\hypertarget{structCvMatND_a080d27a015fe6e2013b06074f20bc2f5}{\index{Cv\-Mat\-N\-D@{Cv\-Mat\-N\-D}!i@{i}}
+\index{i@{i}!CvMatND@{Cv\-Mat\-N\-D}}
+\subsubsection[{i}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ Cv\-Mat\-N\-D\-::i}}\label{structCvMatND_a080d27a015fe6e2013b06074f20bc2f5}
+\hypertarget{structCvMatND_ad1e711b18cfc94d53ec060d15b6639ef}{\index{Cv\-Mat\-N\-D@{Cv\-Mat\-N\-D}!ptr@{ptr}}
+\index{ptr@{ptr}!CvMatND@{Cv\-Mat\-N\-D}}
+\subsubsection[{ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uchar}$\ast$ Cv\-Mat\-N\-D\-::ptr}}\label{structCvMatND_ad1e711b18cfc94d53ec060d15b6639ef}
+\hypertarget{structCvMatND_a7841f93b088acc0c064fa26a1b0571fc}{\index{Cv\-Mat\-N\-D@{Cv\-Mat\-N\-D}!refcount@{refcount}}
+\index{refcount@{refcount}!CvMatND@{Cv\-Mat\-N\-D}}
+\subsubsection[{refcount}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ Cv\-Mat\-N\-D\-::refcount}}\label{structCvMatND_a7841f93b088acc0c064fa26a1b0571fc}
+\hypertarget{structCvMatND_a52c677f77f43b7d472c92a3e99199dd3}{\index{Cv\-Mat\-N\-D@{Cv\-Mat\-N\-D}!s@{s}}
+\index{s@{s}!CvMatND@{Cv\-Mat\-N\-D}}
+\subsubsection[{s}]{\setlength{\rightskip}{0pt plus 5cm}short$\ast$ Cv\-Mat\-N\-D\-::s}}\label{structCvMatND_a52c677f77f43b7d472c92a3e99199dd3}
+\hypertarget{structCvMatND_a26c11a958cc01cc2afce53049f4dac87}{\index{Cv\-Mat\-N\-D@{Cv\-Mat\-N\-D}!size@{size}}
+\index{size@{size}!CvMatND@{Cv\-Mat\-N\-D}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}int Cv\-Mat\-N\-D\-::size}}\label{structCvMatND_a26c11a958cc01cc2afce53049f4dac87}
+\hypertarget{structCvMatND_ae94dea9c705fa9beab9505cdb92f38b2}{\index{Cv\-Mat\-N\-D@{Cv\-Mat\-N\-D}!step@{step}}
+\index{step@{step}!CvMatND@{Cv\-Mat\-N\-D}}
+\subsubsection[{step}]{\setlength{\rightskip}{0pt plus 5cm}int Cv\-Mat\-N\-D\-::step}}\label{structCvMatND_ae94dea9c705fa9beab9505cdb92f38b2}
+\hypertarget{structCvMatND_ae555c16ced9ddfb8cb3fbd867cadece9}{\index{Cv\-Mat\-N\-D@{Cv\-Mat\-N\-D}!type@{type}}
+\index{type@{type}!CvMatND@{Cv\-Mat\-N\-D}}
+\subsubsection[{type}]{\setlength{\rightskip}{0pt plus 5cm}int Cv\-Mat\-N\-D\-::type}}\label{structCvMatND_ae555c16ced9ddfb8cb3fbd867cadece9}
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/core/\hyperlink{core_2types__c_8h}{types\-\_\-c.\-h}\end{DoxyCompactItemize}

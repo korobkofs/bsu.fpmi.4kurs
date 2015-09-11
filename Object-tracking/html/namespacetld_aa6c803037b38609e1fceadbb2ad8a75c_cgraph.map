@@ -1,0 +1,6 @@
+<map id="tld::tldExtractNormalizedPatchRect" name="tld::tldExtractNormalizedPatchRect">
+<area shape="rect" id="node2" href="$namespacetld.html#ac965be65b1eae7ec666c3bfbe9da065e" title="Extracts normalized patch from the image by rectangle. " alt="" coords="222,23,389,65"/>
+<area shape="rect" id="node3" href="$namespacetld.html#a16fe2b016494fa66be611f723ed7bebc" title="Extracts the subimage by the reactangle. " alt="" coords="438,5,597,32"/>
+<area shape="rect" id="node5" href="$namespacetld.html#a7facbe495da1f0e058c78b9b7dea412a" title="Returns mean&#45;normalized patch, the image must be greyscale. " alt="" coords="448,56,587,83"/>
+<area shape="rect" id="node4" href="$namespacetld.html#afd43d8a27c419d1f5da8718be917d4b5" title="Creates new rectangle from boundary. " alt="" coords="646,5,802,32"/>
+</map>

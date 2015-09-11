@@ -1,0 +1,484 @@
+\hypertarget{classcvflann_1_1KMeansIndex}{\section{cvflann\-:\-:K\-Means\-Index$<$ Distance $>$ Class Template Reference}
+\label{classcvflann_1_1KMeansIndex}\index{cvflann\-::\-K\-Means\-Index$<$ Distance $>$@{cvflann\-::\-K\-Means\-Index$<$ Distance $>$}}
+}
+
+
+{\ttfamily \#include $<$kmeans\-\_\-index.\-h$>$}
+
+
+
+Inheritance diagram for cvflann\-:\-:K\-Means\-Index$<$ Distance $>$\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{classcvflann_1_1KMeansIndex__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for cvflann\-:\-:K\-Means\-Index$<$ Distance $>$\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{classcvflann_1_1KMeansIndex__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Distance\-::\-Element\-Type \hyperlink{classcvflann_1_1KMeansIndex_a2a28d6535e3e452320f97417f6c127ef}{Element\-Type}
+\item 
+typedef Distance\-::\-Result\-Type \hyperlink{classcvflann_1_1KMeansIndex_adcf3e940c1ab76474f113c4db65d36c5}{Distance\-Type}
+\item 
+typedef \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void}(K\-Means\-Index\-::$\ast$ \hyperlink{classcvflann_1_1KMeansIndex_a09b9ff9e5a1686adc4a5e6cc8a765768}{centers\-Alg\-Function} )(int, int $\ast$, int, int $\ast$, int \&)
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcvflann_1_1KMeansIndex_a2dd49d64f6cdc7751990ee1f1920609e}{choose\-Centers\-Random} (int \hyperlink{legacy_8hpp_a7be9b6436e5ea72ff5d5a66779b4bd38}{k}, int $\ast$\hyperlink{legacy_8hpp_a3e3b9b48bcbc7f460efbcfe4399ad24a}{indices}, int indices\-\_\-length, int $\ast$centers, int \&centers\-\_\-length)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcvflann_1_1KMeansIndex_a224fbbe5fdc60db9374ddbf499b0e9d3}{choose\-Centers\-Gonzales} (int \hyperlink{legacy_8hpp_a7be9b6436e5ea72ff5d5a66779b4bd38}{k}, int $\ast$\hyperlink{legacy_8hpp_a3e3b9b48bcbc7f460efbcfe4399ad24a}{indices}, int indices\-\_\-length, int $\ast$centers, int \&centers\-\_\-length)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcvflann_1_1KMeansIndex_a02bf5e31ac3996251fea5e2de6bd3fea}{choose\-Centers\-K\-Meanspp} (int \hyperlink{legacy_8hpp_a7be9b6436e5ea72ff5d5a66779b4bd38}{k}, int $\ast$\hyperlink{legacy_8hpp_a3e3b9b48bcbc7f460efbcfe4399ad24a}{indices}, int indices\-\_\-length, int $\ast$centers, int \&centers\-\_\-length)
+\item 
+\hyperlink{namespacecvflann_a4e3e6c98d774ea77fd7f0045c9bc7817}{flann\-\_\-algorithm\-\_\-t} \hyperlink{classcvflann_1_1KMeansIndex_ab1d2d857e2ee7660d24e563c4c11dab1}{get\-Type} () const 
+\item 
+\hyperlink{classcvflann_1_1KMeansIndex_ae4bea160d9e9d70f0f8177be8e0d1f0e}{K\-Means\-Index} (const \hyperlink{classcvflann_1_1Matrix}{Matrix}$<$ \hyperlink{classcvflann_1_1KMeansIndex_a2a28d6535e3e452320f97417f6c127ef}{Element\-Type} $>$ \&input\-Data, const \hyperlink{namespacecvflann_a742b4c7076c21012054af74a9ee48289}{Index\-Params} \&\hyperlink{compat_8hpp_a0480a03ecc41b20cde376602531d9270}{params}=\hyperlink{structcvflann_1_1KMeansIndexParams}{K\-Means\-Index\-Params}(), Distance \hyperlink{legacy_8hpp_a6f364afbe132c4ecfea48bde1b0618ba}{d}=Distance())
+\item 
+\hyperlink{classcvflann_1_1KMeansIndex_a6099d9d9abb2414e5a772d35ca73ee0e}{K\-Means\-Index} (const \hyperlink{classcvflann_1_1KMeansIndex}{K\-Means\-Index} \&)
+\item 
+\hyperlink{classcvflann_1_1KMeansIndex}{K\-Means\-Index} \& \hyperlink{classcvflann_1_1KMeansIndex_a8d2472fca09e17b351ed52b90e0d3b25}{operator=} (const \hyperlink{classcvflann_1_1KMeansIndex}{K\-Means\-Index} \&)
+\item 
+virtual \hyperlink{classcvflann_1_1KMeansIndex_a8aba38be2d90c7dd22eaa710e19ceb83}{$\sim$\-K\-Means\-Index} ()
+\item 
+size\-\_\-t \hyperlink{classcvflann_1_1KMeansIndex_accb5cd8cd1aec9b55420471537ee6423}{size} () const 
+\item 
+size\-\_\-t \hyperlink{classcvflann_1_1KMeansIndex_ad3c60e35d2f9face152ef9a8a303493a}{veclen} () const 
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcvflann_1_1KMeansIndex_ac65e5ca1bc0c0e1a4663438eff141861}{set\-\_\-cb\-\_\-index} (float \hyperlink{core__c_8h_a750b5d744c39a06bfb13e6eb010e35d0}{index})
+\item 
+int \hyperlink{classcvflann_1_1KMeansIndex_a95475eb6c639b87fa5e07812d6f4058a}{used\-Memory} () const 
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcvflann_1_1KMeansIndex_a8018b120cc79371b02e58b50f8992634}{build\-Index} ()
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcvflann_1_1KMeansIndex_a4c388bc8fab9af7ec567e00366ea14f6}{save\-Index} (F\-I\-L\-E $\ast$stream)
+\begin{DoxyCompactList}\small\item\em Saves the index to a stream. \end{DoxyCompactList}\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcvflann_1_1KMeansIndex_a11e0ff42576490042f640c2c382999d0}{load\-Index} (F\-I\-L\-E $\ast$stream)
+\begin{DoxyCompactList}\small\item\em Loads the index from a stream. \end{DoxyCompactList}\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcvflann_1_1KMeansIndex_a2e666baa48e5094e755c0ccdeb908b55}{find\-Neighbors} (\hyperlink{classcvflann_1_1ResultSet}{Result\-Set}$<$ \hyperlink{classcvflann_1_1KMeansIndex_adcf3e940c1ab76474f113c4db65d36c5}{Distance\-Type} $>$ \&\hyperlink{legacy_8hpp_a0bb77d54f6769867cfdf389897bd8e43}{result}, const \hyperlink{classcvflann_1_1KMeansIndex_a2a28d6535e3e452320f97417f6c127ef}{Element\-Type} $\ast$vec, const \hyperlink{structcvflann_1_1SearchParams}{Search\-Params} \&search\-Params)
+\item 
+int \hyperlink{classcvflann_1_1KMeansIndex_a773a603be17320c0d106662548407336}{get\-Cluster\-Centers} (\hyperlink{classcvflann_1_1Matrix}{Matrix}$<$ \hyperlink{classcvflann_1_1KMeansIndex_adcf3e940c1ab76474f113c4db65d36c5}{Distance\-Type} $>$ \&centers)
+\item 
+\hyperlink{namespacecvflann_a742b4c7076c21012054af74a9ee48289}{Index\-Params} \hyperlink{classcvflann_1_1KMeansIndex_a1e51703a5f49deda70a3eb1ce755ce45}{get\-Parameters} () const 
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcvflann_1_1KMeansIndex_a09b9ff9e5a1686adc4a5e6cc8a765768}{centers\-Alg\-Function} \hyperlink{classcvflann_1_1KMeansIndex_af02aa808b786b448cc5aaac95104d0d7}{choose\-Centers}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Distance$>$class cvflann\-::\-K\-Means\-Index$<$ Distance $>$}
+
+Hierarchical kmeans index
+
+Contains a tree constructed through a hierarchical kmeans clustering and other information for indexing a set of points for nearest-\/neighbour matching. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classcvflann_1_1KMeansIndex_a09b9ff9e5a1686adc4a5e6cc8a765768}{\index{cvflann\-::\-K\-Means\-Index@{cvflann\-::\-K\-Means\-Index}!centers\-Alg\-Function@{centers\-Alg\-Function}}
+\index{centers\-Alg\-Function@{centers\-Alg\-Function}!cvflann::KMeansIndex@{cvflann\-::\-K\-Means\-Index}}
+\subsubsection[{centers\-Alg\-Function}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ typedef {\bf void}(K\-Means\-Index\-::$\ast$  {\bf cvflann\-::\-K\-Means\-Index}$<$ Distance $>$\-::centers\-Alg\-Function)(int, int $\ast$, int, int $\ast$, int \&)}}\label{classcvflann_1_1KMeansIndex_a09b9ff9e5a1686adc4a5e6cc8a765768}
+\hypertarget{classcvflann_1_1KMeansIndex_adcf3e940c1ab76474f113c4db65d36c5}{\index{cvflann\-::\-K\-Means\-Index@{cvflann\-::\-K\-Means\-Index}!Distance\-Type@{Distance\-Type}}
+\index{Distance\-Type@{Distance\-Type}!cvflann::KMeansIndex@{cvflann\-::\-K\-Means\-Index}}
+\subsubsection[{Distance\-Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ typedef Distance\-::\-Result\-Type {\bf cvflann\-::\-K\-Means\-Index}$<$ Distance $>$\-::{\bf Distance\-Type}}}\label{classcvflann_1_1KMeansIndex_adcf3e940c1ab76474f113c4db65d36c5}
+\hypertarget{classcvflann_1_1KMeansIndex_a2a28d6535e3e452320f97417f6c127ef}{\index{cvflann\-::\-K\-Means\-Index@{cvflann\-::\-K\-Means\-Index}!Element\-Type@{Element\-Type}}
+\index{Element\-Type@{Element\-Type}!cvflann::KMeansIndex@{cvflann\-::\-K\-Means\-Index}}
+\subsubsection[{Element\-Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ typedef Distance\-::\-Element\-Type {\bf cvflann\-::\-K\-Means\-Index}$<$ Distance $>$\-::{\bf Element\-Type}}}\label{classcvflann_1_1KMeansIndex_a2a28d6535e3e452320f97417f6c127ef}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcvflann_1_1KMeansIndex_ae4bea160d9e9d70f0f8177be8e0d1f0e}{\index{cvflann\-::\-K\-Means\-Index@{cvflann\-::\-K\-Means\-Index}!K\-Means\-Index@{K\-Means\-Index}}
+\index{K\-Means\-Index@{K\-Means\-Index}!cvflann::KMeansIndex@{cvflann\-::\-K\-Means\-Index}}
+\subsubsection[{K\-Means\-Index}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ {\bf cvflann\-::\-K\-Means\-Index}$<$ Distance $>$\-::{\bf K\-Means\-Index} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ {\bf Element\-Type} $>$ \&}]{input\-Data, }
+\item[{const {\bf Index\-Params} \&}]{params = {\ttfamily {\bf K\-Means\-Index\-Params}()}, }
+\item[{Distance}]{d = {\ttfamily Distance()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcvflann_1_1KMeansIndex_ae4bea160d9e9d70f0f8177be8e0d1f0e}
+\hyperlink{classcvflann_1_1Index}{Index} constructor
+
+Params\-: input\-Data = dataset with the input features params = parameters passed to the hierarchical k-\/means algorithm 
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcvflann_1_1KMeansIndex_ae4bea160d9e9d70f0f8177be8e0d1f0e_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcvflann_1_1KMeansIndex_a6099d9d9abb2414e5a772d35ca73ee0e}{\index{cvflann\-::\-K\-Means\-Index@{cvflann\-::\-K\-Means\-Index}!K\-Means\-Index@{K\-Means\-Index}}
+\index{K\-Means\-Index@{K\-Means\-Index}!cvflann::KMeansIndex@{cvflann\-::\-K\-Means\-Index}}
+\subsubsection[{K\-Means\-Index}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ {\bf cvflann\-::\-K\-Means\-Index}$<$ Distance $>$\-::{\bf K\-Means\-Index} (
+\begin{DoxyParamCaption}
+\item[{const {\bf K\-Means\-Index}$<$ Distance $>$ \&}]{}
+\end{DoxyParamCaption}
+)}}\label{classcvflann_1_1KMeansIndex_a6099d9d9abb2414e5a772d35ca73ee0e}
+\hypertarget{classcvflann_1_1KMeansIndex_a8aba38be2d90c7dd22eaa710e19ceb83}{\index{cvflann\-::\-K\-Means\-Index@{cvflann\-::\-K\-Means\-Index}!$\sim$\-K\-Means\-Index@{$\sim$\-K\-Means\-Index}}
+\index{$\sim$\-K\-Means\-Index@{$\sim$\-K\-Means\-Index}!cvflann::KMeansIndex@{cvflann\-::\-K\-Means\-Index}}
+\subsubsection[{$\sim$\-K\-Means\-Index}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ virtual {\bf cvflann\-::\-K\-Means\-Index}$<$ Distance $>$\-::$\sim${\bf K\-Means\-Index} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1KMeansIndex_a8aba38be2d90c7dd22eaa710e19ceb83}
+\hyperlink{classcvflann_1_1Index}{Index} destructor.
+
+Release the memory used by the index. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classcvflann_1_1KMeansIndex_a8018b120cc79371b02e58b50f8992634}{\index{cvflann\-::\-K\-Means\-Index@{cvflann\-::\-K\-Means\-Index}!build\-Index@{build\-Index}}
+\index{build\-Index@{build\-Index}!cvflann::KMeansIndex@{cvflann\-::\-K\-Means\-Index}}
+\subsubsection[{build\-Index}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ {\bf void} {\bf cvflann\-::\-K\-Means\-Index}$<$ Distance $>$\-::build\-Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1KMeansIndex_a8018b120cc79371b02e58b50f8992634}
+Builds the index 
+
+Implements \hyperlink{classcvflann_1_1NNIndex_aaa8811509bb2f30e91570cefe4dc71e2}{cvflann\-::\-N\-N\-Index$<$ Distance $>$}.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcvflann_1_1KMeansIndex_a8018b120cc79371b02e58b50f8992634_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcvflann_1_1KMeansIndex_a8018b120cc79371b02e58b50f8992634_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcvflann_1_1KMeansIndex_a224fbbe5fdc60db9374ddbf499b0e9d3}{\index{cvflann\-::\-K\-Means\-Index@{cvflann\-::\-K\-Means\-Index}!choose\-Centers\-Gonzales@{choose\-Centers\-Gonzales}}
+\index{choose\-Centers\-Gonzales@{choose\-Centers\-Gonzales}!cvflann::KMeansIndex@{cvflann\-::\-K\-Means\-Index}}
+\subsubsection[{choose\-Centers\-Gonzales}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ {\bf void} {\bf cvflann\-::\-K\-Means\-Index}$<$ Distance $>$\-::choose\-Centers\-Gonzales (
+\begin{DoxyParamCaption}
+\item[{int}]{k, }
+\item[{int $\ast$}]{indices, }
+\item[{int}]{indices\-\_\-length, }
+\item[{int $\ast$}]{centers, }
+\item[{int \&}]{centers\-\_\-length}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcvflann_1_1KMeansIndex_a224fbbe5fdc60db9374ddbf499b0e9d3}
+Chooses the initial centers in the k-\/means using Gonzales' algorithm so that the centers are spaced apart from each other.
+
+Params\-: k = number of centers vecs = the dataset of points indices = indices in the dataset Returns\-: 
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{classcvflann_1_1KMeansIndex_a224fbbe5fdc60db9374ddbf499b0e9d3_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcvflann_1_1KMeansIndex_a224fbbe5fdc60db9374ddbf499b0e9d3_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcvflann_1_1KMeansIndex_a02bf5e31ac3996251fea5e2de6bd3fea}{\index{cvflann\-::\-K\-Means\-Index@{cvflann\-::\-K\-Means\-Index}!choose\-Centers\-K\-Meanspp@{choose\-Centers\-K\-Meanspp}}
+\index{choose\-Centers\-K\-Meanspp@{choose\-Centers\-K\-Meanspp}!cvflann::KMeansIndex@{cvflann\-::\-K\-Means\-Index}}
+\subsubsection[{choose\-Centers\-K\-Meanspp}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ {\bf void} {\bf cvflann\-::\-K\-Means\-Index}$<$ Distance $>$\-::choose\-Centers\-K\-Meanspp (
+\begin{DoxyParamCaption}
+\item[{int}]{k, }
+\item[{int $\ast$}]{indices, }
+\item[{int}]{indices\-\_\-length, }
+\item[{int $\ast$}]{centers, }
+\item[{int \&}]{centers\-\_\-length}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcvflann_1_1KMeansIndex_a02bf5e31ac3996251fea5e2de6bd3fea}
+Chooses the initial centers in the k-\/means using the algorithm proposed in the K\-Means++ paper\-: Arthur, David; Vassilvitskii, Sergei -\/ k-\/means++\-: The Advantages of Careful Seeding
+
+Implementation of this function was converted from the one provided in Arthur's code.
+
+Params\-: k = number of centers vecs = the dataset of points indices = indices in the dataset Returns\-: 
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcvflann_1_1KMeansIndex_a02bf5e31ac3996251fea5e2de6bd3fea_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcvflann_1_1KMeansIndex_a02bf5e31ac3996251fea5e2de6bd3fea_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcvflann_1_1KMeansIndex_a2dd49d64f6cdc7751990ee1f1920609e}{\index{cvflann\-::\-K\-Means\-Index@{cvflann\-::\-K\-Means\-Index}!choose\-Centers\-Random@{choose\-Centers\-Random}}
+\index{choose\-Centers\-Random@{choose\-Centers\-Random}!cvflann::KMeansIndex@{cvflann\-::\-K\-Means\-Index}}
+\subsubsection[{choose\-Centers\-Random}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ {\bf void} {\bf cvflann\-::\-K\-Means\-Index}$<$ Distance $>$\-::choose\-Centers\-Random (
+\begin{DoxyParamCaption}
+\item[{int}]{k, }
+\item[{int $\ast$}]{indices, }
+\item[{int}]{indices\-\_\-length, }
+\item[{int $\ast$}]{centers, }
+\item[{int \&}]{centers\-\_\-length}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcvflann_1_1KMeansIndex_a2dd49d64f6cdc7751990ee1f1920609e}
+Chooses the initial centers in the k-\/means clustering in a random manner.
+
+Params\-: k = number of centers vecs = the dataset of points indices = indices in the dataset indices\-\_\-length = length of indices vector 
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcvflann_1_1KMeansIndex_a2dd49d64f6cdc7751990ee1f1920609e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcvflann_1_1KMeansIndex_a2dd49d64f6cdc7751990ee1f1920609e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcvflann_1_1KMeansIndex_a2e666baa48e5094e755c0ccdeb908b55}{\index{cvflann\-::\-K\-Means\-Index@{cvflann\-::\-K\-Means\-Index}!find\-Neighbors@{find\-Neighbors}}
+\index{find\-Neighbors@{find\-Neighbors}!cvflann::KMeansIndex@{cvflann\-::\-K\-Means\-Index}}
+\subsubsection[{find\-Neighbors}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ {\bf void} {\bf cvflann\-::\-K\-Means\-Index}$<$ Distance $>$\-::find\-Neighbors (
+\begin{DoxyParamCaption}
+\item[{{\bf Result\-Set}$<$ {\bf Distance\-Type} $>$ \&}]{result, }
+\item[{const {\bf Element\-Type} $\ast$}]{vec, }
+\item[{const {\bf Search\-Params} \&}]{search\-Params}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1KMeansIndex_a2e666baa48e5094e755c0ccdeb908b55}
+Find set of nearest neighbors to vec. Their indices are stored inside the result object.
+
+Params\-: result = the result object in which the indices of the nearest-\/neighbors are stored vec = the vector for which to search the nearest neighbors search\-Params = parameters that influence the search algorithm (checks, cb\-\_\-index) 
+
+Implements \hyperlink{classcvflann_1_1NNIndex_ac038c51dc941c7c1a55b08c17e213e41}{cvflann\-::\-N\-N\-Index$<$ Distance $>$}.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{classcvflann_1_1KMeansIndex_a2e666baa48e5094e755c0ccdeb908b55_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcvflann_1_1KMeansIndex_a773a603be17320c0d106662548407336}{\index{cvflann\-::\-K\-Means\-Index@{cvflann\-::\-K\-Means\-Index}!get\-Cluster\-Centers@{get\-Cluster\-Centers}}
+\index{get\-Cluster\-Centers@{get\-Cluster\-Centers}!cvflann::KMeansIndex@{cvflann\-::\-K\-Means\-Index}}
+\subsubsection[{get\-Cluster\-Centers}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ int {\bf cvflann\-::\-K\-Means\-Index}$<$ Distance $>$\-::get\-Cluster\-Centers (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix}$<$ {\bf Distance\-Type} $>$ \&}]{centers}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcvflann_1_1KMeansIndex_a773a603be17320c0d106662548407336}
+Clustering function that takes a cut in the hierarchical k-\/means tree and return the clusters centers of that clustering. Params\-: num\-Clusters = number of clusters to have in the clustering computed Returns\-: number of cluster centers 
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcvflann_1_1KMeansIndex_a773a603be17320c0d106662548407336_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcvflann_1_1KMeansIndex_a1e51703a5f49deda70a3eb1ce755ce45}{\index{cvflann\-::\-K\-Means\-Index@{cvflann\-::\-K\-Means\-Index}!get\-Parameters@{get\-Parameters}}
+\index{get\-Parameters@{get\-Parameters}!cvflann::KMeansIndex@{cvflann\-::\-K\-Means\-Index}}
+\subsubsection[{get\-Parameters}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ {\bf Index\-Params} {\bf cvflann\-::\-K\-Means\-Index}$<$ Distance $>$\-::get\-Parameters (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1KMeansIndex_a1e51703a5f49deda70a3eb1ce755ce45}
+\begin{DoxyReturn}{Returns}
+The index parameters 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classcvflann_1_1NNIndex_afbc22ebf77f4f376d9e7922727d0abfe}{cvflann\-::\-N\-N\-Index$<$ Distance $>$}.
+
+\hypertarget{classcvflann_1_1KMeansIndex_ab1d2d857e2ee7660d24e563c4c11dab1}{\index{cvflann\-::\-K\-Means\-Index@{cvflann\-::\-K\-Means\-Index}!get\-Type@{get\-Type}}
+\index{get\-Type@{get\-Type}!cvflann::KMeansIndex@{cvflann\-::\-K\-Means\-Index}}
+\subsubsection[{get\-Type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ {\bf flann\-\_\-algorithm\-\_\-t} {\bf cvflann\-::\-K\-Means\-Index}$<$ Distance $>$\-::get\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1KMeansIndex_ab1d2d857e2ee7660d24e563c4c11dab1}
+\begin{DoxyReturn}{Returns}
+The index type (kdtree, kmeans,...) 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classcvflann_1_1NNIndex_ac40469dbc16bcb0fb4b0c9912c5f8acb}{cvflann\-::\-N\-N\-Index$<$ Distance $>$}.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{classcvflann_1_1KMeansIndex_ab1d2d857e2ee7660d24e563c4c11dab1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcvflann_1_1KMeansIndex_a11e0ff42576490042f640c2c382999d0}{\index{cvflann\-::\-K\-Means\-Index@{cvflann\-::\-K\-Means\-Index}!load\-Index@{load\-Index}}
+\index{load\-Index@{load\-Index}!cvflann::KMeansIndex@{cvflann\-::\-K\-Means\-Index}}
+\subsubsection[{load\-Index}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ {\bf void} {\bf cvflann\-::\-K\-Means\-Index}$<$ Distance $>$\-::load\-Index (
+\begin{DoxyParamCaption}
+\item[{F\-I\-L\-E $\ast$}]{stream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1KMeansIndex_a11e0ff42576490042f640c2c382999d0}
+
+
+Loads the index from a stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & The stream from which the index is loaded \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classcvflann_1_1NNIndex_a4bcaf48ee2ac65a1b3cebea99d021611}{cvflann\-::\-N\-N\-Index$<$ Distance $>$}.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{classcvflann_1_1KMeansIndex_a11e0ff42576490042f640c2c382999d0_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcvflann_1_1KMeansIndex_a8d2472fca09e17b351ed52b90e0d3b25}{\index{cvflann\-::\-K\-Means\-Index@{cvflann\-::\-K\-Means\-Index}!operator=@{operator=}}
+\index{operator=@{operator=}!cvflann::KMeansIndex@{cvflann\-::\-K\-Means\-Index}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ {\bf K\-Means\-Index}\& {\bf cvflann\-::\-K\-Means\-Index}$<$ Distance $>$\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf K\-Means\-Index}$<$ Distance $>$ \&}]{}
+\end{DoxyParamCaption}
+)}}\label{classcvflann_1_1KMeansIndex_a8d2472fca09e17b351ed52b90e0d3b25}
+\hypertarget{classcvflann_1_1KMeansIndex_a4c388bc8fab9af7ec567e00366ea14f6}{\index{cvflann\-::\-K\-Means\-Index@{cvflann\-::\-K\-Means\-Index}!save\-Index@{save\-Index}}
+\index{save\-Index@{save\-Index}!cvflann::KMeansIndex@{cvflann\-::\-K\-Means\-Index}}
+\subsubsection[{save\-Index}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ {\bf void} {\bf cvflann\-::\-K\-Means\-Index}$<$ Distance $>$\-::save\-Index (
+\begin{DoxyParamCaption}
+\item[{F\-I\-L\-E $\ast$}]{stream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1KMeansIndex_a4c388bc8fab9af7ec567e00366ea14f6}
+
+
+Saves the index to a stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & The stream to save the index to \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classcvflann_1_1NNIndex_aad5c63116e3dbeccc96de7c70f0a8db7}{cvflann\-::\-N\-N\-Index$<$ Distance $>$}.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{classcvflann_1_1KMeansIndex_a4c388bc8fab9af7ec567e00366ea14f6_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcvflann_1_1KMeansIndex_ac65e5ca1bc0c0e1a4663438eff141861}{\index{cvflann\-::\-K\-Means\-Index@{cvflann\-::\-K\-Means\-Index}!set\-\_\-cb\-\_\-index@{set\-\_\-cb\-\_\-index}}
+\index{set\-\_\-cb\-\_\-index@{set\-\_\-cb\-\_\-index}!cvflann::KMeansIndex@{cvflann\-::\-K\-Means\-Index}}
+\subsubsection[{set\-\_\-cb\-\_\-index}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ {\bf void} {\bf cvflann\-::\-K\-Means\-Index}$<$ Distance $>$\-::set\-\_\-cb\-\_\-index (
+\begin{DoxyParamCaption}
+\item[{float}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcvflann_1_1KMeansIndex_ac65e5ca1bc0c0e1a4663438eff141861}
+\hypertarget{classcvflann_1_1KMeansIndex_accb5cd8cd1aec9b55420471537ee6423}{\index{cvflann\-::\-K\-Means\-Index@{cvflann\-::\-K\-Means\-Index}!size@{size}}
+\index{size@{size}!cvflann::KMeansIndex@{cvflann\-::\-K\-Means\-Index}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ size\-\_\-t {\bf cvflann\-::\-K\-Means\-Index}$<$ Distance $>$\-::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1KMeansIndex_accb5cd8cd1aec9b55420471537ee6423}
+Returns size of index. 
+
+Implements \hyperlink{classcvflann_1_1NNIndex_ae75fd979d25a239b4aba751114493fe0}{cvflann\-::\-N\-N\-Index$<$ Distance $>$}.
+
+\hypertarget{classcvflann_1_1KMeansIndex_a95475eb6c639b87fa5e07812d6f4058a}{\index{cvflann\-::\-K\-Means\-Index@{cvflann\-::\-K\-Means\-Index}!used\-Memory@{used\-Memory}}
+\index{used\-Memory@{used\-Memory}!cvflann::KMeansIndex@{cvflann\-::\-K\-Means\-Index}}
+\subsubsection[{used\-Memory}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ int {\bf cvflann\-::\-K\-Means\-Index}$<$ Distance $>$\-::used\-Memory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1KMeansIndex_a95475eb6c639b87fa5e07812d6f4058a}
+Computes the inde memory usage Returns\-: memory used by the index 
+
+Implements \hyperlink{classcvflann_1_1NNIndex_ac172cb3774f8ae39ff1107bee4fadbf9}{cvflann\-::\-N\-N\-Index$<$ Distance $>$}.
+
+\hypertarget{classcvflann_1_1KMeansIndex_ad3c60e35d2f9face152ef9a8a303493a}{\index{cvflann\-::\-K\-Means\-Index@{cvflann\-::\-K\-Means\-Index}!veclen@{veclen}}
+\index{veclen@{veclen}!cvflann::KMeansIndex@{cvflann\-::\-K\-Means\-Index}}
+\subsubsection[{veclen}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ size\-\_\-t {\bf cvflann\-::\-K\-Means\-Index}$<$ Distance $>$\-::veclen (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classcvflann_1_1KMeansIndex_ad3c60e35d2f9face152ef9a8a303493a}
+Returns the length of an index feature. 
+
+Implements \hyperlink{classcvflann_1_1NNIndex_acdcc255d1b67d5636a0f76b68809e6be}{cvflann\-::\-N\-N\-Index$<$ Distance $>$}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcvflann_1_1KMeansIndex_af02aa808b786b448cc5aaac95104d0d7}{\index{cvflann\-::\-K\-Means\-Index@{cvflann\-::\-K\-Means\-Index}!choose\-Centers@{choose\-Centers}}
+\index{choose\-Centers@{choose\-Centers}!cvflann::KMeansIndex@{cvflann\-::\-K\-Means\-Index}}
+\subsubsection[{choose\-Centers}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Distance$>$ {\bf centers\-Alg\-Function} {\bf cvflann\-::\-K\-Means\-Index}$<$ Distance $>$\-::choose\-Centers}}\label{classcvflann_1_1KMeansIndex_af02aa808b786b448cc5aaac95104d0d7}
+The function used for choosing the cluster centers. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/flann/\hyperlink{kmeans__index_8h}{kmeans\-\_\-index.\-h}\end{DoxyCompactItemize}

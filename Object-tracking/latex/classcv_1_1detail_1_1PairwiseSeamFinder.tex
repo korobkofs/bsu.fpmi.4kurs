@@ -1,0 +1,100 @@
+\hypertarget{classcv_1_1detail_1_1PairwiseSeamFinder}{\section{cv\-:\-:detail\-:\-:Pairwise\-Seam\-Finder Class Reference}
+\label{classcv_1_1detail_1_1PairwiseSeamFinder}\index{cv\-::detail\-::\-Pairwise\-Seam\-Finder@{cv\-::detail\-::\-Pairwise\-Seam\-Finder}}
+}
+
+
+{\ttfamily \#include $<$seam\-\_\-finders.\-hpp$>$}
+
+
+
+Inheritance diagram for cv\-:\-:detail\-:\-:Pairwise\-Seam\-Finder\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{classcv_1_1detail_1_1PairwiseSeamFinder__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for cv\-:\-:detail\-:\-:Pairwise\-Seam\-Finder\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{classcv_1_1detail_1_1PairwiseSeamFinder__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1detail_1_1PairwiseSeamFinder_abae8c3f2f6723acc8bfcc4b59975f254}{find} (const std\-::vector$<$ Mat $>$ \&\hyperlink{legacy_8hpp_a371cd109b74033bc4366f584edd3dacc}{src}, const std\-::vector$<$ Point $>$ \&\hyperlink{imgproc__c_8h_a223e965e192c7025d6c6be77305f515b}{corners}, std\-::vector$<$ Mat $>$ \&masks)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1detail_1_1PairwiseSeamFinder_a929964603a3e5d322245b83ac348cb13}{run} ()
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1detail_1_1PairwiseSeamFinder_a8e2d33396c0a012c7a256db8337435c6}{find\-In\-Pair} (size\-\_\-t \hyperlink{legacy_8hpp_abb508deecf21698b089fdaf6cf99209d}{first}, size\-\_\-t \hyperlink{legacy_8hpp_a580692a0f0a0ceba270e5d0ff61df21e}{second}, Rect \hyperlink{legacy_8hpp_a22e52b2b51d064865d3ac2f27b308c33}{roi})=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::vector$<$ Mat $>$ \hyperlink{classcv_1_1detail_1_1PairwiseSeamFinder_a6202e4edcd4051de88e8012ec998b4ea}{images\-\_\-}
+\item 
+std\-::vector$<$ Size $>$ \hyperlink{classcv_1_1detail_1_1PairwiseSeamFinder_a5abe230ead5af1b35d94cb3f2b867787}{sizes\-\_\-}
+\item 
+std\-::vector$<$ Point $>$ \hyperlink{classcv_1_1detail_1_1PairwiseSeamFinder_a73b7891ed68d55b25011fbcdb6d5f4da}{corners\-\_\-}
+\item 
+std\-::vector$<$ Mat $>$ \hyperlink{classcv_1_1detail_1_1PairwiseSeamFinder_a53c6eeed8de59b4b4e439c1fb8db14b9}{masks\-\_\-}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcv_1_1detail_1_1PairwiseSeamFinder_abae8c3f2f6723acc8bfcc4b59975f254}{\index{cv\-::detail\-::\-Pairwise\-Seam\-Finder@{cv\-::detail\-::\-Pairwise\-Seam\-Finder}!find@{find}}
+\index{find@{find}!cv::detail::PairwiseSeamFinder@{cv\-::detail\-::\-Pairwise\-Seam\-Finder}}
+\subsubsection[{find}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cv\-::detail\-::\-Pairwise\-Seam\-Finder\-::find (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ Mat $>$ \&}]{src, }
+\item[{const std\-::vector$<$ Point $>$ \&}]{corners, }
+\item[{std\-::vector$<$ Mat $>$ \&}]{masks}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcv_1_1detail_1_1PairwiseSeamFinder_abae8c3f2f6723acc8bfcc4b59975f254}
+
+
+Implements \hyperlink{classcv_1_1detail_1_1SeamFinder_ab68d70d11442009fc6425ac7656962e8}{cv\-::detail\-::\-Seam\-Finder}.
+
+\hypertarget{classcv_1_1detail_1_1PairwiseSeamFinder_a8e2d33396c0a012c7a256db8337435c6}{\index{cv\-::detail\-::\-Pairwise\-Seam\-Finder@{cv\-::detail\-::\-Pairwise\-Seam\-Finder}!find\-In\-Pair@{find\-In\-Pair}}
+\index{find\-In\-Pair@{find\-In\-Pair}!cv::detail::PairwiseSeamFinder@{cv\-::detail\-::\-Pairwise\-Seam\-Finder}}
+\subsubsection[{find\-In\-Pair}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cv\-::detail\-::\-Pairwise\-Seam\-Finder\-::find\-In\-Pair (
+\begin{DoxyParamCaption}
+\item[{size\-\_\-t}]{first, }
+\item[{size\-\_\-t}]{second, }
+\item[{Rect}]{roi}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{classcv_1_1detail_1_1PairwiseSeamFinder_a8e2d33396c0a012c7a256db8337435c6}
+\hypertarget{classcv_1_1detail_1_1PairwiseSeamFinder_a929964603a3e5d322245b83ac348cb13}{\index{cv\-::detail\-::\-Pairwise\-Seam\-Finder@{cv\-::detail\-::\-Pairwise\-Seam\-Finder}!run@{run}}
+\index{run@{run}!cv::detail::PairwiseSeamFinder@{cv\-::detail\-::\-Pairwise\-Seam\-Finder}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::detail\-::\-Pairwise\-Seam\-Finder\-::run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1detail_1_1PairwiseSeamFinder_a929964603a3e5d322245b83ac348cb13}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcv_1_1detail_1_1PairwiseSeamFinder_a73b7891ed68d55b25011fbcdb6d5f4da}{\index{cv\-::detail\-::\-Pairwise\-Seam\-Finder@{cv\-::detail\-::\-Pairwise\-Seam\-Finder}!corners\-\_\-@{corners\-\_\-}}
+\index{corners\-\_\-@{corners\-\_\-}!cv::detail::PairwiseSeamFinder@{cv\-::detail\-::\-Pairwise\-Seam\-Finder}}
+\subsubsection[{corners\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$Point$>$ cv\-::detail\-::\-Pairwise\-Seam\-Finder\-::corners\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1detail_1_1PairwiseSeamFinder_a73b7891ed68d55b25011fbcdb6d5f4da}
+\hypertarget{classcv_1_1detail_1_1PairwiseSeamFinder_a6202e4edcd4051de88e8012ec998b4ea}{\index{cv\-::detail\-::\-Pairwise\-Seam\-Finder@{cv\-::detail\-::\-Pairwise\-Seam\-Finder}!images\-\_\-@{images\-\_\-}}
+\index{images\-\_\-@{images\-\_\-}!cv::detail::PairwiseSeamFinder@{cv\-::detail\-::\-Pairwise\-Seam\-Finder}}
+\subsubsection[{images\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$Mat$>$ cv\-::detail\-::\-Pairwise\-Seam\-Finder\-::images\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1detail_1_1PairwiseSeamFinder_a6202e4edcd4051de88e8012ec998b4ea}
+\hypertarget{classcv_1_1detail_1_1PairwiseSeamFinder_a53c6eeed8de59b4b4e439c1fb8db14b9}{\index{cv\-::detail\-::\-Pairwise\-Seam\-Finder@{cv\-::detail\-::\-Pairwise\-Seam\-Finder}!masks\-\_\-@{masks\-\_\-}}
+\index{masks\-\_\-@{masks\-\_\-}!cv::detail::PairwiseSeamFinder@{cv\-::detail\-::\-Pairwise\-Seam\-Finder}}
+\subsubsection[{masks\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$Mat$>$ cv\-::detail\-::\-Pairwise\-Seam\-Finder\-::masks\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1detail_1_1PairwiseSeamFinder_a53c6eeed8de59b4b4e439c1fb8db14b9}
+\hypertarget{classcv_1_1detail_1_1PairwiseSeamFinder_a5abe230ead5af1b35d94cb3f2b867787}{\index{cv\-::detail\-::\-Pairwise\-Seam\-Finder@{cv\-::detail\-::\-Pairwise\-Seam\-Finder}!sizes\-\_\-@{sizes\-\_\-}}
+\index{sizes\-\_\-@{sizes\-\_\-}!cv::detail::PairwiseSeamFinder@{cv\-::detail\-::\-Pairwise\-Seam\-Finder}}
+\subsubsection[{sizes\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$Size$>$ cv\-::detail\-::\-Pairwise\-Seam\-Finder\-::sizes\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1detail_1_1PairwiseSeamFinder_a5abe230ead5af1b35d94cb3f2b867787}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/stitching/detail/\hyperlink{seam__finders_8hpp}{seam\-\_\-finders.\-hpp}\end{DoxyCompactItemize}

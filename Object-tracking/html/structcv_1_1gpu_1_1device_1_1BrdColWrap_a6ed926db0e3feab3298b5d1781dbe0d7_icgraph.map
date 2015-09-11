@@ -1,0 +1,5 @@
+<map id="cv::gpu::device::BrdColWrap::idx_row_high" name="cv::gpu::device::BrdColWrap::idx_row_high">
+<area shape="rect" id="node2" href="$structcv_1_1gpu_1_1device_1_1BrdColWrap.html#afd8f87eb7d6731e95366709bb54621f9" title="cv::gpu::device::BrdColWrap\l::idx_row" alt="" coords="246,5,437,46"/>
+<area shape="rect" id="node4" href="$structcv_1_1gpu_1_1device_1_1BrdColWrap.html#a0cdce2fb7abe76303b32291e36f6878b" title="cv::gpu::device::BrdColWrap\l::at_high" alt="" coords="246,70,437,111"/>
+<area shape="rect" id="node3" href="$structcv_1_1gpu_1_1device_1_1BrdColWrap.html#a086cebdfa783c82525a8c1e3e1b90132" title="cv::gpu::device::BrdColWrap::at" alt="" coords="486,12,695,39"/>
+</map>

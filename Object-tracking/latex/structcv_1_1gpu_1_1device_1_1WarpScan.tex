@@ -1,0 +1,101 @@
+\hypertarget{structcv_1_1gpu_1_1device_1_1WarpScan}{\section{cv\-:\-:gpu\-:\-:device\-:\-:Warp\-Scan$<$ Kind, T, F $>$ Struct Template Reference}
+\label{structcv_1_1gpu_1_1device_1_1WarpScan}\index{cv\-::gpu\-::device\-::\-Warp\-Scan$<$ Kind, T, F $>$@{cv\-::gpu\-::device\-::\-Warp\-Scan$<$ Kind, T, F $>$}}
+}
+
+
+{\ttfamily \#include $<$scan.\-hpp$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{structcv_1_1gpu_1_1device_1_1WarpScan}{Warp\-Scan}$<$ \hyperlink{namespacecv_1_1gpu_1_1device_a28816cb295b05f754b37820576d20aefa2c3c91d1e8338cd34af5d45feb97bdf7}{I\-N\-C\-L\-U\-S\-I\-V\-E}, \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T}, \hyperlink{calib3d_8hpp_acc93c21c0e709826b318c946961af8fc}{F} $>$ \hyperlink{structcv_1_1gpu_1_1device_1_1WarpScan_acf969950d6f4c09c21ae86b0e7a64580}{merge}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{structcv_1_1gpu_1_1device_1_1WarpScan_a5336ad768a94794d2f99632f63334e90}{Warp\-Scan} ()
+\item 
+\-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{structcv_1_1gpu_1_1device_1_1WarpScan_a7aacde3300f427e840b91f0d68c9428f}{Warp\-Scan} (const \hyperlink{structcv_1_1gpu_1_1device_1_1WarpScan}{Warp\-Scan} \&other)
+\item 
+\-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \hyperlink{structcv_1_1gpu_1_1device_1_1WarpScan_ae91d1a85e275ec6b80f0be1f2fcdfbd4}{operator()} (volatile \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} $\ast$\hyperlink{core__c_8h_a166529da793cc1ef241cff347f3db5a5}{ptr}, const unsigned int \hyperlink{core__c_8h_a5c7c842f447336aa2f10826df65a28b3}{idx})
+\item 
+\-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \\*
+unsigned int \hyperlink{structcv_1_1gpu_1_1device_1_1WarpScan_a09424224613a80b4e1110e7e4939b7e1}{index} (const unsigned int tid)
+\item 
+\-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{structcv_1_1gpu_1_1device_1_1WarpScan_a2f4c8ea0929ec66d7778c257d488aaa2}{init} (volatile \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} $\ast$\hyperlink{core__c_8h_a166529da793cc1ef241cff347f3db5a5}{ptr})
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int \hyperlink{structcv_1_1gpu_1_1device_1_1WarpScan_a0978bf5f6f6e675cf51c6dec802b58b7}{warp\-\_\-offset} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{structcv_1_1gpu_1_1device_1_1WarpScan_acf969950d6f4c09c21ae86b0e7a64580}{\index{cv\-::gpu\-::device\-::\-Warp\-Scan@{cv\-::gpu\-::device\-::\-Warp\-Scan}!merge@{merge}}
+\index{merge@{merge}!cv::gpu::device::WarpScan@{cv\-::gpu\-::device\-::\-Warp\-Scan}}
+\subsubsection[{merge}]{\setlength{\rightskip}{0pt plus 5cm}template$<$Scan\-Kind Kind, typename T , typename F $>$ typedef {\bf Warp\-Scan}$<${\bf I\-N\-C\-L\-U\-S\-I\-V\-E}, {\bf T}, {\bf F}$>$ {\bf cv\-::gpu\-::device\-::\-Warp\-Scan}$<$ Kind, {\bf T}, {\bf F} $>$\-::{\bf merge}}}\label{structcv_1_1gpu_1_1device_1_1WarpScan_acf969950d6f4c09c21ae86b0e7a64580}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structcv_1_1gpu_1_1device_1_1WarpScan_a5336ad768a94794d2f99632f63334e90}{\index{cv\-::gpu\-::device\-::\-Warp\-Scan@{cv\-::gpu\-::device\-::\-Warp\-Scan}!Warp\-Scan@{Warp\-Scan}}
+\index{Warp\-Scan@{Warp\-Scan}!cv::gpu::device::WarpScan@{cv\-::gpu\-::device\-::\-Warp\-Scan}}
+\subsubsection[{Warp\-Scan}]{\setlength{\rightskip}{0pt plus 5cm}template$<$Scan\-Kind Kind, typename T , typename F $>$ \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- {\bf cv\-::gpu\-::device\-::\-Warp\-Scan}$<$ Kind, {\bf T}, {\bf F} $>$\-::{\bf Warp\-Scan} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{structcv_1_1gpu_1_1device_1_1WarpScan_a5336ad768a94794d2f99632f63334e90}
+\hypertarget{structcv_1_1gpu_1_1device_1_1WarpScan_a7aacde3300f427e840b91f0d68c9428f}{\index{cv\-::gpu\-::device\-::\-Warp\-Scan@{cv\-::gpu\-::device\-::\-Warp\-Scan}!Warp\-Scan@{Warp\-Scan}}
+\index{Warp\-Scan@{Warp\-Scan}!cv::gpu::device::WarpScan@{cv\-::gpu\-::device\-::\-Warp\-Scan}}
+\subsubsection[{Warp\-Scan}]{\setlength{\rightskip}{0pt plus 5cm}template$<$Scan\-Kind Kind, typename T , typename F $>$ \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- {\bf cv\-::gpu\-::device\-::\-Warp\-Scan}$<$ Kind, {\bf T}, {\bf F} $>$\-::{\bf Warp\-Scan} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Warp\-Scan}$<$ Kind, {\bf T}, {\bf F} $>$ \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{structcv_1_1gpu_1_1device_1_1WarpScan_a7aacde3300f427e840b91f0d68c9428f}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{structcv_1_1gpu_1_1device_1_1WarpScan_a7aacde3300f427e840b91f0d68c9428f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structcv_1_1gpu_1_1device_1_1WarpScan_a09424224613a80b4e1110e7e4939b7e1}{\index{cv\-::gpu\-::device\-::\-Warp\-Scan@{cv\-::gpu\-::device\-::\-Warp\-Scan}!index@{index}}
+\index{index@{index}!cv::gpu::device::WarpScan@{cv\-::gpu\-::device\-::\-Warp\-Scan}}
+\subsubsection[{index}]{\setlength{\rightskip}{0pt plus 5cm}template$<$Scan\-Kind Kind, typename T , typename F $>$ \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- unsigned int {\bf cv\-::gpu\-::device\-::\-Warp\-Scan}$<$ Kind, {\bf T}, {\bf F} $>$\-::index (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{tid}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{structcv_1_1gpu_1_1device_1_1WarpScan_a09424224613a80b4e1110e7e4939b7e1}
+\hypertarget{structcv_1_1gpu_1_1device_1_1WarpScan_a2f4c8ea0929ec66d7778c257d488aaa2}{\index{cv\-::gpu\-::device\-::\-Warp\-Scan@{cv\-::gpu\-::device\-::\-Warp\-Scan}!init@{init}}
+\index{init@{init}!cv::gpu::device::WarpScan@{cv\-::gpu\-::device\-::\-Warp\-Scan}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}template$<$Scan\-Kind Kind, typename T , typename F $>$ \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- {\bf void} {\bf cv\-::gpu\-::device\-::\-Warp\-Scan}$<$ Kind, {\bf T}, {\bf F} $>$\-::init (
+\begin{DoxyParamCaption}
+\item[{volatile {\bf T} $\ast$}]{ptr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{structcv_1_1gpu_1_1device_1_1WarpScan_a2f4c8ea0929ec66d7778c257d488aaa2}
+\hypertarget{structcv_1_1gpu_1_1device_1_1WarpScan_ae91d1a85e275ec6b80f0be1f2fcdfbd4}{\index{cv\-::gpu\-::device\-::\-Warp\-Scan@{cv\-::gpu\-::device\-::\-Warp\-Scan}!operator()@{operator()}}
+\index{operator()@{operator()}!cv::gpu::device::WarpScan@{cv\-::gpu\-::device\-::\-Warp\-Scan}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$Scan\-Kind Kind, typename T , typename F $>$ \-\_\-\-\_\-device\-\_\-\-\_\- \-\_\-\-\_\-forceinline\-\_\-\-\_\- {\bf T} {\bf cv\-::gpu\-::device\-::\-Warp\-Scan}$<$ Kind, {\bf T}, {\bf F} $>$\-::operator() (
+\begin{DoxyParamCaption}
+\item[{volatile {\bf T} $\ast$}]{ptr, }
+\item[{const unsigned int}]{idx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{structcv_1_1gpu_1_1device_1_1WarpScan_ae91d1a85e275ec6b80f0be1f2fcdfbd4}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structcv_1_1gpu_1_1device_1_1WarpScan_a0978bf5f6f6e675cf51c6dec802b58b7}{\index{cv\-::gpu\-::device\-::\-Warp\-Scan@{cv\-::gpu\-::device\-::\-Warp\-Scan}!warp\-\_\-offset@{warp\-\_\-offset}}
+\index{warp\-\_\-offset@{warp\-\_\-offset}!cv::gpu::device::WarpScan@{cv\-::gpu\-::device\-::\-Warp\-Scan}}
+\subsubsection[{warp\-\_\-offset}]{\setlength{\rightskip}{0pt plus 5cm}template$<$Scan\-Kind Kind, typename T , typename F $>$ const int {\bf cv\-::gpu\-::device\-::\-Warp\-Scan}$<$ Kind, {\bf T}, {\bf F} $>$\-::warp\-\_\-offset = 0\hspace{0.3cm}{\ttfamily [static]}}}\label{structcv_1_1gpu_1_1device_1_1WarpScan_a0978bf5f6f6e675cf51c6dec802b58b7}
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/gpu/device/\hyperlink{scan_8hpp}{scan.\-hpp}\end{DoxyCompactItemize}

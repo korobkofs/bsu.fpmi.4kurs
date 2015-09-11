@@ -1,0 +1,282 @@
+\hypertarget{functional_8hpp}{\section{/usr/include/opencv2/gpu/device/functional.hpp File Reference}
+\label{functional_8hpp}\index{/usr/include/opencv2/gpu/device/functional.\-hpp@{/usr/include/opencv2/gpu/device/functional.\-hpp}}
+}
+{\ttfamily \#include $<$functional$>$}\\*
+{\ttfamily \#include \char`\"{}saturate\-\_\-cast.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}vec\-\_\-traits.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}type\-\_\-traits.\-hpp\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}device\-\_\-functions.\-h\char`\"{}}\\*
+Include dependency graph for functional.\-hpp\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{functional_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{functional_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1unary__function}{cv\-::gpu\-::device\-::unary\-\_\-function$<$ Argument, Result $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1binary__function}{cv\-::gpu\-::device\-::binary\-\_\-function$<$ Argument1, Argument2, Result $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1plus}{cv\-::gpu\-::device\-::plus$<$ T $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1minus}{cv\-::gpu\-::device\-::minus$<$ T $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1multiplies}{cv\-::gpu\-::device\-::multiplies$<$ T $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1divides}{cv\-::gpu\-::device\-::divides$<$ T $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1modulus}{cv\-::gpu\-::device\-::modulus$<$ T $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1negate}{cv\-::gpu\-::device\-::negate$<$ T $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1equal__to}{cv\-::gpu\-::device\-::equal\-\_\-to$<$ T $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1not__equal__to}{cv\-::gpu\-::device\-::not\-\_\-equal\-\_\-to$<$ T $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1greater}{cv\-::gpu\-::device\-::greater$<$ T $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1less}{cv\-::gpu\-::device\-::less$<$ T $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1greater__equal}{cv\-::gpu\-::device\-::greater\-\_\-equal$<$ T $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1less__equal}{cv\-::gpu\-::device\-::less\-\_\-equal$<$ T $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1logical__and}{cv\-::gpu\-::device\-::logical\-\_\-and$<$ T $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1logical__or}{cv\-::gpu\-::device\-::logical\-\_\-or$<$ T $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1logical__not}{cv\-::gpu\-::device\-::logical\-\_\-not$<$ T $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1bit__and}{cv\-::gpu\-::device\-::bit\-\_\-and$<$ T $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1bit__or}{cv\-::gpu\-::device\-::bit\-\_\-or$<$ T $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1bit__xor}{cv\-::gpu\-::device\-::bit\-\_\-xor$<$ T $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1bit__not}{cv\-::gpu\-::device\-::bit\-\_\-not$<$ T $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1identity}{cv\-::gpu\-::device\-::identity$<$ T $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1project1st}{cv\-::gpu\-::device\-::project1st$<$ T1, T2 $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1project2nd}{cv\-::gpu\-::device\-::project2nd$<$ T1, T2 $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1maximum}{cv\-::gpu\-::device\-::maximum$<$ T $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1minimum}{cv\-::gpu\-::device\-::minimum$<$ T $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1abs__func}{cv\-::gpu\-::device\-::abs\-\_\-func$<$ T $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1abs__func_3_01unsigned_01char_01_4}{cv\-::gpu\-::device\-::abs\-\_\-func$<$ unsigned char $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1abs__func_3_01signed_01char_01_4}{cv\-::gpu\-::device\-::abs\-\_\-func$<$ signed char $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1abs__func_3_01char_01_4}{cv\-::gpu\-::device\-::abs\-\_\-func$<$ char $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1abs__func_3_01unsigned_01short_01_4}{cv\-::gpu\-::device\-::abs\-\_\-func$<$ unsigned short $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1abs__func_3_01short_01_4}{cv\-::gpu\-::device\-::abs\-\_\-func$<$ short $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1abs__func_3_01unsigned_01int_01_4}{cv\-::gpu\-::device\-::abs\-\_\-func$<$ unsigned int $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1abs__func_3_01int_01_4}{cv\-::gpu\-::device\-::abs\-\_\-func$<$ int $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1abs__func_3_01float_01_4}{cv\-::gpu\-::device\-::abs\-\_\-func$<$ float $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1abs__func_3_01double_01_4}{cv\-::gpu\-::device\-::abs\-\_\-func$<$ double $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1hypot__sqr__func}{cv\-::gpu\-::device\-::hypot\-\_\-sqr\-\_\-func$<$ T $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1saturate__cast__func}{cv\-::gpu\-::device\-::saturate\-\_\-cast\-\_\-func$<$ T, D $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1thresh__binary__func}{cv\-::gpu\-::device\-::thresh\-\_\-binary\-\_\-func$<$ T $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1thresh__binary__inv__func}{cv\-::gpu\-::device\-::thresh\-\_\-binary\-\_\-inv\-\_\-func$<$ T $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1thresh__trunc__func}{cv\-::gpu\-::device\-::thresh\-\_\-trunc\-\_\-func$<$ T $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1thresh__to__zero__func}{cv\-::gpu\-::device\-::thresh\-\_\-to\-\_\-zero\-\_\-func$<$ T $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1thresh__to__zero__inv__func}{cv\-::gpu\-::device\-::thresh\-\_\-to\-\_\-zero\-\_\-inv\-\_\-func$<$ T $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1unary__negate}{cv\-::gpu\-::device\-::unary\-\_\-negate$<$ Predicate $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1binary__negate}{cv\-::gpu\-::device\-::binary\-\_\-negate$<$ Predicate $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1binder1st}{cv\-::gpu\-::device\-::binder1st$<$ Op $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1binder2nd}{cv\-::gpu\-::device\-::binder2nd$<$ Op $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1IsUnaryFunction}{cv\-::gpu\-::device\-::\-Is\-Unary\-Function$<$ F $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1IsUnaryFunction_1_1No}{cv\-::gpu\-::device\-::\-Is\-Unary\-Function$<$ F $>$\-::\-No}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1IsBinaryFunction}{cv\-::gpu\-::device\-::\-Is\-Binary\-Function$<$ F $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1IsBinaryFunction_1_1No}{cv\-::gpu\-::device\-::\-Is\-Binary\-Function$<$ F $>$\-::\-No}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1functional__detail_1_1UnOpShift}{cv\-::gpu\-::device\-::functional\-\_\-detail\-::\-Un\-Op\-Shift$<$ src\-\_\-elem\-\_\-size, dst\-\_\-elem\-\_\-size $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1functional__detail_1_1UnOpShift_3_01src__elem__size_00_011_01_4}{cv\-::gpu\-::device\-::functional\-\_\-detail\-::\-Un\-Op\-Shift$<$ src\-\_\-elem\-\_\-size, 1 $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1functional__detail_1_1UnOpShift_3_01src__elem__size_00_012_01_4}{cv\-::gpu\-::device\-::functional\-\_\-detail\-::\-Un\-Op\-Shift$<$ src\-\_\-elem\-\_\-size, 2 $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1functional__detail_1_1DefaultUnaryShift}{cv\-::gpu\-::device\-::functional\-\_\-detail\-::\-Default\-Unary\-Shift$<$ T, D $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1functional__detail_1_1BinOpShift}{cv\-::gpu\-::device\-::functional\-\_\-detail\-::\-Bin\-Op\-Shift$<$ src\-\_\-elem\-\_\-size1, src\-\_\-elem\-\_\-size2, dst\-\_\-elem\-\_\-size $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1functional__detail_1_1BinOpShift_3_01src__elem__size1_00_01src__elem__size2_00_011_01_4}{cv\-::gpu\-::device\-::functional\-\_\-detail\-::\-Bin\-Op\-Shift$<$ src\-\_\-elem\-\_\-size1, src\-\_\-elem\-\_\-size2, 1 $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1functional__detail_1_1BinOpShift_3_01src__elem__size1_00_01src__elem__size2_00_012_01_4}{cv\-::gpu\-::device\-::functional\-\_\-detail\-::\-Bin\-Op\-Shift$<$ src\-\_\-elem\-\_\-size1, src\-\_\-elem\-\_\-size2, 2 $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1functional__detail_1_1DefaultBinaryShift}{cv\-::gpu\-::device\-::functional\-\_\-detail\-::\-Default\-Binary\-Shift$<$ T1, T2, D $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1functional__detail_1_1ShiftDispatcher}{cv\-::gpu\-::device\-::functional\-\_\-detail\-::\-Shift\-Dispatcher$<$ Func, unary $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1functional__detail_1_1ShiftDispatcher_3_01Func_00_01true_01_4}{cv\-::gpu\-::device\-::functional\-\_\-detail\-::\-Shift\-Dispatcher$<$ Func, true $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1functional__detail_1_1ShiftDispatcher_3_01Func_00_01false_01_4}{cv\-::gpu\-::device\-::functional\-\_\-detail\-::\-Shift\-Dispatcher$<$ Func, false $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1DefaultTransformShift}{cv\-::gpu\-::device\-::\-Default\-Transform\-Shift$<$ Func $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1DefaultTransformFunctorTraits}{cv\-::gpu\-::device\-::\-Default\-Transform\-Functor\-Traits$<$ Func $>$}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1device_1_1TransformFunctorTraits}{cv\-::gpu\-::device\-::\-Transform\-Functor\-Traits$<$ Func $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacecv}{cv}
+\item 
+\hyperlink{namespacecv_1_1gpu}{cv\-::gpu}
+\item 
+\hyperlink{namespacecv_1_1gpu_1_1device}{cv\-::gpu\-::device}
+\item 
+\hyperlink{namespacecv_1_1gpu_1_1device_1_1functional__detail}{cv\-::gpu\-::device\-::functional\-\_\-detail}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{functional_8hpp_a231a047a0e998af2c4f63ed8355cb1dc}{O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-M\-I\-N\-M\-A\-X}(\hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name}, \hyperlink{imgproc__c_8h_a84612d8738bf935200cf32a103d8efe1}{type}, op)
+\item 
+\#define \hyperlink{functional_8hpp_ab4f3c8ae40184b8a2256c799b89948a0}{O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-U\-N\-\_\-\-F\-U\-N\-C\-T\-O\-R}(\hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name}, \hyperlink{core__c_8h_a120677ac732b3c9bfecab149fc978afa}{func})
+\item 
+\#define \hyperlink{functional_8hpp_a131c6e1cf0b1f8114e07b254b6b5d777}{O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-B\-I\-N\-\_\-\-F\-U\-N\-C\-T\-O\-R}(\hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name}, \hyperlink{core__c_8h_a120677ac732b3c9bfecab149fc978afa}{func})
+\item 
+\#define \hyperlink{functional_8hpp_a67c9d73de144cf58f9af2cf230926aff}{O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-T\-R\-A\-N\-S\-F\-O\-R\-M\-\_\-\-F\-U\-N\-C\-T\-O\-R\-\_\-\-T\-R\-A\-I\-T\-S}(\hyperlink{imgproc__c_8h_a84612d8738bf935200cf32a103d8efe1}{type})~template $<$$>$ struct Transform\-Functor\-Traits$<$ \hyperlink{imgproc__c_8h_a84612d8738bf935200cf32a103d8efe1}{type} $>$ \-: Default\-Transform\-Functor\-Traits$<$ \hyperlink{imgproc__c_8h_a84612d8738bf935200cf32a103d8efe1}{type} $>$
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Predicate $>$ }\\\-\_\-\-\_\-host\-\_\-\-\_\- \-\_\-\-\_\-device\-\_\-\-\_\- \\*
+\-\_\-\-\_\-forceinline\-\_\-\-\_\- unary\-\_\-negate\\*
+$<$ Predicate $>$ \hyperlink{namespacecv_1_1gpu_1_1device_a2d8c098dbada6f3d9075f7fb54bad9fe}{cv\-::gpu\-::device\-::not1} (const Predicate \&pred)
+\item 
+{\footnotesize template$<$typename Binary\-Predicate $>$ }\\\-\_\-\-\_\-host\-\_\-\-\_\- \-\_\-\-\_\-device\-\_\-\-\_\- \\*
+\-\_\-\-\_\-forceinline\-\_\-\-\_\- binary\-\_\-negate\\*
+$<$ Binary\-Predicate $>$ \hyperlink{namespacecv_1_1gpu_1_1device_a31bab8fbe2d9bde01bcf65f53d7574af}{cv\-::gpu\-::device\-::not2} (const Binary\-Predicate \&pred)
+\item 
+{\footnotesize template$<$typename Op , typename T $>$ }\\\-\_\-\-\_\-host\-\_\-\-\_\- \-\_\-\-\_\-device\-\_\-\-\_\- \\*
+\-\_\-\-\_\-forceinline\-\_\-\-\_\- binder1st$<$ Op $>$ \hyperlink{namespacecv_1_1gpu_1_1device_a32240aee5e695e15ead8d6568013d4ef}{cv\-::gpu\-::device\-::bind1st} (const Op \&op, const \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \&\hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x})
+\item 
+{\footnotesize template$<$typename Op , typename T $>$ }\\\-\_\-\-\_\-host\-\_\-\-\_\- \-\_\-\-\_\-device\-\_\-\-\_\- \\*
+\-\_\-\-\_\-forceinline\-\_\-\-\_\- binder2nd$<$ Op $>$ \hyperlink{namespacecv_1_1gpu_1_1device_a237daae98c74475567786466a97d357a}{cv\-::gpu\-::device\-::bind2nd} (const Op \&op, const \hyperlink{calib3d_8hpp_a3efb9551a871ddd0463079a808916717}{T} \&\hyperlink{highgui__c_8h_a6150e0515f7202e2fb518f7206ed97dc}{x})
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{functional_8hpp_a131c6e1cf0b1f8114e07b254b6b5d777}{\index{functional.\-hpp@{functional.\-hpp}!O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-B\-I\-N\-\_\-\-F\-U\-N\-C\-T\-O\-R@{O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-B\-I\-N\-\_\-\-F\-U\-N\-C\-T\-O\-R}}
+\index{O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-B\-I\-N\-\_\-\-F\-U\-N\-C\-T\-O\-R@{O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-B\-I\-N\-\_\-\-F\-U\-N\-C\-T\-O\-R}!functional.hpp@{functional.\-hpp}}
+\subsubsection[{O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-B\-I\-N\-\_\-\-F\-U\-N\-C\-T\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-B\-I\-N\-\_\-\-F\-U\-N\-C\-T\-O\-R(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf name}, }
+\item[{}]{{\bf func}}
+\end{DoxyParamCaption}
+)}}\label{functional_8hpp_a131c6e1cf0b1f8114e07b254b6b5d777}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{keyword}{template} <\textcolor{keyword}{typename} T> \textcolor{keyword}{struct }\hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name} ## \_func : binary\_function<T, T, float> \(\backslash\)
+    \{ \(\backslash\)
+        \_\_device\_\_ \_\_forceinline\_\_ \textcolor{keywordtype}{float} operator ()(\textcolor{keyword}{typename} TypeTraits<T>::ParameterType v1, \textcolor{keyword}{typename} 
+      TypeTraits<T>::ParameterType v2) \textcolor{keyword}{const} \(\backslash\)
+        \{ \(\backslash\)
+            return \hyperlink{core__c_8h_a120677ac732b3c9bfecab149fc978afa}{func} ## f(v1, v2); \(\backslash\)
+        \} \(\backslash\)
+        \_\_host\_\_ \_\_device\_\_ \_\_forceinline\_\_ \hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name} ## \_func() \{\} \(\backslash\)
+        \_\_host\_\_ \_\_device\_\_ \_\_forceinline\_\_ \hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name} ## \_func(\textcolor{keyword}{const} \hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name} ## \_func&) \{\} \(\backslash\)
+    \}; \(\backslash\)
+    template <> \textcolor{keyword}{struct }\hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name} ## \_func<double> : binary\_function<double, double, double> \(\backslash\)
+    \{ \(\backslash\)
+        \_\_device\_\_ \_\_forceinline\_\_ \textcolor{keywordtype}{double} operator ()(\textcolor{keywordtype}{double} v1, \textcolor{keywordtype}{double} v2) \textcolor{keyword}{const} \(\backslash\)
+        \{ \(\backslash\)
+            return \hyperlink{core__c_8h_a120677ac732b3c9bfecab149fc978afa}{func}(v1, v2); \(\backslash\)
+        \} \(\backslash\)
+        \_\_host\_\_ \_\_device\_\_ \_\_forceinline\_\_ \hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name} ## \_func() \{\} \(\backslash\)
+        \_\_host\_\_ \_\_device\_\_ \_\_forceinline\_\_ \hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name} ## \_func(\textcolor{keyword}{const} \hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name} ## \_func&) \{\} \(\backslash\)
+    \};
+\end{DoxyCode}
+\hypertarget{functional_8hpp_a231a047a0e998af2c4f63ed8355cb1dc}{\index{functional.\-hpp@{functional.\-hpp}!O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-M\-I\-N\-M\-A\-X@{O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-M\-I\-N\-M\-A\-X}}
+\index{O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-M\-I\-N\-M\-A\-X@{O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-M\-I\-N\-M\-A\-X}!functional.hpp@{functional.\-hpp}}
+\subsubsection[{O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-M\-I\-N\-M\-A\-X}]{\setlength{\rightskip}{0pt plus 5cm}\#define O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-M\-I\-N\-M\-A\-X(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf name}, }
+\item[{}]{{\bf type}, }
+\item[{}]{op}
+\end{DoxyParamCaption}
+)}}\label{functional_8hpp_a231a047a0e998af2c4f63ed8355cb1dc}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{keyword}{template} <> \textcolor{keyword}{struct }\hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name}<\hyperlink{core__c_8h_a8bc957583d2a5247e490ea9ce960cf21}{type}> : binary\_function<type, type, type> \(\backslash\)
+    \{ \(\backslash\)
+        \_\_device\_\_ \_\_forceinline\_\_ \hyperlink{core__c_8h_a8bc957583d2a5247e490ea9ce960cf21}{type} operator()(\hyperlink{core__c_8h_a8bc957583d2a5247e490ea9ce960cf21}{type} lhs, \hyperlink{core__c_8h_a8bc957583d2a5247e490ea9ce960cf21}{type} rhs)\textcolor{keyword}{ const }\{\textcolor{keywordflow}{return} op(lhs, 
+      rhs);\} \(\backslash\)
+        \_\_host\_\_ \_\_device\_\_ \_\_forceinline\_\_ \hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name}() \{\}\(\backslash\)
+        \_\_host\_\_ \_\_device\_\_ \_\_forceinline\_\_ \hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name}(\textcolor{keyword}{const} \hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name}&) \{\}\(\backslash\)
+    \};
+\end{DoxyCode}
+\hypertarget{functional_8hpp_ab4f3c8ae40184b8a2256c799b89948a0}{\index{functional.\-hpp@{functional.\-hpp}!O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-U\-N\-\_\-\-F\-U\-N\-C\-T\-O\-R@{O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-U\-N\-\_\-\-F\-U\-N\-C\-T\-O\-R}}
+\index{O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-U\-N\-\_\-\-F\-U\-N\-C\-T\-O\-R@{O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-U\-N\-\_\-\-F\-U\-N\-C\-T\-O\-R}!functional.hpp@{functional.\-hpp}}
+\subsubsection[{O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-U\-N\-\_\-\-F\-U\-N\-C\-T\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-\_\-\-U\-N\-\_\-\-F\-U\-N\-C\-T\-O\-R(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf name}, }
+\item[{}]{{\bf func}}
+\end{DoxyParamCaption}
+)}}\label{functional_8hpp_ab4f3c8ae40184b8a2256c799b89948a0}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{keyword}{template} <\textcolor{keyword}{typename} T> \textcolor{keyword}{struct }\hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name} ## \_func : unary\_function<T, float> \(\backslash\)
+    \{ \(\backslash\)
+        \_\_device\_\_ \_\_forceinline\_\_ \textcolor{keywordtype}{float} operator ()(\textcolor{keyword}{typename} TypeTraits<T>::ParameterType v) \textcolor{keyword}{const} \(\backslash\)
+        \{ \(\backslash\)
+            return \hyperlink{core__c_8h_a120677ac732b3c9bfecab149fc978afa}{func} ## f(v); \(\backslash\)
+        \} \(\backslash\)
+        \_\_host\_\_ \_\_device\_\_ \_\_forceinline\_\_ \hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name} ## \_func() \{\} \(\backslash\)
+        \_\_host\_\_ \_\_device\_\_ \_\_forceinline\_\_ \hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name} ## \_func(\textcolor{keyword}{const} \hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name} ## \_func&) \{\} \(\backslash\)
+    \}; \(\backslash\)
+    template <> \textcolor{keyword}{struct }\hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name} ## \_func<double> : unary\_function<double, double> \(\backslash\)
+    \{ \(\backslash\)
+        \_\_device\_\_ \_\_forceinline\_\_ \textcolor{keywordtype}{double} operator ()(\textcolor{keywordtype}{double} v) \textcolor{keyword}{const} \(\backslash\)
+        \{ \(\backslash\)
+            return \hyperlink{core__c_8h_a120677ac732b3c9bfecab149fc978afa}{func}(v); \(\backslash\)
+        \} \(\backslash\)
+        \_\_host\_\_ \_\_device\_\_ \_\_forceinline\_\_ \hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name} ## \_func() \{\} \(\backslash\)
+        \_\_host\_\_ \_\_device\_\_ \_\_forceinline\_\_ \hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name} ## \_func(\textcolor{keyword}{const} \hyperlink{core__c_8h_add928d8eb85ea33a25a67db3406d4887}{name} ## \_func&) \{\} \(\backslash\)
+    \};
+\end{DoxyCode}
+\hypertarget{functional_8hpp_a67c9d73de144cf58f9af2cf230926aff}{\index{functional.\-hpp@{functional.\-hpp}!O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-T\-R\-A\-N\-S\-F\-O\-R\-M\-\_\-\-F\-U\-N\-C\-T\-O\-R\-\_\-\-T\-R\-A\-I\-T\-S@{O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-T\-R\-A\-N\-S\-F\-O\-R\-M\-\_\-\-F\-U\-N\-C\-T\-O\-R\-\_\-\-T\-R\-A\-I\-T\-S}}
+\index{O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-T\-R\-A\-N\-S\-F\-O\-R\-M\-\_\-\-F\-U\-N\-C\-T\-O\-R\-\_\-\-T\-R\-A\-I\-T\-S@{O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-T\-R\-A\-N\-S\-F\-O\-R\-M\-\_\-\-F\-U\-N\-C\-T\-O\-R\-\_\-\-T\-R\-A\-I\-T\-S}!functional.hpp@{functional.\-hpp}}
+\subsubsection[{O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-T\-R\-A\-N\-S\-F\-O\-R\-M\-\_\-\-F\-U\-N\-C\-T\-O\-R\-\_\-\-T\-R\-A\-I\-T\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define O\-P\-E\-N\-C\-V\-\_\-\-G\-P\-U\-\_\-\-T\-R\-A\-N\-S\-F\-O\-R\-M\-\_\-\-F\-U\-N\-C\-T\-O\-R\-\_\-\-T\-R\-A\-I\-T\-S(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf type}}
+\end{DoxyParamCaption}
+)~template $<$$>$ struct Transform\-Functor\-Traits$<$ {\bf type} $>$ \-: Default\-Transform\-Functor\-Traits$<$ {\bf type} $>$}}\label{functional_8hpp_a67c9d73de144cf58f9af2cf230926aff}

@@ -1,0 +1,5 @@
+<map id="cv::detail::CylindricalPortraitWarper::detectResultRoi" name="cv::detail::CylindricalPortraitWarper::detectResultRoi">
+<area shape="rect" id="node2" href="$classcv_1_1detail_1_1RotationWarperBase.html#a24fcba5b61bb28bde8c68439755e5dbe" title="cv::detail::RotationWarper\lBase::detectResultRoiByBorder" alt="" coords="240,23,448,65"/>
+<area shape="rect" id="node3" href="$namespacecv_1_1gpu.html#a706c9def6816de566be2671b75ec5309" title="computes per&#45;element maximum of two arrays (dst = max(src1, src2)) " alt="" coords="496,5,595,32"/>
+<area shape="rect" id="node4" href="$namespacecv_1_1gpu.html#a8d100341ab11a730a3c90b75d5890a8c" title="computes per&#45;element minimum of two arrays (dst = min(src1, src2)) " alt="" coords="498,56,593,83"/>
+</map>

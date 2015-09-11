@@ -1,0 +1,6 @@
+<map id="CBlob::GetEllipse" name="CBlob::GetEllipse">
+<area shape="rect" id="node2" href="$classCBlob.html#a4f5dfca1ee933e07a39965375f9f07c5" title="Compute blob&#39;s moment (p,q up to MAX_CALCULATED_MOMENTS) " alt="" coords="182,35,295,61"/>
+<area shape="rect" id="node3" href="$classCBlobContour.html#a301727633680b38714302593945b748f" title="Get contour moment (p,q up to MAX_CALCULATED_MOMENTS) " alt="" coords="345,35,525,61"/>
+<area shape="rect" id="node4" href="$classCBlobContour.html#af4e715a94924d5dc1a0e67cf75818bb5" title="CBlobContour::IsEmpty" alt="" coords="582,5,743,32"/>
+<area shape="rect" id="node5" href="$classCBlobContour.html#a245d5e59180619aa9ae4ec14acc18744" title="Return all contour points. " alt="" coords="573,57,752,98"/>
+</map>

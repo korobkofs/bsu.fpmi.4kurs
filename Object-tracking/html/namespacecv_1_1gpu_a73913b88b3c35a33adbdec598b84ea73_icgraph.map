@@ -1,0 +1,15 @@
+<map id="cv::gpu::sqrt" name="cv::gpu::sqrt">
+<area shape="rect" id="node2" href="$classCBlob.html#ad0bb95f395084ee89ca35cf11f203342" title="Get bounding ellipse. " alt="" coords="174,143,301,169"/>
+<area shape="rect" id="node7" href="$BBPredict_8h.html#a0181c4b3c3e424d149a8d89a05c98de7" title="Calculates the new (moved and resized) Bounding box. Calculation based on all relative distance chang..." alt="" coords="424,267,499,293"/>
+<area shape="rect" id="node8" href="$FBTrack_8h.html#a2c818794e6fe6aa3f6efdc9c46ffd164" title="Calculate the bounding box of an Object in a following Image. Imgs aren&#39;t changed. " alt="" coords="598,317,661,344"/>
+<area shape="rect" id="node10" href="$Lk_8cpp.html#a6b1f0fbd52a55b99409b426f14d1b05a" title="Calculates euclidean distance between the point pairs. " alt="" coords="173,368,302,395"/>
+<area shape="rect" id="node12" href="$structcvflann_1_1HellingerDistance.html#ac7fce120a086c9b9f1224ecc923bbbd5" title="cvflann::HellingerDistance\l::operator()" alt="" coords="150,419,325,461"/>
+<area shape="rect" id="node13" href="$structcvflann_1_1HellingerDistance.html#a4f161f3330cb311dc2790d566fe9de28" title="cvflann::HellingerDistance\l::accum_dist" alt="" coords="150,485,325,526"/>
+<area shape="rect" id="node14" href="$structcv_1_1ocl_1_1L2.html#a67460983a2f6a389370d4338aa4c5107" title="cv::ocl::L2::operator()" alt="" coords="164,551,311,577"/>
+<area shape="rect" id="node3" href="$classCBlobGetMajorAxisLength.html#a535c9a23d16bf020ed0c6aa9f36b884f" title="Aply operator to blob. " alt="" coords="373,5,549,46"/>
+<area shape="rect" id="node4" href="$classCBlobGetAreaElipseRatio.html#a24f9703155af6e963a1ae226cdb71125" title="Aply operator to blob. " alt="" coords="375,70,548,111"/>
+<area shape="rect" id="node5" href="$classCBlobGetMinorAxisLength.html#a2269bfa1651667f020e27d9f1e8f8d98" title="Aply operator to blob. " alt="" coords="373,135,549,177"/>
+<area shape="rect" id="node6" href="$classCBlobGetOrientation.html#a083233587fed855654e580a355265be3" title="Aply operator to blob. " alt="" coords="390,201,533,242"/>
+<area shape="rect" id="node9" href="$classtld_1_1MedianFlowTracker.html#addcc103122a93f098583b8f9cf72e8ff" title="Calculate the bounding box of an Object in a following Image (with analyse of success and correctness..." alt="" coords="710,310,869,351"/>
+<area shape="rect" id="node11" href="$Lk_8h.html#aeb798560b2c1eda165af271062b840ab" title="Tracks Points from 1.Image to 2.Image. Need initImgs before start and at the end of the program for c..." alt="" coords="428,368,495,395"/>
+</map>

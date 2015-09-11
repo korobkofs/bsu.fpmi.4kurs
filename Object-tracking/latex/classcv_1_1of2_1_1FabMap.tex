@@ -1,0 +1,446 @@
+\hypertarget{classcv_1_1of2_1_1FabMap}{\section{cv\-:\-:of2\-:\-:Fab\-Map Class Reference}
+\label{classcv_1_1of2_1_1FabMap}\index{cv\-::of2\-::\-Fab\-Map@{cv\-::of2\-::\-Fab\-Map}}
+}
+
+
+{\ttfamily \#include $<$openfabmap.\-hpp$>$}
+
+
+
+Inheritance diagram for cv\-:\-:of2\-:\-:Fab\-Map\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcv_1_1of2_1_1FabMap__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for cv\-:\-:of2\-:\-:Fab\-Map\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcv_1_1of2_1_1FabMap__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \\*
+\hyperlink{classcv_1_1of2_1_1FabMap_a843cc3739cda5d9154a3e2a3065e2036a64c5971672631f4b886c04ee6c93e2e1}{M\-E\-A\-N\-\_\-\-F\-I\-E\-L\-D} = 1, 
+\hyperlink{classcv_1_1of2_1_1FabMap_a843cc3739cda5d9154a3e2a3065e2036a7674fb3142664d7fc0fca2d5bba5d559}{S\-A\-M\-P\-L\-E\-D} = 2, 
+\hyperlink{classcv_1_1of2_1_1FabMap_a843cc3739cda5d9154a3e2a3065e2036aa66ae527b8e2b62f82ec2ec991f7c6f5}{N\-A\-I\-V\-E\-\_\-\-B\-A\-Y\-E\-S} = 4, 
+\hyperlink{classcv_1_1of2_1_1FabMap_a843cc3739cda5d9154a3e2a3065e2036ade81aba98d2068c55b256572641d0c38}{C\-H\-O\-W\-\_\-\-L\-I\-U} = 8, 
+\\*
+\hyperlink{classcv_1_1of2_1_1FabMap_a843cc3739cda5d9154a3e2a3065e2036a908017fabb1fca82ec69654033ee46c8}{M\-O\-T\-I\-O\-N\-\_\-\-M\-O\-D\-E\-L} = 16
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcv_1_1of2_1_1FabMap_abcc8ef1148831788f8e5944b60b76a7c}{Fab\-Map} (const Mat \&\hyperlink{classcv_1_1of2_1_1FabMap_a54e4331990e8069be69fec53b545c2bd}{cl\-Tree}, double \hyperlink{classcv_1_1of2_1_1FabMap_a0c79d4180f0ffe49bfbfe541b9981e7b}{Pz\-Ge}, double \hyperlink{classcv_1_1of2_1_1FabMap_a0bf851f305f6a00d5a837a7c70e40f3d}{Pz\-G\-Ne}, int \hyperlink{highgui__c_8h_ae51e3a2d4365e85db9630dd3ce9508db}{flags}, int \hyperlink{classcv_1_1of2_1_1FabMap_a023e2c53333bb5505baceb182011980f}{num\-Samples}=0)
+\item 
+virtual \hyperlink{classcv_1_1of2_1_1FabMap_ae2473a7aa06da27cf7e2e41ddf1da690}{$\sim$\-Fab\-Map} ()
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1of2_1_1FabMap_a67ceb39e607365e2666ed6fdc868d7e6}{add\-Training} (const Mat \&query\-Img\-Descriptor)
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1of2_1_1FabMap_a69e9945fc517537c7ab1013e164af81e}{add\-Training} (const vector$<$ Mat $>$ \&query\-Img\-Descriptors)
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1of2_1_1FabMap_aed744db44f2dec7506e366e3e851a60d}{add} (const Mat \&query\-Img\-Descriptor)
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1of2_1_1FabMap_a84d7adfd92ef5cfa2901d54164d3f6ac}{add} (const vector$<$ Mat $>$ \&query\-Img\-Descriptors)
+\item 
+const vector$<$ Mat $>$ \& \hyperlink{classcv_1_1of2_1_1FabMap_ab431c7975678ff293f6c4a83dc5826e9}{get\-Training\-Img\-Descriptors} () const 
+\item 
+const vector$<$ Mat $>$ \& \hyperlink{classcv_1_1of2_1_1FabMap_a62a2591ddfed7161b7eae39308112d49}{get\-Test\-Img\-Descriptors} () const 
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1of2_1_1FabMap_a6e37569004c4fe6db48129a56abe700a}{compare} (const Mat \&query\-Img\-Descriptor, vector$<$ \hyperlink{structcv_1_1of2_1_1IMatch}{I\-Match} $>$ \&matches, bool add\-Query=false, const Mat \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}=Mat())
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1of2_1_1FabMap_ab1d5d6016bb012155090dd2d17085463}{compare} (const Mat \&query\-Img\-Descriptor, const Mat \&\hyperlink{classcv_1_1of2_1_1FabMap_a46f350e86965ec1e00ae4bd629dd4c8d}{test\-Img\-Descriptors}, vector$<$ \hyperlink{structcv_1_1of2_1_1IMatch}{I\-Match} $>$ \&matches, const Mat \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}=Mat())
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1of2_1_1FabMap_a1f7bf108d1fb50ed80d96e61982f5d2c}{compare} (const Mat \&query\-Img\-Descriptor, const vector$<$ Mat $>$ \&\hyperlink{classcv_1_1of2_1_1FabMap_a46f350e86965ec1e00ae4bd629dd4c8d}{test\-Img\-Descriptors}, vector$<$ \hyperlink{structcv_1_1of2_1_1IMatch}{I\-Match} $>$ \&matches, const Mat \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}=Mat())
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1of2_1_1FabMap_a38b53d2849eceee3bf4a8b9a9500f456}{compare} (const vector$<$ Mat $>$ \&query\-Img\-Descriptors, vector$<$ \hyperlink{structcv_1_1of2_1_1IMatch}{I\-Match} $>$ \&matches, bool add\-Query=false, const Mat \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}=Mat())
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1of2_1_1FabMap_a0a3ddfd621e54904cec1d8bf20c2f8b6}{compare} (const vector$<$ Mat $>$ \&query\-Img\-Descriptors, const vector$<$ Mat $>$ \&\hyperlink{classcv_1_1of2_1_1FabMap_a46f350e86965ec1e00ae4bd629dd4c8d}{test\-Img\-Descriptors}, vector$<$ \hyperlink{structcv_1_1of2_1_1IMatch}{I\-Match} $>$ \&matches, const Mat \&\hyperlink{tracking_8hpp_a6b13ecd2fd6ec7ad422f1d7863c3ad19}{mask}=Mat())
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1of2_1_1FabMap_ad61ab354d779347f79703af20113d607}{compare\-Img\-Descriptor} (const Mat \&query\-Img\-Descriptor, int query\-Index, const vector$<$ Mat $>$ \&\hyperlink{classcv_1_1of2_1_1FabMap_a46f350e86965ec1e00ae4bd629dd4c8d}{test\-Img\-Descriptors}, vector$<$ \hyperlink{structcv_1_1of2_1_1IMatch}{I\-Match} $>$ \&matches)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1of2_1_1FabMap_af29c1aceade2ce8e7f05bd8e206689dd}{add\-Img\-Descriptor} (const Mat \&query\-Img\-Descriptor)
+\item 
+virtual \hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1of2_1_1FabMap_a6f1b98734a139b0a076d89d55d83175e}{get\-Likelihoods} (const Mat \&query\-Img\-Descriptor, const vector$<$ Mat $>$ \&\hyperlink{classcv_1_1of2_1_1FabMap_a46f350e86965ec1e00ae4bd629dd4c8d}{test\-Img\-Descriptors}, vector$<$ \hyperlink{structcv_1_1of2_1_1IMatch}{I\-Match} $>$ \&matches)
+\item 
+virtual double \hyperlink{classcv_1_1of2_1_1FabMap_afe56c71b70a232bf198050b122ca53b2}{get\-New\-Place\-Likelihood} (const Mat \&query\-Img\-Descriptor)
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1of2_1_1FabMap_a8f8d94fb93b3154d14328872903d2fa3}{normalise\-Distribution} (vector$<$ \hyperlink{structcv_1_1of2_1_1IMatch}{I\-Match} $>$ \&matches)
+\item 
+int \hyperlink{classcv_1_1of2_1_1FabMap_afb1fa3847a0b20cb494a13572e32ffb2}{pq} (int q)
+\item 
+double \hyperlink{classcv_1_1of2_1_1FabMap_ae0b0c60dd878c1bf596e271219c284f2}{Pzq} (int q, bool zq)
+\item 
+double \hyperlink{classcv_1_1of2_1_1FabMap_a46297257c0db808fe74152d82390a7b2}{Pzq\-Gzpq} (int q, bool zq, bool zpq)
+\item 
+double \hyperlink{classcv_1_1of2_1_1FabMap_aea405a7198637f73bf44b7e0a01eec6b}{Pzq\-Geq} (bool zq, bool eq)
+\item 
+double \hyperlink{classcv_1_1of2_1_1FabMap_abf18cc11efedaeaf90b18f4300a36538}{Peq\-G\-L} (int q, bool Lzq, bool eq)
+\item 
+double \hyperlink{classcv_1_1of2_1_1FabMap_abf8b33662306bb1cc953fe41f0fa2e03}{Pzq\-G\-L} (int q, bool zq, bool zpq, bool Lzq)
+\item 
+double \hyperlink{classcv_1_1of2_1_1FabMap_a107c45b78bd224f9ce6d4eea39fba0ba}{Pzq\-Gzpq\-L} (int q, bool zq, bool zpq, bool Lzq)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double(Fab\-Map\-::$\ast$ \hyperlink{classcv_1_1of2_1_1FabMap_ad0c2ef3b7d4194d6a0eeeac8aca8857f}{Pz\-G\-L} )(int q, bool zq, bool zpq, bool Lzq)
+\item 
+Mat \hyperlink{classcv_1_1of2_1_1FabMap_a54e4331990e8069be69fec53b545c2bd}{cl\-Tree}
+\item 
+vector$<$ Mat $>$ \hyperlink{classcv_1_1of2_1_1FabMap_ac5c54c9cca20b7ffb83ac10a591e60fe}{training\-Img\-Descriptors}
+\item 
+vector$<$ Mat $>$ \hyperlink{classcv_1_1of2_1_1FabMap_a46f350e86965ec1e00ae4bd629dd4c8d}{test\-Img\-Descriptors}
+\item 
+vector$<$ \hyperlink{structcv_1_1of2_1_1IMatch}{I\-Match} $>$ \hyperlink{classcv_1_1of2_1_1FabMap_a0a4a45f92a3ea9fd74ac0b0933eef184}{prior\-Matches}
+\item 
+double \hyperlink{classcv_1_1of2_1_1FabMap_a0c79d4180f0ffe49bfbfe541b9981e7b}{Pz\-Ge}
+\item 
+double \hyperlink{classcv_1_1of2_1_1FabMap_a0bf851f305f6a00d5a837a7c70e40f3d}{Pz\-G\-Ne}
+\item 
+double \hyperlink{classcv_1_1of2_1_1FabMap_a953065fb908d0ac9b72bac04d6779415}{Pnew}
+\item 
+double \hyperlink{classcv_1_1of2_1_1FabMap_a7c6d2872e9274aa8db564b0a37722865}{m\-Bias}
+\item 
+double \hyperlink{classcv_1_1of2_1_1FabMap_a2283bacbeb4cae2c01ba1e0fbc9c4974}{s\-Factor}
+\item 
+int \hyperlink{classcv_1_1of2_1_1FabMap_a336756c9be2fff682ab3c559c26765eb}{flags}
+\item 
+int \hyperlink{classcv_1_1of2_1_1FabMap_a023e2c53333bb5505baceb182011980f}{num\-Samples}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classcv_1_1of2_1_1FabMap_a843cc3739cda5d9154a3e2a3065e2036}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{classcv_1_1of2_1_1FabMap_a843cc3739cda5d9154a3e2a3065e2036}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{M\-E\-A\-N\-\_\-\-F\-I\-E\-L\-D@{M\-E\-A\-N\-\_\-\-F\-I\-E\-L\-D}!cv\-::of2\-::\-Fab\-Map@{cv\-::of2\-::\-Fab\-Map}}\index{cv\-::of2\-::\-Fab\-Map@{cv\-::of2\-::\-Fab\-Map}!M\-E\-A\-N\-\_\-\-F\-I\-E\-L\-D@{M\-E\-A\-N\-\_\-\-F\-I\-E\-L\-D}}\item[{\em 
+\hypertarget{classcv_1_1of2_1_1FabMap_a843cc3739cda5d9154a3e2a3065e2036a64c5971672631f4b886c04ee6c93e2e1}{M\-E\-A\-N\-\_\-\-F\-I\-E\-L\-D}\label{classcv_1_1of2_1_1FabMap_a843cc3739cda5d9154a3e2a3065e2036a64c5971672631f4b886c04ee6c93e2e1}
+}]\index{S\-A\-M\-P\-L\-E\-D@{S\-A\-M\-P\-L\-E\-D}!cv\-::of2\-::\-Fab\-Map@{cv\-::of2\-::\-Fab\-Map}}\index{cv\-::of2\-::\-Fab\-Map@{cv\-::of2\-::\-Fab\-Map}!S\-A\-M\-P\-L\-E\-D@{S\-A\-M\-P\-L\-E\-D}}\item[{\em 
+\hypertarget{classcv_1_1of2_1_1FabMap_a843cc3739cda5d9154a3e2a3065e2036a7674fb3142664d7fc0fca2d5bba5d559}{S\-A\-M\-P\-L\-E\-D}\label{classcv_1_1of2_1_1FabMap_a843cc3739cda5d9154a3e2a3065e2036a7674fb3142664d7fc0fca2d5bba5d559}
+}]\index{N\-A\-I\-V\-E\-\_\-\-B\-A\-Y\-E\-S@{N\-A\-I\-V\-E\-\_\-\-B\-A\-Y\-E\-S}!cv\-::of2\-::\-Fab\-Map@{cv\-::of2\-::\-Fab\-Map}}\index{cv\-::of2\-::\-Fab\-Map@{cv\-::of2\-::\-Fab\-Map}!N\-A\-I\-V\-E\-\_\-\-B\-A\-Y\-E\-S@{N\-A\-I\-V\-E\-\_\-\-B\-A\-Y\-E\-S}}\item[{\em 
+\hypertarget{classcv_1_1of2_1_1FabMap_a843cc3739cda5d9154a3e2a3065e2036aa66ae527b8e2b62f82ec2ec991f7c6f5}{N\-A\-I\-V\-E\-\_\-\-B\-A\-Y\-E\-S}\label{classcv_1_1of2_1_1FabMap_a843cc3739cda5d9154a3e2a3065e2036aa66ae527b8e2b62f82ec2ec991f7c6f5}
+}]\index{C\-H\-O\-W\-\_\-\-L\-I\-U@{C\-H\-O\-W\-\_\-\-L\-I\-U}!cv\-::of2\-::\-Fab\-Map@{cv\-::of2\-::\-Fab\-Map}}\index{cv\-::of2\-::\-Fab\-Map@{cv\-::of2\-::\-Fab\-Map}!C\-H\-O\-W\-\_\-\-L\-I\-U@{C\-H\-O\-W\-\_\-\-L\-I\-U}}\item[{\em 
+\hypertarget{classcv_1_1of2_1_1FabMap_a843cc3739cda5d9154a3e2a3065e2036ade81aba98d2068c55b256572641d0c38}{C\-H\-O\-W\-\_\-\-L\-I\-U}\label{classcv_1_1of2_1_1FabMap_a843cc3739cda5d9154a3e2a3065e2036ade81aba98d2068c55b256572641d0c38}
+}]\index{M\-O\-T\-I\-O\-N\-\_\-\-M\-O\-D\-E\-L@{M\-O\-T\-I\-O\-N\-\_\-\-M\-O\-D\-E\-L}!cv\-::of2\-::\-Fab\-Map@{cv\-::of2\-::\-Fab\-Map}}\index{cv\-::of2\-::\-Fab\-Map@{cv\-::of2\-::\-Fab\-Map}!M\-O\-T\-I\-O\-N\-\_\-\-M\-O\-D\-E\-L@{M\-O\-T\-I\-O\-N\-\_\-\-M\-O\-D\-E\-L}}\item[{\em 
+\hypertarget{classcv_1_1of2_1_1FabMap_a843cc3739cda5d9154a3e2a3065e2036a908017fabb1fca82ec69654033ee46c8}{M\-O\-T\-I\-O\-N\-\_\-\-M\-O\-D\-E\-L}\label{classcv_1_1of2_1_1FabMap_a843cc3739cda5d9154a3e2a3065e2036a908017fabb1fca82ec69654033ee46c8}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcv_1_1of2_1_1FabMap_abcc8ef1148831788f8e5944b60b76a7c}{\index{cv\-::of2\-::\-Fab\-Map@{cv\-::of2\-::\-Fab\-Map}!Fab\-Map@{Fab\-Map}}
+\index{Fab\-Map@{Fab\-Map}!cv::of2::FabMap@{cv\-::of2\-::\-Fab\-Map}}
+\subsubsection[{Fab\-Map}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::of2\-::\-Fab\-Map\-::\-Fab\-Map (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{cl\-Tree, }
+\item[{double}]{Pz\-Ge, }
+\item[{double}]{Pz\-G\-Ne, }
+\item[{int}]{flags, }
+\item[{int}]{num\-Samples = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1of2_1_1FabMap_abcc8ef1148831788f8e5944b60b76a7c}
+\hypertarget{classcv_1_1of2_1_1FabMap_ae2473a7aa06da27cf7e2e41ddf1da690}{\index{cv\-::of2\-::\-Fab\-Map@{cv\-::of2\-::\-Fab\-Map}!$\sim$\-Fab\-Map@{$\sim$\-Fab\-Map}}
+\index{$\sim$\-Fab\-Map@{$\sim$\-Fab\-Map}!cv::of2::FabMap@{cv\-::of2\-::\-Fab\-Map}}
+\subsubsection[{$\sim$\-Fab\-Map}]{\setlength{\rightskip}{0pt plus 5cm}virtual cv\-::of2\-::\-Fab\-Map\-::$\sim$\-Fab\-Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcv_1_1of2_1_1FabMap_ae2473a7aa06da27cf7e2e41ddf1da690}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcv_1_1of2_1_1FabMap_aed744db44f2dec7506e366e3e851a60d}{\index{cv\-::of2\-::\-Fab\-Map@{cv\-::of2\-::\-Fab\-Map}!add@{add}}
+\index{add@{add}!cv::of2::FabMap@{cv\-::of2\-::\-Fab\-Map}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cv\-::of2\-::\-Fab\-Map\-::add (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{query\-Img\-Descriptor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcv_1_1of2_1_1FabMap_aed744db44f2dec7506e366e3e851a60d}
+
+
+Reimplemented in \hyperlink{classcv_1_1of2_1_1FabMap2_a85337179818b6a1ce66f40b54f947be3}{cv\-::of2\-::\-Fab\-Map2}.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{classcv_1_1of2_1_1FabMap_aed744db44f2dec7506e366e3e851a60d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcv_1_1of2_1_1FabMap_a84d7adfd92ef5cfa2901d54164d3f6ac}{\index{cv\-::of2\-::\-Fab\-Map@{cv\-::of2\-::\-Fab\-Map}!add@{add}}
+\index{add@{add}!cv::of2::FabMap@{cv\-::of2\-::\-Fab\-Map}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cv\-::of2\-::\-Fab\-Map\-::add (
+\begin{DoxyParamCaption}
+\item[{const vector$<$ Mat $>$ \&}]{query\-Img\-Descriptors}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcv_1_1of2_1_1FabMap_a84d7adfd92ef5cfa2901d54164d3f6ac}
+
+
+Reimplemented in \hyperlink{classcv_1_1of2_1_1FabMap2_ac85a7b187c8a97d4fd316412f8889b0a}{cv\-::of2\-::\-Fab\-Map2}.
+
+\hypertarget{classcv_1_1of2_1_1FabMap_af29c1aceade2ce8e7f05bd8e206689dd}{\index{cv\-::of2\-::\-Fab\-Map@{cv\-::of2\-::\-Fab\-Map}!add\-Img\-Descriptor@{add\-Img\-Descriptor}}
+\index{add\-Img\-Descriptor@{add\-Img\-Descriptor}!cv::of2::FabMap@{cv\-::of2\-::\-Fab\-Map}}
+\subsubsection[{add\-Img\-Descriptor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::of2\-::\-Fab\-Map\-::add\-Img\-Descriptor (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{query\-Img\-Descriptor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1of2_1_1FabMap_af29c1aceade2ce8e7f05bd8e206689dd}
+\hypertarget{classcv_1_1of2_1_1FabMap_a67ceb39e607365e2666ed6fdc868d7e6}{\index{cv\-::of2\-::\-Fab\-Map@{cv\-::of2\-::\-Fab\-Map}!add\-Training@{add\-Training}}
+\index{add\-Training@{add\-Training}!cv::of2::FabMap@{cv\-::of2\-::\-Fab\-Map}}
+\subsubsection[{add\-Training}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cv\-::of2\-::\-Fab\-Map\-::add\-Training (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{query\-Img\-Descriptor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcv_1_1of2_1_1FabMap_a67ceb39e607365e2666ed6fdc868d7e6}
+
+
+Reimplemented in \hyperlink{classcv_1_1of2_1_1FabMap2_ad4d8bd34f7898eb8654c0caa218f2faa}{cv\-::of2\-::\-Fab\-Map2}.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcv_1_1of2_1_1FabMap_a67ceb39e607365e2666ed6fdc868d7e6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcv_1_1of2_1_1FabMap_a69e9945fc517537c7ab1013e164af81e}{\index{cv\-::of2\-::\-Fab\-Map@{cv\-::of2\-::\-Fab\-Map}!add\-Training@{add\-Training}}
+\index{add\-Training@{add\-Training}!cv::of2::FabMap@{cv\-::of2\-::\-Fab\-Map}}
+\subsubsection[{add\-Training}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cv\-::of2\-::\-Fab\-Map\-::add\-Training (
+\begin{DoxyParamCaption}
+\item[{const vector$<$ Mat $>$ \&}]{query\-Img\-Descriptors}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcv_1_1of2_1_1FabMap_a69e9945fc517537c7ab1013e164af81e}
+
+
+Reimplemented in \hyperlink{classcv_1_1of2_1_1FabMap2_a1616ff2952d4c3809cd8f416c95faf7e}{cv\-::of2\-::\-Fab\-Map2}.
+
+\hypertarget{classcv_1_1of2_1_1FabMap_a6e37569004c4fe6db48129a56abe700a}{\index{cv\-::of2\-::\-Fab\-Map@{cv\-::of2\-::\-Fab\-Map}!compare@{compare}}
+\index{compare@{compare}!cv::of2::FabMap@{cv\-::of2\-::\-Fab\-Map}}
+\subsubsection[{compare}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::of2\-::\-Fab\-Map\-::compare (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{query\-Img\-Descriptor, }
+\item[{vector$<$ {\bf I\-Match} $>$ \&}]{matches, }
+\item[{bool}]{add\-Query = {\ttfamily false}, }
+\item[{const Mat \&}]{mask = {\ttfamily Mat()}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1of2_1_1FabMap_a6e37569004c4fe6db48129a56abe700a}
+\hypertarget{classcv_1_1of2_1_1FabMap_ab1d5d6016bb012155090dd2d17085463}{\index{cv\-::of2\-::\-Fab\-Map@{cv\-::of2\-::\-Fab\-Map}!compare@{compare}}
+\index{compare@{compare}!cv::of2::FabMap@{cv\-::of2\-::\-Fab\-Map}}
+\subsubsection[{compare}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::of2\-::\-Fab\-Map\-::compare (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{query\-Img\-Descriptor, }
+\item[{const Mat \&}]{test\-Img\-Descriptors, }
+\item[{vector$<$ {\bf I\-Match} $>$ \&}]{matches, }
+\item[{const Mat \&}]{mask = {\ttfamily Mat()}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1of2_1_1FabMap_ab1d5d6016bb012155090dd2d17085463}
+\hypertarget{classcv_1_1of2_1_1FabMap_a1f7bf108d1fb50ed80d96e61982f5d2c}{\index{cv\-::of2\-::\-Fab\-Map@{cv\-::of2\-::\-Fab\-Map}!compare@{compare}}
+\index{compare@{compare}!cv::of2::FabMap@{cv\-::of2\-::\-Fab\-Map}}
+\subsubsection[{compare}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::of2\-::\-Fab\-Map\-::compare (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{query\-Img\-Descriptor, }
+\item[{const vector$<$ Mat $>$ \&}]{test\-Img\-Descriptors, }
+\item[{vector$<$ {\bf I\-Match} $>$ \&}]{matches, }
+\item[{const Mat \&}]{mask = {\ttfamily Mat()}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1of2_1_1FabMap_a1f7bf108d1fb50ed80d96e61982f5d2c}
+\hypertarget{classcv_1_1of2_1_1FabMap_a38b53d2849eceee3bf4a8b9a9500f456}{\index{cv\-::of2\-::\-Fab\-Map@{cv\-::of2\-::\-Fab\-Map}!compare@{compare}}
+\index{compare@{compare}!cv::of2::FabMap@{cv\-::of2\-::\-Fab\-Map}}
+\subsubsection[{compare}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::of2\-::\-Fab\-Map\-::compare (
+\begin{DoxyParamCaption}
+\item[{const vector$<$ Mat $>$ \&}]{query\-Img\-Descriptors, }
+\item[{vector$<$ {\bf I\-Match} $>$ \&}]{matches, }
+\item[{bool}]{add\-Query = {\ttfamily false}, }
+\item[{const Mat \&}]{mask = {\ttfamily Mat()}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1of2_1_1FabMap_a38b53d2849eceee3bf4a8b9a9500f456}
+\hypertarget{classcv_1_1of2_1_1FabMap_a0a3ddfd621e54904cec1d8bf20c2f8b6}{\index{cv\-::of2\-::\-Fab\-Map@{cv\-::of2\-::\-Fab\-Map}!compare@{compare}}
+\index{compare@{compare}!cv::of2::FabMap@{cv\-::of2\-::\-Fab\-Map}}
+\subsubsection[{compare}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::of2\-::\-Fab\-Map\-::compare (
+\begin{DoxyParamCaption}
+\item[{const vector$<$ Mat $>$ \&}]{query\-Img\-Descriptors, }
+\item[{const vector$<$ Mat $>$ \&}]{test\-Img\-Descriptors, }
+\item[{vector$<$ {\bf I\-Match} $>$ \&}]{matches, }
+\item[{const Mat \&}]{mask = {\ttfamily Mat()}}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1of2_1_1FabMap_a0a3ddfd621e54904cec1d8bf20c2f8b6}
+\hypertarget{classcv_1_1of2_1_1FabMap_ad61ab354d779347f79703af20113d607}{\index{cv\-::of2\-::\-Fab\-Map@{cv\-::of2\-::\-Fab\-Map}!compare\-Img\-Descriptor@{compare\-Img\-Descriptor}}
+\index{compare\-Img\-Descriptor@{compare\-Img\-Descriptor}!cv::of2::FabMap@{cv\-::of2\-::\-Fab\-Map}}
+\subsubsection[{compare\-Img\-Descriptor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::of2\-::\-Fab\-Map\-::compare\-Img\-Descriptor (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{query\-Img\-Descriptor, }
+\item[{int}]{query\-Index, }
+\item[{const vector$<$ Mat $>$ \&}]{test\-Img\-Descriptors, }
+\item[{vector$<$ {\bf I\-Match} $>$ \&}]{matches}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1of2_1_1FabMap_ad61ab354d779347f79703af20113d607}
+\hypertarget{classcv_1_1of2_1_1FabMap_a6f1b98734a139b0a076d89d55d83175e}{\index{cv\-::of2\-::\-Fab\-Map@{cv\-::of2\-::\-Fab\-Map}!get\-Likelihoods@{get\-Likelihoods}}
+\index{get\-Likelihoods@{get\-Likelihoods}!cv::of2::FabMap@{cv\-::of2\-::\-Fab\-Map}}
+\subsubsection[{get\-Likelihoods}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} cv\-::of2\-::\-Fab\-Map\-::get\-Likelihoods (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{query\-Img\-Descriptor, }
+\item[{const vector$<$ Mat $>$ \&}]{test\-Img\-Descriptors, }
+\item[{vector$<$ {\bf I\-Match} $>$ \&}]{matches}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classcv_1_1of2_1_1FabMap_a6f1b98734a139b0a076d89d55d83175e}
+
+
+Reimplemented in \hyperlink{classcv_1_1of2_1_1FabMap2_a15c86c75b94519a94c8a1874a94ea50d}{cv\-::of2\-::\-Fab\-Map2}, \hyperlink{classcv_1_1of2_1_1FabMapFBO_a679103cc67b237f836114d06ccfc461d}{cv\-::of2\-::\-Fab\-Map\-F\-B\-O}, \hyperlink{classcv_1_1of2_1_1FabMapLUT_a8609f5fc85512ba604147384c6ce301d}{cv\-::of2\-::\-Fab\-Map\-L\-U\-T}, and \hyperlink{classcv_1_1of2_1_1FabMap1_aa944800199525e2c6471e8a7ac1cefda}{cv\-::of2\-::\-Fab\-Map1}.
+
+\hypertarget{classcv_1_1of2_1_1FabMap_afe56c71b70a232bf198050b122ca53b2}{\index{cv\-::of2\-::\-Fab\-Map@{cv\-::of2\-::\-Fab\-Map}!get\-New\-Place\-Likelihood@{get\-New\-Place\-Likelihood}}
+\index{get\-New\-Place\-Likelihood@{get\-New\-Place\-Likelihood}!cv::of2::FabMap@{cv\-::of2\-::\-Fab\-Map}}
+\subsubsection[{get\-New\-Place\-Likelihood}]{\setlength{\rightskip}{0pt plus 5cm}virtual double cv\-::of2\-::\-Fab\-Map\-::get\-New\-Place\-Likelihood (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{query\-Img\-Descriptor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classcv_1_1of2_1_1FabMap_afe56c71b70a232bf198050b122ca53b2}
+
+
+Reimplemented in \hyperlink{classcv_1_1of2_1_1FabMap2_a59c05ae4eaab2652ac372656f5b91da0}{cv\-::of2\-::\-Fab\-Map2}.
+
+\hypertarget{classcv_1_1of2_1_1FabMap_a62a2591ddfed7161b7eae39308112d49}{\index{cv\-::of2\-::\-Fab\-Map@{cv\-::of2\-::\-Fab\-Map}!get\-Test\-Img\-Descriptors@{get\-Test\-Img\-Descriptors}}
+\index{get\-Test\-Img\-Descriptors@{get\-Test\-Img\-Descriptors}!cv::of2::FabMap@{cv\-::of2\-::\-Fab\-Map}}
+\subsubsection[{get\-Test\-Img\-Descriptors}]{\setlength{\rightskip}{0pt plus 5cm}const vector$<$Mat$>$\& cv\-::of2\-::\-Fab\-Map\-::get\-Test\-Img\-Descriptors (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcv_1_1of2_1_1FabMap_a62a2591ddfed7161b7eae39308112d49}
+\hypertarget{classcv_1_1of2_1_1FabMap_ab431c7975678ff293f6c4a83dc5826e9}{\index{cv\-::of2\-::\-Fab\-Map@{cv\-::of2\-::\-Fab\-Map}!get\-Training\-Img\-Descriptors@{get\-Training\-Img\-Descriptors}}
+\index{get\-Training\-Img\-Descriptors@{get\-Training\-Img\-Descriptors}!cv::of2::FabMap@{cv\-::of2\-::\-Fab\-Map}}
+\subsubsection[{get\-Training\-Img\-Descriptors}]{\setlength{\rightskip}{0pt plus 5cm}const vector$<$Mat$>$\& cv\-::of2\-::\-Fab\-Map\-::get\-Training\-Img\-Descriptors (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcv_1_1of2_1_1FabMap_ab431c7975678ff293f6c4a83dc5826e9}
+\hypertarget{classcv_1_1of2_1_1FabMap_a8f8d94fb93b3154d14328872903d2fa3}{\index{cv\-::of2\-::\-Fab\-Map@{cv\-::of2\-::\-Fab\-Map}!normalise\-Distribution@{normalise\-Distribution}}
+\index{normalise\-Distribution@{normalise\-Distribution}!cv::of2::FabMap@{cv\-::of2\-::\-Fab\-Map}}
+\subsubsection[{normalise\-Distribution}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::of2\-::\-Fab\-Map\-::normalise\-Distribution (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf I\-Match} $>$ \&}]{matches}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1of2_1_1FabMap_a8f8d94fb93b3154d14328872903d2fa3}
+\hypertarget{classcv_1_1of2_1_1FabMap_abf18cc11efedaeaf90b18f4300a36538}{\index{cv\-::of2\-::\-Fab\-Map@{cv\-::of2\-::\-Fab\-Map}!Peq\-G\-L@{Peq\-G\-L}}
+\index{Peq\-G\-L@{Peq\-G\-L}!cv::of2::FabMap@{cv\-::of2\-::\-Fab\-Map}}
+\subsubsection[{Peq\-G\-L}]{\setlength{\rightskip}{0pt plus 5cm}double cv\-::of2\-::\-Fab\-Map\-::\-Peq\-G\-L (
+\begin{DoxyParamCaption}
+\item[{int}]{q, }
+\item[{bool}]{Lzq, }
+\item[{bool}]{eq}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1of2_1_1FabMap_abf18cc11efedaeaf90b18f4300a36538}
+\hypertarget{classcv_1_1of2_1_1FabMap_afb1fa3847a0b20cb494a13572e32ffb2}{\index{cv\-::of2\-::\-Fab\-Map@{cv\-::of2\-::\-Fab\-Map}!pq@{pq}}
+\index{pq@{pq}!cv::of2::FabMap@{cv\-::of2\-::\-Fab\-Map}}
+\subsubsection[{pq}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::of2\-::\-Fab\-Map\-::pq (
+\begin{DoxyParamCaption}
+\item[{int}]{q}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1of2_1_1FabMap_afb1fa3847a0b20cb494a13572e32ffb2}
+\hypertarget{classcv_1_1of2_1_1FabMap_ae0b0c60dd878c1bf596e271219c284f2}{\index{cv\-::of2\-::\-Fab\-Map@{cv\-::of2\-::\-Fab\-Map}!Pzq@{Pzq}}
+\index{Pzq@{Pzq}!cv::of2::FabMap@{cv\-::of2\-::\-Fab\-Map}}
+\subsubsection[{Pzq}]{\setlength{\rightskip}{0pt plus 5cm}double cv\-::of2\-::\-Fab\-Map\-::\-Pzq (
+\begin{DoxyParamCaption}
+\item[{int}]{q, }
+\item[{bool}]{zq}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1of2_1_1FabMap_ae0b0c60dd878c1bf596e271219c284f2}
+\hypertarget{classcv_1_1of2_1_1FabMap_aea405a7198637f73bf44b7e0a01eec6b}{\index{cv\-::of2\-::\-Fab\-Map@{cv\-::of2\-::\-Fab\-Map}!Pzq\-Geq@{Pzq\-Geq}}
+\index{Pzq\-Geq@{Pzq\-Geq}!cv::of2::FabMap@{cv\-::of2\-::\-Fab\-Map}}
+\subsubsection[{Pzq\-Geq}]{\setlength{\rightskip}{0pt plus 5cm}double cv\-::of2\-::\-Fab\-Map\-::\-Pzq\-Geq (
+\begin{DoxyParamCaption}
+\item[{bool}]{zq, }
+\item[{bool}]{eq}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1of2_1_1FabMap_aea405a7198637f73bf44b7e0a01eec6b}
+\hypertarget{classcv_1_1of2_1_1FabMap_abf8b33662306bb1cc953fe41f0fa2e03}{\index{cv\-::of2\-::\-Fab\-Map@{cv\-::of2\-::\-Fab\-Map}!Pzq\-G\-L@{Pzq\-G\-L}}
+\index{Pzq\-G\-L@{Pzq\-G\-L}!cv::of2::FabMap@{cv\-::of2\-::\-Fab\-Map}}
+\subsubsection[{Pzq\-G\-L}]{\setlength{\rightskip}{0pt plus 5cm}double cv\-::of2\-::\-Fab\-Map\-::\-Pzq\-G\-L (
+\begin{DoxyParamCaption}
+\item[{int}]{q, }
+\item[{bool}]{zq, }
+\item[{bool}]{zpq, }
+\item[{bool}]{Lzq}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1of2_1_1FabMap_abf8b33662306bb1cc953fe41f0fa2e03}
+\hypertarget{classcv_1_1of2_1_1FabMap_a46297257c0db808fe74152d82390a7b2}{\index{cv\-::of2\-::\-Fab\-Map@{cv\-::of2\-::\-Fab\-Map}!Pzq\-Gzpq@{Pzq\-Gzpq}}
+\index{Pzq\-Gzpq@{Pzq\-Gzpq}!cv::of2::FabMap@{cv\-::of2\-::\-Fab\-Map}}
+\subsubsection[{Pzq\-Gzpq}]{\setlength{\rightskip}{0pt plus 5cm}double cv\-::of2\-::\-Fab\-Map\-::\-Pzq\-Gzpq (
+\begin{DoxyParamCaption}
+\item[{int}]{q, }
+\item[{bool}]{zq, }
+\item[{bool}]{zpq}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1of2_1_1FabMap_a46297257c0db808fe74152d82390a7b2}
+\hypertarget{classcv_1_1of2_1_1FabMap_a107c45b78bd224f9ce6d4eea39fba0ba}{\index{cv\-::of2\-::\-Fab\-Map@{cv\-::of2\-::\-Fab\-Map}!Pzq\-Gzpq\-L@{Pzq\-Gzpq\-L}}
+\index{Pzq\-Gzpq\-L@{Pzq\-Gzpq\-L}!cv::of2::FabMap@{cv\-::of2\-::\-Fab\-Map}}
+\subsubsection[{Pzq\-Gzpq\-L}]{\setlength{\rightskip}{0pt plus 5cm}double cv\-::of2\-::\-Fab\-Map\-::\-Pzq\-Gzpq\-L (
+\begin{DoxyParamCaption}
+\item[{int}]{q, }
+\item[{bool}]{zq, }
+\item[{bool}]{zpq, }
+\item[{bool}]{Lzq}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1of2_1_1FabMap_a107c45b78bd224f9ce6d4eea39fba0ba}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcv_1_1of2_1_1FabMap_a54e4331990e8069be69fec53b545c2bd}{\index{cv\-::of2\-::\-Fab\-Map@{cv\-::of2\-::\-Fab\-Map}!cl\-Tree@{cl\-Tree}}
+\index{cl\-Tree@{cl\-Tree}!cv::of2::FabMap@{cv\-::of2\-::\-Fab\-Map}}
+\subsubsection[{cl\-Tree}]{\setlength{\rightskip}{0pt plus 5cm}Mat cv\-::of2\-::\-Fab\-Map\-::cl\-Tree\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1of2_1_1FabMap_a54e4331990e8069be69fec53b545c2bd}
+\hypertarget{classcv_1_1of2_1_1FabMap_a336756c9be2fff682ab3c559c26765eb}{\index{cv\-::of2\-::\-Fab\-Map@{cv\-::of2\-::\-Fab\-Map}!flags@{flags}}
+\index{flags@{flags}!cv::of2::FabMap@{cv\-::of2\-::\-Fab\-Map}}
+\subsubsection[{flags}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::of2\-::\-Fab\-Map\-::flags\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1of2_1_1FabMap_a336756c9be2fff682ab3c559c26765eb}
+\hypertarget{classcv_1_1of2_1_1FabMap_a7c6d2872e9274aa8db564b0a37722865}{\index{cv\-::of2\-::\-Fab\-Map@{cv\-::of2\-::\-Fab\-Map}!m\-Bias@{m\-Bias}}
+\index{m\-Bias@{m\-Bias}!cv::of2::FabMap@{cv\-::of2\-::\-Fab\-Map}}
+\subsubsection[{m\-Bias}]{\setlength{\rightskip}{0pt plus 5cm}double cv\-::of2\-::\-Fab\-Map\-::m\-Bias\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1of2_1_1FabMap_a7c6d2872e9274aa8db564b0a37722865}
+\hypertarget{classcv_1_1of2_1_1FabMap_a023e2c53333bb5505baceb182011980f}{\index{cv\-::of2\-::\-Fab\-Map@{cv\-::of2\-::\-Fab\-Map}!num\-Samples@{num\-Samples}}
+\index{num\-Samples@{num\-Samples}!cv::of2::FabMap@{cv\-::of2\-::\-Fab\-Map}}
+\subsubsection[{num\-Samples}]{\setlength{\rightskip}{0pt plus 5cm}int cv\-::of2\-::\-Fab\-Map\-::num\-Samples\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1of2_1_1FabMap_a023e2c53333bb5505baceb182011980f}
+\hypertarget{classcv_1_1of2_1_1FabMap_a953065fb908d0ac9b72bac04d6779415}{\index{cv\-::of2\-::\-Fab\-Map@{cv\-::of2\-::\-Fab\-Map}!Pnew@{Pnew}}
+\index{Pnew@{Pnew}!cv::of2::FabMap@{cv\-::of2\-::\-Fab\-Map}}
+\subsubsection[{Pnew}]{\setlength{\rightskip}{0pt plus 5cm}double cv\-::of2\-::\-Fab\-Map\-::\-Pnew\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1of2_1_1FabMap_a953065fb908d0ac9b72bac04d6779415}
+\hypertarget{classcv_1_1of2_1_1FabMap_a0a4a45f92a3ea9fd74ac0b0933eef184}{\index{cv\-::of2\-::\-Fab\-Map@{cv\-::of2\-::\-Fab\-Map}!prior\-Matches@{prior\-Matches}}
+\index{prior\-Matches@{prior\-Matches}!cv::of2::FabMap@{cv\-::of2\-::\-Fab\-Map}}
+\subsubsection[{prior\-Matches}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf I\-Match}$>$ cv\-::of2\-::\-Fab\-Map\-::prior\-Matches\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1of2_1_1FabMap_a0a4a45f92a3ea9fd74ac0b0933eef184}
+\hypertarget{classcv_1_1of2_1_1FabMap_a0c79d4180f0ffe49bfbfe541b9981e7b}{\index{cv\-::of2\-::\-Fab\-Map@{cv\-::of2\-::\-Fab\-Map}!Pz\-Ge@{Pz\-Ge}}
+\index{Pz\-Ge@{Pz\-Ge}!cv::of2::FabMap@{cv\-::of2\-::\-Fab\-Map}}
+\subsubsection[{Pz\-Ge}]{\setlength{\rightskip}{0pt plus 5cm}double cv\-::of2\-::\-Fab\-Map\-::\-Pz\-Ge\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1of2_1_1FabMap_a0c79d4180f0ffe49bfbfe541b9981e7b}
+\hypertarget{classcv_1_1of2_1_1FabMap_ad0c2ef3b7d4194d6a0eeeac8aca8857f}{\index{cv\-::of2\-::\-Fab\-Map@{cv\-::of2\-::\-Fab\-Map}!Pz\-G\-L@{Pz\-G\-L}}
+\index{Pz\-G\-L@{Pz\-G\-L}!cv::of2::FabMap@{cv\-::of2\-::\-Fab\-Map}}
+\subsubsection[{Pz\-G\-L}]{\setlength{\rightskip}{0pt plus 5cm}double(Fab\-Map\-::$\ast$ cv\-::of2\-::\-Fab\-Map\-::\-Pz\-G\-L)(int q, bool zq, bool zpq, bool Lzq)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1of2_1_1FabMap_ad0c2ef3b7d4194d6a0eeeac8aca8857f}
+\hypertarget{classcv_1_1of2_1_1FabMap_a0bf851f305f6a00d5a837a7c70e40f3d}{\index{cv\-::of2\-::\-Fab\-Map@{cv\-::of2\-::\-Fab\-Map}!Pz\-G\-Ne@{Pz\-G\-Ne}}
+\index{Pz\-G\-Ne@{Pz\-G\-Ne}!cv::of2::FabMap@{cv\-::of2\-::\-Fab\-Map}}
+\subsubsection[{Pz\-G\-Ne}]{\setlength{\rightskip}{0pt plus 5cm}double cv\-::of2\-::\-Fab\-Map\-::\-Pz\-G\-Ne\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1of2_1_1FabMap_a0bf851f305f6a00d5a837a7c70e40f3d}
+\hypertarget{classcv_1_1of2_1_1FabMap_a2283bacbeb4cae2c01ba1e0fbc9c4974}{\index{cv\-::of2\-::\-Fab\-Map@{cv\-::of2\-::\-Fab\-Map}!s\-Factor@{s\-Factor}}
+\index{s\-Factor@{s\-Factor}!cv::of2::FabMap@{cv\-::of2\-::\-Fab\-Map}}
+\subsubsection[{s\-Factor}]{\setlength{\rightskip}{0pt plus 5cm}double cv\-::of2\-::\-Fab\-Map\-::s\-Factor\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1of2_1_1FabMap_a2283bacbeb4cae2c01ba1e0fbc9c4974}
+\hypertarget{classcv_1_1of2_1_1FabMap_a46f350e86965ec1e00ae4bd629dd4c8d}{\index{cv\-::of2\-::\-Fab\-Map@{cv\-::of2\-::\-Fab\-Map}!test\-Img\-Descriptors@{test\-Img\-Descriptors}}
+\index{test\-Img\-Descriptors@{test\-Img\-Descriptors}!cv::of2::FabMap@{cv\-::of2\-::\-Fab\-Map}}
+\subsubsection[{test\-Img\-Descriptors}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$Mat$>$ cv\-::of2\-::\-Fab\-Map\-::test\-Img\-Descriptors\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1of2_1_1FabMap_a46f350e86965ec1e00ae4bd629dd4c8d}
+\hypertarget{classcv_1_1of2_1_1FabMap_ac5c54c9cca20b7ffb83ac10a591e60fe}{\index{cv\-::of2\-::\-Fab\-Map@{cv\-::of2\-::\-Fab\-Map}!training\-Img\-Descriptors@{training\-Img\-Descriptors}}
+\index{training\-Img\-Descriptors@{training\-Img\-Descriptors}!cv::of2::FabMap@{cv\-::of2\-::\-Fab\-Map}}
+\subsubsection[{training\-Img\-Descriptors}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$Mat$>$ cv\-::of2\-::\-Fab\-Map\-::training\-Img\-Descriptors\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcv_1_1of2_1_1FabMap_ac5c54c9cca20b7ffb83ac10a591e60fe}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/contrib/\hyperlink{openfabmap_8hpp}{openfabmap.\-hpp}\end{DoxyCompactItemize}

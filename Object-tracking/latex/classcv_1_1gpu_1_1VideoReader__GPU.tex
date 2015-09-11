@@ -1,0 +1,208 @@
+\hypertarget{classcv_1_1gpu_1_1VideoReader__GPU}{\section{cv\-:\-:gpu\-:\-:Video\-Reader\-\_\-\-G\-P\-U Class Reference}
+\label{classcv_1_1gpu_1_1VideoReader__GPU}\index{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}}
+}
+
+
+{\ttfamily \#include $<$gpu.\-hpp$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structcv_1_1gpu_1_1VideoReader__GPU_1_1FormatInfo}{Format\-Info}
+\item 
+class \hyperlink{classcv_1_1gpu_1_1VideoReader__GPU_1_1VideoSource}{Video\-Source}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classcv_1_1gpu_1_1VideoReader__GPU_afdb33778111ce0c50a8de381ad562b16}{Codec} \{ \\*
+\hyperlink{classcv_1_1gpu_1_1VideoReader__GPU_afdb33778111ce0c50a8de381ad562b16ae45d3a13e8afae6ca1be2960f8013e64}{M\-P\-E\-G1} = 0, 
+\hyperlink{classcv_1_1gpu_1_1VideoReader__GPU_afdb33778111ce0c50a8de381ad562b16a1682f11e5b0a752c50e794b2898eded5}{M\-P\-E\-G2}, 
+\hyperlink{classcv_1_1gpu_1_1VideoReader__GPU_afdb33778111ce0c50a8de381ad562b16a86efa48f165eaa2a5d355911df0c65d4}{M\-P\-E\-G4}, 
+\hyperlink{classcv_1_1gpu_1_1VideoReader__GPU_afdb33778111ce0c50a8de381ad562b16ac6a5613a9566438358dcdbaff21f44b1}{V\-C1}, 
+\\*
+\hyperlink{classcv_1_1gpu_1_1VideoReader__GPU_afdb33778111ce0c50a8de381ad562b16a9435375ca08f28730896b5fe484db50c}{H264}, 
+\hyperlink{classcv_1_1gpu_1_1VideoReader__GPU_afdb33778111ce0c50a8de381ad562b16af08c74922bd060445140efececc34b68}{J\-P\-E\-G}, 
+\hyperlink{classcv_1_1gpu_1_1VideoReader__GPU_afdb33778111ce0c50a8de381ad562b16a8022fa6e413a138d538cbcb9b02cbaad}{H264\-\_\-\-S\-V\-C}, 
+\hyperlink{classcv_1_1gpu_1_1VideoReader__GPU_afdb33778111ce0c50a8de381ad562b16a87bfe22939cd0ee94a0add33f531fc02}{H264\-\_\-\-M\-V\-C}, 
+\\*
+\hyperlink{classcv_1_1gpu_1_1VideoReader__GPU_afdb33778111ce0c50a8de381ad562b16a3ab8bb50e245637d7de0059e70c27f00}{Uncompressed\-\_\-\-Y\-U\-V420} = (('I'$<$$<$24)$\vert$('Y'$<$$<$16)$\vert$('U'$<$$<$8)$\vert$('V')), 
+\hyperlink{classcv_1_1gpu_1_1VideoReader__GPU_afdb33778111ce0c50a8de381ad562b16afa77a91bab757393306992fd2da789d6}{Uncompressed\-\_\-\-Y\-V12} = (('Y'$<$$<$24)$\vert$('V'$<$$<$16)$\vert$('1'$<$$<$8)$\vert$('2')), 
+\hyperlink{classcv_1_1gpu_1_1VideoReader__GPU_afdb33778111ce0c50a8de381ad562b16af1011079d17b28b695adb4733dbce0d9}{Uncompressed\-\_\-\-N\-V12} = (('N'$<$$<$24)$\vert$('V'$<$$<$16)$\vert$('1'$<$$<$8)$\vert$('2')), 
+\hyperlink{classcv_1_1gpu_1_1VideoReader__GPU_afdb33778111ce0c50a8de381ad562b16af5bec2fec5c7b3b140d2da8c3a9423e7}{Uncompressed\-\_\-\-Y\-U\-Y\-V} = (('Y'$<$$<$24)$\vert$('U'$<$$<$16)$\vert$('Y'$<$$<$8)$\vert$('V')), 
+\\*
+\hyperlink{classcv_1_1gpu_1_1VideoReader__GPU_afdb33778111ce0c50a8de381ad562b16a7ed7a50e96ad35bb9cc104e8d460b4d7}{Uncompressed\-\_\-\-U\-Y\-V\-Y} = (('U'$<$$<$24)$\vert$('Y'$<$$<$16)$\vert$('V'$<$$<$8)$\vert$('Y'))
+ \}
+\item 
+enum \hyperlink{classcv_1_1gpu_1_1VideoReader__GPU_a7fc7968ff0961cdaa050b3845799b440}{Chroma\-Format} \{ \hyperlink{classcv_1_1gpu_1_1VideoReader__GPU_a7fc7968ff0961cdaa050b3845799b440a30354dcfc16f690550d4e32269586d4c}{Monochrome} =0, 
+\hyperlink{classcv_1_1gpu_1_1VideoReader__GPU_a7fc7968ff0961cdaa050b3845799b440ad1f70221be9016063f04d6183d1910a3}{Y\-U\-V420}, 
+\hyperlink{classcv_1_1gpu_1_1VideoReader__GPU_a7fc7968ff0961cdaa050b3845799b440a30cf7a5de82ef63bf4dc002d0358e31f}{Y\-U\-V422}, 
+\hyperlink{classcv_1_1gpu_1_1VideoReader__GPU_a7fc7968ff0961cdaa050b3845799b440a9eeb367fe3c3602193200c588d973623}{Y\-U\-V444}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcv_1_1gpu_1_1VideoReader__GPU_a1b58dc761b8a0e9c42d7b030823209a4}{Video\-Reader\-\_\-\-G\-P\-U} ()
+\item 
+\hyperlink{classcv_1_1gpu_1_1VideoReader__GPU_abf6eba3b8f8d21641f2a99855af1269e}{Video\-Reader\-\_\-\-G\-P\-U} (const std\-::string \&\hyperlink{core__c_8h_acc427f35f3bd9f865d39012657cc42f8}{filename})
+\item 
+\hyperlink{classcv_1_1gpu_1_1VideoReader__GPU_ace53a29b1a19b9897dd53244a5e3071b}{Video\-Reader\-\_\-\-G\-P\-U} (const cv\-::\-Ptr$<$ \hyperlink{classcv_1_1gpu_1_1VideoReader__GPU_1_1VideoSource}{Video\-Source} $>$ \&source)
+\item 
+\hyperlink{classcv_1_1gpu_1_1VideoReader__GPU_ad8687e17339dcdf99c90722b78370480}{$\sim$\-Video\-Reader\-\_\-\-G\-P\-U} ()
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1VideoReader__GPU_ad94a73b88ce7eb96764bb6e544796679}{open} (const std\-::string \&\hyperlink{core__c_8h_acc427f35f3bd9f865d39012657cc42f8}{filename})
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1VideoReader__GPU_a54c832d4c1c441f76f620421333285ec}{open} (const cv\-::\-Ptr$<$ \hyperlink{classcv_1_1gpu_1_1VideoReader__GPU_1_1VideoSource}{Video\-Source} $>$ \&source)
+\item 
+bool \hyperlink{classcv_1_1gpu_1_1VideoReader__GPU_aba2221b61dd830fadefbf9a4139edf74}{is\-Opened} () const 
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1VideoReader__GPU_a25b9dc748fda5bba66b8266f62598907}{close} ()
+\item 
+bool \hyperlink{classcv_1_1gpu_1_1VideoReader__GPU_afddcb4bb69867ea9cec9bef343e2dca2}{read} (Gpu\-Mat \&\hyperlink{legacy_8hpp_ad62b16ab219ae2483e8a3d921c44cc97}{image})
+\item 
+\hyperlink{structcv_1_1gpu_1_1VideoReader__GPU_1_1FormatInfo}{Format\-Info} \hyperlink{classcv_1_1gpu_1_1VideoReader__GPU_ab38fdab61e5e189727a03933c0d405df}{format} () const 
+\item 
+\hyperlink{legacy_8hpp_a8bb47f092d473522721002c86c13b94e}{void} \hyperlink{classcv_1_1gpu_1_1VideoReader__GPU_ad5feef8d69b8c09b625fee382fe43004}{dump\-Format} (std\-::ostream \&st)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classcv_1_1gpu_1_1VideoReader__GPU_a7fc7968ff0961cdaa050b3845799b440}{\index{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}!Chroma\-Format@{Chroma\-Format}}
+\index{Chroma\-Format@{Chroma\-Format}!cv::gpu::VideoReader_GPU@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}}
+\subsubsection[{Chroma\-Format}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U\-::\-Chroma\-Format}}}\label{classcv_1_1gpu_1_1VideoReader__GPU_a7fc7968ff0961cdaa050b3845799b440}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Monochrome@{Monochrome}!cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}}\index{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}!Monochrome@{Monochrome}}\item[{\em 
+\hypertarget{classcv_1_1gpu_1_1VideoReader__GPU_a7fc7968ff0961cdaa050b3845799b440a30354dcfc16f690550d4e32269586d4c}{Monochrome}\label{classcv_1_1gpu_1_1VideoReader__GPU_a7fc7968ff0961cdaa050b3845799b440a30354dcfc16f690550d4e32269586d4c}
+}]\index{Y\-U\-V420@{Y\-U\-V420}!cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}}\index{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}!Y\-U\-V420@{Y\-U\-V420}}\item[{\em 
+\hypertarget{classcv_1_1gpu_1_1VideoReader__GPU_a7fc7968ff0961cdaa050b3845799b440ad1f70221be9016063f04d6183d1910a3}{Y\-U\-V420}\label{classcv_1_1gpu_1_1VideoReader__GPU_a7fc7968ff0961cdaa050b3845799b440ad1f70221be9016063f04d6183d1910a3}
+}]\index{Y\-U\-V422@{Y\-U\-V422}!cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}}\index{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}!Y\-U\-V422@{Y\-U\-V422}}\item[{\em 
+\hypertarget{classcv_1_1gpu_1_1VideoReader__GPU_a7fc7968ff0961cdaa050b3845799b440a30cf7a5de82ef63bf4dc002d0358e31f}{Y\-U\-V422}\label{classcv_1_1gpu_1_1VideoReader__GPU_a7fc7968ff0961cdaa050b3845799b440a30cf7a5de82ef63bf4dc002d0358e31f}
+}]\index{Y\-U\-V444@{Y\-U\-V444}!cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}}\index{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}!Y\-U\-V444@{Y\-U\-V444}}\item[{\em 
+\hypertarget{classcv_1_1gpu_1_1VideoReader__GPU_a7fc7968ff0961cdaa050b3845799b440a9eeb367fe3c3602193200c588d973623}{Y\-U\-V444}\label{classcv_1_1gpu_1_1VideoReader__GPU_a7fc7968ff0961cdaa050b3845799b440a9eeb367fe3c3602193200c588d973623}
+}]\end{description}
+\end{Desc}
+\hypertarget{classcv_1_1gpu_1_1VideoReader__GPU_afdb33778111ce0c50a8de381ad562b16}{\index{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}!Codec@{Codec}}
+\index{Codec@{Codec}!cv::gpu::VideoReader_GPU@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}}
+\subsubsection[{Codec}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U\-::\-Codec}}}\label{classcv_1_1gpu_1_1VideoReader__GPU_afdb33778111ce0c50a8de381ad562b16}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{M\-P\-E\-G1@{M\-P\-E\-G1}!cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}}\index{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}!M\-P\-E\-G1@{M\-P\-E\-G1}}\item[{\em 
+\hypertarget{classcv_1_1gpu_1_1VideoReader__GPU_afdb33778111ce0c50a8de381ad562b16ae45d3a13e8afae6ca1be2960f8013e64}{M\-P\-E\-G1}\label{classcv_1_1gpu_1_1VideoReader__GPU_afdb33778111ce0c50a8de381ad562b16ae45d3a13e8afae6ca1be2960f8013e64}
+}]\index{M\-P\-E\-G2@{M\-P\-E\-G2}!cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}}\index{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}!M\-P\-E\-G2@{M\-P\-E\-G2}}\item[{\em 
+\hypertarget{classcv_1_1gpu_1_1VideoReader__GPU_afdb33778111ce0c50a8de381ad562b16a1682f11e5b0a752c50e794b2898eded5}{M\-P\-E\-G2}\label{classcv_1_1gpu_1_1VideoReader__GPU_afdb33778111ce0c50a8de381ad562b16a1682f11e5b0a752c50e794b2898eded5}
+}]\index{M\-P\-E\-G4@{M\-P\-E\-G4}!cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}}\index{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}!M\-P\-E\-G4@{M\-P\-E\-G4}}\item[{\em 
+\hypertarget{classcv_1_1gpu_1_1VideoReader__GPU_afdb33778111ce0c50a8de381ad562b16a86efa48f165eaa2a5d355911df0c65d4}{M\-P\-E\-G4}\label{classcv_1_1gpu_1_1VideoReader__GPU_afdb33778111ce0c50a8de381ad562b16a86efa48f165eaa2a5d355911df0c65d4}
+}]\index{V\-C1@{V\-C1}!cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}}\index{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}!V\-C1@{V\-C1}}\item[{\em 
+\hypertarget{classcv_1_1gpu_1_1VideoReader__GPU_afdb33778111ce0c50a8de381ad562b16ac6a5613a9566438358dcdbaff21f44b1}{V\-C1}\label{classcv_1_1gpu_1_1VideoReader__GPU_afdb33778111ce0c50a8de381ad562b16ac6a5613a9566438358dcdbaff21f44b1}
+}]\index{H264@{H264}!cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}}\index{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}!H264@{H264}}\item[{\em 
+\hypertarget{classcv_1_1gpu_1_1VideoReader__GPU_afdb33778111ce0c50a8de381ad562b16a9435375ca08f28730896b5fe484db50c}{H264}\label{classcv_1_1gpu_1_1VideoReader__GPU_afdb33778111ce0c50a8de381ad562b16a9435375ca08f28730896b5fe484db50c}
+}]\index{J\-P\-E\-G@{J\-P\-E\-G}!cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}}\index{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}!J\-P\-E\-G@{J\-P\-E\-G}}\item[{\em 
+\hypertarget{classcv_1_1gpu_1_1VideoReader__GPU_afdb33778111ce0c50a8de381ad562b16af08c74922bd060445140efececc34b68}{J\-P\-E\-G}\label{classcv_1_1gpu_1_1VideoReader__GPU_afdb33778111ce0c50a8de381ad562b16af08c74922bd060445140efececc34b68}
+}]\index{H264\-\_\-\-S\-V\-C@{H264\-\_\-\-S\-V\-C}!cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}}\index{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}!H264\-\_\-\-S\-V\-C@{H264\-\_\-\-S\-V\-C}}\item[{\em 
+\hypertarget{classcv_1_1gpu_1_1VideoReader__GPU_afdb33778111ce0c50a8de381ad562b16a8022fa6e413a138d538cbcb9b02cbaad}{H264\-\_\-\-S\-V\-C}\label{classcv_1_1gpu_1_1VideoReader__GPU_afdb33778111ce0c50a8de381ad562b16a8022fa6e413a138d538cbcb9b02cbaad}
+}]\index{H264\-\_\-\-M\-V\-C@{H264\-\_\-\-M\-V\-C}!cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}}\index{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}!H264\-\_\-\-M\-V\-C@{H264\-\_\-\-M\-V\-C}}\item[{\em 
+\hypertarget{classcv_1_1gpu_1_1VideoReader__GPU_afdb33778111ce0c50a8de381ad562b16a87bfe22939cd0ee94a0add33f531fc02}{H264\-\_\-\-M\-V\-C}\label{classcv_1_1gpu_1_1VideoReader__GPU_afdb33778111ce0c50a8de381ad562b16a87bfe22939cd0ee94a0add33f531fc02}
+}]\index{Uncompressed\-\_\-\-Y\-U\-V420@{Uncompressed\-\_\-\-Y\-U\-V420}!cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}}\index{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}!Uncompressed\-\_\-\-Y\-U\-V420@{Uncompressed\-\_\-\-Y\-U\-V420}}\item[{\em 
+\hypertarget{classcv_1_1gpu_1_1VideoReader__GPU_afdb33778111ce0c50a8de381ad562b16a3ab8bb50e245637d7de0059e70c27f00}{Uncompressed\-\_\-\-Y\-U\-V420}\label{classcv_1_1gpu_1_1VideoReader__GPU_afdb33778111ce0c50a8de381ad562b16a3ab8bb50e245637d7de0059e70c27f00}
+}]\index{Uncompressed\-\_\-\-Y\-V12@{Uncompressed\-\_\-\-Y\-V12}!cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}}\index{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}!Uncompressed\-\_\-\-Y\-V12@{Uncompressed\-\_\-\-Y\-V12}}\item[{\em 
+\hypertarget{classcv_1_1gpu_1_1VideoReader__GPU_afdb33778111ce0c50a8de381ad562b16afa77a91bab757393306992fd2da789d6}{Uncompressed\-\_\-\-Y\-V12}\label{classcv_1_1gpu_1_1VideoReader__GPU_afdb33778111ce0c50a8de381ad562b16afa77a91bab757393306992fd2da789d6}
+}]\index{Uncompressed\-\_\-\-N\-V12@{Uncompressed\-\_\-\-N\-V12}!cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}}\index{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}!Uncompressed\-\_\-\-N\-V12@{Uncompressed\-\_\-\-N\-V12}}\item[{\em 
+\hypertarget{classcv_1_1gpu_1_1VideoReader__GPU_afdb33778111ce0c50a8de381ad562b16af1011079d17b28b695adb4733dbce0d9}{Uncompressed\-\_\-\-N\-V12}\label{classcv_1_1gpu_1_1VideoReader__GPU_afdb33778111ce0c50a8de381ad562b16af1011079d17b28b695adb4733dbce0d9}
+}]\index{Uncompressed\-\_\-\-Y\-U\-Y\-V@{Uncompressed\-\_\-\-Y\-U\-Y\-V}!cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}}\index{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}!Uncompressed\-\_\-\-Y\-U\-Y\-V@{Uncompressed\-\_\-\-Y\-U\-Y\-V}}\item[{\em 
+\hypertarget{classcv_1_1gpu_1_1VideoReader__GPU_afdb33778111ce0c50a8de381ad562b16af5bec2fec5c7b3b140d2da8c3a9423e7}{Uncompressed\-\_\-\-Y\-U\-Y\-V}\label{classcv_1_1gpu_1_1VideoReader__GPU_afdb33778111ce0c50a8de381ad562b16af5bec2fec5c7b3b140d2da8c3a9423e7}
+}]\index{Uncompressed\-\_\-\-U\-Y\-V\-Y@{Uncompressed\-\_\-\-U\-Y\-V\-Y}!cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}}\index{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}!Uncompressed\-\_\-\-U\-Y\-V\-Y@{Uncompressed\-\_\-\-U\-Y\-V\-Y}}\item[{\em 
+\hypertarget{classcv_1_1gpu_1_1VideoReader__GPU_afdb33778111ce0c50a8de381ad562b16a7ed7a50e96ad35bb9cc104e8d460b4d7}{Uncompressed\-\_\-\-U\-Y\-V\-Y}\label{classcv_1_1gpu_1_1VideoReader__GPU_afdb33778111ce0c50a8de381ad562b16a7ed7a50e96ad35bb9cc104e8d460b4d7}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcv_1_1gpu_1_1VideoReader__GPU_a1b58dc761b8a0e9c42d7b030823209a4}{\index{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}!Video\-Reader\-\_\-\-G\-P\-U@{Video\-Reader\-\_\-\-G\-P\-U}}
+\index{Video\-Reader\-\_\-\-G\-P\-U@{Video\-Reader\-\_\-\-G\-P\-U}!cv::gpu::VideoReader_GPU@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}}
+\subsubsection[{Video\-Reader\-\_\-\-G\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U\-::\-Video\-Reader\-\_\-\-G\-P\-U (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1VideoReader__GPU_a1b58dc761b8a0e9c42d7b030823209a4}
+\hypertarget{classcv_1_1gpu_1_1VideoReader__GPU_abf6eba3b8f8d21641f2a99855af1269e}{\index{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}!Video\-Reader\-\_\-\-G\-P\-U@{Video\-Reader\-\_\-\-G\-P\-U}}
+\index{Video\-Reader\-\_\-\-G\-P\-U@{Video\-Reader\-\_\-\-G\-P\-U}!cv::gpu::VideoReader_GPU@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}}
+\subsubsection[{Video\-Reader\-\_\-\-G\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U\-::\-Video\-Reader\-\_\-\-G\-P\-U (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{filename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{classcv_1_1gpu_1_1VideoReader__GPU_abf6eba3b8f8d21641f2a99855af1269e}
+\hypertarget{classcv_1_1gpu_1_1VideoReader__GPU_ace53a29b1a19b9897dd53244a5e3071b}{\index{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}!Video\-Reader\-\_\-\-G\-P\-U@{Video\-Reader\-\_\-\-G\-P\-U}}
+\index{Video\-Reader\-\_\-\-G\-P\-U@{Video\-Reader\-\_\-\-G\-P\-U}!cv::gpu::VideoReader_GPU@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}}
+\subsubsection[{Video\-Reader\-\_\-\-G\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U\-::\-Video\-Reader\-\_\-\-G\-P\-U (
+\begin{DoxyParamCaption}
+\item[{const cv\-::\-Ptr$<$ {\bf Video\-Source} $>$ \&}]{source}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{classcv_1_1gpu_1_1VideoReader__GPU_ace53a29b1a19b9897dd53244a5e3071b}
+\hypertarget{classcv_1_1gpu_1_1VideoReader__GPU_ad8687e17339dcdf99c90722b78370480}{\index{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}!$\sim$\-Video\-Reader\-\_\-\-G\-P\-U@{$\sim$\-Video\-Reader\-\_\-\-G\-P\-U}}
+\index{$\sim$\-Video\-Reader\-\_\-\-G\-P\-U@{$\sim$\-Video\-Reader\-\_\-\-G\-P\-U}!cv::gpu::VideoReader_GPU@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}}
+\subsubsection[{$\sim$\-Video\-Reader\-\_\-\-G\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U\-::$\sim$\-Video\-Reader\-\_\-\-G\-P\-U (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1VideoReader__GPU_ad8687e17339dcdf99c90722b78370480}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcv_1_1gpu_1_1VideoReader__GPU_a25b9dc748fda5bba66b8266f62598907}{\index{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}!close@{close}}
+\index{close@{close}!cv::gpu::VideoReader_GPU@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}}
+\subsubsection[{close}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U\-::close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1VideoReader__GPU_a25b9dc748fda5bba66b8266f62598907}
+\hypertarget{classcv_1_1gpu_1_1VideoReader__GPU_ad5feef8d69b8c09b625fee382fe43004}{\index{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}!dump\-Format@{dump\-Format}}
+\index{dump\-Format@{dump\-Format}!cv::gpu::VideoReader_GPU@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}}
+\subsubsection[{dump\-Format}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U\-::dump\-Format (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{st}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1VideoReader__GPU_ad5feef8d69b8c09b625fee382fe43004}
+\hypertarget{classcv_1_1gpu_1_1VideoReader__GPU_ab38fdab61e5e189727a03933c0d405df}{\index{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}!format@{format}}
+\index{format@{format}!cv::gpu::VideoReader_GPU@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}}
+\subsubsection[{format}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Format\-Info} cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U\-::format (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcv_1_1gpu_1_1VideoReader__GPU_ab38fdab61e5e189727a03933c0d405df}
+\hypertarget{classcv_1_1gpu_1_1VideoReader__GPU_aba2221b61dd830fadefbf9a4139edf74}{\index{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}!is\-Opened@{is\-Opened}}
+\index{is\-Opened@{is\-Opened}!cv::gpu::VideoReader_GPU@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}}
+\subsubsection[{is\-Opened}]{\setlength{\rightskip}{0pt plus 5cm}bool cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U\-::is\-Opened (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcv_1_1gpu_1_1VideoReader__GPU_aba2221b61dd830fadefbf9a4139edf74}
+\hypertarget{classcv_1_1gpu_1_1VideoReader__GPU_ad94a73b88ce7eb96764bb6e544796679}{\index{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}!open@{open}}
+\index{open@{open}!cv::gpu::VideoReader_GPU@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}}
+\subsubsection[{open}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U\-::open (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{filename}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1VideoReader__GPU_ad94a73b88ce7eb96764bb6e544796679}
+\hypertarget{classcv_1_1gpu_1_1VideoReader__GPU_a54c832d4c1c441f76f620421333285ec}{\index{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}!open@{open}}
+\index{open@{open}!cv::gpu::VideoReader_GPU@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}}
+\subsubsection[{open}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U\-::open (
+\begin{DoxyParamCaption}
+\item[{const cv\-::\-Ptr$<$ {\bf Video\-Source} $>$ \&}]{source}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1VideoReader__GPU_a54c832d4c1c441f76f620421333285ec}
+\hypertarget{classcv_1_1gpu_1_1VideoReader__GPU_afddcb4bb69867ea9cec9bef343e2dca2}{\index{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}!read@{read}}
+\index{read@{read}!cv::gpu::VideoReader_GPU@{cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U}}
+\subsubsection[{read}]{\setlength{\rightskip}{0pt plus 5cm}bool cv\-::gpu\-::\-Video\-Reader\-\_\-\-G\-P\-U\-::read (
+\begin{DoxyParamCaption}
+\item[{Gpu\-Mat \&}]{image}
+\end{DoxyParamCaption}
+)}}\label{classcv_1_1gpu_1_1VideoReader__GPU_afddcb4bb69867ea9cec9bef343e2dca2}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/gpu/\hyperlink{gpu_2gpu_8hpp}{gpu.\-hpp}\end{DoxyCompactItemize}

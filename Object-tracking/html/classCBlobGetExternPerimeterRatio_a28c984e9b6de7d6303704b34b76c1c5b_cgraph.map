@@ -1,0 +1,7 @@
+<map id="CBlobGetExternPerimeterRatio::operator()" name="CBlobGetExternPerimeterRatio::operator()">
+<area shape="rect" id="node2" href="$classCBlob.html#af63853ea55dbebbee5b013189e765b51" title="Compute blob&#39;s perimeter. " alt="" coords="259,13,381,40"/>
+<area shape="rect" id="node6" href="$classCBlob.html#ab1501b07a2c5ee23843bac66d20974e2" title="Compute extern perimeter. " alt="" coords="444,64,604,91"/>
+<area shape="rect" id="node3" href="$classCBlobContour.html#a893d57d625bb8f26f4a31ff0b66b8406" title="Computes perimeter from contour. " alt="" coords="429,13,619,40"/>
+<area shape="rect" id="node4" href="$classCBlobContour.html#af4e715a94924d5dc1a0e67cf75818bb5" title="CBlobContour::IsEmpty" alt="" coords="675,5,837,32"/>
+<area shape="rect" id="node5" href="$classCBlobContour.html#a245d5e59180619aa9ae4ec14acc18744" title="Return all contour points. " alt="" coords="667,57,845,98"/>
+</map>

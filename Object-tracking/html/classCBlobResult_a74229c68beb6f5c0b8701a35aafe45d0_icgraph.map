@@ -1,0 +1,14 @@
+<map id="CBlobResult::GetNumBlobs" name="CBlobResult::GetNumBlobs">
+<area shape="rect" id="node2" href="$classCBlobResult.html#a231c31a05f42508968da3b9e3df755ce" title="CBlobResult::CBlobResult" alt="" coords="244,5,423,32"/>
+<area shape="rect" id="node3" href="$classCBlobResult.html#aa833c008cc7056576a7cbd260d09f10c" title="CBlobResult::operator=" alt="" coords="254,56,413,83"/>
+<area shape="rect" id="node4" href="$classCBlobResult.html#a5873edfefb2d083c0d309bba7ff68a7c" title="CBlobResult::operator+" alt="" coords="254,107,413,133"/>
+<area shape="rect" id="node5" href="$classCBlobResult.html#a2ed86772b35ed96eadae0080f27b923b" title="CBlobResult::GetSTLResult" alt="" coords="240,259,427,285"/>
+<area shape="rect" id="node6" href="$classCBlobResult.html#ace24ea06757b4538a058a2b275670ed2" title="Does the Filter method job. " alt="" coords="486,259,637,285"/>
+<area shape="rect" id="node8" href="$classCBlobResult.html#a7e7929a4ae93967c14eeb958ed64d848" title="CBlobResult::GetNthBlob" alt="" coords="475,309,647,336"/>
+<area shape="rect" id="node9" href="$classCBlobResult.html#a39df81e0a49e4859c9b963e23f9f55df" title="CBlobResult::PrintBlobs" alt="" coords="479,183,643,209"/>
+<area shape="rect" id="node10" href="$classCBlobResult.html#a7f80058f8726468c0d074b8985c09d80" title="CBlobResult::GetNumber" alt="" coords="248,360,419,387"/>
+<area shape="rect" id="node11" href="$classCBlobResult.html#a0240474a3c6f1885753a4d95bd441605" title="CBlobResult::Filter" alt="" coords="267,512,400,539"/>
+<area shape="rect" id="node12" href="$classtld_1_1ForegroundDetector.html#a4f34509fa3a36529a39b911ed7693623" title="Finds regions of foreground in the image. " alt="" coords="482,454,641,495"/>
+<area shape="rect" id="node13" href="$classCBlobResult.html#a1c9b86a3d2a6ec175bdf3f6f7c211521" title="CBlobResult::GetBlob" alt="" coords="258,309,409,336"/>
+<area shape="rect" id="node7" href="$classCBlobResult.html#ac4ca8d8c9ad0a00ba4b28c7884645968" title="CBlobResult::Filter" alt="" coords="696,259,829,285"/>
+</map>

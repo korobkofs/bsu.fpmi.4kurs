@@ -1,0 +1,187 @@
+\hypertarget{classConfigDialog}{\section{Config\-Dialog Class Reference}
+\label{classConfigDialog}\index{Config\-Dialog@{Config\-Dialog}}
+}
+
+
+{\ttfamily \#include $<$Config\-Dialog.\-h$>$}
+
+
+
+Inheritance diagram for Config\-Dialog\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=152pt]{classConfigDialog__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Config\-Dialog\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{classConfigDialog__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classConfigDialog_a28fcaf732c9f363b30b2fc4a9abd9251}{Config\-Dialog} ()
+\item 
+\hyperlink{classConfigDialog_a45966fcb35bfca9ee45fe9fc9447a4f5}{Config\-Dialog} (\hyperlink{classtld_1_1Settings}{tld\-::\-Settings} $\ast$settings, bool $\ast$correct\-Closed, Q\-Widget $\ast$parent=0)
+\item 
+\hyperlink{classConfigDialog_a485badac4dffa04603f800bb9d396e1d}{$\sim$\-Config\-Dialog} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classConfigDialog_a1d92274ba705553f051b1458aaf3d17a}{change\-Event} (Q\-Event $\ast$e)
+\end{DoxyCompactItemize}
+\subsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classConfigDialog_af7cc8e52db580a91f560e5d60fa53be1}{on\-\_\-button\-Box\-\_\-rejected} ()
+\item 
+void \hyperlink{classConfigDialog_a99ff17058888a9f4680d931b3dbcc107}{on\-\_\-button\-Box\-\_\-accepted} ()
+\item 
+void \hyperlink{classConfigDialog_a213196688dcf491b2118cef2ac0c4d5d}{on\-\_\-push\-Button\-\_\-print\-Timing\-\_\-clicked} ()
+\item 
+void \hyperlink{classConfigDialog_afcb1c471f181177573ee6e9ebd2e33e7}{on\-\_\-push\-Button\-\_\-output\-Dir\-\_\-clicked} ()
+\item 
+void \hyperlink{classConfigDialog_a2ac4e126ef0f47b9ccf800bbb2560885}{on\-\_\-push\-Button\-\_\-print\-Results\-\_\-clicked} ()
+\item 
+void \hyperlink{classConfigDialog_a80ba58182a35015b4cc5c542b0c62fcb}{on\-\_\-push\-Button\-\_\-model\-Path\-\_\-clicked} ()
+\item 
+void \hyperlink{classConfigDialog_a05e105aa3357b7fb82a2f5815b2cb853}{on\-\_\-push\-Button\-\_\-image\-Path\-\_\-clicked} ()
+\item 
+void \hyperlink{classConfigDialog_a8f035c7e6b76c9a00b2dbc4a9bbffa2a}{on\-\_\-combo\-Box\-\_\-method\-\_\-activated} (Q\-String element)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtld_1_1Settings}{tld\-::\-Settings} $\ast$ \hyperlink{classConfigDialog_aebf816c83d7aa4a3bff2b3e1e16ccb6d}{m\-\_\-settings}
+\item 
+bool $\ast$ \hyperlink{classConfigDialog_a49a00b0b82e40c2e26ddb3702438f3ff}{m\-\_\-correct\-Closed}
+\item 
+Ui\-\_\-\-Config\-Dialog $\ast$ \hyperlink{classConfigDialog_a0f0ed746b2d7583be3869a363b91136c}{ui}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Qt-\/\-Dialog to configure the program 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classConfigDialog_a28fcaf732c9f363b30b2fc4a9abd9251}{\index{Config\-Dialog@{Config\-Dialog}!Config\-Dialog@{Config\-Dialog}}
+\index{Config\-Dialog@{Config\-Dialog}!ConfigDialog@{Config\-Dialog}}
+\subsubsection[{Config\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}Config\-Dialog\-::\-Config\-Dialog (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classConfigDialog_a28fcaf732c9f363b30b2fc4a9abd9251}
+Creates a dialog 
+\begin{DoxyParams}{Parameters}
+{\em settings} & all parameters are stored in this object \\
+\hline
+{\em correct\-Closed} & true if everything went right, false if not \\
+\hline
+\end{DoxyParams}
+\hypertarget{classConfigDialog_a45966fcb35bfca9ee45fe9fc9447a4f5}{\index{Config\-Dialog@{Config\-Dialog}!Config\-Dialog@{Config\-Dialog}}
+\index{Config\-Dialog@{Config\-Dialog}!ConfigDialog@{Config\-Dialog}}
+\subsubsection[{Config\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}Config\-Dialog\-::\-Config\-Dialog (
+\begin{DoxyParamCaption}
+\item[{{\bf tld\-::\-Settings} $\ast$}]{settings, }
+\item[{bool $\ast$}]{correct\-Closed, }
+\item[{Q\-Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classConfigDialog_a45966fcb35bfca9ee45fe9fc9447a4f5}
+\hypertarget{classConfigDialog_a485badac4dffa04603f800bb9d396e1d}{\index{Config\-Dialog@{Config\-Dialog}!$\sim$\-Config\-Dialog@{$\sim$\-Config\-Dialog}}
+\index{$\sim$\-Config\-Dialog@{$\sim$\-Config\-Dialog}!ConfigDialog@{Config\-Dialog}}
+\subsubsection[{$\sim$\-Config\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}Config\-Dialog\-::$\sim$\-Config\-Dialog (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classConfigDialog_a485badac4dffa04603f800bb9d396e1d}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classConfigDialog_a1d92274ba705553f051b1458aaf3d17a}{\index{Config\-Dialog@{Config\-Dialog}!change\-Event@{change\-Event}}
+\index{change\-Event@{change\-Event}!ConfigDialog@{Config\-Dialog}}
+\subsubsection[{change\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void Config\-Dialog\-::change\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Event $\ast$}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classConfigDialog_a1d92274ba705553f051b1458aaf3d17a}
+\hypertarget{classConfigDialog_a99ff17058888a9f4680d931b3dbcc107}{\index{Config\-Dialog@{Config\-Dialog}!on\-\_\-button\-Box\-\_\-accepted@{on\-\_\-button\-Box\-\_\-accepted}}
+\index{on\-\_\-button\-Box\-\_\-accepted@{on\-\_\-button\-Box\-\_\-accepted}!ConfigDialog@{Config\-Dialog}}
+\subsubsection[{on\-\_\-button\-Box\-\_\-accepted}]{\setlength{\rightskip}{0pt plus 5cm}void Config\-Dialog\-::on\-\_\-button\-Box\-\_\-accepted (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{classConfigDialog_a99ff17058888a9f4680d931b3dbcc107}
+\hypertarget{classConfigDialog_af7cc8e52db580a91f560e5d60fa53be1}{\index{Config\-Dialog@{Config\-Dialog}!on\-\_\-button\-Box\-\_\-rejected@{on\-\_\-button\-Box\-\_\-rejected}}
+\index{on\-\_\-button\-Box\-\_\-rejected@{on\-\_\-button\-Box\-\_\-rejected}!ConfigDialog@{Config\-Dialog}}
+\subsubsection[{on\-\_\-button\-Box\-\_\-rejected}]{\setlength{\rightskip}{0pt plus 5cm}void Config\-Dialog\-::on\-\_\-button\-Box\-\_\-rejected (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{classConfigDialog_af7cc8e52db580a91f560e5d60fa53be1}
+\hypertarget{classConfigDialog_a8f035c7e6b76c9a00b2dbc4a9bbffa2a}{\index{Config\-Dialog@{Config\-Dialog}!on\-\_\-combo\-Box\-\_\-method\-\_\-activated@{on\-\_\-combo\-Box\-\_\-method\-\_\-activated}}
+\index{on\-\_\-combo\-Box\-\_\-method\-\_\-activated@{on\-\_\-combo\-Box\-\_\-method\-\_\-activated}!ConfigDialog@{Config\-Dialog}}
+\subsubsection[{on\-\_\-combo\-Box\-\_\-method\-\_\-activated}]{\setlength{\rightskip}{0pt plus 5cm}void Config\-Dialog\-::on\-\_\-combo\-Box\-\_\-method\-\_\-activated (
+\begin{DoxyParamCaption}
+\item[{Q\-String}]{element}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{classConfigDialog_a8f035c7e6b76c9a00b2dbc4a9bbffa2a}
+\hypertarget{classConfigDialog_a05e105aa3357b7fb82a2f5815b2cb853}{\index{Config\-Dialog@{Config\-Dialog}!on\-\_\-push\-Button\-\_\-image\-Path\-\_\-clicked@{on\-\_\-push\-Button\-\_\-image\-Path\-\_\-clicked}}
+\index{on\-\_\-push\-Button\-\_\-image\-Path\-\_\-clicked@{on\-\_\-push\-Button\-\_\-image\-Path\-\_\-clicked}!ConfigDialog@{Config\-Dialog}}
+\subsubsection[{on\-\_\-push\-Button\-\_\-image\-Path\-\_\-clicked}]{\setlength{\rightskip}{0pt plus 5cm}void Config\-Dialog\-::on\-\_\-push\-Button\-\_\-image\-Path\-\_\-clicked (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{classConfigDialog_a05e105aa3357b7fb82a2f5815b2cb853}
+\hypertarget{classConfigDialog_a80ba58182a35015b4cc5c542b0c62fcb}{\index{Config\-Dialog@{Config\-Dialog}!on\-\_\-push\-Button\-\_\-model\-Path\-\_\-clicked@{on\-\_\-push\-Button\-\_\-model\-Path\-\_\-clicked}}
+\index{on\-\_\-push\-Button\-\_\-model\-Path\-\_\-clicked@{on\-\_\-push\-Button\-\_\-model\-Path\-\_\-clicked}!ConfigDialog@{Config\-Dialog}}
+\subsubsection[{on\-\_\-push\-Button\-\_\-model\-Path\-\_\-clicked}]{\setlength{\rightskip}{0pt plus 5cm}void Config\-Dialog\-::on\-\_\-push\-Button\-\_\-model\-Path\-\_\-clicked (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{classConfigDialog_a80ba58182a35015b4cc5c542b0c62fcb}
+\hypertarget{classConfigDialog_afcb1c471f181177573ee6e9ebd2e33e7}{\index{Config\-Dialog@{Config\-Dialog}!on\-\_\-push\-Button\-\_\-output\-Dir\-\_\-clicked@{on\-\_\-push\-Button\-\_\-output\-Dir\-\_\-clicked}}
+\index{on\-\_\-push\-Button\-\_\-output\-Dir\-\_\-clicked@{on\-\_\-push\-Button\-\_\-output\-Dir\-\_\-clicked}!ConfigDialog@{Config\-Dialog}}
+\subsubsection[{on\-\_\-push\-Button\-\_\-output\-Dir\-\_\-clicked}]{\setlength{\rightskip}{0pt plus 5cm}void Config\-Dialog\-::on\-\_\-push\-Button\-\_\-output\-Dir\-\_\-clicked (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{classConfigDialog_afcb1c471f181177573ee6e9ebd2e33e7}
+\hypertarget{classConfigDialog_a2ac4e126ef0f47b9ccf800bbb2560885}{\index{Config\-Dialog@{Config\-Dialog}!on\-\_\-push\-Button\-\_\-print\-Results\-\_\-clicked@{on\-\_\-push\-Button\-\_\-print\-Results\-\_\-clicked}}
+\index{on\-\_\-push\-Button\-\_\-print\-Results\-\_\-clicked@{on\-\_\-push\-Button\-\_\-print\-Results\-\_\-clicked}!ConfigDialog@{Config\-Dialog}}
+\subsubsection[{on\-\_\-push\-Button\-\_\-print\-Results\-\_\-clicked}]{\setlength{\rightskip}{0pt plus 5cm}void Config\-Dialog\-::on\-\_\-push\-Button\-\_\-print\-Results\-\_\-clicked (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{classConfigDialog_a2ac4e126ef0f47b9ccf800bbb2560885}
+\hypertarget{classConfigDialog_a213196688dcf491b2118cef2ac0c4d5d}{\index{Config\-Dialog@{Config\-Dialog}!on\-\_\-push\-Button\-\_\-print\-Timing\-\_\-clicked@{on\-\_\-push\-Button\-\_\-print\-Timing\-\_\-clicked}}
+\index{on\-\_\-push\-Button\-\_\-print\-Timing\-\_\-clicked@{on\-\_\-push\-Button\-\_\-print\-Timing\-\_\-clicked}!ConfigDialog@{Config\-Dialog}}
+\subsubsection[{on\-\_\-push\-Button\-\_\-print\-Timing\-\_\-clicked}]{\setlength{\rightskip}{0pt plus 5cm}void Config\-Dialog\-::on\-\_\-push\-Button\-\_\-print\-Timing\-\_\-clicked (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{classConfigDialog_a213196688dcf491b2118cef2ac0c4d5d}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classConfigDialog_a49a00b0b82e40c2e26ddb3702438f3ff}{\index{Config\-Dialog@{Config\-Dialog}!m\-\_\-correct\-Closed@{m\-\_\-correct\-Closed}}
+\index{m\-\_\-correct\-Closed@{m\-\_\-correct\-Closed}!ConfigDialog@{Config\-Dialog}}
+\subsubsection[{m\-\_\-correct\-Closed}]{\setlength{\rightskip}{0pt plus 5cm}bool$\ast$ Config\-Dialog\-::m\-\_\-correct\-Closed\hspace{0.3cm}{\ttfamily [private]}}}\label{classConfigDialog_a49a00b0b82e40c2e26ddb3702438f3ff}
+\hypertarget{classConfigDialog_aebf816c83d7aa4a3bff2b3e1e16ccb6d}{\index{Config\-Dialog@{Config\-Dialog}!m\-\_\-settings@{m\-\_\-settings}}
+\index{m\-\_\-settings@{m\-\_\-settings}!ConfigDialog@{Config\-Dialog}}
+\subsubsection[{m\-\_\-settings}]{\setlength{\rightskip}{0pt plus 5cm}{\bf tld\-::\-Settings}$\ast$ Config\-Dialog\-::m\-\_\-settings\hspace{0.3cm}{\ttfamily [private]}}}\label{classConfigDialog_aebf816c83d7aa4a3bff2b3e1e16ccb6d}
+\hypertarget{classConfigDialog_a0f0ed746b2d7583be3869a363b91136c}{\index{Config\-Dialog@{Config\-Dialog}!ui@{ui}}
+\index{ui@{ui}!ConfigDialog@{Config\-Dialog}}
+\subsubsection[{ui}]{\setlength{\rightskip}{0pt plus 5cm}Ui\-\_\-\-Config\-Dialog$\ast$ Config\-Dialog\-::ui\hspace{0.3cm}{\ttfamily [private]}}}\label{classConfigDialog_a0f0ed746b2d7583be3869a363b91136c}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/opentld/qopentld/\hyperlink{ConfigDialog_8h}{Config\-Dialog.\-h}\item 
+src/opentld/qopentld/\hyperlink{ConfigDialog_8cpp}{Config\-Dialog.\-cpp}\end{DoxyCompactItemize}

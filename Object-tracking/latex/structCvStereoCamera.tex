@@ -1,0 +1,82 @@
+\hypertarget{structCvStereoCamera}{\section{Cv\-Stereo\-Camera Struct Reference}
+\label{structCvStereoCamera}\index{Cv\-Stereo\-Camera@{Cv\-Stereo\-Camera}}
+}
+
+
+{\ttfamily \#include $<$legacy.\-hpp$>$}
+
+
+
+Collaboration diagram for Cv\-Stereo\-Camera\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structCvStereoCamera__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structCvCamera}{Cv\-Camera} $\ast$ \hyperlink{structCvStereoCamera_a646135b970708db9393e08ecb874f4bb}{camera} \mbox{[}2\mbox{]}
+\item 
+float \hyperlink{structCvStereoCamera_a0f1d899929ee07b59c06fd8284efd18e}{fund\-Matr} \mbox{[}9\mbox{]}
+\item 
+\hyperlink{structCvPoint3D32f}{Cv\-Point3\-D32f} \hyperlink{structCvStereoCamera_ab227708bf261abc8636eb58921a56700}{epipole} \mbox{[}2\mbox{]}
+\item 
+\hyperlink{structCvPoint2D32f}{Cv\-Point2\-D32f} \hyperlink{structCvStereoCamera_a1aa915655877e47f119825c0cace5473}{quad} \mbox{[}2\mbox{]}\mbox{[}4\mbox{]}
+\item 
+double \hyperlink{structCvStereoCamera_af05376d0e7e361967522b14fd53373bf}{coeffs} \mbox{[}2\mbox{]}\mbox{[}3\mbox{]}\mbox{[}3\mbox{]}
+\item 
+\hyperlink{structCvPoint2D32f}{Cv\-Point2\-D32f} \hyperlink{structCvStereoCamera_a5ada188887f9bfc33613d7db15fd3e32}{border} \mbox{[}2\mbox{]}\mbox{[}4\mbox{]}
+\item 
+\hyperlink{structCvSize}{Cv\-Size} \hyperlink{structCvStereoCamera_a16dc53a1985f186e6dbc225a1d2c4682}{warp\-Size}
+\item 
+\hyperlink{structCvStereoLineCoeff}{Cv\-Stereo\-Line\-Coeff} $\ast$ \hyperlink{structCvStereoCamera_a6587d80e1b870ec32bc9dfeda92f9949}{line\-Coeffs}
+\item 
+int \hyperlink{structCvStereoCamera_a202102897e4fc1c3b2000b1d537851fd}{need\-Swap\-Cameras}
+\item 
+float \hyperlink{structCvStereoCamera_a98e5355c4ccd0d4aa747685e28cbd11b}{rot\-Matrix} \mbox{[}9\mbox{]}
+\item 
+float \hyperlink{structCvStereoCamera_a65ab68375811fdefe09ef829c51629ef}{trans\-Vector} \mbox{[}3\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structCvStereoCamera_a5ada188887f9bfc33613d7db15fd3e32}{\index{Cv\-Stereo\-Camera@{Cv\-Stereo\-Camera}!border@{border}}
+\index{border@{border}!CvStereoCamera@{Cv\-Stereo\-Camera}}
+\subsubsection[{border}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Point2\-D32f} Cv\-Stereo\-Camera\-::border\mbox{[}2\mbox{]}\mbox{[}4\mbox{]}}}\label{structCvStereoCamera_a5ada188887f9bfc33613d7db15fd3e32}
+\hypertarget{structCvStereoCamera_a646135b970708db9393e08ecb874f4bb}{\index{Cv\-Stereo\-Camera@{Cv\-Stereo\-Camera}!camera@{camera}}
+\index{camera@{camera}!CvStereoCamera@{Cv\-Stereo\-Camera}}
+\subsubsection[{camera}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Camera}$\ast$ Cv\-Stereo\-Camera\-::camera\mbox{[}2\mbox{]}}}\label{structCvStereoCamera_a646135b970708db9393e08ecb874f4bb}
+\hypertarget{structCvStereoCamera_af05376d0e7e361967522b14fd53373bf}{\index{Cv\-Stereo\-Camera@{Cv\-Stereo\-Camera}!coeffs@{coeffs}}
+\index{coeffs@{coeffs}!CvStereoCamera@{Cv\-Stereo\-Camera}}
+\subsubsection[{coeffs}]{\setlength{\rightskip}{0pt plus 5cm}double Cv\-Stereo\-Camera\-::coeffs\mbox{[}2\mbox{]}\mbox{[}3\mbox{]}\mbox{[}3\mbox{]}}}\label{structCvStereoCamera_af05376d0e7e361967522b14fd53373bf}
+\hypertarget{structCvStereoCamera_ab227708bf261abc8636eb58921a56700}{\index{Cv\-Stereo\-Camera@{Cv\-Stereo\-Camera}!epipole@{epipole}}
+\index{epipole@{epipole}!CvStereoCamera@{Cv\-Stereo\-Camera}}
+\subsubsection[{epipole}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Point3\-D32f} Cv\-Stereo\-Camera\-::epipole\mbox{[}2\mbox{]}}}\label{structCvStereoCamera_ab227708bf261abc8636eb58921a56700}
+\hypertarget{structCvStereoCamera_a0f1d899929ee07b59c06fd8284efd18e}{\index{Cv\-Stereo\-Camera@{Cv\-Stereo\-Camera}!fund\-Matr@{fund\-Matr}}
+\index{fund\-Matr@{fund\-Matr}!CvStereoCamera@{Cv\-Stereo\-Camera}}
+\subsubsection[{fund\-Matr}]{\setlength{\rightskip}{0pt plus 5cm}float Cv\-Stereo\-Camera\-::fund\-Matr\mbox{[}9\mbox{]}}}\label{structCvStereoCamera_a0f1d899929ee07b59c06fd8284efd18e}
+\hypertarget{structCvStereoCamera_a6587d80e1b870ec32bc9dfeda92f9949}{\index{Cv\-Stereo\-Camera@{Cv\-Stereo\-Camera}!line\-Coeffs@{line\-Coeffs}}
+\index{line\-Coeffs@{line\-Coeffs}!CvStereoCamera@{Cv\-Stereo\-Camera}}
+\subsubsection[{line\-Coeffs}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Stereo\-Line\-Coeff}$\ast$ Cv\-Stereo\-Camera\-::line\-Coeffs}}\label{structCvStereoCamera_a6587d80e1b870ec32bc9dfeda92f9949}
+\hypertarget{structCvStereoCamera_a202102897e4fc1c3b2000b1d537851fd}{\index{Cv\-Stereo\-Camera@{Cv\-Stereo\-Camera}!need\-Swap\-Cameras@{need\-Swap\-Cameras}}
+\index{need\-Swap\-Cameras@{need\-Swap\-Cameras}!CvStereoCamera@{Cv\-Stereo\-Camera}}
+\subsubsection[{need\-Swap\-Cameras}]{\setlength{\rightskip}{0pt plus 5cm}int Cv\-Stereo\-Camera\-::need\-Swap\-Cameras}}\label{structCvStereoCamera_a202102897e4fc1c3b2000b1d537851fd}
+\hypertarget{structCvStereoCamera_a1aa915655877e47f119825c0cace5473}{\index{Cv\-Stereo\-Camera@{Cv\-Stereo\-Camera}!quad@{quad}}
+\index{quad@{quad}!CvStereoCamera@{Cv\-Stereo\-Camera}}
+\subsubsection[{quad}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Point2\-D32f} Cv\-Stereo\-Camera\-::quad\mbox{[}2\mbox{]}\mbox{[}4\mbox{]}}}\label{structCvStereoCamera_a1aa915655877e47f119825c0cace5473}
+\hypertarget{structCvStereoCamera_a98e5355c4ccd0d4aa747685e28cbd11b}{\index{Cv\-Stereo\-Camera@{Cv\-Stereo\-Camera}!rot\-Matrix@{rot\-Matrix}}
+\index{rot\-Matrix@{rot\-Matrix}!CvStereoCamera@{Cv\-Stereo\-Camera}}
+\subsubsection[{rot\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}float Cv\-Stereo\-Camera\-::rot\-Matrix\mbox{[}9\mbox{]}}}\label{structCvStereoCamera_a98e5355c4ccd0d4aa747685e28cbd11b}
+\hypertarget{structCvStereoCamera_a65ab68375811fdefe09ef829c51629ef}{\index{Cv\-Stereo\-Camera@{Cv\-Stereo\-Camera}!trans\-Vector@{trans\-Vector}}
+\index{trans\-Vector@{trans\-Vector}!CvStereoCamera@{Cv\-Stereo\-Camera}}
+\subsubsection[{trans\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}float Cv\-Stereo\-Camera\-::trans\-Vector\mbox{[}3\mbox{]}}}\label{structCvStereoCamera_a65ab68375811fdefe09ef829c51629ef}
+\hypertarget{structCvStereoCamera_a16dc53a1985f186e6dbc225a1d2c4682}{\index{Cv\-Stereo\-Camera@{Cv\-Stereo\-Camera}!warp\-Size@{warp\-Size}}
+\index{warp\-Size@{warp\-Size}!CvStereoCamera@{Cv\-Stereo\-Camera}}
+\subsubsection[{warp\-Size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cv\-Size} Cv\-Stereo\-Camera\-::warp\-Size}}\label{structCvStereoCamera_a16dc53a1985f186e6dbc225a1d2c4682}
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/usr/include/opencv2/legacy/\hyperlink{legacy_8hpp}{legacy.\-hpp}\end{DoxyCompactItemize}
