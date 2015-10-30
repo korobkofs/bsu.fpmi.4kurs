@@ -57,6 +57,7 @@ DetectorCascade::DetectorCascade()
 
     initialised = false;
 
+    distanceFilter = new DistanceFilter();
     foregroundDetector = new ForegroundDetector();
     varianceFilter = new VarianceFilter();
     ensembleClassifier = new EnsembleClassifier();
@@ -70,6 +71,7 @@ DetectorCascade::~DetectorCascade()
 {
     release();
 
+    delete distanceFilter;
     delete foregroundDetector;
     delete varianceFilter;
     delete ensembleClassifier;
@@ -285,6 +287,12 @@ void DetectorCascade::detect(const Mat &img)
     {
 
         int *window = &windows[TLD_WINDOW_SIZE * i];
+
+        if(!distanceFilter->filter(window, i))
+        {
+            detectionResult->posteriors[i] = 0;
+            continue;
+        }
 
         if(foregroundDetector->isActive())
         {

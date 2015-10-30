@@ -50,6 +50,7 @@ TLD::TLD()
 
     detectorCascade = new DetectorCascade();
     nnClassifier = detectorCascade->nnClassifier;
+    detectorCascade->distanceFilter->prevBB = prevBB;
 
     medianFlowTracker = new MedianFlowTracker();
 }
@@ -130,6 +131,8 @@ void TLD::selectObject(const cv::Mat &img, cv::Rect *bb)
 
     //Init detector cascade
     detectorCascade->init();
+
+    prevBB->width = 0;
 
     currImg = img;
     if(currBB)

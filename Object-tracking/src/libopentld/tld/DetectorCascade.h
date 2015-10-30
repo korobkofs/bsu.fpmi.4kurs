@@ -27,6 +27,7 @@
 #define DETECTORCASCADE_H_
 
 #include "DetectionResult.h"
+#include "DistanceFilter.h"
 #include "ForegroundDetector.h"
 #include "VarianceFilter.h"
 #include "EnsembleClassifier.h"
@@ -75,6 +76,7 @@ public:
     bool initialised; //!< true, if the initialize was done.
 
     //Components of Detector Cascade
+    DistanceFilter *distanceFilter; //!< the distance filter
     ForegroundDetector *foregroundDetector; //!< the foreground detector
     VarianceFilter *varianceFilter; //!< the variance filter
     EnsembleClassifier *ensembleClassifier; //!< the ensemble classifier

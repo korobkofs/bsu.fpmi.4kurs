@@ -16,6 +16,7 @@ add_library(libopentld
     tld/Clustering.cpp
     tld/DetectionResult.cpp
     tld/DetectorCascade.cpp
+    tld/DistanceFilter.cpp
     tld/EnsembleClassifier.cpp
     tld/ForegroundDetector.cpp
     tld/MedianFlowTracker.cpp
@@ -32,6 +33,7 @@ add_library(libopentld
     tld/Clustering.h
     tld/DetectionResult.h
     tld/DetectorCascade.h
+    tld/DistanceFilter.h
     tld/EnsembleClassifier.h
     tld/ForegroundDetector.h
     tld/MedianFlowTracker.h
