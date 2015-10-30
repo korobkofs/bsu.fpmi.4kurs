@@ -11,165 +11,184 @@ using namespace std;
 
 #define IMG_RELEASE(x) do { if (x) {cvReleaseImage(&(x)); (x) = NULL; } } while(0)
 
-bool Main::isMotionInBox(cv::Mat frame1, cv::Mat frame2) {
-  Mat mask;
-  Mat frame1_blurred;
-  Mat frame2_blurred;
+bool Main::isMotionInBox(IplImage frame1, IplImage frame2) {
+	IplImage* mask = cvCreateImage(Size(frame1.width, frame1.height), frame1.depth, frame1.nChannels);
+	IplImage* frame1_blurred = cvCreateImage(Size(frame1.width, frame1.height), frame1.depth, frame1.nChannels);
+	IplImage* frame2_blurred = cvCreateImage(Size(frame2.width, frame2.height), frame2.depth, frame2.nChannels);
 
-  GaussianBlur( frame1, frame1_blurred, Size( 3, 3 ), -1 );
-  GaussianBlur( frame2, frame2_blurred, Size( 3, 3 ), -1 );
-  absdiff( frame1_blurred, frame2_blurred, mask);
-  cv::threshold( mask, mask,  MOTION_THRESHOLD, 255, THRESH_BINARY );
-  morphologyEx( mask, mask, MORPH_CLOSE, Mat() );
-  Mat openingKernel = Mat( 5, 5, CV_8UC1);
-  morphologyEx( mask, mask, MORPH_OPEN, openingKernel,
-                  Point( -1, -1 ), 1, BORDER_CONSTANT, Scalar( 0 ) );
+	CvMat gaussianKernel = getGaussianKernel(3, -1);
+	cvFilter2D(&frame1, frame1_blurred, &gaussianKernel);
+	gaussianKernel = getGaussianKernel(3, -1);
+	cvFilter2D(&frame2, frame2_blurred, &gaussianKernel);
 
-  if (countNonZero(mask) > 0) {
-	return true;
-  } else {
-	return false;
-  }
+	cvAbsDiff(frame1_blurred, frame2_blurred, mask);
+	cvThreshold(mask, mask, MOTION_THRESHOLD, 255, THRESH_BINARY);
+	cvDilate(mask, mask);
+	IplConvKernel* kernel = cvCreateStructuringElementEx(5, 5, 2, 2, CV_SHAPE_RECT);
+	cvErode(mask, mask, kernel);
+
+	bool result = cvCountNonZero(mask) > 0;
+
+	cvReleaseImage(&mask);
+	cvReleaseImage(&frame1_blurred);
+	cvReleaseImage(&frame2_blurred);
+
+	return result;
+}
+
+CvRect maxBoundingRect(CvRect a, CvRect b) {
+	int left = min(a.x, b.x),
+		top = min(a.y, b.y),
+		right = max(a.x + a.width, b.x + b.width),
+		bottom = max(a.y + a.height, b.y + b.height);
+	a.x = left;
+	a.width = right - left;
+	a.y = top;
+	a.height = bottom - top;
+	return a;
 }
 
 cv::Rect Main::maxMovingRegion(cv::Mat& last_gray) {
-   bool isRegionFound = false;
-   bool isMotionFound = false;
-   Rect maxRegion = Rect(0, 0, 0, 0);
-   vector<Rect>::iterator endIt;
-   Mat motionHistoryImage = Mat( last_gray.size(), CV_32FC1 );
-   Mat segmask = Mat( last_gray.size(), CV_32FC1 );
-   Mat mask;
-   double fps;
-   if (imAcq->method == IMACQ_CAM) {
-       imAcq->fps=30;
-       //printf("Camera\n");
-   } else {
-       //fps = cvGetCaptureProperty(imAcq->capture , CV_CAP_PROP_FPS);
-       //printf("Video %f\n", fps);
-       //fps = imAcq->fps;
-       imAcq->fps = 30;
-   }
-   fps = imAcq->fps;
-   double motionHistoryDuration = 7 / fps;
-   double maxMotionGradient = 1.5 / fps;
-   Mat current_gray;
-   Mat frame;
-   Mat frame_gray;
-   Mat current_blurred;
-   Mat last_blurred;
-   IplImage *img = NULL;
-   IplImage c_mhi;
-   IplImage c_segmask;
-   CvSeq* seq;
-   Rect comp_rect;
-   CvMemStorage* storage = cvCreateMemStorage(0);
+	bool isRegionFound = false;
+	bool isMotionFound = false;
+	Rect maxRegion = Rect(0, 0, 0, 0);
+	vector<Rect>::iterator endIt;
+	IplImage* motionHistoryImage = cvCreateImage(cvSize(last_gray.cols, last_gray.rows), 32, 1);
+	Mat segmask = Mat(last_gray.size(), CV_32FC1);
+	IplImage* mask = cvCreateImage(last_gray.size(), 8, 1);
+	double fps;
+	if (imAcq->method == IMACQ_CAM) {
+		imAcq->fps = 30;
+	}
+	else {
+		imAcq->fps = 30;
+	}
+	fps = imAcq->fps;
+	double motionHistoryDuration = 7 / fps;
+	double maxMotionGradient = 1.5 / fps;
+	IplImage* current_gray = cvCreateImage(last_gray.size(), 8, 1);
+	IplImage* frame;
+	IplImage* frame_gray = cvCreateImage(last_gray.size(), 8, 1);
+	IplImage* current_blurred = cvCreateImage(last_gray.size(), 8, 1);
+	IplImage* last_blurred = cvCreateImage(last_gray.size(), 8, 1);
+	IplImage ilast_gray = last_gray;
+	IplImage *img = NULL;
+	IplImage c_mhi;
+	IplImage c_segmask;
+	CvSeq* seq;
+	Rect comp_rect;
+	CvMemStorage* storage = cvCreateMemStorage(0);
 
-do {
-      if(!imAcqHasMoreFrames(imAcq)) {
-          cvReleaseMemStorage(&storage);
-          return Rect(0, 0, 0, 0);
-      }
-   img = imAcqGetImg(imAcq);
-   frame = cvarrToMat(img);
-   cvtColor(frame, frame_gray, CV_BGR2GRAY);
-   frame_gray.copyTo(current_gray);
-   gui->showImage(img);
-   IMG_RELEASE(img);
-   cvWaitKey(1);
-   //gui->writeImage(img);
-   //writer.write(frame);
-   if (Main::isMotionInBox(last_gray,current_gray)) {
-      isMotionFound = true;
-   }
-   current_gray.copyTo(last_gray);
-} while (!isMotionFound);
+	do {
+		if (!imAcqHasMoreFrames(imAcq)) {
+			cvReleaseMemStorage(&storage);
+			return Rect(0, 0, 0, 0);
+		}
+		img = imAcqGetImg(imAcq);
+		cvCvtColor(img, frame_gray, CV_BGR2GRAY);
+		cvCopy(frame_gray, current_gray);
+		gui->showImage(img);
+		IMG_RELEASE(img);
+		if (Main::isMotionInBox(last_gray, *current_gray)) {
+			isMotionFound = true;
+		}
+		cvCopy(current_gray, &ilast_gray);
+	} while (!isMotionFound);
 
-GaussianBlur(last_gray, last_blurred, Size( 3, 3 ), -1 );
+	CvMat gaussianKernel = getGaussianKernel(3, -1);
+	cvFilter2D(&ilast_gray, last_blurred, &gaussianKernel);
+	do {
+		cvSetZero(motionHistoryImage);
 
-do {
-   motionHistoryImage.release();
-   motionHistoryImage = Mat::zeros( last_gray.rows, last_gray.cols, CV_32FC1 );
-   maxRegion = Rect(0, 0, 0, 0);
-   for (int i=0; i < motionHistoryDuration*fps; i++) {
-       if(!imAcqHasMoreFrames(imAcq)) {cvReleaseMemStorage(&storage ); return Rect(0, 0, 0, 0);}
-       img = imAcqGetImg(imAcq);
-       frame = cvarrToMat(img);
-      cvtColor(frame, frame_gray, CV_BGR2GRAY);
-      frame_gray.copyTo(current_gray);
-      gui->showImage(img);
-      IMG_RELEASE(img);
-      cvWaitKey(1);
-      //gui->writeImage(img);
-      //writer.write(frame);
-      GaussianBlur( current_gray, current_blurred, Size( 3, 3 ), -1 );
-      absdiff(current_blurred, last_blurred, mask );
-      cv::threshold( mask, mask,  MOTION_THRESHOLD, 255, THRESH_BINARY );
-      morphologyEx( mask, mask, MORPH_CLOSE, Mat() );
-      Mat openingKernel = Mat( 5, 5, CV_8UC1);
-      morphologyEx( mask, mask, MORPH_OPEN, openingKernel,
-                      Point( -1, -1 ), 1, BORDER_CONSTANT, Scalar( 0 ) );
+		maxRegion = Rect(0, 0, 0, 0);
+		for (int i = 0; i < motionHistoryDuration*fps; i++) {
+			if (!imAcqHasMoreFrames(imAcq)) { cvReleaseMemStorage(&storage); return Rect(0, 0, 0, 0); }
+			img = imAcqGetImg(imAcq);
+			frame = img;
+			cvCvtColor(frame, frame_gray, CV_BGR2GRAY);
+			cvCopy(frame_gray, current_gray);
+			gui->showImage(img);
+			IMG_RELEASE(img);
+			cvWaitKey(1);
+			gaussianKernel = getGaussianKernel(3, -1);
+			cvFilter2D(current_gray, current_blurred, &gaussianKernel);
+			cvAbsDiff(current_blurred, last_blurred, mask);
 
-      updateMotionHistory(mask, motionHistoryImage, (i+1) / fps, motionHistoryDuration );
-      current_blurred.copyTo(last_blurred);
-   }
-   current_gray.copyTo(last_gray);
+			cvThreshold(mask, mask, MOTION_THRESHOLD, 255, THRESH_BINARY);
+			IplConvKernel* kernel = cvCreateStructuringElementEx(5, 5, 1, 1, CV_SHAPE_RECT);
+			cvDilate(mask, mask);
+			cvErode(mask, mask, kernel);
 
-   //motionHistoryImage
-   c_mhi = motionHistoryImage;
-   c_segmask = segmask;
-   seq = cvSegmentMotion( &c_mhi, &c_segmask,
-                                   storage,
-                                   motionHistoryDuration, maxMotionGradient );
+			cvUpdateMotionHistory(mask, motionHistoryImage, (i + 1) / fps, motionHistoryDuration);
+			cvCopy(current_blurred, last_blurred);
+		}
+		cvCopy(current_gray, &ilast_gray);
 
-    vector <Rect> target(0);
-    for( int i = 0; i < seq->total; i++ ) {
-        comp_rect = ((CvConnectedComp*)cvGetSeqElem( seq, i ))->rect;
-        if (std::min(comp_rect.width, comp_rect.height) >= MIN_BOX_SIDE) {
-            target.push_back(comp_rect);
-        }
-    }
-    if (target.size()) {
-       target = Main::unionRectangls(target);
-       for( vector<Rect>::iterator it = target.begin( ); it != target.end(); it++ ) {
-           if((* it).area() > maxRegion.area()
-               && (* it).x > 5
-               && (* it).y > 5
-               && (* it).x + (* it).width < last_gray.cols - 5
-               && (* it).y + (* it).height < last_gray.rows - 5) {
-                maxRegion = (* it);
-                isRegionFound = true;
-           }
-       }
-   }
-   cvClearMemStorage(storage);
-   cvClearSeq(seq);
-} while (!isRegionFound);
+		c_segmask = segmask;
 
-//find contours
-vector<vector<Point> > contours;
-vector<Point> one_contour;
-Mat mask_new = mask(maxRegion);
-findContours( mask_new, contours, CV_RETR_EXTERNAL, CV_CHAIN_APPROX_SIMPLE, Point(0, 0) );
+		seq = cvSegmentMotion(motionHistoryImage, &c_segmask,
+			storage,
+			motionHistoryDuration, maxMotionGradient);
+		vector <Rect> target(0);
+		for (int i = 0; i < seq->total; i++) {
+			comp_rect = ((CvConnectedComp*)cvGetSeqElem(seq, i))->rect;
+			if (std::min(comp_rect.width, comp_rect.height) >= MIN_BOX_SIDE) {
+				target.push_back(comp_rect);
+			}
+		}
+		if (target.size()) {
+			target = Main::unionRectangls(target);
+			for (vector<Rect>::iterator it = target.begin(); it != target.end(); it++) {
+				if ((*it).area() > maxRegion.area()
+					&& (*it).x > 5
+					&& (*it).y > 5
+					&& (*it).x + (*it).width < last_gray.cols - 5
+					&& (*it).y + (*it).height < last_gray.rows - 5) {
+					maxRegion = (*it);
+					isRegionFound = true;
+				}
+			}
+		}
+		cvClearMemStorage(storage);
+		cvClearSeq(seq);
+	} while (!isRegionFound);
 
-//find bounding box
-if (!contours.size()) {cvReleaseMemStorage(&storage ); return maxRegion;}
-for (int i = 0; i < contours.size(); i++) {
-   for (int j = 0; j < contours[i].size(); j++) {
-      one_contour.push_back(contours[i][j]);
-   }
-}
-Rect result = boundingRect( Mat(one_contour) );
-result.x += maxRegion.x;
-result.y += maxRegion.y;
+	CvMemStorage *mem = cvCreateMemStorage(0);
+	CvSeq *contours = 0;
+	cvSetImageROI(mask, maxRegion);
+	int n = cvFindContours(mask, mem, &contours, sizeof(CvContour), CV_RETR_EXTERNAL, CV_CHAIN_APPROX_SIMPLE, Point(0, 0));
 
-//show maxRegion and result
-cvReleaseMemStorage(&storage );
-if (min(result.width, result.height) >= MIN_BOX_SIDE) {
-    return result;
-} else {
-    return Main::maxMovingRegion(last_gray);
-}
+	if (!n) {
+		cvReleaseImage(&current_gray);
+		cvReleaseImage(&mask);
+		cvReleaseImage(&last_blurred);
+		cvReleaseImage(&current_blurred);
+		cvReleaseImage(&frame_gray);
+		cvReleaseMemStorage(&storage);
+		return maxRegion;
+	}
+	CvRect result;
+	for (result = cvBoundingRect(contours, 0); contours != NULL; contours = contours->h_next) {
+		result = maxBoundingRect(result, cvBoundingRect(contours, 0));
+	}
+	result.x += maxRegion.x;
+	result.y += maxRegion.y;
+
+	cvReleaseImage(&current_gray);
+	cvReleaseImage(&mask);
+	cvReleaseImage(&last_blurred);
+	cvReleaseImage(&current_blurred);
+	cvReleaseImage(&frame_gray);
+	cvReleaseMemStorage(&mem);
+	cvReleaseMemStorage(&storage);
+
+	cvReleaseMemStorage(&storage);
+	if (min(result.width, result.height) >= MIN_BOX_SIDE) {
+		return Rect(result);
+	}
+	else {
+		return Main::maxMovingRegion(last_gray);
+	}
 }
 
 std::vector<cv::Rect> Main::unionRectangls(std::vector<cv::Rect> src_rect) {
