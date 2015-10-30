@@ -60,22 +60,24 @@ void NNClassifier::release()
 
 float NNClassifier::ncc(float *f1, float *f2)
 {
-    double corr = 0;
-    double norm1 = 0;
-    double norm2 = 0;
+    float result;
 
-    int size = TLD_PATCH_SIZE * TLD_PATCH_SIZE;
+    IplImage *res = cvCreateImage(cvSize(1, 1), IPL_DEPTH_32F, 1);
+    IplImage *i1 = cvCreateImage(cvSize(TLD_PATCH_SIZE, TLD_PATCH_SIZE), IPL_DEPTH_32F, 1);
+    IplImage *i2 = cvCreateImage(cvSize(TLD_PATCH_SIZE, TLD_PATCH_SIZE), IPL_DEPTH_32F, 1);
 
-    for(int i = 0; i < size; i++)
-    {
-        corr += f1[i] * f2[i];
-        norm1 += f1[i] * f1[i];
-        norm2 += f2[i] * f2[i];
-    }
+    i1->imageData = reinterpret_cast <char *>(f1);
+    i2->imageData = reinterpret_cast <char *>(f2);
 
-    // normalization to <0,1>
+    cvMatchTemplate(i1, i2, res, CV_TM_CCORR_NORMED);
 
-    return (corr / sqrt(norm1 * norm2) + 1) / 2.0;
+    result = reinterpret_cast <float *>(res->imageData)[0];
+
+    cvReleaseImage(&res);
+    cvReleaseImage(&i1);
+    cvReleaseImage(&i2);
+
+    return result;
 }
 
 float NNClassifier::classifyPatch(NormalizedPatch *patch)
@@ -117,8 +119,8 @@ float NNClassifier::classifyPatch(NormalizedPatch *patch)
         }
     }
 
-    float dN = 1 - ccorr_max_n;
-    float dP = 1 - ccorr_max_p;
+    float dN = 1 - (ccorr_max_n + 1) / 2.0;
+    float dP = 1 - (ccorr_max_p + 1) / 2.0;
 
     float distance = dN / (dN + dP);
     return distance;
