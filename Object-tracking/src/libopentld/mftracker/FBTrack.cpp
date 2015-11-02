@@ -38,8 +38,10 @@
 int fbtrack(IplImage *imgI, IplImage *imgJ, float *bb, float *bbnew,
             float *scaleshift)
 {
+    const int SIZE = 100;
+
     char level = 5;
-    int numAdd = 50;
+    int numAdd = SIZE;
 
     // find good points
     const int margin = 5;
@@ -48,18 +50,18 @@ int fbtrack(IplImage *imgI, IplImage *imgJ, float *bb, float *bbnew,
     IplImage *eig_image = cvCreateImage(cvGetSize(imgI), 32, 1);
     IplImage *temp_image = cvCreateImage(cvGetSize(imgI), 32, 1);
     CvPoint2D32f corners [numAdd];
-    cvGoodFeaturesToTrack(imgI, eig_image, temp_image, corners, &numAdd, 0.01, 0, NULL, 2, 0, 0.04);
+    cvGoodFeaturesToTrack(imgI, eig_image, temp_image, corners, &numAdd, 0.001, 0, NULL, 2, 0, 0.04);
     cvReleaseImage(&(eig_image));
     cvReleaseImage(&(temp_image));
     cvResetImageROI(imgI);
-    //printf("%d - number of features\n", numAdd);
-    if (numAdd > 50) {
-      numAdd = 50;
+
+    //printf("Corner number: %d\n", numAdd);
+
+    if (numAdd > SIZE) {
+      numAdd = SIZE;
     }
 
-    int numM = sqrt(100 - numAdd);
-    int numN = sqrt(100 - numAdd);
-    const int nPoints = numM * numN + numAdd;
+    const int nPoints = numAdd;
     const int sizePointsArray = nPoints * 2;
 
 
@@ -79,23 +81,13 @@ int fbtrack(IplImage *imgI, IplImage *imgJ, float *bb, float *bbnew,
     float medFb;
     float medNcc;
     int nAfterFbUsage;
-    getFilledBBPoints(bb, numM, numN, margin, pt);
-    //getFilledBBPoints(bb, numM, numN, 5, &ptTracked);
 
-    //show good points
-    //IplImage *tmp_show = cvCreateImage(cvGetSize(imgI), imgI->depth, imgI->nChannels);
-    //cvCopy(imgI, tmp_show, NULL);
-    //for(i = numN+numM; i < numN+numM+numAdd; i++) {
-    //    cvCircle(tmp_show, CvPoint{bb[0]+corners[i-(numN+numM)].x, bb[1]+corners[i-(numN+numM)].y}, 2, CvScalar{0,0,255}, 1, 8, 0);
-    //}
-    //cvRectangle(tmp_show, CvPoint{bb[0],bb[1]},CvPoint{bb[2],bb[3]},CvScalar{0,0,255},1,8,0);
-    //cvShowImage("name",tmp_show);
 
     //copy good points
-    for(i = numN*numM; i < numN*numM+numAdd; i++)
+    for(i = 0; i < numAdd; i++)
     {
-            pt[2*i + 0] = (int)(corners[i-(numN*numM)].x+bb[0]);
-            pt[2*i + 1] = (int)(corners[i-(numN*numM)].y+bb[1]);
+            pt[2*i + 0] = (int)(corners[i].x+bb[0]);
+            pt[2*i + 1] = (int)(corners[i].y+bb[1]);
     }
 
     memcpy(ptTracked, pt, sizeof(float) * sizePointsArray);
@@ -175,5 +167,4 @@ int fbtrack(IplImage *imgI, IplImage *imgJ, float *bb, float *bbnew,
 
     if(medFb > 10) return 0;
     else return 1;
-
 }
