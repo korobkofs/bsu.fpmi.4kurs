@@ -48,7 +48,7 @@ public:
     int *featureVectors; //!< the feature vectors (in Essemble Classifier)
     float *variances; //!< the array of variance in window offsets
     int numClusters; //!< the number of clusters
-    cv::Rect *detectorBB; //!< the result bounding box, contains a valid result only if numClusters = 1
+    std::vector<cv::Rect> *detectorBBs;
 
     /**
      * @brief This constructor initializes the class variables.
