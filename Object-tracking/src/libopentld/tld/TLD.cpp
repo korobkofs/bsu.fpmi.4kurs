@@ -175,7 +175,30 @@ void TLD::fuseHypotheses()
 {
     Rect *trackerBB = medianFlowTracker->trackerBB;
     int numClusters = detectorCascade->detectionResult->numClusters;
-    Rect *detectorBB = detectorCascade->detectionResult->detectorBB;
+    Rect *detectorBB = NULL;
+    std::vector<Rect> *detectorBBs = detectorCascade->detectionResult->detectorBBs;
+
+    if (numClusters > 0)
+    {
+        if (prevBB->width == 0)
+            detectorBB = &detectorBBs->at(0);
+        else
+        {
+            float minDist = INT_MAX;
+            long dist = 0;
+            for (int i = 0; i < numClusters; ++i)
+            {
+                dist = (detectorBBs->at(i).x - prevBB->x) * (detectorBBs->at(i).x - prevBB->x) +
+                       (detectorBBs->at(i).y - prevBB->y) * (detectorBBs->at(i).y - prevBB->y);
+
+                if (dist < minDist)
+                {
+                    minDist = dist;
+                    detectorBB = &detectorBBs->at(i);
+                }
+            }
+        }
+    }
 
     if(currBB)
     {
@@ -187,7 +210,7 @@ void TLD::fuseHypotheses()
 
     float confDetector = 0;
 
-    if(numClusters == 1)
+    if(numClusters > 0)
     {
         confDetector = nnClassifier->classifyBB(currImg, detectorBB);
     }
@@ -201,7 +224,7 @@ void TLD::fuseHypotheses()
             currBB = NULL;
         }
 
-        if(numClusters == 1 && confDetector > confTracker && tldOverlapRectRect(*trackerBB, *detectorBB) < 0.5)
+        if(numClusters > 0 && confDetector > confTracker && tldOverlapRectRect(*trackerBB, *detectorBB) < 0.5)
         {
 
             currBB = tldCopyRect(detectorBB);
@@ -222,7 +245,7 @@ void TLD::fuseHypotheses()
             }
         }
     }
-    else if(numClusters == 1)
+    else if(numClusters > 0)
     {
         if(currBB)
         {

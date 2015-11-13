@@ -51,35 +51,43 @@ void Clustering::release()
     numWindows = 0;
 }
 
-void Clustering::calcMeanRect(std::vector<int> * indices)
+void Clustering::calcMeanRect(std::vector<int> * indices, int *clusterIndices)
 {
-
-    float x, y, w, h;
-    x = y = w = h = 0;
-
     int numIndices = indices->size();
+    std::vector<bool> isUsedCluster(numIndices, false);
+    detectionResult->detectorBBs = new vector<Rect>();
+    float x, y, w, h;
 
-    for(int i = 0; i < numIndices; i++)
+    for (int i = 0; i < numIndices; ++i)
     {
-        int *bb = &windows[TLD_WINDOW_SIZE * indices->at(i)];
-        x += bb[0];
-        y += bb[1];
-        w += bb[2];
-        h += bb[3];
+        if (!isUsedCluster[i])
+        {
+            x = y = w = h = 0;
+            for (int j = i; j < numIndices; ++j)
+                if (clusterIndices[j] == clusterIndices[i])
+                {
+                    int *bb = &windows[TLD_WINDOW_SIZE * indices->at(j)];
+                    x += bb[0];
+                    y += bb[1];
+                    w += bb[2];
+                    h += bb[3];
+                    isUsedCluster[j] = true;
+                }
+
+            x /= numIndices;
+            y /= numIndices;
+            w /= numIndices;
+            h /= numIndices;
+
+            Rect rect;
+            rect.x = floor(x + 0.5);
+            rect.y = floor(y + 0.5);
+            rect.width = floor(w + 0.5);
+            rect.height = floor(h + 0.5);
+
+            detectionResult->detectorBBs->push_back(rect);
+        }
     }
-
-    x /= numIndices;
-    y /= numIndices;
-    w /= numIndices;
-    h /= numIndices;
-
-    Rect *rect = new Rect();
-    detectionResult->detectorBB = rect;
-    rect->x = floor(x + 0.5);
-    rect->y = floor(y + 0.5);
-    rect->width = floor(w + 0.5);
-    rect->height = floor(h + 0.5);
-
 }
 
 void Clustering::calcDistances(float *distances)
@@ -113,11 +121,7 @@ void Clustering::clusterConfidentIndices()
     int *clusterIndices = new int[numConfidentIndices];
     cluster(distances, clusterIndices);
 
-    if(detectionResult->numClusters == 1)
-    {
-        calcMeanRect(detectionResult->confidentIndices);
-        //TODO: Take the maximum confidence as the result confidence.
-    }
+    calcMeanRect(detectionResult->confidentIndices, clusterIndices);
 
     delete []distances;
     distances = NULL;

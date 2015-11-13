@@ -47,7 +47,7 @@ class Clustering
      * @param indices
      *          the indices of the interesting windows
      */
-    void calcMeanRect(std::vector<int> * indices);
+    void calcMeanRect(std::vector<int> * indices, int *clusterIndices);
 
     /**
      * @brief Calculates distances (0 to 1) between windows.
