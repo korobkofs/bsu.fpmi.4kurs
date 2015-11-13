@@ -127,7 +127,7 @@ public:
      *          the one of two images
      * @return true or false
      */
-    bool isMotionInBox(IplImage frame1, IplImage frame2);
+    bool isMotionInBox(cv::Mat frame1, cv::Mat frame2);
 
     /**
      * @brief Determines a maximun of the moving regions.
