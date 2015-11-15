@@ -11,25 +11,29 @@ using namespace std;
 
 #define IMG_RELEASE(x) do { if (x) {cvReleaseImage(&(x)); (x) = NULL; } } while(0)
 
-bool Main::isMotionInBox(cv::Mat frame1, cv::Mat frame2) {
-  Mat mask;
-  Mat frame1_blurred;
-  Mat frame2_blurred;
+bool Main::isMotionInBox(IplImage frame1, IplImage frame2) {
+    IplImage* mask = cvCreateImage(Size(frame1.width, frame1.height), frame1.depth, frame1.nChannels);
+	IplImage* frame1_blurred = cvCreateImage(Size(frame1.width, frame1.height), frame1.depth, frame1.nChannels);
+	IplImage* frame2_blurred = cvCreateImage(Size(frame2.width, frame2.height), frame2.depth, frame2.nChannels);
 
-  GaussianBlur( frame1, frame1_blurred, Size( 3, 3 ), -1 );
-  GaussianBlur( frame2, frame2_blurred, Size( 3, 3 ), -1 );
-  absdiff( frame1_blurred, frame2_blurred, mask);
-  cv::threshold( mask, mask,  MOTION_THRESHOLD, 255, THRESH_BINARY );
-  morphologyEx( mask, mask, MORPH_CLOSE, Mat() );
-  Mat openingKernel = Mat( 5, 5, CV_8UC1);
-  morphologyEx( mask, mask, MORPH_OPEN, openingKernel,
-                  Point( -1, -1 ), 1, BORDER_CONSTANT, Scalar( 0 ) );
+	CvMat gaussianKernel = getGaussianKernel(3, -1);
+	cvFilter2D(&frame1, frame1_blurred, &gaussianKernel);
+	gaussianKernel = getGaussianKernel(3, -1);
+	cvFilter2D(&frame2, frame2_blurred, &gaussianKernel);
 
-  if (countNonZero(mask) > 0) {
-	return true;
-  } else {
-	return false;
-  }
+	cvAbsDiff(frame1_blurred, frame2_blurred, mask);
+	cvThreshold(mask, mask, MOTION_THRESHOLD, 255, THRESH_BINARY);
+	cvDilate(mask, mask);
+	IplConvKernel* kernel = cvCreateStructuringElementEx(5, 5, 2, 2, CV_SHAPE_RECT);
+	cvErode(mask, mask, kernel);
+
+	bool result = cvCountNonZero(mask) > 0;
+
+	cvReleaseImage(&mask);
+	cvReleaseImage(&frame1_blurred);
+	cvReleaseImage(&frame2_blurred);
+
+	return result;
 }
 
 cv::Rect Main::maxMovingRegion(cv::Mat& last_gray) {
