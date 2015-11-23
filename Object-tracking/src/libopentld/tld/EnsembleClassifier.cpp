@@ -89,11 +89,28 @@ void EnsembleClassifier::initFeatureLocations()
 
     features = new float[size];
 
-    for(int i = 0; i < size; i++)
+    long M = 2147483648;
+    long B = 65539;
+    long sizeBase = size * 12;
+    long *baseRandomQuantites = new long[sizeBase];
+    float sum;
+    baseRandomQuantites[0] = M * rand() / (float)RAND_MAX;
+    for(int i = 1; i < sizeBase; i++)
     {
-        features[i] = rand() / (float)RAND_MAX;
+        baseRandomQuantites[i] = baseRandomQuantites[i-1] * B % M;
     }
 
+    for(int k = 0; k < size; k++)
+    {
+        sum = 0;
+        for(int l = 0; l < 12; l++)
+        {
+            sum += (float)baseRandomQuantites[k*12+l] / (float)M;
+        } 
+        features[k] = sum/12;
+    }
+
+    delete(baseRandomQuantites);
 }
 
 void EnsembleClassifier::initFeatureOffsets()
