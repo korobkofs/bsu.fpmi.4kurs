@@ -279,7 +279,7 @@ void TLD::initialLearning()
     patch.positive = 1;
 
     float initVar = tldCalcVariance(patch.values, TLD_PATCH_SIZE * TLD_PATCH_SIZE);
-    detectorCascade->varianceFilter->minVar = initVar / 2;
+    detectorCascade->varianceFilter->minVar = initVar * 0.00006813;
 
 
     float *overlap = new float[detectorCascade->numWindows];
