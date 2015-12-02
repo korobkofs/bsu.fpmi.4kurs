@@ -49,33 +49,15 @@ void tldBoundingBoxToPoints(int *bb, CvPoint *p1, CvPoint *p2)
 //Returns mean-normalized patch, image must be greyscale
 void tldNormalizeImg(const cv::Mat &img, float *output)
 {
-    int size = TLD_PATCH_SIZE;
-
-    Mat result;
-    resize(img, result, cvSize(size, size)); //Default is bilinear
-
-    float mean = 0;
-
-    unsigned char *imgData = (unsigned char *)result.data;
-
-    for(int i = 0; i < 15; i++)
-    {
-        for(int j = 0; j < 15; j++)
-        {
-            mean += imgData[j * result.step + i];
-        }
-    }
-
-    mean /= size * size;
-
-
-    for(int i = 0; i < size; i++)
-    {
-        for(int j = 0; j < size; j++)
-        {
-            output[j * 15 + i] = imgData[j * result.step + i] - mean;
-        }
-    }
+	int size = 15;
+	cv::Mat result;
+	resize(img, result, cvSize(size, size));
+	cv::Mat secRes = result;
+	cv::normalize(result, secRes, 2, 2);
+	CvMat Result = result, normalizeRes = secRes;
+	result = cv::Mat(&Result);
+	result = cv::Mat(&Result, true);
+	*output = cvNorm(&Result, &normalizeRes, CV_L2);
 
 }
 
