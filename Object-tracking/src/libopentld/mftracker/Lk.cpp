@@ -50,13 +50,15 @@ static IplImage **PYR = 0; //!< the array of the pyramid for every frame.
 void euclideanDistance(CvPoint2D32f *point1, CvPoint2D32f *point2,
                        float *match, int nPts)
 {
-    int i;
-
-    for(i = 0; i < nPts; i++)
-    {
-        match[i] = sqrt((point1[i].x - point2[i].x) * (point1[i].x - point2[i].x)
-                        + (point1[i].y - point2[i].y) * (point1[i].y - point2[i].y));
-    }
+	for (int i = 0; i < nPts; i++){
+		CvMat *Mat1 = cvCreateMat(2, 3, CV_32FC1), *Mat2 = cvCreateMat(2, 3, CV_32FC1);
+		cvmSet(Mat1, 1, 1, point1[i].x);
+		cvmSet(Mat1, 1, 2, point1[i].y);
+		cvmSet(Mat2, 1, 1, point2[i].x);
+		cvmSet(Mat2, 1, 2, point2[i].y);
+		float *res = new float[1];
+		*res = (float)cvNorm(Mat1, Mat2, CV_L2);
+		match[i] = res[0];
 }
 
 /**
