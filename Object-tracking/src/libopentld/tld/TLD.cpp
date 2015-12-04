@@ -412,11 +412,6 @@ void TLD::learn()
         detectorCascade->ensembleClassifier->learn(&detectorCascade->windows[TLD_WINDOW_SIZE * idx], false, &detectionResult->featureVectors[detectorCascade->numTrees * idx]);
     }
 
-    // TODO!: train
-    if (negativeIndices.size() > 0) {
-        detectorCascade->ensembleClassifier->train();
-    }
-
     //TODO: Randomization might be a good idea
     for(int i = 0; i < numIterations; i++)
     {
