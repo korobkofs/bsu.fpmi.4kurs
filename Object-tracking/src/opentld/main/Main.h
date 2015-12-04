@@ -48,6 +48,7 @@ public:
     tld::TLD *tld; //!<  the detector of tracking object
     ImAcq *imAcq; //!<  the capture frames
     tld::Gui *gui; //!<  the graphical user interface
+    IplImage *background; //!< first frame in HSV
     bool showOutput; //!<  if true, it shown the output window
     bool showTrajectory; //!<  if true, it shown the trajectory of tracking object on the output window
     int trajectoryLength; //!<  the number of the last frames which are considered by the trajectory
@@ -146,6 +147,32 @@ public:
      * @return the vector of the united rectangles
      */
     std::vector<cv::Rect> unionRectangls(std::vector<cv::Rect> src_rect);
+
+    /**
+     * @brief Removes shadows from mask.
+     *
+     * @param frame
+     *          current frame
+     * @param mask
+     *          computed mask
+     */
+    void removeShadows(IplImage *frame, IplImage *mask);
+
+    /**
+     *@brief Calculates and draws motion direction.
+     *
+     *@param motion_history_image
+     *    motion history image
+     *@param dst
+     *    the image direction will be drawn on 
+     *@param rectangle
+     *    motion area
+     *@param duration
+     *    frame duration
+     *@param motion_history_duration
+     *    total duration
+     */
+    void drawDirection(IplImage* motion_history_image, IplImage* dst, CvRect rectangle, float duration, float motion_history_duration);
 };
 
 #endif /* MAIN_H_ */

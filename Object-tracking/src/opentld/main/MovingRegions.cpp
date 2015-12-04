@@ -10,6 +10,12 @@ using namespace std;
  */
 
 #define IMG_RELEASE(x) do { if (x) {cvReleaseImage(&(x)); (x) = NULL; } } while(0)
+#define A 0.05f
+#define B 0.95f
+#define TH 50
+#define TS 50
+#define MAX_TIME_DELTA 0.5f
+#define MIN_TIME_DELTA 0.05f
 
 bool Main::isMotionInBox(IplImage frame1, IplImage frame2) {
     IplImage* mask = cvCreateImage(Size(frame1.width, frame1.height), frame1.depth, frame1.nChannels);
@@ -59,6 +65,7 @@ cv::Rect Main::maxMovingRegion(cv::Mat &last_gray) {
     double fps = imAcq->fps;
     double motionHistoryDuration = 7 / fps;
     double maxMotionGradient = 1.5 / fps;
+    double duration;
     IplImage *current_gray = cvCreateImage(last_gray.size(), 8, 1);
     IplImage *frame;
     IplImage *current_blurred = cvCreateImage(last_gray.size(), 8, 1);
@@ -103,7 +110,6 @@ cv::Rect Main::maxMovingRegion(cv::Mat &last_gray) {
             frame = imAcqGetImg(imAcq);
             cvCvtColor(frame, current_gray, CV_BGR2GRAY);
             gui->showImage(frame);
-            IMG_RELEASE(frame);
             cvWaitKey(1);
             gaussianKernel = getGaussianKernel(3, -1);
             cvFilter2D(current_gray, current_blurred, &gaussianKernel);
@@ -113,7 +119,8 @@ cv::Rect Main::maxMovingRegion(cv::Mat &last_gray) {
             cvDilate(mask, mask);
             cvErode(mask, mask, kernel);
 
-            cvUpdateMotionHistory(mask, motionHistoryImage, (i + 1) / fps, motionHistoryDuration);
+            duration = (i + 1) / fps;
+            cvUpdateMotionHistory(mask, motionHistoryImage, duration, motionHistoryDuration);
             cvCopy(current_blurred, last_blurred);
         }
         cvCopy(current_gray, &c_last_gray);
@@ -156,6 +163,7 @@ cv::Rect Main::maxMovingRegion(cv::Mat &last_gray) {
     CvSeq *contours = 0;
     cvSetImageROI(mask, maxRegion);
     int n = cvFindContours(mask, mem, &contours, sizeof(CvContour), CV_RETR_EXTERNAL, CV_CHAIN_APPROX_SIMPLE, Point(0, 0));
+    removeShadows(frame, mask);
     IMG_RELEASE(mask);
     cvReleaseMemStorage(&mem);
     if (!n) {
@@ -169,8 +177,13 @@ cv::Rect Main::maxMovingRegion(cv::Mat &last_gray) {
     result.y += maxRegion.y;
 
     if (min(result.width, result.height) >= MIN_BOX_SIDE) {
+        drawDirection(motionHistoryImage, frame, result, duration, motionHistoryDuration);
+        gui->showImage(frame);
+        cvWaitKey(0);
+        IMG_RELEASE(frame);
         return result;
     } else {
+        IMG_RELEASE(frame);
         return Main::maxMovingRegion(last_gray);
     }
 }
@@ -227,4 +240,44 @@ std::vector<cv::Rect> Main::unionRectangls(std::vector<cv::Rect> src_rect) {
        }
     } while(!forLook.empty());
     return union_result;
+}
+
+const inline unsigned char subabs(const unsigned char a, const unsigned char b)
+{
+    return a > b ? a - b : b - a;
+}
+
+void Main::removeShadows(IplImage* frame, IplImage* mask)
+{
+    unsigned char h, s;
+    float v;
+    cvCvtColor(frame, frame, CV_BGR2HSV);
+    for(int i = 0; i < frame->width * frame->height * frame->nChannels; i += frame->nChannels) {
+        v = (float)(frame->imageData[i + 2]) / (float)(background->imageData[i + 2]);
+        s = frame->imageData[i + 1] - background->imageData[i + 1];
+        h = subabs(frame->imageData[i], background->imageData[i]);
+        if(v >= A && v <= B && h <= TH && s <= TS)
+            mask->imageData[i / 3] = 0;
+    }
+    cvCvtColor(frame, frame, CV_HSV2BGR);
+    cvErode(mask, mask);
+}
+
+void Main::drawDirection(IplImage* motion_history_image, IplImage* dst, CvRect rectangle, float duration, float motion_history_duration)
+{
+    CvScalar color = CV_RGB(255,0,0);
+    double magnitude = 30;
+    CvSize size = cvSize(motion_history_image->width, motion_history_image->height);
+    IplImage *orient = cvCreateImage(size, IPL_DEPTH_32F, 1);
+    IplImage *mask = cvCreateImage(size, IPL_DEPTH_8U, 1);
+    cvSetImageROI(motion_history_image, rectangle);
+    cvSetImageROI(orient, rectangle);
+    cvSetImageROI(mask, rectangle);
+    cvCalcMotionGradient(motion_history_image, mask, orient, MAX_TIME_DELTA, MIN_TIME_DELTA, 3);  
+    int angle = 360 - cvCalcGlobalOrientation(orient, mask, motion_history_image, duration, motion_history_duration);
+    CvPoint center = cvPoint((rectangle.x + rectangle.width / 2), (rectangle.y + rectangle.height / 2));
+    cvCircle(dst, center, cvRound(magnitude*1.2), color, 3, CV_AA, 0 );
+    cvLine(dst, center, cvPoint( cvRound( center.x + magnitude*cos(angle*CV_PI/180)),
+        cvRound(center.y - magnitude*sin(angle*CV_PI/180))), color, 3, CV_AA, 0);
+    cvResetImageROI(motion_history_image);
 }
