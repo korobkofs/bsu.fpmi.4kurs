@@ -51,222 +51,40 @@ void Clustering::release()
     numWindows = 0;
 }
 
-void Clustering::calcMeanRect(std::vector<int> * indices, int *clusterIndices)
-{
-    int numIndices = indices->size();
-    std::vector<bool> isUsedCluster(numIndices, false);
-    detectionResult->detectorBBs = new vector<Rect>();
-    float x, y, w, h;
-
-    for (int i = 0; i < numIndices; ++i)
-    {
-        if (!isUsedCluster[i])
-        {
-            x = y = w = h = 0;
-            for (int j = i; j < numIndices; ++j)
-                if (clusterIndices[j] == clusterIndices[i])
-                {
-                    int *bb = &windows[TLD_WINDOW_SIZE * indices->at(j)];
-                    x += bb[0];
-                    y += bb[1];
-                    w += bb[2];
-                    h += bb[3];
-                    isUsedCluster[j] = true;
-                }
-
-            x /= numIndices;
-            y /= numIndices;
-            w /= numIndices;
-            h /= numIndices;
-
-            Rect rect;
-            rect.x = floor(x + 0.5);
-            rect.y = floor(y + 0.5);
-            rect.width = floor(w + 0.5);
-            rect.height = floor(h + 0.5);
-
-            detectionResult->detectorBBs->push_back(rect);
-        }
-    }
-}
-
-void Clustering::calcDistances(float *distances)
-{
-    float *distances_tmp = distances;
-
-    std::vector<int> confidentIndices = *detectionResult->confidentIndices;
-
-    size_t indices_size = confidentIndices.size();
-
-    for(size_t i = 0; i < confidentIndices.size(); i++)
-    {
-        int firstIndex = confidentIndices.at(0);
-        confidentIndices.erase(confidentIndices.begin());
-        tldOverlapOne(windows, numWindows, firstIndex, &confidentIndices, distances_tmp);
-        distances_tmp += indices_size - i - 1;
-    }
-
-    for(size_t i = 0; i < indices_size * (indices_size - 1) / 2; i++)
-    {
-        distances[i] = 1 - distances[i];
-    }
-
-}
-
 void Clustering::clusterConfidentIndices()
 {
     int numConfidentIndices = detectionResult->confidentIndices->size();
-    float *distances = new float[numConfidentIndices * (numConfidentIndices - 1) / 2];
-    calcDistances(distances);
-    int *clusterIndices = new int[numConfidentIndices];
-    cluster(distances, clusterIndices);
 
-    calcMeanRect(detectionResult->confidentIndices, clusterIndices);
-
-    delete []distances;
-    distances = NULL;
-    delete []clusterIndices;
-    clusterIndices = NULL;
-}
-
-void Clustering::cluster(float *distances, int *clusterIndices)
-{
-    int numConfidentIndices = detectionResult->confidentIndices->size();
-
-    if(numConfidentIndices == 1)
-    {
-        clusterIndices[0] = 0;
-        detectionResult->numClusters = 1;
-        return;
-    }
-
-    int numDistances = numConfidentIndices * (numConfidentIndices - 1) / 2;
-
-    //Now: Cluster distances
-    int *distUsed = new int[numDistances];
-
-    for(int i = 0; i < numDistances; i++)
-    {
-        distUsed[i] = 0;
-    }
+    std::vector<Rect> rectangles;
+    Rect rect;
+    float x, y, w, h;
 
     for(int i = 0; i < numConfidentIndices; i++)
     {
-        clusterIndices[i] = -1;
+        int *bb = &windows[TLD_WINDOW_SIZE * detectionResult->confidentIndices->at(i)];
+        x = bb[0];
+        y = bb[1];
+        w = bb[2];
+        h = bb[3];
+
+        rect.x = floor(x + 0.5);
+        rect.y = floor(y + 0.5);
+        rect.width = floor(w + 0.5);
+        rect.height = floor(h + 0.5);
+
+        rectangles.push_back(rect);
+        rectangles.push_back(rect);
     }
 
-    int newClusterIndex = 0;
+    cv::groupRectangles(rectangles, 1, 0.2);
 
-    int numClusters = 0;
-
-    while(true)
+    if (rectangles.size() > 0)
     {
-
-        //Search for the shortest distance
-        float shortestDist = -1;
-        int shortestDistIndex = -1;
-        int i1;
-        int i2;
-        int distIndex = 0;
-
-        for(int i = 0; i < numConfidentIndices; i++)   //Row index
+        detectionResult->detectorBBs = new vector<Rect>();
+        for (int i = 0; i < rectangles.size(); ++i)
         {
-            for(int j = i + 1; j < numConfidentIndices; j++) //Start from i+1
-            {
-
-                if(!distUsed[distIndex] && (shortestDistIndex == -1 || distances[distIndex] < shortestDist))
-                {
-                    shortestDist = distances[distIndex];
-                    shortestDistIndex = distIndex;
-                    i1 = i;
-                    i2 = j;
-                }
-
-                distIndex++;
-            }
-        }
-
-        if(shortestDistIndex == -1)
-        {
-            break; // We are done
-        }
-
-        distUsed[shortestDistIndex] = 1;
-
-        //Now: Compare the cluster indices
-        //If both have no cluster and distance is low, put them both to a new cluster
-        if(clusterIndices[i1] == -1 && clusterIndices[i2] == -1)
-        {
-            //If distance is short, put them to the same cluster
-            if(shortestDist < cutoff)
-            {
-                clusterIndices[i1] = clusterIndices[i2] = newClusterIndex;
-                newClusterIndex++;
-                numClusters++;
-            }
-            else     //If distance is long, put them to different clusters
-            {
-                clusterIndices[i1] = newClusterIndex;
-                newClusterIndex++;
-                numClusters++;
-                clusterIndices[i2] = newClusterIndex;
-                newClusterIndex++;
-                numClusters++;
-            }
-
-            //Second point is  in cluster already
-        }
-        else if(clusterIndices[i1] == -1 && clusterIndices[i2] != -1)
-        {
-            if(shortestDist < cutoff)
-            {
-                clusterIndices[i1] = clusterIndices[i2];
-            }
-            else     //If distance is long, put them to different clusters
-            {
-                clusterIndices[i1] = newClusterIndex;
-                newClusterIndex++;
-                numClusters++;
-            }
-        }
-        else if(clusterIndices[i1] != -1 && clusterIndices[i2] == -1)
-        {
-            if(shortestDist < cutoff)
-            {
-                clusterIndices[i2] = clusterIndices[i1];
-            }
-            else     //If distance is long, put them to different clusters
-            {
-                clusterIndices[i2] = newClusterIndex;
-                newClusterIndex++;
-                numClusters++;
-            }
-        }
-        else     //Both indices are in clusters already
-        {
-            if(clusterIndices[i1] != clusterIndices[i2] && shortestDist < cutoff)
-            {
-                //Merge clusters
-
-                int oldClusterIndex = clusterIndices[i2];
-
-                for(int i = 0; i < numConfidentIndices; i++)
-                {
-                    if(clusterIndices[i] == oldClusterIndex)
-                    {
-                        clusterIndices[i] = clusterIndices[i1];
-                    }
-                }
-
-                numClusters--;
-            }
+            detectionResult->detectorBBs->push_back(rectangles[i]);
         }
     }
-
-    detectionResult->numClusters = numClusters;
-
-    delete []distUsed;
-    distUsed = NULL;
 }
-
 } /* namespace tld */
