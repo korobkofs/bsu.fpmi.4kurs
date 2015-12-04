@@ -27,6 +27,7 @@
 #define ENSEMBLECLASSIFIER_H_
 
 #include <opencv/cv.h>
+#include <opencv/ml.h>
 
 namespace tld
 {
@@ -102,6 +103,17 @@ public:
     int *negatives; //!< the negative branches
 
     DetectionResult *detectionResult; //!< the result of detection
+
+    CvRTrees rtrees; //!< random forest classifier
+    bool isTrained; //!< classifier trained flag
+    bool hasPositive;
+    bool hasNegative;
+
+    std::vector<float*> trainVectors; //!< train set vectors
+    std::vector<float> trainVectorResponses; //!< train set vectors responses
+
+    void learn(bool positive, int *featureVector);
+    void train();
 
     /**
      * @brief This constructor initializes the class variables by default.
