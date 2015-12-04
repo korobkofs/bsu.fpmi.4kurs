@@ -27,6 +27,13 @@
 #define ENSEMBLECLASSIFIER_H_
 
 #include <opencv/cv.h>
+#include <opencv/ml.h>
+
+#include <iostream>
+#include <vector>
+
+using namespace std;
+using namespace cv;
 
 namespace tld
 {
@@ -38,6 +45,10 @@ namespace tld
 class EnsembleClassifier
 {
     const unsigned char *img; //!< the current image
+    vector <int *> featureVectors;
+    vector <float> positiveVector;
+    CvBoost boost;
+    bool trained;
 
     /**
      * @brief Calculates the verdict of trees (0 to 1).
@@ -188,6 +199,8 @@ public:
      *          the vector of features
      */
     void learn(int *boundary, int positive, int *featureVector);
+
+    void train();
 
     /**
      * @brief Filtered the windows.

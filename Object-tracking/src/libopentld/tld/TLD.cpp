@@ -262,7 +262,7 @@ void TLD::initialLearning()
     //Add all bounding boxes with high overlap
 
     vector< pair<int, float> > positiveIndices;
-    vector<int> negativeIndices;
+    vector< pair<int, float> > negativeIndices;
 
     //First: Find overlapping positive and negative patches
 
@@ -280,12 +280,13 @@ void TLD::initialLearning()
 
             if(!detectorCascade->varianceFilter->enabled || variance > detectorCascade->varianceFilter->minVar)   //TODO: This check is unnecessary if minVar would be set before calling detect.
             {
-                negativeIndices.push_back(i);
+                negativeIndices.push_back(pair<int, float>(i, overlap[i]));
             }
         }
     }
 
     sort(positiveIndices.begin(), positiveIndices.end(), tldSortByOverlapDesc);
+    sort(negativeIndices.begin(), negativeIndices.end(), tldSortByOverlapDesc);
 
     vector<NormalizedPatch> patches;
 
@@ -296,10 +297,25 @@ void TLD::initialLearning()
     for(int i = 0; i < numIterations; i++)
     {
         int idx = positiveIndices.at(i).first;
+        int negativeIdx = negativeIndices.at(i).first;
         //Learn this bounding box
         //TODO: Somewhere here image warping might be possible
-        detectorCascade->ensembleClassifier->learn(&detectorCascade->windows[TLD_WINDOW_SIZE * idx], true, &detectionResult->featureVectors[detectorCascade->numTrees * idx]);
+
+        // TODO!: add patches to ensembleClassifier
+        // negatives values
+
+        detectorCascade->ensembleClassifier->learn(&detectorCascade->windows[TLD_WINDOW_SIZE * negativeIdx],
+            false,
+            &detectionResult->featureVectors[detectorCascade->numTrees * negativeIdx]);
+
+        // positives values
+        detectorCascade->ensembleClassifier->learn(&detectorCascade->windows[TLD_WINDOW_SIZE * idx],
+            true,
+            &detectionResult->featureVectors[detectorCascade->numTrees * idx]);
     }
+
+    // TODO!: train
+    detectorCascade->ensembleClassifier->train();
 
     srand(1); //TODO: This is not guaranteed to affect random_shuffle
 
@@ -308,7 +324,7 @@ void TLD::initialLearning()
     //Choose 100 random patches for negative examples
     for(size_t i = 0; i < std::min<size_t>(100, negativeIndices.size()); i++)
     {
-        int idx = negativeIndices.at(i);
+        int idx = negativeIndices.at(i).first;
 
         NormalizedPatch patch;
         tldExtractNormalizedPatchBB(currImg, &detectorCascade->windows[TLD_WINDOW_SIZE * idx], patch.values);
@@ -396,6 +412,11 @@ void TLD::learn()
         detectorCascade->ensembleClassifier->learn(&detectorCascade->windows[TLD_WINDOW_SIZE * idx], false, &detectionResult->featureVectors[detectorCascade->numTrees * idx]);
     }
 
+    // TODO!: train
+    if (negativeIndices.size() > 0) {
+        detectorCascade->ensembleClassifier->train();
+    }
+
     //TODO: Randomization might be a good idea
     for(int i = 0; i < numIterations; i++)
     {
@@ -403,6 +424,8 @@ void TLD::learn()
         //TODO: Somewhere here image warping might be possible
         detectorCascade->ensembleClassifier->learn(&detectorCascade->windows[TLD_WINDOW_SIZE * idx], true, &detectionResult->featureVectors[detectorCascade->numTrees * idx]);
     }
+    // TODO!: train
+    detectorCascade->ensembleClassifier->train();
 
     for(size_t i = 0; i < negativeIndicesForNN.size(); i++)
     {
