@@ -303,7 +303,7 @@ void TLD::initialLearning()
         //TODO: Somewhere here image warping might be possible
         detectorCascade->ensembleClassifier->learn(&detectorCascade->windows[TLD_WINDOW_SIZE * idx], true, &detectionResult->featureVectors[detectorCascade->numTrees * idx]);
 
-        detectorCascade->ensembleClassifier->learn(&detectorCascade->windows[TLD_WINDOW_SIZE * idx], false, &detectionResult->featureVectors[detectorCascade->numTrees * nIdx]);
+        detectorCascade->ensembleClassifier->learn(&detectorCascade->windows[TLD_WINDOW_SIZE * nIdx], false, &detectionResult->featureVectors[detectorCascade->numTrees * nIdx]);
     }
 
     detectorCascade->ensembleClassifier->train();

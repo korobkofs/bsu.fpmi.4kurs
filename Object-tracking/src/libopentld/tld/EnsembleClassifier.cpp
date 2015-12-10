@@ -29,12 +29,8 @@
 #include <cmath>
 
 #include <opencv/cv.h>
-#include <opencv/ml.h>
  
 #include "EnsembleClassifier.h"
- 
-#include <iostream>
-#include <vector>
 
 using namespace std;
 using namespace cv;
@@ -239,7 +235,6 @@ void EnsembleClassifier::updatePosteriors(int *featureVector, int positive, int 
 
 void EnsembleClassifier::learn(int *boundary, int positive, int *featureVector)
 {
-    cout<<"learn";
     positive = positive > 0 ? 1 : -1;
  
     featureVectors.push_back(featureVector);
@@ -249,7 +244,6 @@ void EnsembleClassifier::learn(int *boundary, int positive, int *featureVector)
 
 void EnsembleClassifier::train() 
 {
-    cout<<"train";
     int size = featureVectors.size();
     Mat trainedPositivesMat(resultVector);
     Mat trainedDataMat(size, numTrees, CV_32FC1);
