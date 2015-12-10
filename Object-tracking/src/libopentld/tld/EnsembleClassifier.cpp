@@ -29,9 +29,12 @@
 #include <cmath>
 
 #include <opencv/cv.h>
-
+#include <opencv/ml.h>
+ 
 #include "EnsembleClassifier.h"
-
+ 
+#include <iostream>
+#include <vector>
 
 using namespace std;
 using namespace cv;
@@ -52,6 +55,7 @@ EnsembleClassifier::EnsembleClassifier() :
     numTrees = 10;
     numFeatures = 13;
     enabled = true;
+    trained = false;
 }
 
 EnsembleClassifier::~EnsembleClassifier()
@@ -81,6 +85,9 @@ void EnsembleClassifier::release()
     positives = NULL;
     delete[] negatives;
     negatives = NULL;
+
+    featureVectors.clear();
+    resultVector.clear();
 }
 
 void EnsembleClassifier::initFeatureLocations()
@@ -89,28 +96,11 @@ void EnsembleClassifier::initFeatureLocations()
 
     features = new float[size];
 
-    long M = 2147483648;
-    long B = 65539;
-    long sizeBase = size * 12;
-    long *baseRandomQuantites = new long[sizeBase];
-    float sum;
-    baseRandomQuantites[0] = M * rand() / (float)RAND_MAX;
-    for(int i = 1; i < sizeBase; i++)
+    for(int i = 0; i < size; i++)
     {
-        baseRandomQuantites[i] = baseRandomQuantites[i-1] * B % M;
+        features[i] = rand() / (float)RAND_MAX;
     }
 
-    for(int k = 0; k < size; k++)
-    {
-        sum = 0;
-        for(int l = 0; l < 12; l++)
-        {
-            sum += (float)baseRandomQuantites[k*12+l] / (float)M;
-        } 
-        features[k] = sum/12;
-    }
-
-    delete(baseRandomQuantites);
 }
 
 void EnsembleClassifier::initFeatureOffsets()
@@ -196,14 +186,17 @@ void EnsembleClassifier::calcFeatureVector(int windowIdx, int *featureVector)
 
 float EnsembleClassifier::calcConfidence(int *featureVector)
 {
-    float conf = 0.0;
+    if (!trained) {
+        return 1;
+    } else {
+        vector <float> featurePredictVector;
 
-    for(int i = 0; i < numTrees; i++)
-    {
-        conf += posteriors[i * numIndices + featureVector[i]];
+        for(int i = 0; i < numTrees; i++) {
+            featurePredictVector.push_back(featureVector[i]);
+        }
+        Mat featureMat(featurePredictVector);
+        return trees.predict(featureMat);
     }
-
-    return conf;
 }
 
 void EnsembleClassifier::classifyWindow(int windowIdx)
@@ -246,17 +239,32 @@ void EnsembleClassifier::updatePosteriors(int *featureVector, int positive, int 
 
 void EnsembleClassifier::learn(int *boundary, int positive, int *featureVector)
 {
-    if(!enabled) return;
-
-    float conf = calcConfidence(featureVector);
-
-    //Update if positive patch and confidence < 0.5 or negative and conf > 0.5
-    if((positive && conf < 0.5) || (!positive && conf > 0.5))
-    {
-        updatePosteriors(featureVector, positive, 1);
-    }
-
+    cout<<"learn";
+    positive = positive > 0 ? 1 : -1;
+ 
+    featureVectors.push_back(featureVector);
+    resultVector.push_back((float)positive);
 }
 
+
+void EnsembleClassifier::train() 
+{
+    cout<<"train";
+    int size = featureVectors.size();
+    Mat trainedPositivesMat(resultVector);
+    Mat trainedDataMat(size, numTrees, CV_32FC1);
+
+    for (int i = 0; i < size; i++) {
+        for (int j = 0; j < numTrees; j++) {
+            trainedDataMat.at<float>(i, j) = (float)featureVectors[i][j];
+        }
+     }
+ 
+    trees.train(trainedDataMat,
+        CV_ROW_SAMPLE,
+        trainedPositivesMat);
+
+    trained = true;
+}
 
 } /* namespace tld */
