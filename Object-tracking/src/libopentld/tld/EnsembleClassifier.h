@@ -27,6 +27,12 @@
 #define ENSEMBLECLASSIFIER_H_
 
 #include <opencv/cv.h>
+#include <opencv/ml.h>
+#include <iostream>
+#include <vector>
+ 
+using namespace std;
+using namespace cv;
 
 namespace tld
 {
@@ -38,6 +44,11 @@ namespace tld
 class EnsembleClassifier
 {
     const unsigned char *img; //!< the current image
+
+    CvGBTrees trees;
+    bool trained;
+    vector <int *> featureVectors;
+    vector <float> resultVector;
 
     /**
      * @brief Calculates the verdict of trees (0 to 1).
@@ -103,6 +114,7 @@ public:
 
     DetectionResult *detectionResult; //!< the result of detection
 
+    void train();
     /**
      * @brief This constructor initializes the class variables by default.
      *
