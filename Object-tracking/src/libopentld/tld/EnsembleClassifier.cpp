@@ -67,6 +67,10 @@ void EnsembleClassifier::init()
     initFeatureLocations();
     initFeatureOffsets();
     initPosteriors();
+
+    isTrained = false;
+    hasPositive = false;
+    hasNegative = false;
 }
 
 void EnsembleClassifier::release()
@@ -81,6 +85,13 @@ void EnsembleClassifier::release()
     positives = NULL;
     delete[] negatives;
     negatives = NULL;
+
+    for(int i = 0; i < trainVectors.size(); i++)
+    {
+        delete[] trainVectors[i];
+    }
+    trainVectors.clear();
+    trainVectorResponses.clear();
 }
 
 void EnsembleClassifier::initFeatureLocations()
@@ -179,14 +190,21 @@ void EnsembleClassifier::calcFeatureVector(int windowIdx, int *featureVector)
 
 float EnsembleClassifier::calcConfidence(int *featureVector)
 {
-    float conf = 0.0;
+    if(!isTrained)
+    {
+        return 1.0;
+    }
+
+    float sampleVectorBuffer[numTrees];
 
     for(int i = 0; i < numTrees; i++)
     {
-        conf += posteriors[i * numIndices + featureVector[i]];
+        sampleVectorBuffer[i] = (float)featureVector[i];
     }
 
-    return conf;
+    Mat sampleVector(numTrees, 1, CV_32FC1, sampleVectorBuffer);
+
+    return rtrees.predict(sampleVector);
 }
 
 void EnsembleClassifier::classifyWindow(int windowIdx)
@@ -227,18 +245,43 @@ void EnsembleClassifier::updatePosteriors(int *featureVector, int positive, int 
     }
 }
 
-void EnsembleClassifier::learn(int *boundary, int positive, int *featureVector)
+void EnsembleClassifier::learn(bool positive, int *featureVector)
 {
     if(!enabled) return;
 
-    float conf = calcConfidence(featureVector);
+    float* trainVector = new float[numTrees];
 
-    //Update if positive patch and confidence < 0.5 or negative and conf > 0.5
-    if((positive && conf < 0.5) || (!positive && conf > 0.5))
+    for(int i = 0; i < numTrees; i++)
     {
-        updatePosteriors(featureVector, positive, 1);
+        trainVector[i] = (float)featureVector[i];
     }
 
+    trainVectors.push_back(trainVector);
+    trainVectorResponses.push_back(positive ? 1.0 : 0.0);
+}
+
+void EnsembleClassifier::train()
+{
+    if(!enabled) return;
+
+    if(!hasPositive || !hasNegative)
+        return;
+
+    Mat vectors(trainVectors.size(), numTrees, CV_32FC1);
+    Mat vectorResponses(trainVectorResponses);
+
+    for(int i = 0; i < trainVectors.size(); i++)
+    {
+        for(int j = 0; j < numTrees; j++)
+        {
+            vectors.at<float>(i, j) = trainVectors[i][j];
+        }
+    }
+
+    rtrees.clear();
+    rtrees.train(vectors, CV_ROW_SAMPLE, vectorResponses, Mat(), Mat(), Mat(), Mat(), CvRTParams());
+
+    isTrained = true;
 }
 
 

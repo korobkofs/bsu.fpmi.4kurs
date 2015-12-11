@@ -298,8 +298,11 @@ void TLD::initialLearning()
         int idx = positiveIndices.at(i).first;
         //Learn this bounding box
         //TODO: Somewhere here image warping might be possible
-        detectorCascade->ensembleClassifier->learn(&detectorCascade->windows[TLD_WINDOW_SIZE * idx], true, &detectionResult->featureVectors[detectorCascade->numTrees * idx]);
+        detectorCascade->ensembleClassifier->learn(true, &detectionResult->featureVectors[detectorCascade->numTrees * idx]);
     }
+
+    if(numIterations > 0) detectorCascade->ensembleClassifier->hasPositive = true;
+    detectorCascade->ensembleClassifier->train();
 
     srand(1); //TODO: This is not guaranteed to affect random_shuffle
 
@@ -393,7 +396,7 @@ void TLD::learn()
     {
         int idx = negativeIndices.at(i);
         //TODO: Somewhere here image warping might be possible
-        detectorCascade->ensembleClassifier->learn(&detectorCascade->windows[TLD_WINDOW_SIZE * idx], false, &detectionResult->featureVectors[detectorCascade->numTrees * idx]);
+        detectorCascade->ensembleClassifier->learn(false, &detectionResult->featureVectors[detectorCascade->numTrees * idx]);
     }
 
     //TODO: Randomization might be a good idea
@@ -401,8 +404,12 @@ void TLD::learn()
     {
         int idx = positiveIndices.at(i).first;
         //TODO: Somewhere here image warping might be possible
-        detectorCascade->ensembleClassifier->learn(&detectorCascade->windows[TLD_WINDOW_SIZE * idx], true, &detectionResult->featureVectors[detectorCascade->numTrees * idx]);
+        detectorCascade->ensembleClassifier->learn(true, &detectionResult->featureVectors[detectorCascade->numTrees * idx]);
     }
+
+    if (!negativeIndices.empty()) detectorCascade->ensembleClassifier->hasNegative = true;
+    if (!positiveIndices.empty()) detectorCascade->ensembleClassifier->hasPositive = true;
+    detectorCascade->ensembleClassifier->train();
 
     for(size_t i = 0; i < negativeIndicesForNN.size(); i++)
     {
