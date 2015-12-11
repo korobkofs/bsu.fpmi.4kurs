@@ -40,6 +40,8 @@ void Main::doWork()
     int count_stop = 0;
 	Trajectory trajectory;
     IplImage *img = imAcqGetImg(imAcq);
+    background = cvCreateImage(cvSize(img->width, img->height), img->depth, img->nChannels);
+    cvCvtColor(img, background, CV_BGR2HSV);
     Mat grey(img->height, img->width, CV_8UC1);
     cvtColor(cvarrToMat(img), grey, CV_BGR2GRAY);
 
