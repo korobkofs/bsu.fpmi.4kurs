@@ -33,6 +33,8 @@
 #include "NormalizedPatch.h"
 #include "DetectionResult.h"
 
+#include "ml.h"
+
 namespace tld
 {
 
@@ -42,16 +44,7 @@ namespace tld
  */
 class NNClassifier
 {
-    /**
-     * @brief Calculates normalazed cross-correlaton of two patches.
-     *
-     * @param f1
-     *          the first patch (array)
-     * @param f2
-     *          the second patch (array)
-     * @return the normalazed cross-correlaton
-     */
-    float ncc(float *f1, float *f2);
+  
 public:
     bool enabled; //!< enables nearest neighbor сlassifier
 
@@ -61,7 +54,9 @@ public:
     DetectionResult *detectionResult; //!< the result of detection
     std::vector<NormalizedPatch>* falsePositives;//!< the vector of negative patches
     std::vector<NormalizedPatch>* truePositives;//!< the vector of positives patches
-
+    CvKNearest knn;
+    int K;
+    bool scratch;
     /**
      * @brief This constructor initialize thresholds and vectors.
      *
