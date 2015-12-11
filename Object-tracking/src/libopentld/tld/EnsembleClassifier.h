@@ -27,6 +27,8 @@
 #define ENSEMBLECLASSIFIER_H_
 
 #include <opencv/cv.h>
+#include <opencv/ml.h>
+#include <vector>
 
 namespace tld
 {
@@ -103,6 +105,15 @@ public:
 
     DetectionResult *detectionResult; //!< the result of detection
 
+    CvSVM classifierSVM;
+    CvSVMParams paramsSVM;
+    bool isTrained;
+    bool hasPositive;
+    bool hasNegative;
+
+    std::vector<float*> trainedObjects;
+    std::vector<float> trainedObjectsClasses;
+
     /**
      * @brief This constructor initializes the class variables by default.
      *
@@ -178,18 +189,6 @@ public:
     void updatePosterior(int treeIdx, int idx, int positive, int amount);
 
     /**
-     * @brief Update positive or negative patches.
-     *
-     * @param boundary
-     *          not used
-     * @param positive
-     *          if 1 , positive; if 0, negative patch
-     * @param featureVector
-     *          the vector of features
-     */
-    void learn(int *boundary, int positive, int *featureVector);
-
-    /**
      * @brief Filtered the windows.
      *
      * @param i
@@ -197,6 +196,21 @@ public:
      * @return true, if the  window isn't filtered; false, otherwise
      */
     bool filter(int i);
+
+    /**
+     * @brief Adds object to train SVM classifier.
+     *
+     * @param positive
+     *          if 1 , positive; if 0, negative patch
+     * @param featureVector
+     *          the vector of features
+     */
+    void addTrainingObject(int positive, int *featureVector);
+
+    /**
+     * @brief Trains SVM classifier.
+     */
+    void trainClassifier();
 };
 
 } /* namespace tld */

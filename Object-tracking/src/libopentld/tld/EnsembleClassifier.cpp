@@ -64,6 +64,12 @@ void EnsembleClassifier::init()
 {
     numIndices = pow(2.0f, numFeatures);
 
+    paramsSVM.svm_type    = CvSVM::C_SVC;
+    paramsSVM.kernel_type = CvSVM::LINEAR;
+    paramsSVM.term_crit   = cvTermCriteria(CV_TERMCRIT_ITER, 100, 1e-6);
+
+    isTrained = hasPositive = hasNegative = false;
+
     initFeatureLocations();
     initFeatureOffsets();
     initPosteriors();
@@ -81,6 +87,14 @@ void EnsembleClassifier::release()
     positives = NULL;
     delete[] negatives;
     negatives = NULL;
+
+    for(int i = 0; i < trainedObjects.size(); i++)
+    {
+        free(trainedObjects[i]);
+    }
+
+    trainedObjects.clear();
+    trainedObjectsClasses.clear();
 }
 
 void EnsembleClassifier::initFeatureLocations()
@@ -179,12 +193,22 @@ void EnsembleClassifier::calcFeatureVector(int windowIdx, int *featureVector)
 
 float EnsembleClassifier::calcConfidence(int *featureVector)
 {
+    if(!isTrained)
+    {
+        return 1.0;
+    }
+
     float conf = 0.0;
+    float newObject[numTrees];
 
     for(int i = 0; i < numTrees; i++)
     {
-        conf += posteriors[i * numIndices + featureVector[i]];
+        newObject[i] = (float)featureVector[i];
     }
+
+    Mat newObjectMat(numTrees, 1, CV_32FC1, newObject);
+
+    conf = classifierSVM.predict(newObjectMat);
 
     return conf;
 }
@@ -227,19 +251,43 @@ void EnsembleClassifier::updatePosteriors(int *featureVector, int positive, int 
     }
 }
 
-void EnsembleClassifier::learn(int *boundary, int positive, int *featureVector)
+void EnsembleClassifier::addTrainingObject(int positive, int *featureVector)
 {
     if(!enabled) return;
 
-    float conf = calcConfidence(featureVector);
+    float* trainingObject = new float[numTrees];
 
-    //Update if positive patch and confidence < 0.5 or negative and conf > 0.5
-    if((positive && conf < 0.5) || (!positive && conf > 0.5))
+    for(int i = 0; i < numTrees; i++)
     {
-        updatePosteriors(featureVector, positive, 1);
+        trainingObject[i] = (float)featureVector[i];
     }
 
+    trainedObjects.push_back(trainingObject);
+    trainedObjectsClasses.push_back((float)positive);
 }
 
+void EnsembleClassifier::trainClassifier()
+{
+    if(!enabled) return;
+
+    if(!hasPositive || !hasNegative)
+        return;
+
+    Mat trainedObjectsMat(trainedObjects.size(), numTrees, CV_32FC1);
+    Mat trainedObjectsClassesMat(trainedObjectsClasses);
+
+    for(int i = 0; i < trainedObjects.size(); i++)
+    {
+        for(int j = 0; j < numTrees; j++)
+        {
+            trainedObjectsMat.at<float>(i, j) = trainedObjects[i][j];
+        }
+    }
+
+    classifierSVM.clear();
+    classifierSVM.train(trainedObjectsMat, trainedObjectsClassesMat, Mat(), Mat(), paramsSVM);
+
+    isTrained = true;
+}
 
 } /* namespace tld */
