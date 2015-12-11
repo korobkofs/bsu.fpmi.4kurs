@@ -40,7 +40,7 @@ DetectionResult::DetectionResult()
     fgList = new vector<Rect>();
     confidentIndices = new vector<int>();
     numClusters = 0;
-    detectorBB = NULL;
+    detectorBBs = NULL;
 
     variances = NULL;
     posteriors = NULL;
@@ -74,8 +74,8 @@ void DetectionResult::reset()
     if(confidentIndices != NULL) confidentIndices->clear();
 
     numClusters = 0;
-    delete detectorBB;
-    detectorBB = NULL;
+    delete detectorBBs;
+    detectorBBs = NULL;
 }
 
 void DetectionResult::release()
@@ -89,8 +89,8 @@ void DetectionResult::release()
     featureVectors = NULL;
     delete confidentIndices;
     confidentIndices = NULL;
-    delete detectorBB;
-    detectorBB = NULL;
+    delete detectorBBs;
+    detectorBBs = NULL;
     containsValidData = false;
 }
 
