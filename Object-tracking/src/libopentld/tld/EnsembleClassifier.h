@@ -27,6 +27,12 @@
 #define ENSEMBLECLASSIFIER_H_
 
 #include <opencv/cv.h>
+#include <vector>
+#include <opencv/ml.h>
+#include <iostream>
+
+using namespace cv;
+using namespace std;
 
 namespace tld
 {
@@ -100,6 +106,12 @@ public:
     float *posteriors; //!< the vector of verdicts
     int *positives; //!< the positive branches
     int *negatives; //!< the negative branches
+    Mat TrainedData, TrainedClass;
+    CvNormalBayesClassifier BClassifier;
+    bool trained;
+    bool hasPositive, hasNegative;
+    vector <float*> featuresV;
+    vector <float> resultsV;
 
     DetectionResult *detectionResult; //!< the result of detection
 
@@ -197,6 +209,7 @@ public:
      * @return true, if the  window isn't filtered; false, otherwise
      */
     bool filter(int i);
+    void train();
 };
 
 } /* namespace tld */

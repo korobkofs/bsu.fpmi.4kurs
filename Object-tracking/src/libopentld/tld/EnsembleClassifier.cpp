@@ -29,6 +29,9 @@
 #include <cmath>
 
 #include <opencv/cv.h>
+#include "opencv2/core/core.hpp"
+#include "opencv2/ml/ml.hpp"
+#include "opencv2/highgui/highgui.hpp"
 
 #include "EnsembleClassifier.h"
 
@@ -41,7 +44,6 @@ namespace tld
 
 //TODO: Convert this to a function
 #define sub2idx(x,y,widthstep) ((int) (floor((x)+0.5) + floor((y)+0.5)*(widthstep)))
-
 EnsembleClassifier::EnsembleClassifier() :
     features(NULL),
     featureOffsets(NULL),
@@ -56,6 +58,8 @@ EnsembleClassifier::EnsembleClassifier() :
 
 EnsembleClassifier::~EnsembleClassifier()
 {
+    featuresV.clear();
+    resultsV.clear();
     release();
 }
 
@@ -67,6 +71,9 @@ void EnsembleClassifier::init()
     initFeatureLocations();
     initFeatureOffsets();
     initPosteriors();
+    hasPositive = false;
+    hasNegative = false;
+    trained = false;
 }
 
 void EnsembleClassifier::release()
@@ -139,7 +146,7 @@ void EnsembleClassifier::initPosteriors()
 void EnsembleClassifier::nextIteration(const Mat &img)
 {
     if(!enabled) return;
-
+    //prepare_train_data(TrainedData, TrainedClass);
     this->img = (const unsigned char *)img.data;
 }
 
@@ -179,14 +186,19 @@ void EnsembleClassifier::calcFeatureVector(int windowIdx, int *featureVector)
 
 float EnsembleClassifier::calcConfidence(int *featureVector)
 {
-    float conf = 0.0;
-
+  //  float conf = 0.0;
+    if (trained==false)
+        return 1; else {
+    float temp[numTrees];
     for(int i = 0; i < numTrees; i++)
     {
-        conf += posteriors[i * numIndices + featureVector[i]];
+        //conf += posteriors[i * numIndices + featureVector[i]];
+        temp[i]=(float)featureVector[i];
     }
+    Mat Base(1, numTrees, CV_32FC1, temp);
+    return BClassifier.predict(Base);}
 
-    return conf;
+  //  return conf;
 }
 
 void EnsembleClassifier::classifyWindow(int windowIdx)
@@ -227,19 +239,52 @@ void EnsembleClassifier::updatePosteriors(int *featureVector, int positive, int 
     }
 }
 
+void EnsembleClassifier::train()
+ {
+     int size = featuresV.size();
+     Mat trainedPositivesMat(resultsV);
+
+     Mat trainedDataMat(size, numTrees, CV_32FC1);
+
+
+    for (int i = 0; i < size; i++) {
+        for (int j = 0; j < numTrees; j++) {
+            trainedDataMat.at<float>(i, j) = featuresV[i][j];
+        }
+      }
+
+     BClassifier.train(trainedDataMat, trainedPositivesMat);
+
+     trained = true;
+ }
+
+
 void EnsembleClassifier::learn(int *boundary, int positive, int *featureVector)
 {
-    if(!enabled) return;
-
-    float conf = calcConfidence(featureVector);
+ //   if(!enabled) return;
+    if (positive > 0)
+    positive = 1;
+    else positive = -1;
+//    Mat vectors(featuresV.size(), numTrees, CV_32FC1);
+//    Mat vectorsR(trainVectorResponses);
+    featuresV.push_back((float*)featureVector);
+    resultsV.push_back(positive);
+ //   float conf = calcConfidence(featureVector);
 
     //Update if positive patch and confidence < 0.5 or negative and conf > 0.5
-    if((positive && conf < 0.5) || (!positive && conf > 0.5))
-    {
-        updatePosteriors(featureVector, positive, 1);
-    }
+ //   if((positive && conf < 0.5) || (!positive && conf > 0.5))
+ //   {
+ //       updatePosteriors(featureVector, positive, 1);
+ //   }
 
-}
+//for(int i = 0; i < resultsV.size(); i++)
+//{
+//       updatePosteriors(featuresV, positive, 1);
+//       for(int j = 0; j < numTrees; j++)
+//      {
+//           vectors.at<float>(i, j) = resultsV[i][j];
+//      }
+//}
 
 
-} /* namespace tld */
+} }/* namespace tld */

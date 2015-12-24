@@ -404,6 +404,15 @@ void TLD::learn()
         detectorCascade->ensembleClassifier->learn(&detectorCascade->windows[TLD_WINDOW_SIZE * idx], true, &detectionResult->featureVectors[detectorCascade->numTrees * idx]);
     }
 
+    if (negativeIndices.size()>0)
+        detectorCascade->ensembleClassifier->hasNegative=true;
+    if (positiveIndices.size()>0)
+        detectorCascade->ensembleClassifier->hasPositive=true;
+
+
+    detectorCascade->ensembleClassifier->train();
+
+
     for(size_t i = 0; i < negativeIndicesForNN.size(); i++)
     {
         int idx = negativeIndicesForNN.at(i);
